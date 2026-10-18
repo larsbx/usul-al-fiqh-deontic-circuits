@@ -182,6 +182,59 @@ def test_page_break_does_not_hide_a_qualifier():
     assert "qualifier" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p001")
 
 
+LA_TEXT = "# قال لا يجوز البيع إلا بالقبض\nPageV01P001\n"
+
+
+def test_a_presentation_form_ligature_keys_as_its_letters():
+    """Audit PR-35: «ﻻ» (U+FEFB) carried no key, so «قال ﻻ يجوز البيع» matched «قال يجوز البيع»."""
+    assert "absent" in gate.check_quote("# قال يجوز البيع\nPageV01P001\n", "قال ﻻ يجوز البيع", "v01:p001")
+    assert gate.check_quote("# قال ﻻ يجوز البيع\nPageV01P001\n", "قال لا يجوز البيع", "v01:p001") is None
+
+
+def test_an_arabic_letter_outside_the_key_is_rejected():
+    """A letter the key does not carry would be skipped by the comparison, so the excerpt may not hold one."""
+    assert gate.check_quote(LA_TEXT, "قال لا يجوز ٻالبيع", "v01:p001") == "letters outside the quotation key: ٻ"
+
+
+def test_a_quotation_cannot_drop_a_negation_just_before_it():
+    """Audit PR-35: «يجوز البيع» passed against «قال لا يجوز البيع»."""
+    assert gate.check_quote(LA_TEXT, "يجوز البيع إلا بالقبض", "v01:p001") == "quotation drops the negation «لا» before it"
+    assert gate.check_quote("# (لم\n~~يلزمه) شيء\nPageV01P001\n", "يلزمه) شيء", "v01:p001") == \
+        "quotation drops the negation «لم» before it"
+    # Punctuation ends the negation's clause: «أم لا؟ الأظهر …» starts a new sentence.
+    assert gate.check_quote("# هل يسترد أم لا؟ الأظهر استرداده\nPageV01P001\n", "الأظهر استرداده", "v01:p001") is None
+
+
+def test_a_quotation_starts_and_ends_on_word_boundaries():
+    """Audit PR-35: «يجوز البي» passed against «يجوز البيع إلا …», hiding the qualifier after the word."""
+    assert gate.check_quote(LA_TEXT, "لا يجوز البي", "v01:p001") == "quotation ends mid-word"
+    assert gate.check_quote(LA_TEXT, "ال لا يجوز البيع إلا بالقبض", "v01:p001") == "quotation starts mid-word"
+    assert gate.check_quote(LA_TEXT, "قال لا يجوز البيع إلا بالقبض", "v01:p001") is None
+
+
+def test_markup_inside_a_word_is_not_a_word_boundary():
+    """Review (#95): a page marker inside a word must not let a quotation start or end there."""
+    assert gate.check_quote("# قال الPageV01P001بيع جائز\nPageV01P002\n", "بيع جائز", "v01:p002") == "quotation starts mid-word"
+    assert gate.check_quote("# قال البيPageV01P001ع جائز\nPageV01P002\n", "قال البي", "v01:p001") == "quotation ends mid-word"
+
+
+def test_a_quotation_wholly_in_presentation_forms_is_not_empty():
+    """Review (#95): emptiness is judged on the key, after presentation forms unfold."""
+    assert gate.check_quote("# ﻗﺎﻝ ﻻ ﻳﺠﻮﺯ\nPageV01P001\n", "ﻗﺎﻝ ﻻ ﻳﺠﻮﺯ", "v01:p001") is None
+    assert gate.check_quote(LA_TEXT, "12", "v01:p001") == "empty Arabic quotation"
+
+
+@pytest.mark.parametrize("tail", ["الا عند الضرورة", "- لكن قال الموفق", "«إلا عند الضرورة»", "— إلا عند الضرورة",
+                                  "غير ان الموفق قال", "اذا لم يضطر"])
+def test_a_qualifier_is_found_across_hamza_dashes_and_quotation_marks(tail):
+    """Audit PR-35: al-Iqnāʿ v04:p060 stops before «- لكن قال الموفق …»; hamza-less «الا» was missed too."""
+    assert "qualifier" in gate.check_quote(f"# هذا الحكم ثابت {tail}\nPageV01P001\n", "هذا الحكم ثابت", "v01:p001")
+
+
+def test_a_word_that_merely_starts_like_a_qualifier_is_not_one():
+    assert gate.check_quote("# هذا الحكم ثابت الاستثناء نادر\nPageV01P001\n", "هذا الحكم ثابت", "v01:p001") is None
+
+
 def test_exclusions_are_explicit_and_required_failure_cannot_be_excluded(fixture):
     corpus, cache = fixture
     (corpus / "other.json").write_text(json.dumps([

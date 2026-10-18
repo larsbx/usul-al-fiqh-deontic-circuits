@@ -92,7 +92,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p108",
-          "excerpt_ar": "أو في ضمين فقول من ينفيه نص عليه في دعوى عدم الإذن ودعوى البائع الصغر",
+          "excerpt_ar": "لا أو في ضمين فقول من ينفيه نص عليه في دعوى عدم الإذن ودعوى البائع الصغر",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
@@ -116,7 +116,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p056",
-          "excerpt_ar": "يفسد العقد من سفه أو صغر أو إكراه أو عبد عدم إذن سيده ونحوه وأنكره الآخر",
+          "excerpt_ar": "ما يفسد العقد من سفه أو صغر أو إكراه أو عبد عدم إذن سيده ونحوه وأنكره الآخر",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -684,7 +684,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p294",
-          "excerpt_ar": "لي بينة ثم أتى بها أو قال: كذب شهودي أو قال كل بينة أقيمها فهي زور،",
+          "excerpt_ar": "ما لي بينة ثم أتى بها أو قال: كذب شهودي أو قال كل بينة أقيمها فهي زور،",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -1440,7 +1440,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p447",
-          "excerpt_ar": "قيمته وله التصرف ببيع وغيره ولا يرجع بائع بعد لزوم بيعه في قدرها إلا إن",
+          "excerpt_ar": "لا قيمته وله التصرف ببيع وغيره ولا يرجع بائع بعد لزوم بيعه في قدرها إلا إن",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -1562,7 +1562,7 @@
         },
         {
           "ref": "src:openiti-insaf-shamela21609/v05:p310",
-          "excerpt_ar": "إشكال في عدم النفوذ. وعلى المذهب قيل: لا ينفذ. قاله القاضي في المجرد،",
+          "excerpt_ar": "لا إشكال في عدم النفوذ. وعلى المذهب قيل: لا ينفذ. قاله القاضي في المجرد،",
           "position": 1,
           "grade": "ashab",
           "who": "al-Qāḍī (al-Mujarrad) and Ibn ʿAqīl (bāb al-shirka), as al-Inṣāf reports them",
@@ -1602,7 +1602,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p169",
-          "excerpt_ar": "يزيل الملك في حق الجاني والراهن والمفلس فلم يمنع نقله فيصح تصرف ورثة في",
+          "excerpt_ar": "لا يزيل الملك في حق الجاني والراهن والمفلس فلم يمنع نقله فيصح تصرف ورثة في",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -2398,7 +2398,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p012",
-          "excerpt_ar": "يتحر للنكاح وكف عنهن وفى قبيلة كبيرة وبلدة كبيرة له النكاح من غير تحر",
+          "excerpt_ar": "لم يتحر للنكاح وكف عنهن وفى قبيلة كبيرة وبلدة كبيرة له النكاح من غير تحر",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
@@ -2488,7 +2488,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v06:p331",
-          "excerpt_ar": "يضمن إذا كسر ختم كيسها، أو حله. فعلى المذهب: لا يعود عقد الوديعة بغير",
+          "excerpt_ar": "لا يضمن إذا كسر ختم كيسها، أو حله. فعلى المذهب: لا يعود عقد الوديعة بغير",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -2610,7 +2610,7 @@
         },
         {
           "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p344",
-          "excerpt_ar": "اختاره الخرقي والشيخ هو الصحيح واختاره الشارح أيضا، وقدمه في الرعايتين",
+          "excerpt_ar": "ما اختاره الخرقي والشيخ هو الصحيح واختاره الشارح أيضا، وقدمه في الرعايتين",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ (masʾala 30)",
@@ -2956,7 +2956,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p154",
-          "excerpt_ar": "يضمن كرديف ربها ورائض ووكيل ومن قال لا أركب إلا بأجرة فقال ما آخذ أجرة",
+          "excerpt_ar": "لم يضمن كرديف ربها ورائض ووكيل ومن قال لا أركب إلا بأجرة فقال ما آخذ أجرة",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
@@ -2964,7 +2964,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p293",
-          "excerpt_ar": "ينفرد بحفظها. أشبه ما لو غطى ضيفه بلحاف فتلف عليه لم يضمنه (كرديف ربها)",
+          "excerpt_ar": "لم ينفرد بحفظها. أشبه ما لو غطى ضيفه بلحاف فتلف عليه لم يضمنه (كرديف ربها)",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
@@ -3319,7 +3319,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p363",
-          "excerpt_ar": "يضمنه وإن أرسله إنسان من يده المشاهدة قهرا لم يضمنه ومن أمسك صيدا في",
+          "excerpt_ar": "لم يضمنه وإن أرسله إنسان من يده المشاهدة قهرا لم يضمنه ومن أمسك صيدا في",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
@@ -3391,7 +3391,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p499",
-          "excerpt_ar": "يضمنه وإن وصى بإعطاء مدع عينه دينا بيمينه نقده من رأس ماله ومن أوصي إليه",
+          "excerpt_ar": "لم يضمنه وإن وصى بإعطاء مدع عينه دينا بيمينه نقده من رأس ماله ومن أوصي إليه",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
@@ -3908,7 +3908,7 @@
         },
         {
           "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p402",
-          "excerpt_ar": "يقل: إلي فهو مقر بقبضه, لا أبرأتك, وقوله له: وهبتك الحق تمليك له, فيرجع",
+          "excerpt_ar": "لم يقل: إلي فهو مقر بقبضه, لا أبرأتك, وقوله له: وهبتك الحق تمليك له, فيرجع",
           "position": 1,
           "grade": "qiyas",
           "who": "Ibn Mufliḥ's al-Furūʿ, of the cognate gift",
@@ -3981,7 +3981,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p512",
-          "excerpt_ar": "يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
+          "excerpt_ar": "لم يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
           "position": 1,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -4034,7 +4034,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p512",
-          "excerpt_ar": "يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
+          "excerpt_ar": "لم يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -4066,7 +4066,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v05:p417",
-          "excerpt_ar": "يعجز عنه فكذلك هنا. والطريق الثاني: يجوز لهما التوكيل هنا. وإن منعنا في",
+          "excerpt_ar": "لم يعجز عنه فكذلك هنا. والطريق الثاني: يجوز لهما التوكيل هنا. وإن منعنا في",
           "position": 0,
           "grade": "qiyas",
           "who": "al-Mardāwī in al-Inṣāf, by the agent's madhhab",
@@ -4223,7 +4223,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p180",
-          "excerpt_ar": "يحتج أكل) منه (بمعروف) إلحاقا له بعامل الزكاة فإن شرط له الواقف شيئا",
+          "excerpt_ar": "لم يحتج أكل) منه (بمعروف) إلحاقا له بعامل الزكاة فإن شرط له الواقف شيئا",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -4410,7 +4410,7 @@
         },
         {
           "ref": "src:openiti-ibnmuflih-furu-shamela12052/v10:p036",
-          "excerpt_ar": "يغرقها اتفاقا, ذكره ابن عقيل, وعنه: نصفها وقيل: ديته على الأسواط إن زاد",
+          "excerpt_ar": "لا يغرقها اتفاقا, ذكره ابن عقيل, وعنه: نصفها وقيل: ديته على الأسواط إن زاد",
           "position": 1,
           "grade": "nass",
           "who": "the riwāya of half, as al-Furūʿ reports it",
@@ -4442,7 +4442,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p339",
-          "excerpt_ar": "يحتمله) المضروب (فتلف ضمنه) الضارب (بديته) كاملة لحصول تلفه بعدوانه وكما",
+          "excerpt_ar": "لا يحتمله) المضروب (فتلف ضمنه) الضارب (بديته) كاملة لحصول تلفه بعدوانه وكما",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -4540,7 +4540,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p322",
-          "excerpt_ar": "نقصه من خرق جلده ونحوه وإن كان الأول غير موح حرم وقيمته للأول مجروحا",
+          "excerpt_ar": "ما نقصه من خرق جلده ونحوه وإن كان الأول غير موح حرم وقيمته للأول مجروحا",
           "position": 0,
           "grade": "qiyas",
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
@@ -6535,7 +6535,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v05:p033",
-          "excerpt_ar": "جنسهما، كمد عجوة ودرهم بمدين، أو بدرهمين، أو بمد ودرهم) . وهو المذهب بلا",
+          "excerpt_ar": "غير جنسهما، كمد عجوة ودرهم بمدين، أو بدرهمين، أو بمد ودرهم) . وهو المذهب بلا",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -6551,7 +6551,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p070",
-          "excerpt_ar": "جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو أن المدين والدرهمين",
+          "excerpt_ar": "غير جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو أن المدين والدرهمين",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
@@ -6567,7 +6567,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p260",
-          "excerpt_ar": "جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو كان الدرهمان",
+          "excerpt_ar": "غير جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو كان الدرهمان",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf",
@@ -6769,7 +6769,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v07:p311",
-          "excerpt_ar": "ترث. فعليها: لأم الأم مع الأب وأمه: السدس كاملا. على الصحيح. قدمه في",
+          "excerpt_ar": "لا ترث. فعليها: لأم الأم مع الأب وأمه: السدس كاملا. على الصحيح. قدمه في",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -6995,7 +6995,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p008",
-          "excerpt_ar": "يرتفع حدثه حتى يخرج مرتبا نصا كالراكد ولو مر عليه أربع جريات ولو حلف لا",
+          "excerpt_ar": "لم يرتفع حدثه حتى يخرج مرتبا نصا كالراكد ولو مر عليه أربع جريات ولو حلف لا",
           "position": 1,
           "grade": "jazm",
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
@@ -7011,7 +7011,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p050",
-          "excerpt_ar": "يجزئه. ولو انغمس في ماء راكد أو جار، ينوي به رفع الحدث لم يرتفع حدثه،",
+          "excerpt_ar": "لم يجزئه. ولو انغمس في ماء راكد أو جار، ينوي به رفع الحدث لم يرتفع حدثه،",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
@@ -7449,7 +7449,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v06:p178",
-          "excerpt_ar": "يرجع على الغاصب بقيمة العين. ويرجع عليه بضمان المنفعة. على الصحيح من",
+          "excerpt_ar": "لم يرجع على الغاصب بقيمة العين. ويرجع عليه بضمان المنفعة. على الصحيح من",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī's taṣḥīḥ in al-Inṣāf (al-ʿāriya from the usurper)",
@@ -7961,7 +7961,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p319",
-          "excerpt_ar": "يعلم سبق أحدهما ولا معيتهما (صلوا ظهرا) لاحتمال سبق إحداهما فتصح ولا",
+          "excerpt_ar": "لم يعلم سبق أحدهما ولا معيتهما (صلوا ظهرا) لاحتمال سبق إحداهما فتصح ولا",
           "position": 0,
           "grade": "jazm",
           "who": "Sharḥ al-Muntahā",
@@ -8396,7 +8396,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p336",
-          "excerpt_ar": "أمرني به أو محوت المصحف إن فعلت وحنث - لا كفارة وإن قال: أخزاه الله أو",
+          "excerpt_ar": "ما أمرني به أو محوت المصحف إن فعلت وحنث - لا كفارة وإن قال: أخزاه الله أو",
           "position": 0,
           "grade": "jazm",
           "who": "al-Iqnāʿ",
@@ -8457,7 +8457,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p137",
-          "excerpt_ar": "حلف لا يفعله قاصدا له (إلا في السلام) إذا سلم عليه أو على قوم هو فيهم",
+          "excerpt_ar": "ما حلف لا يفعله قاصدا له (إلا في السلام) إذا سلم عليه أو على قوم هو فيهم",
           "position": 0,
           "grade": "jazm",
           "who": "Sharḥ al-Muntahā",
@@ -10120,7 +10120,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p368",
-          "excerpt_ar": "فرضه فارض في المستقبل ولا ينعزل حيث صح عزله قبل علمه بالعزل فليس كوكيل",
+          "excerpt_ar": "ما فرضه فارض في المستقبل ولا ينعزل حيث صح عزله قبل علمه بالعزل فليس كوكيل",
           "position": 1,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
@@ -10743,7 +10743,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
-          "excerpt_ar": "يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
+          "excerpt_ar": "لم يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
           "position": 0,
           "grade": "jazm",
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
@@ -10783,7 +10783,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
-          "excerpt_ar": "يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
+          "excerpt_ar": "لم يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
           "position": 0,
           "grade": "jazm",
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
@@ -10831,7 +10831,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
-          "excerpt_ar": "يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
+          "excerpt_ar": "لم يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
           "position": 0,
           "grade": "jazm",
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
@@ -11272,7 +11272,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v12:p232",
-          "excerpt_ar": "يكون مقرا بذلك وهو المذهب قال في القاعدة الخامسة والعشرين: أشهرهما يكون",
+          "excerpt_ar": "لا يكون مقرا بذلك وهو المذهب قال في القاعدة الخامسة والعشرين: أشهرهما يكون",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -11748,7 +11748,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p363",
-          "excerpt_ar": "بقي أو نصف قنين أجزأ لا ما سرى بعتق جزء ومن علق عتقه بظهار ثم ظاهر عتق",
+          "excerpt_ar": "ما بقي أو نصف قنين أجزأ لا ما سرى بعتق جزء ومن علق عتقه بظهار ثم ظاهر عتق",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
@@ -12378,7 +12378,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v09:p180",
-          "excerpt_ar": "يصر موليا حتى يطأ ثلاثا، فحينئذ يصير موليا من الرابعة، على الصحيح من",
+          "excerpt_ar": "لم يصر موليا حتى يطأ ثلاثا، فحينئذ يصير موليا من الرابعة، على الصحيح من",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -12591,7 +12591,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p089",
-          "excerpt_ar": "يجتمع معها فيه مثلها فصح كما لو انفردت به وفارق العقد على نحو أختين لأنه",
+          "excerpt_ar": "لم يجتمع معها فيه مثلها فصح كما لو انفردت به وفارق العقد على نحو أختين لأنه",
           "position": 0,
           "grade": "qiyas",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
@@ -12989,7 +12989,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p263",
-          "excerpt_ar": "طلق فلان زوجته (فطلقة) لأنها اليقين وما زاد مشكوك فيه.",
+          "excerpt_ar": "ما طلق فلان زوجته (فطلقة) لأنها اليقين وما زاد مشكوك فيه.",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
@@ -13394,7 +13394,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p216",
-          "excerpt_ar": "لو حابى أجيرا في الأجر فإن الأجر يؤخذ من ماله، أو ساقى أو زارع محاباة،",
+          "excerpt_ar": "ما لو حابى أجيرا في الأجر فإن الأجر يؤخذ من ماله، أو ساقى أو زارع محاباة،",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",

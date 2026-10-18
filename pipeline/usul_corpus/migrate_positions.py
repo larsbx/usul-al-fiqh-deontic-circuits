@@ -14,18 +14,20 @@ from . import takhrij
 from .position_receipts import FIELD, digest
 from .values import code
 
+# Re-pinned for PR-35, which extended excerpt text only (entries, positions and indices unchanged):
+# docs/architecture/pr35-quote-repairs-2026-10-18.md.
 SOURCES = {
-    "reconciliation/ledger.json": "6c0b837f9a2532e4c92c6bf5e27b50215b1c7f4e6d1f0f165d68f0d184e6af49",
+    "reconciliation/ledger.json": "ba72ed3df2527d81f9e16712b568207756a93aec11f84bfe3c70f45c5af6fe7d",
     "reconciliation/entries/pr30.json": "85c0665f226da22172df3b22b09f56ba2a602651aca5b156e74d61539d53cafd",
     "reconciliation/entries/rajab-a1.json": "b3371b60d964429db332048d29acddabbeaa3c456c07c0ed0a613933a096ee15",
-    "reconciliation/entries/rajab-a10.json": "e3353858d948b112227284cbbe5c3b00d2df45aa84d47b383925bfffeb1e7985",
-    "reconciliation/entries/rajab-a11.json": "749270ef292e63db51c4003f6a20fedb5b0a7a8ac2190d010fbdf4dfbc4bf06a",
+    "reconciliation/entries/rajab-a10.json": "8a1958c77f36fda608c5e84d2d7d472cabaeba14188c4def06acf395dc00a173",
+    "reconciliation/entries/rajab-a11.json": "59ed2aac022b2be6786ab5e26f766baec08a305376764cce86912e508bde0d34",
     "reconciliation/entries/rajab-a12.json": "35cd67fe17084b1d58332daf8aa8d77dfff7019d2f9b9c641f5c3a59dbde40b2",
     "reconciliation/entries/rajab-a13.json": "1509a9f667380f7238e3557ac78ef32e9153cf8195a0e80be341fca1b6e7edf2",
     "reconciliation/entries/rajab-a14.json": "bf24bd89ce91df1e4d62d581ccb6257094bb2dffe04800044b18ac0dc584f3fa",
     "reconciliation/entries/rajab-a15.json": "4a295108a5ed4e6671e2bd9577a41e632d005b9dbebf0bef3f526f2546e6b3b4",
     "reconciliation/entries/rajab-a16.json": "e3eb12da99e044ecc7d50cea407bf17f33c546e5309aa7ee661234baed2b7750",
-    "reconciliation/entries/rajab-a17.json": "7efa81721c702ee7f99c6b725585c9b6b49cef91429d54be3ac78a7efd6df01d",
+    "reconciliation/entries/rajab-a17.json": "02ae52dd058237f85e74c7a3c94118cb92676b114d30208c7328ac49edc33783",
     "reconciliation/entries/rajab-a18.json": "fb4240b978b8d775e5e52e08c538bcfd8fdcf75e1cb0f148bb58cc3e40a4be11",
     "reconciliation/entries/rajab-a19.json": "493f499df17b7f2a521b96084a20f7006ae7412b98606b62f5d685422bde50a2",
     "reconciliation/entries/rajab-a2.json": "710db8e875dc6b606351f159437993510c048b7a31ec7400f280ddde6a91d4f8",
@@ -34,7 +36,7 @@ SOURCES = {
     "reconciliation/entries/rajab-a22.json": "6e57fe947e36da65f24b8cf3b63607b7d5e7c5cc887b733e36266b6de7cea0ce",
     "reconciliation/entries/rajab-a23.json": "4473446124bc1a9791b17aa3bcf430f405bcae8d404f9c8544a364b4a142f56e",
     "reconciliation/entries/rajab-a24.json": "a2ead3314ec54dba23fa4fda67017785cf41d1ff2007f939a130aa27cc670524",
-    "reconciliation/entries/rajab-a25.json": "39150227e457dc918e1d8d417df6c13fdef8c501006c067a800d8d25772a7eec",
+    "reconciliation/entries/rajab-a25.json": "f67e0a612a112e3719e642f7102b2efe34426e14d6bf616218f4d1eddf0d0416",
     "reconciliation/entries/rajab-a3.json": "59f396c4e28bea7c1b60fcf80b31208cc7ab8126a005e90c1ca1142a4d3dafa4",
     "reconciliation/entries/rajab-a4.json": "d66d3b7fe91cbb4e001a89cf3884c0b654d1c921a95d3022a455a1a11712a296",
     "reconciliation/entries/rajab-a5.json": "425a9e6e47d5bd62e6b37eec8bcc507ea9c45139bbf0eff458eb5289680131d8",
@@ -43,10 +45,10 @@ SOURCES = {
     "reconciliation/entries/rajab-a8.json": "ce627cca826684c2cc05f15da27b29a2f128a223c6b843ecd9ceaa2fe826d56a",
     "reconciliation/entries/rajab-a9.json": "93b9902cf2d1943cd0deae7267f8f20a5775e329cb92896b74cc960bd6c9b5a3",
     "reconciliation/entries/rajab-q127.json": "3b44b805aa57cf9faa639742bff4c2366f0185c8fcb9980753381d05683cef10",
-    "reconciliation/entries/tarjih-backfill.json": "c2bec88e2a9345790f698ac6f70b9f5dcedabc85fe08e342b56571607fb77ff9",
+    "reconciliation/entries/tarjih-backfill.json": "0af621a4fc62de84a26130e3b7452f19362f7f0e5e8c78a69a225dcb1dcdf951",
     "reconciliation/weighing/batch-00.json": "0359e3e7d8560d7ec83069cd076e607e20623d8fef52a718048b4f9502af5c66",
-    "reconciliation/weighing/batch-01.json": "50cafeabf09a8a1fb4ad2f96be3f8f1ae81d8c863897b0ad9bdf5bbe89f7cf20",
-    "reconciliation/weighing/batch-02.json": "c5e295139f05e7b4bd936b2fd8322b8331e99fe6ec7d250773510829576a4179",
+    "reconciliation/weighing/batch-01.json": "74172e9784316010b6fce1a1f6708311d1c6ca9b0060bbb1248e326a51da0594",
+    "reconciliation/weighing/batch-02.json": "4657c7ccaeaf668103bef37264f6e1c2ff69ea1af2b27ac2ba76649a6b7616cf",
     "reconciliation/weighing/batch-03.json": "c88fb05105d6f9fabfcf85cec1620b0cdba87dc43e1492ebbea3b45af1b1bda4",
     "reconciliation/weighing/batch-04.json": "09def227c8bd0379b89f1399fb30009db98228fa918043b443919dc2b2a4bb45",
     "reconciliation/weighing/batch-05.json": "597830cc90b946a14115be56a79131f471937fb20fb8246ad5d3f8f5314dd067",
@@ -54,7 +56,7 @@ SOURCES = {
     "reconciliation/weighing/batch-07.json": "a0afa317612b7bfeac767ad75d7a6090baaa7d1640a251207772f66230bfa786",
     "reconciliation/weighing/batch-08.json": "2fbc5283b9ae0ca6577c158ef8b4c7363c579a79d5d005868b9f488136b67741",
     "reconciliation/weighing/batch-09.json": "e9a40ed902c24f51c3a06a10d029cc471775e8ca55afa0ec667c7a3cb42d89dd",
-    "reconciliation/weighing/batch-10.json": "73e423e351a317c701b1c095c927a8ed2d839b203f068100f6f9452b274bd9b1",
+    "reconciliation/weighing/batch-10.json": "36b87fe7499d5bdfe39b897cb173c63b92a1fed0d39857a4c4c8c40f6c83d3b9",
     "reconciliation/weighing/batch-11.json": "baff0b80de0c4d6db1cd6ce5a5d6ee34e8bd044275b7b033c858ef1a086a09a5",
     "reconciliation/weighing/batch-12.json": "aca0d1e421865fcdf4ae234828a7bd5ae6cd3afed59c391eb0b4bc0700431580",
     "reconciliation/weighing/batch-13.json": "611ee4c3b851781587e4880a2d6a37e253736f93694c4299ffc4535ad00de0c9",
@@ -68,7 +70,7 @@ SOURCES = {
     "reconciliation/weighing/batch-21.json": "07f501e15cde587de2cec003d00ebd54d3a80521e9cb0f0d0811e2cb15633d85",
     "reconciliation/weighing/batch-22.json": "80f9f923d84d4eba6873a080b84197a97e639175f78d8294f531abcdf944ec27",
     "reconciliation/weighing/batch-23.json": "39529448318c31a75031ff45a9fbca84c7b175fb95b0d230c40dda37ec1ca53f",
-    "reconciliation/weighing/batch-24.json": "1fa4603dbd9dd3eb98490244d750ac12f48c623a3f059858a33da20b87a3caa5",
+    "reconciliation/weighing/batch-24.json": "1f7c4200e7ab3f79ba4de808f3b5f78a956b02981a95bf79ab7fd8542326cdc8",
     "reconciliation/weighing/batch-25.json": "342aa8668893a395984fe3e6dc1ac02eb2ca8d5235e40aa093282de9db3ede10",
     "reconciliation/weighing/batch-26.json": "6243fa1484d77dc721324c50439918dcc3ba18373f311ce2d6abeae7fbdebfaf",
     "reconciliation/weighing/batch-27.json": "fbfdf3fc9507b1358f185a4adc44f02a28c2ced0585c03b526bb76c34c319c84",
@@ -80,9 +82,9 @@ SOURCES = {
     "reconciliation/weighing/batch-33.json": "36dc570d54719dd13c869b24ac45391d737a301a04d0fc3cb091e8fa63643ef7",
     "reconciliation/weighing/batch-34.json": "8b007b2b471618168451c5ca9f815e177db8a48a50ce5cc294d9babc9e8b4e2f",
     "reconciliation/weighing/batch-35.json": "72474258e373744269e0adae03e6d8de2c0891c303087c5d4c41bacd0c61d23e",
-    "reconciliation/weighing/batch-36.json": "6a243685257bd748f815e95201ddebf218f4e7d292d418fbe4fa7cfe7d100ad3",
+    "reconciliation/weighing/batch-36.json": "62b88f029b4af86f291c7748ff7316e6c0521e78eccae86854f844993c542543",
     "reconciliation/weighing/batch-37.json": "b37e4e889fa0f2c2cfa6163ce2e4740c1f49db997b840c1348613fe013bbb749",
-    "reconciliation/weighing/batch-38.json": "4ad02b51c821c2b75fa177957a1b09938a40fd5cdf46bc7ead7f3684b662c99d",
+    "reconciliation/weighing/batch-38.json": "ca3cb2f74ed13cf006071876a02156b2abf485232cf2f26eff9a79b6c76ed558",
     "reconciliation/weighing/pilot.json": "0fe67ffd66b5356baf52f956387c0b1e0ccc88af4ed26645e9ab3143b3ee4441"
 }
 SUBJECTS_SHA256 = '76364aefdeb187997f6f220ed8e14910404ef098960c3e819c9a69351b1fc42c'
