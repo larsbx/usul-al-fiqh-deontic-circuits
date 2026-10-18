@@ -37,11 +37,44 @@ One PR per step, test-first, each validated by the full gate set before it merge
 
 Steps 1 and 2 come first: each can change a ruling. Step 3 next: it can certify a quotation its source qualifies.
 
-## Progress
+## Status (2026-10-18)
+
+Every step has merged, each test-first and checked locally with the full suite, `make source-verify`, `make validate`, `make generated` and, for the Lean change, `lake build`. GitHub Actions failed every run within seconds throughout (account-side), so no merge was confirmed by CI.
+
+| Step | Finding | PRs | Outcome |
+|---|---|---|---|
+| 1 Typed rulings | PR-33 | #92 | One ruling identity (`values.code`); positions checked against the encoder's `out` or an explicit `outside` gap. |
+| 2 Unproven sides | PR-34 | #94 | `searched` required where a ruling cites no proof; 103 entries pinned in `unsearched.json` (shrink-only baseline); `report.json` `tarjih_against_unproven` (104 / 23 / 93). |
+| 3 Quotation boundaries | PR-35 | #95 | Whole words, no dropped negation, qualifier variants, presentation forms; 77 excerpts extended from their witnesses ([repairs](pr35-quote-repairs-2026-10-18.md)). |
+| 4 Weighing integrity | PR-36 | #96, #97 | Unknown keys, duplicates and same-ruling advantages rejected; qaṭʿī/ijmāʿ pinned at zero; jamʿ under every policy; murajjiḥ domains in `Usul.Tarjih` (one `all`-policy outcome changed: q159.f035). |
+| 5 Pinned positions | PR-37 | #92, #98 | Position receipts on every ledger and weighing entry; the audit's reversal no longer loads. |
+| 6 Routing honesty | PR-38 | #99 | `by_qaida` headline 0.29 / 0.51 / 0.59; `within_qaida` 0.54 / 0.80 / 0.86; `unseen_qaida` 0.01 / 0.02 / 0.03; each beside its prior. |
+| 7 Figures and generated files | PR-39 | #100 | Figures from the reports; `make generated` checks the fatawā takhrīj and type-aware routing reports. |
+| 8 Remaining verbatim checks | PR-40 | #104 | Dossier and ḥadīth text witnesses required; `source-verify` 4,750 verified, 257 excluded, 0 failed (from 4,467 / 542). |
+| 9 Hygiene | low items | #101 | `matches_madhhab` required; derivable positions agree; `.part` checkpoints cut short resume; `HTTPException` retried and reported. |
+
+## Next steps
+
+In order of priority. The first two are needed before the guarantees above hold in CI.
+
+1. **Restore CI** (account owner): check the Actions minutes and spending limit (Settings → Billing → Actions). The first cold corpus run will exceed its 120-minute timeout fetching al-Ḍaʿīfa (`shamela-12762`, 18.9 MB); the witness cache is saved `if: always()` and the `.part` checkpoint resumes, so the next run completes. Re-run the open PRs' checks once green.
+2. **Require the checks on `main`** (repository settings): branch protection with the four workflow checks required, so none of these gates can be bypassed by a merge.
+3. **Scholarly review** (a person, not the pipeline):
+   - 57 of the 59 excerpts that began just after a negation and were extended (PR-35), the other two already checked; confirm each still supports its position ([list](pr35-quote-repairs-2026-10-18.md));
+   - the 103 entries in `corpus/reconciliation/unsearched.json`: record where each losing side's proofs were sought (`searched`); the list may only shrink;
+   - the weighing as a whole, which no human has reviewed (`taarud-reconciliation.md`).
+4. **Pin text derivations** for the four DOC/PDF witnesses still outside the required set: `islamhouse-qj-doc` (al-Saʿdī), `archive-pdf1995-tess`, `archive-manzuma-tess`, `archive-tariq-tess`. Each becomes required once its text is locked.
+5. **Stable position IDs** (beyond PR-37): referring to positions by id instead of index would let a reorder keep its evidence, and would let `migrate_positions`' replay test run on a frozen fixture instead of re-pinning live files after every legitimate edit (re-pinned in #95 and #96).
+6. **Type-aware routing** (`corpus/routing/type-aware.json`) still reports record-held-out classical recall; apply PR-38's qāʿida grouping there too.
+7. **The remaining exclusions** (257 excerpts; 252 tests skip locally): witnesses cited only by M5 commands, tanāquḍ, the Q&A and RQ05 collation sit outside the required set. Extend it as PR-06 and PR-40 did, source by source.
+8. **Audit again** at the new `main`.
+
+## Progress log
+
 
 - Step 1 (PR-33): closed by PR #92, which also landed the interim position receipts of step 5 (PR-37, partly closed).
 - Step 2 (PR-34): the `searched` gate and the `tarjih_against_unproven` report; 103 entries pinned in `corpus/reconciliation/unsearched.json` until their searches are recorded.
-- Step 3 (PR-35): the stricter quotation gate, and 77 excerpts extended from their witnesses; 59 that followed a negation await evidence review ([repairs](pr35-quote-repairs-2026-10-18.md)).
+- Step 3 (PR-35): the stricter quotation gate, and 77 excerpts extended from their witnesses; 59 that followed a negation, of which 57 await evidence review ([repairs](pr35-quote-repairs-2026-10-18.md)).
 - Step 4a (PR-36): weighing keys, duplicates, same-ruling advantages, the qaṭʿī/ijmāʿ pin, proof excerpt limits and jamʿ under every policy; step 4b (murajjiḥ to tier, mirrored in Lean) follows separately.
 - Step 4b (PR-36): murajjiḥ domains in `Usul.Tarjih` and its Python mirror; only q159.f035's rejected `dariHadd`, applied between qiyāsāt, falls outside, changing the `all` policy only.
 - Step 5 (PR-37): delivered by PR #92's position receipts; a regression test pins the audit's reversal.
