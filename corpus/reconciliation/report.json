@@ -193,6 +193,13 @@
     "against_reading": 23,
     "unsearched": 93
   },
+  "advantages_outside_domain": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
+      "by": "dariHadd",
+      "tier": "qiyas"
+    }
+  ],
   "jam_pending": [],
   "policies": {
     "strict": {
@@ -229,8 +236,7 @@
         "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002",
         "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f003",
         "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q145.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035"
+        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027"
       ]
     }
   },

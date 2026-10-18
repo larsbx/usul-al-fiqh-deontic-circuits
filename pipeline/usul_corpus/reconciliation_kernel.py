@@ -34,6 +34,20 @@ _STANDINGS = ("asserted", "disputed", "weak", "rejected")
 POLICIES = {"strict": (frozenset({"asserted"}), False), "sources": (frozenset({"asserted", "disputed"}), False),
             "applying": (frozenset({"asserted", "disputed"}), True), "all": (frozenset(_STANDINGS), True)}
 BASES = ("stated", "applied")
+# What each advantage weighs, and the tiers each domain admits; mirrors `Usul.Tarjih.Murajjih.domain`, `Domain.admits`.
+DOMAIN = dict.fromkeys(MURAJJIH, "text") | dict.fromkeys(
+    ("kathratRuwat", "tayaqquz", "wara", "sahibWaqia", "mubashir", "corroborated", "marfu", "consistentNarrator",
+     "muttasil", "naqil", "muthbit", "hazir", "dariHadd", "sahihayn"), "report") | dict.fromkeys(
+    ("usulMany", "tardAks", "mutaaddiya", "wasf", "ithbat", "aslShari", "aslAgreed", "aslStronger", "muaththira",
+     "mulaima", "munasaba", "khiffa", "hissiyya", "fewerAwsaf"), "illa") | {"afqah": "sahabi"}
+ADMITS = {"report": frozenset({"zanni", "qati", "mursalDaif", "fatwaSahabi", "aqrabSahabi"}),
+          "text": frozenset({"zanni", "qati"}), "illa": frozenset({"qiyas"}),
+          "sahabi": frozenset({"fatwaSahabi", "aqrabSahabi"})}
+
+
+def admits(m: str, rank: int) -> bool:
+    """Mirror of `Murajjih.admitsRank`: the advantage can weigh two proofs of the tier ranked `rank`."""
+    return TIERS[rank] in ADMITS[DOMAIN[m]]
 DEFAULT = "sources"
 
 
@@ -41,9 +55,11 @@ def top(ps: list[tuple[object, str]], p: object) -> int | None:
     return max((TIER_RANK[t] for r, t in ps if same(r, p)), default=None)
 
 
-def favours(adv: list[tuple[object, object, str, str]], p: object, q: object, policy: str = DEFAULT) -> bool:
+def favours(adv: list[tuple[object, object, str, str]], rank: int, p: object, q: object, policy: str = DEFAULT) -> bool:
+    """Some counted advantage, of a kind that weighs proofs of the tier ranked `rank`, prefers `p` to `q`."""
     counted, applied = POLICIES[policy]
-    return any(same(w, p) and same(l, q) and STANDING[m] in counted and (b == "stated" or applied) for w, l, m, b in adv)
+    return any(same(w, p) and same(l, q) and STANDING[m] in counted and (b == "stated" or applied) and admits(m, rank)
+               for w, l, m, b in adv)
 
 
 def beats(ps: list[tuple[object, str]], adv: list[tuple[object, object, str, str]], p: object, q: object,
@@ -51,7 +67,7 @@ def beats(ps: list[tuple[object, str]], adv: list[tuple[object, object, str, str
     """`p` outweighs `q`: a higher tier, or the same tier with a counted advantage and none back."""
     a, b = top(ps, p), top(ps, q)
     return a is not None and (b is None or a > b or (
-        a == b and favours(adv, p, q, policy) and not favours(adv, q, p, policy)))
+        a == b and favours(adv, a, p, q, policy) and not favours(adv, a, q, p, policy)))
 
 
 def weigh(rs: list[object], ps: list[tuple[object, str]], adv: list[tuple[object, object, str, str]],

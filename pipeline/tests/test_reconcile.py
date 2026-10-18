@@ -106,7 +106,7 @@ def test_a_jam_holds_against_the_proofs_under_every_policy():
     c = _ikh("x", False, [True, False], True, "successive_by_binding", facts)
     e = {**_entry("x", ["ashab", "ashab"], jam), "proofs": [_proof(0, "qiyas"), _proof(1, "qiyas")]}
     assert reconcile.check([c], {"entries": [e]}, DOSSIER) == []
-    applied = {**e, "advantages": [_adv(0, 1, "khass", "applied")]}
+    applied = {**e, "advantages": [_adv(0, 1, "usulMany", "applied")]}
     assert reconcile.resolve(c, applied) == ("jam", False)
     assert reconcile.check([c], {"entries": [applied]}, DOSSIER) == [
         "x: a jamʿ must not land against the side the proofs favour under the applying policy",
@@ -185,7 +185,7 @@ def test_tiers_and_murajjihat_mirror_the_kernel():
     names = [n for line in block.split("where", 1)[1].splitlines() if not line.strip().startswith("--")
              for n in re.findall(r"\| (\w+)", line)]
     assert tuple(names) == reconcile.MURAJJIH
-    std = lean[lean.index("def Murajjih.standing"):lean.index("/-- Where an advantage comes from")]
+    std = lean[lean.index("def Murajjih.standing"):lean.index("/-- What an advantage weighs")]
     for line in std.splitlines():
         if "=>" in line and "_ =>" not in line:
             names, st = line.split("=>")
@@ -200,11 +200,44 @@ def test_tiers_and_murajjihat_mirror_the_kernel():
     assert "def all : Policy := ⟨fun _ => true, true⟩" in lean
 
 
+def test_murajjih_domains_mirror_the_kernel():
+    lean = (ROOT / "formal/lean/Usul/Tarjih.lean").read_text()
+    dom = lean[lean.index("def Murajjih.domain"):lean.index("def Tier.all")].split(":= ", 1)[0].split("Domain", 1)[1]
+    parts = re.split(r"=> \.(\w+)", dom)
+    rest = {}
+    for names, d in zip(parts[::2], parts[1::2]):
+        rest |= dict.fromkeys(re.findall(r"\.(\w+)", names) or reconcile.MURAJJIH, d) if names.strip(" \n|_") else \
+            {m: d for m in reconcile.MURAJJIH if m not in rest}
+    assert rest == reconcile.DOMAIN
+    adm = lean[lean.index("def Domain.admits"):lean.index("def Murajjih.domain")]
+    for d in ("report", "text", "illa", "sahabi"):
+        line = adm[adm.index(f"| .{d}, t =>"):].split(" => true")[0]
+        assert set(re.findall(r"\| \.(\w+)", line.split("match t with", 1)[1])) == reconcile.ADMITS[d], d
+
+
+def test_an_advantage_weighs_only_the_tiers_of_its_domain():
+    """Audit PR-36: a `sahihayn` advantage between two qiyāsāt turned q043.f005's tawaqquf into a tarjīḥ."""
+    c, e = _bank("q043.f005")
+    assert reconcile.resolve(c, e) == ("tawaqquf", None)
+    qs = [x["position"] for x in e["proofs"] if x["tier"] == "qiyas"]
+    a, b = sorted({p for p in qs if any(y["position"] != p for y in e["proofs"] if y["tier"] == "qiyas")})[:2]
+    for m in ("sahihayn", "khass", "afqah"):
+        assert reconcile.resolve(c, {**e, "advantages": [_adv(a, b, m)]}) == ("tawaqquf", None), m
+    assert reconcile.resolve(c, {**e, "advantages": [_adv(a, b, "usulMany")]})[0] == "tarjih"
+    assert not reconcile.admits("muttasil", reconcile.TIER_RANK["qiyas"]) and reconcile.admits("muttasil", reconcile.TIER_RANK["aqrabSahabi"])
+
+
+def test_the_report_lists_advantages_outside_their_domain():
+    rep = reconcile.report(CASES, LEDGER)["advantages_outside_domain"]
+    assert [(x["far"].rsplit(".", 2)[-2:], x["by"], x["tier"]) for x in rep] == [(["q159", "f035"], "dariHadd", "qiyas")]
+
+
 def test_weak_and_rejected_advantages_are_formalised_and_run_under_their_policy():
     """Nothing is dropped: every murajjiḥ has its standing, and each policy is run and reported."""
     c = _ikh("x", True, [True, False])
     e = {**_entry("x", ["ashab", "ashab"]), "proofs": [_proof(0, "zanni"), _proof(1, "zanni")]}
-    weak, disputed = {**e, "advantages": [_adv(0, 1, "khiffa")]}, {**e, "advantages": [_adv(0, 1, "qawl")]}
+    qiyas = {**e, "proofs": [_proof(0, "qiyas"), _proof(1, "qiyas")]}
+    weak, disputed = {**qiyas, "advantages": [_adv(0, 1, "khiffa")]}, {**e, "advantages": [_adv(0, 1, "qawl")]}
     assert [reconcile.resolve(c, weak, p) for p in ("strict", "sources", "all")] == [
         ("tawaqquf", None), ("tawaqquf", None), ("tarjih", True)]
     assert [reconcile.resolve(c, disputed, p) for p in ("strict", "sources", "all")] == [

@@ -51,7 +51,7 @@ def test_reconciliation_never_merges_boolean_numeric_or_text_values():
     assert len(reconcile.rulings(case)) == 6
     assert reconcile.top([(False, "ijma")], 0) is None
     assert reconcile.support([(True, "nass")], 1) == []
-    assert not reconcile.favours([(False, True, "muthbit", "stated")], 0, 1)
+    assert not reconcile.favours([(False, True, "muthbit", "stated")], reconcile.TIER_RANK["zanni"], 0, 1)
     assert reconcile.weigh([False, 0], [(False, "qiyas"), (0, "qiyas")], []) is None
     assert reconcile.prevail([(False, "nass"), (0, "nass")]) is None
 
@@ -92,7 +92,12 @@ def test_all_policy_outcomes_match_the_pre_refactor_receipt():
     ledger = reconcile.load(ROOT / "corpus")
     rows = [[e["far"], policy, reconcile.resolve(cases[e["far"]], e, policy)]
             for e in ledger["entries"] for policy in reconcile.POLICIES]
-    receipt = hashlib.sha256(json.dumps(rows, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+    # Audit PR-36 tied each murajjiḥ to its domain: the one intended change is q159.f035 under `all`, whose rejected
+    # `dariHadd` (a report's advantage) was applied between two qiyāsāt. Undo exactly it, and every other result holds.
+    changed = {("ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035", "all"): (("tawaqquf", None), ("tarjih", False))}
+    assert [(r[0], r[1]) for r in rows if (r[0], r[1]) in changed and r[2] == changed[(r[0], r[1])][0]] == list(changed)
+    before = [[f, p, changed[(f, p)][1] if (f, p) in changed else r] for f, p, r in rows]
+    receipt = hashlib.sha256(json.dumps(before, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     assert len(rows) == 2384
     assert receipt == "05ce01715f4945eee8ed9c004fd7aabdbff7af15d8684cf33f6a4ece2edb1585"
 
