@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import re
+from hashlib import sha256
 from collections import Counter
 from pathlib import Path
 
@@ -164,13 +165,28 @@ def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
 
 
 UNSEARCHED = Path("reconciliation") / "unsearched.json"
+# sha256 of the sorted JSON list of the 103 entries pinned when the rule came in (2026-10-15): the exemption's ceiling.
+UNSEARCHED_BASELINE = "59798f0d05826f490886dc379a67feae9699e89c981b7b07c3dde9fe3949de81"
+
+
+def _unsearched_errors(pin: dict) -> list[str]:
+    base = pin.get("baseline", [])
+    errs = [] if sha256(json.dumps(sorted(base), ensure_ascii=False).encode()).hexdigest() == UNSEARCHED_BASELINE \
+        else ["unsearched.json: the baseline is not the set pinned on 2026-10-15"]
+    return errs + [f"unsearched.json: {f} is not in the baseline; the list only shrinks"
+                   for f in sorted(set(pin.get("entries", [])) - set(base))]
 
 
 def _unsearched() -> set[str]:
     """Weighed entries with an unproven side and no search record when that rule came in (audit PR-34): the list may
-    only shrink, each entry leaving it when its search is recorded."""
+    only shrink within its pinned baseline, each entry leaving it when its search is recorded."""
     p = Path(__file__).resolve().parents[2] / "corpus" / UNSEARCHED
-    return set(json.loads(p.read_text(encoding="utf-8"))["entries"]) if p.exists() else set()
+    if not p.exists():
+        return set()
+    pin = json.loads(p.read_text(encoding="utf-8"))
+    if errs := _unsearched_errors(pin):
+        raise ValueError("; ".join(errs))
+    return set(pin["entries"])
 
 
 def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:

@@ -71,6 +71,13 @@ def test_the_unsearched_list_is_pinned_and_only_shrinks():
     """The 103 weighed entries with an unproven side and no search record when the rule came in (2026-10-15)."""
     pinned = reconcile._unsearched()
     assert len(pinned) <= 103
+    base = json.loads((ROOT / "corpus" / reconcile.UNSEARCHED).read_text(encoding="utf-8"))["baseline"]
+    assert reconcile._unsearched_errors({"baseline": base, "entries": sorted(pinned)}) == []
+    # Review (#94): swapping a searched entry for a new one keeps the size; the baseline rejects it.
+    assert reconcile._unsearched_errors({"baseline": base, "entries": [*sorted(pinned)[1:], "new.far"]}) == [
+        "unsearched.json: new.far is not in the baseline; the list only shrinks"]
+    assert reconcile._unsearched_errors({"baseline": [*base, "new.far"], "entries": ["new.far"]}) == [
+        "unsearched.json: the baseline is not the set pinned on 2026-10-15"]
     current = {e["far"] for e in LEDGER["entries"] if reconcile.unproven(next(c for c in CASES if c["far"] == e["far"]), e)
                and not str(e.get("searched", "")).strip()}
     assert current == pinned
