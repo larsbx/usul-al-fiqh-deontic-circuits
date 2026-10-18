@@ -55,3 +55,12 @@ def test_committed_tranches_are_valid_and_generated():
     assert cases and all(c["far"].startswith("islamqa.") for c in cases)
     assert (ROOT / "formal/lean/UsulTest/FatawaTakhrij.lean").read_text() == fatawa_takhrij.lean_file(cases)
     assert "import UsulTest.FatawaTakhrij" in (ROOT / "formal/lean/UsulTest.lean").read_text()
+
+
+def test_without_the_answers_every_check_but_the_quote_s_still_runs():
+    """Review (#100): an LFS pointer checkout skipped the duplicate, identity and kernel checks too."""
+    assert fatawa_takhrij.check([case(quote="unrelated text")], None) == {}
+    assert fatawa_takhrij.check([case(), case()], None)["islamqa.4652.f001"] == ["duplicate case"]
+    assert fatawa_takhrij.check([case(quote=None)], None)["islamqa.4652.f001"] == ["quote missing"]
+    assert fatawa_takhrij.check([case(far="islamqa.x")], None)["islamqa.x"][0] == "far is not islamqa.<answer>.fNNN"
+    assert fatawa_takhrij.check([case(expected=True)], None) == fatawa_takhrij.check([case(expected=True)], ANSWERS)

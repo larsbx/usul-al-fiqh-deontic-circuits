@@ -744,12 +744,13 @@ def cmd_fatawa_takhrij(args: argparse.Namespace) -> int:
     from . import fatawa_takhrij, takhrij
     cases = fatawa_takhrij.load(CORPUS)
     path = ISLAMQA / "answers" / "islamqa-ar.jsonl.gz"
+    answers = None
     if not args.check or (path.exists() and path.stat().st_size > 1000):
         with gzip.open(path, "rt", encoding="utf-8") as f:
             answers = {r["id"]: r for r in map(json.loads, f)}
-        if bad := fatawa_takhrij.check(cases, answers):
-            print(json.dumps(bad, ensure_ascii=False, indent=1))
-            return 1
+    if bad := fatawa_takhrij.check(cases, answers):
+        print(json.dumps(bad, ensure_ascii=False, indent=1))
+        return 1
     rep = takhrij.report(cases) | {"banks": fatawa_takhrij.compare(CORPUS)}
     files = {SIGNATURE_LEAN.parent / "FatawaTakhrij.lean": fatawa_takhrij.lean_file(cases),
              CORPUS / "fatawa" / "takhrij" / "report.json": json.dumps(rep, ensure_ascii=False, indent=2) + "\n"}
