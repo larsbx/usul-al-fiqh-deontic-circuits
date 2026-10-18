@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import re
+from hashlib import sha256
 from collections import Counter
 from pathlib import Path
 
@@ -63,6 +64,19 @@ def stated(case: dict, entry: dict) -> list[tuple[object, object, str, str]]:
     ps = case["positions"]
     return [(ps[a["for"]]["ruling"], ps[a["over"]]["ruling"], a["by"], a["basis"]) for a in entry.get("advantages", [])]
 
+
+def unproven(case: dict, entry: dict) -> list[object]:
+    """The reported rulings a weighed entry cites no proof for: each loses to any proved ruling (`beats`),
+    so where their proofs were sought must be recorded. An entry with no proof at all is `searched` already."""
+    if not weighed(entry) or not entry["proofs"]:
+        return []
+    ps = proved(case, entry)
+    return [q for q in rulings(case) if top(ps, q) is None]
+
+
+def won_against_unproven(case: dict, entry: dict) -> bool:
+    stage, w = resolve(case, entry)
+    return stage == "tarjih" and all(_same(q, w) or any(_same(q, u) for u in unproven(case, entry)) for q in rulings(case))
 
 
 def _grades(g: str | list[str]) -> list[str]:
@@ -139,7 +153,40 @@ def _proof_errors(f: str, case: dict, entry: dict) -> list[str]:
         errs.append(f"{f}: advantages weigh proofs; record the proofs")
     if weighed(entry) and not entry["proofs"] and not str(entry.get("searched", "")).strip():
         errs.append(f"{f}: weighed with no proof: say where the proofs were searched for")
+    if errs:
+        return errs
+    un, pinned = unproven(case, entry), f in _unsearched()
+    if un and not pinned and not str(entry.get("searched", "")).strip():
+        errs.append(f"{f}: position rulings {json.dumps(un, ensure_ascii=False)} cite no proof: "
+                    "say where their proofs were searched for")
+    if pinned and not un:
+        errs.append(f"{f}: pinned as unsearched but every ruling cites a proof")
     return errs
+
+
+UNSEARCHED = Path("reconciliation") / "unsearched.json"
+# sha256 of the sorted JSON list of the 103 entries pinned when the rule came in (2026-10-15): the exemption's ceiling.
+UNSEARCHED_BASELINE = "59798f0d05826f490886dc379a67feae9699e89c981b7b07c3dde9fe3949de81"
+
+
+def _unsearched_errors(pin: dict) -> list[str]:
+    base = pin.get("baseline", [])
+    errs = [] if sha256(json.dumps(sorted(base), ensure_ascii=False).encode()).hexdigest() == UNSEARCHED_BASELINE \
+        else ["unsearched.json: the baseline is not the set pinned on 2026-10-15"]
+    return errs + [f"unsearched.json: {f} is not in the baseline; the list only shrinks"
+                   for f in sorted(set(pin.get("entries", [])) - set(base))]
+
+
+def _unsearched() -> set[str]:
+    """Weighed entries with an unproven side and no search record when that rule came in (audit PR-34): the list may
+    only shrink within its pinned baseline, each entry leaving it when its search is recorded."""
+    p = Path(__file__).resolve().parents[2] / "corpus" / UNSEARCHED
+    if not p.exists():
+        return set()
+    pin = json.loads(p.read_text(encoding="utf-8"))
+    if errs := _unsearched_errors(pin):
+        raise ValueError("; ".join(errs))
+    return set(pin["entries"])
 
 
 def check(cases: list[dict], ledger: dict, dossier: dict) -> list[str]:
@@ -340,6 +387,11 @@ def report(cases: list[dict], ledger: dict) -> dict:
             "standing": dict(sorted(Counter(standing(c, e) for e, c in rows).items())),
             "worklist": dict(sorted(residues.items(), key=lambda kv: (-len(kv[1]), kv[0]))),
             "weighing_worklist": dict(sorted(unweighed.items(), key=lambda kv: (-kv[1], kv[0]))),
+            "tarjih_against_unproven": {
+                "note": "tarjīḥ in which every other reported ruling cites no proof (Usul.Tarjih.beats_unproven)",
+                "count": sum(1 for e, c in rows if won_against_unproven(c, e)),
+                "against_reading": sum(1 for e, c in rows if won_against_unproven(c, e) and standing(c, e) == "against_reading"),
+                "unsearched": sum(1 for e, c in rows if won_against_unproven(c, e) and not str(e.get("searched", "")).strip())},
             "jam_pending": jam_pending(cases, ledger),
             "policies": {pol: {"counts": sorted(POLICIES[pol][0]), "applied": POLICIES[pol][1],
                                "differs_from_default": sorted(c["far"] for e, c in rows

@@ -36,3 +36,8 @@ One PR per step, test-first, each validated by the full gate set before it merge
 9. **Hygiene.** `matches_madhhab` required on ikhtilāf; positions on non-ikhtilāf cases agree with `expected`; a corrupt `.part` is discarded; `HTTPException` is retried and reported.
 
 Steps 1 and 2 come first: each can change a ruling. Step 3 next: it can certify a quotation its source qualifies.
+
+## Progress
+
+- Step 1 (PR-33): closed by PR #92, which also landed the interim position receipts of step 5 (PR-37, partly closed).
+- Step 2 (PR-34): the `searched` gate and the `tarjih_against_unproven` report; 103 entries pinned in `corpus/reconciliation/unsearched.json` until their searches are recorded.
