@@ -39,7 +39,7 @@ The owner's rule: the madhhab's position is not authoritative; a ruling is valid
 | weak | lightness of the ruling; the sensible ʿilla; fewer properties | «وهي ترجيحات ضعيفة», «ترجيح ضعيف» (Rawḍa p398–399), though al-Kawkab asserts lightness (p692) |
 | rejected | what wards off the ḥadd | «ولا يرجح المسقط للحد» (Rawḍa p396), though al-Kawkab gives it «عند الأكثر» (p689) |
 
-Which advantages decide is a `Policy`, itself formal, over their standing and their basis: `strict` (stated, asserted only), `sources` (stated, asserted or disputed: what a cited source holds as its own; the bank's default), `applying` (as `sources`, with the bank's applied advantages) and `all` (every recorded advantage). The policies are nested (`strict_le_sources`), the default leaves out exactly the weak and the rejected (`sources_false_iff`), and across tiers the policy is idle (`beats_policy_irrelevant`). Every weighed entry is guarded in Lean under all three, and `report.json` `policies` lists the furūʿ whose resolution changes under `strict` or `all`.
+Which advantages decide is a `Policy`, itself formal, over their standing and their basis: `strict` (stated, asserted only), `sources` (stated, asserted or disputed: what a cited source holds as its own; the bank's default), `applying` (as `sources`, with the bank's applied advantages) and `all` (every recorded advantage). The policies are nested (`strict_le_sources`), the default leaves out exactly the weak and the rejected (`sources_false_iff`), and across tiers the policy is idle (`beats_policy_irrelevant`). Every weighed entry is guarded in Lean under all four, and `report.json` `policies` lists the furūʿ whose resolution changes under `strict` or `all`.
 
 Proved in Lean: tarjīḥ never invents a ruling (`prevail_mem`), a position that cites no proof outweighs nothing whoever holds it (`beats_unproven`), a higher tier decides (`beats_of_tier`, `not_beats_of_tier`), and outweighing is asymmetric (`beats_asymm`).
 
@@ -57,7 +57,7 @@ In 2 of the 5 resolved furūʿ the proofs side with the madhhab's label; in the 
 
 ## The full weighing (2026-10-15)
 
-Every ledger entry is now weighed: 596 entries, 1,855 proofs, 14 advantages, in `weighing/pilot.json` and `weighing/batch-00…38.json`. Each batch was drafted by an agent under one rulebook, every excerpt verified at its page through any qualifier that follows it (`make source-verify`: 4,444 excerpts), and every qaṭʿī or ijmāʿ claim reviewed. No human has reviewed the weighing yet.
+Every ledger entry is now weighed: 596 entries, 1,855 proofs, 11 advantages, in `weighing/pilot.json` and `weighing/batch-00…38.json`. Each batch was drafted by an agent under one rulebook, every excerpt verified at its page through any qualifier that follows it (`make source-verify`: 4,467 excerpts on the required witnesses), and every qaṭʿī or ijmāʿ claim reviewed. No human has reviewed the weighing yet.
 
 | | By proof (`sources` policy) | By attribution (record) |
 |---|---|---|
@@ -72,7 +72,7 @@ Every ledger entry is now weighed: 596 entries, 1,855 proofs, 14 advantages, in 
 - **Stated and applied advantages** (`Usul.Tarjih.Basis`, after review): of the 11 advantages, 5 are *stated*, a source comparing the two proofs itself (e.g. «وهذا أخص من حديث أبي سعيد، فيقدم عليه»), and 6 are *applied*, the bank applying an uṣūl murajjiḥ to properties each proof shows where no source compares them. Both are kept; the default policy counts only the stated. A fourth policy, `applying`, also counts the applied: under it five furūʿ move from tawaqquf to tarjīḥ (q007.f001, q081.f002, q132.f003, q145.f005, q159.f027). In q132.f003 the applied saying-over-deed advantage would even reverse al-Mughnī's own preference, which rests on reading Abū Saʿīd's report as a qaḍiyyat ʿayn, a consideration not yet modelled.
 - **Policies:** nothing changes under `strict`; under `applying` and under `all` the five above. q159.f035's rejected advantage of warding off the ḥadd once moved it under `all` too, but it was applied between two qiyāsāt, outside its domain (audit PR-36), and now decides nothing.
 - **jamʿ:** none is refuted by the proofs. q037.f000 was at first: the weighing found no argued proof for Majd's side. Majd's own ground, Abū Bakr's «شرط منفعة الرهن باطل وهو رهن بحاله», reported by Ibn Rajab (v01:p047), was then added; qiyās against qiyās leaves the jamʿ standing.
-- **Residues by proof** (`report.json` `worklist`): 83, led by `two_usul_reinforced_governs` (8), `asl_zahir` (7), `heir_takes_deceased_right` (4) and `lots` (4).
+- **Residues by proof** (`report.json` `worklist`): 80, led by `two_usul_reinforced_governs` (8), `asl_zahir` (7), `heir_takes_deceased_right` (4) and `lots` (3).
 
 **Not modelled yet.** A proof the source cites only to rebut it (q067.f003 «ولا يصح», q096.f006 «وهذا ممنوع») is recorded as a proof; naqḍ and muʿāraḍa are a further layer. Tābiʿūn views have no tier and appear only in notes.
 

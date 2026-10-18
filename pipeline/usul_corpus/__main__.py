@@ -736,20 +736,32 @@ def cmd_oracle(_: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_fatawa_takhrij(_: argparse.Namespace) -> int:
-    """IslamQA cases for the bank's encoders: check them against the kernel and their answers, guard them in Lean."""
+def cmd_fatawa_takhrij(args: argparse.Namespace) -> int:
+    """IslamQA cases for the bank's encoders: check them against the kernel and their answers (where fetched, Git
+    LFS), and regenerate (or ``--check``) their Lean guards and report."""
     import gzip
 
     from . import fatawa_takhrij, takhrij
-    with gzip.open(ISLAMQA / "answers" / "islamqa-ar.jsonl.gz", "rt", encoding="utf-8") as f:
-        answers = {r["id"]: r for r in map(json.loads, f)}
     cases = fatawa_takhrij.load(CORPUS)
+    path = ISLAMQA / "answers" / "islamqa-ar.jsonl.gz"
+    answers = None
+    if not args.check or (path.exists() and path.stat().st_size > 1000):
+        with gzip.open(path, "rt", encoding="utf-8") as f:
+            answers = {r["id"]: r for r in map(json.loads, f)}
     if bad := fatawa_takhrij.check(cases, answers):
         print(json.dumps(bad, ensure_ascii=False, indent=1))
         return 1
-    (SIGNATURE_LEAN.parent / "FatawaTakhrij.lean").write_text(fatawa_takhrij.lean_file(cases), encoding="utf-8")
     rep = takhrij.report(cases) | {"banks": fatawa_takhrij.compare(CORPUS)}
-    _dump(CORPUS / "fatawa" / "takhrij" / "report.json", rep)
+    files = {SIGNATURE_LEAN.parent / "FatawaTakhrij.lean": fatawa_takhrij.lean_file(cases),
+             CORPUS / "fatawa" / "takhrij" / "report.json": json.dumps(rep, ensure_ascii=False, indent=2) + "\n"}
+    if args.check:
+        if stale := [str(p.relative_to(ROOT)) for p, c in files.items() if not p.exists() or p.read_text(encoding="utf-8") != c]:
+            print(f"fatawa-takhrij stale ({', '.join(stale)}): run python -m usul_corpus fatawa-takhrij", file=sys.stderr)
+            return 1
+    else:
+        for p, c in files.items():
+            p.parent.mkdir(parents=True, exist_ok=True)
+            p.write_text(c, encoding="utf-8")
     print(json.dumps({k: rep[k] for k in ("total", "coverage", "encoding_error", "classes")}, ensure_ascii=False))
     return 0
 
@@ -873,7 +885,9 @@ def parser() -> argparse.ArgumentParser:
     sub.add_parser("labels").set_defaults(run=cmd_labels)
     sub.add_parser("bank-review").set_defaults(run=cmd_bank_review)
     sub.add_parser("oracle").set_defaults(run=cmd_oracle)
-    sub.add_parser("fatawa-takhrij").set_defaults(run=cmd_fatawa_takhrij)
+    ft = sub.add_parser("fatawa-takhrij", help="check the IslamQA takhrīj tranches; regenerate or --check their Lean guards and report")
+    ft.add_argument("--check", action="store_true")
+    ft.set_defaults(run=cmd_fatawa_takhrij)
     sub.add_parser("fatawa-prolog").set_defaults(run=cmd_fatawa_prolog)
     jd = sub.add_parser("judgement", help="the types layer: each encoder's sort and question, guarded in Lean")
     jd.add_argument("--check", action="store_true", help="validate the types and their Lean guards without writing")
