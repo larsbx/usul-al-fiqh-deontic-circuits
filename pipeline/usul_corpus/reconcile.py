@@ -29,7 +29,7 @@ from .values import same as _same, distinct
 # Compatibility facade: callers retain these names while the pure kernel is isolated.
 from .reconciliation_kernel import (
     GRADES, RANK, MARKED, STAGES, TIERS, TIER_RANK, MURAJJIH, STANDING,
-    POLICIES, BASES, DEFAULT, top, favours, beats, weigh, support, prevail,
+    POLICIES, BASES, DEFAULT, DOMAIN, ADMITS, admits, top, favours, beats, weigh, support, prevail,
 )
 
 LEDGER = Path("reconciliation") / "ledger.json"
@@ -72,6 +72,14 @@ def unproven(case: dict, entry: dict) -> list[object]:
         return []
     ps = proved(case, entry)
     return [q for q in rulings(case) if top(ps, q) is None]
+
+
+def outside_domain(case: dict, entry: dict) -> list[dict]:
+    """Advantages between two proofs of one tier that their murajjiḥ cannot weigh (`Murajjih.admitsRank`): kept
+    as recorded, but they decide nothing under any policy."""
+    ps = proved(case, entry)
+    return [{"far": case["far"], "by": m, "tier": TIERS[t]} for w, l, m, _ in stated(case, entry)
+            if (t := top(ps, w)) is not None and t == top(ps, l) and not admits(m, t)]
 
 
 def won_against_unproven(case: dict, entry: dict) -> bool:
@@ -411,6 +419,7 @@ def report(cases: list[dict], ledger: dict) -> dict:
                 "count": sum(1 for e, c in rows if won_against_unproven(c, e)),
                 "against_reading": sum(1 for e, c in rows if won_against_unproven(c, e) and standing(c, e) == "against_reading"),
                 "unsearched": sum(1 for e, c in rows if won_against_unproven(c, e) and not str(e.get("searched", "")).strip())},
+            "advantages_outside_domain": [x for e, c in rows for x in outside_domain(c, e)],
             "jam_pending": jam_pending(cases, ledger),
             "policies": {pol: {"counts": sorted(POLICIES[pol][0]), "applied": POLICIES[pol][1],
                                "differs_from_default": sorted(c["far"] for e, c in rows

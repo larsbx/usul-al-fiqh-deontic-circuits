@@ -74,7 +74,7 @@ def test_all_reconciliation_comparisons_use_canonical_identity(a, b, monkeypatch
     e.update(far=c["far"], positions_sha256=position_receipts.digest(c))
     assert len(reconcile.rulings(c)) == 2
     assert reconcile.top([(a, "qiyas")], b) is None
-    assert not reconcile.favours([(a, b, "muttasil", "stated")], b, a)
+    assert not reconcile.favours([(a, b, "muttasil", "stated")], reconcile.TIER_RANK["zanni"], b, a)
     assert reconcile.weigh([a, b], [(a, "qiyas"), (b, "qiyas")], []) is None
     assert reconcile.prevail([(a, "nass"), (b, "nass")]) is None
     assert reconcile.support([(a, "nass")], b) == []
