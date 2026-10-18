@@ -2,7 +2,7 @@
 
 Source: [`formal/lean/Usul/Cat/Carriers.lean`](../../../../formal/lean/Usul/Cat/Carriers.lean)
 
-Lean, TLA+ and Haskell agree on one shared fragment: finitely many yes/no state variables. On that fragment each tool is an institution, and the translations between them are comorphisms whose model maps reach every model. So a check run in Haskell or TLA+ proves the matching Lean statement exactly, not approximately. Invariants are handled separately: they reduce to a propositional check at every state.
+Lean, TLA+ and Haskell agree on one shared fragment: finitely many yes/no state variables. On that fragment each tool is an institution, and the translations between them are comorphisms whose model maps reach every model. So a Haskell check of a compiled formula, or a TLA+ check at the initial state, proves the matching Lean statement exactly, not approximately. Invariants are handled separately: they reduce to a propositional check at every state.
 
 ## 1. Shared vocabulary
 

@@ -2,7 +2,7 @@
 
 Source: [`formal/lean/Usul/Cat/Institution.lean`](../../../../formal/lean/Usul/Cat/Institution.lean)
 
-The project checks claims in three tools: Lean, TLA+ and Haskell. Treating each as an institution makes precise when a check in one tool proves a claim stated in another. A translation always carries valid consequences forward. It carries them back, so the check is a proof, exactly when every source model arises from some target model.
+The project checks claims in three tools: Lean, TLA+ and Haskell. Treating each as an institution makes precise when a check in one tool proves a claim stated in another. A translation always carries valid consequences forward. It also carries them back, so the check is a proof, when every source model arises from some target model.
 
 ## 1. Institutions
 
@@ -33,4 +33,4 @@ Without the surjectivity condition, a pass in J only approximates the I-statemen
 
 ## In one line
 
-A check in another tool proves a claim exactly when the translation is a comorphism whose model map reaches every model of the original logic.
+A check in another tool proves a claim when the translation is a comorphism whose model map reaches every model of the original logic; otherwise it only approximates it.

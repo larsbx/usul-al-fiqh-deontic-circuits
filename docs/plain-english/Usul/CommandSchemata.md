@@ -43,7 +43,7 @@ Ibn al-Laḥḥām's rule 43 reports competing positions on what counts as a "co
 ## 5. Intended recommendation or permission (43.f007)
 
 - **`IntendedRuling`**: recommendation (mandūb) or permission (mubāḥ).
-- **`intendedUsage`**: how each of four reports names a command meant as recommendation or permission. Each report speaks only to the ruling it concerns; the other is unsettled.
+- **`intendedUsage`**: how each of four reports names a command meant as recommendation or permission. The Karkhī/Rāzī and Abū al-Barakāt reports each speak to one ruling only; for the other they stay unsettled.
 - **`intendedCommand`**: pairs that naming with the intended ruling.
 
 | Theorem | Plain English |
