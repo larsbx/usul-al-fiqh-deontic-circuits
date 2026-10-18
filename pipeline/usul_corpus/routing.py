@@ -7,9 +7,12 @@ the profile's heaviest words, and its bābs are the matn units nearest the profi
 lane B's share of retrieved units that are real cases measures them). So no agent picks
 keywords, and every lexicon word occurs in the encoder's evidence.
 
-Recall is measured, not assumed: cases are split into ``FOLDS`` by the hash of their record id, each
-fold is routed by a model fitted without it (the qawāʿid always stay in), and the share whose encoder
-is in the top k is compared with ranking encoders by case frequency. The out-of-domain report routes
+Recall is measured, not assumed, under three splits into ``FOLDS``, each fold routed by a model fitted
+without it and compared with ranking encoders by case frequency under the same split. The headline,
+``by_qaida``, folds whole qawāʿid, so no sibling of a test farʿ trains the model; the formalised qāʿida
+statements stay in, as they do when the index is used. ``within_qaida`` folds records, so siblings train
+the model (audit PR-38). ``unseen_qaida`` also holds out the qāʿida's statement: routing a farʿ of a
+qāʿida the bank has not formalised. The out-of-domain report routes
 the IslamQA tranche's questions, modern texts the profiles never saw. The index ranks candidates for
 annotation; it decides nothing, and a retrieved unit is a case only once annotated.
 """
@@ -103,11 +106,16 @@ def cases(corpus: Path) -> list[tuple[str, str, str]]:
                   if c["far"] in recs and c.get("routing_label", True))
 
 
-def qawaid(corpus: Path) -> list[tuple[str, str]]:
-    """(encoder, text) for every qāʿida an encoder formalises."""
+def _qawaid(corpus: Path) -> list[tuple[str, str, str]]:
+    """(id, encoder, text) for every qāʿida an encoder formalises."""
     enc = sorted(takhrij.ENCODERS.items())
     recs = _records(corpus, {q for _, e in enc for q in e["qawaid"]})
-    return [(name, _text(recs[q])) for name, e in enc for q in e["qawaid"] if q in recs]
+    return [(q, name, _text(recs[q])) for name, e in enc for q in e["qawaid"] if q in recs]
+
+
+def qawaid(corpus: Path) -> list[tuple[str, str]]:
+    """(encoder, text) for every qāʿida an encoder formalises."""
+    return [(e, t) for _, e, t in _qawaid(corpus)]
 
 
 def evidence(corpus: Path) -> list[tuple[str, str]]:
@@ -122,21 +130,35 @@ def _recall(hits: Counter, n: int) -> dict[str, float]:
     return {str(k): round(hits[k] / n, 4) for k in KS}
 
 
-def held_out(corpus: Path) -> dict:
-    """Recall@k of each case routed by a model fitted without its fold, against the frequency prior."""
-    cs, qs = cases(corpus), qawaid(corpus)
+def _qaida(far: str) -> str:
+    """The qāʿida a farʿ's record id names: `….q043.f005` → `….q043`."""
+    return far.rsplit(".", 1)[0]
+
+
+def _split(cs: list[tuple[str, str, str]], qs: list[tuple[str, str, str]], unit, statements: bool) -> dict:
+    """Recall@k of each case routed by a model fitted without its fold (cases folded by `unit` of their id;
+    the qāʿida statements kept, or folded by their own id), against the frequency prior of the same split."""
     hits, prior = Counter(), Counter()
     for f in range(FOLDS):
-        train = [(e, t) for i, e, t in cs if _fold(i) != f]
-        model = Model.fit(qs + train)
+        train = [(e, t) for i, e, t in cs if _fold(unit(i)) != f]
+        model = Model.fit([(e, t) for i, e, t in qs if statements or _fold(i) != f] + train)
         freq = [e for e, _ in sorted(Counter(e for e, _ in train).items(), key=lambda x: (-x[1], x[0]))]
         for i, e, t in cs:
-            if _fold(i) == f:
+            if _fold(unit(i)) == f:
                 ranked = model.rank(t)
                 for k in KS:
                     hits[k] += e in ranked[:k]
                     prior[k] += e in freq[:k]
-    return {"cases": len(cs), "folds": FOLDS, "held_out": _recall(hits, len(cs)), "prior": _recall(prior, len(cs))}
+    return {"recall": _recall(hits, len(cs)), "prior": _recall(prior, len(cs))}
+
+
+def held_out(corpus: Path) -> dict:
+    """Recall under each split; `by_qaida` is the headline (audit PR-38)."""
+    cs, qs = cases(corpus), _qawaid(corpus)
+    return {"cases": len(cs), "folds": FOLDS,
+            "by_qaida": _split(cs, qs, _qaida, True),
+            "within_qaida": _split(cs, qs, str, True),
+            "unseen_qaida": _split(cs, qs, _qaida, False)}
 
 
 def _babs(corpus: Path) -> list[dict]:
