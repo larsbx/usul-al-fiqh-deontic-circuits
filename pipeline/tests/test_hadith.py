@@ -7,6 +7,7 @@ from pathlib import Path
 
 import jsonschema
 import pytest
+from witnesses import cached
 
 from usul_corpus.__main__ import CACHE, SCALE_LEAN, hadith_lean_names, signature_lean
 from usul_corpus.arabic import letters, locate
@@ -43,9 +44,7 @@ def test_refs_within_the_work_and_its_rights(scale, item):
 @pytest.mark.parametrize("scale,item", ITEMS, ids=lambda x: x.get("id") or str(x.get("n")))
 def test_excerpts_are_verbatim(scale, item):
     w, loc = _witness(item["ref"])
-    src = CACHE / f"{w}.txt"
-    if not src.exists():
-        pytest.skip(f"{w} not cached")
+    src = cached(w)
     assert locate(src.read_text(encoding="utf-8"), item["excerpt_ar"]) == loc
 
 
@@ -88,9 +87,7 @@ def test_class_matches_kernel(c):
 @pytest.mark.parametrize("c", CASES, ids=lambda c: f"daifa-{c['n']}")
 def test_daifa_excerpts_are_verbatim(c):
     w, loc = _witness(c["ref"])
-    src = CACHE / f"{w}.txt"
-    if not src.exists():
-        pytest.skip(f"{w} not cached")
+    src = cached(w)
     assert locate(src.read_text(encoding="utf-8"), c["excerpt_ar"]) == loc
 
 
@@ -116,9 +113,7 @@ def test_rulings_only_on_qarina_cases(c):
 
 @pytest.mark.parametrize("c", [c for c in CASES if "rulings" in c], ids=lambda c: f"daifa-{c['n']}")
 def test_rulings_are_quoted_verbatim(c):
-    src = CACHE / "shamela-12762.txt"
-    if not src.exists():
-        pytest.skip("al-Ḍaʿīfa not cached")
+    src = cached("shamela-12762")
     text = letters(src.read_text(encoding="utf-8"))
     assert all(letters(r["said_ar"]) in text for r in c["rulings"])
 
@@ -131,9 +126,7 @@ def test_tranches_are_contiguous():
 
 def test_irwa_audit_is_reproducible():
     """H0: the committed al-Irwāʾ audit is what the reader derives from the pinned witness."""
-    src = CACHE / "shamela-22592.txt"
-    if not src.exists():
-        pytest.skip("al-Irwāʾ not cached")
+    src = cached("shamela-22592")
     committed = json.loads((ROOT / "corpus/hadith/irwa_audit.json").read_text(encoding="utf-8"))
     assert hadith.irwa_audit(src.read_text(encoding="utf-8")) == committed
 
@@ -154,9 +147,7 @@ REVIEW = json.loads((ROOT / "corpus/hadith/irwa_join_review.json").read_text(enc
 
 
 def _join_inputs():
-    src = CACHE / "shamela-22592.txt"
-    if not src.exists():
-        pytest.skip("al-Irwāʾ not cached")
+    src = cached("shamela-22592")
     records = [json.loads(l) for p in sorted((ROOT / "corpus/records").glob("*.jsonl"))
                for l in p.read_text(encoding="utf-8").splitlines()]
     proposals = json.loads((ROOT / "corpus/proposals/sadi_qawaid.json").read_text(encoding="utf-8"))

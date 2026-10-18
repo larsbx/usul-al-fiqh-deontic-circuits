@@ -177,6 +177,13 @@ def test_negated_parenthesised_footnote_anchors_are_markup():
         assert gate.check_quote(text, quote, "v03:p1011") is None
 
 
+def test_a_parenthesised_zero_is_an_editorial_placeholder():
+    """Ibn Ḥajar's Taʿrīf marks each rank «الاولى (0) من …»; the excerpt quotes the words, and a real numeral counts."""
+    text = "# على خمس مراتب (0) الاولى (0) من لم يوصف بذلك الا نادرا\nPageV01P013\n# في 3 مواضع\nPageV01P014\n"
+    assert gate.check_quote(text, "الاولى من لم يوصف بذلك الا نادرا", "v01:p013") is None
+    assert "absent" in gate.check_quote(text, "في 4 مواضع", "v01:p014")
+
+
 def test_page_break_does_not_hide_a_qualifier():
     text = "# هذا الحكم ثابت\nPageV01P001\n# إلا عند الضرورة\nPageV01P002\n"
     assert "qualifier" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p001")
@@ -304,3 +311,21 @@ def test_foundation_witnesses_are_required(fixture):
     report = gate.verify(corpus, cache)
     assert report["status"] == "failed"
     assert any(e.startswith("foundation-source:") for e in report["errors"])
+
+
+def test_dossier_and_hadith_text_witnesses_are_required(fixture):
+    """Audit PR-40: the dossier's and the ḥadīth methodology's verbatim checks skipped in CI. Their text
+    witnesses are now required; a DOC or PDF witness stays excluded until its text derivation is pinned."""
+    corpus, cache = fixture
+    registry = json.loads((corpus / "registry.json").read_text())
+    base = registry["works"][0]["witnesses"][0]
+    registry["works"][0]["witnesses"] += [{**base, "id": "dossier-text"}, {**base, "id": "hadith-text"},
+                                          {**base, "id": "dossier-doc", "format": "doc"}]
+    (corpus / "registry.json").write_text(json.dumps(registry))
+    (corpus / "dossier").mkdir()
+    (corpus / "dossier/terms.json").write_text(json.dumps({"refs": [
+        {"ref": "src:dossier-text/v01:p001"}, {"ref": "src:dossier-doc#F01"}]}))
+    (corpus / "hadith").mkdir()
+    (corpus / "hadith/scales.json").write_text(json.dumps({"items": [{"ref": "src:hadith-text/v02:p003"}]}))
+    required = gate.required_witnesses(corpus)
+    assert {"dossier-text", "hadith-text"} <= required and "dossier-doc" not in required
