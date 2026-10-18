@@ -12,6 +12,7 @@ Every Lean module under `formal/lean/` has a plain-English companion here, at th
 | `Usul.Cat.Carriers` | [Usul/Cat/Carriers.md](Usul/Cat/Carriers.md) | [doc](https://claude.ai/code/artifact/19bfc2ed-0683-44d4-b814-d83a6bee0dcb) |
 | `Usul.Cat.Factor` | [Usul/Cat/Factor.md](Usul/Cat/Factor.md) | [doc](https://claude.ai/code/artifact/0a0d9669-2526-4689-8268-957d58f6a0bc) |
 | `Usul.Cat.Institution` | [Usul/Cat/Institution.md](Usul/Cat/Institution.md) | [doc](https://claude.ai/code/artifact/da69b13c-c1fb-4603-8005-7419cbe340f5) |
+| `Usul.Cat.Interval` | [Usul/Cat/Interval.md](Usul/Cat/Interval.md) | pending |
 | `Usul.Cat.Scales` | [Usul/Cat/Scales.md](Usul/Cat/Scales.md) | [doc](https://claude.ai/code/artifact/febfa233-e3e7-4e62-b7dd-84b91d2fc7a9) |
 | `Usul.Cat.Sheaf` | [Usul/Cat/Sheaf.md](Usul/Cat/Sheaf.md) | [doc](https://claude.ai/artifact/Uqh9bDpmnxfZaEAXyVa8Ke) |
 | `Usul.Cat.Typing` | [Usul/Cat/Typing.md](Usul/Cat/Typing.md) | [doc](https://claude.ai/code/artifact/9efc5186-5110-41ec-9829-3cacb793c018) |
@@ -102,6 +103,7 @@ Every Lean module under `formal/lean/` has a plain-English companion here, at th
 | `UsulTest.GroundedStress` | [UsulTest/GroundedStress.md](UsulTest/GroundedStress.md) | [doc](https://claude.ai/code/artifact/2db228a3-3d91-47b9-9055-c586d41cf61c) |
 | `UsulTest.GroundedVectors` | [UsulTest/GroundedVectors.md](UsulTest/GroundedVectors.md) | [doc](https://claude.ai/code/artifact/8ed4410c-e599-46fb-9489-d0a8c614e0ef) |
 | `UsulTest.Institutions` | [UsulTest/Institutions.md](UsulTest/Institutions.md) | [doc](https://claude.ai/code/artifact/73cb2d47-cce9-44d7-ac5d-a79426e6a219) |
+| `UsulTest.Interval` | [UsulTest/Interval.md](UsulTest/Interval.md) | pending |
 | `UsulTest.Judgement` | [UsulTest/Judgement.md](UsulTest/Judgement.md) | [doc](https://claude.ai/code/artifact/26403a76-688f-4f69-8929-258fa5e33683) |
 | `UsulTest.KernelContracts` | [UsulTest/KernelContracts.md](UsulTest/KernelContracts.md) | [doc](https://claude.ai/code/artifact/a5db3444-5ce0-4ab8-90aa-3ee6a5b68a71) |
 | `UsulTest.M8Tranche3` | [UsulTest/M8Tranche3.md](UsulTest/M8Tranche3.md) | [doc](https://claude.ai/code/artifact/21d405bc-8fef-4519-bc91-82aab37f578d) |

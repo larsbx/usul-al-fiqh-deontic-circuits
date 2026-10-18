@@ -45,6 +45,16 @@ The five rulings of obligation (al-ḥukm al-taklīfī) form a scale from forbid
 | `σ_swaps_mode` | Omission swaps "demand to do" with "demand to refrain" and leaves choice as choice. |
 | `σ_preserves_binding` | Omission keeps bindingness: a binding demand to act is a binding prohibition on leaving it. |
 
+## 4. Limits of the scale
+
+- **Ordinal only.** The 0–4 score supports comparison and the mirror 4 − score, nothing else. Sums and averages of scores mean nothing.
+- **Two contested readings in σ.**
+  - σ(mandūb) = makrūh treats leaving a recommended act as disliked. Later Shāfiʿīs call this khilāf al-awlā (not the better course), distinct from the makrūh.
+  - σ models the omission (tark), while the maxim speaks of the contrary (ḍidd). An act can have several contraries.
+- **Positions that fix a range** («يجوز», a command of disputed strength) are handled in `Usul.Cat.Interval`.
+
+See `docs/architecture/hukm-interval-verdicts.md`.
+
 ## In one line
 
 The five rulings sit on a 0–4 scale, omission mirrors that scale (4 − score), only mubāḥ is its own mirror, and (mode, bindingness) identifies every ruling uniquely.

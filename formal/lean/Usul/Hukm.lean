@@ -7,6 +7,12 @@ Source: Ibn ʿUthaymīn, *al-Uṣūl min ʿIlm al-Uṣūl* — the ḥukm is
 
 The partition is read as a *valence* scale, and the status of an act's omission is
 given by the involution `σ` (*al-amr bi'l-shayʾ nahy ʿan ḍiddih*).
+
+The scale is ordinal: only comparisons of `valence` mean anything, never sums or averages. Two
+readings are built into `σ` and are contested: `σ mandub = makruh` sets aside khilāf al-awlā,
+which later Shāfiʿīs distinguish from the makrūh, and `σ` models the omission (tark) where the
+maxim speaks of the contrary (ḍidd), of which an act may have several. See
+`docs/architecture/hukm-interval-verdicts.md`.
 -/
 
 namespace Usul

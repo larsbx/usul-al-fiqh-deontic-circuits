@@ -21,5 +21,6 @@ import UsulTest.Judgement
 import UsulTest.EncoderTypes
 import UsulTest.Cat
 import UsulTest.Obstructions
+import UsulTest.Interval
 import UsulTest.TaklifBehaviour
 import UsulTest.Institutions

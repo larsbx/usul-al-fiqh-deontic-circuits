@@ -52,6 +52,10 @@ Take a single case, the farʿ (the new case being derived), as a site with one s
 
 In the field's terms: a case has a single settled ruling exactly when there is no ikhtilāf over it. When there is, the checker returns the conflicting positions by name.
 
+## 6. Positions that fix a range
+
+Every section here gives exactly one ruling. Many positions fix less: «يجوز» says only "not ḥarām". Forcing such a position to one ruling produces disagreements the sources never had. `Usul.Cat.Interval` glues ranges of rulings instead, treats tawaqquf (suspension) as a gap, and finds exactly what this module finds when every range is a single ruling.
+
 ## In one line
 
 Rulings from different sources combine exactly when they agree wherever they overlap. When they don't, ikhtilāf is a specific pair of positions at a specific situation, and for finite cases a program lists every such pair, with a proof that the list is right.
