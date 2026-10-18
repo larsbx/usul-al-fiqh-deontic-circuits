@@ -113,3 +113,17 @@ def test_every_active_source_entry_is_bound_before_resolution():
             assert receipts.errors(cases[entry["far"]], entry) == []
             count += 1
     assert count == 1192
+
+
+def test_the_audited_reversal_cannot_reach_a_resolution(monkeypatch):
+    """Audit PR-37: reversing every two-position case at once changed 224 resolutions, 221 in cases `check`
+    accepted. Every ledger and weighing entry now carries its case's ordered-position receipt, so the reversed
+    bank does not load at all."""
+    cases = takhrij.load(ROOT / "corpus")
+    reversed_ = [c for c in cases if len(c.get("positions") or []) == 2]
+    assert len(reversed_) > 500
+    for c in reversed_:
+        c["positions"].reverse()
+    monkeypatch.setattr(reconcile.takhrij, "load", lambda _: cases)
+    with pytest.raises(ValueError, match="positions receipt mismatch"):
+        reconcile.load(ROOT / "corpus")
