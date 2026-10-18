@@ -47,3 +47,4 @@ Steps 1 and 2 come first: each can change a ruling. Step 3 next: it can certify 
 - Step 5 (PR-37): delivered by PR #92's position receipts; a regression test pins the audit's reversal.
 - Step 6 (PR-38): qāʿida-grouped routing recall is the headline, with within-qāʿida and unseen-qāʿida splits and each split's prior.
 - Step 7 (PR-39): stale figures corrected from the reports; `make generated` checks the fatawā takhrīj report and the type-aware routing report.
+- Step 9 (hygiene): `matches_madhhab` required on every ikhtilāf; a derivable case's in-domain positions agree with its expected ruling; a `.part` checkpoint cut short resumes from its last whole page; `http.client.HTTPException` is retried, then reported as a `ConnectionError` the source gate records.

@@ -146,3 +146,19 @@ def test_the_case_schema_admits_unit_ids():
     import re
     assert all(re.search(pattern, i) for i in ("a.b.q001.f001", "a.b.qa00001", "a.b.m00001", "a.b.b00001"))
     assert not re.search(pattern, "a.b.q001")
+
+
+def test_an_ikhtilaf_states_whether_it_matches_the_madhhab_and_a_derivable_case_agrees_with_its_positions():
+    """Audit (low): `matches_madhhab` was optional on an ikhtilāf, and a derivable case could carry positions
+    disagreeing with its expected ruling. An explicit range gap (`outside`) is not a competing ruling."""
+    unknown = {"entitled_known": False, "divisible": False, "confusion_category": False}
+    two = [{"who": "a", "ruling": "lot"}, {"who": "b", "ruling": "divide"}]
+    ikh = _case("genuine_ikhtilaf", unknown, "lot", positions=two, matches_madhhab=True)
+    assert takhrij.check_case(ikh) == []
+    assert "an ikhtilāf states matches_madhhab (true or false)" in takhrij.check_case(
+        {k: v for k, v in ikh.items() if k != "matches_madhhab"})
+    der = _case("derivable", unknown, "lot", positions=[{"who": "a", "ruling": "lot"}])
+    assert takhrij.check_case(der) == []
+    assert takhrij.check_case({**der, "positions": two}) == ["position 1's ruling disagrees with a derivable case's expected ruling"]
+    gap = {**der, "positions": [{"who": "a", "ruling": "lot"}, {"who": "b", "ruling": "by agreement", "outside": "not an output"}]}
+    assert takhrij.check_case(gap) == []
