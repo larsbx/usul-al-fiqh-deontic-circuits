@@ -9,6 +9,7 @@ from __future__ import annotations
 import contextlib
 import hashlib
 import html
+import http.client
 import json
 import re
 import time
@@ -67,24 +68,50 @@ def next_page_id(page_html: str) -> int | None:
 
 
 def _get(url: str, backoff: tuple[int, ...] = (2, 4, 8, 16)) -> bytes:
-    """GET with exponential backoff on transient failures: 5xx, network errors, timeouts and
-    connection resets (a reset mid-book used to abort an hours-long Shamela fetch)."""
+    """GET with exponential backoff on transient failures: 5xx, network errors, timeouts, connection
+    resets (a reset mid-book used to abort an hours-long Shamela fetch) and a response cut short
+    (`http.client.IncompleteRead`), which is reported as a `ConnectionError` once the retries run out."""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             return r.read()
-    except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+    except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException) as e:
         transient = not isinstance(e, urllib.error.HTTPError) or e.code >= 500
         if not (transient and backoff):
+            if isinstance(e, http.client.HTTPException):
+                raise ConnectionError(f"{url}: {e!r}") from e
             raise
         time.sleep(backoff[0])
         return _get(url, backoff[1:])
 
 
+def _checkpoint_line(md: str, next_page: int | None) -> str:
+    return json.dumps({"md": md, "next": next_page}, ensure_ascii=False) + "\n"
+
+
+def _checkpoint(part: Path | None) -> list[dict]:
+    """The pages a checkpoint holds, up to its first unreadable line: a write cut short leaves a broken
+    tail, which is discarded (and the file truncated to the whole pages) so the walk resumes after them."""
+    if not (part and part.exists()):
+        return []
+    raw, done = part.read_bytes().split(b"\n"), []
+    for line in raw:
+        try:
+            d = json.loads(line.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            break
+        if not (isinstance(d, dict) and isinstance(d.get("md"), str) and "next" in d and (d["next"] is None or type(d["next"]) is int)):
+            break
+        done.append(d)
+    if len(done) != len([l for l in raw if l]):
+        part.write_text("".join(_checkpoint_line(d["md"], d["next"]) for d in done), encoding="utf-8")
+    return done
+
+
 def _shamela(w: dict, max_pages: int | None, part: Path | None = None) -> bytes:
     """Walk the reader page by page. With `part`, each page is checkpointed as one JSON line
     (markdown + next page id), so an interrupted fetch resumes where it stopped."""
-    done = [json.loads(l) for l in part.read_text(encoding="utf-8").splitlines()] if part and part.exists() else []
+    done = _checkpoint(part)
     out = [d["md"] for d in done]
     page: int | None = done[-1]["next"] if done else w.get("pages", [1])[0]
     with (part.open("a", encoding="utf-8") if part else contextlib.nullcontext()) as log:
@@ -93,7 +120,7 @@ def _shamela(w: dict, max_pages: int | None, part: Path | None = None) -> bytes:
             out.append(shamela_page_to_markdown(body))
             page = next_page_id(body)
             if log:
-                log.write(json.dumps({"md": out[-1], "next": page}, ensure_ascii=False) + "\n")
+                log.write(_checkpoint_line(out[-1], page))
                 log.flush()
             time.sleep(SHAMELA_DELAY_S)
     return ("#META#Header#End#\n" + "\n".join(out) + "\n").encode()

@@ -15,7 +15,7 @@ from collections import Counter
 from pathlib import Path
 
 from .shards import encoder_shards, merge_encoders
-from .values import code, among
+from .values import code, among, same
 
 B = (False, True)
 GRADES = ("wahm", "shakk", "zann", "qat")
@@ -548,6 +548,12 @@ def check_case(case: dict) -> list[str]:
             errs.append("class contradicts the kernel's output")
     if case["class"] == "genuine_ikhtilaf" and len(case.get("positions") or []) < 2:
         errs.append("ikhtilāf needs at least two positions")
+    if case["class"] == "genuine_ikhtilaf" and type(case.get("matches_madhhab")) is not bool:
+        errs.append("an ikhtilāf states matches_madhhab (true or false)")
+    if case["class"] == "derivable":
+        errs += [f"position {i}'s ruling disagrees with a derivable case's expected ruling"
+                 for i, p in enumerate(case.get("positions") or [])
+                 if "outside" not in p and not same(p["ruling"], case.get("expected"))]
     elif case["class"] == "genuine_ikhtilaf" and not errs and not among(case.get("expected"),
                                                                          [p["ruling"] for p in case["positions"]]):
         errs.append("no position holds the expected ruling")
