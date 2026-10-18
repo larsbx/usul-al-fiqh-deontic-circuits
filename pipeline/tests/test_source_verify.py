@@ -212,6 +212,18 @@ def test_a_quotation_starts_and_ends_on_word_boundaries():
     assert gate.check_quote(LA_TEXT, "قال لا يجوز البيع إلا بالقبض", "v01:p001") is None
 
 
+def test_markup_inside_a_word_is_not_a_word_boundary():
+    """Review (#95): a page marker inside a word must not let a quotation start or end there."""
+    assert gate.check_quote("# قال الPageV01P001بيع جائز\nPageV01P002\n", "بيع جائز", "v01:p002") == "quotation starts mid-word"
+    assert gate.check_quote("# قال البيPageV01P001ع جائز\nPageV01P002\n", "قال البي", "v01:p001") == "quotation ends mid-word"
+
+
+def test_a_quotation_wholly_in_presentation_forms_is_not_empty():
+    """Review (#95): emptiness is judged on the key, after presentation forms unfold."""
+    assert gate.check_quote("# ﻗﺎﻝ ﻻ ﻳﺠﻮﺯ\nPageV01P001\n", "ﻗﺎﻝ ﻻ ﻳﺠﻮﺯ", "v01:p001") is None
+    assert gate.check_quote(LA_TEXT, "12", "v01:p001") == "empty Arabic quotation"
+
+
 @pytest.mark.parametrize("tail", ["الا عند الضرورة", "- لكن قال الموفق", "«إلا عند الضرورة»", "— إلا عند الضرورة",
                                   "غير ان الموفق قال", "اذا لم يضطر"])
 def test_a_qualifier_is_found_across_hamza_dashes_and_quotation_marks(tail):

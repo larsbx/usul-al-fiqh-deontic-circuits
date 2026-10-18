@@ -43,8 +43,9 @@ _NEGATION = re.compile(r"(?<![ء-ي])(لا|لم|لن|ليس|ليست|ما|غير
 
 
 def _plain(s: str) -> str:
-    """Witness text as read: markup to spaces, diacritics and invisibles gone, presentation forms unfolded."""
-    return "".join(map(arabic._unfold, arabic._INVISIBLE.sub("", arabic._DIACRITICS.sub("", _MARKUP.sub(" ", s)))))
+    """Witness text as read: markup, diacritics and invisibles gone (so markup inside a word leaves it whole;
+    the text's own whitespace separates words), presentation forms unfolded."""
+    return "".join(map(arabic._unfold, arabic._INVISIBLE.sub("", arabic._DIACRITICS.sub("", _MARKUP.sub("", s)))))
 
 
 def _edge(text: str, start: int, end: int) -> str | None:
@@ -72,11 +73,11 @@ def check_quote(text: str, excerpt: str, locator: str) -> str | None:
     a word boundary, keep a negation just before it, and not stop before a
     qualifier: markup cannot hide any of these.
     """
-    if not arabic.letters(excerpt):
+    needle = arabic.quote_key(excerpt)
+    if not re.search("[ء-ي]", needle):
         return "empty Arabic quotation"
     if bad := arabic.stray(excerpt):
         return f"letters outside the quotation key: {bad}"
-    needle = arabic.quote_key(excerpt)
     text, indices, flat = arabic._indexed(text)
     start = flat.find(needle)
     found = []
