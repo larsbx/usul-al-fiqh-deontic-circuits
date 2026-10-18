@@ -2283,9 +2283,14 @@
    ],
    "refs": [
     {
-     "ref": "src:shamela-9942/v01:p080",
-     "excerpt_ar": "وجب العمل بكل منهما فيما لا يتعارضان فيه، والتوقف في الصورة التي يتعارضان فيها.",
-     "note": "Ibn ʿUthaymīn."
+     "ref": "src:shamela-9942/v01:p081",
+     "excerpt_ar": "والتوقف في الصورة التي يتعارضان فيها. لكن لا يمكن التعارض بين النصوص في نفس الأمر على وجه لا يمكن فيه الجمع، ولا النسخ، ولا الترجيح",
+     "note": "Ibn ʿUthaymīn: suspension where two general texts conflict, with his qualification that follows."
+    },
+    {
+     "ref": "src:shamela-9942/v01:p081",
+     "excerpt_ar": "لأن النصوص لا تتناقض، والرسول صلّى الله عليه وسلّم قد بيّن وبلّغ، ولكن قد يقع ذلك بحسب نظر المجتهد لقصوره.",
+     "note": "Ibn ʿUthaymīn: the conflict is in the mujtahid's view, not in the texts."
     },
     {
      "ref": "src:openiti-rajab-shamela21730/v01:p019",
