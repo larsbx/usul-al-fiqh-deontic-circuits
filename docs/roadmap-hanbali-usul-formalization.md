@@ -65,17 +65,18 @@ Lean, Prolog and generated-output CI remain integration gates.
 ### Semantic tagging development follow-up (2026-10-19)
 
 [PR #72](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/72)
-merged on 2026-10-14. Its first authored batch is now on `main`; implementation
-merge does not promote the interpretations to reviewed facts. The committed
+merged on 2026-10-14. Its first 12 authored records are preserved unchanged. The
+2026-10-19 continuation adds a candidate pass for the other 41 question IDs;
+integration does not promote the interpretations to reviewed facts. The committed
 [development report](../corpus/fatawa/semantic-propositions-report.json) records:
 
 | Development scope | Current state |
 |---|---|
 | Distinct questions behind 123 IslamQA cases | 53 |
-| Questions annotated / remaining | 12 / 41 |
-| Act-relative propositions / candidate roles | 21 / 72 |
-| Proposed bank mappings | 13, all on hold |
-| Candidate typed fact values | 1, unreviewed (`trust_loss.hand = trustee`, question 4652) |
+| Questions with an initial candidate pass / without one | 53 / 0 |
+| Act-relative propositions / candidate roles | 365 / 1,074 |
+| Proposed bank mappings | 58, all on hold |
+| Candidate typed fact values | 2, unreviewed (`trust_loss.hand = trustee`, questions 4652 and 152192) |
 | New kernel executions | 0 |
 | Semantic accuracy / retrieval improvement | Unmeasured |
 
@@ -85,25 +86,33 @@ Editorial titles cannot supply factual evidence; actors, negation and hypothetic
 branches cannot be pooled to fill a fact map. These checks establish source and
 structural integrity, not the correctness of an interpretation. In particular,
 four years of possessing a found watch does not establish the bank's required
-year of public announcement.
+year of public announcement. All-question coverage is not a claim of exhaustive
+segmentation: question 13717 is a general request without a concrete deposit
+event, and reported claims or hypothetical events do not become established facts.
 
 **Next work, within the existing source/interpretation/admission boundaries:**
 
-1. Complete candidate propositions for the remaining 41 questions, preserving
-   distinct actors, acts, scope, conditions, polarity and modality. Keep absent
-   facts unknown and regenerate the report with the pinned source available.
+1. Audit segmentation completeness and scope across all 53 candidate-annotated
+   questions, including the original 12. Preserve distinct actors, acts,
+   conditions, polarity and modality; use each new record's `review_note` as an
+   advisory review prompt. The initial pass for the remaining 41 is complete;
+   completeness and correctness of its interpretations remain unreviewed.
 2. Independently review the authored propositions and field-specific entailment
    rationales. Record corrections and missing evidence before admitting any
    complete typed fact map; merging code or documentation is not that review.
 3. Evaluate semantic tags, typed facts, encoder retrieval and kernel agreement
    separately. Preserve all subcases of a question in the same split and freeze a
-   different modern question-held-out set before tuning. These 53 published
-   questions are development data, not a fresh blind test.
+   different modern question-held-out set before tuning; also check near-duplicate
+   questions for leakage. These 53 published questions are development data,
+   not a fresh blind test.
 
-The October 14 record of 58 focused tests plus one type-export consistency test,
-and deterministic generation checks, is prior validation evidence; this planning
-update does not rerun them. Historical retrieval figures, the verified original
-lexical replay and later candidate routing experiments remain separate evidence
+The October 19 continuation reverified the complete Arabic archive's size and
+SHA-256, passed 58 focused tests, and passed both source-backed deterministic
+generation checks. Corpus schema/registry validation also passes. The expanded
+workset test rejects any attempted development kernel execution. The October 14
+type-export consistency result remains prior evidence; no new formal-kernel proof
+run is claimed. Historical retrieval figures, the verified original lexical replay
+and later candidate routing experiments remain separate evidence
 records. This annotation batch supplies no new retrieval score and does not
 overturn the signature proxy's zero-weight selection. The separate typed-situation
 routing experiments must not be attributed to this question-body annotation batch.
@@ -514,4 +523,3 @@ semantic-categorical-oracle/
 - **Proof debt:** zero `sorry` on `main` for completed milestones.
 - **Differential parity:** Lean ↔ Haskell disagreements = 0 on the fixture corpus.
 - **Provenance:** 100% of accepted records resolve to a pinned-edition locator.
-
