@@ -26,9 +26,9 @@ This layer does four things:
 
 - **Every case.** Each of the 1,216 annotated takhrīj cases from Ibn Rajab and Ibn al-Laḥḥām has exactly one primary maḥall. `term_ar` names it and is an exact substring of the case. Optionally, up to two secondary maḥalls are given (`also`).
 - **One tree.** Each label has a kind and a broader label. It reaches, within 16 steps, the bāb its id names.
-- **Defined, verbatim.** Each label is either anchored or `unanchored` with a reason. An anchored label carries 1–3 nuṣūṣ, each checked against its witness:
+- **Defined, verbatim.** Each label is either anchored or `unanchored` with a reason. An anchored label carries one or more nuṣūṣ (merged labels keep every shard's, up to six), each of two words to 200 characters, checked against its witness:
   - **Qurʾān:** letters-only, inside the cited āya of the Tanzil text (`#Qsss:aaa`).
-  - **Sunnah or athar:** at least three words, somewhere in the cited collection: al-Bukhārī, Muslim, Abū Dāwūd, al-Tirmidhī, al-Nasāʾī or Ibn Mājah.
+  - **Sunnah or athar:** letters-only, somewhere in the cited collection: al-Bukhārī, Muslim, Abū Dāwūd, al-Tirmidhī, al-Nasāʾī or Ibn Mājah.
   - **Ijmāʿ:** a passage of al-Mughnī that states the agreement («أجمع», «لا خلاف», «لا نعلم … خلافا», …).
 - The witnesses are those `source_verify.required_witnesses` names, so CI fetches them and a missing one fails rather than skips.
 - **No excerpt stops before a qualifier** (`test_witness_integrity`, PR-07). 22 excerpts first stopped just before an exception or condition; each was extended through it, e.g. «فثمرتها للبائع إلا أن يشترط المبتاع» and «فنصف ما فرضتم إلا أن يعفون». One al-Tirmidhī duplicate was dropped: every stopping point in it precedes «ألا», which the gate reads as «إلا».

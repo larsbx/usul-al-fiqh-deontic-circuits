@@ -22,6 +22,11 @@ def test_alpha_is_one_on_agreement_and_below_zero_on_systematic_disagreement():
     assert ag.alpha([(F("a"), F("b")), (F("b"), F("a"))]) < 0
 
 
+def test_alpha_without_variation_is_full_accord():
+    assert ag.alpha([(F("a"), F("a")), (F("a"), F("a"))]) == 1
+    assert ag.alpha([(F(), F()), (F(), F())]) == 1
+
+
 def test_a_type_touches_the_qawaid_its_statement_cites():
     export = ("qaida_type(sadi32, 'al-Saʿdī Q32 «…»; Ibn Rajab 75 «…»').\n"
               "type_field(sadi32, returns, 'Option Bool').\nqaida_type(amana, '').\ntype_field(amana, held, 'Option Bool').\n")

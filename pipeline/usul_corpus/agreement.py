@@ -33,11 +33,12 @@ def masi(a: frozenset, b: frozenset) -> float:
 
 
 def alpha(pairs: list[tuple[frozenset, frozenset]]) -> float:
-    """Krippendorff's α for two coders over every unit, with the MASI distance."""
+    """Krippendorff's α for two coders over every unit, with the MASI distance. With no variation
+    at all (every set the same), α is undefined; it is taken as 1, the coders being in full accord."""
     vals = [v for p in pairs for v in p]
     observed = sum(masi(a, b) for a, b in pairs) / len(pairs)
     expected = sum(masi(a, b) for a, b in itertools.permutations(vals, 2)) / (len(vals) * (len(vals) - 1))
-    return 1 - observed / expected
+    return 1.0 if expected == 0 else 1 - observed / expected
 
 
 class Qawaid:
