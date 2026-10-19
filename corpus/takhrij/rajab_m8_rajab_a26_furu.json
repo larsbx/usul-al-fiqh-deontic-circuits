@@ -1,0 +1,594 @@
+{
+  "suite": "m8_rajab_rajab_a26",
+  "status": "candidate",
+  "provenance": "Shard rajab-a26 (lane A): every farʿ record of Ibn Rajab's qawāʿid 13 and 23, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA26). Both are typological (ṣuwar, and for q23 two anwāʿ); each record is annotated for its leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f000",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "najis: the change is referred to the najāsa known to have fallen in, the aṣl being that nothing else changed it (the aṣḥāb, «فإنه يحكم بنجاسته عند الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "ṭāhir: a wajh some later scholars derived by takhrīj from the ṣayd farʿ («وخرج بعض المتأخرين فيه وجها آخر أنه طاهر من مسألة الصيد الآتية»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Najāsa falls into water, he is away from it, then finds it changed: the change is referred to the known najāsa, «إحالة للتغيير على النجاسة المعلوم طرمساء فيه، والأصل عدم وجود مغير غيرها». A known ʿilla in the locus and no ẓāhir pointing elsewhere: the reading refers the athar to it. Ibn Rajab closes «والأولى أولى لأن الأصل طهارة الماء فلا يزال عنها بالشك», whose stated ground (the aṣl of ṭahāra) reads for the second wajh, so which wajh his «الأولى» prefers is left open here. No treatment located in al-Inṣāf, al-Iqnāʿ or Kashshāf. On the side the record labels the aṣḥāb's."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f001",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "no ghusl: the wetness is referred to the established cause of madhy (Aḥmad's naṣṣ, «فإن المنصوص عن أحمد رحمه الله أنه لا غسل عليه»)",
+          "ruling": true
+        },
+        {
+          "who": "ghusl is wājib (a second riwāya reported from Aḥmad, «وحكي عن أحمد رحمه الله رواية أخرى بوجوب الغسل»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A sleeper with a prior cause of madhy (thought, caressing) wakes to wetness he is not sure is maniyy and recalls no dream: «إحالة للخارج على السبب المتيقن وهو المقتضي لخروج المذي». The known ʿilla, no ẓāhir elsewhere: referred to it, so no ghusl. al-Inṣāf (v01:p229): where such a cause preceded the sleep, «لم يجب الغسل على الصحيح من المذهب، وعنه يجب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f002",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "ḥalāl: the zahq is referred to his arrow, the only trace found (the aṣaḥḥ of the riwāyas, «أصحهما أنه يحل لحديث عدي بن حاتم»)",
+          "ruling": true
+        },
+        {
+          "who": "not ḥalāl (the second riwāya, «لقول ابن عباس رضي الله عنهما كل ما أصميت ودع ما أنميت»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Game wounded with a non-fatal wound, lost to sight, found dead with no trace but his arrow: «على روايتين أصحهما أنه يحل». The known ʿilla (his arrow) with no other trace: the reading refers the death to it. A third riwāya, «إن غاب عنه ليلة لم يحل وإلا حل», turns on the night, where «فكأن الظاهر هنا وهو وجود سبب آخر حصل منه الزهوق قوي على الأصل»: there the ẓāhir points elsewhere, a different fact from the leading case, so it is not listed as a position on it. al-Inṣāf (v10:p424): «هذا المذهب. قال في الفروع: حل على الأصح». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f003",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "he owes the whole: the death is referred to his wound, the cause known (one wajh)",
+          "ruling": true
+        },
+        {
+          "who": "only the arsh of the wound: it is the certain part, and the aṣl is barāʾat al-dhimma (the other wajh; asserted by some aṣḥāb, «وجزم بعض الأصحاب بضمان أرش الجرح فقط»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A muḥrim wounds game with a non-fatal wound, loses sight of it, finds it dead: «فهل يضمنه كله أو أرش الجرح؟ على وجهين». The known ʿilla (his wound) refers the death to it: the whole jazāʾ. al-Inṣāf (v03:p545) gives the madhhab for the other side: «فالصحيح من المذهب: أن حكمه حكم ما جرحه وغاب ولم يعلم خبره», i.e. the arsh of what the wound diminished; the whole is a qīl and a iḥtimāl in al-Mughnī, with «قال الشارح: وهذا أقيس. قال في الفروع: وهذا أظهر كنظائره» (v03:p546). Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f004",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "derivable",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "note": "A man inflicts a non-fatal wound on a maʿṣūm, who dies; the wounder claims another cause, the walī denies: «فالقول قول الولي مع يمينه ولم يحك أكثر الأصحاب في ذلك خلافا إحالة للزهوق على الجرح المعلوم». The known ʿilla, no ẓāhir elsewhere: referred to the wound. al-Mujarrad's tafṣīl differs only where he died after a time in which such a wound heals («وإن مات بعد مدة يندمل الجرح في مثلها»), where the ẓāhir points elsewhere: a different fact, outside the leading ruling. No dispute reported on it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f005",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the istīlād is established: no cause of the lineage is known here but milk al-yamīn, so the lineage is referred to it (one wajh)",
+          "ruling": true
+        },
+        {
+          "who": "not established: he may have begotten the child before, in a marriage or by waṭʾ bi-shubha (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He says of his amah's child «هذا الولد مني»: «فهل يثبت بذلك استيلاد الأمة على وجهين». The first wajh is the reading's iḥāla in the qāʿida's words, «فيحال اللحوق عليه»; the second rests on a possible other cause not established. al-Inṣāf (v07:p493) on one who acknowledged his amah's child and died without saying whether he begot it in his milk: «ففي كونها أم ولد وجهان. وأطلقهما في المحرر، والفروع», each wajh corrected by some (al-Riʿāya; al-Taṣḥīḥ and al-Naẓm, with al-Wajīz's jazm). No madhhab label: not matched; a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f006",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "ruled his: the testimony «أن أمته ولدته» attributes the child to the amah attributed to him (one wajh; al-Majd's preference for this wording, «رجح الشيخ مجد الدين»)",
+          "ruling": true
+        },
+        {
+          "who": "not ruled his unless they say «في ملكه» (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "He claims the slavery of one of unknown lineage, and a bayyina testifies «أن أمته ولدته» without «في ملكه»: two wujūh. Ibn Rajab: al-Majd preferred that where the testimony attributes the child to the amah attributed to him, «حكم له بالولد»; the record's wording is that case. The reading refers the birth to his milk. al-Inṣāf (v06:p450): «فقدم المصنف: أنه لا بد أن تشهد أن أمته ولدته في ملكه. وهو المذهب». Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f007",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the wife is preferred: her husband is the father, so the ẓāhir is that she is the mother (one wajh)",
+          "ruling": true
+        },
+        {
+          "who": "the two women are equal: each alone would have him attached to her (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He says «هذا ابني من زوجتي», his wife claims the child and another woman claims him: «فهو ابن الرجل وهل ترجح زوجته على الأخرى؟ على وجهين», from al-Mughnī. The ẓāhir agrees with the known cause (her marriage to the father): referred to her. Kashshāf (v04:p237), on the Iqnāʿ's matn: «(ترجح زوجته على الأخرى) لأن زوجها أبوه فالظاهر أنها أمه». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f008",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "derivable",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "note": "He sells his amah, she gives birth with the buyer, the seller claims the child and the buyer confirms: «أنها تصير أم ولد للبائع وينفسخ البيع نص عليه أحمد رحمه الله في رواية مهنا», al-Qāḍī reading it as a claim that she bore in his milk. The child is referred to the seller's milk, the known cause: the istīlād holds. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f009",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the child is attached to him: the firāsh has not wholly ended (the aṣaḥḥ of two riwāyas, «أصحهما لحوقه»)",
+          "ruling": true
+        },
+        {
+          "who": "not attached (the other riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The rajʿiyya bears a child attachable to her divorcer only by supposing waṭʾ in the ʿidda: «على روايتين أصحهما لحوقه لأن الفراش لم يزل بالكلية فإحالة الحمل عليه أولى». Referred to the known firāsh. Follow-on: whether she is thereby taken back, «على وجهين: أصحهما وهو المنصوص أنها [تصير] مرتجعة بذلك». al-Inṣāf (v09:p263): «أحدهما: يلحقه نسبه. وهو المذهب». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f010",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "derivable",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "note": "Taking one's due from the debtor's property: permitted where a manifest cause exists to which the taking is referred, not where it is hidden, «هذا هو ظاهر المذهب»: the wife's nafaqa, the guest's qirā. Leading ruling: with the manifest cause the taking is referred to it, not to khiyāna. Where the cause is hidden «فإنه ينسب بالأخذ إلى الخيانة»: there the ẓāhir points elsewhere, a different fact, and the record agrees the iḥāla is not secured. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f011",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "Sālim is freed: the death is referred to the illness, its known cause, the aṣl being that the illness continued (the first wajh)",
+          "ruling": true
+        },
+        {
+          "who": "one of the two is freed by lot: one condition was met and its identity is unknown (the second wajh)",
+          "ruling": false
+        },
+        {
+          "who": "neither is freed: he may have died in the illness of a new cause (the third wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«أن مت من مرضي هذا فسالم حر وإن برئت منه فغانم حر», then he dies and it is unknown whether of the illness: «ففيه ثلاثة أوجه». The first is the qāʿida's iḥāla in its words, «فيحال الموت على سببه المعلوم». al-Inṣāf (v11:p407) on «من مرضي»: «فقيل: برقهما ... وقدمه في المحرر، والرعايتين، والحاوي، والنظم. وقيل: بالقرعة ... وقيل: يعتق سالم», with «وأطلقهن في الفروع». No madhhab label: not matched; a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f012",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the husband's word: her ḥifẓ is referred to his teaching, the cause the ṣadāq put on him and her life with him makes present (one wajh)",
+          "ruling": true
+        },
+        {
+          "who": "her word: his teaching is not established (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The ṣadāq is teaching a sūra; after ṭalāq she is found knowing it and they dispute whether he taught her: «فيه وجهان». The record names no wajh first; the reading's side refers her ḥifẓ to his teaching, the ʿilla fit for it in her locus, and the other wajh denies it. Taqī al-Dīn derived from them the dispute over nafaqa and kiswa while she lived with him. al-Inṣāf (v08:p235): «أطلقهما في القاعدة الثالثة عشر. قلت: الصواب قبول قولها». Off al-Mardāwī's side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f013",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "ḍamān on the owner of the sheep: the damage is referred to the trace of his sheep (Aḥmad's naṣṣ in Ibn Manṣūr's report; Taqī al-Dīn: qiyāfa in property)",
+          "ruling": true
+        },
+        {
+          "who": "the trace is not enough (a wajh by takhrīj, «ويتخرج فيه وجه آخر أنه لا يكتفى بذلك»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The owner of crops claims so-and-so's sheep grazed them at night, and the trace of his sheep is found: «قضى بالضمان على صاحب الغنم نص عليه في رواية ابن منصور». The known ʿilla with the ẓāhir agreeing: referred to his sheep. al-Inṣāf (v06:p241) repeats it from the qāʿida, with «قلت: ومحل الخلاف إذا لم يكن هناك غنم لغيره»; Kashshāf (v04:p129) states it decisively, «ولم يكن هناك غنم لغيره قضي بالضمان». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f014",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the husband's word: her thuyūba is referred to his iṣāba (the aṣḥāb, «فالقول قول الزوج، ذكره الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "a wajh derived by takhrīj from the preceding masāʾil («ويتخرج فيه وجه آخر من المسائل المتقدمة»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "He marries a virgin, she claims he is ʿinnīn, he says he had intercourse, she is found a thayyib and claims another cause: «فالقول قول الزوج، ذكره الأصحاب». Her thuyūba, the athar, is referred to the iṣāba he claims, the known ʿilla. al-Inṣāf (v08:p191) repeats the aṣḥāb's ruling and Ibn Rajab's takhrīj. On the side labelled the aṣḥāb's."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f015",
+      "encoder": "a26_ihala_on_known_cause",
+      "class": "derivable",
+      "facts": {
+        "known_cause_fit": true,
+        "zahir_points_elsewhere": false
+      },
+      "expected": true,
+      "note": "«(ومنها) اللوث في القسامة ومسائله معروفة»: a ṣūra listed without its masāʾil. Leading ruling: the qasāma rests on the lawth, the killing referred to the known indication against those it points to. No dispute reported in the record."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "his idhn is not considered (Aḥmad's naṣṣ, «نص أحمد على عدم اعتبار إذنه في ذلك»)",
+          "ruling": true
+        },
+        {
+          "who": "he is compelled to it if he refuses (al-Talkhīṣ, «أنه يجبر عليه إن أباه»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "First nawʿ, a mere idhn: placing beams on a neighbour's wall where it does him no harm. The reading: his idhn lapses. Kashshāf (v03:p411) states both: the beams may be placed «بلا إذنه» in necessity, and «(فإن أبى) رب الحائط تمكينه منه (أجبره حاكم) عليه». No single madhhab label for either side: not matched; a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f001",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "she performs the farḍ ḥajj only with his idhn and he may not withhold it, so he is compelled to give it (Aḥmad's naṣṣ in Ṣāliḥ's report, as Ibn Rajab reads it)",
+          "ruling": false
+        },
+        {
+          "who": "asking his idhn is mustaḥabb, not wājib (Ibn Abī Mūsā's report from Aḥmad)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "First nawʿ: the wife's farḍ ḥajj. The reading: his idhn lapses, asking it being mustaḥabb only. al-Inṣāf (v03:p399): «حيث قلنا \" ليس له منعها \" فيستحب لها أن تستأذنه», quoting the qāʿida's reading of Ṣāliḥ's report after it; Kashshāf (v02:p385): «(وحيث قلنا ليس له منعها فيستحب لها أن تستأذنه) نص عليه», and if he refuses «حجت بمحرم». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f002",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "not wājib on him until his sayyid gives idhn (one riwāya)",
+          "ruling": false
+        },
+        {
+          "who": "wājib without his idhn; asking it is mustaḥabb, and if refused he goes against him (the second riwāya)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "First nawʿ, on the premise «إذا قلنا بوجوب الجمعة على العبد». The reading: the sayyid's idhn lapses. al-Inṣāf (v02:p369): on the riwāya of wujūb, «يستحب أن يستأذن سيده. ويحرم على سيده منعه. فلو منعه خالفه وذهب إليها», with Ibn Tamīm's «لا يذهب بغير إذنه» and «وعنه تجب عليه بإذن سيده». The madhhab denies the premise (jumuʿa is not wājib on the slave), so no madhhab label falls on either side: not matched; a ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f003",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "entering his land depends on his idhn (one wajh)",
+          "ruling": false
+        },
+        {
+          "who": "entering without his idhn (the other wajh; indicated by Aḥmad's naṣṣ on grazing in usurped land)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "First nawʿ: taking surplus herbage and water from his land, «هل يقف جواز الدخول إلى الأرض على إذنه أم يجوز بدون إذنه؟ على وجهين». Some aṣḥāb: the khilāf is in unwalled land, walled land not without idhn «بغير خلاف», and «ومتى تعذر الاستئذان لغيبة المالك أو غيرها أو استأذن فلم يأذن سقط إذنه كما في الولي في النكاح». The reading: his idhn lapses. al-Inṣāf (v04:p291) on the madhhab: «لكن لا يجوز له دخول ملك غيره بغير إذن ربه. ولو استأذنه حرم منعه», and quotes «والصحيح أن الإذن فيما عدا المحوط لا يعتبر بحال» (v04:p292). The madhhab statement concerns entry without asking, the record's refusal case being the companion's «أو استأذن فلم يأذن سقط إذنه»; on the record's leading question, off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f004",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "he may take from his property, his idhn not considered (the aṣaḥḥ of two riwāyas, ʿAlī b. Saʿīd's report)",
+          "ruling": true
+        },
+        {
+          "who": "he takes only with their knowledge and demands his due (Ḥanbal's report)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "First nawʿ: the wājib ḍiyāfa refused. The reading: his idhn lapses. al-Inṣāf (v10:p382): «جاز له الأخذ من ماله على الصحيح من المذهب. ولا يعتبر إذنه», then Ḥanbal's report and «قلت: النفس تميل إلى ذلك، وقدمه في الشرح». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f005",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": true
+      },
+      "expected": true,
+      "note": "«(ومنها) نفقة الزوجة الواجبة»: a first-nawʿ ṣūra listed without detail; the ground the qāʿida gives covers it, «وإنما سقط اعتبار الإذن في هذه الصور». She takes her wājib nafaqa without his idhn, as q013.f010 states («فيباح للمرأة أن تأخذ من مال زوجها نفقتها ونفقة ولدها بالمعروف»). No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f006",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": true
+      },
+      "expected": true,
+      "note": "Food another is in ḍarūra for: «فإنه يلزمه بذله له بقيمته فإن أبى فللمضطر أخذه قهرا», closing the first nawʿ with its ground, «لأن اعتباره يؤدي إلى مشقة وحرج». His idhn lapses. No dispute reported. The record runs on into the second nawʿ and its first ṣūra, qisma he must agree to (he is compelled; for a mithlī share two wujūh on taking it without the ḥākim, Abū al-Khaṭṭāb permitting, al-Qāḍī forbidding), which has no record of its own and is not the leading ruling here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f007",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "note": "Second nawʿ, a taṣarruf: refusing to sell the rahn, «فإن الحاكم يجبره عليه ويحبسه فإن أصر باع عليه»; some aṣḥāb give the ḥākim the choice of compelling him or selling, «وهو المجزوم به في المغني». Either way the ḥākim acts: his part does not lapse altogether. No dispute on that."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f008",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "note": "Second nawʿ: refusing to spend on his animals, «فإنه يجبر على الإنفاق أو البيع كذا أطلقه كثير من الأصحاب», and Ibn al-Zāghūnī: «إن أبى باع الحاكم عليه». Both through the ḥākim: his part does not lapse altogether. No dispute on that."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f009",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "note": "Second nawʿ: the mūlī who refuses the fayʾa is told to divorce, and if not, «ففيه روايتان: (إحداهما) يجبر على الطلاق بالحبس والتضييق (والثانية) : يطلق الحاكم عليه». The riwāyas differ on compelling or the ḥākim acting for him, which the reading does not decide; on both his act does not lapse without the ḥākim. Follow-on: the ʿinnīn whose term ends, «فرق الحاكم بينهما»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f010",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the sulṭān frees him on him, not the mutilation itself (the ẓāhir of Aḥmad's words in al-Maymūnī's report, «يعتقه السلطان عليه», «كما فعل عمر رضي الله عنه»)",
+          "ruling": false
+        },
+        {
+          "who": "freed by the mutilation itself, the sulṭān only judging that it occurred («كما هو المعروف في المذهب»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Second nawʿ: one who mutilates his slave. The reading: the ʿitq, a taṣarruf, does not lapse without the ḥākim. Ibn Rajab reads Aḥmad's words that way, «ولكن يعتقه السلطان عليه بغير اختيار», and gives the alternative reading, «ويحتمل أن يكون مراده أن السلطان يحكم عليه بوقوع العتق كما هو المعروف في المذهب وفيه بعد». al-Inṣāf (v07:p406): «عتق عليه. نص عليه، للأثر وهو المذهب». Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f011",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "note": "Second nawʿ: the slave bequeathed to be freed, «إذا امتنع الوارث من إعتاقه أعتقه السلطان عليه». Through the ḥākim. No dispute reported. Follow-on: a slave bought on condition of ʿitq whose buyer refuses, two wujūh (the seller's faskh, on its being his right; the buyer compelled, on its being God's right, then «توجه أن يعتقه الحاكم عليه»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f012",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the muḥtāl's riḍā is considered for the muḥīl's release, and if he refuses the ḥākim compels him (one riwāya, on the ḥawāla as taqbīḍ)",
+          "ruling": false
+        },
+        {
+          "who": "the muḥīl is released by the ḥawāla alone (the other riwāya, on the ḥawāla as naql)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Second nawʿ: the ḥawāla on one able to pay, «فيه عن أحمد روايتان ... ومبناهما على أن الحوالة هل هي نقل للحق أو تقبيض». The reading takes the acceptance as a taṣarruf, so it does not lapse without the ḥākim. al-Inṣāf (v05:p227): «يبرأ المحيل بمجرد الحوالة ... على الصحيح من المذهب», with the riwāya «لا يبرأ إلا برضى المحتال. فإن أبى: أجبره الحاكم» (v05:p228). Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f013",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "his right lapses and passes to the more distant walī (one riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "it does not, and the ḥākim stands in his place (the other riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Second nawʿ: the walī who refuses to marry her: «فهل يسقط حقه وينتقل إلى غيره ممن هو أبعد منه أو لا فيقوم الحاكم مقامه على روايتين». The reading: the tazwīj, a taṣarruf, does not lapse without the ḥākim. al-Inṣāf (v08:p075): «(وإن عضل الأقرب زوج الأبعد) . هذا الصحيح من المذهب», with «وعنه: يزوج الحاكم. اختاره أبو بكر». Off the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f014",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "note": "Second nawʿ: one who becomes Muslim with more than four wives and refuses to choose: «أجبره الحاكم على الاختيار وعزره مرة بعد أخرى حتى يختار. ولم يختر له». The ḥākim compels him; his choice does not lapse. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f015",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "note": "Second nawʿ: the kitāba, where it is made wājib at the slave's request, «فأبى السيد أجبره الحاكم عليها». Through the ḥākim. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f016",
+      "encoder": "a26_refused_idhn_lapses",
+      "class": "derivable",
+      "facts": {
+        "refusal_forbidden": true,
+        "mere_permission": false
+      },
+      "expected": false,
+      "note": "Second nawʿ: the creditor who refuses to take the debt he must take, «قال في المغني يقبضه الحاكم وتبرأ ذمة الغريم لقيام الحاكم مقام الممتنع بولايته». The ḥākim takes it in his place. No dispute reported on it. Follow-on: the kafīl who brings the debtor and is refused, al-Mughnī: «يشهد على امتناعه ويبرأ», al-Qāḍī: to the ḥākim first."
+    }
+  ]
+}
