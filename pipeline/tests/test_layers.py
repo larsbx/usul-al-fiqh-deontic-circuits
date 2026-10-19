@@ -40,3 +40,11 @@ def test_only_types_and_categories_import_the_types():
 def test_the_categories_reach_the_types():
     assert any(is_types(i) for m, deps in IMPORTS.items() if is_categories(m) for i in deps)
     assert "Usul.Cat.Typing" in IMPORTS["Usul.Cat"]
+
+
+def test_the_kernel_never_imports_mathlib():
+    """Mathlib is pinned beside the kernel (`formal/lean-mathlib`), never inside it."""
+    files = [p for p in LEAN.rglob("*.lean") if ".lake" not in p.relative_to(LEAN).parts]
+    assert not [(f.relative_to(LEAN).as_posix(), l) for f in files
+                for l in f.read_text(encoding="utf-8").splitlines()
+                if l.startswith("import ") and l.split()[1].split(".")[0] in ("Mathlib", "UsulMathlib")]

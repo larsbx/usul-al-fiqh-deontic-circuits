@@ -3,6 +3,7 @@ PY      ?= python3
 TLA_JAR ?= .cache/tla2tools.jar
 TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar
 
+.PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
 all: source-verify test validate generated lean tla
 
@@ -27,6 +28,8 @@ reception: ; cd pipeline && $(PY) -m usul_corpus reception && $(PY) -m usul_corp
 mentions:  ; cd pipeline && $(PY) -m usul_corpus mentions                                # needs the citers cached
 generated: ; $(PY) formal/fixtures/gen_grounded.py && $(PY) formal/fixtures/gen_taklif.py && cd pipeline && $(PY) -m usul_corpus signature && $(PY) -m usul_corpus reconcile && $(PY) -m usul_corpus judgement --check && $(PY) -m usul_corpus sheaf && $(PY) -m usul_corpus worklist --check && $(PY) -m usul_corpus routing --check && $(PY) -m usul_corpus fatawa-takhrij --check && $(PY) -m usul_corpus.signature_routing .. --classical-only --check && git diff --exit-code ../formal/lean/Usul/Readings.lean ../formal/fixtures ../formal/tla ../corpus/reconciliation ../corpus/sheaf ../formal/lean/UsulTest ../formal/lean/HadithTest
 lean:      ; cd formal/lean && lake build && lake env lean scripts/ExportTypes.lean && git diff --exit-code ../../examples/v41_types.pl
+# Mathlib, pinned (formal/lean-mathlib); not part of `all`, the kernel stays Mathlib-free.
+lean-mathlib: ; cd formal/lean-mathlib && lake exe cache get && lake build
 prolog-oracle: ; formal/oracle/run_all.sh   # needs swipl: independent Prolog mirror of the Lean kernels
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh

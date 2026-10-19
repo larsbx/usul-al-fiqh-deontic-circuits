@@ -129,7 +129,7 @@ Taklīfī status, with an involution for the status of omission (*al-amr bi'l-sh
 ```text
 Ḥukm  ::= W | N | M | K | Ḥ          -- wājib, mandūb, mubāḥ, makrūh, ḥarām
 σ : Ḥukm → Ḥukm,  σW = Ḥ, σN = K, σM = M, σK = N, σḤ = W
-Law:  σ ∘ σ = id,  σ antitone on the valence order  Ḥ < K < M < N < W
+Law:  σ ∘ σ = id,  σ antitone on the order  Ḥ < K < M < N < W  read off reward and liability for doing and leaving
 ```
 
 Waḍʿī structure as a dependent precondition:

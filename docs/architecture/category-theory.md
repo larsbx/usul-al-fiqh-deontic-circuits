@@ -5,7 +5,7 @@
 The roadmap (§0) gives category theory one job: **compositional specification, checked through
 Lean statements**. `formal/lean/Usul/Cat/` is that layer. Like the rest of the kernel it does not
 depend on Mathlib: it has a small core (`Basic`) and modules that each discharge a roadmap
-claim. Vectors are in `formal/lean/UsulTest/Cat.lean`, `Obstructions.lean` and `Institutions.lean`.
+claim. Vectors are in `formal/lean/UsulTest/Cat.lean`, `Obstructions.lean`, `Interval.lean` and `Institutions.lean`. A pinned Mathlib bridge sits outside the kernel in `formal/lean-mathlib/` ([mathlib-pin.md](mathlib-pin.md)).
 
 | Module | Roadmap | Claim | Main results |
 |---|---|---|---|
@@ -13,6 +13,7 @@ claim. Vectors are in `formal/lean/UsulTest/Cat.lean`, `Obstructions.lean` and `
 | `Scales` | §2.1, H7 | the sciences' scales are thin categories, and their seams are functors | `sigmaIso : hukmCat ≅ hukmCatᵒᵖ`, `gradeOfVerdict`, `hujja_upSet` |
 | `Factor` | §2.5, M9 L-QIY-1 | ʿilla valid ⇔ ruling factors through the feature; naqḍ = witness against | `factors_iff_functor`, `factors_iff_exists`, `factorsOn_iff_extension`, `not_factorsOn_iff_naqd`, `qiyas_determined`, `unattested_free` |
 | `Sheaf` | M10 | local verdicts glue iff they match; ikhtilāf is a named obstruction | `gluing`, `glue_unique`, `no_glue_iff_obstruction`, `glues_iff_obstructions_nil` |
+| `Interval` | M10 | verdicts that fix a span of the ḥukm chain glue iff they pairwise meet (Helly); tawaqquf is a hole, not ibāḥa; conservative over `Sheaf` ([note](hukm-interval-verdicts.md)) | `helly`, `iglues_iff`, `iobstructions_ofPatch`, `stances_glue_iff` |
 | `Typing` | types → categories | the categorical layer on the qāʿida types: L-QIY-1 over typed encoders, and the category of typed encoders | `retract`, `judge_factors`, `qiyas`, `judge_functor`, `readsCat`, `Reads.factors`, `applies_upSet`, `rajab16_reads_q28` |
 | `Institution`, `Carriers` | M11 | carriers as institutions; a check in one carrier proves the statement in another when the model maps are onto | `Comorphism.comp`, `entails_iff`, `compile`, `initial`, `always_iff`, `entailsB_iff` |
 
@@ -22,7 +23,7 @@ Each science that grades its judgements does so on a finite scale. A scale is a 
 category is thin: there is at most one arrow `a ⟶ b`, and it exists iff `rank a ≤ rank b`.
 
 ```text
-hukmCat     Ḥ < K < M < N < W          (Hukm.valence)
+hukmCat     Ḥ < K < M < N < W          (Hukm.fil, Hukm.tark: no rank)
 gradeCat    wahm < shakk < ẓann < qaṭʿ  (Grade.rank)
 verdictCat  mawḍūʿ < … < ṣaḥīḥ          (Hadith.Verdict.rank)
 ```

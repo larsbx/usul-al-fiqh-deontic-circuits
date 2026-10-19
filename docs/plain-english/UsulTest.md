@@ -13,7 +13,7 @@ The root of the test library. Building it builds every `UsulTest` suite, so all 
 - **Takhrīj (deriving rulings for new cases)**: `TakhrijMirror`, `Takhrij`, `TakhrijCo`, `M8Tranche3`, `FatawaBank`, `FatawaTakhrij`, `R2Sample1Semantic`.
 - **Tables of conflicts, distinctions and texts**: `TanaqudTable`, `FuruqTable`, `NususTable`, `Reconcile`.
 - **Rulings and judgements**: `TypedRulings`, `KernelContracts`, `Judgement`, `EncoderTypes`, `TaklifBehaviour`.
-- **Category layer and institutions**: `Cat`, `Obstructions`, `Institutions`.
+- **Category layer and institutions**: `Cat`, `Obstructions`, `Interval`, `Institutions`.
 
 ## In one line
 

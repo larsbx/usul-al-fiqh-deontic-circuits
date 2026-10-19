@@ -6,10 +6,11 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
-LEAN = ROOT / "formal/lean"
+ROOTS = (ROOT / "formal/lean", ROOT / "formal/lean-mathlib")
 DOCS = ROOT / "docs/plain-english"
 
-lean = {p.relative_to(LEAN).with_suffix("") for p in LEAN.rglob("*.lean") if ".lake" not in p.parts}
+modules = {p.relative_to(r).with_suffix(""): r for r in ROOTS for p in r.rglob("*.lean") if ".lake" not in p.relative_to(r).parts}
+lean = set(modules)
 docs = {p.relative_to(DOCS).with_suffix("") for p in DOCS.rglob("*.md") if p != DOCS / "README.md"}
 
 
@@ -19,12 +20,12 @@ def test_companions_biject():
 
 @pytest.mark.parametrize("rel", sorted(lean & docs), ids=str)
 def test_companion_names_its_source(rel):
-    md = DOCS / rel.with_suffix(".md")
+    md, src = DOCS / rel.with_suffix(".md"), modules[rel] / f"{rel.as_posix()}.lean"
     lines = md.read_text(encoding="utf-8").splitlines()
     assert lines[0] == f"# {'.'.join(rel.parts)} in Plain English"
-    link = re.search(r"^Source: \[`formal/lean/(.+?)`\]\((.+?)\)$", "\n".join(lines), re.M)
-    assert link and link[1] == f"{rel.as_posix()}.lean"
-    assert (md.parent / link[2]).resolve() == LEAN / f"{rel.as_posix()}.lean"
+    link = re.search(r"^Source: \[`(.+?)`\]\((.+?)\)$", "\n".join(lines), re.M)
+    assert link and link[1] == src.relative_to(ROOT).as_posix()
+    assert (md.parent / link[2]).resolve() == src
 
 
 def test_index_lists_every_companion():

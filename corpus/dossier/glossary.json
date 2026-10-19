@@ -75,7 +75,8 @@
     "Usul.Hukm.binding",
     "Usul.Hukm.σ",
     "Usul.Hukm.σ_involutive",
-    "Usul.Hukm.valence",
+    "Usul.Hukm.fil",
+    "Usul.Hukm.tark",
     "Usul.Subject.IsMukallaf"
    ],
    "refs": [

@@ -2,6 +2,7 @@
 __pycache__/
 .pytest_cache/
 formal/lean/.lake/
+formal/lean-mathlib/.lake/
 *.class
 states/
 *_TTrace_*

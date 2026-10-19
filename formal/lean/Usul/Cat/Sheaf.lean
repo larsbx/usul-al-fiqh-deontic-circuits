@@ -25,6 +25,10 @@ situations, `obstructions` lists every disagreement, and it is empty iff the ind
 
 For set-valued verdicts the obstruction to gluing is a pairwise disagreement (a Čech 1-cochain
 that fails to vanish). Nothing here claims a cohomology group.
+
+Sections here are point-valued: a patch rules exactly one verdict. A position that fixes less
+(«يجوز», an amr of disputed strength) is glued by `Usul.Cat.Interval`, which keeps every
+obstruction found here on points (`iobstructions_ofPatch`).
 -/
 
 namespace Usul.Cat.Sheaf

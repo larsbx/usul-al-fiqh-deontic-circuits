@@ -10,6 +10,7 @@ The category-theory layer of the kernel, gathered in one import. Its job is comp
 - **`Usul.Cat.Scales`**: the rulings, certainty and ḥadīth scales as categories, and the seams as functors.
 - **`Usul.Cat.Factor`**: qiyās (analogy) as factorization of a ruling through its ʿilla (effective cause).
 - **`Usul.Cat.Sheaf`**: gluing partial rulings, and ikhtilāf (disagreement) as the obstruction.
+- **`Usul.Cat.Interval`**: the same gluing when a position fixes a range of rulings, with tawaqquf as a gap.
 - **`Usul.Cat.Institution`**: institutions and comorphisms: when checking a claim in another tool proves it.
 - **`Usul.Cat.Carriers`**: Lean, TLA+ and Haskell as institutions on a shared Boolean fragment.
 - **`Usul.Cat.Typing`**: the category of typed encoders, built on the qāʿida types.
