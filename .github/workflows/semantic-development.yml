@@ -1,0 +1,50 @@
+name: Semantic development evidence
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  semantic-development:
+    name: Semantic development (pinned archive + held mappings)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      USUL_REQUIRE: islamqa
+      PYTHONPATH: pipeline
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pytest
+      - name: Key the IslamQA answers by their LFS pointer
+        id: answers
+        run: echo "key=islamqa-ar-$(git rev-parse HEAD:data/islamqa/answers/islamqa-ar.jsonl.gz)" >> "$GITHUB_OUTPUT"
+      - name: Restore the IslamQA answers
+        id: answers-cache
+        uses: actions/cache@v4
+        with:
+          path: data/islamqa/answers/islamqa-ar.jsonl.gz
+          key: ${{ steps.answers.outputs.key }}
+      - name: Fetch the IslamQA answers (Git LFS)
+        if: steps.answers-cache.outputs.cache-hit != 'true'
+        run: git lfs pull --include=data/islamqa/answers/islamqa-ar.jsonl.gz
+      - name: Verify both development artifacts against the pinned source
+        run: |
+          python -m usul_corpus.semantic_tags . corpus/fatawa/semantic-tags-development.json --check
+          python -m usul_corpus.semantic_propositions . --check
+      - name: Check semantic scope and admission boundaries
+        run: python -m pytest pipeline/tests/test_semantic_tags.py pipeline/tests/test_semantic_propositions.py pipeline/tests/test_bank_review.py pipeline/tests/test_oracle.py -q -rs --junitxml=semantic-development.xml
+      - name: Retain focused validation results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: semantic-development-validation
+          path: semantic-development.xml
+          if-no-files-found: warn
