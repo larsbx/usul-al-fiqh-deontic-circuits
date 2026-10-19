@@ -115,3 +115,21 @@ On fold 0, with the re-typed situations, under the strict split:
 - **Denser typing,** so that `Reach` prunes.
 
 The theory and the exhaustive mirror are kept, and are proven sound. Neither changes the routing index.
+
+### Follow-up: conclusions as effects the text fixes
+
+The question classes were an encoding choice. This round replaced them with an **effect** keyed to the conclusion's own operative verb: 17 kinds («يضمن» liable, «يصح» valid, «يسقط/يبقى» right_stands, «يجوز» permitted, «يتبعها» follows, «يدخل في» included, «في حكم» counts_as, «القول قوله» claim_accepted, …), each with a polarity. Each reading's output values were mapped to effects (bank-side metadata, 223 readings), and the 240 fold-0 texts were labelled blind. Recall@5 under the strict split:
+
+| | Recall@5 |
+|---|---|
+| Hybrid (baseline) | 0.762 |
+| Effect filter / through `Reach` | 0.521 / 0.475 |
+| Effect tiebreak / through `Reach` | 0.746 / 0.746 |
+| Effect kind only, tiebreak | 0.750 |
+| Kind plus effect transitions learned **on the same cases** (a leaky upper bound) | 0.767 |
+
+Blind effects agree with the mapped effect for **45 %** of cases (58 % by kind alone), the same as the question classes. Two causes:
+- A reading's furūʿ state the **consequence** of its verdict, not the verdict itself. Ibn Rajab 23's «the idhn lapses» appears in its furūʿ as «يجوز له وضع الخشب». Across the readings with three or more fold-0 cases, the furūʿ use 2.5 distinct effects per reading.
+- In ikhtilāf, the labeller marks the side the text leads with, while the bank records the side the kernel derives.
+
+Allowing transitions from verdict to consequence fixes the agreement, but saturates. Even learned leakily, almost every reading then reaches almost every effect, and the upper bound is 0.767. **A qāʿida's identity lies in its ground (the facts and conditions it turns on), not in its conclusion.** The conclusion side, however it is stated, does not route. What remains is the fact side: denser typing of the right qāʿida's ground.
