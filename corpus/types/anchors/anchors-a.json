@@ -1,0 +1,679 @@
+{
+ "entries": [
+  {
+   "type": "amana",
+   "field": "hand",
+   "gloss": "whose hand the property perished in: the trustee's (al-amīn) or the wrongdoer's (al-ẓālim), which is liable absolutely",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q014",
+    "excerpt_ar": "وفي يد الظالم مضمون"
+   }
+  },
+  {
+   "type": "amana",
+   "field": "pure_trust",
+   "gloss": "the trust is a pure trust (amāna maḥḍa), voided by transgression, as against one that includes another matter",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p064",
+    "excerpt_ar": "الأمانة المحضة تبطل بالتعدي"
+   }
+  },
+  {
+   "type": "amana",
+   "field": "transgressed",
+   "gloss": "the trustee transgressed (taʿaddā) against the property",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q014",
+    "excerpt_ar": "إذا لم يتعد"
+   }
+  },
+  {
+   "type": "amana",
+   "field": "negligent",
+   "gloss": "the trustee was negligent (farraṭa) in its safekeeping",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q014",
+    "excerpt_ar": "أو يفرط"
+   }
+  },
+  {
+   "type": "badal",
+   "field": "original_possible",
+   "gloss": "the original (al-aṣl) is possible, i.e. not impossible; only when it is impossible is the substitute resorted to",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q028",
+    "excerpt_ar": "ولكن لا يصار إليه إلا إذا تعذر الأصل"
+   }
+  },
+  {
+   "type": "badal_wujub",
+   "field": "settled_at_obligation",
+   "gloss": "the obligation attached to the substitute firmly at the time of obligation, so it does not return to the original when the original is found",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p020",
+    "excerpt_ar": "فهل يتعلق الوجوب بالبدل تعلقا مستقرا بحيث لا يعود إلى الأصل عند وجوده"
+   }
+  },
+  {
+   "type": "intiqal",
+   "field": "necessity",
+   "gloss": "the substitute being performed was legislated only out of necessity, for inability to do the original (not as a general concession)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p009",
+    "excerpt_ar": "إنما شرع ضرورة للعجز عن الأصل وتعذره بالكلية"
+   }
+  },
+  {
+   "type": "istihlak",
+   "field": "consumed",
+   "gloss": "the thing is consumed (immersed) in another so that its trace does not appear",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p029",
+    "excerpt_ar": "العين المنغمرة في غيرها إذا لم يظهر أثرها"
+   }
+  },
+  {
+   "type": "itizal",
+   "field": "suspended",
+   "gloss": "the divorce is suspended (muʿallaq) on a condition",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p357",
+    "excerpt_ar": "متى علق الطلاق بشرط"
+   }
+  },
+  {
+   "type": "itizal",
+   "field": "possible",
+   "gloss": "the condition's occurrence is possible",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p357",
+    "excerpt_ar": "وأمكن وجوده"
+   }
+  },
+  {
+   "type": "itizal",
+   "field": "absence_known",
+   "gloss": "it is known that the condition has not occurred, which ends the abstention",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p357",
+    "excerpt_ar": "حتى يعلم انتفاؤه"
+   }
+  },
+  {
+   "type": "itlaf_hal",
+   "field": "mental",
+   "gloss": "the destroyer's state of mind: deliberate, ignorant or forgetful",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q013",
+    "excerpt_ar": "المتعمد والجاهل»› والناسي"
+   }
+  },
+  {
+   "type": "itlaf_qasd",
+   "field": "purpose",
+   "gloss": "the purpose of the destruction: to benefit from the thing, or to repel its harm",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q036",
+    "excerpt_ar": "لينتفع به ضمنه» ومن أتلفه دفعاً لمضرته"
+   }
+  },
+  {
+   "type": "khalt",
+   "field": "mixed_same_kind",
+   "gloss": "the property is mixed with property of its own kind (oil with another's oil)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p029",
+    "excerpt_ar": "لو خلط زيته بزيت غيره"
+   }
+  },
+  {
+   "type": "khalt",
+   "field": "indistinct",
+   "gloss": "the mixture is such that the parts cannot be told apart",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p029",
+    "excerpt_ar": "على وجه لا يتميز"
+   }
+  },
+  {
+   "type": "khalt",
+   "field": "lawful_many",
+   "gloss": "the lawful part mixed with the unlawful is much (as thirty dirhams with one unlawful), not little",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p030",
+    "excerpt_ar": "وإن كانت كثيرة كثلاثين فيها درهم حرام"
+   }
+  },
+  {
+   "type": "lahham43",
+   "field": "qarina",
+   "gloss": "the indication (qarīna) that turns the bare command from obligation to another ruling, if any",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p221",
+    "excerpt_ar": "ما لم تقم قرينة تصرفه إلى غيره"
+   }
+  },
+  {
+   "type": "lahham43",
+   "field": "per_item_status",
+   "gloss": "the ruling of each item under a command over mixed obligatory and recommended items: each item keeps its own status",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p226",
+    "excerpt_ar": "أريد به الواجب في الواجبات والمستحب في المستحبات"
+   }
+  },
+  {
+   "type": "lahham43",
+   "field": "intended_reading",
+   "gloss": "which reported position on naming an intended recommendation or permission a command is applied (al-Qāḍī's report, al-Karkhī and al-Rāzī, Abū al-Barakāt, al-Qāḍī's argument)",
+   "unanchored": "a selector over the reported positions, introduced by the reading; the text reports each position (43.f007) but no phrase states it as a fact of the case"
+  },
+  {
+   "type": "lahham43",
+   "field": "intended",
+   "gloss": "the ruling intended by the command: recommendation (al-nadb) or permission (al-ibāḥa); the permission case is «وإن أريد به الإباحة»",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p226",
+    "excerpt_ar": "فأريد بالأمر الندب"
+   }
+  },
+  {
+   "type": "lahham43",
+   "field": "nonverbal_reading",
+   "gloss": "which reported position on naming writing or gesture a command is applied (al-Qāḍī as reported by Abū al-Barakāt, or the Jāmiʿ's argument on writing)",
+   "unanchored": "a selector over the reported positions, introduced by the reading; the text reports both (43.f001) but no phrase states it as a fact of the case"
+  },
+  {
+   "type": "lahham43",
+   "field": "command_form",
+   "gloss": "the non-verbal form at issue: writing (al-kitāba) or gesture (al-ishāra)",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p224",
+    "excerpt_ar": "أن الكتابة أو الإشارة هل تسمى أمرا"
+   }
+  },
+  {
+   "type": "lahham43",
+   "field": "obligation_reading",
+   "gloss": "which reported position on explicit obligation expressions is applied (al-Qāḍī: open to reinterpretation; Abū al-Barakāt: naṣṣ)",
+   "unanchored": "a selector over the reported positions, introduced by the reading; the text reports both (43.f004) but no phrase states it as a fact of the case"
+  },
+  {
+   "type": "lahham43",
+   "field": "expression",
+   "gloss": "the expression of obligation used: a bare command, an unqualified threat, or the word wujūb or farḍ",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p225",
+    "excerpt_ar": "فإطلاق التوعد لفعل ما توعد عليه أو إطلاق الوجوب أو الفرض"
+   }
+  },
+  {
+   "type": "lahham43",
+   "field": "prophetic_act_reading",
+   "gloss": "which reported position on naming the Prophet's act a command is applied (Abū al-Barakāt, the Mālikī/Shāfiʿī report, the author's conditional inference)",
+   "unanchored": "a selector over the reported positions, introduced by the reading; the text reports them (43.f003) but no phrase states it as a fact of the case"
+  },
+  {
+   "type": "lahham43",
+   "field": "imitation_established",
+   "gloss": "imitation (al-taʾassī) of the Prophet's act is established, the premise of the author's inference",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p225",
+    "excerpt_ar": "إذا ثبت التأسى بفعله"
+   }
+  },
+  {
+   "type": "lahham52",
+   "field": "unspecified",
+   "gloss": "the intention names the act unspecified: the tayammum is for «al-ṣalāt», neither obligatory nor supererogatory",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p270",
+    "excerpt_ar": "وأطلق ولم ينو فرضا ولا نافلة"
+   }
+  },
+  {
+   "type": "lahham52",
+   "field": "ranked",
+   "gloss": "the candidate referents differ in rank, so the wording is read toward the lowest",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p270",
+    "excerpt_ar": "تنزيلا له على الأدنى"
+   }
+  },
+  {
+   "type": "lahham61",
+   "field": "in_occasion",
+   "gloss": "the case at hand is the occasion (maḥall al-sabab) on which the general wording came",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p320",
+    "excerpt_ar": "وأما محل السبب فلا يجوز إخراجه بالاجتهاد"
+   }
+  },
+  {
+   "type": "lahham61",
+   "field": "general_wording",
+   "gloss": "the proof came in a general wording",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p318",
+    "excerpt_ar": "إذا ورد دليل بلفظ عام"
+   }
+  },
+  {
+   "type": "luqata",
+   "field": "year_passed",
+   "gloss": "the year of announcement of the find has passed",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p238",
+    "excerpt_ar": "اللقطة بعد الحول"
+   }
+  },
+  {
+   "type": "luqata",
+   "field": "ownable",
+   "gloss": "the find is of a kind that may be owned by the finder (what may not be owned is given in charity)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p238",
+    "excerpt_ar": "وما لا يتملك منها يتصدق به عنه"
+   }
+  },
+  {
+   "type": "majhul_haqq",
+   "field": "owner_identifiable",
+   "gloss": "the right-holder can be known; the qāʿida applies where knowing him is impossible",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q020",
+    "excerpt_ar": "إذا تعذر معرفة من له الحق"
+   }
+  },
+  {
+   "type": "majhul_madum",
+   "field": "unknown",
+   "gloss": "the thing is unknown (majhūl)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p237",
+    "excerpt_ar": "ينزل المجهول منزلة المعدوم"
+   }
+  },
+  {
+   "type": "majhul_madum",
+   "field": "despair",
+   "gloss": "one despairs of learning it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p237",
+    "excerpt_ar": "إذا يئس من الوقوف عليه"
+   }
+  },
+  {
+   "type": "majhul_madum",
+   "field": "hardship",
+   "gloss": "taking it into account is a hardship",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p237",
+    "excerpt_ar": "أو شق اعتباره"
+   }
+  },
+  {
+   "type": "mubashara",
+   "field": "arising_from_sabab",
+   "gloss": "the direct act (mubāshara) is built on the cause and arises from it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p284",
+    "excerpt_ar": "إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه"
+   }
+  },
+  {
+   "type": "mubashara",
+   "field": "udwan_in_mubashara",
+   "gloss": "the direct act has transgression (ʿudwān) in it, so it shares the liability with the cause",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p284",
+    "excerpt_ar": "وإن كان فيها عدوان شاركت السبب في الضمان"
+   }
+  },
+  {
+   "type": "niyya_mansiyya",
+   "field": "component",
+   "gloss": "for each possible rite (ifrād, tamattuʿ, qirān), whether what he does is valid had that been the rite he forgot",
+   "unanchored": "the type cites only al-Saʿdī Q11, whose statement and body do not state it; the per-rite validity is the reading's construction from Ibn Rajab 106.f007 («لجواز أن يكون أحرم بحج أو لا»), which the type does not cite"
+  },
+  {
+   "type": "qarain",
+   "field": "amara",
+   "gloss": "the matter has indicators (qarāʾin) strong enough to be weighed against the presumption",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q052",
+    "excerpt_ar": "القرائن التي تحتفى بالأحكام قد تقوى"
+   }
+  },
+  {
+   "type": "rukhsa",
+   "field": "rukhsa_needs_certainty",
+   "gloss": "the act is a concession (rukhṣa), which is valid only where its permission is verified",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p120",
+    "excerpt_ar": "لأن المسح رخصة"
+   }
+  },
+  {
+   "type": "rukhsa",
+   "field": "permission_established",
+   "gloss": "the concession's permission is verified (taḥaqqaqat ibāḥatuhā)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p120",
+    "excerpt_ar": "ولم تتحقق إباحتها"
+   }
+  },
+  {
+   "type": "sadi25",
+   "field": "tie_break_criteria",
+   "gloss": "the equal claimants (of the fayʾ) differ on a ranking criterion: age, then precedence in hijra",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p362",
+    "excerpt_ar": "يقدم أسنهما ثم أقدمهما هجرة"
+   }
+  },
+  {
+   "type": "sadi25",
+   "field": "entitled_known",
+   "gloss": "the one entitled is known; lots are prescribed when he is unknown and division is impossible",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q025",
+    "excerpt_ar": "إذا جهل المستحق»› وتعذرت القسمة"
+   }
+  },
+  {
+   "type": "sadi25",
+   "field": "divisible",
+   "gloss": "the thing can be divided",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q025",
+    "excerpt_ar": "وتعذرت القسمة"
+   }
+  },
+  {
+   "type": "sadi25",
+   "field": "confusion_category",
+   "gloss": "the entitled is a specific person in fact, confused with others and not discoverable (as against an entitlement fixed from the outset for one unspecified)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p348",
+    "excerpt_ar": "تمييز المستحق المعين في نفس الأمر عن اشتباهه والعجز على الاطلاع عليه"
+   }
+  },
+  {
+   "type": "sadi30",
+   "field": "necessary",
+   "gloss": "what the common holding needs is among the necessary matters",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q030",
+    "excerpt_ar": "على المشترك من الأمور الضرورية"
+   }
+  },
+  {
+   "type": "sadi30",
+   "field": "consents",
+   "gloss": "the refusing partner consents to join",
+   "unanchored": "neither Q30 nor Ibn Rajab 76 states consent as a ground: both speak of compelling the refuser («يلزم الممتنع منهم», «أجبر أحدهما على موافقة الآخر»); the consent disjunct is the reading's default"
+  },
+  {
+   "type": "sadi32",
+   "field": "gift",
+   "gloss": "the payer intended a gift (tabarruʿ), not recovery",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q032",
+    "excerpt_ar": "فإن نوى التبرع"
+   }
+  },
+  {
+   "type": "sadi32",
+   "field": "owed_by_other",
+   "gloss": "what was paid was an obligation owed by the other",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p137",
+    "excerpt_ar": "من أدى واجبا عن غيره"
+   }
+  },
+  {
+   "type": "sadi32",
+   "field": "permission",
+   "gloss": "the payment or spending was by the owner's permission",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p137",
+    "excerpt_ar": "على مال غيره بغير إذنه"
+   }
+  },
+  {
+   "type": "sadi32",
+   "field": "permission_unobtainable",
+   "gloss": "seeking the owner's permission was impossible",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p138",
+    "excerpt_ar": "فإن تعذر استئذان مالكه رجع"
+   }
+  },
+  {
+   "type": "sadi35",
+   "field": "lapsed",
+   "gloss": "the punishment lapsed for an impediment though its cause was present",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p311",
+    "excerpt_ar": "من سقطت عنه العقوبة بإتلاف نفس أو طرف مع قيام المقتضى له لمانع"
+   }
+  },
+  {
+   "type": "sadi35",
+   "field": "as_ghulul",
+   "gloss": "the theft from the booty counts as ghulūl, whose perpetrator forfeits his share",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p312",
+    "excerpt_ar": "السرقة من الغنيمة إذا قلنا هي كالغلول"
+   }
+  },
+  {
+   "type": "sadi40",
+   "field": "capable_of_part",
+   "gloss": "he is able to do part of what is commanded and unable to do the rest",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q040",
+    "excerpt_ar": "فإن قدر على بعضه وعجز عن باقيه"
+   }
+  },
+  {
+   "type": "sadi40",
+   "field": "pure_means",
+   "gloss": "the part he can do is a pure means (wasīla maḥḍa)",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q040",
+    "excerpt_ar": "إلا أن يكون المقدور عليه وسيلة محضة"
+   }
+  },
+  {
+   "type": "sadi41",
+   "field": "acts_same_kind",
+   "gloss": "the two acts of worship are of one kind, in one time",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p023",
+    "excerpt_ar": "إذا اجتمعت عبادتان من جنس في وقت واحد"
+   }
+  },
+  {
+   "type": "sadi41",
+   "field": "same_purpose",
+   "gloss": "the two acts of worship have one purpose",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q041",
+    "excerpt_ar": "مقصودهما واحدا"
+   }
+  },
+  {
+   "type": "sadi45",
+   "field": "consent_required",
+   "gloss": "the party's consent is required for the dissolution of the contract",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p115",
+    "excerpt_ar": "من لا يعتبر رضاه لفسخ عقد أو حله"
+   }
+  },
+  {
+   "type": "sadi48",
+   "field": "customary_continuity",
+   "gloss": "the parts of the single act are joined with the customary continuity",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p230",
+    "excerpt_ar": "مع الاتصال المعتاد ولا ينقطع بالتفرق اليسير"
+   }
+  },
+  {
+   "type": "sadi50",
+   "field": "sarf",
+   "gloss": "the command has been turned away from obligation (ṣarf)",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p225",
+    "excerpt_ar": "إذا صرف الأمر عن الوجوب"
+   }
+  },
+  {
+   "type": "sadi50",
+   "field": "independent_proof",
+   "gloss": "the thing has an independent proof of its own",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p298",
+    "excerpt_ar": "ما لا يثبت استقلالا"
+   }
+  },
+  {
+   "type": "sadi50",
+   "field": "follows_established",
+   "gloss": "the thing follows what is established",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p298",
+    "excerpt_ar": "يثبت تبعا"
+   }
+  },
+  {
+   "type": "sadi55",
+   "field": "for_himself",
+   "gloss": "the right he asserts after denying it is for himself, not against him",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p276",
+    "excerpt_ar": "والبينة حق له فلا تسمع"
+   }
+  },
+  {
+   "type": "sadi59",
+   "field": "noun_form",
+   "gloss": "the form of the noun: a particle (man, mā, al-, ayy, matā), the annexed singular, or the indefinite noun",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q060",
+    "excerpt_ar": "يدل كل واحد منها على العموم» وكذلك المفرد المضاف"
+   }
+  },
+  {
+   "type": "sadi59",
+   "field": "context",
+   "gloss": "the context the indefinite noun stands in: negation, prohibition or condition",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q059",
+    "excerpt_ar": "النكرة في سياق النفي» أو النهي› أو الشرط"
+   }
+  },
+  {
+   "type": "sadi59",
+   "field": "ahd",
+   "gloss": "there is an indication of ʿahd (a known referent) for the al-",
+   "anchor": {
+    "ref": "src:openiti-lahham-shamela8526/v01:p265",
+    "excerpt_ar": "إذا لم تكن هناك قرينة عهد"
+   }
+  },
+  {
+   "type": "sadi9",
+   "field": "custom_one_body",
+   "gloss": "custom counts the running water as the one body the oath named",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p004",
+    "excerpt_ar": "والعرف يشهد له والأيمان مرجعها إلى العرف"
+   }
+  },
+  {
+   "type": "shakk_shart",
+   "field": "needs_firm",
+   "gloss": "the act is one for which a firm intention (al-niyya al-jāzima) is a condition",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p120",
+    "excerpt_ar": "أحدهما ما يشترط فيه النية الجازمة"
+   }
+  },
+  {
+   "type": "shakk_shart",
+   "field": "asl_mustashab",
+   "gloss": "he built on a presumption not shown to have ceased",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p121",
+    "excerpt_ar": "بني على أصل لم يثبت زواله"
+   }
+  },
+  {
+   "type": "shakk_shart_furu",
+   "field": "contradicts_nass",
+   "gloss": "the ruling contradicts a clear text, the one case in which it is undone",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p122",
+    "excerpt_ar": "إلا أن يكون مخالفا لنص صريح"
+   }
+  },
+  {
+   "type": "shakk_shart_furu",
+   "field": "conditional",
+   "gloss": "the sale is suspended on a condition («if I had permitted you, I have sold her to you»)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p121",
+    "excerpt_ar": "إن كنت أذنت لك في شرائها فقد بعتكها"
+   }
+  },
+  {
+   "type": "shakk_shart_furu",
+   "field": "known_to_hold",
+   "gloss": "the condition is one both parties know holds",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p122",
+    "excerpt_ar": "تعليق على شرط واقع يعلمانه"
+   }
+  },
+  {
+   "type": "yaqin",
+   "field": "asl",
+   "gloss": "the presumption (aṣl) and its grade: what was certain or presumed continues",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q011",
+    "excerpt_ar": "فالأصل بقاء ذلك الأمر المتيقن"
+   }
+  },
+  {
+   "type": "yaqin",
+   "field": "zahir",
+   "gloss": "the apparent that would displace the presumption and its grade: mere doubt does not, only certainty of its cessation",
+   "anchor": {
+    "ref": "src:archive-pdf1995#q011",
+    "excerpt_ar": "فلا ينتقل عن ذلك الأصل بمجرد الشك حتى يتيقن زواله"
+   }
+  },
+  {
+   "type": "zann_error",
+   "field": "others_right",
+   "gloss": "another's right is attached to the act, so the error undoes it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p009",
+    "excerpt_ar": "لتعلق حق الغير به"
+   }
+  },
+  {
+   "type": "zann_error",
+   "field": "negligent_inquiry",
+   "gloss": "he was negligent in failing to search and verify",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p009",
+    "excerpt_ar": "فرط بترك البحث والتحقيق"
+   }
+  }
+ ]
+}
