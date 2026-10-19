@@ -666,7 +666,7 @@
    "term_ar": "إذا أفلست المرأة",
    "also": [
     {
-     "label": "sadaq.mahr",
+     "label": "sadaq.sadaq",
      "term_ar": "لأخذ المهر"
     }
    ]
@@ -769,7 +769,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f005",
-   "label": "siyam.waqt_fitr",
+   "label": "siyam.waqt_iftar",
    "term_ar": "أخبر واحد بغروب الشمس"
   },
   {
@@ -834,7 +834,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f012",
-   "label": "amma.ibra",
+   "label": "hiba.ibra",
    "term_ar": "البراءة المعلقة بموت المبرئ",
    "also": [
     {
@@ -952,7 +952,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f006",
-   "label": "sadaq.mahr",
+   "label": "sadaq.sadaq",
    "term_ar": "تملك منع نفسها حتى تقبض صداقها"
   },
   {
@@ -1198,7 +1198,7 @@
    "term_ar": "عين الأضحية",
    "also": [
     {
-     "label": "hajj.hadi",
+     "label": "hajj.hady",
      "term_ar": "أو هديا"
     }
    ]
@@ -1276,7 +1276,7 @@
    "term_ar": "أتلف الأضحية",
    "also": [
     {
-     "label": "hajj.hadi",
+     "label": "hajj.hady",
      "term_ar": "أو الهدي"
     }
    ]
@@ -1447,7 +1447,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f010",
-   "label": "buyu.radd_bi_ayb",
+   "label": "buyu.khiyar_ayb",
    "term_ar": "الرد بالعيب"
   },
   {

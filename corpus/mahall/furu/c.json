@@ -97,7 +97,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f001",
-   "label": "zakat.amil_zakat",
+   "label": "zakat.amil",
    "term_ar": "العامل على الصدقات"
   },
   {
@@ -287,7 +287,7 @@
    "term_ar": "إذا غرس وبنى",
    "also": [
     {
-     "label": "buyu.aqd_fasid",
+     "label": "amma.aqd_fasid",
      "term_ar": "القابض بعقد فاسد"
     }
    ]
@@ -581,7 +581,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f018",
-   "label": "buyu.aqd_fasid",
+   "label": "amma.aqd_fasid",
    "term_ar": "المقبوض بعقد فاسد"
   },
   {

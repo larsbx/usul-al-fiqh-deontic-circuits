@@ -251,7 +251,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f013",
-   "label": "sadaq.mahr",
+   "label": "sadaq.sadaq",
    "term_ar": "اختلف الزوجان في قدر المهر"
   },
   {
@@ -316,12 +316,12 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f009",
-   "label": "zakat.masarif_zakat",
+   "label": "zakat.masarif",
    "term_ar": "دفع الزكاة إلى الولد"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
-   "label": "nikah.wilayat_nikah",
+   "label": "nikah.wilaya",
    "term_ar": "ولاية النكاح"
   },
   {
@@ -336,12 +336,12 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f013",
-   "label": "hiba.ruju_fil_hiba",
+   "label": "hiba.ruju_hiba",
    "term_ar": "الرجوع في الهبة"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f014",
-   "label": "hiba.tamalluk_ab_mal_walad",
+   "label": "hiba.tamalluk_ab",
    "term_ar": "الأخذ من مال الولد بغير حاجة"
   },
   {
@@ -382,7 +382,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f002",
-   "label": "idda.imraat_mafqud",
+   "label": "idda.mafqud",
    "term_ar": "امرأة المفقود"
   },
   {
@@ -509,7 +509,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f015",
-   "label": "nikah.tamalluk_zawj",
+   "label": "nikah.milk_zawj",
    "term_ar": "شراؤها للزوج"
   },
   {
@@ -660,7 +660,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
-   "label": "sadaq.mahr",
+   "label": "sadaq.sadaq",
    "term_ar": "جميع المهر"
   },
   {
@@ -690,7 +690,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003",
-   "label": "salat.waqt_salat",
+   "label": "salat.waqt",
    "term_ar": "دخول وقت الصلاة"
   },
   {
@@ -741,7 +741,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
-   "label": "salat.waqt_salat",
+   "label": "salat.waqt",
    "term_ar": "دخول وقت الصلاة"
   },
   {
@@ -756,7 +756,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015",
-   "label": "idda.imraat_mafqud",
+   "label": "idda.mafqud",
    "term_ar": "امرأة المفقود"
   },
   {
@@ -793,7 +793,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020",
-   "label": "sadaq.mahr",
+   "label": "sadaq.sadaq",
    "term_ar": "المهران"
   },
   {
@@ -843,7 +843,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
-   "label": "sadaq.mahr",
+   "label": "sadaq.sadaq",
    "term_ar": "اختلف الزوجان في قدر المهر"
   },
   {
@@ -998,7 +998,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f016",
-   "label": "nikah.wilayat_nikah",
+   "label": "nikah.wilaya",
    "term_ar": "الأولياء المستوون في النكاح"
   },
   {
@@ -1013,7 +1013,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
-   "label": "sadaq.mahr",
+   "label": "sadaq.sadaq",
    "term_ar": "أصدق الزوجة عبدا من عبيده"
   },
   {

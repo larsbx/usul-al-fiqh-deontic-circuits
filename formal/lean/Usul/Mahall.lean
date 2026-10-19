@@ -248,6 +248,62 @@ theorem groundsB_restrict (n : Nat) (q nass : String) :
   simp only [groundsB, footprintB_restrict]
   rfl
 
+/-! ### Exactness by the characterisation
+
+To show that a list `S` is exactly a qāʿida's footprint, it is enough to show three things:
+
+* every label in `S` is in the footprint;
+* `S` is up-closed;
+* `S` holds the maḥalls of the qāʿida's furūʿ.
+
+The last two give the converse by `footprint_least`. This is linear in `S`, where deciding every
+label is not. The grounds follow the same way. -/
+
+def upClosedB (S : List String) : Bool :=
+  S.all fun l => match d.upB l with
+    | none => true
+    | some m => S.contains m
+
+def holdsB (q : String) (S : List String) : Bool :=
+  d.furu.all fun f => f.qaida != q || f.labels.all S.contains
+
+def groundsClosedB (S G : List String) : Bool :=
+  d.defines.all fun p => !S.contains p.2 || G.contains p.1
+
+/-- `S` is the footprint of `q` and `G` its grounds, decided on `q`'s furūʿ alone. -/
+def exactB (n : Nat) (q : String) (S G : List String) : Bool :=
+  S.all ((d.restrict q).footprintB n q) && G.all ((d.restrict q).groundsB n q) &&
+    d.upClosedB S && d.holdsB q S && d.groundsClosedB S G
+
+theorem footprint_sub {q : String} {S : List String} (hu : d.upClosedB S = true) (hh : d.holdsB q S = true)
+    {l : String} (hl : footprint d.graph q l) : l ∈ S := by
+  refine footprint_least d.graph (S := (· ∈ S)) ?_ ?_ hl
+  · intro a b ha hab
+    simp only [upClosedB, List.all_eq_true] at hu
+    have := hu a ha
+    simp only [graph] at hab
+    rw [hab] at this
+    simpa using this
+  · intro f m hf hq hm
+    simp only [holdsB, List.all_eq_true, Bool.or_eq_true, bne_iff_ne, ne_eq] at hh
+    rcases hh f hf with h | h
+    · exact absurd hq h
+    · simpa using h m hm
+
+theorem exactB_sound {n : Nat} {q : String} {S G : List String} (h : d.exactB n q S G = true) :
+    (∀ l, footprint d.graph q l ↔ l ∈ S) ∧ (∀ x, grounds d.graph q x ↔ x ∈ G) := by
+  simp only [exactB, Bool.and_eq_true, List.all_eq_true] at h
+  obtain ⟨⟨⟨⟨hS, hG⟩, hu⟩, hh⟩, hc⟩ := h
+  have fp : ∀ l, footprint d.graph q l ↔ l ∈ S := fun l =>
+    ⟨d.footprint_sub hu hh, fun hl => d.footprintB_sound (by rw [← d.footprintB_restrict]; exact hS l hl)⟩
+  refine ⟨fp, fun x => ⟨?_, fun hx => d.groundsB_sound (by rw [← d.groundsB_restrict]; exact hG x hx)⟩⟩
+  rintro ⟨l, hl, hd⟩
+  simp only [groundsClosedB, List.all_eq_true, Bool.or_eq_true, Bool.not_eq_true'] at hc
+  rcases hc (x, l) hd with h | h
+  · have : l ∈ S := (fp l).mp hl
+    simp [this] at h
+  · simpa using h
+
 /-- Every label climbs to a root (a label with no `up`) within `n` steps. -/
 def rootedB (n : Nat) : Bool :=
   d.up.all fun p => (d.upB (rootN d.graph n p.1)).isNone

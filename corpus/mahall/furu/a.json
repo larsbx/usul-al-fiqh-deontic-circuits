@@ -222,7 +222,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
-   "label": "salat.sitr_awra",
+   "label": "salat.satr_awra",
    "term_ar": "عورته في الصلاة"
   },
   {
@@ -268,7 +268,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f003",
-   "label": "zakat.tajil_zakat",
+   "label": "zakat.tajil",
    "term_ar": "زكاة المال يجوز تقديمها"
   },
   {
@@ -326,7 +326,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
-   "label": "zakat.tajil_zakat",
+   "label": "zakat.tajil",
    "term_ar": "عجل عن أربع وعشرين من الإبل أربع شياه"
   },
   {
@@ -601,7 +601,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f004",
-   "label": "jinayat.jurh",
+   "label": "jinayat.jirah",
    "term_ar": "جرح آدميا معصوما جرحا غير موح"
   },
   {
@@ -894,7 +894,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f010",
-   "label": "hajj.rakata_tawaf",
+   "label": "hajj.rakatay_tawaf",
    "term_ar": "ركعتا الطواف"
   },
   {
@@ -984,12 +984,12 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
-   "label": "zakat.tajil_zakat",
+   "label": "zakat.tajil",
    "term_ar": "عجل الزكاة عن نماء النصاب"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002",
-   "label": "buyu.radd_bi_ayb",
+   "label": "buyu.khiyar_ayb",
    "term_ar": "رده بعيب"
   },
   {
@@ -1180,7 +1180,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f016",
-   "label": "qard.dayn",
+   "label": "buyu.dayn",
    "term_ar": "أتاه الغريم بدينه",
    "also": [
     {

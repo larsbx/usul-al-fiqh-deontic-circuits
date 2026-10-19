@@ -506,7 +506,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f012",
-   "label": "buyu.radd_bil_ayb",
+   "label": "buyu.khiyar_ayb",
    "term_ar": "الرد بالعيب",
    "also": [
     {
@@ -835,14 +835,14 @@
    "term_ar": "تصرف الزوجة في نصف الصداق إذا طلق الزوج قبل الدخول",
    "also": [
     {
-     "label": "buyu.radd_bil_ayb",
+     "label": "buyu.khiyar_ayb",
      "term_ar": "رد ما بيده بعيب"
     }
    ]
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f001",
-   "label": "buyu.radd_bil_ayb",
+   "label": "buyu.khiyar_ayb",
    "term_ar": "وجد بالعبد عيبا"
   },
   {
@@ -1013,7 +1013,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
-   "label": "buyu.radd_bil_ayb",
+   "label": "buyu.khiyar_ayb",
    "term_ar": "تلفت العين المعيبة كلها"
   },
   {
@@ -1162,7 +1162,7 @@
    "term_ar": "طلق امرأة يظنها أجنبية",
    "also": [
     {
-     "label": "amma.jahl_khata",
+     "label": "amma.jahl",
      "term_ar": "يظنها أجنبية"
     }
    ]
@@ -1209,7 +1209,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f000",
-   "label": "buyu.radd_bil_ayb",
+   "label": "buyu.khiyar_ayb",
    "term_ar": "بان بها عيب يوجب الرد",
    "also": [
     {
@@ -1256,7 +1256,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
-   "label": "tahara.mash_khuffayn",
+   "label": "tahara.mash_khuff",
    "term_ar": "مسح الخفين",
    "also": [
     {

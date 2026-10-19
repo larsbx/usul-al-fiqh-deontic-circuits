@@ -638,12 +638,12 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f004",
-   "label": "talaq.lafz_talaq",
+   "label": "talaq.alfaz_talaq",
    "term_ar": "طلق بلفظ أعجمي"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f005",
-   "label": "talaq.lafz_talaq",
+   "label": "talaq.alfaz_talaq",
    "term_ar": "طلق العجمي بلفظ الطلاق"
   },
   {
@@ -1026,7 +1026,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f007",
-   "label": "nikah.khiyar_atiqa",
+   "label": "nikah.khiyar_mutaqa",
    "term_ar": "المعتقة تحت عبد"
   },
   {
