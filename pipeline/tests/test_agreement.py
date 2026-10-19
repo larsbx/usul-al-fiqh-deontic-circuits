@@ -25,6 +25,8 @@ def test_alpha_is_one_on_agreement_and_below_zero_on_systematic_disagreement():
 def test_alpha_without_variation_is_full_accord():
     assert ag.alpha([(F("a"), F("a")), (F("a"), F("a"))]) == 1
     assert ag.alpha([(F(), F()), (F(), F())]) == 1
+    with pytest.raises(ValueError):
+        ag.alpha([])
 
 
 def test_a_type_touches_the_qawaid_its_statement_cites():
