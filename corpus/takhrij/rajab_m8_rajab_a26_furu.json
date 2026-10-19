@@ -122,7 +122,7 @@
         }
       ],
       "matches_madhhab": false,
-      "note": "He says of his amah's child «هذا الولد مني»: «فهل يثبت بذلك استيلاد الأمة على وجهين». The first wajh is the reading's iḥāla in the qāʿida's words, «فيحال اللحوق عليه»; the second rests on a possible other cause not established. al-Inṣāf (v07:p493) on one who acknowledged his amah's child and died without saying whether he begot it in his milk: «ففي كونها أم ولد وجهان. وأطلقهما في المحرر، والفروع», each wajh corrected by some (al-Riʿāya; al-Taṣḥīḥ and al-Naẓm, with al-Wajīz's jazm). No madhhab label: not matched; a ledger entry."
+      "note": "He says of his amah's child «هذا الولد مني»: «فهل يثبت بذلك استيلاد الأمة على وجهين». The first wajh is the reading's iḥāla in the qāʿida's words, «فيحال اللحوق عليه»; the second rests on a possible other cause (sabab) not established. al-Inṣāf (v07:p493) on one who acknowledged his amah's child and died without saying whether he begot it in his milk: «ففي كونها أم ولد وجهان. وأطلقهما في المحرر، والفروع», each wajh corrected by some (al-Riʿāya; al-Taṣḥīḥ and al-Naẓm, with al-Wajīz's jazm). No madhhab label: not matched; a ledger entry."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f006",
@@ -166,7 +166,7 @@
         }
       ],
       "matches_madhhab": true,
-      "note": "He says «هذا ابني من زوجتي», his wife claims the child and another woman claims him: «فهو ابن الرجل وهل ترجح زوجته على الأخرى؟ على وجهين», from al-Mughnī. The ẓāhir agrees with the known cause (her marriage to the father): referred to her. Kashshāf (v04:p237), on the Iqnāʿ's matn: «(ترجح زوجته على الأخرى) لأن زوجها أبوه فالظاهر أنها أمه». On the madhhab side."
+      "note": "He says «هذا ابني من زوجتي», his wife claims the child and another woman claims him: «فهو ابن الرجل وهل ترجح زوجته على الأخرى؟ على وجهين», from al-Mughnī. The ẓāhir agrees with the known cause (sabab: her marriage to the father): referred to her. Kashshāf (v04:p237), on the Iqnāʿ's matn: «(ترجح زوجته على الأخرى) لأن زوجها أبوه فالظاهر أنها أمه». On the madhhab side."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f008",
@@ -177,7 +177,7 @@
         "zahir_points_elsewhere": false
       },
       "expected": true,
-      "note": "He sells his amah, she gives birth with the buyer, the seller claims the child and the buyer confirms: «أنها تصير أم ولد للبائع وينفسخ البيع نص عليه أحمد رحمه الله في رواية مهنا», al-Qāḍī reading it as a claim that she bore in his milk. The child is referred to the seller's milk, the known cause: the istīlād holds. No dispute reported."
+      "note": "He sells his amah, she gives birth with the buyer, the seller claims the child and the buyer confirms: «أنها تصير أم ولد للبائع وينفسخ البيع نص عليه أحمد رحمه الله في رواية مهنا», al-Qāḍī reading it as a claim that she bore in his milk. The child is referred to the seller's milk, the known cause (sabab): the istīlād holds. No dispute reported."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f009",
@@ -210,7 +210,7 @@
         "zahir_points_elsewhere": false
       },
       "expected": true,
-      "note": "Taking one's due from the debtor's property: permitted where a manifest cause exists to which the taking is referred, not where it is hidden, «هذا هو ظاهر المذهب»: the wife's nafaqa, the guest's qirā. Leading ruling: with the manifest cause the taking is referred to it, not to khiyāna. Where the cause is hidden «فإنه ينسب بالأخذ إلى الخيانة»: there the ẓāhir points elsewhere, a different fact, and the record agrees the iḥāla is not secured. No dispute reported."
+      "note": "Taking one's due from the debtor's property: permitted where a manifest cause (sabab) exists to which the taking is referred, not where it is hidden, «هذا هو ظاهر المذهب»: the wife's nafaqa, the guest's qirā. Leading ruling: with the manifest cause the taking is referred to it, not to khiyāna. Where the cause is hidden «فإنه ينسب بالأخذ إلى الخيانة»: there the ẓāhir points elsewhere, a different fact, and the record agrees the iḥāla is not secured. No dispute reported."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f011",
@@ -227,7 +227,7 @@
           "ruling": true
         },
         {
-          "who": "one of the two is freed by lot: one condition was met and its identity is unknown (the second wajh)",
+          "who": "one of the two is freed by lot: one condition (sharṭ) was met and its identity is unknown (the second wajh)",
           "ruling": false
         },
         {
@@ -511,7 +511,7 @@
         "mere_permission": false
       },
       "expected": false,
-      "note": "Second nawʿ: the slave bequeathed to be freed, «إذا امتنع الوارث من إعتاقه أعتقه السلطان عليه». Through the ḥākim. No dispute reported. Follow-on: a slave bought on condition of ʿitq whose buyer refuses, two wujūh (the seller's faskh, on its being his right; the buyer compelled, on its being God's right, then «توجه أن يعتقه الحاكم عليه»)."
+      "note": "Second nawʿ: the slave bequeathed to be freed, «إذا امتنع الوارث من إعتاقه أعتقه السلطان عليه». Through the ḥākim. No dispute reported. Follow-on: a slave bought on condition (sharṭ) of ʿitq whose buyer refuses, two wujūh (the seller's faskh, on its being his right; the buyer compelled, on its being God's right, then «توجه أن يعتقه الحاكم عليه»)."
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f012",
