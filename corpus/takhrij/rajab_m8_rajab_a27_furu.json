@@ -1,0 +1,575 @@
+{
+  "suite": "m8_rajab_rajab_a27",
+  "status": "candidate",
+  "provenance": "Shard rajab-a27 (lane A): every farʿ record of Ibn Rajab's qawāʿid 40 and 70, annotated against the readings formalised from the qawāʿid's own statements (Usul.Readings.RajabA27). Both qawāʿid are typological; each record is annotated for its leading ruling. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf, al-Iqnāʿ, Kashshāf, Taṣḥīḥ al-Furūʿ and al-Mughnī; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f000",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": false,
+        "a27_holder_consented": false
+      },
+      "expected": false,
+      "note": "Leading ruling: a lease (ijāra) whose lessor lost ownership of the thing by a compulsory transfer covering the thing and its benefits, then regained it within the term: «لم تعد الإجارة، هذا هو الظاهر». The lease is the first kind, a ruling on one ownership: it fell with it and does not come back. Follow-on: if the lessee has not yet recovered his share of the rent, Ibn Rajab refers to qāʿida 16 («قاعدة من تعذر عليه الأصل واستقر حقه في البدل ثم وجد الأصل») and gives al-aẓhar «عدم استحقاق المنافع لأن حقه سقط منه وانتقل إلى بدلها», the same answer (link theorem lease_as_settled_substitute)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f001",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": false,
+        "a27_holder_consented": false
+      },
+      "expected": false,
+      "note": "A loan for use (iʿāra): «فلو أعاره شيئا ثم زال ملكه عنه ثم عاد لم تعد الإعارة». First kind, on one ownership: it does not return."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f002",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": false,
+        "a27_holder_consented": false
+      },
+      "expected": false,
+      "note": "Leading ruling: a bequest (waṣiyya) «تبطل بإزالة الملك ولا تعود بعوده»: first kind. The record runs on into the heading of the second kind and its first ṣūra, the binding pledge (rahn) whose owner lost it involuntarily and regained it, «فالرهن باق بحاله، لأنه وثيقة لازمة للعين», and the slave pledged, captured and recovered, «عاد رهنا بحاله نص عليه الإمام أحمد»; those follow-ons have no record of their own and fall under the second kind (survivesOwnershipChange true false = true)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f003",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "note": "Pledged juice turned to wine and then to vinegar: «فإنه يعود رهنا كما كان». The pledge (rahn) is a right lāzim in the ʿayn, the second kind, and the mortgagee did not consent to its lapse: it returns. The record ends with the heading of the next ṣuwar, where the pledge returns although the pledgor's ownership never ended."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f004",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "note": "Settlement (ṣulḥ) of the pledged debt for something whose receipt in the session is required: the debt is discharged and the pledge (rahn) ends; «فإن تفرقا قبل القبض بطل الصلح وعاد الدين والرهن بحاله». A right lāzim in the ʿayn whose holder's consent to its lapse fell with the voided ṣulḥ: it returns without a new contract. Ibn Rajab later uses this case against al-Qāḍī's reading in f005 («وهذا باطل بمسألة الصلح»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f005",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the pledge (rahn) is void once it returns to the pledgor, and is a pledge again when handed back (Abū Bakr; «وفي كلام أحمد نحوه»)",
+          "ruling": false
+        },
+        {
+          "who": "only its binding force (luzūm) is void, not the pledge itself (al-Qāḍī and Ibn ʿAqīl's taʾwīl; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "the pledge is not void after it became binding without the mortgagee's consent (Ibn Rajab's «والظاهر»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The pledge (rahn) handed back by the mortgagee to the pledgor: Abū Bakr says it is void and returns as a pledge when it comes back, al-Qāḍī and Ibn ʿAqīl read him as voiding only its luzūm, and Ibn Rajab holds «والظاهر أن الرهن لا يبطل بعد لزومه بدون رضى المرتهن». The reading keeps the binding right in the ʿayn and counts handing back possession as no consent to the right's lapse (a27_holder_consented false), so the pledge survives: the side of al-Qāḍī and of Ibn Rajab. al-Inṣāf (v05:p151): «زال لزومه ... وهو المذهب، وظاهر كلام الأصحاب»: the pledge stands without its luzūm. On the madhhab side. Follow-on in the same record: the mukātab, «فإن المكاتبة عقد لازم ثابت في الرقبة فلا يسقط بانتقال الملك فيه», a second-kind ṣūra with no record of its own."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f006",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "note": "The designated sacrificial animal (al-uḍḥiya al-muʿayyana): the right is fixed in it «لا يزول بدون اختيار المالك»; a defect takes it out of being an uḍḥiya, «فإذا زال العيب عادت أضحية كما كانت» (Ibn ʿAqīl in his ʿUmad). Second kind, no consent to the lapse: it returns."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f007",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "tadbīr returns when the mudabbar returns to his ownership (the riwāya on which it is of the second kind; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "tadbīr is void and does not return (the other riwāya: tadbīr as a bequest, waṣiyya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "«ومنها: التدبير على إحدى الروايتين»: tadbīr is of the second kind on one riwāya only. The reading takes the kind the record names, so tadbīr survives the sale and returns with the slave. al-Inṣāf (v07:p439): «قوله (وإن عاد إليه عاد التدبير) . هذا المذهب. وعليه جماهير الأصحاب», with «وعنه: يبطل التدبير. وهما مبنيان على أن التدبير: هل هو عتق بصفة، أو وصية؟». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f008",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "note": "The husband's return to half the dower (ṣadāq) after separation before consummation: «فإنه يستحقه سواء كان قد زال ملك الزوجة عنه ثم عاد أو لم يزل ; لأن حقه متعلق بعينه». A right tied to the ʿayn, the second kind: it survives her intervening loss of ownership."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f009",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "note": "Trade goods (ʿurūḍ al-tijāra) leaving the owner's ownership without his choice («بغير اختياره») and returning: «فإنه لا ينقطع الحول بذلك كما إذا تخمر العصير ثم تخلل» (Ibn ʿAqīl and others). The ḥawl of zakāt is tied to the goods, second kind, with no consent: it continues."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f010",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the conditional divorce (ṣifat al-ṭalāq) returns with the new marriage whether or not the condition occurred during the separation (bainūna) (Aḥmad's naṣṣ; «على المذهب الصحيح»)",
+          "ruling": true
+        },
+        {
+          "who": "the condition met during the separation dissolves it and it does not return (the takhrīj from the riwāya on manumission, chosen by Abū al-Ḥasan al-Tamīmī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A divorce suspended (taʿlīq) on a condition (ṣifa), then a separation (bainūna), then remarriage: «تعود بعود النكاح، وسواء وجدت في زمن البينونة أو لم توجد، على المذهب الصحيح». The ṣifa is listed under the second kind, so the reading keeps it. al-Inṣāf (v08:p423): «طلقت نص عليه. وهو المذهب. وعليه جماهير الأصحاب», against «ويتخرج أن لا تطلق، بناء على الرواية في العتق. واختاره أبو الحسن التميمي». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f011",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the conditional manumission (ṣifat al-ʿitq) returns with the return of ownership (the better known of the two riwāyas, «أشهر الروايتين»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "it does not return when the condition occurred after ownership ended (the other riwāya)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Manumission suspended (taʿlīq) on a condition (ṣifa), the slave sold and bought back: «صفة العتق تعود بعود ملك الرقيق في أشهر الروايتين، وفي الأخرى لا تعود إذا وجدت الصفة بعد زوال الملك». Ibn Rajab rejects al-Qāḍī's farq between ṭalāq and ʿitq («وهذا التفريق لا أثر له»). Second kind: it returns. al-Inṣāf (v07:p414): «إحداهما: تعود بعوده. وهو المذهب فيهما. نص عليه», quoting this qāʿida's «أشهر الروايتين». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f012",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "derivable",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "note": "Leading ruling: return of goods for a defect (al-radd bi'l-ʿayb) «لا يمتنع بزوال الملك إذا لم يدل على الرضا»: the buyer's right is tied to the ʿayn and he showed no consent («الرضا»), so it survives. The record goes on to the ṣuwar «مختلف في إلحاقها بأحد النوعين» and states the first, the father's return of a gift to his son who had alienated it and regained it; its wujūh are given in f013 for both questions («وفي المسألتين»). al-Inṣāf (v07:p152) gives for the father: by faskh or iqāla «أحدهما: يرجع. وهو المذهب», by sale or gift «لم يملك الرجوع» «بلا نزاع»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f013",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_tied_to_ain": false,
+        "a27_holder_consented": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "no right of return: their right attaches to the first contract (the first wajh)",
+          "ruling": false
+        },
+        {
+          "who": "no right of return either (the second wajh; its ground is garbled in the witness, «غير متعلق عنهما»)",
+          "ruling": false
+        },
+        {
+          "who": "a right of return: the right is fixed in the ʿayn, which exists, like return for a defect (the third wajh; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "it turns on the mode of return: by a new ownership the right falls, by annulment (faskh) it stays (the fourth wajh)",
+          "ruling": "byModeOfReturn",
+          "outside": "split by how the thing came back: a new ownership (no return) against annulment of the intervening contract (return); the encoder has no input for the mode of return"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The seller's right to reclaim his goods from a bankrupt (muflis) who had alienated them and regained them, one of the ṣuwar whose kind is disputed («مختلف في إلحاقها بأحد النوعين»). The record gives four wujūh for both this and the father's gift. The reading takes the kind of the first-stated wajh, a right on the first contract, i.e. the first kind: no return. al-Inṣāf (v05:p289), on the goods that left his ownership before the ḥajr and came back after it: «قلت: الصحيح من المذهب: أن له الرجوع», with «وقيل: ليس له الرجوع مطلقا» and the split by faskh. Off the madhhab side; ledger entry. Register: which kind the disputed ṣuwar take is left open by the qāʿida itself."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f014",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_tied_to_ain": true,
+        "a27_holder_consented": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the firāsh returns, so he must avoid both sisters until he makes one unlawful to himself (the better known wajh, «وهو المنصوص»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "he keeps the second as his concubine and avoids the returned one, whose firāsh ended with his ownership (the choice of the author of al-Muḥarrar)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Concubinage bed (firāsh): he had intercourse with a slave-woman, sold her, took her sister by ownership, then the first came back: «على وجهين، أشهرهما أنه يعود، وهو المنصوص». The first-stated wajh treats the firāsh as surviving the change of ownership (second kind), so the reading returns it. al-Inṣāf (v08:p128): «قوله (فإن عادت إلى ملكه: لم يصب واحدة منهما حتى يحرم الأخرى) . سواء كان وطئ الثانية أو لا. وهذا المذهب», quoting this qāʿida's «هذا الأشهر»; against it al-Majd in al-Muḥarrar (v08:p129). On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the prohibition (nahy) of speech while the imām gives the khuṭba does not cover the imām himself («على المذهب المشهور»; the madhhab per al-Inṣāf: speech between the imām and another is permitted for a need)",
+          "ruling": false
+        },
+        {
+          "who": "it covers him too: speech is disliked (makrūh) for both (a riwāya)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The nahy «والإمام يخطب» is general in those who speak; the specific agent of the khuṭba is taken out by its mention: «لا يشمل الإمام على المذهب المشهور». The reading's murajjaḥ, takhṣīṣ. al-Inṣāf (v02:p417): «فإن كان بين الإمام وغيره، فالصحيح من المذهب: إباحة ذلك إذا كان لمصلحة، وعليه أكثر الأصحاب», with «وعنه يكره لهما مطلقا». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f001",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the muʾadhdhin does not answer his own adhān (Ibn Rajab's «والأرجح عدمه طردا للقاعدة»; a riwāya reported)",
+          "ruling": false
+        },
+        {
+          "who": "he answers himself, quietly: the command covers him («المنصوص هاهنا الشمول»; the madhhab per al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The command (amr) to answer the muʾadhdhin: does it cover the muʾadhdhin himself? «المنصوص هاهنا الشمول والأرجح عدمه طردا للقاعدة». The reading follows the qāʿida's murajjaḥ: not covered. al-Inṣāf (v01:p426) labels the other side: «المؤذن نفسه وهو المذهب المنصوص عن أحمد. فيجيب نفسه خفية. وعليه الجمهور», arguing from the generality of «من سمع» («من ألفاظ العموم»), and cites this qāʿida for «هذا الأرجح». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f002",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "derivable",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "note": "A slave permitted by his master to trade (al-maʾdhūn lahu fi'l-tijāra) may not hire himself out: «لم يملك أن يؤجر نفسه». He is the agent of the permitted dealing and is not among its objects. The other maʾkhadh al-Qāḍī gives, «أن المنافع ليست من أموال التجارة», reaches the same ruling. al-Inṣāf (v05:p344): «لم يجز له أن يؤجر نفسه» «بلا نزاع»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f003",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "he may not free himself: the permission to free turns to freeing another (the record's ruling; the second of the two qawl in al-Mughnī)",
+          "ruling": false
+        },
+        {
+          "who": "he may free himself and it suffices: he is a neck that would suffice for another (Abū Bakr's takhrīj on two wujūh; the first qawl in al-Mughnī)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A slave permitted to manumit (ʿitq), for his own expiation (kaffāra), from his master's slaves: «لم يملك أن يعتق نفسه وخرجها أبو بكر على وجهين». The reading: the agent of the manumission is outside its general object. al-Mughnī (v09:p556) gives the ground of this side in the qāʿida's terms, «لأن الإذن له في الإعتاق ينصرف إلى إعتاق غيره», and adds that an express permission to free himself would suffice (explicit inclusion). No later work found labelling either side the madhhab's; matches_madhhab records that."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f004",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "a man is not a recipient (maṣrif) of his own expiation (kaffāra) (one riwāya)",
+          "ruling": false
+        },
+        {
+          "who": "he may be its recipient (the other riwāya; for the kaffāra of intercourse in Ramaḍān, the text of the Bedouin's ḥadīth)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Can a man be the recipient of his own expiation (kaffāra)? «في المسألة روايتان», with disagreement over where the khilāf lies (another paying it for him by his permission, or giving it to him as alms, ṣadaqa, for his poverty). The reading's takhṣīṣ: the payer is outside the general class of recipients. al-Inṣāf (v03:p323), on the kaffāra of intercourse once it does not fall by inability: «فلو كفر عنه غيره بإذنه فله أخذها، وجزم به في المحرر», and «وعنه لا يأخذها». No madhhab label on the record's general question; the later works lean to the other side. Ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f005",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "he may not take it back: it is a purification (ṭahāra, «طهرة») he may not be purified by twice (Abū Bakr: «مذهب أحمد لا يحل له أخذها»)",
+          "ruling": false
+        },
+        {
+          "who": "once the collector (sāʿī) has taken it, it may be returned to him: it comes back by a new cause, like inheriting it (Aḥmad's naṣṣ and al-Qāḍī's choice)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Can a man be the recipient of his own zakāt once the collector (sāʿī) has taken it? «فله أن يعيدها إليه بعد ذلك، هذا هو المنصوص عن أحمد واختيار القاضي لأن عودها إليه ههنا [بسبب] متجدد», against Abū Bakr. The reading's takhṣīṣ (the payer outside the class of recipients) gives Abū Bakr's ruling; the naṣṣ answers that he takes it not as his own zakāt but by a new cause. Kashshāf (v02:p214) states the naṣṣ's side decisively, «جاز له أخذها ... لأنها عادت إليه بسبب آخر», and Taṣḥīḥ al-Furūʿ (v04:p240) «الصحيح قول القاضي» for the fiṭra returned. Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f006",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the founder (wāqif) is not covered by his own endowment (waqf) on the poor (the other view; an iḥtimāl in al-Talkhīṣ)",
+          "ruling": false
+        },
+        {
+          "who": "having become poor, he enters it («على الأصح», Aḥmad's naṣṣ in al-Marrūdhī's riwāya; the madhhab per al-Inṣāf)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The founder of an endowment (waqf) on the poor who becomes poor: «فإنه يدخل على الأصح ونص عليه أحمد في رواية المروذي». The record's follow-ons (the endowment's line cut off and returning to the founder's kin; the share of a dead child returning «إلى أقرب الناس إليه», the founder alive) turn on the same question, which Ibn Rajab ties to the speaker's inclusion in his own address: «والمسألة ملتفتة إلى دخول المخاطب في خطابه». The reading's takhṣīṣ excludes him. al-Inṣāf (v07:p019): «أبيح له التناول منه، على الصحيح من المذهب. وعليه جماهير الأصحاب», against «وقيل: لا يباح ذلك. وهو احتمال في التلخيص»; al-Iqnāʿ «فافتقر شمله وتناول منه». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f007",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the agent (wakīl) for a sale may not buy the thing from himself (one riwāya; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "he may, under conditions (sharṭ: a price above what the auction reached, or another appointed to sell) (the other riwāya)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The agent (wakīl) for a sale buying from himself: «فيه روايتان معروفتان», with three maʾkhadh for the prohibition, the second the qāʿida's own: «أن سياق التوكيل في البيع يدل على إخراجه من جملة المشترين لأنه جعله بائعا فلا يكون مشتريا». With the principal's express permission it is allowed (explicit inclusion, «فأما إن أذن له الموكل في الشراء من نفسه فإنه يجوز»). Takhṣīṣ: not allowed. al-Inṣāf (v05:p375): «هذا المذهب. وعليه الجمهور», against «وعنه: يجوز ... إذا زاد على مبلغ ثمنه في النداء». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f008",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the agent (wakīl) may not buy for his principal from his own property (as the agent buying from himself, on the riwāya of prohibition; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "he may (on the riwāya of permission)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The agent (wakīl) buying for his principal from his own property: «وحكمه حكم شراء الوكيل من مال موكله» (Ibn Abī Mūsā and others), so the two riwāyas of f007 carry over; Aḥmad in Ibn Hāniʾ's masāʾil dislikes it unless he declares that the goods are his own. Takhṣīṣ: not allowed. al-Inṣāf (v05:p377): «إحداهما: وكذا الحكم في شراء الوكيل من نفسه للموكل», under the madhhab's prohibition. On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the executor (waṣī) may not buy from the orphan's property (one riwāya; Ibn Abī Mūsā mentions only the prohibition; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "he may (the other riwāya)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The executor (waṣī) buying from the orphan's property: «وحكمه حكم شراء الوكيل ، وفيه روايتان منصوصتان ولم يذكر ابن أبي موسى فيه سوى المنع»; likewise the judge and his trustee, though Ibn Rajab sees a farq for the judge, whose authority «غير مستندة إلى إذن فيكون عامة», while «إطلاق الإذن له يقتضي أن يتصرف مع غيره لا مع نفسه». Takhṣīṣ: not allowed. al-Inṣāf (v05:p377): «وكذا الحاكم وأمينه والوصي وناظر الوقف والمضارب كالوكيل». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f010",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "derivable",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "note": "The agent (wakīl) to marry a woman off may not marry her to himself «على المعروف من المذهب». Ibn Abī Mūsā's case (another agent marries her to him with the walī's permission to delegate) and the guardian by the sharʿ (walī, judge), who may marry himself because his authority is not from a permission, lie outside the agent's own act. al-Inṣāf (v08:p084) quotes this qāʿida for «ليس له ذلك على المعروف من المذهب»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f011",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "a partner (sharīk) who does himself work for which a hireling may be paid from the partnership does not take the wage (one riwāya; the madhhab per al-Inṣāf)",
+          "ruling": false
+        },
+        {
+          "who": "he takes the wage (the other riwāya)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A partner (sharīk) who does work on the partnership's property for which he may hire someone and pay the wage: «فهل له أن يأخذ الأجرة أم لا؟ على روايتين». The authority to hire does not cover himself. al-Inṣāf (v05:p423): «أحدهما: ليس له أخذ أجرة. وهو المذهب», against «والوجه الثاني: يجوز له الأخذ»; al-Iqnāʿ «وليس له فعله ليأخذ أجرته بلا شرط». On the madhhab side."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f012",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "derivable",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "note": "One charged by a bequest to give money to whoever performs the ḥajj or fights may not take it and go himself: Aḥmad's naṣṣ in Abū Dāwūd's riwāya, «هو متعد لأنه لم يأمره», which Ibn Rajab reads as «تصريح بأن مأخذ المنع عدم تناول اللفظ له»: the qāʿida's own ground. Takhṣīṣ."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f013",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "one permitted to give alms (ṣadaqa) from a property may not take from it for himself though eligible (the madhhab; Aḥmad's naṣṣ in Ibn Bukhtān's riwāya)",
+          "ruling": false
+        },
+        {
+          "who": "he may take, without restriction (an iḥtimāl in al-Mughnī)",
+          "ruling": true
+        },
+        {
+          "who": "it follows the qarāʾin: a qarīna of inclusion allows it, of exclusion bars it, and in doubt two wujūh (the other iḥtimāl in al-Mughnī)",
+          "ruling": "byQarina",
+          "outside": "a rule that turns on the qarāʾin of the permission, not one ruling for the bare case; the reading's a27_qarina_inclusion is that input"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "One permitted to give a property as alms (ṣadaqa), himself eligible: «المذهب أنه لا يجوز ونص عليه أحمد في رواية ابن بختان». al-Mughnī's two iḥtimāl are the qāʿida's other sides, inclusion outright and «الرجوع إلى القرائن», the reading's qarīna exception; Ibn Rajab derives the permission from the agent's purchase and prefers sadd al-dharīʿa. al-Inṣāf (v05:p357): «لم يجز له أن يأخذ منه لنفسه إذا كان من أهل الصدقة. على الصحيح من المذهب», reporting both iḥtimāl. On the madhhab side. Follow-on: giving it to one whose testimony for him is not accepted, «أشهرهما المنع»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f014",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "derivable",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "note": "One who appoints his debtor to release the appointer's debtors: the agent «لم يدخل فيهم بمطلق العقد», but if he names him or appoints him alone it is allowed (explicit inclusion, as in buying from himself «على الأصح»), per Sharḥ al-Hidāya from al-Qāḍī and Ibn ʿAqīl. The bare appointment is the leading ruling: not covered. al-Inṣāf (v05:p357) gives the same «على الصحيح من المذهب» for the agent to release debtors, with «وقيل: يملك ذلك»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f015",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "derivable",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "note": "In oaths (aymān) and suspensions (taʿlīq): «من دخل داري» does not include the speaker, and «من دخل دارك» not the addressee (al-Qāḍī and others). The conditional particle «من» is general (Ibn al-Laḥḥām's generality), yet the agent of the speech is taken out: link theorem specifies_a_general_term."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f016",
+      "encoder": "a27_specific_agent_in_general_object",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "a27_explicit_inclusion": false,
+        "a27_qarina_inclusion": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "whoever holds property that must be given as alms because its owners are unknown (usurped goods, deposits) may not take from it («على المنصوص»)",
+          "ruling": false
+        },
+        {
+          "who": "if poor he may eat from it (al-Qāḍī's takhrīj on the two riwāyas of the executor buying from himself; Shaykh Taqī al-Dīn's fatwā for the repentant usurper)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Property to be given as alms (ṣadaqa) for ignorance of its owners: «لا يجوز لمن هي في يده الأخذ منها على المنصوص وخرج القاضي جواز الأكل له منها إذا كان فقيرا». Takhṣīṣ: the one charged is outside the class of recipients. al-Inṣāf (v06:p213) restates the naṣṣ and reports al-Qāḍī's takhrīj and Taqī al-Dīn's fatwā. On the madhhab side. The record's unit also holds the closing tanbīh, the slave left a third of his master's estate, who enters it «ضرورة صحة الوصية له»: a qarīna of inclusion (theorem qarina_includes)."
+    }
+  ]
+}
