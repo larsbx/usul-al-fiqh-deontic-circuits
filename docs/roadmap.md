@@ -94,10 +94,11 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 - Require explicit acceptance actions before canonical insertion.
 - Generate explanations from derivation traces, not free-form verdict invention.
 
-Semantic tagging now has a merged development implementation (PR #72): 12 of 53
-IslamQA questions annotated, with 21 propositions and 13 bank mappings all on
-hold. Complete the remaining 41 questions, review the interpretations and typed
-fact entailments, then evaluate on a separately frozen modern set. See the
+Semantic tagging has a merged development implementation (PR #72) and a candidate
+pass covering all 53 IslamQA question IDs: 365 propositions, 1,073 candidate roles
+and 58 bank mappings all on hold. Audit segmentation completeness, independently
+review interpretations and typed fact entailments, then evaluate on a separately
+frozen modern set. The two proposed typed values remain unreviewed. See the
 [formalization roadmap's follow-up](roadmap-hanbali-usul-formalization.md#semantic-tagging-development-follow-up-2026-10-19)
 for evidence, boundaries and acceptance steps. No semantic accuracy or retrieval
 improvement is claimed by this batch.

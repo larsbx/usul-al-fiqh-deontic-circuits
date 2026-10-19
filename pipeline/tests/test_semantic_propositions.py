@@ -79,13 +79,18 @@ def test_duplicate_ids_and_forged_review_status_rejected(sample):
         p.validate_record(row, sources)
 
 
-def test_real_development_batch_pins_all_spans_to_committed_workset():
+def test_real_development_batch_pins_all_spans_to_committed_workset(monkeypatch):
     root = Path(__file__).resolve().parents[2]
     data = json.loads((root / p.ANNOTATIONS).read_text())
     workset = json.loads((root / "corpus/fatawa/semantic-tags-development.json").read_text())
     # This offline check pins spans to committed text. The full CLI also verifies
     # the original archive and independently derives the title/body boundary.
     sources = {r["source_id"]: {"text": r["text"], "body_start": 0} for r in workset["records"]}
-    assert len(data["records"]) == 12
+    assert len(data["records"]) == len(sources) == 53
+    assert {r["source_id"] for r in data["records"]} == set(sources)
+    # Candidate development mappings must never call an executable mirror.
+    for encoder in takhrij.ENCODERS.values():
+        monkeypatch.setitem(encoder, "py", lambda _: pytest.fail("development kernel execution"))
     for row in data["records"]:
-        p.validate_record(row, sources)
+        result = p.validate_record(row, sources)
+        assert all(m["status"] == "hold" and m["output"] is None for m in result["mappings"])

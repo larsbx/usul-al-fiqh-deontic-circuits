@@ -51,8 +51,8 @@ synthetic observations; they do not validate Arabic semantic interpretation.
 
 ## First authored proposition batch
 
-`corpus/fatawa/semantic-propositions-development.json` contains LLM-authored,
-purposively selected candidate annotations for 12 of the 53 questions: 21
+The first batch in `corpus/fatawa/semantic-propositions-development.json`
+contained LLM-authored, purposively selected annotations for 12 of the 53 questions: 21
 act-relative propositions, 72 candidate roles and 13 proposed bank mappings.
 Eighteen propositions are asserted; one each is hypothetical, questioned and
 uncertain. Polarity is recorded separately. Exact evidence for every role and
@@ -64,10 +64,9 @@ claimed review status and factual bindings from non-asserted or negative
 propositions. These structural checks do not establish that the authored actor,
 scope or interpretation is correct. Unspecified conditions stay unknown.
 
-Only one field has a candidate value: `trust_loss.hand = trustee` for the explicit
-entrustment in question 4652. It remains unreviewed. All 13 mappings hold, with
-zero new kernel executions. The deterministic report records these obligations
-in `corpus/fatawa/semantic-propositions-report.json`.
+That batch supplied one candidate field value: `trust_loss.hand = trustee` for
+the explicit entrustment in question 4652. All 13 initial mappings remain on hold.
+These original 12 records are preserved unchanged in the expanded workset.
 
 The batch exposes distinctions that literal matching must preserve:
 
@@ -78,14 +77,72 @@ The batch exposes distinctions that literal matching must preserve:
   and the assumed death are separate propositions.
 - In 83827, lack of consultation alone does not establish lack of permission.
 
-This is a development annotation batch, not an automatic semantic tagger or
-independent gold set. Remaining work includes the other 41 questions, independent
-review of the proposed interpretations, and evidence for missing typed facts.
+## Remaining-question candidate pass (2026-10-19)
+
+The pinned archive was materialized and verified again at 54,803,328 bytes and
+the SHA-256 above. Direct reading of its question bodies adds the remaining 41
+question IDs: 344 propositions, 1,001 candidate roles and 45 proposed bank
+mappings. The generated report now records:
+
+| Development quantity | Total |
+|---|---:|
+| Questions with candidate annotations | 53 / 53 |
+| Act-relative propositions | 365 |
+| Candidate roles | 1,073 |
+| Asserted / hypothetical / questioned / uncertain propositions | 248 / 18 / 73 / 26 |
+| Proposed bank mappings, all on hold | 58 |
+| Candidate typed fact bindings, all unreviewed | 2 |
+| New kernel executions | 0 |
+| Semantic accuracy / retrieval improvement | Unmeasured |
+
+The additional candidate binding is `trust_loss.hand = trustee` for the explicit
+entrustment in question 152192. It does not establish negligence, transgression,
+or permission to destroy the entrusted book. Together with question 4652, these
+are the only proposed non-null typed values; neither has been promoted.
+
+Each new record has a `review_note` identifying unresolved scope or interpretation
+issues. These notes are advisory, not review receipts. An `asserted` proposition
+records what the question narrates, including attributed speech or reports; it
+does not independently authenticate a medical report, police assessment, contract
+description or claimed legal consequence. Intentions and requests remain distinct
+from completion of the contemplated act. Hypothetical outcomes and disputed or
+remembered events retain their conditions and uncertainty.
+
+Examples requiring independent interpretation:
+
+- Question 13717 asks only for deposit rules; it supplies no concrete deposit or
+  loss event and has no bank mapping.
+- Questions 131070 and 146191 report a general buried-treasure scenario. They are
+  kept as separate source IDs and are not forced into the lost-property encoder.
+- Question 209303 reports two months of announcement; neither that duration nor
+  an intention to announce for a year establishes a completed announcement year.
+- Questions 165409 and 286486 ask about financial arrangements and interest;
+  asking how to dispose of money does not alone justify an unknown-owner mapping.
+- Question 198294 preserves the wife's suspicion and the husband's denial;
+  her stated 99-percent confidence is not converted into a reviewed epistemic grade.
+- Questions 315435, 317604, 348122 and 363963 distinguish collision or fall,
+  injuries, subsequent death, uncertain causes and attributed reports. Sequence
+  does not establish legal causation, negligence or liability.
+
+All evidence is checked against exact question-body spans in the verified archive.
+The unchanged workset and regenerated proposition report pass both deterministic
+`--check` commands. The 58 focused tests pass, including a full-workset guard that
+fails if any development mapping calls an executable mirror. `make validate`
+also passes for the registry, 52,637 corpus records, signature map and M5 receipts.
+These tests validate source integrity, schema and admission boundaries, not Arabic
+interpretation.
+
+All 53 question IDs now have an initial candidate pass. This is not a claim of
+exhaustive segmentation, reviewed interpretations, independent gold labels or an
+automatic semantic tagger. The initial 12 records still need the same review as
+the new 41. All subcases of a question must remain together in later evaluation;
+near-duplicate questions also require leakage review before any split is frozen.
 
 ## Next obligation
 
-Complete and review act-relative propositions and their scopes on this development
-workset, preserving distinct subcases of each question. Add field-specific
+Independently audit act-relative propositions, segmentation completeness and their
+scopes across all 53 development questions, preserving distinct subcases and
+correcting candidate interpretations where necessary. Add field-specific
 entailment checks and reviewed evidence before admitting fact values. Only then
 evaluate tag accuracy, typed fact accuracy, encoder retrieval and kernel agreement
 separately. Freeze a different question-held-out modern set before tuning; these
