@@ -94,6 +94,14 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 - Require explicit acceptance actions before canonical insertion.
 - Generate explanations from derivation traces, not free-form verdict invention.
 
+Semantic tagging now has a merged development implementation (PR #72): 12 of 53
+IslamQA questions annotated, with 21 propositions and 13 bank mappings all on
+hold. Complete the remaining 41 questions, review the interpretations and typed
+fact entailments, then evaluate on a separately frozen modern set. See the
+[formalization roadmap's follow-up](roadmap-hanbali-usul-formalization.md#semantic-tagging-development-follow-up-2026-10-19)
+for evidence, boundaries and acceptance steps. No semantic accuracy or retrieval
+improvement is claimed by this batch.
+
 ## Milestone 6 — Optional Gleam lane
 
 - Export canonical JSON bundles.

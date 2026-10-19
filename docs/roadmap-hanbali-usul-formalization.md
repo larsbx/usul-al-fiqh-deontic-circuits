@@ -62,6 +62,52 @@ restoration), #88 (source publication) and #91 (audit plan); do not absorb their
 content or bypass their blockers as part of this refactor. Full source verification,
 Lean, Prolog and generated-output CI remain integration gates.
 
+### Semantic tagging development follow-up (2026-10-19)
+
+[PR #72](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/72)
+merged on 2026-10-14. Its first authored batch is now on `main`; implementation
+merge does not promote the interpretations to reviewed facts. The committed
+[development report](../corpus/fatawa/semantic-propositions-report.json) records:
+
+| Development scope | Current state |
+|---|---|
+| Distinct questions behind 123 IslamQA cases | 53 |
+| Questions annotated / remaining | 12 / 41 |
+| Act-relative propositions / candidate roles | 21 / 72 |
+| Proposed bank mappings | 13, all on hold |
+| Candidate typed fact values | 1, unreviewed (`trust_loss.hand = trustee`, question 4652) |
+| New kernel executions | 0 |
+| Semantic accuracy / retrieval improvement | Unmeasured |
+
+The [development protocol](semantic-tagging-development.md) ties evidence to
+the pinned Arabic source, question-body spans and individual propositions.
+Editorial titles cannot supply factual evidence; actors, negation and hypothetical
+branches cannot be pooled to fill a fact map. These checks establish source and
+structural integrity, not the correctness of an interpretation. In particular,
+four years of possessing a found watch does not establish the bank's required
+year of public announcement.
+
+**Next work, within the existing source/interpretation/admission boundaries:**
+
+1. Complete candidate propositions for the remaining 41 questions, preserving
+   distinct actors, acts, scope, conditions, polarity and modality. Keep absent
+   facts unknown and regenerate the report with the pinned source available.
+2. Independently review the authored propositions and field-specific entailment
+   rationales. Record corrections and missing evidence before admitting any
+   complete typed fact map; merging code or documentation is not that review.
+3. Evaluate semantic tags, typed facts, encoder retrieval and kernel agreement
+   separately. Preserve all subcases of a question in the same split and freeze a
+   different modern question-held-out set before tuning. These 53 published
+   questions are development data, not a fresh blind test.
+
+The October 14 record of 58 focused tests plus one type-export consistency test,
+and deterministic generation checks, is prior validation evidence; this planning
+update does not rerun them. Historical retrieval figures, the verified original
+lexical replay and later candidate routing experiments remain separate evidence
+records. This annotation batch supplies no new retrieval score and does not
+overturn the signature proxy's zero-weight selection. The separate typed-situation
+routing experiments must not be attributed to this question-body annotation batch.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |
