@@ -65,3 +65,20 @@ The pilot used `intfloat/multilingual-e5-base` at revision `d128750597153bb5987e
 The centroid run collapses because e5's vectors share one dominant direction, so the categories with the most evidence win every query. The fix, centring on the mean and scoring each category by its nearest example, is the method's standard correction, fixed before scoring. Corrected, the embedding still scores half of TF-IDF, and fusing the two lowers the lexical figure. A general multilingual model does not separate what the bank routes on: furūʿ of a pledge and of a lease are near each other as commerce, yet fall under different qawāʿid. Semantic routing would need a classical-Arabic encoder fine-tuned on the bank's cases fold by fold. That is its own project, with the same leakage discipline, and is not pursued here.
 
 **So the path to 0.9 is the typed route** (items 1–3), with the lexical index as its tiebreak.
+
+## Pilot: the typed route on fold 0, re-typed with a richer catalogue
+
+The 240 fold-0 cases were re-typed blind by four agents, under fresh shuffled opaque ids. Each field came with the statements of the qāʿida types that contain it («stated_in»), with no encoder names. The scratch situations are not committed; the committed fold-0 typing is unchanged. Scored under the strict split:
+
+| | Situations / facts / nothing settled | @1 | @5 | @10 | Category @5 |
+|---|---|---|---|---|---|
+| Committed typing | 312 / 378 / 32 | 0.483 | 0.696 | 0.713 | 0.721 |
+| Re-typed, richer catalogue | 281 / 320 / 39 | **0.567** | **0.713** | 0.738 | **0.738** |
+
+Ranking by count of fields settled before share changes nothing, in either typing.
+
+**The ceiling is the typing step, not the ranking.** In the re-typed set:
+- When any field of the case's own encoder is settled (136 of 240, 57%), the encoder is in the top five every time.
+- All 69 misses are cases where the typist settled none of the right qāʿida's fields. The lexical tiebreak rescues 35 of those 104.
+
+Recall@5 is therefore about 0.57 + 0.43 × (the lexical rescue rate). Reaching 0.9 needs the typist to land on the right qāʿida about 85 % of the time, up from 57 %. The remaining lever is the typist's search over about 160 statements: for example, a shortlist from the strict-fold router, given as well as the full catalogue. Whether that is a real gain, and not circular, has to be measured on a fold it was not designed on.
