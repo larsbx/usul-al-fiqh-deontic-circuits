@@ -84,3 +84,34 @@ Ranking by count of fields settled before share changes nothing, in either typin
 - All 57 misses are cases where the typist settled none of the right qāʿida's fields. The lexical tiebreak rescues 24 of those 81.
 
 Recall@5 is therefore about 0.66 + 0.34 × (the lexical rescue rate, here 0.30). Reaching 0.9 needs the typist to land on the right qāʿida about 86 % of the time, up from 66 %. The remaining lever is the typist's search over about 160 statements: for example, a shortlist from the strict-fold router, given as well as the full catalogue. Whether that is a real gain, and not circular, has to be measured on a fold it was not designed on.
+
+## Pilot: deduction to the qāʿida from the established conclusion
+
+This reads routing the other way round, as takhrīj al-uṣūl ʿalā al-furūʿ. Take the conclusion an authoritative position states, and the facts the text settles, and ask which accepted readings could have produced it. `Usul.Cat.Deduction` formalises it:
+- partial situations ordered by refinement, where settling a fact is an established state transition;
+- for each reading, the presheaf `Reach` of verdicts still attainable;
+- `sound`: a true restriction of a derivable case keeps its reading admissible;
+- `excluded_forever`: an exclusion survives every refinement.
+
+`pipeline/usul_corpus/deduction.py` computes `Reach` exhaustively for every encoder. Its tests replay the Lean instances and check soundness over every derivable case in the bank.
+
+On fold 0, with the re-typed situations, under the strict split:
+
+| Recall@5 | Encoder | Category |
+|---|---|---|
+| Hybrid (baseline) | 0.762 | 0.792 |
+| + the conclusion's question, taken from the annotation | **0.829** | 0.842 (0.904 at k = 10) |
+| + question and `Reach` ∋ conclusion | 0.817 | 0.833 |
+| + question, ranked by refinement distance to the conclusion | 0.767–0.787 | 0.787–0.808 |
+| + the question labelled blind, as a filter (first choice / first or second) | 0.412 / 0.512 | 0.458 / 0.554 |
+| + the question labelled blind, as a tiebreak only | 0.750 / 0.762 | 0.787 / 0.800 |
+
+**Result: no legitimate gain yet.** The lift comes entirely from the conclusion's question. Blind labellers recover the bank's question for only 45 % of cases (58 % with a second choice). The question is how the bank *formalised* the ruling: a right that «يسقط» can be encoded as a sabab lapsing, as a validity, or as a takyīf. That is an encoding choice the text does not fix, so the oracle figure leaks it.
+
+`Reach` itself adds nothing at today's typing density. The blind situations settle one or two facts, so almost every reading can still reach every verdict. In 3 cases it dropped the right reading because the blind typing contradicted the case.
+
+**What would make it work.**
+- **Conclusions stated in a form the text fixes**, independent of any reading's encoding: for example the act, the party and the effect («the pledge stays binding on the thing»). The bank would then need a map from each reading's output to that form. That is the typed answer layer (`Usul.Typing.Answers`) extended from questions to effects.
+- **Denser typing,** so that `Reach` prunes.
+
+The theory and the exhaustive mirror are kept, and are proven sound. Neither changes the routing index.
