@@ -724,7 +724,7 @@ def mubasharaTasabbub : Typed Situation Usul.Readings.Mubashara.Daman where
   run | (a, u) => Usul.Readings.Mubashara.damanOn a u
   proj_embed := fun _ => rfl
 
-/-! ## Encoders of the parallel shards (RajabA1–A16) -/
+/-! ## Encoders of the parallel shards (RajabA1–A25) -/
 
 /-- `attached_right_disposal` reads `Qaida.Rajab53`. -/
 def attachedRightDisposal : Typed Situation (Bool) where
