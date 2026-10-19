@@ -1701,19 +1701,19 @@
           "reason": "Successive contracts do not establish displacement here, and growthKind returns part/separate rather than the inherited legal status. Do not promote full field coverage to a valid legal transfer."
         },
         {
-          "encoder": "successive_by_binding",
+          "encoder": "rajab_a28_faskh_growth_returns",
           "disposition": "not_established",
-          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires successive, earlier_binding, later_binding and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires from_substance, lifts_from_origin and returns [False, True] (Ibn Rajab 82, fusūkh); the unit names no faskh, so the source does not establish this mapping to that decision. No facts are filled from silence. Proposed after the routing index changed with Lane A round 7 (the Rajab82 type sharing Rajab20's from_substance), in place of successive_by_binding (reviewed not_established), which this unit no longer receives."
         },
         {
-          "encoder": "occurrence_state_governs",
-          "disposition": "not_established",
-          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires suspension_barred, occurrence_barred and returns [False, True]; the source does not establish this mapping to that decision. No facts are filled from silence."
+          "encoder": "rajab_a28_right_reaches_growth",
+          "disposition": "partial_support",
+          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires lazim_right, from_substance and returns [False, True] (Ibn Rajab 82, rights neither contract nor faskh: a lāzim right reaches the growth born of the thing). The source states from_substance for the umm walad's child, whose istīlād is such a right; it does not state lazim_right. No facts are filled from silence. Proposed after the routing index changed with Lane A round 7 (the Rajab82 type sharing Rajab20's from_substance), in place of occurrence_state_governs (reviewed not_established), which this unit no longer receives."
         },
         {
-          "encoder": "a27_ain_ruling_survives_owner_change",
-          "disposition": "not_established",
-          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires a27_tied_to_ain, a27_holder_consented and returns [False, True] (Ibn Rajab 40); the source does not establish this mapping to that decision. The chapter's «ومتى ملكه بعد عاد تدبيره» gives the output the reading gives tadbīr on the riwāya Ibn Rajab names (q040.f007), but it states neither fact (that tadbīr attaches to the ʿayn, and no consent to its lapse) and is not the decision under review. No facts are filled from silence. Proposed after the routing index changed with Lane A round 7, in place of woman_half_of_man (reviewed not_established), which this unit no longer receives."
+          "encoder": "rajab_a28_toward_ownership_growth",
+          "disposition": "partial_support",
+          "reason": "Source decision: Tadbir and kitaba may coexist with stated payment/death/one-third consequences; offspring take the mother's status. Encoder requires lazim, from_substance and returns [False, True] (Ibn Rajab 82, contracts leading to ownership: under a lāzim contract the growth follows). The source states from_substance: the child is born of her («وما ولدت المدبرة والمكاتبة وأم الولد من غير سيدها فله حكمها»), and its output, the child follows, is the reading's for a lāzim contract such as the kitāba; it does not state lazim, and for the mudabbara the reading's non-lāzim side would give the opposite (shard rajab-a28, register question 2). No facts are filled from silence. Proposed after the routing index changed with Lane A round 7 (the Rajab82 type sharing Rajab20's from_substance), in place of a27_ain_ruling_survives_owner_change (reviewed not_established), which this unit no longer receives."
         }
       ],
       "classification": "missing_rule",

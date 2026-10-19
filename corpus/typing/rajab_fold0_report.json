@@ -10,14 +10,14 @@
   "encoders": 223,
   "applies": 0.2875,
   "recall": {
-    "1": 0.4,
-    "5": 0.5375,
-    "10": 0.5375
+    "1": 0.4292,
+    "5": 0.5917,
+    "10": 0.5917
   },
   "recall_with_named_rules": {
-    "1": 0.4,
-    "5": 0.5375,
-    "10": 0.5375
+    "1": 0.4292,
+    "5": 0.5917,
+    "10": 0.5917
   },
   "lexical_recall": {
     "1": 0.5083,
@@ -25,9 +25,9 @@
     "10": 0.8458
   },
   "hybrid_recall": {
-    "1": 0.5292,
-    "5": 0.8625,
-    "10": 0.9
+    "1": 0.5542,
+    "5": 0.8792,
+    "10": 0.9125
   },
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {
@@ -41,26 +41,26 @@
     "a26_ihala_on_known_cause": {
       "cases": 4,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 4
+      "top5": 1,
+      "unrouted": 3
     },
     "a26_refused_idhn_lapses": {
       "cases": 4,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 4
+      "top5": 2,
+      "unrouted": 2
     },
     "a27_ain_ruling_survives_owner_change": {
       "cases": 4,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 4
+      "top5": 1,
+      "unrouted": 3
     },
     "a27_specific_agent_in_general_object": {
       "cases": 5,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 5
+      "top5": 2,
+      "unrouted": 3
     },
     "a29_four_kinds_of_milk": {
       "cases": 3,
@@ -71,8 +71,8 @@
     "a29_haml_hukm_before_separation": {
       "cases": 5,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 5
+      "top5": 1,
+      "unrouted": 4
     },
     "a31_rajab87_transfer_of_holding": {
       "cases": 2,
@@ -83,8 +83,8 @@
     "a31_rajab88_road_use": {
       "cases": 3,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 3
+      "top5": 3,
+      "unrouted": 0
     },
     "advance_after_cause": {
       "cases": 1,
@@ -509,14 +509,14 @@
     "rajab_a30_ikhtisas_hand_stands": {
       "cases": 2,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 2
+      "top5": 2,
+      "unrouted": 0
     },
     "rajab_a30_tamalluk_awaits_choice": {
       "cases": 4,
       "applies": 0,
-      "top5": 0,
-      "unrouted": 4
+      "top5": 1,
+      "unrouted": 3
     },
     "rajab_a30_tie_binds_whole": {
       "cases": 2,
@@ -913,8 +913,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f004",
       "encoder": "a26_ihala_on_known_cause",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f008",
@@ -985,14 +985,14 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
       "encoder": "a26_refused_idhn_lapses",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 4
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f001",
       "encoder": "a26_refused_idhn_lapses",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f002",
@@ -1081,8 +1081,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f005",
       "encoder": "a27_ain_ruling_survives_owner_change",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 5
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f006",
@@ -1261,8 +1261,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f003",
       "encoder": "a27_specific_agent_in_general_object",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f006",
@@ -1285,8 +1285,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f012",
       "encoder": "a27_specific_agent_in_general_object",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001",
@@ -1417,8 +1417,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f007",
       "encoder": "a29_haml_hukm_before_separation",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f010",
@@ -1459,8 +1459,8 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f007",
       "encoder": "rajab_a30_tamalluk_awaits_choice",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f009",
@@ -1471,14 +1471,14 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f011",
       "encoder": "rajab_a30_ikhtisas_hand_stands",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f012",
       "encoder": "rajab_a30_ikhtisas_hand_stands",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.5,
+      "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f020",
@@ -1525,20 +1525,20 @@
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f001",
       "encoder": "a31_rajab88_road_use",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.6,
+      "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f002",
       "encoder": "a31_rajab88_road_use",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.4,
+      "rank": 4
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f006",
       "encoder": "a31_rajab88_road_use",
-      "settled": 0.0,
-      "rank": null
+      "settled": 0.4,
+      "rank": 4
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",

@@ -12,7 +12,7 @@
   },
   "units": 40,
   "typed": 11,
-  "encoders_proposed_by_type": 14,
+  "encoders_proposed_by_type": 16,
   "units_detail": [
     {
       "unit": "abu_dawud.masail_ahmad.openiti_abudawud_masailahmad_shamela21487.m00052",
@@ -1224,22 +1224,28 @@
           "lexical_rank": 213
         },
         {
-          "encoder": "successive_by_binding",
+          "encoder": "rajab_a28_toward_ownership_growth",
           "settled": [
             1,
-            3
+            2
           ],
-          "lexical_rank": 4
+          "lexical_rank": 5
         },
         {
-          "encoder": "occurrence_state_governs",
-          "settled": null,
-          "lexical_rank": 1
+          "encoder": "rajab_a28_faskh_growth_returns",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 23
         },
         {
-          "encoder": "a27_ain_ruling_survives_owner_change",
-          "settled": null,
-          "lexical_rank": 2
+          "encoder": "rajab_a28_right_reaches_growth",
+          "settled": [
+            1,
+            2
+          ],
+          "lexical_rank": 147
         }
       ]
     },

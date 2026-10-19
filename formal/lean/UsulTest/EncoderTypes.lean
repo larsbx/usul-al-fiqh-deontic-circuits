@@ -3,13 +3,13 @@
 import Usul
 
 -- a26_refused_idhn_lapses: wadi:shart (negated)
-example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .shart)) := Usul.Typing.refusedIdhnLapses.mapRun (!·)
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .shart)) := Usul.Typing.a26RefusedIdhnLapses.mapRun (!·)
 -- a27_ain_ruling_survives_owner_change: wadi:sabab
-example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.ainRulingSurvivesOwnerChange
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.a27AinRulingSurvivesOwnerChange
 -- a31_rajab87_transfer_of_holding: wadi:validity
-example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.transferOfHolding.mapRun Usul.Validity.ofEffects
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.a31Rajab87TransferOfHolding.mapRun Usul.Validity.ofEffects
 -- a31_rajab88_road_use: aspect:permitted
-example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.roadUse
+example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.a31Rajab88RoadUse
 -- abstention_under_possible_condition: aspect:obligatory
 example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.abstentionUnderPossibleCondition
 -- advance_after_cause: aspect:permitted
@@ -167,15 +167,15 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 -- qisas_belongs_to_whom: wadi:validity
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.qisasBelongsToWhom.mapRun Usul.Validity.ofEffects
 -- rajab_a30_ikhtisas_first_comer: wadi:sabab
-example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.ikhtisasFirstComer
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.rajabA30IkhtisasFirstComer
 -- rajab_a30_ikhtisas_hand_stands: wadi:sabab
-example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.ikhtisasHandStands
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.rajabA30IkhtisasHandStands
 -- rajab_a30_tie_for_recovery: wadi:sabab
-example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.tieForRecovery
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.rajabA30TieForRecovery
 -- rajab_a30_use_right_for_need: aspect:obligatory
-example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.useRightForNeed
+example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.rajabA30UseRightForNeed
 -- rajab_a30_use_right_not_passed: wadi:validity
-example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.useRightNotPassed.mapRun Usul.Validity.ofEffects
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.rajabA30UseRightNotPassed.mapRun Usul.Validity.ofEffects
 -- recourse: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.recourse
 -- recourse_after_return: wadi:sabab

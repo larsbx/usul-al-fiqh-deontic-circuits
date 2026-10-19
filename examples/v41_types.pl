@@ -615,6 +615,35 @@ qaida_type(zann_error, 'Ibn Rajab Q6: an act done on a presumption later shown w
 type_field(zann_error, others_right, 'Option Bool').
 type_field(zann_error, negligent_inquiry, 'Option Bool').
 
+encoder_type(a26_ihala_on_known_cause, 'Bool').
+encoder_reads(a26_ihala_on_known_cause, 1, known_cause_fit).
+encoder_reads(a26_ihala_on_known_cause, 2, zahir_points_elsewhere).
+encoder_type(a26_refused_idhn_lapses, 'Bool').
+encoder_reads(a26_refused_idhn_lapses, 1, refusal_forbidden).
+encoder_reads(a26_refused_idhn_lapses, 2, mere_permission).
+encoder_type(a27_ain_ruling_survives_owner_change, 'Bool').
+encoder_reads(a27_ain_ruling_survives_owner_change, 1, tied_to_ain).
+encoder_reads(a27_ain_ruling_survives_owner_change, 2, holder_consented).
+encoder_type(a27_specific_agent_in_general_object, 'Bool').
+encoder_reads(a27_specific_agent_in_general_object, 1, agent_explicitly_included).
+encoder_reads(a27_specific_agent_in_general_object, 2, agent_included_by_qarina).
+encoder_type(a29_four_kinds_of_milk, 'Usul.Readings.RajabA29.MilkKind').
+encoder_reads(a29_four_kinds_of_milk, 1, milk_holds_ayn).
+encoder_reads(a29_four_kinds_of_milk, 2, milk_benefit_by_tamlik).
+encoder_type(a29_haml_hukm_before_separation, 'Bool').
+encoder_reads(a29_haml_hukm_before_separation, 1, haml_ruling_for_another).
+encoder_reads(a29_haml_hukm_before_separation, 2, haml_amara_evident).
+encoder_type(a31_rajab87_transfer_of_holding, 'Bool').
+encoder_reads(a31_rajab87_transfer_of_holding, 1, holding_q87).
+encoder_reads(a31_rajab87_transfer_of_holding, 2, lazim_title).
+encoder_reads(a31_rajab87_transfer_of_holding, 3, higher_than_title).
+encoder_reads(a31_rajab87_transfer_of_holding, 4, for_iwad).
+encoder_type(a31_rajab88_road_use, 'Bool').
+encoder_reads(a31_rajab88_road_use, 1, road_layer).
+encoder_reads(a31_rajab88_road_use, 2, narrow_or_harmful).
+encoder_reads(a31_rajab88_road_use, 3, permanent_use).
+encoder_reads(a31_rajab88_road_use, 4, public_benefit).
+encoder_reads(a31_rajab88_road_use, 5, imam_leave).
 encoder_type(abstention_under_possible_condition, 'Bool').
 encoder_reads(abstention_under_possible_condition, 1, suspended).
 encoder_reads(abstention_under_possible_condition, 2, possible).
@@ -626,9 +655,6 @@ encoder_reads(advanced_kaffara_at_obligation, 1, due_at_performance).
 encoder_reads(advanced_kaffara_at_obligation, 2, kaffara_changed).
 encoder_type(advanced_worship, 'Bool').
 encoder_reads(advanced_worship, 1, due_at_performance).
-encoder_type(ain_ruling_survives_owner_change, 'Bool').
-encoder_reads(ain_ruling_survives_owner_change, 1, tied_to_ain).
-encoder_reads(ain_ruling_survives_owner_change, 2, holder_consented).
 encoder_type(alternative_proven_alone, 'Bool').
 encoder_reads(alternative_proven_alone, 1, proof_establishes_cause).
 encoder_type(amr, 'Usul.Hukm').
@@ -805,9 +831,6 @@ encoder_reads(excused_error, 1, others_right).
 encoder_reads(excused_error, 2, negligent_inquiry).
 encoder_type(failed_obligation_returns, 'Bool').
 encoder_reads(failed_obligation_returns, 1, failed_to_count).
-encoder_type(faskh_growth_returns, 'Bool').
-encoder_reads(faskh_growth_returns, 1, from_substance).
-encoder_reads(faskh_growth_returns, 2, lifts_from_origin).
 encoder_type(fay_tie_break, 'Usul.Refinements.TieBreak').
 encoder_reads(fay_tie_break, 1, tie_break_criteria).
 encoder_type(follows_proven_ownership, 'Bool').
@@ -826,9 +849,6 @@ encoder_reads(four_kinds_marriage_prohibition, 1, nasab_dabit).
 encoder_reads(four_kinds_marriage_prohibition, 2, sihr_class).
 encoder_reads(four_kinds_marriage_prohibition, 3, jam_rahm_mahram).
 encoder_reads(four_kinds_marriage_prohibition, 4, rada_counterpart).
-encoder_type(four_kinds_of_milk, 'Usul.Readings.RajabA29.MilkKind').
-encoder_reads(four_kinds_of_milk, 1, milk_holds_ayn).
-encoder_reads(four_kinds_of_milk, 2, milk_benefit_by_tamlik).
 encoder_type(free_bestowal_of_needed_ayn, 'Bool').
 encoder_reads(free_bestowal_of_needed_ayn, 1, needed).
 encoder_reads(free_bestowal_of_needed_ayn, 2, harmless_q99).
@@ -844,21 +864,13 @@ encoder_type(grandchild_in_child_term, 'Bool').
 encoder_reads(grandchild_in_child_term, 1, included_with_or_without_child).
 encoder_reads(grandchild_in_child_term, 2, included_only_absent_child).
 encoder_reads(grandchild_in_child_term, 3, intermediate_child_present).
-encoder_type(growth_follows_hand, 'Bool').
-encoder_reads(growth_follows_hand, 1, shares_ground).
 encoder_type(growth_from_substance, 'Usul.Refinements.Growth').
 encoder_reads(growth_from_substance, 1, from_substance).
-encoder_type(growth_in_nonownership_contract, 'Bool').
-encoder_reads(growth_in_nonownership_contract, 1, on_substance).
-encoder_reads(growth_in_nonownership_contract, 2, lazim_q82).
 encoder_type(hair_detached, 'Usul.Refinements.Attachment').
 encoder_reads(hair_detached, 1, hair_or_nail).
 encoder_type(haml_ala_adna, 'Bool').
 encoder_reads(haml_ala_adna, 1, unspecified).
 encoder_reads(haml_ala_adna, 2, ranked).
-encoder_type(haml_hukm_before_separation, 'Bool').
-encoder_reads(haml_hukm_before_separation, 1, haml_ruling_for_another).
-encoder_reads(haml_hukm_before_separation, 2, haml_amara_evident).
 encoder_type(hand_liability, 'Bool').
 encoder_reads(hand_liability, 1, property_like).
 encoder_type(hand_with_owner_liable, 'Bool').
@@ -886,17 +898,8 @@ encoder_type(idda_transfer_on_change, 'Bool').
 encoder_reads(idda_transfer_on_change, 1, idda_status_changes).
 encoder_reads(idda_transfer_on_change, 2, husband_can_remedy_in_idda).
 encoder_reads(idda_transfer_on_change, 3, sick_husband_ibana).
-encoder_type(ihala_on_known_cause, 'Bool').
-encoder_reads(ihala_on_known_cause, 1, known_cause_fit).
-encoder_reads(ihala_on_known_cause, 2, zahir_points_elsewhere).
 encoder_type(ihram_specification, 'Bool').
 encoder_reads(ihram_specification, 1, component).
-encoder_type(ikhtisas_first_comer, 'Bool').
-encoder_reads(ikhtisas_first_comer, 1, preceded_q85).
-encoder_reads(ikhtisas_first_comer, 2, left_by_choice).
-encoder_type(ikhtisas_hand_stands, 'Bool').
-encoder_reads(ikhtisas_hand_stands, 1, permitted_benefit).
-encoder_reads(ikhtisas_hand_stands, 2, may_become_mal).
 encoder_type(implicit_exception, 'Bool').
 encoder_reads(implicit_exception, 1, implicit).
 encoder_type(injury_state_measures, 'Bool').
@@ -997,6 +1000,42 @@ encoder_reads(qawad_choice_forfeits_attached_right, 1, either_of_two).
 encoder_reads(qawad_choice_forfeits_attached_right, 2, victim_encumbered).
 encoder_type(qisas_belongs_to_whom, 'Bool').
 encoder_reads(qisas_belongs_to_whom, 1, right_is_victims).
+encoder_type(rajab_a28_faskh_growth_returns, 'Bool').
+encoder_reads(rajab_a28_faskh_growth_returns, 1, from_substance).
+encoder_reads(rajab_a28_faskh_growth_returns, 2, lifts_from_origin).
+encoder_type(rajab_a28_growth_follows_hand, 'Bool').
+encoder_reads(rajab_a28_growth_follows_hand, 1, shares_ground).
+encoder_type(rajab_a28_growth_in_nonownership_contract, 'Bool').
+encoder_reads(rajab_a28_growth_in_nonownership_contract, 1, on_substance).
+encoder_reads(rajab_a28_growth_in_nonownership_contract, 2, lazim_q82).
+encoder_type(rajab_a28_right_reaches_growth, 'Bool').
+encoder_reads(rajab_a28_right_reaches_growth, 1, lazim_right).
+encoder_reads(rajab_a28_right_reaches_growth, 2, from_substance).
+encoder_type(rajab_a28_toward_ownership_growth, 'Bool').
+encoder_reads(rajab_a28_toward_ownership_growth, 1, lazim_q82).
+encoder_reads(rajab_a28_toward_ownership_growth, 2, from_substance).
+encoder_type(rajab_a30_ikhtisas_first_comer, 'Bool').
+encoder_reads(rajab_a30_ikhtisas_first_comer, 1, preceded_q85).
+encoder_reads(rajab_a30_ikhtisas_first_comer, 2, left_by_choice).
+encoder_type(rajab_a30_ikhtisas_hand_stands, 'Bool').
+encoder_reads(rajab_a30_ikhtisas_hand_stands, 1, permitted_benefit).
+encoder_reads(rajab_a30_ikhtisas_hand_stands, 2, may_become_mal).
+encoder_type(rajab_a30_tamalluk_awaits_choice, 'Bool').
+encoder_reads(rajab_a30_tamalluk_awaits_choice, 1, cause_concluded).
+encoder_reads(rajab_a30_tamalluk_awaits_choice, 2, cause_completes_milk).
+encoder_type(rajab_a30_tie_binds_whole, 'Bool').
+encoder_reads(rajab_a30_tie_binds_whole, 1, pledge_tie).
+encoder_reads(rajab_a30_tie_binds_whole, 2, jinaya_tie).
+encoder_type(rajab_a30_tie_for_recovery, 'Bool').
+encoder_reads(rajab_a30_tie_for_recovery, 1, tied_q85).
+encoder_type(rajab_a30_tied_right_precedes, 'Bool').
+encoder_reads(rajab_a30_tied_right_precedes, 1, tied_q85).
+encoder_reads(rajab_a30_tied_right_precedes, 2, rival_in_dhimma_only).
+encoder_type(rajab_a30_use_right_for_need, 'Bool').
+encoder_reads(rajab_a30_use_right_for_need, 1, needed).
+encoder_reads(rajab_a30_use_right_for_need, 2, harmful_q85).
+encoder_type(rajab_a30_use_right_not_passed, 'Bool').
+encoder_reads(rajab_a30_use_right_not_passed, 1, use_right_only).
 encoder_type(rajiyya_takes_wife_rule, 'Bool').
 encoder_reads(rajiyya_takes_wife_rule, 1, rajiyya).
 encoder_reads(rajiyya_takes_wife_rule, 2, listed_difference).
@@ -1018,9 +1057,6 @@ encoder_reads(refusal_exacted_for_him, 3, established).
 encoder_type(refusal_right_falls, 'Bool').
 encoder_reads(refusal_right_falls, 1, harms_other).
 encoder_reads(refusal_right_falls, 2, established).
-encoder_type(refused_idhn_lapses, 'Bool').
-encoder_reads(refused_idhn_lapses, 1, refusal_forbidden).
-encoder_reads(refused_idhn_lapses, 2, mere_permission).
 encoder_type(removal_before_knowledge, 'Bool').
 encoder_reads(removal_before_knowledge, 1, public_office).
 encoder_type(repeat_bearing_roots_as_trees, 'Bool').
@@ -1048,20 +1084,11 @@ encoder_reads(right_for_or_against_self, 1, for_himself).
 encoder_type(right_on_refuser_exacted, 'Bool').
 encoder_reads(right_on_refuser_exacted, 1, right_on_him).
 encoder_reads(right_on_refuser_exacted, 2, exactable).
-encoder_type(right_reaches_growth, 'Bool').
-encoder_reads(right_reaches_growth, 1, lazim_right).
-encoder_reads(right_reaches_growth, 2, from_substance).
 encoder_type(right_to_own_disposal, 'Bool').
 encoder_reads(right_to_own_disposal, 1, cause_complete).
 encoder_reads(right_to_own_disposal, 2, tie_remains).
 encoder_type(right_to_substitute, 'Bool').
 encoder_reads(right_to_substitute, 1, bound_to_thing).
-encoder_type(road_use, 'Bool').
-encoder_reads(road_use, 1, road_layer).
-encoder_reads(road_use, 2, narrow_or_harmful).
-encoder_reads(road_use, 3, permanent_use).
-encoder_reads(road_use, 4, public_benefit).
-encoder_reads(road_use, 5, imam_leave).
 encoder_type(rukhsa_under_doubt, 'Bool').
 encoder_reads(rukhsa_under_doubt, 1, rukhsa_needs_certainty).
 encoder_reads(rukhsa_under_doubt, 2, permission_established).
@@ -1087,9 +1114,6 @@ encoder_type(shared_right_accrues_to_rest, 'Bool').
 encoder_reads(shared_right_accrues_to_rest, 1, each_entitled_whole).
 encoder_type(simultaneous_combination_voids, 'Bool').
 encoder_reads(simultaneous_combination_voids, 1, has_precedence).
-encoder_type(specific_agent_in_general_object, 'Bool').
-encoder_reads(specific_agent_in_general_object, 1, agent_explicitly_included).
-encoder_reads(specific_agent_in_general_object, 2, agent_included_by_qarina).
 encoder_type(specific_singled_out, 'Bool').
 encoder_reads(specific_singled_out, 1, connected).
 encoder_reads(specific_singled_out, 2, revocable).
@@ -1133,30 +1157,11 @@ encoder_reads(takes_only_by_special, 1, special_title).
 encoder_type(taliq_al_bay, 'Bool').
 encoder_reads(taliq_al_bay, 1, conditional).
 encoder_reads(taliq_al_bay, 2, known_to_hold).
-encoder_type(tamalluk_awaits_choice, 'Bool').
-encoder_reads(tamalluk_awaits_choice, 1, cause_concluded).
-encoder_reads(tamalluk_awaits_choice, 2, cause_completes_milk).
-encoder_type(tie_binds_whole, 'Bool').
-encoder_reads(tie_binds_whole, 1, pledge_tie).
-encoder_reads(tie_binds_whole, 2, jinaya_tie).
-encoder_type(tie_for_recovery, 'Bool').
-encoder_reads(tie_for_recovery, 1, tied_q85).
-encoder_type(tied_right_precedes, 'Bool').
-encoder_reads(tied_right_precedes, 1, tied_q85).
-encoder_reads(tied_right_precedes, 2, rival_in_dhimma_only).
 encoder_type(tolerance_exceeded, 'Usul.Refinements.Lapse').
 encoder_reads(tolerance_exceeded, 1, at_fault).
-encoder_type(toward_ownership_growth, 'Bool').
-encoder_reads(toward_ownership_growth, 1, lazim_q82).
-encoder_reads(toward_ownership_growth, 2, from_substance).
 encoder_type(transfer_follows_cause, 'Bool').
 encoder_reads(transfer_follows_cause, 1, transfer_given_for_cause).
 encoder_reads(transfer_follows_cause, 2, independent_gift_cause).
-encoder_type(transfer_of_holding, 'Bool').
-encoder_reads(transfer_of_holding, 1, holding_q87).
-encoder_reads(transfer_of_holding, 2, lazim_title).
-encoder_reads(transfer_of_holding, 3, higher_than_title).
-encoder_reads(transfer_of_holding, 4, for_iwad).
 encoder_type(trust_loss, 'Bool').
 encoder_reads(trust_loss, 1, hand).
 encoder_reads(trust_loss, 2, transgressed).
@@ -1201,11 +1206,6 @@ encoder_type(urf_specialises_general, 'Bool').
 encoder_reads(urf_specialises_general, 1, urfi_haqiqa).
 encoder_reads(urf_specialises_general, 2, only_qualified).
 encoder_reads(urf_specialises_general, 3, mostly_qualified).
-encoder_type(use_right_for_need, 'Bool').
-encoder_reads(use_right_for_need, 1, needed).
-encoder_reads(use_right_for_need, 2, harmful_q85).
-encoder_type(use_right_not_passed, 'Bool').
-encoder_reads(use_right_not_passed, 1, use_right_only).
 encoder_type(vague_insha_valid, 'Bool').
 encoder_reads(vague_insha_valid, 1, binding_transfer).
 encoder_reads(vague_insha_valid, 2, equal_mixed).

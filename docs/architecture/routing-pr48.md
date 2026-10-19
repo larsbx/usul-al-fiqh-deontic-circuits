@@ -32,9 +32,11 @@ The typed coverage scores (Prolog over the Lean export) are trained on nothing, 
 | Recall@5 | Folded by record (as reported) | Folded by qāʿida (strict) |
 |---|---|---|
 | Lexical alone | 0.800 | 0.463 |
-| Hybrid, types first | 0.863 | **0.696** |
-| Hybrid, scored on category | 0.879 | **0.721** |
-| Hybrid, round 7's 43 cases | 0.698 | 0.349 |
+| Hybrid, types first | 0.879 | **0.725** |
+| Hybrid, scored on category | 0.896 | **0.754** |
+| Hybrid, round 7's 43 cases | 0.791 | 0.512 |
+
+These figures follow a fix to round 7's typed wrappers. Their `def` names had been shortened, so the Prolog export, which takes an encoder's name from its `def` in snake_case, named the new encoders wrongly, and their typed coverage was lost. Before the fix the hybrid read 0.863 / 0.696.
 
 ## What 0.9 would take, legitimately
 
@@ -44,7 +46,7 @@ Legitimate means four things hold:
 - method choices are fixed before scoring, or chosen on inner folds;
 - the prior is reported beside every figure.
 
-1. **A typed signal that discriminates.** On its own the typed route reaches 0.54 at k = 5. Two things limit it:
+1. **A typed signal that discriminates.** On its own the typed route reaches 0.59 at k = 5. Two things limit it:
    - **Thin situations.** 32 of the 240 cases settle no field. The blind typist saw bare field names, and a catalogue that gives each field its qāʿida type's statement (encoder names stripped) is legitimate, since the statements are known when the router is used.
    - **Ties.** Ranking by the *share* of an encoder's fields settled ties every one-field encoder at 1.0. Ranking by count settled, then share, with the type hierarchy (`extends`) breaking ties, uses what the types already carry.
 2. **Category scoring at the type layer** (done for the lexical headline).
@@ -57,7 +59,7 @@ The pilot used `intfloat/multilingual-e5-base` at revision `d128750597153bb5987e
 
 | Recall@5 under the strict split | Category, all | Old | Round 7 | Typed hybrid, fold 0 (by encoder / by category) |
 |---|---|---|---|---|
-| Lexical (the index) | **0.483** | 0.515 | 0.285 | **0.696** / 0.721 |
+| Lexical (the index) | **0.483** | 0.515 | 0.285 | **0.696** / 0.721 (before the wrapper fix) |
 | Semantic, category centroids | 0.063 | 0.072 | 0.012 | 0.554 / 0.571 |
 | Semantic, centred, nearest example | 0.255 | 0.265 | 0.192 | 0.613 / 0.629 |
 | Lexical and semantic fused | 0.355 | 0.376 | 0.227 | 0.650 / 0.675 |
@@ -72,13 +74,13 @@ The 240 fold-0 cases were re-typed blind by four agents, under fresh shuffled op
 
 | | Situations / facts / nothing settled | @1 | @5 | @10 | Category @5 |
 |---|---|---|---|---|---|
-| Committed typing | 312 / 378 / 32 | 0.483 | 0.696 | 0.713 | 0.721 |
-| Re-typed, richer catalogue | 281 / 320 / 39 | **0.567** | **0.713** | 0.738 | **0.738** |
+| Committed typing | 312 / 378 / 32 | 0.512 | 0.725 | 0.746 | 0.754 |
+| Re-typed, richer catalogue | 281 / 320 / 39 | **0.629** | **0.762** | 0.783 | **0.792** |
 
 Ranking by count of fields settled before share changes nothing, in either typing.
 
 **The ceiling is the typing step, not the ranking.** In the re-typed set:
-- When any field of the case's own encoder is settled (136 of 240, 57%), the encoder is in the top five every time.
-- All 69 misses are cases where the typist settled none of the right qāʿida's fields. The lexical tiebreak rescues 35 of those 104.
+- When any field of the case's own encoder is settled (159 of 240, 66 %), the encoder is in the top five every time.
+- All 57 misses are cases where the typist settled none of the right qāʿida's fields. The lexical tiebreak rescues 24 of those 81.
 
-Recall@5 is therefore about 0.57 + 0.43 × (the lexical rescue rate). Reaching 0.9 needs the typist to land on the right qāʿida about 85 % of the time, up from 57 %. The remaining lever is the typist's search over about 160 statements: for example, a shortlist from the strict-fold router, given as well as the full catalogue. Whether that is a real gain, and not circular, has to be measured on a fold it was not designed on.
+Recall@5 is therefore about 0.66 + 0.34 × (the lexical rescue rate, here 0.30). Reaching 0.9 needs the typist to land on the right qāʿida about 86 % of the time, up from 66 %. The remaining lever is the typist's search over about 160 statements: for example, a shortlist from the strict-fold router, given as well as the full catalogue. Whether that is a real gain, and not circular, has to be measured on a fold it was not designed on.
