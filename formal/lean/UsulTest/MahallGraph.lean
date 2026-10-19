@@ -2223,431 +2223,429 @@ def defines4 : List (String × String) := [
   ("n0352", "jinayat.abd_jani"),
   ("n0353", "jinayat.abd_jani"),
   ("n0354", "jinayat.abd_jani"),
-  ("n0355", "jinayat.abd_jani"),
-  ("n0356", "jinayat.afw_qisas"),
-  ("n0356", "jinayat.qisas"),
-  ("n0357", "jinayat.daf_sail"),
-  ("n0358", "jinayat.hafr_bir"),
-  ("n0359", "jinayat.istifa_qisas"),
-  ("n0360", "jinayat.jinayat_abd"),
-  ("n0361", "jinayat.jirah"),
-  ("n0361", "jinayat.qisas_atraf"),
-  ("n0362", "jinayat.kaffarat_qatl"),
-  ("n0363", "jinayat.mujib_amd"),
-  ("n0364", "jinayat.muslim_bi_kafir"),
+  ("n0355", "jinayat.afw_qisas"),
+  ("n0355", "jinayat.qisas"),
+  ("n0356", "jinayat.daf_sail"),
+  ("n0357", "jinayat.hafr_bir"),
+  ("n0358", "jinayat.istifa_qisas"),
+  ("n0359", "jinayat.jinayat_abd"),
+  ("n0360", "jinayat.jirah"),
+  ("n0360", "jinayat.qisas_atraf"),
+  ("n0361", "jinayat.kaffarat_qatl"),
+  ("n0362", "jinayat.mujib_amd"),
+  ("n0363", "jinayat.muslim_bi_kafir"),
+  ("n0364", "jinayat.qasama"),
   ("n0365", "jinayat.qasama"),
-  ("n0366", "jinayat.qasama"),
+  ("n0366", "jinayat.qatl_amd"),
   ("n0367", "jinayat.qatl_amd"),
-  ("n0368", "jinayat.qatl_amd"),
-  ("n0369", "jinayat.qatl_nafs"),
+  ("n0368", "jinayat.qatl_nafs"),
+  ("n0369", "jinayat.qisas"),
   ("n0370", "jinayat.qisas"),
-  ("n0371", "jinayat.qisas"),
-  ("n0372", "jinayat.qisas_walid"),
-  ("n0373", "jinayat.sabiyy"),
+  ("n0371", "jinayat.qisas_walid"),
+  ("n0372", "jinayat.sabiyy"),
+  ("n0373", "khul.iwad_khul"),
+  ("n0373", "khul.khul"),
   ("n0374", "khul.iwad_khul"),
-  ("n0374", "khul.khul"),
-  ("n0375", "khul.iwad_khul"),
-  ("n0376", "khul.khul"),
-  ("n0377", "lian.lian"),
-  ("n0378", "lian.lihaq_nasab"),
-  ("n0378", "nikah.firash"),
-  ("n0378", "nikah.nasab"),
-  ("n0379", "lian.qiyafa"),
-  ("n0380", "luqata.dalla"),
+  ("n0375", "khul.khul"),
+  ("n0376", "lian.lian"),
+  ("n0377", "lian.lihaq_nasab"),
+  ("n0377", "nikah.firash"),
+  ("n0377", "nikah.nasab"),
+  ("n0378", "lian.qiyafa"),
+  ("n0379", "luqata.dalla"),
+  ("n0380", "luqata.laqit"),
   ("n0381", "luqata.laqit"),
   ("n0382", "luqata.laqit"),
-  ("n0383", "luqata.laqit"),
+  ("n0383", "luqata.luqata"),
   ("n0384", "luqata.luqata"),
   ("n0385", "luqata.luqata"),
-  ("n0386", "luqata.luqata"),
-  ("n0387", "luqata.mal_majhul_rabb"),
+  ("n0386", "luqata.mal_majhul_rabb"),
+  ("n0387", "musaqat.musaqat"),
   ("n0388", "musaqat.musaqat"),
   ("n0389", "musaqat.musaqat"),
-  ("n0390", "musaqat.musaqat"),
-  ("n0391", "musaqat.muzaraa"),
-  ("n0392", "nafaqat.fasakh_iisar"),
-  ("n0393", "nafaqat.hadana"),
-  ("n0394", "nafaqat.nafaqa"),
-  ("n0394", "nafaqat.nafaqat_zawja"),
-  ("n0395", "nafaqat.nafaqat_aqarib"),
-  ("n0396", "nafaqat.nafaqat_bahaim"),
-  ("n0397", "nafaqat.nafaqat_mabtuta"),
-  ("n0398", "nafaqat.takhyir_mahdun"),
+  ("n0390", "musaqat.muzaraa"),
+  ("n0391", "nafaqat.fasakh_iisar"),
+  ("n0392", "nafaqat.hadana"),
+  ("n0393", "nafaqat.nafaqa"),
+  ("n0393", "nafaqat.nafaqat_zawja"),
+  ("n0394", "nafaqat.nafaqat_aqarib"),
+  ("n0395", "nafaqat.nafaqat_bahaim"),
+  ("n0396", "nafaqat.nafaqat_mabtuta"),
+  ("n0397", "nafaqat.takhyir_mahdun"),
+  ("n0398", "nikah.adad_zawjat"),
+  ("n0398", "nikah.jam_fawq_arba"),
   ("n0399", "nikah.adad_zawjat"),
-  ("n0399", "nikah.jam_fawq_arba"),
   ("n0400", "nikah.adad_zawjat"),
   ("n0401", "nikah.adad_zawjat"),
-  ("n0402", "nikah.adad_zawjat"),
-  ("n0403", "nikah.ama_muzawwaja"),
-  ("n0404", "nikah.bud"),
-  ("n0404", "nikah.muhajira"),
+  ("n0402", "nikah.ama_muzawwaja"),
+  ("n0403", "nikah.bud"),
+  ("n0403", "nikah.muhajira"),
+  ("n0404", "nikah.idhn_mara"),
   ("n0405", "nikah.idhn_mara"),
-  ("n0406", "nikah.idhn_mara"),
+  ("n0406", "nikah.islam_ahad_zawjayn"),
   ("n0407", "nikah.islam_ahad_zawjayn"),
-  ("n0408", "nikah.islam_ahad_zawjayn"),
-  ("n0409", "nikah.islam_ala_akthar"),
-  ("n0410", "nikah.islam_zawjayn"),
-  ("n0411", "nikah.istimna"),
+  ("n0408", "nikah.islam_ala_akthar"),
+  ("n0409", "nikah.islam_zawjayn"),
+  ("n0410", "nikah.istimna"),
+  ("n0411", "nikah.jam_bayn_mahram"),
+  ("n0411", "nikah.jam_ukhtayn"),
   ("n0412", "nikah.jam_bayn_mahram"),
-  ("n0412", "nikah.jam_ukhtayn"),
-  ("n0413", "nikah.jam_bayn_mahram"),
-  ("n0414", "nikah.jam_fawq_arba"),
-  ("n0415", "nikah.jam_ukhtayn"),
-  ("n0416", "nikah.kafaa"),
+  ("n0413", "nikah.jam_fawq_arba"),
+  ("n0414", "nikah.kafaa"),
+  ("n0415", "nikah.khiyar_mutaqa"),
+  ("n0416", "nikah.khiyar_mutaqa"),
   ("n0417", "nikah.khiyar_mutaqa"),
   ("n0418", "nikah.khiyar_mutaqa"),
-  ("n0419", "nikah.khiyar_mutaqa"),
-  ("n0420", "nikah.khiyar_mutaqa"),
-  ("n0421", "nikah.milk_zawj"),
-  ("n0422", "nikah.muhajira"),
+  ("n0419", "nikah.milk_zawj"),
+  ("n0420", "nikah.muhajira"),
+  ("n0421", "nikah.muharramat"),
+  ("n0422", "nikah.muharramat"),
   ("n0423", "nikah.muharramat"),
-  ("n0424", "nikah.muharramat"),
-  ("n0425", "nikah.muharramat"),
-  ("n0426", "nikah.muharramat_musahara"),
-  ("n0426", "nikah.musahara"),
-  ("n0427", "nikah.muharramat_musahara"),
-  ("n0428", "nikah.muharramat_nasab"),
-  ("n0429", "nikah.nikah")]
+  ("n0424", "nikah.muharramat_musahara"),
+  ("n0424", "nikah.musahara"),
+  ("n0425", "nikah.muharramat_musahara"),
+  ("n0426", "nikah.muharramat_nasab"),
+  ("n0427", "nikah.nikah"),
+  ("n0428", "nikah.nikah_ama"),
+  ("n0429", "nikah.nikah_ama")]
 
 def defines5 : List (String × String) := [
   ("n0430", "nikah.nikah_ama"),
   ("n0431", "nikah.nikah_ama"),
-  ("n0432", "nikah.nikah_ama"),
-  ("n0433", "nikah.nikah_ama"),
-  ("n0434", "nikah.nikah_fasid"),
-  ("n0435", "nikah.nikah_mutadda"),
+  ("n0432", "nikah.nikah_fasid"),
+  ("n0433", "nikah.nikah_mutadda"),
+  ("n0434", "nikah.qasm_bayn_zawjat"),
+  ("n0435", "nikah.qasm_bayn_zawjat"),
   ("n0436", "nikah.qasm_bayn_zawjat"),
-  ("n0437", "nikah.qasm_bayn_zawjat"),
-  ("n0438", "nikah.qasm_bayn_zawjat"),
-  ("n0439", "nikah.sighat_nikah"),
-  ("n0440", "nikah.tazwij_waliyyayn"),
+  ("n0437", "nikah.sighat_nikah"),
+  ("n0438", "nikah.tazwij_waliyyayn"),
+  ("n0438", "nikah.wali"),
+  ("n0439", "nikah.unna"),
   ("n0440", "nikah.wali"),
-  ("n0441", "nikah.unna"),
-  ("n0442", "nikah.wali"),
-  ("n0442", "nikah.wilaya"),
-  ("n0443", "nikah.wali"),
-  ("n0444", "nikah.walima"),
-  ("n0445", "nikah.walima"),
-  ("n0446", "nikah.wilaya"),
-  ("n0447", "nudhur.nadhr"),
-  ("n0448", "nudhur.nadhr"),
-  ("n0449", "nudhur.nadhr_mayyit"),
-  ("n0450", "nudhur.nadhr_muallaq"),
-  ("n0451", "nudhur.nadhr_sadaqa_mal"),
+  ("n0440", "nikah.wilaya"),
+  ("n0441", "nikah.wali"),
+  ("n0442", "nikah.walima"),
+  ("n0443", "nikah.walima"),
+  ("n0444", "nikah.wilaya"),
+  ("n0445", "nudhur.nadhr"),
+  ("n0446", "nudhur.nadhr"),
+  ("n0447", "nudhur.nadhr_mayyit"),
+  ("n0448", "nudhur.nadhr_muallaq"),
+  ("n0449", "nudhur.nadhr_sadaqa_mal"),
+  ("n0450", "qada.hukm"),
+  ("n0451", "qada.hukm"),
   ("n0452", "qada.hukm"),
-  ("n0453", "qada.hukm"),
-  ("n0454", "qada.hukm"),
-  ("n0454", "qada.naqd_hukm"),
-  ("n0455", "qada.imam"),
-  ("n0455", "qada.imama_uzma"),
-  ("n0456", "qada.imama_uzma"),
-  ("n0457", "qada.kitab_qadi"),
-  ("n0458", "qada.kitab_qadi"),
-  ("n0459", "qada.muhayaa"),
-  ("n0460", "qada.qada"),
-  ("n0461", "qada.qadi"),
-  ("n0462", "qada.qadi"),
-  ("n0463", "qada.qisma"),
-  ("n0464", "qada.qisma"),
-  ("n0465", "qard.hadiyyat_muqtarid"),
-  ("n0466", "qard.hadiyyat_muqtarid"),
-  ("n0467", "qard.qard"),
-  ("n0468", "qard.qard"),
-  ("n0469", "rada.laban"),
+  ("n0452", "qada.naqd_hukm"),
+  ("n0453", "qada.imam"),
+  ("n0453", "qada.imama_uzma"),
+  ("n0454", "qada.imama_uzma"),
+  ("n0455", "qada.kitab_qadi"),
+  ("n0456", "qada.kitab_qadi"),
+  ("n0457", "qada.muhayaa"),
+  ("n0458", "qada.qada"),
+  ("n0459", "qada.qadi"),
+  ("n0460", "qada.qadi"),
+  ("n0461", "qada.qisma"),
+  ("n0462", "qada.qisma"),
+  ("n0463", "qard.hadiyyat_muqtarid"),
+  ("n0464", "qard.hadiyyat_muqtarid"),
+  ("n0465", "qard.qard"),
+  ("n0466", "qard.qard"),
+  ("n0467", "rada.laban"),
+  ("n0467", "rada.muharramat_rada"),
+  ("n0467", "rada.rada"),
+  ("n0468", "rada.laban"),
+  ("n0468", "rada.rada"),
   ("n0469", "rada.muharramat_rada"),
-  ("n0469", "rada.rada"),
-  ("n0470", "rada.laban"),
   ("n0470", "rada.rada"),
-  ("n0471", "rada.muharramat_rada"),
-  ("n0472", "rada.rada"),
-  ("n0473", "rada.shahadat_murdia"),
-  ("n0474", "rahn.ghalq_rahn"),
-  ("n0475", "rahn.marhun"),
-  ("n0476", "rahn.rahn"),
+  ("n0471", "rada.shahadat_murdia"),
+  ("n0472", "rahn.ghalq_rahn"),
+  ("n0473", "rahn.marhun"),
+  ("n0474", "rahn.rahn"),
+  ("n0475", "raja.raja"),
+  ("n0475", "raja.rajiyya"),
+  ("n0476", "raja.raja"),
   ("n0477", "raja.raja"),
-  ("n0477", "raja.rajiyya"),
+  ("n0477", "shahadat.adala"),
+  ("n0477", "shahadat.shahada"),
   ("n0478", "raja.raja"),
-  ("n0479", "raja.raja"),
-  ("n0479", "shahadat.adala"),
-  ("n0479", "shahadat.shahada"),
-  ("n0480", "raja.raja"),
-  ("n0481", "raja.rajiyya"),
-  ("n0482", "riba.mudd_ajwa"),
-  ("n0483", "riba.sarf"),
-  ("n0484", "riba.sarf"),
-  ("n0485", "sadaq.hadiyyat_zawj"),
-  ("n0486", "sadaq.hibat_sadaq"),
-  ("n0487", "sadaq.istiqrar_mahr"),
-  ("n0488", "sadaq.itq_sadaq"),
-  ("n0489", "sadaq.khalwa"),
-  ("n0490", "sadaq.nisf_sadaq"),
+  ("n0479", "raja.rajiyya"),
+  ("n0480", "riba.mudd_ajwa"),
+  ("n0481", "riba.sarf"),
+  ("n0482", "riba.sarf"),
+  ("n0483", "sadaq.hadiyyat_zawj"),
+  ("n0484", "sadaq.hibat_sadaq"),
+  ("n0485", "sadaq.istiqrar_mahr"),
+  ("n0486", "sadaq.itq_sadaq"),
+  ("n0487", "sadaq.khalwa"),
+  ("n0488", "sadaq.nisf_sadaq"),
+  ("n0489", "sadaq.sadaq"),
+  ("n0490", "sadaq.sadaq"),
   ("n0491", "sadaq.sadaq"),
-  ("n0492", "sadaq.sadaq"),
-  ("n0493", "sadaq.sadaq"),
-  ("n0494", "sadaq.talim_quran"),
-  ("n0495", "sadaq.tansif"),
-  ("n0496", "sadaq.tansif"),
-  ("n0496", "sadaq.tansif_mahr"),
-  ("n0497", "salam.salam"),
-  ("n0498", "salam.salam"),
-  ("n0499", "salat.adhan"),
-  ("n0500", "salat.adhkar_salat"),
-  ("n0501", "salat.adhkar_salat"),
-  ("n0502", "salat.awqat_nahy"),
-  ("n0503", "salat.fatiha"),
-  ("n0504", "salat.idrak_rakaa"),
-  ("n0505", "salat.ijabat_muadhdhin"),
-  ("n0506", "salat.ijtinab_najasa"),
-  ("n0507", "salat.imama"),
-  ("n0508", "salat.istiftah"),
-  ("n0509", "salat.jam"),
+  ("n0492", "sadaq.talim_quran"),
+  ("n0493", "sadaq.tansif"),
+  ("n0494", "sadaq.tansif"),
+  ("n0494", "sadaq.tansif_mahr"),
+  ("n0495", "salam.salam"),
+  ("n0496", "salam.salam"),
+  ("n0497", "salat.adhan"),
+  ("n0498", "salat.adhkar_salat"),
+  ("n0499", "salat.adhkar_salat"),
+  ("n0500", "salat.awqat_nahy"),
+  ("n0501", "salat.fatiha"),
+  ("n0502", "salat.idrak_rakaa"),
+  ("n0503", "salat.ijabat_muadhdhin"),
+  ("n0504", "salat.ijtinab_najasa"),
+  ("n0505", "salat.imama"),
+  ("n0506", "salat.istiftah"),
+  ("n0507", "salat.jam"),
+  ("n0508", "salat.jumua"),
+  ("n0509", "salat.jumua"),
   ("n0510", "salat.jumua"),
-  ("n0511", "salat.jumua"),
-  ("n0512", "salat.jumua"),
-  ("n0513", "salat.khutba"),
-  ("n0514", "salat.khutbat_jumua"),
-  ("n0515", "salat.libas_muharram"),
-  ("n0516", "salat.libas_muharram"),
-  ("n0517", "salat.majlis_masjid"),
-  ("n0518", "salat.majlis_masjid")]
+  ("n0511", "salat.khutba"),
+  ("n0512", "salat.khutbat_jumua"),
+  ("n0513", "salat.libas_muharram"),
+  ("n0514", "salat.libas_muharram"),
+  ("n0515", "salat.majlis_masjid"),
+  ("n0516", "salat.majlis_masjid"),
+  ("n0517", "salat.maqbara"),
+  ("n0518", "salat.masjid")]
 
 def defines6 : List (String × String) := [
-  ("n0519", "salat.maqbara"),
-  ("n0520", "salat.masjid"),
-  ("n0521", "salat.mawadi_nahy"),
-  ("n0522", "salat.qada_fawait"),
-  ("n0523", "salat.qasr"),
-  ("n0524", "salat.qibla"),
-  ("n0525", "salat.qiraat_quran"),
-  ("n0526", "salat.qiraat_quran"),
-  ("n0527", "salat.qiyam"),
-  ("n0528", "salat.qiyam"),
-  ("n0529", "salat.sahw"),
-  ("n0530", "salat.salat_ala_nabi"),
-  ("n0531", "salat.salat_ala_nabi"),
-  ("n0532", "salat.salat_id"),
-  ("n0533", "salat.salat_musafir"),
-  ("n0534", "salat.salat_sabi"),
-  ("n0535", "salat.satr_awra"),
-  ("n0536", "salat.satr_awra"),
-  ("n0537", "salat.shakk_fil_salat"),
-  ("n0538", "salat.sujud"),
-  ("n0539", "salat.sujud_sahw"),
-  ("n0540", "salat.sujud_tilawa"),
-  ("n0541", "salat.sunnat_jumua"),
-  ("n0542", "salat.tahiyyat_masjid"),
-  ("n0543", "salat.takbirat_ihram"),
-  ("n0544", "salat.takbirat_intiqal"),
-  ("n0545", "salat.tarawih"),
-  ("n0546", "salat.taslim"),
-  ("n0547", "salat.tatawwu"),
-  ("n0548", "salat.tatawwu"),
-  ("n0549", "salat.tul_qiyam"),
-  ("n0550", "salat.waqt"),
-  ("n0551", "shahadat.adala"),
-  ("n0551", "usul.khabar_wahid"),
+  ("n0519", "salat.mawadi_nahy"),
+  ("n0520", "salat.qada_fawait"),
+  ("n0521", "salat.qasr"),
+  ("n0522", "salat.qibla"),
+  ("n0523", "salat.qiraat_quran"),
+  ("n0524", "salat.qiraat_quran"),
+  ("n0525", "salat.qiyam"),
+  ("n0526", "salat.qiyam"),
+  ("n0527", "salat.sahw"),
+  ("n0528", "salat.salat_ala_nabi"),
+  ("n0529", "salat.salat_ala_nabi"),
+  ("n0530", "salat.salat_id"),
+  ("n0531", "salat.salat_musafir"),
+  ("n0532", "salat.salat_sabi"),
+  ("n0533", "salat.satr_awra"),
+  ("n0534", "salat.satr_awra"),
+  ("n0535", "salat.shakk_fil_salat"),
+  ("n0536", "salat.sujud"),
+  ("n0537", "salat.sujud_sahw"),
+  ("n0538", "salat.sujud_tilawa"),
+  ("n0539", "salat.sunnat_jumua"),
+  ("n0540", "salat.tahiyyat_masjid"),
+  ("n0541", "salat.takbirat_ihram"),
+  ("n0542", "salat.takbirat_intiqal"),
+  ("n0543", "salat.tarawih"),
+  ("n0544", "salat.taslim"),
+  ("n0545", "salat.tatawwu"),
+  ("n0546", "salat.tatawwu"),
+  ("n0547", "salat.tul_qiyam"),
+  ("n0548", "salat.waqt"),
+  ("n0549", "shahadat.adala"),
+  ("n0549", "usul.khabar_wahid"),
+  ("n0550", "shahadat.ruju_shuhud"),
+  ("n0551", "shahadat.ruju_shuhud"),
   ("n0552", "shahadat.ruju_shuhud"),
-  ("n0553", "shahadat.ruju_shuhud"),
-  ("n0554", "shahadat.ruju_shuhud"),
-  ("n0555", "shahadat.shahada"),
-  ("n0556", "shahadat.shahadat_mara"),
+  ("n0553", "shahadat.shahada"),
+  ("n0554", "shahadat.shahadat_mara"),
+  ("n0554", "shahadat.shahadat_nisa"),
+  ("n0555", "shahadat.shahadat_mara"),
   ("n0556", "shahadat.shahadat_nisa"),
-  ("n0557", "shahadat.shahadat_mara"),
-  ("n0558", "shahadat.shahadat_nisa"),
-  ("n0559", "shahadat.shahadat_qarib"),
-  ("n0560", "sharika.mudaraba"),
-  ("n0561", "sharika.sharika"),
+  ("n0557", "shahadat.shahadat_qarib"),
+  ("n0558", "sharika.mudaraba"),
+  ("n0559", "sharika.sharika"),
+  ("n0559", "sharika.sharikat_amlak"),
+  ("n0560", "sharika.sharika"),
   ("n0561", "sharika.sharikat_amlak"),
-  ("n0562", "sharika.sharika"),
-  ("n0563", "sharika.sharikat_amlak"),
+  ("n0562", "shufa.shufa"),
+  ("n0563", "shufa.shufa"),
   ("n0564", "shufa.shufa"),
-  ("n0565", "shufa.shufa"),
-  ("n0566", "shufa.shufa"),
-  ("n0567", "siyam.ayyam_tashriq"),
-  ("n0568", "siyam.ayyam_tashriq"),
-  ("n0569", "siyam.fidya"),
-  ("n0570", "siyam.fitr_hamil"),
-  ("n0571", "siyam.fitr_musafir"),
-  ("n0571", "siyam.sawm_safar"),
-  ("n0572", "siyam.jima"),
-  ("n0573", "siyam.kaffarat_jima"),
-  ("n0574", "siyam.laylat_qadr"),
+  ("n0565", "siyam.ayyam_tashriq"),
+  ("n0566", "siyam.ayyam_tashriq"),
+  ("n0567", "siyam.fidya"),
+  ("n0568", "siyam.fitr_hamil"),
+  ("n0569", "siyam.fitr_musafir"),
+  ("n0569", "siyam.sawm_safar"),
+  ("n0570", "siyam.jima"),
+  ("n0571", "siyam.kaffarat_jima"),
+  ("n0572", "siyam.laylat_qadr"),
+  ("n0573", "siyam.ruyat_hilal"),
+  ("n0574", "siyam.ruyat_hilal"),
+  ("n0574", "siyam.sawm_ramadan"),
   ("n0575", "siyam.ruyat_hilal"),
-  ("n0576", "siyam.ruyat_hilal"),
-  ("n0576", "siyam.sawm_ramadan"),
-  ("n0577", "siyam.ruyat_hilal"),
-  ("n0578", "siyam.sawm_dahr"),
-  ("n0579", "siyam.sawm_id"),
-  ("n0580", "siyam.sawm_safar"),
-  ("n0581", "siyam.sawm_tatawwu"),
-  ("n0582", "siyam.tulu_fajr"),
+  ("n0576", "siyam.sawm_dahr"),
+  ("n0577", "siyam.sawm_id"),
+  ("n0578", "siyam.sawm_safar"),
+  ("n0579", "siyam.sawm_tatawwu"),
+  ("n0580", "siyam.tulu_fajr"),
+  ("n0581", "siyam.waqt_iftar"),
+  ("n0582", "siyam.waqt_iftar"),
   ("n0583", "siyam.waqt_iftar"),
-  ("n0584", "siyam.waqt_iftar"),
-  ("n0585", "siyam.waqt_iftar"),
-  ("n0586", "siyam.yawm_shakk"),
-  ("n0587", "sulh.ibra"),
-  ("n0588", "sulh.irtifaq_jiwar"),
-  ("n0588", "sulh.jidar"),
-  ("n0588", "sulh.jidar_mushtarak"),
-  ("n0588", "sulh.wad_khashab"),
-  ("n0589", "sulh.sulh"),
-  ("n0590", "sulh.sulh"),
-  ("n0591", "sulh.sulh_dam"),
-  ("n0592", "sulh.wad_khashab"),
-  ("n0593", "tahara.aniya"),
-  ("n0594", "tahara.aniyat_kuffar"),
-  ("n0595", "tahara.bawl"),
-  ("n0596", "tahara.dibagh"),
-  ("n0596", "tahara.jild_mayta"),
-  ("n0597", "tahara.duhn_najis"),
-  ("n0598", "tahara.duhn_najis"),
-  ("n0599", "tahara.ghusl_janaba"),
-  ("n0600", "tahara.ghusl_janaba"),
-  ("n0601", "tahara.hadath"),
+  ("n0584", "siyam.yawm_shakk"),
+  ("n0585", "sulh.ibra"),
+  ("n0586", "sulh.irtifaq_jiwar"),
+  ("n0586", "sulh.jidar"),
+  ("n0586", "sulh.jidar_mushtarak"),
+  ("n0586", "sulh.wad_khashab"),
+  ("n0587", "sulh.sulh"),
+  ("n0588", "sulh.sulh"),
+  ("n0589", "sulh.sulh_dam"),
+  ("n0590", "sulh.wad_khashab"),
+  ("n0591", "tahara.aniya"),
+  ("n0592", "tahara.aniyat_kuffar"),
+  ("n0593", "tahara.bawl"),
+  ("n0594", "tahara.dibagh"),
+  ("n0594", "tahara.jild_mayta"),
+  ("n0595", "tahara.duhn_najis"),
+  ("n0596", "tahara.duhn_najis"),
+  ("n0597", "tahara.ghusl_janaba"),
+  ("n0598", "tahara.ghusl_janaba"),
+  ("n0599", "tahara.hadath"),
+  ("n0600", "tahara.hayd"),
+  ("n0601", "tahara.hayd"),
+  ("n0601", "tahara.wat_haid"),
   ("n0602", "tahara.hayd"),
   ("n0603", "tahara.hayd"),
-  ("n0603", "tahara.wat_haid"),
-  ("n0604", "tahara.hayd"),
-  ("n0605", "tahara.hayd"),
-  ("n0606", "tahara.istihada"),
-  ("n0607", "tahara.istihada"),
-  ("n0608", "tahara.istimta_haid")]
+  ("n0604", "tahara.istihada"),
+  ("n0605", "tahara.istihada"),
+  ("n0606", "tahara.istimta_haid"),
+  ("n0607", "tahara.istinja"),
+  ("n0608", "tahara.jild_mayta")]
 
 def defines7 : List (String × String) := [
-  ("n0609", "tahara.istinja"),
-  ("n0610", "tahara.jild_mayta"),
-  ("n0611", "tahara.lams_mara"),
-  ("n0612", "tahara.ma_jari"),
-  ("n0613", "tahara.ma_najis"),
-  ("n0613", "tahara.ma_yasir"),
-  ("n0614", "tahara.ma_najis"),
-  ("n0615", "tahara.ma_ubina"),
-  ("n0616", "tahara.madhy"),
-  ("n0617", "tahara.mani"),
-  ("n0618", "tahara.mani"),
-  ("n0619", "tahara.mash_khuff"),
-  ("n0620", "tahara.mash_khuff"),
-  ("n0621", "tahara.mash_ras"),
-  ("n0622", "tahara.mash_udhunayn"),
-  ("n0623", "tahara.mayta_la_nafs"),
-  ("n0624", "tahara.muwalat"),
-  ("n0625", "tahara.najasa"),
-  ("n0625", "tahara.thawb"),
-  ("n0626", "tahara.nawm"),
-  ("n0627", "tahara.qiraat_junub"),
-  ("n0628", "tahara.shar"),
-  ("n0629", "tahara.tathir_inaa"),
-  ("n0629", "tahara.wulugh_kalb"),
-  ("n0630", "tahara.tayammum"),
-  ("n0631", "tahara.thiyab_sibyan"),
-  ("n0632", "tahara.tin_shawari"),
-  ("n0633", "tahara.tin_shawari"),
-  ("n0634", "tahara.wat_haid"),
-  ("n0635", "tahara.wudu"),
-  ("n0636", "tahara.wudu"),
-  ("n0637", "tahara.wulugh_kalb"),
+  ("n0609", "tahara.lams_mara"),
+  ("n0610", "tahara.ma_jari"),
+  ("n0611", "tahara.ma_najis"),
+  ("n0611", "tahara.ma_yasir"),
+  ("n0612", "tahara.ma_najis"),
+  ("n0613", "tahara.ma_ubina"),
+  ("n0614", "tahara.madhy"),
+  ("n0615", "tahara.mani"),
+  ("n0616", "tahara.mani"),
+  ("n0617", "tahara.mash_khuff"),
+  ("n0618", "tahara.mash_khuff"),
+  ("n0619", "tahara.mash_ras"),
+  ("n0620", "tahara.mash_udhunayn"),
+  ("n0621", "tahara.mayta_la_nafs"),
+  ("n0622", "tahara.muwalat"),
+  ("n0623", "tahara.najasa"),
+  ("n0623", "tahara.thawb"),
+  ("n0624", "tahara.nawm"),
+  ("n0625", "tahara.qiraat_junub"),
+  ("n0626", "tahara.shar"),
+  ("n0627", "tahara.tathir_inaa"),
+  ("n0627", "tahara.wulugh_kalb"),
+  ("n0628", "tahara.tayammum"),
+  ("n0629", "tahara.thiyab_sibyan"),
+  ("n0630", "tahara.tin_shawari"),
+  ("n0631", "tahara.tin_shawari"),
+  ("n0632", "tahara.wat_haid"),
+  ("n0633", "tahara.wudu"),
+  ("n0634", "tahara.wudu"),
+  ("n0635", "tahara.wulugh_kalb"),
+  ("n0636", "talaq.adad_talaq"),
+  ("n0636", "talaq.talaq_thalath"),
+  ("n0637", "talaq.adad_talaq"),
+  ("n0637", "talaq.talaq"),
   ("n0638", "talaq.adad_talaq"),
-  ("n0638", "talaq.talaq_thalath"),
-  ("n0639", "talaq.adad_talaq"),
-  ("n0639", "talaq.talaq"),
-  ("n0640", "talaq.adad_talaq"),
-  ("n0641", "talaq.alfaz_talaq"),
-  ("n0642", "talaq.kinaya"),
-  ("n0643", "talaq.kinayat_talaq"),
-  ("n0644", "talaq.kinayat_talaq"),
-  ("n0645", "talaq.mutallaqa_thalathan"),
-  ("n0646", "talaq.mutallaqa_thalathan"),
+  ("n0639", "talaq.alfaz_talaq"),
+  ("n0640", "talaq.kinaya"),
+  ("n0641", "talaq.kinayat_talaq"),
+  ("n0642", "talaq.kinayat_talaq"),
+  ("n0643", "talaq.mutallaqa_thalathan"),
+  ("n0644", "talaq.mutallaqa_thalathan"),
+  ("n0645", "talaq.talaq"),
+  ("n0646", "talaq.talaq"),
+  ("n0646", "talaq.talaq_bida"),
   ("n0647", "talaq.talaq"),
   ("n0648", "talaq.talaq"),
-  ("n0648", "talaq.talaq_bida"),
-  ("n0649", "talaq.talaq"),
-  ("n0650", "talaq.talaq"),
+  ("n0649", "talaq.talaq_bida"),
+  ("n0650", "talaq.talaq_bida"),
   ("n0651", "talaq.talaq_bida"),
-  ("n0652", "talaq.talaq_bida"),
-  ("n0653", "talaq.talaq_bida"),
+  ("n0652", "talaq.talaq_muallaq"),
+  ("n0652", "talaq.taliq_talaq"),
+  ("n0653", "talaq.talaq_muallaq"),
   ("n0654", "talaq.talaq_muallaq"),
-  ("n0654", "talaq.taliq_talaq"),
-  ("n0655", "talaq.talaq_muallaq"),
-  ("n0656", "talaq.talaq_muallaq"),
+  ("n0655", "talaq.talaq_qabl_nikah"),
+  ("n0656", "talaq.talaq_qabl_nikah"),
   ("n0657", "talaq.talaq_qabl_nikah"),
-  ("n0658", "talaq.talaq_qabl_nikah"),
-  ("n0659", "talaq.talaq_qabl_nikah"),
-  ("n0660", "talaq.talaq_thalath"),
-  ("n0661", "udhiya.akl_udhiya"),
-  ("n0662", "udhiya.aqiqa"),
-  ("n0663", "udhiya.aqiqa"),
-  ("n0664", "udhiya.julud_adahi"),
-  ("n0665", "udhiya.muayyana"),
+  ("n0658", "talaq.talaq_thalath"),
+  ("n0659", "udhiya.akl_udhiya"),
+  ("n0660", "udhiya.aqiqa"),
+  ("n0661", "udhiya.aqiqa"),
+  ("n0662", "udhiya.julud_adahi"),
+  ("n0663", "udhiya.muayyana"),
+  ("n0664", "udhiya.udhiya"),
+  ("n0665", "udhiya.udhiya"),
   ("n0666", "udhiya.udhiya"),
-  ("n0667", "udhiya.udhiya"),
-  ("n0668", "udhiya.udhiya"),
-  ("n0669", "usul.amr"),
-  ("n0670", "usul.amr"),
-  ("n0671", "usul.fil_nabi"),
-  ("n0672", "usul.fil_nabi"),
-  ("n0673", "usul.kitaba_ishara"),
-  ("n0674", "usul.kitaba_ishara"),
-  ("n0675", "usul.wujub"),
-  ("n0676", "wadia.amana"),
-  ("n0676", "wadia.amanat"),
+  ("n0667", "usul.amr"),
+  ("n0668", "usul.amr"),
+  ("n0669", "usul.fil_nabi"),
+  ("n0670", "usul.fil_nabi"),
+  ("n0671", "usul.kitaba_ishara"),
+  ("n0672", "usul.kitaba_ishara"),
+  ("n0673", "usul.wujub"),
+  ("n0674", "wadia.amana"),
+  ("n0674", "wadia.amanat"),
+  ("n0674", "wadia.wadia"),
+  ("n0675", "wadia.wadia"),
   ("n0676", "wadia.wadia"),
   ("n0677", "wadia.wadia"),
-  ("n0678", "wadia.wadia"),
-  ("n0679", "wadia.wadia"),
+  ("n0678", "wakala.wakala"),
+  ("n0678", "wakala.wakil"),
+  ("n0679", "wakala.wakala"),
+  ("n0679", "wakala.wakil"),
   ("n0680", "wakala.wakala"),
-  ("n0680", "wakala.wakil"),
-  ("n0681", "wakala.wakala"),
-  ("n0681", "wakala.wakil"),
-  ("n0682", "wakala.wakala"),
-  ("n0683", "waqf.nazir_waqf"),
-  ("n0684", "waqf.waqf"),
-  ("n0685", "waqf.waqf"),
-  ("n0686", "waqf.waqf_dhurriyya"),
+  ("n0681", "waqf.nazir_waqf"),
+  ("n0682", "waqf.waqf"),
+  ("n0683", "waqf.waqf"),
+  ("n0684", "waqf.waqf_dhurriyya"),
+  ("n0685", "wasaya.wasi"),
+  ("n0686", "wasaya.wasi"),
   ("n0687", "wasaya.wasi"),
-  ("n0688", "wasaya.wasi"),
-  ("n0689", "wasaya.wasi"),
-  ("n0690", "wasaya.wasiyya"),
-  ("n0691", "wasaya.wasiyya"),
-  ("n0692", "wasaya.wasiyya_aqarib"),
-  ("n0693", "wasaya.wasiyya_thuluth"),
-  ("n0694", "wasaya.wasiyya_thuluth"),
-  ("n0694", "wasaya.wasiyya_warith"),
-  ("n0695", "zakat.ahl_zakat"),
-  ("n0695", "zakat.masarif")]
+  ("n0688", "wasaya.wasiyya"),
+  ("n0689", "wasaya.wasiyya"),
+  ("n0690", "wasaya.wasiyya_aqarib"),
+  ("n0691", "wasaya.wasiyya_thuluth"),
+  ("n0692", "wasaya.wasiyya_thuluth"),
+  ("n0692", "wasaya.wasiyya_warith"),
+  ("n0693", "zakat.ahl_zakat"),
+  ("n0693", "zakat.masarif"),
+  ("n0694", "zakat.ahl_zakat"),
+  ("n0695", "zakat.amil")]
 
 def defines8 : List (String × String) := [
-  ("n0696", "zakat.ahl_zakat"),
-  ("n0697", "zakat.amil"),
-  ("n0698", "zakat.amil"),
-  ("n0699", "zakat.baqar"),
-  ("n0700", "zakat.firar"),
-  ("n0701", "zakat.gharim"),
-  ("n0702", "zakat.hawl"),
-  ("n0703", "zakat.hawl"),
-  ("n0704", "zakat.jubran"),
-  ("n0705", "zakat.madin"),
-  ("n0706", "zakat.mal_sabi"),
-  ("n0707", "zakat.mani_zakat"),
-  ("n0708", "zakat.masarif"),
-  ("n0709", "zakat.nisab"),
-  ("n0710", "zakat.rikaz"),
-  ("n0711", "zakat.sabil_allah"),
-  ("n0712", "zakat.sadaqat_tatawwu"),
-  ("n0713", "zakat.tajil"),
-  ("n0714", "zakat.tajil"),
-  ("n0715", "zakat.urud_tijara"),
-  ("n0716", "zakat.urud_tijara"),
+  ("n0696", "zakat.amil"),
+  ("n0697", "zakat.baqar"),
+  ("n0698", "zakat.firar"),
+  ("n0699", "zakat.gharim"),
+  ("n0700", "zakat.hawl"),
+  ("n0701", "zakat.hawl"),
+  ("n0702", "zakat.jubran"),
+  ("n0703", "zakat.madin"),
+  ("n0704", "zakat.mal_sabi"),
+  ("n0705", "zakat.mani_zakat"),
+  ("n0706", "zakat.masarif"),
+  ("n0707", "zakat.nisab"),
+  ("n0708", "zakat.rikaz"),
+  ("n0709", "zakat.sabil_allah"),
+  ("n0710", "zakat.sadaqat_tatawwu"),
+  ("n0711", "zakat.tajil"),
+  ("n0712", "zakat.tajil"),
+  ("n0713", "zakat.urud_tijara"),
+  ("n0714", "zakat.urud_tijara"),
+  ("n0715", "zakat.zakat"),
+  ("n0716", "zakat.zakat"),
   ("n0717", "zakat.zakat"),
-  ("n0718", "zakat.zakat"),
-  ("n0719", "zakat.zakat"),
-  ("n0720", "zakat.zakat_anam"),
+  ("n0718", "zakat.zakat_anam"),
+  ("n0719", "zakat.zakat_fitr"),
+  ("n0720", "zakat.zakat_fitr"),
   ("n0721", "zakat.zakat_fitr"),
-  ("n0722", "zakat.zakat_fitr"),
-  ("n0723", "zakat.zakat_fitr"),
-  ("n0724", "zakat.zakat_ibil"),
-  ("n0725", "zakat.zakat_thimar"),
-  ("n0726", "zihar.kaffarat_zihar"),
-  ("n0727", "zihar.zihar")]
+  ("n0722", "zakat.zakat_ibil"),
+  ("n0723", "zakat.zakat_thimar"),
+  ("n0724", "zihar.kaffarat_zihar"),
+  ("n0725", "zihar.zihar")]
 
 /-- The label graph: each case's maḥall, the label tree, and the nuṣūṣ defining labels
 (`corpus/mahall/graph.json` holds each naṣṣ's reference and excerpt). -/
@@ -2660,164 +2658,164 @@ def data : Data where
 #guard data.rootedB 16
 
 /- Each qāʿida's footprint and grounds are exactly the pipeline's lists (`exactB_sound`). -/
-#guard data.exactB 16 "l043" ["usul", "usul.amr", "usul.fil_nabi", "usul.kitaba_ishara", "usul.wujub"] ["n0669", "n0670", "n0671", "n0672", "n0673", "n0674", "n0675"]
-#guard data.exactB 16 "l052" ["ayman", "ayman.yamin", "buyu", "buyu.bay", "itq", "itq.itq", "itq.tadbir", "salat", "salat.takbirat_ihram", "salat.taslim", "tahara", "tahara.bawl", "tahara.tayammum", "talaq", "talaq.adad_talaq", "talaq.talaq"] ["n0062", "n0063", "n0064", "n0071", "n0072", "n0073", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0310", "n0311", "n0312", "n0313", "n0543", "n0546", "n0595", "n0630", "n0638", "n0639", "n0640", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "l053" ["itq", "itq.itq", "itq.kitaba", "nudhur", "nudhur.nadhr", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0142", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0447", "n0448", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "l054" ["dawa", "dawa.bayyina", "tahara", "tahara.ghusl_janaba", "tahara.qiraat_junub"] ["n0121", "n0122", "n0123", "n0599", "n0600", "n0627"]
-#guard data.exactB 16 "l061" ["atima", "atima.tasmiya", "buyu", "buyu.araya", "buyu.bay", "siyam", "siyam.sawm_ramadan", "siyam.sawm_safar"] ["n0055", "n0066", "n0071", "n0072", "n0073", "n0571", "n0576", "n0580"]
-#guard data.exactB 16 "r001" ["ayman", "ayman.yamin", "tahara", "tahara.ma_jari", "tahara.ma_najis", "tahara.tathir_inaa", "tahara.wudu"] ["n0062", "n0063", "n0064", "n0612", "n0613", "n0614", "n0629", "n0635", "n0636"]
-#guard data.exactB 16 "r002" ["salat", "salat.satr_awra", "tahara", "tahara.ghusl_janaba", "tahara.hadath", "tahara.lams_mara", "tahara.shar", "talaq", "talaq.talaq"] ["n0535", "n0536", "n0599", "n0600", "n0601", "n0611", "n0628", "n0639", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r003" ["hajj", "hajj.hady", "salat", "salat.idrak_rakaa", "tahara", "tahara.mash_ras", "tahara.wudu", "zakat", "zakat.zakat", "zakat.zakat_anam"] ["n0173", "n0174", "n0175", "n0176", "n0504", "n0621", "n0635", "n0636", "n0717", "n0718", "n0719", "n0720"]
-#guard data.exactB 16 "r004" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "hajj", "hajj.fidyat_adha", "hajj.hady", "hajj.hady_tamattu", "hajj.sawm_tamattu", "hajj.sayd_muhrim", "jinayat", "jinayat.kaffarat_qatl", "nudhur", "nudhur.nadhr", "salat", "salat.jam", "salat.jumua", "tahara", "tahara.wudu", "zakat", "zakat.tajil", "zakat.zakat"] ["n0057", "n0062", "n0063", "n0064", "n0171", "n0172", "n0173", "n0174", "n0175", "n0176", "n0177", "n0190", "n0193", "n0194", "n0195", "n0196", "n0362", "n0447", "n0448", "n0509", "n0510", "n0511", "n0512", "n0635", "n0636", "n0713", "n0714", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r005" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "hajj", "hajj.hady", "hajj.hady_tamattu", "hajj.sawm_tamattu", "salat", "salat.jam", "salat.qasr", "salat.salat_sabi", "tahara", "tahara.tayammum", "zakat", "zakat.tajil", "zakat.zakat"] ["n0057", "n0062", "n0063", "n0064", "n0173", "n0174", "n0175", "n0176", "n0177", "n0190", "n0509", "n0523", "n0534", "n0630", "n0713", "n0714", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r006" ["hajj", "hajj.hajj_an_ghayr", "hajj.hajj_islam", "idda", "idda.murtafia", "qada", "qada.naqd_hukm", "salat", "salat.jumua", "salat.qibla", "shahadat", "shahadat.adala", "shahadat.shahada", "siyam", "siyam.fidya", "siyam.sawm_ramadan"] ["n0178", "n0179", "n0180", "n0257", "n0454", "n0479", "n0510", "n0511", "n0512", "n0524", "n0551", "n0555", "n0569", "n0576"]
-#guard data.exactB 16 "r007" ["nikah", "nikah.nikah_ama", "tahara", "tahara.tayammum", "zihar", "zihar.kaffarat_zihar"] ["n0301", "n0430", "n0431", "n0432", "n0433", "n0630", "n0726"]
-#guard data.exactB 16 "r008" ["salat", "salat.fatiha", "salat.qiyam", "salat.sujud", "tahara", "tahara.ghusl_janaba", "tahara.wudu", "zakat", "zakat.zakat", "zakat.zakat_fitr"] ["n0503", "n0527", "n0528", "n0538", "n0599", "n0600", "n0635", "n0636", "n0717", "n0718", "n0719", "n0721", "n0722", "n0723"]
-#guard data.exactB 16 "r009" ["hajj", "hajj.hajj_islam", "salat", "salat.awqat_nahy", "salat.libas_muharram", "salat.makan_maghsub", "salat.mawadi_nahy", "salat.satr_awra", "siyam", "siyam.ayyam_tashriq", "siyam.sawm_id"] ["n0167", "n0180", "n0502", "n0515", "n0516", "n0521", "n0535", "n0536", "n0567", "n0568", "n0579"]
-#guard data.exactB 16 "r010" ["buyu", "buyu.bay", "buyu.sigha", "lian", "lian.lian", "nikah", "nikah.sighat_nikah", "salat", "salat.adhkar_salat", "salat.jumua", "salat.khutbat_jumua", "talaq", "talaq.alfaz_talaq", "talaq.talaq"] ["n0071", "n0072", "n0073", "n0094", "n0377", "n0439", "n0500", "n0501", "n0510", "n0511", "n0512", "n0514", "n0639", "n0641", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r011" ["hajj", "hajj.hajj_islam", "hajj.qada_hajj", "nudhur", "nudhur.nadhr", "salat", "salat.qada_fawait", "salat.tatawwu", "salat.waqt", "siyam", "siyam.sawm_ramadan"] ["n0180", "n0187", "n0447", "n0448", "n0522", "n0547", "n0548", "n0550", "n0576"]
-#guard data.exactB 16 "r012" ["salat", "salat.ijabat_muadhdhin", "salat.istiftah", "salat.jumua", "salat.salat_ala_nabi", "salat.sunnat_jumua", "tahara", "tahara.mash_udhunayn", "tahara.wudu"] ["n0505", "n0508", "n0510", "n0511", "n0512", "n0530", "n0531", "n0541", "n0622", "n0635", "n0636"]
-#guard data.exactB 16 "r013" ["atima", "atima.diyafa", "atima.sayd", "dawa", "dawa.bayyina", "dawa.zafar", "ghasb", "ghasb.itlaf", "ghasb.itlaf_bahaim", "hajj", "hajj.sayd_muhrim", "itq", "itq.itq", "itq.umm_walad", "jinayat", "jinayat.jirah", "jinayat.qasama", "nafaqat", "nafaqat.nafaqat_zawja", "nikah", "nikah.nasab", "nikah.unna", "raja", "raja.raja", "sadaq", "sadaq.sadaq", "sadaq.talim_quran", "tahara", "tahara.ma_najis", "tahara.madhy", "tahara.mani"] ["n0039", "n0040", "n0041", "n0051", "n0052", "n0053", "n0121", "n0122", "n0123", "n0131", "n0158", "n0167", "n0168", "n0169", "n0193", "n0194", "n0195", "n0196", "n0280", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0314", "n0315", "n0361", "n0365", "n0366", "n0378", "n0394", "n0441", "n0477", "n0478", "n0479", "n0480", "n0491", "n0492", "n0493", "n0494", "n0613", "n0614", "n0616", "n0617", "n0618"]
-#guard data.exactB 16 "r014" ["itq", "itq.itq", "tahara", "tahara.mani", "talaq", "talaq.talaq", "talaq.talaq_muallaq"] ["n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0617", "n0618", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656"]
-#guard data.exactB 16 "r015" ["atima", "atima.sayd", "hudud", "hudud.qadhf", "tahara", "tahara.mani", "tahara.mash_khuff", "tahara.thawb", "tahara.wudu", "talaq", "talaq.alfaz_talaq", "talaq.kinaya", "talaq.talaq"] ["n0051", "n0052", "n0053", "n0236", "n0237", "n0238", "n0617", "n0618", "n0619", "n0620", "n0625", "n0635", "n0636", "n0639", "n0641", "n0642", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r016" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "ghasb", "ghasb.daman_mithl", "ghasb.itlaf", "hajj", "hajj.hady", "hajj.hady_tamattu", "hajr", "hajr.iflas", "jihad", "jihad.ghanima", "jihad.nafal", "sadaq", "sadaq.sadaq", "sadaq.tansif", "zihar", "zihar.kaffarat_zihar"] ["n0057", "n0062", "n0063", "n0064", "n0156", "n0158", "n0167", "n0173", "n0174", "n0175", "n0176", "n0177", "n0202", "n0301", "n0330", "n0331", "n0332", "n0333", "n0344", "n0345", "n0491", "n0492", "n0493", "n0495", "n0496", "n0726"]
-#guard data.exactB 16 "r017" ["amma", "amma.taa", "hajj", "hajj.hady", "itq", "itq.itq", "salat", "salat.qiraat_quran", "salat.tatawwu", "salat.tul_qiyam"] ["n0031", "n0032", "n0173", "n0174", "n0175", "n0176", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0525", "n0526", "n0547", "n0548", "n0549"]
-#guard data.exactB 16 "r018" ["amma", "amma.kaffarat", "hajj", "hajj.hajj_islam", "hajj.qiran", "hajj.rakatay_tawaf", "hajj.tawaf_ifada", "hajj.tawaf_qudum", "hajj.tawaf_wada", "nudhur", "nudhur.nadhr", "salat", "salat.jumua", "salat.salat_id", "salat.sujud_tilawa", "salat.tahiyyat_masjid", "salat.takbirat_ihram", "salat.takbirat_intiqal", "siyam", "siyam.sawm_ramadan", "tahara", "tahara.hadath", "udhiya", "udhiya.aqiqa", "udhiya.udhiya", "zakat", "zakat.zakat"] ["n0016", "n0180", "n0188", "n0189", "n0197", "n0198", "n0199", "n0447", "n0448", "n0510", "n0511", "n0512", "n0532", "n0540", "n0542", "n0543", "n0544", "n0576", "n0601", "n0662", "n0663", "n0666", "n0667", "n0668", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r019" ["hajj", "hajj.hajj_islam", "salat", "salat.waqt", "siyam", "siyam.sawm_ramadan", "tahara", "tahara.tayammum", "zakat", "zakat.nisab"] ["n0180", "n0550", "n0576", "n0630", "n0709"]
-#guard data.exactB 16 "r020" ["buyu", "buyu.bay", "buyu.khiyar_ayb", "musaqat", "musaqat.musaqat", "sharika", "sharika.mudaraba", "wasaya", "wasaya.thuluth", "zakat", "zakat.hawl", "zakat.nisab", "zakat.tajil", "zakat.zakat"] ["n0070", "n0071", "n0072", "n0073", "n0096", "n0097", "n0098", "n0099", "n0216", "n0220", "n0388", "n0389", "n0390", "n0560", "n0702", "n0703", "n0709", "n0713", "n0714", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r021" ["itq", "itq.itq", "itq.kitaba", "wasaya", "wasaya.wasiyya"] ["n0142", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0690", "n0691"]
-#guard data.exactB 16 "r022" ["amma", "amma.shubha", "ayman", "ayman.yamin", "ghasb", "ghasb.khalt", "hudud", "hudud.shurb_khamr", "rada", "rada.laban", "tahara", "tahara.ma_najis", "wadia", "wadia.wadia", "wasaya", "wasaya.wasiyya"] ["n0028", "n0046", "n0062", "n0063", "n0064", "n0142", "n0220", "n0246", "n0469", "n0470", "n0613", "n0614", "n0676", "n0677", "n0678", "n0679", "n0690", "n0691"]
-#guard data.exactB 16 "r023" ["atima", "atima.diyafa", "atima.idtirar", "buyu", "buyu.bay", "buyu.dayn", "buyu.shart_itq", "daman", "daman.kafala", "hajj", "hajj.hajj_islam", "hawala", "hawala.hawala", "ihya", "ihya.kala_ma", "ila", "ila.ila", "itq", "itq.itq", "itq.kitaba", "itq.muthla", "nafaqat", "nafaqat.nafaqat_bahaim", "nafaqat.nafaqat_zawja", "nikah", "nikah.islam_ala_akthar", "nikah.unna", "nikah.wali", "rahn", "rahn.rahn", "salat", "salat.jumua", "sulh", "sulh.wad_khashab"] ["n0004", "n0018", "n0039", "n0040", "n0041", "n0071", "n0072", "n0073", "n0085", "n0086", "n0107", "n0115", "n0117", "n0119", "n0131", "n0180", "n0214", "n0215", "n0261", "n0262", "n0280", "n0281", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0309", "n0394", "n0396", "n0409", "n0440", "n0441", "n0442", "n0443", "n0476", "n0510", "n0511", "n0512", "n0588", "n0592"]
-#guard data.exactB 16 "r024" ["buyu", "buyu.bay", "buyu.shart_itq", "faraid", "faraid.tarika", "ghasb", "ghasb.daman_jidar", "ghasb.itlaf", "jihad", "jihad.dhimma", "jihad.ghanima", "jihad.ghulul", "jinayat", "jinayat.abd_jani", "shufa", "shufa.shufa", "zakat", "zakat.nisab"] ["n0071", "n0072", "n0073", "n0107", "n0142", "n0155", "n0158", "n0167", "n0326", "n0330", "n0331", "n0332", "n0333", "n0334", "n0335", "n0352", "n0353", "n0354", "n0355", "n0564", "n0565", "n0566", "n0709"]
+#guard data.exactB 16 "l043" ["usul", "usul.amr", "usul.fil_nabi", "usul.kitaba_ishara", "usul.wujub"] ["n0667", "n0668", "n0669", "n0670", "n0671", "n0672", "n0673"]
+#guard data.exactB 16 "l052" ["ayman", "ayman.yamin", "buyu", "buyu.bay", "itq", "itq.itq", "itq.tadbir", "salat", "salat.takbirat_ihram", "salat.taslim", "tahara", "tahara.bawl", "tahara.tayammum", "talaq", "talaq.adad_talaq", "talaq.talaq"] ["n0062", "n0063", "n0064", "n0071", "n0072", "n0073", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0310", "n0311", "n0312", "n0313", "n0541", "n0544", "n0593", "n0628", "n0636", "n0637", "n0638", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "l053" ["itq", "itq.itq", "itq.kitaba", "nudhur", "nudhur.nadhr", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0142", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0445", "n0446", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "l054" ["dawa", "dawa.bayyina", "tahara", "tahara.ghusl_janaba", "tahara.qiraat_junub"] ["n0121", "n0122", "n0123", "n0597", "n0598", "n0625"]
+#guard data.exactB 16 "l061" ["atima", "atima.tasmiya", "buyu", "buyu.araya", "buyu.bay", "siyam", "siyam.sawm_ramadan", "siyam.sawm_safar"] ["n0055", "n0066", "n0071", "n0072", "n0073", "n0569", "n0574", "n0578"]
+#guard data.exactB 16 "r001" ["ayman", "ayman.yamin", "tahara", "tahara.ma_jari", "tahara.ma_najis", "tahara.tathir_inaa", "tahara.wudu"] ["n0062", "n0063", "n0064", "n0610", "n0611", "n0612", "n0627", "n0633", "n0634"]
+#guard data.exactB 16 "r002" ["salat", "salat.satr_awra", "tahara", "tahara.ghusl_janaba", "tahara.hadath", "tahara.lams_mara", "tahara.shar", "talaq", "talaq.talaq"] ["n0533", "n0534", "n0597", "n0598", "n0599", "n0609", "n0626", "n0637", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r003" ["hajj", "hajj.hady", "salat", "salat.idrak_rakaa", "tahara", "tahara.mash_ras", "tahara.wudu", "zakat", "zakat.zakat", "zakat.zakat_anam"] ["n0173", "n0174", "n0175", "n0176", "n0502", "n0619", "n0633", "n0634", "n0715", "n0716", "n0717", "n0718"]
+#guard data.exactB 16 "r004" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "hajj", "hajj.fidyat_adha", "hajj.hady", "hajj.hady_tamattu", "hajj.sawm_tamattu", "hajj.sayd_muhrim", "jinayat", "jinayat.kaffarat_qatl", "nudhur", "nudhur.nadhr", "salat", "salat.jam", "salat.jumua", "tahara", "tahara.wudu", "zakat", "zakat.tajil", "zakat.zakat"] ["n0057", "n0062", "n0063", "n0064", "n0171", "n0172", "n0173", "n0174", "n0175", "n0176", "n0177", "n0190", "n0193", "n0194", "n0195", "n0196", "n0361", "n0445", "n0446", "n0507", "n0508", "n0509", "n0510", "n0633", "n0634", "n0711", "n0712", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r005" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "hajj", "hajj.hady", "hajj.hady_tamattu", "hajj.sawm_tamattu", "salat", "salat.jam", "salat.qasr", "salat.salat_sabi", "tahara", "tahara.tayammum", "zakat", "zakat.tajil", "zakat.zakat"] ["n0057", "n0062", "n0063", "n0064", "n0173", "n0174", "n0175", "n0176", "n0177", "n0190", "n0507", "n0521", "n0532", "n0628", "n0711", "n0712", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r006" ["hajj", "hajj.hajj_an_ghayr", "hajj.hajj_islam", "idda", "idda.murtafia", "qada", "qada.naqd_hukm", "salat", "salat.jumua", "salat.qibla", "shahadat", "shahadat.adala", "shahadat.shahada", "siyam", "siyam.fidya", "siyam.sawm_ramadan"] ["n0178", "n0179", "n0180", "n0257", "n0452", "n0477", "n0508", "n0509", "n0510", "n0522", "n0549", "n0553", "n0567", "n0574"]
+#guard data.exactB 16 "r007" ["nikah", "nikah.nikah_ama", "tahara", "tahara.tayammum", "zihar", "zihar.kaffarat_zihar"] ["n0301", "n0428", "n0429", "n0430", "n0431", "n0628", "n0724"]
+#guard data.exactB 16 "r008" ["salat", "salat.fatiha", "salat.qiyam", "salat.sujud", "tahara", "tahara.ghusl_janaba", "tahara.wudu", "zakat", "zakat.zakat", "zakat.zakat_fitr"] ["n0501", "n0525", "n0526", "n0536", "n0597", "n0598", "n0633", "n0634", "n0715", "n0716", "n0717", "n0719", "n0720", "n0721"]
+#guard data.exactB 16 "r009" ["hajj", "hajj.hajj_islam", "salat", "salat.awqat_nahy", "salat.libas_muharram", "salat.makan_maghsub", "salat.mawadi_nahy", "salat.satr_awra", "siyam", "siyam.ayyam_tashriq", "siyam.sawm_id"] ["n0167", "n0180", "n0500", "n0513", "n0514", "n0519", "n0533", "n0534", "n0565", "n0566", "n0577"]
+#guard data.exactB 16 "r010" ["buyu", "buyu.bay", "buyu.sigha", "lian", "lian.lian", "nikah", "nikah.sighat_nikah", "salat", "salat.adhkar_salat", "salat.jumua", "salat.khutbat_jumua", "talaq", "talaq.alfaz_talaq", "talaq.talaq"] ["n0071", "n0072", "n0073", "n0094", "n0376", "n0437", "n0498", "n0499", "n0508", "n0509", "n0510", "n0512", "n0637", "n0639", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r011" ["hajj", "hajj.hajj_islam", "hajj.qada_hajj", "nudhur", "nudhur.nadhr", "salat", "salat.qada_fawait", "salat.tatawwu", "salat.waqt", "siyam", "siyam.sawm_ramadan"] ["n0180", "n0187", "n0445", "n0446", "n0520", "n0545", "n0546", "n0548", "n0574"]
+#guard data.exactB 16 "r012" ["salat", "salat.ijabat_muadhdhin", "salat.istiftah", "salat.jumua", "salat.salat_ala_nabi", "salat.sunnat_jumua", "tahara", "tahara.mash_udhunayn", "tahara.wudu"] ["n0503", "n0506", "n0508", "n0509", "n0510", "n0528", "n0529", "n0539", "n0620", "n0633", "n0634"]
+#guard data.exactB 16 "r013" ["atima", "atima.diyafa", "atima.sayd", "dawa", "dawa.bayyina", "dawa.zafar", "ghasb", "ghasb.itlaf", "ghasb.itlaf_bahaim", "hajj", "hajj.sayd_muhrim", "itq", "itq.itq", "itq.umm_walad", "jinayat", "jinayat.jirah", "jinayat.qasama", "nafaqat", "nafaqat.nafaqat_zawja", "nikah", "nikah.nasab", "nikah.unna", "raja", "raja.raja", "sadaq", "sadaq.sadaq", "sadaq.talim_quran", "tahara", "tahara.ma_najis", "tahara.madhy", "tahara.mani"] ["n0039", "n0040", "n0041", "n0051", "n0052", "n0053", "n0121", "n0122", "n0123", "n0131", "n0158", "n0167", "n0168", "n0169", "n0193", "n0194", "n0195", "n0196", "n0280", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0314", "n0315", "n0360", "n0364", "n0365", "n0377", "n0393", "n0439", "n0475", "n0476", "n0477", "n0478", "n0489", "n0490", "n0491", "n0492", "n0611", "n0612", "n0614", "n0615", "n0616"]
+#guard data.exactB 16 "r014" ["itq", "itq.itq", "tahara", "tahara.mani", "talaq", "talaq.talaq", "talaq.talaq_muallaq"] ["n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0615", "n0616", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654"]
+#guard data.exactB 16 "r015" ["atima", "atima.sayd", "hudud", "hudud.qadhf", "tahara", "tahara.mani", "tahara.mash_khuff", "tahara.thawb", "tahara.wudu", "talaq", "talaq.alfaz_talaq", "talaq.kinaya", "talaq.talaq"] ["n0051", "n0052", "n0053", "n0236", "n0237", "n0238", "n0615", "n0616", "n0617", "n0618", "n0623", "n0633", "n0634", "n0637", "n0639", "n0640", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r016" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "ghasb", "ghasb.daman_mithl", "ghasb.itlaf", "hajj", "hajj.hady", "hajj.hady_tamattu", "hajr", "hajr.iflas", "jihad", "jihad.ghanima", "jihad.nafal", "sadaq", "sadaq.sadaq", "sadaq.tansif", "zihar", "zihar.kaffarat_zihar"] ["n0057", "n0062", "n0063", "n0064", "n0156", "n0158", "n0167", "n0173", "n0174", "n0175", "n0176", "n0177", "n0202", "n0301", "n0330", "n0331", "n0332", "n0333", "n0344", "n0345", "n0489", "n0490", "n0491", "n0493", "n0494", "n0724"]
+#guard data.exactB 16 "r017" ["amma", "amma.taa", "hajj", "hajj.hady", "itq", "itq.itq", "salat", "salat.qiraat_quran", "salat.tatawwu", "salat.tul_qiyam"] ["n0031", "n0032", "n0173", "n0174", "n0175", "n0176", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0523", "n0524", "n0545", "n0546", "n0547"]
+#guard data.exactB 16 "r018" ["amma", "amma.kaffarat", "hajj", "hajj.hajj_islam", "hajj.qiran", "hajj.rakatay_tawaf", "hajj.tawaf_ifada", "hajj.tawaf_qudum", "hajj.tawaf_wada", "nudhur", "nudhur.nadhr", "salat", "salat.jumua", "salat.salat_id", "salat.sujud_tilawa", "salat.tahiyyat_masjid", "salat.takbirat_ihram", "salat.takbirat_intiqal", "siyam", "siyam.sawm_ramadan", "tahara", "tahara.hadath", "udhiya", "udhiya.aqiqa", "udhiya.udhiya", "zakat", "zakat.zakat"] ["n0016", "n0180", "n0188", "n0189", "n0197", "n0198", "n0199", "n0445", "n0446", "n0508", "n0509", "n0510", "n0530", "n0538", "n0540", "n0541", "n0542", "n0574", "n0599", "n0660", "n0661", "n0664", "n0665", "n0666", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r019" ["hajj", "hajj.hajj_islam", "salat", "salat.waqt", "siyam", "siyam.sawm_ramadan", "tahara", "tahara.tayammum", "zakat", "zakat.nisab"] ["n0180", "n0548", "n0574", "n0628", "n0707"]
+#guard data.exactB 16 "r020" ["buyu", "buyu.bay", "buyu.khiyar_ayb", "musaqat", "musaqat.musaqat", "sharika", "sharika.mudaraba", "wasaya", "wasaya.thuluth", "zakat", "zakat.hawl", "zakat.nisab", "zakat.tajil", "zakat.zakat"] ["n0070", "n0071", "n0072", "n0073", "n0096", "n0097", "n0098", "n0099", "n0216", "n0220", "n0387", "n0388", "n0389", "n0558", "n0700", "n0701", "n0707", "n0711", "n0712", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r021" ["itq", "itq.itq", "itq.kitaba", "wasaya", "wasaya.wasiyya"] ["n0142", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0688", "n0689"]
+#guard data.exactB 16 "r022" ["amma", "amma.shubha", "ayman", "ayman.yamin", "ghasb", "ghasb.khalt", "hudud", "hudud.shurb_khamr", "rada", "rada.laban", "tahara", "tahara.ma_najis", "wadia", "wadia.wadia", "wasaya", "wasaya.wasiyya"] ["n0028", "n0046", "n0062", "n0063", "n0064", "n0142", "n0220", "n0246", "n0467", "n0468", "n0611", "n0612", "n0674", "n0675", "n0676", "n0677", "n0688", "n0689"]
+#guard data.exactB 16 "r023" ["atima", "atima.diyafa", "atima.idtirar", "buyu", "buyu.bay", "buyu.dayn", "buyu.shart_itq", "daman", "daman.kafala", "hajj", "hajj.hajj_islam", "hawala", "hawala.hawala", "ihya", "ihya.kala_ma", "ila", "ila.ila", "itq", "itq.itq", "itq.kitaba", "itq.muthla", "nafaqat", "nafaqat.nafaqat_bahaim", "nafaqat.nafaqat_zawja", "nikah", "nikah.islam_ala_akthar", "nikah.unna", "nikah.wali", "rahn", "rahn.rahn", "salat", "salat.jumua", "sulh", "sulh.wad_khashab"] ["n0004", "n0018", "n0039", "n0040", "n0041", "n0071", "n0072", "n0073", "n0085", "n0086", "n0107", "n0115", "n0117", "n0119", "n0131", "n0180", "n0214", "n0215", "n0261", "n0262", "n0280", "n0281", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0309", "n0393", "n0395", "n0408", "n0438", "n0439", "n0440", "n0441", "n0474", "n0508", "n0509", "n0510", "n0586", "n0590"]
+#guard data.exactB 16 "r024" ["buyu", "buyu.bay", "buyu.shart_itq", "faraid", "faraid.tarika", "ghasb", "ghasb.daman_jidar", "ghasb.itlaf", "jihad", "jihad.dhimma", "jihad.ghanima", "jihad.ghulul", "jinayat", "jinayat.abd_jani", "shufa", "shufa.shufa", "zakat", "zakat.nisab"] ["n0071", "n0072", "n0073", "n0107", "n0142", "n0155", "n0158", "n0167", "n0326", "n0330", "n0331", "n0332", "n0333", "n0334", "n0335", "n0352", "n0353", "n0354", "n0562", "n0563", "n0564", "n0707"]
 #guard data.exactB 16 "r025" ["buyu", "buyu.bay", "buyu.tawabi", "dawa", "dawa.yad", "iqrar", "iqrar.iqrar"] ["n0071", "n0072", "n0073", "n0110", "n0111", "n0129", "n0282", "n0283", "n0284", "n0285", "n0286"]
-#guard data.exactB 16 "r026" ["atima", "atima.idtirar", "ghasb", "ghasb.itlaf", "hajj", "hajj.fidyat_adha", "hajj.sayd_haram", "hajj.sayd_muhrim", "hajj.shajar_haram", "jinayat", "jinayat.daf_sail"] ["n0004", "n0158", "n0167", "n0171", "n0172", "n0185", "n0191", "n0192", "n0193", "n0194", "n0195", "n0196", "n0357"]
-#guard data.exactB 16 "r027" ["ayman", "ayman.yamin", "ayman.yamin_mukrah", "jinayat", "jinayat.daf_sail", "siyam", "siyam.fidya", "siyam.fitr_hamil", "siyam.sawm_ramadan"] ["n0008", "n0062", "n0063", "n0064", "n0065", "n0357", "n0569", "n0570", "n0576"]
-#guard data.exactB 16 "r028" ["atima", "atima.sayd", "diyat", "diyat.arsh", "diyat.diya", "hajj", "hajj.sayd_muhrim", "hudud", "hudud.jald", "ijara", "ijara.ijara", "jinayat", "jinayat.qisas", "sadaq", "sadaq.sadaq", "sadaq.tansif"] ["n0051", "n0052", "n0053", "n0133", "n0135", "n0193", "n0194", "n0195", "n0196", "n0235", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0356", "n0370", "n0371", "n0491", "n0492", "n0493", "n0495", "n0496"]
-#guard data.exactB 16 "r029" ["tahara", "tahara.istinja", "udhiya", "udhiya.akl_udhiya", "udhiya.udhiya", "wakala", "wakala.wakala", "zakat", "zakat.masarif", "zakat.zakat"] ["n0609", "n0661", "n0666", "n0667", "n0668", "n0680", "n0681", "n0682", "n0695", "n0708", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r030" ["hajj", "hajj.hady", "udhiya", "udhiya.muayyana", "udhiya.udhiya", "zakat", "zakat.baqar", "zakat.tajil", "zakat.zakat"] ["n0173", "n0174", "n0175", "n0176", "n0665", "n0666", "n0667", "n0668", "n0699", "n0713", "n0714", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r031" ["hajj", "hajj.hady", "hajj.jima_muhrim", "itikaf", "itikaf.itikaf_mandhur", "salat", "salat.salat_musafir", "udhiya", "udhiya.muayyana", "udhiya.udhiya"] ["n0173", "n0174", "n0175", "n0176", "n0184", "n0289", "n0533", "n0665", "n0666", "n0667", "n0668"]
-#guard data.exactB 16 "r032" ["buyu", "buyu.bay", "buyu.shart_manfaa", "hiba", "hiba.hiba", "itq", "itq.istithna_khidma", "itq.itq", "itq.kitaba", "khul", "khul.khul", "sadaq", "sadaq.itq_sadaq", "sadaq.sadaq", "sulh", "sulh.sulh", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0071", "n0072", "n0073", "n0108", "n0142", "n0220", "n0223", "n0224", "n0225", "n0291", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0374", "n0376", "n0488", "n0491", "n0492", "n0493", "n0589", "n0590", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "r033" ["buyu", "buyu.bay", "buyu.haml", "buyu.thimar", "hajj", "hajj.ihram", "idda", "idda.sukna_mutadda", "ijara", "ijara.ijara", "nikah", "nikah.ama_muzawwaja"] ["n0071", "n0072", "n0073", "n0087", "n0113", "n0182", "n0183", "n0255", "n0259", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0403"]
-#guard data.exactB 16 "r034" ["ijara", "ijara.ijara", "itq", "itq.itq", "nikah", "nikah.khiyar_mutaqa", "nikah.nikah", "wasaya", "wasaya.wasiyya"] ["n0142", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0417", "n0418", "n0419", "n0420", "n0429", "n0690", "n0691"]
+#guard data.exactB 16 "r026" ["atima", "atima.idtirar", "ghasb", "ghasb.itlaf", "hajj", "hajj.fidyat_adha", "hajj.sayd_haram", "hajj.sayd_muhrim", "hajj.shajar_haram", "jinayat", "jinayat.daf_sail"] ["n0004", "n0158", "n0167", "n0171", "n0172", "n0185", "n0191", "n0192", "n0193", "n0194", "n0195", "n0196", "n0356"]
+#guard data.exactB 16 "r027" ["ayman", "ayman.yamin", "ayman.yamin_mukrah", "jinayat", "jinayat.daf_sail", "siyam", "siyam.fidya", "siyam.fitr_hamil", "siyam.sawm_ramadan"] ["n0008", "n0062", "n0063", "n0064", "n0065", "n0356", "n0567", "n0568", "n0574"]
+#guard data.exactB 16 "r028" ["atima", "atima.sayd", "diyat", "diyat.arsh", "diyat.diya", "hajj", "hajj.sayd_muhrim", "hudud", "hudud.jald", "ijara", "ijara.ijara", "jinayat", "jinayat.qisas", "sadaq", "sadaq.sadaq", "sadaq.tansif"] ["n0051", "n0052", "n0053", "n0133", "n0135", "n0193", "n0194", "n0195", "n0196", "n0235", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0355", "n0369", "n0370", "n0489", "n0490", "n0491", "n0493", "n0494"]
+#guard data.exactB 16 "r029" ["tahara", "tahara.istinja", "udhiya", "udhiya.akl_udhiya", "udhiya.udhiya", "wakala", "wakala.wakala", "zakat", "zakat.masarif", "zakat.zakat"] ["n0607", "n0659", "n0664", "n0665", "n0666", "n0678", "n0679", "n0680", "n0693", "n0706", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r030" ["hajj", "hajj.hady", "udhiya", "udhiya.muayyana", "udhiya.udhiya", "zakat", "zakat.baqar", "zakat.tajil", "zakat.zakat"] ["n0173", "n0174", "n0175", "n0176", "n0663", "n0664", "n0665", "n0666", "n0697", "n0711", "n0712", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r031" ["hajj", "hajj.hady", "hajj.jima_muhrim", "itikaf", "itikaf.itikaf_mandhur", "salat", "salat.salat_musafir", "udhiya", "udhiya.muayyana", "udhiya.udhiya"] ["n0173", "n0174", "n0175", "n0176", "n0184", "n0289", "n0531", "n0663", "n0664", "n0665", "n0666"]
+#guard data.exactB 16 "r032" ["buyu", "buyu.bay", "buyu.shart_manfaa", "hiba", "hiba.hiba", "itq", "itq.istithna_khidma", "itq.itq", "itq.kitaba", "khul", "khul.khul", "sadaq", "sadaq.itq_sadaq", "sadaq.sadaq", "sulh", "sulh.sulh", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0071", "n0072", "n0073", "n0108", "n0142", "n0220", "n0223", "n0224", "n0225", "n0291", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0373", "n0375", "n0486", "n0489", "n0490", "n0491", "n0587", "n0588", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "r033" ["buyu", "buyu.bay", "buyu.haml", "buyu.thimar", "hajj", "hajj.ihram", "idda", "idda.sukna_mutadda", "ijara", "ijara.ijara", "nikah", "nikah.ama_muzawwaja"] ["n0071", "n0072", "n0073", "n0087", "n0113", "n0182", "n0183", "n0255", "n0259", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0402"]
+#guard data.exactB 16 "r034" ["ijara", "ijara.ijara", "itq", "itq.itq", "nikah", "nikah.khiyar_mutaqa", "nikah.nikah", "wasaya", "wasaya.wasiyya"] ["n0142", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0415", "n0416", "n0417", "n0418", "n0427", "n0688", "n0689"]
 #guard data.exactB 16 "r035" ["buyu", "buyu.bay", "buyu.thimar", "ijara", "ijara.ijara"] ["n0071", "n0072", "n0073", "n0113", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279"]
 #guard data.exactB 16 "r036" ["hajr", "hajr.sabi", "ijara", "ijara.ijara", "jihad", "jihad.ghanima"] ["n0212", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0330", "n0331", "n0332", "n0333"]
-#guard data.exactB 16 "r037" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "buyu.mabi_qabl_qabd", "ghasb", "ghasb.ghasb", "itq", "itq.itq", "itq.kitaba", "itq.tadbir", "rahn", "rahn.ghalq_rahn", "rahn.rahn", "wadia", "wadia.wadia"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0071", "n0072", "n0073", "n0100", "n0101", "n0159", "n0160", "n0161", "n0162", "n0163", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0310", "n0311", "n0312", "n0313", "n0474", "n0476", "n0676", "n0677", "n0678", "n0679"]
-#guard data.exactB 16 "r038" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "buyu.iqala", "ijara", "ijara.ijara", "musaqat", "musaqat.muzaraa", "qard", "qard.qard", "salam", "salam.salam", "sharika", "sharika.mudaraba", "talaq", "talaq.lafz_haram", "talaq.talaq"] ["n0034", "n0035", "n0036", "n0037", "n0060", "n0071", "n0072", "n0073", "n0086", "n0089", "n0090", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0391", "n0467", "n0468", "n0497", "n0498", "n0560", "n0639", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r039" ["ijara", "ijara.ijara", "raja", "raja.raja", "sadaq", "sadaq.itq_sadaq", "sadaq.sadaq"] ["n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0477", "n0478", "n0479", "n0480", "n0488", "n0491", "n0492", "n0493"]
-#guard data.exactB 16 "r040" ["ariyya", "ariyya.ariyya", "atima", "atima.khamr", "buyu", "buyu.bay", "buyu.khiyar_ayb", "hajr", "hajr.muflis", "hiba", "hiba.hiba", "hiba.ruju_walid", "ijara", "ijara.ijara", "itq", "itq.itq", "itq.itq_muallaq", "itq.tadbir", "nikah", "nikah.firash", "nikah.jam_ukhtayn", "rahn", "rahn.rahn", "sadaq", "sadaq.sadaq", "sadaq.tansif", "sulh", "sulh.sulh", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "udhiya", "udhiya.muayyana", "udhiya.udhiya", "wasaya", "wasaya.wasiyya", "zakat", "zakat.urud_tijara"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0045", "n0046", "n0070", "n0071", "n0072", "n0073", "n0096", "n0097", "n0098", "n0099", "n0142", "n0173", "n0209", "n0210", "n0211", "n0220", "n0223", "n0224", "n0225", "n0232", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0303", "n0304", "n0310", "n0311", "n0312", "n0313", "n0378", "n0412", "n0415", "n0476", "n0491", "n0492", "n0493", "n0495", "n0496", "n0589", "n0590", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0665", "n0666", "n0667", "n0668", "n0690", "n0691", "n0715", "n0716"]
-#guard data.exactB 16 "r041" ["rahn", "rahn.rahn", "udhiya", "udhiya.muayyana", "udhiya.udhiya", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0018", "n0142", "n0173", "n0220", "n0476", "n0665", "n0666", "n0667", "n0668", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "r042" ["amma", "amma.yad", "ariyya", "ariyya.ariyya", "luqata", "luqata.luqata", "wadia", "wadia.amanat", "wadia.wadia"] ["n0033", "n0034", "n0035", "n0036", "n0037", "n0384", "n0385", "n0386", "n0676", "n0677", "n0678", "n0679"]
-#guard data.exactB 16 "r043" ["amma", "amma.yad", "buyu", "buyu.bay", "buyu.mabi_qabl_qabd", "wadia", "wadia.wadia"] ["n0033", "n0071", "n0072", "n0073", "n0100", "n0101", "n0676", "n0677", "n0678", "n0679"]
-#guard data.exactB 16 "r045" ["ijara", "ijara.ajir", "ijara.ijara", "rahn", "rahn.rahn", "sharika", "sharika.mudaraba", "sharika.sharika", "wadia", "wadia.wadia", "wakala", "wakala.wakala", "wasaya", "wasaya.wasi"] ["n0018", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0476", "n0560", "n0561", "n0562", "n0676", "n0677", "n0678", "n0679", "n0680", "n0681", "n0682", "n0687", "n0688", "n0689"]
-#guard data.exactB 16 "r046" ["amma", "amma.aqd_fasid", "hajj", "hajj.ihram", "sharika", "sharika.sharika"] ["n0001", "n0002", "n0182", "n0183", "n0561", "n0562"]
-#guard data.exactB 16 "r047" ["amma", "amma.aqd_fasid", "amma.yad", "buyu", "buyu.bay", "buyu.bay_fasid", "ijara", "ijara.ijara", "itq", "itq.itq", "itq.kitaba", "nikah", "nikah.nikah_fasid", "sadaq", "sadaq.sadaq"] ["n0001", "n0002", "n0033", "n0071", "n0072", "n0073", "n0075", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0434", "n0491", "n0492", "n0493"]
-#guard data.exactB 16 "r049" ["amma", "amma.qabd", "salam", "salam.salam"] ["n0018", "n0019", "n0086", "n0497", "n0498"]
-#guard data.exactB 16 "r050" ["atima", "atima.idtirar", "shufa", "shufa.shufa"] ["n0004", "n0564", "n0565", "n0566"]
-#guard data.exactB 16 "r051" ["buyu", "buyu.bay", "buyu.mabi_qabl_qabd", "hiba", "hiba.hiba", "wasaya", "wasaya.wasiyya"] ["n0071", "n0072", "n0073", "n0100", "n0101", "n0142", "n0220", "n0223", "n0224", "n0225", "n0690", "n0691"]
-#guard data.exactB 16 "r052" ["buyu", "buyu.bay", "buyu.bay_dayn", "buyu.bay_gharar", "jihad", "jihad.ghanima", "riba", "riba.sarf", "zakat", "zakat.zakat"] ["n0071", "n0072", "n0073", "n0074", "n0077", "n0078", "n0330", "n0331", "n0332", "n0333", "n0483", "n0484", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r053" ["atima", "atima.idtirar", "faraid", "faraid.tarika", "hajr", "hajr.madin", "hajr.muflis", "hiba", "hiba.atiyyat_marid", "hiba.hiba", "jihad", "jihad.ghanima", "jinayat", "jinayat.abd_jani", "rahn", "rahn.rahn", "sadaq", "sadaq.sadaq", "sadaq.tansif", "shufa", "shufa.shufa", "zakat", "zakat.nisab"] ["n0004", "n0018", "n0142", "n0203", "n0204", "n0209", "n0210", "n0211", "n0216", "n0219", "n0220", "n0223", "n0224", "n0225", "n0330", "n0331", "n0332", "n0333", "n0352", "n0353", "n0354", "n0355", "n0476", "n0491", "n0492", "n0493", "n0495", "n0496", "n0564", "n0565", "n0566", "n0709"]
-#guard data.exactB 16 "r054" ["buyu", "buyu.bay", "buyu.khiyar", "buyu.khiyar_ayb", "sadaq", "sadaq.sadaq", "sadaq.tansif"] ["n0070", "n0071", "n0072", "n0073", "n0094", "n0095", "n0096", "n0097", "n0098", "n0099", "n0491", "n0492", "n0493", "n0495", "n0496"]
-#guard data.exactB 16 "r055" ["buyu", "buyu.bay", "buyu.khiyar_ayb", "hajr", "hajr.muflis", "hiba", "hiba.hiba", "hiba.ruju_walid", "hiba.tamalluk_ab", "raja", "raja.raja", "shufa", "shufa.shufa", "wasaya", "wasaya.wasiyya"] ["n0070", "n0071", "n0072", "n0073", "n0096", "n0097", "n0098", "n0099", "n0142", "n0209", "n0210", "n0211", "n0220", "n0223", "n0224", "n0225", "n0232", "n0233", "n0477", "n0478", "n0479", "n0480", "n0564", "n0565", "n0566", "n0690", "n0691"]
-#guard data.exactB 16 "r056" ["dawa", "dawa.bayyina", "idda", "idda.umm_walad", "itq", "itq.itq", "itq.kitaba", "nikah", "nikah.kafaa", "rahn", "rahn.rahn", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_qabl_nikah", "wakala", "wakala.wakala"] ["n0018", "n0121", "n0122", "n0123", "n0260", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0416", "n0476", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0657", "n0658", "n0659", "n0680", "n0681", "n0682"]
-#guard data.exactB 16 "r057" ["hiba", "hiba.atiyyat_marid", "hiba.hiba", "itq", "itq.itq", "itq.itq_qarib", "khul", "khul.khul", "nikah", "nikah.nikah_ama", "sadaq", "sadaq.sadaq", "sadaq.tansif", "talaq", "talaq.talaq", "talaq.talaq_muallaq"] ["n0216", "n0219", "n0220", "n0223", "n0224", "n0225", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0299", "n0374", "n0376", "n0430", "n0431", "n0432", "n0433", "n0491", "n0492", "n0493", "n0495", "n0496", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656"]
-#guard data.exactB 16 "r058" ["ayman", "ayman.yamin", "tahara", "tahara.wat_haid"] ["n0062", "n0063", "n0064", "n0603", "n0634"]
+#guard data.exactB 16 "r037" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "buyu.mabi_qabl_qabd", "ghasb", "ghasb.ghasb", "itq", "itq.itq", "itq.kitaba", "itq.tadbir", "rahn", "rahn.ghalq_rahn", "rahn.rahn", "wadia", "wadia.wadia"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0071", "n0072", "n0073", "n0100", "n0101", "n0159", "n0160", "n0161", "n0162", "n0163", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0310", "n0311", "n0312", "n0313", "n0472", "n0474", "n0674", "n0675", "n0676", "n0677"]
+#guard data.exactB 16 "r038" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "buyu.iqala", "ijara", "ijara.ijara", "musaqat", "musaqat.muzaraa", "qard", "qard.qard", "salam", "salam.salam", "sharika", "sharika.mudaraba", "talaq", "talaq.lafz_haram", "talaq.talaq"] ["n0034", "n0035", "n0036", "n0037", "n0060", "n0071", "n0072", "n0073", "n0086", "n0089", "n0090", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0390", "n0465", "n0466", "n0495", "n0496", "n0558", "n0637", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r039" ["ijara", "ijara.ijara", "raja", "raja.raja", "sadaq", "sadaq.itq_sadaq", "sadaq.sadaq"] ["n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0475", "n0476", "n0477", "n0478", "n0486", "n0489", "n0490", "n0491"]
+#guard data.exactB 16 "r040" ["ariyya", "ariyya.ariyya", "atima", "atima.khamr", "buyu", "buyu.bay", "buyu.khiyar_ayb", "hajr", "hajr.muflis", "hiba", "hiba.hiba", "hiba.ruju_walid", "ijara", "ijara.ijara", "itq", "itq.itq", "itq.itq_muallaq", "itq.tadbir", "nikah", "nikah.firash", "nikah.jam_ukhtayn", "rahn", "rahn.rahn", "sadaq", "sadaq.sadaq", "sadaq.tansif", "sulh", "sulh.sulh", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "udhiya", "udhiya.muayyana", "udhiya.udhiya", "wasaya", "wasaya.wasiyya", "zakat", "zakat.urud_tijara"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0045", "n0046", "n0070", "n0071", "n0072", "n0073", "n0096", "n0097", "n0098", "n0099", "n0142", "n0173", "n0209", "n0210", "n0211", "n0220", "n0223", "n0224", "n0225", "n0232", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0303", "n0304", "n0310", "n0311", "n0312", "n0313", "n0377", "n0411", "n0474", "n0489", "n0490", "n0491", "n0493", "n0494", "n0587", "n0588", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0663", "n0664", "n0665", "n0666", "n0688", "n0689", "n0713", "n0714"]
+#guard data.exactB 16 "r041" ["rahn", "rahn.rahn", "udhiya", "udhiya.muayyana", "udhiya.udhiya", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0018", "n0142", "n0173", "n0220", "n0474", "n0663", "n0664", "n0665", "n0666", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "r042" ["amma", "amma.yad", "ariyya", "ariyya.ariyya", "luqata", "luqata.luqata", "wadia", "wadia.amanat", "wadia.wadia"] ["n0033", "n0034", "n0035", "n0036", "n0037", "n0383", "n0384", "n0385", "n0674", "n0675", "n0676", "n0677"]
+#guard data.exactB 16 "r043" ["amma", "amma.yad", "buyu", "buyu.bay", "buyu.mabi_qabl_qabd", "wadia", "wadia.wadia"] ["n0033", "n0071", "n0072", "n0073", "n0100", "n0101", "n0674", "n0675", "n0676", "n0677"]
+#guard data.exactB 16 "r045" ["ijara", "ijara.ajir", "ijara.ijara", "rahn", "rahn.rahn", "sharika", "sharika.mudaraba", "sharika.sharika", "wadia", "wadia.wadia", "wakala", "wakala.wakala", "wasaya", "wasaya.wasi"] ["n0018", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0474", "n0558", "n0559", "n0560", "n0674", "n0675", "n0676", "n0677", "n0678", "n0679", "n0680", "n0685", "n0686", "n0687"]
+#guard data.exactB 16 "r046" ["amma", "amma.aqd_fasid", "hajj", "hajj.ihram", "sharika", "sharika.sharika"] ["n0001", "n0002", "n0182", "n0183", "n0559", "n0560"]
+#guard data.exactB 16 "r047" ["amma", "amma.aqd_fasid", "amma.yad", "buyu", "buyu.bay", "buyu.bay_fasid", "ijara", "ijara.ijara", "itq", "itq.itq", "itq.kitaba", "nikah", "nikah.nikah_fasid", "sadaq", "sadaq.sadaq"] ["n0001", "n0002", "n0033", "n0071", "n0072", "n0073", "n0075", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0432", "n0489", "n0490", "n0491"]
+#guard data.exactB 16 "r049" ["amma", "amma.qabd", "salam", "salam.salam"] ["n0018", "n0019", "n0086", "n0495", "n0496"]
+#guard data.exactB 16 "r050" ["atima", "atima.idtirar", "shufa", "shufa.shufa"] ["n0004", "n0562", "n0563", "n0564"]
+#guard data.exactB 16 "r051" ["buyu", "buyu.bay", "buyu.mabi_qabl_qabd", "hiba", "hiba.hiba", "wasaya", "wasaya.wasiyya"] ["n0071", "n0072", "n0073", "n0100", "n0101", "n0142", "n0220", "n0223", "n0224", "n0225", "n0688", "n0689"]
+#guard data.exactB 16 "r052" ["buyu", "buyu.bay", "buyu.bay_dayn", "buyu.bay_gharar", "jihad", "jihad.ghanima", "riba", "riba.sarf", "zakat", "zakat.zakat"] ["n0071", "n0072", "n0073", "n0074", "n0077", "n0078", "n0330", "n0331", "n0332", "n0333", "n0481", "n0482", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r053" ["atima", "atima.idtirar", "faraid", "faraid.tarika", "hajr", "hajr.madin", "hajr.muflis", "hiba", "hiba.atiyyat_marid", "hiba.hiba", "jihad", "jihad.ghanima", "jinayat", "jinayat.abd_jani", "rahn", "rahn.rahn", "sadaq", "sadaq.sadaq", "sadaq.tansif", "shufa", "shufa.shufa", "zakat", "zakat.nisab"] ["n0004", "n0018", "n0142", "n0203", "n0204", "n0209", "n0210", "n0211", "n0216", "n0219", "n0220", "n0223", "n0224", "n0225", "n0330", "n0331", "n0332", "n0333", "n0352", "n0353", "n0354", "n0474", "n0489", "n0490", "n0491", "n0493", "n0494", "n0562", "n0563", "n0564", "n0707"]
+#guard data.exactB 16 "r054" ["buyu", "buyu.bay", "buyu.khiyar", "buyu.khiyar_ayb", "sadaq", "sadaq.sadaq", "sadaq.tansif"] ["n0070", "n0071", "n0072", "n0073", "n0094", "n0095", "n0096", "n0097", "n0098", "n0099", "n0489", "n0490", "n0491", "n0493", "n0494"]
+#guard data.exactB 16 "r055" ["buyu", "buyu.bay", "buyu.khiyar_ayb", "hajr", "hajr.muflis", "hiba", "hiba.hiba", "hiba.ruju_walid", "hiba.tamalluk_ab", "raja", "raja.raja", "shufa", "shufa.shufa", "wasaya", "wasaya.wasiyya"] ["n0070", "n0071", "n0072", "n0073", "n0096", "n0097", "n0098", "n0099", "n0142", "n0209", "n0210", "n0211", "n0220", "n0223", "n0224", "n0225", "n0232", "n0233", "n0475", "n0476", "n0477", "n0478", "n0562", "n0563", "n0564", "n0688", "n0689"]
+#guard data.exactB 16 "r056" ["dawa", "dawa.bayyina", "idda", "idda.umm_walad", "itq", "itq.itq", "itq.kitaba", "nikah", "nikah.kafaa", "rahn", "rahn.rahn", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_qabl_nikah", "wakala", "wakala.wakala"] ["n0018", "n0121", "n0122", "n0123", "n0260", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0414", "n0474", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0655", "n0656", "n0657", "n0678", "n0679", "n0680"]
+#guard data.exactB 16 "r057" ["hiba", "hiba.atiyyat_marid", "hiba.hiba", "itq", "itq.itq", "itq.itq_qarib", "khul", "khul.khul", "nikah", "nikah.nikah_ama", "sadaq", "sadaq.sadaq", "sadaq.tansif", "talaq", "talaq.talaq", "talaq.talaq_muallaq"] ["n0216", "n0219", "n0220", "n0223", "n0224", "n0225", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0299", "n0373", "n0375", "n0428", "n0429", "n0430", "n0431", "n0489", "n0490", "n0491", "n0493", "n0494", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654"]
+#guard data.exactB 16 "r058" ["ayman", "ayman.yamin", "tahara", "tahara.wat_haid"] ["n0062", "n0063", "n0064", "n0601", "n0632"]
 #guard data.exactB 16 "r059" ["buyu", "buyu.bay", "buyu.ikhtilaf_mutabayiayn", "buyu.iqala", "buyu.jaiha", "buyu.khiyar", "buyu.khiyar_ayb", "buyu.mabi_qabl_qabd", "buyu.tashrik", "buyu.thimar", "ijara", "ijara.ijara"] ["n0070", "n0071", "n0072", "n0073", "n0088", "n0089", "n0090", "n0091", "n0092", "n0093", "n0094", "n0095", "n0096", "n0097", "n0098", "n0099", "n0100", "n0101", "n0109", "n0113", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279"]
-#guard data.exactB 16 "r060" ["jiala", "jiala.jiala", "jinayat", "jinayat.qisas", "musaqat", "musaqat.musaqat", "musaqat.muzaraa", "rahn", "rahn.rahn", "sharika", "sharika.mudaraba", "sharika.sharika", "wakala", "wakala.wakala", "wasaya", "wasaya.wasi"] ["n0018", "n0118", "n0356", "n0370", "n0371", "n0388", "n0389", "n0390", "n0391", "n0476", "n0560", "n0561", "n0562", "n0680", "n0681", "n0682", "n0687", "n0688", "n0689"]
-#guard data.exactB 16 "r061" ["qada", "qada.imam"] ["n0455"]
-#guard data.exactB 16 "r062" ["qada", "qada.qadi", "sharika", "sharika.mudaraba", "sharika.sharika", "wadia", "wadia.wadia"] ["n0461", "n0462", "n0560", "n0561", "n0562", "n0676", "n0677", "n0678", "n0679"]
-#guard data.exactB 16 "r063" ["itq", "itq.itq", "khul", "khul.khul", "nikah", "nikah.khiyar_mutaqa", "nikah.nikah", "talaq", "talaq.talaq"] ["n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0374", "n0376", "n0417", "n0418", "n0419", "n0420", "n0429", "n0639", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r064" ["buyu", "buyu.bay", "buyu.bay_fuduli", "buyu.khiyar", "ghasb", "ghasb.ghasb", "talaq", "talaq.talaq", "talaq.talaq_muallaq"] ["n0071", "n0072", "n0073", "n0076", "n0094", "n0095", "n0159", "n0160", "n0161", "n0162", "n0163", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656"]
-#guard data.exactB 16 "r065" ["amma", "amma.jahl", "buyu", "buyu.bay", "buyu.bay_fuduli", "buyu.bay_gharar", "hiba", "hiba.ibra", "idda", "idda.idda", "idda.mafqud", "itq", "itq.itq", "jinayat", "jinayat.afw_qisas", "jinayat.qisas", "talaq", "talaq.talaq"] ["n0011", "n0012", "n0013", "n0014", "n0071", "n0072", "n0073", "n0076", "n0077", "n0078", "n0227", "n0250", "n0256", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0356", "n0370", "n0371", "n0639", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r066" ["buyu", "buyu.bay", "buyu.bay_fasid", "salat", "salat.qibla"] ["n0071", "n0072", "n0073", "n0075", "n0524"]
-#guard data.exactB 16 "r067" ["buyu", "buyu.bay", "buyu.iqala", "buyu.khiyar_ayb", "daman", "daman.daman", "hiba", "hiba.ibra", "itq", "itq.ita_mukatab", "itq.itq", "itq.kitaba", "sadaq", "sadaq.sadaq", "sadaq.tansif", "shahadat", "shahadat.ruju_shuhud", "shahadat.shahada"] ["n0037", "n0070", "n0071", "n0072", "n0073", "n0089", "n0090", "n0096", "n0097", "n0098", "n0099", "n0115", "n0116", "n0117", "n0118", "n0227", "n0292", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0479", "n0491", "n0492", "n0493", "n0495", "n0496", "n0552", "n0553", "n0554", "n0555"]
-#guard data.exactB 16 "r068" ["amma", "amma.shakk", "buyu", "buyu.bay", "hudud", "hudud.ridda", "qada", "qada.hukm", "raja", "raja.raja", "riba", "riba.sarf", "salat", "salat.waqt", "siyam", "siyam.yawm_shakk", "tahara", "tahara.hadath", "tahara.ina_mushtabih", "tahara.mash_khuff", "tahara.wudu", "wadia", "wadia.wadia", "wakala", "wakala.wakala", "zakat", "zakat.zakat"] ["n0024", "n0025", "n0026", "n0027", "n0071", "n0072", "n0073", "n0240", "n0241", "n0452", "n0453", "n0454", "n0477", "n0478", "n0479", "n0480", "n0483", "n0484", "n0550", "n0586", "n0601", "n0619", "n0620", "n0635", "n0636", "n0676", "n0677", "n0678", "n0679", "n0680", "n0681", "n0682", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r069" ["hajr", "hajr.abd_madhun", "hajr.sabi", "ijara", "ijara.ajir", "ijara.ijara", "qada", "qada.qadi", "sadaq", "sadaq.sadaq", "sharika", "sharika.mudaraba", "sharika.sharika"] ["n0200", "n0212", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0461", "n0462", "n0491", "n0492", "n0493", "n0560", "n0561", "n0562"]
-#guard data.exactB 16 "r070" ["ayman", "ayman.kaffara", "ayman.yamin", "ghasb", "ghasb.ghasb", "hajr", "hajr.abd_madhun", "hajr.mal_yatim", "hiba", "hiba.ibra", "nikah", "nikah.wali", "salat", "salat.ijabat_muadhdhin", "salat.khutba", "sharika", "sharika.sharika", "siyam", "siyam.kaffarat_jima", "wakala", "wakala.wakala", "waqf", "waqf.waqf", "wasaya", "wasaya.wasi", "zakat", "zakat.masarif", "zakat.sadaqat_tatawwu", "zakat.zakat"] ["n0057", "n0058", "n0062", "n0063", "n0064", "n0159", "n0160", "n0161", "n0162", "n0163", "n0200", "n0206", "n0207", "n0208", "n0227", "n0440", "n0442", "n0443", "n0505", "n0513", "n0561", "n0562", "n0573", "n0680", "n0681", "n0682", "n0684", "n0685", "n0687", "n0688", "n0689", "n0695", "n0708", "n0712", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r071" ["atima", "atima.thamar_muallaq", "hajr", "hajr.mal_yatim", "ijara", "ijara.ajir", "ijara.ijara", "wakala", "wakala.wakil", "waqf", "waqf.nazir_waqf", "waqf.waqf"] ["n0056", "n0206", "n0207", "n0208", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0680", "n0681", "n0683", "n0684", "n0685"]
-#guard data.exactB 16 "r072" ["buyu", "buyu.thaman", "hajj", "hajj.niyaba_hajj", "ijara", "ijara.ijara", "ijara.ujra", "jihad", "jihad.tajhiz_ghazi", "nafaqat", "nafaqat.nafaqat_zawja", "nikah", "nikah.nikah", "sharika", "sharika.mudaraba", "zakat", "zakat.sabil_allah"] ["n0112", "n0131", "n0186", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0350", "n0351", "n0394", "n0429", "n0560", "n0711"]
-#guard data.exactB 16 "r073" ["buyu", "buyu.shart_fi_bay", "musaqat", "musaqat.musaqat", "salam", "salam.salam"] ["n0086", "n0105", "n0106", "n0388", "n0389", "n0390", "n0497", "n0498"]
-#guard data.exactB 16 "r074" ["jiala", "jiala.inqadh_mal", "jiala.jiala", "jiala.radd_abiq", "jihad", "jihad.salab", "zakat", "zakat.amil"] ["n0118", "n0321", "n0347", "n0697", "n0698"]
-#guard data.exactB 16 "r075" ["ariyya", "ariyya.ariyya", "daman", "daman.daman", "daman.qada_dayn_ghayr", "faraid", "faraid.dayn_tarika", "ijara", "ijara.ijara", "jiala", "jiala.jiala", "jiala.radd_abiq", "jihad", "jihad.fidaa_asir", "luqata", "luqata.laqit", "luqata.luqata", "musaqat", "musaqat.musaqat", "nafaqat", "nafaqat.nafaqa", "nafaqat.nafaqat_zawja", "rahn", "rahn.marhun", "wadia", "wadia.wadia"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0115", "n0116", "n0117", "n0118", "n0120", "n0131", "n0142", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0321", "n0328", "n0329", "n0381", "n0382", "n0383", "n0384", "n0385", "n0386", "n0388", "n0389", "n0390", "n0394", "n0475", "n0676", "n0677", "n0678", "n0679"]
-#guard data.exactB 16 "r076" ["qada", "qada.muhayaa", "qada.qisma", "sharika", "sharika.sharikat_amlak", "sulh", "sulh.jidar_mushtarak"] ["n0459", "n0463", "n0464", "n0561", "n0563", "n0588"]
-#guard data.exactB 16 "r077" ["amma", "amma.aqd_fasid", "ariyya", "ariyya.ariyya", "ghasb", "ghasb.ghasb", "ghasb.ghiras_fi_ard_ghayr", "hajr", "hajr.muflis", "ijara", "ijara.ijara", "sadaq", "sadaq.nisf_sadaq", "shufa", "shufa.shufa", "wasaya", "wasaya.wasiyya"] ["n0001", "n0002", "n0034", "n0035", "n0036", "n0037", "n0142", "n0159", "n0160", "n0161", "n0162", "n0163", "n0165", "n0166", "n0209", "n0210", "n0211", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0490", "n0564", "n0565", "n0566", "n0690", "n0691"]
-#guard data.exactB 16 "r078" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay_usul_wa_thimar", "ghasb", "ghasb.ghasb", "ghasb.ghiras_fi_ard_ghayr", "ghasb.itlaf", "hajr", "hajr.muflis", "ijara", "ijara.ijara", "shufa", "shufa.shufa"] ["n0034", "n0035", "n0036", "n0037", "n0084", "n0158", "n0159", "n0160", "n0161", "n0162", "n0163", "n0165", "n0166", "n0167", "n0209", "n0210", "n0211", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0564", "n0565", "n0566"]
-#guard data.exactB 16 "r079" ["ghasb", "ghasb.zar_fi_ard_ghayr", "shufa", "shufa.shufa"] ["n0170", "n0564", "n0565", "n0566"]
-#guard data.exactB 16 "r080" ["buyu", "buyu.bay", "buyu.bay_usul_wa_thimar", "buyu.jaiha", "buyu.thimar", "buyu.usul_buqul", "ghasb", "ghasb.ghasb", "musaqat", "musaqat.musaqat"] ["n0071", "n0072", "n0073", "n0084", "n0091", "n0092", "n0093", "n0113", "n0159", "n0160", "n0161", "n0162", "n0163", "n0388", "n0389", "n0390"]
-#guard data.exactB 16 "r081" ["buyu", "buyu.bay", "buyu.bay_thamar_qabl_salah", "buyu.khiyar_ayb", "hajr", "hajr.muflis", "hiba", "hiba.ruju_fi_hiba", "sadaq", "sadaq.nisf_sadaq"] ["n0070", "n0071", "n0072", "n0073", "n0083", "n0096", "n0097", "n0098", "n0099", "n0209", "n0210", "n0211", "n0224", "n0228", "n0229", "n0490"]
-#guard data.exactB 16 "r082" ["amma", "amma.aqd_fasid", "ariyya", "ariyya.ariyya", "ayman", "ayman.yamin", "buyu", "buyu.bay", "buyu.iqala", "buyu.khiyar", "buyu.khiyar_ayb", "buyu.maqbud_ala_sawm", "daman", "daman.daman", "faraid", "faraid.dayn_tarika", "hajr", "hajr.muflis", "hiba", "hiba.atiyyat_marid", "hiba.hiba", "hiba.ruju_fi_hiba", "ijara", "ijara.ajir", "ijara.ijara", "itq", "itq.itq", "itq.mukatab", "itq.tadbir", "jihad", "jihad.istila_kuffar", "luqata", "luqata.luqata", "rahn", "rahn.marhun", "sadaq", "sadaq.nisf_sadaq", "wadia", "wadia.wadia", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0001", "n0002", "n0018", "n0034", "n0035", "n0036", "n0037", "n0062", "n0063", "n0064", "n0070", "n0071", "n0072", "n0073", "n0089", "n0090", "n0094", "n0095", "n0096", "n0097", "n0098", "n0099", "n0102", "n0115", "n0116", "n0117", "n0118", "n0142", "n0209", "n0210", "n0211", "n0216", "n0219", "n0220", "n0223", "n0224", "n0225", "n0228", "n0229", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0310", "n0311", "n0312", "n0313", "n0338", "n0384", "n0385", "n0386", "n0475", "n0490", "n0676", "n0677", "n0678", "n0679", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "r084" ["amma", "amma.haml", "atima", "atima.janin_mudhakka", "diyat", "diyat.diya", "diyat.janin", "faraid", "faraid.mirath_haml", "iqrar", "iqrar.iqrar", "itq", "itq.itq", "itq.umm_walad", "janaiz", "janaiz.salat_janaza", "jihad", "jihad.ghanima", "lian", "lian.lian", "nafaqat", "nafaqat.nafaqat_aqarib", "rahn", "rahn.marhun", "shufa", "shufa.shufa", "siyam", "siyam.fitr_hamil", "siyam.sawm_ramadan", "talaq", "talaq.talaq", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "zakat", "zakat.zakat", "zakat.zakat_fitr"] ["n0005", "n0006", "n0018", "n0042", "n0131", "n0135", "n0138", "n0139", "n0142", "n0151", "n0220", "n0282", "n0283", "n0284", "n0285", "n0286", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0314", "n0315", "n0319", "n0320", "n0330", "n0331", "n0332", "n0333", "n0377", "n0395", "n0475", "n0564", "n0565", "n0566", "n0570", "n0576", "n0639", "n0647", "n0648", "n0649", "n0650", "n0684", "n0685", "n0690", "n0691", "n0717", "n0718", "n0719", "n0721", "n0722", "n0723"]
-#guard data.exactB 16 "r085" ["atima", "atima.kalb", "buyu", "buyu.bay_usul_wa_thimar", "faraid", "faraid.dayn_tarika", "hajj", "hajj.hady", "hajr", "hajr.mal_abd", "hajr.muflis", "ihya", "ihya.ihya_mawat", "ihya.kala_wa_ma", "ihya.maqaid_aswaq", "ihya.marafiq_amlak", "ihya.tahajjur", "jihad", "jihad.ghanima", "jihad.istila_kuffar", "jinayat", "jinayat.jinayat_abd", "luqata", "luqata.luqata", "rahn", "rahn.marhun", "sadaq", "sadaq.nisf_sadaq", "salat", "salat.majlis_masjid", "sulh", "sulh.irtifaq_jiwar", "tahara", "tahara.duhn_najis", "tahara.jild_mayta", "udhiya", "udhiya.udhiya", "wasaya", "wasaya.wasiyya", "zakat", "zakat.nisab"] ["n0018", "n0043", "n0044", "n0084", "n0142", "n0155", "n0173", "n0174", "n0175", "n0176", "n0205", "n0209", "n0210", "n0211", "n0220", "n0261", "n0263", "n0264", "n0265", "n0266", "n0267", "n0330", "n0331", "n0332", "n0333", "n0338", "n0360", "n0384", "n0385", "n0386", "n0475", "n0490", "n0517", "n0518", "n0588", "n0596", "n0597", "n0598", "n0610", "n0666", "n0667", "n0668", "n0690", "n0691", "n0709"]
-#guard data.exactB 16 "r086" ["ariyya", "ariyya.ariyya", "atima", "atima.diyafa", "ihya", "ihya.maqaid_aswaq", "jihad", "jihad.ard_kharaj", "jihad.taam_dar_harb", "nikah", "nikah.nikah", "sulh", "sulh.irtifaq_jiwar", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0034", "n0035", "n0036", "n0037", "n0039", "n0040", "n0041", "n0142", "n0155", "n0220", "n0266", "n0325", "n0348", "n0429", "n0588", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "r087" ["ariyya", "ariyya.ariyya", "atima", "atima.kalb", "buyu", "buyu.shart_fi_bay", "ihya", "ihya.ihya_mawat", "ihya.kala_wa_ma", "ihya.maqaid_aswaq", "ihya.marafiq_amlak", "ihya.tahajjur", "ijara", "ijara.ijara", "itq", "itq.itq", "jihad", "jihad.ard_kharaj", "jihad.taam_dar_harb", "salat", "salat.majlis_masjid", "sulh", "sulh.irtifaq_jiwar", "tahara", "tahara.duhn_najis", "udhiya", "udhiya.udhiya", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0034", "n0035", "n0036", "n0037", "n0043", "n0044", "n0105", "n0106", "n0142", "n0155", "n0220", "n0261", "n0263", "n0264", "n0265", "n0266", "n0267", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0325", "n0348", "n0517", "n0518", "n0588", "n0597", "n0598", "n0666", "n0667", "n0668", "n0684", "n0685", "n0690", "n0691"]
+#guard data.exactB 16 "r060" ["jiala", "jiala.jiala", "jinayat", "jinayat.qisas", "musaqat", "musaqat.musaqat", "musaqat.muzaraa", "rahn", "rahn.rahn", "sharika", "sharika.mudaraba", "sharika.sharika", "wakala", "wakala.wakala", "wasaya", "wasaya.wasi"] ["n0018", "n0118", "n0355", "n0369", "n0370", "n0387", "n0388", "n0389", "n0390", "n0474", "n0558", "n0559", "n0560", "n0678", "n0679", "n0680", "n0685", "n0686", "n0687"]
+#guard data.exactB 16 "r061" ["qada", "qada.imam"] ["n0453"]
+#guard data.exactB 16 "r062" ["qada", "qada.qadi", "sharika", "sharika.mudaraba", "sharika.sharika", "wadia", "wadia.wadia"] ["n0459", "n0460", "n0558", "n0559", "n0560", "n0674", "n0675", "n0676", "n0677"]
+#guard data.exactB 16 "r063" ["itq", "itq.itq", "khul", "khul.khul", "nikah", "nikah.khiyar_mutaqa", "nikah.nikah", "talaq", "talaq.talaq"] ["n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0373", "n0375", "n0415", "n0416", "n0417", "n0418", "n0427", "n0637", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r064" ["buyu", "buyu.bay", "buyu.bay_fuduli", "buyu.khiyar", "ghasb", "ghasb.ghasb", "talaq", "talaq.talaq", "talaq.talaq_muallaq"] ["n0071", "n0072", "n0073", "n0076", "n0094", "n0095", "n0159", "n0160", "n0161", "n0162", "n0163", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654"]
+#guard data.exactB 16 "r065" ["amma", "amma.jahl", "buyu", "buyu.bay", "buyu.bay_fuduli", "buyu.bay_gharar", "hiba", "hiba.ibra", "idda", "idda.idda", "idda.mafqud", "itq", "itq.itq", "jinayat", "jinayat.afw_qisas", "jinayat.qisas", "talaq", "talaq.talaq"] ["n0011", "n0012", "n0013", "n0014", "n0071", "n0072", "n0073", "n0076", "n0077", "n0078", "n0227", "n0250", "n0256", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0355", "n0369", "n0370", "n0637", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r066" ["buyu", "buyu.bay", "buyu.bay_fasid", "salat", "salat.qibla"] ["n0071", "n0072", "n0073", "n0075", "n0522"]
+#guard data.exactB 16 "r067" ["buyu", "buyu.bay", "buyu.iqala", "buyu.khiyar_ayb", "daman", "daman.daman", "hiba", "hiba.ibra", "itq", "itq.ita_mukatab", "itq.itq", "itq.kitaba", "sadaq", "sadaq.sadaq", "sadaq.tansif", "shahadat", "shahadat.ruju_shuhud", "shahadat.shahada"] ["n0037", "n0070", "n0071", "n0072", "n0073", "n0089", "n0090", "n0096", "n0097", "n0098", "n0099", "n0115", "n0116", "n0117", "n0118", "n0227", "n0292", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0477", "n0489", "n0490", "n0491", "n0493", "n0494", "n0550", "n0551", "n0552", "n0553"]
+#guard data.exactB 16 "r068" ["amma", "amma.shakk", "buyu", "buyu.bay", "hudud", "hudud.ridda", "qada", "qada.hukm", "raja", "raja.raja", "riba", "riba.sarf", "salat", "salat.waqt", "siyam", "siyam.yawm_shakk", "tahara", "tahara.hadath", "tahara.ina_mushtabih", "tahara.mash_khuff", "tahara.wudu", "wadia", "wadia.wadia", "wakala", "wakala.wakala", "zakat", "zakat.zakat"] ["n0024", "n0025", "n0026", "n0027", "n0071", "n0072", "n0073", "n0240", "n0241", "n0450", "n0451", "n0452", "n0475", "n0476", "n0477", "n0478", "n0481", "n0482", "n0548", "n0584", "n0599", "n0617", "n0618", "n0633", "n0634", "n0674", "n0675", "n0676", "n0677", "n0678", "n0679", "n0680", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r069" ["hajr", "hajr.abd_madhun", "hajr.sabi", "ijara", "ijara.ajir", "ijara.ijara", "qada", "qada.qadi", "sadaq", "sadaq.sadaq", "sharika", "sharika.mudaraba", "sharika.sharika"] ["n0200", "n0212", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0459", "n0460", "n0489", "n0490", "n0491", "n0558", "n0559", "n0560"]
+#guard data.exactB 16 "r070" ["ayman", "ayman.kaffara", "ayman.yamin", "ghasb", "ghasb.ghasb", "hajr", "hajr.abd_madhun", "hajr.mal_yatim", "hiba", "hiba.ibra", "nikah", "nikah.wali", "salat", "salat.ijabat_muadhdhin", "salat.khutba", "sharika", "sharika.sharika", "siyam", "siyam.kaffarat_jima", "wakala", "wakala.wakala", "waqf", "waqf.waqf", "wasaya", "wasaya.wasi", "zakat", "zakat.masarif", "zakat.sadaqat_tatawwu", "zakat.zakat"] ["n0057", "n0058", "n0062", "n0063", "n0064", "n0159", "n0160", "n0161", "n0162", "n0163", "n0200", "n0206", "n0207", "n0208", "n0227", "n0438", "n0440", "n0441", "n0503", "n0511", "n0559", "n0560", "n0571", "n0678", "n0679", "n0680", "n0682", "n0683", "n0685", "n0686", "n0687", "n0693", "n0706", "n0710", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r071" ["atima", "atima.thamar_muallaq", "hajr", "hajr.mal_yatim", "ijara", "ijara.ajir", "ijara.ijara", "wakala", "wakala.wakil", "waqf", "waqf.nazir_waqf", "waqf.waqf"] ["n0056", "n0206", "n0207", "n0208", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0678", "n0679", "n0681", "n0682", "n0683"]
+#guard data.exactB 16 "r072" ["buyu", "buyu.thaman", "hajj", "hajj.niyaba_hajj", "ijara", "ijara.ijara", "ijara.ujra", "jihad", "jihad.tajhiz_ghazi", "nafaqat", "nafaqat.nafaqat_zawja", "nikah", "nikah.nikah", "sharika", "sharika.mudaraba", "zakat", "zakat.sabil_allah"] ["n0112", "n0131", "n0186", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0350", "n0351", "n0393", "n0427", "n0558", "n0709"]
+#guard data.exactB 16 "r073" ["buyu", "buyu.shart_fi_bay", "musaqat", "musaqat.musaqat", "salam", "salam.salam"] ["n0086", "n0105", "n0106", "n0387", "n0388", "n0389", "n0495", "n0496"]
+#guard data.exactB 16 "r074" ["jiala", "jiala.inqadh_mal", "jiala.jiala", "jiala.radd_abiq", "jihad", "jihad.salab", "zakat", "zakat.amil"] ["n0118", "n0321", "n0347", "n0695", "n0696"]
+#guard data.exactB 16 "r075" ["ariyya", "ariyya.ariyya", "daman", "daman.daman", "daman.qada_dayn_ghayr", "faraid", "faraid.dayn_tarika", "ijara", "ijara.ijara", "jiala", "jiala.jiala", "jiala.radd_abiq", "jihad", "jihad.fidaa_asir", "luqata", "luqata.laqit", "luqata.luqata", "musaqat", "musaqat.musaqat", "nafaqat", "nafaqat.nafaqa", "nafaqat.nafaqat_zawja", "rahn", "rahn.marhun", "wadia", "wadia.wadia"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0115", "n0116", "n0117", "n0118", "n0120", "n0131", "n0142", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0321", "n0328", "n0329", "n0380", "n0381", "n0382", "n0383", "n0384", "n0385", "n0387", "n0388", "n0389", "n0393", "n0473", "n0674", "n0675", "n0676", "n0677"]
+#guard data.exactB 16 "r076" ["qada", "qada.muhayaa", "qada.qisma", "sharika", "sharika.sharikat_amlak", "sulh", "sulh.jidar_mushtarak"] ["n0457", "n0461", "n0462", "n0559", "n0561", "n0586"]
+#guard data.exactB 16 "r077" ["amma", "amma.aqd_fasid", "ariyya", "ariyya.ariyya", "ghasb", "ghasb.ghasb", "ghasb.ghiras_fi_ard_ghayr", "hajr", "hajr.muflis", "ijara", "ijara.ijara", "sadaq", "sadaq.nisf_sadaq", "shufa", "shufa.shufa", "wasaya", "wasaya.wasiyya"] ["n0001", "n0002", "n0034", "n0035", "n0036", "n0037", "n0142", "n0159", "n0160", "n0161", "n0162", "n0163", "n0165", "n0166", "n0209", "n0210", "n0211", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0488", "n0562", "n0563", "n0564", "n0688", "n0689"]
+#guard data.exactB 16 "r078" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay_usul_wa_thimar", "ghasb", "ghasb.ghasb", "ghasb.ghiras_fi_ard_ghayr", "ghasb.itlaf", "hajr", "hajr.muflis", "ijara", "ijara.ijara", "shufa", "shufa.shufa"] ["n0034", "n0035", "n0036", "n0037", "n0084", "n0158", "n0159", "n0160", "n0161", "n0162", "n0163", "n0165", "n0166", "n0167", "n0209", "n0210", "n0211", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0562", "n0563", "n0564"]
+#guard data.exactB 16 "r079" ["ghasb", "ghasb.zar_fi_ard_ghayr", "shufa", "shufa.shufa"] ["n0170", "n0562", "n0563", "n0564"]
+#guard data.exactB 16 "r080" ["buyu", "buyu.bay", "buyu.bay_usul_wa_thimar", "buyu.jaiha", "buyu.thimar", "buyu.usul_buqul", "ghasb", "ghasb.ghasb", "musaqat", "musaqat.musaqat"] ["n0071", "n0072", "n0073", "n0084", "n0091", "n0092", "n0093", "n0113", "n0159", "n0160", "n0161", "n0162", "n0163", "n0387", "n0388", "n0389"]
+#guard data.exactB 16 "r081" ["buyu", "buyu.bay", "buyu.bay_thamar_qabl_salah", "buyu.khiyar_ayb", "hajr", "hajr.muflis", "hiba", "hiba.ruju_fi_hiba", "sadaq", "sadaq.nisf_sadaq"] ["n0070", "n0071", "n0072", "n0073", "n0083", "n0096", "n0097", "n0098", "n0099", "n0209", "n0210", "n0211", "n0224", "n0228", "n0229", "n0488"]
+#guard data.exactB 16 "r082" ["amma", "amma.aqd_fasid", "ariyya", "ariyya.ariyya", "ayman", "ayman.yamin", "buyu", "buyu.bay", "buyu.iqala", "buyu.khiyar", "buyu.khiyar_ayb", "buyu.maqbud_ala_sawm", "daman", "daman.daman", "faraid", "faraid.dayn_tarika", "hajr", "hajr.muflis", "hiba", "hiba.atiyyat_marid", "hiba.hiba", "hiba.ruju_fi_hiba", "ijara", "ijara.ajir", "ijara.ijara", "itq", "itq.itq", "itq.mukatab", "itq.tadbir", "jihad", "jihad.istila_kuffar", "luqata", "luqata.luqata", "rahn", "rahn.marhun", "sadaq", "sadaq.nisf_sadaq", "wadia", "wadia.wadia", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0001", "n0002", "n0018", "n0034", "n0035", "n0036", "n0037", "n0062", "n0063", "n0064", "n0070", "n0071", "n0072", "n0073", "n0089", "n0090", "n0094", "n0095", "n0096", "n0097", "n0098", "n0099", "n0102", "n0115", "n0116", "n0117", "n0118", "n0142", "n0209", "n0210", "n0211", "n0216", "n0219", "n0220", "n0223", "n0224", "n0225", "n0228", "n0229", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0310", "n0311", "n0312", "n0313", "n0338", "n0383", "n0384", "n0385", "n0473", "n0488", "n0674", "n0675", "n0676", "n0677", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "r084" ["amma", "amma.haml", "atima", "atima.janin_mudhakka", "diyat", "diyat.diya", "diyat.janin", "faraid", "faraid.mirath_haml", "iqrar", "iqrar.iqrar", "itq", "itq.itq", "itq.umm_walad", "janaiz", "janaiz.salat_janaza", "jihad", "jihad.ghanima", "lian", "lian.lian", "nafaqat", "nafaqat.nafaqat_aqarib", "rahn", "rahn.marhun", "shufa", "shufa.shufa", "siyam", "siyam.fitr_hamil", "siyam.sawm_ramadan", "talaq", "talaq.talaq", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "zakat", "zakat.zakat", "zakat.zakat_fitr"] ["n0005", "n0006", "n0018", "n0042", "n0131", "n0135", "n0138", "n0139", "n0142", "n0151", "n0220", "n0282", "n0283", "n0284", "n0285", "n0286", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0314", "n0315", "n0319", "n0320", "n0330", "n0331", "n0332", "n0333", "n0376", "n0394", "n0473", "n0562", "n0563", "n0564", "n0568", "n0574", "n0637", "n0645", "n0646", "n0647", "n0648", "n0682", "n0683", "n0688", "n0689", "n0715", "n0716", "n0717", "n0719", "n0720", "n0721"]
+#guard data.exactB 16 "r085" ["atima", "atima.kalb", "buyu", "buyu.bay_usul_wa_thimar", "faraid", "faraid.dayn_tarika", "hajj", "hajj.hady", "hajr", "hajr.mal_abd", "hajr.muflis", "ihya", "ihya.ihya_mawat", "ihya.kala_wa_ma", "ihya.maqaid_aswaq", "ihya.marafiq_amlak", "ihya.tahajjur", "jihad", "jihad.ghanima", "jihad.istila_kuffar", "jinayat", "jinayat.jinayat_abd", "luqata", "luqata.luqata", "rahn", "rahn.marhun", "sadaq", "sadaq.nisf_sadaq", "salat", "salat.majlis_masjid", "sulh", "sulh.irtifaq_jiwar", "tahara", "tahara.duhn_najis", "tahara.jild_mayta", "udhiya", "udhiya.udhiya", "wasaya", "wasaya.wasiyya", "zakat", "zakat.nisab"] ["n0018", "n0043", "n0044", "n0084", "n0142", "n0155", "n0173", "n0174", "n0175", "n0176", "n0205", "n0209", "n0210", "n0211", "n0220", "n0261", "n0263", "n0264", "n0265", "n0266", "n0267", "n0330", "n0331", "n0332", "n0333", "n0338", "n0359", "n0383", "n0384", "n0385", "n0473", "n0488", "n0515", "n0516", "n0586", "n0594", "n0595", "n0596", "n0608", "n0664", "n0665", "n0666", "n0688", "n0689", "n0707"]
+#guard data.exactB 16 "r086" ["ariyya", "ariyya.ariyya", "atima", "atima.diyafa", "ihya", "ihya.maqaid_aswaq", "jihad", "jihad.ard_kharaj", "jihad.taam_dar_harb", "nikah", "nikah.nikah", "sulh", "sulh.irtifaq_jiwar", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0034", "n0035", "n0036", "n0037", "n0039", "n0040", "n0041", "n0142", "n0155", "n0220", "n0266", "n0325", "n0348", "n0427", "n0586", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "r087" ["ariyya", "ariyya.ariyya", "atima", "atima.kalb", "buyu", "buyu.shart_fi_bay", "ihya", "ihya.ihya_mawat", "ihya.kala_wa_ma", "ihya.maqaid_aswaq", "ihya.marafiq_amlak", "ihya.tahajjur", "ijara", "ijara.ijara", "itq", "itq.itq", "jihad", "jihad.ard_kharaj", "jihad.taam_dar_harb", "salat", "salat.majlis_masjid", "sulh", "sulh.irtifaq_jiwar", "tahara", "tahara.duhn_najis", "udhiya", "udhiya.udhiya", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0034", "n0035", "n0036", "n0037", "n0043", "n0044", "n0105", "n0106", "n0142", "n0155", "n0220", "n0261", "n0263", "n0264", "n0265", "n0266", "n0267", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0325", "n0348", "n0515", "n0516", "n0586", "n0595", "n0596", "n0664", "n0665", "n0666", "n0682", "n0683", "n0688", "n0689"]
 #guard data.exactB 16 "r088" ["ihya", "ihya.tariq"] ["n0271", "n0272"]
-#guard data.exactB 16 "r090" ["hiba", "hiba.tamalluk_ab", "hudud", "hudud.bughat", "jihad", "jihad.ghanima", "jihad.istila_kuffar", "wadia", "wadia.amana"] ["n0233", "n0234", "n0330", "n0331", "n0332", "n0333", "n0338", "n0676"]
+#guard data.exactB 16 "r090" ["hiba", "hiba.tamalluk_ab", "hudud", "hudud.bughat", "jihad", "jihad.ghanima", "jihad.istila_kuffar", "wadia", "wadia.amana"] ["n0233", "n0234", "n0330", "n0331", "n0332", "n0333", "n0338", "n0674"]
 #guard data.exactB 16 "r091" ["ghasb", "ghasb.ghasb_hurr", "itq", "itq.itq", "itq.mukatab", "itq.tadbir", "itq.umm_walad"] ["n0164", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0310", "n0311", "n0312", "n0313", "n0314", "n0315"]
 #guard data.exactB 16 "r092" ["ariyya", "ariyya.ariyya", "ghasb", "ghasb.ghasb", "ijara", "ijara.ajir", "ijara.ijara"] ["n0034", "n0035", "n0036", "n0037", "n0159", "n0160", "n0161", "n0162", "n0163", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279"]
-#guard data.exactB 16 "r093" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "ghasb", "ghasb.ghasb", "ijara", "ijara.ijara", "khul", "khul.iwad_khul", "khul.khul", "musaqat", "musaqat.musaqat", "qard", "qard.qard", "rahn", "rahn.rahn", "sadaq", "sadaq.sadaq", "sharika", "sharika.mudaraba", "sharika.sharika", "wadia", "wadia.wadia", "wakala", "wakala.wakala"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0071", "n0072", "n0073", "n0159", "n0160", "n0161", "n0162", "n0163", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0374", "n0375", "n0376", "n0388", "n0389", "n0390", "n0467", "n0468", "n0476", "n0491", "n0492", "n0493", "n0560", "n0561", "n0562", "n0676", "n0677", "n0678", "n0679", "n0680", "n0681", "n0682"]
-#guard data.exactB 16 "r094" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "ijara", "ijara.ijara", "sharika", "sharika.mudaraba", "wadia", "wadia.wadia", "wakala", "wakala.wakala"] ["n0034", "n0035", "n0036", "n0037", "n0071", "n0072", "n0073", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0560", "n0676", "n0677", "n0678", "n0679", "n0680", "n0681", "n0682"]
-#guard data.exactB 16 "r095" ["faraid", "faraid.dayn_tarika", "faraid.mafqud", "ijara", "ijara.ajir", "ijara.ijara", "itq", "itq.itq", "itq.milk_dhi_rahim", "luqata", "luqata.luqata", "nafaqat", "nafaqat.nafaqat_mabtuta", "nafaqat.nafaqat_zawja", "qada", "qada.hukm", "shahadat", "shahadat.adala", "shahadat.ruju_shuhud", "shahadat.shahada", "sharika", "sharika.mudaraba", "wadia", "wadia.wadia", "wasaya", "wasaya.wasi", "wasaya.wasiyya", "zakat", "zakat.ahl_zakat", "zakat.amil"] ["n0131", "n0142", "n0147", "n0148", "n0220", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0299", "n0384", "n0385", "n0386", "n0394", "n0397", "n0452", "n0453", "n0454", "n0479", "n0551", "n0552", "n0553", "n0554", "n0555", "n0560", "n0676", "n0677", "n0678", "n0679", "n0687", "n0688", "n0689", "n0690", "n0691", "n0695", "n0696", "n0697", "n0698"]
-#guard data.exactB 16 "r096" ["ghasb", "ghasb.ghasb", "hajj", "hajj.sayd_muhrim", "hajr", "hajr.matl", "nudhur", "nudhur.nadhr", "udhiya", "udhiya.udhiya", "wadia", "wadia.wadia", "wasaya", "wasaya.wasiyya", "zakat", "zakat.amil", "zakat.mal_sabi", "zakat.mani_zakat"] ["n0142", "n0159", "n0160", "n0161", "n0162", "n0163", "n0193", "n0194", "n0195", "n0196", "n0204", "n0220", "n0447", "n0448", "n0666", "n0667", "n0668", "n0676", "n0677", "n0678", "n0679", "n0690", "n0691", "n0697", "n0698", "n0706", "n0707"]
-#guard data.exactB 16 "r097" ["ghasb", "ghasb.ghasb", "luqata", "luqata.laqit", "luqata.luqata", "rahn", "rahn.rahn", "wadia", "wadia.wadia"] ["n0018", "n0159", "n0160", "n0161", "n0162", "n0163", "n0381", "n0382", "n0383", "n0384", "n0385", "n0386", "n0476", "n0676", "n0677", "n0678", "n0679"]
-#guard data.exactB 16 "r098" ["ghasb", "ghasb.ghasb", "hudud", "hudud.sariqa", "ijara", "ijara.ijara", "jihad", "jihad.ghanima", "luqata", "luqata.laqit", "luqata.luqata", "zakat", "zakat.rikaz"] ["n0159", "n0160", "n0161", "n0162", "n0163", "n0242", "n0243", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0330", "n0331", "n0332", "n0333", "n0381", "n0382", "n0383", "n0384", "n0385", "n0386", "n0710"]
-#guard data.exactB 16 "r099" ["amma", "amma.darura", "ariyya", "ariyya.ariyya", "ariyya.maun", "atima", "atima.diyafa", "buyu", "buyu.bay", "buyu.bay_ribaa_makka", "buyu.bay_sinnawr", "ihya", "ihya.fadl_ma", "sulh", "sulh.wad_khashab"] ["n0003", "n0004", "n0034", "n0035", "n0036", "n0037", "n0039", "n0040", "n0041", "n0071", "n0072", "n0073", "n0080", "n0081", "n0082", "n0261", "n0262", "n0588", "n0592"]
-#guard data.exactB 16 "r100" ["itq", "itq.itq", "itq.raqaba", "nudhur", "nudhur.nadhr", "salat", "salat.awqat_nahy", "siyam", "siyam.ayyam_tashriq", "udhiya", "udhiya.udhiya"] ["n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0447", "n0448", "n0502", "n0567", "n0568", "n0666", "n0667", "n0668"]
-#guard data.exactB 16 "r101" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "hajj", "hajj.fidya", "itq", "itq.itq", "itq.raqaba", "zakat", "zakat.jubran", "zakat.zakat", "zakat.zakat_fitr", "zakat.zakat_ibil"] ["n0057", "n0062", "n0063", "n0064", "n0171", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0704", "n0717", "n0718", "n0719", "n0721", "n0722", "n0723", "n0724"]
-#guard data.exactB 16 "r102" ["amma", "amma.junun", "amma.sukr", "atima", "atima.khamr", "atima.takhlil_khamr", "faraid", "faraid.qatil", "hajj", "hajj.sayd_muhrim", "nikah", "nikah.milk_zawj", "nikah.nikah", "nikah.nikah_mutadda", "talaq", "talaq.talaq", "talaq.talaq_marid", "wasaya", "wasaya.wasiyya", "zakat", "zakat.firar"] ["n0015", "n0030", "n0045", "n0046", "n0054", "n0142", "n0152", "n0153", "n0193", "n0194", "n0195", "n0196", "n0220", "n0421", "n0429", "n0435", "n0639", "n0647", "n0648", "n0649", "n0650", "n0690", "n0691", "n0700"]
-#guard data.exactB 16 "r103" ["ayman", "ayman.yamin", "hajj", "hajj.tawaf", "hudud", "hudud.sariqa", "rada", "rada.rada", "salat", "salat.qasr", "salat.sahw", "tahara", "tahara.ma_najis", "tahara.muwalat", "tahara.wudu", "zakat", "zakat.madin"] ["n0062", "n0063", "n0064", "n0197", "n0242", "n0243", "n0469", "n0470", "n0472", "n0523", "n0529", "n0613", "n0614", "n0624", "n0635", "n0636", "n0705"]
-#guard data.exactB 16 "r104" ["amma", "amma.qura", "ayman", "ayman.ayman_bayaa", "ayman.yamin", "buyu", "buyu.ayb", "buyu.bay", "hajj", "hajj.ihram", "itq", "itq.itq", "itq.itq_mubham", "sulh", "sulh.ibra", "talaq", "talaq.alfaz_talaq", "talaq.talaq", "talaq.talaq_mubham", "wasaya", "wasaya.wasiyya"] ["n0021", "n0022", "n0023", "n0062", "n0063", "n0064", "n0067", "n0068", "n0069", "n0070", "n0071", "n0072", "n0073", "n0142", "n0182", "n0183", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0587", "n0639", "n0641", "n0647", "n0648", "n0649", "n0650", "n0690", "n0691"]
-#guard data.exactB 16 "r105" ["atima", "atima.mayta", "dawa", "dawa.dawa", "hiba", "hiba.hiba", "iqrar", "iqrar.iqrar", "jinayat", "jinayat.qasama", "nikah", "nikah.nikah", "qada", "qada.hukm", "qada.kitab_qadi", "shahadat", "shahadat.shahada", "tahara", "tahara.najasa", "tahara.wulugh_kalb", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0047", "n0124", "n0125", "n0142", "n0220", "n0223", "n0224", "n0225", "n0282", "n0283", "n0284", "n0285", "n0286", "n0365", "n0366", "n0429", "n0452", "n0453", "n0454", "n0457", "n0458", "n0479", "n0555", "n0625", "n0629", "n0637", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "r106" ["atima", "atima.mayta", "faraid", "faraid.mal_la_warith", "hajj", "hajj.ihram", "itq", "itq.itq", "itq.itq_mubham", "luqata", "luqata.luqata", "nikah", "nikah.muharramat", "tahara", "tahara.hayd", "tahara.istihada", "tahara.najasa", "tahara.tin_shawari", "talaq", "talaq.talaq", "talaq.talaq_mubham"] ["n0022", "n0047", "n0149", "n0182", "n0183", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0384", "n0385", "n0386", "n0423", "n0424", "n0425", "n0602", "n0603", "n0604", "n0605", "n0606", "n0607", "n0625", "n0632", "n0633", "n0639", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r107" ["usul", "usul.ijazat_riwaya", "waqf", "waqf.waqf", "waqf.waqf_dhurriyya"] ["n0684", "n0685", "n0686"]
-#guard data.exactB 16 "r108" ["buyu", "buyu.bay", "dawa", "dawa.dawa", "dawa.taarud_bayyinat", "faraid", "faraid.mawt_jamaa", "nikah", "nikah.islam_zawjayn", "nikah.nikah", "nikah.wali", "salat", "salat.jumua"] ["n0071", "n0072", "n0073", "n0124", "n0125", "n0127", "n0410", "n0429", "n0440", "n0442", "n0443", "n0510", "n0511", "n0512"]
-#guard data.exactB 16 "r109" ["amma", "amma.qura", "atima", "atima.mayta", "ila", "ila.ila", "itq", "itq.itq", "itq.itq_mubham", "jihad", "jihad.aman", "nikah", "nikah.islam_zawjayn", "nikah.jam_fawq_arba", "nikah.jam_ukhtayn", "nikah.muharramat", "nikah.musahara", "nikah.nikah", "nikah.nikah_ama", "rada", "rada.rada", "tahara", "tahara.aniya", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_mubham", "talaq.talaq_thalath"] ["n0021", "n0022", "n0023", "n0047", "n0281", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0322", "n0323", "n0324", "n0399", "n0410", "n0412", "n0414", "n0415", "n0423", "n0424", "n0425", "n0426", "n0429", "n0430", "n0431", "n0432", "n0433", "n0469", "n0470", "n0472", "n0593", "n0638", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0660"]
-#guard data.exactB 16 "r110" ["buyu", "buyu.ayb", "buyu.bay", "buyu.dayn", "dawa", "dawa.dawa", "dawa.yamin", "ihya", "ihya.tahjir", "ila", "ila.ila", "jinayat", "jinayat.qisas", "nikah", "nikah.jam_fawq_arba", "nikah.jam_ukhtayn", "nikah.khiyar_mutaqa", "nikah.nikah", "rahn", "rahn.rahn", "wasaya", "wasaya.wasiyya"] ["n0018", "n0067", "n0068", "n0069", "n0070", "n0071", "n0072", "n0073", "n0085", "n0086", "n0124", "n0125", "n0130", "n0142", "n0220", "n0270", "n0281", "n0356", "n0370", "n0371", "n0399", "n0412", "n0414", "n0415", "n0417", "n0418", "n0419", "n0420", "n0429", "n0476", "n0690", "n0691"]
-#guard data.exactB 16 "r111" ["jinayat", "jinayat.jirah", "jinayat.qasama", "jinayat.qatl_amd", "shahadat", "shahadat.shahada", "shahadat.shahadat_nisa"] ["n0361", "n0365", "n0366", "n0367", "n0368", "n0479", "n0555", "n0556", "n0558"]
-#guard data.exactB 16 "r112" ["atima", "atima.mayta", "hajj", "hajj.sayd_muhrim", "jinayat", "jinayat.qatl_nafs", "nikah", "nikah.istimna", "nikah.nikah_ama", "siyam", "siyam.jima", "tahara", "tahara.hayd"] ["n0047", "n0193", "n0194", "n0195", "n0196", "n0369", "n0411", "n0430", "n0431", "n0432", "n0433", "n0572", "n0602", "n0603", "n0604", "n0605"]
-#guard data.exactB 16 "r113" ["buyu", "buyu.bay", "daman", "daman.daman", "itq", "itq.itq", "rahn", "rahn.rahn", "riba", "riba.mudd_ajwa", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_thalath"] ["n0018", "n0037", "n0071", "n0072", "n0073", "n0115", "n0116", "n0117", "n0118", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0476", "n0482", "n0638", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0660"]
-#guard data.exactB 16 "r114" ["iqrar", "iqrar.iqrar", "sharika", "sharika.sharika", "talaq", "talaq.talaq", "talaq.talaq_thalath"] ["n0282", "n0283", "n0284", "n0285", "n0286", "n0561", "n0562", "n0638", "n0639", "n0647", "n0648", "n0649", "n0650", "n0660"]
-#guard data.exactB 16 "r115" ["buyu", "buyu.bay", "faraid", "faraid.asaba", "faraid.furud", "faraid.jadda", "hajr", "hajr.muflis", "hudud", "hudud.qadhf", "jinayat", "jinayat.qisas", "nikah", "nikah.wali", "shufa", "shufa.shufa", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0071", "n0072", "n0073", "n0141", "n0142", "n0143", "n0145", "n0209", "n0210", "n0211", "n0220", "n0236", "n0237", "n0238", "n0356", "n0370", "n0371", "n0440", "n0442", "n0443", "n0564", "n0565", "n0566", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "r116" ["atima", "atima.sayd", "buyu", "buyu.bay", "buyu.nakhl_muabbar", "diyat", "diyat.diya", "hajj", "hajj.hajj_sabi", "itq", "itq.itq", "itq.kitaba", "itq.wala", "shufa", "shufa.shufa", "siyam", "siyam.sawm_tatawwu", "wasaya", "wasaya.wasiyya"] ["n0051", "n0052", "n0053", "n0071", "n0072", "n0073", "n0104", "n0135", "n0142", "n0154", "n0181", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0316", "n0564", "n0565", "n0566", "n0581", "n0690", "n0691"]
-#guard data.exactB 16 "r117" ["hiba", "hiba.atiyya_marad", "itq", "itq.itq", "itq.itq_muallaq", "talaq", "talaq.talaq", "talaq.talaq_bida", "talaq.talaq_marid", "talaq.talaq_muallaq", "wasaya", "wasaya.wasi", "wasaya.wasiyya", "wasaya.wasiyya_warith"] ["n0142", "n0152", "n0216", "n0217", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0303", "n0304", "n0639", "n0647", "n0648", "n0649", "n0650", "n0651", "n0652", "n0653", "n0654", "n0655", "n0656", "n0687", "n0688", "n0689", "n0690", "n0691", "n0694"]
-#guard data.exactB 16 "r118" ["buyu", "buyu.bay", "buyu.iqala", "itq", "itq.itq", "itq.itq_muallaq", "itq.tadbir", "nikah", "nikah.nikah", "nudhur", "nudhur.nadhr", "nudhur.nadhr_muallaq", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_qabl_nikah", "wakala", "wakala.wakala"] ["n0071", "n0072", "n0073", "n0089", "n0090", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0303", "n0304", "n0310", "n0311", "n0312", "n0313", "n0429", "n0447", "n0448", "n0450", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0657", "n0658", "n0659", "n0680", "n0681", "n0682"]
-#guard data.exactB 16 "r119" ["ayman", "ayman.kaffara", "faraid", "faraid.mirath", "iqrar", "iqrar.iqrar", "jihad", "jihad.ghanima", "jihad.khums", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib", "wasaya.wasiyya_manfaa"] ["n0057", "n0058", "n0141", "n0142", "n0150", "n0220", "n0282", "n0283", "n0284", "n0285", "n0286", "n0330", "n0331", "n0332", "n0333", "n0341", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0690", "n0691", "n0692"]
-#guard data.exactB 16 "r120" ["diyat", "diyat.aqila", "faraid", "faraid.wala", "janaiz", "janaiz.salat_janaza", "nikah", "nikah.wilaya", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib"] ["n0132", "n0142", "n0154", "n0220", "n0319", "n0320", "n0442", "n0446", "n0684", "n0685", "n0690", "n0691", "n0692"]
-#guard data.exactB 16 "r121" ["atima", "atima.samak", "ayman", "ayman.yamin", "itq", "itq.itq", "itq.mukatab", "itq.umm_walad", "nudhur", "nudhur.nadhr", "nudhur.nadhr_sadaqa_mal", "salat", "salat.masjid"] ["n0049", "n0050", "n0062", "n0063", "n0064", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0314", "n0315", "n0447", "n0448", "n0451", "n0520"]
-#guard data.exactB 16 "r122" ["ayman", "ayman.yamin", "ijara", "ijara.ijara", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib"] ["n0062", "n0063", "n0064", "n0142", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0684", "n0685", "n0690", "n0691", "n0692"]
-#guard data.exactB 16 "r123" ["atima", "atima.muharramat", "ayman", "ayman.yamin", "itikaf", "itikaf.itikaf", "itikaf.nadhr_itikaf", "nudhur", "nudhur.nadhr", "salat", "salat.jumua", "siyam", "siyam.sawm_dahr", "talaq", "talaq.talaq", "talaq.talaq_bida", "wakala", "wakala.wakala", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib", "wasaya.wasiyya_warith"] ["n0048", "n0062", "n0063", "n0064", "n0142", "n0220", "n0288", "n0290", "n0447", "n0448", "n0510", "n0511", "n0512", "n0578", "n0639", "n0647", "n0648", "n0649", "n0650", "n0651", "n0652", "n0653", "n0680", "n0681", "n0682", "n0690", "n0691", "n0692", "n0694"]
-#guard data.exactB 16 "r124" ["ayman", "ayman.yamin", "qada", "qada.qadi", "talaq", "talaq.talaq"] ["n0062", "n0063", "n0064", "n0461", "n0462", "n0639", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r125" ["amma", "amma.niyya", "ayman", "ayman.niyya_yamin", "ayman.yamin", "itq", "itq.itq", "nikah", "nikah.nikah", "nudhur", "nudhur.nadhr", "nudhur.nadhr_sadaqa_mal", "raja", "raja.raja", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_thalath"] ["n0017", "n0059", "n0062", "n0063", "n0064", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0429", "n0447", "n0448", "n0451", "n0477", "n0478", "n0479", "n0480", "n0638", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0660"]
-#guard data.exactB 16 "r126" ["amma", "amma.jahl", "ayman", "ayman.tahrim_halal", "ayman.yamin", "hudud", "hudud.qadhf", "hudud.ridda", "itq", "itq.itq", "itq.itq_shiqs", "itq.mubaad", "itq.umm_walad", "talaq", "talaq.talaq", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib", "zihar", "zihar.zihar"] ["n0011", "n0012", "n0013", "n0014", "n0060", "n0061", "n0062", "n0063", "n0064", "n0142", "n0220", "n0236", "n0237", "n0238", "n0240", "n0241", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0307", "n0314", "n0315", "n0639", "n0647", "n0648", "n0649", "n0650", "n0684", "n0685", "n0690", "n0691", "n0692", "n0727"]
-#guard data.exactB 16 "r127" ["amma", "amma.ikrah", "diyat", "diyat.diya", "diyat.janin", "ghasb", "ghasb.itlaf", "hajj", "hajj.sayd_muhrim", "jinayat", "jinayat.hafr_bir", "jinayat.mumsik", "jinayat.qatl_amd", "qada", "qada.qadi", "shahadat", "shahadat.ruju_shuhud", "shahadat.shahada", "wadia", "wadia.wadia"] ["n0008", "n0009", "n0010", "n0135", "n0138", "n0139", "n0158", "n0167", "n0193", "n0194", "n0195", "n0196", "n0358", "n0367", "n0368", "n0461", "n0462", "n0479", "n0552", "n0553", "n0554", "n0555", "n0676", "n0677", "n0678", "n0679"]
+#guard data.exactB 16 "r093" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "ghasb", "ghasb.ghasb", "ijara", "ijara.ijara", "khul", "khul.iwad_khul", "khul.khul", "musaqat", "musaqat.musaqat", "qard", "qard.qard", "rahn", "rahn.rahn", "sadaq", "sadaq.sadaq", "sharika", "sharika.mudaraba", "sharika.sharika", "wadia", "wadia.wadia", "wakala", "wakala.wakala"] ["n0018", "n0034", "n0035", "n0036", "n0037", "n0071", "n0072", "n0073", "n0159", "n0160", "n0161", "n0162", "n0163", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0373", "n0374", "n0375", "n0387", "n0388", "n0389", "n0465", "n0466", "n0474", "n0489", "n0490", "n0491", "n0558", "n0559", "n0560", "n0674", "n0675", "n0676", "n0677", "n0678", "n0679", "n0680"]
+#guard data.exactB 16 "r094" ["ariyya", "ariyya.ariyya", "buyu", "buyu.bay", "ijara", "ijara.ijara", "sharika", "sharika.mudaraba", "wadia", "wadia.wadia", "wakala", "wakala.wakala"] ["n0034", "n0035", "n0036", "n0037", "n0071", "n0072", "n0073", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0558", "n0674", "n0675", "n0676", "n0677", "n0678", "n0679", "n0680"]
+#guard data.exactB 16 "r095" ["faraid", "faraid.dayn_tarika", "faraid.mafqud", "ijara", "ijara.ajir", "ijara.ijara", "itq", "itq.itq", "itq.milk_dhi_rahim", "luqata", "luqata.luqata", "nafaqat", "nafaqat.nafaqat_mabtuta", "nafaqat.nafaqat_zawja", "qada", "qada.hukm", "shahadat", "shahadat.adala", "shahadat.ruju_shuhud", "shahadat.shahada", "sharika", "sharika.mudaraba", "wadia", "wadia.wadia", "wasaya", "wasaya.wasi", "wasaya.wasiyya", "zakat", "zakat.ahl_zakat", "zakat.amil"] ["n0131", "n0142", "n0147", "n0148", "n0220", "n0273", "n0274", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0299", "n0383", "n0384", "n0385", "n0393", "n0396", "n0450", "n0451", "n0452", "n0477", "n0549", "n0550", "n0551", "n0552", "n0553", "n0558", "n0674", "n0675", "n0676", "n0677", "n0685", "n0686", "n0687", "n0688", "n0689", "n0693", "n0694", "n0695", "n0696"]
+#guard data.exactB 16 "r096" ["ghasb", "ghasb.ghasb", "hajj", "hajj.sayd_muhrim", "hajr", "hajr.matl", "nudhur", "nudhur.nadhr", "udhiya", "udhiya.udhiya", "wadia", "wadia.wadia", "wasaya", "wasaya.wasiyya", "zakat", "zakat.amil", "zakat.mal_sabi", "zakat.mani_zakat"] ["n0142", "n0159", "n0160", "n0161", "n0162", "n0163", "n0193", "n0194", "n0195", "n0196", "n0204", "n0220", "n0445", "n0446", "n0664", "n0665", "n0666", "n0674", "n0675", "n0676", "n0677", "n0688", "n0689", "n0695", "n0696", "n0704", "n0705"]
+#guard data.exactB 16 "r097" ["ghasb", "ghasb.ghasb", "luqata", "luqata.laqit", "luqata.luqata", "rahn", "rahn.rahn", "wadia", "wadia.wadia"] ["n0018", "n0159", "n0160", "n0161", "n0162", "n0163", "n0380", "n0381", "n0382", "n0383", "n0384", "n0385", "n0474", "n0674", "n0675", "n0676", "n0677"]
+#guard data.exactB 16 "r098" ["ghasb", "ghasb.ghasb", "hudud", "hudud.sariqa", "ijara", "ijara.ijara", "jihad", "jihad.ghanima", "luqata", "luqata.laqit", "luqata.luqata", "zakat", "zakat.rikaz"] ["n0159", "n0160", "n0161", "n0162", "n0163", "n0242", "n0243", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0330", "n0331", "n0332", "n0333", "n0380", "n0381", "n0382", "n0383", "n0384", "n0385", "n0708"]
+#guard data.exactB 16 "r099" ["amma", "amma.darura", "ariyya", "ariyya.ariyya", "ariyya.maun", "atima", "atima.diyafa", "buyu", "buyu.bay", "buyu.bay_ribaa_makka", "buyu.bay_sinnawr", "ihya", "ihya.fadl_ma", "sulh", "sulh.wad_khashab"] ["n0003", "n0004", "n0034", "n0035", "n0036", "n0037", "n0039", "n0040", "n0041", "n0071", "n0072", "n0073", "n0080", "n0081", "n0082", "n0261", "n0262", "n0586", "n0590"]
+#guard data.exactB 16 "r100" ["itq", "itq.itq", "itq.raqaba", "nudhur", "nudhur.nadhr", "salat", "salat.awqat_nahy", "siyam", "siyam.ayyam_tashriq", "udhiya", "udhiya.udhiya"] ["n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0445", "n0446", "n0500", "n0565", "n0566", "n0664", "n0665", "n0666"]
+#guard data.exactB 16 "r101" ["ayman", "ayman.kaffarat_yamin", "ayman.yamin", "hajj", "hajj.fidya", "itq", "itq.itq", "itq.raqaba", "zakat", "zakat.jubran", "zakat.zakat", "zakat.zakat_fitr", "zakat.zakat_ibil"] ["n0057", "n0062", "n0063", "n0064", "n0171", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0702", "n0715", "n0716", "n0717", "n0719", "n0720", "n0721", "n0722"]
+#guard data.exactB 16 "r102" ["amma", "amma.junun", "amma.sukr", "atima", "atima.khamr", "atima.takhlil_khamr", "faraid", "faraid.qatil", "hajj", "hajj.sayd_muhrim", "nikah", "nikah.milk_zawj", "nikah.nikah", "nikah.nikah_mutadda", "talaq", "talaq.talaq", "talaq.talaq_marid", "wasaya", "wasaya.wasiyya", "zakat", "zakat.firar"] ["n0015", "n0030", "n0045", "n0046", "n0054", "n0142", "n0152", "n0153", "n0193", "n0194", "n0195", "n0196", "n0220", "n0419", "n0427", "n0433", "n0637", "n0645", "n0646", "n0647", "n0648", "n0688", "n0689", "n0698"]
+#guard data.exactB 16 "r103" ["ayman", "ayman.yamin", "hajj", "hajj.tawaf", "hudud", "hudud.sariqa", "rada", "rada.rada", "salat", "salat.qasr", "salat.sahw", "tahara", "tahara.ma_najis", "tahara.muwalat", "tahara.wudu", "zakat", "zakat.madin"] ["n0062", "n0063", "n0064", "n0197", "n0242", "n0243", "n0467", "n0468", "n0470", "n0521", "n0527", "n0611", "n0612", "n0622", "n0633", "n0634", "n0703"]
+#guard data.exactB 16 "r104" ["amma", "amma.qura", "ayman", "ayman.ayman_bayaa", "ayman.yamin", "buyu", "buyu.ayb", "buyu.bay", "hajj", "hajj.ihram", "itq", "itq.itq", "itq.itq_mubham", "sulh", "sulh.ibra", "talaq", "talaq.alfaz_talaq", "talaq.talaq", "talaq.talaq_mubham", "wasaya", "wasaya.wasiyya"] ["n0021", "n0022", "n0023", "n0062", "n0063", "n0064", "n0067", "n0068", "n0069", "n0070", "n0071", "n0072", "n0073", "n0142", "n0182", "n0183", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0585", "n0637", "n0639", "n0645", "n0646", "n0647", "n0648", "n0688", "n0689"]
+#guard data.exactB 16 "r105" ["atima", "atima.mayta", "dawa", "dawa.dawa", "hiba", "hiba.hiba", "iqrar", "iqrar.iqrar", "jinayat", "jinayat.qasama", "nikah", "nikah.nikah", "qada", "qada.hukm", "qada.kitab_qadi", "shahadat", "shahadat.shahada", "tahara", "tahara.najasa", "tahara.wulugh_kalb", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0047", "n0124", "n0125", "n0142", "n0220", "n0223", "n0224", "n0225", "n0282", "n0283", "n0284", "n0285", "n0286", "n0364", "n0365", "n0427", "n0450", "n0451", "n0452", "n0455", "n0456", "n0477", "n0553", "n0623", "n0627", "n0635", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "r106" ["atima", "atima.mayta", "faraid", "faraid.mal_la_warith", "hajj", "hajj.ihram", "itq", "itq.itq", "itq.itq_mubham", "luqata", "luqata.luqata", "nikah", "nikah.muharramat", "tahara", "tahara.hayd", "tahara.istihada", "tahara.najasa", "tahara.tin_shawari", "talaq", "talaq.talaq", "talaq.talaq_mubham"] ["n0022", "n0047", "n0149", "n0182", "n0183", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0383", "n0384", "n0385", "n0421", "n0422", "n0423", "n0600", "n0601", "n0602", "n0603", "n0604", "n0605", "n0623", "n0630", "n0631", "n0637", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r107" ["usul", "usul.ijazat_riwaya", "waqf", "waqf.waqf", "waqf.waqf_dhurriyya"] ["n0682", "n0683", "n0684"]
+#guard data.exactB 16 "r108" ["buyu", "buyu.bay", "dawa", "dawa.dawa", "dawa.taarud_bayyinat", "faraid", "faraid.mawt_jamaa", "nikah", "nikah.islam_zawjayn", "nikah.nikah", "nikah.wali", "salat", "salat.jumua"] ["n0071", "n0072", "n0073", "n0124", "n0125", "n0127", "n0409", "n0427", "n0438", "n0440", "n0441", "n0508", "n0509", "n0510"]
+#guard data.exactB 16 "r109" ["amma", "amma.qura", "atima", "atima.mayta", "ila", "ila.ila", "itq", "itq.itq", "itq.itq_mubham", "jihad", "jihad.aman", "nikah", "nikah.islam_zawjayn", "nikah.jam_fawq_arba", "nikah.jam_ukhtayn", "nikah.muharramat", "nikah.musahara", "nikah.nikah", "nikah.nikah_ama", "rada", "rada.rada", "tahara", "tahara.aniya", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_mubham", "talaq.talaq_thalath"] ["n0021", "n0022", "n0023", "n0047", "n0281", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0322", "n0323", "n0324", "n0398", "n0409", "n0411", "n0413", "n0421", "n0422", "n0423", "n0424", "n0427", "n0428", "n0429", "n0430", "n0431", "n0467", "n0468", "n0470", "n0591", "n0636", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0658"]
+#guard data.exactB 16 "r110" ["buyu", "buyu.ayb", "buyu.bay", "buyu.dayn", "dawa", "dawa.dawa", "dawa.yamin", "ihya", "ihya.tahjir", "ila", "ila.ila", "jinayat", "jinayat.qisas", "nikah", "nikah.jam_fawq_arba", "nikah.jam_ukhtayn", "nikah.khiyar_mutaqa", "nikah.nikah", "rahn", "rahn.rahn", "wasaya", "wasaya.wasiyya"] ["n0018", "n0067", "n0068", "n0069", "n0070", "n0071", "n0072", "n0073", "n0085", "n0086", "n0124", "n0125", "n0130", "n0142", "n0220", "n0270", "n0281", "n0355", "n0369", "n0370", "n0398", "n0411", "n0413", "n0415", "n0416", "n0417", "n0418", "n0427", "n0474", "n0688", "n0689"]
+#guard data.exactB 16 "r111" ["jinayat", "jinayat.jirah", "jinayat.qasama", "jinayat.qatl_amd", "shahadat", "shahadat.shahada", "shahadat.shahadat_nisa"] ["n0360", "n0364", "n0365", "n0366", "n0367", "n0477", "n0553", "n0554", "n0556"]
+#guard data.exactB 16 "r112" ["atima", "atima.mayta", "hajj", "hajj.sayd_muhrim", "jinayat", "jinayat.qatl_nafs", "nikah", "nikah.istimna", "nikah.nikah_ama", "siyam", "siyam.jima", "tahara", "tahara.hayd"] ["n0047", "n0193", "n0194", "n0195", "n0196", "n0368", "n0410", "n0428", "n0429", "n0430", "n0431", "n0570", "n0600", "n0601", "n0602", "n0603"]
+#guard data.exactB 16 "r113" ["buyu", "buyu.bay", "daman", "daman.daman", "itq", "itq.itq", "rahn", "rahn.rahn", "riba", "riba.mudd_ajwa", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_thalath"] ["n0018", "n0037", "n0071", "n0072", "n0073", "n0115", "n0116", "n0117", "n0118", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0474", "n0480", "n0636", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0658"]
+#guard data.exactB 16 "r114" ["iqrar", "iqrar.iqrar", "sharika", "sharika.sharika", "talaq", "talaq.talaq", "talaq.talaq_thalath"] ["n0282", "n0283", "n0284", "n0285", "n0286", "n0559", "n0560", "n0636", "n0637", "n0645", "n0646", "n0647", "n0648", "n0658"]
+#guard data.exactB 16 "r115" ["buyu", "buyu.bay", "faraid", "faraid.asaba", "faraid.furud", "faraid.jadda", "hajr", "hajr.muflis", "hudud", "hudud.qadhf", "jinayat", "jinayat.qisas", "nikah", "nikah.wali", "shufa", "shufa.shufa", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0071", "n0072", "n0073", "n0141", "n0142", "n0143", "n0145", "n0209", "n0210", "n0211", "n0220", "n0236", "n0237", "n0238", "n0355", "n0369", "n0370", "n0438", "n0440", "n0441", "n0562", "n0563", "n0564", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "r116" ["atima", "atima.sayd", "buyu", "buyu.bay", "buyu.nakhl_muabbar", "diyat", "diyat.diya", "hajj", "hajj.hajj_sabi", "itq", "itq.itq", "itq.kitaba", "itq.wala", "shufa", "shufa.shufa", "siyam", "siyam.sawm_tatawwu", "wasaya", "wasaya.wasiyya"] ["n0051", "n0052", "n0053", "n0071", "n0072", "n0073", "n0104", "n0135", "n0142", "n0154", "n0181", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0316", "n0562", "n0563", "n0564", "n0579", "n0688", "n0689"]
+#guard data.exactB 16 "r117" ["hiba", "hiba.atiyya_marad", "itq", "itq.itq", "itq.itq_muallaq", "talaq", "talaq.talaq", "talaq.talaq_bida", "talaq.talaq_marid", "talaq.talaq_muallaq", "wasaya", "wasaya.wasi", "wasaya.wasiyya", "wasaya.wasiyya_warith"] ["n0142", "n0152", "n0216", "n0217", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0303", "n0304", "n0637", "n0645", "n0646", "n0647", "n0648", "n0649", "n0650", "n0651", "n0652", "n0653", "n0654", "n0685", "n0686", "n0687", "n0688", "n0689", "n0692"]
+#guard data.exactB 16 "r118" ["buyu", "buyu.bay", "buyu.iqala", "itq", "itq.itq", "itq.itq_muallaq", "itq.tadbir", "nikah", "nikah.nikah", "nudhur", "nudhur.nadhr", "nudhur.nadhr_muallaq", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_qabl_nikah", "wakala", "wakala.wakala"] ["n0071", "n0072", "n0073", "n0089", "n0090", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0303", "n0304", "n0310", "n0311", "n0312", "n0313", "n0427", "n0445", "n0446", "n0448", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0655", "n0656", "n0657", "n0678", "n0679", "n0680"]
+#guard data.exactB 16 "r119" ["ayman", "ayman.kaffara", "faraid", "faraid.mirath", "iqrar", "iqrar.iqrar", "jihad", "jihad.ghanima", "jihad.khums", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib", "wasaya.wasiyya_manfaa"] ["n0057", "n0058", "n0141", "n0142", "n0150", "n0220", "n0282", "n0283", "n0284", "n0285", "n0286", "n0330", "n0331", "n0332", "n0333", "n0341", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0688", "n0689", "n0690"]
+#guard data.exactB 16 "r120" ["diyat", "diyat.aqila", "faraid", "faraid.wala", "janaiz", "janaiz.salat_janaza", "nikah", "nikah.wilaya", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib"] ["n0132", "n0142", "n0154", "n0220", "n0319", "n0320", "n0440", "n0444", "n0682", "n0683", "n0688", "n0689", "n0690"]
+#guard data.exactB 16 "r121" ["atima", "atima.samak", "ayman", "ayman.yamin", "itq", "itq.itq", "itq.mukatab", "itq.umm_walad", "nudhur", "nudhur.nadhr", "nudhur.nadhr_sadaqa_mal", "salat", "salat.masjid"] ["n0049", "n0050", "n0062", "n0063", "n0064", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0314", "n0315", "n0445", "n0446", "n0449", "n0518"]
+#guard data.exactB 16 "r122" ["ayman", "ayman.yamin", "ijara", "ijara.ijara", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib"] ["n0062", "n0063", "n0064", "n0142", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0682", "n0683", "n0688", "n0689", "n0690"]
+#guard data.exactB 16 "r123" ["atima", "atima.muharramat", "ayman", "ayman.yamin", "itikaf", "itikaf.itikaf", "itikaf.nadhr_itikaf", "nudhur", "nudhur.nadhr", "salat", "salat.jumua", "siyam", "siyam.sawm_dahr", "talaq", "talaq.talaq", "talaq.talaq_bida", "wakala", "wakala.wakala", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib", "wasaya.wasiyya_warith"] ["n0048", "n0062", "n0063", "n0064", "n0142", "n0220", "n0288", "n0290", "n0445", "n0446", "n0508", "n0509", "n0510", "n0576", "n0637", "n0645", "n0646", "n0647", "n0648", "n0649", "n0650", "n0651", "n0678", "n0679", "n0680", "n0688", "n0689", "n0690", "n0692"]
+#guard data.exactB 16 "r124" ["ayman", "ayman.yamin", "qada", "qada.qadi", "talaq", "talaq.talaq"] ["n0062", "n0063", "n0064", "n0459", "n0460", "n0637", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r125" ["amma", "amma.niyya", "ayman", "ayman.niyya_yamin", "ayman.yamin", "itq", "itq.itq", "nikah", "nikah.nikah", "nudhur", "nudhur.nadhr", "nudhur.nadhr_sadaqa_mal", "raja", "raja.raja", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "talaq.talaq_thalath"] ["n0017", "n0059", "n0062", "n0063", "n0064", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0427", "n0445", "n0446", "n0449", "n0475", "n0476", "n0477", "n0478", "n0636", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0658"]
+#guard data.exactB 16 "r126" ["amma", "amma.jahl", "ayman", "ayman.tahrim_halal", "ayman.yamin", "hudud", "hudud.qadhf", "hudud.ridda", "itq", "itq.itq", "itq.itq_shiqs", "itq.mubaad", "itq.umm_walad", "talaq", "talaq.talaq", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_aqarib", "zihar", "zihar.zihar"] ["n0011", "n0012", "n0013", "n0014", "n0060", "n0061", "n0062", "n0063", "n0064", "n0142", "n0220", "n0236", "n0237", "n0238", "n0240", "n0241", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0307", "n0314", "n0315", "n0637", "n0645", "n0646", "n0647", "n0648", "n0682", "n0683", "n0688", "n0689", "n0690", "n0725"]
+#guard data.exactB 16 "r127" ["amma", "amma.ikrah", "diyat", "diyat.diya", "diyat.janin", "ghasb", "ghasb.itlaf", "hajj", "hajj.sayd_muhrim", "jinayat", "jinayat.hafr_bir", "jinayat.mumsik", "jinayat.qatl_amd", "qada", "qada.qadi", "shahadat", "shahadat.ruju_shuhud", "shahadat.shahada", "wadia", "wadia.wadia"] ["n0008", "n0009", "n0010", "n0135", "n0138", "n0139", "n0158", "n0167", "n0193", "n0194", "n0195", "n0196", "n0357", "n0366", "n0367", "n0459", "n0460", "n0477", "n0550", "n0551", "n0552", "n0553", "n0674", "n0675", "n0676", "n0677"]
 #guard data.exactB 16 "r128" ["diyat", "diyat.diya", "diyat.diyat_dhimmi", "diyat.janin", "diyat.qimat_abd", "hajj", "hajj.sayd_haram", "hudud", "hudud.ridda"] ["n0135", "n0137", "n0138", "n0139", "n0140", "n0191", "n0192", "n0240", "n0241"]
-#guard data.exactB 16 "r129" ["atima", "atima.sayd", "diyat", "diyat.aqila", "hajj", "hajj.sayd_haram", "hajj.sayd_muhrim", "hudud", "hudud.ridda", "jinayat", "jinayat.muslim_bi_kafir", "jinayat.qisas"] ["n0051", "n0052", "n0053", "n0132", "n0191", "n0192", "n0193", "n0194", "n0195", "n0196", "n0240", "n0241", "n0356", "n0364", "n0370", "n0371"]
-#guard data.exactB 16 "r130" ["amma", "amma.hawaij_asliyya", "ayman", "ayman.kaffara", "hajj", "hajj.istitaa", "hajr", "hajr.muflis", "itq", "itq.itq", "itq.itq_shiqs", "nafaqat", "nafaqat.nafaqat_aqarib", "zakat", "zakat.masarif", "zakat.zakat"] ["n0007", "n0057", "n0058", "n0131", "n0180", "n0209", "n0210", "n0211", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0395", "n0695", "n0708", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r131" ["hajr", "hajr.muflis", "sadaq", "sadaq.sadaq"] ["n0209", "n0210", "n0211", "n0491", "n0492", "n0493"]
-#guard data.exactB 16 "r132" ["amma", "amma.qudra_kasb", "diyat", "diyat.aqila", "hajj", "hajj.istitaa", "hajr", "hajr.muflis", "itq", "itq.itq", "itq.mukatab", "jihad", "jihad.jizya", "nafaqat", "nafaqat.nafaqat_aqarib", "zakat", "zakat.gharim", "zakat.masarif", "zakat.zakat"] ["n0020", "n0131", "n0132", "n0180", "n0209", "n0210", "n0211", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0326", "n0395", "n0695", "n0701", "n0708", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r133" ["amma", "amma.qura", "dawa", "dawa.shahid_yamin", "diyat", "diyat.diya", "diyat.janin", "faraid", "faraid.khuntha", "hajj", "hajj.hajj_an_ghayr", "hajj.hajj_islam", "hajj.rakatay_tawaf", "hajr", "hajr.mal_yatim", "hiba", "hiba.ibra", "idda", "idda.idda", "idda.iddat_wafat", "itq", "itq.itq", "itq.mukatab", "khul", "khul.khul", "nikah", "nikah.adad_zawjat", "nikah.nasab", "rada", "rada.rada", "rada.shahadat_murdia", "salat", "salat.tarawih", "shahadat", "shahadat.shahada", "shahadat.shahadat_nisa", "siyam", "siyam.ruyat_hilal", "siyam.waqt_iftar", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "usul", "usul.khabar_wahid", "wakala", "wakala.wakala", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0021", "n0022", "n0023", "n0126", "n0135", "n0138", "n0139", "n0142", "n0146", "n0178", "n0179", "n0180", "n0189", "n0206", "n0207", "n0208", "n0220", "n0227", "n0250", "n0252", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0374", "n0376", "n0378", "n0399", "n0400", "n0401", "n0402", "n0469", "n0470", "n0472", "n0473", "n0479", "n0545", "n0551", "n0555", "n0556", "n0558", "n0575", "n0576", "n0577", "n0583", "n0584", "n0585", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0655", "n0656", "n0680", "n0681", "n0682", "n0684", "n0685", "n0690", "n0691"]
-#guard data.exactB 16 "r134" ["atima", "atima.dhakat", "atima.khamr", "atima.takhlil_khamr", "hajj", "hajj.ihsar", "jihad", "jihad.istirqaq", "nikah", "nikah.nikah_ama", "sadaq", "sadaq.sadaq", "siyam", "siyam.fitr_musafir", "tahara", "tahara.dibagh", "tahara.tayammum"] ["n0038", "n0045", "n0046", "n0054", "n0175", "n0339", "n0430", "n0431", "n0432", "n0433", "n0491", "n0492", "n0493", "n0571", "n0596", "n0630"]
-#guard data.exactB 16 "r136" ["idda", "idda.istibra", "nikah", "nikah.jam_ukhtayn", "tahara", "tahara.hayd", "tahara.istimta_haid", "zihar", "zihar.zihar"] ["n0253", "n0412", "n0415", "n0602", "n0603", "n0604", "n0605", "n0608", "n0727"]
-#guard data.exactB 16 "r137" ["faraid", "faraid.dayn_tarika", "hajr", "hajr.muflis", "itq", "itq.itq", "itq.mukatab", "jinayat", "jinayat.afw_qisas", "jinayat.qisas", "rahn", "rahn.rahn", "sharika", "sharika.mudaraba", "shufa", "shufa.shufa", "sulh", "sulh.sulh_dam", "wasaya", "wasaya.thuluth", "wasaya.wasiyya", "wasaya.wasiyya_manfaa", "wasaya.wasiyya_warith", "zakat", "zakat.urud_tijara"] ["n0018", "n0142", "n0209", "n0210", "n0211", "n0216", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0356", "n0370", "n0371", "n0476", "n0560", "n0564", "n0565", "n0566", "n0591", "n0690", "n0691", "n0694", "n0715", "n0716"]
-#guard data.exactB 16 "r138" ["hajj", "hajj.hady", "hajj.sayd_muhrim", "itq", "itq.itq", "jinayat", "jinayat.abd_jani", "jinayat.mujib_amd", "jinayat.qisas", "nudhur", "nudhur.nadhr", "rahn", "rahn.rahn", "udhiya", "udhiya.udhiya", "zakat", "zakat.zakat"] ["n0018", "n0173", "n0174", "n0175", "n0176", "n0193", "n0194", "n0195", "n0196", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0352", "n0353", "n0354", "n0355", "n0356", "n0363", "n0370", "n0371", "n0447", "n0448", "n0476", "n0666", "n0667", "n0668", "n0717", "n0718", "n0719"]
+#guard data.exactB 16 "r129" ["atima", "atima.sayd", "diyat", "diyat.aqila", "hajj", "hajj.sayd_haram", "hajj.sayd_muhrim", "hudud", "hudud.ridda", "jinayat", "jinayat.muslim_bi_kafir", "jinayat.qisas"] ["n0051", "n0052", "n0053", "n0132", "n0191", "n0192", "n0193", "n0194", "n0195", "n0196", "n0240", "n0241", "n0355", "n0363", "n0369", "n0370"]
+#guard data.exactB 16 "r130" ["amma", "amma.hawaij_asliyya", "ayman", "ayman.kaffara", "hajj", "hajj.istitaa", "hajr", "hajr.muflis", "itq", "itq.itq", "itq.itq_shiqs", "nafaqat", "nafaqat.nafaqat_aqarib", "zakat", "zakat.masarif", "zakat.zakat"] ["n0007", "n0057", "n0058", "n0131", "n0180", "n0209", "n0210", "n0211", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0394", "n0693", "n0706", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r131" ["hajr", "hajr.muflis", "sadaq", "sadaq.sadaq"] ["n0209", "n0210", "n0211", "n0489", "n0490", "n0491"]
+#guard data.exactB 16 "r132" ["amma", "amma.qudra_kasb", "diyat", "diyat.aqila", "hajj", "hajj.istitaa", "hajr", "hajr.muflis", "itq", "itq.itq", "itq.mukatab", "jihad", "jihad.jizya", "nafaqat", "nafaqat.nafaqat_aqarib", "zakat", "zakat.gharim", "zakat.masarif", "zakat.zakat"] ["n0020", "n0131", "n0132", "n0180", "n0209", "n0210", "n0211", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0326", "n0394", "n0693", "n0699", "n0706", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r133" ["amma", "amma.qura", "dawa", "dawa.shahid_yamin", "diyat", "diyat.diya", "diyat.janin", "faraid", "faraid.khuntha", "hajj", "hajj.hajj_an_ghayr", "hajj.hajj_islam", "hajj.rakatay_tawaf", "hajr", "hajr.mal_yatim", "hiba", "hiba.ibra", "idda", "idda.idda", "idda.iddat_wafat", "itq", "itq.itq", "itq.mukatab", "khul", "khul.khul", "nikah", "nikah.adad_zawjat", "nikah.nasab", "rada", "rada.rada", "rada.shahadat_murdia", "salat", "salat.tarawih", "shahadat", "shahadat.shahada", "shahadat.shahadat_nisa", "siyam", "siyam.ruyat_hilal", "siyam.waqt_iftar", "talaq", "talaq.talaq", "talaq.talaq_muallaq", "usul", "usul.khabar_wahid", "wakala", "wakala.wakala", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya"] ["n0021", "n0022", "n0023", "n0126", "n0135", "n0138", "n0139", "n0142", "n0146", "n0178", "n0179", "n0180", "n0189", "n0206", "n0207", "n0208", "n0220", "n0227", "n0250", "n0252", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0373", "n0375", "n0377", "n0398", "n0399", "n0400", "n0401", "n0467", "n0468", "n0470", "n0471", "n0477", "n0543", "n0549", "n0553", "n0554", "n0556", "n0573", "n0574", "n0575", "n0581", "n0582", "n0583", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0653", "n0654", "n0678", "n0679", "n0680", "n0682", "n0683", "n0688", "n0689"]
+#guard data.exactB 16 "r134" ["atima", "atima.dhakat", "atima.khamr", "atima.takhlil_khamr", "hajj", "hajj.ihsar", "jihad", "jihad.istirqaq", "nikah", "nikah.nikah_ama", "sadaq", "sadaq.sadaq", "siyam", "siyam.fitr_musafir", "tahara", "tahara.dibagh", "tahara.tayammum"] ["n0038", "n0045", "n0046", "n0054", "n0175", "n0339", "n0428", "n0429", "n0430", "n0431", "n0489", "n0490", "n0491", "n0569", "n0594", "n0628"]
+#guard data.exactB 16 "r136" ["idda", "idda.istibra", "nikah", "nikah.jam_ukhtayn", "tahara", "tahara.hayd", "tahara.istimta_haid", "zihar", "zihar.zihar"] ["n0253", "n0411", "n0600", "n0601", "n0602", "n0603", "n0606", "n0725"]
+#guard data.exactB 16 "r137" ["faraid", "faraid.dayn_tarika", "hajr", "hajr.muflis", "itq", "itq.itq", "itq.mukatab", "jinayat", "jinayat.afw_qisas", "jinayat.qisas", "rahn", "rahn.rahn", "sharika", "sharika.mudaraba", "shufa", "shufa.shufa", "sulh", "sulh.sulh_dam", "wasaya", "wasaya.thuluth", "wasaya.wasiyya", "wasaya.wasiyya_manfaa", "wasaya.wasiyya_warith", "zakat", "zakat.urud_tijara"] ["n0018", "n0142", "n0209", "n0210", "n0211", "n0216", "n0220", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0355", "n0369", "n0370", "n0474", "n0558", "n0562", "n0563", "n0564", "n0589", "n0688", "n0689", "n0692", "n0713", "n0714"]
+#guard data.exactB 16 "r138" ["hajj", "hajj.hady", "hajj.sayd_muhrim", "itq", "itq.itq", "jinayat", "jinayat.abd_jani", "jinayat.mujib_amd", "jinayat.qisas", "nudhur", "nudhur.nadhr", "rahn", "rahn.rahn", "udhiya", "udhiya.udhiya", "zakat", "zakat.zakat"] ["n0018", "n0173", "n0174", "n0175", "n0176", "n0193", "n0194", "n0195", "n0196", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0352", "n0353", "n0354", "n0355", "n0362", "n0369", "n0370", "n0445", "n0446", "n0474", "n0664", "n0665", "n0666", "n0715", "n0716", "n0717"]
 #guard data.exactB 16 "r139" ["hudud", "hudud.tazir", "jihad", "jihad.ghanima", "jihad.radkh"] ["n0248", "n0330", "n0331", "n0332", "n0333", "n0346"]
-#guard data.exactB 16 "r140" ["diyat", "diyat.ayn_awar", "diyat.diya", "diyat.diyat_atraf", "diyat.diyat_dhimmi", "hudud", "hudud.sariqa", "hudud.sariqa_ghayr_hirz", "hudud.sariqa_majaa", "jihad", "jihad.ghanima", "jihad.ghulul", "jinayat", "jinayat.muslim_bi_kafir", "jinayat.qisas", "jinayat.sabiyy", "luqata", "luqata.dalla"] ["n0134", "n0135", "n0136", "n0137", "n0242", "n0243", "n0244", "n0245", "n0330", "n0331", "n0332", "n0333", "n0334", "n0335", "n0356", "n0364", "n0370", "n0371", "n0373", "n0380"]
-#guard data.exactB 16 "r141" ["hajj", "hajj.hady", "udhiya", "udhiya.udhiya", "zakat", "zakat.zakat_thimar"] ["n0173", "n0174", "n0175", "n0176", "n0666", "n0667", "n0668", "n0725"]
-#guard data.exactB 16 "r142" ["ariyya", "ariyya.ariyya", "diyat", "diyat.diya", "diyat.diyat_atraf", "hajj", "hajj.nabat_haram", "hajj.sayd_haram", "ijara", "ijara.ijara", "jihad", "jihad.kanisa", "sulh", "sulh.jidar", "tahara", "tahara.ma_ubina", "wasaya", "wasaya.wasiyya"] ["n0034", "n0035", "n0036", "n0037", "n0135", "n0136", "n0142", "n0185", "n0191", "n0192", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0340", "n0588", "n0615", "n0690", "n0691"]
-#guard data.exactB 16 "r143" ["ayman", "ayman.yamin", "buyu", "buyu.mushaf", "itq", "itq.itq", "itq.mukatab", "riba", "riba.sarf", "salat", "salat.jumua", "sharika", "sharika.mudaraba", "tahara", "tahara.mash_khuff", "tahara.wudu", "udhiya", "udhiya.julud_adahi", "udhiya.udhiya", "waqf", "waqf.waqf", "zakat", "zakat.hawl", "zakat.zakat"] ["n0062", "n0063", "n0064", "n0103", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0483", "n0484", "n0510", "n0511", "n0512", "n0560", "n0619", "n0620", "n0635", "n0636", "n0664", "n0666", "n0667", "n0668", "n0684", "n0685", "n0702", "n0703", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r144" ["buyu", "buyu.bay", "buyu.dayn_muajjal", "buyu.khiyar_ayb", "buyu.khiyar_shart", "daman", "daman.daman", "daman.kafala", "faraid", "faraid.dayn_tarika", "hajj", "hajj.hajj_an_ghayr", "hajj.hajj_islam", "hawala", "hawala.hawala", "hiba", "hiba.hiba", "hiba.ruju_hiba", "hudud", "hudud.qadhf", "jinayat", "jinayat.qisas_atraf", "nudhur", "nudhur.nadhr", "nudhur.nadhr_mayyit", "rahn", "rahn.rahn", "shufa", "shufa.shufa", "wasaya", "wasaya.wasiyya"] ["n0018", "n0037", "n0070", "n0071", "n0072", "n0073", "n0086", "n0094", "n0096", "n0097", "n0098", "n0099", "n0115", "n0116", "n0117", "n0118", "n0119", "n0142", "n0178", "n0179", "n0180", "n0214", "n0215", "n0220", "n0223", "n0224", "n0225", "n0230", "n0231", "n0236", "n0237", "n0238", "n0361", "n0447", "n0448", "n0449", "n0476", "n0564", "n0565", "n0566", "n0690", "n0691"]
-#guard data.exactB 16 "r145" ["faraid", "faraid.ikhtilaf_din", "faraid.mirath_mabtuta", "idda", "idda.idda", "idda.qabl_dukhul", "nikah", "nikah.adad_zawjat", "nikah.jam_ukhtayn"] ["n0144", "n0152", "n0250", "n0258", "n0399", "n0400", "n0401", "n0402", "n0412", "n0415"]
-#guard data.exactB 16 "r146" ["idda", "idda.idda", "idda.iddat_wafat", "idda.luzum_manzil", "ila", "ila.ila", "lian", "lian.lihaq_nasab", "nafaqat", "nafaqat.hadana", "nikah", "nikah.khiyar_mutaqa", "nikah.nikah", "raja", "raja.raja", "raja.rajiyya", "talaq", "talaq.mutallaqa_thalathan", "talaq.talaq", "talaq.talaq_bida"] ["n0250", "n0252", "n0254", "n0255", "n0281", "n0378", "n0393", "n0417", "n0418", "n0419", "n0420", "n0429", "n0477", "n0478", "n0479", "n0480", "n0481", "n0639", "n0645", "n0646", "n0647", "n0648", "n0649", "n0650", "n0651", "n0652", "n0653"]
-#guard data.exactB 16 "r147" ["diyat", "diyat.diya", "faraid", "faraid.mirath", "hiba", "hiba.atiyyat_awlad", "itq", "itq.itq", "shahadat", "shahadat.shahada", "shahadat.shahadat_mara", "tahara", "tahara.hayd", "udhiya", "udhiya.aqiqa"] ["n0135", "n0141", "n0150", "n0218", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0479", "n0555", "n0556", "n0557", "n0602", "n0603", "n0604", "n0605", "n0662", "n0663"]
-#guard data.exactB 16 "r149" ["hajr", "hajr.hulul_dayn", "luqata", "luqata.luqata", "luqata.mal_majhul_rabb", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_thuluth", "zakat", "zakat.zakat"] ["n0142", "n0201", "n0220", "n0384", "n0385", "n0386", "n0387", "n0690", "n0691", "n0693", "n0694", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r150" ["buyu", "buyu.bay", "buyu.bay_ina", "buyu.ziyada_fil_bay", "hiba", "hiba.hadiyyat_shafaa", "hiba.hadiyyat_ummal", "jihad", "jihad.ghanima", "qard", "qard.hadiyyat_muqtarid", "sadaq", "sadaq.hadiyyat_zawj", "sadaq.hibat_sadaq", "sadaq.sadaq"] ["n0071", "n0072", "n0073", "n0079", "n0114", "n0221", "n0222", "n0330", "n0331", "n0332", "n0333", "n0465", "n0466", "n0485", "n0486", "n0491", "n0492", "n0493"]
-#guard data.exactB 16 "r151" ["amma", "amma.ikrah", "dawa", "dawa.dawa", "dawa.mata_bayt", "hiba", "hiba.hibat_thawab", "hudud", "hudud.kalimat_kufr", "hudud.qadhf", "hudud.ridda", "hudud.sariqa", "hudud.tarid_qadhf", "ijara", "ijara.ijara", "iqrar", "iqrar.iqrar", "iqrar.iqrar_mukrah", "itq", "itq.itq", "itq.kitaba", "jihad", "jihad.aman", "jihad.islam_kafir", "jinayat", "jinayat.qasama", "lian", "lian.lihaq_nasab", "lian.qiyafa", "luqata", "luqata.laqit", "sadaq", "sadaq.sadaq", "talaq", "talaq.kinayat_talaq", "talaq.talaq"] ["n0008", "n0009", "n0010", "n0124", "n0125", "n0226", "n0236", "n0237", "n0238", "n0240", "n0241", "n0242", "n0243", "n0247", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0282", "n0283", "n0284", "n0285", "n0286", "n0287", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0322", "n0323", "n0324", "n0337", "n0365", "n0366", "n0378", "n0379", "n0381", "n0382", "n0383", "n0491", "n0492", "n0493", "n0639", "n0643", "n0644", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r152" ["nikah", "nikah.jam_bayn_mahram", "nikah.muharramat", "nikah.muharramat_musahara", "nikah.muharramat_nasab", "rada", "rada.muharramat_rada", "rada.rada"] ["n0412", "n0413", "n0423", "n0424", "n0425", "n0426", "n0427", "n0428", "n0469", "n0470", "n0471", "n0472"]
-#guard data.exactB 16 "r153" ["hajr", "hajr.wilayat_mal", "hiba", "hiba.hiba", "hiba.ruju_hiba", "hiba.tamalluk_ab", "hudud", "hudud.sariqa", "itq", "itq.itq", "itq.itq_bil_milk", "itq.wala", "janaiz", "janaiz.salat_janaza", "jihad", "jihad.idhn_walidayn", "jihad.islam_kafir", "jihad.tabaiyyat_walad", "jinayat", "jinayat.qisas", "jinayat.qisas_walid", "nafaqat", "nafaqat.hadana", "nafaqat.nafaqat_aqarib", "nikah", "nikah.muharramat", "nikah.wilaya", "shahadat", "shahadat.shahada", "shahadat.shahadat_qarib", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "zakat", "zakat.masarif", "zakat.zakat"] ["n0131", "n0142", "n0154", "n0213", "n0220", "n0223", "n0224", "n0225", "n0230", "n0231", "n0233", "n0242", "n0243", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0299", "n0300", "n0316", "n0319", "n0320", "n0336", "n0337", "n0349", "n0356", "n0370", "n0371", "n0372", "n0393", "n0395", "n0423", "n0424", "n0425", "n0442", "n0446", "n0479", "n0555", "n0559", "n0684", "n0685", "n0690", "n0691", "n0695", "n0708", "n0717", "n0718", "n0719"]
-#guard data.exactB 16 "r154" ["idda", "idda.idda", "idda.mafqud", "itq", "itq.itq", "khul", "khul.iwad_khul", "khul.khul", "nikah", "nikah.bud", "nikah.islam_ahad_zawjayn", "nikah.muhajira", "raja", "raja.raja", "sadaq", "sadaq.sadaq", "sadaq.tansif_mahr", "shahadat", "shahadat.ruju_shuhud", "shahadat.shahada"] ["n0250", "n0256", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0374", "n0375", "n0376", "n0404", "n0407", "n0408", "n0422", "n0477", "n0478", "n0479", "n0480", "n0491", "n0492", "n0493", "n0496", "n0552", "n0553", "n0554", "n0555"]
-#guard data.exactB 16 "r155" ["sadaq", "sadaq.istiqrar_mahr", "sadaq.khalwa", "sadaq.sadaq"] ["n0487", "n0489", "n0491", "n0492", "n0493"]
-#guard data.exactB 16 "r156" ["amma", "amma.ikrah", "hudud", "hudud.ridda", "iqrar", "iqrar.iqrar", "khul", "khul.khul", "lian", "lian.lian", "nafaqat", "nafaqat.fasakh_iisar", "nafaqat.nafaqat_zawja", "nikah", "nikah.adad_zawjat", "nikah.fasakh_ayb", "nikah.islam_ahad_zawjayn", "nikah.jam_bayn_mahram", "nikah.khiyar_mutaqa", "nikah.milk_zawj", "nikah.muharramat", "nikah.muharramat_musahara", "nikah.nikah", "rada", "rada.rada", "talaq", "talaq.talaq"] ["n0008", "n0009", "n0010", "n0131", "n0240", "n0241", "n0280", "n0282", "n0283", "n0284", "n0285", "n0286", "n0374", "n0376", "n0377", "n0392", "n0394", "n0399", "n0400", "n0401", "n0402", "n0407", "n0408", "n0412", "n0413", "n0417", "n0418", "n0419", "n0420", "n0421", "n0423", "n0424", "n0425", "n0426", "n0427", "n0429", "n0469", "n0470", "n0472", "n0639", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r157" ["hudud", "hudud.ridda", "idda", "idda.idda", "idda.iddat_ama", "idda.iddat_wafat", "nikah", "nikah.islam_ahad_zawjayn", "raja", "raja.raja", "raja.rajiyya"] ["n0240", "n0241", "n0250", "n0251", "n0252", "n0407", "n0408", "n0477", "n0478", "n0479", "n0480", "n0481"]
-#guard data.exactB 16 "r158" ["amma", "amma.shakk", "atima", "atima.sayd", "buyu", "buyu.ayb", "buyu.bay", "ghasb", "ghasb.daman_mutlafat", "ijara", "ijara.ijara", "itq", "itq.itq", "itq.itq_fil_kaffara", "jihad", "jihad.aman", "jinayat", "jinayat.qisas", "nafaqat", "nafaqat.nafaqat_zawja", "nikah", "nikah.islam_ahad_zawjayn", "nikah.unna", "sadaq", "sadaq.sadaq", "salat", "salat.idrak_rakaa", "salat.sujud_sahw", "tahara", "tahara.ma_yasir", "tahara.mayta_la_nafs", "tahara.najasa", "talaq", "talaq.talaq", "talaq.taliq_talaq", "zakat", "zakat.zakat", "zakat.zakat_fitr"] ["n0024", "n0025", "n0026", "n0027", "n0051", "n0052", "n0053", "n0067", "n0068", "n0069", "n0070", "n0071", "n0072", "n0073", "n0131", "n0157", "n0158", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0301", "n0322", "n0323", "n0324", "n0356", "n0370", "n0371", "n0394", "n0407", "n0408", "n0441", "n0491", "n0492", "n0493", "n0504", "n0539", "n0613", "n0623", "n0625", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0717", "n0718", "n0719", "n0721", "n0722", "n0723"]
-#guard data.exactB 16 "r159" ["amma", "amma.jahl", "amma.shakk", "amma.shubuhat", "buyu", "buyu.bay", "hajj", "hajj.tawaf", "hudud", "hudud.qadhf", "hudud.rajm", "hudud.zina", "idda", "idda.idda", "idda.mafqud", "iqrar", "iqrar.iqrar", "itq", "itq.itq", "janaiz", "janaiz.salat_janaza", "nikah", "nikah.fasakh_ayb", "nikah.idhn_mara", "nikah.islam_ahad_zawjayn", "nikah.khiyar_mutaqa", "nikah.nikah", "sadaq", "sadaq.istiqrar_mahr", "sadaq.khalwa", "sadaq.sadaq", "salat", "salat.ijtinab_najasa", "salat.maqbara", "salat.shakk_fil_salat", "salat.sujud_sahw", "salat.waqt", "shahadat", "shahadat.shahada", "siyam", "siyam.ruyat_hilal", "siyam.tulu_fajr", "siyam.waqt_iftar", "tahara", "tahara.aniyat_kuffar", "tahara.hayd", "tahara.istihada", "tahara.mayta_la_nafs", "tahara.najasa", "tahara.nawm", "tahara.thiyab_sibyan", "tahara.tin_shawari", "tahara.wulugh_kalb", "talaq", "talaq.adad_talaq", "talaq.talaq"] ["n0011", "n0012", "n0013", "n0014", "n0024", "n0025", "n0026", "n0027", "n0029", "n0071", "n0072", "n0073", "n0197", "n0236", "n0237", "n0238", "n0239", "n0249", "n0250", "n0256", "n0282", "n0283", "n0284", "n0285", "n0286", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0319", "n0320", "n0405", "n0406", "n0407", "n0408", "n0417", "n0418", "n0419", "n0420", "n0429", "n0479", "n0487", "n0489", "n0491", "n0492", "n0493", "n0506", "n0519", "n0537", "n0539", "n0550", "n0555", "n0575", "n0576", "n0577", "n0582", "n0583", "n0584", "n0585", "n0594", "n0602", "n0603", "n0604", "n0605", "n0606", "n0607", "n0623", "n0625", "n0626", "n0629", "n0631", "n0632", "n0633", "n0637", "n0638", "n0639", "n0640", "n0647", "n0648", "n0649", "n0650"]
-#guard data.exactB 16 "r160" ["amma", "amma.shakk", "ayman", "ayman.yamin", "buyu", "buyu.bay", "dawa", "dawa.dawa", "dawa.taarud_bayyinat", "dawa.tadai", "faraid", "faraid.mawt_mutawarithin", "faraid.mirath", "idda", "idda.idda", "ihya", "ihya.mubahat", "ihya.saqy", "ila", "ila.ila", "itq", "itq.itq", "itq.itq_fil_marad", "janaiz", "janaiz.dafn", "janaiz.kafan", "janaiz.salat_janaza", "jihad", "jihad.aman", "jihad.fay", "jihad.ghanima", "jihad.musabaqa", "jihad.nafal", "jinayat", "jinayat.istifa_qisas", "jinayat.qisas", "lian", "lian.lihaq_nasab", "lian.qiyafa", "luqata", "luqata.laqit", "luqata.luqata", "nafaqat", "nafaqat.hadana", "nafaqat.takhyir_mahdun", "nikah", "nikah.adad_zawjat", "nikah.qasm_bayn_zawjat", "nikah.tazwij_waliyyayn", "nikah.walima", "nikah.wilaya", "qada", "qada.imama_uzma", "qada.qada", "qada.qisma", "raja", "raja.raja", "sadaq", "sadaq.sadaq", "salat", "salat.adhan", "salat.imama", "salat.satr_awra", "siyam", "siyam.laylat_qadr", "talaq", "talaq.talaq", "talaq.talaq_mubham", "talaq.taliq_talaq", "wadia", "wadia.wadia", "wakala", "wakala.wakala", "wasaya", "wasaya.wasiyya"] ["n0024", "n0025", "n0026", "n0027", "n0062", "n0063", "n0064", "n0071", "n0072", "n0073", "n0124", "n0125", "n0127", "n0128", "n0141", "n0142", "n0150", "n0220", "n0250", "n0265", "n0268", "n0269", "n0281", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0302", "n0317", "n0318", "n0319", "n0320", "n0322", "n0323", "n0324", "n0327", "n0330", "n0331", "n0332", "n0333", "n0342", "n0343", "n0344", "n0345", "n0356", "n0359", "n0370", "n0371", "n0378", "n0379", "n0381", "n0382", "n0383", "n0384", "n0385", "n0386", "n0393", "n0398", "n0399", "n0400", "n0401", "n0402", "n0436", "n0437", "n0438", "n0440", "n0442", "n0444", "n0445", "n0446", "n0455", "n0456", "n0460", "n0463", "n0464", "n0477", "n0478", "n0479", "n0480", "n0491", "n0492", "n0493", "n0499", "n0507", "n0535", "n0536", "n0574", "n0639", "n0647", "n0648", "n0649", "n0650", "n0654", "n0676", "n0677", "n0678", "n0679", "n0680", "n0681", "n0682", "n0690", "n0691"]
+#guard data.exactB 16 "r140" ["diyat", "diyat.ayn_awar", "diyat.diya", "diyat.diyat_atraf", "diyat.diyat_dhimmi", "hudud", "hudud.sariqa", "hudud.sariqa_ghayr_hirz", "hudud.sariqa_majaa", "jihad", "jihad.ghanima", "jihad.ghulul", "jinayat", "jinayat.muslim_bi_kafir", "jinayat.qisas", "jinayat.sabiyy", "luqata", "luqata.dalla"] ["n0134", "n0135", "n0136", "n0137", "n0242", "n0243", "n0244", "n0245", "n0330", "n0331", "n0332", "n0333", "n0334", "n0335", "n0355", "n0363", "n0369", "n0370", "n0372", "n0379"]
+#guard data.exactB 16 "r141" ["hajj", "hajj.hady", "udhiya", "udhiya.udhiya", "zakat", "zakat.zakat_thimar"] ["n0173", "n0174", "n0175", "n0176", "n0664", "n0665", "n0666", "n0723"]
+#guard data.exactB 16 "r142" ["ariyya", "ariyya.ariyya", "diyat", "diyat.diya", "diyat.diyat_atraf", "hajj", "hajj.nabat_haram", "hajj.sayd_haram", "ijara", "ijara.ijara", "jihad", "jihad.kanisa", "sulh", "sulh.jidar", "tahara", "tahara.ma_ubina", "wasaya", "wasaya.wasiyya"] ["n0034", "n0035", "n0036", "n0037", "n0135", "n0136", "n0142", "n0185", "n0191", "n0192", "n0220", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0340", "n0586", "n0613", "n0688", "n0689"]
+#guard data.exactB 16 "r143" ["ayman", "ayman.yamin", "buyu", "buyu.mushaf", "itq", "itq.itq", "itq.mukatab", "riba", "riba.sarf", "salat", "salat.jumua", "sharika", "sharika.mudaraba", "tahara", "tahara.mash_khuff", "tahara.wudu", "udhiya", "udhiya.julud_adahi", "udhiya.udhiya", "waqf", "waqf.waqf", "zakat", "zakat.hawl", "zakat.zakat"] ["n0062", "n0063", "n0064", "n0103", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0308", "n0481", "n0482", "n0508", "n0509", "n0510", "n0558", "n0617", "n0618", "n0633", "n0634", "n0662", "n0664", "n0665", "n0666", "n0682", "n0683", "n0700", "n0701", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r144" ["buyu", "buyu.bay", "buyu.dayn_muajjal", "buyu.khiyar_ayb", "buyu.khiyar_shart", "daman", "daman.daman", "daman.kafala", "faraid", "faraid.dayn_tarika", "hajj", "hajj.hajj_an_ghayr", "hajj.hajj_islam", "hawala", "hawala.hawala", "hiba", "hiba.hiba", "hiba.ruju_hiba", "hudud", "hudud.qadhf", "jinayat", "jinayat.qisas_atraf", "nudhur", "nudhur.nadhr", "nudhur.nadhr_mayyit", "rahn", "rahn.rahn", "shufa", "shufa.shufa", "wasaya", "wasaya.wasiyya"] ["n0018", "n0037", "n0070", "n0071", "n0072", "n0073", "n0086", "n0094", "n0096", "n0097", "n0098", "n0099", "n0115", "n0116", "n0117", "n0118", "n0119", "n0142", "n0178", "n0179", "n0180", "n0214", "n0215", "n0220", "n0223", "n0224", "n0225", "n0230", "n0231", "n0236", "n0237", "n0238", "n0360", "n0445", "n0446", "n0447", "n0474", "n0562", "n0563", "n0564", "n0688", "n0689"]
+#guard data.exactB 16 "r145" ["faraid", "faraid.ikhtilaf_din", "faraid.mirath_mabtuta", "idda", "idda.idda", "idda.qabl_dukhul", "nikah", "nikah.adad_zawjat", "nikah.jam_ukhtayn"] ["n0144", "n0152", "n0250", "n0258", "n0398", "n0399", "n0400", "n0401", "n0411"]
+#guard data.exactB 16 "r146" ["idda", "idda.idda", "idda.iddat_wafat", "idda.luzum_manzil", "ila", "ila.ila", "lian", "lian.lihaq_nasab", "nafaqat", "nafaqat.hadana", "nikah", "nikah.khiyar_mutaqa", "nikah.nikah", "raja", "raja.raja", "raja.rajiyya", "talaq", "talaq.mutallaqa_thalathan", "talaq.talaq", "talaq.talaq_bida"] ["n0250", "n0252", "n0254", "n0255", "n0281", "n0377", "n0392", "n0415", "n0416", "n0417", "n0418", "n0427", "n0475", "n0476", "n0477", "n0478", "n0479", "n0637", "n0643", "n0644", "n0645", "n0646", "n0647", "n0648", "n0649", "n0650", "n0651"]
+#guard data.exactB 16 "r147" ["diyat", "diyat.diya", "faraid", "faraid.mirath", "hiba", "hiba.atiyyat_awlad", "itq", "itq.itq", "shahadat", "shahadat.shahada", "shahadat.shahadat_mara", "tahara", "tahara.hayd", "udhiya", "udhiya.aqiqa"] ["n0135", "n0141", "n0150", "n0218", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0477", "n0553", "n0554", "n0555", "n0600", "n0601", "n0602", "n0603", "n0660", "n0661"]
+#guard data.exactB 16 "r149" ["hajr", "hajr.hulul_dayn", "luqata", "luqata.luqata", "luqata.mal_majhul_rabb", "wasaya", "wasaya.wasiyya", "wasaya.wasiyya_thuluth", "zakat", "zakat.zakat"] ["n0142", "n0201", "n0220", "n0383", "n0384", "n0385", "n0386", "n0688", "n0689", "n0691", "n0692", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r150" ["buyu", "buyu.bay", "buyu.bay_ina", "buyu.ziyada_fil_bay", "hiba", "hiba.hadiyyat_shafaa", "hiba.hadiyyat_ummal", "jihad", "jihad.ghanima", "qard", "qard.hadiyyat_muqtarid", "sadaq", "sadaq.hadiyyat_zawj", "sadaq.hibat_sadaq", "sadaq.sadaq"] ["n0071", "n0072", "n0073", "n0079", "n0114", "n0221", "n0222", "n0330", "n0331", "n0332", "n0333", "n0463", "n0464", "n0483", "n0484", "n0489", "n0490", "n0491"]
+#guard data.exactB 16 "r151" ["amma", "amma.ikrah", "dawa", "dawa.dawa", "dawa.mata_bayt", "hiba", "hiba.hibat_thawab", "hudud", "hudud.kalimat_kufr", "hudud.qadhf", "hudud.ridda", "hudud.sariqa", "hudud.tarid_qadhf", "ijara", "ijara.ijara", "iqrar", "iqrar.iqrar", "iqrar.iqrar_mukrah", "itq", "itq.itq", "itq.kitaba", "jihad", "jihad.aman", "jihad.islam_kafir", "jinayat", "jinayat.qasama", "lian", "lian.lihaq_nasab", "lian.qiyafa", "luqata", "luqata.laqit", "sadaq", "sadaq.sadaq", "talaq", "talaq.kinayat_talaq", "talaq.talaq"] ["n0008", "n0009", "n0010", "n0124", "n0125", "n0226", "n0236", "n0237", "n0238", "n0240", "n0241", "n0242", "n0243", "n0247", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0282", "n0283", "n0284", "n0285", "n0286", "n0287", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0305", "n0306", "n0322", "n0323", "n0324", "n0337", "n0364", "n0365", "n0377", "n0378", "n0380", "n0381", "n0382", "n0489", "n0490", "n0491", "n0637", "n0641", "n0642", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r152" ["nikah", "nikah.jam_bayn_mahram", "nikah.muharramat", "nikah.muharramat_musahara", "nikah.muharramat_nasab", "rada", "rada.muharramat_rada", "rada.rada"] ["n0411", "n0412", "n0421", "n0422", "n0423", "n0424", "n0425", "n0426", "n0467", "n0468", "n0469", "n0470"]
+#guard data.exactB 16 "r153" ["hajr", "hajr.wilayat_mal", "hiba", "hiba.hiba", "hiba.ruju_hiba", "hiba.tamalluk_ab", "hudud", "hudud.sariqa", "itq", "itq.itq", "itq.itq_bil_milk", "itq.wala", "janaiz", "janaiz.salat_janaza", "jihad", "jihad.idhn_walidayn", "jihad.islam_kafir", "jihad.tabaiyyat_walad", "jinayat", "jinayat.qisas", "jinayat.qisas_walid", "nafaqat", "nafaqat.hadana", "nafaqat.nafaqat_aqarib", "nikah", "nikah.muharramat", "nikah.wilaya", "shahadat", "shahadat.shahada", "shahadat.shahadat_qarib", "waqf", "waqf.waqf", "wasaya", "wasaya.wasiyya", "zakat", "zakat.masarif", "zakat.zakat"] ["n0131", "n0142", "n0154", "n0213", "n0220", "n0223", "n0224", "n0225", "n0230", "n0231", "n0233", "n0242", "n0243", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0299", "n0300", "n0316", "n0319", "n0320", "n0336", "n0337", "n0349", "n0355", "n0369", "n0370", "n0371", "n0392", "n0394", "n0421", "n0422", "n0423", "n0440", "n0444", "n0477", "n0553", "n0557", "n0682", "n0683", "n0688", "n0689", "n0693", "n0706", "n0715", "n0716", "n0717"]
+#guard data.exactB 16 "r154" ["idda", "idda.idda", "idda.mafqud", "itq", "itq.itq", "khul", "khul.iwad_khul", "khul.khul", "nikah", "nikah.bud", "nikah.islam_ahad_zawjayn", "nikah.muhajira", "raja", "raja.raja", "sadaq", "sadaq.sadaq", "sadaq.tansif_mahr", "shahadat", "shahadat.ruju_shuhud", "shahadat.shahada"] ["n0250", "n0256", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0373", "n0374", "n0375", "n0403", "n0406", "n0407", "n0420", "n0475", "n0476", "n0477", "n0478", "n0489", "n0490", "n0491", "n0494", "n0550", "n0551", "n0552", "n0553"]
+#guard data.exactB 16 "r155" ["sadaq", "sadaq.istiqrar_mahr", "sadaq.khalwa", "sadaq.sadaq"] ["n0485", "n0487", "n0489", "n0490", "n0491"]
+#guard data.exactB 16 "r156" ["amma", "amma.ikrah", "hudud", "hudud.ridda", "iqrar", "iqrar.iqrar", "khul", "khul.khul", "lian", "lian.lian", "nafaqat", "nafaqat.fasakh_iisar", "nafaqat.nafaqat_zawja", "nikah", "nikah.adad_zawjat", "nikah.fasakh_ayb", "nikah.islam_ahad_zawjayn", "nikah.jam_bayn_mahram", "nikah.khiyar_mutaqa", "nikah.milk_zawj", "nikah.muharramat", "nikah.muharramat_musahara", "nikah.nikah", "rada", "rada.rada", "talaq", "talaq.talaq"] ["n0008", "n0009", "n0010", "n0131", "n0240", "n0241", "n0280", "n0282", "n0283", "n0284", "n0285", "n0286", "n0373", "n0375", "n0376", "n0391", "n0393", "n0398", "n0399", "n0400", "n0401", "n0406", "n0407", "n0411", "n0412", "n0415", "n0416", "n0417", "n0418", "n0419", "n0421", "n0422", "n0423", "n0424", "n0425", "n0427", "n0467", "n0468", "n0470", "n0637", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r157" ["hudud", "hudud.ridda", "idda", "idda.idda", "idda.iddat_ama", "idda.iddat_wafat", "nikah", "nikah.islam_ahad_zawjayn", "raja", "raja.raja", "raja.rajiyya"] ["n0240", "n0241", "n0250", "n0251", "n0252", "n0406", "n0407", "n0475", "n0476", "n0477", "n0478", "n0479"]
+#guard data.exactB 16 "r158" ["amma", "amma.shakk", "atima", "atima.sayd", "buyu", "buyu.ayb", "buyu.bay", "ghasb", "ghasb.daman_mutlafat", "ijara", "ijara.ijara", "itq", "itq.itq", "itq.itq_fil_kaffara", "jihad", "jihad.aman", "jinayat", "jinayat.qisas", "nafaqat", "nafaqat.nafaqat_zawja", "nikah", "nikah.islam_ahad_zawjayn", "nikah.unna", "sadaq", "sadaq.sadaq", "salat", "salat.idrak_rakaa", "salat.sujud_sahw", "tahara", "tahara.ma_yasir", "tahara.mayta_la_nafs", "tahara.najasa", "talaq", "talaq.talaq", "talaq.taliq_talaq", "zakat", "zakat.zakat", "zakat.zakat_fitr"] ["n0024", "n0025", "n0026", "n0027", "n0051", "n0052", "n0053", "n0067", "n0068", "n0069", "n0070", "n0071", "n0072", "n0073", "n0131", "n0157", "n0158", "n0273", "n0275", "n0276", "n0277", "n0278", "n0279", "n0280", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0301", "n0322", "n0323", "n0324", "n0355", "n0369", "n0370", "n0393", "n0406", "n0407", "n0439", "n0489", "n0490", "n0491", "n0502", "n0537", "n0611", "n0621", "n0623", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0715", "n0716", "n0717", "n0719", "n0720", "n0721"]
+#guard data.exactB 16 "r159" ["amma", "amma.jahl", "amma.shakk", "amma.shubuhat", "buyu", "buyu.bay", "hajj", "hajj.tawaf", "hudud", "hudud.qadhf", "hudud.rajm", "hudud.zina", "idda", "idda.idda", "idda.mafqud", "iqrar", "iqrar.iqrar", "itq", "itq.itq", "janaiz", "janaiz.salat_janaza", "nikah", "nikah.fasakh_ayb", "nikah.idhn_mara", "nikah.islam_ahad_zawjayn", "nikah.khiyar_mutaqa", "nikah.nikah", "sadaq", "sadaq.istiqrar_mahr", "sadaq.khalwa", "sadaq.sadaq", "salat", "salat.ijtinab_najasa", "salat.maqbara", "salat.shakk_fil_salat", "salat.sujud_sahw", "salat.waqt", "shahadat", "shahadat.shahada", "siyam", "siyam.ruyat_hilal", "siyam.tulu_fajr", "siyam.waqt_iftar", "tahara", "tahara.aniyat_kuffar", "tahara.hayd", "tahara.istihada", "tahara.mayta_la_nafs", "tahara.najasa", "tahara.nawm", "tahara.thiyab_sibyan", "tahara.tin_shawari", "tahara.wulugh_kalb", "talaq", "talaq.adad_talaq", "talaq.talaq"] ["n0011", "n0012", "n0013", "n0014", "n0024", "n0025", "n0026", "n0027", "n0029", "n0071", "n0072", "n0073", "n0197", "n0236", "n0237", "n0238", "n0239", "n0249", "n0250", "n0256", "n0282", "n0283", "n0284", "n0285", "n0286", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0319", "n0320", "n0404", "n0405", "n0406", "n0407", "n0415", "n0416", "n0417", "n0418", "n0427", "n0477", "n0485", "n0487", "n0489", "n0490", "n0491", "n0504", "n0517", "n0535", "n0537", "n0548", "n0553", "n0573", "n0574", "n0575", "n0580", "n0581", "n0582", "n0583", "n0592", "n0600", "n0601", "n0602", "n0603", "n0604", "n0605", "n0621", "n0623", "n0624", "n0627", "n0629", "n0630", "n0631", "n0635", "n0636", "n0637", "n0638", "n0645", "n0646", "n0647", "n0648"]
+#guard data.exactB 16 "r160" ["amma", "amma.shakk", "ayman", "ayman.yamin", "buyu", "buyu.bay", "dawa", "dawa.dawa", "dawa.taarud_bayyinat", "dawa.tadai", "faraid", "faraid.mawt_mutawarithin", "faraid.mirath", "idda", "idda.idda", "ihya", "ihya.mubahat", "ihya.saqy", "ila", "ila.ila", "itq", "itq.itq", "itq.itq_fil_marad", "janaiz", "janaiz.dafn", "janaiz.kafan", "janaiz.salat_janaza", "jihad", "jihad.aman", "jihad.fay", "jihad.ghanima", "jihad.musabaqa", "jihad.nafal", "jinayat", "jinayat.istifa_qisas", "jinayat.qisas", "lian", "lian.lihaq_nasab", "lian.qiyafa", "luqata", "luqata.laqit", "luqata.luqata", "nafaqat", "nafaqat.hadana", "nafaqat.takhyir_mahdun", "nikah", "nikah.adad_zawjat", "nikah.qasm_bayn_zawjat", "nikah.tazwij_waliyyayn", "nikah.walima", "nikah.wilaya", "qada", "qada.imama_uzma", "qada.qada", "qada.qisma", "raja", "raja.raja", "sadaq", "sadaq.sadaq", "salat", "salat.adhan", "salat.imama", "salat.satr_awra", "siyam", "siyam.laylat_qadr", "talaq", "talaq.talaq", "talaq.talaq_mubham", "talaq.taliq_talaq", "wadia", "wadia.wadia", "wakala", "wakala.wakala", "wasaya", "wasaya.wasiyya"] ["n0024", "n0025", "n0026", "n0027", "n0062", "n0063", "n0064", "n0071", "n0072", "n0073", "n0124", "n0125", "n0127", "n0128", "n0141", "n0142", "n0150", "n0220", "n0250", "n0265", "n0268", "n0269", "n0281", "n0293", "n0294", "n0295", "n0296", "n0297", "n0298", "n0302", "n0317", "n0318", "n0319", "n0320", "n0322", "n0323", "n0324", "n0327", "n0330", "n0331", "n0332", "n0333", "n0342", "n0343", "n0344", "n0345", "n0355", "n0358", "n0369", "n0370", "n0377", "n0378", "n0380", "n0381", "n0382", "n0383", "n0384", "n0385", "n0392", "n0397", "n0398", "n0399", "n0400", "n0401", "n0434", "n0435", "n0436", "n0438", "n0440", "n0442", "n0443", "n0444", "n0453", "n0454", "n0458", "n0461", "n0462", "n0475", "n0476", "n0477", "n0478", "n0489", "n0490", "n0491", "n0497", "n0505", "n0533", "n0534", "n0572", "n0637", "n0645", "n0646", "n0647", "n0648", "n0652", "n0674", "n0675", "n0676", "n0677", "n0678", "n0679", "n0680", "n0688", "n0689"]
 
 end UsulTest.MahallGraph
