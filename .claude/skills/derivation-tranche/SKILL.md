@@ -13,6 +13,7 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
 2. **Source.** Cache the witness (`python -m usul_corpus fetch --work <id>`) and confirm its lock hash. Every quote you use must be verbatim from it, with its page marker.
 3. **Read (lane A).** Formalise each qāʿida from its own wording.
    - The reading goes in a new module `formal/lean/Usul/Readings/<Shard>.lean`. It imports the specific `Usul.*` modules it needs, never `Usul`.
+   - Every Lean module you add or change gets its plain-English companion added or updated under `docs/plain-english/` (`CLAUDE.md` §Plain-English companions). Leave the index row to the integrator.
    - Add link theorems to existing principles where the text draws the link.
    - Type the encoder in Lean (`formal/lean/Usul/Typing/`): its facts go into the type of the qāʿida that states them, extending an existing qāʿida type where the text builds on it, then `make lean` regenerates the Prolog export.
    - Register the encoder in `pipeline/usul_corpus/encoders/<shard>.py`: `ENCODERS = {name: dict(facts=…, out=…, lean=…, py=…, qawaid=[…], sadi=[…])}`, shaped like `takhrij.CORE`. Never edit `takhrij.CORE` or `Usul/Refinements.lean`, unless you are making a conservative refinement of an encoder they already hold, with its `*_conservative` theorem.
@@ -23,8 +24,8 @@ The method is specified in `docs/architecture/derivation-method.md`; this is how
 6. **Evidence (lanes C/D/E).** Graded, verbatim evidence goes to `corpus/reconciliation/entries/<shard>.json`. Positions are added to cases as `revisions`, never by editing a case.
    - **Every `genuine_ikhtilaf` case gets a ledger entry**, on the madhhab side or off it. Its `grades` and `evidence` record who holds each position; they decide nothing.
    - **Weighing (tarjīḥ by proof)** goes to `corpus/reconciliation/weighing/<shard>.json`: for each position, the proofs its sources cite (`tier` per `Usul.Tarjih.Tier`, the `dalil`, a verbatim `excerpt_ar`), and any murajjiḥ the source itself states. Never attribute a proof to a position from memory; a position that cites none gets none. Report the `weighed`, `stages` and `standing` figures of `corpus/reconciliation/report.json`.
-7. **Gate locally.** Run `check_case` on your cases through `python -m usul_corpus takhrij`. Inspect the generated Lean, then discard the shared generated files with `git checkout -- ../formal/lean/UsulTest ../corpus/takhrij/report.json ../corpus/sheaf`. Also run `python -m pytest -q tests/test_dossier.py tests/test_reconcile.py tests/test_shards.py`, and the Lean build of your module where Lean is available.
-8. **Hand back.** Commit only the files you own: your claim, suite, encoder module, Lean module and fragments. Do not commit regenerated shared outputs, and put no totals in the report. List what you could not decide as register questions.
+7. **Gate locally.** Run `check_case` on your cases through `python -m usul_corpus takhrij`. Inspect the generated Lean, then discard the shared generated files with `git checkout -- ../formal/lean/UsulTest ../corpus/takhrij/report.json ../corpus/sheaf`. Also run `python -m pytest -q tests/test_dossier.py tests/test_reconcile.py tests/test_shards.py tests/test_plain_english.py -k 'not index'`, and the Lean build of your module where Lean is available.
+8. **Hand back.** Commit only the files you own: your claim, suite, encoder module, Lean module, its plain-English companion and fragments. Do not commit regenerated shared outputs, and put no totals in the report. List what you could not decide as register questions.
 
 ## As the integrator
 
@@ -32,6 +33,7 @@ Follow `docs/architecture/derivation-method.md` §5.3 for one round:
 - verify each contribution against its claim and base commit;
 - merge in a fixed order;
 - regenerate with `python -m usul_corpus takhrij`, `reconcile`, `worklist`, `routing`, then the types (`judgement`) before the categories built on them (`sheaf`), then `docs` and `signature`, and the type system's Prolog export with `make lean`;
+- give every Lean module the round adds or regenerates a plain-English companion, and add the shards' companions to the index in `docs/plain-english/README.md`;
 - self-apply: the revisit queue must end empty;
 - reconcile over the union;
 - run `make all`;

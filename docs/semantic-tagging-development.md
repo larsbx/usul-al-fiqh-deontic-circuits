@@ -88,7 +88,7 @@ mappings. The generated report now records:
 |---|---:|
 | Questions with candidate annotations | 53 / 53 |
 | Act-relative propositions | 365 |
-| Candidate roles | 1,073 |
+| Candidate roles | 1,074 |
 | Asserted / hypothetical / questioned / uncertain propositions | 248 / 18 / 73 / 26 |
 | Proposed bank mappings, all on hold | 58 |
 | Candidate typed fact bindings, all unreviewed | 2 |
@@ -137,6 +137,25 @@ exhaustive segmentation, reviewed interpretations, independent gold labels or an
 automatic semantic tagger. The initial 12 records still need the same review as
 the new 41. All subcases of a question must remain together in later evaluation;
 near-duplicate questions also require leakage review before any split is frozen.
+
+## PR #110 scope correction
+
+For question 128887, `p1` still asserts only the performed farewell
+circumambulation, with its act evidence unchanged at `[177,208)`. Its enclosing
+scope now extends to `[177,635)` to include the questioner's reported uncertainty
+about major ritual impurity and possible semen marks. A candidate condition role
+cites the exact body spans of `p3`, `p4` and `p6`, explicitly as uncertainty.
+The wider scope does not merge those propositions: their uncertain modalities,
+prior purity, inspection, omitted washing and other rites remain separate and
+unchanged. All three `doubt_in_condition` typed fields remain unknown.
+
+This adds one candidate role (1,074 total) without adding propositions, typed
+values or kernel executions. The focused regression exercises in-scope candidate
+fact probes on a copy solely to test structure, rejects the old narrow scope,
+and still rejects factual bindings from the separate uncertain propositions.
+Probe values are not annotations or entailment findings. A source-backed test
+also replays both deterministic artifacts against the pinned archive when
+materialized; CI requires that archive and fails if it is unavailable.
 
 ## Next obligation
 

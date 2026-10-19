@@ -12,6 +12,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Cat` | [Usul/Cat.md](Usul/Cat.md) | [doc](https://claude.ai/code/artifact/09453465-8fc6-4318-920a-0651ba72289b) |
 | `Usul.Cat.Basic` | [Usul/Cat/Basic.md](Usul/Cat/Basic.md) | [doc](https://claude.ai/code/artifact/a533ef02-7b97-4fba-ba96-5b17b8d26312) |
 | `Usul.Cat.Carriers` | [Usul/Cat/Carriers.md](Usul/Cat/Carriers.md) | [doc](https://claude.ai/code/artifact/19bfc2ed-0683-44d4-b814-d83a6bee0dcb) |
+| `Usul.Cat.Deduction` | [Usul/Cat/Deduction.md](Usul/Cat/Deduction.md) | pending |
 | `Usul.Cat.Factor` | [Usul/Cat/Factor.md](Usul/Cat/Factor.md) | [doc](https://claude.ai/code/artifact/0a0d9669-2526-4689-8268-957d58f6a0bc) |
 | `Usul.Cat.Institution` | [Usul/Cat/Institution.md](Usul/Cat/Institution.md) | [doc](https://claude.ai/code/artifact/da69b13c-c1fb-4603-8005-7419cbe340f5) |
 | `Usul.Cat.Interval` | [Usul/Cat/Interval.md](Usul/Cat/Interval.md) | [doc](https://claude.ai/code/artifact/e49760c6-3969-4ea4-b7e0-37bdf98f0ff1) |

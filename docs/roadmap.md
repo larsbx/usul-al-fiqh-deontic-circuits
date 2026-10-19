@@ -95,7 +95,7 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 - Generate explanations from derivation traces, not free-form verdict invention.
 
 Semantic tagging has a merged development implementation (PR #72) and a candidate
-pass covering all 53 IslamQA question IDs: 365 propositions, 1,073 candidate roles
+pass covering all 53 IslamQA question IDs: 365 propositions, 1,074 candidate roles
 and 58 bank mappings all on hold. Audit segmentation completeness, independently
 review interpretations and typed fact entailments, then evaluate on a separately
 frozen modern set. The two proposed typed values remain unreviewed. See the

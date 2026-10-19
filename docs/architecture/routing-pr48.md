@@ -84,3 +84,103 @@ Ranking by count of fields settled before share changes nothing, in either typin
 - All 57 misses are cases where the typist settled none of the right qāʿida's fields. The lexical tiebreak rescues 24 of those 81.
 
 Recall@5 is therefore about 0.66 + 0.34 × (the lexical rescue rate, here 0.30). Reaching 0.9 needs the typist to land on the right qāʿida about 86 % of the time, up from 66 %. The remaining lever is the typist's search over about 160 statements: for example, a shortlist from the strict-fold router, given as well as the full catalogue. Whether that is a real gain, and not circular, has to be measured on a fold it was not designed on.
+
+## Pilot: deduction to the qāʿida from the established conclusion
+
+This reads routing the other way round, as takhrīj al-uṣūl ʿalā al-furūʿ. Take the conclusion an authoritative position states, and the facts the text settles, and ask which accepted readings could have produced it. `Usul.Cat.Deduction` formalises it:
+- partial situations ordered by refinement, where settling a fact is an established state transition;
+- for each reading, the presheaf `Reach` of verdicts still attainable;
+- `sound`: a true restriction of a derivable case keeps its reading admissible;
+- `excluded_forever`: an exclusion survives every refinement.
+
+`pipeline/usul_corpus/deduction.py` computes `Reach` exhaustively for every encoder. Its tests replay the Lean instances and check soundness over every derivable case in the bank.
+
+On fold 0, with the re-typed situations, under the strict split:
+
+| Recall@5 | Encoder | Category |
+|---|---|---|
+| Hybrid (baseline) | 0.762 | 0.792 |
+| + the conclusion's question, taken from the annotation | **0.829** | 0.842 (0.904 at k = 10) |
+| + question and `Reach` ∋ conclusion | 0.817 | 0.833 |
+| + question, ranked by refinement distance to the conclusion | 0.767–0.787 | 0.787–0.808 |
+| + the question labelled blind, as a filter (first choice / first or second) | 0.412 / 0.512 | 0.458 / 0.554 |
+| + the question labelled blind, as a tiebreak only | 0.750 / 0.762 | 0.787 / 0.800 |
+
+**Result: no legitimate gain yet.** The lift comes entirely from the conclusion's question. Blind labellers recover the bank's question for only 45 % of cases (58 % with a second choice). The question is how the bank *formalised* the ruling: a right that «يسقط» can be encoded as a sabab lapsing, as a validity, or as a takyīf. That is an encoding choice the text does not fix, so the oracle figure leaks it.
+
+`Reach` itself adds nothing at today's typing density. The blind situations settle one or two facts, so almost every reading can still reach every verdict. In 3 cases it dropped the right reading because the blind typing contradicted the case.
+
+**What would make it work.**
+- **Conclusions stated in a form the text fixes**, independent of any reading's encoding: for example the act, the party and the effect («the pledge stays binding on the thing»). The bank would then need a map from each reading's output to that form. That is the typed answer layer (`Usul.Typing.Answers`) extended from questions to effects.
+- **Denser typing,** so that `Reach` prunes.
+
+The theory and the exhaustive mirror are kept, and are proven sound. Neither changes the routing index.
+
+### Follow-up: conclusions as effects the text fixes
+
+The question classes were an encoding choice. This round replaced them with an **effect** keyed to the conclusion's own operative verb: 17 kinds («يضمن» liable, «يصح» valid, «يسقط/يبقى» right_stands, «يجوز» permitted, «يتبعها» follows, «يدخل في» included, «في حكم» counts_as, «القول قوله» claim_accepted, …), each with a polarity. Each reading's output values were mapped to effects (bank-side metadata, 223 readings), and the 240 fold-0 texts were labelled blind. Recall@5 under the strict split:
+
+| | Recall@5 |
+|---|---|
+| Hybrid (baseline) | 0.762 |
+| Effect filter / through `Reach` | 0.521 / 0.475 |
+| Effect tiebreak / through `Reach` | 0.746 / 0.746 |
+| Effect kind only, tiebreak | 0.750 |
+| Kind plus effect transitions learned **on the same cases** (a leaky upper bound) | 0.767 |
+
+Blind effects agree with the mapped effect for **45 %** of cases (58 % by kind alone), the same as the question classes. Two causes:
+- A reading's furūʿ state the **consequence** of its verdict, not the verdict itself. Ibn Rajab 23's «the idhn lapses» appears in its furūʿ as «يجوز له وضع الخشب». Across the readings with three or more fold-0 cases, the furūʿ use 2.5 distinct effects per reading.
+- In ikhtilāf, the labeller marks the side the text leads with, while the bank records the side the kernel derives.
+
+Allowing transitions from verdict to consequence fixes the agreement, but saturates. Even learned leakily, almost every reading then reaches almost every effect, and the upper bound is 0.767. **A qāʿida's identity lies in its ground (the facts and conditions it turns on), not in its conclusion.** The conclusion side, however it is stated, does not route. What remains is the fact side: denser typing of the right qāʿida's ground.
+
+### Follow-up: denser typing with a router shortlist
+
+The ground is what routes, so this round raised how often the typist finds the right qāʿida's facts. Each case was re-typed blind. Before the full catalogue, the typist saw a **shortlist**: the 20 qāʿida types whose readings the strict-fold lexical router ranks highest for that text. The router is fitted without the case's qāʿida and keeps only the formalised statements, as in use. Only qāʿida identities and their statements are shown. All 240 cases were re-typed, not only earlier misses, to avoid selection by the gold.
+
+| Fold 0, strict split | Facts / nothing settled | @1 | @5 | @10 | Category @5 |
+|---|---|---|---|---|---|
+| Committed typing | 378 / 32 | 0.512 | 0.725 | 0.746 | 0.754 |
+| Richer catalogue | 320 / 39 | 0.629 | 0.762 | 0.783 | 0.792 |
+| **Router shortlist, then catalogue** | **403 / 8** | **0.704** | **0.812** | **0.817** | **0.833** |
+
+The case's own reading has a field settled in **187 of 240 (78 %)**, up from 66 %. As in every typing so far, each such case is in the top five. Of the 53 still unsettled, the lexical tiebreak rescues 8.
+
+Caveats:
+- The shortlist size was chosen after looking at fold 0. Of the cases the earlier typing had missed, the router's top 20 categories held the right one for 36 of 81, its top 30 for 43.
+- Fold 0 has 240 cases.
+
+A clean figure needs the procedure frozen and run on another fold. The arithmetic stands: recall@5 ≈ settled rate + (1 − settled rate) × the lexical rescue rate, so 0.9 needs about 88 % settled.
+
+### Validation on a fold the procedure was not designed on
+
+The shortlist procedure was frozen first: 20 types, the same prompt, the same scoring. It was then run on **record fold 1**, whose 235 cases nothing earlier had used. They were typed blind by four agents under fresh shuffled ids.
+
+| Fold 1, strict split | @1 | @5 | @10 |
+|---|---|---|---|
+| Lexical router alone | 0.298 | 0.502 | 0.566 |
+| **Shortlist typing, hybrid** | **0.685** | **0.860** | **0.877** |
+| The same, scored on category | 0.770 | **0.881** | 0.885 |
+
+The typists wrote 309 situations with 424 facts; 7 cases settle nothing. The case's own reading has a field settled in **186 of 235 (79 %)**, and all 186 are in the top five. That is the fourth typing in which a settled reading has always ranked there.
+
+**The procedure,** for use: the strict-fold router proposes the 20 most likely qāʿida types for a text; a blind typist reads their statements, decides which ground the ruling turns on, and settles those facts; the typed coverage ranks the readings, and the router breaks ties.
+
+**Where 0.9 now stands:** about 0.86–0.88 at k = 5 by category. The remaining step is the typing's recall of the right qāʿida, 79 % settled against the 88 % that 0.9 needs. The cases settling nothing are fragments and headings (7 of 235), not reachable by any typing.
+
+### Reproduction: is the reading step fixed by the texts?
+
+The procedure's deterministic steps regenerate from the corpus. The reading list and the strict rankings are identical, 235/235, to what the typists saw. Each settled fact carries a verbatim receipt from its unit's own text (tested). The one judgement step is the typist's reading. To test whether the texts fix it, a fresh typist re-typed 80 fold-1 cases (a fixed-seed sample) blind, under new ids, with the identical prompt and reading list.
+
+| 80 cases, two independent typings | Agreement |
+|---|---|
+| Identical sets of settled facts | 54 / 80 (68 %); mean Jaccard 0.78 |
+| Identical qāʿida types touched | 62 / 80 (78 %); disjoint in 9 |
+| The case's own reading settled in both, or in neither | 69 / 80 (86 %); κ ≈ 0.58 |
+| Strict recall@5 / @10 | first typing 0.887 / 0.912, second 0.850 / 0.875 |
+
+The figure reproduces within 0.04, but the reading step is only moderately reproducible. The disagreements are omissions, not rival readings. In 7 of the 9 disjoint cases one typist found the case's own qāʿida and the other found nothing or a neighbour, and across the 17 type disagreements one side found it in 10. The typists' notes name the cause: a field comes with its name and its qāʿida's statement but **no definition** («I couldn't tell what the field means»).
+
+**Next, to make the step text-defined:** give every field the phrase of its qāʿida's statement (or of the reading's docstring, which quotes it) that defines it. Many readings already do this, e.g. «`refusalForbidden`: the refusal is ḥarām on him («من حرم عليه الامتناع»)». A field with no such anchor is itself a finding: a fact the bank states that its source does not.
+
+**Follow-up (done).** The field anchors and the qāʿida scope are reported in [field anchors](field-anchors.md). Anchors raised field agreement to κ 0.69. Scope raised accuracy slightly (recall@1 0.75 / 0.73) but not agreement on the qāʿida. The disagreements are between cross-listed qawāʿid that the farʿ turns on together.

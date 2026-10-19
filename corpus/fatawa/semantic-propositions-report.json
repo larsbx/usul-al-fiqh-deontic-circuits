@@ -1,7 +1,7 @@
 {
   "status": "candidate",
   "source_sha256": "621fcd30c854a45407a5c303de8656c402eab4c59abde884a06038348ffbb205",
-  "annotations_sha256": "7a2a7039d4ccd9ee3d229b44be763cbbb974d77b987edb499eda85a74da0d5c8",
+  "annotations_sha256": "63e4874d2dd87d622df23726a33957b01490925cc373d178ba5374b5c6959089",
   "annotated_questions": 53,
   "available_questions": 53,
   "propositions": 365,
@@ -11,7 +11,7 @@
     "questioned": 73,
     "uncertain": 26
   },
-  "candidate_roles": 1073,
+  "candidate_roles": 1074,
   "candidate_fact_bindings": 2,
   "new_kernel_executions": 0,
   "semantic_accuracy": null,

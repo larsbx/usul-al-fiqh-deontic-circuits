@@ -3499,8 +3499,8 @@
             "source_id": "islamqa.128887",
             "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
             "start": 177,
-            "end": 208,
-            "quote": "أنا أديت طواف الوداع يوم الخميس"
+            "end": 635,
+            "quote": "أنا أديت طواف الوداع يوم الخميس ولكن كنت نائما في الحرم من الأربعاء وكنت على طهارة والحمد لله ولكن عندما استيقظت فجر الخميس فذهبت للوضوء كنت في شك من أمري – هل أنا على جنب أم لا – لأنه قد ينزل المنى بكميه صغيره جدا ولا استطيع التأكد ومع ذلك تحريت بشده حتى أتأكد لدرجه أنني تحريت العضو الذكرى نفسه وليس الثياب فقط-آسف في التعبير- وبنظرتي قلت أنه لا يوجد شيء ولكنى وجدت جزء من الثياب قد يكون فيه بعض المنى ولكنى غير متأكد أيضا لأنه قد تكون أثار قديمه في الثياب"
           },
           "roles": {
             "actor": {
@@ -3540,9 +3540,31 @@
               "evidence": []
             },
             "condition": {
-              "status": "unknown",
-              "value": null,
-              "evidence": []
+              "status": "candidate",
+              "value": "Reported doubt about major ritual impurity; possible small semen emission and possible old clothing marks remain uncertain, not established conditions.",
+              "evidence": [
+                {
+                  "source_id": "islamqa.128887",
+                  "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+                  "start": 334,
+                  "end": 354,
+                  "quote": "هل أنا على جنب أم لا"
+                },
+                {
+                  "source_id": "islamqa.128887",
+                  "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+                  "start": 357,
+                  "end": 409,
+                  "quote": "لأنه قد ينزل المنى بكميه صغيره جدا ولا استطيع التأكد"
+                },
+                {
+                  "source_id": "islamqa.128887",
+                  "text_sha256": "38a5bd62543e89538c8740303aa8545dd9193c49937658ba1f062e28331968d3",
+                  "start": 540,
+                  "end": 635,
+                  "quote": "وجدت جزء من الثياب قد يكون فيه بعض المنى ولكنى غير متأكد أيضا لأنه قد تكون أثار قديمه في الثياب"
+                }
+              ]
             },
             "time": {
               "status": "candidate",
@@ -4215,7 +4237,7 @@
           }
         }
       ],
-      "review_note": "Keep prior purity, suspected emission, old-mark alternative, omitted washing and performed rites separate."
+      "review_note": "Keep prior purity, suspected emission, old-mark alternative, omitted washing and performed rites separate. p1 retains the asserted circumambulation act at [177,208), with an act-relative scope through [177,635) to contain the reported uncertainty. Overlap does not pool the separately stated acts or assert impurity: p3, p4 and p6 remain uncertain, and every typed mapping field stays unknown pending independent entailment review."
     },
     {
       "source_id": "islamqa.131070",

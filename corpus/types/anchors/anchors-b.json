@@ -1,0 +1,520 @@
+{
+ "entries": [
+  {
+   "type": "rajab1",
+   "field": "running",
+   "gloss": "the water is running (jārī), not standing: judged jirya by jirya",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p003",
+    "excerpt_ar": "الماء الجاري"
+   }
+  },
+  {
+   "type": "rajab2",
+   "field": "hair_or_nail",
+   "gloss": "the part in question is the animal's hair or nail, which counts as detached from it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p004",
+    "excerpt_ar": "شعر الحيوان في حكم المنفصل عنه لا في حكم المتصل، وكذلك الظفر"
+   }
+  },
+  {
+   "type": "rajab3",
+   "field": "separable",
+   "gloss": "the excess over what suffices is distinct and separable from it (a voluntary addition on its own)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p005",
+    "excerpt_ar": "إن كانت الزيادة متميزة منفصلة"
+   }
+  },
+  {
+   "type": "rajab3",
+   "field": "lightened",
+   "gloss": "the whole was originally the duty and part of it was dropped as a lightening (the traveller's four)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p006",
+    "excerpt_ar": "ما كان الأصل فرضيته ووجوبه ثم سقط بعضه تخفيفا"
+   }
+  },
+  {
+   "type": "rajab3",
+   "field": "following",
+   "gloss": "the excess is performed in following an imām, where it may count as the obligatory (the latecomer's rukūʿ)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p005",
+    "excerpt_ar": "تجري الزيادة مجرى الواجب في باب الاتباع خاصة"
+   }
+  },
+  {
+   "type": "rajab4",
+   "field": "cause_present",
+   "gloss": "the cause of the obligation (sabab al-wujūb) has occurred before the act is advanced",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p006",
+    "excerpt_ar": "ويجوز تقديمها بعد سبب الوجوب"
+   }
+  },
+  {
+   "type": "rajab5",
+   "field": "due_at_performance",
+   "gloss": "the advanced act was his duty as things stood when he performed it, so he was discharged by it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p007",
+    "excerpt_ar": "كان فرضه في الظاهر فبرئ به"
+   }
+  },
+  {
+   "type": "rajab5",
+   "field": "kaffara_changed",
+   "gloss": "an expiation advanced by fasting, the oath then broken while he is well off (the state at obligation changed)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p007",
+    "excerpt_ar": "إذا كفر بالصوم قبل الحنث ثم حنث وهو موسر"
+   }
+  },
+  {
+   "type": "rajab9",
+   "field": "target",
+   "gloss": "what the prohibition attaches to: the worship itself, a condition specific to it, a condition not specific to it, or what is no condition",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p012",
+    "excerpt_ar": "إن كان التحريم عائدا إلى ذات العبادة على وجه يختص بها لم يصح، وإن كان عائدا إلى شرطها"
+   }
+  },
+  {
+   "type": "rajab10",
+   "field": "meaning_only",
+   "gloss": "the wording is one whose meaning counts and not its letter (contract and divorce formulae)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p013",
+    "excerpt_ar": "ما يعتبر معناه دون لفظه"
+   }
+  },
+  {
+   "type": "rajab10",
+   "field": "able",
+   "gloss": "the speaker is able to say the Arabic wording (its letter counts only with ability)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p013",
+    "excerpt_ar": "ما يعتبر لفظه مع القدرة عليه دون العجز عنه"
+   }
+  },
+  {
+   "type": "rajab11",
+   "field": "narrow",
+   "gloss": "the obligation's time is narrow (muḍayyaq), not extended",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p013",
+    "excerpt_ar": "وإن كانت مضيقة لم تصح على الصحيح"
+   }
+  },
+  {
+   "type": "rajab11",
+   "field": "financial",
+   "gloss": "the voluntary act is financial (ṣadaqa before the due zakāt), the carve-out from narrowness",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p014",
+    "excerpt_ar": "وأما الزكاة فقال الأصحاب يصح أن يتنفل بالصدقة قبل أدائها وإن كانت على الفور"
+   }
+  },
+  {
+   "type": "rajab12",
+   "field": "substitutes",
+   "gloss": "the transmitted forms are substitutes for one another, so they are not combined",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p015",
+    "excerpt_ar": "فأحد اللفظين بدل عن الآخر ولا يصح الجمع بين البدل والمبدل"
+   }
+  },
+  {
+   "type": "rajab13",
+   "field": "known_cause_fit",
+   "gloss": "a cause fit to produce the effect is established in its locus",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p015",
+    "excerpt_ar": "ووجدنا في محله علة صالحة له"
+   }
+  },
+  {
+   "type": "rajab13",
+   "field": "zahir_points_elsewhere",
+   "gloss": "the apparent (ẓāhir) refers the effect to another cause, so aṣl and ẓāhir diverge",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p015",
+    "excerpt_ar": "وقد تظهر الإحالة على غيرها فيختلفان"
+   }
+  },
+  {
+   "type": "rajab14",
+   "field": "harmless",
+   "gloss": "binding both men costs no right (as purification does), unlike forcing one to cut his ownership",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p019",
+    "excerpt_ar": "بخلاف إيجاب الطهارة عليهما فإنه لا ضرر فيه"
+   }
+  },
+  {
+   "type": "rajab14_certainty",
+   "field": "each_certain",
+   "gloss": "each man is certain of his own prior purity and doubts only the breach",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p018",
+    "excerpt_ar": "كل واحد منهما متيقن للطهارة شاك في الحدث"
+   }
+  },
+  {
+   "type": "rajab15",
+   "field": "separate_matters",
+   "gloss": "the matters are separate, each kept on its own aṣl rather than carrying the other's corollary",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p020",
+    "excerpt_ar": "فيبقى في كل منهما على أصله"
+   }
+  },
+  {
+   "type": "rajab17",
+   "field": "same_cost",
+   "gloss": "the one noble act and the many acts cost the same time (or money)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p022",
+    "excerpt_ar": "وصلاة أربع ركعات في زمن واحد"
+   }
+  },
+  {
+   "type": "rajab19",
+   "field": "making_up",
+   "gloss": "the duty in question is a making-up (qaḍāʾ), for which ability to perform is required",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p027",
+    "excerpt_ar": "وأما قضاء العبادات فاعتبر الأصحاب له إمكان الأداء"
+   }
+  },
+  {
+   "type": "rajab20",
+   "field": "from_substance",
+   "gloss": "the growth is generated from the thing's substance, not from earnings",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p027",
+    "excerpt_ar": "النماء المتولد من العين حكمه حكم الجزء"
+   }
+  },
+  {
+   "type": "rajab23",
+   "field": "refusal_forbidden",
+   "gloss": "the refusal is forbidden to him: what is asked of him he may not withhold",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p031",
+    "excerpt_ar": "من حرم عليه الامتناع"
+   }
+  },
+  {
+   "type": "rajab23",
+   "field": "mere_permission",
+   "gloss": "what is asked of him is a bare permission (idhn), not a disposition (taṣarruf)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p031",
+    "excerpt_ar": "أن يكون المطلوب منه إذنا مجردا"
+   }
+  },
+  {
+   "type": "rajab24",
+   "field": "on_property",
+   "gloss": "the due right attaches to the property itself",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p033",
+    "excerpt_ar": "إن كان الحق متعلقا بالمال نفسه لم يسقط"
+   }
+  },
+  {
+   "type": "rajab24",
+   "field": "reason_ceases",
+   "gloss": "the right attaches to the owner for a reason that ceases when the property leaves him",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p033",
+    "excerpt_ar": "وإن كان متعلقا بمالكه لمعنى زال بانتقاله عنه سقط"
+   }
+  },
+  {
+   "type": "rajab25",
+   "field": "follows_in_sale",
+   "gloss": "the attached or generated thing is one that follows the thing in sale",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p035",
+    "excerpt_ar": "أن ما يتبع العبد من الثياب في البيع يتبعه هاهنا"
+   }
+  },
+  {
+   "type": "rajab27",
+   "field": "benefits_other",
+   "gloss": "the benefit of the destroying or spoiling act goes to another, not to the actor",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p037",
+    "excerpt_ar": "وإن كان النفع يعود إلى غيره فعليه الضمان"
+   }
+  },
+  {
+   "type": "rajab28",
+   "field": "other_act_permitted",
+   "gloss": "the other of the two acts causing the loss was permitted",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p037",
+    "excerpt_ar": "إذا حصل التلف من فعلين أحدهما مأذون فيه"
+   }
+  },
+  {
+   "type": "rajab29",
+   "field": "at_fault",
+   "gloss": "the one who exceeded the tolerated amount is at fault (negligence, transgression), as the agent and the sacrificer are",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p039",
+    "excerpt_ar": "لأن هذا لا ينسب فيه إلى تفريط وتعد بخلاف الوكيل والمضحي"
+   }
+  },
+  {
+   "type": "rajab30",
+   "field": "failed_to_count",
+   "gloss": "what was given out for the duty failed to count for it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p040",
+    "excerpt_ar": "ثم تعيبت فإنها لا تجزيه"
+   }
+  },
+  {
+   "type": "rajab31",
+   "field": "failure",
+   "gloss": "how the undertaking failed: corrupted after a binding start, prevented (iḥṣār), or the designated offering lost with or without fault",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p040",
+    "excerpt_ar": "من شرع في عبادة تلزم بالشروع ثم فسدت"
+   }
+  },
+  {
+   "type": "rajab32",
+   "field": "known_period",
+   "gloss": "the excepted benefit is for a known period",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p041",
+    "excerpt_ar": "استثناء منفعة العين المنتقل ملكها من ناقلها مدة معلومة"
+   }
+  },
+  {
+   "type": "rajab32",
+   "field": "tolerates_uncertainty",
+   "gloss": "the transfer is one where an uncertain period does no harm (waqf, manumission: for his life)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p041",
+    "excerpt_ar": "لأن جهالة المدة هنا لا تؤثر"
+   }
+  },
+  {
+   "type": "rajab33",
+   "field": "implicit",
+   "gloss": "the exception arises by law (ḥukmī), not by stated wording, and so tolerates uncertainty",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p041",
+    "excerpt_ar": "الاستثناء الحكمي هل هو كالاستثناء اللفظي أم تغتفر فيه الجهالة بخلاف اللفظي"
+   }
+  },
+  {
+   "type": "rajab34",
+   "field": "binding_contract",
+   "gloss": "the benefits are owed to another under a binding contract (lease, marriage)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p042",
+    "excerpt_ar": "استحقاق منافع العبد بعقد لازم"
+   }
+  },
+  {
+   "type": "rajab35",
+   "field": "perpetual_commutative",
+   "gloss": "the contract by which the benefit was owned is perpetual and commutative (nikāḥ)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p043",
+    "excerpt_ar": "وإن كان عقد معاوضة وهو النكاح انفسخ بملك الرقبة"
+   }
+  },
+  {
+   "type": "rajab36",
+   "field": "succeeds_lessor",
+   "gloss": "the new holder succeeds the lessor in his property and takes ownership from him (heir, buyer, ward come of age)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p045",
+    "excerpt_ar": "أن ينتقل الملك إلى من خلفه في ماله ويقوم مقامه ويتلقى الملك عنه"
+   }
+  },
+  {
+   "type": "rajab37",
+   "field": "successive",
+   "gloss": "a second, different contract comes upon the same thing after the first",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p046",
+    "excerpt_ar": "في توارد العقود المختلفة بعضها على بعض"
+   }
+  },
+  {
+   "type": "rajab37",
+   "field": "earlier_binding",
+   "gloss": "the earlier contract is binding (here the loan is not)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p047",
+    "excerpt_ar": "ويسقط ضمان العارية لأنها ليست لازمة"
+   }
+  },
+  {
+   "type": "rajab37",
+   "field": "later_binding",
+   "gloss": "the later contract is binding (the pledge that comes upon the loan)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p047",
+    "excerpt_ar": "وعقد هذه الأمانة لازم"
+   }
+  },
+  {
+   "type": "rajab38",
+   "field": "other_contract_possible",
+   "gloss": "the words can be taken as an allusion to another contract that is valid in that form",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p048",
+    "excerpt_ar": "أو يجعل كناية عما يمكن صحته على ذلك الوجه"
+   }
+  },
+  {
+   "type": "rajab39",
+   "field": "needs_witnessing",
+   "gloss": "the contract requires witnessing (nikāḥ), which cannot fall on an intention",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p049",
+    "excerpt_ar": "سوى النكاح لاشتراط الشهادة عليه وهي لا تقع على النية"
+   }
+  },
+  {
+   "type": "rajab40",
+   "field": "tied_to_ain",
+   "gloss": "the ruling attaches to the thing itself as a binding right, not to one ownership",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p050",
+    "excerpt_ar": "النوع الثاني ما يتعلق الحكم فيه بنفس العين من حيث هي تعلقا لازما"
+   }
+  },
+  {
+   "type": "rajab40",
+   "field": "holder_consented",
+   "gloss": "the holder of the right consented to its lapse (without his consent it does not lapse)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p051",
+    "excerpt_ar": "والظاهر أن الرهن لا يبطل بعد لزومه بدون رضى المرتهن"
+   }
+  },
+  {
+   "type": "rajab41",
+   "field": "bound_to_thing",
+   "gloss": "a right is bound to the destroyed thing as a binding attachment",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p053",
+    "excerpt_ar": "إذا تعلق بعين حق تعلقا لازما"
+   }
+  },
+  {
+   "type": "rajab42",
+   "field": "held_by_consent",
+   "gloss": "the property came into his hand with its owner's consent (a trust)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p053",
+    "excerpt_ar": "الأمانات التي حصلت في يد المؤتمن برضى صاحبها"
+   }
+  },
+  {
+   "type": "rajab42",
+   "field": "guaranteed",
+   "gloss": "the property held is guaranteed (maḍmūn) by him",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p054",
+    "excerpt_ar": "الأعيان المضمونة فتجب المبادرة إلى الرد بكل حال"
+   }
+  },
+  {
+   "type": "rajab43",
+   "field": "withholds",
+   "gloss": "the holder withholds the thing from its owner rather than offering it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p055",
+    "excerpt_ar": "فإن كان ممتنعا من تسليمه فهو غاصب إلا حيث يجوز الامتناع من التسليم"
+   }
+  },
+  {
+   "type": "rajab43",
+   "field": "ended_by_holder",
+   "gloss": "the contract's ending came by a cause of the one holding the thing, alone or shared",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p056",
+    "excerpt_ar": "إن كان انتهاء العقد بسبب يستقل به من هو في يده كفسخ المشتري أو يشارك فيه الآخر"
+   }
+  },
+  {
+   "type": "rajab46",
+   "field": "binding",
+   "gloss": "the void contract is of the binding kind (lāzim), not the permissive",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p066",
+    "excerpt_ar": "والنوع الثاني: العقود اللازمة"
+   }
+  },
+  {
+   "type": "rajab46",
+   "field": "pervasive",
+   "gloss": "the contract carries a ruling built on predominance and spreading (nikāḥ, kitāba)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p066",
+    "excerpt_ar": "ما يترتب عليه حكم مبني على التغليب والسراية والنفوذ فهو منعقد"
+   }
+  },
+  {
+   "type": "rajab47",
+   "field": "contract_liability",
+   "gloss": "the liability is a contract liability (ḍamān ʿaqd), measured by the named consideration, not a liability for loss",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p068",
+    "excerpt_ar": "ضمان المهر في النكاح الفاسد ضمان عقد كضمانه في الصحيح"
+   }
+  },
+  {
+   "type": "rajab49",
+   "field": "qabd_completes",
+   "gloss": "taking possession is part of the contract's completion (salam, ribawī exchange), not merely its effect",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p071",
+    "excerpt_ar": "أن يكون القبض من تمام العقد"
+   }
+  },
+  {
+   "type": "rajab50",
+   "field": "acquisition_necessity",
+   "gloss": "the forced acquisition is by necessity (the starving man taking another's food)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p072",
+    "excerpt_ar": "التملك الاضطراري كمن اضطر إلى طعام الغير"
+   }
+  },
+  {
+   "type": "rajab50",
+   "field": "shufa",
+   "gloss": "the forced acquisition is the taking by pre-emption (shufʿa)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p073",
+    "excerpt_ar": "التمليكات المشروعة لإزالة ضرر ما كالأخذ بالشفعة"
+   }
+  },
+  {
+   "type": "rajab10",
+   "field": "need_not_learn",
+   "gloss": "the act is not itself due by the law's origin (nikāḥ, liʿān), so he need not learn the Arabic",
+   "unanchored": "the qāʿida leaves nikāḥ with ability to learn at two wujūh («ومع القدرة على التعلم فيه وجهان»); the ground that what is not due needs no learning is al-Kashshāf's («لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم»), introduced by the refinement"
+  },
+  {
+   "type": "rajab50",
+   "field": "solvent",
+   "gloss": "the pre-emptor is solvent for the price",
+   "unanchored": "the qāʿida names no solvency condition: it reports two wujūh on owning the shufʿa before payment; «إذا كان مليئا بالثمن» is al-Inṣāf's and al-Iqnāʿ's condition, introduced by the refinement"
+  }
+ ]
+}

@@ -74,7 +74,7 @@ integration does not promote the interpretations to reviewed facts. The committe
 |---|---|
 | Distinct questions behind 123 IslamQA cases | 53 |
 | Questions with an initial candidate pass / without one | 53 / 0 |
-| Act-relative propositions / candidate roles | 365 / 1,073 |
+| Act-relative propositions / candidate roles | 365 / 1,074 |
 | Proposed bank mappings | 58, all on hold |
 | Candidate typed fact values | 2, unreviewed (`trust_loss.hand = trustee`, questions 4652 and 152192) |
 | New kernel executions | 0 |
@@ -523,4 +523,3 @@ semantic-categorical-oracle/
 - **Proof debt:** zero `sorry` on `main` for completed milestones.
 - **Differential parity:** Lean ↔ Haskell disagreements = 0 on the fixture corpus.
 - **Provenance:** 100% of accepted records resolve to a pinned-edition locator.
-
