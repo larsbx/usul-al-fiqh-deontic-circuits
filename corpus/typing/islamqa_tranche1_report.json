@@ -7,7 +7,7 @@
   "situations": 138,
   "fields_stated": 187,
   "cases": 123,
-  "encoders": 202,
+  "encoders": 223,
   "applies": 0.3577,
   "recall": {
     "1": 0.3008,
@@ -21,13 +21,13 @@
   },
   "lexical_recall": {
     "1": 0.0,
-    "5": 0.2195,
+    "5": 0.2114,
     "10": 0.2846
   },
   "hybrid_recall": {
     "1": 0.5203,
     "5": 0.6911,
-    "10": 0.7317
+    "10": 0.7236
   },
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {

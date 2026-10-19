@@ -56,6 +56,12 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Readings.RajabA23` | [Usul/Readings/RajabA23.md](Usul/Readings/RajabA23.md) | [doc](https://claude.ai/code/artifact/9fb02296-35de-456a-bd2a-1039c961c4fc) |
 | `Usul.Readings.RajabA24` | [Usul/Readings/RajabA24.md](Usul/Readings/RajabA24.md) | [doc](https://claude.ai/code/artifact/41249e4c-1ee8-4882-b580-c27080972c9f) |
 | `Usul.Readings.RajabA25` | [Usul/Readings/RajabA25.md](Usul/Readings/RajabA25.md) | [doc](https://claude.ai/code/artifact/7c19a98e-a24c-4a3c-8938-43841315cfae) |
+| `Usul.Readings.RajabA26` | [Usul/Readings/RajabA26.md](Usul/Readings/RajabA26.md) | pending |
+| `Usul.Readings.RajabA27` | [Usul/Readings/RajabA27.md](Usul/Readings/RajabA27.md) | pending |
+| `Usul.Readings.RajabA28` | [Usul/Readings/RajabA28.md](Usul/Readings/RajabA28.md) | pending |
+| `Usul.Readings.RajabA29` | [Usul/Readings/RajabA29.md](Usul/Readings/RajabA29.md) | pending |
+| `Usul.Readings.RajabA30` | [Usul/Readings/RajabA30.md](Usul/Readings/RajabA30.md) | pending |
+| `Usul.Readings.RajabA31` | [Usul/Readings/RajabA31.md](Usul/Readings/RajabA31.md) | pending |
 | `Usul.Readings.RajabA3` | [Usul/Readings/RajabA3.md](Usul/Readings/RajabA3.md) | [doc](https://claude.ai/code/artifact/37868f30-12f7-4cc7-b2ba-4006a8fb720c) |
 | `Usul.Readings.RajabA4` | [Usul/Readings/RajabA4.md](Usul/Readings/RajabA4.md) | [doc](https://claude.ai/code/artifact/df197435-a636-40fe-ac07-fc953c890d2a) |
 | `Usul.Readings.RajabA5` | [Usul/Readings/RajabA5.md](Usul/Readings/RajabA5.md) | [doc](https://claude.ai/code/artifact/fd0baab1-894e-4777-87aa-f5c84ab3556b) |

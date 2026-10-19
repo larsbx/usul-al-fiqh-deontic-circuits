@@ -1,18 +1,20 @@
 {
-  "entries": 596,
-  "weighed": 596,
-  "proofs": 1855,
+  "entries": 682,
+  "weighed": 598,
+  "proofs": 1861,
   "advantages": 11,
   "stages": {
     "jam": 20,
     "naskh": 1,
-    "tarjih": 235,
-    "tawaqquf": 340
+    "tarjih": 236,
+    "tawaqquf": 341,
+    "unweighed": 84
   },
   "standing": {
     "against_reading": 80,
-    "for_reading": 176,
-    "tawaqquf": 340
+    "for_reading": 177,
+    "tawaqquf": 341,
+    "unweighed": 84
   },
   "worklist": {
     "two_usul_reinforced_governs": [
@@ -186,7 +188,21 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007"
     ]
   },
-  "weighing_worklist": {},
+  "weighing_worklist": {
+    "a29_haml_hukm_before_separation": 14,
+    "a27_specific_agent_in_general_object": 12,
+    "a26_ihala_on_known_cause": 11,
+    "rajab_a28_faskh_growth_returns": 9,
+    "a26_refused_idhn_lapses": 8,
+    "a27_ain_ruling_survives_owner_change": 6,
+    "a31_rajab88_road_use": 5,
+    "rajab_a28_toward_ownership_growth": 5,
+    "a29_four_kinds_of_milk": 4,
+    "a31_rajab87_transfer_of_holding": 4,
+    "rajab_a28_growth_follows_hand": 4,
+    "rajab_a28_growth_in_nonownership_contract": 1,
+    "rajab_a28_right_reaches_growth": 1
+  },
   "tarjih_against_unproven": {
     "note": "tarjīḥ in which every other reported ruling cites no proof (Usul.Tarjih.beats_unproven)",
     "count": 104,
@@ -242,7 +258,7 @@
   },
   "attribution": {
     "note": "what the reported holders' labels favour (Usul.Reconcile); a record, not a tarjīḥ",
-    "evidence_items": 2118,
+    "evidence_items": 2293,
     "side_checks": [
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -254,15 +270,15 @@
     "stages": {
       "jam": 20,
       "naskh": 1,
-      "tarjih": 561,
-      "tawaqquf": 14
+      "tarjih": 640,
+      "tawaqquf": 21
     },
     "standing": {
-      "against_reading": 171,
-      "for_reading": 411,
-      "tawaqquf": 14
+      "against_reading": 196,
+      "for_reading": 465,
+      "tawaqquf": 21
     },
-    "labels_agree_with_proofs": 184,
+    "labels_agree_with_proofs": 185,
     "review": [
       "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
@@ -321,6 +337,12 @@
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f002",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f003",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f004",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
+      "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f003",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f012",
       "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009"
     ]

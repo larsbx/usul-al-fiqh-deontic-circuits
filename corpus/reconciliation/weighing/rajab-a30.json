@@ -1,0 +1,50 @@
+{
+  "suite": "reconciliation-weighing",
+  "status": "candidate",
+  "provenance": "Shard rajab-a30: the proofs al-Mughnī and Ibn Rajab's record cite for each position of q085.f008, weighed under docs/architecture/taarud-reconciliation.md §redesign (tiers per Rawḍa v02 p389–390); every excerpt located verbatim in the pinned witness. No human review yet.",
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
+      "proofs": [
+        {
+          "position": 0,
+          "tier": "aqrabSahabi",
+          "dalil": "ʿUmar ordered Muḥammad b. Maslama to let al-Ḍaḥḥāk b. Khalīfa run his channel through his land, since it benefited him and did him no harm.",
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p371",
+          "excerpt_ar": "فقال له عمر: لم تمنع أخاك ما ينفعه، وهو لك نافع، تشربه أولا وآخرا؟ فقال محمد: لا والله. فقال عمر: والله ليمرن به",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "al-Mughnī's proof for the riwāya of permission (position 0), from Mālik's Muwaṭṭaʾ and Saʿīd's Sunan. In the same passage it is contradicted by Muḥammad b. Maslama's own word, so a ṣaḥābī view where the ṣaḥāba disagreed: aqrabSahabi."
+        },
+        {
+          "position": 0,
+          "tier": "aqrabSahabi",
+          "dalil": "ʿUmar's judgement in the case is the ground of the riwāya that the need establishes the right.",
+          "ref": "src:openiti-rajab-shamela21730/v01:p191",
+          "excerpt_ar": "إجراء الماء في أرض غيره إذا اضطر إلى ذلك في إحدى الروايتين لقضاء عمرته",
+          "who": "Ibn Rajab, al-Qawāʿid",
+          "note": "The record itself names the judgement («لقضاء عمرته», so the witness) as the riwāya's ground. Same ṣaḥābī view, disputed by Muḥammad b. Maslama: aqrabSahabi."
+        },
+        {
+          "position": 1,
+          "tier": "qiyas",
+          "dalil": "It is disposing of another's land without his leave, so it is barred, as where no compulsion calls for it; such need does not make another's property lawful, as it does not make lawful sowing or building in it.",
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p371",
+          "excerpt_ar": "إحداهما، لا يجوز؛ لأنه تصرف في أرض غيره بغير إذنه، فلم يجز، كما لو لم تدع إليه ضرورة",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "An analogy with the case without compulsion, so qiyas."
+        },
+        {
+          "position": 1,
+          "tier": "aqrabSahabi",
+          "dalil": "Muḥammad b. Maslama, a ṣaḥābī, refused, and his word opposes ʿUmar's.",
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v04:p371",
+          "excerpt_ar": "والأول أقيس، وقول عمر يخالفه قول محمد بن مسلمة، وهو موافق للأصول، فكان أولى",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "al-Mughnī sets Muḥammad b. Maslama's word against ʿUmar's. The ground it adds, «وهو موافق للأصول», is agreement with the uṣūl, a qiyās-domain advantage that does not weigh ṣaḥābī views; no advantage is recorded."
+        }
+      ],
+      "advantages": [],
+      "positions_sha256": "f1d0462f5608e684a1ed5ed35f38a026c62e4c75f8970e35caa7788dc32b3e63"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "suite": "reconciliation-weighing",
+  "status": "candidate",
+  "provenance": "Shard rajab-a26: the proofs Ibn Rajab himself cites for the positions of its disputed furūʿ, recorded only where the record names one, every excerpt located verbatim in the pinned witness; tiers per Rawḍa v02 p389–390. No human review yet.",
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f002",
+      "proofs": [
+        {
+          "position": 0,
+          "tier": "zanni",
+          "dalil": "The ḥadīth of ʿAdī b. Ḥātim on game found after it was lost to sight",
+          "ref": "src:openiti-rajab-shamela21730/v01:p016",
+          "excerpt_ar": "سهمه فهل يحل أكله؟ على روايتين أصحهما أنه يحل لحديث عدي بن حاتم.",
+          "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+          "note": "Ibn Rajab grounds the aṣaḥḥ riwāya of ḥill in the ḥadīth by name only: a ẓannī text."
+        },
+        {
+          "position": 1,
+          "tier": "fatwaSahabi",
+          "dalil": "Ibn ʿAbbās: «كل ما أصميت ودع ما أنميت»",
+          "ref": "src:openiti-rajab-shamela21730/v01:p016",
+          "excerpt_ar": "والثانية: لا يحل لقول ابن عباس رضي الله عنهما كل ما أصميت ودع ما أنميت",
+          "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+          "note": "The second riwāya rests on a Companion's saying: fatwā of a ṣaḥābī."
+        }
+      ],
+      "advantages": [],
+      "positions_sha256": "63be69ec91a59d4cc50a17ad5fbee4452088db6cc981b099dfc7d268656f26c8"
+    }
+  ]
+}

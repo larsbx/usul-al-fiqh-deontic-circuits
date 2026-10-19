@@ -3,15 +3,28 @@
   "status": "candidate",
   "set": "corpus/fatawa/takhrij/islamqa_tranche1.json",
   "text": "title and question",
+  "label": "category",
   "cases": 123,
   "recall": {
-    "1": 0.0,
-    "5": 0.2195,
-    "10": 0.2846
+    "1": 0.0244,
+    "5": 0.1626,
+    "10": 0.1951
   },
   "prior": {
     "1": 0.0,
     "5": 0.2195,
     "10": 0.2195
+  },
+  "encoder": {
+    "recall": {
+      "1": 0.0,
+      "5": 0.2114,
+      "10": 0.2846
+    },
+    "prior": {
+      "1": 0.0,
+      "5": 0.2195,
+      "10": 0.2195
+    }
   }
 }

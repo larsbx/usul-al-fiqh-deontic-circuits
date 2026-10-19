@@ -1,0 +1,545 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f000",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Najāsa by iḥāla is the aṣḥāb's; the ṭahāra wajh is a takhrīj by later scholars. No later taṣḥīḥ located; Ibn Rajab's own «والأولى أولى» is ambiguous between them.",
+      "positions_sha256": "521eff195cf8aadbcb45be5a614a542965f3aa605ece3acdb322ed64ab51cf78"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No ghusl, the wetness referred to the madhy cause: Aḥmad's naṣṣ, and al-Inṣāf's «على الصحيح من المذهب»; against it a reported riwāya of wujūb al-ghusl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v01:p229",
+          "excerpt_ar": "تنبيه: محل الخلاف في أصل المسألة: إذا لم يسبق نومه ملاعبة، أو برد، أو نظر، أو فكر، أو نحوه. فإن سبق نومه ذلك: لم يجب الغسل على الصحيح من المذهب، وعنه يجب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The tanbīh on the place of the khilāf over wetness found on waking: with a prior cause, no ghusl «على الصحيح من المذهب», and a riwāya of wujūb."
+        }
+      ],
+      "positions_sha256": "33eac0af586484745270a59bdee4a9e4d5bda095559becb931120c88526302af"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f002",
+      "grades": [
+        [
+          "tashih",
+          "nass"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ḥalāl prevails: Ibn Rajab's «أصحهما» and al-Inṣāf's «هذا المذهب»; the riwāya of prohibition stands on Ibn ʿAbbās's saying.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p424",
+          "excerpt_ar": "قوله (وإن رمى صيدا. فغاب عنه، ثم وجده ميتا لا أثر به غير سهمه: حل) . وكذا لو رماه على شجرة، أو جبل، فوقع على الأرض. هذا المذهب. قال في الفروع: حل على الأصح.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The matn's «حل» for game found dead with only his arrow's trace, labelled «هذا المذهب»."
+        }
+      ],
+      "positions_sha256": "63be69ec91a59d4cc50a17ad5fbee4452088db6cc981b099dfc7d268656f26c8"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f003",
+      "grades": [
+        "wajh",
+        [
+          "wajh",
+          "jazm"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Arsh only is al-Inṣāf's «الصحيح من المذهب», asserted by some aṣḥāb on the certain part and barāʾat al-dhimma; the whole is a qīl, preferred as «أقيس» in al-Sharḥ and «أظهر» in al-Furūʿ.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p545",
+          "excerpt_ar": "إذا جرحه وغاب عنه، ثم وجده ميتا، ولا يعلم: هل موته بجنايته أم لا؟ فالصحيح من المذهب: أن حكمه حكم ما جرحه وغاب ولم يعلم خبره",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Found dead after wounding, not known whether by his wound: as the wounded game lost to sight, «فالصحيح من المذهب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p545",
+          "excerpt_ar": "وقيل: يضمنه كله هنا، وهو احتمال في المغني، والشرح. لأنه وجد سبب إتلافه منه، ولم يعلم له سببا آخر، فوجب إحالته على السبب المعلوم.",
+          "position": 0,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The qīl that he owes the whole, with its ground in the words of iḥāla: «فوجب إحالته على السبب المعلوم»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p546",
+          "excerpt_ar": "قال الشارح: وهذا أقيس. قال في الفروع: وهذا أظهر كنظائره، وأطلقهما في المحرر، والقواعد.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Sharḥ's «أقيس» and al-Furūʿ's «أظهر كنظائره» for the whole."
+        }
+      ],
+      "positions_sha256": "009668fabdf4c61df885f1caba9ef012b98d56e4c4cc1a62b01d6c37e60ae432"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f005",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh that al-Inṣāf leaves without a madhhab label (al-Muḥarrar and al-Furūʿ give both), each corrected by some later works.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p493",
+          "excerpt_ar": "أحدهما: تكون أم ولد. وقدمه في الرعايتين، والحاوي الصغير. وصححه أيضا في الرعاية في آخر الباب وإدراك الغاية.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The first wajh, umm walad: put first in al-Riʿāyatayn and al-Ḥāwī, corrected in al-Riʿāya."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p493",
+          "excerpt_ar": "والثاني: لا تكون أم ولد. صححه في التصحيح، والنظم. وجزم به في الوجيز، في آخر كتاب الإقرار.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The second wajh, not umm walad: corrected in al-Taṣḥīḥ and al-Naẓm, al-Wajīz stating it decisively."
+        }
+      ],
+      "positions_sha256": "a5c862420f0fc081f9015825d1a04445569c3b1849b8c86f330fb2c755bde947"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f006",
+      "grades": [
+        [
+          "wajh",
+          "tashih"
+        ],
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The madhhab (al-Inṣāf) requires «في ملكه»; the reading's side is al-Majd's preference for this wording and an iḥtimāl in al-Mughnī's line.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p450",
+          "excerpt_ar": "وإن اقتصرت على أن أمته ولدته، ولم تقل \" في ملكه \" فقدم المصنف: أنه لا بد أن تشهد أن أمته ولدته في ملكه. وهو المذهب. قدمه في الفروع.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On the laqīṭ claimed as a slave: «في ملكه» is required, «وهو المذهب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p450",
+          "excerpt_ar": "ويحتمل أن لا يعتبر قول البينة في ملكه. بل يكفي الشهادة بأن أمته ولدته.",
+          "position": 0,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The iḥtimāl that «أن أمته ولدته» suffices."
+        }
+      ],
+      "positions_sha256": "43b65d5bc225218e8bd84aaabfa70af04e9e93121394a42a7fb370b1010fe9ed"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f007",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The wife's preference: al-Iqnāʿ and Kashshāf state it decisively; equality is the second iḥtimāl of al-Mughnī.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p237",
+          "excerpt_ar": "(فإن قال الرجل هو ابني من زوجتي وادعت زوجته ذلك) أنه ابنها منه وادعت امرأة أخرى أنه ابنها (فهو ابنه) و (ترجح زوجته على الأخرى) لأن زوجها أبوه فالظاهر أنها أمه.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The matn and sharḥ state the wife's preference decisively."
+        },
+        {
+          "ref": "src:openiti-ibnqudama-mughni-shamela8463/v06:p132",
+          "excerpt_ar": "ويحتمل أن يتساويا؛ لأن كل واحدة منهما لو انفردت، لألحق بها، فإذا اجتمعتا تساوتا.",
+          "position": 1,
+          "grade": "wajh",
+          "who": "Ibn Qudāma, al-Mughnī",
+          "note": "The iḥtimāl of equality in al-Mughnī, the record's source."
+        }
+      ],
+      "positions_sha256": "802cb5c48ff50f301be09bdcffdf762304d2dbf6d77cd1fed20ee94c04114953"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f009",
+      "grades": [
+        [
+          "tashih",
+          "nass"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Attachment prevails: Ibn Rajab's «أصحهما» and al-Inṣāf's «وهو المذهب»; the other is bare.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p263",
+          "excerpt_ar": "أحدهما: يلحقه نسبه. وهو المذهب. قال في المستوعب: لحقه نسبه في أصح الوجهين، وجزم به في الوجيز.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The rajʿiyya who bears after the longest gestation from the ṭalāq: attached, «وهو المذهب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v09:p263",
+          "excerpt_ar": "والوجه الثاني: لا يلحقه نسبه. تنبيه: عبارته في الخلاصة كعبارة المصنف",
+          "position": 1,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The second wajh, bare."
+        }
+      ],
+      "positions_sha256": "d71f54852656e500aafbc868323b748d4f46390165055b7a7529bf7c1ddf621e"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f011",
+      "grades": [
+        "wajh",
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Three wujūh, all reported by al-Inṣāf as qīl with none labelled the madhhab; al-Furūʿ gives them all.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p407",
+          "excerpt_ar": "وقيل: يعتق سالم. لأن الأصل دوام المرض وعدم البرء.",
+          "position": 0,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The qīl that Sālim is freed, on the aṣl of the illness continuing."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p407",
+          "excerpt_ar": "وقيل: بالقرعة. إذ الأصل عدم الحادث. وقدمه في المغني.",
+          "position": 1,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The qīl of the lot, put first in al-Mughnī."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p407",
+          "excerpt_ar": "لو قال \" إن مت من مرضي \" بدل \" في مرضي \" وجهل مما مات. فقيل: برقهما. لاحتمال موته في المرض بحادث. وقدمه في المحرر، والرعايتين، والحاوي، والنظم.",
+          "position": 2,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The qīl that both stay slaves, put first in al-Muḥarrar, al-Riʿāyatayn, al-Ḥāwī and al-Naẓm."
+        }
+      ],
+      "positions_sha256": "5805dff888d3dbbff5b5aa42a2d10c5cd390c5a3b4631f4ab3d090bd36f8f15e"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f012",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh Ibn Rajab leaves open; al-Mardāwī corrects her word («الصواب»), against the reading's side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p235",
+          "excerpt_ar": "الرابعة: لو طلقها ووجدت حافظة لما أصدقها، وتنازعا: هل علمها الزوج أم لا؟ فأيهما يقبل قوله؟ فيه وجهان. أطلقهما في القاعدة الثالثة عشر. قلت: الصواب قبول قولها. وقدمه في الرعايتين، والحاوي الصغير.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Mardāwī's own «الصواب قبول قولها», put first in al-Riʿāyatayn and al-Ḥāwī, after noting that Ibn Rajab leaves it open."
+        }
+      ],
+      "positions_sha256": "8810874537e72e2dfea6eae15a20f78464dc1e7c16f824605d922b7b2795055b"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f013",
+      "grades": [
+        "nass",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Ḍamān by the trace: Aḥmad's naṣṣ, stated decisively in al-Iqnāʿ and Kashshāf; against it a bare takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p241",
+          "excerpt_ar": "قاله في القاعدة الثالثة عشر. ويتخرج وجه: لا يكتفى بذلك. قلت: ومحل الخلاف إذا",
+          "position": 1,
+          "grade": "takhrij",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The takhrīj that it is not enough."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p129",
+          "excerpt_ar": "(ولو ادعى صاحب الزرع أن غنم فلان نفشت) أي: رعت (فيه) أي: في زرعه (ليلا ووجد في الزرع أثر غنم ولم يكن هناك غنم لغيره قضي بالضمان) على صاحب الغنم عملا بالقرينة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The matn and sharḥ: ḍamān by the qarīna where no one else's sheep are there."
+        }
+      ],
+      "positions_sha256": "89303ab41af5522a3d6dd4f7bfd003da415d5abcbf6a6c04802da7e698127971"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f014",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The husband's word is the aṣḥāb's; the other is Ibn Rajab's own takhrīj.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p191",
+          "excerpt_ar": "لو تزوج بكرا، فادعت أنه عنين، فكذبها، وادعى أنه أصابها، وظهرت ثيبا، فادعت أن ثيوبتها بسبب آخر: فالقول قول الزوج. ذكره الأصحاب.",
+          "position": 0,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The husband's word, «ذكره الأصحاب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p191",
+          "excerpt_ar": "ذكره الأصحاب. قال في القاعدة الثالثة عشر: ويتخرج فيه وجه آخر.",
+          "position": 1,
+          "grade": "takhrij",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Ibn Rajab's takhrīj of another wajh, cited from the qāʿida."
+        }
+      ],
+      "positions_sha256": "e8dc585dd823aec30b171c78e1be8f7cb9694c2ac9fac6825a37b3b7eca5c76d"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
+      "grades": [
+        "nass",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Kashshāf states both sides decisively, the placing without idhn and the ḥākim's compulsion of one who refuses; Aḥmad's naṣṣ for the first, al-Talkhīṣ for the second.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p411",
+          "excerpt_ar": "(وليس له وضع خشبة على حائط جاره أو) الحائط (المشترك) بلا إذنه (إلا عند الضرورة بأن لا يمكنه التسقيف إلا به) أي بوضع الخشب على حائط الجار أو المشترك (فيجوز) وضعه",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "In necessity the beams are placed without his idhn: «بلا إذنه ... (فيجوز) وضعه»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p411",
+          "excerpt_ar": "(فإن أبى) رب الحائط تمكينه منه (أجبره حاكم) عليه لأنه حق عليه.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "If the owner refuses to let him, the ḥākim compels him: «(أجبره حاكم) عليه لأنه حق عليه»."
+        }
+      ],
+      "positions_sha256": "dc557b3c8ca5fef7a190998d5c8c18ec0ad57e86294dd4c55427f7fcd0f71dbb"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f001",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Asking is mustaḥabb: al-Inṣāf and al-Iqnāʿ with Kashshāf state it decisively; the compulsion to give idhn is Ibn Rajab's reading of Ṣāliḥ's report.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v03:p399",
+          "excerpt_ar": "فوائد. الأولى: حيث قلنا \" ليس له منعها \" فيستحب لها أن تستأذنه",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Mardāwī's own statement: asking his idhn is mustaḥabb."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p385",
+          "excerpt_ar": "(وحيث قلنا ليس له منعها فيستحب لها أن تستأذنه) نص عليه خروجا من الخلاف، (وإن كان) زوجها",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The matn and sharḥ: mustaḥabb, «نص عليه», and she performs it with a maḥram if he refuses."
+        }
+      ],
+      "positions_sha256": "0c44cba650c3814099bc9a3c9b9e1eb15da25d18125f91dd1f3c2a1a3a89f9ca"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f002",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two riwāyas on a premise the madhhab rejects; al-Inṣāf states the reading's side on that riwāya without a madhhab label.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v02:p369",
+          "excerpt_ar": "وعنه تجب عليه. اختارها أبو بكر. وهي من المفردات. وأطلقهما في المستوعب فعليها: يستحب أن يستأذن سيده. ويحرم على سيده منعه. فلو منعه خالفه وذهب إليها.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On the riwāya of wujūb: mustaḥabb to ask, ḥarām for the sayyid to forbid, and he goes if forbidden."
+        }
+      ],
+      "positions_sha256": "166703dbe5f2e375ea7c0f05b033681347f8d07b177cd0e478ac243d00e41778"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f003",
+      "grades": [
+        "wajh",
+        [
+          "wajh",
+          "zahir"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "al-Inṣāf's madhhab requires idhn to enter; a correction it quotes drops idhn outside walled land, as Aḥmad's naṣṣ on usurped land indicates.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p291",
+          "excerpt_ar": "وعلى المذهب أيضا: من أخذ منه شيئا ملكه على الصحيح من المذهب. نص عليه. وعليه جماهير الأصحاب، لكن لا يجوز له دخول ملك غيره بغير إذن ربه. ولو استأذنه حرم منعه إن لم يحصل ضرر.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On the madhhab that herbage is not owned before it is taken: no entry without the owner's idhn, and he may not refuse."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p292",
+          "excerpt_ar": "قال: فيفيد كون التقييد أشبه بالمذهب. قال: والصحيح أن الإذن فيما عدا المحوط لا يعتبر بحال.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The quoted correction that idhn is not considered at all outside walled land."
+        }
+      ],
+      "positions_sha256": "0deba7c24e4db413ea28c9e22b9338e8741c7fdd543298b761a0a57b684a2098"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f004",
+      "grades": [
+        [
+          "tashih",
+          "nass"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Taking without idhn: Ibn Rajab's «أصح الروايتين» and al-Inṣāf's «على الصحيح من المذهب»; Ḥanbal's report has al-Mardāwī's inclination and al-Sharḥ's taqdīm.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p382",
+          "excerpt_ar": "فائدة: إذا امتنع من الضيافة الواجبة عليه: جاز له الأخذ من ماله على الصحيح من المذهب. ولا يعتبر إذنه.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Taking without his idhn, «على الصحيح من المذهب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v10:p382",
+          "excerpt_ar": "ونقل حنبل: لا يأخذ إلا بعلمهم، يطالبهم بقدر حقه. قلت: النفس تميل إلى ذلك، وقدمه في الشرح.",
+          "position": 1,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Mardāwī's inclination («النفس تميل إلى ذلك») to Ḥanbal's report, and al-Sharḥ's taqdīm of it; not a madhhab label."
+        }
+      ],
+      "positions_sha256": "b3abd9ba07a3c28501152ec7a5e78931db8a7938da1e41d273e59eee059ee087"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f010",
+      "grades": [
+        "zahir",
+        "tashih"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The madhhab frees him by the mutilation itself (al-Inṣāf, and Ibn Rajab's «المعروف في المذهب»); the reading's side is Ibn Rajab's ẓāhir of al-Maymūnī's report.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p406",
+          "excerpt_ar": "قوله (وإن مثل بعبده. فجدع أنفه، أو أذنه ونحوه) . وكذا لو خرق عضوا منه قال في الرعاية الكبرى: أو أحرقه بالنار: عتق عليه. نص عليه، للأثر وهو المذهب. وعليه أكثر الأصحاب.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Freed on him by the mutilation, «وهو المذهب. وعليه أكثر الأصحاب»."
+        }
+      ],
+      "positions_sha256": "74dc078270c9d0231d1c392ccc7f02a92fd02892395de275930c1ed82664fd48"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f012",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Release by the ḥawāla alone is the madhhab (al-Inṣāf); the reading's side is the riwāya that his riḍā is needed and the ḥākim compels it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p227",
+          "excerpt_ar": "الثانية: يبرأ المحيل بمجرد الحوالة. ولو أفلس المحال عليه، أو جحد، أو مات. على الصحيح من المذهب. ونقله الجماعة عن الإمام أحمد",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Release by the mere ḥawāla, «على الصحيح من المذهب», transmitted by the jamāʿa."
+        }
+      ],
+      "positions_sha256": "fa26977ad21929e20d5010d8f795ad5a3b99679db612df4e0265534d1ffa2686"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f013",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The more distant walī is the madhhab (al-Inṣāf); the ḥākim is a riwāya chosen by Abū Bakr, the reading's side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p075",
+          "excerpt_ar": "قوله (وإن عضل الأقرب زوج الأبعد) . هذا الصحيح من المذهب. وعليه أكثر الأصحاب. وجزم به في الوجيز، وغيره.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The more distant walī marries her when the nearer refuses, «هذا الصحيح من المذهب»."
+        }
+      ],
+      "positions_sha256": "5f9a82d73af3265a45bccf88a736354b4ced659dc88fd4c45aeeee6e4881500a"
+    }
+  ]
+}

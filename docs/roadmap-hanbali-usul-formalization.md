@@ -81,14 +81,14 @@ Lean, Prolog and generated-output CI remain integration gates.
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,017 annotated + **172 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 144 are fully annotated and **10 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Decided coverage | Disputed | Encoding errors | Open gaps |
 |---|---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 1.000 | 21 | 0 | 0 |
-| All annotation suites | 1084 | 0.959 | 0.909 | 598 | 0 | 44 |
+| All annotation suites | 1256 | 0.951 | 0.893 | 684 | 0 | 61 |
 
 Coverage counts derivability under the candidate encoding. Decided coverage scores the kernel only on cases that state one ruling; disputed cases are weighed by their evidence, not by who holds a position. Neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->

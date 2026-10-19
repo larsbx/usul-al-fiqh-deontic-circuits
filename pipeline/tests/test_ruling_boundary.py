@@ -38,7 +38,7 @@ def test_recorded_range_gaps_survive_without_becoming_encoder_outputs():
     cases = takhrij.load(ROOT / "corpus")
     outside = [(c, p) for c in cases for p in c.get("positions", [])
                if not takhrij.among(p["ruling"], takhrij.ENCODERS[c["encoder"]]["out"])]
-    assert len(outside) == 53
+    assert len(outside) == 57  # 53 before lane A round 7, which recorded 4 more, each with its `outside`
     assert all(p.get("outside") for _, p in outside)
     assert all(not takhrij.check_case(c) for c, _ in outside)
     case, position = outside[0]
@@ -84,6 +84,17 @@ def test_distinct_preserves_first_occurrence_and_type():
     assert list(map(takhrij.code, distinct([False, 0, False, "false", 0]))) == ["false", "0", '\"false\"']
 
 
+# The receipts below cover the ledger the refactor saw: its 596 entries, listed here so that later
+# entries (lane A round 7 on) leave them meaning what they meant. Those are pinned by the report.
+PRE_REFACTOR = set(json.loads((Path(__file__).parent / "pre_refactor_ledger.json").read_text()))
+
+
+def _pre_refactor_entries(ledger):
+    entries = [e for e in ledger["entries"] if e["far"] in PRE_REFACTOR]
+    assert {e["far"] for e in entries} == PRE_REFACTOR
+    return entries
+
+
 def test_all_policy_outcomes_match_the_pre_refactor_receipt():
     # Computed from the unmodified 57a3b1c resolver, ordered by the committed ledger.
     # Individual results are pinned: unchanged aggregates cannot hide swaps.
@@ -91,7 +102,7 @@ def test_all_policy_outcomes_match_the_pre_refactor_receipt():
     cases = {c["far"]: c for c in takhrij.load(ROOT / "corpus")}
     ledger = reconcile.load(ROOT / "corpus")
     rows = [[e["far"], policy, reconcile.resolve(cases[e["far"]], e, policy)]
-            for e in ledger["entries"] for policy in reconcile.POLICIES]
+            for e in _pre_refactor_entries(ledger) for policy in reconcile.POLICIES]
     # Audit PR-36 tied each murajjiḥ to its domain: the one intended change is q159.f035 under `all`, whose rejected
     # `dariHadd` (a report's advantage) was applied between two qiyāsāt. Undo exactly it, and every other result holds.
     changed = {("ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035", "all"): (("tawaqquf", None), ("tarjih", False))}
@@ -107,7 +118,7 @@ def test_all_attribution_outcomes_match_the_pre_refactor_receipt():
     cases = {c["far"]: c for c in takhrij.load(ROOT / "corpus")}
     ledger = reconcile.load(ROOT / "corpus")
     rows = [[e["far"], reconcile.attribution(cases[e["far"]], e)]
-            for e in ledger["entries"]]
+            for e in _pre_refactor_entries(ledger)]
     assert len(rows) == 596
     receipt = hashlib.sha256(json.dumps(rows, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     assert receipt == "6ce40ff5e69386698ca9d1aebe705b75d94ffe700116de360011ce279af83ea7"

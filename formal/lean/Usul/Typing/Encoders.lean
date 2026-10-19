@@ -1494,6 +1494,174 @@ def twoUsulReinforcedGoverns : Typed Situation (Bool) where
   run | (x1, x2) => Usul.Readings.RajabA25.firstAslGoverns x1 x2
   proj_embed := fun _ => rfl
 
+/-- `a26_ihala_on_known_cause` reads `Qaida.Rajab13`. -/
+def a26IhalaOnKnownCause : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.knownCauseFit, ← s.zahirPointsElsewhere)
+  embed | (x1, x2) => { knownCauseFit := some x1, zahirPointsElsewhere := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA26.ihalaOnKnownCause x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `a26_refused_idhn_lapses` reads `Qaida.Rajab23`. -/
+def a26RefusedIdhnLapses : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.refusalForbidden, ← s.merePermission)
+  embed | (x1, x2) => { refusalForbidden := some x1, merePermission := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA26.idhnLapses x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `a27_ain_ruling_survives_owner_change` reads `Qaida.Rajab40`. -/
+def a27AinRulingSurvivesOwnerChange : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.tiedToAin, ← s.holderConsented)
+  embed | (x1, x2) => { tiedToAin := some x1, holderConsented := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA27.survivesOwnershipChange x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `a27_specific_agent_in_general_object` reads `Qaida.Rajab70`. -/
+def a27SpecificAgentInGeneralObject : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.agentExplicitlyIncluded, ← s.agentIncludedByQarina)
+  embed | (x1, x2) => { agentExplicitlyIncluded := some x1, agentIncludedByQarina := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA27.agentIncluded x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `a29_haml_hukm_before_separation` reads `Qaida.Rajab84`. -/
+def a29HamlHukmBeforeSeparation : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.hamlRulingForAnother, ← s.hamlAmaraEvident)
+  embed | (x1, x2) => { hamlRulingForAnother := some x1, hamlAmaraEvident := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA29.hamlHukm x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_tamalluk_awaits_choice` reads `Qaida.Rajab85`. -/
+def rajabA30TamallukAwaitsChoice : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.causeConcluded, ← s.causeCompletesMilk)
+  embed | (x1, x2) => { causeConcluded := some x1, causeCompletesMilk := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA30.awaitsChoice x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_use_right_not_passed` reads `Qaida.Rajab85`. -/
+def rajabA30UseRightNotPassed : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.useRightOnly
+  embed x1 := { useRightOnly := some x1 }
+  run x1 := Usul.Readings.RajabA30.mayPassBenefit x1
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_use_right_for_need` reads `Qaida.Rajab85`. -/
+def rajabA30UseRightForNeed : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.needed, ← s.harmfulQ85)
+  embed | (x1, x2) => { needed := some x1, harmfulQ85 := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA30.useRightForNeed x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_ikhtisas_hand_stands` reads `Qaida.Rajab85`. -/
+def rajabA30IkhtisasHandStands : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.permittedBenefit, ← s.mayBecomeMal)
+  embed | (x1, x2) => { permittedBenefit := some x1, mayBecomeMal := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA30.handStands x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_ikhtisas_first_comer` reads `Qaida.Rajab85`. -/
+def rajabA30IkhtisasFirstComer : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.precededQ85, ← s.leftByChoice)
+  embed | (x1, x2) => { precededQ85 := some x1, leftByChoice := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA30.firstComerAhaqq x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_tie_binds_whole` reads `Qaida.Rajab85`. -/
+def rajabA30TieBindsWhole : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.pledgeTie, ← s.jinayaTie)
+  embed | (x1, x2) => { pledgeTie := some x1, jinayaTie := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA30.wholeBound x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_tie_for_recovery` reads `Qaida.Rajab85`. -/
+def rajabA30TieForRecovery : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.tiedQ85
+  embed x1 := { tiedQ85 := some x1 }
+  run x1 := Usul.Readings.RajabA30.recoverFrom x1
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a30_tied_right_precedes` reads `Qaida.Rajab85`. -/
+def rajabA30TiedRightPrecedes : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.tiedQ85, ← s.rivalInDhimmaOnly)
+  embed | (x1, x2) => { tiedQ85 := some x1, rivalInDhimmaOnly := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA30.tiedPrecedes x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `a29_four_kinds_of_milk` reads `Qaida.Rajab86`. -/
+def a29FourKindsOfMilk : Typed Situation (Usul.Readings.RajabA29.MilkKind) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.milkHoldsAyn, ← s.milkBenefitByTamlik)
+  embed | (x1, x2) => { milkHoldsAyn := some x1, milkBenefitByTamlik := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA29.milkKind x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `a31_rajab87_transfer_of_holding` reads `Qaida.Rajab87`. -/
+def a31Rajab87TransferOfHolding : Typed Situation (Bool) where
+  Local := (Usul.Readings.RajabA31.Holding) × (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.holdingQ87, ← s.lazimTitle, ← s.higherThanTitle, ← s.forIwad)
+  embed | (x1, x2, x3, x4) => { holdingQ87 := some x1, lazimTitle := some x2, higherThanTitle := some x3, forIwad := some x4 }
+  run | (x1, x2, x3, x4) => Usul.Readings.RajabA31.transferValid x1 x2 x3 x4
+  proj_embed := fun _ => rfl
+
+/-- `a31_rajab88_road_use` reads `Qaida.Rajab88`. -/
+def a31Rajab88RoadUse : Typed Situation (Bool) where
+  Local := (Usul.Readings.RajabA31.Layer) × (Bool) × (Bool) × (Bool) × (Bool)
+  proj s := do pure (← s.roadLayer, ← s.narrowOrHarmful, ← s.permanentUse, ← s.publicBenefit, ← s.imamLeave)
+  embed | (x1, x2, x3, x4, x5) => { roadLayer := some x1, narrowOrHarmful := some x2, permanentUse := some x3, publicBenefit := some x4, imamLeave := some x5 }
+  run | (x1, x2, x3, x4, x5) => Usul.Readings.RajabA31.roadUseAllowed x1 x2 x3 x4 x5
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_toward_ownership_growth` reads `Qaida.Rajab82`. -/
+def rajabA28TowardOwnershipGrowth : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.lazimQ82, ← s.fromSubstance)
+  embed | (x1, x2) => { lazimQ82 := some x1, fromSubstance := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.towardOwnershipFollows x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_growth_in_nonownership_contract` reads `Qaida.Rajab82`. -/
+def rajabA28GrowthInNonownershipContract : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.onSubstance, ← s.lazimQ82)
+  embed | (x1, x2) => { onSubstance := some x1, lazimQ82 := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.growthInContract x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_growth_follows_hand` reads `Qaida.Rajab82`. -/
+def rajabA28GrowthFollowsHand : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.sharesGround
+  embed x1 := { sharesGround := some x1 }
+  run x1 := Usul.Readings.RajabA28.growthFollowsHand x1
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_faskh_growth_returns` reads `Qaida.Rajab82`. -/
+def rajabA28FaskhGrowthReturns : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.fromSubstance, ← s.liftsFromOrigin)
+  embed | (x1, x2) => { fromSubstance := some x1, liftsFromOrigin := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.faskhGrowthFollows x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_right_reaches_growth` reads `Qaida.Rajab82`. -/
+def rajabA28RightReachesGrowth : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.lazimRight, ← s.fromSubstance)
+  embed | (x1, x2) => { lazimRight := some x1, fromSubstance := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.rightGrowthFollows x1 x2
+  proj_embed := fun _ => rfl
+
 /-! ## Integration: the jamʿ of Ibn Rajab 14's two readings -/
 
 /-- `cause_on_certainty` reads `Qaida.Rajab14Certainty`, which extends Ibn Rajab 14's type. -/

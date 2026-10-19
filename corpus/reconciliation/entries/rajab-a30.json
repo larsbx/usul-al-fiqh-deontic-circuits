@@ -1,0 +1,49 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Running water through another's land under compulsion: two riwāyas from Aḥmad («في إحدى الروايتين»). al-Inṣāf labels the bar without leave the madhhab, and al-Iqnāʿ and Kashshāf state it decisively; the riwāya of permission is Taqī al-Dīn's and al-Fāʾiq's choice. The reading's ḥaqq intifāʿ stands on the other side.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p248",
+          "excerpt_ar": "إذا أراد أن يجري ماء في أرض غيره من غير ضرر عليه، ولا على أرضه. لم يجز له ذلك إلا بإذن ربها، إن لم تكن حاجة ولا ضرورة. بلا نزاع، وإن كان مضرورا إلى ذلك: لم يجز أيضا إلا بإذنه، على الصحيح من المذهب.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The first fāʾida after the ṣulḥ over a water channel: without need, by agreement; under compulsion, «على الصحيح من المذهب»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p249",
+          "excerpt_ar": "وعنه يجوز، ولو مع حفر. اختاره الشيخ تقي الدين - رحمه الله -، وصاحب الفائق. وقدمه في الرعاية الكبرى: وجزم به في الوجيز.",
+          "position": 0,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The second riwāya (permission), with its choosers; al-Mughnī, al-Sharḥ and others leave the two open («وأطلقهما»)."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p199",
+          "excerpt_ar": "ويحرم إجراء ماء في ملك إنسان بلا أذنه ولو مع عدم تضرره أو تضرر أرضه ولو كان مضطرا إلى ذلك",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn, naming compulsion."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p403",
+          "excerpt_ar": "ويحرم إجراء ماء في ملك إنسان بلا إذنه، ولو مع عدم تضرره أو) مع عدم (تضرر أرضه) بذلك لأنه استعمال لملك الغير بغير إذنه (ولو كان) رب الماء (مضرورا إلى ذلك) أي إجرائه في ملك غيره فلا يجوز له لما سبق.",
+          "position": 1,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ: use of another's property without his leave."
+        }
+      ],
+      "positions_sha256": "f1d0462f5608e684a1ed5ed35f38a026c62e4c75f8970e35caa7788dc32b3e63"
+    }
+  ]
+}
