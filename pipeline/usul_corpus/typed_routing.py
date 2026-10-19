@@ -179,11 +179,13 @@ def shortlist(root: Path, ranking: dict[str, list[str]], n: int = SHORTLIST) -> 
     return out
 
 
-def catalogue(root: Path) -> dict[str, dict]:
-    """The typist's catalogue: every qāʿida type with its statement, and each field with its allowed
-    values, its gloss and its anchor, the verbatim phrase of the source that defines it
-    (``corpus/types/anchors``). Generated from the Lean export and the anchors, nothing else."""
-    from . import anchors
+def catalogue(root: Path, withheld: frozenset[str] = frozenset()) -> dict[str, dict]:
+    """The typist's catalogue: every qāʿida type with its statement, its scope (the opening clauses
+    of the furūʿ its source places under it, ``scope``; without the ``withheld`` furūʿ), and each
+    field with its allowed values, its gloss and its anchor, the verbatim phrase of the source that
+    defines it (``corpus/types/anchors``). Generated from the Lean export, the anchors and the
+    segmented witnesses, nothing else."""
+    from . import anchors, scope
     export = (root / "examples/v41_types.pl").read_text(encoding="utf-8")
     statement = {n: re.sub(r"\s*Read by .*$", "", s.replace("''", "'"))
                  for n, s in re.findall(r"^qaida_type\((\w+), '((?:[^']|'')*)'\)\.", export, re.M)}
@@ -200,7 +202,9 @@ def catalogue(root: Path) -> dict[str, dict]:
         if values is None:
             continue
         a = anchor.get((q, f), {})
-        out.setdefault(q, {"statement": statement.get(q, ""), "fields": []})["fields"].append(
+        out.setdefault(q, {"statement": statement.get(q, ""),
+                           "scope": scope.scope(root / "corpus", q, statement.get(q, ""), withheld),
+                           "fields": []})["fields"].append(
             {"field": f, "values": values + (["none"] if nested > 1 else []), "gloss": a.get("gloss"),
              **({"defined_by": a["anchor"]["excerpt_ar"]} if "anchor" in a else {})})
     return out
