@@ -76,3 +76,32 @@ Two independent typings of the same 80 fold-1 cases, each by two blind typists, 
 | Strict recall@5 | 0.887 / 0.850 | 0.887 / 0.850 |
 
 The anchors fix **how** a field is settled once its qāʿida is chosen, and agreement rises. With 80 cases, κ's standard error is about 0.09, so the rise is suggestive rather than established. They do not change **which** qāʿida a reader picks, which is as variable as before (9 of 80 disjoint), and so neither recall nor the settled rate moves. The judgement left in the derivation is the qāʿida's **scope**: whether a farʿ falls under it. In the text, that is fixed by the qāʿida's own furūʿ, its extension, which the strict split withholds for the case's own qāʿida. Defining scope from the text is the next step for reproducibility.
+
+## Scope: which qāʿida a farʿ falls under (PR-50)
+
+In the texts a qāʿida is followed by its furūʿ, so the author fixes its extension. A type's **scope** is the opening clause (the question, before the ruling) of every farʿ the segmented witness places under a qāʿida the type cites. It is verbatim by construction, as a prefix of the witness text.
+
+- Module: `pipeline/usul_corpus/scope.py`. Gate: `pipeline/tests/test_scope.py`.
+- 158 of 169 types have a scope. The 11 without one are read only from al-Saʿdī, whose qawāʿid are not segmented, or have no cited source.
+- The catalogue carries the scope. In evaluation the cases under test are withheld, so a typist never sees the case's own head.
+
+The same 80 cases were typed twice more, blind, with scope in the catalogue:
+
+| | Anchors | Anchors and scope |
+|---|---|---|
+| The case's own qāʿida type chosen (two typings) | 66 / 62 | **67 / 66** |
+| Strict recall@1 | 0.700 / 0.688 | **0.750 / 0.725** |
+| Strict recall@5 | 0.887 / 0.850 | 0.875 / 0.887 |
+| Settled rate | 0.825 / 0.775 | 0.838 / 0.825 |
+| Identical qāʿida types touched | 59 / 80 | 63 / 80 |
+| Disjoint choice of qāʿida (excluding both-empty) | 6 / 80 | 11 / 80 |
+| Own reading settled in both or neither; κ | 90 %, 0.69 | 86 %, 0.51 |
+
+Scope makes the typists slightly more **accurate** (own type found in 133 of 160 typings, against 128 before; recall@1 up 0.04–0.05), and both settle more. It does not make them **agree** more. At n = 80 these differences are within run-to-run noise.
+
+The disjoint cases show why. In 11 of the 15 type disagreements one side found the case's own type. The rival is mostly a qāʿida whose scope also fits the case:
+- q013.f010: rajab13 against rajab151, the taking of one's right;
+- q085.f010: rajab85 against rajab99;
+- q158.f014: itizal against yaqin, for rajab158.
+
+Ibn Rajab cross-lists. A farʿ often turns on two qawāʿid, and he places it under one. Scope fixes which qāʿida the **author** filed a farʿ under, not which qāʿida a reader must pick. The remaining variance is the multi-qāʿida case itself, and a single-qāʿida key cannot settle it. The honest unit of agreement is the set of qawāʿid a case touches.
