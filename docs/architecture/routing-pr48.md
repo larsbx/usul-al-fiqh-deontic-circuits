@@ -133,3 +133,21 @@ Blind effects agree with the mapped effect for **45 %** of cases (58 % by kind a
 - In ikhtilāf, the labeller marks the side the text leads with, while the bank records the side the kernel derives.
 
 Allowing transitions from verdict to consequence fixes the agreement, but saturates. Even learned leakily, almost every reading then reaches almost every effect, and the upper bound is 0.767. **A qāʿida's identity lies in its ground (the facts and conditions it turns on), not in its conclusion.** The conclusion side, however it is stated, does not route. What remains is the fact side: denser typing of the right qāʿida's ground.
+
+### Follow-up: denser typing with a router shortlist
+
+The ground is what routes, so this round raised how often the typist finds the right qāʿida's facts. Each case was re-typed blind. Before the full catalogue, the typist saw a **shortlist**: the 20 qāʿida types whose readings the strict-fold lexical router ranks highest for that text. The router is fitted without the case's qāʿida and keeps only the formalised statements, as in use. Only qāʿida identities and their statements are shown. All 240 cases were re-typed, not only earlier misses, to avoid selection by the gold.
+
+| Fold 0, strict split | Facts / nothing settled | @1 | @5 | @10 | Category @5 |
+|---|---|---|---|---|---|
+| Committed typing | 378 / 32 | 0.512 | 0.725 | 0.746 | 0.754 |
+| Richer catalogue | 320 / 39 | 0.629 | 0.762 | 0.783 | 0.792 |
+| **Router shortlist, then catalogue** | **403 / 8** | **0.704** | **0.812** | **0.817** | **0.833** |
+
+The case's own reading has a field settled in **187 of 240 (78 %)**, up from 66 %. As in every typing so far, each such case is in the top five. Of the 53 still unsettled, the lexical tiebreak rescues 8.
+
+Caveats:
+- The shortlist size was chosen after looking at fold 0. Of the cases the earlier typing had missed, the router's top 20 categories held the right one for 36 of 81, its top 30 for 43.
+- Fold 0 has 240 cases.
+
+A clean figure needs the procedure frozen and run on another fold. The arithmetic stands: recall@5 ≈ settled rate + (1 − settled rate) × the lexical rescue rate, so 0.9 needs about 88 % settled.
