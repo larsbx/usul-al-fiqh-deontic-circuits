@@ -1,0 +1,523 @@
+{
+  "suite": "m8_rajab_rajab_a29",
+  "status": "candidate",
+  "provenance": "Shard rajab-a29 (lane A): every farʿ record of Ibn Rajab's qawāʿid 84 and 86, annotated against readings formalised from each qāʿida's own statement (Usul.Readings.RajabA29). Both qawāʿid are typological; each record is annotated for its leading ruling, and a record no reading fits is a gap with its need named. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f001",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "derivable",
+      "facts": {
+        "haml_ruling_for_another": true,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "note": "Leading ruling: «إخراج الفطرة عن الحمل وهي مستحبة», the istiḥbāb of fiṭra for the ḥaml, a ruling on the father by sabab of the ḥaml (the first nawʿ, «ثابت بالاتفاق»), in force before separation once its amāra shows. The record then gives two ṭuruq on wujūb (a jazm of no wujūb, or two riwāyāt); al-Inṣāf (v03:p168): «ويستحب أن يخرج عن الجنين، ولا تجب) هذا المذهب». The reading's output says that a ruling attaches, not its grade (wujūb or istiḥbāb), so the wujūb ṭuruq are recorded here and not scored; a register question."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f002",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "derivable",
+      "facts": {
+        "haml_ruling_for_another": true,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "note": "Leading ruling: the pregnant woman who fears for her foetus breaks the fast, «ويجب عليها القضاء والكفارة»: rulings on her by sabab of the ḥaml (first nawʿ), in force before separation. Ibn ʿAqīl's two iḥtimālāt, whether the kaffāra is from her property or shared with whoever owes the ḥaml's nafaqa, concern who bears the kaffāra, not whether the ḥaml grounds it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f003",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": true,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the sale is undone on the mere appearance of the ḥaml and she is returned to the seller who admitted intercourse, «لأنها أم ولد له» (Aḥmad's naṣṣ in Abū Ṭālib's riwāya)",
+          "ruling": true
+        },
+        {
+          "who": "no return until she gives birth to what makes a slave-woman umm walad, «لجواز أن يكون كذلك» (Ibn ʿAqīl: «عندي لا يجب الرد حتى تضع»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "First nawʿ: the istīlād of the seller, a ruling on others by sabab of the ḥaml, with its amāra shown. The reading gives Aḥmad's naṣṣ: «فأبطل البيع مع إقرار البائع بالوطء بمجرد تبين الحمل». Ibn Rajab adds that this is on the ṣiḥḥa of a sale before istibrāʾ; on the other riwāya the sale is bāṭil from the start. No later work found labels either side (al-Inṣāf, v09:p265, treats the birth within six months, «فهو ولده) بلا نزاع (والبيع باطل)», not the time before it), so matches_madhhab is false; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f004",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": true,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "she leaves the pledge at once and he owes her value as a pledge in its place («كذا قاله كثير من الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "the ḍamān waits until she gives birth, then he owes her value on the day he made her pregnant («ومنهم من قال يتأخر الضمان حتى تضع»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "First nawʿ: the rāhin's ḍamān, a ruling on him by sabab of the ḥaml, with the ḥaml shown. The reading gives the immediate ruling of «كثير من الأصحاب». al-Inṣāf (v05:p155): «وإن وطئ الجارية فأولدها: خرجت من الرهن) . هذا المذهب. وعليه الأصحاب» and, of the value, «وأكثر الأصحاب قالوا كما قال المصنف. وقال بعضهم: يتأخر الضمان حتى تضع», citing this qāʿida. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f005",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": true,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "she is valued against him at once and becomes his mustawlada («هذا هو المنصوص عن أحمد»)",
+          "ruling": true
+        },
+        {
+          "who": "she does not become mustawlada, since the ghanīma is not owned before the qisma; yet she may not be sold, being pregnant with a free child (al-Qāḍī in his Khilāf)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "First nawʿ: the istīlād and the valuation, rulings on the man and the ghānimūn by sabab of the ḥaml. The reading gives the manṣūṣ. al-Qāḍī's dissent rests on another principle (ownership of the ghanīma before the qisma). al-Inṣāf (v04:p183) on «إلا أن تلد منه. فيكون عليه قيمتها. وتصير أم ولد له» gives only her value «على الصحيح من المذهب». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f006",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "derivable",
+      "facts": {
+        "haml_ruling_for_another": true,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "note": "Leading ruling: «إن كنت حاملا فأنت طالق» and the ḥaml is shown, by the women's testimony or a birth within the usual term (Aḥmad's naṣṣ, «حنث فأوقع الطلاق»): the ṭalāq falls in the ẓāhir, a ruling on the spouses by sabab of the ḥaml (first nawʿ). The aṣḥāb's detail (the furthest term, intercourse after the yamīn, then two wujūh and a third) is about what shows the ḥaml at the yamīn; where it is not shown «الطلاق لا يقع مع الشك والاحتمال», which is the reading's amāra fact (Lean no_amara_no_hukm)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f007",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": [
+        "rule:abstain_until_haml_known"
+      ],
+      "note": "Leading ruling: the husband is barred from intercourse with his wife after her son (by another man) dies, «حتى يتبين هل هي حامل من وطئه المتقدم أم لا لأجل ميراث الحمل من أخيه». The bar is set before any amāra of the ḥaml and because of its bare possibility, so the reading (a ruling attaches once the amāra shows) does not decide it: a rule of abstaining until the ḥaml is known is needed (al-Inṣāf, v07:p334: «يحرم الوطء حتى يعلم: أحامل هي أم لا؟ وهو الصواب»). The inheritance that follows, once she gives birth within six months of the death, is the reading's (amāra shown)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f008",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the nafaqa of the pregnant umm walad is paid from the share of what is in her womb (Aḥmad's naṣṣ in al-Kaḥḥāl's riwāya; Ibn Rajab: it attests the ḥaml's milk by inheritance from the death)",
+          "ruling": true
+        },
+        {
+          "who": "no disposal of the ḥaml's share before its condition is met: «لأن الحمل إنما يرث بشرط خروجه حيا ويوقف نصيبه» (al-Majd's ishkāl)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Second nawʿ: the nafaqa of relatives owed from the ḥaml's own property. On the qāʿida's ṣaḥīḥ («أن له حكما») the ḥaml owns in the ẓāhir before separation, so its share bears the nafaqa. al-Iqnāʿ (v04:p140): «ولا لأم ولد حامل وينفق من مال حملها نصا»; Kashshāf repeats Ibn Rajab's answer to al-Majd. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f009",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ḥaml owns its inheritance from the death of the one it inherits from, shown by its live birth (what Aḥmad's naṣṣ on the nafaqa implies; Ibn ʿAqīl and others state it)",
+          "ruling": true
+        },
+        {
+          "who": "no milk until it separates alive (Aḥmad in the riwāyāt of Jaʿfar b. Muḥammad and al-Kaḥḥāl on the Christian's child: «وإنما يرث بالولادة»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Second nawʿ: the ḥaml's own milk by inheritance. Ibn Rajab makes this khilāf «تحقيق معنى قول من قال هل الحمل له حكم أم لا؟», so the qāʿida's «الصحيح من المذهب أن له حكما» labels the first side; al-Inṣāf (v07:p329) repeats his treatment with no taṣḥīḥ of its own. Link: Lean inheritance_precedes_islam_bar (qāʿida 57, «قاعدة اقتران الحكم ومانعه»). On the madhhab side by the qāʿida's label; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f010",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the milk by waṣiyya is his from the testator's death and the walī's acceptance, and a zakāt ḥawl runs from it (Ibn ʿAqīl at one time; Abū al-Maʿālī al-Tanūkhī)",
+          "ruling": true
+        },
+        {
+          "who": "the waṣiyya to the ḥaml is suspended on its live birth, «والوصية قابلة للتعليق» (al-Qāḍī; the other wajh: no ḥawl until it is born)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Second nawʿ: the ḥaml's own milk by waṣiyya, «وفيه الخلاف السابق بالتوريث». The reading gives the qāʿida's ṣaḥīḥ. al-Iqnāʿ (v03:p058) states «ويثبت الملك له من حين قبول الولي بعد موت الموصي وأن أنفصل ميتا بطلت الوصية». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f011",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "an unqualified iqrār for the ḥaml is ṣaḥīḥ (Abū Ḥāmid and al-Qāḍī)",
+          "ruling": true
+        },
+        {
+          "who": "it is not ṣaḥīḥ (al-Tamīmī); Ibn ʿAqīl's ground, «لأن الإقرار للحمل تعليق له على شرط في الولادة», Ibn Rajab calls «أظهر»",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Second nawʿ: the iqrār presupposes the ḥaml's milk; Ibn Rajab: «وترجع المسألة حينئذ إلى ثبوت الملك له وانتفائه». The reading gives ṣiḥḥa. al-Inṣāf (v12:p156): «وإن أقر لحمل امرأة: صح) . هذا الصحيح من المذهب مطلقا». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f012",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ḥaml has its entitlement from the waqf while still a ḥaml (Ibn ʿAqīl, who even holds the waqf on a ḥaml ṣaḥīḥ; Taqī al-Dīn's fatwā)",
+          "ruling": true
+        },
+        {
+          "who": "it is not entitled until it is born («والمنصوص عن أحمد … أنه لا يستحق حتى يوضع، وهو قول القاضي والأكثرين»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Second nawʿ: the ḥaml's own entitlement. The qāʿida's ṣaḥīḥ gives entitlement; the manṣūṣ and most aṣḥāb deny it, and Ibn Rajab offers a farq on the manṣūṣ (the waqf is its benefits, «والحمل ليس من أهل الانتفاع»). al-Inṣāf (v07:p022): «لكن لا يشاركهم قبل ولادته. على الصحيح من المذهب». Off the madhhab side; ledger entry. A finding against the reading's single ṣaḥīḥ across the second nawʿ."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f013",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the shufʿa is taken for the ḥaml (the wajh Ibn Rajab derives, «بناء على أن له حكما وملكا»)",
+          "ruling": true
+        },
+        {
+          "who": "it is not taken for it («قال الأصحاب لا يؤخذ له»: its existence not established, or it owns nothing)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Second nawʿ: the ḥaml's own right of shufʿa, its ancestor having died after claiming it. The reading gives the mukharraj wajh; the aṣḥāb deny it, and al-Inṣāf (v06:p272) reports al-Ḥārithī «فالأخذ له متعذر، إذ لا يدخل في». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f014",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the liʿān on the ḥaml is ṣaḥīḥ (Ibn Manṣūr's riwāya; al-Najjād: the madhhab; chosen in al-Mughnī)",
+          "ruling": true
+        },
+        {
+          "who": "no negation of the ḥaml and no liʿān on it, «لأنه غير محقق» (Abū Ṭālib, Ḥanbal and al-Maymūnī; «وهذا هو المذهب عند الأصحاب»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Second nawʿ: negating the ḥaml's own nasab. The qāʿida's ṣaḥīḥ gives liʿān on it; Ibn Rajab labels the other riwāya the madhhab of the aṣḥāb, and al-Inṣāf (v09:p255): «وإن نفى الحمل في التعانه: لم ينتف حتى ينفيه عند وضعها له، ويلاعن) . هذا المذهب». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f015",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "derivable",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "note": "Leading ruling: the ghurra is due for the janīn its mother casts dead from the blow, «وهو ثابت بالسنة الصحيحة»: the ḍamān of the ḥaml in itself (second nawʿ), with no dispute on the ghurra. Ibn Rajab: «ولا يشترط الانفصال إلا لثبوت الضمان في الظاهر»; the further khilāf (Aḥmad's sharṭ of separation in Ibn Manṣūr's riwāya, the woman who presses the womb, the foetus of animals and game) is on the ẓāhir proof of its death or on the measure, not on the ghurra."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f016",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "killing the janīn is ʿamd, as the aṣḥāb took it when they drew from this riwāya «رواية وجوب الكفارة بقتل العمد»",
+          "ruling": true
+        },
+        {
+          "who": "it is shibh ʿamd and the diya is on the ʿāqila (Aḥmad in Ibn Manṣūr's riwāya), «للشك في وجوده» (Ibn Rajab)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Second nawʿ: the qualification of the act against the ḥaml in itself. Ibn Rajab reads Aḥmad: «والظاهر أنه لم يجعله عمدا للشك في وجوده لا للشك في الإسقاط بالدواء», which is the riwāya that the ḥaml has no ḥukm; he rejects the aṣḥāb's derivation, «ولا يصح ذلك فإنه صرح بأنه ليس بعمد وإنما هو شبه عمد». The reading gives the ṣaḥīḥ, against Aḥmad's explicit naṣṣ. Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f017",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ʿitq of the janīn takes effect at once («إحداهما: ينفذ من حينه وهو المذهب»)",
+          "ruling": true
+        },
+        {
+          "who": "it is not freed until she gives birth to it alive (Ibn Manṣūr's riwāya: «لا يجب العتق إلا بالولادة»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Second nawʿ: the janīn's own ʿitq, with the five furūʿ Ibn Rajab builds on it. The reading gives the madhhab Ibn Rajab names. al-Inṣāf (v07:p400): «وإن أعتق ما في بطنها دونها: عتق وحده) . في الحال. هذا المذهب. نص عليه». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f018",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ḥaml enters the contract on the pregnant and takes a share of the price; on a return it goes back with its mother (al-Qāḍī and Ibn ʿAqīl, «إن قلنا: للحمل حكم»)",
+          "ruling": true
+        },
+        {
+          "who": "it takes no share and after birth is detached growth («وإن قلنا: لا حكم له لم يأخذ قسطا من العوض»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Second nawʿ: the ḥaml as an object of the sale, gift, waṣiyya or ṣadāq. Ibn Rajab adds that even on «لا حكم له» it is returned with the ʿayn, «حكمه حكم الأجزاء» (Lean haml_in_contract_is_part, qāʿida 20). al-Inṣāf (v04:p381): «الحمل وقت العقد مبيع. على الصحيح من المذهب», then (v04:p382) «وعنه الحمل نماء». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f019",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "haml_ruling_for_another": false,
+        "haml_amara_evident": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the janīn of a slaughtered animal is ruled slaughtered with its mother before it separates (the ẓāhir of Aḥmad: «هو ركن من أركانها»)",
+          "ruling": true
+        },
+        {
+          "who": "its dhakāt is ruled only after it separates (Ibn ʿAqīl in al-Funūn)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Second nawʿ: the janīn's own dhakāt. Ibn Rajab: «وهذا يرجح أنه جزء من الأم وأن تذكيته تابع لتذكيتها». The reading gives Aḥmad's ẓāhir. al-Inṣāf (v10:p402): «وتحصل ذكاة الجنين بذكاة أمه إذا خرج ميتا، أو متحركا كحركة المذبوح، وسواء أشعر أو لم يشعر) . هذا المذهب». The follow-on, whether its blood must be shed, is two riwāyāt, «وأكثر النصوص عنه يدل على الاستحباب فقط». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f020",
+      "encoder": "a29_haml_hukm_before_separation",
+      "class": "missing_fact",
+      "facts": null,
+      "expected": null,
+      "needs": [
+        "fact:haml_manifest_for_its_own_rite"
+      ],
+      "note": "Leading ruling: in the funeral prayer over a pregnant woman one does not intend her ḥaml (Ibn ʿAqīl, «وعلل بالشك في وجوده»). Ibn Rajab finds it «متوجه» on the views that it is as the nonexistent or as a part, «وأما إن قيل بأنه ولد مستقل ففيه نظر», and ends «وقد يقال: شرط ثبوت الأحكام له ظهوره ولم يوجد فهذا متوجه». The one ruling turns on whether the rite over the ḥaml itself needs its manifestation (ẓuhūr), which the reading's facts (the amāra of the ḥaml) do not express; not forced."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f001",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "derivable",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": true
+      },
+      "expected": "manfaaWithoutAyn",
+      "note": "Third kind, perpetual: the legatee of benefits owns the manfaʿa without the ʿayn, «ويشمل جميع أنواعها». The two wujūh on the manfaʿa of the buḍʿ («إلا منفعة البضع فإن في دخولها بالوصية وجهين») concern what the waṣiyya covers, not the kind of milk it gives."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f002",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": true
+      },
+      "expected": "manfaaWithoutAyn",
+      "positions": [
+        {
+          "who": "the mawqūf ʿalayh owns the benefits and fruits without the raqaba (Ibn Rajab's placement under the third kind; the wajh that he does not own the raqaba)",
+          "ruling": "manfaaWithoutAyn"
+        },
+        {
+          "who": "he owns the raqaba as well, with its benefits («في ملكه لرقبته وجهان»: the other wajh)",
+          "ruling": "aynAndManfaa"
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Third kind, perpetual: «فإن منافعه وثمراته مملوكة للموقوف عليه», agreed; the kind turns on the two known wujūh on the raqaba. The reading follows the qāʿida's placement. al-Inṣāf (v07:p027) quotes al-Zarkashī: «إذ لا نزاع بين الأصحاب: أن الانتقال إلى الموقوف عليه هو المذهب». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f003",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "derivable",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": true
+      },
+      "expected": "manfaaWithoutAyn",
+      "note": "Third kind, perpetual: the holder of kharāj land left in his hand «يملك منافعها على التأبيد». The record runs on into the second ḍarb, the non-perpetual milk of the manfaʿa (ijāra, «ومنافع المبيع المستثناة في العقد مدة معلومة», the ʿāriya on one wajh, iqṭāʿ al-istighlāl), the same kind; the reserved benefit is qāʿida 32 (Lean reserved_benefit_is_manfaa)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f004",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": false
+      },
+      "expected": "intifaOnly",
+      "positions": [
+        {
+          "who": "the mustaʿīr owns the intifāʿ, not the manfaʿa («فإنه يملك الانتفاع لا المنفعة»)",
+          "ruling": "intifaOnly"
+        },
+        {
+          "who": "on Ibn Manṣūr's riwāya that a timed ʿāriya is lāzim he owns the manfaʿa («كذا قال الأصحاب»)",
+          "ruling": "manfaaWithoutAyn"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Fourth kind. The reading gives the qāʿida's statement; Ibn Rajab doubts the aṣḥāb's inference: «لزوم العارية المؤقتة إنما يدل على وجوب الوفاء ببدل الانتفاع لا على تمليك المنفعة». al-Iqnāʿ (v02:p331): «والإعارة: إباحة نفعها بغير عوض». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f005",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "derivable",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": false
+      },
+      "expected": "intifaOnly",
+      "note": "Fourth kind: whoever uses his neighbour's property (resting beams, a passage through a house) holds the intifāʿ only; «وإن كان بعقد صلح فهو إجارة», that is, the third kind, by a tamlīk."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f006",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "derivable",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": false
+      },
+      "expected": "intifaOnly",
+      "note": "Fourth kind: iqṭāʿ al-irfāq (market seats), and the ghānimūn's food in dār al-ḥarb before it is secured, «يملك الغانمون الانتفاع به بقدر الحاجة», with eating from the uḍḥiya and hanging fruit by qiyās. The record joins two of the qāʿida's ṣuwar; both are the same kind."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f007",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": false
+      },
+      "expected": "intifaOnly",
+      "positions": [
+        {
+          "who": "the guest's eating is «إباحة محضة لا يحصل به الملك بحال على المشهور عندنا»",
+          "ruling": "intifaOnly"
+        },
+        {
+          "who": "the guest owns what is served, «وإن كان ملكا خاصا بالنسبة إلى الأكل» (one of the two readings of Aḥmad's riwāya that feeding counts in the kaffārāt)",
+          "ruling": "aynAndManfaa"
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Fourth kind. The riwāya «بإجزاء الإطعام في الكفارات» «وينزل على أحد قولين»: the guest owns the food, or the kaffāra needs no tamlīk; only the first is a second position on the kind. al-Inṣāf (v08:p339): «قال المجد: مذهبنا لا يملك الطعام الذي قدم إليه، بل يهلك بالأكل على ملك صاحبه». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f008",
+      "encoder": "a29_four_kinds_of_milk",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "milk_holds_ayn": false,
+        "milk_benefit_by_tamlik": false
+      },
+      "expected": "intifaOnly",
+      "positions": [
+        {
+          "who": "the object of the nikāḥ is milk of the manfaʿa of the buḍʿ",
+          "ruling": "manfaaWithoutAyn"
+        },
+        {
+          "who": "it is milk of the intifāʿ of the buḍʿ",
+          "ruling": "intifaOnly"
+        },
+        {
+          "who": "it is the ḥill, not milk («ولهذا يقع الاستمتاع من جهة الزوجة مع أنه لا ملك لها»)",
+          "ruling": "hill",
+          "outside": "The record's «وقيل بل هو الحل لا الملك»: no kind of milk at all, outside the four kinds."
+        },
+        {
+          "who": "it is izdiwāj, a kind of mushāraka, not a muʿāwaḍa (Taqī al-Dīn inclines to it)",
+          "ruling": "izdiwaj",
+          "outside": "The record's «وقيل بل المعقود عليه ازدواج كالمشاركة»: no kind of milk, outside the four kinds."
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Fourth kind, the qāʿida's last ṣūra, where the aṣḥāb's wording divides. The reading gives the kind the qāʿida places it under. al-Iqnāʿ (v03:p156): «والمعقود عليه منفعة الاستمتاع لا ملكها»; al-Inṣāf (v08:p006) from al-Qāḍī: «المعقود عليه في النكاح: المنفعة، أي الانتفاع بها، لا ملكها. وجزم به في الفروع». On the madhhab side; ledger entry."
+    }
+  ]
+}

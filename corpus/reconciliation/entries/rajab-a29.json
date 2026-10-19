@@ -1,0 +1,396 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f003",
+   "grades": [
+    "nass",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Recorded only: no later work found labels either side; the record pits Aḥmad's naṣṣ against Ibn ʿAqīl's own view.",
+   "evidence": [],
+   "positions_sha256": "0bfbb4d311a8f55285ab7227f601615808fae484398327cf4c96fe0028a1debc"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f004",
+   "grades": [
+    "ashab",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The immediate ḍamān prevails: al-Inṣāf gives the pledge's ending as the madhhab and the value with «أكثر الأصحاب».",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p155",
+     "excerpt_ar": "وأخذت منه قيمتها، فجعلت رهنا) . وهذا بلا نزاع. وأكثر الأصحاب قالوا كما قال المصنف. وقال بعضهم: يتأخر الضمان حتى تضع. فتلزمه قيمتها يوم أحبلها. قاله في القاعدة الرابعة والثمانين.",
+     "position": 0,
+     "grade": "ashab",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The value taken and made the pledge, with «أكثر الأصحاب» against «بعضهم»."
+    }
+   ],
+   "positions_sha256": "9623b945b0573dab41498e0ec366781b3e51adf8d21f91ef1d40c5261881ece8"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f005",
+   "grades": [
+    "nass",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Mustawlada prevails: Aḥmad's naṣṣ, and the matn al-Inṣāf comments states it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p183",
+     "excerpt_ar": "إلا أن تلد منه. فيكون عليه قيمتها. وتصير أم ولد له) إذا أولد جارية من المغنم له فيها حق، أو لولده: لم يلزمه إلا قيمتها فقط.",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Mardāwī, al-Inṣāf (the matn of al-Muqniʿ)",
+     "note": "The matn: «وتصير أم ولد له»."
+    }
+   ],
+   "positions_sha256": "0ab9bb3da1dbe4aa717cc62d8daaabf5386d56881b16460112c0cb07fb2bdcd7"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f008",
+   "grades": [
+    "nass",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Payment from the ḥaml's share prevails: Aḥmad's naṣṣ, stated with «نصا» in al-Iqnāʿ and Kashshāf.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p140",
+     "excerpt_ar": "ولا لأم ولد حامل وينفق من مال حملها نصا ولا سكنى لهما ولا كسوة",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The matn."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p467",
+     "excerpt_ar": "(ولا) نفقة (لأم ولد حامل وينفق) عليها (من مال حملها نصا) كما تقدم وفيه ما سبق",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "The sharḥ, after Ibn Rajab's answer to al-Majd."
+    }
+   ],
+   "positions_sha256": "1479b7529b5c37c7bf5c6c603622df63a4bddfdca13a3c05a0f68554add674fd"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f009",
+   "grades": [
+    "zahir",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Recorded only: al-Inṣāf repeats Ibn Rajab's khilāf without a taṣḥīḥ; the qāʿida's own «الصحيح من المذهب أن له حكما» is the label.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p329",
+     "excerpt_ar": "والذي يقتضيه نص الإمام أحمد - رحمه الله - في الإنفاق على أمه من نصيبه: أنه يثبت له الملك بالإرث من حين موت أبيه. وصرح بذلك ابن عقيل وغيره من الأصحاب.",
+     "position": 0,
+     "grade": "zahir",
+     "who": "al-Mardāwī, al-Inṣāf (quoting Ibn Rajab)",
+     "note": "What Aḥmad's naṣṣ implies, with Ibn ʿAqīl."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p329",
+     "excerpt_ar": "ونقل عن الإمام أحمد - رحمه الله - ما يدل على خلافه، وأنه لا يثبت له الملك إلا بالوضع.",
+     "position": 1,
+     "grade": "nass",
+     "who": "al-Mardāwī, al-Inṣāf (quoting Ibn Rajab)",
+     "note": "The other report from Aḥmad."
+    }
+   ],
+   "positions_sha256": "f3a4f041acf83b9889fe7530cd7ac0abb567c83ba3a6cfbedf066e9decfcf700"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f010",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Milk from the acceptance after the death prevails: al-Iqnāʿ states it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p058",
+     "excerpt_ar": "ويثبت الملك له من حين قبول الولي بعد موت الموصي وأن أنفصل ميتا بطلت الوصية",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The matn, in the waṣiyya to a ḥaml."
+    }
+   ],
+   "positions_sha256": "6ce7352e6f47af2aa991d6e3b3e6eb5c1a26811fc9f005caa51bd5d63888fd33"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f011",
+   "grades": [
+    "ashab",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ṣiḥḥa prevails: al-Inṣāf's «هذا الصحيح من المذهب مطلقا».",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v12:p156",
+     "excerpt_ar": "وإن أقر لحمل امرأة: صح) . هذا الصحيح من المذهب مطلقا. قال في الفروع: وإن أقر لحمل امرأة بمال: صح في الأصح.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "With the Furūʿ's «في الأصح»."
+    }
+   ],
+   "positions_sha256": "2df4a40bdab51a9e23ee546ddf2ae2ca8438cf7fe44fc55721db63d382ad3068"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f012",
+   "grades": [
+    "wajh",
+    [
+     "nass",
+     "ashab"
+    ]
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "No entitlement before birth prevails: Aḥmad's naṣṣ and most aṣḥāb, labelled the madhhab in al-Inṣāf.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p022",
+     "excerpt_ar": "لكن لا يشاركهم قبل ولادته. على الصحيح من المذهب. نص عليه. قال في القاعدة الرابعة والثمانين: هو قول القاضي، والأكثرين.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The ḥaml among the beneficiaries of a waqf."
+    }
+   ],
+   "positions_sha256": "94ade689932373269aa651e292e3de70ea7cc509f1ec82dd599c0570b7699405"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f013",
+   "grades": [
+    "takhrij",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "No taking prevails: the aṣḥāb, with al-Ḥārithī's «متعذر» in al-Inṣāf; against it only Ibn Rajab's takhrīj.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p272",
+     "excerpt_ar": "لو بيع شقص في شركة حمل. فالأخذ له متعذر، إذ لا يدخل في",
+     "position": 1,
+     "grade": "ashab",
+     "who": "al-Mardāwī, al-Inṣāf (from al-Ḥārithī)",
+     "note": "The page ends mid-sentence: «ملكه بذلك. قاله الحارثي، وقدمه»."
+    }
+   ],
+   "positions_sha256": "1feabd4be2de6a884ad7031ee9ef83e325df77a257e1156fc37be4851fc60d33"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f014",
+   "grades": [
+    "nass",
+    [
+     "nass",
+     "ashab"
+    ]
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "No liʿān on the ḥaml prevails: the madhhab of the aṣḥāb in the record and in al-Inṣāf.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v09:p255",
+     "excerpt_ar": "وإن نفى الحمل في التعانه: لم ينتف حتى ينفيه عند وضعها له، ويلاعن) . هذا المذهب. نقله الجماعة عن الإمام أحمد - رحمه الله -. وعليه أكثر الأصحاب.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Citing this qāʿida: «هذا المذهب عند الأصحاب»."
+    }
+   ],
+   "positions_sha256": "94348e7255aa8da18588a4ea3af4e766d61a04567fc9bffb6694e02fb77a001e"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f016",
+   "grades": [
+    "takhrij",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Recorded only: Aḥmad's explicit «شبه العمد» against the aṣḥāb's derivation; no later taṣḥīḥ found.",
+   "evidence": [],
+   "positions_sha256": "b17df361b2bc8c758fddd9ea8c5dea5012d9577fb73ca6761a16cdab8ace9b77"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f017",
+   "grades": [
+    "ashab",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Immediate ʿitq prevails: Ibn Rajab's «وهو المذهب» and al-Inṣāf's.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p400",
+     "excerpt_ar": "وإن أعتق حاملا: عتق جنينها، إلا أن يستثنيه. وإن أعتق ما في بطنها دونها: عتق وحده) . في الحال. هذا المذهب. نص عليه.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Then «وقيل: لا يعتق الحمل فيهما حتى تضعه حيا», Ibn Manṣūr's riwāya."
+    }
+   ],
+   "positions_sha256": "12ff0a5367eb9c588ee9956fb40917ed29cfe3c73b6b84ad0f466bbdac33de96"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f018",
+   "grades": [
+    "ashab",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The ḥaml as sold prevails: al-Inṣāf's taṣḥīḥ.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v04:p381",
+     "excerpt_ar": "الحمل وقت العقد مبيع. على الصحيح من المذهب.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "In the khiyār: the ḥaml at the contract is sold."
+    }
+   ],
+   "positions_sha256": "a67da906635843ea80f9f12faa684438f244f6695c79544c07999f1e48968618"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f019",
+   "grades": [
+    "zahir",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Dhakāt with the mother prevails: al-Inṣāf labels it the madhhab of the aṣḥāb.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v10:p402",
+     "excerpt_ar": "وتحصل ذكاة الجنين بذكاة أمه إذا خرج ميتا، أو متحركا كحركة المذبوح، وسواء أشعر أو لم يشعر) . هذا المذهب. وعليه جماهير الأصحاب",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Then Ibn ʿAqīl's Funūn on the other side."
+    }
+   ],
+   "positions_sha256": "a81385aa41a0f318d773c218011261e86f8bc18613f8862f706df1dfda3978bb"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f002",
+   "grades": [
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Ownership of the raqaba prevails: al-Inṣāf reports al-Zarkashī that it is the madhhab without dispute among the aṣḥāb.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p027",
+     "excerpt_ar": "قال الزركشي: والظاهر أن الخلاف على القول بالانتقال. إذ لا نزاع بين الأصحاب: أن الانتقال إلى الموقوف عليه هو المذهب، مع اختلافهم في المختار هنا.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf (from al-Zarkashī)",
+     "note": "In the acceptance of a waqf."
+    }
+   ],
+   "positions_sha256": "819e88c0e91e720b40f3ec34648f7b55c923a6d725c25a3c2331ee6d5d28de13"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f004",
+   "grades": [
+    "ashab",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Bare intifāʿ prevails: al-Iqnāʿ defines the iʿāra as an ibāḥa of the benefit.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p331",
+     "excerpt_ar": "وهي العين المعارة والإعارة: إباحة نفعها بغير عوض",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The definition opening bāb al-ʿāriya."
+    }
+   ],
+   "positions_sha256": "48b6ca54c02f78b426eb8690d73fff765d96ce428f9f43c2e5385fb6049ef491"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f007",
+   "grades": [
+    "ashab",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Bare ibāḥa prevails: al-Majd's «مذهبنا» in al-Inṣāf.",
+   "evidence": [
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p339",
+     "excerpt_ar": "قال المجد: مذهبنا لا يملك الطعام الذي قدم إليه، بل يهلك بالأكل على ملك صاحبه.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf (from al-Majd)",
+     "note": "The guest's food."
+    }
+   ],
+   "positions_sha256": "2bd1b12721a5898a707cf9d4723c4f0d54124de359d35939231649d5519b6394"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f008",
+   "grades": [
+    "wajh",
+    "wajh",
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Intifāʿ prevails: al-Iqnāʿ states it, al-Inṣāf gives al-Qāḍī's with the Furūʿ's jazm.",
+   "evidence": [
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p156",
+     "excerpt_ar": "والمعقود عليه منفعة الاستمتاع لا ملكها",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "Opening kitāb al-nikāḥ."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p006",
+     "excerpt_ar": "الثانية: قال القاضي: المعقود عليه في النكاح: المنفعة، أي الانتفاع بها، لا ملكها. وجزم به في الفروع.",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Then the other wordings and this qāʿida."
+    }
+   ],
+   "positions_sha256": "5cb5aafa0c3a625f94a9d686587ff796fef3719831e0a363b64e4bd21a0035fc"
+  }
+ ]
+}
