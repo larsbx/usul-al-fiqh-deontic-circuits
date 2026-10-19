@@ -49,6 +49,19 @@ Legitimate means four things hold:
    - **Ties.** Ranking by the *share* of an encoder's fields settled ties every one-field encoder at 1.0. Ranking by count settled, then share, with the type hierarchy (`extends`) breaking ties, uses what the types already carry.
 2. **Category scoring at the type layer** (done for the lexical headline).
 3. **Blind typing beyond fold 0.** Fold 0 is too small to claim a figure at the qāʿida level.
-4. **A semantic ranker** in place of, or fused with, the bag of words. It must be pinned by hash, deterministic, scored on the same strict folds, and it proposes only. The pilot follows.
-
 Re-weighting TF-IDF or lifting the excerpt cap will not get there: a typological farʿ's words are its bāb's, not its qāʿida's.
+
+## Pilot: semantic routing does not help with a general embedding model
+
+The pilot used `intfloat/multilingual-e5-base` at revision `d128750597153bb5987e10b1c3493a34e5a4502a`, on CPU, with e5's `query:`/`passage:` prefixes. Each fold's evidence was embedded without the fold, as for the lexical model. Fusion is reciprocal rank with the standard k = 60, not tuned. The pilot was run outside the repository; nothing is adopted.
+
+| Recall@5 under the strict split | Category, all | Old | Round 7 | Typed hybrid, fold 0 (by encoder / by category) |
+|---|---|---|---|---|
+| Lexical (the index) | **0.483** | 0.515 | 0.285 | **0.696** / 0.721 |
+| Semantic, category centroids | 0.063 | 0.072 | 0.012 | 0.554 / 0.571 |
+| Semantic, centred, nearest example | 0.255 | 0.265 | 0.192 | 0.613 / 0.629 |
+| Lexical and semantic fused | 0.355 | 0.376 | 0.227 | 0.650 / 0.675 |
+
+The centroid run collapses because e5's vectors share one dominant direction, so the categories with the most evidence win every query. The fix, centring on the mean and scoring each category by its nearest example, is the method's standard correction, fixed before scoring. Corrected, the embedding still scores half of TF-IDF, and fusing the two lowers the lexical figure. A general multilingual model does not separate what the bank routes on: furūʿ of a pledge and of a lease are near each other as commerce, yet fall under different qawāʿid. Semantic routing would need a classical-Arabic encoder fine-tuned on the bank's cases fold by fold. That is its own project, with the same leakage discipline, and is not pursued here.
+
+**So the path to 0.9 is the typed route** (items 1–3), with the lexical index as its tiebreak.
