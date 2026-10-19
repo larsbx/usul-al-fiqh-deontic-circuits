@@ -151,3 +151,19 @@ Caveats:
 - Fold 0 has 240 cases.
 
 A clean figure needs the procedure frozen and run on another fold. The arithmetic stands: recall@5 ≈ settled rate + (1 − settled rate) × the lexical rescue rate, so 0.9 needs about 88 % settled.
+
+### Validation on a fold the procedure was not designed on
+
+The shortlist procedure was frozen first: 20 types, the same prompt, the same scoring. It was then run on **record fold 1**, whose 235 cases nothing earlier had used. They were typed blind by four agents under fresh shuffled ids.
+
+| Fold 1, strict split | @1 | @5 | @10 |
+|---|---|---|---|
+| Lexical router alone | 0.298 | 0.502 | 0.566 |
+| **Shortlist typing, hybrid** | **0.685** | **0.860** | **0.877** |
+| The same, scored on category | 0.770 | **0.881** | 0.885 |
+
+The typists wrote 309 situations with 424 facts; 7 cases settle nothing. The case's own reading has a field settled in **186 of 235 (79 %)**, and all 186 are in the top five. That is the fourth typing in which a settled reading has always ranked there.
+
+**The procedure,** for use: the strict-fold router proposes the 20 most likely qāʿida types for a text; a blind typist reads their statements, decides which ground the ruling turns on, and settles those facts; the typed coverage ranks the readings, and the router breaks ties.
+
+**Where 0.9 now stands:** about 0.86–0.88 at k = 5 by category. The remaining step is the typing's recall of the right qāʿida, 79 % settled against the 88 % that 0.9 needs. The cases settling nothing are fragments and headings (7 of 235), not reachable by any typing.
