@@ -1,0 +1,2246 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "set": "rajab_fold1",
+  "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
+  "answers": 235,
+  "situations": 309,
+  "fields_stated": 424,
+  "cases": 235,
+  "encoders": 223,
+  "applies": 0.3915,
+  "recall": {
+    "1": 0.6468,
+    "5": 0.7915,
+    "10": 0.7915
+  },
+  "recall_with_named_rules": {
+    "1": 0.6468,
+    "5": 0.7915,
+    "10": 0.7915
+  },
+  "lexical_recall": {
+    "1": 0.2979,
+    "5": 0.5021,
+    "10": 0.566
+  },
+  "hybrid_recall": {
+    "1": 0.6851,
+    "5": 0.8596,
+    "10": 0.8766
+  },
+  "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
+  "prior_recall": {
+    "1": 0.0383,
+    "5": 0.0979,
+    "10": 0.1447
+  },
+  "encoders_applying_per_answer": 0.6,
+  "encoders_touched_per_answer": 1.32,
+  "by_encoder": {
+    "a26_ihala_on_known_cause": {
+      "cases": 5,
+      "applies": 1,
+      "top5": 4,
+      "unrouted": 1
+    },
+    "a26_refused_idhn_lapses": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 1
+    },
+    "a27_ain_ruling_survives_owner_change": {
+      "cases": 3,
+      "applies": 1,
+      "top5": 2,
+      "unrouted": 1
+    },
+    "a27_specific_agent_in_general_object": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 3,
+      "unrouted": 0
+    },
+    "a29_four_kinds_of_milk": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "a29_haml_hukm_before_separation": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 2
+    },
+    "a31_rajab87_transfer_of_holding": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 1
+    },
+    "abstention_under_possible_condition": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "advance_after_cause": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "amr": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "aqila_bears_across_change": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "asl_zahir": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 2
+    },
+    "attached_growth_follows": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "attached_right_disposal": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "attached_takeover_at_value": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "badal_stands_for_original": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "benefit_condition_against_compensation": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "benefit_to_other": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "bud_exit_charged": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "budh_capacity_is_wealth": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "burdened_thing_compensated": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "cancel_on_existence_valid": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "cause_restricts_general": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "concurrent_causes": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "concurrent_condition": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "continued_holding": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "continuity": {
+      "cases": 3,
+      "applies": 3,
+      "top5": 3,
+      "unrouted": 0
+    },
+    "dalalat_hal_carries_claim": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "daman_without_qabd": {
+      "cases": 2,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 1
+    },
+    "delegating_work": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "desisting_at_once": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "determinate_holder_right": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "disposal_before_qabd_debt": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "dispose_without_judge": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 3,
+      "unrouted": 1
+    },
+    "distribution_each_over_whole": {
+      "cases": 3,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 1
+    },
+    "double_kinship_preferred": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "doubled": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "doubt_in_condition": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 4
+    },
+    "entitlement_multiplies": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "error_actor_liable": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 3,
+      "unrouted": 1
+    },
+    "excess_in_following": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "failed_obligation_returns": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "follows_proven_ownership": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "forbidden_cause_voided": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "forced_acquisition_solvent": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "free_bestowal_of_needed_ayn": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "free_bestowal_of_needed_benefit": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "generality": {
+      "cases": 3,
+      "applies": 1,
+      "top5": 3,
+      "unrouted": 0
+    },
+    "grandchild_in_child_term": {
+      "cases": 5,
+      "applies": 0,
+      "top5": 3,
+      "unrouted": 2
+    },
+    "growth_from_substance": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "hair_detached": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "haml_ala_adna": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "hand_with_owner_liable": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "hastened_right_forfeited": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "heir_stands_in_owed_right": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 1
+    },
+    "heir_takes_deceased_right": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "hit_state_governs": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "idda_transfer_on_change": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "implicit_exception": {
+      "cases": 3,
+      "applies": 3,
+      "top5": 3,
+      "unrouted": 0
+    },
+    "intention_shapes_wording": {
+      "cases": 4,
+      "applies": 1,
+      "top5": 2,
+      "unrouted": 2
+    },
+    "istihlak": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "itlaf": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 4,
+      "unrouted": 0
+    },
+    "knowledge": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "lease_after_authority": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "lots": {
+      "cases": 9,
+      "applies": 0,
+      "top5": 9,
+      "unrouted": 0
+    },
+    "maadum_grant_valid": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "mahr_fully_established": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "mahr_halved_by_separation": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "manumission_spread": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "many_over_noble": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "mubashara_tasabbub": {
+      "cases": 3,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 1
+    },
+    "nafaqa_taken_owned": {
+      "cases": 2,
+      "applies": 1,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "nafl_before_fard": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "necessity_spares_lighter": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "needed_item_is_surplus": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "occurrence_state_governs": {
+      "cases": 3,
+      "applies": 1,
+      "top5": 2,
+      "unrouted": 1
+    },
+    "partners": {
+      "cases": 4,
+      "applies": 4,
+      "top5": 4,
+      "unrouted": 0
+    },
+    "performed_without_leave_not_owned": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "performed_without_leave_owned": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 3,
+      "unrouted": 0
+    },
+    "prevention_easier_than_removal": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "rajab_a28_faskh_growth_returns": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "rajab_a28_growth_follows_hand": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "rajab_a28_growth_in_nonownership_contract": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "rajab_a28_toward_ownership_growth": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 2
+    },
+    "rajab_a30_ikhtisas_hand_stands": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 2
+    },
+    "rajab_a30_tie_binds_whole": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 1
+    },
+    "rajab_a30_use_right_for_need": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "rajiyya_takes_wife_rule": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "recourse": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 3,
+      "unrouted": 0
+    },
+    "recourse_after_return": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "removal_before_knowledge": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "repeat_bearing_roots_as_trees": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "rescission_harm": {
+      "cases": 4,
+      "applies": 3,
+      "top5": 3,
+      "unrouted": 1
+    },
+    "rescue_loss_liability": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "returned_takes_first_ruling": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "right_after_transfer": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 1
+    },
+    "ruling_with_bar": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "seizing_hand_liable": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "settles_without_ability": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "shared_right_accrues_to_rest": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "simultaneous_combination_voids": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "specific_singled_out": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "split_halves_suffice": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "spread_follows_injury": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "substitute_at_obligation": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "substitute_refusal_judged_by_original": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "successive_by_binding": {
+      "cases": 3,
+      "applies": 1,
+      "top5": 2,
+      "unrouted": 1
+    },
+    "supervening_bar_extends_to_preliminaries": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "switch_to_original": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "tabaa": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "tadakhul": {
+      "cases": 4,
+      "applies": 2,
+      "top5": 4,
+      "unrouted": 0
+    },
+    "taker_from_usurper": {
+      "cases": 2,
+      "applies": 2,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "takes_only_by_special": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "taliq_al_bay": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "tolerance_exceeded": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "transfer_follows_cause": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "trust_voidance": {
+      "cases": 2,
+      "applies": 1,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "two_usul_reinforced_governs": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 1
+    },
+    "umum_lafz": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "unintended_instance_covered": {
+      "cases": 3,
+      "applies": 1,
+      "top5": 2,
+      "unrouted": 1
+    },
+    "unknown_as_nonexistent": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "unknown_condition_in_fact": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "unknown_consent_binds": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "unknown_order_judged_sequential": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "unqualified_sharika_halves": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "urf_specialises_general": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "vague_one_bars_all": {
+      "cases": 3,
+      "applies": 2,
+      "top5": 3,
+      "unrouted": 0
+    },
+    "vague_report_accepted": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "void_contract_concluded": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "vowed_as_shar_obligation": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "wage_without_stipulation": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 0
+    },
+    "woman_half_of_man": {
+      "cases": 1,
+      "applies": 1,
+      "top5": 1,
+      "unrouted": 0
+    }
+  },
+  "cases_detail": [
+    {
+      "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "encoder": "amr",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
+      "encoder": "generality",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005",
+      "encoder": "generality",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
+      "encoder": "haml_ala_adna",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f003",
+      "encoder": "generality",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f001",
+      "encoder": "umum_lafz",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f001",
+      "encoder": "hair_detached",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
+      "encoder": "hair_detached",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
+      "encoder": "excess_in_following",
+      "settled": 0.3333,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
+      "encoder": "excess_in_following",
+      "settled": 0.3333,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f001",
+      "encoder": "advance_after_cause",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f002",
+      "encoder": "advance_after_cause",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
+      "encoder": "switch_to_original",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
+      "encoder": "nafl_before_fard",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f000",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f005",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f010",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f013",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f015",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
+      "encoder": "substitute_at_obligation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+      "encoder": "many_over_noble",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
+      "encoder": "tadakhul",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+      "encoder": "tadakhul",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f009",
+      "encoder": "tadakhul",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
+      "encoder": "tadakhul",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003",
+      "encoder": "settles_without_ability",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
+      "encoder": "settles_without_ability",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
+      "encoder": "growth_from_substance",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f004",
+      "encoder": "growth_from_substance",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
+      "encoder": "istihlak",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f009",
+      "encoder": "a26_refused_idhn_lapses",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f010",
+      "encoder": "a26_refused_idhn_lapses",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f001",
+      "encoder": "right_after_transfer",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
+      "encoder": "right_after_transfer",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f003",
+      "encoder": "follows_proven_ownership",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
+      "encoder": "itlaf",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
+      "encoder": "itlaf",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002",
+      "encoder": "itlaf",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004",
+      "encoder": "itlaf",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f001",
+      "encoder": "benefit_to_other",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
+      "encoder": "concurrent_causes",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
+      "encoder": "tolerance_exceeded",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
+      "encoder": "failed_obligation_returns",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+      "encoder": "implicit_exception",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
+      "encoder": "implicit_exception",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f002",
+      "encoder": "implicit_exception",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f002",
+      "encoder": "manumission_spread",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f001",
+      "encoder": "lease_after_authority",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+      "encoder": "successive_by_binding",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002",
+      "encoder": "successive_by_binding",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
+      "encoder": "successive_by_binding",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f000",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f008",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f012",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f000",
+      "encoder": "continued_holding",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
+      "encoder": "trust_voidance",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
+      "encoder": "trust_voidance",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f001",
+      "encoder": "void_contract_concluded",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000",
+      "encoder": "forced_acquisition_solvent",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000",
+      "encoder": "daman_without_qabd",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001",
+      "encoder": "daman_without_qabd",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f003",
+      "encoder": "disposal_before_qabd_debt",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f000",
+      "encoder": "attached_right_disposal",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
+      "encoder": "concurrent_condition",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
+      "encoder": "ruling_with_bar",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f000",
+      "encoder": "desisting_at_once",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
+      "encoder": "rescission_harm",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
+      "encoder": "rescission_harm",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f004",
+      "encoder": "rescission_harm",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
+      "encoder": "rescission_harm",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
+      "encoder": "removal_before_knowledge",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f001",
+      "encoder": "knowledge",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
+      "encoder": "unknown_condition_in_fact",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
+      "encoder": "recourse_after_return",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
+      "encoder": "doubt_in_condition",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
+      "encoder": "doubt_in_condition",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
+      "encoder": "taliq_al_bay",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f008",
+      "encoder": "doubt_in_condition",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f010",
+      "encoder": "doubt_in_condition",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f000",
+      "encoder": "delegating_work",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004",
+      "encoder": "delegating_work",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.5,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f014",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f005",
+      "encoder": "nafaqa_taken_owned",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f007",
+      "encoder": "nafaqa_taken_owned",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
+      "encoder": "benefit_condition_against_compensation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f002",
+      "encoder": "wage_without_stipulation",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
+      "encoder": "recourse",
+      "settled": 0.75,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
+      "encoder": "recourse",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f010",
+      "encoder": "recourse",
+      "settled": 0.25,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",
+      "encoder": "partners",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f001",
+      "encoder": "partners",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f002",
+      "encoder": "partners",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f005",
+      "encoder": "partners",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f008",
+      "encoder": "attached_takeover_at_value",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f006",
+      "encoder": "rescue_loss_liability",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f007",
+      "encoder": "rescue_loss_liability",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
+      "encoder": "repeat_bearing_roots_as_trees",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
+      "encoder": "attached_growth_follows",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f004",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f007",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f015",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f019",
+      "encoder": "rajab_a28_growth_in_nonownership_contract",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f027",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "settled": 0.5,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f002",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f005",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f009",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f020",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
+      "encoder": "rajab_a30_use_right_for_need",
+      "settled": 0.5,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f010",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f013",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f017",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f021",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f006",
+      "encoder": "a29_four_kinds_of_milk",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f016",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f017",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "settled": 0.5,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003",
+      "encoder": "seizing_hand_liable",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
+      "encoder": "hand_with_owner_liable",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001",
+      "encoder": "taker_from_usurper",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
+      "encoder": "taker_from_usurper",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f001",
+      "encoder": "error_actor_liable",
+      "settled": 0.4,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
+      "encoder": "error_actor_liable",
+      "settled": 0.2,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007",
+      "encoder": "error_actor_liable",
+      "settled": 0.4,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
+      "encoder": "error_actor_liable",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f002",
+      "encoder": "performed_without_leave_owned",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f003",
+      "encoder": "performed_without_leave_owned",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004",
+      "encoder": "performed_without_leave_owned",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f007",
+      "encoder": "performed_without_leave_not_owned",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f001",
+      "encoder": "dispose_without_judge",
+      "settled": 0.3333,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003",
+      "encoder": "dispose_without_judge",
+      "settled": 0.3333,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004",
+      "encoder": "dispose_without_judge",
+      "settled": 0.6667,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005",
+      "encoder": "dispose_without_judge",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f003",
+      "encoder": "free_bestowal_of_needed_benefit",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f005",
+      "encoder": "free_bestowal_of_needed_ayn",
+      "settled": 0.5,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f006",
+      "encoder": "free_bestowal_of_needed_benefit",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
+      "encoder": "vowed_as_shar_obligation",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f004",
+      "encoder": "vowed_as_shar_obligation",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
+      "encoder": "split_halves_suffice",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f006",
+      "encoder": "forbidden_cause_voided",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f011",
+      "encoder": "hastened_right_forfeited",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f003",
+      "encoder": "continuity",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f007",
+      "encoder": "continuity",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009",
+      "encoder": "continuity",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f002",
+      "encoder": "unknown_consent_binds",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f001",
+      "encoder": "vague_report_accepted",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f005",
+      "encoder": "unknown_as_nonexistent",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f004",
+      "encoder": "maadum_grant_valid",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
+      "encoder": "maadum_grant_valid",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003",
+      "encoder": "unknown_order_judged_sequential",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f007",
+      "encoder": "vague_one_bars_all",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f008",
+      "encoder": "vague_one_bars_all",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f009",
+      "encoder": "vague_one_bars_all",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f017",
+      "encoder": "simultaneous_combination_voids",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f009",
+      "encoder": "substitute_refusal_judged_by_original",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f001",
+      "encoder": "necessity_spares_lighter",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f003",
+      "encoder": "necessity_spares_lighter",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f002",
+      "encoder": "distribution_each_over_whole",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
+      "encoder": "distribution_each_over_whole",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
+      "encoder": "distribution_each_over_whole",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002",
+      "encoder": "unqualified_sharika_halves",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f006",
+      "encoder": "shared_right_accrues_to_rest",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001",
+      "encoder": "occurrence_state_governs",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
+      "encoder": "occurrence_state_governs",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f008",
+      "encoder": "occurrence_state_governs",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f006",
+      "encoder": "cancel_on_existence_valid",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001",
+      "encoder": "specific_singled_out",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f003",
+      "encoder": "specific_singled_out",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006",
+      "encoder": "takes_only_by_special",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f010",
+      "encoder": "entitlement_multiplies",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003",
+      "encoder": "double_kinship_preferred",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
+      "encoder": "urf_specialises_general",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
+      "encoder": "urf_specialises_general",
+      "settled": 0.3333,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
+      "encoder": "cause_restricts_general",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f001",
+      "encoder": "intention_shapes_wording",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f004",
+      "encoder": "intention_shapes_wording",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
+      "encoder": "intention_shapes_wording",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
+      "encoder": "intention_shapes_wording",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f003",
+      "encoder": "unintended_instance_covered",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f007",
+      "encoder": "unintended_instance_covered",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f008",
+      "encoder": "unintended_instance_covered",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000",
+      "encoder": "mubashara_tasabbub",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004",
+      "encoder": "mubashara_tasabbub",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
+      "encoder": "mubashara_tasabbub",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
+      "encoder": "spread_follows_injury",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001",
+      "encoder": "hit_state_governs",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f002",
+      "encoder": "hit_state_governs",
+      "settled": 1.0,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003",
+      "encoder": "aqila_bears_across_change",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f005",
+      "encoder": "needed_item_is_surplus",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q131.f001",
+      "encoder": "budh_capacity_is_wealth",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f012",
+      "encoder": "tabaa",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f017",
+      "encoder": "tabaa",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f001",
+      "encoder": "prevention_easier_than_removal",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f007",
+      "encoder": "prevention_easier_than_removal",
+      "settled": 1.0,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
+      "encoder": "supervening_bar_extends_to_preliminaries",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f002",
+      "encoder": "burdened_thing_compensated",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+      "encoder": "doubled",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f004",
+      "encoder": "doubled",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
+      "encoder": "returned_takes_first_ruling",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f004",
+      "encoder": "badal_stands_for_original",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f007",
+      "encoder": "heir_takes_deceased_right",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f010",
+      "encoder": "heir_takes_deceased_right",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f011",
+      "encoder": "heir_stands_in_owed_right",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f012",
+      "encoder": "heir_stands_in_owed_right",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
+      "encoder": "rajiyya_takes_wife_rule",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
+      "encoder": "woman_half_of_man",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f004",
+      "encoder": "determinate_holder_right",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
+      "encoder": "transfer_follows_cause",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f006",
+      "encoder": "dalalat_hal_carries_claim",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007",
+      "encoder": "grandchild_in_child_term",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008",
+      "encoder": "grandchild_in_child_term",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
+      "encoder": "grandchild_in_child_term",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f014",
+      "encoder": "grandchild_in_child_term",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015",
+      "encoder": "grandchild_in_child_term",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
+      "encoder": "bud_exit_charged",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f000",
+      "encoder": "mahr_fully_established",
+      "settled": 0.25,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
+      "encoder": "mahr_halved_by_separation",
+      "settled": 0.25,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
+      "encoder": "mahr_halved_by_separation",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f003",
+      "encoder": "idda_transfer_on_change",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
+      "encoder": "two_usul_reinforced_governs",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
+      "encoder": "two_usul_reinforced_governs",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015",
+      "encoder": "asl_zahir",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
+      "encoder": "asl_zahir",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
+      "encoder": "asl_zahir",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f005",
+      "encoder": "lots",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f008",
+      "encoder": "lots",
+      "settled": 0.3333,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f010",
+      "encoder": "lots",
+      "settled": 0.3333,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f017",
+      "encoder": "lots",
+      "settled": 0.3333,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f022",
+      "encoder": "lots",
+      "settled": 0.6667,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f028",
+      "encoder": "abstention_under_possible_condition",
+      "settled": 1.0,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033",
+      "encoder": "lots",
+      "settled": 0.3333,
+      "rank": 3
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f037",
+      "encoder": "lots",
+      "settled": 0.6667,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f044",
+      "encoder": "lots",
+      "settled": 0.3333,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f047",
+      "encoder": "lots",
+      "settled": 0.3333,
+      "rank": 1
+    }
+  ]
+}

@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import subprocess
 from collections import Counter, defaultdict
 from dataclasses import dataclass
@@ -48,9 +49,15 @@ class Typed:
 @dataclass(frozen=True)
 class TestSet(Typed):
     """A labelled test set: its cases as (unit, encoder, needs), and the routing index's ranking of
-    the encoders for each unit (the lexical baseline, held out where the index was fitted on the set)."""
+    the encoders for each unit (the lexical baseline, held out where the index was fitted on the set).
+    A set typed from a reading list carries it: ``shortlist`` is then committed beside its situations."""
     cases: Callable[[Path], list[tuple[str, str, list[str]]]]
     ranker: Callable[[Path], dict[str, list[str]]]
+    listed: bool = False
+
+    @property
+    def shortlist(self) -> str:
+        return f"corpus/typing/{self.name}_shortlist.json"
 
     @property
     def report(self) -> str:
@@ -117,8 +124,66 @@ def _classical_ranker(root: Path) -> dict[str, list[str]]:
     return {i: model.rank(t) for i, _, t in cs if routing._fold(i) == FOLD}
 
 
+def _fold_cases(fold: int) -> Callable[[Path], list[tuple[str, str, list[str]]]]:
+    def cases(root: Path) -> list[tuple[str, str, list[str]]]:
+        from . import takhrij
+        needs = {c["far"]: c.get("needs", []) for c in takhrij.load(root / "corpus")}
+        return [(far, enc, needs.get(far, [])) for far, enc, _ in routing.cases(root / "corpus") if routing._fold(far) == fold]
+    return cases
+
+
+def _strict_ranker(fold: int) -> Callable[[Path], dict[str, list[str]]]:
+    """Each farʿ ranked by the index refitted without every farʿ of its qāʿida's fold (the formalised
+    statements kept, as in use): its own qāʿida's furūʿ never train the ranking (audit PR-48)."""
+    def ranker(root: Path) -> dict[str, list[str]]:
+        corpus = root / "corpus"
+        cs, qs = routing.cases(corpus), routing.qawaid(corpus)
+        held = [(i, t) for i, _, t in cs if routing._fold(i) == fold]
+        out = {}
+        for f in sorted({routing._fold(routing._qaida(i)) for i, _ in held}):
+            model = routing.Model.fit(qs + [(e, t) for i, e, t in cs if routing._fold(routing._qaida(i)) != f])
+            out |= {i: model.rank(t) for i, t in held if routing._fold(routing._qaida(i)) == f}
+        return out
+    return ranker
+
+
 SETS = (TestSet("islamqa_tranche1", _islamqa_cases, _islamqa_ranker),
-        TestSet("rajab_fold0", _classical_cases, _classical_ranker))
+        TestSet("rajab_fold0", _classical_cases, _classical_ranker),
+        TestSet("rajab_fold1", _fold_cases(1), _strict_ranker(1), listed=True))
+SHORTLIST = 20
+
+
+def by_name(name: str) -> TestSet:
+    return next(ts for ts in SETS if ts.name == name)
+
+
+def shortlist(root: Path, ranking: dict[str, list[str]], n: int = SHORTLIST) -> dict[str, list[str]]:
+    """Per unit, the typist's reading list: the qāʿida types whose fields the router's best-ranked
+    encoders read, in rank order, until ``n`` types (types from ``examples/v41_types.pl``)."""
+    from . import deduction
+    export = (root / "examples/v41_types.pl").read_text(encoding="utf-8")
+    reads = deduction.reads(export)
+    owner: dict[str, list[str]] = {}
+    for q, f in re.findall(r"^type_field\((\w+), (\w+), ", export, re.M):
+        owner.setdefault(f, []).append(q)
+    out = {}
+    for unit, ranked in sorted(ranking.items()):
+        types: list[str] = []
+        for e in ranked:
+            for q in (q for f in reads.get(e, []) for q in owner.get(f, [])):
+                if q not in types:
+                    types.append(q)
+            if len(types) >= n:
+                break
+        out[unit] = types[:n]
+    return out
+
+
+def render_shortlist(root: Path, ts: TestSet) -> str:
+    return json.dumps({"schema_version": 1, "status": "candidate", "set": ts.name, "size": SHORTLIST,
+                       "method": "the strict router's best-ranked encoders' qāʿida types, in rank order; "
+                                 "the typist reads these statements first, then the full catalogue",
+                       "units": shortlist(root, ts.ranker(root))}, ensure_ascii=False, indent=2) + "\n"
 
 
 def sid(answer: str, i: int) -> str:
