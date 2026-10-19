@@ -1,0 +1,1500 @@
+{
+ "schema_version": 1,
+ "status": "candidate",
+ "shard": "c",
+ "labels": [
+  {
+   "id": "hajr.mal_yatim",
+   "ar": "مال اليتيم",
+   "en": "the orphan's property",
+   "kind": "item",
+   "broader": "hajr",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:006",
+     "excerpt_ar": "ومن كان فقيرا فليأكل بالمعروف"
+    },
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:010",
+     "excerpt_ar": "إن الذين يأكلون أموال اليتامى ظلما"
+    }
+   ]
+  },
+  {
+   "id": "waqf.waqf",
+   "ar": "الوقف",
+   "en": "endowment",
+   "kind": "act",
+   "broader": "waqf",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "إن شئت حبست أصلها وتصدقت بها"
+    }
+   ]
+  },
+  {
+   "id": "waqf.nazir_waqf",
+   "ar": "ناظر الوقف",
+   "en": "the endowment's administrator",
+   "kind": "item",
+   "broader": "waqf.waqf",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لا جناح على من وليها أن يأكل منها بالمعروف"
+    }
+   ]
+  },
+  {
+   "id": "wakala.wakil",
+   "ar": "الوكيل",
+   "en": "the agent",
+   "kind": "item",
+   "broader": "wakala",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q018:019",
+     "excerpt_ar": "فابعثوا أحدكم بورقكم هذه إلى المدينة"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "أعطاه دينارا يشتري له به شاة"
+    }
+   ]
+  },
+  {
+   "id": "ijara.ijara",
+   "ar": "الإجارة",
+   "en": "hire",
+   "kind": "act",
+   "broader": "ijara",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q028:026",
+     "excerpt_ar": "يا أبت استأجره إن خير من استأجرت القوي الأمين"
+    },
+    {
+     "kind": "ijma",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463",
+     "excerpt_ar": "وأجمع أهل العلم في كل عصر وكل مصر على جواز الإجارة"
+    }
+   ]
+  },
+  {
+   "id": "ijara.ajir",
+   "ar": "الأجير",
+   "en": "the hired worker",
+   "kind": "item",
+   "broader": "ijara.ijara",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "ورجل استأجر أجيرا فاستوفى منه ولم يعطه أجره"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "أعطوا الأجير أجره قبل أن يجف عرقه"
+    }
+   ]
+  },
+  {
+   "id": "ijara.ujra",
+   "ar": "الأجرة",
+   "en": "the wage",
+   "kind": "item",
+   "broader": "ijara.ijara",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q065:006",
+     "excerpt_ar": "فإن أرضعن لكم فآتوهن أجورهن"
+    },
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:233",
+     "excerpt_ar": "وعلى المولود له رزقهن وكسوتهن بالمعروف"
+    }
+   ]
+  },
+  {
+   "id": "atima.thamar_muallaq",
+   "ar": "الثمر المعلق",
+   "en": "fruit hanging on the tree",
+   "kind": "item",
+   "broader": "atima",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "من أصاب بفيه من ذي حاجة غير متخذ خبنة فلا شيء عليه"
+    }
+   ]
+  },
+  {
+   "id": "buyu.thaman",
+   "ar": "الثمن",
+   "en": "the price",
+   "kind": "item",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q012:020",
+     "excerpt_ar": "وشروه بثمن بخس دراهم معدودة"
+    }
+   ]
+  },
+  {
+   "id": "nafaqat.nafaqa",
+   "ar": "النفقة",
+   "en": "maintenance",
+   "kind": "item",
+   "broader": "nafaqat",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q065:007",
+     "excerpt_ar": "لينفق ذو سعة من سعته"
+    }
+   ]
+  },
+  {
+   "id": "nafaqat.nafaqat_zawja",
+   "ar": "نفقة الزوجة",
+   "en": "the wife's maintenance",
+   "kind": "item",
+   "broader": "nafaqat.nafaqa",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:233",
+     "excerpt_ar": "وعلى المولود له رزقهن وكسوتهن بالمعروف"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "خذي ما يكفيك وولدك بالمعروف"
+    }
+   ]
+  },
+  {
+   "id": "nafaqat.nafaqat_aqarib",
+   "ar": "نفقة الأقارب",
+   "en": "maintenance of kin",
+   "kind": "item",
+   "broader": "nafaqat.nafaqa",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:233",
+     "excerpt_ar": "وعلى الوارث مثل ذلك"
+    }
+   ]
+  },
+  {
+   "id": "sharika.mudaraba",
+   "ar": "المضاربة",
+   "en": "silent partnership",
+   "kind": "act",
+   "broader": "sharika",
+   "nass": [
+    {
+     "kind": "ijma",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463",
+     "excerpt_ar": "وأجمع أهل العلم على جواز المضاربة في الجملة"
+    }
+   ]
+  },
+  {
+   "id": "hajj.niyaba_hajj",
+   "ar": "الحج عن الغير",
+   "en": "pilgrimage on another's behalf",
+   "kind": "act",
+   "broader": "hajj",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "أفأحج عنه قال نعم"
+    }
+   ]
+  },
+  {
+   "id": "zakat.sabil_allah",
+   "ar": "سهم سبيل الله",
+   "en": "the share 'in the way of God'",
+   "kind": "item",
+   "broader": "zakat",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q009:060",
+     "excerpt_ar": "وفي سبيل الله وابن السبيل"
+    }
+   ]
+  },
+  {
+   "id": "zakat.amil_zakat",
+   "ar": "العامل على الزكاة",
+   "en": "the alms collector",
+   "kind": "item",
+   "broader": "zakat",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q009:060",
+     "excerpt_ar": "والعاملين عليها والمؤلفة قلوبهم"
+    }
+   ]
+  },
+  {
+   "id": "jihad.tajhiz_ghazi",
+   "ar": "تجهيز الغازي",
+   "en": "equipping a fighter",
+   "kind": "act",
+   "broader": "jihad",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "من جهز غازيا في سبيل الله فقد غزا"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "حملت على فرس في سبيل الله"
+    }
+   ]
+  },
+  {
+   "id": "buyu.shart_fi_bay",
+   "ar": "الشرط في البيع",
+   "en": "a stipulation in sale",
+   "kind": "act",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "لا يحل سلف وبيع ولا شرطان في بيع"
+    }
+   ]
+  },
+  {
+   "id": "musaqat.musaqat",
+   "ar": "المساقاة والمزارعة",
+   "en": "share-cropping",
+   "kind": "act",
+   "broader": "musaqat",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "عامل أهل خيبر بشطر ما يخرج منها من ثمر أو زرع"
+    }
+   ]
+  },
+  {
+   "id": "salam.salam",
+   "ar": "السلم",
+   "en": "forward sale",
+   "kind": "act",
+   "broader": "salam",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "من أسلف في شيء ففي كيل معلوم ووزن معلوم إلى أجل معلوم"
+    },
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:282",
+     "excerpt_ar": "إذا تداينتم بدين إلى أجل مسمى فاكتبوه"
+    }
+   ]
+  },
+  {
+   "id": "jihad.salab",
+   "ar": "السلب",
+   "en": "the slain enemy's spoils",
+   "kind": "item",
+   "broader": "jihad",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "من قتل قتيلا له عليه بينة فله سلبه"
+    }
+   ]
+  },
+  {
+   "id": "jiala.jiala",
+   "ar": "الجعالة",
+   "en": "reward contract",
+   "kind": "act",
+   "broader": "jiala",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q012:072",
+     "excerpt_ar": "ولمن جاء به حمل بعير وأنا به زعيم"
+    }
+   ]
+  },
+  {
+   "id": "jiala.radd_abiq",
+   "ar": "رد الآبق",
+   "en": "returning a runaway slave",
+   "kind": "act",
+   "broader": "jiala.jiala",
+   "nass": [
+    {
+     "kind": "ijma",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463",
+     "excerpt_ar": "جعل في جعل الآبق، إذا جاء به خارجا من الحرم، دينارا # وأيضا فإنه قول من سمينا من الصحابة، ولم نعرف لهم في زمنهم مخالفا، فكان إجماعا"
+    }
+   ]
+  },
+  {
+   "id": "jiala.inqadh_mal",
+   "ar": "إنقاذ مال الغير من الهلكة",
+   "en": "rescuing another's property from loss",
+   "kind": "act",
+   "broader": "jiala.jiala",
+   "unanchored": "No Qur'anic verse, ḥadīth of the six books or reported ijmāʿ names a wage for rescuing another's property; Aḥmad's ruling is ijtihād by analogy with the runaway slave."
+  },
+  {
+   "id": "daman.daman",
+   "ar": "الضمان",
+   "en": "suretyship",
+   "kind": "act",
+   "broader": "daman",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q012:072",
+     "excerpt_ar": "وأنا به زعيم"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "الزعيم غارم"
+    }
+   ]
+  },
+  {
+   "id": "daman.qada_dayn_ghayr",
+   "ar": "قضاء دين الغير",
+   "en": "paying another's debt",
+   "kind": "act",
+   "broader": "daman.daman",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "صل عليه يا رسول الله وعلي دينه"
+    }
+   ]
+  },
+  {
+   "id": "jihad.fidaa_asir",
+   "ar": "فداء الأسير",
+   "en": "ransoming a captive",
+   "kind": "act",
+   "broader": "jihad",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q047:004",
+     "excerpt_ar": "فإما منا بعد وإما فداء"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "فكوا العاني"
+    }
+   ]
+  },
+  {
+   "id": "luqata.luqata",
+   "ar": "اللقطة",
+   "en": "found property",
+   "kind": "item",
+   "broader": "luqata",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "اعرف عفاصها ووكاءها ثم عرفها سنة"
+    }
+   ]
+  },
+  {
+   "id": "luqata.laqit",
+   "ar": "اللقيط",
+   "en": "the foundling",
+   "kind": "item",
+   "broader": "luqata",
+   "nass": [
+    {
+     "kind": "ijma",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463",
+     "excerpt_ar": "أجمع كل من نحفظ عنه من أهل العلم، على أن نفقة اللقيط غير واجبة على الملتقط"
+    }
+   ]
+  },
+  {
+   "id": "wadia.amana",
+   "ar": "الأمانة",
+   "en": "trust",
+   "kind": "item",
+   "broader": "wadia",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:058",
+     "excerpt_ar": "إن الله يأمركم أن تؤدوا الأمانات إلى أهلها"
+    }
+   ]
+  },
+  {
+   "id": "wadia.wadia",
+   "ar": "الوديعة",
+   "en": "deposit",
+   "kind": "item",
+   "broader": "wadia.amana",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:283",
+     "excerpt_ar": "فليؤد الذي اؤتمن أمانته"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "أد الأمانة إلى من ائتمنك"
+    }
+   ]
+  },
+  {
+   "id": "rahn.marhun",
+   "ar": "الرهن",
+   "en": "the pledge",
+   "kind": "item",
+   "broader": "rahn",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:283",
+     "excerpt_ar": "فرهان مقبوضة"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "الرهن يركب بنفقته إذا كان مرهونا"
+    }
+   ]
+  },
+  {
+   "id": "ariyya.ariyya",
+   "ar": "العارية",
+   "en": "loan for use",
+   "kind": "act",
+   "broader": "ariyya",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q107:007",
+     "excerpt_ar": "ويمنعون الماعون"
+    }
+   ]
+  },
+  {
+   "id": "faraid.dayn_tarika",
+   "ar": "الدين المتعلق بالتركة",
+   "en": "debt charged on the estate",
+   "kind": "item",
+   "broader": "faraid",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:011",
+     "excerpt_ar": "من بعد وصية يوصي بها أو دين"
+    }
+   ]
+  },
+  {
+   "id": "sulh.jidar_mushtarak",
+   "ar": "الجدار بين الجارين",
+   "en": "the wall between neighbours",
+   "kind": "item",
+   "broader": "sulh",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لا يمنع جار جاره أن يغرز خشبه في جداره"
+    }
+   ]
+  },
+  {
+   "id": "sulh.irtifaq_jiwar",
+   "ar": "الارتفاق بملك الجار",
+   "en": "easement over a neighbour's property",
+   "kind": "act",
+   "broader": "sulh",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لا يمنع جار جاره أن يغرز خشبه في جداره"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "لا ضرر ولا ضرار"
+    }
+   ]
+  },
+  {
+   "id": "sharika.sharikat_amlak",
+   "ar": "المال المشترك",
+   "en": "co-owned property",
+   "kind": "item",
+   "broader": "sharika",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q038:024",
+     "excerpt_ar": "وإن كثيرا من الخلطاء ليبغي بعضهم على بعض"
+    },
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:012",
+     "excerpt_ar": "فهم شركاء في الثلث"
+    }
+   ]
+  },
+  {
+   "id": "qada.qisma",
+   "ar": "القسمة",
+   "en": "partition",
+   "kind": "act",
+   "broader": "qada",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:008",
+     "excerpt_ar": "وإذا حضر القسمة أولو القربى"
+    },
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q054:028",
+     "excerpt_ar": "ونبئهم أن الماء قسمة بينهم"
+    }
+   ]
+  },
+  {
+   "id": "qada.muhayaa",
+   "ar": "المهايأة",
+   "en": "partition of usufruct by turns",
+   "kind": "act",
+   "broader": "qada.qisma",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q026:155",
+     "excerpt_ar": "لها شرب ولكم شرب يوم معلوم"
+    }
+   ]
+  },
+  {
+   "id": "ghasb.ghiras_fi_ard_ghayr",
+   "ar": "الغراس والبناء في أرض الغير",
+   "en": "planting and building on another's land",
+   "kind": "item",
+   "broader": "ghasb",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "ليس لعرق ظالم حق"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "أنت مضار"
+    }
+   ]
+  },
+  {
+   "id": "ghasb.zar_fi_ard_ghayr",
+   "ar": "الزرع في أرض الغير",
+   "en": "crops sown on another's land",
+   "kind": "item",
+   "broader": "ghasb",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-tirmidhi-shamela7895",
+     "excerpt_ar": "من زرع في أرض قوم بغير إذنهم فليس له من الزرع شيء وله نفقته"
+    }
+   ]
+  },
+  {
+   "id": "ghasb.ghasb",
+   "ar": "الغصب",
+   "en": "usurpation",
+   "kind": "act",
+   "broader": "ghasb",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:188",
+     "excerpt_ar": "ولا تأكلوا أموالكم بينكم بالباطل"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "لا يأخذن أحدكم متاع أخيه لاعبا ولا جادا"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "على اليد ما أخذت حتى تؤدي"
+    }
+   ]
+  },
+  {
+   "id": "ghasb.itlaf",
+   "ar": "إتلاف مال الغير",
+   "en": "destroying another's property",
+   "kind": "act",
+   "broader": "ghasb",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-tirmidhi-shamela7895",
+     "excerpt_ar": "طعام بطعام وإناء بإناء"
+    }
+   ]
+  },
+  {
+   "id": "ghasb.ghasb_hurr",
+   "ar": "الحر تحت اليد",
+   "en": "a free person held under another's hand",
+   "kind": "item",
+   "broader": "ghasb",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "ورجل باع حرا فأكل ثمنه"
+    }
+   ]
+  },
+  {
+   "id": "shufa.shufa",
+   "ar": "الشفعة",
+   "en": "pre-emption",
+   "kind": "act",
+   "broader": "shufa",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "بالشفعة في كل ما لم يقسم"
+    }
+   ]
+  },
+  {
+   "id": "hajr.muflis",
+   "ar": "مال المفلس",
+   "en": "the bankrupt's property",
+   "kind": "item",
+   "broader": "hajr",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "من أدرك ماله بعينه عند رجل أو إنسان قد أفلس فهو أحق به"
+    }
+   ]
+  },
+  {
+   "id": "sadaq.nisf_sadaq",
+   "ar": "نصف الصداق",
+   "en": "half the dower",
+   "kind": "item",
+   "broader": "sadaq",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:237",
+     "excerpt_ar": "وقد فرضتم لهن فريضة فنصف ما فرضتم"
+    }
+   ]
+  },
+  {
+   "id": "buyu.aqd_fasid",
+   "ar": "العقد الفاسد",
+   "en": "the void contract",
+   "kind": "act",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "من عمل عملا ليس عليه أمرنا فهو رد"
+    }
+   ]
+  },
+  {
+   "id": "wasaya.wasiyya",
+   "ar": "الوصية",
+   "en": "bequest",
+   "kind": "act",
+   "broader": "wasaya",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:180",
+     "excerpt_ar": "كتب عليكم إذا حضر أحدكم الموت إن ترك خيرا الوصية"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "الثلث والثلث كثير"
+    }
+   ]
+  },
+  {
+   "id": "buyu.bay_usul_wa_thimar",
+   "ar": "بيع الأصول والثمار",
+   "en": "sale of land, trees and their fruit",
+   "kind": "act",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "من باع نخلا قد أبرت، فثمرتها للذي باعها، إلا أن يشترط المبتاع"
+    }
+   ]
+  },
+  {
+   "id": "buyu.usul_buqul",
+   "ar": "أصول البقول المتكرر حملها",
+   "en": "perennial roots of vegetables",
+   "kind": "item",
+   "broader": "buyu.bay_usul_wa_thimar",
+   "unanchored": "No canonical text names perennial vegetable roots; whether they follow trees or crops is an ijtihādī classification of the Ḥanbalī jurists."
+  },
+  {
+   "id": "buyu.jaiha",
+   "ar": "الجائحة",
+   "en": "crop blight",
+   "kind": "item",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "أمر بوضع الجوائح"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "لو بعت من أخيك ثمرا فأصابته جائحة"
+    }
+   ]
+  },
+  {
+   "id": "buyu.khiyar",
+   "ar": "الخيار",
+   "en": "option to rescind",
+   "kind": "act",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "البيعان بالخيار ما لم يتفرقا"
+    }
+   ]
+  },
+  {
+   "id": "buyu.khiyar_ayb",
+   "ar": "الرد بالعيب",
+   "en": "return for defect",
+   "kind": "act",
+   "broader": "buyu.khiyar",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "الخراج بالضمان"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لا تصروا الإبل والغنم"
+    }
+   ]
+  },
+  {
+   "id": "buyu.bay_thamar_qabl_salah",
+   "ar": "بيع الثمر قبل بدو صلاحه",
+   "en": "sale of fruit before it ripens",
+   "kind": "act",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "نهى عن بيع الثمار حتى يبدو صلاحها"
+    }
+   ]
+  },
+  {
+   "id": "hiba.ruju_fi_hiba",
+   "ar": "الرجوع في الهبة والصدقة",
+   "en": "revoking a gift or alms",
+   "kind": "act",
+   "broader": "hiba",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "العائد في هبته كالكلب يعود في قيئه"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لا تشتره ولا تعد في صدقتك"
+    }
+   ]
+  },
+  {
+   "id": "itq.itq",
+   "ar": "العتق",
+   "en": "manumission",
+   "kind": "act",
+   "broader": "itq",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q090:013",
+     "excerpt_ar": "فك رقبة"
+    }
+   ]
+  },
+  {
+   "id": "itq.mukatab",
+   "ar": "المكاتب",
+   "en": "the slave under contract of manumission",
+   "kind": "item",
+   "broader": "itq.itq",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q024:033",
+     "excerpt_ar": "فكاتبوهم إن علمتم فيهم خيرا"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "المكاتب عبد ما بقي عليه من مكاتبته درهم"
+    }
+   ]
+  },
+  {
+   "id": "itq.tadbir",
+   "ar": "المدبر والمعلق عتقه بالموت",
+   "en": "the slave freed at the owner's death",
+   "kind": "item",
+   "broader": "itq.itq",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "أعتق رجل غلاما له عن دبر"
+    }
+   ]
+  },
+  {
+   "id": "itq.umm_walad",
+   "ar": "أم الولد",
+   "en": "the slave mother of her owner's child",
+   "kind": "item",
+   "broader": "itq.itq",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "أعتقها ولدها"
+    }
+   ]
+  },
+  {
+   "id": "ayman.yamin",
+   "ar": "اليمين",
+   "en": "the oath",
+   "kind": "act",
+   "broader": "ayman",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q005:089",
+     "excerpt_ar": "لا يؤاخذكم الله باللغو في أيمانكم"
+    }
+   ]
+  },
+  {
+   "id": "buyu.iqala",
+   "ar": "الإقالة",
+   "en": "rescission by consent",
+   "kind": "act",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "من أقال مسلما أقاله الله عثرته"
+    }
+   ]
+  },
+  {
+   "id": "buyu.maqbud_ala_sawm",
+   "ar": "المقبوض على وجه السوم",
+   "en": "goods taken while bargaining",
+   "kind": "item",
+   "broader": "buyu",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "ولا يسوم على سوم أخيه"
+    }
+   ]
+  },
+  {
+   "id": "hiba.atiyyat_marid",
+   "ar": "عطية المريض",
+   "en": "a gift in the final illness",
+   "kind": "act",
+   "broader": "hiba",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "أعتق ستة مملوكين له عند موته"
+    }
+   ]
+  },
+  {
+   "id": "jihad.ghanima",
+   "ar": "الغنيمة",
+   "en": "the spoils of war",
+   "kind": "item",
+   "broader": "jihad",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q008:041",
+     "excerpt_ar": "واعلموا أنما غنمتم من شيء فأن لله خمسه"
+    }
+   ]
+  },
+  {
+   "id": "jihad.istila_kuffar",
+   "ar": "مال المسلم يستولي عليه الكفار",
+   "en": "a Muslim's property seized by the enemy",
+   "kind": "item",
+   "broader": "jihad",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "ذهب فرس له، فأخذه العدو، فظهر عليه المسلمون، فرد عليه"
+    }
+   ]
+  },
+  {
+   "id": "amma.haml",
+   "ar": "الحمل",
+   "en": "the unborn child",
+   "kind": "item",
+   "broader": "amma",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q065:004",
+     "excerpt_ar": "وأولات الأحمال أجلهن أن يضعن حملهن"
+    },
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q065:006",
+     "excerpt_ar": "وإن كن أولات حمل فأنفقوا عليهن"
+    }
+   ]
+  },
+  {
+   "id": "zakat.zakat_fitr",
+   "ar": "زكاة الفطر",
+   "en": "the alms of fast-breaking",
+   "kind": "act",
+   "broader": "zakat",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "فرض رسول الله صلى الله عليه وسلم زكاة الفطر"
+    }
+   ]
+  },
+  {
+   "id": "siyam.fitr_hamil",
+   "ar": "فطر الحامل والمرضع",
+   "en": "the pregnant or nursing woman's not fasting",
+   "kind": "act",
+   "broader": "siyam",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-tirmidhi-shamela7895",
+     "excerpt_ar": "وعن الحامل أو المرضع الصوم"
+    }
+   ]
+  },
+  {
+   "id": "talaq.talaq",
+   "ar": "الطلاق",
+   "en": "divorce",
+   "kind": "act",
+   "broader": "talaq",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q065:001",
+     "excerpt_ar": "إذا طلقتم النساء فطلقوهن لعدتهن"
+    },
+    {
+     "kind": "ijma",
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463",
+     "excerpt_ar": "وأجمع الناس على جواز الطلاق"
+    }
+   ]
+  },
+  {
+   "id": "faraid.mirath_haml",
+   "ar": "ميراث الحمل",
+   "en": "the unborn child's inheritance",
+   "kind": "item",
+   "broader": "faraid",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "إذا استهل المولود ورث"
+    }
+   ]
+  },
+  {
+   "id": "iqrar.iqrar",
+   "ar": "الإقرار",
+   "en": "admission",
+   "kind": "act",
+   "broader": "iqrar",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q003:081",
+     "excerpt_ar": "أأقررتم وأخذتم على ذلكم إصري"
+    },
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:135",
+     "excerpt_ar": "شهداء لله ولو على أنفسكم"
+    }
+   ]
+  },
+  {
+   "id": "lian.lian",
+   "ar": "اللعان",
+   "en": "mutual imprecation",
+   "kind": "act",
+   "broader": "lian",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q024:006",
+     "excerpt_ar": "والذين يرمون أزواجهم ولم يكن لهم شهداء إلا أنفسهم"
+    }
+   ]
+  },
+  {
+   "id": "diyat.janin",
+   "ar": "الجنين وغرته",
+   "en": "the foetus and its blood-money",
+   "kind": "item",
+   "broader": "diyat",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "في جنين امرأة من بني لحيان سقط ميتا بغرة عبد أو أمة"
+    }
+   ]
+  },
+  {
+   "id": "atima.janin_mudhakka",
+   "ar": "جنين المذكاة",
+   "en": "the foetus of a slaughtered animal",
+   "kind": "item",
+   "broader": "atima",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "ذكاة الجنين ذكاة أمه"
+    }
+   ]
+  },
+  {
+   "id": "janaiz.salat_janaza",
+   "ar": "الصلاة على الميت",
+   "en": "the funeral prayer",
+   "kind": "act",
+   "broader": "janaiz",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "على امرأة ماتت في نفاسها فقام وسطها"
+    }
+   ]
+  },
+  {
+   "id": "ihya.kala_wa_ma",
+   "ar": "الكلأ والماء",
+   "en": "pasture and water",
+   "kind": "item",
+   "broader": "ihya",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "المسلمون شركاء في ثلاث في الكلإ والماء والنار"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لا يمنع فضل الماء ليمنع به الكلأ"
+    }
+   ]
+  },
+  {
+   "id": "ihya.ihya_mawat",
+   "ar": "إحياء الموات",
+   "en": "reviving dead land",
+   "kind": "act",
+   "broader": "ihya",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "من أعمر أرضا ليست لأحد فهو أحق"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "من أحيا أرضا ميتة فهي له"
+    }
+   ]
+  },
+  {
+   "id": "ihya.tahajjur",
+   "ar": "التحجر والإقطاع",
+   "en": "fencing off and grant of dead land",
+   "kind": "act",
+   "broader": "ihya.ihya_mawat",
+   "unanchored": "TODO"
+  },
+  {
+   "id": "ihya.marafiq_amlak",
+   "ar": "مرافق الأملاك",
+   "en": "the appurtenances of property: lanes, courtyards, water-courses",
+   "kind": "item",
+   "broader": "ihya",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "إذا تشاجروا في الطريق بسبعة أذرع"
+    }
+   ]
+  },
+  {
+   "id": "ihya.maqaid_aswaq",
+   "ar": "مقاعد الأسواق",
+   "en": "market pitches",
+   "kind": "item",
+   "broader": "ihya",
+   "unanchored": "TODO"
+  },
+  {
+   "id": "ihya.tariq",
+   "ar": "الطريق",
+   "en": "the public road",
+   "kind": "item",
+   "broader": "ihya",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "إياكم والجلوس بالطرقات"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "فأعطوا الطريق حقه"
+    }
+   ]
+  },
+  {
+   "id": "salat.majlis_masjid",
+   "ar": "مجلس المسجد",
+   "en": "a seat in the mosque",
+   "kind": "item",
+   "broader": "salat",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لا يقيم الرجل الرجل من مجلسه ثم يجلس فيه"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "من قام من مجلسه ثم رجع إليه فهو أحق به"
+    }
+   ]
+  },
+  {
+   "id": "atima.kalb",
+   "ar": "الكلب",
+   "en": "the dog",
+   "kind": "item",
+   "broader": "atima",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "من اقتنى كلبا إلا كلب ماشية أو ضاريا"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "نهى عن ثمن الكلب"
+    }
+   ]
+  },
+  {
+   "id": "tahara.duhn_najis",
+   "ar": "الدهن المتنجس",
+   "en": "impure oil and fat",
+   "kind": "item",
+   "broader": "tahara",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "أرأيت شحوم الميتة فإنها يطلى بها السفن"
+    }
+   ]
+  },
+  {
+   "id": "tahara.jild_mayta",
+   "ar": "جلد الميتة",
+   "en": "the hide of a carcass",
+   "kind": "item",
+   "broader": "tahara",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-tirmidhi-shamela7895",
+     "excerpt_ar": "أيما إهاب دبغ فقد طهر"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "هلا انتفعتم بجلدها"
+    }
+   ]
+  },
+  {
+   "id": "jinayat.jinayat_abd",
+   "ar": "جناية العبد",
+   "en": "an injury done by a slave",
+   "kind": "act",
+   "broader": "jinayat",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "أن غلاما لأناس فقراء قطع أذن غلام لأناس أغنياء"
+    }
+   ]
+  },
+  {
+   "id": "zakat.nisab",
+   "ar": "النصاب",
+   "en": "the zakatable minimum",
+   "kind": "item",
+   "broader": "zakat",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "ليس فيما دون خمس أواق صدقة"
+    }
+   ]
+  },
+  {
+   "id": "hajr.mal_abd",
+   "ar": "مال العبد",
+   "en": "the slave's property",
+   "kind": "item",
+   "broader": "hajr",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "ومن ابتاع عبدا وله مال"
+    }
+   ]
+  },
+  {
+   "id": "udhiya.udhiya",
+   "ar": "الأضحية",
+   "en": "the sacrificial animal",
+   "kind": "item",
+   "broader": "udhiya",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q108:002",
+     "excerpt_ar": "فصل لربك وانحر"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "ضحى النبي صلى الله عليه وسلم بكبشين"
+    }
+   ]
+  },
+  {
+   "id": "hajj.hady",
+   "ar": "الهدي",
+   "en": "the sacrificial offering of the pilgrimage",
+   "kind": "item",
+   "broader": "hajj",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q002:196",
+     "excerpt_ar": "فما استيسر من الهدي"
+    }
+   ]
+  },
+  {
+   "id": "jihad.ard_kharaj",
+   "ar": "أرض الخراج",
+   "en": "land taken by force and held under land-tax",
+   "kind": "item",
+   "broader": "jihad",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "لولا آخر المسلمين ما فتحت قرية إلا قسمتها"
+    }
+   ]
+  },
+  {
+   "id": "jihad.taam_dar_harb",
+   "ar": "الطعام في دار الحرب",
+   "en": "food taken in enemy territory",
+   "kind": "item",
+   "broader": "jihad",
+   "unanchored": "TODO"
+  },
+  {
+   "id": "atima.diyafa",
+   "ar": "الضيافة",
+   "en": "hospitality to a guest",
+   "kind": "act",
+   "broader": "atima",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "من كان يؤمن بالله واليوم الآخر فليكرم ضيفه"
+    }
+   ]
+  },
+  {
+   "id": "nikah.nikah",
+   "ar": "عقد النكاح",
+   "en": "the marriage contract",
+   "kind": "act",
+   "broader": "nikah",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q004:003",
+     "excerpt_ar": "فانكحوا ما طاب لكم من النساء"
+    }
+   ]
+  },
+  {
+   "id": "hiba.tamalluk_ab",
+   "ar": "تملك الأب من مال ولده",
+   "en": "the father's taking from his child's property",
+   "kind": "act",
+   "broader": "hiba",
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "أنت ومالك لأبيك"
+    }
+   ]
+  },
+  {
+   "id": "hudud.bughat",
+   "ar": "البغاة",
+   "en": "rebels",
+   "kind": "item",
+   "broader": "hudud",
+   "nass": [
+    {
+     "kind": "quran",
+     "ref": "src:tanzil-quran-simple#Q049:009",
+     "excerpt_ar": "وإن طائفتان من المؤمنين اقتتلوا فأصلحوا بينهما"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1489 @@
+{
+ "schema_version": 1,
+ "status": "candidate",
+ "shard": "b",
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000",
+   "label": "hudud.jald",
+   "term_ar": "زاد الإمام سوطا في الحد",
+   "also": [
+    {
+     "label": "diyat.diya",
+     "term_ar": "كمال الدية"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001",
+   "label": "jinayat.qisas",
+   "term_ar": "اقتص من الجاني",
+   "also": [
+    {
+     "label": "diyat.diya",
+     "term_ar": "كمال الدية"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f002",
+   "label": "atima.sayd",
+   "term_ar": "رمى صيدا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
+   "label": "ijara.ijara",
+   "term_ar": "استأجر دابة لمسافة معلومة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f004",
+   "label": "hajj.sayd_muhrim",
+   "term_ar": "اشترك محل ومحرم في جرح صيد"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f005",
+   "label": "diyat.arsh",
+   "term_ar": "أرش البكارة",
+   "also": [
+    {
+     "label": "sadaq.tansif",
+     "term_ar": "نصف المهر"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001",
+   "label": "wakala.wakala",
+   "term_ar": "الوكيل في البيع"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
+   "label": "udhiya.akl_udhiya",
+   "term_ar": "أكل المضحي جميع أضحيته"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003",
+   "label": "tahara.istinja",
+   "term_ar": "تعدى الخارج من السبيل موضع العادة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004",
+   "label": "zakat.masarif",
+   "term_ar": "أدى زكاته إلى واحد"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f000",
+   "label": "udhiya.muayyana",
+   "term_ar": "أوجب هديا أو ms045 أضحية عن واجب في ذمته ثم تعيبت",
+   "also": [
+    {
+     "label": "hajj.hady",
+     "term_ar": "هديا"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f001",
+   "label": "zakat.tajil",
+   "term_ar": "عجل الزكاة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
+   "label": "zakat.tajil",
+   "term_ar": "عجل عن ثلاثين من البقر تبيعا",
+   "also": [
+    {
+     "label": "zakat.baqar",
+     "term_ar": "ثلاثين من البقر"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f001",
+   "label": "salat.salat_musafir",
+   "term_ar": "صلى المسافر خلف مقيم"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f002",
+   "label": "hajj.jima_muhrim",
+   "term_ar": "أفسد نسكه بجماع"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
+   "label": "hajj.hady",
+   "term_ar": "عين عما في ذمته من الهدي والأضحية",
+   "also": [
+    {
+     "label": "udhiya.muayyana",
+     "term_ar": "الأضحية"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+   "label": "itikaf.itikaf_mandhur",
+   "term_ar": "نذر اعتكافا في شهر رمضان"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
+   "label": "buyu.shart_manfaa",
+   "term_ar": "المبيع إذا استثنى البائع منفعته مدة معلومة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f001",
+   "label": "waqf.waqf",
+   "term_ar": "الوقف، يصح أن يقف ويستثني منفعته"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f002",
+   "label": "itq.istithna_khidma",
+   "term_ar": "يعتق عبده ويستثني نفعه مدة معلومة",
+   "also": [
+    {
+     "label": "sadaq.itq_sadaq",
+     "term_ar": "يجعل عتقها صداقها"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f003",
+   "label": "itq.kitaba",
+   "term_ar": "كاتب أمته واستثنى منفعة الوطء"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f004",
+   "label": "wasaya.wasiyya",
+   "term_ar": "يوصي برقبة عين لشخص وبنفعها لآخر"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f005",
+   "label": "hiba.hiba",
+   "term_ar": "الهبة يصح أن يهبه شيئا ويستثني نفعه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f006",
+   "label": "sadaq.sadaq",
+   "term_ar": "عوض الصداق",
+   "also": [
+    {
+     "label": "khul.khul",
+     "term_ar": "الخلع"
+    },
+    {
+     "label": "sulh.sulh",
+     "term_ar": "الصلح على مال"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+   "label": "buyu.haml",
+   "term_ar": "باعه أمة حاملا بحر"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
+   "label": "idda.sukna_mutadda",
+   "term_ar": "عقارا تستحق فيه السكنى الزوجة المعتدة من الوفاة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f002",
+   "label": "ijara.ijara",
+   "term_ar": "بيع الدار المؤجرة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f003",
+   "label": "nikah.ama_muzawwaja",
+   "term_ar": "اشترى أمة مزوجة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f004",
+   "label": "buyu.thimar",
+   "term_ar": "اشترى شجرا (و) عليه ثمر"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f005",
+   "label": "hajj.ihram",
+   "term_ar": "اشترى أمة وعبدا محرما"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f000",
+   "label": "nikah.khiyar_mutaqa",
+   "term_ar": "عتقت الأمة المزوجة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f001",
+   "label": "ijara.ijara",
+   "term_ar": "أجر عبده مدة ثم أعتقه في أثنائها",
+   "also": [
+    {
+     "label": "itq.itq",
+     "term_ar": "أعتقه"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f002",
+   "label": "wasaya.wasiyya",
+   "term_ar": "العبد الموصى بمنافعه",
+   "also": [
+    {
+     "label": "itq.itq",
+     "term_ar": "أعتق الورثة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f000",
+   "label": "ijara.ijara",
+   "term_ar": "اشترى المستأجر العين المستأجرة من مؤجرها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f001",
+   "label": "ijara.ijara",
+   "term_ar": "استأجر دارا من أبيه ثم مات الأب وورثها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f002",
+   "label": "buyu.thimar",
+   "term_ar": "اشترى طلعا لم يؤبر في رءوس نخلة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f000",
+   "label": "ijara.ijara",
+   "term_ar": "إجارته إجارة بولاية محضة",
+   "also": [
+    {
+     "label": "hajr.sabi",
+     "term_ar": "كصبي يبلغ بعد إيجاره"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f001",
+   "label": "ijara.ijara",
+   "term_ar": "إجارته بملك ثم تنتقل إلى غيره",
+   "also": [
+    {
+     "label": "jihad.ghanima",
+     "term_ar": "استولى عليه الكفار"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
+   "label": "rahn.rahn",
+   "term_ar": "رهنه شيئا ثم أذن له في الانتفاع به",
+   "also": [
+    {
+     "label": "ariyya.ariyya",
+     "term_ar": "عارية"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+   "label": "wadia.wadia",
+   "term_ar": "أودعه شيئا ثم أذن له في الانتفاع به",
+   "also": [
+    {
+     "label": "ariyya.ariyya",
+     "term_ar": "عارية"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002",
+   "label": "ariyya.ariyya",
+   "term_ar": "أعاره شيئا ليرهنه",
+   "also": [
+    {
+     "label": "rahn.rahn",
+     "term_ar": "ليرهنه"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003",
+   "label": "ariyya.ariyya",
+   "term_ar": "أعاره شيئا ثم رهنه عنده",
+   "also": [
+    {
+     "label": "rahn.rahn",
+     "term_ar": "رهنه عنده"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f004",
+   "label": "ghasb.ghasb",
+   "term_ar": "ورود عقد الرهن على الغصب",
+   "also": [
+    {
+     "label": "rahn.rahn",
+     "term_ar": "عقد الرهن"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f005",
+   "label": "buyu.mabi_qabl_qabd",
+   "term_ar": "رهن المبيع المضمون على البائع قبل قبضه",
+   "also": [
+    {
+     "label": "rahn.rahn",
+     "term_ar": "رهن المبيع"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
+   "label": "rahn.ghalq_rahn",
+   "term_ar": "وإلا فالرهن لك بالدين"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
+   "label": "itq.tadbir",
+   "term_ar": "كاتب المدبر أو دبر المكاتب",
+   "also": [
+    {
+     "label": "itq.kitaba",
+     "term_ar": "كاتب المدبر"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
+   "label": "ariyya.ariyya",
+   "term_ar": "أعاره شيئا وشرط عليه العوض",
+   "also": [
+    {
+     "label": "qard.qard",
+     "term_ar": "كناية عن القرض"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
+   "label": "sharika.mudaraba",
+   "term_ar": "خذ هذا المال مضاربة والربح كله لك أو لي"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
+   "label": "ijara.ijara",
+   "term_ar": "استأجر المكيل أو الموزون أو النقود أو الفلوس",
+   "also": [
+    {
+     "label": "qard.qard",
+     "term_ar": "ويكون قرضا"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f003",
+   "label": "musaqat.muzaraa",
+   "term_ar": "أجره الأرض بثلث ما يخرج منها من زرع",
+   "also": [
+    {
+     "label": "ijara.ijara",
+     "term_ar": "إجارة على حد المزارعة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004",
+   "label": "salam.salam",
+   "term_ar": "أسلم في شيء حالا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
+   "label": "talaq.lafz_haram",
+   "term_ar": "أنت علي حرام أعني به الطلاق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+   "label": "salam.salam",
+   "term_ar": "دين السلم",
+   "also": [
+    {
+     "label": "buyu.iqala",
+     "term_ar": "ويكون إقالة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
+   "label": "ijara.ijara",
+   "term_ar": "أجره عينا بلفظ البيع"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f002",
+   "label": "raja.raja",
+   "term_ar": "الرجعة بالكنايات",
+   "also": [
+    {
+     "label": "sadaq.itq_sadaq",
+     "term_ar": "أعتقتك وجعلت عتقك صداقك"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f000",
+   "label": "ijara.ijara",
+   "term_ar": "الإجارة فمن استأجر شيئا مدة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f001",
+   "label": "ariyya.ariyya",
+   "term_ar": "الإعارة فلو أعاره شيئا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f002",
+   "label": "wasaya.wasiyya",
+   "term_ar": "الوصية تبطل بإزالة الملك",
+   "also": [
+    {
+     "label": "rahn.rahn",
+     "term_ar": "الرهن، فإذا رهن عينا رهنا لازما"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f003",
+   "label": "rahn.rahn",
+   "term_ar": "العصير المرتهن",
+   "also": [
+    {
+     "label": "atima.khamr",
+     "term_ar": "تخمر العصير"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f004",
+   "label": "sulh.sulh",
+   "term_ar": "صالحه من دين الرهن",
+   "also": [
+    {
+     "label": "rahn.rahn",
+     "term_ar": "دين الرهن"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f005",
+   "label": "rahn.rahn",
+   "term_ar": "إن عاد الرهن إلى الراهن بطل الرهن"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f006",
+   "label": "udhiya.muayyana",
+   "term_ar": "الأضحية المعينة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f007",
+   "label": "itq.tadbir",
+   "term_ar": "التدبير"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f008",
+   "label": "sadaq.tansif",
+   "term_ar": "رجوع الزوج في ms060 نصف الصداق بعد الفرقة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f009",
+   "label": "zakat.urud_tijara",
+   "term_ar": "عروض التجارة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f010",
+   "label": "talaq.talaq_muallaq",
+   "term_ar": "صفة الطلاق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f011",
+   "label": "itq.itq_muallaq",
+   "term_ar": "صفة العتق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f012",
+   "label": "buyu.radd_bil_ayb",
+   "term_ar": "الرد بالعيب",
+   "also": [
+    {
+     "label": "hiba.ruju_walid",
+     "term_ar": "رجوع الأب فيما وهبه لولده"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f013",
+   "label": "hajr.muflis",
+   "term_ar": "رجوع غريم المفلس في السلعة التي وجدها بعينها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f014",
+   "label": "nikah.firash",
+   "term_ar": "الفراش",
+   "also": [
+    {
+     "label": "nikah.jam_ukhtayn",
+     "term_ar": "ووطئ أختها بالملك"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000",
+   "label": "rahn.rahn",
+   "term_ar": "أتلف الرهن متلف"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+   "label": "waqf.waqf",
+   "term_ar": "الوقف إذا أتلفه متلف"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+   "label": "udhiya.muayyana",
+   "term_ar": "أتلف الأضحية متلف"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f003",
+   "label": "wasaya.wasiyya",
+   "term_ar": "الموصى له بعين إذا أتلفها متلف"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042.f000",
+   "label": "wadia.amanat",
+   "term_ar": "الأمانات التي حصلت في يد المؤتمن برضى صاحبها",
+   "also": [
+    {
+     "label": "wadia.wadia",
+     "term_ar": "الوديعة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042.f001",
+   "label": "wadia.amanat",
+   "term_ar": "الأمانات الحاصلة في يده بدون رضى",
+   "also": [
+    {
+     "label": "luqata.luqata",
+     "term_ar": "اللقطة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q042.f002",
+   "label": "amma.yad",
+   "term_ar": "الأعيان المضمونة",
+   "also": [
+    {
+     "label": "ariyya.ariyya",
+     "term_ar": "كالعواري"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f000",
+   "label": "buyu.mabi_qabl_qabd",
+   "term_ar": "عقد على ملكه عقدا لازما ينقل الملك فيه ولم يقبضه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
+   "label": "amma.yad",
+   "term_ar": "ينقله إلى يد المعقود له ثم ينتهي العقد أو ينفسخ"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002",
+   "label": "amma.yad",
+   "term_ar": "أن تحصل في يده بغير فعله",
+   "also": [
+    {
+     "label": "wadia.wadia",
+     "term_ar": "وديعة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
+   "label": "wadia.wadia",
+   "term_ar": "تعدى في الوديعة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001",
+   "label": "wakala.wakala",
+   "term_ar": "الوكيل إذا تعدى"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002",
+   "label": "sharika.sharika",
+   "term_ar": "الشركة والمضاربة إذا تعدى فيهما",
+   "also": [
+    {
+     "label": "sharika.mudaraba",
+     "term_ar": "المضاربة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003",
+   "label": "rahn.rahn",
+   "term_ar": "الرهن إذا تعدى المرتهن فيه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004",
+   "label": "ijara.ajir",
+   "term_ar": "استأجره لحفظ شيء مدة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
+   "label": "wasaya.wasi",
+   "term_ar": "الوصي إذا تعدى في التصرف"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f000",
+   "label": "amma.aqd_fasid",
+   "term_ar": "العقود الجائزة كالشركة والمضاربة والوكالة",
+   "also": [
+    {
+     "label": "sharika.sharika",
+     "term_ar": "الشركة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f001",
+   "label": "amma.aqd_fasid",
+   "term_ar": "العقود اللازمة",
+   "also": [
+    {
+     "label": "hajj.ihram",
+     "term_ar": "كالإحرام"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
+   "label": "buyu.bay_fasid",
+   "term_ar": "المبيع",
+   "also": [
+    {
+     "label": "amma.yad",
+     "term_ar": "التلف تحت يده"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
+   "label": "ijara.ijara",
+   "term_ar": "الإجارة الفاسدة",
+   "also": [
+    {
+     "label": "amma.aqd_fasid",
+     "term_ar": "الفاسدة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f002",
+   "label": "itq.kitaba",
+   "term_ar": "الكتابة الفاسدة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
+   "label": "nikah.nikah_fasid",
+   "term_ar": "النكاح الفاسد",
+   "also": [
+    {
+     "label": "sadaq.sadaq",
+     "term_ar": "المهر المسمى"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f000",
+   "label": "amma.qabd",
+   "term_ar": "القبض فيها من موجبات عقودها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q049.f001",
+   "label": "amma.qabd",
+   "term_ar": "أن يكون القبض من تمام العقد",
+   "also": [
+    {
+     "label": "salam.salam",
+     "term_ar": "السلم"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000",
+   "label": "atima.idtirar",
+   "term_ar": "اضطر إلى طعام الغير"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
+   "label": "shufa.shufa",
+   "term_ar": "كالأخذ بالشفعة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000",
+   "label": "buyu.mabi_qabl_qabd",
+   "term_ar": "المبيع المبهم غير المتعين كقفيز من صبرة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001",
+   "label": "hiba.hiba",
+   "term_ar": "كالصدقة والهبة والوصية",
+   "also": [
+    {
+     "label": "wasaya.wasiyya",
+     "term_ar": "فالوصية تملك بدون القبض"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f000",
+   "label": "buyu.bay_gharar",
+   "term_ar": "بيع العطاء قبل قبضه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001",
+   "label": "buyu.bay_dayn",
+   "term_ar": "بيع الصكاك قبل قبضها",
+   "also": [
+    {
+     "label": "riba.sarf",
+     "term_ar": "صرف بنسيئة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f002",
+   "label": "jihad.ghanima",
+   "term_ar": "بيع المغانم قبل أن تقسم"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f003",
+   "label": "zakat.zakat",
+   "term_ar": "بيع الصدقات قبل أن تقبض"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f000",
+   "label": "rahn.rahn",
+   "term_ar": "التصرف في المرهون"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f001",
+   "label": "shufa.shufa",
+   "term_ar": "الشفيع إذا طالب بالشفعة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f002",
+   "label": "hajr.madin",
+   "term_ar": "حل الدين على الغريم وأراد السفر"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f003",
+   "label": "hajr.muflis",
+   "term_ar": "المفلس إذا طلب البائع منه سلعته"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f004",
+   "label": "atima.idtirar",
+   "term_ar": "وجد مضطرا وعنده طعام فاضل"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f005",
+   "label": "zakat.nisab",
+   "term_ar": "بيع النصاب بعد الحول"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f006",
+   "label": "jinayat.abd_jani",
+   "term_ar": "بيع الجاني"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f007",
+   "label": "jihad.ghanima",
+   "term_ar": "ملك عبدا من الغنيمة ثم ظهر سيده"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f008",
+   "label": "faraid.tarika",
+   "term_ar": "تصرف الورثة في التركة المعلق بها حق الغرماء"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009",
+   "label": "sadaq.tansif",
+   "term_ar": "تصرف الزوجة في نصف الصداق بعد الطلاق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f010",
+   "label": "hiba.atiyyat_marid",
+   "term_ar": "وهبه المريض ماله كله في مرضه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f000",
+   "label": "buyu.khiyar",
+   "term_ar": "مفارقة أحد المتبايعين الآخر في المجلس بغير إذنه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f001",
+   "label": "sadaq.tansif",
+   "term_ar": "تصرف الزوجة في نصف الصداق إذا طلق الزوج قبل الدخول",
+   "also": [
+    {
+     "label": "buyu.radd_bil_ayb",
+     "term_ar": "رد ما بيده بعيب"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f001",
+   "label": "buyu.radd_bil_ayb",
+   "term_ar": "وجد بالعبد عيبا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f002",
+   "label": "hajr.muflis",
+   "term_ar": "أفلس المشتري قبل نقد الثمن"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f003",
+   "label": "shufa.shufa",
+   "term_ar": "تصرف الشفيع في الشقص المشفوع قبل التملك"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f004",
+   "label": "hiba.ruju_walid",
+   "term_ar": "وهب الأب لولده شيئا وقبضه الولد ثم تصرف الأب فيه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f005",
+   "label": "hiba.tamalluk_ab",
+   "term_ar": "تصرف الوالد في مال ولده الذي يباح له تملكه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f006",
+   "label": "wasaya.wasiyya",
+   "term_ar": "تصرف الموصى له بالوصية بعد الموت"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f007",
+   "label": "raja.raja",
+   "term_ar": "المطلقة الرجعية هل تحصل رجعتها بالوطء"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f001",
+   "label": "rahn.rahn",
+   "term_ar": "باعه شيئا بشرط أن يرهنه على ثمنه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
+   "label": "itq.kitaba",
+   "term_ar": "كاتب عبده وباعه شيئا صفقة واحدة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
+   "label": "dawa.bayyina",
+   "term_ar": "أقام البينة بالوكالة والدين في حالة واحدة",
+   "also": [
+    {
+     "label": "wakala.wakala",
+     "term_ar": "ادعى أنه وكيل لزيد"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004",
+   "label": "talaq.talaq_qabl_nikah",
+   "term_ar": "إذا تزوجت فلانة فقد وكلتك في طلاقها",
+   "also": [
+    {
+     "label": "wakala.wakala",
+     "term_ar": "وكلتك في طلاقها"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f005",
+   "label": "nikah.kafaa",
+   "term_ar": "الكفاءة في النكاح"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006",
+   "label": "idda.umm_walad",
+   "term_ar": "عدة أم الولد إذا توفى سيدها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
+   "label": "talaq.talaq_muallaq",
+   "term_ar": "أنت طالق مع انقضاء عدتك"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f001",
+   "label": "talaq.talaq_muallaq",
+   "term_ar": "إن ملكتك فأنت طالق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
+   "label": "nikah.nikah_ama",
+   "term_ar": "نكاح الأمة مع الحرة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
+   "label": "talaq.talaq_muallaq",
+   "term_ar": "إن اشتريتك فأنت طالق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004",
+   "label": "talaq.talaq_muallaq",
+   "term_ar": "إن كلمتك فأنت طالق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005",
+   "label": "hiba.atiyyat_marid",
+   "term_ar": "اشترى مريض أباه بثمن لا يملك غيره",
+   "also": [
+    {
+     "label": "itq.itq_qarib",
+     "term_ar": "عتق الأب"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006",
+   "label": "khul.khul",
+   "term_ar": "طلقها قبل الدخول على خمسين من المهر",
+   "also": [
+    {
+     "label": "sadaq.tansif",
+     "term_ar": "طلقها قبل الدخول"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f007",
+   "label": "hiba.atiyyat_marid",
+   "term_ar": "تزوج في مرض الموت بمهر يزيد على مهر المثل",
+   "also": [
+    {
+     "label": "sadaq.sadaq",
+     "term_ar": "بمهر يزيد على مهر المثل"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f000",
+   "label": "ayman.yamin",
+   "term_ar": "حلف لا يلبس ثوبا وهو لابسه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001",
+   "label": "tahara.wat_haid",
+   "term_ar": "وطئ امرأته فحاضت في أثناء الوطء"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f000",
+   "label": "buyu.mabi_qabl_qabd",
+   "term_ar": "تلف المبيع المبهم قبل قبضه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f001",
+   "label": "buyu.jaiha",
+   "term_ar": "تلفت الثمار المشتراة في رءوس النخل قبل جدها بجائحة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f002",
+   "label": "ijara.ijara",
+   "term_ar": "تلفت العين المستأجرة قبل مضي مدة الإجارة",
+   "also": [
+    {
+     "label": "buyu.khiyar",
+     "term_ar": "تلف المبيع في مدة الخيار"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f003",
+   "label": "buyu.ikhtilaf_mutabayiayn",
+   "term_ar": "اختلف المتبايعان في الثمن بعد تلف المبيع"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
+   "label": "buyu.radd_bil_ayb",
+   "term_ar": "تلفت العين المعيبة كلها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
+   "label": "buyu.iqala",
+   "term_ar": "الإقالة هل تصح بعد تلف العين"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",
+   "label": "buyu.tashrik",
+   "term_ar": "الشركة في البيوع"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
+   "label": "wasaya.wasi",
+   "term_ar": "الموصى إليه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
+   "label": "wakala.wakala",
+   "term_ar": "الوكيل في بيع الرهن إذا عزله الراهن",
+   "also": [
+    {
+     "label": "rahn.rahn",
+     "term_ar": "بيع الرهن"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f002",
+   "label": "jiala.jiala",
+   "term_ar": "فسخ عقد الجعالة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f003",
+   "label": "musaqat.musaqat",
+   "term_ar": "فسخ المالك عقد المساقاة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f004",
+   "label": "musaqat.muzaraa",
+   "term_ar": "ثم فسخ المزارعة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f005",
+   "label": "sharika.mudaraba",
+   "term_ar": "المضاربة تنفسخ بفسخ المالك لها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f006",
+   "label": "sharika.sharika",
+   "term_ar": "الشركة إذا فسخ أحدهما عقدها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
+   "label": "wakala.wakala",
+   "term_ar": "الوكيل إذا وكله في فعل شيء ثم عزله",
+   "also": [
+    {
+     "label": "jinayat.qisas",
+     "term_ar": "استيفاء القصاص"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f000",
+   "label": "qada.imam",
+   "term_ar": "من ولايته خاصة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
+   "label": "qada.imam",
+   "term_ar": "كخلفائه وأمنائه على الأطفال ونوابه على القرى"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
+   "label": "qada.qadi",
+   "term_ar": "الحاكم إذا قيل بانعزاله"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f001",
+   "label": "sharika.sharika",
+   "term_ar": "عقود المشاركات كالشركة والمضاربة",
+   "also": [
+    {
+     "label": "sharika.mudaraba",
+     "term_ar": "المضاربة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f002",
+   "label": "wadia.wadia",
+   "term_ar": "الوديعة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f000",
+   "label": "khul.khul",
+   "term_ar": "الخلع",
+   "also": [
+    {
+     "label": "talaq.talaq",
+     "term_ar": "الطلاق"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f001",
+   "label": "itq.itq",
+   "term_ar": "العتق ولو كان على مال",
+   "also": [
+    {
+     "label": "nikah.khiyar_mutaqa",
+     "term_ar": "فسخ المعتقة تحت عبد"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
+   "label": "buyu.bay_fuduli",
+   "term_ar": "تصرف في مال غيره بعقد أو غيره"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001",
+   "label": "talaq.talaq_muallaq",
+   "term_ar": "إن خرجت بغير إذني فأنت طالق"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
+   "label": "buyu.khiyar",
+   "term_ar": "أذن البائع للمشتري في مدة الخيار في التصرف"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
+   "label": "ghasb.ghasb",
+   "term_ar": "غصب طعاما من إنسان"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
+   "label": "buyu.bay_fuduli",
+   "term_ar": "باع ملك أبيه بغير إذنه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
+   "label": "talaq.talaq",
+   "term_ar": "طلق امرأة يظنها أجنبية",
+   "also": [
+    {
+     "label": "amma.jahl_khata",
+     "term_ar": "يظنها أجنبية"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
+   "label": "itq.itq",
+   "term_ar": "تنحي يا حرة فإذا هي أمته"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",
+   "label": "hiba.ibra",
+   "term_ar": "أبرأه من مائة درهم"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
+   "label": "jinayat.afw_qisas",
+   "term_ar": "فعفا عن القصاص وسرايته"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
+   "label": "idda.mafqud",
+   "term_ar": "تزوجت امرأة المفقود"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
+   "label": "itq.itq",
+   "term_ar": "أمره غيره بإعتاق عبد يظن أنه للآمر"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007",
+   "label": "buyu.bay_gharar",
+   "term_ar": "اشترى آبقا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f000",
+   "label": "salat.qibla",
+   "term_ar": "يستدل على القبلة بنجم"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q066.f001",
+   "label": "buyu.bay_fasid",
+   "term_ar": "تبين أن الشراء كان فاسدا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f000",
+   "label": "buyu.radd_bil_ayb",
+   "term_ar": "بان بها عيب يوجب الرد",
+   "also": [
+    {
+     "label": "hiba.ibra",
+     "term_ar": "أبرأه منه"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f001",
+   "label": "buyu.iqala",
+   "term_ar": "تقايلا في العين بعد هبة ثمنها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f002",
+   "label": "sadaq.tansif",
+   "term_ar": "أصدق زوجته عينا فوهبتها منه ثم طلقها قبل الدخول"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
+   "label": "itq.ita_mukatab",
+   "term_ar": "الإيتاء الواجب",
+   "also": [
+    {
+     "label": "itq.kitaba",
+     "term_ar": "أبرأه من دين الكتابة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f004",
+   "label": "shahadat.ruju_shuhud",
+   "term_ar": "شهد شاهدان بمال لزيد على عمرو ثم رجعا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f005",
+   "label": "daman.daman",
+   "term_ar": "قضى الضامن الدين"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f000",
+   "label": "tahara.hadath",
+   "term_ar": "صلى يظن نفسه محدثا"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
+   "label": "tahara.mash_khuffayn",
+   "term_ar": "مسح الخفين",
+   "also": [
+    {
+     "label": "amma.shakk",
+     "term_ar": "شك"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f002",
+   "label": "tahara.ina_mushtabih",
+   "term_ar": "توضأ من إناء مشتبه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
+   "label": "tahara.wudu",
+   "term_ar": "توضأ شاكا في الحدث",
+   "also": [
+    {
+     "label": "salat.waqt",
+     "term_ar": "غلبة ظنه بدخول الوقت"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f004",
+   "label": "zakat.zakat",
+   "term_ar": "فأدى زكاة ونوى أنها عن الغائب"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f005",
+   "label": "siyam.yawm_shakk",
+   "term_ar": "ليلة الشك"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
+   "label": "riba.sarf",
+   "term_ar": "فصارفه عليها",
+   "also": [
+    {
+     "label": "wadia.wadia",
+     "term_ar": "دنانير وديعة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
+   "label": "buyu.bay",
+   "term_ar": "إن كنت أذنت لك في شرائها فقد بعتكها",
+   "also": [
+    {
+     "label": "wakala.wakala",
+     "term_ar": "وكله في شراء جارية"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f008",
+   "label": "raja.raja",
+   "term_ar": "الرجعة في عقد نكاح شك في وقوع الطلاق",
+   "also": [
+    {
+     "label": "amma.shakk",
+     "term_ar": "شك في وقوع الطلاق"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
+   "label": "qada.hukm",
+   "term_ar": "حكم حاكم في مسألة مختلف فيها"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f010",
+   "label": "hudud.ridda",
+   "term_ar": "من اتهم بالردة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f000",
+   "label": "ijara.ajir",
+   "term_ar": "الأجير المشترك"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f001",
+   "label": "sadaq.sadaq",
+   "term_ar": "أصدقها عملا معلوما"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f002",
+   "label": "hajr.abd_madhun",
+   "term_ar": "العبد المأذون له"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f003",
+   "label": "hajr.sabi",
+   "term_ar": "الصبي المأذون له"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004",
+   "label": "sharika.sharika",
+   "term_ar": "الشريك والمضارب",
+   "also": [
+    {
+     "label": "sharika.mudaraba",
+     "term_ar": "المضارب"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f005",
+   "label": "qada.qadi",
+   "term_ar": "الحاكم هل له أن يستنيب غيره"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
+   "label": "salat.khutba",
+   "term_ar": "النهي عن الكلام والإمام يخطب"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f001",
+   "label": "salat.ijabat_muadhdhin",
+   "term_ar": "الأمر بإجابة المؤذن"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f002",
+   "label": "hajr.abd_madhun",
+   "term_ar": "لعبده في التجارة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f003",
+   "label": "ayman.kaffara",
+   "term_ar": "أن يعتق عن كفارته من رقيق السيد",
+   "also": [
+    {
+     "label": "hajr.abd_madhun",
+     "term_ar": "أذن السيد لعبده"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f004",
+   "label": "siyam.kaffarat_jima",
+   "term_ar": "مصرفا لكفارة نفسه",
+   "also": [
+    {
+     "label": "ayman.kaffara",
+     "term_ar": "كفارة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f005",
+   "label": "zakat.masarif",
+   "term_ar": "مصرفا لزكاته"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f006",
+   "label": "waqf.waqf",
+   "term_ar": "الواقف مصرفا لوقفه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f007",
+   "label": "wakala.wakala",
+   "term_ar": "الوكيل في البيع هل له الشراء من نفسه"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f008",
+   "label": "wakala.wakala",
+   "term_ar": "الوكيل لموكله من ماله"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
+   "label": "hajr.mal_yatim",
+   "term_ar": "شراء الوصي من مال اليتيم",
+   "also": [
+    {
+     "label": "wasaya.wasi",
+     "term_ar": "الوصي"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f010",
+   "label": "nikah.wali",
+   "term_ar": "الوكيل في نكاح امرأة ليس له أن يتزوجها لنفسه",
+   "also": [
+    {
+     "label": "wakala.wakala",
+     "term_ar": "الوكيل في نكاح امرأة"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f011",
+   "label": "sharika.sharika",
+   "term_ar": "عمل أحد الشريكين في مال الشركة"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f012",
+   "label": "wasaya.wasi",
+   "term_ar": "الموصى إليه بإخراج مال لمن يحج أو يغزو"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f013",
+   "label": "zakat.sadaqat_tatawwu",
+   "term_ar": "المأذون له أن يتصدق بمال"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f014",
+   "label": "hiba.ibra",
+   "term_ar": "وكل غريمه أن يبرئ غرماءه",
+   "also": [
+    {
+     "label": "wakala.wakala",
+     "term_ar": "وكل غريمه"
+    }
+   ]
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f015",
+   "label": "ayman.yamin",
+   "term_ar": "من دخل داري"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f016",
+   "label": "ghasb.ghasb",
+   "term_ar": "الأموال التي تجب الصدقة فيها شرعا للجهل بأربابها كالغصوب والودائع"
+  }
+ ]
+}
