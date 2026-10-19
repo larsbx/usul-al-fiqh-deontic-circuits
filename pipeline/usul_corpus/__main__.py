@@ -785,6 +785,25 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_mahall(args: argparse.Namespace) -> int:
+    """PR-51: check the maḥall annotation; regenerate (or ``--check``) its label graph and Lean guards."""
+    from . import mahall
+    if errs := mahall.check(CORPUS):
+        print("\n".join(errs[:50]))
+        return 1
+    g = mahall.export(CORPUS)
+    out = {CORPUS / mahall.GRAPH: json.dumps(g, ensure_ascii=False, indent=1) + "\n",
+           SIGNATURE_LEAN.parent / mahall.LEAN: mahall.lean_file(g)}
+    if args.check:
+        stale = [str(p) for p, t in out.items() if not p.exists() or p.read_text(encoding="utf-8") != t]
+        print("\n".join(f"stale: {p}" for p in stale) or "mahall: up to date")
+        return 1 if stale else 0
+    for p, t in out.items():
+        p.write_text(t, encoding="utf-8")
+    print(f"mahall: {len(g['furu'])} furūʿ, {len(g['labels'])} labels, {len(g['nass'])} nuṣūṣ")
+    return 0
+
+
 def cmd_judgement(args: argparse.Namespace) -> int:
     """Each encoder's sort and question (corpus/types/encoders.json), guarded in Lean and reported.
     `--check` validates the types and their Lean guards without writing, and needs no LFS data."""
@@ -894,6 +913,9 @@ def parser() -> argparse.ArgumentParser:
     jd = sub.add_parser("judgement", help="the types layer: each encoder's sort and question, guarded in Lean")
     jd.add_argument("--check", action="store_true", help="validate the types and their Lean guards without writing")
     jd.set_defaults(run=cmd_judgement)
+    mh = sub.add_parser("mahall", help="the maḥall label graph: check, regenerate or --check its Lean guards")
+    mh.add_argument("--check", action="store_true")
+    mh.set_defaults(run=cmd_mahall)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
     fa.add_argument("--refresh", action="store_true")

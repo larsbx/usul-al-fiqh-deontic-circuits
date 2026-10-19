@@ -31,3 +31,4 @@ import Usul.DerivedTypes
 import Usul.Judgement
 import Usul.Typing.Answers
 import Usul.Cat
+import Usul.Mahall

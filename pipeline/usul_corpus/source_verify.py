@@ -105,7 +105,7 @@ def required_witnesses(corpus: Path) -> set[str]:
             ids.add(match[1])
     if not ids:
         raise ValueError("required reconciliation evidence set is empty")
-    return ids | nusus.witnesses(corpus) | cited_text(corpus, ("dossier", "hadith"))
+    return ids | nusus.witnesses(corpus) | cited_text(corpus, ("dossier", "hadith", "mahall"))
 
 
 def cited_text(corpus: Path, dirs: tuple[str, ...]) -> set[str]:
