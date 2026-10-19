@@ -2,6 +2,44 @@
  "status": "candidate",
  "provenance": "Each takhrīj encoder's output typed by Usul.Judgement: the sort, and for a judgement the Question or Aspect it answers. Classified from each encoder's Lean definition, docstring and qāʿida (LLM-assisted, adjudicated); not human-reviewed. `alt` records the second reading of a hard case; `negated` marks an encoder whose true is the question's no.",
  "encoders": {
+  "a26_ihala_on_known_cause": {
+   "sort": "epistemic",
+   "reason": "Q13 «فهل يحال ذلك الأثر على تلك العلة المعلومة أم لا»: ihalaOnKnownCause - whether an athar is referred to the ʿilla known to be in its locus; which cause establishes the fact."
+  },
+  "a26_refused_idhn_lapses": {
+   "sort": "judgement",
+   "question": "wadi:shart",
+   "negated": true,
+   "reason": "Q23 «من حرم عليه الامتناع من بذل شيء سئله فامتنع فهل يسقط إذنه بالكلية»: idhnLapses - true when the refuser's idhn lapses, so its negation asks whether his idhn remains a sharṭ of the act."
+  },
+  "a27_ain_ruling_survives_owner_change": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q40 «الأحكام المتعلقة بالأعيان بالنسبة إلى تبدل الأملاك»: survivesOwnershipChange - whether a right in the thing itself survives a change of owner and returns with it."
+  },
+  "a27_specific_agent_in_general_object": {
+   "sort": "dalala",
+   "reason": "Q70 «فهل يدخل الفاعل الخاص في عمومه»: agentIncluded - whether the general object or adjunct of an act includes its specific agent («والمرجح فيه التخصيص»)."
+  },
+  "a29_four_kinds_of_milk": {
+   "sort": "takyif",
+   "reason": "Q86 «الملك أربعة أنواع»: milkKind returns MilkKind - which of the four kinds of milk a holding is."
+  },
+  "a29_haml_hukm_before_separation": {
+   "sort": "takyif",
+   "reason": "Q84 «الحمل هل له حكم قبل انفصاله أم لا»: hamlHukm - whether the ḥaml is treated as having a ḥukm before it is separated."
+  },
+  "a31_rajab87_transfer_of_holding": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "Q87 «فيما يقبل النقل والمعاوضة من الحقوق المالية والأملاك»: transferValid - whether transferring a holding, by its kind and title, with or without ʿiwaḍ, holds."
+  },
+  "a31_rajab88_road_use": {
+   "sort": "judgement",
+   "question": "aspect:permitted",
+   "reason": "Q88 «في الانتفاع وإحداث ما ينتفع به من الطرق المسلوكة»: roadUseAllowed - is the use of a public road, its air or its ground permitted?"
+  },
   "abstention_under_possible_condition": {
    "sort": "judgement",
    "question": "aspect:obligatory",
@@ -685,6 +723,44 @@
    "reason": "Ibn Rajab 65.f004: «لا يصح العفو ههنا» unless the right to qisas is the victim's; output is whether the pardon is valid.",
    "alt": "wadi:sabab: could be read as whether the pardon extinguishes the right, but the source asks sihha of the pardon",
    "bool_as_validity": true
+  },
+  "rajab_a30_ikhtisas_first_comer": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q85 ḥaqq al-ikhtiṣāṣ: firstComerAhaqq - whether precedence in a shared place founds a right that holds until he leaves by choice."
+  },
+  "rajab_a30_ikhtisas_hand_stands": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q85 ḥaqq al-ikhtiṣāṣ: handStands - whether the holder's hand founds a right of ikhtiṣāṣ in a thing with a permitted use or that may become wealth again."
+  },
+  "rajab_a30_tamalluk_awaits_choice": {
+   "sort": "takyif",
+   "reason": "Q85 «حق تملك»: awaitsChoice - whether a concluded cause yields only a right to come to own, waiting on the holder's choice, rather than milk."
+  },
+  "rajab_a30_tie_binds_whole": {
+   "sort": "effect",
+   "reason": "Q85 ḥaqq al-taʿalluq: wholeBound - whether a pledge's or an injury's tie holds the whole thing."
+  },
+  "rajab_a30_tie_for_recovery": {
+   "sort": "judgement",
+   "question": "wadi:sabab",
+   "reason": "Q85 ḥaqq al-taʿalluq li-istīfāʾ al-ḥaqq: recoverFrom - whether a tied right is a sabab of recovery from the property."
+  },
+  "rajab_a30_tied_right_precedes": {
+   "sort": "procedure",
+   "reason": "Q85 ḥaqq al-taʿalluq: tiedPrecedes - whether a tied right is paid before claims owed only in the dhimma; an order of settlement."
+  },
+  "rajab_a30_use_right_for_need": {
+   "sort": "judgement",
+   "question": "aspect:obligatory",
+   "reason": "Q85 ḥaqq al-intifāʿ, as Q99 (use_right_is_q99): useRightForNeed - must the owner allow a needed, harmless use?"
+  },
+  "rajab_a30_use_right_not_passed": {
+   "sort": "judgement",
+   "question": "wadi:validity",
+   "bool_as_validity": true,
+   "reason": "Q85 ḥaqq al-intifāʿ: mayPassBenefit - whether passing on a bare right of use (lending, leasing) holds."
   },
   "rajiyya_takes_wife_rule": {
    "sort": "takyif",

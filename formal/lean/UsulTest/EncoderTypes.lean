@@ -2,6 +2,14 @@
 -- Each judgement encoder's output has the answer type of the question it is declared to answer.
 import Usul
 
+-- a26_refused_idhn_lapses: wadi:shart (negated)
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .shart)) := Usul.Typing.refusedIdhnLapses.mapRun (!·)
+-- a27_ain_ruling_survives_owner_change: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.ainRulingSurvivesOwnerChange
+-- a31_rajab87_transfer_of_holding: wadi:validity
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.transferOfHolding.mapRun Usul.Validity.ofEffects
+-- a31_rajab88_road_use: aspect:permitted
+example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.roadUse
 -- abstention_under_possible_condition: aspect:obligatory
 example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.abstentionUnderPossibleCondition
 -- advance_after_cause: aspect:permitted
@@ -158,6 +166,16 @@ example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.qawadChoiceForfeitsAttachedRight
 -- qisas_belongs_to_whom: wadi:validity
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.qisasBelongsToWhom.mapRun Usul.Validity.ofEffects
+-- rajab_a30_ikhtisas_first_comer: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.ikhtisasFirstComer
+-- rajab_a30_ikhtisas_hand_stands: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.ikhtisasHandStands
+-- rajab_a30_tie_for_recovery: wadi:sabab
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.tieForRecovery
+-- rajab_a30_use_right_for_need: aspect:obligatory
+example : Usul.Typing.Typed Usul.Typing.Situation (Bool) := Usul.Typing.useRightForNeed
+-- rajab_a30_use_right_not_passed: wadi:validity
+example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .validity)) := Usul.Typing.useRightNotPassed.mapRun Usul.Validity.ofEffects
 -- recourse: wadi:sabab
 example : Usul.Typing.Typed Usul.Typing.Situation (Usul.Question.Answer (.wadi .sabab)) := Usul.Typing.recourse
 -- recourse_after_return: wadi:sabab

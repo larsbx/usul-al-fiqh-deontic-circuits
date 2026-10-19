@@ -5,6 +5,8 @@ import Usul.Sadi
 import Usul.Kulliyyat
 import Usul.Dalala
 import Usul.CommandSchemata
+import Usul.Readings.RajabA31
+import Usul.Readings.RajabA29
 
 /-!
 # The types the qawāʿid define
@@ -458,7 +460,7 @@ structure Sadi59 where
   context : Option (Usul.Sadi.Context) := none
   ahd : Option (Bool) := none
 
-/-! ## Ibn Rajab's qawāʿid read by the parallel shards (RajabA1–A25) -/
+/-! ## Ibn Rajab's qawāʿid read by the parallel shards (RajabA1–A31) -/
 
 /-- Ibn Rajab 53 «من تصرف في عين تعلق بها حق لله تعالى أو لآدمي معين إن كان الحق مستقرا فيها بمطالبة من له الحق بحقه أو يأخذه بحقه لم ينفذ التصرف ولم يوجد سوى تعلق الحق لاستيفائه منها صح التصرف على ظاهر المذهب، وقياس قول أبي بكر لا يصح …». Read by `attached_right_disposal`. -/
 structure Rajab53 where
@@ -852,5 +854,65 @@ structure Rajab157 where
 structure Rajab158 where
   firstAslReinforced : Option (Bool) := none
   secondAslReinforced : Option (Bool) := none
+
+/-- Ibn Rajab 13 «إذا وجدنا أثرا معلولا لعلة ووجدنا في محله علة صالحة له، ويمكن أن يكون الأثر معلولا لغيرها لكن لا يتحقق وجود غيرها، فهل يحال ذلك الأثر على تلك العلة المعلومة أم لا؟ في المسألة خلاف ولها صور كثيرة قد يقوى في بعضها الإحالة وفي بعضها العدم ; …». Read by `a26_ihala_on_known_cause`. -/
+structure Rajab13 where
+  knownCauseFit : Option (Bool) := none
+  zahirPointsElsewhere : Option (Bool) := none
+
+/-- Ibn Rajab 23 «من حرم عليه الامتناع من بدل شيء سئله فامتنع فهل يسقط إذنه بالكلية أو يعتبر ويجبره الحاكم عليه هذا نوعان: (أحدهما) : أن يكون المطلوب منه إذنا مجردا ويندرج تحته صور: (منها) وضع الخشب على جدار جاره إذا لم يضر به وقد نص أحمد على عدم اعتبار …». Read by `a26_refused_idhn_lapses`. -/
+structure Rajab23 where
+  refusalForbidden : Option (Bool) := none
+  merePermission : Option (Bool) := none
+
+/-- Ibn Rajab 40 «الأحكام المتعلقة بالأعيان بالنسبة إلى تبدل الأملاك واختلافها عليها نوعان: أحدهما: ما يتعلق الحكم فيه بملك واحد فإذا زال ذلك الملك سقط الحكم وصور ذلك كثيرة: منها: الإجارة فمن استأجر شيئا مدة فزال ملك صاحبه عنه بتملك قهري يشمل العين والمنفعة …». Read by `a27_ain_ruling_survives_owner_change`. -/
+structure Rajab40 where
+  tiedToAin : Option (Bool) := none
+  holderConsented : Option (Bool) := none
+
+/-- Ibn Rajab 70 «الفعل المتعدي إلى مفعول أو المتعلق بظرف أو مجرور إذا كان مفعوله أو متعلقه عاما فهل يدخل الفاعل الخاص في عمومه أم يكون ذكر الفاعل قرينة مخرجة له من العموم أو يختلف ذلك بحسب القرائن؟ فيه خلاف في المذهب، والمرجح فيه التخصيص إلا مع التصريح …». Read by `a27_specific_agent_in_general_object`. -/
+structure Rajab70 where
+  agentExplicitlyIncluded : Option (Bool) := none
+  agentIncludedByQarina : Option (Bool) := none
+
+/-- Ibn Rajab 84 «الحمل هل له حكم قبل انفصاله أم لا] [الأحكام المتعلقة بالحمل نوعان] [النوع الأول ما يتعلق بسبب الحمل بغيره] (القاعدة الرابعة والثمانون) : الحمل هل له حكم قبل انفصاله أم لا؟ حكى القاضي وابن عقيل وغيرهما في المسألة روايتين قالوا والصحيح من …». Read by `a29_haml_hukm_before_separation`. -/
+structure Rajab84 where
+  hamlRulingForAnother : Option (Bool) := none
+  hamlAmaraEvident : Option (Bool) := none
+
+/-- Ibn Rajab 85 «الحقوق خمسة أنواع (أحدها) حق ملك كحق السيد في مال المكاتب ومال القن إذا قلنا يملك بالتمليك وما يمتنع إرثه لمانع كالتركة المستغرقة بالدين على رواية، كالمحرم إذا مات موروثه وفي ملكه صيد على أظهر الوجهين. [النوع الثاني حق تملك كحق الأب في مال …». Read by `rajab_a30_tamalluk_awaits_choice`, `rajab_a30_use_right_not_passed`, `rajab_a30_use_right_for_need`, `rajab_a30_ikhtisas_hand_stands`, `rajab_a30_ikhtisas_first_comer`, `rajab_a30_tie_binds_whole`, `rajab_a30_tie_for_recovery`, `rajab_a30_tied_right_precedes`. -/
+structure Rajab85 extends Rajab99 where
+  causeConcluded : Option (Bool) := none
+  causeCompletesMilk : Option (Bool) := none
+  useRightOnly : Option (Bool) := none
+  harmfulQ85 : Option (Bool) := none
+  permittedBenefit : Option (Bool) := none
+  mayBecomeMal : Option (Bool) := none
+  precededQ85 : Option (Bool) := none
+  leftByChoice : Option (Bool) := none
+  pledgeTie : Option (Bool) := none
+  jinayaTie : Option (Bool) := none
+  tiedQ85 : Option (Bool) := none
+  rivalInDhimmaOnly : Option (Bool) := none
+
+/-- Ibn Rajab 86 «الملك أربعة أنواع: ملك عين ومنفعة، وملك عين بلا منفعة، وملك منفعة بلا عين، وملك انتفاع من غير ملك المنفعة. أما النوع الأول فهو عامة الأملاك الواردة على الأعيان المملوكة بالأسباب المقتضية لها من بيع وهبة وإرث وغير ذلك. واعلم أن ابن عقيل ذكر …». Read by `a29_four_kinds_of_milk`. -/
+structure Rajab86 where
+  milkHoldsAyn : Option (Bool) := none
+  milkBenefitByTamlik : Option (Bool) := none
+
+/-- Ibn Rajab 87 «فيما يقبل النقل والمعاوضة من الحقوق المالية والأملاك، أما الأملاك التامة فقابلة للنقل بالعوض وغيره في الجملة، وأما ملك المنافع فإن كان بعقد لازم ملك فيه نقل الملك بمثل العقد الذي ملك به أو دونه دون ما هو أعلى منه ويملك المعاوضة عليه أيضا …». Read by `a31_rajab87_transfer_of_holding`. -/
+structure Rajab87 where
+  holdingQ87 : Option (Usul.Readings.RajabA31.Holding) := none
+  lazimTitle : Option (Bool) := none
+  higherThanTitle : Option (Bool) := none
+  forIwad : Option (Bool) := none
+
+/-- Ibn Rajab 88 «في الانتفاع وإحداث ما ينتفع به من الطرق المسلوكة في الأمصار والقرى وهوائها وقرارها. أما الطريق نفسه فإن كان ضيقا أو أحدث فيه ما يضر بالمارة فلا يجوز بكل حال، وأما مع السعة وانتفاء الضرر فإن كان المحدث فيه متأبدا كالبناء والغراس فإن كان …». Read by `a31_rajab88_road_use`. -/
+structure Rajab88 where
+  roadLayer : Option (Usul.Readings.RajabA31.Layer) := none
+  narrowOrHarmful : Option (Bool) := none
+  permanentUse : Option (Bool) := none
+  publicBenefit : Option (Bool) := none
+  imamLeave : Option (Bool) := none
 
 end Usul.Typing.Qaida
