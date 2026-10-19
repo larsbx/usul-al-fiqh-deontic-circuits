@@ -18644,8 +18644,8 @@
           "rajab_a30_tamalluk_awaits_choice",
           "successive_by_binding",
           "unknown_condition",
-          "rajab_a30_use_right_for_need",
           "rajab_a30_tied_right_precedes",
+          "rajab_a30_use_right_for_need",
           "attached_right_disposal"
         ],
         "structural": [
@@ -18668,8 +18668,8 @@
           "rajab_a30_tamalluk_awaits_choice",
           "successive_by_binding",
           "unknown_condition",
-          "rajab_a30_use_right_for_need",
           "rajab_a30_tied_right_precedes",
+          "rajab_a30_use_right_for_need",
           "attached_right_disposal"
         ]
       },
@@ -18966,7 +18966,7 @@
           "crop_without_valid_permission",
           "right_for_or_against_self",
           "vague_report_accepted",
-          "rajab_a30_use_right_for_need"
+          "rajab_a30_tied_right_precedes"
         ],
         "structural": [
           "eating_without_permission",
@@ -18990,7 +18990,7 @@
           "crop_without_valid_permission",
           "right_for_or_against_self",
           "vague_report_accepted",
-          "rajab_a30_use_right_for_need"
+          "rajab_a30_tied_right_precedes"
         ]
       },
       {
@@ -43764,8 +43764,8 @@
           "trust_loss",
           "cut_sale_left_to_ripen",
           "istihlak",
-          "luqata",
           "ihram_specification",
+          "luqata",
           "mixed_haram_by_proportion"
         ],
         "structural": [
@@ -43788,8 +43788,8 @@
           "trust_loss",
           "cut_sale_left_to_ripen",
           "istihlak",
-          "luqata",
           "ihram_specification",
+          "luqata",
           "mixed_haram_by_proportion"
         ]
       },
@@ -55332,8 +55332,8 @@
     "pipeline/usul_corpus/encoders/rajab_a7.py": "2fdd56d0d1cf0926881a8c0f3909ae4bdd677718bc7c70691b32ab41469e4433",
     "pipeline/usul_corpus/encoders/rajab_a8.py": "6d173b6cfe687649dd063fa2f0b0b36145096608d2d1560a58c66df73cdff1a8",
     "pipeline/usul_corpus/encoders/rajab_a9.py": "6189b8b1dcc9767188b840594fbf74a052a68a7d90aa54f726c21eb25a674747",
-    "pipeline/usul_corpus/routing.py": "6902c543321f021f855364ea3bf850257bbfd00d082cbdc9861a905bd0c9faa1",
-    "pipeline/usul_corpus/signature_routing.py": "b7353e5f684590f0b727eab6e326b4a3ca2e6fb6129f861fdf97d475beab6e32",
+    "pipeline/usul_corpus/routing.py": "8ddad7fcb995d3f77cebd81be0886902c588f16b5a4e245f6719c6b69d3c3fb8",
+    "pipeline/usul_corpus/signature_routing.py": "f9e3020a26971b7d84bc3ef35fc30377202439e4c94386bc6982174d8c01a120",
     "pipeline/usul_corpus/takhrij.py": "c461eb1ab75c13df0fef737331f975866fa9f4365b9cd8bddb32707637cc2a51"
   },
   "questions_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
