@@ -1,0 +1,379 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f001",
+      "grades": [
+        "ashab",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Validity prevails: al-Inṣāf labels it the madhhab of the aṣḥāb and Kashshāf states it with the reading's own ground (the manfaʿa is owned); the riwāya of manʿ is al-Qāḍī's report.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p034",
+          "excerpt_ar": "فيجوز للمستأجر إجارة العين لمن يقوم مقامه. ويجوز للمؤجر وغيره بمثل الأجرة وزيادة) . هذا المذهب. وعليه الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's «فيجوز للمستأجر إجارة العين لمن يقوم مقامه»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p034",
+          "excerpt_ar": "وعنه: لا تجوز إجارتها. ذكرها القاضي.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya of manʿ, reported by al-Qāḍī."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p565",
+          "excerpt_ar": "(وتصح إجارة مستأجر) العين المؤجرة (لمن يقوم مقامه) في استيفاء النفع (أو) لمن (دونه في الضرر) ؛؛ لأن المنفعة لما كانت مملوكة له، جاز له أن يستوفيها بنفسه ونائبه.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Stated decisively, grounded on the manfaʿa being owned."
+        }
+      ],
+      "positions_sha256": "4c0e0518640bf7668d85bd9032c1958e53573d8c86f95605bff3822c1bcb8d22"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f005",
+      "grades": [
+        [
+          "ashab",
+          "nass"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Validity prevails: Ibn Rajab's «والمذهب الصحيح» and Aḥmad's naṣṣ, al-Inṣāf's madhhab of the jamāhīr and al-Iqnāʿ's decisive statement; the riwāya of manʿ is reported by al-Qāḍī and Ibn ʿAqīl.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p288",
+          "excerpt_ar": "قوله (ويجوز إجارتها) هذا المذهب. نص عليه. وعليه جماهير الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's ʿanwa land."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p288",
+          "excerpt_ar": "وعنه لا يجوز. ذكرها القاضي، وابن عقيل، وصاحب المنتخب، وغيرهم.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya of manʿ."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p062",
+          "excerpt_ar": "ولا يصح بيع ما فتح عنوة ولم يقسم وتصح إجازته كأرض الشام",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn: the sale is barred and the ijāra valid (the witness reads «إجازته»)."
+        }
+      ],
+      "positions_sha256": "a3cb90d7cca44e57fa9d2d74538d3b751bfba70a13e0b86ff09c1feec38dc66f"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f011",
+      "grades": [
+        [
+          "ashab",
+          "jazm"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No muʿāwaḍa prevails: most aṣḥāb in the record, al-Inṣāf's «فعلى المذهب» and al-Iqnāʿ's decisive «فلا يصح بيعه»; the riwāya of jawāz is al-Muqniʿ's and al-Majd's report.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p291",
+          "excerpt_ar": "فعلى المذهب: لا يجوز لمالك الأرض بيع ذلك، ولا يملك بعقد البيع، لكن يكون مشتريه أحق به من غيره.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On the view that kalaʾ and water are not owned before ḥiyāza («وهو المذهب»)."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p292",
+          "excerpt_ar": "ذكر المصنف هنا والمجد، وغيرهما: رواية بجواز بيع ذلك، مع عدم الملك في ذلك كله.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya of jawāz with no milk, then citing this qāʿida."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p063",
+          "excerpt_ar": "ولا كلأ وشوك نبت في أرضه قبل حيازته بملك أرض فلا يصح بيعه",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ],
+      "positions_sha256": "c948da6c31a8dd76d63169e8b02f66f0c8491191092d127a6bbbd3d84297c590"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f017",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The sale prevails: Aḥmad's naṣṣ in Ḥarb's riwāya, stated decisively by al-Iqnāʿ, Kashshāf and Sharḥ al-Muntahā; against it the other naṣṣ, which al-Mardāwī prefers.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p424",
+          "excerpt_ar": "الثالثة: يجوز للسيد بيع هذه الخدمة. نص عليه. نقل حرب لا بأس ببيعها: من العبد أم ممن شاء.",
+          "position": 0,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On «أنت حر على أن تخدمني سنة»."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p424",
+          "excerpt_ar": "وعنه: لا يجوز. نص عليه. وهو الصواب. ذكر هاتين الروايتين ابن أبي موسى.",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "His own taṣwīb («وهو الصواب») of the manʿ riwāya, graded as an aṣḥāb preference (as rajab-a25 grades his «قلت وهو الصواب»)."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p137",
+          "excerpt_ar": "ويجوز للسيد بيع هذه الخدمة من العبد أو غيره ولعل المراد بالبيع الإجارة",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p589",
+          "excerpt_ar": "(وللسيد بيعها) أي: الخدمة (من العبد و) من (غير) نصا.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "The Muntahā with al-Buhūtī: «نصا»."
+        }
+      ],
+      "positions_sha256": "523926eed21afffec1505b5efe8acd4393787be2df465191cfa85fa2ac658d8b"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f001",
+      "grades": [
+        [
+          "nass",
+          "jazm"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "No ḍamān (the digging allowed) prevails: al-Inṣāf gives it as the more correct riwāya and the madhhab, and al-Iqnāʿ allows the well in a corner of a wide road; the riwāya of ḍamān is the one al-Qāḍī alone mentions.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p225",
+          "excerpt_ar": "قوله (وإن حفرها في سابلة لنفع المسلمين: لم يضمن في أصح الروايتين) . يعني: إذا لم يكن فيه ضرر. وهذا المذهب بهذا الشرط.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The madhhab: no ḍamān, the imām’s leave not required."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p226",
+          "excerpt_ar": "وعنه: يضمن. ولم يذكر القاضي غير هذه الرواية. قال الحارثي: وهذا له قوة.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya of ḍamān."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p201",
+          "excerpt_ar": "وإن حفرها في زاوية من طريق واسع وجعل عليها ما يمنع الوقوع فيها جاز",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Digging for the Muslims' benefit in a wide road: «جاز»."
+        }
+      ],
+      "positions_sha256": "fa87ae092eb9ce2eef38821b32bc567e382d024d9d9af6e1ffd16b866d02a0ce"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f002",
+      "grades": [
+        [
+          "ashab",
+          "jazm"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The attribution record leans to the manʿ, by the naṣṣ reports behind it (the riwāyas given unrestricted, al-Marrūdhī's «تهدم»), while the muʿtamad (al-Iqnāʿ, Kashshāf, citing al-Shaykh) and most aṣḥāb in the record give the imām the leave, and al-Shālanjī's naṣṣ allows the harmless mosque. Unweighed: the side is for the proofs, not the labels.",
+      "evidence": [
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p333",
+          "excerpt_ar": "الشيخ: للإمام أن يأذن في بناء مسجد في طريق واسع وعليه ما لم يضر بالناس",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "Citing Taqī al-Dīn."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p373",
+          "excerpt_ar": "(قال الشيخ: للإمام أن يأذن في بناء مسجد في طريق واسع، و) أن يأذن في بناء مسجد (عليه)",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "The sharḥ, then «وعنه المنع مطلقا» and al-Marrūdhī's «تهدم», the riwāya cited below from al-Inṣāf."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p227",
+          "excerpt_ar": "ونقل المروذي: حكم هذه المساجد التي بنيت في الطريق: تهدم.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Marrūdhī's riwāya."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p227",
+          "excerpt_ar": "نقل إسماعيل بن سعيد في المسجد: لا بأس به إذا لم يضر بالطريق.",
+          "position": 0,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Al-Shālanjī's riwāya, allowing it where it does not harm the road (no leave named)."
+        }
+      ],
+      "positions_sha256": "fa833bb763f6b9e1736a08d08b7c6e0fbbeb693c6b7c6fb0272b192089c6a54b"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f003",
+      "grades": [
+        "tashih",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The manʿ prevails: Ibn Rajab's «فالمشهور» with Aḥmad's naṣṣ, al-Inṣāf's madhhab of the jamāhīr for the dukkān, and al-Iqnāʿ's «ولو بإذن إمام»; the jawāz is a fatwa drawn from the mosque naṣṣ.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p256",
+          "excerpt_ar": "لا يجوز أن يشرع دكانا في طريق نافذ، سواء أذن فيه الإمام أو لا. على الصحيح من المذهب. وعليه جماهير الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The dukkān, a building for the builder's own benefit."
+        },
+        {
+          "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p201",
+          "excerpt_ar": "ولا يجوز أن يبني في الطريق دكانا ولو كان الطريق واسعا ولو بإذن إمام",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Ḥajjāwī, al-Iqnāʿ",
+          "note": "The matn."
+        }
+      ],
+      "positions_sha256": "797e0b48edcf672b79b2869999481e030fbc587e8552a0b3183cbc9e873fa970"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f004",
+      "grades": [
+        [
+          "ashab",
+          "jazm"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Allowed without leave prevails: al-Inṣāf labels it the madhhab (citing this qāʿida for «قول الأكثر») and Kashshāf states it; the need of leave is the riwāya al-Qāḍī gives in al-Aḥkām al-Sulṭāniyya.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p378",
+          "excerpt_ar": "تنبيه: ظاهر كلام المصنف: أنه لا يفتقر في الجلوس في هذه الأمكنة إلى إذن الإمام في ذلك. وهو صحيح. وهو المذهب. وهو ظاهر كلام أكثر الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Sitting in the wide roads and the raḥabāt of mosques."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p378",
+          "excerpt_ar": "وقيل: يفتقر إلى إذن. وهو رواية حكاها في الأحكام السلطانية. ذكره في القاعدة الثامنة والثمانين.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The riwāya requiring leave, citing this qāʿida."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p196",
+          "excerpt_ar": "فلمن سبق إليها الجلوس فيها بغير إذنه",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Of the wide road the imām has not assigned: «بغير إذنه»."
+        }
+      ],
+      "positions_sha256": "9b6de92c2b93c3dfc4f9d1d07e2bf8d2c051a78845864dd177ed380e5ad4ded6"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f006",
+      "grades": [
+        [
+          "jazm",
+          "ashab"
+        ],
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Allowed with leave prevails: al-Inṣāf gives it as the view of the jamāhīr, and Kashshāf and Sharḥ al-Muntahā state it with the ḥadīth of al-ʿAbbās's mīzāb; against it Aḥmad's naṣṣ, which al-Ḥārithī calls the manṣūṣ madhhab and al-Mughnī puts first.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p255",
+          "excerpt_ar": "فأما إن أذن أحدهما فيه: جاز ذلك إن لم يكن فيه ضرر، عند جماهير الأصحاب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Of the jutting wing, the sābāṭ and the mīzāb, with the leave of the imām or his deputy."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p255",
+          "excerpt_ar": "وقيل: لا يجوز، ولو أذن فيه. قدمه في المغني، والشرح، والرعايتين، والفائق، والحاويين.",
+          "position": 1,
+          "grade": "ashab",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Put first by al-Mughnī and others."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p256",
+          "excerpt_ar": "وقال الحارثي، في باب الغصب: والمذهب المنصوص: عدم الإباحة مطلقا، كما تقدم في باب الصلح.",
+          "position": 1,
+          "grade": "nass",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "al-Ḥārithī on the naṣṣ; al-Inṣāf adds «وقدمه في القاعدة الثامنة والثمانين»."
+        },
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p406",
+          "excerpt_ar": "(إلا بإذن إمام أو نائبه إن لم يكن فيه) أي في الميزاب والجناح والساباط (ضرر) فتجوز هذه الثلاثة لأن الإمام أو نائبه نائب المسلمين، فإذنه كإذنهم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Stated decisively."
+        },
+        {
+          "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p149",
+          "excerpt_ar": "(إلا بإذن إمام أو نائبه) ; لأنه نائب المسلمين فإذنه كإذنهم",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
+          "note": "The Muntahā: the jināḥ, sābāṭ and mīzāb, with leave and no harm."
+        }
+      ],
+      "positions_sha256": "7ac608a05d2ce18c7f41990fe6363edf79724fc686b139f35012bf55679d8b05"
+    }
+  ]
+}
