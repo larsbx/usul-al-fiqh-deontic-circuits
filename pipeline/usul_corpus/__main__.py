@@ -474,6 +474,8 @@ def cmd_typed_routing(args: argparse.Namespace) -> int:
         return path not in stale
 
     for ts in [*tr.present(ROOT), *tr.present(ROOT, tr.PROPOSALS)]:
+        if getattr(ts, "listed", False):
+            emit(ts.shortlist, tr.render_shortlist(ROOT, ts))
         if not emit(ts.prolog, tr.prolog_file(ts, json.loads((ROOT / ts.situations).read_text(encoding="utf-8")))):
             continue
         cov = tr.coverage(ROOT, ts)

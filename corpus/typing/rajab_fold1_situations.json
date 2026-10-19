@@ -1,0 +1,4181 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "provenance": "The 235 cases of record fold 1 of the routing index's held-out split (Ibn Rajab and Ibn al-Laḥḥām furūʿ), typed into Usul.Typing situations by four LLM agents working blind. Each saw only its cases' committed texts under shuffled opaque ids, each with its reading list (corpus/typing/rajab_fold1_shortlist.json: the strict router's 20 likeliest qāʿida types, the router fitted without the case's qāʿida), and the catalogue of every qāʿida type's statement and fields generated from the Lean export; never the qāʿida, encoder or label. The procedure (list size, prompt, scoring) was frozen on fold 0 before fold 1 was typed (docs/architecture/routing-pr48.md). Every quote is verbatim from the unit's own text, at most 160 characters (tested). Not human-reviewed.",
+  "answers": [
+    {
+      "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
+      "situations": [
+        {
+          "label": "unqualified threat, Qadi: not decisive",
+          "facts": {
+            "expression": "unqualifiedThreat",
+            "obligation_reading": "qadi"
+          },
+          "evidence": {
+            "expression": "فإطلاق التوعد لفعل ما توعد عليه",
+            "obligation_reading": "قال القاضى لا يكون نصا في الوجوب بل يقبل التأويل"
+          }
+        },
+        {
+          "label": "fard label, Abu l-Barakat",
+          "facts": {
+            "expression": "fardLabel",
+            "obligation_reading": "abuBarakat"
+          },
+          "evidence": {
+            "expression": "وإطلاق الفرض",
+            "obligation_reading": "واختار أبو البركات إطلاق القواعد وإطلاق الفرض"
+          }
+        },
+        {
+          "label": "wujub label, Qadi",
+          "facts": {
+            "expression": "wujubLabel",
+            "obligation_reading": "qadi"
+          },
+          "evidence": {
+            "expression": "أو إطلاق الوجوب",
+            "obligation_reading": "قال القاضى لا يكون نصا في الوجوب بل يقبل التأويل ذكره في الثلاثة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
+      "situations": [
+        {
+          "label": "definite al without ahd: three",
+          "facts": {
+            "noun_form": "definiteAl",
+            "context": "affirmation",
+            "ahd": false
+          },
+          "evidence": {
+            "noun_form": "الطلاق يلزمنى",
+            "context": "الطلاق يلزمنى",
+            "ahd": "لزوم الثلاث بناء على المحلى"
+          }
+        },
+        {
+          "label": "ahd (sunna single) prevails: one",
+          "facts": {
+            "noun_form": "definiteAl",
+            "context": "affirmation",
+            "ahd": true
+          },
+          "evidence": {
+            "noun_form": "الطلاق يلزمنى",
+            "context": "الطلاق يلزمنى",
+            "ahd": "ولزوم الواحدة بناء على تقديم المعهود على العموم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005",
+      "situations": [
+        {
+          "label": "definite al- in taslim: generality or 'ahd",
+          "facts": {
+            "noun_form": "definiteAl"
+          },
+          "evidence": {
+            "noun_form": "هل المراد بالألف واللام العموم أو العهد"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
+      "situations": [
+        {
+          "label": "unqualified intention of 'the prayer', ranked items",
+          "facts": {
+            "unspecified": true,
+            "ranked": true
+          },
+          "evidence": {
+            "unspecified": "وأطلق ولم ms156 ينو فرضا ولا نافلة",
+            "ranked": "تنزيلا له على الأدنى"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f003",
+      "situations": [
+        {
+          "label": "bequest of 'middle of his instalments'",
+          "facts": {
+            "noun_form": "singularAnnexed",
+            "context": "affirmation"
+          },
+          "evidence": {
+            "noun_form": "بأوسط نجومه",
+            "context": "إذا أوصى السيد لمكاتبه بأوسط نجومه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f001",
+      "situations": [
+        {
+          "label": "general hadith applied beyond hardship occasion",
+          "facts": {
+            "general_wording": true,
+            "in_occasion": false
+          },
+          "evidence": {
+            "general_wording": "وهو عام أيضا",
+            "in_occasion": "سواء وجد مشقة أو لم يجد"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f001",
+      "situations": [
+        {
+          "label": "hair/nail separated",
+          "facts": {
+            "hair_or_nail": true
+          },
+          "evidence": {
+            "hair_or_nail": "أن الشعر لا ينجس بالموت ولا بالانفصال"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
+      "situations": [
+        {
+          "label": "beard hair covers like a separate covering",
+          "facts": {
+            "hair_or_nail": true
+          },
+          "evidence": {
+            "hair_or_nail": "لكن له لحية كبيرة تستره"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
+      "situations": [
+        {
+          "label": "whole head wiped at once",
+          "facts": {
+            "separable": false
+          },
+          "evidence": {
+            "separable": "إذا مسح رأسه كله دفعة واحدة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
+      "situations": [
+        {
+          "label": "higher-aged animal in zakat: excess compensated",
+          "facts": {
+            "separable": true
+          },
+          "evidence": {
+            "separable": "لأن الشارع أعطاه جبرانا عن الزيادة"
+          }
+        },
+        {
+          "label": "traveller prays four: lightening of the original",
+          "facts": {
+            "lightened": true
+          },
+          "evidence": {
+            "lightened": "ثم سقط بعضه تخفيفا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f001",
+      "situations": [
+        {
+          "label": "combining prayers after the cause (zawal)",
+          "facts": {
+            "cause_present": true
+          },
+          "evidence": {
+            "cause_present": "لأن الشارع جعل الزوال سببا لوجوب الصلاتين عند العذر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f002",
+      "situations": [
+        {
+          "label": "Friday prayer cause (the day) present before zawal",
+          "facts": {
+            "cause_present": true
+          },
+          "evidence": {
+            "cause_present": "فإن سببها اليوم لأنها تضاف إليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
+      "situations": [
+        {
+          "label": "necessity view: prayer void",
+          "facts": {
+            "necessity": true,
+            "original_possible": true
+          },
+          "evidence": {
+            "necessity": "ومن حيث كونه ضرورة يشبه العدة بالأشهر",
+            "original_possible": "ثم وجد الماء"
+          }
+        },
+        {
+          "label": "general concession view",
+          "facts": {
+            "necessity": false
+          },
+          "evidence": {
+            "necessity": "لأن التيمم من حيث كونه رخصة عامة فهو كصيام المتمتع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
+      "situations": [
+        {
+          "label": "voluntary prayer when obligatory time is narrow",
+          "facts": {
+            "narrow": true,
+            "financial": false
+          },
+          "evidence": {
+            "narrow": "إذا تضايق وقت المكتوبة",
+            "financial": "إذا تضايق وقت المكتوبة هل ينعقد التنفل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f000",
+      "situations": [
+        {
+          "label": "changed water with known najasa",
+          "facts": {
+            "known_cause_fit": true
+          },
+          "evidence": {
+            "known_cause_fit": "إحالة للتغيير على النجاسة المعلوم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f005",
+      "situations": [
+        {
+          "label": "lineage attributed to the known cause (ownership)",
+          "facts": {
+            "known_cause_fit": true
+          },
+          "evidence": {
+            "known_cause_fit": "لأنا لا نعلم سببا يتحقق به لحوق النسب [هنا] غير ملك اليمين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f010",
+      "situations": [
+        {
+          "label": "apparent cause: taking allowed",
+          "facts": {
+            "known_cause_fit": true,
+            "zahir_points_elsewhere": false
+          },
+          "evidence": {
+            "known_cause_fit": "إذا كان ثم سبب ظاهر يحال الأخذ عليه",
+            "zahir_points_elsewhere": "لأن السبب إذا ظهر لم ينسب أخذه إلى خيانة"
+          }
+        },
+        {
+          "label": "hidden cause: treachery",
+          "facts": {
+            "zahir_points_elsewhere": true
+          },
+          "evidence": {
+            "zahir_points_elsewhere": "بخلاف ما إذا خفي فإنه ينسب بالأخذ إلى الخيانة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f013",
+      "situations": [
+        {
+          "label": "trace of sheep attributed to them",
+          "facts": {
+            "known_cause_fit": true
+          },
+          "evidence": {
+            "known_cause_fit": "ووجد في الزرع أثر غنمه"
+          }
+        },
+        {
+          "label": "qiyafa in property as an indicator",
+          "facts": {
+            "amara": true
+          },
+          "evidence": {
+            "amara": "من القيافة في الأموال"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f015",
+      "situations": [
+        {
+          "label": "lawth as sign",
+          "facts": {
+            "amara": true
+          },
+          "evidence": {
+            "amara": "اللوث في القسامة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
+      "situations": [
+        {
+          "label": "right only to value (ashab)",
+          "facts": {
+            "cause_concluded": true,
+            "cause_completes_milk": false
+          },
+          "evidence": {
+            "cause_concluded": "لو طلقها قبل الدخول",
+            "cause_completes_milk": "ليس له أخذ نصفه لأن حقه وجب في القيمة"
+          }
+        },
+        {
+          "label": "half enters his ownership by force",
+          "facts": {
+            "cause_concluded": true,
+            "cause_completes_milk": true
+          },
+          "evidence": {
+            "cause_concluded": "لو طلقها قبل الدخول",
+            "cause_completes_milk": "فإن قلنا يدخل قهرا عاد حقه إلى العين بعودها إليها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
+      "situations": [
+        {
+          "label": "one surah with reflection vs many in same time",
+          "facts": {
+            "same_cost": true
+          },
+          "evidence": {
+            "same_cost": "وآخر قرأ في تلك المدة سورا عديدة سردا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
+      "situations": [
+        {
+          "label": "Ramadan fast for both obligation and vow",
+          "facts": {
+            "acts_same_kind": true
+          },
+          "evidence": {
+            "acts_same_kind": "هل يجزئه رمضان عن فرضه ونذره"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
+      "situations": [
+        {
+          "label": "one tawaf for both",
+          "facts": {
+            "acts_same_kind": true,
+            "same_purpose": true
+          },
+          "evidence": {
+            "acts_same_kind": "طوافا ينوي به الزيارة والوداع",
+            "same_purpose": "يجزئه عنهما"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f009",
+      "situations": [
+        {
+          "label": "umra tawaf replaces tawaf al-qudum",
+          "facts": {
+            "acts_same_kind": true,
+            "same_purpose": true
+          },
+          "evidence": {
+            "acts_same_kind": "فإنه يبدأ بطواف العمرة ويسقط عنه طواف القدوم",
+            "same_purpose": "فإنه يبدأ بطواف العمرة ويسقط عنه طواف القدوم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
+      "situations": [
+        {
+          "label": "ziyara tawaf at departure covers farewell",
+          "facts": {
+            "acts_same_kind": true
+          },
+          "evidence": {
+            "acts_same_kind": "فطاف فهل يسقط عنه طواف الوداع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003",
+      "situations": [
+        {
+          "label": "zakat after nisab lost before ability",
+          "facts": {
+            "making_up": false
+          },
+          "evidence": {
+            "making_up": "الزكاة فإذا تلف النصاب قبل التمكن من الأداء"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
+      "situations": [
+        {
+          "label": "hajj fixed without capacity",
+          "facts": {
+            "making_up": false
+          },
+          "evidence": {
+            "making_up": "الحج فلا يشترط لثبوته في الذمة التمكن من الأداء"
+          }
+        },
+        {
+          "label": "making up Ramadan requires capacity",
+          "facts": {
+            "making_up": true
+          },
+          "evidence": {
+            "making_up": "وأما قضاء العبادات فاعتبر الأصحاب له إمكان الأداء"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
+      "situations": [
+        {
+          "label": "nisab completed by offspring",
+          "facts": {
+            "from_substance": true
+          },
+          "evidence": {
+            "from_substance": "لأن النتاج جزء من الأمهات"
+          }
+        },
+        {
+          "label": "nisab completed by trade profit",
+          "facts": {
+            "from_substance": false
+          },
+          "evidence": {
+            "from_substance": "لأن الكسب يتولد من الخارج"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f004",
+      "situations": [
+        {
+          "label": "mudaraba profit not from capital",
+          "facts": {
+            "from_substance": false
+          },
+          "evidence": {
+            "from_substance": "الربح لا يتولد من المال بنفسه"
+          }
+        },
+        {
+          "label": "musaqat fruit from tree",
+          "facts": {
+            "from_substance": true
+          },
+          "evidence": {
+            "from_substance": "والثمر متولد من عين الشجر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
+      "situations": [
+        {
+          "label": "impurity consumed in water",
+          "facts": {
+            "consumed": true
+          },
+          "evidence": {
+            "consumed": "الماء الذي استهلكت فيه النجاسة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f009",
+      "situations": [
+        {
+          "label": "mūlī refuses both return and divorce",
+          "facts": {
+            "chose_one": false,
+            "financial_q110": false
+          },
+          "evidence": {
+            "chose_one": "ثم امتنع من الفيئة",
+            "financial_q110": "يطلق الحاكم عليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f010",
+      "situations": [
+        {
+          "label": "manumission of mutilated slave compelled",
+          "facts": {
+            "refusal_forbidden": true
+          },
+          "evidence": {
+            "refusal_forbidden": "لأن عتقه صار محتما لا محالة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f001",
+      "situations": [
+        {
+          "label": "buyer sells pre-emptible share before demand",
+          "facts": {
+            "demanded": false
+          },
+          "evidence": {
+            "demanded": "قبل المطالبة بالشفعة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
+      "situations": [
+        {
+          "label": "zakat tied to the property: sale annulled",
+          "facts": {
+            "on_property": true
+          },
+          "evidence": {
+            "on_property": "فإن قيل بعين المال فسخ البيع لاستيفائها منه"
+          }
+        },
+        {
+          "label": "zakat tied to owner's dhimma: no annulment",
+          "facts": {
+            "on_property": false
+          },
+          "evidence": {
+            "on_property": "أو بذمة ربه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f003",
+      "situations": [
+        {
+          "label": "item following in sale",
+          "facts": {
+            "follows_in_sale": true
+          },
+          "evidence": {
+            "follows_in_sale": "ما يتبع في البيع فهو للمؤجر"
+          }
+        },
+        {
+          "label": "item not following in sale",
+          "facts": {
+            "follows_in_sale": false
+          },
+          "evidence": {
+            "follows_in_sale": "وما لا يتبع إن كانت جرت به العادة في المنازل ففيه خلاف"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
+      "situations": [
+        {
+          "label": "killing an attacking animal in defence",
+          "facts": {
+            "purpose": "repelHarm"
+          },
+          "evidence": {
+            "purpose": "فدفعه عن نفسه بالقتل لم يضمنه"
+          }
+        },
+        {
+          "label": "killing another's animal to eat in famine",
+          "facts": {
+            "purpose": "benefit"
+          },
+          "evidence": {
+            "purpose": "ولو قتل حيوانا لغيره في مخمصة ليحيي به نفسه ضمنه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
+      "situations": [
+        {
+          "label": "killing attacking game in self-defence",
+          "facts": {
+            "purpose": "repelHarm"
+          },
+          "evidence": {
+            "purpose": "فقتله دفعا عن نفسه"
+          }
+        },
+        {
+          "label": "killing game in famine to survive",
+          "facts": {
+            "purpose": "benefit"
+          },
+          "evidence": {
+            "purpose": "فقتله في المخمصة ليحيي به نفسه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002",
+      "situations": [
+        {
+          "label": "shaving because of lice: fidya",
+          "facts": {
+            "purpose": "benefit"
+          },
+          "evidence": {
+            "purpose": "لو حلق المحرم رأسه لتأذيه بالقمل والوسخ فداه"
+          }
+        },
+        {
+          "label": "plucking hair harming the eye: no fidya",
+          "facts": {
+            "purpose": "repelHarm"
+          },
+          "evidence": {
+            "purpose": "ولو خرجت في عينه شعرة فقلعها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004",
+      "situations": [
+        {
+          "label": "pushing away the egg",
+          "facts": {
+            "purpose": "repelHarm"
+          },
+          "evidence": {
+            "purpose": "على [عين] إنسان فدفعها فانكسرت فلا ضمان عليه"
+          }
+        },
+        {
+          "label": "eating the egg in famine",
+          "facts": {
+            "purpose": "benefit"
+          },
+          "evidence": {
+            "purpose": "بخلاف ما لو احتاج إلى أكلها لمخمصة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f001",
+      "situations": [
+        {
+          "label": "breaking fast to save another",
+          "facts": {
+            "benefits_other": true
+          },
+          "evidence": {
+            "benefits_other": "لو نجى غريقا في رمضان"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
+      "situations": [
+        {
+          "label": "rented animal driven beyond agreed distance",
+          "facts": {
+            "other_act_permitted": true
+          },
+          "evidence": {
+            "other_act_permitted": "لو استأجر دابة لمسافة معلومة فزاد عليها"
+          }
+        },
+        {
+          "label": "another rides with lessee",
+          "facts": {
+            "other_act_permitted": true
+          },
+          "evidence": {
+            "other_act_permitted": "ركب الدابة مع المستأجر غيره"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
+      "situations": [
+        {
+          "label": "only minimum obligatory",
+          "facts": {
+            "separable": true
+          },
+          "evidence": {
+            "separable": "ولو تصدق أولا بما يقع عليه الاسم أجزأه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
+      "situations": [
+        {
+          "label": "advanced tabi' failed to count",
+          "facts": {
+            "failed_to_count": true
+          },
+          "evidence": {
+            "failed_to_count": "وقلنا لا يجزئ التبيع عن شيء منها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
+      "situations": [
+        {
+          "label": "sale of pregnant slave with free fetus",
+          "facts": {
+            "implicit": true
+          },
+          "evidence": {
+            "implicit": "لو باعه أمة حاملا بحر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
+      "situations": [
+        {
+          "label": "sale of property with widow's residence for pregnancy",
+          "facts": {
+            "implicit": true,
+            "known_period": false
+          },
+          "evidence": {
+            "implicit": "تستحق فيه السكنى الزوجة المعتدة",
+            "known_period": "لأن مدة الحمل مجهولة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f002",
+      "situations": [
+        {
+          "label": "statutory exception of leased benefits",
+          "facts": {
+            "implicit": true
+          },
+          "evidence": {
+            "implicit": "بيع الدار المؤجرة تصح وسواء علم المشتري بالإجارة أو لم يعلم"
+          }
+        },
+        {
+          "label": "lease as binding contract over benefits",
+          "facts": {
+            "binding_contract": true
+          },
+          "evidence": {
+            "binding_contract": "بيع الدار المؤجرة تصح"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f002",
+      "situations": [
+        {
+          "label": "benefits bequeathed, manumission doesn't reach them",
+          "facts": {
+            "binding_contract": true
+          },
+          "evidence": {
+            "binding_contract": "العبد الموصى بمنافعه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f001",
+      "situations": [
+        {
+          "label": "lease when property seized by conquest",
+          "facts": {
+            "tied_to_ain": false,
+            "holder_consented": false
+          },
+          "evidence": {
+            "tied_to_ain": "أن تكون إجارته بملك ثم تنتقل إلى غيره",
+            "holder_consented": "إلى من يملك بالقهر ما يستولي عليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+      "situations": [
+        {
+          "label": "deposit followed by permission to use",
+          "facts": {
+            "successive": true,
+            "earlier_binding": false,
+            "later_binding": false
+          },
+          "evidence": {
+            "successive": "إذا أودعه شيئا ثم أذن له في الانتفاع به",
+            "earlier_binding": "ولا اختلاف هاهنا بين العقدين في الجواز",
+            "later_binding": "ولا اختلاف هاهنا بين العقدين في الجواز"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002",
+      "situations": [
+        {
+          "label": "loan for pledge",
+          "facts": {
+            "successive": true,
+            "later_binding": true
+          },
+          "evidence": {
+            "successive": "إذا أعاره شيئا ليرهنه",
+            "later_binding": "هو لازم بالنسبة إلى الراهن والمالك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
+      "situations": [
+        {
+          "label": "slave both mudabbar and mukatab",
+          "facts": {
+            "combined_attributes": true
+          },
+          "evidence": {
+            "combined_attributes": "لو كاتب المدبر أو دبر المكاتب صح"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f000",
+      "situations": [
+        {
+          "label": "lease lapses with forcible loss of lessor's ownership",
+          "facts": {
+            "tied_to_ain": false,
+            "holder_consented": false
+          },
+          "evidence": {
+            "tied_to_ain": "فزال ملك صاحبه عنه بتملك قهري يشمل العين والمنفعة",
+            "holder_consented": "بتملك قهري"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f008",
+      "situations": [
+        {
+          "label": "husband's half-mahr right tied to the thing itself",
+          "facts": {
+            "tied_to_ain": true
+          },
+          "evidence": {
+            "tied_to_ain": "لأن حقه متعلق بعينه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f012",
+      "situations": [
+        {
+          "label": "father's return after property left and returned",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f000",
+      "situations": [
+        {
+          "label": "withholding: usurper",
+          "facts": {
+            "withholds": true
+          },
+          "evidence": {
+            "withholds": "فإن كان ممتنعا من تسليمه فهو غاصب"
+          }
+        },
+        {
+          "label": "offering, determined: no liability",
+          "facts": {
+            "withholds": false
+          },
+          "evidence": {
+            "withholds": "بل باذلا له فلا ضمان عليه"
+          }
+        },
+        {
+          "label": "undetermined: liable",
+          "facts": {
+            "determined": false
+          },
+          "evidence": {
+            "determined": "إلا أن يكون المعقود عليه مبهما لم يتعين بعد"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
+      "situations": [
+        {
+          "label": "depositary transgresses",
+          "facts": {
+            "hand": "trustee",
+            "pure_trust": true,
+            "transgressed": true
+          },
+          "evidence": {
+            "hand": "إذا تعدى في الوديعة",
+            "pure_trust": "لأنها أمانة محضة",
+            "transgressed": "إذا تعدى في الوديعة بطلت"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
+      "situations": [
+        {
+          "label": "executor transgresses",
+          "facts": {
+            "hand": "trustee",
+            "transgressed": true
+          },
+          "evidence": {
+            "hand": "لأن الأمانة معتبرة فيه",
+            "transgressed": "الوصي إذا تعدى في التصرف"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f001",
+      "situations": [
+        {
+          "label": "ihram: no exit by one's word",
+          "facts": {
+            "binding": true
+          },
+          "evidence": {
+            "binding": "لا يتمكن العبد من الخروج منه بقوله كالإحرام"
+          }
+        },
+        {
+          "label": "nikah/kitaba: exit possible but pervasive effects",
+          "facts": {
+            "binding": false,
+            "pervasive": true
+          },
+          "evidence": {
+            "binding": "وما كان العبد متمكنا من الخروج منه بقوله",
+            "pervasive": "ما يترتب عليه حكم مبني على التغليب والسراية والنفوذ"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000",
+      "situations": [
+        {
+          "label": "necessity acquisition, liable",
+          "facts": {
+            "acquisition_necessity": true,
+            "shufa": false
+          },
+          "evidence": {
+            "acquisition_necessity": "التملك الاضطراري كمن اضطر إلى طعام الغير",
+            "shufa": "التملك الاضطراري"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000",
+      "situations": [
+        {
+          "label": "determined sold object",
+          "facts": {
+            "determined": true
+          },
+          "evidence": {
+            "determined": "إذا تميز المعقود عليه من غيره وتعين"
+          }
+        },
+        {
+          "label": "undetermined qafiz from a heap",
+          "facts": {
+            "determined": false
+          },
+          "evidence": {
+            "determined": "فأما المبيع المبهم غير المتعين كقفيز من صبرة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001",
+      "situations": [
+        {
+          "label": "gift: qabd is cause of entitlement",
+          "facts": {
+            "qabd_completes": true
+          },
+          "evidence": {
+            "qabd_completes": "لأن القبض هنا سبب الاستحقاق"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f003",
+      "situations": [
+        {
+          "label": "charity owned only by qabd",
+          "facts": {
+            "qabd_completes": true
+          },
+          "evidence": {
+            "qabd_completes": "الصدقة لا تملك بدون القبض"
+          }
+        },
+        {
+          "label": "owned by acceptance",
+          "facts": {
+            "qabd_completes": false
+          },
+          "evidence": {
+            "qabd_completes": "فأما على القول بملكها بمجرد القبول"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f000",
+      "situations": [
+        {
+          "label": "pledgee's right fixed in pledged thing",
+          "facts": {
+            "fixed_in_ayn": true
+          },
+          "evidence": {
+            "fixed_in_ayn": "المرتهن أخذ بحقه في الرهن من التوثيق والحبس وقبضه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
+      "situations": [
+        {
+          "label": "agency and debt proven together",
+          "facts": {
+            "concurrent": true,
+            "prior": false
+          },
+          "evidence": {
+            "concurrent": "وأقام البينة بالوكالة والدين في حالة واحدة",
+            "prior": "وأقام البينة بالوكالة والدين في حالة واحدة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
+      "situations": [
+        {
+          "label": "second birth ends idda: divorce coincides with bar",
+          "facts": {
+            "with_bar": true
+          },
+          "evidence": {
+            "with_bar": "ولا تطلق به كما لا تطلق في قوله مع انقضاء عدتك"
+          }
+        },
+        {
+          "label": "first birth: divorce falls",
+          "facts": {
+            "with_bar": false
+          },
+          "evidence": {
+            "with_bar": "فإنها تطلق بالأول"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f000",
+      "situations": [
+        {
+          "label": "quitting forbidden continuance at once",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
+      "situations": [
+        {
+          "label": "wasi rejects; harm remediable via judge",
+          "facts": {
+            "harm": true,
+            "remediable": true
+          },
+          "evidence": {
+            "harm": "لئلا يضيع إسنادها فيقع الضرر",
+            "remediable": "بما إذا وجد حاكما"
+          }
+        },
+        {
+          "label": "rejection without informing testator",
+          "facts": {
+            "harm": true
+          },
+          "evidence": {
+            "harm": "لما فيه من التغرير به"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
+      "situations": [
+        {
+          "label": "dismissal harms pledgee but judge can sell",
+          "facts": {
+            "harm": true,
+            "remediable": true
+          },
+          "evidence": {
+            "harm": "لأن فيه تغرير للمرتهن",
+            "remediable": "لأن الحاكم يأمره بالبيع ويبيع عليه"
+          }
+        },
+        {
+          "label": "no judge to order sale",
+          "facts": {
+            "harm": true,
+            "remediable": false
+          },
+          "evidence": {
+            "harm": "لأن فيه تغرير للمرتهن",
+            "remediable": "بين أن يوجد حاكم يأمر بالبيع أو لا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f004",
+      "situations": [
+        {
+          "label": "rescission harming the worker",
+          "facts": {
+            "harm": true,
+            "remediable": true
+          },
+          "evidence": {
+            "harm": "فأما أن يكون يذهب عمل يديه وما أنفق في الأرض فلا",
+            "remediable": "يجب له بعد ما يبلغ الزرع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
+      "situations": [
+        {
+          "label": "dismissed agent acts before knowledge",
+          "facts": {
+            "public_office": false
+          },
+          "evidence": {
+            "public_office": "الوكيل إذا وكله في فعل شيء ثم عزله وتصرف قبل العلم"
+          }
+        },
+        {
+          "label": "agent not negligent",
+          "facts": {
+            "negligent_inquiry": false
+          },
+          "evidence": {
+            "negligent_inquiry": "لعدم تفريطه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
+      "situations": [
+        {
+          "label": "judge's dismissal before knowledge",
+          "facts": {
+            "public_office": true
+          },
+          "evidence": {
+            "public_office": "فإن ولاية القاضي عامة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f001",
+      "situations": [
+        {
+          "label": "annulments without the other's knowledge",
+          "facts": {
+            "consent_required": false
+          },
+          "evidence": {
+            "consent_required": "ومنها الفسخ بالخيار يملكه من يملك الخيار بغير علم الآخر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
+      "situations": [
+        {
+          "label": "disposal after permission before knowledge",
+          "facts": {
+            "knew": false,
+            "transaction_authority": true
+          },
+          "evidence": {
+            "knew": "فتصرف بعد الإذن وقبل العلم",
+            "transaction_authority": "فهل ينفذ أم لا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
+      "situations": [
+        {
+          "label": "release instead of itaa",
+          "facts": {
+            "returned_by_gift": true
+          },
+          "evidence": {
+            "returned_by_gift": "ثم أبرأه من دين الكتابة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
+      "situations": [
+        {
+          "label": "conditional intention while doubting hadath",
+          "facts": {
+            "conditional": true,
+            "known_to_hold": false
+          },
+          "evidence": {
+            "conditional": "ونوى الفرض إن كان محدثا",
+            "known_to_hold": "لو توضأ شاكا في الحدث"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
+      "situations": [
+        {
+          "label": "exchange on deposit of unknown survival",
+          "facts": {
+            "known_to_hold": false
+          },
+          "evidence": {
+            "known_to_hold": "وهو يجهل بقاءها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
+      "situations": [
+        {
+          "label": "sale conditioned on a fact both know",
+          "facts": {
+            "conditional": true,
+            "known_to_hold": true
+          },
+          "evidence": {
+            "conditional": "إن كنت أذنت لك في شرائها فقد بعتكها",
+            "known_to_hold": "لأنه تعليق على شرط واقع يعلمانه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f008",
+      "situations": [
+        {
+          "label": "ashab: valid raja",
+          "facts": {
+            "known_to_hold": false,
+            "conditional": false
+          },
+          "evidence": {
+            "known_to_hold": "شك في وقوع الطلاق فيه",
+            "conditional": "هي رجعة صحيحة رافعة للشك"
+          }
+        },
+        {
+          "label": "Sharik: like conditional",
+          "facts": {
+            "known_to_hold": false,
+            "conditional": true
+          },
+          "evidence": {
+            "known_to_hold": "شك في وقوع الطلاق فيه",
+            "conditional": "الرجعة مع الشك في الطلاق يصيرها كالمعلقة على شرط"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f010",
+      "situations": [
+        {
+          "label": "Islam ruling despite uncertain basis",
+          "facts": {
+            "actual_basis": true
+          },
+          "evidence": {
+            "actual_basis": "فإنه حكم صحيح وإن حصل التردد في مستنده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f000",
+      "situations": [
+        {
+          "label": "common hireling may delegate",
+          "facts": {
+            "binding_q69": true,
+            "personal_required": false
+          },
+          "evidence": {
+            "binding_q69": "الأجير المشترك فيجوز له الاستنابة في العمل",
+            "personal_required": "لأنه ضمن تحصيله لا عمله بنفسه"
+          }
+        },
+        {
+          "label": "work differing by person",
+          "facts": {
+            "binding_q69": true,
+            "personal_required": true
+          },
+          "evidence": {
+            "binding_q69": "الأجير المشترك",
+            "personal_required": "أن يكون العمل متفاوتا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004",
+      "situations": [
+        {
+          "label": "partner/mudarib: indications of permission to delegate",
+          "facts": {
+            "binding_q69": false,
+            "permission_indicated": true
+          },
+          "evidence": {
+            "binding_q69": "الشريك والمضارب",
+            "permission_indicated": "وهذه قرائن تدل على الإذن في التوكيل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
+      "situations": [
+        {
+          "label": "prohibition of speech during khutba excludes imam",
+          "facts": {
+            "agent_explicitly_included": false
+          },
+          "evidence": {
+            "agent_explicitly_included": "لا يشمل الإمام"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
+      "situations": [
+        {
+          "label": "guardian by permission buying from himself",
+          "facts": {
+            "agent_explicitly_included": false
+          },
+          "evidence": {
+            "agent_explicitly_included": "فإن إطلاق الإذن له يقتضي أن يتصرف مع غيره لا مع نفسه"
+          }
+        },
+        {
+          "label": "judge's general guardianship",
+          "facts": {
+            "general": true,
+            "of_qadi": true
+          },
+          "evidence": {
+            "general": "فإن الحاكم ولايته غير مستندة إلى إذن فيكون عامة",
+            "of_qadi": "فإن الحاكم ولايته"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f014",
+      "situations": [
+        {
+          "label": "agent not included by default",
+          "facts": {
+            "agent_explicitly_included": false
+          },
+          "evidence": {
+            "agent_explicitly_included": "لم يدخل فيهم بمطلق العقد"
+          }
+        },
+        {
+          "label": "named: included",
+          "facts": {
+            "agent_explicitly_included": true
+          },
+          "evidence": {
+            "agent_explicitly_included": "فإن سماه أو وكله وحده جاز ذلك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f005",
+      "situations": [
+        {
+          "label": "hajj expenses are aid not wage",
+          "facts": {
+            "muawada": false,
+            "binding_contract_q72": false
+          },
+          "evidence": {
+            "muawada": "والنفقة فيه إعانة على الحج لا أجرة",
+            "binding_contract_q72": "فإنه عقد جائز"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f007",
+      "situations": [
+        {
+          "label": "horse given for raiding: aid not hire",
+          "facts": {
+            "muawada": false,
+            "binding_contract_q72": false,
+            "spent_in_purpose": true
+          },
+          "evidence": {
+            "muawada": "وهو إعانة على الجهاد لا استئجار عليه",
+            "binding_contract_q72": "ويكون عقدا جائزا لا لازما",
+            "spent_in_purpose": "فإن غزا تبينا أنه ملكه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
+      "situations": []
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f002",
+      "situations": [
+        {
+          "label": "returning runaway slave earns a fee",
+          "facts": {
+            "public_or_rescue": true
+          },
+          "evidence": {
+            "public_or_rescue": "صيانة العبد عما يخاف من لحاقه بدار الحرب"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
+      "situations": [
+        {
+          "label": "paid another's debt without permission, intending recourse",
+          "facts": {
+            "owed_by_other": true,
+            "permission": false,
+            "gift": false
+          },
+          "evidence": {
+            "owed_by_other": "إذا قضى عنه دينا واجبا",
+            "permission": "بغير إذنه فإنه يرجع به عليه",
+            "gift": "واشترط القاضي أن ينوي الرجوع"
+          }
+        },
+        {
+          "label": "paid intending gift",
+          "facts": {
+            "owed_by_other": true,
+            "gift": true
+          },
+          "evidence": {
+            "owed_by_other": "إذا قضى عنه دينا واجبا",
+            "gift": "فلو نوى التبرع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
+      "situations": [
+        {
+          "label": "finder's maintenance of foundling, recourse",
+          "facts": {
+            "owed_by_other": true,
+            "permission": true
+          },
+          "evidence": {
+            "owed_by_other": "يرجع بما أنفقه على بيت المال",
+            "permission": "لأن له ولاية على الملتقط"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f010",
+      "situations": [
+        {
+          "label": "lessee renews building not owed by lessor",
+          "facts": {
+            "owed_by_other": false
+          },
+          "evidence": {
+            "owed_by_other": "فأما تجديد البناء والأخشاب فلا يلزمه"
+          }
+        },
+        {
+          "label": "lessee repairs what lessor is compelled to do",
+          "facts": {
+            "owed_by_other": true
+          },
+          "evidence": {
+            "owed_by_other": "أن المؤجر يجبر على الترميم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",
+      "situations": [
+        {
+          "label": "compelling shared wall rebuild",
+          "facts": {
+            "necessary": true,
+            "consents": false
+          },
+          "evidence": {
+            "necessary": "إذا انهدم الحائط المشترك",
+            "consents": "إجبار الممتنع منهما"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f001",
+      "situations": [
+        {
+          "label": "shared ceiling, compelled to rebuild",
+          "facts": {
+            "necessary": true,
+            "consents": false
+          },
+          "evidence": {
+            "necessary": "لأن المنفعة لهما جميعا",
+            "consents": "فإن لم يفعل أشهد عليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f002",
+      "situations": [
+        {
+          "label": "compelling repair of shared canal",
+          "facts": {
+            "necessary": true,
+            "consents": false
+          },
+          "evidence": {
+            "necessary": "القناة المشتركة إذا تهدمت",
+            "consents": "نص أحمد على الإجبار على العمارة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f005",
+      "situations": [
+        {
+          "label": "shared crops need watering",
+          "facts": {
+            "necessary": true,
+            "consents": false
+          },
+          "evidence": {
+            "necessary": "وهو محتاج إلى ذلك",
+            "consents": "أجبر الآخر عليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f008",
+      "situations": [
+        {
+          "label": "heir unaware of bequest builds: building respected",
+          "facts": {
+            "wrongful": false
+          },
+          "evidence": {
+            "wrongful": "إن كان غير عالم بالوصية فهو محترم"
+          }
+        },
+        {
+          "label": "heir aware of bequest builds: may be uprooted",
+          "facts": {
+            "wrongful": true
+          },
+          "evidence": {
+            "wrongful": "ويتوجه أن يقلع بناءه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f006",
+      "situations": [
+        {
+          "label": "usurper removing his dye damages cloth",
+          "facts": {
+            "causes_loss": true,
+            "sufferer_negligent": false
+          },
+          "evidence": {
+            "causes_loss": "فعليه نقص الثوب بذلك",
+            "sufferer_negligent": "لو غصب ثوبا فصبغه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f007",
+      "situations": [
+        {
+          "label": "uprooting stipulated: no liability",
+          "facts": {
+            "causes_loss": true,
+            "emptying_permitted": true
+          },
+          "evidence": {
+            "causes_loss": "ثم أخذ غرسه",
+            "emptying_permitted": "لأن المالك رضي بذلك باشتراطه"
+          }
+        },
+        {
+          "label": "not stipulated, Kafi: liable",
+          "facts": {
+            "causes_loss": true,
+            "emptying_permitted": false
+          },
+          "evidence": {
+            "causes_loss": "فقد أدخل النقص على ملك غيره لاستصلاح ماله",
+            "emptying_permitted": "وإن لم يشترط عليه القلع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
+      "situations": [
+        {
+          "label": "usurper plants repeatedly-bearing crop",
+          "facts": {
+            "repeated_bearing": true,
+            "valid_permission": false
+          },
+          "evidence": {
+            "repeated_bearing": "فزرع فيها ما يتكرر حمله",
+            "valid_permission": "إذا غصب أرضا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
+      "situations": [
+        {
+          "label": "defect return with attached increase",
+          "facts": {
+            "reverts_to_transferor": true
+          },
+          "evidence": {
+            "reverts_to_transferor": "المردود بالعيب"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f004",
+      "situations": [
+        {
+          "label": "manumission suspended after death: earnings to heirs",
+          "facts": {
+            "settled_cause": false
+          },
+          "evidence": {
+            "settled_cause": "وهذا يتردد في وجود شرط عتقه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f007",
+      "situations": [
+        {
+          "label": "bequest growth before acceptance",
+          "facts": {
+            "settled_cause": true
+          },
+          "evidence": {
+            "settled_cause": "الموصى به لمعين يقف على قبوله"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
+      "situations": [
+        {
+          "label": "death-suspended waqf as binding",
+          "facts": {
+            "lazim_q82": true
+          },
+          "evidence": {
+            "lazim_q82": "إن قلنا هو لازم"
+          }
+        },
+        {
+          "label": "death-suspended waqf as non-binding",
+          "facts": {
+            "lazim_q82": false
+          },
+          "evidence": {
+            "lazim_q82": "وإن قلنا ليس بلازم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f015",
+      "situations": [
+        {
+          "label": "growth of deposit",
+          "facts": {
+            "hand": "trustee"
+          },
+          "evidence": {
+            "hand": "الوديعة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f019",
+      "situations": [
+        {
+          "label": "guarantor slave-woman's children: right on dhimma",
+          "facts": {
+            "on_substance": false
+          },
+          "evidence": {
+            "on_substance": "لأن هذه حقوق متعلقة بالذمة لا بالعين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f027",
+      "situations": [
+        {
+          "label": "growth of gift stays with donee until annulment",
+          "facts": {
+            "lazim_q82": true,
+            "lifts_from_origin": false
+          },
+          "evidence": {
+            "lazim_q82": "الموهوب له يملكه بالقبض",
+            "lifts_from_origin": "أظهرهما أن النماء للمتهب إلى حين الفسخ"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f002",
+      "situations": [
+        {
+          "label": "pregnant breaks fast for the fetus: kaffara",
+          "facts": {
+            "benefits_other": true
+          },
+          "evidence": {
+            "benefits_other": "فطر الحامل إذا خافت على جنينها من الصوم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f005",
+      "situations": [
+        {
+          "label": "booty owned by capture: umm walad",
+          "facts": {
+            "cause_concluded": true,
+            "cause_completes_milk": true
+          },
+          "evidence": {
+            "cause_concluded": "إذا وطئ جارية من المغنم",
+            "cause_completes_milk": "وتصير مستولدة له، هذا هو المنصوص عن أحمد"
+          }
+        },
+        {
+          "label": "Qadi: not owned before division",
+          "facts": {
+            "cause_concluded": true,
+            "cause_completes_milk": false
+          },
+          "evidence": {
+            "cause_concluded": "إذا وطئ جارية من المغنم",
+            "cause_completes_milk": "بناء على أن الغنيمة لا تملك بدون القسمة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f009",
+      "situations": [
+        {
+          "label": "fetus own inheritance",
+          "facts": {
+            "haml_ruling_for_another": false
+          },
+          "evidence": {
+            "haml_ruling_for_another": "ملكه بالميراث"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f020",
+      "situations": [
+        {
+          "label": "prayer intention for unborn fetus",
+          "facts": {
+            "haml_amara_evident": false
+          },
+          "evidence": {
+            "haml_amara_evident": "شرط ثبوت الأحكام له ظهوره ولم يوجد"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
+      "situations": [
+        {
+          "label": "needed water passage",
+          "facts": {
+            "needed": true
+          },
+          "evidence": {
+            "needed": "إذا اضطر إلى ذلك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f010",
+      "situations": [
+        {
+          "label": "dog lawfully kept: specific holding",
+          "facts": {
+            "holding_q87": "ikhtisas"
+          },
+          "evidence": {
+            "holding_q87": "الكلب المباح اقتناؤه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f013",
+      "situations": [
+        {
+          "label": "ikhtisas: sale invalid",
+          "facts": {
+            "holding_q87": "ikhtisas",
+            "for_iwad": true
+          },
+          "evidence": {
+            "holding_q87": "ثبوت حق الاختصاص فيها من غير ملك",
+            "for_iwad": "لو باعه أرضا بفنائها لم يصح البيع"
+          }
+        },
+        {
+          "label": "owned",
+          "facts": {
+            "holding_q87": "tamm"
+          },
+          "evidence": {
+            "holding_q87": "هل هي مملوكة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f017",
+      "situations": [
+        {
+          "label": "jinaya tie on slave",
+          "facts": {
+            "jinaya_tie": true
+          },
+          "evidence": {
+            "jinaya_tie": "تعلق حق الجناية بالجاني"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f021",
+      "situations": [
+        {
+          "label": "zakat right attached to the property",
+          "facts": {
+            "on_property": true
+          },
+          "evidence": {
+            "on_property": "أن الحق هل هو متعلق بجميع النصاب أو بمقدار الزكاة فيه غير معين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f006",
+      "situations": [
+        {
+          "label": "spoils' food: right of use only",
+          "facts": {
+            "milk_holds_ayn": false,
+            "milk_benefit_by_tamlik": false
+          },
+          "evidence": {
+            "milk_holds_ayn": "يملك الغانمون الانتفاع به بقدر الحاجة",
+            "milk_benefit_by_tamlik": "يملك الغانمون الانتفاع به بقدر الحاجة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f016",
+      "situations": [
+        {
+          "label": "settlement for beams: benefit without the thing",
+          "facts": {
+            "milk_holds_ayn": false
+          },
+          "evidence": {
+            "milk_holds_ayn": "المصالحة بعوض على وضع الأخشاب"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f017",
+      "situations": [
+        {
+          "label": "service retained for a known period",
+          "facts": {
+            "known_period": true
+          },
+          "evidence": {
+            "known_period": "واستثنى خدمته سنة"
+          }
+        },
+        {
+          "label": "selling the retained benefits",
+          "facts": {
+            "holding_q87": "tamm",
+            "for_iwad": true
+          },
+          "evidence": {
+            "holding_q87": "لأن هذه المنافع كانت بملك المعاوضة عنها في حال الرق وقد استبقاها",
+            "for_iwad": "فهل له أن يبيعها منه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003",
+      "situations": [
+        {
+          "label": "took property to keep it for owner",
+          "facts": {
+            "hand": "trustee"
+          },
+          "evidence": {
+            "hand": "من قبض المال لحفظه على المالك فإنه لا يضمنه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
+      "situations": [
+        {
+          "label": "owner's hand remains",
+          "facts": {
+            "owner_control_removed": false
+          },
+          "evidence": {
+            "owner_control_removed": "لثبوت يد المالك عليها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001",
+      "situations": [
+        {
+          "label": "liability settles on second hand",
+          "facts": {
+            "entered_on_liability": true
+          },
+          "evidence": {
+            "entered_on_liability": "ويستقر عليها مع التلف تحتها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
+      "situations": [
+        {
+          "label": "depositary/agent took for payer's benefit",
+          "facts": {
+            "entered_on_liability": false
+          },
+          "evidence": {
+            "entered_on_liability": "الآخذة لمصلحة الدافع كالاستيداع والوكالة بغير جعل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f001",
+      "situations": [
+        {
+          "label": "judge relied on witnesses who retracted",
+          "facts": {
+            "external_cause": true,
+            "ruling_overturned": false
+          },
+          "evidence": {
+            "external_cause": "لو حكم الحاكم بمال ثم رجع الشهود",
+            "ruling_overturned": "ولا ينتقض حكم الحاكم بمجرد ذلك"
+          }
+        },
+        {
+          "label": "judgment arises from testimony",
+          "facts": {
+            "arising_from_sabab": true
+          },
+          "evidence": {
+            "arising_from_sabab": "لو حكم الحاكم بمال ثم رجع الشهود"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
+      "situations": [
+        {
+          "label": "executor acted by wilaya, not as owner",
+          "facts": {
+            "as_owner": false
+          },
+          "evidence": {
+            "as_owner": "كل من تصرف بولاية في مال ثم تبين أنه مستحق"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007",
+      "situations": [
+        {
+          "label": "fuller liable as causer",
+          "facts": {
+            "external_cause": true,
+            "as_owner": true
+          },
+          "evidence": {
+            "external_cause": "إذا دفع القصار ثوب رجل إلى غيره خطأ",
+            "as_owner": "يظنه ثوبه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
+      "situations": [
+        {
+          "label": "wife's authority ended by death before knowledge",
+          "facts": {
+            "public_office": false
+          },
+          "evidence": {
+            "public_office": "فأنفقت الزوجة من ماله ثم تبين موته"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f002",
+      "situations": [
+        {
+          "label": "collector takes zakat from absent owner",
+          "facts": {
+            "wilaya": true
+          },
+          "evidence": {
+            "wilaya": "فأخذ الساعي الزكاة من ماله"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f003",
+      "situations": [
+        {
+          "label": "guardian pays zakat for ward",
+          "facts": {
+            "wilaya": true
+          },
+          "evidence": {
+            "wilaya": "ولي الصبي والمجنون يخرج عنهما الزكاة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004",
+      "situations": [
+        {
+          "label": "designated sacrifice slaughtered by other",
+          "facts": {
+            "distinct": true
+          },
+          "evidence": {
+            "distinct": "لأنها متعينة للذبح"
+          }
+        },
+        {
+          "label": "Talkhis: designated for dhimma debt",
+          "facts": {
+            "distinct": false
+          },
+          "evidence": {
+            "distinct": "المعينة عنها في الذمة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f007",
+      "situations": [
+        {
+          "label": "stranger returns usurped/deposit to owner",
+          "facts": {
+            "recipient_determined": true
+          },
+          "evidence": {
+            "recipient_determined": "إذا أداها أجنبي إلى المالك"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f001",
+      "situations": [
+        {
+          "label": "unowned lost property, owner unknown",
+          "facts": {
+            "owner_known": false
+          },
+          "evidence": {
+            "owner_known": "اللقطة التي لا تملك إذا أخرنا الصدقة بها"
+          }
+        },
+        {
+          "label": "Muhanna's case: owner known",
+          "facts": {
+            "owner_known": true
+          },
+          "evidence": {
+            "owner_known": "وهذا مما له مالك معروف"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003",
+      "situations": [
+        {
+          "label": "pledges whose owners are unknown",
+          "facts": {
+            "owner_known": false
+          },
+          "evidence": {
+            "owner_known": "الرهون التي لا تعرف أهلها"
+          }
+        },
+        {
+          "label": "owner known but absent",
+          "facts": {
+            "owner_known": true
+          },
+          "evidence": {
+            "owner_known": "فإن كان المالك معروفا لكنه غائب"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004",
+      "situations": [
+        {
+          "label": "deposits whose owner is unknown",
+          "facts": {
+            "owner_identifiable": false
+          },
+          "evidence": {
+            "owner_identifiable": "الودائع التي جهل مالكها"
+          }
+        },
+        {
+          "label": "owner lost without news or heirs",
+          "facts": {
+            "owner_known": true,
+            "despaired": true
+          },
+          "evidence": {
+            "owner_known": "وكذلك إن فقد ولم يطلع على خبره",
+            "despaired": "وكذلك إن فقد ولم يطلع على خبره وليس له ورثة يتصدق به"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005",
+      "situations": [
+        {
+          "label": "usurped goods, owner unknown: give in charity",
+          "facts": {
+            "owner_identifiable": false
+          },
+          "evidence": {
+            "owner_identifiable": "الغصوب التي جهل ربها فيتصدق بها"
+          }
+        },
+        {
+          "label": "owner died without known heir",
+          "facts": {
+            "owner_identifiable": false
+          },
+          "evidence": {
+            "owner_identifiable": "ولو مات المالك ولا وارث له يعلم فكذلك يتصدق به"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f003",
+      "situations": [
+        {
+          "label": "lending jewellery and utensils",
+          "facts": {
+            "needed": true,
+            "harmless_q99": true
+          },
+          "evidence": {
+            "needed": "وجوب بذل الماعون",
+            "harmless_q99": "وهو ما خف قدره وسهل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f005",
+      "situations": [
+        {
+          "label": "benefits needed by the destitute",
+          "facts": {
+            "needed": true
+          },
+          "evidence": {
+            "needed": "وأما المنافع المضطر إليها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f006",
+      "situations": [
+        {
+          "label": "Mecca dwellings needed by all",
+          "facts": {
+            "needed": true
+          },
+          "evidence": {
+            "needed": "لعموم الحاجة إليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
+      "situations": [
+        {
+          "label": "nadhr as shar wajib: no eating",
+          "facts": {
+            "shar_ruling": true
+          },
+          "evidence": {
+            "shar_ruling": "الأكل من أضحية النذر وفيه وجهان"
+          }
+        },
+        {
+          "label": "Abu Bakr: eating permitted",
+          "facts": {
+            "mandub_ruling": true
+          },
+          "evidence": {
+            "mandub_ruling": "اختار أبو بكر الجواز"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f004",
+      "situations": [
+        {
+          "label": "vowed prayer: two",
+          "facts": {
+            "shar_ruling": true
+          },
+          "evidence": {
+            "shar_ruling": "أم لا بد من ركعتين"
+          }
+        },
+        {
+          "label": "vowed prayer: one",
+          "facts": {
+            "mandub_ruling": true
+          },
+          "evidence": {
+            "mandub_ruling": "فهل يجزئه ركعة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
+      "situations": [
+        {
+          "label": "two half-sheep for hady (meat the aim)",
+          "facts": {
+            "common_unit": true
+          },
+          "evidence": {
+            "common_unit": "إذ المقصود من الهدي اللحم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f006",
+      "situations": [
+        {
+          "label": "self-induced insanity: divorce not effective",
+          "facts": {
+            "forbidden_manner": true,
+            "souls_drawn": false
+          },
+          "evidence": {
+            "forbidden_manner": "لو أزال عقله بأن ضرب رأسه فجن",
+            "souls_drawn": "لأن ذلك مما لا تدعو النفوس إليه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f011",
+      "situations": [
+        {
+          "label": "hunting before leaving ihram",
+          "facts": {
+            "forbidden_manner": true,
+            "hastened_forbidden": true
+          },
+          "evidence": {
+            "forbidden_manner": "من اصطاد صيدا قبل أن يحل من إحرامه",
+            "hastened_forbidden": "من اصطاد صيدا قبل أن يحل من إحرامه"
+          }
+        },
+        {
+          "label": "creditor kills debtor",
+          "facts": {
+            "forbidden_manner": true,
+            "hastened_forbidden": true
+          },
+          "evidence": {
+            "forbidden_manner": "إذا قتل الغريم غريمه",
+            "hastened_forbidden": "إذا قتل الغريم غريمه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f003",
+      "situations": [
+        {
+          "label": "salam by mistake, short interval",
+          "facts": {
+            "customary_continuity": true
+          },
+          "evidence": {
+            "customary_continuity": "إذا سلم ساهيا مع قرب الفصل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f007",
+      "situations": [
+        {
+          "label": "continuous eating is one eating",
+          "facts": {
+            "customary_continuity": true
+          },
+          "evidence": {
+            "customary_continuity": "فأكل متواصلا لم يحنث"
+          }
+        },
+        {
+          "label": "long break: oath broken",
+          "facts": {
+            "customary_continuity": false
+          },
+          "evidence": {
+            "customary_continuity": "وإن قطع ثم عاد بعد طول الفصل حنث"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009",
+      "situations": [
+        {
+          "label": "return to breast before long interval",
+          "facts": {
+            "customary_continuity": true
+          },
+          "evidence": {
+            "customary_continuity": "ثم عاد إليه قبل طول الفصل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f002",
+      "situations": [
+        {
+          "label": "divorce of an unspecified wife, lot",
+          "facts": {
+            "entitled_known": false
+          },
+          "evidence": {
+            "entitled_known": "إذا طلق إحدى زوجاته"
+          }
+        },
+        {
+          "label": "vague divorce valid",
+          "facts": {
+            "vague_valid": true
+          },
+          "evidence": {
+            "vague_valid": "فيصح وتعين بالقرعة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f001",
+      "situations": [
+        {
+          "label": "report about one unspecified vessel accepted",
+          "facts": {
+            "vague_valid": true
+          },
+          "evidence": {
+            "vague_valid": "لو أخبره أن كلبا ولغ في أحد هذين الإناءين لا بعينه قبل"
+          }
+        },
+        {
+          "label": "pure confused with impure",
+          "facts": {
+            "confusion_effective": true,
+            "distinguished": false
+          },
+          "evidence": {
+            "confusion_effective": "وصار كمن اشتبه عليه طاهر بنجس",
+            "distinguished": "في أحد هذين الإناءين لا بعينه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f005",
+      "situations": [
+        {
+          "label": "street mud presumed pure",
+          "facts": {
+            "asl": "qat",
+            "zahir": "zann"
+          },
+          "evidence": {
+            "asl": "محكوم بطهارته",
+            "zahir": "طين الشوارع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f004",
+      "situations": [
+        {
+          "label": "waqf on descendants valid",
+          "facts": {
+            "by_origin": false,
+            "explicit_inclusion": true
+          },
+          "evidence": {
+            "by_origin": "أو من يولد له",
+            "explicit_inclusion": "وولد ولده أبدا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
+      "situations": [
+        {
+          "label": "later-born member of the degree enters by following",
+          "facts": {
+            "by_origin": false
+          },
+          "evidence": {
+            "by_origin": "ثم حدث ثالث فهل يشاركهم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003",
+      "situations": [
+        {
+          "label": "two marriages, order unknown",
+          "facts": {
+            "known_simultaneous": false,
+            "known_sequential": false
+          },
+          "evidence": {
+            "known_simultaneous": "وجهل هل وقع العقدان معا",
+            "known_sequential": "وجهل هل وقع العقدان معا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f007",
+      "situations": [
+        {
+          "label": "oath date mixed into dates",
+          "facts": {
+            "confusion_effective": true,
+            "distinguished": false
+          },
+          "evidence": {
+            "confusion_effective": "فإنه يمنع من أكل تمرة منه حتى يعلم عين التمرة",
+            "distinguished": "فاختلطت في تمر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f008",
+      "situations": [
+        {
+          "label": "oath on one unspecified wife",
+          "facts": {
+            "confusion_effective": true,
+            "distinguished": false
+          },
+          "evidence": {
+            "confusion_effective": "ونوى واحدة مبهمة فإنه يمنع من الوطء",
+            "distinguished": "حتى يميزها بالقرعة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f009",
+      "situations": [
+        {
+          "label": "protected one unknown among fortress people",
+          "facts": {
+            "distinguished": false
+          },
+          "evidence": {
+            "distinguished": "ثم تداعوه"
+          }
+        },
+        {
+          "label": "lot to pick the protected one",
+          "facts": {
+            "entitled_known": false
+          },
+          "evidence": {
+            "entitled_known": "ثم تداعوه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f017",
+      "situations": [
+        {
+          "label": "elder wife: mother of wife",
+          "facts": {
+            "sihr_class": true
+          },
+          "evidence": {
+            "sihr_class": "لمصيرها من أمهات نسائه"
+          }
+        },
+        {
+          "label": "younger: continuance stronger",
+          "facts": {
+            "impediment": true,
+            "before_establishment": false
+          },
+          "evidence": {
+            "impediment": "أرضعت الصغيرة",
+            "before_establishment": "الجمع هاهنا حصل في الاستدامة دون الابتداء"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f009",
+      "situations": [
+        {
+          "label": "refusing oath (substitute) -> original",
+          "facts": {
+            "refused_substitute": true
+          },
+          "evidence": {
+            "refused_substitute": "فإذا امتنع من البدل حكم عليه بالأصل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f001",
+      "situations": [
+        {
+          "label": "game vs carrion for muhrim",
+          "facts": {
+            "heavier": true
+          },
+          "evidence": {
+            "heavier": "لأن في أكل الصيد ثلاث جنايات صيده وذبحه وأكله"
+          }
+        },
+        {
+          "label": "game slaughtered by muhrim vs carrion",
+          "facts": {
+            "heavier": false
+          },
+          "evidence": {
+            "heavier": "لأن كلا منهما فيه جناية واحدة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f003",
+      "situations": [
+        {
+          "label": "intercourse with menstruating wife: heavier",
+          "facts": {
+            "heavier": true
+          },
+          "evidence": {
+            "heavier": "وأما وطء الحائض فلم يعهد في الشرع جوازه"
+          }
+        },
+        {
+          "label": "intercourse with fasting wife: lighter",
+          "facts": {
+            "heavier": false
+          },
+          "evidence": {
+            "heavier": "أحدهما وطء الصائمة أولى"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f002",
+      "situations": [
+        {
+          "label": "two slaves sold to two men",
+          "facts": {
+            "vague_valid": false,
+            "qarina_one_to_one": false
+          },
+          "evidence": {
+            "vague_valid": "لأنه يلزم من ذلك عدم تعيين المبيع فيفسد البيع",
+            "qarina_one_to_one": "إذا باع رجل عبدين له من رجلين بثمن واحد"
+          }
+        },
+        {
+          "label": "contracts valid with vagueness (bequest, mahr, khul')",
+          "facts": {
+            "vague_valid": true
+          },
+          "evidence": {
+            "vague_valid": "لو كان العقد مما يصح به مبهما"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
+      "situations": [
+        {
+          "label": "partial attribute in suspended divorce",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
+      "situations": [
+        {
+          "label": "three divorces distributed over four wives",
+          "facts": {
+            "qarina_one_to_one": false
+          },
+          "evidence": {
+            "qarina_one_to_one": "أوقعت بينكن أو عليكن ثلاث تطليقات"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002",
+      "situations": [
+        {
+          "label": "'partnership' in an acknowledgment",
+          "facts": {
+            "is_iqrar": true
+          },
+          "evidence": {
+            "is_iqrar": "المجزوم في الإقرار الإبهام"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f006",
+      "situations": [
+        {
+          "label": "inherited qadhf penalty, each heir entitled to whole",
+          "facts": {
+            "each_entitled_whole": true
+          },
+          "evidence": {
+            "each_entitled_whole": "يستحق كل واحد بانفراده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001",
+      "situations": [
+        {
+          "label": "judged at death",
+          "facts": {
+            "suspension_barred": true
+          },
+          "evidence": {
+            "suspension_barred": "فإن الوصية للورثة لا يمكن أن تلزم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
+      "situations": []
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f008",
+      "situations": [
+        {
+          "label": "divorce suspended before consummation falls in menses",
+          "facts": {
+            "suspension_barred": false,
+            "occurrence_barred": false
+          },
+          "evidence": {
+            "suspension_barred": "لو علق طلاق امرأته قبل الدخول على قدوم زيد",
+            "occurrence_barred": "لا بمعنى الإثم به"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f006",
+      "situations": [
+        {
+          "label": "suspending revocation of tadbir invalid",
+          "facts": {
+            "legitimate_purpose": false
+          },
+          "evidence": {
+            "legitimate_purpose": "لا يكون رجوعا ; لأن الرجوع إنما يصح في تدبير موجود"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001",
+      "situations": [
+        {
+          "label": "'house to Zayd and this room mine'",
+          "facts": {
+            "connected": true
+          },
+          "evidence": {
+            "connected": "لو قال هذه الدار لزيد ولي منها هذا البيت"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f003",
+      "situations": [
+        {
+          "label": "ring to one, stone to another in connected speech",
+          "facts": {
+            "connected": true
+          },
+          "evidence": {
+            "connected": "على أنه كان في كلام واحد متصل"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006",
+      "situations": [
+        {
+          "label": "Zayd poor not given poor share",
+          "facts": {
+            "special_title": true
+          },
+          "evidence": {
+            "special_title": "وللفقراء بشيء وزيد فقير"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f010",
+      "situations": [
+        {
+          "label": "inherits by both causes",
+          "facts": {
+            "combined_attributes": true,
+            "single_jiha": false
+          },
+          "evidence": {
+            "combined_attributes": "ممن يدلي بنسبين",
+            "single_jiha": "المواريث بأسباب متعددة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003",
+      "situations": [
+        {
+          "label": "full brother preferred",
+          "facts": {
+            "double_kinship": true
+          },
+          "evidence": {
+            "double_kinship": "فيترجح الأخ للأبوين على الأخ للأب"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
+      "situations": [
+        {
+          "label": "mukatab etc. outside customary 'slaves'",
+          "facts": {
+            "urfi_haqiqa": true
+          },
+          "evidence": {
+            "urfi_haqiqa": "أنهم خارجون من مسمى الرقيق والمملوك عرفا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
+      "situations": [
+        {
+          "label": "Bedouin usage of 'property' as camels",
+          "facts": {
+            "urfi_haqiqa": true
+          },
+          "evidence": {
+            "urfi_haqiqa": "الأعراب يسمون الإبل والغنم الأموال"
+          }
+        },
+        {
+          "label": "oath read by the swearer's customary usage",
+          "facts": {
+            "customary_usage": true
+          },
+          "evidence": {
+            "customary_usage": "على قدر مخرج يمينه، والأموال عند الناس تختلف"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
+      "situations": [
+        {
+          "label": "addressee wife included",
+          "facts": {
+            "rare_or_barred": true,
+            "intended_q126": false
+          },
+          "evidence": {
+            "rare_or_barred": "لو قالت له زوجته: تزوجت علي؟ قال كل امرأة لي طالق",
+            "intended_q126": "فإن لم أعنها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f001",
+      "situations": [
+        {
+          "label": "wording customarily means total abstention",
+          "facts": {
+            "urfi_haqiqa": true
+          },
+          "evidence": {
+            "urfi_haqiqa": "موضوع في العرف لعموم الامتناع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f004",
+      "situations": [
+        {
+          "label": "oath not to hit, intending not to hurt",
+          "facts": {
+            "restricts_absolute": false,
+            "excepts_from_text": false
+          },
+          "evidence": {
+            "restricts_absolute": "ونوى أن لا يؤلمه",
+            "excepts_from_text": "ونوى أن لا يؤلمه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
+      "situations": [
+        {
+          "label": "nikah: witnessing required",
+          "facts": {
+            "intended_specific": true,
+            "witnessing_required": true
+          },
+          "evidence": {
+            "intended_specific": "ونويا واحدة معينة",
+            "witnessing_required": "مأخذ البطلان اشتراط الشهادة على النكاح"
+          }
+        },
+        {
+          "label": "other contracts valid",
+          "facts": {
+            "witnessing_required": false
+          },
+          "evidence": {
+            "witnessing_required": "سائر العقود التي لا يحتاج فيها إلى الشهادة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
+      "situations": [
+        {
+          "label": "intended exception from numeric text",
+          "facts": {
+            "excepts_from_text": true
+          },
+          "evidence": {
+            "excepts_from_text": "نسائي الأربع طوالق واستثنى بقوله فلانة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f003",
+      "situations": [
+        {
+          "label": "'disobeyed God' in customary usage",
+          "facts": {
+            "mostly_qualified": true
+          },
+          "evidence": {
+            "mostly_qualified": "لأن المشهور تخصيص المعاصي بالذنوب دون الكفر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f007",
+      "situations": [
+        {
+          "label": "rare earnings in muhaya'a",
+          "facts": {
+            "rare_or_barred": true
+          },
+          "evidence": {
+            "rare_or_barred": "الأكساب النادرة كالركاز والهدية واللقطة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f008",
+      "situations": [
+        {
+          "label": "'what God permitted is forbidden' denying wife",
+          "facts": {
+            "rare_or_barred": false,
+            "intended_q126": false
+          },
+          "evidence": {
+            "rare_or_barred": "لأن الزوجة أشهر أفراد الحلال الذي يقصد تحريمه",
+            "intended_q126": "وقال لم أرد زوجتي"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000",
+      "situations": [
+        {
+          "label": "pusher into wrongfully dug well",
+          "facts": {
+            "arising_from_sabab": false,
+            "udwan_in_mubashara": true
+          },
+          "evidence": {
+            "arising_from_sabab": "ثم دفع غيره فيها آدميا معصوما",
+            "udwan_in_mubashara": "ثم دفع غيره فيها آدميا معصوما"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004",
+      "situations": [
+        {
+          "label": "coerced destruction of property",
+          "facts": {
+            "arising_from_sabab": true,
+            "udwan_in_mubashara": false
+          },
+          "evidence": {
+            "arising_from_sabab": "المكره على إتلاف مال الغير",
+            "udwan_in_mubashara": "لأنه معذور في ذلك الفعل"
+          }
+        },
+        {
+          "label": "coerced killing",
+          "facts": {
+            "arising_from_sabab": true,
+            "udwan_in_mubashara": true
+          },
+          "evidence": {
+            "arising_from_sabab": "بخلاف المكره على القتل",
+            "udwan_in_mubashara": "فإنه غير معذور"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
+      "situations": [
+        {
+          "label": "wrongful digger plus stone-placer",
+          "facts": {
+            "other_act_permitted": false
+          },
+          "evidence": {
+            "other_act_permitted": "لو حفر بئرا عدوانا في الطريق فوضع آخر حجرا"
+          }
+        },
+        {
+          "label": "digger not a transgressor: placer alone liable",
+          "facts": {
+            "other_act_permitted": true
+          },
+          "evidence": {
+            "other_act_permitted": "ولو كان الحافر غير متعد فالضمان على الواضع وحده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
+      "situations": [
+        {
+          "label": "wounded own slave, freed, died",
+          "facts": {
+            "guaranteed_at_injury": false,
+            "guaranteed_at_spread": true
+          },
+          "evidence": {
+            "guaranteed_at_injury": "لو جرح عبد نفسه",
+            "guaranteed_at_spread": "ثم عتق ثم مات"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001",
+      "situations": [
+        {
+          "label": "shot dhimmi/slave freed or converted before hit; qawad",
+          "facts": {
+            "member_at_shot": false,
+            "member_at_hit": true,
+            "liability_ruling": false
+          },
+          "evidence": {
+            "member_at_shot": "لفقد التكافؤ حين الجناية وهو حالة الإرسال",
+            "member_at_hit": "حتى أسلم الذمي وعتق العبد ثم ماتا",
+            "liability_ruling": "فهل يجب القود أم لا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f002",
+      "situations": [
+        {
+          "label": "qawad for shot apostate/harbi who became Muslim",
+          "facts": {
+            "member_at_shot": false,
+            "member_at_hit": true,
+            "liability_ruling": false
+          },
+          "evidence": {
+            "member_at_shot": "لأن دمهما حال الرمي كان مهدرا",
+            "member_at_hit": "فأسلما ثم وصل إليهما السهم",
+            "liability_ruling": "فلا قود بغير خلاف"
+          }
+        },
+        {
+          "label": "liability (daman) for same",
+          "facts": {
+            "member_at_shot": false,
+            "member_at_hit": true,
+            "liability_ruling": true
+          },
+          "evidence": {
+            "member_at_shot": "لأن دمهما حال الرمي كان مهدرا",
+            "member_at_hit": "فأسلما ثم وصل إليهما السهم",
+            "liability_ruling": "وهل يجب الضمان؟"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003",
+      "situations": [
+        {
+          "label": "diya when shooter's status changed",
+          "facts": {
+            "liability_ruling": true
+          },
+          "evidence": {
+            "liability_ruling": "فقال الآمدي يجب ضمانه في ماله"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f005",
+      "situations": [
+        {
+          "label": "dwelling and servant needed, not sold for expiation",
+          "facts": {
+            "needed_q130": true
+          },
+          "evidence": {
+            "needed_q130": "التكفير بالمال لا يباع فيه المسكن والخادم"
+          }
+        },
+        {
+          "label": "expiation fixed at time of obligation",
+          "facts": {
+            "settled_at_obligation": true
+          },
+          "evidence": {
+            "settled_at_obligation": "لأنه بمثابة من كان موسرا حال يحنث العتق ثم أعسر قبل التكفير فإن العتق يستقر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q131.f001",
+      "situations": [
+        {
+          "label": "bankrupt woman able to marry for mahr",
+          "facts": {
+            "has_wealth": false,
+            "can_earn_by_budh": true
+          },
+          "evidence": {
+            "has_wealth": "إذا أفلست المرأة",
+            "can_earn_by_budh": "وهي ممن يرغب في نكاحها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f012",
+      "situations": [
+        {
+          "label": "release included within bequest",
+          "facts": {
+            "follows_established": true
+          },
+          "evidence": {
+            "follows_established": "لدخولها ضمنها في الوصية"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f017",
+      "situations": [
+        {
+          "label": "tolerable overpayment implied, not as explicit gift",
+          "facts": {
+            "follows_established": true
+          },
+          "evidence": {
+            "follows_established": "لهما أن يبتاعا بزائد على ثمن المثل ما يتغابن بمثلها عادة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f001",
+      "situations": [
+        {
+          "label": "preventing wine fermentation",
+          "facts": {
+            "impediment": true,
+            "before_establishment": true
+          },
+          "evidence": {
+            "impediment": "يمنع تخميرها",
+            "before_establishment": "تخمير الخل ابتداء"
+          }
+        },
+        {
+          "label": "vinegaring after fermentation",
+          "facts": {
+            "before_establishment": false
+          },
+          "evidence": {
+            "before_establishment": "وتخليلها بعد تخميرها ممنوع"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f007",
+      "situations": [
+        {
+          "label": "child of Muslim slave-woman: continuation of slavery",
+          "facts": {
+            "impediment": true,
+            "before_establishment": false,
+            "from_substance": true
+          },
+          "evidence": {
+            "impediment": "الإسلام يمنع ابتداء الرق",
+            "before_establishment": "فهو في معنى استدامة الرق على المسلم",
+            "from_substance": "لأنه جزء منها"
+          }
+        },
+        {
+          "label": "captives converting before enslavement",
+          "facts": {
+            "settled_cause": true
+          },
+          "evidence": {
+            "settled_cause": "لانعقاد سببه في الكفر انعقادا تاما"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
+      "situations": [
+        {
+          "label": "wife during istibra after shubha intercourse",
+          "facts": {
+            "weak_ownership": false,
+            "worship": false
+          },
+          "evidence": {
+            "weak_ownership": "الزوجة ms396 الموطوءة لشبهة يحرم وطؤها مدة الاستبراء",
+            "worship": "الزوجة ms396 الموطوءة لشبهة يحرم وطؤها مدة الاستبراء"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f002",
+      "situations": [
+        {
+          "label": "master destroys locus of the right by manumission",
+          "facts": {
+            "destroyed": true
+          },
+          "evidence": {
+            "destroyed": "لأنه أتلف محل الحق"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
+      "situations": [
+        {
+          "label": "theft without hirz: double",
+          "facts": {
+            "lapsed": true
+          },
+          "evidence": {
+            "lapsed": "من سرق من غير حرز"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f004",
+      "situations": [
+        {
+          "label": "minor's deliberate killing: doubled diya",
+          "facts": {
+            "lapsed": true
+          },
+          "evidence": {
+            "lapsed": "الصغير إذا قتل عمدا"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
+      "situations": [
+        {
+          "label": "reattached and healed: pure",
+          "facts": {
+            "restored_by_life": true
+          },
+          "evidence": {
+            "restored_by_life": "فيحكم بطهارته لعود الحياة إليه"
+          }
+        },
+        {
+          "label": "not reattached: impure",
+          "facts": {
+            "restored_by_life": false
+          },
+          "evidence": {
+            "restored_by_life": "وعلى نجاسته إذا لم يثبت"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f004",
+      "situations": [
+        {
+          "label": "exchanging nisab and hawl",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f007",
+      "situations": [
+        {
+          "label": "kafala passes to heirs",
+          "facts": {
+            "attached_to_inherited_property": true
+          },
+          "evidence": {
+            "attached_to_inherited_property": "يستوفي منه المال كالرهن"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f010",
+      "situations": [
+        {
+          "label": "defect-return right passes by inheritance",
+          "facts": {
+            "accrues_at_death": false
+          },
+          "evidence": {
+            "accrues_at_death": "والمشهور أنه إرث"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f011",
+      "situations": [
+        {
+          "label": "heirs execute deceased's debts",
+          "facts": {
+            "obligation_binding": true
+          },
+          "evidence": {
+            "obligation_binding": "إذا مات وعليه ديون"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f012",
+      "situations": [
+        {
+          "label": "heirs perform from estate",
+          "facts": {
+            "attached_to_inherited_property": true
+          },
+          "evidence": {
+            "attached_to_inherited_property": "ويجب عليهم بذلك إن كان له مال"
+          }
+        },
+        {
+          "label": "stranger performs without heirs' permission",
+          "facts": {
+            "wilaya": false
+          },
+          "evidence": {
+            "wilaya": "ولو فعلها عنه أجنبي بدون إذنهم"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
+      "situations": [
+        {
+          "label": "ila from the revocably divorced wife",
+          "facts": {
+            "rajiyya": true,
+            "listed_difference": true
+          },
+          "evidence": {
+            "rajiyya": "أن الإيلاء منها هل يصح منها",
+            "listed_difference": "أن الإيلاء منها هل يصح منها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
+      "situations": [
+        {
+          "label": "women's prayer dropped half the month",
+          "facts": {
+            "woman_party": true,
+            "listed_halving_point": true
+          },
+          "evidence": {
+            "woman_party": "فإن المرأة تسقط عنها الصلاة أيام الحيض",
+            "listed_halving_point": "وهو نصف الشهر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f004",
+      "situations": [
+        {
+          "label": "zakat due to indeterminate recipients",
+          "facts": {
+            "right_holder_determinate": false
+          },
+          "evidence": {
+            "right_holder_determinate": "أن المال المستحق لغير معين كالزكاة"
+          }
+        },
+        {
+          "label": "right due to a determinate person",
+          "facts": {
+            "right_holder_determinate": true
+          },
+          "evidence": {
+            "right_holder_determinate": "بخلاف المستحق لمعين فإنه لا يجب الأداء إليه بدون مطالبة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
+      "situations": [
+        {
+          "label": "gift to commander given for his office",
+          "facts": {
+            "transfer_given_for_cause": true
+          },
+          "evidence": {
+            "transfer_given_for_cause": "هدية المشركين لأمير الجيش"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f006",
+      "situations": [
+        {
+          "label": "circumstance supports claim of report",
+          "facts": {
+            "hal_supports_claim": true
+          },
+          "evidence": {
+            "hal_supports_claim": "فقبضها السيد ثم قال له أنت حر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007",
+      "situations": [
+        {
+          "label": "grandchildren included in waqf on 'child'",
+          "facts": {
+            "included_with_or_without_child": true
+          },
+          "evidence": {
+            "included_with_or_without_child": "الوقف على الولد فيدخل فيه ولد الولد"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008",
+      "situations": [
+        {
+          "label": "waqf to children",
+          "facts": {
+            "included_with_or_without_child": true
+          },
+          "evidence": {
+            "included_with_or_without_child": "لأن الوقف يتأبد فيستحق ولده طبقة بعد طبقة"
+          }
+        },
+        {
+          "label": "bequest to children",
+          "facts": {
+            "included_with_or_without_child": false
+          },
+          "evidence": {
+            "included_with_or_without_child": "والوصية تمليك للموجودين فيختص بالطبقة العليا الموجودة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
+      "situations": [
+        {
+          "label": "grandfather takes father's place only after him",
+          "facts": {
+            "included_only_absent_child": true
+          },
+          "evidence": {
+            "included_only_absent_child": "فيلي الجد فيها بعد الأب"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f014",
+      "situations": [
+        {
+          "label": "taking from child's property without need",
+          "facts": {
+            "necessity_q71": false
+          },
+          "evidence": {
+            "necessity_q71": "بغير حاجة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015",
+      "situations": [
+        {
+          "label": "nothing settled",
+          "facts": {},
+          "evidence": {}
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
+      "situations": [
+        {
+          "label": "wife's remarriage causes exit of budh",
+          "facts": {
+            "wife_bears_exit": true
+          },
+          "evidence": {
+            "wife_bears_exit": "فهل تضمن المرأة لزوجها المهر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f000",
+      "situations": [
+        {
+          "label": "intercourse settles mahr",
+          "facts": {
+            "intercourse_occurred": true
+          },
+          "evidence": {
+            "intercourse_occurred": "الوطء فيتقرر به المهر على كل حال"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
+      "situations": [
+        {
+          "label": "lian separation from wife",
+          "facts": {
+            "sep_by_wife": true
+          },
+          "evidence": {
+            "sep_by_wife": "أن فرقة اللعان جاءت من جهة الزوجة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
+      "situations": [
+        {
+          "label": "khul as talaq: husband, half",
+          "facts": {
+            "sep_by_husband": true
+          },
+          "evidence": {
+            "sep_by_husband": "فإن الطلاق يستقل به الزوج"
+          }
+        },
+        {
+          "label": "khul as faskh: both, falls",
+          "facts": {
+            "sep_by_husband": true,
+            "sep_by_wife": true
+          },
+          "evidence": {
+            "sep_by_husband": "فإنه يكون منسوبا إليهما",
+            "sep_by_wife": "فإنه يكون منسوبا إليهما"
+          }
+        },
+        {
+          "label": "from her request: falls",
+          "facts": {
+            "sep_by_wife": true
+          },
+          "evidence": {
+            "sep_by_wife": "جاء من قبلها بسؤالها"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f003",
+      "situations": [
+        {
+          "label": "moves to death idda",
+          "facts": {
+            "idda_status_changes": true,
+            "husband_can_remedy_in_idda": true
+          },
+          "evidence": {
+            "idda_status_changes": "ثم مات قبل انقضاء العدة",
+            "husband_can_remedy_in_idda": "لو أسلمت المرأة وهي تحت كافر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
+      "situations": [
+        {
+          "label": "presumption of not catching the rak'a preferred",
+          "facts": {
+            "first_asl_reinforced": true
+          },
+          "evidence": {
+            "first_asl_reinforced": "لأن الأصل عدم الإدراك وهو منقول عن ابن عمر رضي الله عنهما"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
+      "situations": [
+        {
+          "label": "divorce on non-existence, existence doubted",
+          "facts": {
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl": "لأن الأصل بقاء النكاح وعدم وقوع الطلاق",
+            "zahir": "وشك في وجوده"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015",
+      "situations": [
+        {
+          "label": "missing husband after four years",
+          "facts": {
+            "unknown": true,
+            "despair": true
+          },
+          "evidence": {
+            "unknown": "امرأة المفقود",
+            "despair": "تتزوج بعد انتظار أربع سنين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
+      "situations": [
+        {
+          "label": "forbidden mixed with lawful, forbidden predominant",
+          "facts": {
+            "indistinct": true,
+            "lawful_many": false
+          },
+          "evidence": {
+            "indistinct": "إذا اختلط مال حرام بحلال",
+            "lawful_many": "وكان الحرام أغلب"
+          }
+        },
+        {
+          "label": "pure water confused with impure, pure more",
+          "facts": {
+            "indistinct": true,
+            "lawful_many": true
+          },
+          "evidence": {
+            "indistinct": "إذا اشتبه الماء الطاهر بالنجس",
+            "lawful_many": "وكان الطاهر أكثر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
+      "situations": [
+        {
+          "label": "dirham and dirham and dirham",
+          "facts": {
+            "zahir": "zann",
+            "asl": "qat"
+          },
+          "evidence": {
+            "zahir": "فإن الظاهر عطف الثالث على الثاني",
+            "asl": "لأنه اليقين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f005",
+      "situations": [
+        {
+          "label": "lot between shrouds",
+          "facts": {
+            "entitled_known": false,
+            "divisible": false
+          },
+          "evidence": {
+            "entitled_known": "ولم يعين الباذل ما لكل واحد منهما",
+            "divisible": "وكان أحد الكفنين أجود من الآخر"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f008",
+      "situations": [
+        {
+          "label": "two arrive together at public seat: lot",
+          "facts": {
+            "entitled_known": false
+          },
+          "evidence": {
+            "entitled_known": "إذا سبق اثنان إلى الجلوس بالأماكن المباحة"
+          }
+        },
+        {
+          "label": "each alone would take whole seat",
+          "facts": {
+            "each_entitled_whole": true
+          },
+          "evidence": {
+            "each_entitled_whole": "إذا سبق اثنان إلى الجلوس بالأماكن المباحة"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f010",
+      "situations": [
+        {
+          "label": "facing lands, water not divisible",
+          "facts": {
+            "divisible": false,
+            "tie_break_criteria": false
+          },
+          "evidence": {
+            "divisible": "ولم يمكن قسمة الماء بينهما",
+            "tie_break_criteria": "وكانا متقابلين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f017",
+      "situations": [
+        {
+          "label": "two marriages, which first unknown",
+          "facts": {
+            "known_simultaneous": false,
+            "known_sequential": true,
+            "entitled_known": false
+          },
+          "evidence": {
+            "known_simultaneous": "وجهل أسبق العقدين",
+            "known_sequential": "وجهل أسبق العقدين",
+            "entitled_known": "وجهل أسبق العقدين"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f022",
+      "situations": [
+        {
+          "label": "lot among wives for travel",
+          "facts": {
+            "entitled_known": false,
+            "divisible": false
+          },
+          "evidence": {
+            "entitled_known": "إذا أراد السفر بإحدى زوجاته",
+            "divisible": "إذا أراد السفر بإحدى زوجاته"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f028",
+      "situations": [
+        {
+          "label": "divorce a month before death: abstain",
+          "facts": {
+            "suspended": true,
+            "possible": true,
+            "absence_known": false
+          },
+          "evidence": {
+            "suspended": "إذا قال أنت طالق قبل موتي بشهر",
+            "possible": "إذا قال أنت طالق قبل موتي بشهر",
+            "absence_known": "فإنه يعتزلها مطلقا"
+          }
+        },
+        {
+          "label": "order of births unclear: certain one divorce",
+          "facts": {
+            "asl": "qat",
+            "zahir": "shakk"
+          },
+          "evidence": {
+            "asl": "لأنه المتيقن",
+            "zahir": "والزائد عليه مشكوك فيه فيلغى"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033",
+      "situations": [
+        {
+          "label": "co-claimants of qawad dispute who executes: lot",
+          "facts": {
+            "tie_break_criteria": false,
+            "divisible": false
+          },
+          "evidence": {
+            "tie_break_criteria": "إذا استحق القود جماعة وتشاحوا في مباشرة الاستيفاء",
+            "divisible": "وتشاحوا في مباشرة الاستيفاء"
+          }
+        },
+        {
+          "label": "several victims' heirs each claim full qisas",
+          "facts": {
+            "each_entitled_whole": true
+          },
+          "evidence": {
+            "each_entitled_whole": "وطلب ولي كل واحد منهم أن يقتص على الكمال"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f037",
+      "situations": [
+        {
+          "label": "dispute over first: lot",
+          "facts": {
+            "tie_break_criteria": false,
+            "entitled_known": false,
+            "divisible": false
+          },
+          "evidence": {
+            "tie_break_criteria": "واختلفوا في البادي بالاختيار من كل حزب أقرع بينهم",
+            "entitled_known": "واختلفوا في البادي بالاختيار",
+            "divisible": "واختلفوا في البادي بالاختيار"
+          }
+        },
+        {
+          "label": "Qadi: stake-giver first",
+          "facts": {
+            "tie_break_criteria": true
+          },
+          "evidence": {
+            "tie_break_criteria": "يقدم من أخرج السبق"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f044",
+      "situations": [
+        {
+          "label": "acknowledged for one of two unspecified: lot",
+          "facts": {
+            "entitled_known": false
+          },
+          "evidence": {
+            "entitled_known": "فأقر بها لأحدهما مبهما وقال: لا أعلم عينه"
+          }
+        }
+      ]
+    },
+    {
+      "answer": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f047",
+      "situations": [
+        {
+          "label": "lot among freed slaves exceeding third",
+          "facts": {
+            "entitled_known": false
+          },
+          "evidence": {
+            "entitled_known": "ولكنهما كانا غير معينين"
+          }
+        }
+      ]
+    }
+  ]
+}

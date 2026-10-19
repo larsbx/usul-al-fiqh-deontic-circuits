@@ -1,0 +1,535 @@
+{
+ "entries": [
+  {
+   "type": "rajab51",
+   "field": "determined",
+   "gloss": "the thing sold is distinguished from other property and determined (not an undetermined measure from a heap), so it enters the new owner's ḍamān without qabḍ",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p074",
+    "excerpt_ar": "إذا تميز المعقود عليه من غيره وتعين"
+   }
+  },
+  {
+   "type": "rajab52",
+   "field": "mubham",
+   "gloss": "the thing disposed of is undetermined (mubham), the one case where disposal before qabḍ is barred",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p079",
+    "excerpt_ar": "ولا منع من التصرف إلا في المبهم خاصة"
+   }
+  },
+  {
+   "type": "rajab52",
+   "field": "settled",
+   "gloss": "the disposer's right in the thing is settled, not something absent that may never reach him (the stipend, the alms)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p083",
+    "excerpt_ar": "لأن حقهم مستقر فيه"
+   }
+  },
+  {
+   "type": "rajab52",
+   "field": "debt_to_third",
+   "gloss": "the disposal is a sale of a debt to someone other than the debtor",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p085",
+    "excerpt_ar": "بيع الدين من غير الغريم"
+   }
+  },
+  {
+   "type": "rajab53",
+   "field": "demanded",
+   "gloss": "the right-holder has demanded his right or taken it, settling it in the thing",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p086",
+    "excerpt_ar": "بمطالبة من له الحق بحقه أو يأخذه بحقه"
+   }
+  },
+  {
+   "type": "rajab53",
+   "field": "fixed_in_ayn",
+   "gloss": "the right demanded is in the thing itself and cannot be turned aside from it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p087",
+    "excerpt_ar": "طالب بحقه الذي لا يمكن دفعه عنه"
+   }
+  },
+  {
+   "type": "rajab54",
+   "field": "extinguishes",
+   "gloss": "the disposal extinguishes another's right in the thing",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p089",
+    "excerpt_ar": "التصرف المسقط لحق غيره"
+   }
+  },
+  {
+   "type": "rajab55",
+   "field": "cause_complete",
+   "gloss": "the cause of the would-be owner's ownership is complete, past the other party's power to defeat it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p095",
+    "excerpt_ar": "لأن سبب الملك قد استقر له"
+   }
+  },
+  {
+   "type": "rajab55",
+   "field": "tie_remains",
+   "gloss": "the disposer's own tie to the thing never wholly lapsed (as the marriage of the revocably divorced wife)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p095",
+    "excerpt_ar": "الرجعية لم يزل النكاح عنها بالكلية"
+   }
+  },
+  {
+   "type": "rajab56",
+   "field": "prior",
+   "gloss": "the contract's condition precedes the contract",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p095",
+    "excerpt_ar": "لا بد من سبقها"
+   }
+  },
+  {
+   "type": "rajab56",
+   "field": "concurrent",
+   "gloss": "the contract's condition exists concurrently with the contract, not before it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p095",
+    "excerpt_ar": "إذا وجدت مقترنة بها ولم يتقدم عليها"
+   }
+  },
+  {
+   "type": "rajab57",
+   "field": "with_bar",
+   "gloss": "the ruling coincides in time with what bars it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p097",
+    "excerpt_ar": "إذا تقارن الحكم ووجود المنع منه"
+   }
+  },
+  {
+   "type": "rajab58",
+   "field": "foresaw",
+   "gloss": "he began the act knowing that its prohibition was due at a time about to come",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p104",
+    "excerpt_ar": "لإقدامه على الفعل مع علمه بتحريمه في وقته لا سيما مع قرب الوقت"
+   }
+  },
+  {
+   "type": "rajab59",
+   "field": "annulment",
+   "gloss": "the act is an annulment (faskh), not a contract",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p107",
+    "excerpt_ar": "وأما الفسوخ فترد على المعدوم حكما واختيارا"
+   }
+  },
+  {
+   "type": "rajab59",
+   "field": "defect_return",
+   "gloss": "the annulment is the return for a defect of a thing that has wholly perished",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p109",
+    "excerpt_ar": "إذا تلفت العين المعيبة كلها"
+   }
+  },
+  {
+   "type": "rajab60",
+   "field": "harm",
+   "gloss": "the rescission of the non-binding contract harms a party or another connected with the contract",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p110",
+    "excerpt_ar": "متى تضمن ضررا على أحد المتعاقدين أو غيرهما ممن له تعلق بالعقد"
+   }
+  },
+  {
+   "type": "rajab60",
+   "field": "remediable",
+   "gloss": "the harm can be made good by liability or the like",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p110",
+    "excerpt_ar": "إلا أن يمكن استدراك الضرر بضمان أو نحوه"
+   }
+  },
+  {
+   "type": "rajab61",
+   "field": "general",
+   "gloss": "the deputy's mandate is general, a deputy for the Muslims rather than for his principal",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p114",
+    "excerpt_ar": "كان نائبا عن المسلمين كالأمير العام"
+   }
+  },
+  {
+   "type": "rajab61",
+   "field": "of_qadi",
+   "gloss": "the deputy is the qāḍī's deputy",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p114",
+    "excerpt_ar": "وأما نواب القاضي فنوعان"
+   }
+  },
+  {
+   "type": "rajab62",
+   "field": "public_office",
+   "gloss": "the office removed is a public office carrying a right of God (as the judge's)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p115",
+    "excerpt_ar": "لأن في ولايته حقا لله"
+   }
+  },
+  {
+   "type": "rajab64",
+   "field": "knew",
+   "gloss": "the actor knew of the permission (the condition) when he acted; the qāʿida's case is acting before knowing",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p116",
+    "excerpt_ar": "فتصرف قبل العلم به"
+   }
+  },
+  {
+   "type": "rajab64",
+   "field": "liability_only",
+   "gloss": "all that turns on the condition is liability, which mere belief does not establish",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p117",
+    "excerpt_ar": "لأن الضمان لا يثبت بمجرد الاعتقاد فيما ليس بمضمون"
+   }
+  },
+  {
+   "type": "rajab64",
+   "field": "transaction_authority",
+   "gloss": "the unknown condition is the actor's own authority over the property, as the owner's permission to transact in it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p116",
+    "excerpt_ar": "لو تصرف في مال غيره بعقد أو غيره ثم تبين أنه كان أذن له في التصرف"
+   }
+  },
+  {
+   "type": "rajab65",
+   "field": "right_is_victims",
+   "gloss": "the right of qiṣāṣ belongs to the victim himself, not to his heirs",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p117",
+    "excerpt_ar": "أن القصاص هل يجب للميت أو لورثته"
+   }
+  },
+  {
+   "type": "rajab66",
+   "field": "believed_basis",
+   "gloss": "he acted relying on a basis he believed",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p118",
+    "excerpt_ar": "تصرف مستندا إلى سبب"
+   }
+  },
+  {
+   "type": "rajab66",
+   "field": "actual_basis",
+   "gloss": "a valid basis other than the one he relied on in fact existed",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p118",
+    "excerpt_ar": "وأن السبب المعتمد غيره وهو موجود"
+   }
+  },
+  {
+   "type": "rajab67",
+   "field": "returned_by_gift",
+   "gloss": "the right came back to him by gift (not by release)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p119",
+    "excerpt_ar": "فيرجع بالهبة دون الإبراء"
+   }
+  },
+  {
+   "type": "rajab69",
+   "field": "binding_q69",
+   "gloss": "the contract on the work is binding, the work owed in the dhimma for a countervalue (as hire)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p123",
+    "excerpt_ar": "إما أن يكون لازما ثابتا في الذمة بعوض كالإجارة"
+   }
+  },
+  {
+   "type": "rajab69",
+   "field": "personal_required",
+   "gloss": "a condition or indication requires him to do the work himself",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p123",
+    "excerpt_ar": "ولا يتعين أن يعمله المعقود معه إلا بشرط أو قرينة تدل عليه"
+   }
+  },
+  {
+   "type": "rajab69",
+   "field": "permission_indicated",
+   "gloss": "an express permission or an indication of it allows him to put another in his place",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p123",
+    "excerpt_ar": "إلا بإذن صريح أو قرينة دالة عليه"
+   }
+  },
+  {
+   "type": "rajab70",
+   "field": "agent_explicitly_included",
+   "gloss": "the agent is expressly declared to fall under the general object",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p125",
+    "excerpt_ar": "إلا مع التصريح بالدخول"
+   }
+  },
+  {
+   "type": "rajab70",
+   "field": "agent_included_by_qarina",
+   "gloss": "indications (qarāʾin) show the agent is meant by the general object",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p125",
+    "excerpt_ar": "أو قرائن تدل عليه"
+   }
+  },
+  {
+   "type": "rajab71",
+   "field": "necessity_q71",
+   "gloss": "he eats under necessity",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p132",
+    "excerpt_ar": "فيجوز الأكل منه للضرورة بلا نزاع"
+   }
+  },
+  {
+   "type": "rajab71",
+   "field": "ward_wilaya",
+   "gloss": "he holds wilāya over the property for the ward's benefit (not for his own protection)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p130",
+    "excerpt_ar": "وإن كانت الولاية لمصلحة المولى عليه"
+   }
+  },
+  {
+   "type": "rajab71",
+   "field": "compensated_otherwise",
+   "gloss": "he is otherwise paid for his work (the agent's and hireling's wage), so needs no eating in return for it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p131",
+    "excerpt_ar": "لاستغنائهما عنه بطلب الأجرة من المؤجر والموكل"
+   }
+  },
+  {
+   "type": "rajab71",
+   "field": "unguarded_craved",
+   "gloss": "the food is what souls crave and is not guarded or protected",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p132",
+    "excerpt_ar": "فيما تتوق إليه النفوس مع عدم الحفظ والاحتراز عليه"
+   }
+  },
+  {
+   "type": "rajab72",
+   "field": "muawada",
+   "gloss": "the stipulated maintenance and clothing are a countervalue (muʿāwaḍa)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p132",
+    "excerpt_ar": "فأما المعاوضة"
+   }
+  },
+  {
+   "type": "rajab72",
+   "field": "binding_contract_q72",
+   "gloss": "the contract in which it is stipulated is binding",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p132",
+    "excerpt_ar": "فتقع في العقود اللازمة"
+   }
+  },
+  {
+   "type": "rajab72",
+   "field": "spent_in_purpose",
+   "gloss": "what was given has been spent and used in its purpose (the mount in the path of God, the clothing)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p134",
+    "excerpt_ar": "الدابة قد صرفت في سبيل الله واستعملت فيه"
+   }
+  },
+  {
+   "type": "rajab73",
+   "field": "against_compensation",
+   "gloss": "the stipulated benefit is a hire of the party, set against a countervalue",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p134",
+    "excerpt_ar": "أن يكون استئجارا له مقابلا بعوض"
+   }
+  },
+  {
+   "type": "rajab74",
+   "field": "professional",
+   "gloss": "the worker's state indicates that he claims a countervalue for the work",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p135",
+    "excerpt_ar": "أن يعمل العمل ودلالة حاله تقتضي المطالبة بالعوض"
+   }
+  },
+  {
+   "type": "rajab74",
+   "field": "public_or_rescue",
+   "gloss": "the work serves the Muslims' general interests or rescues protected property from loss",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p135",
+    "excerpt_ar": "أن يعمل عملا فيه غناء عن المسلمين وقيام بمصالحهم العامة أو فيه استنقاذ لمال معصوم من الهلكة"
+   }
+  },
+  {
+   "type": "rajab77",
+   "field": "wrongful",
+   "gloss": "the subordinate property was added by transgression (the usurper's planting and building)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p149",
+    "excerpt_ar": "غراس الغاصب وبناؤه"
+   }
+  },
+  {
+   "type": "rajab77",
+   "field": "separable_without_harm",
+   "gloss": "the subordinate property can be separated without harm reaching the owner of the principal",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p147",
+    "excerpt_ar": "وإن كان يمكن فصله بدون ضرر يلحق مالك الأصل"
+   }
+  },
+  {
+   "type": "rajab78",
+   "field": "causes_loss",
+   "gloss": "freeing his own property brings a loss on another's property",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p150",
+    "excerpt_ar": "من أدخل النقص على ملك غيره لاستصلاح تملكه"
+   }
+  },
+  {
+   "type": "rajab78",
+   "field": "sufferer_negligent",
+   "gloss": "the one who suffered the loss was negligent",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p150",
+    "excerpt_ar": "وإن كان منه تفريط"
+   }
+  },
+  {
+   "type": "rajab78",
+   "field": "emptying_permitted",
+   "gloss": "the sufferer permitted the freeing of his property where the other could not be compelled to it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p150",
+    "excerpt_ar": "إذن في تفريغ ملكه من ملك غيره حيث لا يجبر الآخر على التفريغ"
+   }
+  },
+  {
+   "type": "rajab79",
+   "field": "valid_permission",
+   "gloss": "the crop was sown with a valid permission; the qāʿida's case is crop without one",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p152",
+    "excerpt_ar": "الزرع النابت في أرض الغير بغير إذن صحيح"
+   }
+  },
+  {
+   "type": "rajab80",
+   "field": "repeated_bearing",
+   "gloss": "the roots bear repeatedly (herbs and vegetables)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p157",
+    "excerpt_ar": "ما تكرر حمله من أصول البقول والخضراوات"
+   }
+  },
+  {
+   "type": "rajab81",
+   "field": "reverts_to_transferor",
+   "gloss": "the property reverts by annulment to the one from whom ownership moved",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p157",
+    "excerpt_ar": "العائدة إلى من انتقل الملك عنه بالمفسوخ"
+   }
+  },
+  {
+   "type": "rajab81",
+   "field": "security_or_liability",
+   "gloss": "the growth's question concerns security (tawthiqa) or liability (ḍamān)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p157",
+    "excerpt_ar": "ويتبع الأصل في التوثقة والضمان"
+   }
+  },
+  {
+   "type": "rajab81",
+   "field": "left_until_ripe",
+   "gloss": "a crop or fruit bought on condition of cutting was left until it ripened or hardened",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p159",
+    "excerpt_ar": "اشترى قصيلا بشرط القطع فتركه حتى سنبل واشتد"
+   }
+  },
+  {
+   "type": "rajab82",
+   "field": "lazim_q82",
+   "gloss": "the contract is binding: the party or his substitute cannot undo it alone without a cause",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p164",
+    "excerpt_ar": "فما كان منه لازما لا يستقل العاقد أو من يقوم مقامه بإبطاله من غير سبب"
+   }
+  },
+  {
+   "type": "rajab82",
+   "field": "on_substance",
+   "gloss": "the contract bears on the thing itself",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p167",
+    "excerpt_ar": "كان العقد واردا على العين"
+   }
+  },
+  {
+   "type": "rajab82",
+   "field": "shares_ground",
+   "gloss": "the growth shares the meaning that made its principal guaranteed or held in trust",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p167",
+    "excerpt_ar": "إن شارك الأصل في المعنى الذي أوجب الضمان أو الائتمان"
+   }
+  },
+  {
+   "type": "rajab82",
+   "field": "lifts_from_origin",
+   "gloss": "the annulment lifts the contract from its origin, not from now",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p168",
+    "excerpt_ar": "الفسخ هل هو رفع للعقد من أصله"
+   }
+  },
+  {
+   "type": "rajab82",
+   "field": "lazim_right",
+   "gloss": "the right tied to the thing is binding, undoable in no way (as the umm walad's right)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p171",
+    "excerpt_ar": "حقا لازما لا يمكن إبطاله بوجه كحق الاستيلاد"
+   }
+  },
+  {
+   "type": "rajab84",
+   "field": "haml_ruling_for_another",
+   "gloss": "the ruling bears on another by cause of the ḥaml, not on the ḥaml in itself",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p178",
+    "excerpt_ar": "ما يتعلق بسبب الحمل بغيره"
+   }
+  },
+  {
+   "type": "rajab84",
+   "field": "haml_amara_evident",
+   "gloss": "the sign of pregnancy has appeared, so the ḥaml's existence is the apparent",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p178",
+    "excerpt_ar": "فإذا ظهرت أمارة الحمل كان وجوده هو الظاهر"
+   }
+  }
+ ]
+}
