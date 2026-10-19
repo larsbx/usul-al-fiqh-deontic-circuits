@@ -99,7 +99,11 @@ def _source_text(ts) -> dict[str, str]:
     return {i: tr.routing._text(r) for i, r in tr.routing._records(ROOT / "corpus", units).items()}
 
 
-@pytest.mark.parametrize("ts", SETS, ids=ids)
+# IslamQA's own text is the separately pinned LFS archive: its receipts replay in the external gate.
+RECEIPTED = [pytest.param(ts, marks=pytest.mark.external_source) if ts.name.startswith("islamqa") else ts for ts in SETS]
+
+
+@pytest.mark.parametrize("ts", RECEIPTED, ids=ids)
 def test_every_fact_is_receipted_by_a_verbatim_quote_of_its_own_text(ts):
     """Replay: each settled fact can be re-checked against the text it was read from."""
     text = _source_text(ts)

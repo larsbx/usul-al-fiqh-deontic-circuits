@@ -79,8 +79,10 @@ class Model:
         return {label: sum(x * p.get(w, 0.0) for w, x in v.items()) for label, p in self.profiles.items()}
 
     def rank(self, text: str) -> list[str]:
+        """Best first. Scores are compared at 9 places so that a tie within float noise breaks by
+        label on every platform, not by the summation order of the numpy build."""
         s = self.scores(text)
-        return sorted(s, key=lambda label: (-s[label], label))
+        return sorted(s, key=lambda label: (-round(s[label], 9), label))
 
     def lexicon(self, label: str, n: int = LEXICON) -> list[str]:
         p = self.profiles[label]
