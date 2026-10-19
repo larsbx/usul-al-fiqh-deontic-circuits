@@ -2,6 +2,8 @@
 
 Every Lean module under `formal/lean/` has a plain-English companion here, at the same path with `.md` for `.lean`, and a Claude Docs copy linked in the Doc column (`pending` = not created yet). `pipeline/tests/test_plain_english.py` fails when a module lacks a companion, a companion outlives its module, or this index misses one; it does not check the Docs copies.
 
+All the Docs are listed in one place in the [Plain-English Companions](https://claude.ai/code/artifact/cf7ed7c1-79ac-4b2d-a335-2929e98fbd9a) doc.
+
 ## Usul
 
 | Module | Companion | Doc |
