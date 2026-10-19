@@ -11,7 +11,7 @@
     "judgement/wadi:shart": 6,
     "judgement/wadi:validity": 39,
     "procedure": 9,
-    "takyif": 24
+    "takyif": 29
   },
   "cases": {
     "dalala": 122,
@@ -25,9 +25,9 @@
     "judgement/wadi:shart": 38,
     "judgement/wadi:validity": 198,
     "procedure": 50,
-    "takyif": 161
+    "takyif": 191
   },
-  "cases_typed_by_judgement": 0.513,
+  "cases_typed_by_judgement": 0.502,
   "untyped": [],
   "hard": {
     "advance_after_cause": "wadi:validity: in worship «لا يجوز» here also means the advanced act does not count",

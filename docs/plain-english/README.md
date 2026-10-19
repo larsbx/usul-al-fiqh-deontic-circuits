@@ -58,6 +58,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Readings.RajabA25` | [Usul/Readings/RajabA25.md](Usul/Readings/RajabA25.md) | [doc](https://claude.ai/code/artifact/7c19a98e-a24c-4a3c-8938-43841315cfae) |
 | `Usul.Readings.RajabA26` | [Usul/Readings/RajabA26.md](Usul/Readings/RajabA26.md) | pending |
 | `Usul.Readings.RajabA27` | [Usul/Readings/RajabA27.md](Usul/Readings/RajabA27.md) | pending |
+| `Usul.Readings.RajabA28` | [Usul/Readings/RajabA28.md](Usul/Readings/RajabA28.md) | pending |
 | `Usul.Readings.RajabA29` | [Usul/Readings/RajabA29.md](Usul/Readings/RajabA29.md) | pending |
 | `Usul.Readings.RajabA30` | [Usul/Readings/RajabA30.md](Usul/Readings/RajabA30.md) | pending |
 | `Usul.Readings.RajabA31` | [Usul/Readings/RajabA31.md](Usul/Readings/RajabA31.md) | pending |

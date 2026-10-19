@@ -1622,6 +1622,46 @@ def roadUse : Typed Situation (Bool) where
   run | (x1, x2, x3, x4, x5) => Usul.Readings.RajabA31.roadUseAllowed x1 x2 x3 x4 x5
   proj_embed := fun _ => rfl
 
+/-- `rajab_a28_toward_ownership_growth` reads `Qaida.Rajab82`. -/
+def towardOwnershipGrowth : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.lazimQ82, ← s.fromSubstance)
+  embed | (x1, x2) => { lazimQ82 := some x1, fromSubstance := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.towardOwnershipFollows x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_growth_in_nonownership_contract` reads `Qaida.Rajab82`. -/
+def growthInNonownershipContract : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.onSubstance, ← s.lazimQ82)
+  embed | (x1, x2) => { onSubstance := some x1, lazimQ82 := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.growthInContract x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_growth_follows_hand` reads `Qaida.Rajab82`. -/
+def growthFollowsHand : Typed Situation (Bool) where
+  Local := (Bool)
+  proj s := s.sharesGround
+  embed x1 := { sharesGround := some x1 }
+  run x1 := Usul.Readings.RajabA28.growthFollowsHand x1
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_faskh_growth_returns` reads `Qaida.Rajab82`. -/
+def faskhGrowthReturns : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.fromSubstance, ← s.liftsFromOrigin)
+  embed | (x1, x2) => { fromSubstance := some x1, liftsFromOrigin := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.faskhGrowthFollows x1 x2
+  proj_embed := fun _ => rfl
+
+/-- `rajab_a28_right_reaches_growth` reads `Qaida.Rajab82`. -/
+def rightReachesGrowth : Typed Situation (Bool) where
+  Local := (Bool) × (Bool)
+  proj s := do pure (← s.lazimRight, ← s.fromSubstance)
+  embed | (x1, x2) => { lazimRight := some x1, fromSubstance := some x2 }
+  run | (x1, x2) => Usul.Readings.RajabA28.rightGrowthFollows x1 x2
+  proj_embed := fun _ => rfl
+
 /-! ## Integration: the jamʿ of Ibn Rajab 14's two readings -/
 
 /-- `cause_on_certainty` reads `Qaida.Rajab14Certainty`, which extends Ibn Rajab 14's type. -/

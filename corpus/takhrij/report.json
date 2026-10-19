@@ -1,15 +1,15 @@
 {
- "total": 1226,
+ "total": 1256,
  "classes": {
-  "derivable": 500,
-  "genuine_ikhtilaf": 664,
+  "derivable": 510,
+  "genuine_ikhtilaf": 684,
   "missing_fact": 4,
   "missing_rule": 57,
   "segmentation_error": 1
  },
- "coverage": 0.95,
- "decided_coverage": 0.891,
- "disputed": 664,
+ "coverage": 0.951,
+ "decided_coverage": 0.893,
+ "disputed": 684,
  "encoding_error": 0,
  "gaps_open": 61,
  "revisited": 38,
@@ -621,6 +621,24 @@
   "a27_specific_agent_in_general_object": {
    "derivable": 5,
    "genuine_ikhtilaf": 12
+  },
+  "rajab_a28_toward_ownership_growth": {
+   "derivable": 6,
+   "genuine_ikhtilaf": 5
+  },
+  "rajab_a28_growth_in_nonownership_contract": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "rajab_a28_growth_follows_hand": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "rajab_a28_faskh_growth_returns": {
+   "genuine_ikhtilaf": 9
+  },
+  "rajab_a28_right_reaches_growth": {
+   "genuine_ikhtilaf": 1
   },
   "a29_haml_hukm_before_separation": {
    "derivable": 4,

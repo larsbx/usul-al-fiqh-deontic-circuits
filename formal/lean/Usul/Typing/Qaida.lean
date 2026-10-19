@@ -915,4 +915,12 @@ structure Rajab88 where
   publicBenefit : Option (Bool) := none
   imamLeave : Option (Bool) := none
 
+/-- Ibn Rajab 82 «والنماء المنفصل تارة يكون متولدا من عين الذات كالولد والطلع والصوف واللبن والبيض وتارة يكون متولدا من غيرها واستحق بسبب العين كالمهر والأرش. والحقوق المتعلقة بالأعيان ثلاثة: عقود وسبابته وحقوق يتعلق بغير فسخ ولا عقد فأما العقود فلها حالتان …». Read by `rajab_a28_toward_ownership_growth`, `rajab_a28_growth_in_nonownership_contract`, `rajab_a28_growth_follows_hand`, `rajab_a28_faskh_growth_returns`, `rajab_a28_right_reaches_growth`. -/
+structure Rajab82 extends Rajab20 where
+  lazimQ82 : Option (Bool) := none
+  onSubstance : Option (Bool) := none
+  sharesGround : Option (Bool) := none
+  liftsFromOrigin : Option (Bool) := none
+  lazimRight : Option (Bool) := none
+
 end Usul.Typing.Qaida

@@ -724,6 +724,26 @@
    "alt": "wadi:sabab: could be read as whether the pardon extinguishes the right, but the source asks sihha of the pardon",
    "bool_as_validity": true
   },
+  "rajab_a28_faskh_growth_returns": {
+   "sort": "takyif",
+   "reason": "Q82, fusūkh: faskhGrowthFollows - whether growth born of the thing goes back with it; only on a faskh from the origin («والأصح عدم الاستتباع»)."
+  },
+  "rajab_a28_growth_follows_hand": {
+   "sort": "takyif",
+   "reason": "Q82: growthFollowsHand - whether growth outside the contract follows its aṣl in ḍamān or amāna; the first wajh «تابع له فيهما»."
+  },
+  "rajab_a28_growth_in_nonownership_contract": {
+   "sort": "takyif",
+   "reason": "Q82, contracts that do not transfer the thing: growthInContract - whether the growth is treated as inside the contract, as in the rahn."
+  },
+  "rajab_a28_right_reaches_growth": {
+   "sort": "takyif",
+   "reason": "Q82, rights neither contract nor faskh: rightGrowthFollows - whether a lāzim right reaches the growth born of the thing."
+  },
+  "rajab_a28_toward_ownership_growth": {
+   "sort": "takyif",
+   "reason": "Q82, contracts leading to ownership: towardOwnershipFollows - whether separated growth is treated as following the thing; all of it under a lāzim contract, none under one «يملك العاقد إبطاله»."
+  },
   "rajab_a30_ikhtisas_first_comer": {
    "sort": "judgement",
    "question": "wadi:sabab",

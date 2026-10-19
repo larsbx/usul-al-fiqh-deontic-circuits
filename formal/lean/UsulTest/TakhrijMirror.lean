@@ -802,6 +802,24 @@ import Usul
 #guard (Usul.Readings.RajabA27.agentIncluded false true) == true
 #guard (Usul.Readings.RajabA27.agentIncluded true false) == true
 #guard (Usul.Readings.RajabA27.agentIncluded true true) == true
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows false false) == false
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows false true) == false
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows true false) == true
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows true true) == true
+#guard (Usul.Readings.RajabA28.growthInContract false false) == false
+#guard (Usul.Readings.RajabA28.growthInContract false true) == false
+#guard (Usul.Readings.RajabA28.growthInContract true false) == false
+#guard (Usul.Readings.RajabA28.growthInContract true true) == true
+#guard (Usul.Readings.RajabA28.growthFollowsHand false) == true
+#guard (Usul.Readings.RajabA28.growthFollowsHand true) == true
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows false false) == false
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows false true) == false
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows true false) == false
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows true true) == true
+#guard (Usul.Readings.RajabA28.rightGrowthFollows false false) == false
+#guard (Usul.Readings.RajabA28.rightGrowthFollows false true) == false
+#guard (Usul.Readings.RajabA28.rightGrowthFollows true false) == false
+#guard (Usul.Readings.RajabA28.rightGrowthFollows true true) == true
 #guard (Usul.Readings.RajabA29.hamlHukm false false) == false
 #guard (Usul.Readings.RajabA29.hamlHukm false true) == true
 #guard (Usul.Readings.RajabA29.hamlHukm true false) == false
