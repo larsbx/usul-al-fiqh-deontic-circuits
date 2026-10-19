@@ -1,0 +1,615 @@
+{
+  "suite": "m8_rajab_rajab_a28",
+  "status": "candidate",
+  "provenance": "Shard rajab-a28 (lane A): every farʿ record of Ibn Rajab's qāʿida 82, annotated against the readings formalised from the qāʿida's own statement, one per nawʿ (Usul.Readings.RajabA28). Typological records are annotated for their leading ruling. Annotated by reading the whole qāʿida in the pinned witness, each ikhtilāf side then checked against al-Inṣāf, al-Furūʿ, al-Muntahā and Kashshāf al-Qināʿ; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f001",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "derivable",
+      "facts": {
+        "lazim": true,
+        "from_substance": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the mukātaba owns her earnings and her children follow her by the contract alone (the record states it)",
+          "ruling": true
+        }
+      ],
+      "note": "First nawʿ of contracts not of immediate transfer, those leading to ownership: the kitāba is lāzim on the master's side, so «يتبع فيه النماء المنفصل من العين وغيرها»: «المكاتبة فيملك اكتسابها ويتبعها أولادها بمجرد العقد». Leading ruling: her children follow her into the kitāba."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f002",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "derivable",
+      "facts": {
+        "lazim": true,
+        "from_substance": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the mukātab owns his earnings and his children by his own slave-woman follow him (the record states it)",
+          "ruling": true
+        }
+      ],
+      "note": "Same nawʿ, lāzim: «المكاتب يملك اكتسابه ويتبعه أولاده من أمته كما يتبع الحر ولده من أمته». His child by another's slave-woman does not follow him, being that woman's growth, not his: «ولا يتبعه ولده من أمة لغيره». Leading ruling: his growth follows him."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f003",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "lazim": true,
+        "from_substance": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "his earnings are his: al-Qāḍī, Ibn ʿAqīl and the author of al-Muḥarrar («لأن إعتاقه واجب لحق الله تعالى ولا يتوقف على قبول»)",
+          "ruling": true
+        },
+        {
+          "who": "his earnings go to the heirs, as with the umm walad (the author of al-Mughnī, end of the bāb of ʿitq)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The slave whose manumission is bequeathed earns after the death and before the heirs free him. The bequest is lāzim after the death (his freeing is wājib and needs no acceptance), so the reading has his earnings follow him; Ibn Rajab sets aside the umm walad analogy («أم الولد مملوكة لسيدها والموصى بعتقه غير مملوك للورثة»). al-Inṣāf (v07:p197): «فهو له. على الصحيح من المذهب», naming the same three. On the madhhab side. Follow-on: a slave-woman's child born after the death follows her («هذا هو الظاهر»), al-Qāḍī in his Taʿlīq dissenting."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f004",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "lazim": true,
+        "from_substance": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "his earnings between the death and the event go to the heirs, as with the umm walad: al-Qāḍī, Ibn ʿAqīl and the author of al-Mughnī",
+          "ruling": false
+        },
+        {
+          "who": "his earnings are his: Ibn Rajab's «فيتوجه», from the author of al-Mustawʿib's statement that he stays on the dead man's ownership like the one whose manumission is bequeathed",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Manumission tied by taʿlīq to a time or event after the death («إن مت ثم دخلت الدار فأنت حر»), the sharṭ («شرط عتقه») not yet met. Ibn Rajab calls it «تعليق لازم مستقر لا يمكن إبطاله فهو كالكتابة», so the reading (lāzim) has the earnings follow him, his own tawjīh. The first-stated position, the heirs', is the later madhhab: al-Inṣāf (v07:p416) «فكسبه بعد الموت وقبل وجود الشرط: للورثة. على الصحيح من المذهب». Off the madhhab side; ledger entry. Follow-on: a slave-woman's child born after the death follows her (al-Qāḍī, Ibn ʿAqīl)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f005",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "derivable",
+      "facts": {
+        "lazim": true,
+        "from_substance": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "its growth is spent as the waqf is spent: Shaykh Taqī al-Dīn's fatwā («لأن نماءه قبل الوقف كنمائه بعده»)",
+          "ruling": true
+        }
+      ],
+      "note": "Property whose waqf is bequeathed grows after the death and before it is made waqf. The bequest is lāzim after the death, so the growth follows it into the waqf. al-Inṣāf (v07:p208) quotes this farʿ from Ibn Rajab. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f006",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "derivable",
+      "facts": {
+        "lazim": true,
+        "from_substance": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the profit is put with the property in what he bequeathed, and a loss is on the executor: Aḥmad, in the riwāya of Yaʿqūb b. Bukhtān and Ibrāhīm b. Hāniʾ",
+          "ruling": true
+        }
+      ],
+      "note": "Money bequeathed for «وجوه البر» that the executor traded with: «إن ربح جعل ربحه مع المال فيما أوصى به». The profit is growth not from the thing, and the bequest is lāzim after the death, so it follows. Ibn Rajab notes that if the bequest was to buy something growing and make it waqf, the riwāya would run against the Shaykh's fatwā in f005. Derivable on the leading ruling."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f007",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "lazim": true,
+        "from_substance": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the growth is the heirs' alone, on the wajh that ownership before acceptance is theirs",
+          "ruling": false
+        },
+        {
+          "who": "the growth belongs to the estate, on the wajh that it stays on the dead man's ownership",
+          "ruling": false
+        },
+        {
+          "who": "all the growth is the legatee's, on the wajh that his acceptance shows his ownership from the death, or that his ownership does not wait on acceptance",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A thing bequeathed to a named legatee grows after the death and before his acceptance. The record builds it on «ثلاثة أوجه» about who owns it before acceptance. The heirs cannot undo the bequest after the death, so the reading (lāzim) has the growth follow the thing to the legatee. The later madhhab gives ownership before acceptance to the heirs: al-Inṣāf (v07:p207) «يكون (قبل القبول للورثة) على الصحيح من المذهب», and on that wajh (v07:p208) «فهو لهم خاصة». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f008",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "derivable",
+      "facts": {
+        "lazim": true,
+        "from_substance": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "he who gave it out of his ownership may not buy any of its offspring: Aḥmad's naṣṣ in Ḥanbal's riwāya, on ṣadaqa and waqf",
+          "ruling": true
+        }
+      ],
+      "note": "A nadhr, ṣadaqa or waqf made lāzim in a thing: its offspring take its ruling, so «لم يجز لمن أخرجها عن ملكه أنه يشتري شيئا من نتاجها». Leading ruling, derivable. The record runs on, unsplit, through the arsh of a freed slave's ʿayb (two riwāyas), the uḍḥiya and the hady (their offspring and milk, two wujūh), and into the non-lāzim branch with the mudabbara («يتبعها ولدها على المذهب المشهور»); those are not annotated here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f009",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "lazim": false,
+        "from_substance": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "her child is freed with her (one of the «وجهان معروفان»)",
+          "ruling": true
+        },
+        {
+          "who": "her child is not freed with her (the other)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Non-lāzim branch: «وأما ما كان منها غير لازم ... وفي استتباع الولد خلاف». A slave-woman whose manumission is tied by taʿlīq to a ṣifa conceives and gives birth between the taʿlīq and the ṣifa. The taʿlīq does not stop him undoing it by ending his ownership, so the reading has the child not follow (RQ-02's policy). al-Inṣāf (v07:p422): «فصحح عدم التبعية. وهو المذهب», al-Wajīz stating the other. On the madhhab side. Follow-on: if the ṣifa is met in the child and not the mother he is not freed, «لأنه تابع محض»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f010",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "derivable",
+      "facts": {
+        "lazim": false,
+        "from_substance": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "her child does not follow her: al-Qāḍī, on the slave-woman whose manumission is bequeathed",
+          "ruling": false
+        }
+      ],
+      "note": "A slave-woman whose manumission (or waqf) is bequeathed gives birth before the testator dies. The bequest can still be revoked, so it is not lāzim, and the reading has the child not follow: «لم يتبعها ذكره القاضي في الموصى بعتقها وقياسه الأخرى». Leading ruling (the bequest of manumission), derivable. Follow-on: Ibn Rajab's iḥtimāl that in the bequest of waqf she is followed, «بناء على أن المغلب فيه شوب التحرير دون التمليك»; al-Inṣāf (v07:p440) repeats both."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "lazim": true,
+        "from_substance": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "her child follows her, the waqf being lāzim as Aḥmad's words in al-Maymūnī's riwāya appear to say («فينبغي أن يتبعها ولدها»)",
+          "ruling": true
+        },
+        {
+          "who": "her child does not follow her, the waqf not being lāzim and the waqf leaning to ownership like the thing bequeathed (one of the two wujūh Ibn Rajab gives)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A slave-woman made waqf by taʿlīq on the death. «إن قلنا هو لازم وهو ظاهر كلام أحمد من رواية الميموني [صارت كالمستولدة فينبغي أن يتبعها ولدها»; if it is not lāzim, two wujūh (following like the mudabbar, or not). The reading takes the luzūm the record ascribes to Aḥmad's words: the child follows. al-Inṣāf (v07:p024) gives luzūm as «المنصوص» and notes «ظاهر كلام الأصحاب» against it, labelling neither the madhhab, and says nothing of the child. No later label; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f012",
+      "encoder": "rajab_a28_growth_in_nonownership_contract",
+      "class": "derivable",
+      "facts": {
+        "on_substance": true,
+        "lazim": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "all its separated growth is pledged with it, born of it, earned by it or owed in its place, and the agent for selling the pledge may sell it with it (the record states it)",
+          "ruling": true
+        }
+      ],
+      "note": "Second nawʿ, contracts not made to transfer the thing: «فإن كان العقد واردا على العين وهو لازم فحكم النماء حكم الأصل». The rahn bears on the thing and is lāzim: «فنماؤه المنفصل كله رهن معه ... وهو داخل معه في عقد الرهن». Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f013",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "class": "derivable",
+      "facts": {
+        "shares_ground": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the growth is an amāna in his hand like its aṣl (al-Qāḍī in al-Mujarrad)",
+          "ruling": true
+        }
+      ],
+      "note": "The hired herdsman: «فيكون النماء في يده أمانة كأصله». The reading (first wajh) has the growth follow its aṣl's amāna. Derivable on the leading ruling. Follow-on: he need not herd the lambs of a flock named in the contract, «لأنها غير داخلة فيه», but must herd those of an unnamed flock by ʿurf («ما جرى العرف به مع الإطلاق»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f014",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "class": "derivable",
+      "facts": {
+        "shares_ground": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the growth is an amāna in the lessee's hand like its aṣl, and he may not use it (the record states it)",
+          "ruling": true
+        }
+      ],
+      "note": "The lessee: «يكون النماء في يده أمانة كأصله وليس له الانتفاع به لأنه غير داخل في العقد». The growth follows its aṣl in amāna (the reading's first wajh). Derivable on the leading ruling. Follow-on: whether he may keep it without the owner's leave, taking leave for the aṣl as leave for its growth, or must treat it like «ثوب غيره» blown into his house: two wujūh (al-Qāḍī and Ibn ʿAqīl's takhrīj)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f015",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shares_ground": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the growth of the wadīʿa is a wadīʿa like it (one wajh)",
+          "ruling": true
+        },
+        {
+          "who": "the growth is an amāna «محضة», like a garment blown into his house (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "«الوديعة هل يكون نماؤها وديعة وأمانة محضة كالثوب المطار إلى داره؟ على وجهين أيضا». The growth was not handed over in the deposit, so only the second wajh would set it apart; the reading (first wajh) has it follow as a wadīʿa. No later work found labels either wajh the madhhab; al-Inṣāf (v05:p202) only refers ahead to «ولد الوديعة». Ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f016",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shares_ground": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the child of the ʿāriya is maḍmūn like its aṣl, «لأنه تابع لأصله» (one wajh, al-Qāḍī and Ibn ʿAqīl in the bāb of rahn)",
+          "ruling": true
+        },
+        {
+          "who": "it is not maḍmūn but an amāna, «لأن أصله إنما ضمن لإمساكه للانتفاع به والنماء ممسوك لحفظه على المالك» (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The ʿāriya contract does not reach her child, so the borrower may not use it. The record states the second wajh's ground: the child does not share the use that made its aṣl maḍmūn. The reading (first wajh) has it maḍmūn. The muʿtamad holds the second: al-Muntahā (v03:p155) «ولا يضمن ولد عارية سلم معها». Off the madhhab side; ledger entry. al-Qāḍī and Ibn ʿAqīl say in the kitāb of ghaṣb that there is one wajh on it, without saying which."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f017",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shares_ground": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "its ruling is that of its aṣl: maḍmūn if the aṣl is maḍmūn (al-Qāḍī and Ibn ʿAqīl)",
+          "ruling": true
+        },
+        {
+          "who": "it is not maḍmūn, like the ʿāriya's child, its mother being maḍmūn for a qabḍ the child never had (Ibn Rajab's takhrīj: «يمكن أن يخرج فيه وجه آخر»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "A slave-woman taken on the terms of a bargaining (sawm) gives birth in the taker's hand. The reading (first wajh) gives the child its aṣl's ḍamān, al-Qāḍī and Ibn ʿAqīl's view. Kashshāf al-Qināʿ (v03:p370), on al-Iqnāʿ's matn: «(وولد المقبوض على وجه السوم كهو) أي: كالمقبوض على وجه السوم في الضمان وعدمه». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f018",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "shares_ground": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "its increase is maḍmūn like the thing (one of the two wujūh; Ibn Rajab answers al-Qāḍī that it is «منتقض بتضمينه الأجرة»)",
+          "ruling": true
+        },
+        {
+          "who": "its increase is not maḍmūn, for he entered on ḍamān of the thing and not of its growth (al-Qāḍī's tawjīh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "What is taken under a fāsid contract: «وفي ضمان زيادته وجهان». al-Qāḍī's tawjīh states the second wajh's ground (the growth does not share the ground of the thing's ḍamān); the reading (first wajh) has it maḍmūn. al-Inṣāf (v04:p474): «وعلى المذهب: يضمن زيادته على الصحيح». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f019",
+      "encoder": "rajab_a28_growth_in_nonownership_contract",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "on_substance": false,
+        "lazim": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "nothing of these rulings reaches their children, these rights being in the dhimma and not in the thing, like the other debt contracts: al-Qāḍī in al-Mujarrad and Ibn ʿAqīl",
+          "ruling": false
+        },
+        {
+          "who": "the child of the slave-woman who stood surety follows her and is sold with her like the pledged woman's child: al-Qāḍī's choice in his Khilāf (Ibn ʿAqīl in his Naẓariyyāt rejects it as «ضعفه»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The slave-woman who is a witness, a ḍāmina or a kafīla: «لأن هذه حقوق متعلقة بالذمة لا بالعين». A contract on what is in the dhimma does not reach the growth, so the reading gives «لا يتعلق بأولادهن شيء». al-Furūʿ (v06:p289) states it: «لا ولد جانية وضامنة وشاهدة». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f020",
+      "encoder": "rajab_a28_growth_in_nonownership_contract",
+      "class": "derivable",
+      "facts": {
+        "on_substance": true,
+        "lazim": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "he does not break his yamīn by eating its milk or eggs: al-Qāḍī in his Khilāf («لأن العقد لم يتعلق»)",
+          "ruling": false
+        }
+      ],
+      "note": "He made a yamīn (ḥalaf) not to eat of what so-and-so bought, then ate of its milk or eggs. Ibn Rajab's own ground puts the yamīn among the contracts that are not lāzim: «فإن اليمين ليست لازمة بل يخير الحالف بين التزامها وبين الحنث فيها وتكفيرها». A contract that is not lāzim does not reach the growth, so the milk is outside what the yamīn covers: no ḥinth. Derivable. Contrast: ḥalaf not to eat of this ewe is broken by her milk, for ʿurf, «لأنه لا يؤكل منها في الحياة عادة إلا اللبن»; her offspring «ففيه نظر». The record then runs on, unsplit, into the faṣl on fusūkh and its first farʿ (zakāt paid early, then the property perishes: «على وجهين أظهرهما لا يرجع» with its attached increase), not annotated here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f021",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "whether the seller takes the growth back, two wujūh like the faskh for ʿayb (the takhrīj of a group of the aṣḥāb, e.g. the authors of al-Talkhīṣ and al-Mustawʿib); on the wajh like ʿayb the growth stays",
+          "ruling": false
+        },
+        {
+          "who": "he takes back the separated growth: al-Qāḍī in his Khilāf and Ibn ʿAqīl in his ʿUmad, the faskh for khiyār being «فسخ للعقد من أصله» since he never accepted the sale as lāzim",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The thing sold grows during the khiyār period and the sale then meets faskh. The record says this faskh lifts the contract from its origin (al-Qāḍī, Ibn ʿAqīl), and on that ground the reading has the growth go back. The later madhhab keeps it with the buyer: al-Inṣāf (v04:p380) «فعلى المذهب: هو للمشتري على الصحيح من المذهب، أمضيا العقد أو فسخاه». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f022",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the growth is the buyer's, if the iqāla is a faskh: al-Qāḍī in his Khilāf",
+          "ruling": false
+        },
+        {
+          "who": "he returns it with its aṣl: a wajh that «يتخرج», reported by Abū al-Barakāt in his Taʿlīq from al-Qāḍī's Khilāf",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The iqāla as a faskh. The record does not say this faskh lifts the sale from its origin, so the reading's faskh from now leaves the growth with the buyer. al-Inṣāf (v04:p481): «إذا قيل إنها فسخ: يكون للمشتري. فيحكم بأنها فسخ من حينه. وهذا المذهب». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f023",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the growth is not returned, like the earnings (the better known of the two riwāyas: «أشهرهما»)",
+          "ruling": false
+        },
+        {
+          "who": "the growth is returned while it exists, and its value if he used it up: Ibn Manṣūr's report of Aḥmad's «كما قال» on Sufyān's view (with the milk alone repaid by the ḥadīth of the muṣarrāt)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Return for ʿayb: «وفي رد النماء فيه روايتان أشهرهما أنه لا يرد كالكسب». The faskh for ʿayb lifts the sale from now, so the reading leaves the growth with the buyer. al-Inṣāf (v04:p412), on al-Muqniʿ's «وما كسب فهو للمشتري»: «قوله (وكذلك نماؤه المنفصل) وهو المذهب». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f024",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the separated growth follows the thing back to the seller: «المرجحة عند القاضي في الخلاف وابن عقيل», and Aḥmad's naṣṣ in Ḥanbal's riwāya as Abū Bakr reports it in al-Tanbīh",
+          "ruling": true
+        },
+        {
+          "who": "the growth is the bankrupt's, having grown in his ownership: Ibn Abī Mūsā and Ibn Ḥāmid, the ẓāhir of al-Khiraqī's words, and al-Qāḍī in al-Mujarrad and Ibn ʿAqīl in al-Fuṣūl",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Faskh by the seller for the buyer's bankruptcy (iflās). The record does not say this faskh lifts the sale from its origin, and Ibn Rajab argues that Aḥmad's words in the riwāya do not support the seller's taking the child, so the reading leaves the growth with the bankrupt. The later madhhab gives it to the seller: al-Inṣāf (v05:p294) «وعنه: أنها للبائع. وهي المذهب». Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f025",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "whether the owner takes it back with its separated growth: two wujūh that al-Qāḍī and Ibn ʿAqīl draw by takhrīj from the bankrupt's case; on the wajh like the bankrupt's the growth stays",
+          "ruling": false
+        },
+        {
+          "who": "he takes the growth back, the finder's ownership having been lifted «من أصله» once its ground proved mistaken: Ibn Rajab's «ويحتمل ... وجها واحدا», what Ibn Abī Mūsā states, with Aḥmad's words on the bird that hatched at a people's house («أنهم يردون فراخها»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The finder's luqaṭa grows by separated growth and then its owner comes. The record says the finder's ownership is lifted from its origin, and on that ground the reading has the growth go back to the owner. The later madhhab gives the growth after the year to the finder: al-Inṣāf (v06:p419) «وزيادتها المنفصلة لمالكها قبل الحول، ولواجدها بعده. في أصح الوجهين) . وهو المذهب», naming Ibn Abī Mūsā for the other wajh. Off the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f026",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the father takes it back with its separated growth (one wajh)",
+          "ruling": true
+        },
+        {
+          "who": "the growth stays with the child (the other wajh)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The father's rujūʿ in what he gave his child, which has grown by separated growth: «فيه وجهان». The rujūʿ lifts the gift from now, so the reading leaves the growth with the child. al-Inṣāf (v06:p420): «فإنها للولد. على الصحيح من المذهب. وعليه أكثر الأصحاب». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f027",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the growth is the donee's until the faskh: the more apparent of two wujūh («أظهرهما»), on al-Qāḍī's Khilāf that the donee owns it by qabḍ and the heirs have only a faskh beyond the third (noted by al-Shaykh Majd al-Dīn)",
+          "ruling": false
+        },
+        {
+          "who": "the growth is taken back with what is undone (the other wajh)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "The sick man gives away all his property, it grows by separated growth, he dies and the heirs do not consent. On al-Qāḍī's view the heirs' right is a faskh, which lifts the gift from now, so the reading leaves the growth with the donee. The record adds a different frame as «والمعروف في المذهب»: the gift is held in suspense (murāʿā), owned only as far as it comes out of the third at the death, «ويتبعه نماؤه», the excess built on whether ijāza is tanfīdh. That frame is not a faskh and the record gives it no ruling on the growth of the excess; no later label was found. Ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f028",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the husband does not take back its growth or half of it: «المذهب», Aḥmad's naṣṣ in the riwāya of Abū Dāwūd and Ṣāliḥ",
+          "ruling": false
+        },
+        {
+          "who": "the separated growth goes back to the husband with the aṣl on the separation: the second reading of Ibn Manṣūr's riwāya («جيد» to Sufyān), the path of a group including the author of al-Muḥarrar",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "The ṣadāq or half of it returns to the husband before consummation by ṭalāq or faskh, after it grew in the wife's hand. The return lifts her ownership from now, so the reading leaves the growth with her. Ibn Rajab weighs the readings of Ibn Manṣūr's riwāya and calls al-Qāḍī's path «ضعيف جدا». al-Inṣāf (v08:p263): «هذا الصحيح من المذهب. نص عليه في رواية أبي داود، وصالح». On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f029",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "from_substance": true,
+        "lifts_from_origin": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "on «ملكوه», he takes it back with its growth (one of two wujūh drawn «كبائع المفلس»); on «لم يملكه الكفار» it is his with its growth outright",
+          "ruling": true
+        },
+        {
+          "who": "on «ملكوه», the growth stays with the spoils, the ghānimūn's rights reaching the growth as the bankrupt's creditors' rights do (the other wajh; al-Qāḍī in al-Mujarrad, for a child the ḥarbī fathered, «الولد غنيمة»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "A Muslim finds his property, taken by the kuffār, among the spoils before the division, after it grew. If the kuffār owned it by their seizure, his return to it lifts their ownership from now, so the reading leaves the growth with the spoils. Ibn Rajab confines al-Qāḍī's child to the case where the ḥarbī fathered it, «فلا يكون من نمائها». No later work found labels either wajh the madhhab. Ledger entry. The record runs on into Aḥmad on a Muslim's slave returning from dār al-ḥarb, al-Khallāl's «وهذا هو المذهب», and then the faṣl on rights without contract or faskh with the jāniya («لا يتعلق الجناية بأولادها ولا أكسابها»), not annotated here."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f030",
+      "encoder": "rajab_a28_right_reaches_growth",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "lazim_right": true,
+        "from_substance": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the creditors' right reaches the growth too, like the pledge: al-Qāḍī and Ibn ʿAqīl (kitāb al-qisma) if the estate stays on the dead man's ownership; al-Āmidī and the author of al-Mughnī even with its passing to the heirs; Ibn Rajab, where the debt's tie to the estate is «تعلق رهن يمنع التصرف»",
+          "ruling": true
+        },
+        {
+          "who": "it does not reach the growth, where the tie is «تعلق جناية لا يمنع التصرف», or (al-Qāḍī and Ibn ʿAqīl) where the estate passes to the heirs, the tie being qahrī like the jināya's",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Faṣl on rights tied to things without contract or faskh: the estate of one who died in debt, the creditors' right tied to it. The record's first-stated ruling ties the right like a pledge, which bars disposal, and Ibn Rajab's own measure makes that the lāzim right; the reading then has it reach the growth. The later madhhab, with the estate passing to the heirs and their disposal valid, gives the growth to the heir: al-Inṣāf (v11:p364) «وعلى المذهب: النماء للوارث كنماء جان. على الصحيح من المذهب، لا كمرهون». Off the madhhab side; ledger entry. The record runs on into the three wujūh on where the debt lies, the faṣl on ḍamān for taʿaddī (ghaṣb: the separated growth maḍmūn «على المذهب»), and the tanbīh on whether the spathe and the fetus are separated or attached growth, not annotated here."
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "entries": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f003",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "His earnings being his prevails in the labels: al-Inṣāf labels it the madhhab, naming al-Qāḍī, Ibn ʿAqīl and the author of al-Muḥarrar; al-Mughnī's heirs' view stands alone.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p197",
+          "excerpt_ar": "فائدة: لو كسب الموصى بعتقه بعد الموت، وقبل الإعتاق: فهو له. على الصحيح من المذهب. وذكره القاضي، وابن عقيل، وصاحب المحرر، وغيرهم. وقدمه في القاعدة الثانية والثمانين. وقال المصنف في المغني في آخر باب العتق كسبه للورثة كأم الولد.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "In the waṣāyā, citing this qāʿida."
+        }
+      ],
+      "positions_sha256": "4b866c64ad3ecfa768a58f775579e02ca1386968b203e0c09c247107ca5fbfc6"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f004",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The heirs' side prevails in the labels: al-Inṣāf labels it the madhhab and reports Ibn Rajab's «فيتوجه» as a tawjīh only.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p416",
+          "excerpt_ar": "الثاني على القول بالصحة: فكسبه بعد الموت وقبل وجود الشرط: للورثة. على الصحيح من المذهب. قاله القاضي، وابن عقيل، والمصنف، وغيرهم ووجه في القواعد: أن كسبه له، من تصريح صاحب المستوعب: أن العبد باق على ملك الميت، لا ينتقل إلى الورثة، كالموصى بعتقه.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Bāb of ʿitq, on «أنت حر بعد موتي بسنة» and the like."
+        }
+      ],
+      "positions_sha256": "01d6c5ee5e850424baa407438b15b8f0fc382506de6b27d9974489802d7dd1f8"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f007",
+      "grades": [
+        "wajh",
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The heirs' wajh prevails in the labels: al-Inṣāf gives ownership before acceptance to the heirs on the madhhab, and on that wajh the growth is theirs alone.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p207",
+          "excerpt_ar": "فعلى الأول: يكون (قبل القبول للورثة) على الصحيح من المذهب. كما صرح به المصنف هنا. واختاره هو وابن البنا، والشيرازي، والشارح. وقدمه في الفروع، والرعايتين، والحاوي الصغير، والفائق.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Who owns the bequeathed thing before acceptance, the record's own bināʾ."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p208",
+          "excerpt_ar": "وإن قلنا: هو على ملك الورثة: فهو لهم خاصة.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The growth between the death and the acceptance on that wajh."
+        }
+      ],
+      "positions_sha256": "4d26c563714923f19684031f8ee888ae430b6067251aa5f885f438817a55ede8"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f009",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The child not following prevails: al-Inṣāf labels it the madhhab; al-Wajīz states the other decisively.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p422",
+          "excerpt_ar": "وإن وجد حمل بعد التعليق ووضعته قبل وجود الصفة وهي مسألة المصنف هنا فصحح عدم التبعية. وهو المذهب. صححه في النظم، وشرح ابن منجا وقدمه في الشرح، والفروع.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Bāb of ʿitq, the child of the slave-woman freed by a ṣifa."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v07:p422",
+          "excerpt_ar": "والوجه الثاني: يتبعها. جزم به في الوجيز.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Mardāwī, al-Inṣāf, reporting al-Wajīz",
+          "note": "The other wajh, stated decisively in al-Wajīz."
+        }
+      ],
+      "positions_sha256": "6190e2a250785c4b7c3da15bdfa61ca0b0b6936c0597d1485fc77ac5c9966661"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
+      "grades": [
+        "zahir",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The record ascribes luzūm to the ẓāhir of Aḥmad's words; al-Inṣāf (v07:p024) gives luzūm as the manṣūṣ and the aṣḥāb's ẓāhir against it, without a label, and says nothing of the child. No evidence imported.",
+      "positions_sha256": "41bd981a3d15983ac27b1ac0f7fb3c2f81dd251f9d7d66b071f67f40535cf8da"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f015",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two unmarked wujūh; no later work found labels either. No evidence imported.",
+      "positions_sha256": "1a01d3b6c3bb9d582af87e5a4808cbd96cdc5d13471ff1439d5257488f5f3810"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f016",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The child not being maḍmūn prevails: al-Muntahā states it decisively.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p155",
+          "excerpt_ar": "ولا يضمن ولد عارية سلم معها ولا زيادة عنده كمؤجرة بلا قيد ولا هي أو جزؤها باستعمال بمعروف",
+          "position": 1,
+          "grade": "jazm",
+          "who": "Ibn al-Najjār, Muntahā al-Irādāt",
+          "note": "Bāb of ʿāriya."
+        }
+      ],
+      "positions_sha256": "1fa34e72851766b69f408535fb33a9bdcac5465896e9aa8d47698f92f52b2f1c"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f017",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The child taking its aṣl's ruling prevails: Kashshāf al-Qināʿ, on al-Iqnāʿ's matn, states it decisively, with al-Qāḍī and Ibn ʿAqīl in the record; Ibn Rajab's takhrīj stands alone.",
+      "evidence": [
+        {
+          "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p370",
+          "excerpt_ar": "(وولد المقبوض على وجه السوم كهو) أي: كالمقبوض على وجه السوم في الضمان وعدمه على التفصيل الآتي؛ لأنه فرعه.",
+          "position": 0,
+          "grade": "jazm",
+          "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+          "note": "Bāb of ḍamān, the matn of al-Iqnāʿ with its sharḥ."
+        }
+      ],
+      "positions_sha256": "dbba3f8478eed20567196ad2523e7af8e854144711692f4a7cb98808e2ed143b"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f018",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The increase being maḍmūn prevails: al-Inṣāf labels it so on the madhhab.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p474",
+          "excerpt_ar": "وعلى المذهب: يضمن زيادته على الصحيح. قال في الرعاية الكبرى: وله مطلقا نماؤه المتصل والمنفصل، وأجرته مدة قبضه بيد المشتري، وأرش نقصه.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The thing taken under a fāsid sale."
+        }
+      ],
+      "positions_sha256": "9a1c80393d8b7b89f3ab5dd45dbb200ce9d2627dfc99b49c136fea6f160332be"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f019",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Nothing reaching the children prevails: al-Furūʿ states it decisively, as al-Inṣāf (v05:p202) quotes it.",
+      "evidence": [
+        {
+          "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p289",
+          "excerpt_ar": "وولده كهو, لا ولد جانية وضامنة وشاهدة وموصى بها وحق جائز",
+          "position": 0,
+          "grade": "jazm",
+          "who": "Ibn Mufliḥ, al-Furūʿ",
+          "note": "After the thing taken on the terms of a bargaining: its child is as it is, not the child of the jāniya, ḍāmina or witness."
+        }
+      ],
+      "positions_sha256": "9ac8c8ea5b0e1321d3560640c5b89b6d10da0dd919b1297c4bf4acb6093b2db0"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f021",
+      "grades": [
+        "takhrij",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The growth staying with the buyer prevails: al-Inṣāf labels it the madhhab whether the contract is carried out or meets faskh.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p380",
+          "excerpt_ar": "ومنها: الكسب والنماء المنفصل في مدته. فعلى المذهب: هو للمشتري على الصحيح من المذهب، أمضيا العقد أو فسخاه.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Bāb of khiyār, the fawāʾid of ownership passing in the khiyār period."
+        }
+      ],
+      "positions_sha256": "07f237128551b8417cf633f032510a904a550b9da216be234e486192a4ce3bd0"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f022",
+      "grades": [
+        "ashab",
+        "takhrij"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The growth staying with the buyer prevails: al-Inṣāf labels the iqāla a faskh from now, the growth the buyer's, as the madhhab.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p481",
+          "excerpt_ar": "قال القاضي في الإقالة في النماء المنفصل: إذا قيل إنها فسخ: يكون للمشتري. فيحكم بأنها فسخ من حينه. وهذا المذهب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Fāʾida after the iqāla: whether a faskh lifts the contract from now or from its origin."
+        }
+      ],
+      "positions_sha256": "d403363d1af1d43a3177ea926c833d512e21f3f9575ac86f42cf0648b01abeb4"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f023",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The growth not being returned prevails: al-Inṣāf labels it the madhhab of the aṣḥāb, the other a riwāya.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v04:p412",
+          "excerpt_ar": "قوله (وكذلك نماؤه المنفصل) وهو المذهب. وعليه الأصحاب. وعنه: لا يرده إلا مع نمائه.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "On al-Muqniʿ's «وما كسب فهو للمشتري», in the khiyār for ʿayb."
+        }
+      ],
+      "positions_sha256": "4b4f14bfc4d74cc309421ed7c8457b684160550b582b4af586e5a64a1e4e96e1"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f024",
+      "grades": [
+        "nass",
+        "nass"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The seller's side prevails in the labels: al-Inṣāf calls it the madhhab, the bankrupt's side the ẓāhir of the madhhab in al-Kāfī.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p294",
+          "excerpt_ar": "وعنه: أنها للبائع. وهي المذهب. اختاره أبو بكر، والقاضي في الجامع والخلاف، وابن عقيل.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Bāb of ḥajr for iflās."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v05:p294",
+          "excerpt_ar": "قوله (والزيادة للمفلس) هذا ظاهر كلام الخرقي، واختيار ابن حامد، والقاضي في روايتيه، والمجرد، والشريف، وأبي الخطاب في خلافيهما، وابن عقيل في الفصول، والمصنف. وقال: لا ينبغي أن يكون فيه خلاف. قال في الكافي: هذا ظاهر المذهب.",
+          "position": 1,
+          "grade": "zahir",
+          "who": "al-Mardāwī, al-Inṣāf, reporting al-Kāfī",
+          "note": "The matn's position, «ظاهر المذهب» in al-Kāfī."
+        }
+      ],
+      "positions_sha256": "4c4fdf9e0dc79f2fa2ef20be13a43a62b0ab037e4346dcae540986eceace0731"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f025",
+      "grades": [
+        "takhrij",
+        [
+          "takhrij",
+          "ashab"
+        ]
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The finder keeping the growth after the year prevails: al-Inṣāf labels it the madhhab; Ibn Abī Mūsā's wajh is reported as a choice.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p419",
+          "excerpt_ar": "قوله (وزيادتها المنفصلة لمالكها قبل الحول، ولواجدها بعده. في أصح الوجهين) . وهو المذهب.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Bāb of luqaṭa."
+        },
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p419",
+          "excerpt_ar": "والوجه الثاني: تكون لصاحبها أيضا. اختاره ابن أبي موسى.",
+          "position": 1,
+          "grade": "wajh",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "The other wajh, Ibn Abī Mūsā's choice."
+        }
+      ],
+      "positions_sha256": "b55c758ea2dd7cb83ddb3a2bf2d1cfdf4d2593c170aa09dd227c196c7394456f"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f026",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The growth staying with the child prevails: al-Inṣāf labels it the madhhab of most aṣḥāb.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v06:p420",
+          "excerpt_ar": "قلت: أما الزيادة المنفصلة في العين الموهوبة إذا رجع فيها الأب: فإنها للولد. على الصحيح من المذهب. وعليه أكثر الأصحاب، على ما يأتي في الهبة.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "In the bāb of luqaṭa, comparing the father's rujūʿ."
+        }
+      ],
+      "positions_sha256": "f4c3562e91ae4fafabfc580dcf0f6c45dec61c9139f9095cb5b87f869510716c"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f027",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh, the first «أظهرهما» in the record (al-Majd's tanbīh); no later work found treats the growth. No evidence imported.",
+      "positions_sha256": "96d235b1d35fa646d35b008a3fbf623f54195c35b482047a9ed57b48cf26c1ae"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f028",
+      "grades": [
+        "tashih",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The growth staying with the wife prevails: the record's «المذهب» with Aḥmad's naṣṣ, and al-Inṣāf's taṣḥīḥ.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v08:p263",
+          "excerpt_ar": "قوله (وإن كان الصداق زائدا زيادة منفصلة: رجع في نصف الأصل، والزيادة لها) . هذا الصحيح من المذهب. نص عليه في رواية أبي داود، وصالح.",
+          "position": 0,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Bāb of ṣadāq."
+        }
+      ],
+      "positions_sha256": "3a3039102d0b858fb86de75814b44c4ce3810794a6118e2b973b44ccb6a1d473"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f029",
+      "grades": [
+        "wajh",
+        "wajh"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "Two wujūh drawn from the bankrupt's case; no later work found labels either. No evidence imported.",
+      "positions_sha256": "e7b29a7537665a2629f53d56799e46e40beaf7204cea5804db4d8dc008c60c70"
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f030",
+      "grades": [
+        "ashab",
+        "ashab"
+      ],
+      "jam": null,
+      "naskh": null,
+      "note": "The growth free of the creditors' right prevails in the labels: al-Inṣāf gives it to the heir like the jāniya's growth, not like the pledged thing's, on the madhhab.",
+      "evidence": [
+        {
+          "ref": "src:openiti-insaf-shamela21609/v11:p364",
+          "excerpt_ar": "وعلى المذهب: النماء للوارث كنماء جان. على الصحيح من المذهب، لا كمرهون. قال في الترغيب وغيره: هو المشهور. وقيل: النماء تركة.",
+          "position": 1,
+          "grade": "tashih",
+          "who": "al-Mardāwī, al-Inṣāf",
+          "note": "Kitāb of qisma: the estate's growth with a debt on it, on the madhhab that it passes to the heirs."
+        }
+      ],
+      "positions_sha256": "f1b9c99e44063750619e65695efe03bd7f06bd858939c78d9c90b78fea99ca00"
+    }
+  ]
+}
