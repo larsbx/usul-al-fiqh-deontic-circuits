@@ -179,6 +179,33 @@ def shortlist(root: Path, ranking: dict[str, list[str]], n: int = SHORTLIST) -> 
     return out
 
 
+def catalogue(root: Path) -> dict[str, dict]:
+    """The typist's catalogue: every qāʿida type with its statement, and each field with its allowed
+    values, its gloss and its anchor, the verbatim phrase of the source that defines it
+    (``corpus/types/anchors``). Generated from the Lean export and the anchors, nothing else."""
+    from . import anchors
+    export = (root / "examples/v41_types.pl").read_text(encoding="utf-8")
+    statement = {n: re.sub(r"\s*Read by .*$", "", s.replace("''", "'"))
+                 for n, s in re.findall(r"^qaida_type\((\w+), '((?:[^']|'')*)'\)\.", export, re.M)}
+    ctors: dict[str, list[str]] = {}
+    for ty, v in re.findall(r"^type_value\('([^']*)', (\w+)\)\.", export, re.M):
+        ctors.setdefault(ty, []).append(v)
+    anchor = {(e["type"], e["field"]): e for e in anchors.load(root / "corpus")}
+    out: dict[str, dict] = {}
+    for q, f, ty in re.findall(r"^type_field\((\w+), (\w+), '([^']*)'\)\.", export, re.M):
+        inner, nested = ty, 0
+        while inner.startswith("Option "):
+            inner, nested = inner[len("Option "):].strip("()"), nested + 1
+        values = [True, False] if inner == "Bool" else ctors.get(inner)
+        if values is None:
+            continue
+        a = anchor.get((q, f), {})
+        out.setdefault(q, {"statement": statement.get(q, ""), "fields": []})["fields"].append(
+            {"field": f, "values": values + (["none"] if nested > 1 else []), "gloss": a.get("gloss"),
+             **({"defined_by": a["anchor"]["excerpt_ar"]} if "anchor" in a else {})})
+    return out
+
+
 def render_shortlist(root: Path, ts: TestSet) -> str:
     return json.dumps({"schema_version": 1, "status": "candidate", "set": ts.name, "size": SHORTLIST,
                        "method": "the strict router's best-ranked encoders' qāʿida types, in rank order; "
