@@ -167,3 +167,18 @@ The typists wrote 309 situations with 424 facts; 7 cases settle nothing. The cas
 **The procedure,** for use: the strict-fold router proposes the 20 most likely qāʿida types for a text; a blind typist reads their statements, decides which ground the ruling turns on, and settles those facts; the typed coverage ranks the readings, and the router breaks ties.
 
 **Where 0.9 now stands:** about 0.86–0.88 at k = 5 by category. The remaining step is the typing's recall of the right qāʿida, 79 % settled against the 88 % that 0.9 needs. The cases settling nothing are fragments and headings (7 of 235), not reachable by any typing.
+
+### Reproduction: is the reading step fixed by the texts?
+
+The procedure's deterministic steps regenerate from the corpus. The reading list and the strict rankings are identical, 235/235, to what the typists saw. Each settled fact carries a verbatim receipt from its unit's own text (tested). The one judgement step is the typist's reading. To test whether the texts fix it, a fresh typist re-typed 80 fold-1 cases (a fixed-seed sample) blind, under new ids, with the identical prompt and reading list.
+
+| 80 cases, two independent typings | Agreement |
+|---|---|
+| Identical sets of settled facts | 54 / 80 (68 %); mean Jaccard 0.78 |
+| Identical qāʿida types touched | 62 / 80 (78 %); disjoint in 9 |
+| The case's own reading settled in both, or in neither | 69 / 80 (86 %); κ ≈ 0.58 |
+| Strict recall@5 / @10 | first typing 0.887 / 0.912, second 0.850 / 0.875 |
+
+The figure reproduces within 0.04, but the reading step is only moderately reproducible. The disagreements are omissions, not rival readings. In 7 of the 9 disjoint cases one typist found the case's own qāʿida and the other found nothing or a neighbour, and across the 17 type disagreements one side found it in 10. The typists' notes name the cause: a field comes with its name and its qāʿida's statement but **no definition** («I couldn't tell what the field means»).
+
+**Next, to make the step text-defined:** give every field the phrase of its qāʿida's statement (or of the reading's docstring, which quotes it) that defines it. Many readings already do this, e.g. «`refusalForbidden`: the refusal is ḥarām on him («من حرم عليه الامتناع»)». A field with no such anchor is itself a finding: a fact the bank states that its source does not.
