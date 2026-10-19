@@ -31,6 +31,7 @@ This layer does four things:
   - **Sunnah or athar:** at least three words, somewhere in the cited collection: al-Bukhārī, Muslim, Abū Dāwūd, al-Tirmidhī, al-Nasāʾī or Ibn Mājah.
   - **Ijmāʿ:** a passage of al-Mughnī that states the agreement («أجمع», «لا خلاف», «لا نعلم … خلافا», …).
 - The witnesses are those `source_verify.required_witnesses` names, so CI fetches them and a missing one fails rather than skips.
+- **No excerpt stops before a qualifier** (`test_witness_integrity`, PR-07). 22 excerpts first stopped just before an exception or condition; each was extended through it, e.g. «فثمرتها للبائع إلا أن يشترط المبتاع» and «فنصف ما فرضتم إلا أن يعفون». One al-Tirmidhī duplicate was dropped: every stopping point in it precedes «ألا», which the gate reads as «إلا».
 
 ## What was found
 
@@ -39,7 +40,7 @@ This layer does four things:
 | Cases | 1,216: 733 rule on an act, 378 on an item, 105 on an issue. 339 also have a secondary maḥall. |
 | Labels | 541 under 57 bābs: 296 acts, 174 items, 71 issues |
 | Anchored labels | **529**. By strongest text: Qurʾān 228, Sunnah 286, athar 6, ijmāʿ 9 |
-| Nuṣūṣ | 832 citations, 727 distinct:<br>• Qurʾān 312<br>• al-Bukhārī 244, Abū Dāwūd 107, Muslim 66, al-Tirmidhī 41, Ibn Mājah 32, al-Nasāʾī 11<br>• al-Mughnī's ijmāʿ 19 |
+| Nuṣūṣ | 830 citations, 725 distinct:<br>• Qurʾān 311<br>• al-Bukhārī 244, Abū Dāwūd 106, Muslim 66, al-Tirmidhī 40, Ibn Mājah 33, al-Nasāʾī 11<br>• al-Mughnī's ijmāʿ 19 |
 | Cases whose own maḥall is anchored | 1,194 / 1,216. The other 22 fall under the 12 unanchored labels. Their bāb is still reached. |
 
 **The 12 unanchored labels are findings, not gaps.** They are maḥalls that no canonical text names, which the jurists constructed:

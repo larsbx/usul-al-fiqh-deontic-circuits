@@ -1362,7 +1362,7 @@
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
-     "excerpt_ar": "من ابتاع نخلا بعد أن تؤبر فثمرتها للبائع"
+     "excerpt_ar": "من ابتاع نخلا بعد أن تؤبر فثمرتها للبائع إلا أن يشترط المبتاع"
     }
    ],
    "shards": [
@@ -1474,12 +1474,12 @@
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
-     "excerpt_ar": "من باع نخلا قد أبرت فثمرتها للبائع"
+     "excerpt_ar": "من باع نخلا قد أبرت فثمرتها للبائع إلا أن يشترط المبتاع"
     },
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
-     "excerpt_ar": "من ابتاع عبدا وله مال فماله للذي باعه"
+     "excerpt_ar": "من ابتاع عبدا وله مال فماله للذي باعه إلا أن يشترط المبتاع"
     }
    ],
    "shards": [
@@ -1859,7 +1859,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q004:092",
-     "excerpt_ar": "ودية مسلمة إلى أهله"
+     "excerpt_ar": "ودية مسلمة إلى أهله إلا أن يصدقوا"
     }
    ],
    "shards": [
@@ -1989,7 +1989,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q004:012",
-     "excerpt_ar": "ولهن الربع مما تركتم"
+     "excerpt_ar": "ولهن الربع مما تركتم إن لم يكن لكم ولد"
     }
    ],
    "shards": [
@@ -2883,7 +2883,7 @@
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
-     "excerpt_ar": "أمر الناس أن يكون آخر عهدهم بالبيت"
+     "excerpt_ar": "أمر الناس أن يكون آخر عهدهم بالبيت إلا أنه خفف عن الحائض"
     }
    ],
    "shards": [
@@ -3699,7 +3699,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q065:001",
-     "excerpt_ar": "لا تخرجوهن من بيوتهن ولا يخرجن"
+     "excerpt_ar": "لا تخرجوهن من بيوتهن ولا يخرجن إلا أن يأتين بفاحشة مبينة"
     },
     {
      "kind": "sunnah",
@@ -4062,7 +4062,7 @@
     {
      "kind": "ijma",
      "ref": "src:openiti-ibnqudama-mughni-shamela8463",
-     "excerpt_ar": "وأجمع أهل العلم في كل عصر وكل مصر على جواز الإجارة"
+     "excerpt_ar": "وأجمع أهل العلم في كل عصر وكل مصر على جواز الإجارة إلا ما يحكى عن عبد الرحمن بن الأصم"
     },
     {
      "kind": "quran",
@@ -5191,11 +5191,6 @@
      "kind": "ijma",
      "ref": "src:openiti-ibnqudama-mughni-shamela8463",
      "excerpt_ar": "أن العبد المرهون إذا جنى على إنسان أو على ماله تعلقت الجناية برقبته فكانت مقدمة على حق المرتهن لا نعلم في هذا خلافا"
-    },
-    {
-     "kind": "sunnah",
-     "ref": "src:openiti-tirmidhi-shamela7895",
-     "excerpt_ar": "لا يجني جان إلا على نفسه"
     }
    ],
    "shards": [
@@ -6110,7 +6105,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q004:023",
-     "excerpt_ar": "وأن تجمعوا بين الأختين"
+     "excerpt_ar": "وأن تجمعوا بين الأختين إلا ما قد سلف"
     },
     {
      "kind": "sunnah",
@@ -6155,11 +6150,6 @@
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q004:023",
      "excerpt_ar": "وأن تجمعوا بين الأختين إلا ما قد سلف"
-    },
-    {
-     "kind": "quran",
-     "ref": "src:tanzil-quran-simple#Q004:023",
-     "excerpt_ar": "وأن تجمعوا بين الأختين"
     }
    ],
    "shards": [
@@ -6178,7 +6168,7 @@
     {
      "kind": "sunnah",
      "ref": "src:openiti-tirmidhi-shamela7895",
-     "excerpt_ar": "إذا خطب إليكم من ترضون دينه وخلقه فزوجوه"
+     "excerpt_ar": "إذا خطب إليكم من ترضون دينه وخلقه فزوجوه إلا تفعلوا تكن فتنة في الأرض وفساد عريض"
     }
    ],
    "shards": [
@@ -6299,7 +6289,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q004:022",
-     "excerpt_ar": "ولا تنكحوا ما نكح آباؤكم من النساء"
+     "excerpt_ar": "ولا تنكحوا ما نكح آباؤكم من النساء إلا ما قد سلف"
     }
    ],
    "shards": [
@@ -6896,7 +6886,7 @@
     {
      "kind": "sunnah",
      "ref": "src:openiti-ibnmaja-shamela1198",
-     "excerpt_ar": "ما من مسلم يقرض مسلما قرضا مرتين"
+     "excerpt_ar": "ما من مسلم يقرض مسلما قرضا مرتين إلا كان كصدقتها مرة"
     }
    ],
    "shards": [
@@ -7250,7 +7240,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q002:237",
-     "excerpt_ar": "وقد فرضتم لهن فريضة فنصف ما فرضتم"
+     "excerpt_ar": "وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح"
     }
    ],
    "shards": [
@@ -7312,12 +7302,12 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q002:237",
-     "excerpt_ar": "من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم"
+     "excerpt_ar": "من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح"
     },
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q002:237",
-     "excerpt_ar": "وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم"
+     "excerpt_ar": "وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح"
     }
    ],
    "shards": [
@@ -7335,7 +7325,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q002:237",
-     "excerpt_ar": "وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم"
+     "excerpt_ar": "وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح"
     }
    ],
    "shards": [
@@ -8328,7 +8318,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q038:024",
-     "excerpt_ar": "وإن كثيرا من الخلطاء ليبغي بعضهم على بعض"
+     "excerpt_ar": "وإن كثيرا من الخلطاء ليبغي بعضهم على بعض إلا الذين آمنوا وعملوا الصالحات"
     },
     {
      "kind": "sunnah",
@@ -8351,7 +8341,7 @@
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q038:024",
-     "excerpt_ar": "وإن كثيرا من الخلطاء ليبغي بعضهم على بعض"
+     "excerpt_ar": "وإن كثيرا من الخلطاء ليبغي بعضهم على بعض إلا الذين آمنوا وعملوا الصالحات"
     },
     {
      "kind": "quran",
@@ -8404,7 +8394,7 @@
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
-     "excerpt_ar": "لم يرخص في أيام التشريق أن يصمن"
+     "excerpt_ar": "لم يرخص في أيام التشريق أن يصمن إلا لمن لم يجد الهدي"
     },
     {
      "kind": "sunnah",
@@ -10535,8 +10525,8 @@
    "nass": [
     {
      "kind": "sunnah",
-     "ref": "src:openiti-abudawud-shamela1726",
-     "excerpt_ar": "حتى يحول عليه الحول"
+     "ref": "src:openiti-ibnmaja-shamela1198",
+     "excerpt_ar": "لا زكاة في مال حتى يحول عليه الحول"
     },
     {
      "kind": "sunnah",

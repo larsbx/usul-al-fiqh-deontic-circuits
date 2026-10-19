@@ -12046,7 +12046,7 @@
   },
   "n0104": {
    "ref": "src:openiti-bukhari-shamela1681",
-   "excerpt_ar": "من ابتاع نخلا بعد أن تؤبر فثمرتها للبائع"
+   "excerpt_ar": "من ابتاع نخلا بعد أن تؤبر فثمرتها للبائع إلا أن يشترط المبتاع"
   },
   "n0105": {
    "ref": "src:openiti-abudawud-shamela1726",
@@ -12070,11 +12070,11 @@
   },
   "n0110": {
    "ref": "src:openiti-bukhari-shamela1681",
-   "excerpt_ar": "من باع نخلا قد أبرت فثمرتها للبائع"
+   "excerpt_ar": "من باع نخلا قد أبرت فثمرتها للبائع إلا أن يشترط المبتاع"
   },
   "n0111": {
    "ref": "src:openiti-bukhari-shamela1681",
-   "excerpt_ar": "من ابتاع عبدا وله مال فماله للذي باعه"
+   "excerpt_ar": "من ابتاع عبدا وله مال فماله للذي باعه إلا أن يشترط المبتاع"
   },
   "n0112": {
    "ref": "src:tanzil-quran-simple#Q012:020",
@@ -12170,7 +12170,7 @@
   },
   "n0135": {
    "ref": "src:tanzil-quran-simple#Q004:092",
-   "excerpt_ar": "ودية مسلمة إلى أهله"
+   "excerpt_ar": "ودية مسلمة إلى أهله إلا أن يصدقوا"
   },
   "n0136": {
    "ref": "src:openiti-nasai-shamela829",
@@ -12202,7 +12202,7 @@
   },
   "n0143": {
    "ref": "src:tanzil-quran-simple#Q004:012",
-   "excerpt_ar": "ولهن الربع مما تركتم"
+   "excerpt_ar": "ولهن الربع مما تركتم إن لم يكن لكم ولد"
   },
   "n0144": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -12426,7 +12426,7 @@
   },
   "n0199": {
    "ref": "src:openiti-bukhari-shamela1681",
-   "excerpt_ar": "أمر الناس أن يكون آخر عهدهم بالبيت"
+   "excerpt_ar": "أمر الناس أن يكون آخر عهدهم بالبيت إلا أنه خفف عن الحائض"
   },
   "n0200": {
    "ref": "src:tanzil-quran-simple#Q016:075",
@@ -12646,7 +12646,7 @@
   },
   "n0254": {
    "ref": "src:tanzil-quran-simple#Q065:001",
-   "excerpt_ar": "لا تخرجوهن من بيوتهن ولا يخرجن"
+   "excerpt_ar": "لا تخرجوهن من بيوتهن ولا يخرجن إلا أن يأتين بفاحشة مبينة"
   },
   "n0255": {
    "ref": "src:openiti-abudawud-shamela1726",
@@ -12738,7 +12738,7 @@
   },
   "n0277": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
-   "excerpt_ar": "وأجمع أهل العلم في كل عصر وكل مصر على جواز الإجارة"
+   "excerpt_ar": "وأجمع أهل العلم في كل عصر وكل مصر على جواز الإجارة إلا ما يحكى عن عبد الرحمن بن الأصم"
   },
   "n0278": {
    "ref": "src:tanzil-quran-simple#Q028:026",
@@ -13049,1494 +13049,1486 @@
    "excerpt_ar": "أن العبد المرهون إذا جنى على إنسان أو على ماله تعلقت الجناية برقبته فكانت مقدمة على حق المرتهن لا نعلم في هذا خلافا"
   },
   "n0355": {
-   "ref": "src:openiti-tirmidhi-shamela7895",
-   "excerpt_ar": "لا يجني جان إلا على نفسه"
-  },
-  "n0356": {
    "ref": "src:tanzil-quran-simple#Q002:178",
    "excerpt_ar": "فمن عفي له من أخيه شيء فاتباع بالمعروف"
   },
-  "n0357": {
+  "n0356": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من قتل دون ماله فهو شهيد"
   },
-  "n0358": {
+  "n0357": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "والبئر جبار"
   },
-  "n0359": {
+  "n0358": {
    "ref": "src:tanzil-quran-simple#Q017:033",
    "excerpt_ar": "فقد جعلنا لوليه سلطانا فلا يسرف في القتل"
   },
-  "n0360": {
+  "n0359": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أن غلاما لأناس فقراء قطع أذن غلام لأناس أغنياء"
   },
-  "n0361": {
+  "n0360": {
    "ref": "src:tanzil-quran-simple#Q005:045",
    "excerpt_ar": "والجروح قصاص"
   },
-  "n0362": {
+  "n0361": {
    "ref": "src:tanzil-quran-simple#Q004:092",
    "excerpt_ar": "ومن قتل مؤمنا خطأ فتحرير رقبة مؤمنة"
   },
-  "n0363": {
+  "n0362": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من قتل له قتيل فهو بخير النظرين"
   },
-  "n0364": {
+  "n0363": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يقتل مسلم بكافر"
   },
-  "n0365": {
+  "n0364": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أقر القسامة على ما كانت عليه في الجاهلية"
   },
-  "n0366": {
+  "n0365": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أتحلفون خمسين يمينا فتستحقون صاحبكم أو قاتلكم"
   },
-  "n0367": {
+  "n0366": {
    "ref": "src:tanzil-quran-simple#Q002:178",
    "excerpt_ar": "كتب عليكم القصاص في القتلى الحر بالحر والعبد بالعبد"
   },
-  "n0368": {
+  "n0367": {
    "ref": "src:tanzil-quran-simple#Q004:093",
    "excerpt_ar": "ومن يقتل مؤمنا متعمدا فجزاؤه جهنم"
   },
-  "n0369": {
+  "n0368": {
    "ref": "src:tanzil-quran-simple#Q004:029",
    "excerpt_ar": "ولا تقتلوا أنفسكم"
   },
-  "n0370": {
+  "n0369": {
    "ref": "src:tanzil-quran-simple#Q002:178",
    "excerpt_ar": "كتب عليكم القصاص في القتلى"
   },
-  "n0371": {
+  "n0370": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فهو بخير النظرين"
   },
-  "n0372": {
+  "n0371": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "لا يقاد الوالد بالولد"
   },
-  "n0373": {
+  "n0372": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "رفع القلم عن ثلاثة"
   },
-  "n0374": {
+  "n0373": {
    "ref": "src:tanzil-quran-simple#Q002:229",
    "excerpt_ar": "فلا جناح عليهما فيما افتدت به"
   },
-  "n0375": {
+  "n0374": {
    "ref": "src:tanzil-quran-simple#Q002:229",
    "excerpt_ar": "فيما افتدت به"
   },
-  "n0376": {
+  "n0375": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أتردين عليه حديقته"
   },
-  "n0377": {
+  "n0376": {
    "ref": "src:tanzil-quran-simple#Q024:006",
    "excerpt_ar": "والذين يرمون أزواجهم ولم يكن لهم شهداء إلا أنفسهم"
   },
-  "n0378": {
+  "n0377": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الولد للفراش وللعاهر الحجر"
   },
-  "n0379": {
+  "n0378": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن هذه الأقدام بعضها من بعض"
   },
-  "n0380": {
+  "n0379": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ضالة الإبل المكتومة غرامتها ومثلها معها"
   },
-  "n0381": {
+  "n0380": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "أجمع كل من نحفظ عنه من أهل العلم، على أن نفقة اللقيط غير واجبة على الملتقط"
   },
-  "n0382": {
+  "n0381": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وجدت منبوذا فلما رآني عمر"
   },
-  "n0383": {
+  "n0382": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "المرأة تحرز ثلاثة مواريث عتيقها ولقيطها"
   },
-  "n0384": {
+  "n0383": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اعرف عفاصها ووكاءها ثم عرفها سنة"
   },
-  "n0385": {
+  "n0384": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اعرف عفاصها ووكاءها"
   },
-  "n0386": {
+  "n0385": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإن جاء أحد يخبرك بعفاصها"
   },
-  "n0387": {
+  "n0386": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإن جاء صاحبها وإلا فشأنك بها"
   },
-  "n0388": {
+  "n0387": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "عامل النبي صلى الله عليه وسلم خيبر بشطر ما يخرج منها"
   },
-  "n0389": {
+  "n0388": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "عامل أهل خيبر بشطر ما يخرج منها من ثمر أو زرع"
   },
-  "n0390": {
+  "n0389": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "عامل أهل خيبر بشطر ما يخرج منها"
   },
-  "n0391": {
+  "n0390": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "عامل خيبر بشطر ما يخرج منها من ثمر أو زرع"
   },
-  "n0392": {
+  "n0391": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني"
   },
-  "n0393": {
+  "n0392": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أنت أحق به ما لم تنكحي"
   },
-  "n0394": {
+  "n0393": {
    "ref": "src:tanzil-quran-simple#Q065:007",
    "excerpt_ar": "لينفق ذو سعة من سعته"
   },
-  "n0395": {
+  "n0394": {
    "ref": "src:tanzil-quran-simple#Q002:233",
    "excerpt_ar": "وعلى الوارث مثل ذلك"
   },
-  "n0396": {
+  "n0395": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "عذبت امرأة في هرة"
   },
-  "n0397": {
+  "n0396": {
    "ref": "src:tanzil-quran-simple#Q065:006",
    "excerpt_ar": "وإن كن أولات حمل فأنفقوا عليهن حتى يضعن حملهن"
   },
-  "n0398": {
+  "n0397": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "خير غلاما بين أبيه وأمه"
   },
-  "n0399": {
+  "n0398": {
    "ref": "src:tanzil-quran-simple#Q004:003",
    "excerpt_ar": "مثنى وثلاث ورباع"
   },
-  "n0400": {
+  "n0399": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "أسلم وله عشر نسوة"
   },
-  "n0401": {
+  "n0400": {
    "ref": "src:tanzil-quran-simple#Q004:003",
    "excerpt_ar": "فانكحوا ما طاب لكم من النساء مثنى وثلاث ورباع"
   },
-  "n0402": {
+  "n0401": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "اختر منهن أربعا"
   },
-  "n0403": {
+  "n0402": {
    "ref": "src:tanzil-quran-simple#Q004:024",
    "excerpt_ar": "والمحصنات من النساء إلا ما ملكت أيمانكم"
   },
-  "n0404": {
+  "n0403": {
    "ref": "src:tanzil-quran-simple#Q060:010",
    "excerpt_ar": "وآتوهم ما أنفقوا"
   },
-  "n0405": {
+  "n0404": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "والبكر تستأذن في نفسها وإذنها صماتها"
   },
-  "n0406": {
+  "n0405": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تنكح الأيم حتى تستأمر ولا تنكح البكر حتى تستأذن"
   },
-  "n0407": {
+  "n0406": {
    "ref": "src:tanzil-quran-simple#Q060:010",
    "excerpt_ar": "لا هن حل لهم ولا هم يحلون لهن"
   },
-  "n0408": {
+  "n0407": {
    "ref": "src:tanzil-quran-simple#Q060:010",
    "excerpt_ar": "ولا تمسكوا بعصم الكوافر"
   },
-  "n0409": {
+  "n0408": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "أسلم وله عشر نسوة في الجاهلية فأسلمن معه"
   },
-  "n0410": {
+  "n0409": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "رد ابنته زينب على أبي العاص"
   },
-  "n0411": {
+  "n0410": {
    "ref": "src:tanzil-quran-simple#Q023:007",
    "excerpt_ar": "فمن ابتغى وراء ذلك فأولئك هم العادون"
   },
-  "n0412": {
-   "ref": "src:tanzil-quran-simple#Q004:023",
-   "excerpt_ar": "وأن تجمعوا بين الأختين"
-  },
-  "n0413": {
-   "ref": "src:openiti-bukhari-shamela1681",
-   "excerpt_ar": "لا يجمع بين المرأة وعمتها ولا بين المرأة وخالتها"
-  },
-  "n0414": {
-   "ref": "src:openiti-abudawud-shamela1726",
-   "excerpt_ar": "أسلمت وعندي ثمان نسوة"
-  },
-  "n0415": {
+  "n0411": {
    "ref": "src:tanzil-quran-simple#Q004:023",
    "excerpt_ar": "وأن تجمعوا بين الأختين إلا ما قد سلف"
   },
-  "n0416": {
-   "ref": "src:openiti-tirmidhi-shamela7895",
-   "excerpt_ar": "إذا خطب إليكم من ترضون دينه وخلقه فزوجوه"
+  "n0412": {
+   "ref": "src:openiti-bukhari-shamela1681",
+   "excerpt_ar": "لا يجمع بين المرأة وعمتها ولا بين المرأة وخالتها"
   },
-  "n0417": {
+  "n0413": {
+   "ref": "src:openiti-abudawud-shamela1726",
+   "excerpt_ar": "أسلمت وعندي ثمان نسوة"
+  },
+  "n0414": {
+   "ref": "src:openiti-tirmidhi-shamela7895",
+   "excerpt_ar": "إذا خطب إليكم من ترضون دينه وخلقه فزوجوه إلا تفعلوا تكن فتنة في الأرض وفساد عريض"
+  },
+  "n0415": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فخيرها رسول الله صلى الله عليه وسلم فاختارت نفسها"
   },
-  "n0418": {
+  "n0416": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كان زوجها عبدا فخيرها رسول الله صلى الله عليه وسلم فاختارت نفسها"
   },
-  "n0419": {
+  "n0417": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان في بريرة ثلاث سنن عتقت فخيرت"
   },
-  "n0420": {
+  "n0418": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كان زوجها عبدا فخيرها رسول الله صلى الله عليه وسلم"
   },
-  "n0421": {
+  "n0419": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "وكذلك لو ملكت المرأة زوجها انفسخ نكاحها ولا نعلم في هذا خلافا"
   },
-  "n0422": {
+  "n0420": {
    "ref": "src:tanzil-quran-simple#Q060:010",
    "excerpt_ar": "إذا جاءكم المؤمنات مهاجرات فامتحنوهن"
   },
-  "n0423": {
+  "n0421": {
    "ref": "src:tanzil-quran-simple#Q004:023",
    "excerpt_ar": "حرمت عليكم أمهاتكم وبناتكم وأخواتكم"
   },
-  "n0424": {
+  "n0422": {
    "ref": "src:tanzil-quran-simple#Q004:023",
    "excerpt_ar": "حرمت عليكم أمهاتكم"
   },
-  "n0425": {
+  "n0423": {
    "ref": "src:tanzil-quran-simple#Q004:024",
    "excerpt_ar": "وأحل لكم ما وراء ذلكم"
   },
-  "n0426": {
+  "n0424": {
    "ref": "src:tanzil-quran-simple#Q004:023",
    "excerpt_ar": "وأمهات نسائكم وربائبكم"
   },
-  "n0427": {
+  "n0425": {
    "ref": "src:tanzil-quran-simple#Q004:022",
-   "excerpt_ar": "ولا تنكحوا ما نكح آباؤكم من النساء"
+   "excerpt_ar": "ولا تنكحوا ما نكح آباؤكم من النساء إلا ما قد سلف"
   },
-  "n0428": {
+  "n0426": {
    "ref": "src:tanzil-quran-simple#Q004:023",
    "excerpt_ar": "حرمت عليكم أمهاتكم وبناتكم وأخواتكم وعماتكم وخالاتكم"
   },
-  "n0429": {
+  "n0427": {
    "ref": "src:tanzil-quran-simple#Q004:003",
    "excerpt_ar": "فانكحوا ما طاب لكم من النساء"
   },
-  "n0430": {
+  "n0428": {
    "ref": "src:tanzil-quran-simple#Q004:025",
    "excerpt_ar": "ومن لم يستطع منكم طولا أن ينكح المحصنات"
   },
-  "n0431": {
+  "n0429": {
    "ref": "src:tanzil-quran-simple#Q004:025",
    "excerpt_ar": "ذلك لمن خشي العنت منكم"
   },
-  "n0432": {
+  "n0430": {
    "ref": "src:tanzil-quran-simple#Q004:025",
    "excerpt_ar": "ومن لم يستطع منكم طولا أن ينكح المحصنات المؤمنات فمن ما ملكت أيمانكم"
   },
-  "n0433": {
+  "n0431": {
    "ref": "src:tanzil-quran-simple#Q004:025",
    "excerpt_ar": "ومن لم يستطع منكم طولا أن ينكح المحصنات المؤمنات"
   },
-  "n0434": {
+  "n0432": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "فإن دخل بها فلها المهر بما استحل من فرجها"
   },
-  "n0435": {
+  "n0433": {
    "ref": "src:tanzil-quran-simple#Q002:235",
    "excerpt_ar": "ولا تعزموا عقدة النكاح حتى يبلغ الكتاب أجله"
   },
-  "n0436": {
+  "n0434": {
    "ref": "src:tanzil-quran-simple#Q004:129",
    "excerpt_ar": "ولن تستطيعوا أن تعدلوا بين النساء"
   },
-  "n0437": {
+  "n0435": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا أراد سفرا أقرع بين نسائه"
   },
-  "n0438": {
+  "n0436": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا تزوج البكر أقام عندها سبعا"
   },
-  "n0439": {
+  "n0437": {
    "ref": "src:tanzil-quran-simple#Q033:037",
    "excerpt_ar": "فلما قضى زيد منها وطرا زوجناكها"
   },
-  "n0440": {
+  "n0438": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أيما امرأة زوجها وليان فهي للأول منهما"
   },
-  "n0441": {
+  "n0439": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما معه مثل هدبة الثوب"
   },
-  "n0442": {
+  "n0440": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا نكاح إلا بولي"
   },
-  "n0443": {
+  "n0441": {
    "ref": "src:tanzil-quran-simple#Q002:232",
    "excerpt_ar": "فلا تعضلوهن أن ينكحن أزواجهن"
   },
-  "n0444": {
+  "n0442": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا دعي أحدكم إلى الوليمة فليأتها"
   },
-  "n0445": {
+  "n0443": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا اجتمع الداعيان فأجب أقربهما بابا"
   },
-  "n0446": {
+  "n0444": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "الثيب أحق بنفسها من وليها"
   },
-  "n0447": {
+  "n0445": {
    "ref": "src:tanzil-quran-simple#Q076:007",
    "excerpt_ar": "يوفون بالنذر"
   },
-  "n0448": {
+  "n0446": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من نذر أن يطيع الله فليطعه"
   },
-  "n0449": {
+  "n0447": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن أمي ماتت وعليها نذر"
   },
-  "n0450": {
+  "n0448": {
    "ref": "src:tanzil-quran-simple#Q009:075",
    "excerpt_ar": "ومنهم من عاهد الله لئن آتانا من فضله لنصدقن"
   },
-  "n0451": {
+  "n0449": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أمسك عليك بعض مالك فهو خير لك"
   },
-  "n0452": {
+  "n0450": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا حكم الحاكم فاجتهد ثم أصاب فله أجران وإذا حكم فاجتهد ثم أخطأ فله أجر"
   },
-  "n0453": {
+  "n0451": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما أنا بشر وإنكم تختصمون إلي"
   },
-  "n0454": {
+  "n0452": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا حكم الحاكم فاجتهد ثم أصاب فله أجران"
   },
-  "n0455": {
+  "n0453": {
    "ref": "src:tanzil-quran-simple#Q004:059",
    "excerpt_ar": "أطيعوا الله وأطيعوا الرسول وأولي الأمر منكم"
   },
-  "n0456": {
+  "n0454": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا بويع لخليفتين فاقتلوا الآخر منهما"
   },
-  "n0457": {
+  "n0455": {
    "ref": "src:tanzil-quran-simple#Q027:029",
    "excerpt_ar": "إني ألقي إلي كتاب كريم"
   },
-  "n0458": {
+  "n0456": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "الأصل في كتاب القاضي إلى القاضي والأمير إلى الأمير الكتاب والسنة والإجماع"
   },
-  "n0459": {
+  "n0457": {
    "ref": "src:tanzil-quran-simple#Q026:155",
    "excerpt_ar": "لها شرب ولكم شرب يوم معلوم"
   },
-  "n0460": {
+  "n0458": {
    "ref": "src:tanzil-quran-simple#Q038:026",
    "excerpt_ar": "فاحكم بين الناس بالحق"
   },
-  "n0461": {
+  "n0459": {
    "ref": "src:tanzil-quran-simple#Q038:026",
    "excerpt_ar": "يا داوود إنا جعلناك خليفة في الأرض فاحكم بين الناس بالحق"
   },
-  "n0462": {
+  "n0460": {
    "ref": "src:tanzil-quran-simple#Q004:058",
    "excerpt_ar": "وإذا حكمتم بين الناس أن تحكموا بالعدل"
   },
-  "n0463": {
+  "n0461": {
    "ref": "src:tanzil-quran-simple#Q004:008",
    "excerpt_ar": "وإذا حضر القسمة أولو القربى"
   },
-  "n0464": {
+  "n0462": {
    "ref": "src:tanzil-quran-simple#Q054:028",
    "excerpt_ar": "ونبئهم أن الماء قسمة بينهم"
   },
-  "n0465": {
+  "n0463": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "إذا أقرض أحدكم قرضا فأهدى له"
   },
-  "n0466": {
+  "n0464": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "أجمعوا على أن المسلف إذا شرط على المستسلف زيادة أو هدية، فأسلف على ذلك، أن أخذ الزيادة على ذلك ربا"
   },
-  "n0467": {
+  "n0465": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أن رسول الله صلى الله عليه وسلم استسلف من رجل بكرا"
   },
-  "n0468": {
+  "n0466": {
    "ref": "src:openiti-ibnmaja-shamela1198",
-   "excerpt_ar": "ما من مسلم يقرض مسلما قرضا مرتين"
+   "excerpt_ar": "ما من مسلم يقرض مسلما قرضا مرتين إلا كان كصدقتها مرة"
   },
-  "n0469": {
+  "n0467": {
    "ref": "src:tanzil-quran-simple#Q004:023",
    "excerpt_ar": "وأمهاتكم اللاتي أرضعنكم"
   },
-  "n0470": {
+  "n0468": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا تحرم المصة والمصتان"
   },
-  "n0471": {
+  "n0469": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "يحرم من الرضاع ما يحرم من النسب"
   },
-  "n0472": {
+  "n0470": {
    "ref": "src:tanzil-quran-simple#Q004:023",
    "excerpt_ar": "وأمهاتكم اللاتي أرضعنكم وأخواتكم من الرضاعة"
   },
-  "n0473": {
+  "n0471": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كيف وقد قيل"
   },
-  "n0474": {
+  "n0472": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "عليه وسلم قال لا يغلق الرهن"
   },
-  "n0475": {
+  "n0473": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الرهن يركب بنفقته إذا كان مرهونا"
   },
-  "n0476": {
+  "n0474": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اشترى طعاما من يهودي إلى أجل ورهنه درعا من حديد"
   },
-  "n0477": {
+  "n0475": {
    "ref": "src:tanzil-quran-simple#Q002:228",
    "excerpt_ar": "وبعولتهن أحق بردهن في ذلك"
   },
-  "n0478": {
+  "n0476": {
    "ref": "src:tanzil-quran-simple#Q002:228",
    "excerpt_ar": "وبعولتهن أحق بردهن في ذلك إن أرادوا إصلاحا"
   },
-  "n0479": {
+  "n0477": {
    "ref": "src:tanzil-quran-simple#Q065:002",
    "excerpt_ar": "وأشهدوا ذوي عدل منكم"
   },
-  "n0480": {
+  "n0478": {
    "ref": "src:tanzil-quran-simple#Q065:002",
    "excerpt_ar": "فأمسكوهن بمعروف أو فارقوهن بمعروف وأشهدوا ذوي عدل منكم"
   },
-  "n0481": {
+  "n0479": {
    "ref": "src:tanzil-quran-simple#Q065:001",
    "excerpt_ar": "لا تدري لعل الله يحدث بعد ذلك أمرا"
   },
-  "n0482": {
+  "n0480": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا تباع حتى تفصل"
   },
-  "n0483": {
+  "n0481": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الذهب بالذهب ربا إلا هاء وهاء"
   },
-  "n0484": {
+  "n0482": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "الذهب بالذهب والفضة بالفضة"
   },
-  "n0485": {
+  "n0483": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أيما امرأة نكحت على صداق أو حباء أو عدة قبل عصمة النكاح فهو لها"
   },
-  "n0486": {
+  "n0484": {
    "ref": "src:tanzil-quran-simple#Q004:004",
    "excerpt_ar": "فإن طبن لكم عن شيء منه نفسا فكلوه"
   },
-  "n0487": {
+  "n0485": {
    "ref": "src:tanzil-quran-simple#Q004:021",
    "excerpt_ar": "وكيف تأخذونه وقد أفضى بعضكم إلى بعض"
   },
-  "n0488": {
+  "n0486": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أعتق صفية وجعل عتقها صداقها"
   },
-  "n0489": {
+  "n0487": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "ولنا إجماع الصحابة، روى الإمام أحمد، الأثرم، بإسنادهما عن زرارة بن أوفى، قال: قضى الخلفاء الراشدون أن من أرخى سترا، أو أغلق بابا، فقد وجب المهر"
   },
-  "n0490": {
+  "n0488": {
    "ref": "src:tanzil-quran-simple#Q002:237",
-   "excerpt_ar": "وقد فرضتم لهن فريضة فنصف ما فرضتم"
+   "excerpt_ar": "وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح"
   },
-  "n0491": {
+  "n0489": {
    "ref": "src:tanzil-quran-simple#Q004:004",
    "excerpt_ar": "وآتوا النساء صدقاتهن نحلة"
   },
-  "n0492": {
+  "n0490": {
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "بمثل صداق نسائها ولها الميراث وعليها العدة"
   },
-  "n0493": {
+  "n0491": {
    "ref": "src:tanzil-quran-simple#Q028:027",
    "excerpt_ar": "على أن تأجرني ثماني حجج"
   },
-  "n0494": {
+  "n0492": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "زوجتكها بما معك من القرآن"
   },
+  "n0493": {
+   "ref": "src:tanzil-quran-simple#Q002:237",
+   "excerpt_ar": "من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح"
+  },
+  "n0494": {
+   "ref": "src:tanzil-quran-simple#Q002:237",
+   "excerpt_ar": "وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح"
+  },
   "n0495": {
-   "ref": "src:tanzil-quran-simple#Q002:237",
-   "excerpt_ar": "من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم"
-  },
-  "n0496": {
-   "ref": "src:tanzil-quran-simple#Q002:237",
-   "excerpt_ar": "وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم"
-  },
-  "n0497": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أسلف في شيء ففي كيل معلوم ووزن معلوم إلى أجل معلوم"
   },
-  "n0498": {
+  "n0496": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من أسلف في شيء فلا يصرفه إلى غيره"
   },
-  "n0499": {
+  "n0497": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لو يعلم الناس ما في النداء والصف الأول ثم لم يجدوا إلا أن يستهموا عليه لاستهموا"
   },
-  "n0500": {
+  "n0498": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "اجعلوها في ركوعكم"
   },
-  "n0501": {
+  "n0499": {
    "ref": "src:tanzil-quran-simple#Q056:074",
    "excerpt_ar": "فسبح باسم ربك العظيم"
   },
-  "n0502": {
+  "n0500": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا صلاة بعد الصبح حتى ترتفع الشمس"
   },
-  "n0503": {
+  "n0501": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا صلاة لمن لم يقرأ بفاتحة الكتاب"
   },
-  "n0504": {
+  "n0502": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ومن أدرك الركعة فقد أدرك الصلاة"
   },
-  "n0505": {
+  "n0503": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا سمعتم النداء فقولوا مثل ما يقول المؤذن"
   },
-  "n0506": {
+  "n0504": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أتاني فأخبرني أن فيهما قذرا"
   },
-  "n0507": {
+  "n0505": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "يؤم القوم أقرؤهم لكتاب الله"
   },
-  "n0508": {
+  "n0506": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "سبحانك اللهم وبحمدك تبارك اسمك"
   },
-  "n0509": {
+  "n0507": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "بين الظهر والعصر والمغرب والعشاء بالمدينة في غير خوف ولا مطر"
   },
-  "n0510": {
+  "n0508": {
    "ref": "src:tanzil-quran-simple#Q062:009",
    "excerpt_ar": "إذا نودي للصلاة من يوم الجمعة فاسعوا إلى ذكر الله"
   },
-  "n0511": {
+  "n0509": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "الجمعة حق واجب على كل مسلم في جماعة إلا أربعة"
   },
-  "n0512": {
+  "n0510": {
    "ref": "src:tanzil-quran-simple#Q062:009",
    "excerpt_ar": "إذا نودي للصلاة من يوم الجمعة"
   },
-  "n0513": {
+  "n0511": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا قلت لصاحبك يوم الجمعة أنصت والإمام يخطب فقد لغوت"
   },
-  "n0514": {
+  "n0512": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان النبي صلى الله عليه وسلم يخطب قائما"
   },
-  "n0515": {
+  "n0513": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تلبسوا الحرير"
   },
-  "n0516": {
+  "n0514": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى عن خاتم الذهب"
   },
-  "n0517": {
+  "n0515": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يقيم الرجل الرجل من مجلسه ثم يجلس فيه"
   },
-  "n0518": {
+  "n0516": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "من قام من مجلسه ثم رجع إليه فهو أحق به"
   },
-  "n0519": {
+  "n0517": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "الأرض كلها مسجد إلا المقبرة والحمام"
   },
-  "n0520": {
+  "n0518": {
    "ref": "src:tanzil-quran-simple#Q024:036",
    "excerpt_ar": "في بيوت أذن الله أن ترفع ويذكر فيها اسمه"
   },
-  "n0521": {
+  "n0519": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "الأرض كلها مسجد إلا المقبرة والحمام"
   },
-  "n0522": {
+  "n0520": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من نسي صلاة فليصل إذا ذكرها"
   },
-  "n0523": {
+  "n0521": {
    "ref": "src:tanzil-quran-simple#Q004:101",
    "excerpt_ar": "فليس عليكم جناح أن تقصروا من الصلاة"
   },
-  "n0524": {
+  "n0522": {
    "ref": "src:tanzil-quran-simple#Q002:144",
    "excerpt_ar": "فول وجهك شطر المسجد الحرام"
   },
-  "n0525": {
+  "n0523": {
    "ref": "src:tanzil-quran-simple#Q073:004",
    "excerpt_ar": "ورتل القرآن ترتيلا"
   },
-  "n0526": {
+  "n0524": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "من قرأ حرفا من كتاب الله فله به حسنة"
   },
-  "n0527": {
+  "n0525": {
    "ref": "src:tanzil-quran-simple#Q002:238",
    "excerpt_ar": "وقوموا لله قانتين"
   },
-  "n0528": {
+  "n0526": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صل قائما فإن لم تستطع فقاعدا"
   },
-  "n0529": {
+  "n0527": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أقصرت الصلاة أم نسيت"
   },
-  "n0530": {
+  "n0528": {
    "ref": "src:tanzil-quran-simple#Q033:056",
    "excerpt_ar": "صلوا عليه وسلموا تسليما"
   },
-  "n0531": {
+  "n0529": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كما صليت على آل إبراهيم"
   },
-  "n0532": {
+  "n0530": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "قد اجتمع في يومكم هذا عيدان"
   },
-  "n0533": {
+  "n0531": {
    "ref": "src:tanzil-quran-simple#Q004:101",
    "excerpt_ar": "وإذا ضربتم في الأرض فليس عليكم جناح أن تقصروا من الصلاة"
   },
-  "n0534": {
+  "n0532": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "مروا أولادكم بالصلاة وهم أبناء سبع سنين"
   },
-  "n0535": {
+  "n0533": {
    "ref": "src:tanzil-quran-simple#Q007:031",
    "excerpt_ar": "خذوا زينتكم عند كل مسجد"
   },
-  "n0536": {
+  "n0534": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا يقبل الله صلاة حائض إلا بخمار"
   },
-  "n0537": {
+  "n0535": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا شك أحدكم في صلاته فلم يدر كم صلى ثلاثا أم أربعا"
   },
-  "n0538": {
+  "n0536": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أمرت أن أسجد على سبعة أعظم"
   },
-  "n0539": {
+  "n0537": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فليتحر الصواب فليتم عليه ثم ليسلم ثم يسجد سجدتين"
   },
-  "n0540": {
+  "n0538": {
    "ref": "src:tanzil-quran-simple#Q084:021",
    "excerpt_ar": "وإذا قرئ عليهم القرآن لا يسجدون"
   },
-  "n0541": {
+  "n0539": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا صلى أحدكم الجمعة فليصل بعدها أربعا"
   },
-  "n0542": {
+  "n0540": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا دخل أحدكم المسجد فليركع ركعتين قبل أن يجلس"
   },
-  "n0543": {
+  "n0541": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "تحريمها التكبير وتحليلها التسليم"
   },
-  "n0544": {
+  "n0542": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ثم يكبر حين يركع"
   },
-  "n0545": {
+  "n0543": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من قام رمضان إيمانا واحتسابا"
   },
-  "n0546": {
+  "n0544": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "وتحليلها التسليم"
   },
-  "n0547": {
+  "n0545": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا أقيمت الصلاة فلا صلاة إلا المكتوبة"
   },
-  "n0548": {
+  "n0546": {
    "ref": "src:tanzil-quran-simple#Q017:079",
    "excerpt_ar": "ومن الليل فتهجد به نافلة لك"
   },
-  "n0549": {
+  "n0547": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أفضل الصلاة طول القنوت"
   },
-  "n0550": {
+  "n0548": {
    "ref": "src:tanzil-quran-simple#Q004:103",
    "excerpt_ar": "إن الصلاة كانت على المؤمنين كتابا موقوتا"
   },
-  "n0551": {
+  "n0549": {
    "ref": "src:tanzil-quran-simple#Q049:006",
    "excerpt_ar": "إن جاءكم فاسق بنبإ فتبينوا"
   },
-  "n0552": {
+  "n0550": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لو علمت أنكما تعمدتما لقطعتكما"
   },
-  "n0553": {
+  "n0551": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فأبطل شهادتهما وأخذا بدية الأول"
   },
-  "n0554": {
+  "n0552": {
    "ref": "src:tanzil-quran-simple#Q022:030",
    "excerpt_ar": "واجتنبوا قول الزور"
   },
-  "n0555": {
+  "n0553": {
    "ref": "src:tanzil-quran-simple#Q002:282",
    "excerpt_ar": "واستشهدوا شهيدين من رجالكم"
   },
-  "n0556": {
+  "n0554": {
    "ref": "src:tanzil-quran-simple#Q002:282",
    "excerpt_ar": "فرجل وامرأتان ممن ترضون من الشهداء"
   },
-  "n0557": {
+  "n0555": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أليس شهادة المرأة مثل نصف شهادة الرجل"
   },
-  "n0558": {
+  "n0556": {
    "ref": "src:tanzil-quran-simple#Q002:282",
    "excerpt_ar": "فإن لم يكونا رجلين فرجل وامرأتان"
   },
-  "n0559": {
+  "n0557": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ولا ظنين في ولاء ولا قرابة"
   },
-  "n0560": {
+  "n0558": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "وأجمع أهل العلم على جواز المضاربة في الجملة"
   },
-  "n0561": {
+  "n0559": {
    "ref": "src:tanzil-quran-simple#Q038:024",
-   "excerpt_ar": "وإن كثيرا من الخلطاء ليبغي بعضهم على بعض"
+   "excerpt_ar": "وإن كثيرا من الخلطاء ليبغي بعضهم على بعض إلا الذين آمنوا وعملوا الصالحات"
   },
-  "n0562": {
+  "n0560": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أنا ثالث الشريكين ما لم يخن أحدهما صاحبه"
   },
-  "n0563": {
+  "n0561": {
    "ref": "src:tanzil-quran-simple#Q004:012",
    "excerpt_ar": "فهم شركاء في الثلث"
   },
-  "n0564": {
+  "n0562": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "قضى النبي صلى الله عليه وسلم بالشفعة في كل ما لم يقسم"
   },
-  "n0565": {
+  "n0563": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "قضى رسول الله صلى الله عليه وسلم بالشفعة في كل ما لم يقسم"
   },
-  "n0566": {
+  "n0564": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "بالشفعة في كل ما لم يقسم"
   },
-  "n0567": {
+  "n0565": {
    "ref": "src:openiti-bukhari-shamela1681",
-   "excerpt_ar": "لم يرخص في أيام التشريق أن يصمن"
+   "excerpt_ar": "لم يرخص في أيام التشريق أن يصمن إلا لمن لم يجد الهدي"
   },
-  "n0568": {
+  "n0566": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أيام التشريق أيام أكل وشرب"
   },
-  "n0569": {
+  "n0567": {
    "ref": "src:tanzil-quran-simple#Q002:184",
    "excerpt_ar": "وعلى الذين يطيقونه فدية طعام مسكين"
   },
-  "n0570": {
+  "n0568": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "وعن الحامل أو المرضع الصوم"
   },
-  "n0571": {
+  "n0569": {
    "ref": "src:tanzil-quran-simple#Q002:184",
    "excerpt_ar": "فمن كان منكم مريضا أو على سفر فعدة من أيام أخر"
   },
-  "n0572": {
+  "n0570": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وقعت على امرأتي وأنا صائم"
   },
-  "n0573": {
+  "n0571": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ثم قال أطعمه أهلك"
   },
-  "n0574": {
+  "n0572": {
    "ref": "src:tanzil-quran-simple#Q097:001",
    "excerpt_ar": "إنا أنزلناه في ليلة القدر"
   },
-  "n0575": {
+  "n0573": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صوموا لرؤيته وأفطروا لرؤيته"
   },
-  "n0576": {
+  "n0574": {
    "ref": "src:tanzil-quran-simple#Q002:185",
    "excerpt_ar": "فمن شهد منكم الشهر فليصمه"
   },
-  "n0577": {
+  "n0575": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أني رأيته فصامه وأمر الناس بصيامه"
   },
-  "n0578": {
+  "n0576": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا صام من صام الأبد"
   },
-  "n0579": {
+  "n0577": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى النبي صلى الله عليه وسلم عن صوم يوم الفطر والنحر"
   },
-  "n0580": {
+  "n0578": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ليس من البر الصوم في السفر"
   },
-  "n0581": {
+  "n0579": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فإني إذن صائم"
   },
-  "n0582": {
+  "n0580": {
    "ref": "src:tanzil-quran-simple#Q002:187",
    "excerpt_ar": "حتى يتبين لكم الخيط الأبيض من الخيط الأسود من الفجر"
   },
-  "n0583": {
+  "n0581": {
    "ref": "src:tanzil-quran-simple#Q002:187",
    "excerpt_ar": "ثم أتموا الصيام إلى الليل"
   },
-  "n0584": {
+  "n0582": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا أقبل الليل من ها هنا"
   },
-  "n0585": {
+  "n0583": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا أقبل الليل من ها هنا وأدبر النهار من ها هنا"
   },
-  "n0586": {
+  "n0584": {
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "من صام اليوم الذي يشك فيه فقد عصى أبا القاسم"
   },
-  "n0587": {
+  "n0585": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فاقتسما وتوخيا الحق ثم استهما ثم تحالا"
   },
-  "n0588": {
+  "n0586": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يمنع جار جاره أن يغرز خشبه في جداره"
   },
-  "n0589": {
+  "n0587": {
    "ref": "src:tanzil-quran-simple#Q004:128",
    "excerpt_ar": "والصلح خير"
   },
-  "n0590": {
+  "n0588": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "الصلح جائز بين المسلمين"
   },
-  "n0591": {
+  "n0589": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "وما صالحوا عليه فهو لهم"
   },
-  "n0592": {
+  "n0590": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا يمنع أحدكم جاره أن يغرز خشبه في جداره"
   },
-  "n0593": {
+  "n0591": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فلا تأكلوا فيها وإن لم تجدوا فاغسلوها وكلوا فيها"
   },
-  "n0594": {
+  "n0592": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وإن لم تجدوا فاغسلوها وكلوا فيها"
   },
-  "n0595": {
+  "n0593": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان لا يستتر من البول"
   },
-  "n0596": {
+  "n0594": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "أيما إهاب دبغ فقد طهر"
   },
-  "n0597": {
+  "n0595": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ألقوها وما حولها فاطرحوه، وكلوا سمنكم"
   },
-  "n0598": {
+  "n0596": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أرأيت شحوم الميتة فإنها يطلى بها السفن"
   },
-  "n0599": {
+  "n0597": {
    "ref": "src:tanzil-quran-simple#Q005:006",
    "excerpt_ar": "وإن كنتم جنبا فاطهروا"
   },
-  "n0600": {
+  "n0598": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إن تحت كل شعرة جنابة"
   },
-  "n0601": {
+  "n0599": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تقبل صلاة من أحدث حتى يتوضأ"
   },
-  "n0602": {
+  "n0600": {
    "ref": "src:tanzil-quran-simple#Q002:222",
    "excerpt_ar": "فاعتزلوا النساء في المحيض"
   },
-  "n0603": {
+  "n0601": {
    "ref": "src:tanzil-quran-simple#Q002:222",
    "excerpt_ar": "فاعتزلوا النساء في المحيض ولا تقربوهن حتى يطهرن"
   },
-  "n0604": {
+  "n0602": {
    "ref": "src:tanzil-quran-simple#Q002:222",
    "excerpt_ar": "ويسألونك عن المحيض قل هو أذى"
   },
-  "n0605": {
+  "n0603": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أليس إذا حاضت لم تصل ولم تصم"
   },
-  "n0606": {
+  "n0604": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما ذلك عرق وليس بالحيضة"
   },
-  "n0607": {
+  "n0605": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فتحيضي ستة أيام أو سبعة أيام في علم الله"
   },
-  "n0608": {
+  "n0606": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "اصنعوا كل شيء إلا النكاح"
   },
-  "n0609": {
+  "n0607": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا ذهب أحدكم إلى الغائط فليذهب معه بثلاثة أحجار يستطيب بهن"
   },
-  "n0610": {
+  "n0608": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "هلا انتفعتم بجلدها"
   },
-  "n0611": {
+  "n0609": {
    "ref": "src:tanzil-quran-simple#Q004:043",
    "excerpt_ar": "أو لامستم النساء"
   },
-  "n0612": {
+  "n0610": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "في الماء الدائم الذي لا يجري"
   },
-  "n0613": {
+  "n0611": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا كان الماء قلتين لم يحمل الخبث"
   },
-  "n0614": {
+  "n0612": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "إن الماء طهور لا ينجسه شيء"
   },
-  "n0615": {
+  "n0613": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ما قطع من البهيمة وهي حية فهي ميتة"
   },
-  "n0616": {
+  "n0614": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "يغسل ذكره ويتوضأ"
   },
-  "n0617": {
+  "n0615": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نعم إذا رأت الماء"
   },
-  "n0618": {
+  "n0616": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إنما الماء من الماء"
   },
-  "n0619": {
+  "n0617": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "دعهما فإني أدخلتهما طاهرتين"
   },
-  "n0620": {
+  "n0618": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "جعل رسول الله صلى الله عليه وسلم ثلاثة أيام ولياليهن للمسافر ويوما وليلة للمقيم"
   },
-  "n0621": {
+  "n0619": {
    "ref": "src:tanzil-quran-simple#Q005:006",
    "excerpt_ar": "وامسحوا برءوسكم"
   },
-  "n0622": {
+  "n0620": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "الأذنان من الرأس"
   },
-  "n0623": {
+  "n0621": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا وقع الذباب في شراب أحدكم فليغمسه"
   },
-  "n0624": {
+  "n0622": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "ارجع فأحسن وضوءك"
   },
-  "n0625": {
+  "n0623": {
    "ref": "src:tanzil-quran-simple#Q074:004",
    "excerpt_ar": "وثيابك فطهر"
   },
-  "n0626": {
+  "n0624": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "وكاء السه العينان فمن نام فليتوضأ"
   },
-  "n0627": {
+  "n0625": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "لا تقرأ الحائض ولا الجنب شيئا من القرآن"
   },
-  "n0628": {
+  "n0626": {
    "ref": "src:tanzil-quran-simple#Q016:080",
    "excerpt_ar": "ومن أصوافها وأوبارها وأشعارها أثاثا"
   },
-  "n0629": {
+  "n0627": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا شرب الكلب في إناء أحدكم فليغسله سبعا"
   },
-  "n0630": {
+  "n0628": {
    "ref": "src:tanzil-quran-simple#Q004:043",
    "excerpt_ar": "فلم تجدوا ماء فتيمموا صعيدا طيبا"
   },
-  "n0631": {
+  "n0629": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان يصلي وهو حامل أمامة بنت زينب"
   },
-  "n0632": {
+  "n0630": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "يطهره ما بعده"
   },
-  "n0633": {
+  "n0631": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "ولا نتوضأ من موطأ"
   },
-  "n0634": {
+  "n0632": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "في الذي يأتي امرأته وهي حائض قال يتصدق بدينار أو بنصف دينار"
   },
-  "n0635": {
+  "n0633": {
    "ref": "src:tanzil-quran-simple#Q005:006",
    "excerpt_ar": "إذا قمتم إلى الصلاة فاغسلوا وجوهكم وأيديكم إلى المرافق"
   },
-  "n0636": {
+  "n0634": {
    "ref": "src:tanzil-quran-simple#Q005:006",
    "excerpt_ar": "إذا قمتم إلى الصلاة فاغسلوا وجوهكم"
   },
-  "n0637": {
+  "n0635": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا ولغ الكلب في إناء أحدكم"
   },
-  "n0638": {
+  "n0636": {
    "ref": "src:tanzil-quran-simple#Q002:230",
    "excerpt_ar": "فإن طلقها فلا تحل له من بعد حتى تنكح زوجا غيره"
   },
-  "n0639": {
+  "n0637": {
    "ref": "src:tanzil-quran-simple#Q002:229",
    "excerpt_ar": "الطلاق مرتان فإمساك بمعروف أو تسريح بإحسان"
   },
-  "n0640": {
+  "n0638": {
    "ref": "src:tanzil-quran-simple#Q002:230",
    "excerpt_ar": "فإن طلقها فلا تحل له من بعد"
   },
-  "n0641": {
+  "n0639": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ثلاث جدهن جد وهزلهن جد"
   },
-  "n0642": {
+  "n0640": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الحقي بأهلك"
   },
-  "n0643": {
+  "n0641": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لقد عذت بعظيم الحقي بأهلك"
   },
-  "n0644": {
+  "n0642": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "الحقي بأهلك فكوني عندهم حتى يقضي الله في هذا الأمر"
   },
-  "n0645": {
+  "n0643": {
    "ref": "src:tanzil-quran-simple#Q002:230",
    "excerpt_ar": "فلا تحل له من بعد حتى تنكح زوجا غيره"
   },
-  "n0646": {
+  "n0644": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا حتى تذوقي عسيلته ويذوق عسيلتك"
   },
-  "n0647": {
+  "n0645": {
    "ref": "src:tanzil-quran-simple#Q065:001",
    "excerpt_ar": "يا أيها النبي إذا طلقتم النساء فطلقوهن لعدتهن"
   },
-  "n0648": {
+  "n0646": {
    "ref": "src:tanzil-quran-simple#Q065:001",
    "excerpt_ar": "إذا طلقتم النساء فطلقوهن لعدتهن"
   },
-  "n0649": {
+  "n0647": {
    "ref": "src:tanzil-quran-simple#Q002:229",
    "excerpt_ar": "الطلاق مرتان"
   },
-  "n0650": {
+  "n0648": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "وأجمع الناس على جواز الطلاق"
   },
-  "n0651": {
+  "n0649": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "مره فليراجعها"
   },
-  "n0652": {
+  "n0650": {
    "ref": "src:tanzil-quran-simple#Q065:001",
    "excerpt_ar": "فطلقوهن لعدتهن"
   },
-  "n0653": {
+  "n0651": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "مره فليراجعها ثم ليمسكها حتى تطهر"
   },
-  "n0654": {
+  "n0652": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء"
   },
-  "n0655": {
+  "n0653": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "طلق رجل امرأته البتة إن خرجت فقال ابن عمر إن خرجت فقد بتت منه"
   },
-  "n0656": {
+  "n0654": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن خرجت فقد بتت منه"
   },
-  "n0657": {
+  "n0655": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا طلاق إلا فيما تملك ولا عتق إلا فيما تملك"
   },
-  "n0658": {
+  "n0656": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا طلاق قبل نكاح"
   },
-  "n0659": {
+  "n0657": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ولا طلاق له فيما لا يملك"
   },
-  "n0660": {
+  "n0658": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "والله ما أردت إلا واحدة"
   },
-  "n0661": {
+  "n0659": {
    "ref": "src:tanzil-quran-simple#Q022:036",
    "excerpt_ar": "فكلوا منها وأطعموا القانع والمعتر"
   },
-  "n0662": {
+  "n0660": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كل غلام رهينة بعقيقته"
   },
-  "n0663": {
+  "n0661": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "عن الغلام شاتان مكافئتان وعن الجارية شاة"
   },
-  "n0664": {
+  "n0662": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أن أتصدق بجلال البدن التي نحرت وبجلودها"
   },
-  "n0665": {
+  "n0663": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أربع لا تجوز في الأضاحي"
   },
-  "n0666": {
+  "n0664": {
    "ref": "src:tanzil-quran-simple#Q108:002",
    "excerpt_ar": "فصل لربك وانحر"
   },
-  "n0667": {
+  "n0665": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ضحى النبي صلى الله عليه وسلم بكبشين"
   },
-  "n0668": {
+  "n0666": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ضحى النبي صلى الله عليه وسلم بكبشين أملحين"
   },
-  "n0669": {
+  "n0667": {
    "ref": "src:tanzil-quran-simple#Q024:063",
    "excerpt_ar": "فليحذر الذين يخالفون عن أمره"
   },
-  "n0670": {
+  "n0668": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لولا أن أشق على أمتي لأمرتهم"
   },
-  "n0671": {
+  "n0669": {
    "ref": "src:tanzil-quran-simple#Q033:021",
    "excerpt_ar": "لقد كان لكم في رسول الله أسوة حسنة"
   },
-  "n0672": {
+  "n0670": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صلوا كما رأيتموني أصلي"
   },
-  "n0673": {
+  "n0671": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "كتب إلى كسرى"
   },
-  "n0674": {
+  "n0672": {
    "ref": "src:tanzil-quran-simple#Q019:029",
    "excerpt_ar": "فأشارت إليه"
   },
-  "n0675": {
+  "n0673": {
    "ref": "src:tanzil-quran-simple#Q004:011",
    "excerpt_ar": "فريضة من الله"
   },
-  "n0676": {
+  "n0674": {
    "ref": "src:tanzil-quran-simple#Q004:058",
    "excerpt_ar": "إن الله يأمركم أن تؤدوا الأمانات إلى أهلها"
   },
-  "n0677": {
+  "n0675": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أد الأمانة إلى من ائتمنك ولا تخن من خانك"
   },
-  "n0678": {
+  "n0676": {
    "ref": "src:tanzil-quran-simple#Q002:283",
    "excerpt_ar": "فليؤد الذي اؤتمن أمانته"
   },
-  "n0679": {
+  "n0677": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أد الأمانة إلى من ائتمنك"
   },
-  "n0680": {
+  "n0678": {
    "ref": "src:tanzil-quran-simple#Q018:019",
    "excerpt_ar": "فابعثوا أحدكم بورقكم هذه إلى المدينة"
   },
-  "n0681": {
+  "n0679": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعطاه دينارا يشتري له به شاة"
   },
-  "n0682": {
+  "n0680": {
    "ref": "src:tanzil-quran-simple#Q018:019",
    "excerpt_ar": "فابعثوا أحدكم بورقكم هذه"
   },
-  "n0683": {
+  "n0681": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا جناح على من وليها أن يأكل منها بالمعروف"
   },
-  "n0684": {
+  "n0682": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن شئت حبست أصلها وتصدقت بها"
   },
-  "n0685": {
+  "n0683": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "من يشتري بئر رومة فيجعل دلوه مع دلاء المسلمين"
   },
-  "n0686": {
+  "n0684": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وإني أرى أن تجعلها في الأقربين"
   },
-  "n0687": {
+  "n0685": {
    "ref": "src:tanzil-quran-simple#Q004:006",
    "excerpt_ar": "ومن كان غنيا فليستعفف ومن كان فقيرا فليأكل بالمعروف"
   },
-  "n0688": {
+  "n0686": {
    "ref": "src:tanzil-quran-simple#Q002:220",
    "excerpt_ar": "ويسألونك عن اليتامى قل إصلاح لهم خير"
   },
-  "n0689": {
+  "n0687": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "تصح الوصية إلى الرجل العاقل المسلم الحر العدل إجماعا"
   },
-  "n0690": {
+  "n0688": {
    "ref": "src:tanzil-quran-simple#Q002:180",
    "excerpt_ar": "إن ترك خيرا الوصية للوالدين والأقربين"
   },
-  "n0691": {
+  "n0689": {
    "ref": "src:tanzil-quran-simple#Q002:180",
    "excerpt_ar": "كتب عليكم إذا حضر أحدكم الموت إن ترك خيرا الوصية"
   },
-  "n0692": {
+  "n0690": {
    "ref": "src:tanzil-quran-simple#Q002:180",
    "excerpt_ar": "الوصية للوالدين والأقربين بالمعروف"
   },
-  "n0693": {
+  "n0691": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فالثلث والثلث كثير"
   },
-  "n0694": {
+  "n0692": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إن الله قد أعطى كل ذي حق حقه فلا وصية لوارث"
   },
-  "n0695": {
+  "n0693": {
    "ref": "src:tanzil-quran-simple#Q009:060",
    "excerpt_ar": "إنما الصدقات للفقراء والمساكين"
   },
-  "n0696": {
+  "n0694": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا حظ فيها لغني ولا لقوي مكتسب"
   },
-  "n0697": {
+  "n0695": {
    "ref": "src:tanzil-quran-simple#Q009:060",
    "excerpt_ar": "والعاملين عليها"
   },
-  "n0698": {
+  "n0696": {
    "ref": "src:tanzil-quran-simple#Q009:060",
    "excerpt_ar": "والعاملين عليها والمؤلفة قلوبهم"
   },
-  "n0699": {
+  "n0697": {
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "أمره أن يأخذ من كل ثلاثين من البقر تبيعا أو تبيعة"
   },
-  "n0700": {
+  "n0698": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ولا يجمع بين متفرق ولا يفرق بين مجتمع خشية الصدقة"
   },
-  "n0701": {
+  "n0699": {
    "ref": "src:tanzil-quran-simple#Q009:060",
    "excerpt_ar": "وفي الرقاب والغارمين"
   },
-  "n0702": {
-   "ref": "src:openiti-abudawud-shamela1726",
-   "excerpt_ar": "حتى يحول عليه الحول"
+  "n0700": {
+   "ref": "src:openiti-ibnmaja-shamela1198",
+   "excerpt_ar": "لا زكاة في مال حتى يحول عليه الحول"
   },
-  "n0703": {
+  "n0701": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "حتى يحول عليه الحول"
   },
-  "n0704": {
+  "n0702": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ويعطيه المصدق عشرين درهما أو شاتين"
   },
-  "n0705": {
+  "n0703": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فتلك المعادن لا يؤخذ منها إلا الزكاة"
   },
-  "n0706": {
+  "n0704": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "من ولي يتيما له مال فليتجر فيه"
   },
-  "n0707": {
+  "n0705": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ومن منعها فإنا آخذوها وشطر ماله"
   },
-  "n0708": {
+  "n0706": {
    "ref": "src:tanzil-quran-simple#Q009:060",
    "excerpt_ar": "إنما الصدقات للفقراء والمساكين والعاملين عليها"
   },
-  "n0709": {
+  "n0707": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ليس فيما دون خمس أواق صدقة"
   },
-  "n0710": {
+  "n0708": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وفي الركاز الخمس"
   },
-  "n0711": {
+  "n0709": {
    "ref": "src:tanzil-quran-simple#Q009:060",
    "excerpt_ar": "وفي سبيل الله وابن السبيل"
   },
-  "n0712": {
+  "n0710": {
    "ref": "src:tanzil-quran-simple#Q002:271",
    "excerpt_ar": "إن تبدوا الصدقات فنعما هي"
   },
-  "n0713": {
+  "n0711": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أن العباس سأل النبي صلى الله عليه وسلم في تعجيل صدقته قبل أن تحل فرخص له في ذلك"
   },
-  "n0714": {
+  "n0712": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "في تعجيل صدقته قبل أن تحل"
   },
-  "n0715": {
+  "n0713": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كان يأمرنا أن نخرج الصدقة من الذي نعد للبيع"
   },
-  "n0716": {
+  "n0714": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "نخرج الصدقة من الذي نعد للبيع"
   },
-  "n0717": {
+  "n0715": {
    "ref": "src:tanzil-quran-simple#Q002:043",
    "excerpt_ar": "وأقيموا الصلاة وآتوا الزكاة"
   },
-  "n0718": {
+  "n0716": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "وعن شراء الصدقات حتى تقبض"
   },
-  "n0719": {
+  "n0717": {
    "ref": "src:tanzil-quran-simple#Q009:103",
    "excerpt_ar": "خذ من أموالهم صدقة تطهرهم وتزكيهم بها"
   },
-  "n0720": {
+  "n0718": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "في أربع وعشرين من الإبل فما دونها من الغنم"
   },
-  "n0721": {
+  "n0719": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فرض رسول الله صلى الله عليه وسلم زكاة الفطر صاعا من تمر"
   },
-  "n0722": {
+  "n0720": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فرض رسول الله صلى الله عليه وسلم زكاة الفطر"
   },
-  "n0723": {
+  "n0721": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "زكاة الفطر صاعا من تمر أو صاعا من شعير على العبد والحر"
   },
-  "n0724": {
+  "n0722": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ففي كل أربعين بنت لبون وفي كل خمسين حقة"
   },
-  "n0725": {
+  "n0723": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "إذا خرصتم فخذوا ودعوا الثلث"
   },
-  "n0726": {
+  "n0724": {
    "ref": "src:tanzil-quran-simple#Q004:092",
    "excerpt_ar": "فمن لم يجد فصيام شهرين متتابعين"
   },
-  "n0727": {
+  "n0725": {
    "ref": "src:tanzil-quran-simple#Q058:003",
    "excerpt_ar": "والذين يظاهرون من نسائهم ثم يعودون لما قالوا فتحرير رقبة من قبل أن يتماسا"
   }
@@ -16204,51 +16196,51 @@
   ],
   [
    "n0355",
-   "jinayat.abd_jani"
-  ],
-  [
-   "n0356",
    "jinayat.afw_qisas"
   ],
   [
-   "n0356",
+   "n0355",
    "jinayat.qisas"
   ],
   [
-   "n0357",
+   "n0356",
    "jinayat.daf_sail"
   ],
   [
-   "n0358",
+   "n0357",
    "jinayat.hafr_bir"
   ],
   [
-   "n0359",
+   "n0358",
    "jinayat.istifa_qisas"
   ],
   [
-   "n0360",
+   "n0359",
    "jinayat.jinayat_abd"
   ],
   [
-   "n0361",
+   "n0360",
    "jinayat.jirah"
   ],
   [
-   "n0361",
+   "n0360",
    "jinayat.qisas_atraf"
   ],
   [
-   "n0362",
+   "n0361",
    "jinayat.kaffarat_qatl"
   ],
   [
-   "n0363",
+   "n0362",
    "jinayat.mujib_amd"
   ],
   [
-   "n0364",
+   "n0363",
    "jinayat.muslim_bi_kafir"
+  ],
+  [
+   "n0364",
+   "jinayat.qasama"
   ],
   [
    "n0365",
@@ -16256,7 +16248,7 @@
   ],
   [
    "n0366",
-   "jinayat.qasama"
+   "jinayat.qatl_amd"
   ],
   [
    "n0367",
@@ -16264,11 +16256,11 @@
   ],
   [
    "n0368",
-   "jinayat.qatl_amd"
+   "jinayat.qatl_nafs"
   ],
   [
    "n0369",
-   "jinayat.qatl_nafs"
+   "jinayat.qisas"
   ],
   [
    "n0370",
@@ -16276,55 +16268,55 @@
   ],
   [
    "n0371",
-   "jinayat.qisas"
-  ],
-  [
-   "n0372",
    "jinayat.qisas_walid"
   ],
   [
-   "n0373",
+   "n0372",
    "jinayat.sabiyy"
   ],
   [
-   "n0374",
+   "n0373",
    "khul.iwad_khul"
   ],
   [
-   "n0374",
+   "n0373",
    "khul.khul"
+  ],
+  [
+   "n0374",
+   "khul.iwad_khul"
   ],
   [
    "n0375",
-   "khul.iwad_khul"
-  ],
-  [
-   "n0376",
    "khul.khul"
   ],
   [
-   "n0377",
+   "n0376",
    "lian.lian"
   ],
   [
-   "n0378",
+   "n0377",
    "lian.lihaq_nasab"
   ],
   [
-   "n0378",
+   "n0377",
    "nikah.firash"
   ],
   [
-   "n0378",
+   "n0377",
    "nikah.nasab"
   ],
   [
-   "n0379",
+   "n0378",
    "lian.qiyafa"
   ],
   [
-   "n0380",
+   "n0379",
    "luqata.dalla"
+  ],
+  [
+   "n0380",
+   "luqata.laqit"
   ],
   [
    "n0381",
@@ -16336,7 +16328,7 @@
   ],
   [
    "n0383",
-   "luqata.laqit"
+   "luqata.luqata"
   ],
   [
    "n0384",
@@ -16348,11 +16340,11 @@
   ],
   [
    "n0386",
-   "luqata.luqata"
+   "luqata.mal_majhul_rabb"
   ],
   [
    "n0387",
-   "luqata.mal_majhul_rabb"
+   "musaqat.musaqat"
   ],
   [
    "n0388",
@@ -16364,51 +16356,51 @@
   ],
   [
    "n0390",
-   "musaqat.musaqat"
-  ],
-  [
-   "n0391",
    "musaqat.muzaraa"
   ],
   [
-   "n0392",
+   "n0391",
    "nafaqat.fasakh_iisar"
   ],
   [
-   "n0393",
+   "n0392",
    "nafaqat.hadana"
   ],
   [
-   "n0394",
+   "n0393",
    "nafaqat.nafaqa"
   ],
   [
-   "n0394",
+   "n0393",
    "nafaqat.nafaqat_zawja"
   ],
   [
-   "n0395",
+   "n0394",
    "nafaqat.nafaqat_aqarib"
   ],
   [
-   "n0396",
+   "n0395",
    "nafaqat.nafaqat_bahaim"
   ],
   [
-   "n0397",
+   "n0396",
    "nafaqat.nafaqat_mabtuta"
   ],
   [
-   "n0398",
+   "n0397",
    "nafaqat.takhyir_mahdun"
+  ],
+  [
+   "n0398",
+   "nikah.adad_zawjat"
+  ],
+  [
+   "n0398",
+   "nikah.jam_fawq_arba"
   ],
   [
    "n0399",
    "nikah.adad_zawjat"
-  ],
-  [
-   "n0399",
-   "nikah.jam_fawq_arba"
   ],
   [
    "n0400",
@@ -16420,19 +16412,19 @@
   ],
   [
    "n0402",
-   "nikah.adad_zawjat"
-  ],
-  [
-   "n0403",
    "nikah.ama_muzawwaja"
   ],
   [
-   "n0404",
+   "n0403",
    "nikah.bud"
   ],
   [
-   "n0404",
+   "n0403",
    "nikah.muhajira"
+  ],
+  [
+   "n0404",
+   "nikah.idhn_mara"
   ],
   [
    "n0405",
@@ -16440,7 +16432,7 @@
   ],
   [
    "n0406",
-   "nikah.idhn_mara"
+   "nikah.islam_ahad_zawjayn"
   ],
   [
    "n0407",
@@ -16448,43 +16440,43 @@
   ],
   [
    "n0408",
-   "nikah.islam_ahad_zawjayn"
-  ],
-  [
-   "n0409",
    "nikah.islam_ala_akthar"
   ],
   [
-   "n0410",
+   "n0409",
    "nikah.islam_zawjayn"
   ],
   [
-   "n0411",
+   "n0410",
    "nikah.istimna"
   ],
   [
-   "n0412",
+   "n0411",
    "nikah.jam_bayn_mahram"
   ],
   [
-   "n0412",
+   "n0411",
    "nikah.jam_ukhtayn"
+  ],
+  [
+   "n0412",
+   "nikah.jam_bayn_mahram"
   ],
   [
    "n0413",
-   "nikah.jam_bayn_mahram"
-  ],
-  [
-   "n0414",
    "nikah.jam_fawq_arba"
   ],
   [
+   "n0414",
+   "nikah.kafaa"
+  ],
+  [
    "n0415",
-   "nikah.jam_ukhtayn"
+   "nikah.khiyar_mutaqa"
   ],
   [
    "n0416",
-   "nikah.kafaa"
+   "nikah.khiyar_mutaqa"
   ],
   [
    "n0417",
@@ -16496,19 +16488,19 @@
   ],
   [
    "n0419",
-   "nikah.khiyar_mutaqa"
-  ],
-  [
-   "n0420",
-   "nikah.khiyar_mutaqa"
-  ],
-  [
-   "n0421",
    "nikah.milk_zawj"
   ],
   [
-   "n0422",
+   "n0420",
    "nikah.muhajira"
+  ],
+  [
+   "n0421",
+   "nikah.muharramat"
+  ],
+  [
+   "n0422",
+   "nikah.muharramat"
   ],
   [
    "n0423",
@@ -16516,31 +16508,31 @@
   ],
   [
    "n0424",
-   "nikah.muharramat"
-  ],
-  [
-   "n0425",
-   "nikah.muharramat"
-  ],
-  [
-   "n0426",
    "nikah.muharramat_musahara"
   ],
   [
-   "n0426",
+   "n0424",
    "nikah.musahara"
   ],
   [
-   "n0427",
+   "n0425",
    "nikah.muharramat_musahara"
   ],
   [
-   "n0428",
+   "n0426",
    "nikah.muharramat_nasab"
   ],
   [
-   "n0429",
+   "n0427",
    "nikah.nikah"
+  ],
+  [
+   "n0428",
+   "nikah.nikah_ama"
+  ],
+  [
+   "n0429",
+   "nikah.nikah_ama"
   ],
   [
    "n0430",
@@ -16552,19 +16544,19 @@
   ],
   [
    "n0432",
-   "nikah.nikah_ama"
-  ],
-  [
-   "n0433",
-   "nikah.nikah_ama"
-  ],
-  [
-   "n0434",
    "nikah.nikah_fasid"
   ],
   [
-   "n0435",
+   "n0433",
    "nikah.nikah_mutadda"
+  ],
+  [
+   "n0434",
+   "nikah.qasm_bayn_zawjat"
+  ],
+  [
+   "n0435",
+   "nikah.qasm_bayn_zawjat"
   ],
   [
    "n0436",
@@ -16572,163 +16564,163 @@
   ],
   [
    "n0437",
-   "nikah.qasm_bayn_zawjat"
-  ],
-  [
-   "n0438",
-   "nikah.qasm_bayn_zawjat"
-  ],
-  [
-   "n0439",
    "nikah.sighat_nikah"
   ],
   [
-   "n0440",
+   "n0438",
    "nikah.tazwij_waliyyayn"
   ],
   [
+   "n0438",
+   "nikah.wali"
+  ],
+  [
+   "n0439",
+   "nikah.unna"
+  ],
+  [
    "n0440",
    "nikah.wali"
   ],
   [
-   "n0441",
-   "nikah.unna"
+   "n0440",
+   "nikah.wilaya"
   ],
   [
-   "n0442",
+   "n0441",
    "nikah.wali"
   ],
   [
    "n0442",
-   "nikah.wilaya"
+   "nikah.walima"
   ],
   [
    "n0443",
-   "nikah.wali"
+   "nikah.walima"
   ],
   [
    "n0444",
-   "nikah.walima"
-  ],
-  [
-   "n0445",
-   "nikah.walima"
-  ],
-  [
-   "n0446",
    "nikah.wilaya"
   ],
   [
+   "n0445",
+   "nudhur.nadhr"
+  ],
+  [
+   "n0446",
+   "nudhur.nadhr"
+  ],
+  [
    "n0447",
-   "nudhur.nadhr"
-  ],
-  [
-   "n0448",
-   "nudhur.nadhr"
-  ],
-  [
-   "n0449",
    "nudhur.nadhr_mayyit"
   ],
   [
-   "n0450",
+   "n0448",
    "nudhur.nadhr_muallaq"
   ],
   [
-   "n0451",
+   "n0449",
    "nudhur.nadhr_sadaqa_mal"
+  ],
+  [
+   "n0450",
+   "qada.hukm"
+  ],
+  [
+   "n0451",
+   "qada.hukm"
   ],
   [
    "n0452",
    "qada.hukm"
   ],
   [
-   "n0453",
-   "qada.hukm"
-  ],
-  [
-   "n0454",
-   "qada.hukm"
-  ],
-  [
-   "n0454",
+   "n0452",
    "qada.naqd_hukm"
   ],
   [
-   "n0455",
+   "n0453",
    "qada.imam"
   ],
   [
-   "n0455",
+   "n0453",
    "qada.imama_uzma"
+  ],
+  [
+   "n0454",
+   "qada.imama_uzma"
+  ],
+  [
+   "n0455",
+   "qada.kitab_qadi"
   ],
   [
    "n0456",
-   "qada.imama_uzma"
+   "qada.kitab_qadi"
   ],
   [
    "n0457",
-   "qada.kitab_qadi"
-  ],
-  [
-   "n0458",
-   "qada.kitab_qadi"
-  ],
-  [
-   "n0459",
    "qada.muhayaa"
   ],
   [
-   "n0460",
+   "n0458",
    "qada.qada"
   ],
   [
-   "n0461",
+   "n0459",
    "qada.qadi"
+  ],
+  [
+   "n0460",
+   "qada.qadi"
+  ],
+  [
+   "n0461",
+   "qada.qisma"
   ],
   [
    "n0462",
-   "qada.qadi"
+   "qada.qisma"
   ],
   [
    "n0463",
-   "qada.qisma"
+   "qard.hadiyyat_muqtarid"
   ],
   [
    "n0464",
-   "qada.qisma"
+   "qard.hadiyyat_muqtarid"
   ],
   [
    "n0465",
-   "qard.hadiyyat_muqtarid"
+   "qard.qard"
   ],
   [
    "n0466",
-   "qard.hadiyyat_muqtarid"
+   "qard.qard"
   ],
   [
    "n0467",
-   "qard.qard"
+   "rada.laban"
+  ],
+  [
+   "n0467",
+   "rada.muharramat_rada"
+  ],
+  [
+   "n0467",
+   "rada.rada"
   ],
   [
    "n0468",
-   "qard.qard"
+   "rada.laban"
   ],
   [
-   "n0469",
-   "rada.laban"
+   "n0468",
+   "rada.rada"
   ],
   [
    "n0469",
    "rada.muharramat_rada"
-  ],
-  [
-   "n0469",
-   "rada.rada"
-  ],
-  [
-   "n0470",
-   "rada.laban"
   ],
   [
    "n0470",
@@ -16736,27 +16728,31 @@
   ],
   [
    "n0471",
-   "rada.muharramat_rada"
-  ],
-  [
-   "n0472",
-   "rada.rada"
-  ],
-  [
-   "n0473",
    "rada.shahadat_murdia"
   ],
   [
-   "n0474",
+   "n0472",
    "rahn.ghalq_rahn"
   ],
   [
-   "n0475",
+   "n0473",
    "rahn.marhun"
   ],
   [
-   "n0476",
+   "n0474",
    "rahn.rahn"
+  ],
+  [
+   "n0475",
+   "raja.raja"
+  ],
+  [
+   "n0475",
+   "raja.rajiyya"
+  ],
+  [
+   "n0476",
+   "raja.raja"
   ],
   [
    "n0477",
@@ -16764,7 +16760,11 @@
   ],
   [
    "n0477",
-   "raja.rajiyya"
+   "shahadat.adala"
+  ],
+  [
+   "n0477",
+   "shahadat.shahada"
   ],
   [
    "n0478",
@@ -16772,59 +16772,51 @@
   ],
   [
    "n0479",
-   "raja.raja"
-  ],
-  [
-   "n0479",
-   "shahadat.adala"
-  ],
-  [
-   "n0479",
-   "shahadat.shahada"
-  ],
-  [
-   "n0480",
-   "raja.raja"
-  ],
-  [
-   "n0481",
    "raja.rajiyya"
   ],
   [
-   "n0482",
+   "n0480",
    "riba.mudd_ajwa"
   ],
   [
+   "n0481",
+   "riba.sarf"
+  ],
+  [
+   "n0482",
+   "riba.sarf"
+  ],
+  [
    "n0483",
-   "riba.sarf"
-  ],
-  [
-   "n0484",
-   "riba.sarf"
-  ],
-  [
-   "n0485",
    "sadaq.hadiyyat_zawj"
   ],
   [
-   "n0486",
+   "n0484",
    "sadaq.hibat_sadaq"
   ],
   [
-   "n0487",
+   "n0485",
    "sadaq.istiqrar_mahr"
   ],
   [
-   "n0488",
+   "n0486",
    "sadaq.itq_sadaq"
   ],
   [
-   "n0489",
+   "n0487",
    "sadaq.khalwa"
   ],
   [
-   "n0490",
+   "n0488",
    "sadaq.nisf_sadaq"
+  ],
+  [
+   "n0489",
+   "sadaq.sadaq"
+  ],
+  [
+   "n0490",
+   "sadaq.sadaq"
   ],
   [
    "n0491",
@@ -16832,79 +16824,79 @@
   ],
   [
    "n0492",
-   "sadaq.sadaq"
-  ],
-  [
-   "n0493",
-   "sadaq.sadaq"
-  ],
-  [
-   "n0494",
    "sadaq.talim_quran"
   ],
   [
-   "n0495",
+   "n0493",
    "sadaq.tansif"
   ],
   [
-   "n0496",
+   "n0494",
    "sadaq.tansif"
   ],
   [
-   "n0496",
+   "n0494",
    "sadaq.tansif_mahr"
   ],
   [
+   "n0495",
+   "salam.salam"
+  ],
+  [
+   "n0496",
+   "salam.salam"
+  ],
+  [
    "n0497",
-   "salam.salam"
-  ],
-  [
-   "n0498",
-   "salam.salam"
-  ],
-  [
-   "n0499",
    "salat.adhan"
   ],
   [
+   "n0498",
+   "salat.adhkar_salat"
+  ],
+  [
+   "n0499",
+   "salat.adhkar_salat"
+  ],
+  [
    "n0500",
-   "salat.adhkar_salat"
-  ],
-  [
-   "n0501",
-   "salat.adhkar_salat"
-  ],
-  [
-   "n0502",
    "salat.awqat_nahy"
   ],
   [
-   "n0503",
+   "n0501",
    "salat.fatiha"
   ],
   [
-   "n0504",
+   "n0502",
    "salat.idrak_rakaa"
   ],
   [
-   "n0505",
+   "n0503",
    "salat.ijabat_muadhdhin"
   ],
   [
-   "n0506",
+   "n0504",
    "salat.ijtinab_najasa"
   ],
   [
-   "n0507",
+   "n0505",
    "salat.imama"
   ],
   [
-   "n0508",
+   "n0506",
    "salat.istiftah"
   ],
   [
-   "n0509",
+   "n0507",
    "salat.jam"
+  ],
+  [
+   "n0508",
+   "salat.jumua"
+  ],
+  [
+   "n0509",
+   "salat.jumua"
   ],
   [
    "n0510",
@@ -16912,171 +16904,171 @@
   ],
   [
    "n0511",
-   "salat.jumua"
-  ],
-  [
-   "n0512",
-   "salat.jumua"
-  ],
-  [
-   "n0513",
    "salat.khutba"
   ],
   [
-   "n0514",
+   "n0512",
    "salat.khutbat_jumua"
   ],
   [
-   "n0515",
+   "n0513",
    "salat.libas_muharram"
+  ],
+  [
+   "n0514",
+   "salat.libas_muharram"
+  ],
+  [
+   "n0515",
+   "salat.majlis_masjid"
   ],
   [
    "n0516",
-   "salat.libas_muharram"
+   "salat.majlis_masjid"
   ],
   [
    "n0517",
-   "salat.majlis_masjid"
-  ],
-  [
-   "n0518",
-   "salat.majlis_masjid"
-  ],
-  [
-   "n0519",
    "salat.maqbara"
   ],
   [
-   "n0520",
+   "n0518",
    "salat.masjid"
   ],
   [
-   "n0521",
+   "n0519",
    "salat.mawadi_nahy"
   ],
   [
-   "n0522",
+   "n0520",
    "salat.qada_fawait"
   ],
   [
-   "n0523",
+   "n0521",
    "salat.qasr"
   ],
   [
-   "n0524",
+   "n0522",
    "salat.qibla"
   ],
   [
-   "n0525",
+   "n0523",
    "salat.qiraat_quran"
+  ],
+  [
+   "n0524",
+   "salat.qiraat_quran"
+  ],
+  [
+   "n0525",
+   "salat.qiyam"
   ],
   [
    "n0526",
-   "salat.qiraat_quran"
+   "salat.qiyam"
   ],
   [
    "n0527",
-   "salat.qiyam"
-  ],
-  [
-   "n0528",
-   "salat.qiyam"
-  ],
-  [
-   "n0529",
    "salat.sahw"
   ],
   [
+   "n0528",
+   "salat.salat_ala_nabi"
+  ],
+  [
+   "n0529",
+   "salat.salat_ala_nabi"
+  ],
+  [
    "n0530",
-   "salat.salat_ala_nabi"
-  ],
-  [
-   "n0531",
-   "salat.salat_ala_nabi"
-  ],
-  [
-   "n0532",
    "salat.salat_id"
   ],
   [
-   "n0533",
+   "n0531",
    "salat.salat_musafir"
   ],
   [
-   "n0534",
+   "n0532",
    "salat.salat_sabi"
   ],
   [
+   "n0533",
+   "salat.satr_awra"
+  ],
+  [
+   "n0534",
+   "salat.satr_awra"
+  ],
+  [
    "n0535",
-   "salat.satr_awra"
-  ],
-  [
-   "n0536",
-   "salat.satr_awra"
-  ],
-  [
-   "n0537",
    "salat.shakk_fil_salat"
   ],
   [
-   "n0538",
+   "n0536",
    "salat.sujud"
   ],
   [
-   "n0539",
+   "n0537",
    "salat.sujud_sahw"
   ],
   [
-   "n0540",
+   "n0538",
    "salat.sujud_tilawa"
   ],
   [
-   "n0541",
+   "n0539",
    "salat.sunnat_jumua"
   ],
   [
-   "n0542",
+   "n0540",
    "salat.tahiyyat_masjid"
   ],
   [
-   "n0543",
+   "n0541",
    "salat.takbirat_ihram"
   ],
   [
-   "n0544",
+   "n0542",
    "salat.takbirat_intiqal"
   ],
   [
-   "n0545",
+   "n0543",
    "salat.tarawih"
   ],
   [
-   "n0546",
+   "n0544",
    "salat.taslim"
   ],
   [
+   "n0545",
+   "salat.tatawwu"
+  ],
+  [
+   "n0546",
+   "salat.tatawwu"
+  ],
+  [
    "n0547",
-   "salat.tatawwu"
-  ],
-  [
-   "n0548",
-   "salat.tatawwu"
-  ],
-  [
-   "n0549",
    "salat.tul_qiyam"
   ],
   [
-   "n0550",
+   "n0548",
    "salat.waqt"
   ],
   [
-   "n0551",
+   "n0549",
    "shahadat.adala"
   ],
   [
-   "n0551",
+   "n0549",
    "usul.khabar_wahid"
+  ],
+  [
+   "n0550",
+   "shahadat.ruju_shuhud"
+  ],
+  [
+   "n0551",
+   "shahadat.ruju_shuhud"
   ],
   [
    "n0552",
@@ -17084,18 +17076,18 @@
   ],
   [
    "n0553",
-   "shahadat.ruju_shuhud"
-  ],
-  [
-   "n0554",
-   "shahadat.ruju_shuhud"
-  ],
-  [
-   "n0555",
    "shahadat.shahada"
   ],
   [
-   "n0556",
+   "n0554",
+   "shahadat.shahadat_mara"
+  ],
+  [
+   "n0554",
+   "shahadat.shahadat_nisa"
+  ],
+  [
+   "n0555",
    "shahadat.shahadat_mara"
   ],
   [
@@ -17104,22 +17096,22 @@
   ],
   [
    "n0557",
-   "shahadat.shahadat_mara"
-  ],
-  [
-   "n0558",
-   "shahadat.shahadat_nisa"
-  ],
-  [
-   "n0559",
    "shahadat.shahadat_qarib"
   ],
   [
-   "n0560",
+   "n0558",
    "sharika.mudaraba"
   ],
   [
-   "n0561",
+   "n0559",
+   "sharika.sharika"
+  ],
+  [
+   "n0559",
+   "sharika.sharikat_amlak"
+  ],
+  [
+   "n0560",
    "sharika.sharika"
   ],
   [
@@ -17128,11 +17120,11 @@
   ],
   [
    "n0562",
-   "sharika.sharika"
+   "shufa.shufa"
   ],
   [
    "n0563",
-   "sharika.sharikat_amlak"
+   "shufa.shufa"
   ],
   [
    "n0564",
@@ -17140,47 +17132,51 @@
   ],
   [
    "n0565",
-   "shufa.shufa"
+   "siyam.ayyam_tashriq"
   ],
   [
    "n0566",
-   "shufa.shufa"
+   "siyam.ayyam_tashriq"
   ],
   [
    "n0567",
-   "siyam.ayyam_tashriq"
-  ],
-  [
-   "n0568",
-   "siyam.ayyam_tashriq"
-  ],
-  [
-   "n0569",
    "siyam.fidya"
   ],
   [
-   "n0570",
+   "n0568",
    "siyam.fitr_hamil"
   ],
   [
-   "n0571",
+   "n0569",
    "siyam.fitr_musafir"
   ],
   [
-   "n0571",
+   "n0569",
    "siyam.sawm_safar"
   ],
   [
-   "n0572",
+   "n0570",
    "siyam.jima"
   ],
   [
-   "n0573",
+   "n0571",
    "siyam.kaffarat_jima"
   ],
   [
-   "n0574",
+   "n0572",
    "siyam.laylat_qadr"
+  ],
+  [
+   "n0573",
+   "siyam.ruyat_hilal"
+  ],
+  [
+   "n0574",
+   "siyam.ruyat_hilal"
+  ],
+  [
+   "n0574",
+   "siyam.sawm_ramadan"
   ],
   [
    "n0575",
@@ -17188,35 +17184,31 @@
   ],
   [
    "n0576",
-   "siyam.ruyat_hilal"
-  ],
-  [
-   "n0576",
-   "siyam.sawm_ramadan"
-  ],
-  [
-   "n0577",
-   "siyam.ruyat_hilal"
-  ],
-  [
-   "n0578",
    "siyam.sawm_dahr"
   ],
   [
-   "n0579",
+   "n0577",
    "siyam.sawm_id"
   ],
   [
-   "n0580",
+   "n0578",
    "siyam.sawm_safar"
   ],
   [
-   "n0581",
+   "n0579",
    "siyam.sawm_tatawwu"
   ],
   [
-   "n0582",
+   "n0580",
    "siyam.tulu_fajr"
+  ],
+  [
+   "n0581",
+   "siyam.waqt_iftar"
+  ],
+  [
+   "n0582",
+   "siyam.waqt_iftar"
   ],
   [
    "n0583",
@@ -17224,91 +17216,95 @@
   ],
   [
    "n0584",
-   "siyam.waqt_iftar"
-  ],
-  [
-   "n0585",
-   "siyam.waqt_iftar"
-  ],
-  [
-   "n0586",
    "siyam.yawm_shakk"
   ],
   [
-   "n0587",
+   "n0585",
    "sulh.ibra"
   ],
   [
-   "n0588",
+   "n0586",
    "sulh.irtifaq_jiwar"
   ],
   [
-   "n0588",
+   "n0586",
    "sulh.jidar"
   ],
   [
-   "n0588",
+   "n0586",
    "sulh.jidar_mushtarak"
   ],
   [
-   "n0588",
+   "n0586",
    "sulh.wad_khashab"
+  ],
+  [
+   "n0587",
+   "sulh.sulh"
+  ],
+  [
+   "n0588",
+   "sulh.sulh"
   ],
   [
    "n0589",
-   "sulh.sulh"
-  ],
-  [
-   "n0590",
-   "sulh.sulh"
-  ],
-  [
-   "n0591",
    "sulh.sulh_dam"
   ],
   [
-   "n0592",
+   "n0590",
    "sulh.wad_khashab"
   ],
   [
-   "n0593",
+   "n0591",
    "tahara.aniya"
   ],
   [
-   "n0594",
+   "n0592",
    "tahara.aniyat_kuffar"
   ],
   [
-   "n0595",
+   "n0593",
    "tahara.bawl"
   ],
   [
-   "n0596",
+   "n0594",
    "tahara.dibagh"
   ],
   [
-   "n0596",
+   "n0594",
    "tahara.jild_mayta"
   ],
   [
-   "n0597",
+   "n0595",
    "tahara.duhn_najis"
+  ],
+  [
+   "n0596",
+   "tahara.duhn_najis"
+  ],
+  [
+   "n0597",
+   "tahara.ghusl_janaba"
   ],
   [
    "n0598",
-   "tahara.duhn_najis"
+   "tahara.ghusl_janaba"
   ],
   [
    "n0599",
-   "tahara.ghusl_janaba"
+   "tahara.hadath"
   ],
   [
    "n0600",
-   "tahara.ghusl_janaba"
+   "tahara.hayd"
   ],
   [
    "n0601",
-   "tahara.hadath"
+   "tahara.hayd"
+  ],
+  [
+   "n0601",
+   "tahara.wat_haid"
   ],
   [
    "n0602",
@@ -17319,200 +17315,200 @@
    "tahara.hayd"
   ],
   [
-   "n0603",
-   "tahara.wat_haid"
-  ],
-  [
    "n0604",
-   "tahara.hayd"
+   "tahara.istihada"
   ],
   [
    "n0605",
-   "tahara.hayd"
+   "tahara.istihada"
   ],
   [
    "n0606",
-   "tahara.istihada"
-  ],
-  [
-   "n0607",
-   "tahara.istihada"
-  ],
-  [
-   "n0608",
    "tahara.istimta_haid"
   ],
   [
-   "n0609",
+   "n0607",
    "tahara.istinja"
   ],
   [
-   "n0610",
+   "n0608",
    "tahara.jild_mayta"
   ],
   [
-   "n0611",
+   "n0609",
    "tahara.lams_mara"
   ],
   [
-   "n0612",
+   "n0610",
    "tahara.ma_jari"
   ],
   [
-   "n0613",
+   "n0611",
    "tahara.ma_najis"
   ],
   [
-   "n0613",
+   "n0611",
    "tahara.ma_yasir"
   ],
   [
-   "n0614",
+   "n0612",
    "tahara.ma_najis"
   ],
   [
-   "n0615",
+   "n0613",
    "tahara.ma_ubina"
   ],
   [
-   "n0616",
+   "n0614",
    "tahara.madhy"
   ],
   [
-   "n0617",
+   "n0615",
    "tahara.mani"
+  ],
+  [
+   "n0616",
+   "tahara.mani"
+  ],
+  [
+   "n0617",
+   "tahara.mash_khuff"
   ],
   [
    "n0618",
-   "tahara.mani"
+   "tahara.mash_khuff"
   ],
   [
    "n0619",
-   "tahara.mash_khuff"
-  ],
-  [
-   "n0620",
-   "tahara.mash_khuff"
-  ],
-  [
-   "n0621",
    "tahara.mash_ras"
   ],
   [
-   "n0622",
+   "n0620",
    "tahara.mash_udhunayn"
   ],
   [
-   "n0623",
+   "n0621",
    "tahara.mayta_la_nafs"
   ],
   [
-   "n0624",
+   "n0622",
    "tahara.muwalat"
   ],
   [
-   "n0625",
+   "n0623",
    "tahara.najasa"
   ],
   [
-   "n0625",
+   "n0623",
    "tahara.thawb"
   ],
   [
-   "n0626",
+   "n0624",
    "tahara.nawm"
   ],
   [
-   "n0627",
+   "n0625",
    "tahara.qiraat_junub"
   ],
   [
-   "n0628",
+   "n0626",
    "tahara.shar"
   ],
   [
-   "n0629",
+   "n0627",
    "tahara.tathir_inaa"
   ],
   [
-   "n0629",
+   "n0627",
    "tahara.wulugh_kalb"
   ],
   [
-   "n0630",
+   "n0628",
    "tahara.tayammum"
   ],
   [
-   "n0631",
+   "n0629",
    "tahara.thiyab_sibyan"
   ],
   [
+   "n0630",
+   "tahara.tin_shawari"
+  ],
+  [
+   "n0631",
+   "tahara.tin_shawari"
+  ],
+  [
    "n0632",
-   "tahara.tin_shawari"
-  ],
-  [
-   "n0633",
-   "tahara.tin_shawari"
-  ],
-  [
-   "n0634",
    "tahara.wat_haid"
   ],
   [
+   "n0633",
+   "tahara.wudu"
+  ],
+  [
+   "n0634",
+   "tahara.wudu"
+  ],
+  [
    "n0635",
-   "tahara.wudu"
-  ],
-  [
-   "n0636",
-   "tahara.wudu"
-  ],
-  [
-   "n0637",
    "tahara.wulugh_kalb"
   ],
   [
-   "n0638",
+   "n0636",
    "talaq.adad_talaq"
   ],
   [
-   "n0638",
+   "n0636",
    "talaq.talaq_thalath"
   ],
   [
-   "n0639",
+   "n0637",
    "talaq.adad_talaq"
   ],
   [
-   "n0639",
+   "n0637",
    "talaq.talaq"
   ],
   [
-   "n0640",
+   "n0638",
    "talaq.adad_talaq"
   ],
   [
-   "n0641",
+   "n0639",
    "talaq.alfaz_talaq"
   ],
   [
-   "n0642",
+   "n0640",
    "talaq.kinaya"
   ],
   [
-   "n0643",
+   "n0641",
    "talaq.kinayat_talaq"
+  ],
+  [
+   "n0642",
+   "talaq.kinayat_talaq"
+  ],
+  [
+   "n0643",
+   "talaq.mutallaqa_thalathan"
   ],
   [
    "n0644",
-   "talaq.kinayat_talaq"
+   "talaq.mutallaqa_thalathan"
   ],
   [
    "n0645",
-   "talaq.mutallaqa_thalathan"
+   "talaq.talaq"
   ],
   [
    "n0646",
-   "talaq.mutallaqa_thalathan"
+   "talaq.talaq"
+  ],
+  [
+   "n0646",
+   "talaq.talaq_bida"
   ],
   [
    "n0647",
@@ -17523,16 +17519,12 @@
    "talaq.talaq"
   ],
   [
-   "n0648",
+   "n0649",
    "talaq.talaq_bida"
   ],
   [
-   "n0649",
-   "talaq.talaq"
-  ],
-  [
    "n0650",
-   "talaq.talaq"
+   "talaq.talaq_bida"
   ],
   [
    "n0651",
@@ -17540,27 +17532,27 @@
   ],
   [
    "n0652",
-   "talaq.talaq_bida"
-  ],
-  [
-   "n0653",
-   "talaq.talaq_bida"
-  ],
-  [
-   "n0654",
    "talaq.talaq_muallaq"
   ],
   [
-   "n0654",
+   "n0652",
    "talaq.taliq_talaq"
   ],
   [
-   "n0655",
+   "n0653",
    "talaq.talaq_muallaq"
   ],
   [
-   "n0656",
+   "n0654",
    "talaq.talaq_muallaq"
+  ],
+  [
+   "n0655",
+   "talaq.talaq_qabl_nikah"
+  ],
+  [
+   "n0656",
+   "talaq.talaq_qabl_nikah"
   ],
   [
    "n0657",
@@ -17568,35 +17560,35 @@
   ],
   [
    "n0658",
-   "talaq.talaq_qabl_nikah"
-  ],
-  [
-   "n0659",
-   "talaq.talaq_qabl_nikah"
-  ],
-  [
-   "n0660",
    "talaq.talaq_thalath"
   ],
   [
-   "n0661",
+   "n0659",
    "udhiya.akl_udhiya"
   ],
   [
+   "n0660",
+   "udhiya.aqiqa"
+  ],
+  [
+   "n0661",
+   "udhiya.aqiqa"
+  ],
+  [
    "n0662",
-   "udhiya.aqiqa"
-  ],
-  [
-   "n0663",
-   "udhiya.aqiqa"
-  ],
-  [
-   "n0664",
    "udhiya.julud_adahi"
   ],
   [
-   "n0665",
+   "n0663",
    "udhiya.muayyana"
+  ],
+  [
+   "n0664",
+   "udhiya.udhiya"
+  ],
+  [
+   "n0665",
+   "udhiya.udhiya"
   ],
   [
    "n0666",
@@ -17604,47 +17596,47 @@
   ],
   [
    "n0667",
-   "udhiya.udhiya"
+   "usul.amr"
   ],
   [
    "n0668",
-   "udhiya.udhiya"
+   "usul.amr"
   ],
   [
    "n0669",
-   "usul.amr"
+   "usul.fil_nabi"
   ],
   [
    "n0670",
-   "usul.amr"
+   "usul.fil_nabi"
   ],
   [
    "n0671",
-   "usul.fil_nabi"
+   "usul.kitaba_ishara"
   ],
   [
    "n0672",
-   "usul.fil_nabi"
+   "usul.kitaba_ishara"
   ],
   [
    "n0673",
-   "usul.kitaba_ishara"
-  ],
-  [
-   "n0674",
-   "usul.kitaba_ishara"
-  ],
-  [
-   "n0675",
    "usul.wujub"
   ],
   [
-   "n0676",
+   "n0674",
    "wadia.amana"
   ],
   [
-   "n0676",
+   "n0674",
    "wadia.amanat"
+  ],
+  [
+   "n0674",
+   "wadia.wadia"
+  ],
+  [
+   "n0675",
+   "wadia.wadia"
   ],
   [
    "n0676",
@@ -17656,47 +17648,47 @@
   ],
   [
    "n0678",
-   "wadia.wadia"
+   "wakala.wakala"
+  ],
+  [
+   "n0678",
+   "wakala.wakil"
   ],
   [
    "n0679",
-   "wadia.wadia"
+   "wakala.wakala"
+  ],
+  [
+   "n0679",
+   "wakala.wakil"
   ],
   [
    "n0680",
    "wakala.wakala"
   ],
   [
-   "n0680",
-   "wakala.wakil"
-  ],
-  [
    "n0681",
-   "wakala.wakala"
-  ],
-  [
-   "n0681",
-   "wakala.wakil"
-  ],
-  [
-   "n0682",
-   "wakala.wakala"
-  ],
-  [
-   "n0683",
    "waqf.nazir_waqf"
   ],
   [
-   "n0684",
+   "n0682",
    "waqf.waqf"
+  ],
+  [
+   "n0683",
+   "waqf.waqf"
+  ],
+  [
+   "n0684",
+   "waqf.waqf_dhurriyya"
   ],
   [
    "n0685",
-   "waqf.waqf"
+   "wasaya.wasi"
   ],
   [
    "n0686",
-   "waqf.waqf_dhurriyya"
+   "wasaya.wasi"
   ],
   [
    "n0687",
@@ -17704,127 +17696,127 @@
   ],
   [
    "n0688",
-   "wasaya.wasi"
+   "wasaya.wasiyya"
   ],
   [
    "n0689",
-   "wasaya.wasi"
+   "wasaya.wasiyya"
   ],
   [
    "n0690",
-   "wasaya.wasiyya"
-  ],
-  [
-   "n0691",
-   "wasaya.wasiyya"
-  ],
-  [
-   "n0692",
    "wasaya.wasiyya_aqarib"
   ],
   [
-   "n0693",
+   "n0691",
    "wasaya.wasiyya_thuluth"
   ],
   [
-   "n0694",
+   "n0692",
    "wasaya.wasiyya_thuluth"
   ],
   [
-   "n0694",
+   "n0692",
    "wasaya.wasiyya_warith"
   ],
   [
-   "n0695",
+   "n0693",
+   "zakat.ahl_zakat"
+  ],
+  [
+   "n0693",
+   "zakat.masarif"
+  ],
+  [
+   "n0694",
    "zakat.ahl_zakat"
   ],
   [
    "n0695",
-   "zakat.masarif"
+   "zakat.amil"
   ],
   [
    "n0696",
-   "zakat.ahl_zakat"
+   "zakat.amil"
   ],
   [
    "n0697",
-   "zakat.amil"
-  ],
-  [
-   "n0698",
-   "zakat.amil"
-  ],
-  [
-   "n0699",
    "zakat.baqar"
   ],
   [
-   "n0700",
+   "n0698",
    "zakat.firar"
   ],
   [
-   "n0701",
+   "n0699",
    "zakat.gharim"
   ],
   [
+   "n0700",
+   "zakat.hawl"
+  ],
+  [
+   "n0701",
+   "zakat.hawl"
+  ],
+  [
    "n0702",
-   "zakat.hawl"
-  ],
-  [
-   "n0703",
-   "zakat.hawl"
-  ],
-  [
-   "n0704",
    "zakat.jubran"
   ],
   [
-   "n0705",
+   "n0703",
    "zakat.madin"
   ],
   [
-   "n0706",
+   "n0704",
    "zakat.mal_sabi"
   ],
   [
-   "n0707",
+   "n0705",
    "zakat.mani_zakat"
   ],
   [
-   "n0708",
+   "n0706",
    "zakat.masarif"
   ],
   [
-   "n0709",
+   "n0707",
    "zakat.nisab"
   ],
   [
-   "n0710",
+   "n0708",
    "zakat.rikaz"
   ],
   [
-   "n0711",
+   "n0709",
    "zakat.sabil_allah"
   ],
   [
-   "n0712",
+   "n0710",
    "zakat.sadaqat_tatawwu"
   ],
   [
-   "n0713",
+   "n0711",
    "zakat.tajil"
+  ],
+  [
+   "n0712",
+   "zakat.tajil"
+  ],
+  [
+   "n0713",
+   "zakat.urud_tijara"
   ],
   [
    "n0714",
-   "zakat.tajil"
+   "zakat.urud_tijara"
   ],
   [
    "n0715",
-   "zakat.urud_tijara"
+   "zakat.zakat"
   ],
   [
    "n0716",
-   "zakat.urud_tijara"
+   "zakat.zakat"
   ],
   [
    "n0717",
@@ -17832,15 +17824,15 @@
   ],
   [
    "n0718",
-   "zakat.zakat"
+   "zakat.zakat_anam"
   ],
   [
    "n0719",
-   "zakat.zakat"
+   "zakat.zakat_fitr"
   ],
   [
    "n0720",
-   "zakat.zakat_anam"
+   "zakat.zakat_fitr"
   ],
   [
    "n0721",
@@ -17848,26 +17840,18 @@
   ],
   [
    "n0722",
-   "zakat.zakat_fitr"
-  ],
-  [
-   "n0723",
-   "zakat.zakat_fitr"
-  ],
-  [
-   "n0724",
    "zakat.zakat_ibil"
   ],
   [
-   "n0725",
+   "n0723",
    "zakat.zakat_thimar"
   ],
   [
-   "n0726",
+   "n0724",
    "zihar.kaffarat_zihar"
   ],
   [
-   "n0727",
+   "n0725",
    "zihar.zihar"
   ]
  ],
@@ -20675,13 +20659,13 @@
  },
  "grounds": {
   "l043": [
+   "n0667",
+   "n0668",
    "n0669",
    "n0670",
    "n0671",
    "n0672",
-   "n0673",
-   "n0674",
-   "n0675"
+   "n0673"
   ],
   "l052": [
    "n0062",
@@ -20700,17 +20684,17 @@
    "n0311",
    "n0312",
    "n0313",
-   "n0543",
-   "n0546",
-   "n0595",
-   "n0630",
+   "n0541",
+   "n0544",
+   "n0593",
+   "n0628",
+   "n0636",
+   "n0637",
    "n0638",
-   "n0639",
-   "n0640",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "l053": [
    "n0142",
@@ -20723,28 +20707,28 @@
    "n0298",
    "n0305",
    "n0306",
-   "n0447",
-   "n0448",
-   "n0639",
+   "n0445",
+   "n0446",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
-   "n0655",
-   "n0656",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "l054": [
    "n0121",
    "n0122",
    "n0123",
-   "n0599",
-   "n0600",
-   "n0627"
+   "n0597",
+   "n0598",
+   "n0625"
   ],
   "l061": [
    "n0055",
@@ -20752,48 +20736,48 @@
    "n0071",
    "n0072",
    "n0073",
-   "n0571",
-   "n0576",
-   "n0580"
+   "n0569",
+   "n0574",
+   "n0578"
   ],
   "r001": [
    "n0062",
    "n0063",
    "n0064",
+   "n0610",
+   "n0611",
    "n0612",
-   "n0613",
-   "n0614",
-   "n0629",
-   "n0635",
-   "n0636"
+   "n0627",
+   "n0633",
+   "n0634"
   ],
   "r002": [
-   "n0535",
-   "n0536",
+   "n0533",
+   "n0534",
+   "n0597",
+   "n0598",
    "n0599",
-   "n0600",
-   "n0601",
-   "n0611",
-   "n0628",
-   "n0639",
+   "n0609",
+   "n0626",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r003": [
    "n0173",
    "n0174",
    "n0175",
    "n0176",
-   "n0504",
-   "n0621",
-   "n0635",
-   "n0636",
+   "n0502",
+   "n0619",
+   "n0633",
+   "n0634",
+   "n0715",
+   "n0716",
    "n0717",
-   "n0718",
-   "n0719",
-   "n0720"
+   "n0718"
   ],
   "r004": [
    "n0057",
@@ -20812,20 +20796,20 @@
    "n0194",
    "n0195",
    "n0196",
-   "n0362",
-   "n0447",
-   "n0448",
+   "n0361",
+   "n0445",
+   "n0446",
+   "n0507",
+   "n0508",
    "n0509",
    "n0510",
-   "n0511",
-   "n0512",
-   "n0635",
-   "n0636",
-   "n0713",
-   "n0714",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0633",
+   "n0634",
+   "n0711",
+   "n0712",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r005": [
    "n0057",
@@ -20838,113 +20822,113 @@
    "n0176",
    "n0177",
    "n0190",
-   "n0509",
-   "n0523",
-   "n0534",
-   "n0630",
-   "n0713",
-   "n0714",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0507",
+   "n0521",
+   "n0532",
+   "n0628",
+   "n0711",
+   "n0712",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r006": [
    "n0178",
    "n0179",
    "n0180",
    "n0257",
-   "n0454",
-   "n0479",
+   "n0452",
+   "n0477",
+   "n0508",
+   "n0509",
    "n0510",
-   "n0511",
-   "n0512",
-   "n0524",
-   "n0551",
-   "n0555",
-   "n0569",
-   "n0576"
+   "n0522",
+   "n0549",
+   "n0553",
+   "n0567",
+   "n0574"
   ],
   "r007": [
    "n0301",
+   "n0428",
+   "n0429",
    "n0430",
    "n0431",
-   "n0432",
-   "n0433",
-   "n0630",
-   "n0726"
+   "n0628",
+   "n0724"
   ],
   "r008": [
-   "n0503",
-   "n0527",
-   "n0528",
-   "n0538",
-   "n0599",
-   "n0600",
-   "n0635",
-   "n0636",
+   "n0501",
+   "n0525",
+   "n0526",
+   "n0536",
+   "n0597",
+   "n0598",
+   "n0633",
+   "n0634",
+   "n0715",
+   "n0716",
    "n0717",
-   "n0718",
    "n0719",
-   "n0721",
-   "n0722",
-   "n0723"
+   "n0720",
+   "n0721"
   ],
   "r009": [
    "n0167",
    "n0180",
-   "n0502",
-   "n0515",
-   "n0516",
-   "n0521",
-   "n0535",
-   "n0536",
-   "n0567",
-   "n0568",
-   "n0579"
+   "n0500",
+   "n0513",
+   "n0514",
+   "n0519",
+   "n0533",
+   "n0534",
+   "n0565",
+   "n0566",
+   "n0577"
   ],
   "r010": [
    "n0071",
    "n0072",
    "n0073",
    "n0094",
-   "n0377",
-   "n0439",
-   "n0500",
-   "n0501",
+   "n0376",
+   "n0437",
+   "n0498",
+   "n0499",
+   "n0508",
+   "n0509",
    "n0510",
-   "n0511",
    "n0512",
-   "n0514",
+   "n0637",
    "n0639",
-   "n0641",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r011": [
    "n0180",
    "n0187",
-   "n0447",
-   "n0448",
-   "n0522",
-   "n0547",
+   "n0445",
+   "n0446",
+   "n0520",
+   "n0545",
+   "n0546",
    "n0548",
-   "n0550",
-   "n0576"
+   "n0574"
   ],
   "r012": [
-   "n0505",
+   "n0503",
+   "n0506",
    "n0508",
+   "n0509",
    "n0510",
-   "n0511",
-   "n0512",
-   "n0530",
-   "n0531",
-   "n0541",
-   "n0622",
-   "n0635",
-   "n0636"
+   "n0528",
+   "n0529",
+   "n0539",
+   "n0620",
+   "n0633",
+   "n0634"
   ],
   "r013": [
    "n0039",
@@ -20974,25 +20958,25 @@
    "n0298",
    "n0314",
    "n0315",
-   "n0361",
+   "n0360",
+   "n0364",
    "n0365",
-   "n0366",
-   "n0378",
-   "n0394",
-   "n0441",
+   "n0377",
+   "n0393",
+   "n0439",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
+   "n0489",
+   "n0490",
    "n0491",
    "n0492",
-   "n0493",
-   "n0494",
-   "n0613",
+   "n0611",
+   "n0612",
    "n0614",
-   "n0616",
-   "n0617",
-   "n0618"
+   "n0615",
+   "n0616"
   ],
   "r014": [
    "n0293",
@@ -21001,16 +20985,16 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0617",
-   "n0618",
-   "n0639",
+   "n0615",
+   "n0616",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0654",
-   "n0655",
-   "n0656"
+   "n0652",
+   "n0653",
+   "n0654"
   ],
   "r015": [
    "n0051",
@@ -21019,20 +21003,20 @@
    "n0236",
    "n0237",
    "n0238",
+   "n0615",
+   "n0616",
    "n0617",
    "n0618",
-   "n0619",
-   "n0620",
-   "n0625",
-   "n0635",
-   "n0636",
+   "n0623",
+   "n0633",
+   "n0634",
+   "n0637",
    "n0639",
-   "n0641",
-   "n0642",
+   "n0640",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r016": [
    "n0057",
@@ -21055,12 +21039,12 @@
    "n0333",
    "n0344",
    "n0345",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
    "n0493",
-   "n0495",
-   "n0496",
-   "n0726"
+   "n0494",
+   "n0724"
   ],
   "r017": [
    "n0031",
@@ -21075,11 +21059,11 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0525",
-   "n0526",
-   "n0547",
-   "n0548",
-   "n0549"
+   "n0523",
+   "n0524",
+   "n0545",
+   "n0546",
+   "n0547"
   ],
   "r018": [
    "n0016",
@@ -21089,33 +21073,33 @@
    "n0197",
    "n0198",
    "n0199",
-   "n0447",
-   "n0448",
+   "n0445",
+   "n0446",
+   "n0508",
+   "n0509",
    "n0510",
-   "n0511",
-   "n0512",
-   "n0532",
+   "n0530",
+   "n0538",
    "n0540",
+   "n0541",
    "n0542",
-   "n0543",
-   "n0544",
-   "n0576",
-   "n0601",
-   "n0662",
-   "n0663",
+   "n0574",
+   "n0599",
+   "n0660",
+   "n0661",
+   "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r019": [
    "n0180",
-   "n0550",
-   "n0576",
-   "n0630",
-   "n0709"
+   "n0548",
+   "n0574",
+   "n0628",
+   "n0707"
   ],
   "r020": [
    "n0070",
@@ -21128,18 +21112,18 @@
    "n0099",
    "n0216",
    "n0220",
+   "n0387",
    "n0388",
    "n0389",
-   "n0390",
-   "n0560",
-   "n0702",
-   "n0703",
-   "n0709",
-   "n0713",
-   "n0714",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0558",
+   "n0700",
+   "n0701",
+   "n0707",
+   "n0711",
+   "n0712",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r021": [
    "n0142",
@@ -21152,8 +21136,8 @@
    "n0298",
    "n0305",
    "n0306",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ],
   "r022": [
    "n0028",
@@ -21164,16 +21148,16 @@
    "n0142",
    "n0220",
    "n0246",
-   "n0469",
-   "n0470",
-   "n0613",
-   "n0614",
+   "n0467",
+   "n0468",
+   "n0611",
+   "n0612",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
-   "n0678",
-   "n0679",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ],
   "r023": [
    "n0004",
@@ -21207,19 +21191,19 @@
    "n0305",
    "n0306",
    "n0309",
-   "n0394",
-   "n0396",
-   "n0409",
+   "n0393",
+   "n0395",
+   "n0408",
+   "n0438",
+   "n0439",
    "n0440",
    "n0441",
-   "n0442",
-   "n0443",
-   "n0476",
+   "n0474",
+   "n0508",
+   "n0509",
    "n0510",
-   "n0511",
-   "n0512",
-   "n0588",
-   "n0592"
+   "n0586",
+   "n0590"
   ],
   "r024": [
    "n0071",
@@ -21240,11 +21224,10 @@
    "n0352",
    "n0353",
    "n0354",
-   "n0355",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0709"
+   "n0707"
   ],
   "r025": [
    "n0071",
@@ -21272,7 +21255,7 @@
    "n0194",
    "n0195",
    "n0196",
-   "n0357"
+   "n0356"
   ],
   "r027": [
    "n0008",
@@ -21280,10 +21263,10 @@
    "n0063",
    "n0064",
    "n0065",
-   "n0357",
-   "n0569",
-   "n0570",
-   "n0576"
+   "n0356",
+   "n0567",
+   "n0568",
+   "n0574"
   ],
   "r028": [
    "n0051",
@@ -21302,45 +21285,45 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
-   "n0371",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
    "n0493",
-   "n0495",
-   "n0496"
+   "n0494"
   ],
   "r029": [
-   "n0609",
-   "n0661",
+   "n0607",
+   "n0659",
+   "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
+   "n0678",
+   "n0679",
    "n0680",
-   "n0681",
-   "n0682",
-   "n0695",
-   "n0708",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0693",
+   "n0706",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r030": [
    "n0173",
    "n0174",
    "n0175",
    "n0176",
+   "n0663",
+   "n0664",
    "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0699",
-   "n0713",
-   "n0714",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0697",
+   "n0711",
+   "n0712",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r031": [
    "n0173",
@@ -21349,11 +21332,11 @@
    "n0176",
    "n0184",
    "n0289",
-   "n0533",
+   "n0531",
+   "n0663",
+   "n0664",
    "n0665",
-   "n0666",
-   "n0667",
-   "n0668"
+   "n0666"
   ],
   "r032": [
    "n0071",
@@ -21374,18 +21357,18 @@
    "n0298",
    "n0305",
    "n0306",
-   "n0374",
-   "n0376",
-   "n0488",
+   "n0373",
+   "n0375",
+   "n0486",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0589",
-   "n0590",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0587",
+   "n0588",
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r033": [
    "n0071",
@@ -21403,7 +21386,7 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0403"
+   "n0402"
   ],
   "r034": [
    "n0142",
@@ -21420,13 +21403,13 @@
    "n0296",
    "n0297",
    "n0298",
+   "n0415",
+   "n0416",
    "n0417",
    "n0418",
-   "n0419",
-   "n0420",
-   "n0429",
-   "n0690",
-   "n0691"
+   "n0427",
+   "n0688",
+   "n0689"
   ],
   "r035": [
    "n0071",
@@ -21481,12 +21464,12 @@
    "n0311",
    "n0312",
    "n0313",
+   "n0472",
    "n0474",
-   "n0476",
+   "n0674",
+   "n0675",
    "n0676",
-   "n0677",
-   "n0678",
-   "n0679"
+   "n0677"
   ],
   "r038": [
    "n0034",
@@ -21506,17 +21489,17 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0391",
-   "n0467",
-   "n0468",
-   "n0497",
-   "n0498",
-   "n0560",
-   "n0639",
+   "n0390",
+   "n0465",
+   "n0466",
+   "n0495",
+   "n0496",
+   "n0558",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r039": [
    "n0273",
@@ -21525,14 +21508,14 @@
    "n0277",
    "n0278",
    "n0279",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
-   "n0488",
-   "n0491",
-   "n0492",
-   "n0493"
+   "n0486",
+   "n0489",
+   "n0490",
+   "n0491"
   ],
   "r040": [
    "n0018",
@@ -21578,48 +21561,47 @@
    "n0311",
    "n0312",
    "n0313",
-   "n0378",
-   "n0412",
-   "n0415",
-   "n0476",
+   "n0377",
+   "n0411",
+   "n0474",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
    "n0493",
-   "n0495",
-   "n0496",
-   "n0589",
-   "n0590",
-   "n0639",
+   "n0494",
+   "n0587",
+   "n0588",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
-   "n0655",
-   "n0656",
+   "n0663",
+   "n0664",
    "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0690",
-   "n0691",
-   "n0715",
-   "n0716"
+   "n0688",
+   "n0689",
+   "n0713",
+   "n0714"
   ],
   "r041": [
    "n0018",
    "n0142",
    "n0173",
    "n0220",
-   "n0476",
+   "n0474",
+   "n0663",
+   "n0664",
    "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r042": [
    "n0033",
@@ -21627,13 +21609,13 @@
    "n0035",
    "n0036",
    "n0037",
+   "n0383",
    "n0384",
    "n0385",
-   "n0386",
+   "n0674",
+   "n0675",
    "n0676",
-   "n0677",
-   "n0678",
-   "n0679"
+   "n0677"
   ],
   "r043": [
    "n0033",
@@ -21642,10 +21624,10 @@
    "n0073",
    "n0100",
    "n0101",
+   "n0674",
+   "n0675",
    "n0676",
-   "n0677",
-   "n0678",
-   "n0679"
+   "n0677"
   ],
   "r045": [
    "n0018",
@@ -21656,28 +21638,28 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0476",
+   "n0474",
+   "n0558",
+   "n0559",
    "n0560",
-   "n0561",
-   "n0562",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
    "n0678",
    "n0679",
    "n0680",
-   "n0681",
-   "n0682",
-   "n0687",
-   "n0688",
-   "n0689"
+   "n0685",
+   "n0686",
+   "n0687"
   ],
   "r046": [
    "n0001",
    "n0002",
    "n0182",
    "n0183",
-   "n0561",
-   "n0562"
+   "n0559",
+   "n0560"
   ],
   "r047": [
    "n0001",
@@ -21701,23 +21683,23 @@
    "n0298",
    "n0305",
    "n0306",
-   "n0434",
-   "n0491",
-   "n0492",
-   "n0493"
+   "n0432",
+   "n0489",
+   "n0490",
+   "n0491"
   ],
   "r049": [
    "n0018",
    "n0019",
    "n0086",
-   "n0497",
-   "n0498"
+   "n0495",
+   "n0496"
   ],
   "r050": [
    "n0004",
-   "n0564",
-   "n0565",
-   "n0566"
+   "n0562",
+   "n0563",
+   "n0564"
   ],
   "r051": [
    "n0071",
@@ -21730,8 +21712,8 @@
    "n0223",
    "n0224",
    "n0225",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ],
   "r052": [
    "n0071",
@@ -21744,11 +21726,11 @@
    "n0331",
    "n0332",
    "n0333",
-   "n0483",
-   "n0484",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0481",
+   "n0482",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r053": [
    "n0004",
@@ -21772,17 +21754,16 @@
    "n0352",
    "n0353",
    "n0354",
-   "n0355",
-   "n0476",
+   "n0474",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
    "n0493",
-   "n0495",
-   "n0496",
+   "n0494",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0709"
+   "n0707"
   ],
   "r054": [
    "n0070",
@@ -21795,11 +21776,11 @@
    "n0097",
    "n0098",
    "n0099",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
    "n0493",
-   "n0495",
-   "n0496"
+   "n0494"
   ],
   "r055": [
    "n0070",
@@ -21820,15 +21801,15 @@
    "n0225",
    "n0232",
    "n0233",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ],
   "r056": [
    "n0018",
@@ -21844,22 +21825,22 @@
    "n0298",
    "n0305",
    "n0306",
-   "n0416",
-   "n0476",
-   "n0639",
+   "n0414",
+   "n0474",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
    "n0655",
    "n0656",
    "n0657",
-   "n0658",
-   "n0659",
-   "n0680",
-   "n0681",
-   "n0682"
+   "n0678",
+   "n0679",
+   "n0680"
   ],
   "r057": [
    "n0216",
@@ -21875,32 +21856,32 @@
    "n0297",
    "n0298",
    "n0299",
-   "n0374",
-   "n0376",
+   "n0373",
+   "n0375",
+   "n0428",
+   "n0429",
    "n0430",
    "n0431",
-   "n0432",
-   "n0433",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
    "n0493",
-   "n0495",
-   "n0496",
-   "n0639",
+   "n0494",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0654",
-   "n0655",
-   "n0656"
+   "n0652",
+   "n0653",
+   "n0654"
   ],
   "r058": [
    "n0062",
    "n0063",
    "n0064",
-   "n0603",
-   "n0634"
+   "n0601",
+   "n0632"
   ],
   "r059": [
    "n0070",
@@ -21933,37 +21914,37 @@
   "r060": [
    "n0018",
    "n0118",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
-   "n0371",
+   "n0387",
    "n0388",
    "n0389",
    "n0390",
-   "n0391",
-   "n0476",
+   "n0474",
+   "n0558",
+   "n0559",
    "n0560",
-   "n0561",
-   "n0562",
+   "n0678",
+   "n0679",
    "n0680",
-   "n0681",
-   "n0682",
-   "n0687",
-   "n0688",
-   "n0689"
+   "n0685",
+   "n0686",
+   "n0687"
   ],
   "r061": [
-   "n0455"
+   "n0453"
   ],
   "r062": [
-   "n0461",
-   "n0462",
+   "n0459",
+   "n0460",
+   "n0558",
+   "n0559",
    "n0560",
-   "n0561",
-   "n0562",
+   "n0674",
+   "n0675",
    "n0676",
-   "n0677",
-   "n0678",
-   "n0679"
+   "n0677"
   ],
   "r063": [
    "n0293",
@@ -21972,18 +21953,18 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0374",
-   "n0376",
+   "n0373",
+   "n0375",
+   "n0415",
+   "n0416",
    "n0417",
    "n0418",
-   "n0419",
-   "n0420",
-   "n0429",
-   "n0639",
+   "n0427",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r064": [
    "n0071",
@@ -21997,14 +21978,14 @@
    "n0161",
    "n0162",
    "n0163",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0654",
-   "n0655",
-   "n0656"
+   "n0652",
+   "n0653",
+   "n0654"
   ],
   "r065": [
    "n0011",
@@ -22026,21 +22007,21 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
-   "n0371",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r066": [
    "n0071",
    "n0072",
    "n0073",
    "n0075",
-   "n0524"
+   "n0522"
   ],
   "r067": [
    "n0037",
@@ -22068,16 +22049,16 @@
    "n0298",
    "n0305",
    "n0306",
-   "n0479",
+   "n0477",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
    "n0493",
-   "n0495",
-   "n0496",
+   "n0494",
+   "n0550",
+   "n0551",
    "n0552",
-   "n0553",
-   "n0554",
-   "n0555"
+   "n0553"
   ],
   "r068": [
    "n0024",
@@ -22089,32 +22070,32 @@
    "n0073",
    "n0240",
    "n0241",
+   "n0450",
+   "n0451",
    "n0452",
-   "n0453",
-   "n0454",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
-   "n0483",
-   "n0484",
-   "n0550",
-   "n0586",
-   "n0601",
-   "n0619",
-   "n0620",
-   "n0635",
-   "n0636",
+   "n0481",
+   "n0482",
+   "n0548",
+   "n0584",
+   "n0599",
+   "n0617",
+   "n0618",
+   "n0633",
+   "n0634",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
    "n0678",
    "n0679",
    "n0680",
-   "n0681",
-   "n0682",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r069": [
    "n0200",
@@ -22126,14 +22107,14 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0461",
-   "n0462",
+   "n0459",
+   "n0460",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0560",
-   "n0561",
-   "n0562"
+   "n0558",
+   "n0559",
+   "n0560"
   ],
   "r070": [
    "n0057",
@@ -22151,28 +22132,28 @@
    "n0207",
    "n0208",
    "n0227",
+   "n0438",
    "n0440",
-   "n0442",
-   "n0443",
-   "n0505",
-   "n0513",
-   "n0561",
-   "n0562",
-   "n0573",
+   "n0441",
+   "n0503",
+   "n0511",
+   "n0559",
+   "n0560",
+   "n0571",
+   "n0678",
+   "n0679",
    "n0680",
-   "n0681",
    "n0682",
-   "n0684",
+   "n0683",
    "n0685",
+   "n0686",
    "n0687",
-   "n0688",
-   "n0689",
-   "n0695",
-   "n0708",
-   "n0712",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0693",
+   "n0706",
+   "n0710",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r071": [
    "n0056",
@@ -22186,11 +22167,11 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0680",
+   "n0678",
+   "n0679",
    "n0681",
-   "n0683",
-   "n0684",
-   "n0685"
+   "n0682",
+   "n0683"
   ],
   "r072": [
    "n0112",
@@ -22205,27 +22186,27 @@
    "n0280",
    "n0350",
    "n0351",
-   "n0394",
-   "n0429",
-   "n0560",
-   "n0711"
+   "n0393",
+   "n0427",
+   "n0558",
+   "n0709"
   ],
   "r073": [
    "n0086",
    "n0105",
    "n0106",
+   "n0387",
    "n0388",
    "n0389",
-   "n0390",
-   "n0497",
-   "n0498"
+   "n0495",
+   "n0496"
   ],
   "r074": [
    "n0118",
    "n0321",
    "n0347",
-   "n0697",
-   "n0698"
+   "n0695",
+   "n0696"
   ],
   "r075": [
    "n0018",
@@ -22250,29 +22231,29 @@
    "n0321",
    "n0328",
    "n0329",
+   "n0380",
    "n0381",
    "n0382",
    "n0383",
    "n0384",
    "n0385",
-   "n0386",
+   "n0387",
    "n0388",
    "n0389",
-   "n0390",
-   "n0394",
-   "n0475",
+   "n0393",
+   "n0473",
+   "n0674",
+   "n0675",
    "n0676",
-   "n0677",
-   "n0678",
-   "n0679"
+   "n0677"
   ],
   "r076": [
-   "n0459",
-   "n0463",
-   "n0464",
+   "n0457",
+   "n0461",
+   "n0462",
+   "n0559",
    "n0561",
-   "n0563",
-   "n0588"
+   "n0586"
   ],
   "r077": [
    "n0001",
@@ -22299,12 +22280,12 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0490",
+   "n0488",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ],
   "r078": [
    "n0034",
@@ -22330,15 +22311,15 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0564",
-   "n0565",
-   "n0566"
+   "n0562",
+   "n0563",
+   "n0564"
   ],
   "r079": [
    "n0170",
-   "n0564",
-   "n0565",
-   "n0566"
+   "n0562",
+   "n0563",
+   "n0564"
   ],
   "r080": [
    "n0071",
@@ -22354,9 +22335,9 @@
    "n0161",
    "n0162",
    "n0163",
+   "n0387",
    "n0388",
-   "n0389",
-   "n0390"
+   "n0389"
   ],
   "r081": [
    "n0070",
@@ -22374,7 +22355,7 @@
    "n0224",
    "n0228",
    "n0229",
-   "n0490"
+   "n0488"
   ],
   "r082": [
    "n0001",
@@ -22436,19 +22417,19 @@
    "n0312",
    "n0313",
    "n0338",
+   "n0383",
    "n0384",
    "n0385",
-   "n0386",
-   "n0475",
-   "n0490",
+   "n0473",
+   "n0488",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
-   "n0678",
-   "n0679",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r084": [
    "n0005",
@@ -22481,29 +22462,29 @@
    "n0331",
    "n0332",
    "n0333",
-   "n0377",
-   "n0395",
-   "n0475",
+   "n0376",
+   "n0394",
+   "n0473",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0570",
-   "n0576",
-   "n0639",
+   "n0568",
+   "n0574",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691",
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689",
+   "n0715",
+   "n0716",
    "n0717",
-   "n0718",
    "n0719",
-   "n0721",
-   "n0722",
-   "n0723"
+   "n0720",
+   "n0721"
   ],
   "r085": [
    "n0018",
@@ -22532,25 +22513,25 @@
    "n0332",
    "n0333",
    "n0338",
-   "n0360",
+   "n0359",
+   "n0383",
    "n0384",
    "n0385",
-   "n0386",
-   "n0475",
-   "n0490",
-   "n0517",
-   "n0518",
-   "n0588",
+   "n0473",
+   "n0488",
+   "n0515",
+   "n0516",
+   "n0586",
+   "n0594",
+   "n0595",
    "n0596",
-   "n0597",
-   "n0598",
-   "n0610",
+   "n0608",
+   "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0690",
-   "n0691",
-   "n0709"
+   "n0688",
+   "n0689",
+   "n0707"
   ],
   "r086": [
    "n0034",
@@ -22566,12 +22547,12 @@
    "n0266",
    "n0325",
    "n0348",
-   "n0429",
-   "n0588",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0427",
+   "n0586",
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r087": [
    "n0034",
@@ -22605,18 +22586,18 @@
    "n0298",
    "n0325",
    "n0348",
-   "n0517",
-   "n0518",
-   "n0588",
-   "n0597",
-   "n0598",
+   "n0515",
+   "n0516",
+   "n0586",
+   "n0595",
+   "n0596",
+   "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r088": [
    "n0271",
@@ -22630,7 +22611,7 @@
    "n0332",
    "n0333",
    "n0338",
-   "n0676"
+   "n0674"
   ],
   "r091": [
    "n0164",
@@ -22687,28 +22668,28 @@
    "n0277",
    "n0278",
    "n0279",
+   "n0373",
    "n0374",
    "n0375",
-   "n0376",
+   "n0387",
    "n0388",
    "n0389",
-   "n0390",
-   "n0467",
-   "n0468",
-   "n0476",
+   "n0465",
+   "n0466",
+   "n0474",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
+   "n0558",
+   "n0559",
    "n0560",
-   "n0561",
-   "n0562",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
    "n0678",
    "n0679",
-   "n0680",
-   "n0681",
-   "n0682"
+   "n0680"
   ],
   "r094": [
    "n0034",
@@ -22724,14 +22705,14 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0560",
+   "n0558",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
    "n0678",
    "n0679",
-   "n0680",
-   "n0681",
-   "n0682"
+   "n0680"
   ],
   "r095": [
    "n0131",
@@ -22754,34 +22735,34 @@
    "n0297",
    "n0298",
    "n0299",
+   "n0383",
    "n0384",
    "n0385",
-   "n0386",
-   "n0394",
-   "n0397",
+   "n0393",
+   "n0396",
+   "n0450",
+   "n0451",
    "n0452",
-   "n0453",
-   "n0454",
-   "n0479",
+   "n0477",
+   "n0549",
+   "n0550",
    "n0551",
    "n0552",
    "n0553",
-   "n0554",
-   "n0555",
-   "n0560",
+   "n0558",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
-   "n0678",
-   "n0679",
+   "n0685",
+   "n0686",
    "n0687",
    "n0688",
    "n0689",
-   "n0690",
-   "n0691",
+   "n0693",
+   "n0694",
    "n0695",
-   "n0696",
-   "n0697",
-   "n0698"
+   "n0696"
   ],
   "r096": [
    "n0142",
@@ -22796,21 +22777,21 @@
    "n0196",
    "n0204",
    "n0220",
-   "n0447",
-   "n0448",
+   "n0445",
+   "n0446",
+   "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
-   "n0678",
-   "n0679",
-   "n0690",
-   "n0691",
-   "n0697",
-   "n0698",
-   "n0706",
-   "n0707"
+   "n0688",
+   "n0689",
+   "n0695",
+   "n0696",
+   "n0704",
+   "n0705"
   ],
   "r097": [
    "n0018",
@@ -22819,17 +22800,17 @@
    "n0161",
    "n0162",
    "n0163",
+   "n0380",
    "n0381",
    "n0382",
    "n0383",
    "n0384",
    "n0385",
-   "n0386",
-   "n0476",
+   "n0474",
+   "n0674",
+   "n0675",
    "n0676",
-   "n0677",
-   "n0678",
-   "n0679"
+   "n0677"
   ],
   "r098": [
    "n0159",
@@ -22849,13 +22830,13 @@
    "n0331",
    "n0332",
    "n0333",
+   "n0380",
    "n0381",
    "n0382",
    "n0383",
    "n0384",
    "n0385",
-   "n0386",
-   "n0710"
+   "n0708"
   ],
   "r099": [
    "n0003",
@@ -22875,8 +22856,8 @@
    "n0082",
    "n0261",
    "n0262",
-   "n0588",
-   "n0592"
+   "n0586",
+   "n0590"
   ],
   "r100": [
    "n0293",
@@ -22885,14 +22866,14 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0447",
-   "n0448",
-   "n0502",
-   "n0567",
-   "n0568",
-   "n0666",
-   "n0667",
-   "n0668"
+   "n0445",
+   "n0446",
+   "n0500",
+   "n0565",
+   "n0566",
+   "n0664",
+   "n0665",
+   "n0666"
   ],
   "r101": [
    "n0057",
@@ -22906,14 +22887,14 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0704",
+   "n0702",
+   "n0715",
+   "n0716",
    "n0717",
-   "n0718",
    "n0719",
+   "n0720",
    "n0721",
-   "n0722",
-   "n0723",
-   "n0724"
+   "n0722"
   ],
   "r102": [
    "n0015",
@@ -22929,17 +22910,17 @@
    "n0195",
    "n0196",
    "n0220",
-   "n0421",
-   "n0429",
-   "n0435",
-   "n0639",
+   "n0419",
+   "n0427",
+   "n0433",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0690",
-   "n0691",
-   "n0700"
+   "n0688",
+   "n0689",
+   "n0698"
   ],
   "r103": [
    "n0062",
@@ -22948,17 +22929,17 @@
    "n0197",
    "n0242",
    "n0243",
-   "n0469",
+   "n0467",
+   "n0468",
    "n0470",
-   "n0472",
-   "n0523",
-   "n0529",
-   "n0613",
-   "n0614",
-   "n0624",
-   "n0635",
-   "n0636",
-   "n0705"
+   "n0521",
+   "n0527",
+   "n0611",
+   "n0612",
+   "n0622",
+   "n0633",
+   "n0634",
+   "n0703"
   ],
   "r104": [
    "n0021",
@@ -22984,15 +22965,15 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0587",
+   "n0585",
+   "n0637",
    "n0639",
-   "n0641",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ],
   "r105": [
    "n0047",
@@ -23008,23 +22989,23 @@
    "n0284",
    "n0285",
    "n0286",
+   "n0364",
    "n0365",
-   "n0366",
-   "n0429",
+   "n0427",
+   "n0450",
+   "n0451",
    "n0452",
-   "n0453",
-   "n0454",
-   "n0457",
-   "n0458",
-   "n0479",
-   "n0555",
-   "n0625",
-   "n0629",
-   "n0637",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0455",
+   "n0456",
+   "n0477",
+   "n0553",
+   "n0623",
+   "n0627",
+   "n0635",
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r106": [
    "n0022",
@@ -23038,31 +23019,31 @@
    "n0296",
    "n0297",
    "n0298",
+   "n0383",
    "n0384",
    "n0385",
-   "n0386",
+   "n0421",
+   "n0422",
    "n0423",
-   "n0424",
-   "n0425",
+   "n0600",
+   "n0601",
    "n0602",
    "n0603",
    "n0604",
    "n0605",
-   "n0606",
-   "n0607",
-   "n0625",
-   "n0632",
-   "n0633",
-   "n0639",
+   "n0623",
+   "n0630",
+   "n0631",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r107": [
-   "n0684",
-   "n0685",
-   "n0686"
+   "n0682",
+   "n0683",
+   "n0684"
   ],
   "r108": [
    "n0071",
@@ -23071,14 +23052,14 @@
    "n0124",
    "n0125",
    "n0127",
-   "n0410",
-   "n0429",
+   "n0409",
+   "n0427",
+   "n0438",
    "n0440",
-   "n0442",
-   "n0443",
-   "n0510",
-   "n0511",
-   "n0512"
+   "n0441",
+   "n0508",
+   "n0509",
+   "n0510"
   ],
   "r109": [
    "n0021",
@@ -23095,34 +23076,33 @@
    "n0322",
    "n0323",
    "n0324",
-   "n0399",
-   "n0410",
-   "n0412",
-   "n0414",
-   "n0415",
+   "n0398",
+   "n0409",
+   "n0411",
+   "n0413",
+   "n0421",
+   "n0422",
    "n0423",
    "n0424",
-   "n0425",
-   "n0426",
+   "n0427",
+   "n0428",
    "n0429",
    "n0430",
    "n0431",
-   "n0432",
-   "n0433",
-   "n0469",
+   "n0467",
+   "n0468",
    "n0470",
-   "n0472",
-   "n0593",
-   "n0638",
-   "n0639",
+   "n0591",
+   "n0636",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
-   "n0655",
-   "n0656",
-   "n0660"
+   "n0658"
   ],
   "r110": [
    "n0018",
@@ -23142,32 +23122,31 @@
    "n0220",
    "n0270",
    "n0281",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
-   "n0371",
-   "n0399",
-   "n0412",
-   "n0414",
+   "n0398",
+   "n0411",
+   "n0413",
    "n0415",
+   "n0416",
    "n0417",
    "n0418",
-   "n0419",
-   "n0420",
-   "n0429",
-   "n0476",
-   "n0690",
-   "n0691"
+   "n0427",
+   "n0474",
+   "n0688",
+   "n0689"
   ],
   "r111": [
-   "n0361",
+   "n0360",
+   "n0364",
    "n0365",
    "n0366",
    "n0367",
-   "n0368",
-   "n0479",
-   "n0555",
-   "n0556",
-   "n0558"
+   "n0477",
+   "n0553",
+   "n0554",
+   "n0556"
   ],
   "r112": [
    "n0047",
@@ -23175,17 +23154,17 @@
    "n0194",
    "n0195",
    "n0196",
-   "n0369",
-   "n0411",
+   "n0368",
+   "n0410",
+   "n0428",
+   "n0429",
    "n0430",
    "n0431",
-   "n0432",
-   "n0433",
-   "n0572",
+   "n0570",
+   "n0600",
+   "n0601",
    "n0602",
-   "n0603",
-   "n0604",
-   "n0605"
+   "n0603"
   ],
   "r113": [
    "n0018",
@@ -23203,18 +23182,18 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0476",
-   "n0482",
-   "n0638",
-   "n0639",
+   "n0474",
+   "n0480",
+   "n0636",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
-   "n0655",
-   "n0656",
-   "n0660"
+   "n0658"
   ],
   "r114": [
    "n0282",
@@ -23222,15 +23201,15 @@
    "n0284",
    "n0285",
    "n0286",
-   "n0561",
-   "n0562",
-   "n0638",
-   "n0639",
+   "n0559",
+   "n0560",
+   "n0636",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0660"
+   "n0658"
   ],
   "r115": [
    "n0071",
@@ -23247,19 +23226,19 @@
    "n0236",
    "n0237",
    "n0238",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
-   "n0371",
+   "n0438",
    "n0440",
-   "n0442",
-   "n0443",
+   "n0441",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r116": [
    "n0051",
@@ -23283,12 +23262,12 @@
    "n0305",
    "n0306",
    "n0316",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0581",
-   "n0690",
-   "n0691"
+   "n0579",
+   "n0688",
+   "n0689"
   ],
   "r117": [
    "n0142",
@@ -23304,7 +23283,9 @@
    "n0298",
    "n0303",
    "n0304",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
    "n0649",
@@ -23313,14 +23294,12 @@
    "n0652",
    "n0653",
    "n0654",
-   "n0655",
-   "n0656",
+   "n0685",
+   "n0686",
    "n0687",
    "n0688",
    "n0689",
-   "n0690",
-   "n0691",
-   "n0694"
+   "n0692"
   ],
   "r118": [
    "n0071",
@@ -23340,24 +23319,24 @@
    "n0311",
    "n0312",
    "n0313",
-   "n0429",
-   "n0447",
+   "n0427",
+   "n0445",
+   "n0446",
    "n0448",
-   "n0450",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
    "n0655",
    "n0656",
    "n0657",
-   "n0658",
-   "n0659",
-   "n0680",
-   "n0681",
-   "n0682"
+   "n0678",
+   "n0679",
+   "n0680"
   ],
   "r119": [
    "n0057",
@@ -23376,17 +23355,17 @@
    "n0332",
    "n0333",
    "n0341",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
-   "n0655",
-   "n0656",
-   "n0690",
-   "n0691",
-   "n0692"
+   "n0688",
+   "n0689",
+   "n0690"
   ],
   "r120": [
    "n0132",
@@ -23395,13 +23374,13 @@
    "n0220",
    "n0319",
    "n0320",
-   "n0442",
-   "n0446",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691",
-   "n0692"
+   "n0440",
+   "n0444",
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689",
+   "n0690"
   ],
   "r121": [
    "n0049",
@@ -23419,10 +23398,10 @@
    "n0308",
    "n0314",
    "n0315",
-   "n0447",
-   "n0448",
-   "n0451",
-   "n0520"
+   "n0445",
+   "n0446",
+   "n0449",
+   "n0518"
   ],
   "r122": [
    "n0062",
@@ -23436,11 +23415,11 @@
    "n0277",
    "n0278",
    "n0279",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691",
-   "n0692"
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689",
+   "n0690"
   ],
   "r123": [
    "n0048",
@@ -23451,39 +23430,39 @@
    "n0220",
    "n0288",
    "n0290",
-   "n0447",
-   "n0448",
+   "n0445",
+   "n0446",
+   "n0508",
+   "n0509",
    "n0510",
-   "n0511",
-   "n0512",
-   "n0578",
-   "n0639",
+   "n0576",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
    "n0649",
    "n0650",
    "n0651",
-   "n0652",
-   "n0653",
+   "n0678",
+   "n0679",
    "n0680",
-   "n0681",
-   "n0682",
+   "n0688",
+   "n0689",
    "n0690",
-   "n0691",
-   "n0692",
-   "n0694"
+   "n0692"
   ],
   "r124": [
    "n0062",
    "n0063",
    "n0064",
-   "n0461",
-   "n0462",
-   "n0639",
+   "n0459",
+   "n0460",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r125": [
    "n0017",
@@ -23497,24 +23476,24 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0429",
-   "n0447",
-   "n0448",
-   "n0451",
+   "n0427",
+   "n0445",
+   "n0446",
+   "n0449",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
-   "n0638",
-   "n0639",
+   "n0636",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
-   "n0655",
-   "n0656",
-   "n0660"
+   "n0658"
   ],
   "r126": [
    "n0011",
@@ -23542,17 +23521,17 @@
    "n0307",
    "n0314",
    "n0315",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0684",
-   "n0685",
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689",
    "n0690",
-   "n0691",
-   "n0692",
-   "n0727"
+   "n0725"
   ],
   "r127": [
    "n0008",
@@ -23567,20 +23546,20 @@
    "n0194",
    "n0195",
    "n0196",
-   "n0358",
+   "n0357",
+   "n0366",
    "n0367",
-   "n0368",
-   "n0461",
-   "n0462",
-   "n0479",
+   "n0459",
+   "n0460",
+   "n0477",
+   "n0550",
+   "n0551",
    "n0552",
    "n0553",
-   "n0554",
-   "n0555",
+   "n0674",
+   "n0675",
    "n0676",
-   "n0677",
-   "n0678",
-   "n0679"
+   "n0677"
   ],
   "r128": [
    "n0135",
@@ -23606,10 +23585,10 @@
    "n0196",
    "n0240",
    "n0241",
-   "n0356",
-   "n0364",
-   "n0370",
-   "n0371"
+   "n0355",
+   "n0363",
+   "n0369",
+   "n0370"
   ],
   "r130": [
    "n0007",
@@ -23626,20 +23605,20 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0395",
-   "n0695",
-   "n0708",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0394",
+   "n0693",
+   "n0706",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r131": [
    "n0209",
    "n0210",
    "n0211",
-   "n0491",
-   "n0492",
-   "n0493"
+   "n0489",
+   "n0490",
+   "n0491"
   ],
   "r132": [
    "n0020",
@@ -23658,13 +23637,13 @@
    "n0305",
    "n0308",
    "n0326",
-   "n0395",
-   "n0695",
-   "n0701",
-   "n0708",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0394",
+   "n0693",
+   "n0699",
+   "n0706",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r133": [
    "n0021",
@@ -23695,44 +23674,44 @@
    "n0298",
    "n0305",
    "n0308",
-   "n0374",
-   "n0376",
-   "n0378",
+   "n0373",
+   "n0375",
+   "n0377",
+   "n0398",
    "n0399",
    "n0400",
    "n0401",
-   "n0402",
-   "n0469",
+   "n0467",
+   "n0468",
    "n0470",
-   "n0472",
-   "n0473",
-   "n0479",
-   "n0545",
-   "n0551",
-   "n0555",
+   "n0471",
+   "n0477",
+   "n0543",
+   "n0549",
+   "n0553",
+   "n0554",
    "n0556",
-   "n0558",
+   "n0573",
+   "n0574",
    "n0575",
-   "n0576",
-   "n0577",
+   "n0581",
+   "n0582",
    "n0583",
-   "n0584",
-   "n0585",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
+   "n0652",
+   "n0653",
    "n0654",
-   "n0655",
-   "n0656",
+   "n0678",
+   "n0679",
    "n0680",
-   "n0681",
    "n0682",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691"
+   "n0683",
+   "n0688",
+   "n0689"
   ],
   "r134": [
    "n0038",
@@ -23741,27 +23720,26 @@
    "n0054",
    "n0175",
    "n0339",
+   "n0428",
+   "n0429",
    "n0430",
    "n0431",
-   "n0432",
-   "n0433",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0571",
-   "n0596",
-   "n0630"
+   "n0569",
+   "n0594",
+   "n0628"
   ],
   "r136": [
    "n0253",
-   "n0412",
-   "n0415",
+   "n0411",
+   "n0600",
+   "n0601",
    "n0602",
    "n0603",
-   "n0604",
-   "n0605",
-   "n0608",
-   "n0727"
+   "n0606",
+   "n0725"
   ],
   "r137": [
    "n0018",
@@ -23779,20 +23757,20 @@
    "n0298",
    "n0305",
    "n0308",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
-   "n0371",
-   "n0476",
-   "n0560",
+   "n0474",
+   "n0558",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0591",
-   "n0690",
-   "n0691",
-   "n0694",
-   "n0715",
-   "n0716"
+   "n0589",
+   "n0688",
+   "n0689",
+   "n0692",
+   "n0713",
+   "n0714"
   ],
   "r138": [
    "n0018",
@@ -23814,19 +23792,18 @@
    "n0353",
    "n0354",
    "n0355",
-   "n0356",
-   "n0363",
+   "n0362",
+   "n0369",
    "n0370",
-   "n0371",
-   "n0447",
-   "n0448",
-   "n0476",
+   "n0445",
+   "n0446",
+   "n0474",
+   "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r139": [
    "n0248",
@@ -23851,22 +23828,22 @@
    "n0333",
    "n0334",
    "n0335",
-   "n0356",
-   "n0364",
+   "n0355",
+   "n0363",
+   "n0369",
    "n0370",
-   "n0371",
-   "n0373",
-   "n0380"
+   "n0372",
+   "n0379"
   ],
   "r141": [
    "n0173",
    "n0174",
    "n0175",
    "n0176",
+   "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0725"
+   "n0723"
   ],
   "r142": [
    "n0034",
@@ -23887,10 +23864,10 @@
    "n0278",
    "n0279",
    "n0340",
-   "n0588",
-   "n0615",
-   "n0690",
-   "n0691"
+   "n0586",
+   "n0613",
+   "n0688",
+   "n0689"
   ],
   "r143": [
    "n0062",
@@ -23905,27 +23882,27 @@
    "n0298",
    "n0305",
    "n0308",
-   "n0483",
-   "n0484",
+   "n0481",
+   "n0482",
+   "n0508",
+   "n0509",
    "n0510",
-   "n0511",
-   "n0512",
-   "n0560",
-   "n0619",
-   "n0620",
-   "n0635",
-   "n0636",
+   "n0558",
+   "n0617",
+   "n0618",
+   "n0633",
+   "n0634",
+   "n0662",
    "n0664",
+   "n0665",
    "n0666",
-   "n0667",
-   "n0668",
-   "n0684",
-   "n0685",
-   "n0702",
-   "n0703",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0682",
+   "n0683",
+   "n0700",
+   "n0701",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r144": [
    "n0018",
@@ -23960,28 +23937,27 @@
    "n0236",
    "n0237",
    "n0238",
-   "n0361",
+   "n0360",
+   "n0445",
+   "n0446",
    "n0447",
-   "n0448",
-   "n0449",
-   "n0476",
+   "n0474",
+   "n0562",
+   "n0563",
    "n0564",
-   "n0565",
-   "n0566",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ],
   "r145": [
    "n0144",
    "n0152",
    "n0250",
    "n0258",
+   "n0398",
    "n0399",
    "n0400",
    "n0401",
-   "n0402",
-   "n0412",
-   "n0415"
+   "n0411"
   ],
   "r146": [
    "n0250",
@@ -23989,28 +23965,28 @@
    "n0254",
    "n0255",
    "n0281",
-   "n0378",
-   "n0393",
+   "n0377",
+   "n0392",
+   "n0415",
+   "n0416",
    "n0417",
    "n0418",
-   "n0419",
-   "n0420",
-   "n0429",
+   "n0427",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
    "n0479",
-   "n0480",
-   "n0481",
-   "n0639",
+   "n0637",
+   "n0643",
+   "n0644",
    "n0645",
    "n0646",
    "n0647",
    "n0648",
    "n0649",
    "n0650",
-   "n0651",
-   "n0652",
-   "n0653"
+   "n0651"
   ],
   "r147": [
    "n0135",
@@ -24023,32 +23999,32 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0479",
+   "n0477",
+   "n0553",
+   "n0554",
    "n0555",
-   "n0556",
-   "n0557",
+   "n0600",
+   "n0601",
    "n0602",
    "n0603",
-   "n0604",
-   "n0605",
-   "n0662",
-   "n0663"
+   "n0660",
+   "n0661"
   ],
   "r149": [
    "n0142",
    "n0201",
    "n0220",
+   "n0383",
    "n0384",
    "n0385",
    "n0386",
-   "n0387",
-   "n0690",
+   "n0688",
+   "n0689",
    "n0691",
-   "n0693",
-   "n0694",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0692",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r150": [
    "n0071",
@@ -24062,13 +24038,13 @@
    "n0331",
    "n0332",
    "n0333",
-   "n0465",
-   "n0466",
-   "n0485",
-   "n0486",
-   "n0491",
-   "n0492",
-   "n0493"
+   "n0463",
+   "n0464",
+   "n0483",
+   "n0484",
+   "n0489",
+   "n0490",
+   "n0491"
   ],
   "r151": [
    "n0008",
@@ -24109,37 +24085,37 @@
    "n0323",
    "n0324",
    "n0337",
+   "n0364",
    "n0365",
-   "n0366",
+   "n0377",
    "n0378",
-   "n0379",
+   "n0380",
    "n0381",
    "n0382",
-   "n0383",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0639",
-   "n0643",
-   "n0644",
+   "n0637",
+   "n0641",
+   "n0642",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r152": [
+   "n0411",
    "n0412",
-   "n0413",
+   "n0421",
+   "n0422",
    "n0423",
    "n0424",
    "n0425",
    "n0426",
-   "n0427",
-   "n0428",
+   "n0467",
+   "n0468",
    "n0469",
-   "n0470",
-   "n0471",
-   "n0472"
+   "n0470"
   ],
   "r153": [
    "n0131",
@@ -24169,29 +24145,29 @@
    "n0336",
    "n0337",
    "n0349",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
    "n0371",
-   "n0372",
-   "n0393",
-   "n0395",
+   "n0392",
+   "n0394",
+   "n0421",
+   "n0422",
    "n0423",
-   "n0424",
-   "n0425",
-   "n0442",
-   "n0446",
-   "n0479",
-   "n0555",
-   "n0559",
-   "n0684",
-   "n0685",
-   "n0690",
-   "n0691",
-   "n0695",
-   "n0708",
-   "n0717",
-   "n0718",
-   "n0719"
+   "n0440",
+   "n0444",
+   "n0477",
+   "n0553",
+   "n0557",
+   "n0682",
+   "n0683",
+   "n0688",
+   "n0689",
+   "n0693",
+   "n0706",
+   "n0715",
+   "n0716",
+   "n0717"
   ],
   "r154": [
    "n0250",
@@ -24202,32 +24178,32 @@
    "n0296",
    "n0297",
    "n0298",
+   "n0373",
    "n0374",
    "n0375",
-   "n0376",
-   "n0404",
+   "n0403",
+   "n0406",
    "n0407",
-   "n0408",
-   "n0422",
+   "n0420",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0496",
+   "n0494",
+   "n0550",
+   "n0551",
    "n0552",
-   "n0553",
-   "n0554",
-   "n0555"
+   "n0553"
   ],
   "r155": [
+   "n0485",
    "n0487",
    "n0489",
-   "n0491",
-   "n0492",
-   "n0493"
+   "n0490",
+   "n0491"
   ],
   "r156": [
    "n0008",
@@ -24242,38 +24218,38 @@
    "n0284",
    "n0285",
    "n0286",
-   "n0374",
+   "n0373",
+   "n0375",
    "n0376",
-   "n0377",
-   "n0392",
-   "n0394",
+   "n0391",
+   "n0393",
+   "n0398",
    "n0399",
    "n0400",
    "n0401",
-   "n0402",
+   "n0406",
    "n0407",
-   "n0408",
+   "n0411",
    "n0412",
-   "n0413",
+   "n0415",
+   "n0416",
    "n0417",
    "n0418",
    "n0419",
-   "n0420",
    "n0421",
+   "n0422",
    "n0423",
    "n0424",
    "n0425",
-   "n0426",
    "n0427",
-   "n0429",
-   "n0469",
+   "n0467",
+   "n0468",
    "n0470",
-   "n0472",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r157": [
    "n0240",
@@ -24281,13 +24257,13 @@
    "n0250",
    "n0251",
    "n0252",
+   "n0406",
    "n0407",
-   "n0408",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
-   "n0481"
+   "n0479"
   ],
   "r158": [
    "n0024",
@@ -24324,33 +24300,33 @@
    "n0322",
    "n0323",
    "n0324",
-   "n0356",
+   "n0355",
+   "n0369",
    "n0370",
-   "n0371",
-   "n0394",
+   "n0393",
+   "n0406",
    "n0407",
-   "n0408",
-   "n0441",
+   "n0439",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0504",
-   "n0539",
-   "n0613",
+   "n0502",
+   "n0537",
+   "n0611",
+   "n0621",
    "n0623",
-   "n0625",
-   "n0639",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0654",
+   "n0652",
+   "n0715",
+   "n0716",
    "n0717",
-   "n0718",
    "n0719",
-   "n0721",
-   "n0722",
-   "n0723"
+   "n0720",
+   "n0721"
   ],
   "r159": [
    "n0011",
@@ -24386,56 +24362,56 @@
    "n0298",
    "n0319",
    "n0320",
+   "n0404",
    "n0405",
    "n0406",
    "n0407",
-   "n0408",
+   "n0415",
+   "n0416",
    "n0417",
    "n0418",
-   "n0419",
-   "n0420",
-   "n0429",
-   "n0479",
+   "n0427",
+   "n0477",
+   "n0485",
    "n0487",
    "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0506",
-   "n0519",
+   "n0504",
+   "n0517",
+   "n0535",
    "n0537",
-   "n0539",
-   "n0550",
-   "n0555",
+   "n0548",
+   "n0553",
+   "n0573",
+   "n0574",
    "n0575",
-   "n0576",
-   "n0577",
+   "n0580",
+   "n0581",
    "n0582",
    "n0583",
-   "n0584",
-   "n0585",
-   "n0594",
+   "n0592",
+   "n0600",
+   "n0601",
    "n0602",
    "n0603",
    "n0604",
    "n0605",
-   "n0606",
-   "n0607",
+   "n0621",
    "n0623",
-   "n0625",
-   "n0626",
+   "n0624",
+   "n0627",
    "n0629",
+   "n0630",
    "n0631",
-   "n0632",
-   "n0633",
+   "n0635",
+   "n0636",
    "n0637",
    "n0638",
-   "n0639",
-   "n0640",
+   "n0645",
+   "n0646",
    "n0647",
-   "n0648",
-   "n0649",
-   "n0650"
+   "n0648"
   ],
   "r160": [
    "n0024",
@@ -24484,64 +24460,64 @@
    "n0343",
    "n0344",
    "n0345",
-   "n0356",
-   "n0359",
+   "n0355",
+   "n0358",
+   "n0369",
    "n0370",
-   "n0371",
+   "n0377",
    "n0378",
-   "n0379",
+   "n0380",
    "n0381",
    "n0382",
    "n0383",
    "n0384",
    "n0385",
-   "n0386",
-   "n0393",
+   "n0392",
+   "n0397",
    "n0398",
    "n0399",
    "n0400",
    "n0401",
-   "n0402",
+   "n0434",
+   "n0435",
    "n0436",
-   "n0437",
    "n0438",
    "n0440",
    "n0442",
+   "n0443",
    "n0444",
-   "n0445",
-   "n0446",
-   "n0455",
-   "n0456",
-   "n0460",
-   "n0463",
-   "n0464",
+   "n0453",
+   "n0454",
+   "n0458",
+   "n0461",
+   "n0462",
+   "n0475",
+   "n0476",
    "n0477",
    "n0478",
-   "n0479",
-   "n0480",
+   "n0489",
+   "n0490",
    "n0491",
-   "n0492",
-   "n0493",
-   "n0499",
-   "n0507",
-   "n0535",
-   "n0536",
-   "n0574",
-   "n0639",
+   "n0497",
+   "n0505",
+   "n0533",
+   "n0534",
+   "n0572",
+   "n0637",
+   "n0645",
+   "n0646",
    "n0647",
    "n0648",
-   "n0649",
-   "n0650",
-   "n0654",
+   "n0652",
+   "n0674",
+   "n0675",
    "n0676",
    "n0677",
    "n0678",
    "n0679",
    "n0680",
-   "n0681",
-   "n0682",
-   "n0690",
-   "n0691"
+   "n0688",
+   "n0689"
   ]
  }
 }
