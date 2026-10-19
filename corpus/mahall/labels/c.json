@@ -287,6 +287,11 @@
      "kind": "sunnah",
      "ref": "src:openiti-abudawud-shamela1726",
      "excerpt_ar": "لا يحل سلف وبيع ولا شرطان في بيع"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "فبعته، فاستثنيت حملانه إلى أهلي"
     }
    ]
   },
@@ -512,6 +517,11 @@
    "kind": "act",
    "broader": "ariyya",
    "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-tirmidhi-shamela7895",
+     "excerpt_ar": "العارية مؤداة، والمنحة مردودة"
+    },
     {
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q107:007",
@@ -880,6 +890,11 @@
     },
     {
      "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "لا يحل لرجل أن يعطي عطية أو يهب هبة فيرجع فيها إلا الوالد فيما يعطي ولده"
+    },
+    {
+     "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "لا تشتره ولا تعد في صدقتك"
     }
@@ -896,6 +911,11 @@
      "kind": "quran",
      "ref": "src:tanzil-quran-simple#Q090:013",
      "excerpt_ar": "فك رقبة"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "عليك أن تخدم رسول الله صلى الله عليه وسلم ما عشت"
     }
    ]
   },
@@ -1229,7 +1249,13 @@
    "en": "fencing off and grant of dead land",
    "kind": "act",
    "broader": "ihya.ihya_mawat",
-   "unanchored": "TODO"
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "من سبق إلى ماء لم يسبقه إليه مسلم فهو له"
+    }
+   ]
   },
   {
    "id": "ihya.marafiq_amlak",
@@ -1251,7 +1277,13 @@
    "en": "market pitches",
    "kind": "item",
    "broader": "ihya",
-   "unanchored": "TODO"
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-abudawud-shamela1726",
+     "excerpt_ar": "من سبق إلى ماء لم يسبقه إليه مسلم فهو له"
+    }
+   ]
   },
   {
    "id": "ihya.tariq",
@@ -1317,6 +1349,11 @@
    "kind": "item",
    "broader": "tahara",
    "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "ألقوها وما حولها فاطرحوه، وكلوا سمنكم"
+    },
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
@@ -1438,7 +1475,13 @@
    "en": "food taken in enemy territory",
    "kind": "item",
    "broader": "jihad",
-   "unanchored": "TODO"
+   "nass": [
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-bukhari-shamela1681",
+     "excerpt_ar": "العسل والعنب، فنأكله ولا نرفعه"
+    }
+   ]
   },
   {
    "id": "atima.diyafa",
