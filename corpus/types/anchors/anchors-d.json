@@ -1,0 +1,538 @@
+{
+ "entries": [
+  {
+   "type": "rajab85",
+   "field": "cause_concluded",
+   "gloss": "a cause of his coming to own has been concluded for him, so that the ownership waits only on his choice (the second kind, haqq tamalluk)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p191",
+    "excerpt_ar": "هذا كله فيمن انعقد له سبب التملك"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "cause_completes_milk",
+   "gloss": "the cause by itself establishes the ownership, without his choice (haqq milk rather than haqq tamalluk)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p190",
+    "excerpt_ar": "يثبت له الملك بغير اختياره"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "use_right_only",
+   "gloss": "what he holds in another's property is only a right to use it for a given benefit (the third kind, haqq intifa'), not the benefit owned",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p192",
+    "excerpt_ar": "فلا يكون له في الأرض سوى حق الانتفاع"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "harmful_q85",
+   "gloss": "the use (beams on the neighbour's wall, water over his land) harms the owner; the use right is established only where it does not",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p191",
+    "excerpt_ar": "وضع الجار خشبه على جدار جاره إذا لم يضر به"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "permitted_benefit",
+   "gloss": "the thing held (not owned wealth) has a permitted use, so the hand on it is returned to (haqq ikhtisas)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p192",
+    "excerpt_ar": "بخلاف ما فيه نفع مباح فإنه يجب رده"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "may_become_mal",
+   "gloss": "the thing held can return to being wealth (wine that may turn to vinegar), so a hand stands on it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p192",
+    "excerpt_ar": "يدل على ثبوت اليد على الخمر لإمكان عودها مالا"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "preceded_q85",
+   "gloss": "he came first to a shared place open to use (market stalls, the mosque)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p193",
+    "excerpt_ar": "فالسابق إليها أحق بها"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "left_by_choice",
+   "gloss": "he left the place by his own choice, cutting off his sitting (not rising for a passing need intending to return)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p193",
+    "excerpt_ar": "إلى أن يقوم عنه باختياره قاطعا للجلوس"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "pledge_tie",
+   "gloss": "the right is tied to the thing as the pledgee's right is to the pledge, every part held for every part of the debt",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p193",
+    "excerpt_ar": "تعلق حق المرتهن بالرهن ومعناه أن جميع أجزاء الرهن محبوس بكل جزء من الدين حتى يستوفي جميعه"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "jinaya_tie",
+   "gloss": "the right is tied to the thing as an injury's right is to the slave who injured, attaching to the whole neck",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p193",
+    "excerpt_ar": "تعلق حق الجناية بالجاني"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "tied_q85",
+   "gloss": "a cause has tied the right to this property for recovering the right from it (the fifth kind)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p193",
+    "excerpt_ar": "والنوع الخامس حق التعلق لاستيفاء الحق"
+   }
+  },
+  {
+   "type": "rajab85",
+   "field": "rival_in_dhimma_only",
+   "gloss": "the competing claim against the tied right is owed only in the obligor's dhimma, not tied to this property",
+   "unanchored": "the qa'ida's farʿ (hady and udhiya designated) names the rivals only as «الغرماء», over whom the poor are preferred «في حياة الموجب وبعد وفاته»; it never says their claim is in the dhimma alone, and the same qa'ida ties the creditors' right to the estate after death («تعلق حق الغرماء بالتركة»). 'Owed only in the dhimma' is the reading's own generalisation"
+  },
+  {
+   "type": "rajab86",
+   "field": "milk_holds_ayn",
+   "gloss": "the holder owns the 'ayn (the raqaba), with or without its benefit (the first and second kinds)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p195",
+    "excerpt_ar": "ملك عين ومنفعة، وملك عين بلا منفعة"
+   }
+  },
+  {
+   "type": "rajab86",
+   "field": "milk_benefit_by_tamlik",
+   "gloss": "the holder owns the manfa'a itself (by a tamlik), as against a bare permitted use (milk al-intifa' without milk al-manfa'a)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p195",
+    "excerpt_ar": "وملك انتفاع من غير ملك المنفعة"
+   }
+  },
+  {
+   "type": "rajab87",
+   "field": "holding_q87",
+   "gloss": "the kind of financial right or ownership held: full milk, milk of benefits, a right repelling harm to property, or a right of use/ikhtisas/tamalluk",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p197",
+    "excerpt_ar": "فيما يقبل النقل والمعاوضة من الحقوق المالية والأملاك"
+   }
+  },
+  {
+   "type": "rajab87",
+   "field": "lazim_title",
+   "gloss": "the holding rests on a binding (lazim) contract or right",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p197",
+    "excerpt_ar": "فإن كان بعقد لازم"
+   }
+  },
+  {
+   "type": "rajab87",
+   "field": "higher_than_title",
+   "gloss": "the transferring act is above the contract by which the benefit was owned",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p197",
+    "excerpt_ar": "دون ما هو أعلى منه"
+   }
+  },
+  {
+   "type": "rajab87",
+   "field": "for_iwad",
+   "gloss": "the transfer is made for a counter-value ('iwad)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p198",
+    "excerpt_ar": "وفي جوازه بعوض خلاف"
+   }
+  },
+  {
+   "type": "rajab88",
+   "field": "road_layer",
+   "gloss": "where the use is: the road's surface, its air, or the ground below it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p201",
+    "excerpt_ar": "من الطرق المسلوكة في الأمصار والقرى وهوائها وقرارها"
+   }
+  },
+  {
+   "type": "rajab88",
+   "field": "narrow_or_harmful",
+   "gloss": "the road is narrow or what is made in it harms the passers",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p201",
+    "excerpt_ar": "فإن كان ضيقا أو أحدث فيه ما يضر بالمارة"
+   }
+  },
+  {
+   "type": "rajab88",
+   "field": "permanent_use",
+   "gloss": "what is made in the road is lasting (building, planting) rather than passing (sitting, stopping an animal)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p201",
+    "excerpt_ar": "فإن كان المحدث فيه متأبدا كالبناء والغراس"
+   }
+  },
+  {
+   "type": "rajab88",
+   "field": "public_benefit",
+   "gloss": "the thing made is for a public benefit, not for one person",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p201",
+    "excerpt_ar": "وإن كان لمنفعة عامة ففيه خلاف معروف"
+   }
+  },
+  {
+   "type": "rajab88",
+   "field": "imam_leave",
+   "gloss": "the imam has given leave for the use",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p201",
+    "excerpt_ar": "ومنهم من يخصه بحالة انتفاء إذن الإمام فيه"
+   }
+  },
+  {
+   "type": "rajab90",
+   "field": "can_own_by_seizure",
+   "gloss": "the hand is one by whose seizure ownership can be established (Muslims over harbis' property, the father over the son's)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p206",
+    "excerpt_ar": "يد يمكن أن يثبت باستيلائها الملك"
+   }
+  },
+  {
+   "type": "rajab90",
+   "field": "transgressing",
+   "gloss": "the hand is the third, transgressing hand, not one with a shar'i authority, keeping for the owner, or a party with mana'a",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p207",
+    "excerpt_ar": "وأما اليد الثالثة فهي اليد العارية التي يترتب عليها الضمان"
+   }
+  },
+  {
+   "type": "rajab91",
+   "field": "property_like",
+   "gloss": "the thing taken is property, outright or with a share of its rulings (umm al-walad, mukatab, mudabbar), not a free person, so it is liable by the hand",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p208",
+    "excerpt_ar": "ما فيه شائبة الحرية لثبوت بعض أحكامها دون حقيقتها كأم الولد والمكاتب والمدبر فيضمن باليد"
+   }
+  },
+  {
+   "type": "rajab92",
+   "field": "owner_control_removed",
+   "gloss": "the owner's use of and power over the thing have been removed",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p209",
+    "excerpt_ar": "إن زال انتفاع المالك وسلطانه"
+   }
+  },
+  {
+   "type": "rajab93",
+   "field": "entered_on_liability",
+   "gloss": "the one who took from the usurper entered on liability for the 'ayn or the benefit (as borrower or buyer)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p210",
+    "excerpt_ar": "إن كان القابض قد دخل على ضمان عين أو منفعة"
+   }
+  },
+  {
+   "type": "rajab94",
+   "field": "handover_permitted",
+   "gloss": "the first holder (holding by right) may hand the property over to the second",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p216",
+    "excerpt_ar": "إن كان يجوز له إقباضه"
+   }
+  },
+  {
+   "type": "rajab94",
+   "field": "first_trustee",
+   "gloss": "the first holder holds it as a trust (amin)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p216",
+    "excerpt_ar": "إن كان الأول أمينا وإلا فلا"
+   }
+  },
+  {
+   "type": "rajab95",
+   "field": "external_cause",
+   "gloss": "the actor relied on an apparent cause from another (false witnesses), whose error or intent then came out",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p217",
+    "excerpt_ar": "فإن كان مستندا إلى سبب ظاهر من غيره"
+   }
+  },
+  {
+   "type": "rajab95",
+   "field": "basis_void",
+   "gloss": "the basis he relied on is shown unfit to rely on, without it being shown that the matter is otherwise",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p218",
+    "excerpt_ar": "وإن تبين أن المستند لا يجوز الاعتماد عليه ولم يتبين أن الأمر بخلافه"
+   }
+  },
+  {
+   "type": "rajab95",
+   "field": "ruling_overturned",
+   "gloss": "a judge's ruling attached to that basis and was overturned",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p218",
+    "excerpt_ar": "فإن تعلق به حكم فنقص"
+   }
+  },
+  {
+   "type": "rajab95",
+   "field": "as_owner",
+   "gloss": "he took the property as his own (destroyed it believing it his), rather than acting by a supposed authority over it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p217",
+    "excerpt_ar": "من أتلف مال غيره وهو يظن أنه له"
+   }
+  },
+  {
+   "type": "rajab95",
+   "field": "negligent_q95",
+   "gloss": "the one acting by a supposed authority fell short (failed to inquire), which makes him liable",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p218",
+    "excerpt_ar": "ولعل تضمينه ههنا لتفريطه"
+   }
+  },
+  {
+   "type": "rajab96",
+   "field": "recipient_determined",
+   "gloss": "the one entitled to receive what another owed (not owned by the obligor) is determined",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p223",
+    "excerpt_ar": "فإن كان مستحقه معينا"
+   }
+  },
+  {
+   "type": "rajab96",
+   "field": "wilaya",
+   "gloss": "the one who performed it has authority (wilaya) to dispose of the obligor's property",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p221",
+    "excerpt_ar": "فإن كان المتصرف له ولاية التصرف"
+   }
+  },
+  {
+   "type": "rajab96",
+   "field": "distinct",
+   "gloss": "the 'ayn owed is set apart by itself from the rest of the obligor's property",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p221",
+    "excerpt_ar": "فإن كانت العين متميزة بنفسها"
+   }
+  },
+  {
+   "type": "rajab97",
+   "field": "owner_known",
+   "gloss": "the owner of the property or debt in his hand is known (but absent)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p224",
+    "excerpt_ar": "يعرف مالكه ولكنه غائب يرجى قدومه"
+   }
+  },
+  {
+   "type": "rajab97",
+   "field": "trivial",
+   "gloss": "the property is trifling, so he may give it in charity for the owner",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p224",
+    "excerpt_ar": "إلا أن يكون تافها فله الصدقة به عنه"
+   }
+  },
+  {
+   "type": "rajab97",
+   "field": "despaired",
+   "gloss": "the absent owner's return is despaired of",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p224",
+    "excerpt_ar": "وإن كان قد آيس من قدومه"
+   }
+  },
+  {
+   "type": "rajab98",
+   "field": "described",
+   "gloss": "the claimant described the thing he claims",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p226",
+    "excerpt_ar": "من ادعى شيئا ووصفه"
+   }
+  },
+  {
+   "type": "rajab98",
+   "field": "owner_unknown",
+   "gloss": "the thing's owner is unknown",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p226",
+    "excerpt_ar": "إذا جهل ربه"
+   }
+  },
+  {
+   "type": "rajab98",
+   "field": "owner_hand",
+   "gloss": "a hand from the owner's side is established over the thing (which bars handing it over by description)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p226",
+    "excerpt_ar": "ولم يثبت عليه يد من جهة مالكه وإلا فلا"
+   }
+  },
+  {
+   "type": "rajab99",
+   "field": "needed",
+   "gloss": "there is need to use the thing or benefit",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p227",
+    "excerpt_ar": "ما تدعوا الحاجة إلى الانتفاع به"
+   }
+  },
+  {
+   "type": "rajab99",
+   "field": "harmless_q99",
+   "gloss": "giving it does no harm, being easy and abundant",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p227",
+    "excerpt_ar": "ولا ضرر في بذله لتيسيره وكثرة وجوده"
+   }
+  },
+  {
+   "type": "rajab100",
+   "field": "shar_ruling",
+   "gloss": "the ruling the obligation imposed by the shar' gets on the farʿ's question (to which the vowed act is assimilated)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p229",
+    "excerpt_ar": "حملا له على واجب الشرع"
+   }
+  },
+  {
+   "type": "rajab100",
+   "field": "mandub_ruling",
+   "gloss": "the ruling the voluntary (mandub) act gets on the farʿ's question",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p228",
+    "excerpt_ar": "أو بالمندوب"
+   }
+  },
+  {
+   "type": "rajab101",
+   "field": "common_unit",
+   "gloss": "both halves are counted in one unit, so that together they make up one whole of what is due",
+   "unanchored": "neither the statement («من خير بين شيئين وأمكنه الإتيان بنصفيهما معا فهل يجزئه أم لا؟ فيه خلاف») nor a farʿ states a common-measure criterion; it is the reading's own generalisation over furūʿ grounded variously («لتكميل الحرية», «عمل بمقتضى قوله في كل أربعين بنت لبون», «فالأظهر منعه» for fasting with feeding)"
+  },
+  {
+   "type": "rajab102",
+   "field": "forbidden_manner",
+   "gloss": "the cause (of ownership, permission, or lifting an obligation) was brought about in a forbidden way",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p229",
+    "excerpt_ar": "أو يسقط الواجبات على وجه محرم"
+   }
+  },
+  {
+   "type": "rajab102",
+   "field": "souls_drawn",
+   "gloss": "the cause is of what souls are drawn to, not what nature itself deters from",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p229",
+    "excerpt_ar": "وكان مما تدعو النفوس إليه"
+   }
+  },
+  {
+   "type": "rajab102",
+   "field": "hastened_forbidden",
+   "gloss": "he hastened his right, or what would be permitted him, before its time in a forbidden way",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p230",
+    "excerpt_ar": "من تعجل حقه أو ما أبيح له قبل وقته على وجه محرم"
+   }
+  },
+  {
+   "type": "rajab104",
+   "field": "vagueness_admitted",
+   "gloss": "what is committed to is a contract or annulment whose vagueness (as to its kinds or the persons it falls on) is valid",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p231",
+    "excerpt_ar": "إن كان الملتزم عقدا أو فسخا يصح إبهامه"
+   }
+  },
+  {
+   "type": "rajab105",
+   "field": "specific_in_fact",
+   "gloss": "the right fell on a specific one in fact, whom we cannot identify",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p237",
+    "excerpt_ar": "لأن الهبة والإقرار هنا وقع لمعنى في الباطن وإنما أشكل علينا الوقوف عليه"
+   }
+  },
+  {
+   "type": "rajab105",
+   "field": "vague_valid",
+   "gloss": "the same insha' is valid on an explicitly vague object (to which an undesignated shared name is assimilated)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p235",
+    "excerpt_ar": "فإن لم ينوه في الباطن معينا فهو كالتصريح بالإبهام"
+   }
+  },
+  {
+   "type": "rajab105",
+   "field": "intended_specific",
+   "gloss": "a specific one was intended inwardly by the shared name",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p235",
+    "excerpt_ar": "وإن نوى به معينا"
+   }
+  },
+  {
+   "type": "rajab105",
+   "field": "witnessing_required",
+   "gloss": "the contract requires witnessing",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p235",
+    "excerpt_ar": "فإن كان العقد مما لا يشترط له الشهادة صح وإلا ففيه خلاف"
+   }
+  },
+  {
+   "type": "rajab105",
+   "field": "binding_transfer",
+   "gloss": "the insha' is of the first type: a pure transfer of ownership, a security, or a gift binding by contract or delivery",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p233",
+    "excerpt_ar": "عقود التمليكات المحضة كالبيع والصلح بمعناه وعقود التوثقات كالرهن والكفالة والتبرعات اللازمة بالعقد أو بالقبض بعده"
+   }
+  },
+  {
+   "type": "rajab105",
+   "field": "equal_mixed",
+   "gloss": "the vague object is one of equal, mixed units (a qafiz of a heap)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p233",
+    "excerpt_ar": "ويصح في مبهم من أعيان متساوية مختلطة كقفيز صبرة"
+   }
+  },
+  {
+   "type": "rajab105",
+   "field": "religious_or_against_self",
+   "gloss": "the report is religious, or obliges a right on the reporter himself",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p234",
+    "excerpt_ar": "فما كان منها خبرا دينيا أو كان يجب به حق على المخبر"
+   }
+  }
+ ]
+}
