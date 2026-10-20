@@ -86,8 +86,8 @@ class Model:
 
     def rank(self, text: str, weight: float, observed: dict | None = None) -> list[str]:
         scores = self.scores(text, weight)
-        return sorted((label for label in scores if observed is None or compatible(observed, self.schemas[label])),
-                      key=lambda label: (-scores[label], label))
+        return routing.ranked(scores, [label for label in scores
+                                       if observed is None or compatible(observed, self.schemas[label])])
 
 
 def _metrics(rows: list[dict], method: str) -> dict:

@@ -31,6 +31,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Jadal` | [Usul/Jadal.md](Usul/Jadal.md) | [doc](https://claude.ai/code/artifact/192bc1c9-55ca-472a-9ed1-04d9d7bef56d) |
 | `Usul.Judgement` | [Usul/Judgement.md](Usul/Judgement.md) | [doc](https://claude.ai/code/artifact/ec7004aa-fbdf-4fd6-af2c-da5156ef10c7) |
 | `Usul.Kulliyyat` | [Usul/Kulliyyat.md](Usul/Kulliyyat.md) | [doc](https://claude.ai/code/artifact/dbec9ed2-c7b5-4f16-b894-1fa9cfd5aac5) |
+| `Usul.Mahall` | [Usul/Mahall.md](Usul/Mahall.md) | pending |
 | `Usul.Muamalat` | [Usul/Muamalat.md](Usul/Muamalat.md) | [doc](https://claude.ai/code/artifact/0c9c6fcf-e433-4662-8efa-3e9d1e28a78f) |
 | `Usul.Process` | [Usul/Process.md](Usul/Process.md) | [doc](https://claude.ai/code/artifact/4ae3d574-cd26-4e7c-8ffe-7f3391b43e4e) |
 | `Usul.Qawaid` | [Usul/Qawaid.md](Usul/Qawaid.md) | [doc](https://claude.ai/code/artifact/e3d626a3-b4c6-4a28-a2b2-bfb2582ad692) |
@@ -116,6 +117,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.Judgement` | [UsulTest/Judgement.md](UsulTest/Judgement.md) | [doc](https://claude.ai/code/artifact/26403a76-688f-4f69-8929-258fa5e33683) |
 | `UsulTest.KernelContracts` | [UsulTest/KernelContracts.md](UsulTest/KernelContracts.md) | [doc](https://claude.ai/code/artifact/a5db3444-5ce0-4ab8-90aa-3ee6a5b68a71) |
 | `UsulTest.M8Tranche3` | [UsulTest/M8Tranche3.md](UsulTest/M8Tranche3.md) | [doc](https://claude.ai/code/artifact/21d405bc-8fef-4519-bc91-82aab37f578d) |
+| `UsulTest.MahallGraph` | [UsulTest/MahallGraph.md](UsulTest/MahallGraph.md) | pending |
 | `UsulTest.NususTable` | [UsulTest/NususTable.md](UsulTest/NususTable.md) | [doc](https://claude.ai/code/artifact/0dfd0ab9-7923-4643-a317-cb4f5068baa3) |
 | `UsulTest.Obstructions` | [UsulTest/Obstructions.md](UsulTest/Obstructions.md) | [doc](https://claude.ai/code/artifact/03ec0d45-0ae5-4809-b4cc-f90a0041c1f6) |
 | `UsulTest.R2Sample1Semantic` | [UsulTest/R2Sample1Semantic.md](UsulTest/R2Sample1Semantic.md) | [doc](https://claude.ai/code/artifact/97163f20-b52d-425f-8deb-a15550ddfb4f) |

@@ -11,6 +11,7 @@ import UsulTest.CommandSchemata
 import UsulTest.TanaqudTable
 import UsulTest.FuruqTable
 import UsulTest.NususTable
+import UsulTest.MahallGraph
 import UsulTest.Reconcile
 import UsulTest.TypedRulings
 import UsulTest.FatawaBank

@@ -29,6 +29,15 @@ def sources(name: str, statement: str) -> list[tuple[str, int]]:
     return sorted(set(own + [(a, int(n)) for a, n in CITE.findall(statement)]))
 
 
+SADI = re.compile(r"al-Saʿdī Q(\d+)")
+
+
+def cited(name: str, statement: str) -> list[tuple[str, int]]:
+    """Every source qāʿida a type is read from: the segmented ones (``sources``) and al-Saʿdī's.
+    A type may cite several, and several types may cite one qāʿida."""
+    return sorted(set(sources(name, statement)) | {("al-Saʿdī", int(n)) for n in SADI.findall(statement)})
+
+
 def head(case: str) -> str:
     """A farʿ's opening clause: up to its first question mark, clause mark or question particle,
     at most ``WORDS`` words. A prefix of the witness text, so verbatim by construction."""

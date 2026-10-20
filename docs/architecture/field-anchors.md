@@ -104,4 +104,34 @@ The disjoint cases show why. In 11 of the 15 type disagreements one side found t
 - q085.f010: rajab85 against rajab99;
 - q158.f014: itizal against yaqin, for rajab158.
 
-Ibn Rajab cross-lists. A farʿ often turns on two qawāʿid, and he places it under one. Scope fixes which qāʿida the **author** filed a farʿ under, not which qāʿida a reader must pick. The remaining variance is the multi-qāʿida case itself, and a single-qāʿida key cannot settle it. The honest unit of agreement is the set of qawāʿid a case touches.
+One explanation is cross-listing: a farʿ turns on two qawāʿid, and each reader picks one. The set-level measure below tests that explanation and rejects it.
+
+## Agreement on the set of qawāʿid touched
+
+A typing touches a **set** of source qawāʿid. Each fact maps to its types, and each type maps to the qawāʿid its statement cites, so `sadi32` and `rajab75` count as one. Two typings are compared set against set with Krippendorff's α and the MASI distance, the usual measure for set-valued labels. The module is `pipeline/usul_corpus/agreement.py`. The ten typings are committed in `corpus/typing/reproduction/`; the first plain typing is `rajab_fold1_situations.json`. `test_agreement.py` pins the figures.
+
+| 80 cases, two typings | Plain | Anchors | Anchors and scope |
+|---|---|---|---|
+| α (MASI) | 0.820 | 0.827 | 0.826 |
+| 95 % bootstrap interval | 0.74–0.89 | 0.75–0.90 | 0.74–0.90 |
+| Identical sets | 63 | 62 | 65 |
+| Overlapping sets | 71 | 71 | 67 |
+| Disjoint (excluding both-empty) | 8 | 6 | 11 |
+| Own reading's qawāʿid found (a / b) | 65 / 63 | 66 / 62 | 67 / 66 |
+| Found by either typing | 69 | 68 | 72 |
+| Mean qawāʿid per typing | 1.19 | 1.26 | 1.24 |
+
+- **Agreement on qawāʿid is substantial and flat.** α ≈ 0.82 under every condition, so neither anchors nor scope moved it. The intervals overlap almost entirely.
+- **Cross-listing is not the cause.** A typing touches 1.2 qawāʿid on average, and in about 59 of 80 cases both typings touch at most one. So readers do not touch two qawāʿid and agree on one. Each picks a single qāʿida, and in the disagreements they pick different ones.
+- **What the disjoint cases are** (anchors and scope, 11):
+  - In 3, one reader settled nothing (q073, q133, q153).
+  - In 8, the readers named rival single qawāʿid. In 6 of those 8, one side named the case's own qāʿida:
+    - q013.f010 and f013: 13 against 151;
+    - q029.f002: 29 against 138;
+    - q082.f004: 116 against 20, 21 and 82;
+    - q085.f010: 85 and 87 against 99;
+    - q068.f008: al-Saʿdī 11 against Ibn Rajab 68.
+  - In the remaining 2, neither side did: q060.f007 (62 against 95, own 60) and q158.f014 (160 against al-Saʿdī 11, own 158).
+- **Over all six typings** (47 cases have one set, 23 two, 10 three or four), the own qāʿida is found by at least one typing in 74 of 80 cases, and by a majority (≥ 4 of 6) in 62.
+
+The reading step, at the level of which qāʿida, is therefore about as reproducible as the text allows a single reader: α 0.82. The residue is mostly a single reader's miss, which a second reading recovers: "found by either" is 68–72 against 62–67 for one typing. Pooling independent typings is the procedural remedy, not more definition: take the union to propose and the majority to decide.
