@@ -126,5 +126,8 @@ def hujja(nass: dict) -> bool:
 
 
 def witnesses(corpus: Path) -> set[str]:
-    """The al-Albānī witnesses the committed grades cite (required, so CI fetches them)."""
+    """The al-Albānī witnesses the committed grades cite (required, so CI fetches them). Empty when
+    the corpus has no maḥall layer."""
+    if not (corpus / mahall.DIR / "abwab.json").exists():
+        return set()
     return {n["albani"]["witness"] for l in mahall.load(corpus)[1] for n in l.get("nass", []) if "albani" in n}
