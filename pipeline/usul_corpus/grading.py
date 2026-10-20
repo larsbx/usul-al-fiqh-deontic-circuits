@@ -8,7 +8,9 @@ The works, each with per-entry verdicts:
 - his Ṣaḥīḥ wa-Ḍaʿīf of the Sunan of al-Tirmidhī, Abū Dāwūd, al-Nasāʾī and Ibn Māja: his verdict on
   every ḥadīth, in the Sunan's own numbering (``SERIES``);
 - al-Irwāʾ al-Ghalīl, his takhrīj of the Ḥanbalī *Manār al-Sabīl*;
-- Ṣaḥīḥ Abī Dāwūd and Ḍaʿīf Abī Dāwūd (al-Umm, his numbering).
+- Ṣaḥīḥ Abī Dāwūd and Ḍaʿīf Abī Dāwūd (al-Umm, his numbering);
+- his Mukhtaṣar Ṣaḥīḥ al-Bukhārī, for the athar al-Bukhārī quotes (``ATHAR``): his note on each, a
+  footnote of its page, gives his verdict on its chain (``nusus.mukhtasar_entry``).
 
 An entry grades an anchor when the ḥadīth it is about (its head, before his verdict line) holds the
 anchor's excerpt. It is found by wording (letters only, at least ``MIN`` letters), or by the anchor's

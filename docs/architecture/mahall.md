@@ -164,7 +164,7 @@ The verbatim gate checks a ḥadīth's wording, not its standing. Every ḥadīt
 
 **Sources are always cited.** Every text but a verse (which cites its sūra and āya in its ref) carries `number`: its ḥadīth number in its witness, or the Mughnī's masʾala for an ijmāʿ. Every grade cites where it comes from: al-Albānī's entry (`albani: {work, witness, number, verdict}`), each weaker route he grades (`weaker_routes`, same form), or the ḥadīth of the Ṣaḥīḥayn whose standing it keeps (`sahihayn: {witness, number}`). `mahall.check` rejects a grade without its citation; the test re-reads every cited entry and number.
 
-- **The works.** Seven of his works give a verdict per entry, all pinned:
+- **The works.** Eight of his works give a verdict per entry, all pinned:
 
   | Work | Witness | Entries |
   |---|---|---|
@@ -175,22 +175,39 @@ The verbatim gate checks a ḥadīth's wording, not its standing. Every ḥadīt
   | al-Irwāʾ al-Ghalīl, his takhrīj of the Ḥanbalī *Manār al-Sabīl* | [Shamela 22592](https://shamela.ws/book/22592) | his numbering |
   | Ṣaḥīḥ Abī Dāwūd (al-Umm) | [Shamela 25881](https://shamela.ws/book/25881) | his numbering, to 2,734 |
   | Ḍaʿīf Abī Dāwūd (al-Umm) | [Shamela 5914](https://shamela.ws/book/5914) | his numbering, to 561 |
+  | Mukhtaṣar Ṣaḥīḥ al-Imām al-Bukhārī | [Shamela 121381](https://shamela.ws/book/121381) (with its footnotes) | the muʿallaq and athar al-Bukhārī quotes, his numbering; for al-Bukhārī's athar only |
 
   The four Ṣaḥīḥ wa-Ḍaʿīf works are the Nūr al-Islām centre's compilation of his verdicts (Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya), each verdict with the books of his it comes from. The three on old Shamela exist only as its epubs, a witness kind (`shamela_epub`) this PR adds; they are pinned like any witness, by the hash of their text.
+- **The athar al-Bukhārī quotes.** His *Mukhtaṣar* abridges al-Bukhārī and gives his takhrīj of each muʿallaq and athar as a footnote of its page, keyed by its number: «١١٩٣ - وصله عبد الرزاق بسند صحيح عنه». Shamela drops footnotes by default; this witness keeps them (`hamesh`), one `# [هامش]` line each. Its verdict is his note's on the chain to the one al-Bukhārī quotes («بسند/وسنده/إسناده صحيح|حسن|ضعيف»; his notes largely follow Ibn Ḥajar's *Fatḥ*). A note that only names who connects it («وصله البيهقي»), says none did («لم يخرجها الحافظ»), or connects it without some of its words («دون قوله») gives none, and the anchor stays ungraded citing his entry. He numbers the muʿallaq and the athar in two series, each annotated, so most numbers under 900 name two entries; the entry is the one with that number whose text holds the anchor's excerpt, so number and wording together cite it.
 - **An entry grades an anchor** when the ḥadīth it is about holds the anchor's excerpt. That ḥadīth is the entry's head, before his verdict line; the rest is takhrīj quoting other narrations. An entry is found two ways:
-  - **by wording** (letters only, at least 15 letters), in all seven works;
+  - **by wording** (letters only, at least 15 letters), in all seven works of the Sunan and al-Irwāʾ, and for an athar of al-Bukhārī in the *Mukhtaṣar* first;
   - **by number**: the anchor's own Sunan's entry in his Ṣaḥīḥ wa-Ḍaʿīf of it. The numbering agrees for 179 of the 185 anchors of the four Sunan; where it does not, the entry fails the head check and grades nothing. A short excerpt that recurs in its Sunan (الخراج بالضمان, لا ضرر ولا ضرار, أنت ومالك لأبيك) goes by number only when he grades every ḥadīth of the Sunan that holds it alike, so the grade is the anchor's whichever of them it is.
 - **The verdict on a wording.** In his Sunan books al-Albānī grades each route (riwāya) apart; in al-Irwāʾ he grades the ḥadīth with all its routes. A wording he grades ṣaḥīḥ or ḥasan by any route is established. So the grade is his strongest verdict on any entry holding it, and his weaker verdicts on other routes are kept (`weaker_routes`, 39 anchors).
 - **The Ṣaḥīḥayn's standing.** A Prophetic ḥadīth of al-Bukhārī or Muslim that no work of his grades ṣaḥīḥ or ḥasan keeps the Ṣaḥīḥayn's own standing, cited to its number there; it is not a verdict of his. A weak verdict of his found by wording is on another collection's route, not on theirs: al-Bukhārī's ḥadīth qudsī «ورجل باع حرا فأكل ثمنه» is found only in Ibn Māja's route (2442), which he grades ḍaʿīf, and keeps the Ṣaḥīḥayn's standing with that route as a weaker one. An athar they quote has no such standing.
 
-| 497 ḥadīth and athar anchors | Now | Before ([#115](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/115)) |
-|---|---|---|
-| Graded by al-Albānī | **357**: ṣaḥīḥ 281, ḥasan 40, ḍaʿīf 36 (none mawḍūʿ) | 240: ṣaḥīḥ 198, ḥasan 24, ḍaʿīf 18 |
-| By work | Tirmidhī 112, Abū Dāwūd 67, al-Irwāʾ 46, Ṣaḥīḥ Abī Dāwūd 46, al-Nasāʾī 39, Ibn Māja 37, Ḍaʿīf Abī Dāwūd 10 | |
-| Ḥadīth of the Ṣaḥīḥayn his works don't grade ṣaḥīḥ or ḥasan | 127, each citing its number there | 170 |
-| Ungraded | **13**: no entry of these works holds the excerpt | 87 |
+| 497 ḥadīth and athar anchors | Now | Before the *Mukhtaṣar* | Before ([#115](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/115)) |
+|---|---|---|---|
+| Graded by al-Albānī | **360**: ṣaḥīḥ 284, ḥasan 40, ḍaʿīf 36 (none mawḍūʿ) | 357: ṣaḥīḥ 281 | 240: ṣaḥīḥ 198, ḥasan 24, ḍaʿīf 18 |
+| By work | Tirmidhī 112, Abū Dāwūd 67, Ṣaḥīḥ Abī Dāwūd 46, al-Irwāʾ 45, al-Nasāʾī 39, Ibn Māja 37, Ḍaʿīf Abī Dāwūd 10, Mukhtaṣar al-Bukhārī 4 | al-Irwāʾ 46 | |
+| Ḥadīth of the Ṣaḥīḥayn his works don't grade ṣaḥīḥ or ḥasan | 127, each citing its number there | 127 | 170 |
+| Ungraded | **10**, each saying why | 13 | 87 |
 
-The 13 ungraded are 11 athar that al-Bukhārī quotes (ʿUmar, ʿAlī, Ibn ʿUmar, Ibn ʿAbbās and others, mostly muʿallaq), which these works do not grade, and two ḥadīth whose wording differs from his entry by a word: Ibn Māja's «إن الله قد تجاوز عن أمتي الخطأ والنسيان» (his entry 2043 reads «إن الله تجاوز»; he grades it ṣaḥīḥ) and al-Tirmidhī's «لا تقرأ الحائض ولا الجنب شيئا من القرآن». The wording gate does not bridge such variants, so they stay ungraded.
+**The athar of al-Bukhārī, graded from the *Mukhtaṣar*.** Of the 11 athar al-Bukhārī quotes that the other works do not grade:
+
+| Athar (al-Bukhārī) | *Mukhtaṣar* | His note | Grade |
+|---|---|---|---|
+| Ibn al-Musayyab: the wife of one lost in battle waits a year (5290; `idda.mafqud`) | 1193 | «وصله عبد الرزاق بسند صحيح عنه» | **ṣaḥīḥ** |
+| al-Shaʿbī: ʿAlī voids the two witnesses' testimony and takes the diya («لو علمت أنكما تعمدتما لقطعتكما», «فأبطل شهادتهما…»; 6895; `shahadat.ruju_shuhud`) | 1358 | «وصله الشافعي بسند صحيح عنه» | **ṣaḥīḥ** (2 anchors) |
+| Ibn ʿUmar, via Nāfiʿ: «إن خرجت فقد بتت منه» (5268; `talaq.talaq_muallaq`) | 1156 | «١١٥٤ - ١١٥٦ - لم يخرجها الحافظ» | ungraded (3 anchors) |
+| al-Zuhrī on the captive: «فإذا انقطع خبره فسنته سنة المفقود» (5290) | 1196 | connected «دون قوله: فإذا انقطع…» | ungraded |
+| Abū Jamīla's foundling: «وجدت منبوذا فلما رآني عمر» (2661) | 591 | «وصله البيهقي» | ungraded |
+| Zuhra b. Maʿbad: «أشركنا» (2501; `buyu.tashrik`) | 1145 | none: al-Bukhārī gives it with its isnād | ungraded |
+| Abū Hurayra: «تقول المرأة إما أن تطعمني…» (5355) | in 2129, a musnad ḥadīth | his note (2) says it is not marfūʿ, nothing on its chain | ungraded |
+| Ibn ʿUmar's horse taken by the enemy: «ذهب فرس له فأخذه العدو» (3067) | — | the *Mukhtaṣar* has another wording («فأخذه العدو» in a «وفي رواية») | ungraded |
+
+His verdict is on the chain to the one al-Bukhārī quotes (to al-Shaʿbī, for ʿAlī's ruling). ʿUmar's «من أحيا أرضا ميتة فهي له», already ṣaḥīḥ, now cites his verdict on ʿUmar's words (*Mukhtaṣar* 515, «وصله مالك بسند صحيح عنه») rather than al-Irwāʾ's on the Prophetic ḥadīth.
+
+The 10 ungraded are these eight athar and two ḥadīth whose wording differs from his entry by a word: Ibn Māja's «إن الله قد تجاوز عن أمتي الخطأ والنسيان» (his entry 2043 reads «إن الله تجاوز»; he grades it ṣaḥīḥ) and al-Tirmidhī's «لا تقرأ الحائض ولا الجنب شيئا من القرآن». The wording gate does not bridge such variants, so they stay ungraded.
 
 **The ḥujja gate.**
 
@@ -199,10 +216,10 @@ The 13 ungraded are 11 athar that al-Bukhārī quotes (ʿUmar, ʿAlī, Ibn ʿUma
 
 | | Now | Before |
 |---|---|---|
-| Texts that are ḥujja | 674 of 725 | 629 |
-| Labels with a ḥujja text | 501 of 525 anchored | 476 |
-| Cases whose own maḥall has a ḥujja text | 1,136 of 1,216 | 1,088 |
-| ḥujja grounds per qāʿida | 24.2 on average (of 25.8). No qāʿida is left without one | 22.7 |
+| Texts that are ḥujja | 681 of 725 (678 before the *Mukhtaṣar*) | 629 |
+| Labels with a ḥujja text | 502 of 525 anchored | 476 |
+| Cases whose own maḥall has a ḥujja text | 1,139 of 1,216 | 1,088 |
+| ḥujja grounds per qāʿida | 24.3 on average (of 25.8). No qāʿida is left without one | 22.7 |
 
 **Labels whose only texts he grades weak (18).** These are maḥalls the bank anchors on ḥadīth al-Albānī does not accept, with no other ḥujja text. Each needs a sound text or an ijmāʿ, or stands as a finding. Grading more anchors moved eight labels here from "ungraded only":
 
@@ -224,7 +241,7 @@ The 13 ungraded are 11 athar that al-Bukhārī quotes (ʿUmar, ʿAlī, Ibn ʿUma
 - trade goods;
 - the estimation of fruits.
 
-Six more labels have only ungraded texts: `buyu.tashrik`, `idda.mafqud`, `iqrar.iqrar_mukrah`, `nafaqat.fasakh_iisar`, `tahara.qiraat_junub` and `talaq.talaq_muallaq` (39 before).
+Five more labels have only ungraded texts: `buyu.tashrik`, `iqrar.iqrar_mukrah`, `nafaqat.fasakh_iisar`, `tahara.qiraat_junub` and `talaq.talaq_muallaq` (six before the *Mukhtaṣar*, 39 before that).
 
 ## For review
 
