@@ -1,6 +1,6 @@
 # Derivation method and the parallel attack on the source texts
 
-The method itself (how a ruling in a text is derived by the kernel, checked, extended and governed) is specified in [`architecture/derivation-method.md`](architecture/derivation-method.md). Part II maps the 120 cached witnesses (92 of them committed under [`corpus/texts`](../corpus/texts/README.md)) onto the roles the method knows. Part III plans running the method over them in parallel, with the write isolation and integration discipline the parallel tranche 3 (PRs #31, #32) showed to be necessary.
+The method itself (how a ruling in a text is derived by the kernel, checked, extended and governed) is specified in [`architecture/derivation-method.md`](architecture/derivation-method.md). Part II maps the 138 registered text witnesses (89 of them committed under [`corpus/texts`](../corpus/texts/README.md); 38 are held `cache_only` by the [PR #88 publication audit](architecture/pr88-source-publication-audit-2026-10-15.md)) onto the roles the method knows. Part III plans running the method over them in parallel, with the write isolation and integration discipline the parallel tranche 3 (PRs #31, #32) showed to be necessary.
 
 Nothing here changes a status. Every artifact the plan produces is `candidate`, and every interpretive commitment goes to the review gate ([schemata.md](architecture/schemata.md#governance-where-the-explanations-live-and-why-there)).
 
