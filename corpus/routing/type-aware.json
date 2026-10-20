@@ -55447,7 +55447,7 @@
     "pipeline/usul_corpus/arabic.py": "d3fa63d357d9d548c8c5a9fbbf28e63505201c514ba1f8f9f17a049da8758a59",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
     "pipeline/usul_corpus/encoders/concordance.py": "f527d8841df4052aa40649f00d6837888777e02fcbf804832411f581effc3c39",
-    "pipeline/usul_corpus/encoders/maqasid.py": "b9f28f9de310e97b0ffead786e4a0047e070226ee01249565ca3b5a2a1a7ea44",
+    "pipeline/usul_corpus/encoders/maqasid.py": "25f857a60d0e07f819420949599417ca71019068efb60533b86067c1234fda99",
     "pipeline/usul_corpus/encoders/mubashara.py": "2b332735630e96fb6350f2179444e220cc2e66eadb4d537e9b67d0ac5ec1b31f",
     "pipeline/usul_corpus/encoders/rajab_a1.py": "d21b57b625411a2a56c5382575a256a1c46a3819f0798b9c1eb8b7007b6ef4b1",
     "pipeline/usul_corpus/encoders/rajab_a10.py": "b0edbd751ec4e21942b9feb020c9c106b4167538f7af42b6efe9c26c077fe6d9",

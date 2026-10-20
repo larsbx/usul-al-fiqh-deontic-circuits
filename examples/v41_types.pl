@@ -109,7 +109,12 @@ type_field(majhul_madum, despair, 'Option Bool').
 type_field(majhul_madum, hardship, 'Option Bool').
 qaida_type(maqasid_tarjih, 'Ibn al-Najjār, Sharḥ al-Kawkab al-Munīr (v04 p727) «تقدم المقاصد الضرورية … على غيرها … ومكملها … على الحاجية … وتقدم المصلحة الحاجية على التحسينية … ويقدم حفظ الدين على باقي الضرورية». Read by `maqasid_tarjih`.').
 type_field(maqasid_tarjih, maqsad_first, 'Option Usul.Readings.Maqasid.Maqsad').
-type_value('Usul.Readings.Maqasid.Maqsad', daruri).
+type_value('Usul.Readings.Maqasid.Maqsad', din).
+type_value('Usul.Readings.Maqasid.Maqsad', nafs).
+type_value('Usul.Readings.Maqasid.Maqsad', aql).
+type_value('Usul.Readings.Maqasid.Maqsad', nasl).
+type_value('Usul.Readings.Maqasid.Maqsad', mal).
+type_value('Usul.Readings.Maqasid.Maqsad', ird).
 type_value('Usul.Readings.Maqasid.Maqsad', mukammil).
 type_value('Usul.Readings.Maqasid.Maqsad', haji).
 type_value('Usul.Readings.Maqasid.Maqsad', tahsini).

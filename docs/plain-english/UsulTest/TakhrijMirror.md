@@ -54,7 +54,7 @@ Several functions have an `…In` variant that takes one more fact (for example 
 Examples:
 
 - `Mubashara.damanOn true true == .shared`: the direct act arises from the cause and involves transgression, so liability is shared.
-- `Maqasid.taqdim .kawkab (.daruri .nafs) .haji == .first`: life, a necessity, before a need.
+- `Maqasid.taqdim .kawkab .nafs .haji == .first`: life, a necessity, before a need.
 - `RajabA1.rescission true false == .barred`: a rescission that causes harm which cannot be made good is barred.
 
 ## 5. Why it matters

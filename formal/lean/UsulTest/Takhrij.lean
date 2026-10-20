@@ -14,7 +14,7 @@ import Usul
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f003 (derivable)
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
 -- lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648 (derivable)
-#guard (Usul.Readings.Maqasid.taqdim .kawkab (.daruri .nafs) .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .haji) == .first
 -- lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346 (derivable)
 #guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .haji) == .first
 -- kawsaj.masail_ahmad.openiti_kawsaj_masailahmad_shamela3125.m00518 (derivable)

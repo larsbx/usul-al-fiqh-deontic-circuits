@@ -592,6 +592,10 @@ import Usul
 #check @Usul.Readings.Maqasid.kaffarat_al_malik
 #check @Usul.Readings.Maqasid.tatarrus_disputed
 #check @Usul.Readings.Maqasid.Maqsad
+#check @Usul.Readings.Maqasid.Maqsad.ofKulli
+#check @Usul.Readings.Maqasid.Maqsad.kulli
+#check @Usul.Readings.Maqasid.kulli_ofKulli
+#check @Usul.Readings.Maqasid.ofKulli_kulli
 #check @Usul.Readings.Maqasid.Maqsad.tier
 #check @Usul.Readings.Maqasid.Maqsad.rutba
 #check @Usul.Readings.Maqasid.tier_refines_rank

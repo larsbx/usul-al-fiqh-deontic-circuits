@@ -45,7 +45,5 @@ ENCODERS = {
         facts={"maqsad_first": MAQSAD, "maqsad_second": MAQSAD, "din_reading": ("kawkab", "qila")},
         out=("first", "second", "tawaqquf"),
         lean="Usul.Readings.Maqasid.taqdim {din_reading} {maqsad_first} {maqsad_second}",
-        lits={k: {**{c: f"(.daruri .{c})" for c in KULLI}, **{m: f".{m}" for m in ("mukammil", "haji", "tahsini")}}
-              for k in ("maqsad_first", "maqsad_second")},
         py=_taqdim),
 }

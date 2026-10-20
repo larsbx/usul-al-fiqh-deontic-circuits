@@ -25,7 +25,7 @@ Every Lean name that the corpus links to a ḥadd (definition) or qāʿida (lega
 | `Usul.Jadal` | 41 | Disputation: objections (qawādiḥ), their kinds, the debate gate, order of sources. |
 | `Usul.Dalala` | 28 | Linguistic signification: command and prohibition, specification (takhṣīṣ), implied meaning (mafhūm). |
 | `Usul.CommandSchemata` | 27 | How commands are expressed and read: gesture, writing, Prophetic acts, intended rulings. |
-| `Usul.Readings` | 77 | Ibn Rajab readings (`RajabA*`), `Mubashara`, `Concordance`, and the 54 names of `Maqasid`. |
+| `Usul.Readings` | 81 | Ibn Rajab readings (`RajabA*`), `Mubashara`, `Concordance`, and the 58 names of `Maqasid`. |
 | `Usul.Schema` | 22 | The eight shared schemata and the theorems that place maxims in them. |
 | `Usul.QiyasLimits` | 21 | Where qiyās is not admitted, and Ḥanbalī vs Ḥanafī scope. |
 | `Usul.Furuq` | 16 | Distinctions (furūq) between look-alike cases. |

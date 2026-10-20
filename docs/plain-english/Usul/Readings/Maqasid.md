@@ -98,12 +98,13 @@ Each rank has complements (takmila), whose loss would not undo its purpose. al-S
 
 ## 7. The order in tarjīḥ
 
-- **`Maqsad`**: what an interest serves: one of the universals, a complement of a necessity, a need, or a refinement. **`Maqsad.tier`** ranks them in that order.
+- **`Maqsad`**: what an interest serves: one of the six universals (each its own value, so a typed situation can name it), a complement of a necessity, a need, or a refinement. **`Maqsad.ofKulli`** and **`Maqsad.kulli`** go between a universal and its necessity. **`Maqsad.tier`** ranks them in that order.
 - **`DinReading`**: the two positions on religion against the other necessities. al-Kawkab: religion first, "the greatest purpose". The dissent ("it was said"): the other four first, as rights of humans.
 - **`taqdim`**: which of two conflicting interests is put first: the higher tier, then within the necessities by rank on the reading, otherwise suspension (tawaqquf).
 
 | Theorem | Plain English |
 | --- | --- |
+| `kulli_ofKulli`, `ofKulli_kulli` | The necessities are exactly the universals, one each. |
 | `tier_refines_rank` | The tiers refine al-Shāṭibī's three ranks: a complement of a necessity sits between it and a need. |
 | `Maqsad.mem_all` | The nine values are all listed, so the checks below are exhaustive. |
 | `tier_decides` | The higher tier always comes first, on either reading. |

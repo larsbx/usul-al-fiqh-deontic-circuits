@@ -308,6 +308,10 @@
       "rationale": "Usul.Tarjih weighs proofs; al-Kawkab also orders the maqāṣid a proof serves, which no reading held. The order is formalised as taqdim, proved antisymmetric (taqdim_swap), transitive (taqdim_trans) and decided by tier whatever the reading (tier_decides), consistent with al-Shāṭibī's dependence (asl_before_takmila, tier_refines_rank). The dissent on dīn is pinned as a fact; din_reading_locus proves the readings differ only where dīn meets another ḍarūrī. Where al-Kawkab states no order (two of one tier outside the ḍarūriyyāt, wealth and honour) the verdict is tawaqquf.",
       "lean": [
         "Usul.Readings.Maqasid.Maqsad",
+        "Usul.Readings.Maqasid.Maqsad.ofKulli",
+        "Usul.Readings.Maqasid.Maqsad.kulli",
+        "Usul.Readings.Maqasid.kulli_ofKulli",
+        "Usul.Readings.Maqasid.ofKulli_kulli",
         "Usul.Readings.Maqasid.Maqsad.tier",
         "Usul.Readings.Maqasid.Maqsad.rutba",
         "Usul.Readings.Maqasid.tier_refines_rank",

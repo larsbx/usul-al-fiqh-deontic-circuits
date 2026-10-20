@@ -307,19 +307,35 @@ theorem others_need_not_disrupt_daruri :
 
 /-! ## The order of the maqāṣid in tarjīḥ (al-Kawkab v04 p726–728) -/
 
-/-- What a maṣlaḥa preserves, as al-Kawkab ranks it for tarjīḥ: one of the ḍarūriyyāt, a complement
-of a ḍarūrī («ومكملها»), a ḥājī or a taḥsīnī. -/
+/-- What a maṣlaḥa preserves, as al-Kawkab ranks it for tarjīḥ: one of the ḍarūriyyāt (by its
+kullī), a complement of a ḍarūrī («ومكملها»), a ḥājī or a taḥsīnī. Every case is nullary, so the type
+export lists each value a situation can state. -/
 inductive Maqsad where
-  | daruri (k : Kulli) | mukammil | haji | tahsini
+  | din | nafs | aql | nasl | mal | ird | mukammil | haji | tahsini
   deriving DecidableEq, Repr
+
+/-- The ḍarūrī that preserves a kullī. -/
+def Maqsad.ofKulli : Kulli → Maqsad
+  | .din => .din | .nafs => .nafs | .aql => .aql | .nasl => .nasl | .mal => .mal | .ird => .ird
+
+/-- The kullī a ḍarūrī maqṣad preserves; none for the other tiers. -/
+def Maqsad.kulli : Maqsad → Option Kulli
+  | .din => some .din | .nafs => some .nafs | .aql => some .aql | .nasl => some .nasl
+  | .mal => some .mal | .ird => some .ird | _ => none
+
+/-- The ḍarūrī maqāṣid are exactly the kulliyyāt. -/
+theorem kulli_ofKulli (k : Kulli) : (Maqsad.ofKulli k).kulli = some k := by cases k <;> rfl
+
+theorem ofKulli_kulli (m : Maqsad) (k : Kulli) (h : m.kulli = some k) : Maqsad.ofKulli k = m := by
+  cases m <;> simp_all [Maqsad.kulli] <;> subst h <;> rfl
 
 /-- «تقدم المقاصد الضرورية … على غيرها … ومكملها … على الحاجية … وتقدم المصلحة الحاجية على التحسينية». -/
 def Maqsad.tier : Maqsad → Nat
-  | .daruri _ => 3 | .mukammil => 2 | .haji => 1 | .tahsini => 0
+  | .mukammil => 2 | .haji => 1 | .tahsini => 0 | _ => 3
 
 /-- The tiers refine al-Shāṭibī's three ranks: a complement of the ḍarūrī sits between it and the ḥājī. -/
 def Maqsad.rutba : Maqsad → Rutba
-  | .daruri _ | .mukammil => .daruri | .haji => .haji | .tahsini => .tahsini
+  | .haji => .haji | .tahsini => .tahsini | _ => .daruri
 
 theorem tier_refines_rank (a b : Maqsad) (h : a.rutba.rank < b.rutba.rank) : a.tier < b.tier := by
   cases a <;> cases b <;> simp_all [Maqsad.rutba, Maqsad.tier, Rutba.rank]
@@ -345,9 +361,10 @@ def Kulli.tarjihRank : DinReading → Kulli → Nat
 /-- The order of two maṣāliḥ: the higher tier first; within the ḍarūriyyāt, by rank on the reading;
 the rest suspended (tawaqquf), as al-Kawkab states no further order. -/
 def taqdim (r : DinReading) (a b : Maqsad) : Taqdim :=
-  let key : Maqsad → Nat × Nat := fun
-    | .daruri k => (3, k.tarjihRank r)
-    | m => (m.tier, 0)
+  let key : Maqsad → Nat × Nat := fun m =>
+    match m.kulli with
+    | some k => (3, k.tarjihRank r)
+    | none => (m.tier, 0)
   let (ta, ra) := key a
   let (tb, rb) := key b
   if ta > tb then .first else if ta < tb then .second
@@ -355,17 +372,12 @@ def taqdim (r : DinReading) (a b : Maqsad) : Taqdim :=
 
 /-- The higher tier always comes first, whatever the reading. -/
 theorem tier_decides (r : DinReading) (a b : Maqsad) (h : b.tier < a.tier) : taqdim r a b = .first := by
-  cases a <;> cases b <;> simp_all [taqdim, Maqsad.tier] <;> omega
+  cases a <;> cases b <;> simp_all [taqdim, Maqsad.tier, Maqsad.kulli] <;> omega
 
 /-- Every maqṣad, for the exhaustive checks below. -/
-def Maqsad.all : List Maqsad :=
-  [.daruri .din, .daruri .nafs, .daruri .aql, .daruri .nasl, .daruri .mal, .daruri .ird,
-    .mukammil, .haji, .tahsini]
+def Maqsad.all : List Maqsad := [.din, .nafs, .aql, .nasl, .mal, .ird, .mukammil, .haji, .tahsini]
 
-theorem Maqsad.mem_all (m : Maqsad) : m ∈ Maqsad.all := by
-  cases m with
-  | daruri k => cases k <;> decide
-  | _ => decide
+theorem Maqsad.mem_all (m : Maqsad) : m ∈ Maqsad.all := by cases m <;> decide
 
 /-- The order is antisymmetric: swapping the two swaps the verdict. -/
 theorem taqdim_swap (r : DinReading) (a b : Maqsad) :
@@ -382,24 +394,24 @@ theorem taqdim_trans (r : DinReading) (a b c : Maqsad) (hab : taqdim r a b = .fi
   exact h r (by cases r <;> decide) a (Maqsad.mem_all a) b (Maqsad.mem_all b) c (Maqsad.mem_all c) hab hbc
 
 /-- On al-Kawkab's reading dīn precedes every other ḍarūrī. -/
-theorem din_first (k : Kulli) (h : k ≠ .din) : taqdim .kawkab (.daruri .din) (.daruri k) = .first := by
-  cases k <;> simp_all [taqdim, Kulli.tarjihRank, Kulli.rank]
+theorem din_first (k : Kulli) (h : k ≠ .din) : taqdim .kawkab .din (.ofKulli k) = .first := by
+  cases k <;> simp_all <;> rfl
 
 /-- The two readings differ only where dīn meets another ḍarūrī. -/
 theorem din_reading_locus (a b : Maqsad) (h : taqdim .kawkab a b ≠ taqdim .qila a b) :
-    a = .daruri .din ∨ b = .daruri .din := by
+    a = .din ∨ b = .din := by
   have hall : ∀ a ∈ Maqsad.all, ∀ b ∈ Maqsad.all,
-      taqdim .kawkab a b ≠ taqdim .qila a b → a = .daruri .din ∨ b = .daruri .din := by decide
+      taqdim .kawkab a b ≠ taqdim .qila a b → a = .din ∨ b = .din := by decide
   exact hall a (Maqsad.mem_all a) b (Maqsad.mem_all b) h
 
 /-- Wealth and honour stand level: al-Kawkab states no order between them. -/
-theorem mal_ird_suspended (r : DinReading) : taqdim r (.daruri .mal) (.daruri .ird) = .tawaqquf := by
+theorem mal_ird_suspended (r : DinReading) : taqdim r .mal .ird = .tawaqquf := by
   cases r <;> rfl
 
 /-- The order agrees with al-Shāṭibī's dependence: the original ḍarūrī precedes its complement, and
 the complement of the ḍarūrī precedes the ḥājī. -/
 theorem asl_before_takmila (r : DinReading) (k : Kulli) :
-    taqdim r (.daruri k) .mukammil = .first ∧ taqdim r .mukammil .haji = .first ∧
+    taqdim r (.ofKulli k) .mukammil = .first ∧ taqdim r .mukammil .haji = .first ∧
       taqdim r .haji .tahsini = .first := by
   cases r <;> cases k <;> exact ⟨rfl, rfl, rfl⟩
 
