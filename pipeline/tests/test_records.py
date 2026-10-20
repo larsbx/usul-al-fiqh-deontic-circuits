@@ -4,7 +4,7 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from usul_corpus.records import qaida_records, unit_tags
+from usul_corpus.records import EXCERPT_LEN, qaida_records, unit_tags
 from usul_corpus.segment import Unit
 
 SCHEMA = json.loads((Path(__file__).parents[2] / "schemas" / "usul_rule.schema.json").read_text())
@@ -29,6 +29,11 @@ def test_opening_example_is_f000_and_keeps_later_ids():
     assert q["furu_count"] == 2
     for r in (q, f0, f1):
         jsonschema.validate(r, SCHEMA)
+
+
+def test_noncommercial_texts_keep_the_modern_excerpt_cap():
+    """Committing a cleared text in full does not lengthen the excerpts records carry."""
+    assert EXCERPT_LEN["noncommercial_text"] == EXCERPT_LEN["modern_cache_only"]
 
 
 def test_modern_rights_cap_excerpts():

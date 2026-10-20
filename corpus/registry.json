@@ -1,7 +1,7 @@
 {
   "registry_version": "1",
   "policy": {
-    "full_text": "Full texts are fetched into .cache/corpus. Public-domain text witnesses (works with rights public_domain_text) are also committed, byte-identical to their pinned source, under corpus/texts via Git LFS; modern texts are never committed. Committed records carry short excerpts with edition-qualified locators.",
+    "full_text": "Full texts are fetched into .cache/corpus for permitted local study. Work-level rights describe the work, not blanket permission for its editions. Modern witnesses remain modern_cache_only unless documentary evidence supports complete-file redistribution. A witness publication record in this registry binds any decision to its lock.json SHA-256 and distinguishes work, edition and provider rights. Cache-only decisions override work labels. noncommercial_text requires a documented redistribution decision; study intent or repository-owner clearance alone is insufficient. Existing public_domain_text witnesses without a publication record retain legacy eligibility, not a newly audited clearance. PDF and DOC witnesses are not staged. Records retain edition-qualified locators and existing excerpt caps.",
     "authority": "Records are candidates until reviewed. Nothing here is a fatwā."
   },
   "works": [
@@ -272,7 +272,27 @@
             1,
             99
           ],
-          "edition": "Dār Ibn al-Jawzī, 4th ed., 1430/2009; pagination matches print"
+          "edition": "Dār Ibn al-Jawzī, 4th ed., 1430/2009; pagination matches print",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "380caa580a4170690e260bc4ab33c6b960badb4a4213c510e138685514c13fe7",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/9942",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "segmenter": {
@@ -379,7 +399,27 @@
           "item": "Pdf1995",
           "file": "كتاب   pdf     اقرا اونلاين   1995 - القواعد والأصول الجامعة والفروق والتقاسيم البديعة النافعة - ط دار الوطن_djvu.txt",
           "edition": "Dār al-Waṭan, ed. Khālid al-Mushayqiḥ",
-          "quality": "ocr_unreviewed"
+          "quality": "ocr_unreviewed",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "bb6ee73ebb8a05052f95fc4bb0190a40716da51385ad8a16d86fae47dad56f81",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://archive.org/metadata/Pdf1995",
+                "scope": "edition",
+                "finding": "Item metadata retrieved; neither rights nor licenseurl supplied."
+              },
+              {
+                "url": "https://help.archive.org/help/rights/",
+                "scope": "provider",
+                "finding": "Internet Archive does not guarantee item copyright status; uploader availability is not a grant from all rights holders."
+              }
+            ],
+            "assessment": "OCR of Dār al-Waṭan, ed. Khālid al-Mushayqiḥ. No edition-specific grant located in item metadata or repository records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         },
         {
           "id": "archive-pdf1995-tess",
@@ -464,6 +504,26 @@
           "quality": "ocr_unreviewed",
           "segmenter": {
             "kind": "numbered"
+          },
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "fabf901571bb17b55d79bf6fdc91c93d721ca9745aa33bf86cfa1ad0ce719fbc",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://archive.org/metadata/20210501_20210501_0220",
+                "scope": "edition",
+                "finding": "Item metadata retrieved; neither rights nor licenseurl supplied."
+              },
+              {
+                "url": "https://help.archive.org/help/rights/",
+                "scope": "provider",
+                "finding": "Internet Archive does not guarantee item copyright status; uploader availability is not a grant from all rights holders."
+              }
+            ],
+            "assessment": "OCR of archive.org OCR layer of the same scan. No edition-specific grant located in item metadata or repository records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
           }
         }
       ],
@@ -644,7 +704,27 @@
         {
           "id": "shamela-9527",
           "kind": "shamela",
-          "book_id": 9527
+          "book_id": 9527,
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "ec8a2f38dd4876b258dbca7962f3754930cbde964f13b5eed69db75cd06de8e5",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/9527",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue names Nādir al-Taʿmurī, Mashhūr Āl Salmān and Salīm al-Hilālī; Dār Ibn Ḥazm 1997. Clearance must cover their contributions as well as al-Saʿdī. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -748,7 +828,27 @@
           "id": "shamela-10649",
           "kind": "shamela",
           "book_id": 10649,
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "1079ffb80162e7f9925b8bbc60f2b4697fa8415571c32ab0bc922b610224fdec",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/10649",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -775,7 +875,27 @@
         {
           "id": "shamela-266",
           "kind": "shamela",
-          "book_id": 266
+          "book_id": 266,
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "a2e23a9a736e1c7857be94a2b4f949b093657b669cefe47c6e3d4cc9c1f92231",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_gift_only",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/266",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue names Suʿūd al-ʿUrayfī as editor; ʿAṭāʾāt al-ʿIlm / Ibn Ḥazm, 2019. It records a gift to Shamela, not a downstream redistribution grant. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -799,13 +919,53 @@
           "id": "shamela-282",
           "kind": "shamela",
           "book_id": 282,
-          "edition": "ʿAṭāʾāt al-ʿIlm"
+          "edition": "ʿAṭāʾāt al-ʿIlm",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "b9f0f61cb04f5174a50b07bb26002290991a409868c2b95ab033b8d2989e22d6",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_gift_only",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/282",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue: ʿAṭāʾāt al-ʿIlm / Ibn Ḥazm, fifth edition 2019. Gift to Shamela is evidenced; scope for third-party redistribution is not. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         },
         {
           "id": "shamela-9885",
           "kind": "shamela",
           "book_id": 9885,
-          "edition": "Maktabat al-ʿUlūm wa'l-Ḥikam"
+          "edition": "Maktabat al-ʿUlūm wa'l-Ḥikam",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "901cd03539c27771ddec073e7e9e083906bf29ce4bc99571bc02bc6dd8a46282",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/9885",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -852,7 +1012,27 @@
         {
           "id": "shamela-8874",
           "kind": "shamela",
-          "book_id": 8874
+          "book_id": 8874,
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "b58b808206089804adf976ba92e8a46202a1774fb8290e997806f24ce86da8ad",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/8874",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -899,7 +1079,27 @@
         {
           "id": "shamela-11100",
           "kind": "shamela",
-          "book_id": 11100
+          "book_id": 11100,
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "266e01dbbb571e330708341b8fe2c5986991a2df28f9ec2a47eb7c64c976a88e",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/11100",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -1154,7 +1354,27 @@
           "repo": "1350AH",
           "commit": "6d0c197e84a46a3cadbd36a045d09cb2bc9aa71e",
           "path": "data/1346CabdQadirBadran/1346CabdQadirBadran.MadkhalIlaMadhhabAhmad/1346CabdQadirBadran.MadkhalIlaMadhhabAhmad.Shamela0006309-ara1",
-          "edition": "ed. ʿAbd Allāh b. ʿAbd al-Muḥsin al-Turkī, Muʾassasat al-Risāla, 2nd ed. 1401"
+          "edition": "ed. ʿAbd Allāh b. ʿAbd al-Muḥsin al-Turkī, Muʾassasat al-Risāla, 2nd ed. 1401",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "f23cd3d3e98f095540feabecf04c679b724f6a52d94eccae6f1d58952baf36c4",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1350AH/6d0c197e84a46a3cadbd36a045d09cb2bc9aa71e/data/1346CabdQadirBadran/1346CabdQadirBadran.MadkhalIlaMadhhabAhmad/1346CabdQadirBadran.MadkhalIlaMadhhabAhmad.Shamela0006309-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned header confirms al-Turkī editing and Muʾassasat al-Risāla, second edition 1401 AH; no edition-specific grant was found in the examined metadata. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -2317,6 +2537,156 @@
       }
     },
     {
+      "id": "shawkani.durar_bahiyya",
+      "title_ar": "الدرر البهية في المسائل الفقهية",
+      "title_tr": "al-Durar al-Bahiyya fī al-Masāʾil al-Fiqhiyya",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "Matn of shawkani.darari_mudiyya and of al-Rawḍa al-Nadiyya (qannawji.rawda_nadiyya). Witness ShamAY 34280: ed. Muḥammad Ṣubḥī Ḥallāq, Dār al-Nadā, Beirut 1413 (PageV01P001–P342); its AUTO headings are split mid-line, so it is not segmented. Witness ShamAY 36516 carries the full matn with Fayṣal b. ʿAbd al-ʿAzīz Āl Mubārak's (d. 1376) commentary al-Ghurar al-Naqiyya, ed. Muḥammad b. Ḥasan Āl Mubārak: one masʾala per «# -» line under body headings «كتاب …», «باب …», «فصل», the commentary a closing block of endnotes «(¬n)» after the «|EDITOR| ENDNOTES» marker. The matn's tabwīb is read from it (witness-level segmenter: body_headings, end at «|EDITOR|»); the edition prints «باب النكاح» where ShamAY 34280 and al-Darārī have «كتاب النكاح», so kitab_headings ranks it as a kitāb. Both witnesses are held cache_only at witness level.",
+      "witnesses": [
+        {
+          "id": "openiti-shawkani-durarbahiyya-shamay34280",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0034280-ara1",
+          "edition": "ShamAY 34280",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "a06a22ab63960d8cff57fd4068146fd7ead558ef335507afaf2c3882d794fdbe",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0034280-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned header names Muḥammad Ṣubḥī Ḥallāq and Dār al-Nadā 1413 AH. The historic matn classification does not document permission for the complete modern-edition file and embedded metadata. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
+        },
+        {
+          "id": "openiti-mubarak-ghurarnaqiyya-shamay36516",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
+          "edition": "ShamAY 36516",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "1ff4cb3cf3fe17937474f0923e17a0f906f20f20f69d1e453cc9928a99a99e7b",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned file includes al-Shawkānī matn, Āl Mubārak commentary as endnotes and Muḥammad b. Ḥasan Āl Mubārak editing; a segmenter stop does not remove those bytes from the full file. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          },
+          "segmenter": {
+            "kind": "abwab",
+            "end": "\\|EDITOR\\|",
+            "body_headings": true,
+            "kitab_headings": [
+              "باب النكاح"
+            ]
+          }
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "matn",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الدرر البهية"
+        ],
+        "not": [
+          "شرح الدرر البهية"
+        ]
+      }
+    },
+    {
+      "id": "shawkani.darari_mudiyya",
+      "title_ar": "الدراري المضية شرح الدرر البهية",
+      "title_tr": "al-Darārī al-Muḍiyya Sharḥ al-Durar al-Bahiyya",
+      "author": {
+        "name_tr": "Muḥammad b. ʿAlī al-Shawkānī",
+        "death_ah": 1250
+      },
+      "layers": [
+        "tests"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "al-Shawkānī's own sharḥ of shawkani.durar_bahiyya. Witness: Dār al-Kutub al-ʿIlmiyya, 1st ed. 1407, 2 vols (PageV01–V02P466), with hand-set kitāb/bāb/faṣl headings; the other OpenITI witnesses (JK 175, ShamAY 34281, Zaydiyya 266) have none or AUTO headings.",
+      "witnesses": [
+        {
+          "id": "openiti-shawkani-dararimudiyya-shamela7264",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.DarariMudiyya/1255Shawkani.DarariMudiyya.Shamela0007264-ara1",
+          "edition": "Shamela 7264",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "5abe9ce107450b8790a4dfa45b24ddf822aa30f31fcd6309e7c2e10ffdba04ae",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DarariMudiyya/1255Shawkani.DarariMudiyya.Shamela0007264-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned header names Dār al-Kutub al-ʿIlmiyya 1407/1987 and no editor. No complete-edition clearance or documented editorial-removal audit was found; retain the historical work classification but hold this witness. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
+        }
+      ],
+      "status": "located",
+      "reception": {
+        "role": "cited",
+        "genre": "sharh",
+        "madhhab": "mujtahid",
+        "cite_as": [
+          "الدراري المضية"
+        ]
+      },
+      "segmenter": {
+        "kind": "abwab"
+      }
+    },
+    {
       "id": "qannawji.rawda_nadiyya",
       "title_ar": "الروضة الندية شرح الدرر البهية",
       "title_tr": "al-Rawḍa al-Nadiyya",
@@ -3249,7 +3619,27 @@
           "commit": "c35eac871bfcb6ff9677d8867ed544b973b7a5be",
           "path": "data/1450CulamaNajd/1450CulamaNajd.DurarSaniyya/1450CulamaNajd.DurarSaniyya.Shamela0003055-ara1",
           "edition": "Shamela 3055",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "764272bcb932bbc7603df40b496ca831d21f8848ef633aa4529a00c51c0a52bb",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1450AH/c35eac871bfcb6ff9677d8867ed544b973b7a5be/data/1450CulamaNajd/1450CulamaNajd.DurarSaniyya/1450CulamaNajd.DurarSaniyya.Shamela0003055-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3288,7 +3678,27 @@
           "commit": "6b4084ba42c8e0bd7c888a8c4b37c43ca771c322",
           "path": "data/1389MuhammadAlShaykh/1389MuhammadAlShaykh.FatawaWaRasail/1389MuhammadAlShaykh.FatawaWaRasail.Shamela0008476-ara1",
           "edition": "Shamela 8476",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "8603fe6b1f4ee94f6f4130974cb49ec6655efbcc7d2f95d8a247987519e41074",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1400AH/6b4084ba42c8e0bd7c888a8c4b37c43ca771c322/data/1389MuhammadAlShaykh/1389MuhammadAlShaykh.FatawaWaRasail/1389MuhammadAlShaykh.FatawaWaRasail.Shamela0008476-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3330,7 +3740,27 @@
           "commit": "c35eac871bfcb6ff9677d8867ed544b973b7a5be",
           "path": "data/1450LajnaDaima/1450LajnaDaima.Fatawa/1450LajnaDaima.Fatawa.Shamela0008381-ara1",
           "edition": "Shamela 8381",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "d0bbc0b7916e82f91b63bc36610b4d7e2f1c8a5bdc11d1f84eef9f56bf970fbe",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1450AH/c35eac871bfcb6ff9677d8867ed544b973b7a5be/data/1450LajnaDaima/1450LajnaDaima.Fatawa/1450LajnaDaima.Fatawa.Shamela0008381-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3369,7 +3799,27 @@
           "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
           "path": "data/1420IbnBaz/1420IbnBaz.MajmucFatawa/1420IbnBaz.MajmucFatawa.Shamela0021537-ara1",
           "edition": "Shamela 21537",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "be25fc27e2ed2210e6d57b6f3e9c07324575bf0f6bd2b0a048b971a9e0539c5a",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1425AH/6d71d2af1be5a49f1db3b52cdda15ea11da569de/data/1420IbnBaz/1420IbnBaz.MajmucFatawa/1420IbnBaz.MajmucFatawa.Shamela0021537-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3405,7 +3855,27 @@
           "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
           "path": "data/1420IbnBaz/1420IbnBaz.FatawaNurCalaDarb/1420IbnBaz.FatawaNurCalaDarb.Shamela0000107-ara1",
           "edition": "Shamela 107",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "ce1548842fe121ecfd8da1841cb82b3cad7e24f9bbeee4c5968db41d538eb3e3",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1425AH/6d71d2af1be5a49f1db3b52cdda15ea11da569de/data/1420IbnBaz/1420IbnBaz.FatawaNurCalaDarb/1420IbnBaz.FatawaNurCalaDarb.Shamela0000107-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3441,7 +3911,27 @@
           "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
           "path": "data/1421MuhammadCuthaymin/1421MuhammadCuthaymin.MajmucFatawa/1421MuhammadCuthaymin.MajmucFatawa.Shamela0012293-ara1",
           "edition": "Shamela 12293",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "377eb9aa24ed3de1e990a288cd7313b81559cd70128882e9ccbef267f6c2b8f8",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1425AH/6d71d2af1be5a49f1db3b52cdda15ea11da569de/data/1421MuhammadCuthaymin/1421MuhammadCuthaymin.MajmucFatawa/1421MuhammadCuthaymin.MajmucFatawa.Shamela0012293-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3477,7 +3967,27 @@
           "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
           "path": "data/1421MuhammadCuthaymin/1421MuhammadCuthaymin.FatawaNurCalaDarb/1421MuhammadCuthaymin.FatawaNurCalaDarb.Shamela0002300-ara1",
           "edition": "Shamela 2300",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "7a3f8bb0b48c485923ded3b06582d103e559e889f9a588135067b7397dba3d4d",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1425AH/6d71d2af1be5a49f1db3b52cdda15ea11da569de/data/1421MuhammadCuthaymin/1421MuhammadCuthaymin.FatawaNurCalaDarb/1421MuhammadCuthaymin.FatawaNurCalaDarb.Shamela0002300-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3514,7 +4024,27 @@
           "kind": "shamela",
           "book_id": 22592,
           "edition": "Shamela 22592",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "c95f3c6e3000991365556b3d8ee9878808da1207b74812584f69083953be23f7",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/22592",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue describes al-Albānī, supervision by Zuhayr al-Shāwīsh, and added Takmīl material by Ṣāliḥ Āl al-Shaykh. One author clearance would not establish rights for the entire rendered witness. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3545,7 +4075,27 @@
           "repo": "1425AH",
           "commit": "6d71d2af1be5a49f1db3b52cdda15ea11da569de",
           "path": "data/1420MuhammadNasirDinAlbani/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi.Shamela0000782-ara1",
-          "edition": "Shamela 782: al-Albānī's verdict on every ḥadīth of al-Tirmidhī, in al-Tirmidhī's numbering"
+          "edition": "Shamela 782: al-Albānī's verdict on every ḥadīth of al-Tirmidhī, in al-Tirmidhī's numbering",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "934238d8dda11cea27442885614481f884f0c207b31c003c57099880d0bd2bfe",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1425AH/6d71d2af1be5a49f1db3b52cdda15ea11da569de/data/1420MuhammadNasirDinAlbani/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi.Shamela0000782-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned source header and registry identify a modern work or compilation. The OpenITI corpus license does not independently establish clearance for all underlying contributions. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -3571,7 +4121,27 @@
           "kind": "shamela",
           "book_id": 11122,
           "edition": "Shamela 11122; the 15 qawāʿid of the muqaddima are pp. 15–41",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "38c8158ec7222b650e99db50b0d185fd75663af7d15edbe75a255e9a3ac4f2c9",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/11122",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3599,7 +4169,27 @@
           "id": "shamela-1602",
           "kind": "shamela",
           "book_id": 1602,
-          "edition": "Shamela 1602"
+          "edition": "Shamela 1602",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "0ccb8b4ce4e8caf8d3c967c36473ed1634d450f48fd13aa853741863d6d9ae6c",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/1602",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue names editing, arrangement and commentary by Ashraf b. ʿAbd al-Maqṣūd, Aḍwāʾ al-Salaf 2000. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3627,7 +4217,27 @@
           "id": "shamela-9945",
           "kind": "shamela",
           "book_id": 9945,
-          "edition": "Shamela 9945"
+          "edition": "Shamela 9945",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "3f2e34b62693bc6eef15368c4c9c8cf2b67d837eefacc41d71eeed57b6f92ee0",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/9945",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue names editor ʿAbd al-Karīm al-Duraynī, Maktabat al-Rushd 2002, and a separate Shamela preparer. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located",
@@ -3797,7 +4407,27 @@
           "repo": "1400AH",
           "commit": "6b4084ba42c8e0bd7c888a8c4b37c43ca771c322",
           "path": "data/1377AhmadMuhammadShakir/1377AhmadMuhammadShakir.BacithHathith/1377AhmadMuhammadShakir.BacithHathith.Shamela0021571-ara1",
-          "edition": "Shamela 21571, Dār al-Kutub al-ʿIlmiyya, 2nd ed."
+          "edition": "Shamela 21571, Dār al-Kutub al-ʿIlmiyya, 2nd ed.",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "b052c283e529ff025a2c9acca7e80a3fb8a62d8ed3e09972da4c5ab6c552680d",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1400AH/6b4084ba42c8e0bd7c888a8c4b37c43ca771c322/data/1377AhmadMuhammadShakir/1377AhmadMuhammadShakir.BacithHathith/1377AhmadMuhammadShakir.BacithHathith.Shamela0021571-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned header distinguishes Ibn Kathīr from editor Aḥmad Shākir, Dār al-Kutub al-ʿIlmiyya, second edition. Historical underlying text does not establish permission for the modern layer. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -3885,14 +4515,54 @@
           "kind": "shamela",
           "book_id": 12767,
           "edition": "Shamela 12767, al-Maktab al-Islāmī (with al-Albānī)",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "e89c93cf598bc57d2c8dd252693fb9dc18d2239176631e79ccba4ec7a984f216",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/12767",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue names contributions by al-Albānī, Zuhayr al-Shāwīsh and ʿAbd al-Razzāq Ḥamza, al-Maktab al-Islāmī 1986. Those layers need coverage. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         },
         {
           "id": "shamela-337",
           "kind": "shamela",
           "book_id": 337,
           "edition": "Shamela 337, within Āthār al-Muʿallimī",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "5296e70d35bf1f084aaaa4225c6180adc308f05c16e4769cba4869a4f0a6b321",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_gift_only",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/337",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Current catalogue: Āthār al-Muʿallimī vols 10–11, multiple named editors and reviewers, Dār ʿĀlam al-Fawāʾid, 1434 AH. Gift by ʿAṭāʾāt al-ʿIlm to Shamela does not document onward permission. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -3917,7 +4587,27 @@
           "kind": "shamela",
           "book_id": 12762,
           "edition": "Shamela 12762",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "4e026654ef4aa58a2c667c922f22330ceff62f6fa733fe1ba348601dcbda0108",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/12762",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -3942,7 +4632,27 @@
           "kind": "shamela",
           "book_id": 9442,
           "edition": "Shamela 9442",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "9076613d147f873e5f21f330bcabdd8d275b14929e0a5c8ea64956be00fe12a7",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/9442",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -3967,7 +4677,27 @@
           "kind": "shamela",
           "book_id": 25881,
           "edition": "Shamela 25881, Ghirās ed.",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "dce0e2cc1bc8ef184de12862b8fd6944c574780746445462bd1061dd9bf03bdd",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/25881",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -3992,7 +4722,27 @@
           "kind": "shamela",
           "book_id": 5914,
           "edition": "Shamela 5914",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "3aeddf4cf9a3e3cfa1387c5adfca22d63124a91c74a1930c4f8fa7c41b047f5a",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/5914",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -4016,7 +4766,27 @@
           "id": "shamela-7607",
           "kind": "shamela",
           "book_id": 7607,
-          "edition": "Shamela 7607"
+          "edition": "Shamela 7607",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "a242f00750e452f2c3f545f3089d8c2084cf806bec39505871e91caaae0d3590",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/7607",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -4040,7 +4810,27 @@
           "id": "shamela-705",
           "kind": "shamela",
           "book_id": 705,
-          "edition": "Shamela 705"
+          "edition": "Shamela 705",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "a1068e41cb44d60f2e2c15124d2c3e8105da97d216283a221f58eb8c7cdb15c2",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/705",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -4065,7 +4855,27 @@
           "kind": "shamela",
           "book_id": 657,
           "edition": "Shamela 657 (the muqaddima is the method text)",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "0949b37b0cec5e754cfc1a5372be28f9730df05acba0b7c160ea0a7811b6400f",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/657",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -4117,7 +4927,27 @@
           "kind": "shamela",
           "book_id": 9293,
           "edition": "Shamela 9293: al-Shawkānī's matn, Ṣiddīq Ḥasan Khān's sharḥ, al-Albānī's taʿlīqāt",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "294d29ce44da72f5c97144429bdde8aa1aa9185cea2dfe44517278e46f1351fc",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/9293",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "The historical al-Shawkānī matn and Ṣiddīq Ḥasan Khān commentary are accompanied by al-Albānī annotations and ʿAlī al-Ḥalabī editing (2003); historical authorship does not clear the complete file. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"
@@ -4169,7 +4999,27 @@
           "kind": "shamela",
           "book_id": 7318,
           "edition": "Shamela 7318",
-          "fetch": "on_demand"
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "91926e6f5dd10fa340326a4cdbee443aaa0e43b11a4b6dec7f7d823a0cb41a4c",
+            "reviewed_on": "2026-10-15",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/7318",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Al-Dhahabī is the historical author; al-Albānī abridged and edited this edition (al-Maktab al-Islāmī 1991). The complete witness is not just the historical work. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
         }
       ],
       "status": "located"

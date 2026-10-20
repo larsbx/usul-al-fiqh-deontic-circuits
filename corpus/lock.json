@@ -435,6 +435,12 @@
       "bytes": 118025,
       "sha256": "a96a68c8e079b5d7d055ae16e42744acd44d4398eb6e180694ef9d3b52184c6f"
     },
+    "openiti-mubarak-ghurarnaqiyya-shamay36516": {
+      "witness": "openiti-mubarak-ghurarnaqiyya-shamay36516",
+      "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
+      "bytes": 125979,
+      "sha256": "1ff4cb3cf3fe17937474f0923e17a0f906f20f20f69d1e453cc9928a99a99e7b"
+    },
     "openiti-muhammadibnibrahim-fatawa-shamela8476": {
       "witness": "openiti-muhammadibnibrahim-fatawa-shamela8476",
       "url": "https://raw.githubusercontent.com/OpenITI/1400AH/6b4084ba42c8e0bd7c888a8c4b37c43ca771c322/data/1389MuhammadAlShaykh/1389MuhammadAlShaykh.FatawaWaRasail/1389MuhammadAlShaykh.FatawaWaRasail.Shamela0008476-ara1",
@@ -596,6 +602,18 @@
       "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0795IbnRajabHanbali/0795IbnRajabHanbali.SharhCilalTirmidhi/0795IbnRajabHanbali.SharhCilalTirmidhi.Shamela0009552-ara1",
       "bytes": 772457,
       "sha256": "1c1f7d80090bb330f1c3c572c3230549252c307df0124eb61fdf7cd0aaf16af2"
+    },
+    "openiti-shawkani-dararimudiyya-shamela7264": {
+      "witness": "openiti-shawkani-dararimudiyya-shamela7264",
+      "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DarariMudiyya/1255Shawkani.DarariMudiyya.Shamela0007264-ara1",
+      "bytes": 1095525,
+      "sha256": "5abe9ce107450b8790a4dfa45b24ddf822aa30f31fcd6309e7c2e10ffdba04ae"
+    },
+    "openiti-shawkani-durarbahiyya-shamay34280": {
+      "witness": "openiti-shawkani-durarbahiyya-shamay34280",
+      "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0034280-ara1",
+      "bytes": 78322,
+      "sha256": "a06a22ab63960d8cff57fd4068146fd7ead558ef335507afaf2c3882d794fdbe"
     },
     "openiti-shawkani-fathrabbani-shamela36543": {
       "witness": "openiti-shawkani-fathrabbani-shamela36543",

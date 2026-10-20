@@ -58,9 +58,40 @@ separate that conditional computation from evidence adequacy before promoting it
 
 Each later stage needs its own behavior-preserving replay, negative controls, and
 explicitly reviewed semantic changes. Coordinate with open #86 (mutūn/source
-restoration), #88 (source publication) and #91 (audit plan); do not absorb their
+restoration) and #91 (audit plan); #88 (source publication) is merged, see below; do not absorb their
 content or bypass their blockers as part of this refactor. Full source verification,
 Lean, Prolog and generated-output CI remain integration gates.
+
+### Al-Shawkānī sources and the publication gate (PR #88, merged 2026-10-20)
+
+[PR #88](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/88) adds
+three works to the registry, each pinned and locked: al-Shawkānī's *al-Durar
+al-Bahiyya* (bare matn, ShamAY 34280) and his own sharḥ *al-Darārī al-Muḍiyya*
+(Shamela 7264), and Fayṣal Āl Mubārak's *al-Ghurar al-Naqiyya* (ShamAY 36516),
+which prints the whole matn with its commentary as closing endnotes.
+
+- **Segmentation (R2 mutūn).** `abwab` gains two per-witness options:
+  `body_headings`, where headings are body lines and `end` also matches body
+  lines, and `kitab_headings`, which corrects a kitāb the edition prints as a bāb
+  (*al-Ghurar*'s «باب النكاح»). The *Durar*'s tabwīb is read from its *al-Ghurar*
+  witness, ShamAY 36516 (123 units, filed under `shawkani.durar_bahiyya` with a
+  witness-level segmenter, so the bare-matn witness 34280 is not cut).
+  *al-Darārī* gives 127 units. Both are in the unit inventory and the
+  routing index.
+- **Reception.** The *Durar* has 5 citations, all in *Tamām al-Minna*; the
+  *Darārī* has none. No existing count changed.
+- **Publication gate.** A noncommercial label is no longer publication. The 36
+  proposed modern text witnesses and the two new modern editions are `cache_only`
+  until a witness-level `publication` record shows a complete-file grant bound to
+  the locked sha256. The committed corpus stays at 89 legacy texts. See the
+  [audit](architecture/pr88-source-publication-audit-2026-10-15.md). Held
+  witnesses can be filled into the local cache from history, but never re-staged:
+  see [`corpus/texts`](../corpus/texts/README.md#where-the-lfs-objects-are).
+- **Fetch.** Truncated Shamela pages are retried, so long page walks no longer
+  abort.
+
+Open: edition-level grants for any held witness; splitting the new mutūn units
+into masāʾil (R2's next step). Nothing here is reviewed or accepted.
 
 ### Semantic tagging development follow-up (2026-10-19)
 

@@ -6,7 +6,7 @@ from .hudud import Hadd
 from .segment import Unit
 
 PIPELINE = "usul_corpus/1"
-EXCERPT_LEN = {"public_domain_text": 400, "modern_cache_only": 160, "cc_by_verbatim": 400}
+EXCERPT_LEN = {"public_domain_text": 400, "noncommercial_text": 160, "modern_cache_only": 160, "cc_by_verbatim": 400}
 
 
 def _loc(witness: str, page: tuple[int, int] | None, anchor: str) -> str:

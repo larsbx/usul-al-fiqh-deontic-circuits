@@ -296,7 +296,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f005",
-   "label": "itq.itq_bil_milk",
+   "label": "itq.itq_qarib",
    "term_ar": "وجوب إعتاق الولد على والده"
   },
   {
@@ -644,7 +644,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
-   "label": "talaq.taliq_talaq",
+   "label": "talaq.talaq_muallaq",
    "term_ar": "علق الطلاق على عدم شيء",
    "also": [
     {
@@ -1043,7 +1043,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
-   "label": "talaq.taliq_talaq",
+   "label": "talaq.talaq_muallaq",
    "term_ar": "إن كان غرابا فامرأتي طالق ثلاثا",
    "also": [
     {
@@ -1059,7 +1059,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f027",
-   "label": "talaq.taliq_talaq",
+   "label": "talaq.talaq_muallaq",
    "term_ar": "أنت طالق ليلة القدر",
    "also": [
     {
@@ -1070,7 +1070,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f028",
-   "label": "talaq.taliq_talaq",
+   "label": "talaq.talaq_muallaq",
    "term_ar": "أنت طالق قبل موتي بشهر"
   },
   {

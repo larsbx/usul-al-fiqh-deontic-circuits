@@ -1,0 +1,53 @@
+name: Text publication and LFS integrity
+
+on:
+  pull_request:
+    paths:
+      - 'corpus/texts/**'
+      - 'corpus/registry.json'
+      - 'corpus/lock.json'
+      - 'schemas/corpus_registry.schema.json'
+      - 'pipeline/usul_corpus/texts.py'
+      - 'pipeline/tests/test_texts.py'
+      - '.github/workflows/text-publication.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  texts:
+    name: Publication gate and complete LFS bytes
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pytest jsonschema
+      - name: Validate publication provenance and pointer metadata
+        run: |
+          mkdir -p .cache
+          git ls-files 'corpus/texts/*.txt' > .cache/text-inventory.txt
+          cd pipeline
+          python -m pytest -q tests/test_texts.py
+          python -m usul_corpus.texts --inventory ../.cache/text-inventory.txt --report ../.cache/text-publication-pointers.json
+      - name: Reuse previously downloaded LFS objects
+        uses: actions/cache@v4
+        with:
+          path: .git/lfs/objects
+          key: corpus-lfs-${{ hashFiles('corpus/texts/*.txt') }}
+      - name: Download retained corpus LFS objects
+        run: git lfs pull --include='corpus/texts/*.txt' --exclude=''
+      - name: Verify full file hashes and sizes without upstream fallback
+        if: ${{ !cancelled() }}
+        run: cd pipeline && python -m usul_corpus.texts --require-bytes --inventory ../.cache/text-inventory.txt --report ../.cache/text-publication-bytes.json
+      - name: Retain verification coverage (no source text)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: text-publication-verification
+          path: .cache/text-publication-*.json
+          if-no-files-found: error
+          include-hidden-files: true  # .cache/ is a dot-directory, which upload-artifact v4 skips by default

@@ -3,7 +3,7 @@
 This is the executable form of milestones M0–M2 from [`../roadmap-hanbali-usul-formalization.md`](../roadmap-hanbali-usul-formalization.md), with first slices of M3, M5 and M6.
 
 ```text
-corpus/registry.json ──fetch──▶ .cache/corpus/*.txt (pinned, sha256 in corpus/lock.json; never committed)
+corpus/registry.json ──fetch──▶ .cache/corpus/*.txt (pinned, sha256 in corpus/lock.json; text witnesses also in corpus/texts)
         │                              │
         │                       build (segment)
         │                              ▼
@@ -47,7 +47,7 @@ Each witness is pinned: the OpenITI ones by commit SHA, the others by Shamela bo
 | 23 classical works on qiyās (8 Ḥanbalī, 13 other madhhabs, Ibn Ḥazm against) | OpenITI, pinned commits | located and fetched; see [`qiyas.md`](qiyas.md#sources) |
 | 49 fatāwā, masāʾil and aḥkām collections cited by Ibn Bāz, Ibn ʿUthaymīn, al-Albānī and al-Saʿdī (52 with three already registered), plus 8 of their own collections as citers (9 with *al-Sharḥ al-Mumtiʿ*) | OpenITI (pinned commits) and Shamela | located and fetched; titles and authors counted; see [`reception.md`](reception.md); mentions labelled for a classifier, see [`mentions.md`](mentions.md) |
 
-**Rights policy.** Full texts are fetched into `.cache/`. The 89 public-domain text witnesses (works with `rights: public_domain_text`, all OpenITI) are also committed under [`corpus/texts`](../../corpus/texts/README.md) via Git LFS, byte-identical to their pinned source; modern texts are never committed. Committed records carry excerpts of at most 400 characters for pre-modern texts and at most 160 characters for modern authors (`records.EXCERPT_LEN`).
+**Rights policy.** Work-level rights do not grant blanket publication rights for modern editions. Full texts remain in `.cache/corpus` unless eligible under `texts.publishable`. The existing registry now holds byte-bound, per-witness publication decisions; noncommercial intent alone is insufficient, and a cache-only hold overrides work labels. The PR #88 audit holds 36 noncommercial text witnesses and two newly added modern-edition al-Shawkānī witnesses; 89 legacy files remain committed via Git LFS. Pointer oid/size validation is distinct from complete-object hashing (`make texts-verify-bytes`). See the [publication policy](../../corpus/texts/README.md) and [audit](pr88-source-publication-audit-2026-10-15.md). Existing excerpt caps remain 400 characters for pre-modern works and 160 for modern works; caps are project controls, not a universal permission to quote.
 
 ## 2. Rule counts checked against pinned editions (M0 exit)
 

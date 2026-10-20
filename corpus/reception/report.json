@@ -792,6 +792,26 @@
         "src:openiti-ibnbaz-majmufatawa-shamela21537/PageV21P352"
       ]
     },
+    "shawkani.darari_mudiyya": {
+      "total": 0,
+      "by_scholar": {},
+      "by_witness": {},
+      "sample": []
+    },
+    "shawkani.durar_bahiyya": {
+      "total": 5,
+      "by_scholar": {
+        "albani": 5
+      },
+      "by_witness": {
+        "shamela-11122": 5
+      },
+      "sample": [
+        "src:shamela-11122/PageV01P053",
+        "src:shamela-11122/PageV01P142",
+        "src:shamela-11122/PageV01P366"
+      ]
+    },
     "shawkani.fath_rabbani": {
       "total": 0,
       "by_scholar": {},

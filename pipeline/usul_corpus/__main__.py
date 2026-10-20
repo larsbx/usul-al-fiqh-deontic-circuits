@@ -42,7 +42,7 @@ from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, sharh_record, unit_tags, with_recovered
-from .units import UNIT_SEGMENTERS
+from .units import UNIT_SEGMENTERS, segmenter_of
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -133,7 +133,7 @@ def cmd_ocr(args: argparse.Namespace) -> int:
         if not pdf.exists():
             print(f"skip {w['id']}: run fetch first", file=sys.stderr)
             continue
-        seg = w.get("segmenter", work.get("segmenter", {}))
+        seg = segmenter_of(work, w) or {}
         opts = OcrOptions.from_config(cfg, anchor_step=seg.get("anchor_step"))
         pages = _page_range(args.pages) if args.pages else None
         work_dir = cache_dir(ROOT / ".cache" / "ocr" / w["id"], pdf, opts)
@@ -177,7 +177,7 @@ SEGMENTERS = {
 
 def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
     """Records for one witness, plus the numbered units when the segmenter yields any."""
-    seg, witness = w.get("segmenter", work["segmenter"]), w["id"]
+    seg, witness = segmenter_of(work, w), w["id"]
     if seg["kind"] in UNIT_SEGMENTERS:
         cut, record = UNIT_SEGMENTERS[seg["kind"]]
         return [record(work, witness, i, u) for i, u in enumerate(cut(text, seg), 1)], None
@@ -257,10 +257,10 @@ def verified_openings(receipt: dict, wid: str, text: str) -> list[dict]:
 def cmd_build(_: argparse.Namespace) -> int:
     audit: dict[str, dict] = {}
     skipped: dict[str, str] = {}
-    for work in (w for w in _works(None) if "segmenter" in w):
+    for work in _works(None):
         expected = work.get("expected_units", {}).get("count")
         numbered: dict[str, tuple] = {}
-        for w in work["witnesses"]:
+        for w in (x for x in work["witnesses"] if segmenter_of(work, x)):
             src = CACHE / f"{w['id']}.txt"
             if not src.exists():
                 print(f"skip {w['id']}: not fetched{' or not OCR-ed' if w.get('format') == 'pdf' else ''}; previous audit kept",
@@ -269,7 +269,7 @@ def cmd_build(_: argparse.Namespace) -> int:
                 continue
             text = src.read_text(encoding="utf-8")
             records, units = _segment(work, w, text)
-            if work["segmenter"].get("index"):
+            if work.get("segmenter", {}).get("index"):
                 index_records, index_units = _index(work, w["id"], text)
                 records += index_records
                 audit[f"{w['id']}#index"] = {"work": work["id"], **audit_numbering(index_units, expected)}
@@ -278,7 +278,7 @@ def cmd_build(_: argparse.Namespace) -> int:
                 audit[w["id"]] = {"work": work["id"], "found": len(records), **unit_audit(records)}
             else:
                 audit[w["id"]] = {"work": work["id"], **audit_numbering(units, expected)}
-                if w.get("segmenter", work["segmenter"])["kind"] == "verse_block":
+                if segmenter_of(work, w)["kind"] == "verse_block":
                     sharh, report = _commentary(work, w["id"], text, units)
                     records += sharh
                     audit[w["id"]] |= report
@@ -584,7 +584,8 @@ def cmd_mentions(args: argparse.Namespace) -> int:
 
 def cmd_texts(_: argparse.Namespace) -> int:
     """Copy every verified, cached public-domain witness text into corpus/texts."""
-    rep = stage(publishable(_load(CORPUS / "registry.json")), _load(CORPUS / "lock.json")["witnesses"], CACHE, TEXTS)
+    lock = _load(CORPUS / "lock.json")["witnesses"]
+    rep = stage(publishable(_load(CORPUS / "registry.json"), lock), lock, CACHE, TEXTS)
     print(json.dumps({k: len(v) for k, v in rep.items()}))
     for k in ("missing", "mismatch"):
         if rep[k]:

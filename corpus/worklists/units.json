@@ -3,10 +3,10 @@
   "status": "candidate",
   "unit": "one committed fatwa, masala or bab record; obligations are its record ids",
   "summary": {
-    "witnesses": 19,
-    "units": 48510,
+    "witnesses": 21,
+    "units": 48760,
     "annotated": 42,
-    "pending": 48468
+    "pending": 48718
   },
   "witnesses": [
     {
@@ -262,6 +262,18 @@
       "annotated_ids": []
     },
     {
+      "work": "shawkani.durar_bahiyya",
+      "witness": "openiti-mubarak-ghurarnaqiyya-shamay36516",
+      "kind": "abwab",
+      "source_sha256": "1ff4cb3cf3fe17937474f0923e17a0f906f20f20f69d1e453cc9928a99a99e7b",
+      "records": "records/openiti-mubarak-ghurarnaqiyya-shamay36516.jsonl",
+      "records_sha256": "4d2b7d2c730740ad4ec027a3df599bbc3a49f0443c97e1487931dd60a12b8ad2",
+      "units": 123,
+      "annotated": 0,
+      "pending": 123,
+      "annotated_ids": []
+    },
+    {
       "work": "muhammad_ibn_ibrahim.fatawa",
       "witness": "openiti-muhammadibnibrahim-fatawa-shamela8476",
       "kind": "masail",
@@ -271,6 +283,18 @@
       "units": 3974,
       "annotated": 0,
       "pending": 3974,
+      "annotated_ids": []
+    },
+    {
+      "work": "shawkani.darari_mudiyya",
+      "witness": "openiti-shawkani-dararimudiyya-shamela7264",
+      "kind": "abwab",
+      "source_sha256": "5abe9ce107450b8790a4dfa45b24ddf822aa30f31fcd6309e7c2e10ffdba04ae",
+      "records": "records/openiti-shawkani-dararimudiyya-shamela7264.jsonl",
+      "records_sha256": "8ddce2550c43bd8eefb5ff793ee0a009ab649c592e649b09a4752cd3f6ead3d2",
+      "units": 127,
+      "annotated": 0,
+      "pending": 127,
       "annotated_ids": []
     },
     {

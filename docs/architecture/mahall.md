@@ -38,9 +38,9 @@ This layer does four things:
 | | |
 |---|---|
 | Cases | 1,216: 733 rule on an act, 378 on an item, 105 on an issue. 339 also have a secondary maḥall. |
-| Labels | 541 under 57 bābs: 296 acts, 174 items, 71 issues |
-| Anchored labels | **529**. By strongest text: Qurʾān 228, Sunnah 286, athar 6, ijmāʿ 9 |
-| Nuṣūṣ | 830 citations, 725 distinct:<br>• Qurʾān 311<br>• al-Bukhārī 244, Abū Dāwūd 106, Muslim 66, al-Tirmidhī 40, Ibn Mājah 33, al-Nasāʾī 11<br>• al-Mughnī's ijmāʿ 19 |
+| Labels | 537 under 57 bābs: 293 acts, 173 items, 71 issues |
+| Anchored labels | **525**. By strongest text: Qurʾān 228, Sunnah 282, athar 6, ijmāʿ 9 |
+| Nuṣūṣ | 827 citations, 725 distinct:<br>• Qurʾān 311<br>• al-Bukhārī 242, Abū Dāwūd 105, Muslim 66, al-Tirmidhī 40, Ibn Mājah 33, al-Nasāʾī 11<br>• al-Mughnī's ijmāʿ 19 |
 | Cases whose own maḥall is anchored | 1,194 / 1,216. The other 22 fall under the 12 unanchored labels. Their bāb is still reached. |
 
 **The 12 unanchored labels are findings, not gaps.** They are maḥalls that no canonical text names, which the jurists constructed:
@@ -69,8 +69,8 @@ This layer does four things:
 | qāʿida → types | 7 qawāʿid have two types, e.g. Ibn Rajab 22 (`istihlak`, `khalt`) and Ibn al-Laḥḥām 54 (`sadi55`, `sadi59`) |
 | encoder → qawāʿid | 5 encoders read more than one; 31 also cite al-Saʿdī |
 | qāʿida → encoders | 40 qawāʿid have two to six encoders |
-| label → broader | 41 labels sit under more than one. 3 sit under two bābs: the invalid contract (general, sale), debt (sale, loan), and release from debt (general, gift) |
-| label ↔ naṣṣ | 203 labels are defined by more than one naṣṣ; 87 nuṣūṣ define more than one label, up to four |
+| label → broader | 44 labels sit under more than one. 3 sit under two bābs: the invalid contract (general, sale), debt (sale, loan), and release from debt (general, gift) |
+| label ↔ naṣṣ | 204 labels are defined by more than one naṣṣ; 86 nuṣūṣ define more than one label, up to four |
 
 A farʿ's qawāʿid are the union of four ties, each kept with its provenance in `graph.json` (`links`):
 
@@ -99,26 +99,64 @@ On the data:
 
 - **Qawāʿid cut across the bābs.** A qāʿida's footprint spans 6.8 bābs on average, at most 25. Only 4 of the 178 stay within one bāb, the shape of a ḍābiṭ rather than a qāʿida.
 - **Grounds.** A qāʿida is grounded by 26 distinct nuṣūṣ on average, at least 1.
-- **Shared maḥalls connect the qawāʿid.** 306 of the 539 labels in use occur under more than one qāʿida, and they bridge 3,509 pairs of qawāʿid. By `bridge`, 173 qawāʿid form one connected component; 5 stand alone: Ibn al-Laḥḥām 61, and Ibn Rajab 61, 88, 107 and 139. The most shared maḥalls:
+- **Shared maḥalls connect the qawāʿid.** 307 of the 535 labels in use occur under more than one qāʿida, and they bridge 3,531 pairs of qawāʿid. By `bridge`, 173 qawāʿid form one connected component; 5 stand alone: Ibn al-Laḥḥām 61, and Ibn Rajab 61, 88, 107 and 139. The most shared maḥalls:
   - the bequest, under 39 qawāʿid;
   - manumission, 30;
   - waqf and hire, 24 each;
   - the oath, 23;
-  - deposit, 21;
-  - divorce, 20.
+  - conditional divorce, 22;
+  - deposit, 21.
 
   This is the text-defined form of the cross-listing the reproduction study looked for (PR-50). Two qawāʿid touch when their furūʿ rule on the same thing.
 
 ## Integration
 
-Six shards annotated about 200 cases each, under the same prompt and gate. Their 833 label declarations were merged into 541:
+Six shards annotated about 200 cases each, under the same prompt and gate. Their 833 label declarations were merged into 537:
 
 - 149 ids were declared by more than one shard. For these:
   - kind went by majority;
   - every broader label any shard declared was kept, so a label may have several (an earlier version kept only the majority's);
   - every verified naṣṣ was kept, deduplicated.
-- 24 synonyms under different ids were aliased in the furūʿ, e.g. `buyu.radd_bil_ayb` and `buyu.radd_bi_ayb` into `buyu.khiyar_ayb`, and `sadaq.mahr` into `sadaq.sadaq`.
+- 28 synonyms under different ids were aliased in the furūʿ (`corpus/mahall/aliases.json`). 24 were found at integration by their Arabic names, e.g. `buyu.radd_bil_ayb` and `buyu.radd_bi_ayb` into `buyu.khiyar_ayb`. 4 more were found by the audit below: `talaq.taliq_talaq` into `talaq.talaq_muallaq`, `itq.itq_bil_milk` into `itq.itq_qarib`, `itikaf.nadhr_itikaf` into `itikaf.itikaf_mandhur`, and `sulh.jidar` into `sulh.jidar_mushtarak`.
 - `shards` on each label records who declared it.
+
+## Accuracy (audit)
+
+`pipeline/usul_corpus/mahall_audit.py` scores two studies on fixed samples: the 120 ids whose sha256 sorts lowest. The data is in `corpus/mahall/audit/`, and `test_mahall_audit.py` pins the figures.
+
+**Identification.** Two independent annotators read each of 120 cases blind: they saw the case text and the label catalogue (ids, names, kinds, broader labels), no nuṣūṣ and no committed annotation. Each picked the maḥall. Their picks, read through `aliases.json`, are scored against the committed maḥall:
+
+| 120 cases | Annotator x | Annotator y | x against y |
+|---|---|---|---|
+| Same primary label | **103** (86 %) | **100** (83 %) | 113 (94 %) |
+| Same or related primary (one above the other) | 107 | 104 | 114 |
+| Some label of each related | 117 | 116 | 117 |
+| Same bāb | 112 | 109 | 115 |
+| Same kind (item, act, issue) | 110 | 108 | 116 |
+| A new label proposed | 0 | 1 | |
+
+The annotators agree with each other more often than with the committed annotation. Where both depart from it the same way (17 cases), the departures fall into four groups:
+
+- **One thing under two ids (3).** Conditional divorce, manumission of a relative on owning him, and the neighbours' wall each had two labels. These are merged, together with the vowed retreat, which a sweep for identical definitions found.
+- **An item against its act, or a part against its whole (3).** The mukātab against the kitāba, the judge against adjudication, and shortening prayer against the traveller's prayer. Shortening prayer now also sits under the traveller's prayer.
+- **Primary against secondary or a neighbouring label (7).** The blind primary is the committed annotation's own secondary, or a label above or below it, e.g. the voluntary prayer before a missed one is made up. Either is defensible.
+- **A different reading (4).** In one the blind pick is narrower and better: «أسلم على أكثر من أربع», a convert with more than four wives. That label now also sits under «more than four wives». In two, both readings are defensible (the muḥrim choosing between game and carrion; the words of a divorce against their number). In one, the committed reading is the better: lending the muṣḥaf.
+
+**Anchors.** Two independent reviewers judged 120 sampled (label, naṣṣ) pairs, with each naṣṣ shown in its context (the whole āya, or the surrounding passage of the collection):
+
+| 120 pairs | Reviewer r | Reviewer s |
+|---|---|---|
+| The naṣṣ names the maḥall or rules on it | 106 | 107 |
+| It governs it only as a broader rule | 14 | 13 |
+| Unrelated | **0** | **0** |
+| Flagged as weak in its own context | 2 | 2 |
+
+Agreement: κ 0.875; both judge «names» for 105. Neither reviewer found an unrelated anchor in the sample.
+
+- **Governs only.** The pairs the reviewers judged to govern rather than name are the loose anchors already listed for review below, e.g. «من أحدث في أمرنا» for the invalid contract and «الخراج بالضمان» for return for defect.
+- **Weak.** Both reviewers flagged the same two:
+  - al-Tirmidhī calls the report on the slave woman's ʿidda gharīb;
+  - al-Bukhārī marks «إما أن تطعمني وإما أن تطلقني» as Abū Hurayra's own words. That anchor is now classed `athar`, not `sunnah`.
 
 ## For review
 

@@ -21,9 +21,14 @@ from .records import bab_record, fatwa_record, masala_record
 UNIT_SEGMENTERS = {
     "qa": (lambda text, seg: segment_qa(text, seg.get("question"), seg["answer"], seg.get("question_heading", False)), fatwa_record),
     "masail": (lambda text, seg: segment_entries(text, seg["start"], seg.get("ordered", False)), masala_record),
-    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end")), bab_record),
+    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end"), seg.get("body_headings", False), seg.get("kitab_headings", ())), bab_record),
 }
 INVENTORY = "worklists/units.json"
+
+
+def segmenter_of(work: dict, witness: dict) -> dict | None:
+    """The witness's segmenter config: its own, else its work's, else none (the witness is not cut)."""
+    return witness.get("segmenter", work.get("segmenter"))
 
 
 def _ids(raw: bytes) -> list[str]:
@@ -37,7 +42,7 @@ def inventory(corpus: Path, annotated: set[str]) -> dict:
     rows = []
     for work in reg["works"]:
         for x in work["witnesses"]:
-            kind = x.get("segmenter", work.get("segmenter", {})).get("kind")
+            kind = (segmenter_of(work, x) or {}).get("kind")
             if kind not in UNIT_SEGMENTERS:
                 continue
             path = f"records/{x['id']}.jsonl"

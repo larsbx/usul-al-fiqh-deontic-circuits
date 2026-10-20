@@ -43,3 +43,12 @@ def test_the_reproduction_figures():
         "plain": (63, 8, 0.82, [65, 63]),
         "anchors": (62, 6, 0.827, [66, 62]),
         "scope": (65, 11, 0.826, [67, 66])}
+
+
+def test_the_accuracy_figures_against_the_case_s_own_reading_and_the_bank():
+    r = ag.accuracy(ROOT)
+    f1 = {c: {k: (v["reading"]["f1"], v["bank"]["f1"]) for k, v in x.items()} for c, x in r.items()}
+    assert f1 == {"plain": {"a": (0.781, 0.784), "b": (0.743, 0.746), "a|b": (0.775, 0.777)},
+                  "anchors": {"a": (0.744, 0.736), "b": (0.738, 0.731), "a|b": (0.746, 0.739)},
+                  "scope": {"a": (0.777, 0.769), "b": (0.792, 0.794), "a|b": (0.8, 0.802)}}
+    assert r["scope"]["a|b"]["bank"]["recall"] == 0.867
