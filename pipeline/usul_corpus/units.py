@@ -26,6 +26,11 @@ UNIT_SEGMENTERS = {
 INVENTORY = "worklists/units.json"
 
 
+def segmenter_of(work: dict, witness: dict) -> dict | None:
+    """The witness's segmenter config: its own, else its work's, else none (the witness is not cut)."""
+    return witness.get("segmenter", work.get("segmenter"))
+
+
 def _ids(raw: bytes) -> list[str]:
     return [json.loads(line)["id"] for line in raw.decode("utf-8").splitlines()]
 
@@ -37,7 +42,7 @@ def inventory(corpus: Path, annotated: set[str]) -> dict:
     rows = []
     for work in reg["works"]:
         for x in work["witnesses"]:
-            kind = x.get("segmenter", work.get("segmenter", {})).get("kind")
+            kind = (segmenter_of(work, x) or {}).get("kind")
             if kind not in UNIT_SEGMENTERS:
                 continue
             path = f"records/{x['id']}.jsonl"

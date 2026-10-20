@@ -33,7 +33,7 @@ Known witness limits, also in each work's `note`:
 - *Fatāwā al-Lajna al-Dāʾima* is the first series only;
 - *al-Majmūʿ* includes the takmila of al-Subkī and al-Muṭīʿī;
 - *al-Rawḍa al-Nadiyya* includes al-Albānī's own *Taʿlīqāt*;
-- *al-Durar al-Bahiyya* is the bare matn (ShamAY 34280, ed. Ḥallāq), whose OpenITI `AUTO` headings are split mid-line, so it has no `segmenter`. Its tabwīb is read from the other OpenITI witness, ShamAY 36516, registered as Fayṣal Āl Mubārak's (d. 1376) *al-Ghurar al-Naqiyya* (`noncommercial_text`): it prints the whole matn and keeps the commentary in closing endnotes;
+- *al-Durar al-Bahiyya* has two witnesses. ShamAY 34280 (ed. Ḥallāq) is the bare matn, whose OpenITI `AUTO` headings are split mid-line, so it is not segmented. ShamAY 36516 prints the whole matn with Fayṣal Āl Mubārak's (d. 1376) *al-Ghurar al-Naqiyya* as closing endnotes; the matn's tabwīb is read from it through a witness-level segmenter. Both are held `cache_only`;
 - the Shamela fetcher numbers every page as volume 1, so locators into multi-volume Shamela citers give the page number but not the volume.
 
 Not located on OpenITI: the *Masāʾil* of ʿAbd Allāh, Ṣāliḥ and Ibn Hāniʾ; Ibn Qāsim's *Ḥāshiyat al-Rawḍ*; *al-Fatāwā al-Saʿdiyya*; al-Albānī's *Silsila*s (Shamela 9442 and 12762, not registered).

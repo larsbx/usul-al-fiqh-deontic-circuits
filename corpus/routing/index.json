@@ -673,12 +673,6 @@
           "score": 0.2029
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00014",
-          "heading": "كتاب الصلاة",
-          "path": [],
-          "score": 0.2024
-        },
-        {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
           "heading": "باب المواقيت",
           "path": [
@@ -693,6 +687,12 @@
             "كتاب الصلاة"
           ],
           "score": 0.1714
+        },
+        {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00014",
+          "heading": "كتاب الصلاة",
+          "path": [],
+          "score": 0.1669
         }
       ]
     },
@@ -730,12 +730,12 @@
           "score": 0.2273
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
           "heading": "باب الإيلاء",
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.2171
+          "score": 0.2151
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
@@ -774,20 +774,20 @@
       ],
       "babs": [
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
-          "heading": "باب الإيلاء",
-          "path": [
-            "كتاب الطلاق"
-          ],
-          "score": 0.1771
-        },
-        {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00016",
           "heading": "باب المواقيت",
           "path": [
             "كتاب الصلاة"
           ],
           "score": 0.1757
+        },
+        {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00062",
+          "heading": "باب الإيلاء",
+          "path": [
+            "كتاب الطلاق"
+          ],
+          "score": 0.1709
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00031",
@@ -1710,19 +1710,16 @@
           "score": 0.2244
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00076",
+          "heading": "كتاب الإجارة",
+          "path": [],
+          "score": 0.2213
+        },
+        {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00367",
           "heading": "كتاب الصداق",
           "path": [],
           "score": 0.2178
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00224",
-          "heading": "تعريفها وشروطها",
-          "path": [
-            "كتاب الجهاد",
-            "باب الهدنة"
-          ],
-          "score": 0.2076
         }
       ]
     },
@@ -3030,6 +3027,14 @@
           "score": 0.1369
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00067",
+          "heading": "باب النفقة",
+          "path": [
+            "كتاب الطلاق"
+          ],
+          "score": 0.1358
+        },
+        {
           "id": "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00036",
           "heading": "باب زكاة الحيوان",
           "path": [
@@ -3044,15 +3049,6 @@
             "كتاب الطلاق"
           ],
           "score": 0.1228
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00084",
-          "heading": "فصل",
-          "path": [
-            "كتاب الزكاة",
-            "باب ذكر أهل الزكاة"
-          ],
-          "score": 0.1195
         }
       ]
     },
@@ -3083,18 +3079,18 @@
           "score": 0.1567
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00081",
+          "heading": "كتاب الغصب",
+          "path": [],
+          "score": 0.1531
+        },
+        {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00235",
           "heading": "فصل",
           "path": [
             "كتاب الغصب"
           ],
           "score": 0.1475
-        },
-        {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00081",
-          "heading": "كتاب الغصب",
-          "path": [],
-          "score": 0.1471
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00404",
@@ -3583,6 +3579,14 @@
           "score": 0.139
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00116",
+          "heading": "باب القسامة",
+          "path": [
+            "كتاب الديات"
+          ],
+          "score": 0.1238
+        },
+        {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00191",
           "heading": "فصل [في الفيء]",
           "path": [
@@ -3590,15 +3594,6 @@
             "باب الغنائم وقسمتها"
           ],
           "score": 0.1231
-        },
-        {
-          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00072",
-          "heading": "فصل في اللقيط",
-          "path": [
-            "كتاب البيوع",
-            "باب اللقطة"
-          ],
-          "score": 0.1225
         }
       ]
     },
@@ -3713,12 +3708,10 @@
           "score": 0.1489
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00048",
-          "heading": "فصل",
-          "path": [
-            "كتاب الحج"
-          ],
-          "score": 0.1432
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00419",
+          "heading": "كتاب الإيلاء",
+          "path": [],
+          "score": 0.1371
         }
       ]
     },
@@ -3875,6 +3868,14 @@
           "score": 0.2439
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00071",
+          "heading": "باب الربا",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.2318
+        },
+        {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00058",
           "heading": "فصل [في بيع الثمار وصلاحها]",
           "path": [
@@ -3890,14 +3891,6 @@
             "كتاب البيع"
           ],
           "score": 0.2215
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00146",
-          "heading": "فصل",
-          "path": [
-            "كتاب البيع"
-          ],
-          "score": 0.2177
         }
       ]
     },
@@ -4345,6 +4338,14 @@
           "score": 0.2025
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00092",
+          "heading": "باب آداب الآكل",
+          "path": [
+            "كتاب الأطعمة"
+          ],
+          "score": 0.1958
+        },
+        {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00810",
           "heading": "فصل: - من مر بثمر على شجر أو ساقط تحته لا حائط عليه ولا ناظر",
           "path": [
@@ -4368,14 +4369,6 @@
             "كتاب الأطعمة"
           ],
           "score": 0.179
-        },
-        {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00092",
-          "heading": "باب آداب الآكل",
-          "path": [
-            "كتاب الأطعمة"
-          ],
-          "score": 0.163
         }
       ]
     },
@@ -4734,7 +4727,7 @@
           "score": 0.1665
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00033",
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00033",
           "heading": "فصل",
           "path": [
             "كتاب الزكاة",
@@ -5199,6 +5192,12 @@
           "score": 0.1594
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
+          "heading": "كتاب الوديعة والعارية",
+          "path": [],
+          "score": 0.1302
+        },
+        {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00342",
           "heading": "حكم ما لو امتدت الإغصان في هواء الجار",
           "path": [
@@ -5220,14 +5219,6 @@
             "كتاب البيوع"
           ],
           "score": 0.0959
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00147",
-          "heading": "فصل",
-          "path": [
-            "كتاب البيع"
-          ],
-          "score": 0.0839
         }
       ]
     },
@@ -5755,10 +5746,13 @@
           "score": 0.1017
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00104",
-          "heading": "كتاب اللقطة",
-          "path": [],
-          "score": 0.1
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00260",
+          "heading": "فصل",
+          "path": [
+            "كتاب الغصب",
+            "باب اللقطة"
+          ],
+          "score": 0.0979
         }
       ]
     },
@@ -6207,7 +6201,7 @@
           "score": 0.2028
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00053",
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00053",
           "heading": "باب العمرة المفردة",
           "path": [
             "كتاب الحج"
@@ -6660,6 +6654,14 @@
           "score": 0.154
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00061",
+          "heading": "باب الخلع",
+          "path": [
+            "كتاب الطلاق"
+          ],
+          "score": 0.1475
+        },
+        {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00266",
           "heading": "حكم تصرف المتبايعين في مدة الخيار",
           "path": [
@@ -6667,15 +6669,6 @@
             "باب الخيار في البيع والتصرف في المبيع وقبضه والإقالة"
           ],
           "score": 0.1437
-        },
-        {
-          "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00127",
-          "heading": "فصل",
-          "path": [
-            "كتاب البيع",
-            "باب الخيار"
-          ],
-          "score": 0.141
         }
       ]
     },
@@ -7075,20 +7068,20 @@
           "score": 0.2424
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00056",
+          "heading": "فصل",
+          "path": [
+            "باب النكاح"
+          ],
+          "score": 0.2271
+        },
+        {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00127",
           "heading": "فصل [في من لم يسم لها المهر]",
           "path": [
             "كتاب الصداق"
           ],
           "score": 0.2167
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00592",
-          "heading": "فصل",
-          "path": [
-            "كتاب الصداق"
-          ],
-          "score": 0.2142
         }
       ]
     },
@@ -7382,10 +7375,12 @@
           "score": 0.134
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00093",
-          "heading": "كتاب الأشربة",
-          "path": [],
-          "score": 0.1237
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00006",
+          "heading": "فصل في ضابط الماء الكثير",
+          "path": [
+            "كتاب الطهارة"
+          ],
+          "score": 0.1143
         }
       ]
     },
@@ -7490,20 +7485,20 @@
           "score": 0.1249
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00067",
-          "heading": "باب النفقة",
-          "path": [
-            "كتاب الطلاق"
-          ],
-          "score": 0.1242
-        },
-        {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00088",
           "heading": "باب المضاربة",
           "path": [
             "كتاب التفليس"
           ],
           "score": 0.1218
+        },
+        {
+          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00465",
+          "heading": "فصل",
+          "path": [
+            "كتاب النفقات"
+          ],
+          "score": 0.1155
         }
       ]
     },
@@ -7973,13 +7968,12 @@
           "score": 0.1024
         },
         {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00020",
-          "heading": "فصل ثم يغسل رجليه ثلاثا إلى الكعبين",
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00019",
+          "heading": "باب صلاة العيدين",
           "path": [
-            "كتاب الطهارة",
-            "باب الوضوء"
+            "كتاب الصلاة"
           ],
-          "score": 0.1005
+          "score": 0.1008
         }
       ]
     },
@@ -8141,7 +8135,7 @@
           "score": 0.1554
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00030",
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00030",
           "heading": "كتاب الزكاة",
           "path": [],
           "score": 0.1465
@@ -8243,6 +8237,14 @@
       ],
       "babs": [
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00044",
+          "heading": "باب صوم التطوع",
+          "path": [
+            "كتاب الصيام"
+          ],
+          "score": 0.199
+        },
+        {
           "id": "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00018",
           "heading": "فصل في مبطلات الصلاة",
           "path": [
@@ -8275,15 +8277,6 @@
             "كتاب الصيام"
           ],
           "score": 0.1657
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00056",
-          "heading": "فصل ولا تصح الصلاة في مقبرة قديمة أو حديثة",
-          "path": [
-            "كتاب الصلاة",
-            "باب اجتناب النجاسة ومواضع الصلاة"
-          ],
-          "score": 0.1648
         }
       ]
     },
@@ -8457,13 +8450,10 @@
           "score": 0.1913
         },
         {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00479",
-          "heading": "فصل",
-          "path": [
-            "كتاب الجنايات",
-            "باب شروط القصاص"
-          ],
-          "score": 0.1659
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00114",
+          "heading": "كتاب القصاص",
+          "path": [],
+          "score": 0.1786
         }
       ]
     },
@@ -9868,12 +9858,10 @@
           "score": 0.0989
         },
         {
-          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00089",
-          "heading": "باب بيع الأصول والثمار",
-          "path": [
-            "كتاب البيع"
-          ],
-          "score": 0.0971
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00081",
+          "heading": "كتاب الغصب",
+          "path": [],
+          "score": 0.0972
         }
       ]
     },
@@ -9959,18 +9947,6 @@
           "score": 0.1298
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00104",
-          "heading": "كتاب اللقطة",
-          "path": [],
-          "score": 0.1189
-        },
-        {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
-          "heading": "كتاب الوديعة والعارية",
-          "path": [],
-          "score": 0.1136
-        },
-        {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00121",
           "heading": "باب الوديعة",
           "path": [
@@ -9985,6 +9961,20 @@
             "كتاب البيوع"
           ],
           "score": 0.1054
+        },
+        {
+          "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
+          "heading": "باب الوديعة",
+          "path": [
+            "كتاب التفليس"
+          ],
+          "score": 0.1005
+        },
+        {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
+          "heading": "كتاب الوديعة والعارية",
+          "path": [],
+          "score": 0.0968
         }
       ]
     },
@@ -10225,12 +10215,12 @@
           "score": 0.0962
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00043",
-          "heading": "فصل",
+          "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00143",
+          "heading": "باب استبراء الإماء",
           "path": [
-            "كتاب الصيام"
+            "كتاب الطلاق"
           ],
-          "score": 0.0899
+          "score": 0.0893
         }
       ]
     },
@@ -10700,12 +10690,6 @@
           "score": 0.1808
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00105",
-          "heading": "كتاب القضاء",
-          "path": [],
-          "score": 0.1782
-        },
-        {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00055",
           "heading": "باب صوم القضاء والتطوع",
           "path": [
@@ -10718,6 +10702,14 @@
           "heading": "كتاب الصوم",
           "path": [],
           "score": 0.167
+        },
+        {
+          "id": "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00023",
+          "heading": "باب القضاء للفوائت",
+          "path": [
+            "كتاب الصلاة"
+          ],
+          "score": 0.1623
         }
       ]
     },
@@ -11716,6 +11708,14 @@
           "score": 0.1642
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00049",
+          "heading": "فصل",
+          "path": [
+            "كتاب الحج"
+          ],
+          "score": 0.161
+        },
+        {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00025",
           "heading": "باب صلاة العيدين",
           "path": [
@@ -11729,14 +11729,6 @@
           "path": [
             "كتاب الأيمان وكفاراتها",
             "باب النذر"
-          ],
-          "score": 0.1578
-        },
-        {
-          "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00031",
-          "heading": "باب النية",
-          "path": [
-            "كتاب الصلاة"
           ],
           "score": 0.1578
         }
@@ -12073,12 +12065,6 @@
           "score": 0.1448
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
-          "heading": "كتاب الوديعة والعارية",
-          "path": [],
-          "score": 0.1285
-        },
-        {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00095",
           "heading": "باب الوديعة",
           "path": [
@@ -12094,6 +12080,14 @@
             "باب سجود السهو"
           ],
           "score": 0.1203
+        },
+        {
+          "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00093",
+          "heading": "باب الرهن",
+          "path": [
+            "كتاب البيع"
+          ],
+          "score": 0.1126
         }
       ]
     },
@@ -12115,12 +12109,6 @@
       ],
       "babs": [
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
-          "heading": "كتاب الوديعة والعارية",
-          "path": [],
-          "score": 0.1707
-        },
-        {
           "id": "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00085",
           "heading": "كتاب الوديعة والعارية",
           "path": [],
@@ -12134,6 +12122,12 @@
             "باب سجود السهو"
           ],
           "score": 0.1367
+        },
+        {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00080",
+          "heading": "كتاب الوديعة والعارية",
+          "path": [],
+          "score": 0.1169
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00441",
@@ -12311,7 +12305,7 @@
           "score": 0.126
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00111",
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00111",
           "heading": "فصل",
           "path": [
             "كتاب الحدود",
@@ -12451,12 +12445,12 @@
           "score": 0.0945
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00012",
-          "heading": "باب الحيض",
+          "id": "shawkani.darari_mudiyya.openiti_shawkani_dararimudiyya_shamela7264.b00012",
+          "heading": "باب أحكام الحيض",
           "path": [
             "كتاب الطهارة"
           ],
-          "score": 0.0942
+          "score": 0.0933
         }
       ]
     },
@@ -13160,12 +13154,6 @@
           "score": 0.2235
         },
         {
-          "id": "al_mubarak.ghurar_naqiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00087",
-          "heading": "كتاب النذر",
-          "path": [],
-          "score": 0.2072
-        },
-        {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00041",
           "heading": "باب صلاة التطوع",
           "path": [
@@ -13180,6 +13168,14 @@
             "كتاب الصيد"
           ],
           "score": 0.1881
+        },
+        {
+          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00104",
+          "heading": "باب صلاة الاستسقاء",
+          "path": [
+            "كتاب الصلاة"
+          ],
+          "score": 0.1755
         }
       ]
     },
@@ -13526,20 +13522,18 @@
           "score": 0.1036
         },
         {
+          "id": "shawkani.durar_bahiyya.openiti_mubarak_ghurarnaqiyya_shamay36516.b00014",
+          "heading": "كتاب الصلاة",
+          "path": [],
+          "score": 0.0998
+        },
+        {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00142",
           "heading": "فصل ولا يجب الصوم إلا على مسلم",
           "path": [
             "كتاب الصيام"
           ],
           "score": 0.0928
-        },
-        {
-          "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00103",
-          "heading": "باب صلاة الكسوف",
-          "path": [
-            "كتاب الصلاة"
-          ],
-          "score": 0.0917
         }
       ]
     }
