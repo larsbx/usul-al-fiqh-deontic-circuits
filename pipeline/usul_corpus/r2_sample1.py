@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 from . import takhrij
-from .units import UNIT_SEGMENTERS
+from .units import UNIT_SEGMENTERS, segmenter_of
 
 BASE = "9862c8d3f8ef2603209c8faa4b074631f285ab92"
 AUDIT = "corpus/routing/r2_sample1_semantic_audit.json"
@@ -44,7 +44,7 @@ def replay(root: Path) -> dict:
             if source is None:
                 missing.append(wid)
                 continue
-            config = witness.get("segmenter", work.get("segmenter", {}))
+            config = segmenter_of(work, witness)
             cut, record = UNIT_SEGMENTERS[config["kind"]]
             units = cut(source.read_text(encoding="utf-8"), config)
             regenerated = [record(work, wid, i, unit) for i, unit in enumerate(units, 1)]

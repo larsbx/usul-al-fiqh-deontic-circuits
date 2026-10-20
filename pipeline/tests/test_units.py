@@ -25,14 +25,23 @@ def test_the_committed_unit_inventory_is_current():
 
 def test_the_inventory_covers_every_unit_witness_exactly_once():
     reg = json.loads((CORPUS / "registry.json").read_text(encoding="utf-8"))
-    expected = sorted(x["id"] for w in reg["works"] if w.get("segmenter", {}).get("kind") in units.UNIT_SEGMENTERS
-                      for x in w["witnesses"])
+    expected = sorted(x["id"] for w in reg["works"] for x in w["witnesses"]
+                      if (units.segmenter_of(w, x) or {}).get("kind") in units.UNIT_SEGMENTERS)
     rows = _committed()["witnesses"]
     assert [r["witness"] for r in rows] == expected
     for r in rows:
         lines = (CORPUS / r["records"]).read_text(encoding="utf-8").splitlines()
         assert r["units"] == len(lines) and r["pending"] == r["units"] - len(r["annotated_ids"])
     assert _committed()["summary"]["units"] == sum(r["units"] for r in rows)
+
+
+def test_a_witness_segmenter_overrides_the_work_and_may_stand_alone():
+    """A work's witnesses share its segmenter unless one names its own; a work with none segments only
+    the witnesses that do (al-Durar: the Ghurar witness is cut, the bare matn 34280 is not)."""
+    work = {"segmenter": {"kind": "abwab"}, "witnesses": [{"id": "a"}, {"id": "b", "segmenter": {"kind": "qa"}}]}
+    assert [units.segmenter_of(work, x)["kind"] for x in work["witnesses"]] == ["abwab", "qa"]
+    bare = {"witnesses": [{"id": "c"}, {"id": "d", "segmenter": {"kind": "abwab"}}]}
+    assert [units.segmenter_of(bare, x) for x in bare["witnesses"]] == [None, {"kind": "abwab"}]
 
 
 def test_unit_records_are_pending_obligations_a_shard_can_claim():

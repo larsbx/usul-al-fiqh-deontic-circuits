@@ -2523,7 +2523,7 @@
       ],
       "kernel": false,
       "rights": "public_domain_text",
-      "note": "Matn of shawkani.darari_mudiyya and of al-Rawḍa al-Nadiyya (qannawji.rawda_nadiyya). Witness: ed. Muḥammad Ṣubḥī Ḥallāq, Dār al-Nadā, Beirut 1413 (PageV01P001–P342); its AUTO headings are split mid-line, so it has no segmenter. The matn's tabwīb is read from al_mubarak.ghurar_naqiyya, which prints it in full.",
+      "note": "Matn of shawkani.darari_mudiyya and of al-Rawḍa al-Nadiyya (qannawji.rawda_nadiyya). Witness ShamAY 34280: ed. Muḥammad Ṣubḥī Ḥallāq, Dār al-Nadā, Beirut 1413 (PageV01P001–P342); its AUTO headings are split mid-line, so it is not segmented. Witness ShamAY 36516 carries the full matn with Fayṣal b. ʿAbd al-ʿAzīz Āl Mubārak's (d. 1376) commentary al-Ghurar al-Naqiyya, ed. Muḥammad b. Ḥasan Āl Mubārak: one masʾala per «# -» line under body headings «كتاب …», «باب …», «فصل», the commentary a closing block of endnotes «(¬n)» after the «|EDITOR| ENDNOTES» marker. The matn's tabwīb is read from it (witness-level segmenter: body_headings, end at «|EDITOR|»); the edition prints «باب النكاح» where ShamAY 34280 and al-Darārī have «كتاب النكاح», so kitab_headings ranks it as a kitāb. Both witnesses are held cache_only at witness level.",
       "witnesses": [
         {
           "id": "openiti-shawkani-durarbahiyya-shamay34280",
@@ -2551,6 +2551,42 @@
               }
             ],
             "assessment": "Pinned header names Muḥammad Ṣubḥī Ḥallāq and Dār al-Nadā 1413 AH. The historic matn classification does not document permission for the complete modern-edition file and embedded metadata. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
+        },
+        {
+          "id": "openiti-mubarak-ghurarnaqiyya-shamay36516",
+          "kind": "openiti",
+          "repo": "1275AH",
+          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
+          "path": "data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
+          "edition": "ShamAY 36516",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "1ff4cb3cf3fe17937474f0923e17a0f906f20f20f69d1e453cc9928a99a99e7b",
+            "reviewed_on": "2026-10-15",
+            "basis": "provider_license_only",
+            "evidence": [
+              {
+                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
+                "scope": "provider",
+                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
+              },
+              {
+                "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
+                "scope": "edition",
+                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
+              }
+            ],
+            "assessment": "Pinned file includes al-Shawkānī matn, Āl Mubārak commentary as endnotes and Muḥammad b. Ḥasan Āl Mubārak editing; a segmenter stop does not remove those bytes from the full file. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          },
+          "segmenter": {
+            "kind": "abwab",
+            "end": "\\|EDITOR\\|",
+            "body_headings": true,
+            "kitab_headings": [
+              "باب النكاح"
+            ]
           }
         }
       ],
@@ -2622,60 +2658,6 @@
       },
       "segmenter": {
         "kind": "abwab"
-      }
-    },
-    {
-      "id": "al_mubarak.ghurar_naqiyya",
-      "title_ar": "الدرر البهية في المسائل الفقهية وعليه الغرر النقية",
-      "title_tr": "al-Ghurar al-Naqiyya ʿalā al-Durar al-Bahiyya",
-      "author": {
-        "name_tr": "Fayṣal b. ʿAbd al-ʿAzīz Āl Mubārak",
-        "death_ah": 1376
-      },
-      "layers": [
-        "tests"
-      ],
-      "kernel": false,
-      "rights": "modern_cache_only",
-      "note": "Carries the full matn of shawkani.durar_bahiyya, one masʾala per «# -» line under body headings «كتاب …», «باب …», «فصل»; al-Ghurar is the closing block of endnotes «(¬n)», after the «|EDITOR| ENDNOTES» marker. ed. Muḥammad b. Ḥasan Āl Mubārak (first printing). Full witness remains cache-only pending documented redistribution authority. The edition prints «باب النكاح» where the matn's other witnesses (ShamAY 34280, al-Darārī) have «كتاب النكاح»; kitab_headings ranks it as a kitāb.",
-      "witnesses": [
-        {
-          "id": "openiti-mubarak-ghurarnaqiyya-shamay36516",
-          "kind": "openiti",
-          "repo": "1275AH",
-          "commit": "d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8",
-          "path": "data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
-          "edition": "ShamAY 36516",
-          "publication": {
-            "decision": "cache_only",
-            "scope": "complete_text_public_redistribution",
-            "sha256": "1ff4cb3cf3fe17937474f0923e17a0f906f20f20f69d1e453cc9928a99a99e7b",
-            "reviewed_on": "2026-10-15",
-            "basis": "provider_license_only",
-            "evidence": [
-              {
-                "url": "https://openiti.org/documentation/#how-can-i-use-openiti-what-license-is-used",
-                "scope": "provider",
-                "finding": "CC BY-NC-SA 4.0 corpus license is documented; the copyright FAQ requires removal of protected editorial contributions."
-              },
-              {
-                "url": "https://raw.githubusercontent.com/OpenITI/1275AH/d6d3091d7477cc4d2f4cdcd71e5873e90f5d28e8/data/1255Shawkani/1255Shawkani.DurarBahiyya/1255Shawkani.DurarBahiyya.ShamAY0036516-ara1",
-                "scope": "edition",
-                "finding": "Downloaded pinned source matches lock; header identifies this witness. No edition-specific redistribution grant identified."
-              }
-            ],
-            "assessment": "Pinned file includes al-Shawkānī matn, Āl Mubārak commentary as endnotes and Muḥammad b. Ḥasan Āl Mubārak editing; a segmenter stop does not remove those bytes from the full file. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
-          }
-        }
-      ],
-      "status": "located",
-      "segmenter": {
-        "kind": "abwab",
-        "end": "\\|EDITOR\\|",
-        "body_headings": true,
-        "kitab_headings": [
-          "باب النكاح"
-        ]
       }
     },
     {

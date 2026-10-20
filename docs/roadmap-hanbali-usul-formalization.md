@@ -73,8 +73,10 @@ which prints the whole matn with its commentary as closing endnotes.
 - **Segmentation (R2 mutūn).** `abwab` gains two per-witness options:
   `body_headings`, where headings are body lines and `end` also matches body
   lines, and `kitab_headings`, which corrects a kitāb the edition prints as a bāb
-  (*al-Ghurar*'s «باب النكاح»). The *Durar*'s tabwīb is read from *al-Ghurar*
-  (123 units). *al-Darārī* gives 127 units. Both are in the unit inventory and the
+  (*al-Ghurar*'s «باب النكاح»). The *Durar*'s tabwīb is read from its *al-Ghurar*
+  witness, ShamAY 36516 (123 units, filed under `shawkani.durar_bahiyya` with a
+  witness-level segmenter, so the bare-matn witness 34280 is not cut).
+  *al-Darārī* gives 127 units. Both are in the unit inventory and the
   routing index.
 - **Reception.** The *Durar* has 5 citations, all in *Tamām al-Minna*; the
   *Darārī* has none. No existing count changed.
@@ -89,8 +91,7 @@ which prints the whole matn with its commentary as closing endnotes.
   abort.
 
 Open: edition-level grants for any held witness; splitting the new mutūn units
-into masāʾil (R2's next step); whether to attach the *Durar*'s units to its own
-work rather than to *al-Ghurar*. Nothing here is reviewed or accepted.
+into masāʾil (R2's next step). Nothing here is reviewed or accepted.
 
 ### Semantic tagging development follow-up (2026-10-19)
 
