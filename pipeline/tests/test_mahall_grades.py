@@ -23,7 +23,7 @@ def test_the_verdict_is_al_albanis_on_an_entry_that_holds_the_excerpt(n):
     a = n["albani"]
     verdict, entry = nusus.albani_verdict(a["work"], cached(a["witness"]).read_text(encoding="utf-8"), a["number"])
     assert verdict == a["verdict"]
-    assert nusus.key(n["excerpt_ar"]) in nusus.key(entry), "the entry does not hold the excerpt"
+    assert nusus.key(n["excerpt_ar"]) in nusus.key(grading.head(a["work"], entry)), "not the ḥadīth the entry grades"
 
 
 def test_grading_replays():

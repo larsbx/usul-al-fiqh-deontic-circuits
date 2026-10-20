@@ -19,7 +19,7 @@ work grades keeps the Ṣaḥīḥayn's own standing (``sahihayn``), which is no
 
 Each graded anchor carries ``albani: {work, witness, number, verdict}`` in
 ``corpus/mahall/labels/all.json``. ``test_mahall_grades.py`` re-reads every entry: the verdict is
-his, and the entry holds the excerpt.
+his, and the ḥadīth the entry grades (its head, before his verdict line) holds the excerpt.
 """
 
 from __future__ import annotations
@@ -68,12 +68,29 @@ def occurrences(body: str, excerpt: str) -> list[int]:
     return out
 
 
+VERDICT_LINE = {"albani.irwa": r"^# \* ", "albani.sahih_daif_tirmidhi": r"تحقيق الألباني",
+                "albani.sahih_abi_dawud": r"\(قلت: ", "albani.daif_abi_dawud": r"\(قلت: "}
+
+
+def head(work: str, entry: str) -> str:
+    """The ḥadīth an entry grades: its text up to al-Albānī's verdict line. The rest of an entry is his
+    takhrīj, which quotes other narrations his verdict is not on."""
+    m = re.search(VERDICT_LINE[work], entry, re.M)
+    return entry[: m.start()] if m else entry
+
+
 def entries(work: str, body: str, excerpt: str) -> list[tuple[int, str | None]]:
-    """(entry number, verdict) of each entry of ``work`` that contains the excerpt."""
+    """(entry number, verdict) of each entry of ``work`` whose head holds the excerpt."""
     hs = heads(work, body)
     at = [p for _, p in hs]
-    found = {hs[i][0] for o in occurrences(body, excerpt) if (i := bisect.bisect_right(at, o) - 1) >= 0}
-    return [(n, nusus.albani_verdict(work, body, n)[0]) for n in sorted(found)]
+    near = {hs[i][0] for o in occurrences(body, excerpt) if (i := bisect.bisect_right(at, o) - 1) >= 0}
+    k = nusus.key(excerpt)
+    out = []
+    for n in sorted(near):
+        verdict, entry = nusus.albani_verdict(work, body, n)
+        if k in nusus.key(head(work, entry)):
+            out.append((n, verdict))
+    return out
 
 
 RANK = {"mawdu": 0, "daifJiddan": 1, "daif": 2, "hasan": 3, "sahih": 4}   # Hadith.Verdict.rank
