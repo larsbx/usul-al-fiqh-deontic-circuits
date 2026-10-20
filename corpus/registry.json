@@ -4076,6 +4076,141 @@
       "status": "located"
     },
     {
+      "id": "albani.sahih_daif_abi_dawud",
+      "title_ar": "صحيح وضعيف سنن أبي داود",
+      "title_tr": "Ṣaḥīḥ wa-Ḍaʿīf Sunan Abī Dāwūd",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": false,
+      "track": "albani_hadith",
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-epub-1755",
+          "kind": "shamela_epub",
+          "book_id": 1755,
+          "edition": "old Shamela 1755 (epub, 2014): al-Albānī's verdict on every ḥadīth of Abū Dāwūd, in its own numbering; from Markaz Nūr al-Islām's Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya",
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "4ec35ae812d64f60ede91247d210d4ef063b783154dbc282c5fa21d6bf7f3607",
+            "reviewed_on": "2026-10-20",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://old.shamela.ws/index.php/book/1755",
+                "scope": "edition",
+                "finding": "Catalogue inspected: author al-Albānī, source the free Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya of Markaz Nūr al-Islām (Alexandria), auto-numbered; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sahih_daif_nasai",
+      "title_ar": "صحيح وضعيف سنن النسائي",
+      "title_tr": "Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Nasāʾī",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": false,
+      "track": "albani_hadith",
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-epub-783",
+          "kind": "shamela_epub",
+          "book_id": 783,
+          "edition": "old Shamela 783 (epub, 2014): al-Albānī's verdict on every ḥadīth of al-Nasāʾī, in its own numbering; from Markaz Nūr al-Islām's Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya",
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "78d5a4d800cb26047bfb68b56d59ab65b0c412029098ba4e3cb44561838c2138",
+            "reviewed_on": "2026-10-20",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://old.shamela.ws/index.php/book/783",
+                "scope": "edition",
+                "finding": "Catalogue inspected: author al-Albānī, source the free Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya of Markaz Nūr al-Islām (Alexandria), auto-numbered; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
+        }
+      ],
+      "status": "located"
+    },
+    {
+      "id": "albani.sahih_daif_ibn_maja",
+      "title_ar": "صحيح وضعيف سنن ابن ماجة",
+      "title_tr": "Ṣaḥīḥ wa-Ḍaʿīf Sunan Ibn Māja",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": false,
+      "track": "albani_hadith",
+      "rights": "modern_cache_only",
+      "witnesses": [
+        {
+          "id": "shamela-epub-810",
+          "kind": "shamela_epub",
+          "book_id": 810,
+          "edition": "old Shamela 810 (epub, 2014): al-Albānī's verdict on every ḥadīth of Ibn Māja, in its own numbering; from Markaz Nūr al-Islām's Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya",
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": "9c084f0f73c27c0f5034393ce3b9d3c009ae71afbeb34579c50a11c4af2796ae",
+            "reviewed_on": "2026-10-20",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://old.shamela.ws/index.php/book/810",
+                "scope": "edition",
+                "finding": "Catalogue inspected: author al-Albānī, source the free Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya of Markaz Nūr al-Islām (Alexandria), auto-numbered; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
+        }
+      ],
+      "status": "located"
+    },
+    {
       "id": "albani.tamam_minna",
       "title_ar": "تمام المنة في التعليق على فقه السنة",
       "title_tr": "Tamām al-Minna fī al-Taʿlīq ʿalā Fiqh al-Sunna",

@@ -792,11 +792,13 @@ def cmd_mahall(args: argparse.Namespace) -> int:
     """PR-51: check the maḥall annotation; regenerate (or ``--check``) its label graph and Lean guards."""
     from . import mahall
     if args.grade:
-        from . import grading
+        from . import grading, nusus
         p = CORPUS / mahall.DIR / "labels/all.json"
         doc = json.loads(p.read_text(encoding="utf-8"))
         for l in doc["labels"]:
             for n in l.get("nass", []):
+                if n["kind"] != "quran":
+                    n["number"] = nusus.locus(grading.text(CACHE, mahall.REF.fullmatch(n["ref"])[1]), n["excerpt_ar"])
                 if n["kind"] in ("sunnah", "athar"):
                     for k in ("albani", "weaker_routes", "sahihayn", "ungraded"):
                         n.pop(k, None)

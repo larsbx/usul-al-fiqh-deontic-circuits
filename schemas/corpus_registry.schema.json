@@ -218,7 +218,7 @@
       "required": ["id", "kind"],
       "properties": {
         "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
-        "kind": {"enum": ["openiti", "shamela", "archive", "url"]},
+        "kind": {"enum": ["openiti", "shamela", "shamela_epub", "archive", "url"]},
         "publication": {"$ref": "#/$defs/publication"},
         "edition": {"type": "string"},
         "quality": {"enum": ["ocr_unreviewed", "pdf_only"]},
@@ -252,6 +252,8 @@
          "then": {"required": ["repo", "commit", "path"],
                   "properties": {"commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}}}},
         {"if": {"properties": {"kind": {"const": "shamela"}}},
+         "then": {"required": ["book_id"]}},
+        {"if": {"properties": {"kind": {"const": "shamela_epub"}}},
          "then": {"required": ["book_id"]}},
         {"if": {"properties": {"kind": {"const": "archive"}}},
          "then": {"required": ["item"]}},
