@@ -54,6 +54,7 @@ How often each cited work is named in the citers' own texts; method in [`recepti
 | Badāʾiʿ al-Fawāʾid | `ibn_qayyim.badai_fawaid` | fatawa | 7 |  | 7 |  |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV07P244` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV24P454` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P210` |
 | Bidāyat al-Mujtahid wa-Nihāyat al-Muqtaṣid | `ibn_rushd.bidaya` | khilaf | 6 |  | 4 | 2 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV11P261` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV18P282` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P379` |
 | Taqrīr al-Qawāʿid wa-Taḥrīr al-Fawāʾid | `ibn_rajab.taqrir_qawaid` | qawaid | 5 |  | 5 |  |  | `src:shamela-10649/PageV01P044` `src:shamela-10649/PageV01P045` `src:shamela-10649/PageV01P084` |
+| al-Durar al-Bahiyya fī al-Masāʾil al-Fiqhiyya | `shawkani.durar_bahiyya` | matn | 5 |  |  | 5 |  | `src:shamela-11122/PageV01P053` `src:shamela-11122/PageV01P142` `src:shamela-11122/PageV01P366` |
 | Sharḥ Muntahā al-Irādāt | `buhuti.sharh_muntaha` | sharh | 4 | 1 | 3 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV25P352` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV12P270` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P304` |
 | ʿUmdat al-Fiqh | `ibn_qudama.umda` | matn | 4 | 2 | 2 |  |  | `src:openiti-ibnbaz-majmufatawa-shamela21537/PageV08P233` `src:openiti-ibnbaz-nuraladarb-shamela107/PageV09P223` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV26P094` |
 | al-Fatāwā al-Kubrā | `ibn_taymiyya.fatawa_kubra` | fatawa | 4 |  | 3 | 1 |  | `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P076` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV13P083` `src:openiti-ibnuthaymin-majmufatawa-shamela12293/PageV14P235` |
@@ -73,6 +74,7 @@ How often each cited work is named in the citers' own texts; method in [`recepti
 | Masāʾil al-Imām Aḥmad wa-Isḥāq b. Rāhawayh | `kawsaj.masail_ahmad` | masail | 0 |  |  |  |  |  |
 | Fatāwā al-Lajna al-Dāʾima | `lajna_daima.fatawa` | fatawa | 0 |  |  |  |  |  |
 | Fatāwā wa-Rasāʾil Muḥammad b. Ibrāhīm Āl al-Shaykh | `muhammad_ibn_ibrahim.fatawa` | fatawa | 0 |  |  |  |  |  |
+| al-Darārī al-Muḍiyya Sharḥ al-Durar al-Bahiyya | `shawkani.darari_mudiyya` | sharh | 0 |  |  |  |  |  |
 | al-Fatḥ al-Rabbānī min Fatāwā al-Imām al-Shawkānī | `shawkani.fath_rabbani` | fatawa | 0 |  |  |  |  |  |
 
 ## Cited authors

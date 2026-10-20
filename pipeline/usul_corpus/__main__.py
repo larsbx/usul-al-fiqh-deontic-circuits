@@ -584,7 +584,8 @@ def cmd_mentions(args: argparse.Namespace) -> int:
 
 def cmd_texts(_: argparse.Namespace) -> int:
     """Copy every verified, cached public-domain witness text into corpus/texts."""
-    rep = stage(publishable(_load(CORPUS / "registry.json")), _load(CORPUS / "lock.json")["witnesses"], CACHE, TEXTS)
+    lock = _load(CORPUS / "lock.json")["witnesses"]
+    rep = stage(publishable(_load(CORPUS / "registry.json"), lock), lock, CACHE, TEXTS)
     print(json.dumps({k: len(v) for k, v in rep.items()}))
     for k in ("missing", "mismatch"):
         if rep[k]:

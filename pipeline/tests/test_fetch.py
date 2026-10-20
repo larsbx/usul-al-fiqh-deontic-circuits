@@ -1,3 +1,4 @@
+import http.client
 import urllib.error
 
 import pytest
@@ -49,7 +50,8 @@ def test_doc_witness_is_converted_beside_the_locked_original(tmp_path, monkeypat
     assert entry["bytes"] == 3 and entry["url"] == "https://example.org/a.doc"
 
 
-@pytest.mark.parametrize("err", [ConnectionResetError(104, "reset"), urllib.error.URLError("down"), TimeoutError()])
+@pytest.mark.parametrize("err", [ConnectionResetError(104, "reset"), urllib.error.URLError("down"), TimeoutError(),
+                                 http.client.IncompleteRead(b"")])
 def test_get_retries_transient_failures(monkeypatch, err):
     """A reset or timeout mid-book is retried; one dropped page must not lose an hours-long fetch."""
     calls = []

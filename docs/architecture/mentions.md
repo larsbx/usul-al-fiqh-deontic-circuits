@@ -61,4 +61,4 @@ Ids are `task:witness/locator@offset`, and the offset is into the page's normali
 
 ## Rights
 
-The contexts come from modern texts (`modern_cache_only`), so they live in `.cache/mentions` and are never committed, like the witnesses themselves. Gold labels and the summary carry ids and counts only.
+The contexts are regenerated from the citer witnesses, so they live in `.cache/mentions` and are not committed. Gold labels and the summary carry ids and counts only.

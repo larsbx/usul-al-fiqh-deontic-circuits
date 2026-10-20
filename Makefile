@@ -38,3 +38,8 @@ tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh
 .PHONY: source-verify source-verify-fetch
 source-verify: ; cd pipeline && $(PY) -m usul_corpus.source_verify
 source-verify-fetch: ; cd pipeline && $(PY) -m usul_corpus.source_verify --fetch-source
+
+# Publication policy/pointer metadata and complete LFS bytes are separate gates.
+.PHONY: texts-check texts-verify-bytes
+texts-check: ; cd pipeline && $(PY) -m usul_corpus.texts
+texts-verify-bytes: ; cd pipeline && $(PY) -m usul_corpus.texts --require-bytes
