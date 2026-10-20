@@ -135,3 +135,39 @@ A typing touches a **set** of source qawāʿid. Each fact maps to its types, and
 - **Over all six typings** (47 cases have one set, 23 two, 10 three or four), the own qāʿida is found by at least one typing in 74 of 80 cases, and by a majority (≥ 4 of 6) in 62.
 
 The reading step, at the level of which qāʿida, is therefore about as reproducible as the text allows a single reader: α 0.82. The residue is mostly a single reader's miss, which a second reading recovers: "found by either" is 68–72 against 62–67 for one typing. Pooling independent typings is the procedural remedy, not more definition: take the union to propose and the majority to decide.
+
+## Accuracy
+
+Agreement says whether two readers concur; accuracy says whether they are right. A case's truth is a **set** of qawāʿid, so accuracy is set accuracy, against two golds:
+
+- **reading:** the qawāʿid cited by the types the case's own encoder reads;
+- **bank:** every qāʿida the bank ties the case to (`mahall.links`: placement, encoder, types, co-annotation).
+
+On this sample the two nearly coincide: 1.20 against 1.23 qawāʿid per case. `agreement.accuracy` computes the figures, and `test_agreement.py` pins them.
+
+| 80 cases, F1 against the bank | Plain | Anchors | Anchors and scope |
+|---|---|---|---|
+| Typing a | 0.784 | 0.736 | 0.769 |
+| Typing b | 0.746 | 0.731 | 0.794 |
+| Union of the two | 0.777 | 0.739 | **0.802** |
+| Union, recall | 0.816 | 0.796 | **0.867** |
+| Union, precision | 0.741 | 0.690 | 0.746 |
+
+- **Single readers are right about three times in four** (F1 0.73–0.79). Neither anchors nor scope changes this beyond noise.
+- **Pooling two readings raises recall to 0.80–0.87**, at the cost of 3–5 points of precision. With scope, the union finds the right qāʿida in 72 of 80 cases.
+- **Where single readings go wrong** (per 160 typings):
+  - Misses are mostly a wrong qāʿida (19–24) rather than nothing settled (6–9).
+  - About a third of the wrong qawāʿid picked are defensible: the qāʿida's other furūʿ rule on the same maḥall. A sixth share only the bāb, and the rest are unrelated.
+
+### Routing accuracy, by qāʿida
+
+The routing figures so far ask whether the case's own **encoder** is in the top k. The bank's truth is the set of qawāʿid the case is tied to, and most qawāʿid have several encoders. `hybrid_recall_by_qaida` in the typed-routing reports therefore counts a hit when a top-k encoder reads a qāʿida tied to the case:
+
+| Hybrid recall, @1 / @5 / @10 | By encoder | By qāʿida |
+|---|---|---|
+| Fold 1 (held out, frozen) | 0.685 / 0.860 / 0.877 | **0.779** / 0.872 / 0.885 |
+| Fold 0 | 0.554 / 0.879 / 0.913 | 0.633 / 0.896 / 0.933 |
+| IslamQA tranche 1 | 0.520 / 0.691 / 0.724 | 0.602 / 0.740 / 0.740 |
+
+At the first rank, between a fifth (fold 0: 0.079 of 0.446) and a third (fold 1: 0.094 of 0.315) of the encoder-level misses route to the right qāʿida through a sibling encoder. Deeper in the list the gain is small: the remaining misses route to the wrong qāʿida altogether.
+

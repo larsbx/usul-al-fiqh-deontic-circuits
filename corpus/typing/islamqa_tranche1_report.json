@@ -29,6 +29,12 @@
     "5": 0.6911,
     "10": 0.7236
   },
+  "hybrid_recall_by_qaida": {
+    "1": 0.6016,
+    "5": 0.7398,
+    "10": 0.7398
+  },
+  "by_qaida": "a hit when a top-k encoder reads a qāʿida the bank ties the case to (mahall.links: placement, encoder, types, co-annotation), the case's encoder's own for units outside it",
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {
     "1": 0.0,

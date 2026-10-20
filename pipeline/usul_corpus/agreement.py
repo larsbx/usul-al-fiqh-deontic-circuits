@@ -43,6 +43,23 @@ def alpha(pairs: list[tuple[frozenset, frozenset]]) -> float:
     return 1.0 if expected == 0 else 1 - observed / expected
 
 
+def _qid(name: str) -> str:
+    """``Ibn Rajab 13`` → ``r013`` (``mahall.qid``); a type with no cited source keeps its name."""
+    from . import mahall
+    m = re.fullmatch(r"(Ibn Rajab|Ibn al-Laḥḥām|al-Saʿdī) (\d+)", name)
+    return mahall.qid(m[1], int(m[2])) if m else name
+
+
+def _score(typed: dict, gold: dict) -> dict:
+    """Set accuracy over the units: any hit, exact match, and micro precision, recall and F1."""
+    units = sorted(gold)
+    tp = sum(len(typed[u] & gold[u]) for u in units)
+    nt, ng = sum(len(typed[u]) for u in units), sum(len(gold[u]) for u in units)
+    p, r = (tp / nt if nt else 0.0), (tp / ng if ng else 0.0)
+    return {"hit": sum(bool(typed[u] & gold[u]) for u in units), "exact": sum(typed[u] == gold[u] for u in units),
+            "precision": round(p, 3), "recall": round(r, 3), "f1": round(2 * p * r / (p + r) if p + r else 0.0, 3)}
+
+
 class Qawaid:
     """Maps a typing's facts to the source qawāʿid they belong to, from the Lean export."""
 
@@ -69,6 +86,31 @@ def typings(root: Path) -> dict[str, tuple[dict, dict]]:
            for c in CONDITIONS}
     first = read(root / "corpus/typing/rajab_fold1_situations.json")
     out["plain"] = ({u: first[u] for u in out["plain"][1]}, out["plain"][1])
+    return out
+
+
+def accuracy(root: Path) -> dict[str, dict]:
+    """Per condition, each typing and their union scored against two golds:
+
+    - ``reading``: the qawāʿid cited by the types the case's own encoder reads;
+    - ``bank``: every qāʿida the bank ties the case to (``mahall.links``: placement, encoder,
+      types, co-annotation).
+
+    A case's truth is a set, so accuracy is set accuracy."""
+    from . import mahall
+    export = (root / "examples/v41_types.pl").read_text(encoding="utf-8")
+    q, reads = Qawaid(export), deduction.reads(export)
+    runs = typings(root)
+    units = sorted(runs["plain"][1])
+    encoder = {u: e for u, e, _ in routing.cases(root / "corpus")}
+    tied = mahall.links(root / "corpus")
+    gold = {"reading": {u: frozenset(map(_qid, q.fields(reads[encoder[u]]))) for u in units},
+            "bank": {u: frozenset(mahall.under(tied[u])) for u in units}}
+    out = {}
+    for c, (a, b) in runs.items():
+        ta, tb = ({u: frozenset(map(_qid, q.touched(t[u]))) for u in units} for t in (a, b))
+        typed = {"a": ta, "b": tb, "a|b": {u: ta[u] | tb[u] for u in units}}
+        out[c] = {k: {g: _score(t, gs) for g, gs in gold.items()} for k, t in typed.items()}
     return out
 
 

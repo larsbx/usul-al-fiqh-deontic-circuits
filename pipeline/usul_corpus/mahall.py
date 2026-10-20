@@ -106,6 +106,13 @@ def qid(author: str, n: int) -> str:
     return {"Ibn Rajab": "r", "Ibn al-Laḥḥām": "l", "al-Saʿdī": "s"}[author] + f"{n:03d}"
 
 
+def encoder_qawaid(encoder: str) -> list[str]:
+    """The qawāʿid an encoder reads: its Ibn Rajab or Ibn al-Laḥḥām qawāʿid and al-Saʿdī's."""
+    from . import takhrij
+    e = takhrij.ENCODERS[encoder]
+    return sorted({short(q) for q in e["qawaid"]} | {qid("al-Saʿdī", n) for n in e.get("sadi", [])})
+
+
 def links(corpus: Path) -> dict[str, dict[str, list[str]]]:
     """farʿ → the qawāʿid the bank ties it to, by provenance:
 
@@ -122,8 +129,7 @@ def links(corpus: Path) -> dict[str, dict[str, list[str]]]:
     for t, f in re.findall(r"^type_field\((\w+), (\w+), ", export, re.M):
         owner.setdefault(f, set()).add(t)
     reads = deduction.reads(export)
-    of_encoder = lambda e: sorted({short(q) for q in takhrij.ENCODERS[e]["qawaid"]}
-                                  | {qid("al-Saʿdī", n) for n in takhrij.ENCODERS[e].get("sadi", [])})
+    of_encoder = encoder_qawaid
     of_types = lambda e: sorted({qid(a, n) for f in reads.get(e, []) for t in owner.get(f, ())
                                  for a, n in scope.cited(t, statement.get(t, ""))})
     co: dict[str, set[str]] = {}
