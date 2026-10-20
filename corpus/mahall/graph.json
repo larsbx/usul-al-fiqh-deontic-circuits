@@ -30220,8 +30220,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى عن ثمن الكلب",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0045": {
    "ref": "src:tanzil-quran-simple#Q005:090",
@@ -30382,8 +30382,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "من غشنا فليس منا",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0069": {
    "ref": "src:openiti-ibnmaja-shamela1198",
@@ -30564,8 +30564,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أمر بوضع الجوائح",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0093": {
    "ref": "src:openiti-muslim-shamela1727",
@@ -30725,8 +30725,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فيقولان له أشركنا فإن النبي صلى الله عليه وسلم قد دعا لك بالبركة فيشركهم",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0110": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -30827,8 +30827,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "شاهداك أو يمينه",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0123": {
    "ref": "src:openiti-muslim-shamela1727",
@@ -30870,8 +30870,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "قضى بيمين وشاهد",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0127": {
    "ref": "src:openiti-abudawud-shamela1726",
@@ -31051,8 +31051,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإذا انقطع خبره فسنته سنة المفقود",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0148": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
@@ -31247,8 +31247,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أيؤذيك هوام رأسك",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0173": {
    "ref": "src:tanzil-quran-simple#Q022:036",
@@ -31296,8 +31296,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أفأحج عنه",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0180": {
    "ref": "src:tanzil-quran-simple#Q003:097",
@@ -31340,15 +31340,15 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يعضد شوكه",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0186": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أفأحج عنه قال نعم",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0187": {
    "ref": "src:tanzil-quran-simple#Q002:196",
@@ -31384,15 +31384,15 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ولا ينفر صيدها",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0192": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ولا ينفر صيده",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0193": {
    "ref": "src:tanzil-quran-simple#Q005:095",
@@ -31479,8 +31479,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "مطل الغني ظلم",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0205": {
    "ref": "src:openiti-ibnmaja-shamela1198",
@@ -31914,8 +31914,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا فقد في الصف عند القتال تربص امرأته سنة",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0257": {
    "ref": "src:tanzil-quran-simple#Q065:004",
@@ -32416,8 +32416,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صلوا على صاحبكم",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0321": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
@@ -32489,8 +32489,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فكوا العاني",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0330": {
    "ref": "src:tanzil-quran-simple#Q008:041",
@@ -32515,8 +32515,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ذهب فرس له فأخذه العدو",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0334": {
    "ref": "src:tanzil-quran-simple#Q003:161",
@@ -32535,8 +32535,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ففيهما فجاهد",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0337": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -32610,8 +32610,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "يحذين من الغنيمة",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0347": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -32716,8 +32716,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "والبئر جبار",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0358": {
    "ref": "src:tanzil-quran-simple#Q017:033",
@@ -32822,8 +32822,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فهو بخير النظرين",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0371": {
    "ref": "src:openiti-tirmidhi-shamela7895",
@@ -32920,8 +32920,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وجدت منبوذا فلما رآني عمر",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0382": {
    "ref": "src:openiti-abudawud-shamela1726",
@@ -33010,8 +33010,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0392": {
    "ref": "src:openiti-abudawud-shamela1726",
@@ -33041,8 +33041,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "عذبت امرأة في هرة",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0396": {
    "ref": "src:tanzil-quran-simple#Q065:006",
@@ -33625,8 +33625,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كيف وقد قيل",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0472": {
    "ref": "src:openiti-ibnmaja-shamela1198",
@@ -33683,8 +33683,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا تباع حتى تفصل",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0481": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -33970,15 +33970,15 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تلبسوا الحرير",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0514": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى عن خاتم الذهب",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0515": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -34238,8 +34238,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ثم يكبر حين يركع",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0543": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -34323,15 +34323,15 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لو علمت أنكما تعمدتما لقطعتكما",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0551": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فأبطل شهادتهما وأخذا بدية الأول",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0552": {
    "ref": "src:tanzil-quran-simple#Q022:030",
@@ -34491,8 +34491,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ثم قال أطعمه أهلك",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0572": {
    "ref": "src:tanzil-quran-simple#Q097:001",
@@ -34555,8 +34555,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فإني إذن صائم",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0580": {
    "ref": "src:tanzil-quran-simple#Q002:187",
@@ -34876,15 +34876,15 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "يغسل ذكره ويتوضأ",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0615": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نعم إذا رأت الماء",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0616": {
    "ref": "src:openiti-muslim-shamela1727",
@@ -34936,8 +34936,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "ارجع فأحسن وضوءك",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0623": {
    "ref": "src:tanzil-quran-simple#Q074:004",
@@ -35079,8 +35079,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الحقي بأهلك",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0641": {
    "ref": "src:openiti-bukhari-shamela1681",
@@ -35142,8 +35142,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "مره فليراجعها",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0650": {
    "ref": "src:tanzil-quran-simple#Q065:001",
@@ -35167,22 +35167,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0653": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "طلق رجل امرأته البتة إن خرجت فقال ابن عمر إن خرجت فقد بتت منه",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0654": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن خرجت فقد بتت منه",
    "kind": "athar",
-   "sahihayn": true,
-   "hujja": true
+   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "hujja": false
   },
   "n0655": {
    "ref": "src:openiti-abudawud-shamela1726",
@@ -35358,8 +35358,8 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "كتب إلى كسرى",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0672": {
    "ref": "src:tanzil-quran-simple#Q019:029",
@@ -35675,8 +35675,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وفي الركاز الخمس",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "sahihayn": true,
+   "hujja": true
   },
   "n0709": {
    "ref": "src:tanzil-quran-simple#Q009:060",
@@ -47713,12 +47713,14 @@
    "n0021",
    "n0022",
    "n0023",
+   "n0126",
    "n0135",
    "n0138",
    "n0139",
    "n0142",
    "n0146",
    "n0178",
+   "n0179",
    "n0180",
    "n0189",
    "n0206",
@@ -47742,6 +47744,7 @@
    "n0467",
    "n0468",
    "n0470",
+   "n0471",
    "n0477",
    "n0543",
    "n0549",
@@ -47759,13 +47762,11 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0667",
    "n0668",
    "n0669",
    "n0670",
+   "n0671",
    "n0672",
    "n0673",
    "n0678",
@@ -47810,9 +47811,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0682",
    "n0683",
    "n0688",
@@ -47851,9 +47849,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0682",
    "n0683",
    "n0688",
@@ -47867,6 +47862,7 @@
    "n0072",
    "n0073",
    "n0121",
+   "n0122",
    "n0123",
    "n0142",
    "n0220",
@@ -47894,9 +47890,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0682",
    "n0683",
    "n0688",
@@ -47955,6 +47948,7 @@
    "n0063",
    "n0064",
    "n0171",
+   "n0172",
    "n0173",
    "n0174",
    "n0175",
@@ -48002,6 +47996,7 @@
   ],
   "r006": [
    "n0178",
+   "n0179",
    "n0180",
    "n0257",
    "n0452",
@@ -48043,6 +48038,8 @@
    "n0167",
    "n0180",
    "n0500",
+   "n0513",
+   "n0514",
    "n0519",
    "n0533",
    "n0534",
@@ -48100,6 +48097,7 @@
    "n0052",
    "n0053",
    "n0121",
+   "n0122",
    "n0123",
    "n0131",
    "n0158",
@@ -48130,6 +48128,8 @@
    "n0492",
    "n0611",
    "n0612",
+   "n0614",
+   "n0615",
    "n0616"
   ],
   "r014": [
@@ -48138,15 +48138,13 @@
    "n0295",
    "n0297",
    "n0298",
+   "n0615",
    "n0616",
    "n0637",
    "n0645",
    "n0646",
    "n0647",
-   "n0648",
-   "n0652",
-   "n0653",
-   "n0654"
+   "n0648"
   ],
   "r015": [
    "n0051",
@@ -48155,6 +48153,7 @@
    "n0236",
    "n0237",
    "n0238",
+   "n0615",
    "n0616",
    "n0617",
    "n0618",
@@ -48163,6 +48162,7 @@
    "n0634",
    "n0637",
    "n0639",
+   "n0640",
    "n0645",
    "n0646",
    "n0647",
@@ -48185,7 +48185,6 @@
    "n0299",
    "n0330",
    "n0332",
-   "n0333",
    "n0344",
    "n0345",
    "n0489",
@@ -48229,6 +48228,7 @@
    "n0538",
    "n0540",
    "n0541",
+   "n0542",
    "n0574",
    "n0599",
    "n0660",
@@ -48399,6 +48399,7 @@
    "n0305",
    "n0306",
    "n0393",
+   "n0395",
    "n0398",
    "n0408",
    "n0413",
@@ -48423,7 +48424,6 @@
    "n0326",
    "n0330",
    "n0332",
-   "n0333",
    "n0334",
    "n0352",
    "n0353",
@@ -48453,6 +48453,10 @@
    "n0158",
    "n0167",
    "n0171",
+   "n0172",
+   "n0185",
+   "n0191",
+   "n0192",
    "n0193",
    "n0194",
    "n0195",
@@ -48488,6 +48492,7 @@
    "n0279",
    "n0355",
    "n0369",
+   "n0370",
    "n0489",
    "n0491",
    "n0493",
@@ -48626,8 +48631,7 @@
    "n0278",
    "n0279",
    "n0330",
-   "n0332",
-   "n0333"
+   "n0332"
   ],
   "r037": [
    "n0018",
@@ -48758,9 +48762,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0663",
    "n0664",
    "n0665",
@@ -48892,7 +48893,6 @@
    "n0077",
    "n0330",
    "n0332",
-   "n0333",
    "n0481",
    "n0482",
    "n0715",
@@ -48903,6 +48903,7 @@
    "n0018",
    "n0142",
    "n0203",
+   "n0204",
    "n0209",
    "n0210",
    "n0211",
@@ -48914,7 +48915,6 @@
    "n0225",
    "n0330",
    "n0332",
-   "n0333",
    "n0352",
    "n0353",
    "n0354",
@@ -48970,6 +48970,7 @@
   "r056": [
    "n0018",
    "n0121",
+   "n0122",
    "n0123",
    "n0260",
    "n0293",
@@ -48986,9 +48987,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0655",
    "n0657",
    "n0678",
@@ -49024,10 +49022,7 @@
    "n0645",
    "n0646",
    "n0647",
-   "n0648",
-   "n0652",
-   "n0653",
-   "n0654"
+   "n0648"
   ],
   "r058": [
    "n0062",
@@ -49041,12 +49036,12 @@
    "n0072",
    "n0073",
    "n0091",
+   "n0092",
    "n0093",
    "n0094",
    "n0095",
    "n0096",
    "n0100",
-   "n0109",
    "n0113",
    "n0273",
    "n0275",
@@ -49060,6 +49055,7 @@
    "n0118",
    "n0355",
    "n0369",
+   "n0370",
    "n0387",
    "n0388",
    "n0389",
@@ -49123,7 +49119,6 @@
    "n0161",
    "n0227",
    "n0250",
-   "n0256",
    "n0293",
    "n0294",
    "n0295",
@@ -49133,10 +49128,7 @@
    "n0645",
    "n0646",
    "n0647",
-   "n0648",
-   "n0652",
-   "n0653",
-   "n0654"
+   "n0648"
   ],
   "r065": [
    "n0011",
@@ -49155,7 +49147,6 @@
    "n0161",
    "n0227",
    "n0250",
-   "n0256",
    "n0293",
    "n0294",
    "n0295",
@@ -49163,14 +49154,12 @@
    "n0298",
    "n0355",
    "n0369",
+   "n0370",
    "n0637",
    "n0645",
    "n0646",
    "n0647",
-   "n0648",
-   "n0652",
-   "n0653",
-   "n0654"
+   "n0648"
   ],
   "r066": [
    "n0071",
@@ -49203,8 +49192,6 @@
    "n0491",
    "n0493",
    "n0494",
-   "n0550",
-   "n0551",
    "n0552",
    "n0553"
   ],
@@ -49278,6 +49265,7 @@
    "n0503",
    "n0511",
    "n0559",
+   "n0571",
    "n0678",
    "n0679",
    "n0680",
@@ -49313,6 +49301,7 @@
   "r072": [
    "n0112",
    "n0131",
+   "n0186",
    "n0273",
    "n0275",
    "n0276",
@@ -49365,8 +49354,8 @@
    "n0280",
    "n0321",
    "n0328",
+   "n0329",
    "n0380",
-   "n0381",
    "n0383",
    "n0384",
    "n0385",
@@ -49450,6 +49439,7 @@
    "n0072",
    "n0073",
    "n0091",
+   "n0092",
    "n0093",
    "n0113",
    "n0159",
@@ -49560,9 +49550,9 @@
    "n0295",
    "n0297",
    "n0298",
+   "n0320",
    "n0330",
    "n0332",
-   "n0333",
    "n0376",
    "n0393",
    "n0394",
@@ -49590,6 +49580,7 @@
   "r085": [
    "n0018",
    "n0043",
+   "n0044",
    "n0142",
    "n0173",
    "n0174",
@@ -49606,7 +49597,6 @@
    "n0267",
    "n0330",
    "n0332",
-   "n0333",
    "n0338",
    "n0383",
    "n0384",
@@ -49654,6 +49644,7 @@
    "n0036",
    "n0037",
    "n0043",
+   "n0044",
    "n0105",
    "n0106",
    "n0142",
@@ -49696,7 +49687,6 @@
    "n0234",
    "n0330",
    "n0332",
-   "n0333",
    "n0338",
    "n0674"
   ],
@@ -49795,7 +49785,6 @@
   "r095": [
    "n0131",
    "n0142",
-   "n0147",
    "n0148",
    "n0220",
    "n0273",
@@ -49824,8 +49813,6 @@
    "n0460",
    "n0477",
    "n0549",
-   "n0550",
-   "n0551",
    "n0552",
    "n0553",
    "n0558",
@@ -49853,6 +49840,7 @@
    "n0194",
    "n0195",
    "n0196",
+   "n0204",
    "n0220",
    "n0445",
    "n0446",
@@ -49875,7 +49863,6 @@
    "n0160",
    "n0161",
    "n0380",
-   "n0381",
    "n0383",
    "n0384",
    "n0385",
@@ -49899,12 +49886,11 @@
    "n0279",
    "n0330",
    "n0332",
-   "n0333",
    "n0380",
-   "n0381",
    "n0383",
    "n0384",
-   "n0385"
+   "n0385",
+   "n0708"
   ],
   "r099": [
    "n0003",
@@ -49999,6 +49985,7 @@
    "n0531",
    "n0611",
    "n0612",
+   "n0622",
    "n0633",
    "n0634"
   ],
@@ -50009,6 +49996,7 @@
    "n0062",
    "n0063",
    "n0064",
+   "n0068",
    "n0071",
    "n0072",
    "n0073",
@@ -50143,13 +50131,11 @@
    "n0645",
    "n0646",
    "n0647",
-   "n0648",
-   "n0652",
-   "n0653",
-   "n0654"
+   "n0648"
   ],
   "r110": [
    "n0018",
+   "n0068",
    "n0071",
    "n0072",
    "n0073",
@@ -50164,6 +50150,7 @@
    "n0281",
    "n0355",
    "n0369",
+   "n0370",
    "n0398",
    "n0411",
    "n0413",
@@ -50224,15 +50211,13 @@
    "n0297",
    "n0298",
    "n0474",
+   "n0480",
    "n0636",
    "n0637",
    "n0645",
    "n0646",
    "n0647",
-   "n0648",
-   "n0652",
-   "n0653",
-   "n0654"
+   "n0648"
   ],
   "r114": [
    "n0282",
@@ -50264,6 +50249,7 @@
    "n0238",
    "n0355",
    "n0369",
+   "n0370",
    "n0441",
    "n0562",
    "n0563",
@@ -50297,6 +50283,7 @@
    "n0562",
    "n0563",
    "n0564",
+   "n0579",
    "n0688",
    "n0689"
   ],
@@ -50317,11 +50304,9 @@
    "n0646",
    "n0647",
    "n0648",
+   "n0649",
    "n0650",
    "n0651",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0685",
    "n0686",
    "n0687",
@@ -50352,9 +50337,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0655",
    "n0657",
    "n0678",
@@ -50375,16 +50357,12 @@
    "n0286",
    "n0330",
    "n0332",
-   "n0333",
    "n0341",
    "n0637",
    "n0645",
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0688",
    "n0689",
    "n0690"
@@ -50394,6 +50372,7 @@
    "n0142",
    "n0154",
    "n0220",
+   "n0320",
    "n0444",
    "n0682",
    "n0683",
@@ -50457,6 +50436,7 @@
    "n0646",
    "n0647",
    "n0648",
+   "n0649",
    "n0650",
    "n0651",
    "n0678",
@@ -50503,10 +50483,7 @@
    "n0645",
    "n0646",
    "n0647",
-   "n0648",
-   "n0652",
-   "n0653",
-   "n0654"
+   "n0648"
   ],
   "r126": [
    "n0011",
@@ -50556,6 +50533,7 @@
    "n0194",
    "n0195",
    "n0196",
+   "n0357",
    "n0366",
    "n0367",
    "n0450",
@@ -50564,8 +50542,6 @@
    "n0459",
    "n0460",
    "n0477",
-   "n0550",
-   "n0551",
    "n0552",
    "n0553",
    "n0674",
@@ -50578,6 +50554,8 @@
    "n0138",
    "n0139",
    "n0140",
+   "n0191",
+   "n0192",
    "n0240",
    "n0241"
   ],
@@ -50586,6 +50564,8 @@
    "n0052",
    "n0053",
    "n0132",
+   "n0191",
+   "n0192",
    "n0193",
    "n0194",
    "n0195",
@@ -50594,7 +50574,8 @@
    "n0241",
    "n0355",
    "n0363",
-   "n0369"
+   "n0369",
+   "n0370"
   ],
   "r130": [
    "n0007",
@@ -50650,12 +50631,14 @@
    "n0021",
    "n0022",
    "n0023",
+   "n0126",
    "n0135",
    "n0138",
    "n0139",
    "n0142",
    "n0146",
    "n0178",
+   "n0179",
    "n0180",
    "n0189",
    "n0206",
@@ -50679,6 +50662,7 @@
    "n0467",
    "n0468",
    "n0470",
+   "n0471",
    "n0477",
    "n0543",
    "n0549",
@@ -50696,9 +50680,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0667",
    "n0668",
    "n0678",
@@ -50756,6 +50737,7 @@
    "n0305",
    "n0355",
    "n0369",
+   "n0370",
    "n0474",
    "n0558",
    "n0559",
@@ -50788,6 +50770,7 @@
    "n0355",
    "n0362",
    "n0369",
+   "n0370",
    "n0445",
    "n0446",
    "n0474",
@@ -50801,7 +50784,7 @@
    "n0248",
    "n0330",
    "n0332",
-   "n0333"
+   "n0346"
   ],
   "r140": [
    "n0134",
@@ -50812,11 +50795,11 @@
    "n0245",
    "n0330",
    "n0332",
-   "n0333",
    "n0334",
    "n0355",
    "n0363",
    "n0369",
+   "n0370",
    "n0372",
    "n0379"
   ],
@@ -50836,6 +50819,9 @@
    "n0037",
    "n0135",
    "n0142",
+   "n0185",
+   "n0191",
+   "n0192",
    "n0220",
    "n0273",
    "n0275",
@@ -50898,6 +50884,7 @@
    "n0119",
    "n0142",
    "n0178",
+   "n0179",
    "n0180",
    "n0214",
    "n0215",
@@ -50958,6 +50945,7 @@
    "n0646",
    "n0647",
    "n0648",
+   "n0649",
    "n0650",
    "n0651"
   ],
@@ -51004,7 +50992,6 @@
    "n0222",
    "n0330",
    "n0332",
-   "n0333",
    "n0464",
    "n0484",
    "n0489",
@@ -51052,7 +51039,6 @@
    "n0377",
    "n0378",
    "n0380",
-   "n0381",
    "n0489",
    "n0491",
    "n0637",
@@ -51098,10 +51084,13 @@
    "n0303",
    "n0304",
    "n0316",
+   "n0320",
+   "n0336",
    "n0337",
    "n0349",
    "n0355",
    "n0369",
+   "n0370",
    "n0371",
    "n0392",
    "n0393",
@@ -51123,7 +51112,6 @@
   ],
   "r154": [
    "n0250",
-   "n0256",
    "n0293",
    "n0294",
    "n0295",
@@ -51143,8 +51131,6 @@
    "n0489",
    "n0491",
    "n0494",
-   "n0550",
-   "n0551",
    "n0552",
    "n0553"
   ],
@@ -51170,7 +51156,6 @@
    "n0373",
    "n0375",
    "n0376",
-   "n0391",
    "n0393",
    "n0398",
    "n0400",
@@ -51218,6 +51203,7 @@
    "n0051",
    "n0052",
    "n0053",
+   "n0068",
    "n0071",
    "n0072",
    "n0073",
@@ -51242,6 +51228,7 @@
    "n0324",
    "n0355",
    "n0369",
+   "n0370",
    "n0393",
    "n0406",
    "n0407",
@@ -51258,9 +51245,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0715",
    "n0717",
    "n0719",
@@ -51286,7 +51270,6 @@
    "n0239",
    "n0249",
    "n0250",
-   "n0256",
    "n0282",
    "n0283",
    "n0284",
@@ -51297,6 +51280,7 @@
    "n0295",
    "n0297",
    "n0298",
+   "n0320",
    "n0404",
    "n0405",
    "n0406",
@@ -51373,13 +51357,13 @@
    "n0300",
    "n0317",
    "n0318",
+   "n0320",
    "n0322",
    "n0323",
    "n0324",
    "n0327",
    "n0330",
    "n0332",
-   "n0333",
    "n0342",
    "n0343",
    "n0344",
@@ -51387,10 +51371,10 @@
    "n0355",
    "n0358",
    "n0369",
+   "n0370",
    "n0377",
    "n0378",
    "n0380",
-   "n0381",
    "n0383",
    "n0384",
    "n0385",
@@ -51424,9 +51408,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0674",
    "n0675",
    "n0676",
@@ -51456,6 +51437,7 @@
    "n0072",
    "n0073",
    "n0178",
+   "n0179",
    "n0180",
    "n0182",
    "n0183",
@@ -51468,7 +51450,6 @@
    "n0241",
    "n0249",
    "n0250",
-   "n0256",
    "n0257",
    "n0282",
    "n0283",
@@ -51480,6 +51461,7 @@
    "n0295",
    "n0297",
    "n0298",
+   "n0320",
    "n0404",
    "n0405",
    "n0406",
@@ -51546,9 +51528,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0674",
    "n0675",
    "n0676",
@@ -51635,13 +51614,13 @@
    "n0300",
    "n0317",
    "n0318",
+   "n0320",
    "n0322",
    "n0323",
    "n0324",
    "n0327",
    "n0330",
    "n0332",
-   "n0333",
    "n0342",
    "n0343",
    "n0344",
@@ -51649,10 +51628,10 @@
    "n0355",
    "n0358",
    "n0369",
+   "n0370",
    "n0377",
    "n0378",
    "n0380",
-   "n0381",
    "n0383",
    "n0384",
    "n0385",
@@ -51685,9 +51664,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0674",
    "n0675",
    "n0676",
@@ -51712,7 +51688,6 @@
    "n0299",
    "n0330",
    "n0332",
-   "n0333",
    "n0344",
    "n0345",
    "n0427",
@@ -51756,8 +51731,8 @@
    "n0280",
    "n0321",
    "n0328",
+   "n0329",
    "n0380",
-   "n0381",
    "n0383",
    "n0384",
    "n0385",
@@ -51780,11 +51755,11 @@
    "n0245",
    "n0330",
    "n0332",
-   "n0333",
    "n0334",
    "n0355",
    "n0363",
    "n0369",
+   "n0370",
    "n0372",
    "n0379"
   ],
@@ -51793,6 +51768,10 @@
    "n0158",
    "n0167",
    "n0171",
+   "n0172",
+   "n0185",
+   "n0191",
+   "n0192",
    "n0193",
    "n0194",
    "n0195",
@@ -51830,6 +51809,7 @@
    "n0538",
    "n0540",
    "n0541",
+   "n0542",
    "n0574",
    "n0599",
    "n0660",
@@ -51874,6 +51854,7 @@
    "n0531",
    "n0611",
    "n0612",
+   "n0622",
    "n0633",
    "n0634"
   ],
@@ -51881,12 +51862,14 @@
    "n0021",
    "n0022",
    "n0023",
+   "n0126",
    "n0135",
    "n0138",
    "n0139",
    "n0142",
    "n0146",
    "n0178",
+   "n0179",
    "n0180",
    "n0189",
    "n0206",
@@ -51910,6 +51893,7 @@
    "n0467",
    "n0468",
    "n0470",
+   "n0471",
    "n0477",
    "n0543",
    "n0549",
@@ -51927,9 +51911,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0667",
    "n0668",
    "n0678",
@@ -51961,7 +51942,6 @@
    "n0241",
    "n0249",
    "n0250",
-   "n0256",
    "n0282",
    "n0283",
    "n0284",
@@ -51972,6 +51952,7 @@
    "n0295",
    "n0297",
    "n0298",
+   "n0320",
    "n0404",
    "n0405",
    "n0406",
@@ -52037,6 +52018,7 @@
   ],
   "s055": [
    "n0121",
+   "n0122",
    "n0123"
   ],
   "s059": [
@@ -52072,9 +52054,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0682",
    "n0683",
    "n0688",
@@ -52113,9 +52092,6 @@
    "n0646",
    "n0647",
    "n0648",
-   "n0652",
-   "n0653",
-   "n0654",
    "n0682",
    "n0683",
    "n0688",

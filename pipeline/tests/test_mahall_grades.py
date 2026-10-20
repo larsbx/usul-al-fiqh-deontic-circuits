@@ -38,3 +38,11 @@ def test_grading_replays():
 def test_hujja_follows_the_grade():
     assert all(grading.hujja(n) == (n.get("albani", {}).get("verdict") in grading.HUJJA or bool(n.get("sahihayn")))
                for n in HADITH)
+
+
+def test_the_sahihayn_standing_is_their_hadiths_short_or_not_and_never_an_athar():
+    cache = Path("/nonexistent")       # neither case reaches al-Albānī's works
+    short = {"kind": "sunnah", "ref": "src:openiti-bukhari-shamela1681", "excerpt_ar": "وفي الركاز الخمس"}
+    assert grading.grade(short, cache) == {"sahihayn": True}
+    assert "sahihayn" not in grading.grade({**short, "kind": "athar"}, cache)
+    assert not any(n.get("sahihayn") for n in HADITH if n["kind"] == "athar")

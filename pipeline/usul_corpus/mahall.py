@@ -174,6 +174,8 @@ def check(corpus: Path) -> list[str]:
             if n.get("kind") == "ijma" and not IJMA_MARK.search(n.get("excerpt_ar", "")):
                 errs.append(f"{l['id']}: an ijmāʿ excerpt must state the agreement")
             graded = [k for k in ("albani", "sahihayn", "ungraded") if k in n]
+            if n.get("sahihayn") and n["kind"] != "sunnah":
+                errs.append(f"{l['id']}: only a ḥadīth (sunnah) has the Ṣaḥīḥayn's standing")
             if graded and n["kind"] not in ("sunnah", "athar") or len(graded) > 1:
                 errs.append(f"{l['id']}: a ḥadīth or athar carries at most one of albani, sahihayn, ungraded")
             if "albani" in n and (set(n["albani"]) != {"work", "witness", "number", "verdict"}

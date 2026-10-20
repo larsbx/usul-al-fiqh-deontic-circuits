@@ -685,7 +685,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "نهى عن ثمن الكلب",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -1084,7 +1084,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "من غشنا فليس منا",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "sunnah",
@@ -1480,7 +1480,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "أمر بوضع الجوائح",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "sunnah",
@@ -1844,7 +1844,7 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فيقولان له أشركنا فإن النبي صلى الله عليه وسلم قد دعا لك بالبركة فيشركهم",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     }
    ],
    "shards": [
@@ -2084,7 +2084,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "شاهداك أو يمينه",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "sunnah",
@@ -2166,7 +2166,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "قضى بيمين وشاهد",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -2614,7 +2614,7 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فإذا انقطع خبره فسنته سنة المفقود",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     },
     {
      "kind": "ijma",
@@ -3114,7 +3114,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "أيؤذيك هوام رأسك",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -3199,7 +3199,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "أفأحج عنه",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -3347,7 +3347,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "لا يعضد شوكه",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -3367,7 +3367,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "أفأحج عنه قال نعم",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -3469,13 +3469,13 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "ولا ينفر صيدها",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "ولا ينفر صيده",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -3534,7 +3534,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "لا يعضد شوكه",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -3707,7 +3707,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "مطل الغني ظلم",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -3783,7 +3783,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "مطل الغني ظلم",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -4689,7 +4689,7 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "إذا فقد في الصف عند القتال تربص امرأته سنة",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     }
    ],
    "shards": [
@@ -5899,7 +5899,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "صلوا على صاحبكم",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -6083,7 +6083,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فكوا العاني",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -6119,7 +6119,7 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "ذهب فرس له فأخذه العدو",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     }
    ],
    "shards": [
@@ -6170,7 +6170,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "ففيهما فجاهد",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -6368,7 +6368,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "يحذين من الغنيمة",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -6578,7 +6578,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "والبئر جبار",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -6832,7 +6832,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فهو بخير النظرين",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -7078,7 +7078,7 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "وجدت منبوذا فلما رآني عمر",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     },
     {
      "kind": "sunnah",
@@ -7236,7 +7236,7 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     }
    ],
    "shards": [
@@ -7333,7 +7333,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "عذبت امرأة في هرة",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -8747,7 +8747,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "كيف وقد قيل",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -8901,7 +8901,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "لا تباع حتى تفصل",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -9538,13 +9538,13 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "لا تلبسوا الحرير",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "نهى عن خاتم الذهب",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -10127,7 +10127,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "ثم يكبر حين يركع",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -10311,13 +10311,13 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "لو علمت أنكما تعمدتما لقطعتكما",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     },
     {
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فأبطل شهادتهما وأخذا بدية الأول",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     },
     {
      "kind": "quran",
@@ -10688,7 +10688,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "ثم قال أطعمه أهلك",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -10853,7 +10853,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "فإني إذن صائم",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -11585,7 +11585,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "يغسل ذكره ويتوضأ",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -11605,7 +11605,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "نعم إذا رأت الماء",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "sunnah",
@@ -11723,7 +11723,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "ارجع فأحسن وضوءك",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -12082,7 +12082,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "الحقي بأهلك",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [
@@ -12221,7 +12221,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "مره فليراجعها",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "quran",
@@ -12283,19 +12283,19 @@
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     },
     {
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "طلق رجل امرأته البتة إن خرجت فقال ابن عمر إن خرجت فقد بتت منه",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     },
     {
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "إن خرجت فقد بتت منه",
-     "sahihayn": true
+     "ungraded": "no entry of al-Albānī's pinned works contains the excerpt"
     }
    ],
    "shards": [
@@ -12663,7 +12663,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-muslim-shamela1727",
      "excerpt_ar": "كتب إلى كسرى",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     },
     {
      "kind": "quran",
@@ -13448,7 +13448,7 @@
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "وفي الركاز الخمس",
-     "ungraded": "excerpt under 15 letters: too short to identify an entry"
+     "sahihayn": true
     }
    ],
    "shards": [

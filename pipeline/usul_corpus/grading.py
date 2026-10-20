@@ -15,7 +15,8 @@ apart, and in al-Irwāʾ the ḥadīth with all its routes: a ḥadīth establis
 ṣaḥīḥ or ḥasan is established. The verdict is therefore the strongest he gives any entry that holds
 the wording; the anchor's own collection's work is preferred among equals, then al-Irwāʾ. His weaker
 verdicts on other routes are kept beside it (``weaker_routes``). An anchor of the Ṣaḥīḥayn that no
-work grades keeps the Ṣaḥīḥayn's own standing (``sahihayn``), which is not a verdict of his.
+work grades keeps the Ṣaḥīḥayn's own standing (``sahihayn``), which is not a verdict of his; so does
+one whose excerpt is too short to find in his works. An athar the Ṣaḥīḥayn quote does not.
 
 Each graded anchor carries ``albani: {work, witness, number, verdict}`` in
 ``corpus/mahall/labels/all.json``. ``test_mahall_grades.py`` re-reads every entry: the verdict is
@@ -99,8 +100,11 @@ RANK = {"mawdu": 0, "daifJiddan": 1, "daif": 2, "hasan": 3, "sahih": 4}   # Hadi
 def grade(nass: dict, cache_dir: Path) -> dict:
     """``{"albani": {...}, "weaker_routes"?: [...]}``, ``{"sahihayn": True}`` or ``{"ungraded": reason}``."""
     witness = mahall.REF.fullmatch(nass["ref"])[1]
+    # The Ṣaḥīḥayn's standing is that of their Prophetic ḥadīth, not of the athar they quote.
+    sahihayn = witness in SAHIHAYN and nass["kind"] == "sunnah"
     if len(nusus.key(nass["excerpt_ar"])) < MIN:
-        return {"ungraded": f"excerpt under {MIN} letters: too short to identify an entry"}
+        return {"sahihayn": True} if sahihayn else \
+            {"ungraded": f"excerpt under {MIN} letters: too short to identify an entry"}
     order = OWN.get(witness, ()) + tuple(w for w in WORKS if w not in OWN.get(witness, ()))
     found = [(w, n, v) for w in order for n, v in entries(w, text(cache_dir, WORKS[w]), nass["excerpt_ar"]) if v]
     if found:
@@ -108,7 +112,7 @@ def grade(nass: dict, cache_dir: Path) -> dict:
         weaker = [{"work": x, "number": m, "verdict": u} for x, m, u in found if RANK[u] < RANK[v]]
         return {"albani": {"work": w, "witness": WORKS[w], "number": n, "verdict": v},
                 **({"weaker_routes": weaker} if weaker else {})}
-    if witness in SAHIHAYN:
+    if sahihayn:
         return {"sahihayn": True}
     return {"ungraded": "no entry of al-Albānī's pinned works contains the excerpt"}
 

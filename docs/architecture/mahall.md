@@ -174,8 +174,8 @@ The verbatim gate checks a ḥadīth's wording, not its standing. Every ḥadīt
 |---|---|
 | Graded by al-Albānī | **240**: ṣaḥīḥ 198, ḥasan 24, weak 18 (ḍaʿīf; none mawḍūʿ) |
 | By work | Tirmidhī 127, Abū Dāwūd 57, al-Irwāʾ 56 |
-| Of the Ṣaḥīḥayn, not graded by these works | 146: the Ṣaḥīḥayn's own standing, not a verdict of his |
-| Ungraded | 111. The excerpt is too short to identify an entry (59), or no entry of these works holds it (52) |
+| Ḥadīth of the Ṣaḥīḥayn not graded by these works | 170: the Ṣaḥīḥayn's own standing, not a verdict of his. This includes excerpts too short to find in his works. An athar the Ṣaḥīḥayn quote does not have it. |
+| Ungraded | 87. No entry of these works holds the excerpt (63), or it is too short to identify one (24) |
 
 **The ḥujja gate.**
 
@@ -184,10 +184,10 @@ The verbatim gate checks a ḥadīth's wording, not its standing. Every ḥadīt
 
 | | |
 |---|---|
-| Texts that are ḥujja | 607 of 725 |
-| Labels with a ḥujja text | 458 of 525 anchored |
-| Cases whose own maḥall has a ḥujja text | 1,087 of 1,216 |
-| ḥujja grounds per qāʿida | 22.8 on average (of 25.8). No qāʿida is left without one |
+| Texts that are ḥujja | 629 of 725 |
+| Labels with a ḥujja text | 476 of 525 anchored |
+| Cases whose own maḥall has a ḥujja text | 1,088 of 1,216 |
+| ḥujja grounds per qāʿida | 22.7 on average (of 25.8). No qāʿida is left without one |
 
 **Labels whose only texts he grades weak (10).** These are maḥalls the bank anchors on ḥadīth al-Albānī does not accept, with no other ḥujja text. Each needs a sound text or an ijmāʿ, or stands as a finding:
 
@@ -202,7 +202,7 @@ The verbatim gate checks a ḥadīth's wording, not its standing. Every ḥadīt
 - trade goods;
 - the estimation of fruits.
 
-57 more labels have only ungraded ḥadīth.
+39 more labels have only ungraded ḥadīth or athar.
 
 ## For review
 
