@@ -34,13 +34,27 @@ def test_the_gate_rejects_a_misplaced_aya_and_an_unstated_ijma(tmp_path):
     assert not mahall.IJMA_MARK.search("قال أبو حنيفة يجوز")
 
 
-def test_the_footprint_is_the_up_closure_of_the_qaidas_furu_mahalls():
+def test_the_footprint_is_the_up_closure_of_the_maḥalls_of_the_furu_tied_to_it():
     up = mahall.parents(ABWAB, LABELS)
     for q, fp in GRAPH["footprint"].items():
-        own = {l for f in GRAPH["furu"] if f["qaida"] == q for l in f["labels"]}
+        own = {l for f in GRAPH["furu"] if q in f["qawaid"] for l in f["labels"]}
         assert own <= set(fp)
-        assert all(up[l] is None or up[l] in fp for l in fp)        # up-closed
-        assert all(any(mahall.root(up, m) == mahall.root(up, l) for m in own) for l in fp)
+        assert all(set(up[l]) <= set(fp) for l in fp)                          # up-closed
+        assert set(fp) == set().union(*(mahall.ancestors(up, m) for m in own))  # and least
+
+
+def test_relations_are_many_to_many_as_in_the_bank():
+    """A farʿ may be tied to several qawāʿid, a label may sit under several labels and be defined
+    by several nuṣūṣ, and a naṣṣ may define several labels: none is forced to be single."""
+    furu = GRAPH["furu"]
+    assert all(f["links"]["placed"][0] in f["qawaid"] for f in furu)
+    assert sum(len(f["qawaid"]) > 1 for f in furu) >= 280
+    assert sum(len(l["broader"]) > 1 for l in LABELS) >= 40
+    per_nass = {}
+    for n, l in GRAPH["defines"]:
+        per_nass.setdefault(n, set()).add(l)
+    assert any(len(v) > 1 for v in per_nass.values())
+    assert any(len(l.get("nass", [])) > 1 for l in LABELS)
 
 
 def test_the_generated_graph_and_lean_guards_are_up_to_date():

@@ -78,24 +78,73 @@ def cases(corpus: Path) -> set[str]:
     return {c["far"] for c in takhrij.load(corpus) if c["far"].startswith(SOURCES)}
 
 
-def parents(abwab: list[dict], labels: list[dict]) -> dict[str, str | None]:
-    return {b["id"]: None for b in abwab} | {l["id"]: l["broader"] for l in labels}
+def parents(abwab: list[dict], labels: list[dict]) -> dict[str, list[str]]:
+    """label → its broader labels. A maḥall may sit under several (debt under sale and loan); a bāb
+    under none."""
+    return {b["id"]: [] for b in abwab} | {l["id"]: list(l["broader"]) for l in labels}
 
 
-def root(up: dict[str, str | None], l: str, fuel: int = 64) -> str | None:
-    """The bāb a label descends from; None on a cycle or a dangling parent."""
-    for _ in range(fuel):
-        if l not in up:
-            return None
-        if up[l] is None:
-            return l
-        l = up[l]
-    return None
+def ancestors(up: dict[str, list[str]], l: str) -> set[str] | None:
+    """``l`` and every label above it; None on a cycle or a dangling parent."""
+    out: set[str] = set()
+
+    def climb(x: str, path: frozenset[str]) -> bool:
+        if x not in up or x in path:
+            return False
+        out.add(x)
+        return all(climb(y, path | {x}) for y in up[x])
+    return out if climb(l, frozenset()) else None
+
+
+def roots(up: dict[str, list[str]], l: str) -> set[str]:
+    """The bābs a label descends from."""
+    return {a for a in ancestors(up, l) or () if not up[a]}
+
+
+def qid(author: str, n: int) -> str:
+    """A qāʿida's short id: ``r013`` (Ibn Rajab), ``l043`` (Ibn al-Laḥḥām), ``s028`` (al-Saʿdī)."""
+    return {"Ibn Rajab": "r", "Ibn al-Laḥḥām": "l", "al-Saʿdī": "s"}[author] + f"{n:03d}"
+
+
+def links(corpus: Path) -> dict[str, dict[str, list[str]]]:
+    """farʿ → the qawāʿid the bank ties it to, by provenance:
+
+    - ``placed``: the qāʿida its author files it under;
+    - ``read``: its encoder's qawāʿid, al-Saʿdī's included;
+    - ``typed``: the qawāʿid cited by the types whose facts that encoder reads;
+    - ``co``: those of its co-annotations.
+
+    A farʿ may turn on several qawāʿid, a type may cite several, and several types may cite one."""
+    from . import deduction, scope, takhrij
+    export = (corpus.parent / "examples/v41_types.pl").read_text(encoding="utf-8")
+    statement = dict(re.findall(r"^qaida_type\((\w+), '((?:[^']|'')*)'\)\.", export, re.M))
+    owner: dict[str, set[str]] = {}
+    for t, f in re.findall(r"^type_field\((\w+), (\w+), ", export, re.M):
+        owner.setdefault(f, set()).add(t)
+    reads = deduction.reads(export)
+    of_encoder = lambda e: sorted({short(q) for q in takhrij.ENCODERS[e]["qawaid"]}
+                                  | {qid("al-Saʿdī", n) for n in takhrij.ENCODERS[e].get("sadi", [])})
+    of_types = lambda e: sorted({qid(a, n) for f in reads.get(e, []) for t in owner.get(f, ())
+                                 for a, n in scope.cited(t, statement.get(t, ""))})
+    co: dict[str, set[str]] = {}
+    for p in sorted((corpus / "takhrij/co").glob("*.json")):
+        for c in json.loads(p.read_text(encoding="utf-8"))["cases"]:
+            co.setdefault(c["far"], set()).update(of_encoder(c["encoder"]))
+    recs = records(corpus)
+    return {c["far"]: {"placed": [short(recs[c["far"]]["qaida"])], "read": of_encoder(c["encoder"]),
+                       "typed": of_types(c["encoder"]), "co": sorted(co.get(c["far"], ()))}
+            for c in takhrij.load(corpus) if c["far"].startswith(SOURCES)}
+
+
+def under(link: dict[str, list[str]]) -> list[str]:
+    """Every qāʿida a farʿ is tied to, whatever the provenance."""
+    return sorted({q for qs in link.values() for q in qs})
 
 
 def check(corpus: Path) -> list[str]:
-    """Structure: well-formed labels in one tree, each defined or unanchored with a reason; every
-    case given exactly one maḥall, named in its own words."""
+    """Structure: well-formed labels, each under one or more broader labels without a cycle and
+    under its own bāb among others, each defined or unanchored with a reason; every case given
+    exactly one primary maḥall (and up to two more), named in its own words."""
     abwab, labels, entries = load(corpus)
     errs, seen = [], {}
     for l in labels:
@@ -119,7 +168,14 @@ def check(corpus: Path) -> list[str]:
             if n.get("kind") == "ijma" and not IJMA_MARK.search(n.get("excerpt_ar", "")):
                 errs.append(f"{l['id']}: an ijmāʿ excerpt must state the agreement")
     up = parents(abwab, labels)
-    errs += [f"{l}: not rooted in its bāb {l.split('.')[0]}" for l in up if root(up, l) != l.split(".")[0]]
+    for l in labels:
+        if not isinstance(l.get("broader"), list) or not l["broader"]:
+            errs.append(f"{l['id']}: broader is a non-empty list")
+    for l in up:
+        if ancestors(up, l) is None:
+            errs.append(f"{l}: on a cycle or under an unknown label")
+        elif l.split(".")[0] not in roots(up, l):
+            errs.append(f"{l}: not under its own bāb {l.split('.')[0]}")
     recs, need, done = records(corpus), cases(corpus), set()
     for e in entries:
         f = e["far"]
@@ -156,27 +212,14 @@ def verify(nass: dict, cache_dir: Path) -> str | None:
     return None if nusus.find(text, nass["excerpt_ar"]) is not None else f"not in {m[1]}"
 
 
-def graph(corpus: Path) -> dict:
-    """The label graph: nodes and typed edges, ids only."""
-    abwab, labels, entries = load(corpus)
-    recs = records(corpus)
-    edges = ([("under", e["far"], recs[e["far"]]["qaida"]) for e in entries]
-             + [("mahall", e["far"], x["label"]) for e in entries for x in [e] + e.get("also", [])]
-             + [("broader", l["id"], l["broader"]) for l in labels]
-             + [("defines", n["ref"] + "|" + n["excerpt_ar"], l["id"]) for l in labels for n in l.get("nass", [])])
-    return {"abwab": [b["id"] for b in abwab], "labels": sorted(l["id"] for l in labels), "edges": edges}
-
-
 def footprint(corpus: Path) -> dict[str, list[str]]:
-    """qāʿida → the up-closure of its furūʿ's maḥalls (``Usul.Mahall.footprint``)."""
+    """qāʿida → the up-closure of the maḥalls of every farʿ tied to it (``Usul.Mahall.footprint``)."""
     abwab, labels, entries = load(corpus)
-    up, recs, out = parents(abwab, labels), records(corpus), {}
+    up, tied, out = parents(abwab, labels), links(corpus), {}
     for e in entries:
-        for x in [e] + e.get("also", []):
-            l = x["label"]
-            while l is not None:
-                out.setdefault(recs[e["far"]]["qaida"], set()).add(l)
-                l = up[l]
+        for q in under(tied[e["far"]]):
+            for x in [e] + e.get("also", []):
+                out.setdefault(q, set()).update(ancestors(up, x["label"]))
     return {q: sorted(v) for q, v in sorted(out.items())}
 
 
@@ -194,19 +237,19 @@ def export(corpus: Path) -> dict:
     """The graph in the form ``Usul.Mahall.Data`` takes: short ids, nuṣūṣ numbered by first use,
     and per qāʿida its footprint and grounds."""
     abwab, labels, entries = load(corpus)
-    recs, nass = records(corpus), {}
+    nass: dict[tuple[str, str], str] = {}
     for l in sorted(labels, key=lambda l: l["id"]):
         for n in l.get("nass", []):
             nass.setdefault((n["ref"], n["excerpt_ar"]), f"n{len(nass) + 1:04d}")
     defines = sorted({(nass[n["ref"], n["excerpt_ar"]], l["id"]) for l in labels for n in l.get("nass", [])})
-    fp = {short(q): v for q, v in footprint(corpus).items()}
+    fp, tied = footprint(corpus), links(corpus)
     grounds = {q: sorted({n for n, l in defines if l in set(v)}) for q, v in fp.items()}
     return {"schema_version": 1, "status": "candidate", "generated_by": "python -m usul_corpus mahall",
             "fuel": FUEL,
             "labels": sorted([b["id"] for b in abwab] + [l["id"] for l in labels]),
-            "furu": [{"id": short(e["far"]), "qaida": short(recs[e["far"]]["qaida"]),
+            "furu": [{"id": short(e["far"]), "qawaid": under(tied[e["far"]]), "links": tied[e["far"]],
                       "labels": [x["label"] for x in [e] + e.get("also", [])]} for e in sorted(entries, key=lambda e: short(e["far"]))],
-            "up": sorted([l["id"], l["broader"]] for l in labels),
+            "up": sorted([l["id"], b] for l in labels for b in l["broader"]),
             "nass": {v: {"ref": r, "excerpt_ar": x} for (r, x), v in nass.items()},
             "defines": [list(p) for p in defines], "footprint": fp, "grounds": grounds}
 
@@ -230,7 +273,7 @@ def _chunks(name: str, ty: str, items: list[str], n: int = 100) -> tuple[list[st
 def lean_file(g: dict) -> str:
     """``UsulTest/MahallGraph.lean``: the graph as ``Usul.Mahall.Data``; guards that every label is
     rooted and that each qāʿida's footprint and grounds are exactly the pipeline's."""
-    fd, furu = _chunks("furu", "Far", [f"⟨{_s(f['id'])}, {_s(f['qaida'])}, {_list(f['labels'])}⟩" for f in g["furu"]])
+    fd, furu = _chunks("furu", "Far", [f"⟨{_s(f['id'])}, {_list(f['qawaid'])}, {_list(f['labels'])}⟩" for f in g["furu"]])
     ud, up = _chunks("up", "(String × String)", [f"({_s(a)}, {_s(b)})" for a, b in g["up"]])
     dd, df = _chunks("defines", "(String × String)", [f"({_s(a)}, {_s(b)})" for a, b in g["defines"]])
     lines = [f"-- GENERATED by `python -m usul_corpus mahall` from corpus/mahall. Do not edit.",
@@ -239,7 +282,8 @@ def lean_file(g: dict) -> str:
              "/-- The label graph: each case's maḥall, the label tree, and the nuṣūṣ defining labels",
              f"(`corpus/{GRAPH}` holds each naṣṣ's reference and excerpt). -/",
              f"def data : Data where\n  furu := {furu}\n  up := {up}\n  defines := {df}", "",
-             "/- Every label reaches a bāb within the fuel, so `belowB` at that fuel decides `Below`. -/",
+             "/- Every upward path ends at a bāb within the fuel: the label graph has no cycle, and",
+             "`belowB` at that fuel decides `Below`. -/",
              f"#guard data.rootedB {g['fuel']}", "",
              "/- Each qāʿida's footprint and grounds are exactly the pipeline's lists (`exactB_sound`). -/"]
     for q, v in g["footprint"].items():

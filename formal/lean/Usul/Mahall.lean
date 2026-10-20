@@ -2,32 +2,35 @@
 # Maḥall: the label graph from canonical texts to furūʿ and qawāʿid (PR-51)
 
 A farʿ rules on a **maḥall**: an item (ʿayn), an act (fiʿl) or an issue (ḥāl). Maḥalls are
-labels in a tree whose roots are the bābs. Each label is defined by the canonical text that names
-it: an āya, a ḥadīth, or a reported ijmāʿ. A farʿ is also placed by its author under a qāʿida.
-The **label graph** has four kinds of edge:
+labels under broader labels, up to the bābs. Each label is defined by the canonical texts that
+name it: āyāt, aḥādīth, or a reported ijmāʿ.
 
-* `under f`: the qāʿida the text places the farʿ `f` under;
-* `mahall f m`: `m` is a maḥall of `f`;
-* `up l = some m`: `m` is the broader label of `l`;
-* `defines n l`: the naṣṣ `n` defines the label `l`.
+None of these links is one-to-one in the bank, so each edge is a relation:
+
+* `under f q`: the farʿ `f` is tied to the qāʿida `q`. The tie may come from the author's placement, from the qawāʿid its encoder reads, from the qawāʿid cited by the types that encoder reads, or from a co-annotation. A farʿ may turn on several qawāʿid, a type may cite several, and several types may cite one qāʿida.
+* `mahall f m`: `m` is a maḥall of `f`. A farʿ may rule on more than one.
+* `up l m`: `m` is a broader label of `l`. A label may sit under several labels; debt, for instance, sits under both sale and loan.
+* `defines n l`: the naṣṣ `n` defines the label `l`. A label may be defined by several nuṣūṣ, and one naṣṣ may define several labels.
 
 `Below l m` is the reflexive–transitive closure of `up`. A qāʿida's **footprint** is the set of
-labels its furūʿ fall under, closed upwards. Its **grounds** are the nuṣūṣ that define some label
-in the footprint. This module proves:
+labels that the furūʿ tied to it fall under, closed upwards. Its **grounds** are the nuṣūṣ that
+define some label in the footprint. This module proves:
 
 * **Characterisation** (`footprint_iff`): the footprint is the least up-closed set of labels
-  containing the maḥall of every farʿ the qāʿida holds. The qāʿida is related to the labels
-  exactly through its furūʿ.
-* **Grounding** (`grounded`): a naṣṣ that defines any ancestor of a farʿ's maḥall grounds that
-  farʿ's qāʿida. Every naṣṣ on the path from a farʿ up to its bāb leads back to its qāʿida.
-* **Bāb** (`bab_in_footprint`): each qāʿida's footprint contains the bāb of each of its furūʿ.
-* **Bridge** (`bridge`): two furūʿ with a common maḥall put a common label into the footprints of
-  their two qawāʿid. A maḥall shared across qawāʿid connects them in the graph.
+  containing the maḥall of every farʿ tied to the qāʿida. The qāʿida reaches the labels and
+  the texts only through its furūʿ.
+* **Grounding** (`grounded`): a naṣṣ that defines any ancestor of a farʿ's maḥall grounds
+  every qāʿida the farʿ is tied to.
+* **Shared farʿ** (`shared_far`): a farʿ tied to two qawāʿid puts each maḥall and everything
+  above it into both footprints.
+* **Bridge** (`bridge`): two furūʿ with a common maḥall put that label into the footprints of
+  all their qawāʿid.
 
 `Data` is the finite form the pipeline exports. `belowB`, `footprintB` and `groundsB` decide the
-relations with fuel, and are proved sound (`belowB_sound`, `footprintB_sound`, `groundsB_sound`)
-and complete (`belowB_complete`) for that graph. Each `#guard` in `UsulTest.MahallGraph`
-evaluates one of them, so the soundness theorems carry the guards over to the relations above.
+relations with fuel. They are proved sound (`belowB_sound`, `footprintB_sound`, `groundsB_sound`),
+and `belowB` is also proved complete (`belowB_complete`). `exactB_sound` shows a list to be
+exactly a footprint. The `#guard`s in `UsulTest.MahallGraph` evaluate these procedures, and the
+soundness theorems carry each guard over to the relations above.
 -/
 
 namespace Usul.Mahall
@@ -35,21 +38,21 @@ namespace Usul.Mahall
 /-- A label graph over furūʿ `F`, qawāʿid `Q`, labels `L` and nuṣūṣ `N`. -/
 structure Graph (F Q L N : Type) where
   isFar : F → Prop
-  under : F → Q
+  under : F → Q → Prop
   mahall : F → L → Prop
-  up : L → Option L
+  up : L → L → Prop
   defines : N → L → Prop
 
 variable {F Q L N : Type}
 
-/-- `Below g l m`: `m` is `l` or a broader label of it. -/
+/-- `Below g l m`: `m` is `l` or a label above it. -/
 inductive Below (g : Graph F Q L N) : L → L → Prop
   | refl (l : L) : Below g l l
-  | step {l m n : L} : g.up l = some m → Below g m n → Below g l n
+  | step {l m n : L} : g.up l m → Below g m n → Below g l n
 
-/-- The labels a qāʿida's furūʿ fall under, closed upwards. -/
+/-- The labels the furūʿ tied to a qāʿida fall under, closed upwards. -/
 def footprint (g : Graph F Q L N) (q : Q) (l : L) : Prop :=
-  ∃ f m, g.isFar f ∧ g.under f = q ∧ g.mahall f m ∧ Below g m l
+  ∃ f m, g.isFar f ∧ g.under f q ∧ g.mahall f m ∧ Below g m l
 
 /-- The nuṣūṣ that define some label of a qāʿida's footprint. -/
 def grounds (g : Graph F Q L N) (q : Q) (n : N) : Prop :=
@@ -57,7 +60,7 @@ def grounds (g : Graph F Q L N) (q : Q) (n : N) : Prop :=
 
 /-- A set of labels closed under `up`. -/
 def UpClosed (g : Graph F Q L N) (S : L → Prop) : Prop :=
-  ∀ l m, S l → g.up l = some m → S m
+  ∀ l m, S l → g.up l m → S m
 
 variable (g : Graph F Q L N)
 
@@ -66,7 +69,7 @@ theorem Below.trans {a b c : L} (h₁ : Below g a b) (h₂ : Below g b c) : Belo
   | refl => exact h₂
   | step h _ ih => exact .step h (ih h₂)
 
-theorem Below.snoc {a l m : L} (h : Below g a l) (hu : g.up l = some m) : Below g a m :=
+theorem Below.snoc {a l m : L} (h : Below g a l) (hu : g.up l m) : Below g a m :=
   h.trans g (.step hu (.refl m))
 
 /-- An up-closed set holding `a` holds everything above `a`. -/
@@ -79,62 +82,48 @@ theorem footprint_upClosed (q : Q) : UpClosed g (footprint g q) := by
   intro l m ⟨f, a, hf, hq, hm, hb⟩ hu
   exact ⟨f, a, hf, hq, hm, hb.snoc g hu⟩
 
-theorem mahall_in_footprint {f : F} {m : L} (hf : g.isFar f) (hm : g.mahall f m) :
-    footprint g (g.under f) m :=
-  ⟨f, m, hf, rfl, hm, .refl m⟩
+theorem mahall_in_footprint {f : F} {q : Q} {m : L} (hf : g.isFar f) (hq : g.under f q) (hm : g.mahall f m) :
+    footprint g q m :=
+  ⟨f, m, hf, hq, hm, .refl m⟩
 
 theorem footprint_least {q : Q} {S : L → Prop} (hS : UpClosed g S)
-    (h : ∀ f m, g.isFar f → g.under f = q → g.mahall f m → S m) {l : L} (hl : footprint g q l) : S l := by
+    (h : ∀ f m, g.isFar f → g.under f q → g.mahall f m → S m) {l : L} (hl : footprint g q l) : S l := by
   obtain ⟨f, m, hf, hq, hm, hb⟩ := hl
   exact hS.below g hb (h f m hf hq hm)
 
 /-- **Characterisation.** A label is in a qāʿida's footprint iff every up-closed set containing
-the maḥalls of the qāʿida's furūʿ contains it. -/
+the maḥalls of the furūʿ tied to the qāʿida contains it. -/
 theorem footprint_iff (q : Q) (l : L) :
     footprint g q l ↔ ∀ S : L → Prop, UpClosed g S →
-      (∀ f m, g.isFar f → g.under f = q → g.mahall f m → S m) → S l := by
+      (∀ f m, g.isFar f → g.under f q → g.mahall f m → S m) → S l := by
   constructor
   · intro hl S hS h
     exact footprint_least g hS h hl
   · intro h
-    exact h (footprint g q) (footprint_upClosed g q) fun f m hf hq hm => hq ▸ mahall_in_footprint g hf hm
+    exact h (footprint g q) (footprint_upClosed g q) fun f m hf hq hm => mahall_in_footprint g hf hq hm
 
-/-- **Grounding.** A naṣṣ that defines an ancestor of a farʿ's maḥall grounds the farʿ's qāʿida. -/
-theorem grounded {f : F} {m l : L} {n : N} (hf : g.isFar f) (hm : g.mahall f m) (hb : Below g m l)
-    (hn : g.defines n l) : grounds g (g.under f) n :=
-  ⟨l, ⟨f, m, hf, rfl, hm, hb⟩, hn⟩
+/-- **Grounding.** A naṣṣ that defines an ancestor of a farʿ's maḥall grounds each qāʿida the
+farʿ is tied to. -/
+theorem grounded {f : F} {q : Q} {m l : L} {n : N} (hf : g.isFar f) (hq : g.under f q) (hm : g.mahall f m)
+    (hb : Below g m l) (hn : g.defines n l) : grounds g q n :=
+  ⟨l, ⟨f, m, hf, hq, hm, hb⟩, hn⟩
+
+/-- **Shared farʿ.** A farʿ tied to two qawāʿid puts its maḥall, and all above it, into both. -/
+theorem shared_far {f : F} {q q' : Q} {m l : L} (hf : g.isFar f) (hq : g.under f q) (hq' : g.under f q')
+    (hm : g.mahall f m) (hb : Below g m l) : footprint g q l ∧ footprint g q' l :=
+  ⟨⟨f, m, hf, hq, hm, hb⟩, ⟨f, m, hf, hq', hm, hb⟩⟩
 
 /-- **Bridge.** A maḥall shared by two furūʿ is common to the footprints of their qawāʿid. -/
-theorem bridge {f f' : F} {m : L} (hf : g.isFar f) (hf' : g.isFar f') (hm : g.mahall f m)
-    (hm' : g.mahall f' m) : ∃ l, footprint g (g.under f) l ∧ footprint g (g.under f') l :=
-  ⟨m, mahall_in_footprint g hf hm, mahall_in_footprint g hf' hm'⟩
-
-/-- The label reached by climbing `up` at most `n` times: the bāb, once `n` exceeds the depth. -/
-def rootN : Nat → L → L
-  | 0, l => l
-  | n + 1, l => match g.up l with
-    | none => l
-    | some m => rootN n m
-
-theorem below_rootN : ∀ (n : Nat) (l : L), Below g l (rootN g n l)
-  | 0, l => .refl l
-  | n + 1, l => by
-    unfold rootN
-    split
-    · exact .refl l
-    · next m h => exact .step h (below_rootN n m)
-
-/-- **Bāb.** Each qāʿida's footprint holds the bāb of each of its furūʿ. -/
-theorem bab_in_footprint {f : F} {m : L} (n : Nat) (hf : g.isFar f) (hm : g.mahall f m) :
-    footprint g (g.under f) (rootN g n m) :=
-  ⟨f, m, hf, rfl, hm, below_rootN g n m⟩
+theorem bridge {f f' : F} {q q' : Q} {m : L} (hf : g.isFar f) (hf' : g.isFar f') (hq : g.under f q)
+    (hq' : g.under f' q') (hm : g.mahall f m) (hm' : g.mahall f' m) : footprint g q m ∧ footprint g q' m :=
+  ⟨mahall_in_footprint g hf hq hm, mahall_in_footprint g hf' hq' hm'⟩
 
 /-! ## The finite graph the pipeline exports -/
 
-/-- A farʿ: its id, its qāʿida and its maḥall labels. -/
+/-- A farʿ: its id, the qawāʿid it is tied to, and its maḥall labels. -/
 structure Far where
   id : String
-  qaida : String
+  qawaid : List String
   labels : List String
 deriving Repr
 
@@ -144,71 +133,71 @@ structure Data where
   up : List (String × String)
   defines : List (String × String)
 
+/-- The broader labels of `l` in a list of `(label, broader)` pairs. -/
+def ups (up : List (String × String)) (l : String) : List String :=
+  up.filterMap fun p => if p.1 == l then some p.2 else none
+
+theorem mem_ups {up : List (String × String)} {l m : String} : m ∈ ups up l ↔ (l, m) ∈ up := by
+  simp only [ups, List.mem_filterMap]
+  constructor
+  · rintro ⟨⟨a, b⟩, h, he⟩
+    by_cases hal : a = l
+    · simp [hal] at he; exact he ▸ hal ▸ h
+    · simp [beq_iff_eq, hal] at he
+  · intro h
+    exact ⟨(l, m), h, by simp⟩
+
+/-- `belowL up n l t`: `t` is reached from `l` by at most `n` steps up. It reads only `up`. -/
+def belowL (up : List (String × String)) : Nat → String → String → Bool
+  | 0, l, t => l == t
+  | n + 1, l, t => l == t || (ups up l).any fun m => belowL up n m t
+
+/-- Every upward path from `l` ends within `n` steps. -/
+def heightL (up : List (String × String)) : Nat → String → Bool
+  | 0, l => (ups up l).isEmpty
+  | n + 1, l => (ups up l).all (heightL up n)
+
 namespace Data
 
 variable (d : Data)
 
-def upB (l : String) : Option String := (d.up.find? (·.1 == l)).map (·.2)
-
 def graph : Graph Far String String String where
   isFar f := f ∈ d.furu
-  under f := f.qaida
+  under f q := q ∈ f.qawaid
   mahall f m := m ∈ f.labels
-  up := d.upB
+  up l m := (l, m) ∈ d.up
   defines n l := (n, l) ∈ d.defines
 
-def belowB : Nat → String → String → Bool
-  | 0, l, t => l == t
-  | n + 1, l, t => l == t || match d.upB l with
-    | some m => belowB n m t
-    | none => false
+def belowB : Nat → String → String → Bool := belowL d.up
 
 def footprintB (n : Nat) (q l : String) : Bool :=
-  d.furu.any fun f => f.qaida == q && f.labels.any fun m => d.belowB n m l
+  d.furu.any fun f => f.qawaid.contains q && f.labels.any fun m => d.belowB n m l
 
 def groundsB (n : Nat) (q nass : String) : Bool :=
   d.defines.any fun p => p.1 == nass && d.footprintB n q p.2
 
 theorem belowB_sound : ∀ (n : Nat) (l t : String), d.belowB n l t = true → Below d.graph l t
   | 0, l, t, h => by
-    simp only [belowB, beq_iff_eq] at h
+    simp only [belowB, belowL, beq_iff_eq] at h
     exact h ▸ .refl l
   | n + 1, l, t, h => by
-    simp only [belowB, Bool.or_eq_true, beq_iff_eq] at h
-    rcases h with h | h
+    simp only [belowB, belowL, Bool.or_eq_true, beq_iff_eq, List.any_eq_true] at h
+    rcases h with h | ⟨m, hm, hb⟩
     · exact h ▸ .refl l
-    · revert h
-      cases hu : d.upB l with
-      | none => simp
-      | some m => exact fun h => .step hu (belowB_sound n m t h)
-
-theorem belowB_succ : ∀ (n : Nat) (l t : String), d.belowB n l t = true → d.belowB (n + 1) l t = true
-  | 0, l, t, h => by simp_all [belowB]
-  | n + 1, l, t, h => by
-    simp only [belowB, Bool.or_eq_true] at h ⊢
-    rcases h with h | h
-    · exact .inl h
-    · refine .inr ?_
-      revert h
-      cases d.upB l with
-      | none => simp
-      | some m => exact belowB_succ n m t
+    · exact .step (mem_ups.mp hm) (belowB_sound n m t hb)
 
 theorem belowB_complete {l t : String} (h : Below d.graph l t) : ∃ n, d.belowB n l t = true := by
   induction h with
-  | refl l => exact ⟨0, by simp [belowB]⟩
-  | step hu _ ih =>
+  | refl l => exact ⟨0, by simp [belowB, belowL]⟩
+  | @step l m _ hu _ ih =>
     obtain ⟨n, hn⟩ := ih
     refine ⟨n + 1, ?_⟩
-    simp only [belowB, Bool.or_eq_true]
-    refine .inr ?_
-    simp only [graph] at hu
-    rw [hu]
-    exact hn
+    simp only [belowB, belowL, Bool.or_eq_true, List.any_eq_true]
+    exact .inr ⟨m, mem_ups.mpr hu, hn⟩
 
 theorem footprintB_sound {n : Nat} {q l : String} (h : d.footprintB n q l = true) :
     footprint d.graph q l := by
-  simp only [footprintB, List.any_eq_true, Bool.and_eq_true, beq_iff_eq] at h
+  simp only [footprintB, List.any_eq_true, Bool.and_eq_true, List.contains_iff_mem] at h
   obtain ⟨f, hf, hq, m, hm, hb⟩ := h
   exact ⟨f, m, hf, hq, hm, d.belowB_sound n m l hb⟩
 
@@ -218,30 +207,14 @@ theorem groundsB_sound {n : Nat} {q nass : String} (h : d.groundsB n q nass = tr
   obtain ⟨⟨a, l⟩, hp, ha, hf⟩ := h
   exact ⟨l, d.footprintB_sound hf, by simp only at ha; exact ha ▸ hp⟩
 
-/-- The furūʿ of one qāʿida only: a cheaper graph to decide that qāʿida's footprint on. -/
-def restrict (q : String) : Data := { d with furu := d.furu.filter (·.qaida == q) }
-
-/-- `belowB` reads only `up`. -/
-theorem belowB_up {e : Data} (he : e.up = d.up) : ∀ (n : Nat) (l t : String), e.belowB n l t = d.belowB n l t
-  | 0, _, _ => rfl
-  | n + 1, l, t => by
-    have hu : e.upB l = d.upB l := by simp [upB, he]
-    simp only [belowB, hu]
-    cases d.upB l with
-    | none => rfl
-    | some m => simp only [belowB_up he n m t]
+/-- The furūʿ tied to one qāʿida only: a cheaper graph to decide that qāʿida's footprint on. -/
+def restrict (q : String) : Data := { d with furu := d.furu.filter (·.qawaid.contains q) }
 
 theorem footprintB_restrict (n : Nat) (q l : String) : (d.restrict q).footprintB n q l = d.footprintB n q l := by
-  have hb := d.belowB_up (e := d.restrict q) rfl n
-  simp only [footprintB, hb]
-  simp only [restrict]
+  simp only [footprintB, belowB, restrict]
   induction d.furu with
   | nil => rfl
-  | cons f fs ih =>
-    by_cases h : (f.qaida == q) = true
-    · simp [h, ih]
-    · simp only [Bool.not_eq_true] at h
-      simp [h, ih]
+  | cons f fs ih => by_cases h : f.qawaid.contains q = true <;> simp_all
 
 theorem groundsB_restrict (n : Nat) (q nass : String) :
     (d.restrict q).groundsB n q nass = d.groundsB n q nass := by
@@ -254,18 +227,16 @@ To show that a list `S` is exactly a qāʿida's footprint, it is enough to show 
 
 * every label in `S` is in the footprint;
 * `S` is up-closed;
-* `S` holds the maḥalls of the qāʿida's furūʿ.
+* `S` holds the maḥalls of the furūʿ tied to the qāʿida.
 
 The last two give the converse by `footprint_least`. This is linear in `S`, where deciding every
 label is not. The grounds follow the same way. -/
 
 def upClosedB (S : List String) : Bool :=
-  S.all fun l => match d.upB l with
-    | none => true
-    | some m => S.contains m
+  S.all fun l => (ups d.up l).all S.contains
 
 def holdsB (q : String) (S : List String) : Bool :=
-  d.furu.all fun f => f.qaida != q || f.labels.all S.contains
+  d.furu.all fun f => !f.qawaid.contains q || f.labels.all S.contains
 
 def groundsClosedB (S G : List String) : Bool :=
   d.defines.all fun p => !S.contains p.2 || G.contains p.1
@@ -279,16 +250,14 @@ theorem footprint_sub {q : String} {S : List String} (hu : d.upClosedB S = true)
     {l : String} (hl : footprint d.graph q l) : l ∈ S := by
   refine footprint_least d.graph (S := (· ∈ S)) ?_ ?_ hl
   · intro a b ha hab
-    simp only [upClosedB, List.all_eq_true] at hu
-    have := hu a ha
-    simp only [graph] at hab
-    rw [hab] at this
-    simpa using this
+    simp only [upClosedB, List.all_eq_true, List.contains_iff_mem] at hu
+    exact hu a ha b (mem_ups.mpr hab)
   · intro f m hf hq hm
-    simp only [holdsB, List.all_eq_true, Bool.or_eq_true, bne_iff_ne, ne_eq] at hh
+    simp only [holdsB, List.all_eq_true, Bool.or_eq_true, Bool.not_eq_true', List.contains_iff_mem] at hh
     rcases hh f hf with h | h
-    · exact absurd hq h
-    · simpa using h m hm
+    · simp only [graph] at hq
+      simp [hq] at h
+    · exact h m hm
 
 theorem exactB_sound {n : Nat} {q : String} {S G : List String} (h : d.exactB n q S G = true) :
     (∀ l, footprint d.graph q l ↔ l ∈ S) ∧ (∀ x, grounds d.graph q x ↔ x ∈ G) := by
@@ -304,9 +273,9 @@ theorem exactB_sound {n : Nat} {q : String} {S G : List String} (h : d.exactB n 
     simp [this] at h
   · simpa using h
 
-/-- Every label climbs to a root (a label with no `up`) within `n` steps. -/
+/-- Every upward path from every label ends within `n` steps: no label is its own ancestor. -/
 def rootedB (n : Nat) : Bool :=
-  d.up.all fun p => (d.upB (rootN d.graph n p.1)).isNone
+  d.up.all fun p => heightL d.up n p.1
 
 end Data
 

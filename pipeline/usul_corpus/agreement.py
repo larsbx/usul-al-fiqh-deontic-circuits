@@ -21,7 +21,6 @@ from . import deduction, routing, scope
 
 DIR = "typing/reproduction"
 CONDITIONS = ("plain", "anchors", "scope")
-SADI = re.compile(r"al-Saʿdī Q(\d+)")
 
 
 def masi(a: frozenset, b: frozenset) -> float:
@@ -52,8 +51,7 @@ class Qawaid:
         self.owner: dict[str, set[str]] = {}
         for t, f in re.findall(r"^type_field\((\w+), (\w+), ", export, re.M):
             self.owner.setdefault(f, set()).add(t)
-        self.of = {t: frozenset({f"{a} {n}" for a, n in scope.sources(t, s)}
-                                | {f"al-Saʿdī {n}" for n in SADI.findall(s)}) or frozenset({t})
+        self.of = {t: frozenset(f"{a} {n}" for a, n in scope.cited(t, s)) or frozenset({t})
                    for t, s in statement.items()}
 
     def fields(self, fs) -> frozenset[str]:

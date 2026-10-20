@@ -1,14 +1,17 @@
 {
  "schema_version": 1,
  "status": "candidate",
- "note": "The maḥall labels of the six shards, merged: kind by majority, broader by majority (ties to the more specific), every verified naṣṣ kept; `shards` records who declared each.",
+ "note": "The maḥall labels of the six shards, merged: kind by majority; every broader label any shard declared is kept, so a maḥall may sit under several labels and bābs; every verified naṣṣ kept; `shards` records who declared it.",
  "labels": [
   {
    "id": "amma.aqd_fasid",
    "ar": "العقد الفاسد",
    "en": "an invalid contract",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma",
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -30,7 +33,9 @@
    "ar": "الضرورة",
    "en": "necessity",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -52,7 +57,9 @@
    "ar": "الحمل",
    "en": "the unborn child",
    "kind": "item",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -74,7 +81,9 @@
    "ar": "المسكن والخادم والمركب المحتاج إليه",
    "en": "the needed dwelling, servant and mount",
    "kind": "item",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -91,7 +100,9 @@
    "ar": "الإكراه",
    "en": "compulsion",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -119,7 +130,9 @@
    "ar": "الجهل والخطأ",
    "en": "ignorance and mistake",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -152,7 +165,9 @@
    "ar": "الجنون",
    "en": "insanity",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -169,7 +184,9 @@
    "ar": "الكفارات",
    "en": "expiations",
    "kind": "act",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -186,7 +203,9 @@
    "ar": "النية",
    "en": "intention",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -203,7 +222,9 @@
    "ar": "القبض",
    "en": "taking possession",
    "kind": "act",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -225,7 +246,9 @@
    "ar": "القدرة على الكسب",
    "en": "the ability to earn",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -242,7 +265,9 @@
    "ar": "القرعة",
    "en": "casting lots",
    "kind": "act",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -270,7 +295,9 @@
    "ar": "الشك",
    "en": "doubt",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -303,7 +330,9 @@
    "ar": "المال المشتبه",
    "en": "doubtful property",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -320,7 +349,9 @@
    "ar": "المشتبهات",
    "en": "doubtful things, mixed lawful and unlawful",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -337,7 +368,9 @@
    "ar": "السكر",
    "en": "intoxication",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -354,7 +387,9 @@
    "ar": "الطاعة ومجاهدة النفس",
    "en": "obedience and self-striving",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -376,7 +411,9 @@
    "ar": "اليد الضامنة",
    "en": "possession and its liability",
    "kind": "issue",
-   "broader": "amma",
+   "broader": [
+    "amma"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -393,7 +430,9 @@
    "ar": "العارية",
    "en": "loan for use",
    "kind": "act",
-   "broader": "ariyya",
+   "broader": [
+    "ariyya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -428,7 +467,9 @@
    "ar": "الماعون",
    "en": "household utensils lent",
    "kind": "item",
-   "broader": "ariyya.ariyya",
+   "broader": [
+    "ariyya.ariyya"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -445,7 +486,9 @@
    "ar": "الذكاة",
    "en": "ritual slaughter",
    "kind": "act",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -462,7 +505,9 @@
    "ar": "الضيافة",
    "en": "hospitality",
    "kind": "act",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -491,7 +536,9 @@
    "ar": "طعام المضطر",
    "en": "food under necessity",
    "kind": "issue",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -509,7 +556,9 @@
    "ar": "جنين المذكاة",
    "en": "the foetus of a slaughtered animal",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -526,7 +575,9 @@
    "ar": "الكلب",
    "en": "the dog",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -548,7 +599,9 @@
    "ar": "الخمر",
    "en": "wine",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -572,7 +625,9 @@
    "ar": "الميتة",
    "en": "carrion",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -589,7 +644,9 @@
    "ar": "اللحم المحرم",
    "en": "forbidden meat",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -606,7 +663,9 @@
    "ar": "السمك",
    "en": "fish",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -628,7 +687,9 @@
    "ar": "الصيد",
    "en": "game",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -659,7 +720,9 @@
    "ar": "تخليل الخمر",
    "en": "turning wine into vinegar",
    "kind": "act",
-   "broader": "atima.khamr",
+   "broader": [
+    "atima.khamr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -677,7 +740,9 @@
    "ar": "متروك التسمية",
    "en": "slaughter without the basmala",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -694,7 +759,9 @@
    "ar": "الثمر المعلق",
    "en": "fruit hanging on the tree",
    "kind": "item",
-   "broader": "atima",
+   "broader": [
+    "atima"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -711,7 +778,9 @@
    "ar": "أيمان البيعة",
    "en": "oaths of allegiance",
    "kind": "act",
-   "broader": "ayman.yamin",
+   "broader": [
+    "ayman.yamin"
+   ],
    "unanchored": "A later compound oath (sworn by divorce, manumission and alms) that no canonical text names.",
    "shards": [
     "d"
@@ -722,7 +791,9 @@
    "ar": "الكفارة",
    "en": "expiation",
    "kind": "act",
-   "broader": "ayman",
+   "broader": [
+    "ayman"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -745,7 +816,9 @@
    "ar": "كفارة اليمين",
    "en": "the oath expiation",
    "kind": "act",
-   "broader": "ayman.yamin",
+   "broader": [
+    "ayman.yamin"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -763,7 +836,9 @@
    "ar": "النية في اليمين",
    "en": "intention in an oath",
    "kind": "issue",
-   "broader": "ayman.yamin",
+   "broader": [
+    "ayman.yamin"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -780,7 +855,9 @@
    "ar": "تحريم الحلال",
    "en": "declaring the lawful forbidden",
    "kind": "act",
-   "broader": "ayman.yamin",
+   "broader": [
+    "ayman.yamin"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -802,7 +879,9 @@
    "ar": "اليمين",
    "en": "the oath",
    "kind": "act",
-   "broader": "ayman",
+   "broader": [
+    "ayman"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -834,7 +913,9 @@
    "ar": "يمين المكره",
    "en": "the coerced oath",
    "kind": "act",
-   "broader": "ayman.yamin",
+   "broader": [
+    "ayman.yamin"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -856,7 +937,9 @@
    "ar": "بيع العرايا",
    "en": "the ʿarāyā sale",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -873,7 +956,9 @@
    "ar": "عيب المبيع",
    "en": "defect in the thing sold",
    "kind": "item",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -906,7 +991,9 @@
    "ar": "البيع",
    "en": "sale",
    "kind": "act",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -936,7 +1023,9 @@
    "ar": "بيع الدين",
    "en": "sale of a debt",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -953,7 +1042,9 @@
    "ar": "البيع الفاسد",
    "en": "an invalid sale",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -970,7 +1061,9 @@
    "ar": "تصرف الفضولي",
    "en": "dealing in another's property without authority",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -987,7 +1080,9 @@
    "ar": "بيع الغرر",
    "en": "sale of the uncertain",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1009,7 +1104,9 @@
    "ar": "بيع العينة",
    "en": "the ʿīna sale",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1026,7 +1123,9 @@
    "ar": "بيع رباع مكة وإجارتها",
    "en": "sale and hire of the dwellings of Makka",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1048,7 +1147,9 @@
    "ar": "بيع الهر",
    "en": "sale of a cat",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1065,7 +1166,9 @@
    "ar": "بيع الثمر قبل بدو صلاحه",
    "en": "sale of fruit before it ripens",
    "kind": "act",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1082,7 +1185,9 @@
    "ar": "بيع الأصول والثمار",
    "en": "sale of land, trees and their fruit",
    "kind": "act",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1099,7 +1204,10 @@
    "ar": "الدين",
    "en": "debt",
    "kind": "item",
-   "broader": "buyu",
+   "broader": [
+    "buyu",
+    "qard"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1121,7 +1229,9 @@
    "ar": "الدين المؤجل",
    "en": "a deferred debt",
    "kind": "item",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1138,7 +1248,9 @@
    "ar": "الحمل في البيع",
    "en": "the fetus in a sale",
    "kind": "item",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1155,7 +1267,9 @@
    "ar": "اختلاف المتبايعين",
    "en": "disagreement of buyer and seller",
    "kind": "issue",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1172,7 +1286,10 @@
    "ar": "الإقالة",
    "en": "mutual rescission",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu",
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1196,7 +1313,10 @@
    "ar": "الجائحة",
    "en": "crop calamity",
    "kind": "issue",
-   "broader": "buyu.thimar",
+   "broader": [
+    "buyu",
+    "buyu.thimar"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1224,7 +1344,10 @@
    "ar": "الخيار في البيع",
    "en": "the option to rescind a sale",
    "kind": "issue",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu",
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1247,7 +1370,11 @@
    "ar": "الرد بالعيب",
    "en": "return for defect",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu",
+    "buyu.bay",
+    "buyu.khiyar"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1284,7 +1411,9 @@
    "ar": "خيار الشرط",
    "en": "the option by stipulation",
    "kind": "issue",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1301,7 +1430,9 @@
    "ar": "المبيع قبل القبض",
    "en": "the thing sold before delivery",
    "kind": "item",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1323,7 +1454,9 @@
    "ar": "المقبوض على وجه السوم",
    "en": "goods taken while bargaining",
    "kind": "item",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1340,7 +1473,9 @@
    "ar": "المصحف",
    "en": "the written Qurʾān as property",
    "kind": "item",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1357,7 +1492,9 @@
    "ar": "النخل المؤبر",
    "en": "pollinated palms and their fruit",
    "kind": "item",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1374,7 +1511,9 @@
    "ar": "الشرط في البيع",
    "en": "a stipulation in sale",
    "kind": "act",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1396,7 +1535,9 @@
    "ar": "البيع بشرط العتق",
    "en": "sale on condition of manumission",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1413,7 +1554,9 @@
    "ar": "استثناء منفعة المبيع",
    "en": "the seller's reserving the use of the thing sold",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1430,7 +1573,9 @@
    "ar": "صيغة عقد البيع",
    "en": "the formula of sale",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1452,7 +1597,9 @@
    "ar": "الشركة في المبيع (التشريك)",
    "en": "taking a partner into a purchase",
    "kind": "act",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "athar",
@@ -1469,7 +1616,9 @@
    "ar": "ما يتبع العين في الملك",
    "en": "accessories that follow the property",
    "kind": "item",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1491,7 +1640,9 @@
    "ar": "الثمن",
    "en": "the price",
    "kind": "item",
-   "broader": "buyu",
+   "broader": [
+    "buyu"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1508,7 +1659,9 @@
    "ar": "الثمار المبيعة",
    "en": "fruit sold with or on the tree",
    "kind": "item",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1525,7 +1678,9 @@
    "ar": "أصول البقول المتكرر حملها",
    "en": "perennial roots of vegetables",
    "kind": "item",
-   "broader": "buyu.bay_usul_wa_thimar",
+   "broader": [
+    "buyu.bay_usul_wa_thimar"
+   ],
    "unanchored": "No canonical text names perennial vegetable roots; whether they follow trees or crops is an ijtihādī classification of the Ḥanbalī jurists.",
    "shards": [
     "c"
@@ -1536,7 +1691,9 @@
    "ar": "الزيادة في البيع",
    "en": "an extra given in a sale",
    "kind": "item",
-   "broader": "buyu.bay",
+   "broader": [
+    "buyu.bay"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1553,7 +1710,9 @@
    "ar": "الضمان",
    "en": "suretyship for a debt",
    "kind": "act",
-   "broader": "daman",
+   "broader": [
+    "daman"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1593,7 +1752,9 @@
    "ar": "الكفالة",
    "en": "surety for a person",
    "kind": "act",
-   "broader": "daman",
+   "broader": [
+    "daman"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1621,7 +1782,9 @@
    "ar": "قضاء دين الغير",
    "en": "paying another's debt",
    "kind": "act",
-   "broader": "daman.daman",
+   "broader": [
+    "daman.daman"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1638,7 +1801,9 @@
    "ar": "البينة",
    "en": "the proof",
    "kind": "item",
-   "broader": "dawa",
+   "broader": [
+    "dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1666,7 +1831,9 @@
    "ar": "الدعوى",
    "en": "claim",
    "kind": "act",
-   "broader": "dawa",
+   "broader": [
+    "dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1689,7 +1856,9 @@
    "ar": "متاع البيت",
    "en": "household goods disputed between spouses",
    "kind": "item",
-   "broader": "dawa.dawa",
+   "broader": [
+    "dawa.dawa"
+   ],
    "unanchored": "No āya, ḥadīth of the six books or ijmāʿ names disputes over household goods; the rule follows ʿurf and the evidence of the situation.",
    "shards": [
     "f"
@@ -1700,7 +1869,9 @@
    "ar": "الشاهد واليمين",
    "en": "one witness with an oath",
    "kind": "act",
-   "broader": "dawa",
+   "broader": [
+    "dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1717,7 +1888,9 @@
    "ar": "تعارض البينتين",
    "en": "conflicting proofs",
    "kind": "issue",
-   "broader": "dawa.dawa",
+   "broader": [
+    "dawa.dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1735,7 +1908,9 @@
    "ar": "تداعي العين",
    "en": "rival claims to one item",
    "kind": "act",
-   "broader": "dawa.dawa",
+   "broader": [
+    "dawa.dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1752,7 +1927,9 @@
    "ar": "اليد في الدعوى",
    "en": "possession in a claim",
    "kind": "issue",
-   "broader": "dawa",
+   "broader": [
+    "dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1769,7 +1946,9 @@
    "ar": "يمين المدعى عليه والنكول",
    "en": "the defendant's oath and refusal",
    "kind": "act",
-   "broader": "dawa.dawa",
+   "broader": [
+    "dawa.dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1786,7 +1965,9 @@
    "ar": "الأخذ من مال الغريم",
    "en": "self-help against a debtor",
    "kind": "act",
-   "broader": "dawa",
+   "broader": [
+    "dawa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1803,7 +1984,9 @@
    "ar": "العاقلة",
    "en": "the kin who bear blood money",
    "kind": "item",
-   "broader": "diyat",
+   "broader": [
+    "diyat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1820,7 +2003,9 @@
    "ar": "أرش الجناية",
    "en": "indemnity for an injury",
    "kind": "item",
-   "broader": "diyat",
+   "broader": [
+    "diyat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1837,7 +2022,9 @@
    "ar": "عين الأعور",
    "en": "the one-eyed man's eye",
    "kind": "item",
-   "broader": "diyat.diyat_atraf",
+   "broader": [
+    "diyat.diyat_atraf"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -1854,7 +2041,9 @@
    "ar": "الدية",
    "en": "blood money",
    "kind": "item",
-   "broader": "diyat",
+   "broader": [
+    "diyat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1874,7 +2063,9 @@
    "ar": "دية الأطراف والمنافع",
    "en": "compensation for limbs and faculties",
    "kind": "item",
-   "broader": "diyat.diya",
+   "broader": [
+    "diyat.diya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1891,7 +2082,9 @@
    "ar": "دية الذمي",
    "en": "blood money of a protected non-Muslim",
    "kind": "item",
-   "broader": "diyat.diya",
+   "broader": [
+    "diyat.diya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1908,7 +2101,10 @@
    "ar": "الجنين وغرته",
    "en": "the foetus and its blood-money",
    "kind": "item",
-   "broader": "diyat.diya",
+   "broader": [
+    "diyat",
+    "diyat.diya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1931,7 +2127,9 @@
    "ar": "ضمان العبد بقيمته",
    "en": "compensating a slave by his value",
    "kind": "item",
-   "broader": "diyat",
+   "broader": [
+    "diyat"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -1948,7 +2146,9 @@
    "ar": "العصبة",
    "en": "agnatic heirs",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -1965,7 +2165,9 @@
    "ar": "الدين المتعلق بالتركة",
    "en": "debt charged on the estate",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -1984,7 +2186,9 @@
    "ar": "ذوو الفروض",
    "en": "fixed-share heirs",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2001,7 +2205,9 @@
    "ar": "اختلاف الدين في الميراث",
    "en": "difference of religion as a bar to inheritance",
    "kind": "issue",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2018,7 +2224,9 @@
    "ar": "الجدة",
    "en": "grandmother",
    "kind": "item",
-   "broader": "faraid.furud",
+   "broader": [
+    "faraid.furud"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2035,7 +2243,9 @@
    "ar": "الخنثى المشكل",
    "en": "the hermaphrodite of unclear sex",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -2052,7 +2262,9 @@
    "ar": "المفقود",
    "en": "missing person and his estate",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "athar",
@@ -2074,7 +2286,9 @@
    "ar": "مال من لا وارث له",
    "en": "estate without a known heir",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2091,7 +2305,9 @@
    "ar": "الغرقى والهدمى",
    "en": "heirs dying together in an unknown order",
    "kind": "issue",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "unanchored": "No āya, ḥadīth of the six books or reported ijmāʿ names it; the Companions' reports on it are outside the six books and conflict.",
    "shards": [
     "d"
@@ -2102,7 +2318,9 @@
    "ar": "موت المتوارثين معا",
    "en": "heirs of one another dying with the order unknown",
    "kind": "issue",
-   "broader": "faraid.mirath",
+   "broader": [
+    "faraid.mirath"
+   ],
    "unanchored": "No āya, ḥadīth of the six books or ijmāʿ in al-Mughnī names mutual heirs whose order of death is unknown; the rule is from Companion reports and qiyās.",
    "shards": [
     "f"
@@ -2113,7 +2331,9 @@
    "ar": "الميراث",
    "en": "inheritance",
    "kind": "act",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2136,7 +2356,9 @@
    "ar": "ميراث الحمل",
    "en": "the unborn child's inheritance",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2153,7 +2375,9 @@
    "ar": "ميراث المبتوتة في مرض الموت",
    "en": "inheritance of a wife divorced irrevocably in the final illness",
    "kind": "issue",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -2170,7 +2394,9 @@
    "ar": "القاتل",
    "en": "the killer as heir or legatee",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2187,7 +2413,9 @@
    "ar": "التركة المستغرقة بالدين",
    "en": "the estate and its debts",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2205,7 +2433,9 @@
    "ar": "الميراث بالولاء",
    "en": "inheritance by clientage",
    "kind": "item",
-   "broader": "faraid",
+   "broader": [
+    "faraid"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2222,7 +2452,9 @@
    "ar": "الجدار المائل",
    "en": "the leaning wall",
    "kind": "item",
-   "broader": "ghasb.itlaf",
+   "broader": [
+    "ghasb.itlaf"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2239,7 +2471,9 @@
    "ar": "ضمان المثلي بمثله",
    "en": "compensating a fungible by its like",
    "kind": "issue",
-   "broader": "ghasb.itlaf",
+   "broader": [
+    "ghasb.itlaf"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2256,7 +2490,9 @@
    "ar": "ضمان المتلفات",
    "en": "liability for destroyed property",
    "kind": "issue",
-   "broader": "ghasb",
+   "broader": [
+    "ghasb"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2278,7 +2514,9 @@
    "ar": "الغصب",
    "en": "usurpation",
    "kind": "act",
-   "broader": "ghasb",
+   "broader": [
+    "ghasb"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2317,7 +2555,9 @@
    "ar": "الحر تحت اليد",
    "en": "a free person held under another's hand",
    "kind": "item",
-   "broader": "ghasb",
+   "broader": [
+    "ghasb"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2334,7 +2574,9 @@
    "ar": "الغراس والبناء في أرض الغير",
    "en": "planting and building on another's land",
    "kind": "item",
-   "broader": "ghasb",
+   "broader": [
+    "ghasb"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2356,7 +2598,9 @@
    "ar": "إتلاف مال الغير",
    "en": "destroying another's property",
    "kind": "act",
-   "broader": "ghasb",
+   "broader": [
+    "ghasb"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2380,7 +2624,9 @@
    "ar": "ما أتلفته البهائم",
    "en": "damage done by livestock",
    "kind": "act",
-   "broader": "ghasb.itlaf",
+   "broader": [
+    "ghasb.itlaf"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2402,7 +2648,9 @@
    "ar": "خلط المال بغيره",
    "en": "mixing property with another's",
    "kind": "act",
-   "broader": "ghasb",
+   "broader": [
+    "ghasb"
+   ],
    "unanchored": "No canonical text names the mixing of one owner's fungibles with another's; the rule (consumption or partnership) is an ijtihādī construction.",
    "shards": [
     "a"
@@ -2413,7 +2661,9 @@
    "ar": "الزرع في أرض الغير",
    "en": "crops sown on another's land",
    "kind": "item",
-   "broader": "ghasb",
+   "broader": [
+    "ghasb"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2430,7 +2680,9 @@
    "ar": "فدية محظورات الإحرام",
    "en": "expiation for iḥrām violations",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2447,7 +2699,9 @@
    "ar": "فدية الأذى وكفارات الإحرام",
    "en": "the ransom for harm in iḥrām",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2469,7 +2723,9 @@
    "ar": "الهدي",
    "en": "sacrificial offering",
    "kind": "item",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2501,7 +2757,9 @@
    "ar": "هدي التمتع",
    "en": "the tamattuʿ offering",
    "kind": "item",
-   "broader": "hajj.hady",
+   "broader": [
+    "hajj.hady"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2518,7 +2776,10 @@
    "ar": "الحج عن المعضوب",
    "en": "pilgrimage on behalf of the incapable",
    "kind": "act",
-   "broader": "hajj.hajj_islam",
+   "broader": [
+    "hajj",
+    "hajj.hajj_islam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2541,7 +2802,9 @@
    "ar": "حجة الإسلام",
    "en": "the obligatory pilgrimage",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2558,7 +2821,9 @@
    "ar": "حج الصبي والعبد",
    "en": "pilgrimage of a minor or slave",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2575,7 +2840,9 @@
    "ar": "الإحرام",
    "en": "the state of iḥrām",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2598,7 +2865,9 @@
    "ar": "التحلل بالإحصار",
    "en": "release from iḥrām when prevented",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2615,7 +2884,9 @@
    "ar": "الاستطاعة في الحج",
    "en": "capacity for pilgrimage",
    "kind": "issue",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2632,7 +2903,9 @@
    "ar": "جماع المحرم وإفساد النسك",
    "en": "intercourse spoiling the rite",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2649,7 +2922,9 @@
    "ar": "نبات الحرم",
    "en": "plants of the sanctuary",
    "kind": "item",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2666,7 +2941,9 @@
    "ar": "الحج عن الغير",
    "en": "pilgrimage on another's behalf",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2683,7 +2960,9 @@
    "ar": "قضاء الحج الفاسد",
    "en": "making up a spoiled pilgrimage",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2700,7 +2979,9 @@
    "ar": "القران",
    "en": "combining ḥajj and ʿumra",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2717,7 +2998,9 @@
    "ar": "ركعتا الطواف",
    "en": "the two rakʿas of ṭawāf",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2734,7 +3017,9 @@
    "ar": "صيام المتمتع",
    "en": "the tamattuʿ fast",
    "kind": "act",
-   "broader": "hajj.hady_tamattu",
+   "broader": [
+    "hajj.hady_tamattu"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2751,7 +3036,9 @@
    "ar": "صيد الحرم",
    "en": "the game of the sanctuary",
    "kind": "item",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2774,7 +3061,9 @@
    "ar": "صيد المحرم",
    "en": "game killed in iḥrām",
    "kind": "item",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2809,7 +3098,9 @@
    "ar": "شجر الحرم وشوكه",
    "en": "the trees and thorns of the sanctuary",
    "kind": "item",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2826,7 +3117,9 @@
    "ar": "الطواف",
    "en": "circumambulation",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2844,7 +3137,9 @@
    "ar": "طواف الزيارة",
    "en": "the ṭawāf of visitation",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2861,7 +3156,9 @@
    "ar": "طواف القدوم",
    "en": "the arrival ṭawāf",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2878,7 +3175,9 @@
    "ar": "طواف الوداع",
    "en": "the farewell ṭawāf",
    "kind": "act",
-   "broader": "hajj",
+   "broader": [
+    "hajj"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2895,7 +3194,9 @@
    "ar": "العبد المأذون له",
    "en": "the slave licensed to trade",
    "kind": "item",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2912,7 +3213,9 @@
    "ar": "حلول الدين المؤجل بالموت",
    "en": "a deferred debt falling due at death",
    "kind": "issue",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2929,7 +3232,9 @@
    "ar": "الإفلاس",
    "en": "bankruptcy",
    "kind": "issue",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2946,7 +3251,9 @@
    "ar": "المدين",
    "en": "the debtor",
    "kind": "item",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -2968,7 +3275,9 @@
    "ar": "مال العبد",
    "en": "the slave's property",
    "kind": "item",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -2985,7 +3294,9 @@
    "ar": "مال اليتيم",
    "en": "the orphan's property",
    "kind": "item",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3014,7 +3325,9 @@
    "ar": "مطل المدين الواجد",
    "en": "default of a solvent debtor",
    "kind": "act",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3031,7 +3344,9 @@
    "ar": "المفلس",
    "en": "the bankrupt",
    "kind": "item",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3061,7 +3376,9 @@
    "ar": "الصبي",
    "en": "the minor",
    "kind": "item",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3078,7 +3395,9 @@
    "ar": "الولاية على المال",
    "en": "guardianship over property",
    "kind": "act",
-   "broader": "hajr",
+   "broader": [
+    "hajr"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3095,7 +3414,9 @@
    "ar": "الحوالة على المليء",
    "en": "transfer of debt to a solvent party",
    "kind": "act",
-   "broader": "hawala",
+   "broader": [
+    "hawala"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3118,7 +3439,9 @@
    "ar": "العطية في مرض الموت",
    "en": "gift in the final illness",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3140,7 +3463,9 @@
    "ar": "عطية الأولاد",
    "en": "gifts to one's children",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3157,7 +3482,10 @@
    "ar": "عطية المريض مرض الموت",
    "en": "gifts in the final illness",
    "kind": "act",
-   "broader": "hiba.hiba",
+   "broader": [
+    "hiba",
+    "hiba.hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3185,7 +3513,9 @@
    "ar": "الهدية على الشفاعة",
    "en": "a gift for intercession",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3202,7 +3532,9 @@
    "ar": "هدايا العمال",
    "en": "gifts to office-holders",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3219,7 +3551,9 @@
    "ar": "الهبة",
    "en": "gift",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3248,7 +3582,9 @@
    "ar": "هبة الثواب",
    "en": "a gift seeking a return",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3265,7 +3601,10 @@
    "ar": "الإبراء من الدين",
    "en": "release from a debt",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "amma",
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3282,7 +3621,9 @@
    "ar": "الرجوع في الهبة والصدقة",
    "en": "revoking a gift or alms",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3309,7 +3650,10 @@
    "ar": "الرجوع في الهبة",
    "en": "revoking a gift",
    "kind": "act",
-   "broader": "hiba.hiba",
+   "broader": [
+    "hiba",
+    "hiba.hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3336,7 +3680,9 @@
    "ar": "رجوع الوالد في هبته لولده",
    "en": "a father's revoking a gift to his child",
    "kind": "act",
-   "broader": "hiba.hiba",
+   "broader": [
+    "hiba.hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3353,7 +3699,9 @@
    "ar": "تملك الأب من مال ولده",
    "en": "a father's taking his child's property",
    "kind": "act",
-   "broader": "hiba",
+   "broader": [
+    "hiba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3371,7 +3719,9 @@
    "ar": "البغاة",
    "en": "rebels",
    "kind": "item",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3388,7 +3738,9 @@
    "ar": "الجلد في الحد",
    "en": "flogging as fixed penalty",
    "kind": "act",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3405,7 +3757,9 @@
    "ar": "كلمة الكفر",
    "en": "an utterance of unbelief",
    "kind": "act",
-   "broader": "hudud.ridda",
+   "broader": [
+    "hudud.ridda"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3422,7 +3776,9 @@
    "ar": "القذف",
    "en": "slanderous accusation",
    "kind": "act",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3452,7 +3808,9 @@
    "ar": "الرجم",
    "en": "stoning of the married fornicator",
    "kind": "act",
-   "broader": "hudud.zina",
+   "broader": [
+    "hudud.zina"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3469,7 +3827,9 @@
    "ar": "الردة",
    "en": "apostasy",
    "kind": "act",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3493,7 +3853,9 @@
    "ar": "السرقة",
    "en": "theft",
    "kind": "act",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3517,7 +3879,9 @@
    "ar": "السرقة من غير حرز",
    "en": "theft from an unguarded place",
    "kind": "act",
-   "broader": "hudud.sariqa",
+   "broader": [
+    "hudud.sariqa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3534,7 +3898,9 @@
    "ar": "السرقة عام المجاعة",
    "en": "theft in a year of famine",
    "kind": "act",
-   "broader": "hudud.sariqa",
+   "broader": [
+    "hudud.sariqa"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3551,7 +3917,9 @@
    "ar": "شرب الخمر",
    "en": "drinking wine",
    "kind": "act",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3573,7 +3941,9 @@
    "ar": "التعريض بالقذف",
    "en": "allusive accusation",
    "kind": "act",
-   "broader": "hudud.qadhf",
+   "broader": [
+    "hudud.qadhf"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3590,7 +3960,9 @@
    "ar": "التعزير",
    "en": "discretionary punishment",
    "kind": "act",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3607,7 +3979,9 @@
    "ar": "الزنا",
    "en": "fornication",
    "kind": "act",
-   "broader": "hudud",
+   "broader": [
+    "hudud"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3624,7 +3998,9 @@
    "ar": "العدة",
    "en": "the waiting period",
    "kind": "issue",
-   "broader": "idda",
+   "broader": [
+    "idda"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3642,7 +4018,9 @@
    "ar": "عدة الأمة",
    "en": "the slave-woman's waiting period",
    "kind": "issue",
-   "broader": "idda.idda",
+   "broader": [
+    "idda.idda"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3659,7 +4037,9 @@
    "ar": "عدة الوفاة",
    "en": "waiting period after death",
    "kind": "issue",
-   "broader": "idda.idda",
+   "broader": [
+    "idda.idda"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3677,7 +4057,9 @@
    "ar": "الاستبراء",
    "en": "waiting for clearance of the womb",
    "kind": "issue",
-   "broader": "idda",
+   "broader": [
+    "idda"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3694,7 +4076,9 @@
    "ar": "لزوم المعتدة منزلها",
    "en": "the waiting woman keeping to her home",
    "kind": "act",
-   "broader": "idda.idda",
+   "broader": [
+    "idda.idda"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3716,7 +4100,10 @@
    "ar": "امرأة المفقود",
    "en": "the wife of the missing husband",
    "kind": "item",
-   "broader": "idda.idda",
+   "broader": [
+    "idda",
+    "idda.idda"
+   ],
    "nass": [
     {
      "kind": "athar",
@@ -3733,7 +4120,9 @@
    "ar": "عدة من ارتفع حيضها",
    "en": "the waiting period when menses stop",
    "kind": "issue",
-   "broader": "idda",
+   "broader": [
+    "idda"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3750,7 +4139,9 @@
    "ar": "المطلقة قبل الدخول",
    "en": "the wife divorced before consummation",
    "kind": "issue",
-   "broader": "idda.idda",
+   "broader": [
+    "idda.idda"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3767,7 +4158,9 @@
    "ar": "سكنى المعتدة",
    "en": "the residence of a woman in her waiting period",
    "kind": "issue",
-   "broader": "idda",
+   "broader": [
+    "idda"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -3789,7 +4182,9 @@
    "ar": "عدة أم الولد",
    "en": "the waiting period of an umm walad",
    "kind": "issue",
-   "broader": "idda",
+   "broader": [
+    "idda"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3806,7 +4201,9 @@
    "ar": "فضل الماء والكلأ",
    "en": "surplus water and pasture",
    "kind": "item",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3828,7 +4225,9 @@
    "ar": "إحياء الموات",
    "en": "reviving dead land",
    "kind": "act",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3850,7 +4249,9 @@
    "ar": "فضل الكلأ والماء",
    "en": "surplus pasture and water",
    "kind": "item",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3872,7 +4273,9 @@
    "ar": "الكلأ والماء",
    "en": "pasture and water",
    "kind": "item",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3894,7 +4297,9 @@
    "ar": "مقاعد الأسواق",
    "en": "market pitches",
    "kind": "item",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3911,7 +4316,9 @@
    "ar": "مرافق الأملاك",
    "en": "the appurtenances of property: lanes, courtyards, water-courses",
    "kind": "item",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3928,7 +4335,9 @@
    "ar": "المباحات",
    "en": "things open to all",
    "kind": "item",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3950,7 +4359,9 @@
    "ar": "السقي من النهر المباح",
    "en": "irrigation from a common river",
    "kind": "act",
-   "broader": "ihya.mubahat",
+   "broader": [
+    "ihya.mubahat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3967,7 +4378,9 @@
    "ar": "التحجر والإقطاع",
    "en": "fencing off and grant of dead land",
    "kind": "act",
-   "broader": "ihya.ihya_mawat",
+   "broader": [
+    "ihya.ihya_mawat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -3984,7 +4397,9 @@
    "ar": "التحجر",
    "en": "staking dead land",
    "kind": "act",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "athar",
@@ -4001,7 +4416,9 @@
    "ar": "الطريق",
    "en": "the public road",
    "kind": "item",
-   "broader": "ihya",
+   "broader": [
+    "ihya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4023,7 +4440,9 @@
    "ar": "الأجير",
    "en": "the hired worker",
    "kind": "item",
-   "broader": "ijara.ijara",
+   "broader": [
+    "ijara.ijara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4047,7 +4466,9 @@
    "ar": "الإجارة",
    "en": "hire and lease",
    "kind": "act",
-   "broader": "ijara",
+   "broader": [
+    "ijara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4093,7 +4514,9 @@
    "ar": "الأجرة",
    "en": "the wage",
    "kind": "item",
-   "broader": "ijara.ijara",
+   "broader": [
+    "ijara.ijara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4115,7 +4538,9 @@
    "ar": "الإيلاء",
    "en": "the ilāʾ oath",
    "kind": "act",
-   "broader": "ila",
+   "broader": [
+    "ila"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4134,7 +4559,9 @@
    "ar": "الإقرار",
    "en": "admission",
    "kind": "act",
-   "broader": "iqrar",
+   "broader": [
+    "iqrar"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4175,7 +4602,9 @@
    "ar": "إقرار المكره",
    "en": "admission under duress",
    "kind": "act",
-   "broader": "iqrar.iqrar",
+   "broader": [
+    "iqrar.iqrar"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4192,7 +4621,9 @@
    "ar": "الاعتكاف",
    "en": "retreat in the mosque",
    "kind": "act",
-   "broader": "itikaf",
+   "broader": [
+    "itikaf"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4209,7 +4640,9 @@
    "ar": "الاعتكاف المنذور",
    "en": "a vowed retreat",
    "kind": "act",
-   "broader": "itikaf",
+   "broader": [
+    "itikaf"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4226,7 +4659,9 @@
    "ar": "نذر الاعتكاف",
    "en": "a vowed retreat",
    "kind": "act",
-   "broader": "itikaf.itikaf",
+   "broader": [
+    "itikaf.itikaf"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4243,7 +4678,9 @@
    "ar": "العتق مع استثناء الخدمة",
    "en": "manumission reserving service",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4260,7 +4697,9 @@
    "ar": "إيتاء المكاتب",
    "en": "the payment owed to the mukātab",
    "kind": "act",
-   "broader": "itq.kitaba",
+   "broader": [
+    "itq.kitaba"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4277,7 +4716,9 @@
    "ar": "العتق",
    "en": "manumission",
    "kind": "act",
-   "broader": "itq",
+   "broader": [
+    "itq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4324,7 +4765,9 @@
    "ar": "العتق بملك ذي الرحم",
    "en": "manumission on owning a close relative",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4346,7 +4789,9 @@
    "ar": "العتق في الكفارة",
    "en": "manumission in expiation",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4368,7 +4813,9 @@
    "ar": "العتق في مرض الموت",
    "en": "manumission in the final illness",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4385,7 +4832,9 @@
    "ar": "العتق المعلق بصفة",
    "en": "manumission suspended on a condition",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4408,7 +4857,9 @@
    "ar": "عتق المبهم",
    "en": "manumission of an unspecified slave",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4425,7 +4876,9 @@
    "ar": "عتق ذي الرحم المحرم بالملك",
    "en": "manumission of a close relative by ownership",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4442,7 +4895,9 @@
    "ar": "عتق الشقص",
    "en": "manumitting a share in a slave",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4459,7 +4914,10 @@
    "ar": "الكتابة",
    "en": "the manumission contract",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq",
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4484,7 +4942,9 @@
    "ar": "ملك ذي الرحم المحرم",
    "en": "owning a close relative",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4501,7 +4961,9 @@
    "ar": "المعتق بعضه",
    "en": "the partly-freed slave",
    "kind": "item",
-   "broader": "itq.itq_shiqs",
+   "broader": [
+    "itq.itq_shiqs"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4518,7 +4980,10 @@
    "ar": "المكاتب",
    "en": "the slave under contract of manumission",
    "kind": "item",
-   "broader": "itq.itq",
+   "broader": [
+    "itq",
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4541,7 +5006,9 @@
    "ar": "التمثيل بالعبد",
    "en": "mutilating a slave",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4558,7 +5025,9 @@
    "ar": "الرقبة الواجبة",
    "en": "the slave freed in expiation or vow",
    "kind": "item",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4575,7 +5044,9 @@
    "ar": "التدبير",
    "en": "manumission upon death",
    "kind": "act",
-   "broader": "itq.itq",
+   "broader": [
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4610,7 +5081,10 @@
    "ar": "أم الولد",
    "en": "the slave mother",
    "kind": "item",
-   "broader": "itq.itq",
+   "broader": [
+    "itq",
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4634,7 +5108,10 @@
    "ar": "الولاء",
    "en": "clientage",
    "kind": "item",
-   "broader": "itq.itq",
+   "broader": [
+    "itq",
+    "itq.itq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4657,7 +5134,9 @@
    "ar": "الدفن",
    "en": "burial",
    "kind": "act",
-   "broader": "janaiz",
+   "broader": [
+    "janaiz"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4674,7 +5153,9 @@
    "ar": "الكفن",
    "en": "the shroud",
    "kind": "item",
-   "broader": "janaiz",
+   "broader": [
+    "janaiz"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4691,7 +5172,9 @@
    "ar": "الصلاة على الميت",
    "en": "the funeral prayer",
    "kind": "act",
-   "broader": "janaiz",
+   "broader": [
+    "janaiz"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4715,7 +5198,9 @@
    "ar": "إنقاذ مال الغير من الهلكة",
    "en": "rescuing another's property from loss",
    "kind": "act",
-   "broader": "jiala.jiala",
+   "broader": [
+    "jiala.jiala"
+   ],
    "unanchored": "No Qur'anic verse, ḥadīth of the six books or reported ijmāʿ names a wage for rescuing another's property; Aḥmad's ruling is ijtihād by analogy with the runaway slave.",
    "shards": [
     "c"
@@ -4726,7 +5211,9 @@
    "ar": "الجعالة",
    "en": "reward contract",
    "kind": "act",
-   "broader": "jiala",
+   "broader": [
+    "jiala"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4744,7 +5231,9 @@
    "ar": "رد الآبق",
    "en": "returning a runaway slave",
    "kind": "act",
-   "broader": "jiala.jiala",
+   "broader": [
+    "jiala.jiala"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -4761,7 +5250,9 @@
    "ar": "الأمان",
    "en": "safe-conduct",
    "kind": "act",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4789,7 +5280,9 @@
    "ar": "أرض الخراج",
    "en": "land taken by force and held under land-tax",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4806,7 +5299,9 @@
    "ar": "أهل الذمة",
    "en": "the protected non-Muslims",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4823,7 +5318,9 @@
    "ar": "الفيء",
    "en": "fayʾ, property taken without fighting",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4840,7 +5337,9 @@
    "ar": "فداء الأسير",
    "en": "ransoming a captive",
    "kind": "act",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4862,7 +5361,9 @@
    "ar": "الغنيمة",
    "en": "spoils of war",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4898,7 +5399,10 @@
    "ar": "الغلول",
    "en": "theft from the spoils",
    "kind": "act",
-   "broader": "jihad.ghanima",
+   "broader": [
+    "jihad",
+    "jihad.ghanima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4921,7 +5425,9 @@
    "ar": "إذن الأبوين في الجهاد",
    "en": "parents' permission for jihad",
    "kind": "act",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4938,7 +5444,9 @@
    "ar": "إسلام الكافر",
    "en": "a non-Muslim's entry into Islam",
    "kind": "act",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4955,7 +5463,9 @@
    "ar": "مال المسلم يستولي عليه الكفار",
    "en": "a Muslim's property seized by the enemy",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -4972,7 +5482,9 @@
    "ar": "استرقاق الأسرى",
    "en": "enslaving captives",
    "kind": "act",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -4989,7 +5501,9 @@
    "ar": "الجزية",
    "en": "the poll tax",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5006,7 +5520,9 @@
    "ar": "كنائس أهل الذمة",
    "en": "churches of the protected peoples",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5023,7 +5539,9 @@
    "ar": "خمس الغنيمة",
    "en": "the fifth of the spoils",
    "kind": "item",
-   "broader": "jihad.ghanima",
+   "broader": [
+    "jihad.ghanima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5040,7 +5558,9 @@
    "ar": "المسابقة والمناضلة",
    "en": "racing and archery contests",
    "kind": "act",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5062,7 +5582,10 @@
    "ar": "النفل وجعل الإمام",
    "en": "the imam's promised award",
    "kind": "act",
-   "broader": "jihad.ghanima",
+   "broader": [
+    "jihad",
+    "jihad.ghanima"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5085,7 +5608,9 @@
    "ar": "الرضخ",
    "en": "the discretionary share of spoils",
    "kind": "item",
-   "broader": "jihad.ghanima",
+   "broader": [
+    "jihad.ghanima"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5102,7 +5627,9 @@
    "ar": "السلب",
    "en": "the slain enemy's spoils",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5119,7 +5646,9 @@
    "ar": "الطعام في دار الحرب",
    "en": "food taken in enemy territory",
    "kind": "item",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5136,7 +5665,9 @@
    "ar": "تبعية الولد لأبويه في الدين",
    "en": "the child following its parents in religion",
    "kind": "issue",
-   "broader": "jihad.islam_kafir",
+   "broader": [
+    "jihad.islam_kafir"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5153,7 +5684,9 @@
    "ar": "تجهيز الغازي",
    "en": "equipping a fighter",
    "kind": "act",
-   "broader": "jihad",
+   "broader": [
+    "jihad"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5175,7 +5708,9 @@
    "ar": "العبد الجاني",
    "en": "the slave who has injured",
    "kind": "item",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -5204,7 +5739,9 @@
    "ar": "العفو عن القصاص",
    "en": "pardon from retaliation",
    "kind": "act",
-   "broader": "jinayat.qisas",
+   "broader": [
+    "jinayat.qisas"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5222,7 +5759,9 @@
    "ar": "دفع الصائل",
    "en": "repelling an assailant",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5239,7 +5778,9 @@
    "ar": "حفر البئر",
    "en": "digging a well",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5256,7 +5797,9 @@
    "ar": "استيفاء القصاص",
    "en": "carrying out retaliation",
    "kind": "act",
-   "broader": "jinayat.qisas",
+   "broader": [
+    "jinayat.qisas"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5273,7 +5816,9 @@
    "ar": "جناية العبد",
    "en": "an injury done by a slave",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5290,7 +5835,9 @@
    "ar": "الجراح",
    "en": "wounds",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5307,7 +5854,9 @@
    "ar": "كفارة القتل",
    "en": "the expiation for killing",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5324,7 +5873,9 @@
    "ar": "موجب القتل العمد",
    "en": "what wilful killing entails",
    "kind": "issue",
-   "broader": "jinayat.qisas",
+   "broader": [
+    "jinayat.qisas"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5341,7 +5892,9 @@
    "ar": "الممسك مع القاتل",
    "en": "the one who holds the victim for the killer",
    "kind": "act",
-   "broader": "jinayat.qatl_amd",
+   "broader": [
+    "jinayat.qatl_amd"
+   ],
    "unanchored": "The ḥadīth on the one who holds the victim (يقتل القاتل ويحبس الممسك) is outside the six books, and no ijmāʿ is reported, the madhhab being split.",
    "shards": [
     "e"
@@ -5352,7 +5905,9 @@
    "ar": "قتل المسلم بالكافر",
    "en": "killing a Muslim for a non-Muslim",
    "kind": "issue",
-   "broader": "jinayat.qisas",
+   "broader": [
+    "jinayat.qisas"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5369,7 +5924,9 @@
    "ar": "القسامة",
    "en": "the qasāma oaths",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5393,7 +5950,9 @@
    "ar": "القتل العمد",
    "en": "intentional killing",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5416,7 +5975,9 @@
    "ar": "قتل النفس",
    "en": "taking one's own life",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5433,7 +5994,9 @@
    "ar": "القصاص",
    "en": "retaliation",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5463,7 +6026,9 @@
    "ar": "القصاص فيما دون النفس",
    "en": "retaliation for wounds",
    "kind": "act",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5480,7 +6045,9 @@
    "ar": "قصاص الوالد بولده",
    "en": "retaliation against a father for his child",
    "kind": "act",
-   "broader": "jinayat.qisas",
+   "broader": [
+    "jinayat.qisas"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5497,7 +6064,9 @@
    "ar": "جناية الصبي",
    "en": "the minor's injury",
    "kind": "issue",
-   "broader": "jinayat",
+   "broader": [
+    "jinayat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5514,7 +6083,10 @@
    "ar": "عوض الخلع",
    "en": "consideration of khulʿ",
    "kind": "item",
-   "broader": "khul.khul",
+   "broader": [
+    "khul",
+    "khul.khul"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5537,7 +6109,9 @@
    "ar": "الخلع",
    "en": "khulʿ",
    "kind": "act",
-   "broader": "khul",
+   "broader": [
+    "khul"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5561,7 +6135,9 @@
    "ar": "اللعان",
    "en": "the mutual imprecation",
    "kind": "act",
-   "broader": "lian",
+   "broader": [
+    "lian"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5580,7 +6156,9 @@
    "ar": "لحوق النسب",
    "en": "attaching a child's lineage",
    "kind": "issue",
-   "broader": "lian",
+   "broader": [
+    "lian"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5597,7 +6175,9 @@
    "ar": "القيافة",
    "en": "establishing lineage by physiognomists",
    "kind": "act",
-   "broader": "lian.lihaq_nasab",
+   "broader": [
+    "lian.lihaq_nasab"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5614,7 +6194,9 @@
    "ar": "الضالة المكتومة",
    "en": "the concealed stray",
    "kind": "item",
-   "broader": "luqata",
+   "broader": [
+    "luqata"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5631,7 +6213,9 @@
    "ar": "اللقيط",
    "en": "the foundling",
    "kind": "item",
-   "broader": "luqata",
+   "broader": [
+    "luqata"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -5660,7 +6244,9 @@
    "ar": "اللقطة",
    "en": "found property",
    "kind": "item",
-   "broader": "luqata",
+   "broader": [
+    "luqata"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5690,7 +6276,9 @@
    "ar": "المال المجهول ربه",
    "en": "property whose owner is unknown",
    "kind": "item",
-   "broader": "luqata.luqata",
+   "broader": [
+    "luqata.luqata"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5707,7 +6295,9 @@
    "ar": "المساقاة",
    "en": "the share-cropping contract",
    "kind": "act",
-   "broader": "musaqat",
+   "broader": [
+    "musaqat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5737,7 +6327,9 @@
    "ar": "المزارعة",
    "en": "share-cropping of land",
    "kind": "act",
-   "broader": "musaqat",
+   "broader": [
+    "musaqat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5754,7 +6346,9 @@
    "ar": "الفسخ للإعسار",
    "en": "annulment for the husband's insolvency",
    "kind": "act",
-   "broader": "nafaqat.nafaqat_zawja",
+   "broader": [
+    "nafaqat.nafaqat_zawja"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5771,7 +6365,9 @@
    "ar": "الحضانة",
    "en": "custody of the child",
    "kind": "act",
-   "broader": "nafaqat",
+   "broader": [
+    "nafaqat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5788,7 +6384,9 @@
    "ar": "النفقة",
    "en": "maintenance",
    "kind": "item",
-   "broader": "nafaqat",
+   "broader": [
+    "nafaqat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5805,7 +6403,10 @@
    "ar": "نفقة الأقارب",
    "en": "maintenance of kin",
    "kind": "item",
-   "broader": "nafaqat",
+   "broader": [
+    "nafaqat",
+    "nafaqat.nafaqa"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5829,7 +6430,9 @@
    "ar": "النفقة على البهائم",
    "en": "maintaining animals",
    "kind": "act",
-   "broader": "nafaqat",
+   "broader": [
+    "nafaqat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5846,7 +6449,9 @@
    "ar": "نفقة المبتوتة الحامل",
    "en": "maintenance of the pregnant irrevocably divorced",
    "kind": "item",
-   "broader": "nafaqat",
+   "broader": [
+    "nafaqat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5863,7 +6468,10 @@
    "ar": "نفقة الزوجة",
    "en": "the wife's maintenance",
    "kind": "item",
-   "broader": "nafaqat",
+   "broader": [
+    "nafaqat",
+    "nafaqat.nafaqa"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5893,7 +6501,9 @@
    "ar": "تخيير المحضون",
    "en": "the child's choice between parents",
    "kind": "act",
-   "broader": "nafaqat.hadana",
+   "broader": [
+    "nafaqat.hadana"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -5910,7 +6520,9 @@
    "ar": "عدد الزوجات",
    "en": "the number of wives",
    "kind": "issue",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5943,7 +6555,9 @@
    "ar": "الأمة المزوجة",
    "en": "the married slave woman",
    "kind": "item",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5960,7 +6574,9 @@
    "ar": "البضع",
    "en": "the wife's conjugal capacity as the object of marriage",
    "kind": "item",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -5977,7 +6593,9 @@
    "ar": "الفسخ بالعيب",
    "en": "annulment of marriage for a defect",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "unanchored": "No āya, ḥadīth of the six books or ijmāʿ in al-Mughnī names annulment for marital defects; it rests on Companion reports outside the pinned witnesses.",
    "shards": [
     "f"
@@ -5988,7 +6606,9 @@
    "ar": "الفراش",
    "en": "the conjugal bed",
    "kind": "issue",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6005,7 +6625,9 @@
    "ar": "إذن المرأة في النكاح",
    "en": "the woman's consent to her marriage",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6027,7 +6649,9 @@
    "ar": "إسلام أحد الزوجين",
    "en": "conversion of one spouse to Islam",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6049,7 +6673,9 @@
    "ar": "إسلام الزوج على أكثر من أربع",
    "en": "a convert with more than four wives",
    "kind": "issue",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6066,7 +6692,9 @@
    "ar": "إسلام الزوجين الكافرين",
    "en": "conversion of non-Muslim spouses",
    "kind": "issue",
-   "broader": "nikah.nikah",
+   "broader": [
+    "nikah.nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6083,7 +6711,9 @@
    "ar": "الاستمناء",
    "en": "masturbation",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6100,7 +6730,9 @@
    "ar": "الجمع بين المحارم",
    "en": "combining close kinswomen in marriage",
    "kind": "act",
-   "broader": "nikah.muharramat",
+   "broader": [
+    "nikah.muharramat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6122,7 +6754,9 @@
    "ar": "الجمع بين أكثر من أربع",
    "en": "more than four wives",
    "kind": "act",
-   "broader": "nikah.nikah",
+   "broader": [
+    "nikah.nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6144,7 +6778,10 @@
    "ar": "الجمع بين الأختين",
    "en": "combining two sisters",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah",
+    "nikah.muharramat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6163,7 +6800,9 @@
    "ar": "الكفاءة في النكاح",
    "en": "parity in marriage",
    "kind": "issue",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6180,7 +6819,10 @@
    "ar": "خيار المعتقة تحت عبد",
    "en": "option of a freed wife married to a slave",
    "kind": "act",
-   "broader": "nikah.nikah",
+   "broader": [
+    "nikah",
+    "nikah.nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6212,7 +6854,10 @@
    "ar": "ملك أحد الزوجين صاحبه",
    "en": "a spouse owning the other",
    "kind": "issue",
-   "broader": "nikah.nikah",
+   "broader": [
+    "nikah",
+    "nikah.nikah"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -6229,7 +6874,9 @@
    "ar": "المهاجرة",
    "en": "the emigrant woman who left a non-Muslim husband",
    "kind": "item",
-   "broader": "nikah.islam_ahad_zawjayn",
+   "broader": [
+    "nikah.islam_ahad_zawjayn"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6251,7 +6898,9 @@
    "ar": "المحرمات في النكاح",
    "en": "women prohibited in marriage",
    "kind": "item",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6279,7 +6928,9 @@
    "ar": "المحرمات بالمصاهرة",
    "en": "women prohibited by marriage-affinity",
    "kind": "item",
-   "broader": "nikah.muharramat",
+   "broader": [
+    "nikah.muharramat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6301,7 +6952,9 @@
    "ar": "المحرمات بالنسب",
    "en": "women prohibited by lineage",
    "kind": "item",
-   "broader": "nikah.muharramat",
+   "broader": [
+    "nikah.muharramat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6318,7 +6971,9 @@
    "ar": "تحريم المصاهرة",
    "en": "prohibition by affinity",
    "kind": "item",
-   "broader": "nikah.muharramat",
+   "broader": [
+    "nikah.muharramat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6335,7 +6990,9 @@
    "ar": "النسب ولحوق الولد",
    "en": "lineage and attribution of the child",
    "kind": "issue",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6353,7 +7010,9 @@
    "ar": "عقد النكاح",
    "en": "the marriage contract",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6372,7 +7031,10 @@
    "ar": "نكاح الأمة",
    "en": "marrying a slave woman",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah",
+    "nikah.nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6407,7 +7069,9 @@
    "ar": "النكاح الفاسد",
    "en": "an invalid marriage",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6424,7 +7088,9 @@
    "ar": "نكاح المعتدة",
    "en": "marrying a woman in her waiting period",
    "kind": "act",
-   "broader": "nikah.nikah",
+   "broader": [
+    "nikah.nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6441,7 +7107,9 @@
    "ar": "القسم بين الزوجات",
    "en": "dividing time between wives",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6468,7 +7136,9 @@
    "ar": "لفظ النكاح",
    "en": "the formula of marriage",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6485,7 +7155,9 @@
    "ar": "تزويج الوليين",
    "en": "a woman married off by two guardians",
    "kind": "act",
-   "broader": "nikah.wilaya",
+   "broader": [
+    "nikah.wilaya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6502,7 +7174,9 @@
    "ar": "العنة",
    "en": "impotence",
    "kind": "issue",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6520,7 +7194,9 @@
    "ar": "ولي النكاح",
    "en": "the marriage guardian",
    "kind": "item",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6549,7 +7225,9 @@
    "ar": "وليمة العرس",
    "en": "the wedding feast",
    "kind": "act",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6571,7 +7249,9 @@
    "ar": "ولاية النكاح",
    "en": "guardianship in marriage",
    "kind": "item",
-   "broader": "nikah",
+   "broader": [
+    "nikah"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6593,7 +7273,9 @@
    "ar": "النذر",
    "en": "the vow",
    "kind": "act",
-   "broader": "nudhur",
+   "broader": [
+    "nudhur"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6617,7 +7299,9 @@
    "ar": "النذر عن الميت",
    "en": "fulfilling a dead person's vow",
    "kind": "act",
-   "broader": "nudhur.nadhr",
+   "broader": [
+    "nudhur.nadhr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6634,7 +7318,9 @@
    "ar": "النذر المعلق",
    "en": "conditional vow",
    "kind": "act",
-   "broader": "nudhur.nadhr",
+   "broader": [
+    "nudhur.nadhr"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6651,7 +7337,9 @@
    "ar": "نذر الصدقة بالمال",
    "en": "vowing one's wealth in charity",
    "kind": "act",
-   "broader": "nudhur.nadhr",
+   "broader": [
+    "nudhur.nadhr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6668,7 +7356,9 @@
    "ar": "حكم الحاكم",
    "en": "a judicial ruling",
    "kind": "act",
-   "broader": "qada",
+   "broader": [
+    "qada"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6696,7 +7386,9 @@
    "ar": "الإمام ونوابه",
    "en": "the ruler and his deputies",
    "kind": "item",
-   "broader": "qada",
+   "broader": [
+    "qada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6713,7 +7405,9 @@
    "ar": "الإمامة العظمى",
    "en": "the supreme leadership",
    "kind": "item",
-   "broader": "qada",
+   "broader": [
+    "qada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6735,7 +7429,9 @@
    "ar": "كتاب القاضي إلى القاضي",
    "en": "judge's letter to another judge",
    "kind": "act",
-   "broader": "qada.hukm",
+   "broader": [
+    "qada.hukm"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6757,7 +7453,9 @@
    "ar": "المهايأة",
    "en": "partition of usufruct by turns",
    "kind": "act",
-   "broader": "qada.qisma",
+   "broader": [
+    "qada.qisma"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6774,7 +7472,9 @@
    "ar": "نقض حكم الحاكم",
    "en": "reversing a judgment",
    "kind": "act",
-   "broader": "qada",
+   "broader": [
+    "qada"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6791,7 +7491,9 @@
    "ar": "القضاء",
    "en": "adjudication",
    "kind": "act",
-   "broader": "qada",
+   "broader": [
+    "qada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6808,7 +7510,9 @@
    "ar": "القاضي",
    "en": "the judge",
    "kind": "item",
-   "broader": "qada",
+   "broader": [
+    "qada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6831,7 +7535,9 @@
    "ar": "القسمة",
    "en": "partition",
    "kind": "act",
-   "broader": "qada",
+   "broader": [
+    "qada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6854,7 +7560,9 @@
    "ar": "هدية المقترض",
    "en": "the borrower's gift to the lender",
    "kind": "act",
-   "broader": "qard",
+   "broader": [
+    "qard"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6876,7 +7584,9 @@
    "ar": "القرض",
    "en": "loan",
    "kind": "act",
-   "broader": "qard",
+   "broader": [
+    "qard"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6899,7 +7609,9 @@
    "ar": "لبن الرضاع",
    "en": "the milk of fosterage",
    "kind": "item",
-   "broader": "rada",
+   "broader": [
+    "rada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6921,7 +7633,9 @@
    "ar": "المحرمات بالرضاع",
    "en": "women prohibited by fosterage",
    "kind": "item",
-   "broader": "rada.rada",
+   "broader": [
+    "rada.rada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6943,7 +7657,9 @@
    "ar": "الرضاع",
    "en": "fosterage",
    "kind": "act",
-   "broader": "rada",
+   "broader": [
+    "rada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -6972,7 +7688,9 @@
    "ar": "شهادة المرضعة على الرضاع",
    "en": "a single woman's testimony to fosterage",
    "kind": "act",
-   "broader": "rada.rada",
+   "broader": [
+    "rada.rada"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -6989,7 +7707,9 @@
    "ar": "غلق الرهن",
    "en": "forfeiture of the pledge to the creditor",
    "kind": "act",
-   "broader": "rahn.rahn",
+   "broader": [
+    "rahn.rahn"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7006,7 +7726,9 @@
    "ar": "الرهن",
    "en": "the pledge",
    "kind": "item",
-   "broader": "rahn",
+   "broader": [
+    "rahn"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7028,7 +7750,9 @@
    "ar": "الرهن",
    "en": "the pledge",
    "kind": "item",
-   "broader": "rahn",
+   "broader": [
+    "rahn"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7053,7 +7777,9 @@
    "ar": "الرجعة",
    "en": "taking back a divorced wife",
    "kind": "act",
-   "broader": "raja",
+   "broader": [
+    "raja"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7088,7 +7814,9 @@
    "ar": "المطلقة الرجعية",
    "en": "the revocably divorced wife",
    "kind": "item",
-   "broader": "raja.raja",
+   "broader": [
+    "raja.raja"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7110,7 +7838,9 @@
    "ar": "مد عجوة ودرهم",
    "en": "ribawi item sold with another kind against its kind",
    "kind": "act",
-   "broader": "riba",
+   "broader": [
+    "riba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7127,7 +7857,9 @@
    "ar": "الصرف",
    "en": "exchange of monies",
    "kind": "act",
-   "broader": "riba",
+   "broader": [
+    "riba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7150,7 +7882,9 @@
    "ar": "هدية الزوج",
    "en": "gifts from the husband around the marriage",
    "kind": "item",
-   "broader": "sadaq.sadaq",
+   "broader": [
+    "sadaq.sadaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7167,7 +7901,9 @@
    "ar": "هبة المرأة صداقها",
    "en": "the wife's gift of her dower",
    "kind": "act",
-   "broader": "sadaq.sadaq",
+   "broader": [
+    "sadaq.sadaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7184,7 +7920,9 @@
    "ar": "استقرار المهر",
    "en": "settlement of the whole dower",
    "kind": "issue",
-   "broader": "sadaq.sadaq",
+   "broader": [
+    "sadaq.sadaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7201,7 +7939,9 @@
    "ar": "جعل العتق صداقا",
    "en": "manumission made the dower",
    "kind": "act",
-   "broader": "sadaq.sadaq",
+   "broader": [
+    "sadaq.sadaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7218,7 +7958,9 @@
    "ar": "الخلوة",
    "en": "seclusion of the spouses",
    "kind": "act",
-   "broader": "sadaq.istiqrar_mahr",
+   "broader": [
+    "sadaq.istiqrar_mahr"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -7235,7 +7977,9 @@
    "ar": "نصف الصداق",
    "en": "half the dower",
    "kind": "item",
-   "broader": "sadaq",
+   "broader": [
+    "sadaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7252,7 +7996,9 @@
    "ar": "الصداق",
    "en": "dower",
    "kind": "item",
-   "broader": "sadaq",
+   "broader": [
+    "sadaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7280,7 +8026,9 @@
    "ar": "الصداق تعليم القرآن",
    "en": "teaching the Qurʾān as dower",
    "kind": "item",
-   "broader": "sadaq.sadaq",
+   "broader": [
+    "sadaq.sadaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7297,7 +8045,9 @@
    "ar": "تنصيف الصداق بالطلاق قبل الدخول",
    "en": "halving the dower on divorce before consummation",
    "kind": "issue",
-   "broader": "sadaq.sadaq",
+   "broader": [
+    "sadaq.sadaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7320,7 +8070,9 @@
    "ar": "تنصيف المهر",
    "en": "halving of the dower",
    "kind": "issue",
-   "broader": "sadaq.sadaq",
+   "broader": [
+    "sadaq.sadaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7337,7 +8089,9 @@
    "ar": "السلم",
    "en": "forward sale",
    "kind": "act",
-   "broader": "salam",
+   "broader": [
+    "salam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7365,7 +8119,9 @@
    "ar": "الأذان",
    "en": "the call to prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7382,7 +8138,9 @@
    "ar": "أذكار الصلاة",
    "en": "the words of prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7404,7 +8162,9 @@
    "ar": "الصلاة في أوقات النهي",
    "en": "prayer at forbidden times",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7422,7 +8182,9 @@
    "ar": "قراءة الفاتحة",
    "en": "reciting the Fātiḥa",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7439,7 +8201,9 @@
    "ar": "إدراك الركعة مع الإمام",
    "en": "catching the rakʿa with the imam",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7457,7 +8221,9 @@
    "ar": "إجابة المؤذن",
    "en": "answering the muʾadhdhin",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7475,7 +8241,9 @@
    "ar": "اجتناب النجاسة في الصلاة",
    "en": "avoiding impurity in prayer",
    "kind": "issue",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7492,7 +8260,9 @@
    "ar": "الإمامة",
    "en": "leading the prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7509,7 +8279,9 @@
    "ar": "دعاء الاستفتاح",
    "en": "the opening supplication",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7526,7 +8298,9 @@
    "ar": "الجمع بين الصلاتين",
    "en": "combining prayers",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7543,7 +8317,9 @@
    "ar": "صلاة الجمعة",
    "en": "the Friday prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7572,7 +8348,9 @@
    "ar": "الإنصات للخطبة",
    "en": "silence during the Friday sermon",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7589,7 +8367,9 @@
    "ar": "خطبة الجمعة",
    "en": "the Friday sermon",
    "kind": "act",
-   "broader": "salat.jumua",
+   "broader": [
+    "salat.jumua"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7606,7 +8386,9 @@
    "ar": "اللباس المحرم في الصلاة",
    "en": "forbidden clothing in prayer",
    "kind": "item",
-   "broader": "salat.satr_awra",
+   "broader": [
+    "salat.satr_awra"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7628,7 +8410,9 @@
    "ar": "مجلس المسجد",
    "en": "a seat in the mosque",
    "kind": "item",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7650,7 +8434,9 @@
    "ar": "الصلاة في المكان المغصوب",
    "en": "prayer on usurped ground",
    "kind": "act",
-   "broader": "salat.mawadi_nahy",
+   "broader": [
+    "salat.mawadi_nahy"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7667,7 +8453,9 @@
    "ar": "المقبرة",
    "en": "the graveyard",
    "kind": "item",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7684,7 +8472,9 @@
    "ar": "المسجد",
    "en": "the mosque",
    "kind": "item",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7701,7 +8491,9 @@
    "ar": "الصلاة في مواضع النهي",
    "en": "prayer in forbidden places",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7718,7 +8510,9 @@
    "ar": "قضاء الفوائت",
    "en": "making up missed prayers",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7735,7 +8529,9 @@
    "ar": "قصر الصلاة",
    "en": "shortening prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7753,7 +8549,9 @@
    "ar": "استقبال القبلة",
    "en": "facing the qibla",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7771,7 +8569,9 @@
    "ar": "تلاوة القرآن",
    "en": "reciting the Qurʾān",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7793,7 +8593,9 @@
    "ar": "القيام في الصلاة",
    "en": "standing in prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7815,7 +8617,9 @@
    "ar": "السهو في الصلاة",
    "en": "forgetfulness in prayer",
    "kind": "issue",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7832,7 +8636,9 @@
    "ar": "الصلاة على النبي في التشهد",
    "en": "blessings on the Prophet in the tashahhud",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7854,7 +8660,9 @@
    "ar": "صلاة العيد",
    "en": "the ʿīd prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7871,7 +8679,9 @@
    "ar": "صلاة المسافر",
    "en": "the traveller's prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7888,7 +8698,9 @@
    "ar": "صلاة الصبي",
    "en": "the child's prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7905,7 +8717,9 @@
    "ar": "ستر العورة",
    "en": "covering the nakedness in prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7927,7 +8741,9 @@
    "ar": "الشك في الصلاة",
    "en": "doubt in prayer",
    "kind": "issue",
-   "broader": "salat.sujud_sahw",
+   "broader": [
+    "salat.sujud_sahw"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7944,7 +8760,9 @@
    "ar": "السجود على الأعضاء السبعة",
    "en": "prostration on the seven limbs",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7961,7 +8779,9 @@
    "ar": "سجود السهو",
    "en": "prostration of forgetfulness",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -7978,7 +8798,9 @@
    "ar": "سجود التلاوة",
    "en": "prostration of recitation",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -7995,7 +8817,9 @@
    "ar": "سنة الجمعة",
    "en": "the sunna after the Friday prayer",
    "kind": "act",
-   "broader": "salat.jumua",
+   "broader": [
+    "salat.jumua"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8012,7 +8836,9 @@
    "ar": "تحية المسجد",
    "en": "greeting the mosque",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8029,7 +8855,9 @@
    "ar": "تكبيرة الإحرام",
    "en": "the opening takbīr",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8046,7 +8874,9 @@
    "ar": "تكبيرات الانتقال",
    "en": "the transitional takbīrs",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8063,7 +8893,9 @@
    "ar": "التراويح",
    "en": "the night prayers of Ramaḍān",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8080,7 +8912,9 @@
    "ar": "التسليم من الصلاة",
    "en": "the closing salām",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8097,7 +8931,9 @@
    "ar": "صلاة التطوع",
    "en": "voluntary prayer",
    "kind": "act",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8119,7 +8955,9 @@
    "ar": "طول القيام وكثرة الركوع",
    "en": "long standing versus many rakʿas",
    "kind": "act",
-   "broader": "salat.tatawwu",
+   "broader": [
+    "salat.tatawwu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8136,7 +8974,9 @@
    "ar": "وقت الصلاة",
    "en": "the prayer time",
    "kind": "issue",
-   "broader": "salat",
+   "broader": [
+    "salat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8154,7 +8994,10 @@
    "ar": "عدالة الشاهد",
    "en": "the probity of the witness",
    "kind": "issue",
-   "broader": "shahadat.shahada",
+   "broader": [
+    "shahadat",
+    "shahadat.shahada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8177,7 +9020,10 @@
    "ar": "رجوع الشهود",
    "en": "retraction of witnesses",
    "kind": "act",
-   "broader": "shahadat.shahada",
+   "broader": [
+    "shahadat",
+    "shahadat.shahada"
+   ],
    "nass": [
     {
      "kind": "athar",
@@ -8207,7 +9053,9 @@
    "ar": "الشهادة",
    "en": "testimony",
    "kind": "act",
-   "broader": "shahadat",
+   "broader": [
+    "shahadat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8230,7 +9078,9 @@
    "ar": "شهادة المرأة",
    "en": "a woman's testimony",
    "kind": "act",
-   "broader": "shahadat.shahada",
+   "broader": [
+    "shahadat.shahada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8252,7 +9102,10 @@
    "ar": "شهادة النساء",
    "en": "testimony of women",
    "kind": "act",
-   "broader": "shahadat.shahada",
+   "broader": [
+    "shahadat",
+    "shahadat.shahada"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8275,7 +9128,9 @@
    "ar": "شهادة القريب لقريبه",
    "en": "testimony for a relative",
    "kind": "act",
-   "broader": "shahadat.shahada",
+   "broader": [
+    "shahadat.shahada"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8292,7 +9147,10 @@
    "ar": "المضاربة",
    "en": "the silent partnership",
    "kind": "act",
-   "broader": "sharika",
+   "broader": [
+    "sharika",
+    "sharika.sharika"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -8313,7 +9171,9 @@
    "ar": "الشركة",
    "en": "partnership",
    "kind": "act",
-   "broader": "sharika",
+   "broader": [
+    "sharika"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8336,7 +9196,9 @@
    "ar": "المال المشترك",
    "en": "co-owned property",
    "kind": "item",
-   "broader": "sharika",
+   "broader": [
+    "sharika"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8358,7 +9220,9 @@
    "ar": "الشفعة",
    "en": "pre-emption",
    "kind": "act",
-   "broader": "shufa",
+   "broader": [
+    "shufa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8389,7 +9253,9 @@
    "ar": "صوم أيام التشريق",
    "en": "fasting the tashrīq days",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8412,7 +9278,9 @@
    "ar": "الفدية في الصوم",
    "en": "the fasting ransom",
    "kind": "act",
-   "broader": "siyam.sawm_ramadan",
+   "broader": [
+    "siyam.sawm_ramadan"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8429,7 +9297,10 @@
    "ar": "فطر الحامل والمرضع",
    "en": "the pregnant and nursing woman's breaking of fast",
    "kind": "act",
-   "broader": "siyam.sawm_ramadan",
+   "broader": [
+    "siyam",
+    "siyam.sawm_ramadan"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8447,7 +9318,9 @@
    "ar": "فطر المسافر",
    "en": "breaking the fast when travelling",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8464,7 +9337,9 @@
    "ar": "الجماع في الصوم",
    "en": "intercourse while fasting",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8481,7 +9356,9 @@
    "ar": "كفارة الجماع في رمضان",
    "en": "expiation for intercourse in Ramadan",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8498,7 +9375,9 @@
    "ar": "ليلة القدر",
    "en": "the Night of Decree",
    "kind": "issue",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8515,7 +9394,9 @@
    "ar": "رؤية الهلال",
    "en": "sighting the new moon",
    "kind": "issue",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8543,7 +9424,9 @@
    "ar": "صوم الدهر",
    "en": "perpetual fasting",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8560,7 +9443,9 @@
    "ar": "صوم يوم العيد",
    "en": "fasting on the ʿīd day",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8577,7 +9462,9 @@
    "ar": "صوم رمضان",
    "en": "the Ramaḍān fast",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8594,7 +9481,9 @@
    "ar": "الصوم في السفر",
    "en": "fasting while travelling",
    "kind": "act",
-   "broader": "siyam.sawm_ramadan",
+   "broader": [
+    "siyam.sawm_ramadan"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8616,7 +9505,9 @@
    "ar": "صوم التطوع",
    "en": "voluntary fast",
    "kind": "act",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8633,7 +9524,9 @@
    "ar": "طلوع الفجر",
    "en": "the break of dawn",
    "kind": "issue",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8650,7 +9543,9 @@
    "ar": "وقت الفطر بالغروب",
    "en": "the time of breaking the fast at sunset",
    "kind": "issue",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8677,7 +9572,9 @@
    "ar": "يوم الشك",
    "en": "the day of doubt",
    "kind": "issue",
-   "broader": "siyam",
+   "broader": [
+    "siyam"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8694,7 +9591,9 @@
    "ar": "الإبراء",
    "en": "release from a claim",
    "kind": "act",
-   "broader": "sulh",
+   "broader": [
+    "sulh"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8711,7 +9610,9 @@
    "ar": "الارتفاق بملك الجار",
    "en": "easement over a neighbour's property",
    "kind": "act",
-   "broader": "sulh",
+   "broader": [
+    "sulh"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8733,7 +9634,9 @@
    "ar": "الجدار بين الجارين ووضع الخشب عليه",
    "en": "the wall between neighbours and resting beams on it",
    "kind": "item",
-   "broader": "sulh",
+   "broader": [
+    "sulh"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8750,7 +9653,9 @@
    "ar": "الجدار بين الجارين",
    "en": "the wall between neighbours",
    "kind": "item",
-   "broader": "sulh",
+   "broader": [
+    "sulh"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8767,7 +9672,9 @@
    "ar": "الصلح",
    "en": "settlement",
    "kind": "act",
-   "broader": "sulh",
+   "broader": [
+    "sulh"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8789,7 +9696,9 @@
    "ar": "الصلح عن دم العمد",
    "en": "settlement for wilful killing",
    "kind": "act",
-   "broader": "sulh",
+   "broader": [
+    "sulh"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8806,7 +9715,9 @@
    "ar": "وضع الخشب على جدار الجار",
    "en": "resting beams on a neighbour's wall",
    "kind": "act",
-   "broader": "sulh",
+   "broader": [
+    "sulh"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8829,7 +9740,9 @@
    "ar": "الآنية",
    "en": "vessels",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8846,7 +9759,9 @@
    "ar": "آنية الكفار وثيابهم",
    "en": "vessels and clothes of non-Muslims",
    "kind": "item",
-   "broader": "tahara.najasa",
+   "broader": [
+    "tahara.najasa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8863,7 +9778,9 @@
    "ar": "البول",
    "en": "urine",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8880,7 +9797,9 @@
    "ar": "دباغ جلد الميتة",
    "en": "tanning a carcass hide",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8897,7 +9816,9 @@
    "ar": "الدهن المتنجس",
    "en": "impure oil and fat",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8919,7 +9840,9 @@
    "ar": "غسل الجنابة",
    "en": "the major ablution",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8941,7 +9864,9 @@
    "ar": "الحدث",
    "en": "ritual impurity",
    "kind": "issue",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -8959,7 +9884,9 @@
    "ar": "الحيض",
    "en": "menstruation",
    "kind": "issue",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -8993,7 +9920,9 @@
    "ar": "الإناء المشتبه",
    "en": "a vessel of doubtful purity",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9010,7 +9939,10 @@
    "ar": "الاستحاضة",
    "en": "irregular bleeding",
    "kind": "issue",
-   "broader": "tahara.hayd",
+   "broader": [
+    "tahara",
+    "tahara.hayd"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9033,7 +9965,9 @@
    "ar": "الاستمتاع بالحائض",
    "en": "intimacy with a menstruating wife",
    "kind": "act",
-   "broader": "tahara.hayd",
+   "broader": [
+    "tahara.hayd"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9050,7 +9984,9 @@
    "ar": "الاستنجاء والاستجمار",
    "en": "cleansing after relieving oneself",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9067,7 +10003,9 @@
    "ar": "جلد الميتة",
    "en": "the hide of a carcass",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9089,7 +10027,9 @@
    "ar": "لمس المرأة",
    "en": "touching a woman",
    "kind": "act",
-   "broader": "tahara.hadath",
+   "broader": [
+    "tahara.hadath"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9106,7 +10046,9 @@
    "ar": "الماء الجاري",
    "en": "running water",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9123,7 +10065,9 @@
    "ar": "الماء الذي وقعت فيه نجاسة",
    "en": "water into which impurity fell",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9146,7 +10090,9 @@
    "ar": "ما أبين من حي",
    "en": "what is severed from a living body",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9163,7 +10109,9 @@
    "ar": "الماء اليسير",
    "en": "a small quantity of water",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9180,7 +10128,9 @@
    "ar": "المذي",
    "en": "pre-seminal fluid",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9197,7 +10147,9 @@
    "ar": "المني والاحتلام",
    "en": "semen and wet dreams",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9219,7 +10171,10 @@
    "ar": "المسح على الخفين",
    "en": "wiping over the khuff",
    "kind": "act",
-   "broader": "tahara.wudu",
+   "broader": [
+    "tahara",
+    "tahara.wudu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9242,7 +10197,9 @@
    "ar": "مسح الرأس",
    "en": "wiping the head",
    "kind": "act",
-   "broader": "tahara.wudu",
+   "broader": [
+    "tahara.wudu"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9259,7 +10216,9 @@
    "ar": "مسح الأذنين",
    "en": "wiping the ears",
    "kind": "act",
-   "broader": "tahara.wudu",
+   "broader": [
+    "tahara.wudu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9276,7 +10235,9 @@
    "ar": "ما لا نفس له سائلة",
    "en": "creatures without flowing blood",
    "kind": "item",
-   "broader": "tahara.najasa",
+   "broader": [
+    "tahara.najasa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9293,7 +10254,9 @@
    "ar": "الموالاة في الوضوء",
    "en": "continuity of ablution",
    "kind": "act",
-   "broader": "tahara.wudu",
+   "broader": [
+    "tahara.wudu"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9310,7 +10273,9 @@
    "ar": "النجاسة",
    "en": "ritual impurity",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9327,7 +10292,9 @@
    "ar": "النوم الناقض للوضوء",
    "en": "sleep as nullifier of ablution",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9344,7 +10311,9 @@
    "ar": "قراءة الحائض والجنب القرآن",
    "en": "Qurʾān recitation by the menstruant and the junub",
    "kind": "act",
-   "broader": "tahara.ghusl_janaba",
+   "broader": [
+    "tahara.ghusl_janaba"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9361,7 +10330,9 @@
    "ar": "الشعر",
    "en": "hair",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9378,7 +10349,9 @@
    "ar": "غسل الإناء من ولوغ الكلب",
    "en": "washing a vessel seven times",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9395,7 +10368,9 @@
    "ar": "التيمم",
    "en": "dry ablution",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9413,7 +10388,9 @@
    "ar": "طهارة الثوب",
    "en": "purity of clothing",
    "kind": "item",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9430,7 +10407,9 @@
    "ar": "ثياب الصبيان",
    "en": "clothes of children",
    "kind": "item",
-   "broader": "tahara.najasa",
+   "broader": [
+    "tahara.najasa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9447,7 +10426,10 @@
    "ar": "طين الشوارع",
    "en": "street mud",
    "kind": "item",
-   "broader": "tahara.najasa",
+   "broader": [
+    "tahara",
+    "tahara.najasa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9470,7 +10452,9 @@
    "ar": "وطء الحائض",
    "en": "intercourse with a menstruating woman",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9492,7 +10476,9 @@
    "ar": "الوضوء",
    "en": "ablution",
    "kind": "act",
-   "broader": "tahara",
+   "broader": [
+    "tahara"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9516,7 +10502,10 @@
    "ar": "ولوغ الكلب",
    "en": "a dog's licking of a vessel",
    "kind": "item",
-   "broader": "tahara.najasa",
+   "broader": [
+    "tahara",
+    "tahara.najasa"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9539,7 +10528,9 @@
    "ar": "عدد الطلاق",
    "en": "the number of divorces",
    "kind": "issue",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9567,7 +10558,9 @@
    "ar": "ألفاظ الطلاق",
    "en": "the words of divorce",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9584,7 +10577,9 @@
    "ar": "كناية الطلاق",
    "en": "implicit divorce",
    "kind": "act",
-   "broader": "talaq.alfaz_talaq",
+   "broader": [
+    "talaq.alfaz_talaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9601,7 +10596,9 @@
    "ar": "كنايات الطلاق",
    "en": "allusive divorce formulas",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9623,7 +10620,9 @@
    "ar": "قول الرجل لامرأته أنت علي حرام",
    "en": "declaring one's wife unlawful",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9640,7 +10639,9 @@
    "ar": "المطلقة ثلاثا",
    "en": "the triply divorced wife",
    "kind": "item",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9662,7 +10663,9 @@
    "ar": "الطلاق",
    "en": "divorce",
    "kind": "act",
-   "broader": "talaq",
+   "broader": [
+    "talaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9704,7 +10707,9 @@
    "ar": "طلاق البدعة",
    "en": "divorce during menses",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9738,7 +10743,9 @@
    "ar": "طلاق المريض",
    "en": "divorce in the final illness",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "ijma",
@@ -9755,7 +10762,9 @@
    "ar": "الطلاق المعلق بشرط",
    "en": "conditional divorce",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "athar",
@@ -9785,7 +10794,9 @@
    "ar": "طلاق المبهمة",
    "en": "divorce of an unspecified wife",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "unanchored": "No canonical text names divorcing one wife unspecified; the jurists carry it over from the ḥadīth of the lot in manumission.",
    "shards": [
     "d",
@@ -9797,7 +10808,10 @@
    "ar": "الطلاق قبل النكاح",
    "en": "divorce before marriage",
    "kind": "act",
-   "broader": "talaq.talaq_muallaq",
+   "broader": [
+    "talaq.talaq",
+    "talaq.talaq_muallaq"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9825,7 +10839,9 @@
    "ar": "الطلاق الثلاث",
    "en": "triple divorce",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9848,7 +10864,9 @@
    "ar": "تعليق الطلاق",
    "en": "conditional divorce",
    "kind": "act",
-   "broader": "talaq.talaq",
+   "broader": [
+    "talaq.talaq"
+   ],
    "nass": [
     {
      "kind": "athar",
@@ -9865,7 +10883,9 @@
    "ar": "الأكل من الأضحية والصدقة منها",
    "en": "eating from and giving away the sacrifice",
    "kind": "act",
-   "broader": "udhiya.udhiya",
+   "broader": [
+    "udhiya.udhiya"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9882,7 +10902,9 @@
    "ar": "العقيقة",
    "en": "the birth sacrifice",
    "kind": "act",
-   "broader": "udhiya",
+   "broader": [
+    "udhiya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9905,7 +10927,9 @@
    "ar": "جلود الأضاحي",
    "en": "the hides of sacrificed animals",
    "kind": "item",
-   "broader": "udhiya.udhiya",
+   "broader": [
+    "udhiya.udhiya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -9922,7 +10946,9 @@
    "ar": "الأضحية المعينة",
    "en": "a designated sacrificial animal",
    "kind": "item",
-   "broader": "udhiya.udhiya",
+   "broader": [
+    "udhiya.udhiya"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9944,7 +10970,9 @@
    "ar": "الأضحية",
    "en": "the sacrifice",
    "kind": "item",
-   "broader": "udhiya",
+   "broader": [
+    "udhiya"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9975,7 +11003,9 @@
    "ar": "الأمر",
    "en": "the command",
    "kind": "act",
-   "broader": "usul",
+   "broader": [
+    "usul"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -9997,7 +11027,9 @@
    "ar": "فعل النبي صلى الله عليه وسلم",
    "en": "the Prophet's act",
    "kind": "act",
-   "broader": "usul",
+   "broader": [
+    "usul"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10019,7 +11051,9 @@
    "ar": "الإجازة في الرواية",
    "en": "licence to transmit",
    "kind": "act",
-   "broader": "usul",
+   "broader": [
+    "usul"
+   ],
    "unanchored": "A technique of ḥadīth transmission developed after the Prophet; no canonical text names it.",
    "shards": [
     "d"
@@ -10030,7 +11064,9 @@
    "ar": "خبر الواحد",
    "en": "the report of a single transmitter",
    "kind": "item",
-   "broader": "usul",
+   "broader": [
+    "usul"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10047,7 +11083,9 @@
    "ar": "الكتابة والإشارة",
    "en": "writing and gesture as speech",
    "kind": "act",
-   "broader": "usul.amr",
+   "broader": [
+    "usul.amr"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10069,7 +11107,9 @@
    "ar": "لفظ الوجوب والفرض",
    "en": "the words wujūb and farḍ",
    "kind": "issue",
-   "broader": "usul",
+   "broader": [
+    "usul"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10086,7 +11126,9 @@
    "ar": "الأمانة",
    "en": "trust",
    "kind": "item",
-   "broader": "wadia",
+   "broader": [
+    "wadia"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10103,7 +11145,9 @@
    "ar": "الأمانات",
    "en": "property held in trust",
    "kind": "item",
-   "broader": "wadia",
+   "broader": [
+    "wadia"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10120,7 +11164,11 @@
    "ar": "الوديعة",
    "en": "the deposit",
    "kind": "item",
-   "broader": "wadia",
+   "broader": [
+    "wadia",
+    "wadia.amana",
+    "wadia.amanat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10157,7 +11205,9 @@
    "ar": "الوكالة",
    "en": "agency",
    "kind": "act",
-   "broader": "wakala",
+   "broader": [
+    "wakala"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10187,7 +11237,9 @@
    "ar": "الوكيل",
    "en": "the agent",
    "kind": "item",
-   "broader": "wakala",
+   "broader": [
+    "wakala"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10209,7 +11261,9 @@
    "ar": "ناظر الوقف",
    "en": "the endowment's administrator",
    "kind": "item",
-   "broader": "waqf.waqf",
+   "broader": [
+    "waqf.waqf"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10226,7 +11280,9 @@
    "ar": "الوقف",
    "en": "the endowment",
    "kind": "act",
-   "broader": "waqf",
+   "broader": [
+    "waqf"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10253,7 +11309,9 @@
    "ar": "الوقف على الأولاد والذرية",
    "en": "endowment for descendants",
    "kind": "act",
-   "broader": "waqf.waqf",
+   "broader": [
+    "waqf.waqf"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10270,7 +11328,9 @@
    "ar": "الثلث في مرض الموت",
    "en": "the third in the final illness",
    "kind": "issue",
-   "broader": "wasaya",
+   "broader": [
+    "wasaya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10293,7 +11353,9 @@
    "ar": "الوصي",
    "en": "the executor and guardian",
    "kind": "item",
-   "broader": "wasaya",
+   "broader": [
+    "wasaya"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10321,7 +11383,9 @@
    "ar": "الوصية",
    "en": "the bequest",
    "kind": "act",
-   "broader": "wasaya",
+   "broader": [
+    "wasaya"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10358,7 +11422,9 @@
    "ar": "الوصية للأقربين",
    "en": "bequest to kin",
    "kind": "act",
-   "broader": "wasaya.wasiyya",
+   "broader": [
+    "wasaya.wasiyya"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10375,7 +11441,9 @@
    "ar": "الوصية بالمنفعة",
    "en": "bequest of usufruct",
    "kind": "act",
-   "broader": "wasaya.wasiyya",
+   "broader": [
+    "wasaya.wasiyya"
+   ],
    "unanchored": "No canonical text names a bequest of a thing's usufruct apart from its substance; it is a construct of the fuqahāʾ.",
    "shards": [
     "e"
@@ -10386,7 +11454,9 @@
    "ar": "الوصية بما زاد على الثلث",
    "en": "bequest beyond one third",
    "kind": "act",
-   "broader": "wasaya.wasiyya",
+   "broader": [
+    "wasaya.wasiyya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10408,7 +11478,9 @@
    "ar": "الوصية للوارث",
    "en": "bequest to an heir",
    "kind": "act",
-   "broader": "wasaya.wasiyya",
+   "broader": [
+    "wasaya.wasiyya"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10426,7 +11498,9 @@
    "ar": "أهل الزكاة",
    "en": "recipients of zakat",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10448,7 +11522,9 @@
    "ar": "العامل على الزكاة",
    "en": "zakat collector",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10470,7 +11546,9 @@
    "ar": "زكاة البقر",
    "en": "alms on cattle",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10487,7 +11565,9 @@
    "ar": "الفرار من الزكاة",
    "en": "evading zakat",
    "kind": "act",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10504,7 +11584,9 @@
    "ar": "الغارم",
    "en": "the debtor recipient of alms",
    "kind": "item",
-   "broader": "zakat.masarif",
+   "broader": [
+    "zakat.masarif"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10521,7 +11603,10 @@
    "ar": "الحول",
    "en": "the year of possession",
    "kind": "issue",
-   "broader": "zakat.zakat",
+   "broader": [
+    "zakat",
+    "zakat.zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10544,7 +11629,9 @@
    "ar": "الجبران",
    "en": "make-weight in camel zakat",
    "kind": "item",
-   "broader": "zakat.zakat_ibil",
+   "broader": [
+    "zakat.zakat_ibil"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10561,7 +11648,9 @@
    "ar": "المعدن",
    "en": "mine",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10578,7 +11667,9 @@
    "ar": "زكاة مال الصبي",
    "en": "zakat on a minor's wealth",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10595,7 +11686,9 @@
    "ar": "مانع الزكاة",
    "en": "the one withholding zakat",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10612,7 +11705,10 @@
    "ar": "مصارف الزكاة",
    "en": "the recipients of alms",
    "kind": "item",
-   "broader": "zakat.zakat",
+   "broader": [
+    "zakat",
+    "zakat.zakat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10635,7 +11731,10 @@
    "ar": "النصاب",
    "en": "the minimum threshold",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat",
+    "zakat.zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10654,7 +11753,9 @@
    "ar": "الركاز والدفين",
    "en": "buried treasure",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10671,7 +11772,9 @@
    "ar": "سهم سبيل الله",
    "en": "the share 'in the way of God'",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10688,7 +11791,9 @@
    "ar": "صدقة التطوع",
    "en": "voluntary charity",
    "kind": "act",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10705,7 +11810,10 @@
    "ar": "تعجيل الزكاة",
    "en": "paying alms in advance",
    "kind": "act",
-   "broader": "zakat.zakat",
+   "broader": [
+    "zakat",
+    "zakat.zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10727,7 +11835,9 @@
    "ar": "عروض التجارة",
    "en": "trade goods",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10750,7 +11860,9 @@
    "ar": "الزكاة",
    "en": "alms",
    "kind": "act",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10780,7 +11892,9 @@
    "ar": "زكاة بهيمة الأنعام",
    "en": "livestock alms",
    "kind": "item",
-   "broader": "zakat.zakat",
+   "broader": [
+    "zakat.zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10797,7 +11911,10 @@
    "ar": "زكاة الفطر",
    "en": "the alms of fast-breaking",
    "kind": "act",
-   "broader": "zakat.zakat",
+   "broader": [
+    "zakat",
+    "zakat.zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10827,7 +11944,9 @@
    "ar": "زكاة الإبل",
    "en": "zakat on camels",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10844,7 +11963,9 @@
    "ar": "زكاة الثمار وخرصها",
    "en": "alms on fruits and their estimation",
    "kind": "item",
-   "broader": "zakat",
+   "broader": [
+    "zakat"
+   ],
    "nass": [
     {
      "kind": "sunnah",
@@ -10861,7 +11982,9 @@
    "ar": "كفارة الظهار",
    "en": "the ẓihār expiation",
    "kind": "act",
-   "broader": "zihar",
+   "broader": [
+    "zihar"
+   ],
    "nass": [
     {
      "kind": "quran",
@@ -10883,7 +12006,9 @@
    "ar": "الظهار",
    "en": "ẓihār",
    "kind": "act",
-   "broader": "zihar",
+   "broader": [
+    "zihar"
+   ],
    "nass": [
     {
      "kind": "quran",

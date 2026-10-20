@@ -9,7 +9,7 @@ Every case rules on something. That something is its **maḥall**, of one of thr
 This layer does four things:
 
 1. It identifies the maḥall of every case in the bank, in the case's own words.
-2. It classifies each maḥall by kind and places it in a label tree rooted in the bābs.
+2. It classifies each maḥall by kind and places it under one or more broader labels, up to the bābs.
 3. It defines each label by the canonical text that names it: an āya, a ḥadīth of the six books, or an ijmāʿ that al-Mughnī reports. The text is quoted verbatim from its pinned witness.
 4. It proves how the resulting graph ties the texts, through the furūʿ, to the qawāʿid.
 
@@ -25,7 +25,7 @@ This layer does four things:
 ## The gate
 
 - **Every case.** Each of the 1,216 annotated takhrīj cases from Ibn Rajab and Ibn al-Laḥḥām has exactly one primary maḥall. `term_ar` names it and is an exact substring of the case. Optionally, up to two secondary maḥalls are given (`also`).
-- **One tree.** Each label has a kind and a broader label. It reaches, within 16 steps, the bāb its id names.
+- **Labels without cycles.** Each label has a kind and one or more broader labels. Every upward path ends at a bāb within 16 steps, and the bāb its id names is among those it reaches.
 - **Defined, verbatim.** Each label is either anchored or `unanchored` with a reason. An anchored label carries one or more nuṣūṣ (merged labels keep every shard's, up to six), each of two words to 200 characters, checked against its witness:
   - **Qurʾān:** letters-only, inside the cited āya of the Tanzil text (`#Qsss:aaa`).
   - **Sunnah or athar:** letters-only, somewhere in the cited collection: al-Bukhārī, Muslim, Abū Dāwūd, al-Tirmidhī, al-Nasāʾī or Ibn Mājah.
@@ -60,32 +60,54 @@ This layer does four things:
 
 ### How the qawāʿid relate to the texts (the graph)
 
-`Usul.Mahall` defines a qāʿida's **footprint**: the labels its furūʿ fall under, closed upwards. It defines the qāʿida's **grounds**: the nuṣūṣ that define a label in its footprint. It proves:
+**No relation in the bank is one-to-one, and the graph does not make any of them so.** Checking the bank:
 
-- `footprint_iff`: the footprint is exactly the least up-closed set holding the maḥalls of the qāʿida's furūʿ. A qāʿida reaches the texts only through its furūʿ.
-- `grounded`: every naṣṣ on the path from a farʿ's maḥall up to its bāb grounds the farʿ's qāʿida.
-- `bab_in_footprint`: a qāʿida's footprint holds the bāb of each of its furūʿ.
-- `bridge`: a maḥall shared by furūʿ of two qawāʿid is common to both footprints.
+| Relation | In the bank |
+|---|---|
+| farʿ → qāʿida | 284 of the 1,216 furūʿ are tied to more than one qāʿida (177 to two, 92 to three, 15 to five) |
+| qāʿida type → qawāʿid | 14 of the 163 types cite more than one qāʿida, up to five |
+| qāʿida → types | 7 qawāʿid have two types, e.g. Ibn Rajab 22 (`istihlak`, `khalt`) and Ibn al-Laḥḥām 54 (`sadi55`, `sadi59`) |
+| encoder → qawāʿid | 5 encoders read more than one; 31 also cite al-Saʿdī |
+| qāʿida → encoders | 40 qawāʿid have two to six encoders |
+| label → broader | 41 labels sit under more than one. 3 sit under two bābs: the invalid contract (general, sale), debt (sale, loan), and release from debt (general, gift) |
+| label ↔ naṣṣ | 203 labels are defined by more than one naṣṣ; 87 nuṣūṣ define more than one label, up to four |
 
-The decision procedures `belowB`, `footprintB` and `groundsB` are proved sound, and `belowB` complete, for the exported graph. `restrict` is proved not to change a qāʿida's answers. `UsulTest.MahallGraph` then checks the concrete graph:
+A farʿ's qawāʿid are the union of four ties, each kept with its provenance in `graph.json` (`links`):
 
-- every label is rooted (`rootedB 16`);
-- for each of the 159 qawāʿid, the footprint and the grounds the Lean procedures compute equal the pipeline's, exactly.
+- **placed:** the author files it under that qāʿida;
+- **read:** its encoder reads the qāʿida, al-Saʿdī's included. This adds a qāʿida beyond the placement for 260 furūʿ;
+- **typed:** the types whose facts that encoder reads cite the qāʿida. This adds one for 251;
+- **co:** it is co-annotated under the qāʿida (2 furūʿ).
+
+The first version of this layer gave each farʿ one qāʿida, its placement, and each label one parent, chosen by majority across shards. Both were mistakes of construction, not facts of the bank, and both are corrected here.
+
+`Usul.Mahall` defines a qāʿida's **footprint**: the labels the furūʿ tied to it fall under, closed upwards. It defines the qāʿida's **grounds**: the nuṣūṣ that define a label in its footprint. All four edges are relations. It proves:
+
+- `footprint_iff`: the footprint is exactly the least up-closed set holding the maḥalls of the furūʿ tied to the qāʿida. A qāʿida reaches the texts only through its furūʿ.
+- `grounded`: every naṣṣ that defines a label on any path from a farʿ's maḥall up to a bāb grounds every qāʿida the farʿ is tied to.
+- `shared_far`: a farʿ tied to two qawāʿid puts its maḥall and everything above it into both footprints.
+- `bridge`: a maḥall shared by two furūʿ is common to the footprints of all their qawāʿid.
+
+The decision procedures `belowB`, `footprintB` and `groundsB` are proved sound for the exported graph, and `belowB` complete. `restrict` is proved not to change a qāʿida's answers. `UsulTest.MahallGraph` then checks two things:
+
+- every upward path from every label ends within 16 steps (`rootedB 16`), so no label is its own ancestor;
+- for each of the 178 qawāʿid (Ibn Rajab 154, al-Saʿdī 19, Ibn al-Laḥḥām 5), the footprint and the grounds the Lean procedures compute equal the pipeline's, exactly (`exactB_sound`).
 
 The guards are evaluated, and the soundness theorems carry them to the relations.
 
 On the data:
 
-- **Qawāʿid cut across the bābs.** A qāʿida's footprint spans 6.1 bābs on average, at most 25. Only 4 of the 159 stay within one bāb, the shape of a ḍābiṭ rather than a qāʿida.
-- **Grounds.** A qāʿida is grounded by 22 distinct nuṣūṣ on average, at least 1.
-- **Shared maḥalls connect the qawāʿid.** 230 of the 539 labels in use occur under more than one qāʿida, and they bridge 2,319 pairs of qawāʿid. By `bridge`, the qawāʿid form one connected component of 153, plus 6 isolated ones. The most shared maḥalls:
-  - the bequest, under 31 qawāʿid;
-  - hire, 23;
-  - manumission, 21;
-  - waqf and deposit, 16 each;
-  - the oath, pledge and loan for use, 15 each.
+- **Qawāʿid cut across the bābs.** A qāʿida's footprint spans 6.8 bābs on average, at most 25. Only 4 of the 178 stay within one bāb, the shape of a ḍābiṭ rather than a qāʿida.
+- **Grounds.** A qāʿida is grounded by 26 distinct nuṣūṣ on average, at least 1.
+- **Shared maḥalls connect the qawāʿid.** 306 of the 539 labels in use occur under more than one qāʿida, and they bridge 3,509 pairs of qawāʿid. By `bridge`, 173 qawāʿid form one connected component; 5 stand alone: Ibn al-Laḥḥām 61, and Ibn Rajab 61, 88, 107 and 139. The most shared maḥalls:
+  - the bequest, under 39 qawāʿid;
+  - manumission, 30;
+  - waqf and hire, 24 each;
+  - the oath, 23;
+  - deposit, 21;
+  - divorce, 20.
 
-  This is the text-defined version of the cross-listing the reproduction study looked for (PR-50). Two qawāʿid touch when their furūʿ rule on the same thing.
+  This is the text-defined form of the cross-listing the reproduction study looked for (PR-50). Two qawāʿid touch when their furūʿ rule on the same thing.
 
 ## Integration
 
@@ -93,7 +115,7 @@ Six shards annotated about 200 cases each, under the same prompt and gate. Their
 
 - 149 ids were declared by more than one shard. For these:
   - kind went by majority;
-  - the broader label went by majority within the same bāb, ties going to the more specific;
+  - every broader label any shard declared was kept, so a label may have several (an earlier version kept only the majority's);
   - every verified naṣṣ was kept, deduplicated.
 - 24 synonyms under different ids were aliased in the furūʿ, e.g. `buyu.radd_bil_ayb` and `buyu.radd_bi_ayb` into `buyu.khiyar_ayb`, and `sadaq.mahr` into `sadaq.sadaq`.
 - `shards` on each label records who declared it.
