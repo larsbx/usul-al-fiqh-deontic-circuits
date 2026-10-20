@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "provenance": "The 235 cases of record fold 1 of the routing index's held-out split (Ibn Rajab and Ibn al-Laḥḥām furūʿ), typed into Usul.Typing situations by four LLM agents working blind. Each saw only its cases' committed texts under shuffled opaque ids, each with its reading list (corpus/typing/rajab_fold1_shortlist.json: the strict router's 20 likeliest qāʿida types, the router fitted without the case's qāʿida), and the catalogue of every qāʿida type's statement and fields generated from the Lean export; never the qāʿida, encoder or label. The procedure (list size, prompt, scoring) was frozen on fold 0 before fold 1 was typed (docs/architecture/routing-pr48.md). Every quote is verbatim from the unit's own text, at most 160 characters (tested). Not human-reviewed.",
+  "provenance": "The 235 cases of record fold 1 of the routing index's held-out split (Ibn Rajab and Ibn al-Laḥḥām furūʿ), typed into Usul.Typing situations by four LLM agents working blind. Each saw only its cases' committed texts under shuffled opaque ids, each with its reading list (corpus/typing/rajab_fold1_shortlist.json: the strict router's 20 likeliest qāʿida types, the router fitted without the case's qāʿida), and the catalogue of every qāʿida type's statement and fields generated from the Lean export; never the qāʿida, encoder or label. The procedure (list size, prompt, scoring) was frozen on fold 0 before fold 1 was typed (docs/architecture/routing-pr48.md). Every quote is verbatim from the unit's own text, at most 160 characters (tested). Not human-reviewed. The maqāṣid shard's Lajna case (qa06346) is listed without situations: a fatwā record's committed text carries no receipt-able excerpt for its facts.",
   "answers": [
     {
       "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
@@ -4176,6 +4176,10 @@
           }
         }
       ]
+    },
+    {
+      "answer": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346",
+      "situations": []
     }
   ]
 }

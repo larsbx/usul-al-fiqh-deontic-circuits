@@ -21,6 +21,7 @@ Each annotated farʿ (a derived case reported in the books) gets the ruling its 
 | Ibn al-Laḥḥām, *al-Qawāʿid wa'l-Fawāʾid* | 21 | Qawāʿid 43, 52, 53, 54 and 61, on command, generality and occasion; 13 derivable, 8 ikhtilāf. |
 | Kawsaj, *Masāʾil Aḥmad* | 1 | A substitute is used when the original is impossible. |
 | Ibn Qudāma, *al-ʿUmda* | 1 | The same substitute rule. |
+| al-Lajna al-Dāʾima, *Fatāwā* | 2 | Two fatāwā decided by the order of the maqāṣid (`Maqasid.taqdim`): life before relief from hardship, and a complement of lineage before a need. |
 | Al-Ḥajjāwī, *Zād al-Mustaqniʿ* | 1 | A wage is owed without stipulation (`RajabA2.wageWithoutStipulation`). |
 
 ## 3. Which readings the guards exercise
@@ -29,6 +30,7 @@ Each annotated farʿ (a derived case reported in the books) gets the ruling its 
 | --- | --- | --- |
 | `Usul.Readings.RajabA1`–`RajabA25` | 550 | Ibn Rajab's qawāʿid read one by one, 13 to 25 guards per module. |
 | `Usul.Readings.Mubashara`, `Concordance` | 10 | Direct act vs cause in liability (Q127), and two equivalent readings of one qāʿida. |
+| `Usul.Readings.Maqasid` | 2 | The order of the maqāṣid in tarjīḥ (al-Kawkab). |
 | `Usul.Refinements` | 384 | Earlier readings extended by the input a case exposed, each with a default that returns the old reading; e.g. lots, aṣl vs ẓāhir, recourse. |
 | `Usul.Kulliyyat` | 45 | General maxims, e.g. dependent establishment (Q50) and one performance discharging an act (Q41). |
 | `Usul.Muamalat` | 26 | Transaction maxims. |

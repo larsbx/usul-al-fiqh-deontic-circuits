@@ -274,9 +274,9 @@ theorem takmila_dropped {S : Type} (feasible : List S) (asl takmila : S → Bool
     (h : Nullifies feasible asl takmila) (s : S) : required feasible asl takmila s = asl s := by
   simp [required, h.2]
 
-/-- «فإن دعت الضرورة إلى إحياء المهجة بتناول النجس، كان تناوله أولى» (p026): where only the impure is
-at hand, keeping life (the original) requires eating, and avoiding impurity (a complement for
-manliness) falls. Situations: (eats, what is eaten is impure). -/
+/-- «فإن دعت الضرورة إلى إحياء المهجة بتناول النجس، كان تناوله أولى» (p026): where only food with
+najāsa is at hand, keeping life (the original) requires eating, and avoiding najāsa (a complement for
+manliness) falls. Situations: (eats, what is eaten has najāsa). -/
 theorem najis_for_the_mahja :
     required [(false, true), (true, true)] (fun s => s.1) (fun s => !s.2) (true, true) = true := rfl
 

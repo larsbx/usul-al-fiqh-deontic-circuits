@@ -48,11 +48,13 @@ Several functions have an `…In` variant that takes one more fact (for example 
 
 - **`RajabA1` … `RajabA25`**: readings from Ibn Rajab's *Taqrīr al-Qawāʿid*, 1 to 8 functions each. The largest are `RajabA5` (44 guards, including the five-fact `errorActorLiable`), `RajabA21` (42, including `marriageProhibited` and `mahrEstablished`) and `RajabA9` (40).
 - **`Concordance.attachOnCertainty`**: whether a ruling attaches to each, to neither, or judgement abstains.
+- **`Maqasid.hujja`** (108 guards): whether a maṣlaḥa is a proof, on each pinned stance. **`Maqasid.taqdim`** (162 guards): which of two conflicting maqāṣid is put first, on each reading of dīn.
 - **`Mubashara.damanOn`**: whether ḍamān (liability) falls on the direct actor (mubāshir), the cause (sabab), or both.
 
 Examples:
 
 - `Mubashara.damanOn true true == .shared`: the direct act arises from the cause and involves transgression, so liability is shared.
+- `Maqasid.taqdim .kawkab (.daruri .nafs) .haji == .first`: life, a necessity, before a need.
 - `RajabA1.rescission true false == .barred`: a rescission that causes harm which cannot be made good is barred.
 
 ## 5. Why it matters

@@ -5,8 +5,8 @@
   "summary": {
     "witnesses": 19,
     "units": 48510,
-    "annotated": 40,
-    "pending": 48470
+    "annotated": 42,
+    "pending": 48468
   },
   "witnesses": [
     {
@@ -230,9 +230,12 @@
       "records": "records/openiti-lajnadaima-fatawa-shamela8381.jsonl",
       "records_sha256": "ce9d11e3bad82d1b1df54945ad5b3cf68b63bda7e3d51314187bbf36f2617099",
       "units": 10437,
-      "annotated": 0,
-      "pending": 10437,
-      "annotated_ids": []
+      "annotated": 2,
+      "pending": 10435,
+      "annotated_ids": [
+        "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346",
+        "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648"
+      ]
     },
     {
       "work": "majd.muharrar",

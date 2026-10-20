@@ -25,7 +25,7 @@ Every Lean name that the corpus links to a ḥadd (definition) or qāʿida (lega
 | `Usul.Jadal` | 41 | Disputation: objections (qawādiḥ), their kinds, the debate gate, order of sources. |
 | `Usul.Dalala` | 28 | Linguistic signification: command and prohibition, specification (takhṣīṣ), implied meaning (mafhūm). |
 | `Usul.CommandSchemata` | 27 | How commands are expressed and read: gesture, writing, Prophetic acts, intended rulings. |
-| `Usul.Readings` | 23 | Ibn Rajab readings (`RajabA*`), `Mubashara`, `Concordance`. |
+| `Usul.Readings` | 77 | Ibn Rajab readings (`RajabA*`), `Mubashara`, `Concordance`, and the 54 names of `Maqasid`. |
 | `Usul.Schema` | 22 | The eight shared schemata and the theorems that place maxims in them. |
 | `Usul.QiyasLimits` | 21 | Where qiyās is not admitted, and Ḥanbalī vs Ḥanafī scope. |
 | `Usul.Furuq` | 16 | Distinctions (furūq) between look-alike cases. |
@@ -44,6 +44,7 @@ Every Lean name that the corpus links to a ḥadd (definition) or qāʿida (lega
 | `Usul.Tanaqud.t1_clash`, `Usul.Tanaqud.t1_jam` | The first apparent contradiction, and its reconciliation. |
 | `Usul.resolve_jam_first` | In a conflict of evidence, an available reconciliation (jamʿ) is what resolution returns. |
 | `Usul.Readings.Mubashara.q127_three_divisions` | Ibn Rajab's three divisions of liability (direct actor, cause, shared) cover every case exactly once. |
+| `Usul.Readings.Maqasid.dispute_locus` | The stances on istiṣlāḥ disagree only on an unattested necessity. |
 | `Hadith.Verdict.sahih` | The ḥadīth module's "sound" (ṣaḥīḥ) verdict exists too. |
 
 ## In one line

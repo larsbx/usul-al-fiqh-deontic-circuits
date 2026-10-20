@@ -143,7 +143,7 @@ The unit is a committed farʿ record, which can contain multiple examples. Annot
 | Current scope (generated) | Cases | Coverage | Decided coverage | Disputed | Encoding errors | Open gaps |
 |---|---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 1.000 | 21 | 0 | 0 |
-| All annotation suites | 1256 | 0.951 | 0.893 | 684 | 0 | 61 |
+| All annotation suites | 1258 | 0.951 | 0.894 | 684 | 0 | 61 |
 
 Coverage counts derivability under the candidate encoding. Decided coverage scores the kernel only on cases that state one ruling; disputed cases are weighed by their evidence, not by who holds a position. Neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->

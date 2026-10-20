@@ -22,6 +22,21 @@ type_field(intiqal, necessity, 'Option Bool').
 qaida_type(istihlak, 'Ibn Rajab 22 «العين المنغمرة في غيرها إذا لم يظهر أثرها …», read as an instance of 106.').
 type_extends(istihlak, majhul_madum).
 type_field(istihlak, consumed, 'Option Bool').
+qaida_type(istislah, 'Ibn Qudāma, the Rawḍa (v01 p478–482) «الاستصلاح: وهو: اتباع المصلحة المرسلة … وهي ثلاثة أقسام: قسم شهد الشرع باعتبارها … ما شهد ببطلانه … ما لم يشهد له بإبطال، ولا اعتبار معين»; al-Ghazālī\'s «ضرورة قطعية كلية» (al-Mustaṣfā v01 p176). Read by `istislah`.').
+type_field(istislah, maslaha_shahada, 'Option Usul.Readings.Maqasid.Shahada').
+type_value('Usul.Readings.Maqasid.Shahada', itibar).
+type_value('Usul.Readings.Maqasid.Shahada', ilgha).
+type_value('Usul.Readings.Maqasid.Shahada', irsal).
+type_field(istislah, maslaha_rutba, 'Option Usul.Readings.Maqasid.Rutba').
+type_value('Usul.Readings.Maqasid.Rutba', daruri).
+type_value('Usul.Readings.Maqasid.Rutba', haji).
+type_value('Usul.Readings.Maqasid.Rutba', tahsini).
+type_field(istislah, maslaha_qatiyya, 'Option Bool').
+type_field(istislah, maslaha_kulliyya, 'Option Bool').
+type_field(istislah, istislah_stance, 'Option Usul.Readings.Maqasid.Stance').
+type_value('Usul.Readings.Maqasid.Stance', rawda).
+type_value('Usul.Readings.Maqasid.Stance', mustasfa).
+type_value('Usul.Readings.Maqasid.Stance', malik).
 qaida_type(itizal, 'Ibn Rajab 160 (Taqī al-Dīn): «متى علق الطلاق بشرط وأمكن وجوده فإنه يعتزل امرأته حتى يعلم انتفاؤه»; the certain marriage stands (Q11), abstention is a rule of conduct.').
 type_extends(itizal, yaqin).
 type_field(itizal, suspended, 'Option Bool').
@@ -92,6 +107,16 @@ qaida_type(majhul_madum, 'Ibn Rajab 106 «ينزل المجهول منزلة ا�
 type_field(majhul_madum, unknown, 'Option Bool').
 type_field(majhul_madum, despair, 'Option Bool').
 type_field(majhul_madum, hardship, 'Option Bool').
+qaida_type(maqasid_tarjih, 'Ibn al-Najjār, Sharḥ al-Kawkab al-Munīr (v04 p727) «تقدم المقاصد الضرورية … على غيرها … ومكملها … على الحاجية … وتقدم المصلحة الحاجية على التحسينية … ويقدم حفظ الدين على باقي الضرورية». Read by `maqasid_tarjih`.').
+type_field(maqasid_tarjih, maqsad_first, 'Option Usul.Readings.Maqasid.Maqsad').
+type_value('Usul.Readings.Maqasid.Maqsad', daruri).
+type_value('Usul.Readings.Maqasid.Maqsad', mukammil).
+type_value('Usul.Readings.Maqasid.Maqsad', haji).
+type_value('Usul.Readings.Maqasid.Maqsad', tahsini).
+type_field(maqasid_tarjih, maqsad_second, 'Option Usul.Readings.Maqasid.Maqsad').
+type_field(maqasid_tarjih, din_reading, 'Option Usul.Readings.Maqasid.DinReading').
+type_value('Usul.Readings.Maqasid.DinReading', kawkab).
+type_value('Usul.Readings.Maqasid.DinReading', qila).
 qaida_type(mubashara, 'Ibn Rajab 127 «إذا استند إتلاف أموال الآدميين ونفوسهم إلى مباشرة وسبب تعلق الضمان بالمباشرة دون السبب إلا إذا كانت المباشرة مبنية على السبب وناشئة عنه»: an itlāf (Q13 ⊔ Q36) resting on a direct act and a cause; whether the direct act arises from the cause, and whether it has transgression.').
 type_extends(mubashara, itlaf_hal).
 type_extends(mubashara, itlaf_qasd).
@@ -910,6 +935,12 @@ encoder_reads(intention_shapes_wording, 1, restricts_absolute).
 encoder_reads(intention_shapes_wording, 2, excepts_from_text).
 encoder_type(istihlak, 'Bool').
 encoder_reads(istihlak, 1, consumed).
+encoder_type(istislah, 'Bool').
+encoder_reads(istislah, 1, maslaha_shahada).
+encoder_reads(istislah, 2, maslaha_rutba).
+encoder_reads(istislah, 3, maslaha_qatiyya).
+encoder_reads(istislah, 4, maslaha_kulliyya).
+encoder_reads(istislah, 5, istislah_stance).
 encoder_type(itlaf, 'Bool').
 encoder_reads(itlaf, 1, purpose).
 encoder_reads(itlaf, 2, mental).
@@ -949,6 +980,10 @@ encoder_type(manumission_spread, 'Bool').
 encoder_reads(manumission_spread, 1, binding_contract).
 encoder_type(many_over_noble, 'Bool').
 encoder_reads(many_over_noble, 1, same_cost).
+encoder_type(maqasid_tarjih, 'Usul.Readings.Maqasid.Taqdim').
+encoder_reads(maqasid_tarjih, 1, maqsad_first).
+encoder_reads(maqasid_tarjih, 2, maqsad_second).
+encoder_reads(maqasid_tarjih, 3, din_reading).
 encoder_type(mistaken_basis, 'Bool').
 encoder_reads(mistaken_basis, 1, believed_basis).
 encoder_reads(mistaken_basis, 2, actual_basis).

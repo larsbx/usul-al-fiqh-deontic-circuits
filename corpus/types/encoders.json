@@ -1152,6 +1152,14 @@
    "question": "wadi:shart",
    "reason": "q116 attached class: worshipFromStart - whether a worship whose condition was attained within its time is ruled as having its conditions met from the beginning.",
    "alt": "wadi:validity"
+  },
+  "istislah": {
+   "sort": "epistemic",
+   "reason": "The Rawḍa «الاستصلاح … والصحيح: أن ذلك ليس بحجة»: hujja - whether a maṣlaḥa is a proof that may establish a ruling, on a pinned stance; it grades the evidence, it rules on no act."
+  },
+  "maqasid_tarjih": {
+   "sort": "procedure",
+   "reason": "al-Kawkab «تقدم المقاصد الضرورية … على غيرها … ويقدم حفظ الدين على باقي الضرورية»: taqdim - which of two conflicting maṣāliḥ is put first in tarjīḥ, or tawaqquf; a weighing, not an answer to a khiṭāb."
   }
  }
 }

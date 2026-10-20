@@ -3,14 +3,14 @@
   "status": "candidate",
   "method": "TF-IDF centroid of each encoder's evidence (its annotated cases' records and its qawāʿid); see pipeline/usul_corpus/routing.py",
   "recall": {
-    "cases": 1216,
+    "cases": 1218,
     "folds": 5,
     "label": "category",
     "by_qaida": {
       "recall": {
-        "1": 0.301,
-        "5": 0.4827,
-        "10": 0.5699
+        "1": 0.3013,
+        "5": 0.4795,
+        "10": 0.5681
       },
       "prior": {
         "1": 0.0008,
@@ -20,14 +20,14 @@
     },
     "within_qaida": {
       "recall": {
-        "1": 0.5674,
-        "5": 0.8125,
-        "10": 0.8717
+        "1": 0.5649,
+        "5": 0.8112,
+        "10": 0.8703
       },
       "prior": {
         "1": 0.0419,
-        "5": 0.1283,
-        "10": 0.1883
+        "5": 0.1281,
+        "10": 0.188
       }
     },
     "unseen_qaida": {
@@ -45,9 +45,9 @@
     "encoder": {
       "by_qaida": {
         "recall": {
-          "1": 0.2673,
-          "5": 0.4605,
-          "10": 0.5452
+          "1": 0.2677,
+          "5": 0.4581,
+          "10": 0.5443
         },
         "prior": {
           "1": 0.0008,
@@ -57,14 +57,14 @@
       },
       "within_qaida": {
         "recall": {
-          "1": 0.509,
-          "5": 0.7895,
-          "10": 0.8479
+          "1": 0.5074,
+          "5": 0.7865,
+          "10": 0.8465
         },
         "prior": {
-          "1": 0.0321,
-          "5": 0.1061,
-          "10": 0.1604
+          "1": 0.032,
+          "5": 0.1059,
+          "10": 0.1601
         }
       },
       "unseen_qaida": {
@@ -166,7 +166,7 @@
             "كتاب القضاء",
             "باب حكم كتاب القاضي إلى القاضي"
           ],
-          "score": 0.1615
+          "score": 0.1616
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00468",
@@ -199,7 +199,7 @@
           "path": [
             "كتاب النفقات"
           ],
-          "score": 0.1376
+          "score": 0.1377
         }
       ]
     },
@@ -235,7 +235,7 @@
             "كتاب النكاح",
             "باب المحرمات في النكاح"
           ],
-          "score": 0.1327
+          "score": 0.1328
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00314",
@@ -422,7 +422,7 @@
           "path": [
             "كتاب الفرائض"
           ],
-          "score": 0.2856
+          "score": 0.2857
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00112",
@@ -546,7 +546,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1463
+          "score": 0.1464
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00189",
@@ -563,7 +563,7 @@
           "path": [
             "كتاب القضاء"
           ],
-          "score": 0.1442
+          "score": 0.1443
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00210",
@@ -686,7 +686,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1714
+          "score": 0.1715
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00054",
@@ -730,7 +730,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.2273
+          "score": 0.2274
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00050",
@@ -739,7 +739,7 @@
             "كتاب الصلاة",
             "باب صلاة أهل الأعذار"
           ],
-          "score": 0.2013
+          "score": 0.2014
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00013",
@@ -1104,7 +1104,7 @@
             "كتاب البيع",
             "باب الخيار"
           ],
-          "score": 0.2122
+          "score": 0.2123
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00162",
@@ -1113,7 +1113,7 @@
             "كتاب البيع",
             "باب الخيار في البيع"
           ],
-          "score": 0.1845
+          "score": 0.1846
         }
       ]
     },
@@ -1149,7 +1149,7 @@
           "path": [
             "كتاب الصيام"
           ],
-          "score": 0.1599
+          "score": 0.16
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00557",
@@ -1174,7 +1174,7 @@
             "كتاب الجنايات",
             "باب شروط القصاص"
           ],
-          "score": 0.1215
+          "score": 0.1216
         }
       ]
     },
@@ -1414,7 +1414,7 @@
             "كتاب الشركة",
             "باب المساقاة"
           ],
-          "score": 0.1069
+          "score": 0.107
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00117",
@@ -1512,7 +1512,7 @@
           "path": [
             "كتاب العتق"
           ],
-          "score": 0.1501
+          "score": 0.1502
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00021",
@@ -1724,7 +1724,7 @@
             "كتاب الجهاد",
             "باب الهدنة"
           ],
-          "score": 0.2076
+          "score": 0.2077
         }
       ]
     },
@@ -1751,7 +1751,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1601
+          "score": 0.1602
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00396",
@@ -1776,7 +1776,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1497
+          "score": 0.1498
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00075",
@@ -1869,7 +1869,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.2602
+          "score": 0.2603
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00697",
@@ -1988,7 +1988,7 @@
           "path": [
             "كتاب الجراح"
           ],
-          "score": 0.1524
+          "score": 0.1525
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00329",
@@ -2074,7 +2074,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1582
+          "score": 0.1583
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00140",
@@ -2119,7 +2119,7 @@
             "كتاب النكاح",
             "باب المحرمات في النكاح"
           ],
-          "score": 0.2081
+          "score": 0.2082
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00737",
@@ -2143,7 +2143,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.142
+          "score": 0.1421
         }
       ]
     },
@@ -2247,7 +2247,7 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.194
+          "score": 0.1941
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00563",
@@ -2292,7 +2292,7 @@
             "كتاب الطلاق",
             "باب الإيلاء"
           ],
-          "score": 0.26
+          "score": 0.2601
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00117",
@@ -2371,7 +2371,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.233
+          "score": 0.2331
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00116",
@@ -2380,7 +2380,7 @@
             "كتاب النكاح",
             "باب المحرمات في النكاح"
           ],
-          "score": 0.2208
+          "score": 0.2209
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00094",
@@ -2729,7 +2729,7 @@
             "كتاب الديات",
             "باب العاقلة وما تحمله"
           ],
-          "score": 0.1574
+          "score": 0.1575
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00508",
@@ -2848,7 +2848,7 @@
             "كتاب الشركة",
             "باب الإجارة"
           ],
-          "score": 0.1508
+          "score": 0.1509
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00085",
@@ -2927,7 +2927,7 @@
             "كتاب الطلاق",
             "باب الإيلاء"
           ],
-          "score": 0.1016
+          "score": 0.1017
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00036",
@@ -3037,7 +3037,7 @@
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00066",
           "heading": "كتاب الزكاة",
           "path": [],
-          "score": 0.1369
+          "score": 0.137
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00084",
@@ -3098,7 +3098,7 @@
           "path": [
             "كتاب الغصب"
           ],
-          "score": 0.1475
+          "score": 0.1476
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00404",
@@ -3522,7 +3522,7 @@
           "path": [
             "كتاب الحجر"
           ],
-          "score": 0.1153
+          "score": 0.1154
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00359",
@@ -3960,7 +3960,7 @@
           "path": [
             "كتاب الوقف"
           ],
-          "score": 0.1121
+          "score": 0.1122
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00587",
@@ -4057,7 +4057,7 @@
             "كتاب النكاح",
             "باب المحرمات في النكاح"
           ],
-          "score": 0.2073
+          "score": 0.2074
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00252",
@@ -4090,7 +4090,7 @@
           "path": [
             "كتاب الديات"
           ],
-          "score": 0.1538
+          "score": 0.1539
         }
       ]
     },
@@ -4252,7 +4252,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.1515
+          "score": 0.1516
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00274",
@@ -4389,7 +4389,7 @@
           "path": [
             "كتاب الحجر"
           ],
-          "score": 0.1424
+          "score": 0.1425
         }
       ]
     },
@@ -4435,7 +4435,7 @@
             "كتاب الطلاق",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.1986
+          "score": 0.1987
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00200",
@@ -4444,7 +4444,7 @@
             "كتاب النكاح",
             "باب تعليق الطلاق بالشروط"
           ],
-          "score": 0.1963
+          "score": 0.1964
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00407",
@@ -4878,7 +4878,7 @@
           "path": [
             "كتاب الإقرار"
           ],
-          "score": 0.1125
+          "score": 0.1126
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00122",
@@ -5228,7 +5228,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.0959
+          "score": 0.096
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00147",
@@ -5353,7 +5353,7 @@
             "كتاب الحدود",
             "باب القطع في السرقة"
           ],
-          "score": 0.1632
+          "score": 0.1633
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00791",
@@ -5649,7 +5649,7 @@
             "كتاب الطلاق",
             "باب التأويل في الحلف"
           ],
-          "score": 0.1131
+          "score": 0.1132
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00495",
@@ -5776,7 +5776,7 @@
             "كتاب الغصب",
             "باب اللقطة"
           ],
-          "score": 0.0979
+          "score": 0.098
         }
       ]
     },
@@ -5868,7 +5868,7 @@
           "path": [
             "كتاب البيوع"
           ],
-          "score": 0.1187
+          "score": 0.1188
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00328",
@@ -5876,7 +5876,7 @@
           "path": [
             "كتاب العتق"
           ],
-          "score": 0.118
+          "score": 0.1181
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00276",
@@ -5930,7 +5930,7 @@
             "كتاب الشركة",
             "باب الشفعة"
           ],
-          "score": 0.13
+          "score": 0.1301
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00240",
@@ -6186,7 +6186,7 @@
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00285",
           "heading": "كتاب العدد",
           "path": [],
-          "score": 0.3114
+          "score": 0.3115
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00140",
@@ -6418,7 +6418,7 @@
             "كتاب الأيمان",
             "باب جامع الأيمان"
           ],
-          "score": 0.3322
+          "score": 0.3323
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00159",
@@ -6426,7 +6426,7 @@
           "path": [
             "كتاب الأيمان"
           ],
-          "score": 0.2692
+          "score": 0.2693
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00566",
@@ -6605,7 +6605,7 @@
           "path": [
             "كتاب الوصايا"
           ],
-          "score": 0.1244
+          "score": 0.1245
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00279",
@@ -7048,7 +7048,7 @@
           "path": [
             "كتاب الرضاع"
           ],
-          "score": 0.1109
+          "score": 0.111
         }
       ]
     },
@@ -7457,7 +7457,7 @@
             "كتاب البيع",
             "باب الصلح وحكم الجوار"
           ],
-          "score": 0.1226
+          "score": 0.1227
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00720",
@@ -7685,7 +7685,7 @@
           "path": [
             "كتاب الأطمعة"
           ],
-          "score": 0.1803
+          "score": 0.1804
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00122",
@@ -7729,7 +7729,7 @@
           "path": [
             "كتاب الحجر"
           ],
-          "score": 0.1327
+          "score": 0.1328
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00428",
@@ -7992,7 +7992,7 @@
           "path": [
             "كتاب الصلاة"
           ],
-          "score": 0.1024
+          "score": 0.1025
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00020",
@@ -8152,7 +8152,7 @@
           "path": [
             "كتاب الزكاة"
           ],
-          "score": 0.1582
+          "score": 0.1583
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00050",
@@ -8352,7 +8352,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.1779
+          "score": 0.178
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00318",
@@ -8456,7 +8456,7 @@
             "كتاب الجنايات",
             "باب ما يوجب القصاص فيما دون النفس"
           ],
-          "score": 0.2357
+          "score": 0.2358
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00477",
@@ -8614,7 +8614,7 @@
             "كتاب الشركة",
             "باب العارية"
           ],
-          "score": 0.1046
+          "score": 0.1047
         }
       ]
     },
@@ -8908,7 +8908,7 @@
             "كتاب الشركة",
             "باب إحياء الموات"
           ],
-          "score": 0.1196
+          "score": 0.1197
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00183",
@@ -8945,7 +8945,7 @@
             "كتاب البيع",
             "باب القرض"
           ],
-          "score": 0.1402
+          "score": 0.1403
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00103",
@@ -9404,7 +9404,7 @@
             "كتاب البيع",
             "باب الرهن"
           ],
-          "score": 0.1927
+          "score": 0.1928
         }
       ]
     },
@@ -9566,7 +9566,7 @@
             "كتاب البيع",
             "باب السلم"
           ],
-          "score": 0.1082
+          "score": 0.1083
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00177",
@@ -9630,7 +9630,7 @@
             "كتاب الوصايا",
             "باب الموصى به"
           ],
-          "score": 0.1202
+          "score": 0.1203
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00193",
@@ -9824,7 +9824,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1403
+          "score": 0.1404
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00210",
@@ -9832,7 +9832,7 @@
           "path": [
             "كتاب الشركة"
           ],
-          "score": 0.129
+          "score": 0.1291
         },
         {
           "id": "hajjawi.zad_mustaqni.openiti_hajjawi_zadmustaqni_shamela11230.b00124",
@@ -9902,7 +9902,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.0971
+          "score": 0.0972
         }
       ]
     },
@@ -9946,7 +9946,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.0609
+          "score": 0.061
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00566",
@@ -10125,7 +10125,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1753
+          "score": 0.1754
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00279",
@@ -10134,7 +10134,7 @@
             "كتاب البيع",
             "باب الخيار في البيع والتصرف في المبيع وقبضه والإقالة"
           ],
-          "score": 0.1608
+          "score": 0.1609
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00259",
@@ -10489,7 +10489,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.2403
+          "score": 0.2404
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00635",
@@ -10506,7 +10506,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.2333
+          "score": 0.2334
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00624",
@@ -10611,7 +10611,7 @@
           "path": [
             "كتاب الجنايات"
           ],
-          "score": 0.157
+          "score": 0.1571
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00266",
@@ -10940,7 +10940,7 @@
             "كتاب الجنايات",
             "باب استيفاء القصاص"
           ],
-          "score": 0.2182
+          "score": 0.2183
         }
       ]
     },
@@ -11304,7 +11304,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1012
+          "score": 0.1013
         }
       ]
     },
@@ -11414,7 +11414,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1092
+          "score": 0.1093
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00064",
@@ -11449,7 +11449,7 @@
           "path": [
             "كتاب العارية"
           ],
-          "score": 0.1826
+          "score": 0.1827
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00025",
@@ -11589,7 +11589,7 @@
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00419",
           "heading": "كتاب الإيلاء",
           "path": [],
-          "score": 0.1791
+          "score": 0.1792
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00423",
@@ -11753,7 +11753,7 @@
             "كتاب الصلاة",
             "باب صلاة الجماعة"
           ],
-          "score": 0.1642
+          "score": 0.1643
         },
         {
           "id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00025",
@@ -11831,7 +11831,7 @@
           "path": [
             "كتاب الصداق"
           ],
-          "score": 0.1182
+          "score": 0.1183
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00242",
@@ -11927,7 +11927,7 @@
             "كتاب البيع",
             "باب الوكالة"
           ],
-          "score": 0.1662
+          "score": 0.1663
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00303",
@@ -11936,7 +11936,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.1433
+          "score": 0.1434
         },
         {
           "id": "majd.muharrar.openiti_majd_muharrar_shamela7460.b00056",
@@ -11960,7 +11960,7 @@
           "path": [
             "كتاب النكاح"
           ],
-          "score": 0.1273
+          "score": 0.1274
         }
       ]
     },
@@ -12347,7 +12347,7 @@
           "path": [
             "كتاب الحدود"
           ],
-          "score": 0.222
+          "score": 0.2221
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00501",
@@ -12666,7 +12666,7 @@
           "path": [
             "كتاب الطلاق"
           ],
-          "score": 0.1302
+          "score": 0.1303
         },
         {
           "id": "ibn_najjar.muntaha.openiti_ibnnajjar_muntaha_sham19y13664.b00087",
@@ -12931,7 +12931,7 @@
             "كتاب الطلاق",
             "باب جامع الأيمان"
           ],
-          "score": 0.308
+          "score": 0.3081
         }
       ]
     },
@@ -12997,8 +12997,8 @@
     "vague_one_bars_all": {
       "cases": 9,
       "lexicon": [
-        "واحده",
         "حتي",
+        "واحده",
         "منع",
         "منهن",
         "يمنع",
@@ -13018,7 +13018,7 @@
             "كتاب الطلاق",
             "باب الإيلاء"
           ],
-          "score": 0.2876
+          "score": 0.2877
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00415",
@@ -13042,7 +13042,7 @@
           "path": [
             "كتاب الظهار"
           ],
-          "score": 0.143
+          "score": 0.1431
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00431",
@@ -13272,7 +13272,7 @@
           "path": [
             "كتاب البيع"
           ],
-          "score": 0.1294
+          "score": 0.1295
         },
         {
           "id": "hajjawi.iqna.openiti_hajjawi_iqna_shamela7360.b00208",
@@ -13495,7 +13495,7 @@
             "كتاب البيع",
             "باب السلم والتصرف في الدين وما يتعلق به"
           ],
-          "score": 0.2807
+          "score": 0.2808
         },
         {
           "id": "ibn_qudama.muqni.openiti_ibnqudama_muqni_sham19y19233.b00174",
