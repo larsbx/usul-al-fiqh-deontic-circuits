@@ -1,0 +1,9 @@
+{
+  "shard": "maqasid",
+  "lane": "A",
+  "base_commit": "d47cf770e71786a4f9a835e537b1695ab8183eeb",
+  "obligations": [
+    "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346",
+    "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648"
+  ]
+}

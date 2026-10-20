@@ -6,7 +6,7 @@ Every remaining takhrīj encoder (a rule that derives a ruling from a case's fac
 
 ## 1. The shape of a typed encoder
 
-Each of the file's 186 definitions is a `Typed Situation O` (defined in `Usul.Typing`), ruling in some answer type `O`. It has five parts:
+Each of the file's 209 definitions is a `Typed Situation O` (defined in `Usul.Typing`), ruling in some answer type `O`. It has five parts:
 
 - **`Local`**: the encoder's own facts, e.g. `Bool × Bool`.
 - **`proj`**: reads those facts off a situation. It succeeds only if every fact is known.
@@ -48,6 +48,11 @@ The most-used types are `Rajab110` and `Lahham43` (six encoders each), then `Raj
 
 - **`causeOnCertainty`**: reads `Rajab14Certainty`, which extends Ibn Rajab 14's type with whether each man is certain of his own prior state. It runs `Usul.Readings.Concordance.attachOnCertainty`. This is the jamʿ (reconciliation) of 14's two readings.
 
+## 5. The maqāṣid
+
+- **`istislah`**: reads `Istislah`. It runs `Usul.Readings.Maqasid.hujja`: is the interest a proof, on the pinned stance?
+- **`maqasidTarjih`**: reads `MaqasidTarjih`. It runs `Usul.Readings.Maqasid.taqdim`: which of two conflicting interests is put first, on the pinned reading?
+
 ## In one line
 
-All 186 remaining encoders are wired to the shared situation through their maxim's type, each with a proof that nothing is lost, and each still computing exactly the ruling it did before.
+All 209 remaining encoders are wired to the shared situation through their maxim's type, each with a proof that nothing is lost, and each still computing exactly the ruling it did before.

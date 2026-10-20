@@ -1,0 +1,25 @@
+{
+  "suite": "maqasid",
+  "status": "candidate",
+  "provenance": "The maqāṣid shard (lane A): fatāwā of al-Lajna al-Dāʾima that decide by the order of the maqāṣid, annotated against Usul.Readings.Maqasid.taqdim (Sharḥ al-Kawkab al-Munīr v04 p727). Each answer was read in full in the pinned witness; the quotes are verbatim. Candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648",
+      "encoder": "maqasid_tarjih",
+      "class": "derivable",
+      "facts": {"maqsad_first": "nafs", "maqsad_second": "haji", "din_reading": "kawkab"},
+      "expected": "first",
+      "quote": "فلا يجوز الاعتداء عليها بإجهاض إن كانت حملا قد نفخ فيه الروح، أو بإعطائها أدوية تقضي على حياتها وتجهز عليها طلبا لراحتها أو راحة من يعولها",
+      "note": "Ending the life of a foetus after ensoulment, or of the incurably sick or deformed, to relieve them or their carers. The Lajna places life among the five «في المرتبة الثانية بعد حفظ الدين» (v24 p391), al-Kawkab's reading, against a relief from hardship, which is the ḥājī by al-Shāṭibī's definition («رفع الضيق المؤدي في الغالب إلى الحرج والمشقة», al-Muwāfaqāt v02 p020): the ḍarūrī is put first, so the killing is forbidden. The answer also cites «ولا تقتلوا النفس التي حرم الله إلا بالحق»; the guard covers the ordering only."
+    },
+    {
+      "far": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346",
+      "encoder": "maqasid_tarjih",
+      "class": "derivable",
+      "facts": {"maqsad_first": "mukammil", "maqsad_second": "haji", "din_reading": "kawkab"},
+      "expected": "first",
+      "quote": "فلا يجوز للمرأة إبداء زينتها عنده، ولا خلوته بها، سواء كان أخا زوج أو صديقا أو غير ذلك",
+      "note": "A man whose work keeps him travelling leaves his wife lodged with a trusted friend. The Lajna grounds the answer in the five kulliyyāt and in al-ʿirḍ «الذي هو موطن النسل», and forbids the woman's showing her adornment to him and his being alone with her. Forbidding khalwa is a complement of the ḍarūrī, al-Kawkab's «والمبالغة في حفظ النسب … بتحريم النظر واللمس والخلوة» (v04 p164); the traveller's arrangement for his work is a ḥājī. «ومكملها … على الحاجية»: the complement is put first, so he may not leave her with the friend. Neither side is dīn, so both readings of `din_reading` agree (`din_reading_locus`)."
+    }
+  ]
+}

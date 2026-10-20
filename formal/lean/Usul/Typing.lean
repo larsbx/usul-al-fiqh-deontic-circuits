@@ -88,7 +88,7 @@ structure Situation extends Qaida.Qarain, Qaida.ItlafHal, Qaida.ItlafQasd, Qaida
     Qaida.Rajab147, Qaida.Rajab149, Qaida.Rajab150, Qaida.Rajab151, Qaida.Rajab152, Qaida.Rajab153, Qaida.Rajab154, Qaida.Rajab155, Qaida.Rajab156, Qaida.Rajab157,
     Qaida.Rajab158,
     Qaida.Rajab13, Qaida.Rajab23, Qaida.Rajab40, Qaida.Rajab70, Qaida.Rajab84, Qaida.Rajab85, Qaida.Rajab86, Qaida.Rajab87, Qaida.Rajab88,
-    Qaida.Rajab82
+    Qaida.Rajab82, Qaida.Istislah, Qaida.MaqasidTarjih
 
 /-! ## Encoders typed over `Situation` (names as in `takhrij.ENCODERS`) -/
 

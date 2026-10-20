@@ -12,7 +12,7 @@ Each qāʿida (legal maxim) defines a type: the list of facts its statement rang
 - **Shared vs. separate fields**: Lean merges same-named fields of parent types. So a field name is reused only when two maxims mean the same thing. Look-alikes get qualified names, such as `mixedSameKind` (Ibn Rajab 22) and `actsSameKind` (al-Saʿdī Q41), or `negligent` (Q14, safekeeping) and `negligentInquiry` (Ibn Rajab 6, inquiry).
 - **"Read by"**: most docstrings name the encoders that read the type, e.g. `Rajab53` is "Read by `attached_right_disposal`".
 
-The file holds 160 structures in three groups.
+The file holds 172 structures in four groups.
 
 ## 2. The core types and their family tree (18 structures)
 
@@ -56,6 +56,13 @@ Types for Ibn Rajab 53 to 158 (with gaps), read by the encoders of the parallel 
 - `Rajab158`: two conflicting presumptions, the reinforced one governs.
 
 Fields that recur across maxims with different meanings carry a suffix, e.g. `harmlessQ99`, `neededQ130`, `bindingQ69`.
+
+## 5. The maqāṣid (2 structures)
+
+Types for the two encoders of `Usul.Readings.Maqasid`, whose facts are values of that module's types:
+
+- `Istislah`: the Rawḍa's istiṣlāḥ with al-Ghazālī's conditions. Holds `maslahaShahada` (attested, cancelled or neither), `maslahaRutba`, `maslahaQatiyya`, `maslahaKulliyya`, and `istislahStance`, the pinned position on the unattested necessity.
+- `MaqasidTarjih`: al-Kawkab's order of the maqāṣid in tarjīḥ. Holds `maqsadFirst`, `maqsadSecond` and `dinReading`, the pinned position on religion against the other necessities.
 
 ## In one line
 
