@@ -4882,7 +4882,7 @@
           "publication": {
             "decision": "cache_only",
             "scope": "complete_text_public_redistribution",
-            "sha256": null,
+            "sha256": "d51e9a6d610166c13f8b396f35b41cad81ee1531a4186ed6773cd000cbe5bfda",
             "reviewed_on": "2026-10-20",
             "basis": "no_grant_located",
             "evidence": [
