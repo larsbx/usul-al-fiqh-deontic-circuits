@@ -4858,6 +4858,52 @@
       "status": "located"
     },
     {
+      "id": "albani.mukhtasar_bukhari",
+      "title_ar": "مختصر صحيح الإمام البخاري",
+      "title_tr": "Mukhtaṣar Ṣaḥīḥ al-Imām al-Bukhārī",
+      "author": {
+        "name_tr": "Muḥammad Nāṣir al-Dīn al-Albānī",
+        "death_ah": 1420
+      },
+      "layers": [
+        "nusus"
+      ],
+      "kernel": false,
+      "rights": "modern_cache_only",
+      "track": "albani_hadith",
+      "witnesses": [
+        {
+          "id": "shamela-121381",
+          "kind": "shamela",
+          "book_id": 121381,
+          "hamesh": true,
+          "edition": "Shamela 121381, Maktabat al-Maʿārif (Riyadh) 1422/2002, 4 vols., paginated as printed: al-Bukhārī abridged, with al-Albānī's takhrīj of the muʿallaqāt and athar it quotes",
+          "fetch": "on_demand",
+          "publication": {
+            "decision": "cache_only",
+            "scope": "complete_text_public_redistribution",
+            "sha256": null,
+            "reviewed_on": "2026-10-20",
+            "basis": "no_grant_located",
+            "evidence": [
+              {
+                "url": "https://shamela.ws/book/121381",
+                "scope": "edition",
+                "finding": "Catalogue inspected for edition and contributor metadata; availability for reading and copying is not evidence of authority for full-file republication."
+              },
+              {
+                "url": "https://shamela.ws/page/terms",
+                "scope": "provider",
+                "finding": "Published MCP terms reserve book and edition rights; these service-specific terms supply no general redistribution grant for the HTML corpus."
+              }
+            ],
+            "assessment": "Registry and accessible catalogue identify a modern author/edition. No permission covering complete-file redistribution by this repository was located in the examined records. Authority for public redistribution remains unverified; this is an evidence finding, not a determination of infringement."
+          }
+        }
+      ],
+      "status": "located"
+    },
+    {
       "id": "albani.hadith_hujja",
       "title_ar": "الحديث حجة بنفسه في العقائد والأحكام",
       "title_tr": "al-Ḥadīth Ḥujja bi-Nafsihi fī al-ʿAqāʾid wa'l-Aḥkām",

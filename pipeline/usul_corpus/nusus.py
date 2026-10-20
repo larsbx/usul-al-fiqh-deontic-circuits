@@ -13,6 +13,7 @@ import bisect
 import json
 import re
 from functools import lru_cache
+from itertools import takewhile
 from pathlib import Path
 
 from .arabic import _LETTERS, _DIACRITICS, _INVISIBLE
@@ -190,6 +191,46 @@ def series_entry(text: str, n: int) -> tuple[str | None, str]:
     return next((VERDICT[k] for k in sorted(VERDICT, key=len, reverse=True) if word.startswith(k)), None), body
 
 
+MUKHTASAR = "albani.mukhtasar_bukhari"
+_PAGE_END = re.compile(r"^PageV\d+P\d+$", re.M)
+_NOTE = re.compile(r"^# \[هامش\] ([٠-٩]+)(?: (?:-|و) ([٠-٩]+))? - (.*)$", re.M)    # «١١٥٢ -», «١١٥٤ - ١١٥٦ -», «٥٨٨ و ٥٨٩ -»
+_ENTRY = re.compile(r"^# ([٠-٩]+)(?: - [٠-٩]+)? - (?!(?:و?من )?باب)", re.M)            # «# ١١٥٦ - وقال نافع», not «# ٢١ - باب»
+_SANAD = re.compile(r"(?:بسند|بإسناد|وسنده|سنده|وإسناده|إسناده) (صحيح|حسن|ضعيف جدا|ضعيف)(?![ء-ي])")
+
+
+@lru_cache(maxsize=2)
+def mukhtasar_notes(text: str) -> dict[int, tuple[int, str]]:
+    """Entry number → (offset of its head, al-Albānī's note on it) in his Mukhtaṣar Ṣaḥīḥ al-Bukhārī.
+
+    He numbers the musnad ḥadīth and the muʿallaq and athar apart, so a number recurs; his takhrīj of
+    a muʿallaq or athar is a footnote of its page keyed by its number (or a range of them). An entry
+    is the one on the page of a note keyed to it; a number two such entries share is left out."""
+    seen: dict[int, list[tuple[int, str]]] = {}
+    bounds = [0, *(m.end() for m in _PAGE_END.finditer(text))]
+    for start, end in zip(bounds, bounds[1:]):
+        page = text[start:end]
+        notes = {k: m[3] for m in _NOTE.finditer(page) for k in range(_arabic_int(m[1]), _arabic_int(m[2] or m[1]) + 1)}
+        for h in _ENTRY.finditer(page):
+            if (n := _arabic_int(h[1])) in notes:
+                seen.setdefault(n, []).append((start + h.start(), notes[n]))
+    return {n: v[0] for n, v in seen.items() if len(v) == 1}
+
+
+def mukhtasar_entry(text: str, n: int) -> tuple[str | None, str]:
+    """al-Albānī's verdict on entry n of his Mukhtaṣar, and the entry's text: its lines up to the next
+    numbered entry, over a page break, without the notes. The verdict is his note's on the chain
+    («بسند صحيح عنه», «وسنده حسن»); a note that connects it without some of its words («دون قوله»),
+    only names who connects it («وصله البيهقي»), or says none did («لم يخرجه الحافظ») gives none."""
+    if n not in (notes := mukhtasar_notes(text)):
+        return None, ""
+    at, note = notes[n]
+    first, *rest = text[at:].split("\n")
+    body = [first, *takewhile(lambda l: not re.match(r"# [٠-٩]|###", l),
+                              (l for l in rest if not (l.startswith("# [هامش]") or _PAGE_END.match(l) or l == "")))]
+    said = _SANAD.search(_DIACRITICS.sub("", note))
+    return (VERDICT[said[1]] if said and "دون قوله" not in note else None), "\n".join(body)
+
+
 def locus(text: str, excerpt: str) -> int | None:
     """The number of the ḥadīth (or masʾala) that holds the excerpt: its first occurrence under a
     number marker (an editor's preface may quote it before the first)."""
@@ -210,6 +251,8 @@ def albani_verdict(work: str, text: str, n: int) -> tuple[str | None, str]:
         return dawud_entry(text, n, work == "albani.daif_abi_dawud")
     if work in SERIES:
         return series_entry(text, n)
+    if work == MUKHTASAR:
+        return mukhtasar_entry(text, n)
     raise ValueError(work)
 
 

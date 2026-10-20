@@ -26,6 +26,7 @@ SHAMELA_DELAY_S = 0.5
 _NASS = re.compile(r'<div class="nass[^"]*" data-page-id="(\d+)" data-page-num="(\d+)">(.*?)</div>', re.S)
 _NEXT = re.compile(r'id="bu_load_next" data-next-id="(\d+)"')
 _PARA = re.compile(r"<p>(.*?)</p>", re.S)
+_HAMESH = re.compile(r'<p class="hamesh">(.*?)</p>', re.S)
 _HEADING = re.compile(r'^\s*(?:<span[^>]*>\s*</span>\s*)*<span class="c4">(.*?)</span>', re.S)
 _TAG = re.compile(r"<[^>]+>")
 _COPY_BUTTON = re.compile(r'<a href="#p\d+"[^>]*>.*?</a>', re.S)
@@ -52,8 +53,9 @@ def _text(fragment: str) -> str:
     return " ".join(html.unescape(_TAG.sub("", _COPY_BUTTON.sub("", fragment))).split())
 
 
-def shamela_page_to_markdown(page_html: str) -> str:
-    """One Shamela reader page → mARkdown: ### headings, # paragraphs, closing page marker."""
+def shamela_page_to_markdown(page_html: str, hamesh: bool = False) -> str:
+    """One Shamela reader page → mARkdown: ### headings, # paragraphs, closing page marker. With
+    ``hamesh``, the page's footnotes follow its text, one ``# [هامش]`` line each."""
     m = _NASS.search(page_html)
     if not m:
         return ""
@@ -63,7 +65,9 @@ def shamela_page_to_markdown(page_html: str) -> str:
         return f"### | {_text(heading.group(1))}" if heading else f"# {_text(p)}"
 
     lines = [line(p) for p in _PARA.findall(m.group(3)) if _text(p)]
-    return "\n".join([*lines, f"PageV01P{int(m.group(2)):03d}"])  # OpenITI: marker closes the page
+    notes = [f"# [هامش] {t}" for f in (_HAMESH.findall(m.group(3)) if hamesh else [])
+             for t in map(_text, re.split(r"<br\s*/?>", f)) if t]
+    return "\n".join([*lines, *notes, f"PageV01P{int(m.group(2)):03d}"])  # OpenITI: marker closes the page
 
 
 _SPINE = re.compile(r'<itemref idref="([^"]+)"')
@@ -144,7 +148,7 @@ def _shamela(w: dict, max_pages: int | None, part: Path | None = None) -> bytes:
     with (part.open("a", encoding="utf-8") if part else contextlib.nullcontext()) as log:
         while page is not None and (max_pages is None or len(out) < max_pages):
             body = _get(f"https://shamela.ws/book/{w['book_id']}/{page}").decode()
-            out.append(shamela_page_to_markdown(body))
+            out.append(shamela_page_to_markdown(body, w.get("hamesh", False)))
             page = next_page_id(body)
             if log:
                 log.write(_checkpoint_line(out[-1], page))

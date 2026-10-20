@@ -72,3 +72,36 @@ def test_a_weak_route_elsewhere_does_not_unseat_the_sahihayn():
 def test_a_recurring_short_wording_is_graded_when_he_grades_every_recurrence_alike():
     assert {(n["albani"]["work"], n["albani"]["verdict"]) for n in HADITH if n["excerpt_ar"] == "الخراج بالضمان"} == \
         {("albani.sahih_daif_abi_dawud", "hasan"), ("albani.sahih_daif_tirmidhi", "hasan")}
+
+
+MUKHTASAR = "\n".join([
+    "#META#Header#End#",
+    "# ٢١ - بابُ حُكْمِ الْمَفْقُودِ",
+    "# ١١٩٣ - وَقَالَ ابْنُ الْمُسَيَّبِ: إِذَا فُقِدَ فِى الصَّفِّ عِنْدَ الْقِتَالِ تَرَبَّصُ امْرَأَتُهُ سَنَةً.",
+    "# ١١٩٦ - وَقَالَ الزُّهْرِىُّ: فَإِذَا انْقَطَعَ خَبَرُهُ؛ فَسُنَّتُهُ",
+    "# [هامش] ١١٩٣ - وصله عبد الرزاق بسند صحيح عنه.",
+    "# [هامش] ١١٩٦ - وصله ابن أبي شيبة دون قوله: \"فإذا انقطع ... \" بأسانيد صحيحة عن عمر.",
+    "PageV01P407",
+    "# سُنَّةُ الْمَفْقُودِ.",
+    "# ١١٩٣ - عن أبي هريرة: حديث مسند بالرقم نفسه في سلسلة أخرى.",
+    "# ١١٥٤ - وَقَالَ عُقْبَةُ: لَا يَجُوزُ طَلَاقُ الْمُوَسْوِسِ.",
+    "# [هامش] ١١٥٤ - ١١٥٦ - لم يخرجها الحافظ.",
+    "PageV01P408", ""])
+
+
+def test_the_mukhtasar_grades_an_athar_by_his_note_on_its_page():
+    """An athar's entry is the one his note on that page is keyed to: the musnad series reuses numbers."""
+    assert nusus.albani_verdict("albani.mukhtasar_bukhari", MUKHTASAR, 1193)[0] == "sahih"
+    assert grading.heads("albani.mukhtasar_bukhari", MUKHTASAR) == [(1193, MUKHTASAR.find("# ١١٩٣")),
+                                                                  (1196, MUKHTASAR.find("# ١١٩٦")),
+                                                                  (1154, MUKHTASAR.find("# ١١٥٤"))]
+
+
+def test_an_entry_runs_on_over_the_page_without_its_notes():
+    _, entry = nusus.albani_verdict("albani.mukhtasar_bukhari", MUKHTASAR, 1196)
+    assert nusus.key("فإذا انقطع خبره فسنته سنة المفقود") in nusus.key(entry) and "هامش" not in entry
+
+
+def test_a_note_without_a_sanad_verdict_or_short_of_the_wording_grades_nothing():
+    assert nusus.albani_verdict("albani.mukhtasar_bukhari", MUKHTASAR, 1196)[0] is None   # «دون قوله»
+    assert nusus.albani_verdict("albani.mukhtasar_bukhari", MUKHTASAR, 1154)[0] is None   # «لم يخرجها»
