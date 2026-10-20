@@ -1,18 +1,18 @@
 {
   "status": "candidate",
   "source_sha256": "621fcd30c854a45407a5c303de8656c402eab4c59abde884a06038348ffbb205",
-  "annotations_sha256": "fb5c3c96f57e03935492d3a94369f42631fb9f6b10e6c5e7aaf11ab60b7ff46c",
-  "annotated_questions": 12,
+  "annotations_sha256": "63e4874d2dd87d622df23726a33957b01490925cc373d178ba5374b5c6959089",
+  "annotated_questions": 53,
   "available_questions": 53,
-  "propositions": 21,
+  "propositions": 365,
   "modalities": {
-    "asserted": 18,
-    "hypothetical": 1,
-    "questioned": 1,
-    "uncertain": 1
+    "asserted": 248,
+    "hypothetical": 18,
+    "questioned": 73,
+    "uncertain": 26
   },
-  "candidate_roles": 72,
-  "candidate_fact_bindings": 1,
+  "candidate_roles": 1074,
+  "candidate_fact_bindings": 2,
   "new_kernel_executions": 0,
   "semantic_accuracy": null,
   "retrieval_improvement": null,
@@ -38,6 +38,28 @@
       ]
     },
     {
+      "source_id": "islamqa.103846",
+      "propositions": 7,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.103846.p4",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
       "source_id": "islamqa.104241",
       "propositions": 2,
       "mappings": [
@@ -50,6 +72,26 @@
           ],
           "pending_review": [
             "owner_identifiable"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.107436",
+      "propositions": 9,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.107436.p2",
+          "encoder": "return_of_held_property",
+          "status": "hold",
+          "missing_facts": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "pending_review": [
+            "guaranteed",
+            "held_by_consent"
           ],
           "output": null
         }
@@ -78,11 +120,75 @@
       ]
     },
     {
+      "source_id": "islamqa.110860",
+      "propositions": 10,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.110860.p10",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.114793",
+      "propositions": 11,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.114793.p3",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
       "source_id": "islamqa.126387",
       "propositions": 1,
       "mappings": [
         {
           "proposition_id": "islamqa.126387.p1",
+          "encoder": "luqata",
+          "status": "hold",
+          "missing_facts": [
+            "ownable",
+            "year_passed"
+          ],
+          "pending_review": [
+            "ownable",
+            "year_passed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.126502",
+      "propositions": 2,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.126502.p1",
           "encoder": "luqata",
           "status": "hold",
           "missing_facts": [
@@ -116,6 +222,125 @@
       ]
     },
     {
+      "source_id": "islamqa.128887",
+      "propositions": 11,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.128887.p1",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.131070",
+      "propositions": 3,
+      "mappings": []
+    },
+    {
+      "source_id": "islamqa.13717",
+      "propositions": 1,
+      "mappings": []
+    },
+    {
+      "source_id": "islamqa.140833",
+      "propositions": 11,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.140833.p6",
+          "encoder": "return_of_held_property",
+          "status": "hold",
+          "missing_facts": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "pending_review": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.140833.p9",
+          "encoder": "unknown_owner",
+          "status": "hold",
+          "missing_facts": [
+            "owner_identifiable"
+          ],
+          "pending_review": [
+            "owner_identifiable"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.146191",
+      "propositions": 3,
+      "mappings": []
+    },
+    {
+      "source_id": "islamqa.152192",
+      "propositions": 6,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.152192.p2",
+          "encoder": "trust_loss",
+          "status": "hold",
+          "missing_facts": [
+            "hand",
+            "negligent",
+            "transgressed"
+          ],
+          "pending_review": [
+            "hand",
+            "negligent",
+            "transgressed"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.152192.p4",
+          "encoder": "return_of_held_property",
+          "status": "hold",
+          "missing_facts": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "pending_review": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.152192.p5",
+          "encoder": "itlaf",
+          "status": "hold",
+          "missing_facts": [
+            "mental",
+            "purpose"
+          ],
+          "pending_review": [
+            "mental",
+            "purpose"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
       "source_id": "islamqa.164604",
       "propositions": 1,
       "mappings": [
@@ -130,6 +355,430 @@
           "pending_review": [
             "mental",
             "purpose"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.165409",
+      "propositions": 8,
+      "mappings": []
+    },
+    {
+      "source_id": "islamqa.170478",
+      "propositions": 8,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.170478.p1",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.176193",
+      "propositions": 20,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.176193.p3",
+          "encoder": "ihram_specification",
+          "status": "hold",
+          "missing_facts": [
+            "component"
+          ],
+          "pending_review": [
+            "component"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.176193.p12",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.179911",
+      "propositions": 7,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.179911.p2",
+          "encoder": "recourse",
+          "status": "hold",
+          "missing_facts": [
+            "gift",
+            "owed_by_other",
+            "permission",
+            "permission_unobtainable"
+          ],
+          "pending_review": [
+            "gift",
+            "owed_by_other",
+            "permission",
+            "permission_unobtainable"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.187157",
+      "propositions": 9,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.187157.p7",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.191459",
+      "propositions": 5,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.191459.p2",
+          "encoder": "luqata",
+          "status": "hold",
+          "missing_facts": [
+            "ownable",
+            "year_passed"
+          ],
+          "pending_review": [
+            "ownable",
+            "year_passed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.196584",
+      "propositions": 9,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.196584.p5",
+          "encoder": "unknown_owner",
+          "status": "hold",
+          "missing_facts": [
+            "owner_identifiable"
+          ],
+          "pending_review": [
+            "owner_identifiable"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.198294",
+      "propositions": 11,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.198294.p6",
+          "encoder": "asl_zahir",
+          "status": "hold",
+          "missing_facts": [
+            "amara",
+            "asl_grade",
+            "zahir_grade"
+          ],
+          "pending_review": [
+            "amara",
+            "asl_grade",
+            "zahir_grade"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.209303",
+      "propositions": 5,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.209303.p1",
+          "encoder": "luqata",
+          "status": "hold",
+          "missing_facts": [
+            "ownable",
+            "year_passed"
+          ],
+          "pending_review": [
+            "ownable",
+            "year_passed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.223512",
+      "propositions": 11,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.223512.p4",
+          "encoder": "itlaf",
+          "status": "hold",
+          "missing_facts": [
+            "mental",
+            "purpose"
+          ],
+          "pending_review": [
+            "mental",
+            "purpose"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.22830",
+      "propositions": 3,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.22830.p2",
+          "encoder": "trust_loss",
+          "status": "hold",
+          "missing_facts": [
+            "hand",
+            "negligent",
+            "transgressed"
+          ],
+          "pending_review": [
+            "hand",
+            "negligent",
+            "transgressed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.23424",
+      "propositions": 3,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.23424.p1",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.242731",
+      "propositions": 8,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.242731.p1",
+          "encoder": "itlaf",
+          "status": "hold",
+          "missing_facts": [
+            "mental",
+            "purpose"
+          ],
+          "pending_review": [
+            "mental",
+            "purpose"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.252463",
+      "propositions": 5,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.252463.p3",
+          "encoder": "qabd_in_contracts",
+          "status": "hold",
+          "missing_facts": [
+            "qabd_completes"
+          ],
+          "pending_review": [
+            "qabd_completes"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.253293",
+      "propositions": 8,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.253293.p5",
+          "encoder": "return_of_held_property",
+          "status": "hold",
+          "missing_facts": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "pending_review": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.260724",
+      "propositions": 11,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.260724.p11",
+          "encoder": "return_of_held_property",
+          "status": "hold",
+          "missing_facts": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "pending_review": [
+            "guaranteed",
+            "held_by_consent"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.266167",
+      "propositions": 3,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.266167.p2",
+          "encoder": "trust_loss",
+          "status": "hold",
+          "missing_facts": [
+            "hand",
+            "negligent",
+            "transgressed"
+          ],
+          "pending_review": [
+            "hand",
+            "negligent",
+            "transgressed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.272160",
+      "propositions": 10,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.272160.p1",
+          "encoder": "itlaf",
+          "status": "hold",
+          "missing_facts": [
+            "mental",
+            "purpose"
+          ],
+          "pending_review": [
+            "mental",
+            "purpose"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.286486",
+      "propositions": 12,
+      "mappings": []
+    },
+    {
+      "source_id": "islamqa.287215",
+      "propositions": 12,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.287215.p4",
+          "encoder": "qabd_in_contracts",
+          "status": "hold",
+          "missing_facts": [
+            "qabd_completes"
+          ],
+          "pending_review": [
+            "qabd_completes"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.287215.p11",
+          "encoder": "unknown_owner",
+          "status": "hold",
+          "missing_facts": [
+            "owner_identifiable"
+          ],
+          "pending_review": [
+            "owner_identifiable"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.304828",
+      "propositions": 13,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.304828.p7",
+          "encoder": "unknown_owner",
+          "status": "hold",
+          "missing_facts": [
+            "owner_identifiable"
+          ],
+          "pending_review": [
+            "owner_identifiable"
           ],
           "output": null
         }
@@ -170,6 +819,58 @@
       ]
     },
     {
+      "source_id": "islamqa.315435",
+      "propositions": 16,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.315435.p5",
+          "encoder": "mubashara_tasabbub",
+          "status": "hold",
+          "missing_facts": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "pending_review": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.317604",
+      "propositions": 12,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.317604.p2",
+          "encoder": "mubashara_tasabbub",
+          "status": "hold",
+          "missing_facts": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "pending_review": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.317604.p12",
+          "encoder": "unknown_owner",
+          "status": "hold",
+          "missing_facts": [
+            "owner_identifiable"
+          ],
+          "pending_review": [
+            "owner_identifiable"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
       "source_id": "islamqa.328808",
       "propositions": 3,
       "mappings": [
@@ -190,6 +891,44 @@
       ]
     },
     {
+      "source_id": "islamqa.344230",
+      "propositions": 16,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.344230.p6",
+          "encoder": "mubashara_tasabbub",
+          "status": "hold",
+          "missing_facts": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "pending_review": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.344230.p11",
+          "encoder": "recourse",
+          "status": "hold",
+          "missing_facts": [
+            "gift",
+            "owed_by_other",
+            "permission",
+            "permission_unobtainable"
+          ],
+          "pending_review": [
+            "gift",
+            "owed_by_other",
+            "permission",
+            "permission_unobtainable"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
       "source_id": "islamqa.345284",
       "propositions": 2,
       "mappings": [
@@ -204,6 +943,98 @@
           "pending_review": [
             "mental",
             "purpose"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.348122",
+      "propositions": 11,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.348122.p1",
+          "encoder": "mubashara_tasabbub",
+          "status": "hold",
+          "missing_facts": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "pending_review": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.363963",
+      "propositions": 17,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.363963.p5",
+          "encoder": "mubashara_tasabbub",
+          "status": "hold",
+          "missing_facts": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "pending_review": [
+            "arising_from_sabab",
+            "udwan_in_mubashara"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.363963.p16",
+          "encoder": "substitute",
+          "status": "hold",
+          "missing_facts": [
+            "original_possible"
+          ],
+          "pending_review": [
+            "original_possible"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.4046",
+      "propositions": 5,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.4046.p1",
+          "encoder": "luqata",
+          "status": "hold",
+          "missing_facts": [
+            "ownable",
+            "year_passed"
+          ],
+          "pending_review": [
+            "ownable",
+            "year_passed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.4050",
+      "propositions": 3,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.4050.p2",
+          "encoder": "luqata",
+          "status": "hold",
+          "missing_facts": [
+            "ownable",
+            "year_passed"
+          ],
+          "pending_review": [
+            "ownable",
+            "year_passed"
           ],
           "output": null
         }
@@ -246,6 +1077,60 @@
             "hand",
             "negligent",
             "transgressed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.5049",
+      "propositions": 2,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.5049.p1",
+          "encoder": "luqata",
+          "status": "hold",
+          "missing_facts": [
+            "ownable",
+            "year_passed"
+          ],
+          "pending_review": [
+            "ownable",
+            "year_passed"
+          ],
+          "output": null
+        }
+      ]
+    },
+    {
+      "source_id": "islamqa.83025",
+      "propositions": 7,
+      "mappings": [
+        {
+          "proposition_id": "islamqa.83025.p1",
+          "encoder": "ihram_specification",
+          "status": "hold",
+          "missing_facts": [
+            "component"
+          ],
+          "pending_review": [
+            "component"
+          ],
+          "output": null
+        },
+        {
+          "proposition_id": "islamqa.83025.p3",
+          "encoder": "doubt_in_condition",
+          "status": "hold",
+          "missing_facts": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
+          ],
+          "pending_review": [
+            "asl_mustashab",
+            "ghalaba",
+            "needs_firm_intention"
           ],
           "output": null
         }

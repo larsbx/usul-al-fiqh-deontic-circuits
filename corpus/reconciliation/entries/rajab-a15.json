@@ -34,7 +34,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وأنت طالق، ونوى ثلاثا فثلاث», stated decisively in the muʿtamad matn."
         }
-      ]
+      ],
+      "positions_sha256": "00b7f7e52b71a890c9f59208c41ae89015c6db9899ee42761d6ae091ca10e817"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
@@ -62,7 +63,8 @@
           "who": "al-Qāḍī in one place, as al-Inṣāf reports him",
           "note": "The same masʾala: valid."
         }
-      ]
+      ],
+      "positions_sha256": "aa0dce603d782c632f8dd2f76394f84d468ce818969a729b1ca44ceddcc49fe9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f001",
@@ -88,7 +90,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "Of the dhimmī or slave wounded who becomes Muslim or is freed and dies: «وهو المذهب ... وجزم به في الوجيز وغيره وقدمه في الفروع»."
         }
-      ]
+      ],
+      "positions_sha256": "34c747c804f371c99abc95276f645e1898717f09285ae927e6206224d462c800"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f002",
@@ -116,7 +119,8 @@
           "who": "a riwāya of Aḥmad, as al-Inṣāf reports it (Abū Bakr's and Abū al-Khaṭṭāb's choice)",
           "note": "«قال في الهداية: هو أصح في المذهب»."
         }
-      ]
+      ],
+      "positions_sha256": "15babd96aa357b8b9db6e82e002546c98b4913a175228037ac81525c28e9c1c8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
@@ -142,7 +146,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "«وفي ضمانه الخلاف المتقدم»: the taṣḥīḥ of the cognate masʾala (the slave wounded, freed and dead: a free man's diya, «وهو المذهب»)."
         }
-      ]
+      ],
+      "positions_sha256": "e7f2d5ab8446d16d3972deafd69a18ec50e6bab6754d91b29d417c7cb0aecf85"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007",
@@ -153,7 +158,8 @@
       "jam": null,
       "naskh": null,
       "note": "al-Qāḍī and Abū al-Khaṭṭāb state the full ḍamān; Ibn Rajab's tawajjuh of the arsh alone is an iḥtimāl. No later treatment found. For the reading.",
-      "evidence": []
+      "evidence": [],
+      "positions_sha256": "1b3e59caeff335ccc57912c3bfe70a257920896d0a8cdb71d7aa6fe308da28a9"
     }
   ]
 }

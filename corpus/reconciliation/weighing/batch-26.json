@@ -34,7 +34,8 @@
      "note": "Given for the wajh, chosen by Ibn ʿAqīl and others, that the bayyina is heard. al-Furūʿ calls it «متجه» (position 1). al-Mughnī gives the same reason for Abū Yūsuf, Ibn al-Mundhir and the Shāfiʿīs. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6fa55c631f7cd1244c2ac26e396e9c180a0c63188542107d1482fafae1f33a18"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
@@ -67,7 +68,8 @@
      "note": "The first iḥtimāl: the sale stands and the burning lapses (position 1), by analogy with the transfer at death, for which al-Mughnī cites Aḥmad's naṣṣ that the burning lapses because it is a punishment. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "57323ad1107a0b3a08f3b2b90bece0988245bc3fbfc775c4589d7b8e6e9c54b2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f003",
@@ -91,7 +93,8 @@
      "note": "Kashshāf gives this ʿilla for the seller's non-liability, then reports Ibn ʿAqīl's exception for a sale made as a trick to escape the demand (position 1) without arguing it. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "57d652baae81d9187333ac81630e28d42a7b83f175ae5fd37208f2865daac462"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f004",
@@ -133,7 +136,8 @@
      "note": "The opposing wajh in al-Mughnī: the right is attached to the slave as with a vowed slave. This is the basis of position 0. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bc78b693b0fc8ba2ae845ce610d8a9557d6f0b1438b846ec1958c07f2e75d82a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
@@ -166,7 +170,8 @@
      "note": "Proof for the riwāya that zakāt is owed in the dhimma, which is the basis of position 1. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6b116c08b9a60156cf833be5e8e8d9438d490871452a6341bfa5f068085ce76a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000",
@@ -190,7 +195,8 @@
      "note": "Stated where the pledger frees the pledged slave: the value taken from him is a pledge in its place because it is the substitute of the thing. The ʿilla bears directly on the value of a destroyed pledge (position 0). qiyas. No source in the works searched argues position 1 (al-Kāfī, al-Talkhīṣ, Abū al-Khaṭṭāb)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f87b20849ad4b16294609d6991c807cb50e8c903caed3b32eec6f58358f79eef"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
@@ -214,13 +220,15 @@
      "note": "Same ruling and ʿilla: position 0. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e1a66c724902ab7ec4126c94cc73ce40199716036b5d37fc05262d074a869c9b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
    "proofs": [],
    "advantages": [],
-   "searched": "al-Mughnī v09 p443-444 (destroyed designated sacrifice: value or like owed, «فإن شاء اشترى بها أضحية»; no ruling on whether the purchase itself designates); al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf (v03 p011; v04 p295, which only uses «كبدل أضحية» as the aṣl for the waqf), Sharḥ Muntahā v02 p427 (same). No source argues whether the substitute is designated by the purchase or needs a new designation."
+   "searched": "al-Mughnī v09 p443-444 (destroyed designated sacrifice: value or like owed, «فإن شاء اشترى بها أضحية»; no ruling on whether the purchase itself designates); al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf (v03 p011; v04 p295, which only uses «كبدل أضحية» as the aṣl for the waqf), Sharḥ Muntahā v02 p427 (same). No source argues whether the substitute is designated by the purchase or needs a new designation.",
+   "positions_sha256": "f37d8b89390906e329ae679d3162d44fb4d7c9cec75ef06e33efc2bdd3473026"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f001",
@@ -235,13 +243,15 @@
      "note": "Kashshāf's ground, matching the «تام مستقر» that the case note quotes, for al-Qāḍī's view that intercourse or manumission is neither annulment nor effective (position 0). Analogy with the father's gift: qiyas. The iḥtimāl of al-Mujarrad and al-Fuṣūl (position 1) is not argued in the works searched."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3c2b89118db8f6db0222ef719328bdb478bcfdc6fa947d750a86cb21305597f2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f002",
    "proofs": [],
    "advantages": [],
-   "searched": "al-Mughnī v04 p307-316 (taflīs: «من أدرك متاعه», the seller's retrieval, the bankrupt's intercourse); Sharḥ Muntahā v02 p164 («ويصح رجوعه... بقول... فلا يحصل رجوعه بفعل»: ruling only, its «كرجوع أب في هبة» is for delay); Kashshāf v03 p428-429; al-Mubdiʿ, al-Sharḥ al-Kabīr, al-Kāfī searched for وطء/عتق البائع with المفلس. No source gives a proof that the seller's intercourse or disposal is or is not retrieval of the bankrupt's slave woman."
+   "searched": "al-Mughnī v04 p307-316 (taflīs: «من أدرك متاعه», the seller's retrieval, the bankrupt's intercourse); Sharḥ Muntahā v02 p164 («ويصح رجوعه... بقول... فلا يحصل رجوعه بفعل»: ruling only, its «كرجوع أب في هبة» is for delay); Kashshāf v03 p428-429; al-Mubdiʿ, al-Sharḥ al-Kabīr, al-Kāfī searched for وطء/عتق البائع with المفلس. No source gives a proof that the seller's intercourse or disposal is or is not retrieval of the bankrupt's slave woman.",
+   "positions_sha256": "cd2504a086fdec376860eb615cd72d061f157c0f74ead312a5e6b088a50a084e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f003",
@@ -265,7 +275,8 @@
      "note": "Repeats al-Mughnī. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e8271f6de024d41aca02ef562d98d8c51dd05a834617229f91ce3a0f371ed6c3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f004",
@@ -298,7 +309,8 @@
      "note": "Ibn ʿAqīl's ground that an act showing revocation is revocation. This supports Abū Ḥafṣ's takhrīj that the father's manumission is valid and a revocation (position 1). It is argued in al-Mughnī for a taking with indications, not the manumission itself. A qiyās a fortiori: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "24b1b69d5e31528cd3d0b63ca6bad47a65e88dab1a78300e2a1b3b16db075311"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f005",
@@ -331,7 +343,8 @@
      "note": "Sharḥ Muntahā continues «ولو كان تصرفه فيه عتقا نصا، لتمام ملك الابن على ماله»: position 0. qiyas. No source argues Abū Ḥafṣ's or Abū Bakr's view (position 1)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2884fa4edb73ee30219c27458708e8453f145dde678726fc1841b5cab1aa4e8f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f007",
@@ -373,7 +386,8 @@
      "note": "Given for al-Khiraqī's ẓāhir and al-Shāfiʿī, one of Aḥmad's two riwāyas: position 1. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "944ba76b47d69ec396a9ffc8fb3029e3eb287de40ab3b4a4be6b83cada6eb4bf"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f010",
@@ -406,7 +420,8 @@
      "note": "al-Qāḍī's view (put first by al-Sāmirrī) that he is imprisoned until he answers (position 1), when the claimant has no bayyina. Analogy with one who admits and refuses to pay: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0d0d8c1d606a86214b9754e0b42c33cf3dea05e119baaef17b16b880dc743e06"
   }
  ]
 }

@@ -7,9 +7,16 @@ the profile's heaviest words, and its bābs are the matn units nearest the profi
 lane B's share of retrieved units that are real cases measures them). So no agent picks
 keywords, and every lexicon word occurs in the encoder's evidence.
 
-Recall is measured, not assumed: cases are split into ``FOLDS`` by the hash of their record id, each
-fold is routed by a model fitted without it (the qawāʿid always stay in), and the share whose encoder
-is in the top k is compared with ranking encoders by case frequency. The out-of-domain report routes
+Recall is measured, not assumed, under three splits into ``FOLDS``, each fold routed by a model fitted
+without it and compared with ranking encoders by case frequency under the same split. The headline,
+``by_qaida``, folds whole qawāʿid, so no sibling of a test farʿ trains the model; the formalised qāʿida
+statements stay in, as they do when the index is used. ``within_qaida`` folds records, so siblings train
+the model (audit PR-38). ``unseen_qaida`` also holds out the qāʿida's statement: routing a farʿ of a
+qāʿida the bank has not formalised. Recall is scored on a case's *category*, the qāʿida type its
+encoder reads, which the anwāʿ of one typology share, so routing is credited for the qāʿida and the
+typed facts choose the nawʿ (audit PR-48); per-encoder recall is reported beside it. Consumers that
+need encoders (typed routing, lane-B proposals) rank encoders, since expanding a category would
+crowd the shortlist with its anwāʿ. The out-of-domain report routes
 the IslamQA tranche's questions, modern texts the profiles never saw. The index ranks candidates for
 annotation; it decides nothing, and a retrieved unit is a case only once annotated.
 """
@@ -21,6 +28,7 @@ import hashlib
 import json
 import math
 from collections import Counter
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -71,12 +79,23 @@ class Model:
         return {label: sum(x * p.get(w, 0.0) for w, x in v.items()) for label, p in self.profiles.items()}
 
     def rank(self, text: str) -> list[str]:
-        s = self.scores(text)
-        return sorted(s, key=lambda label: (-s[label], label))
+        return ranked(self.scores(text))
 
     def lexicon(self, label: str, n: int = LEXICON) -> list[str]:
         p = self.profiles[label]
         return sorted(p, key=lambda w: (-p[w], w))[:n]
+
+
+def ranked(scores: dict[str, float], labels=None) -> list[str]:
+    """``labels`` (default: all scored) best first. Scores are compared at 9 places so that a tie
+    within float noise breaks by label on every platform, not by the numpy build's summation order."""
+    return sorted(scores if labels is None else labels, key=lambda label: (-round(scores[label], 9), label))
+
+
+def category(encoder: str) -> str:
+    """The routing label: the qāʿida type the encoder reads (its qawāʿid), which the anwāʿ of one
+    typology share; an encoder that reads no qāʿida is its own category."""
+    return "|".join(sorted(takhrij.ENCODERS[encoder]["qawaid"])) or encoder
 
 
 def _records(corpus: Path, ids: set[str]) -> dict[str, dict]:
@@ -103,11 +122,16 @@ def cases(corpus: Path) -> list[tuple[str, str, str]]:
                   if c["far"] in recs and c.get("routing_label", True))
 
 
-def qawaid(corpus: Path) -> list[tuple[str, str]]:
-    """(encoder, text) for every qāʿida an encoder formalises."""
+def _qawaid(corpus: Path) -> list[tuple[str, str, str]]:
+    """(id, encoder, text) for every qāʿida an encoder formalises."""
     enc = sorted(takhrij.ENCODERS.items())
     recs = _records(corpus, {q for _, e in enc for q in e["qawaid"]})
-    return [(name, _text(recs[q])) for name, e in enc for q in e["qawaid"] if q in recs]
+    return [(q, name, _text(recs[q])) for name, e in enc for q in e["qawaid"] if q in recs]
+
+
+def qawaid(corpus: Path) -> list[tuple[str, str]]:
+    """(encoder, text) for every qāʿida an encoder formalises."""
+    return [(e, t) for _, e, t in _qawaid(corpus)]
 
 
 def evidence(corpus: Path) -> list[tuple[str, str]]:
@@ -122,21 +146,38 @@ def _recall(hits: Counter, n: int) -> dict[str, float]:
     return {str(k): round(hits[k] / n, 4) for k in KS}
 
 
-def held_out(corpus: Path) -> dict:
-    """Recall@k of each case routed by a model fitted without its fold, against the frequency prior."""
-    cs, qs = cases(corpus), qawaid(corpus)
+def _qaida(far: str) -> str:
+    """The qāʿida a farʿ's record id names: `….q043.f005` → `….q043`."""
+    return far.rsplit(".", 1)[0]
+
+
+def _split(cs: list[tuple[str, str, str]], qs: list[tuple[str, str, str]], unit, statements: bool,
+           label: Callable[[str], str] = category) -> dict:
+    """Recall@k of each case's label routed by a model fitted without its fold (cases folded by `unit` of
+    their id; the qāʿida statements kept, or folded by their own id), against the frequency prior of the
+    same split."""
     hits, prior = Counter(), Counter()
     for f in range(FOLDS):
-        train = [(e, t) for i, e, t in cs if _fold(i) != f]
-        model = Model.fit(qs + train)
+        train = [(label(e), t) for i, e, t in cs if _fold(unit(i)) != f]
+        model = Model.fit([(label(e), t) for i, e, t in qs if statements or _fold(i) != f] + train)
         freq = [e for e, _ in sorted(Counter(e for e, _ in train).items(), key=lambda x: (-x[1], x[0]))]
         for i, e, t in cs:
-            if _fold(i) == f:
+            if _fold(unit(i)) == f:
                 ranked = model.rank(t)
                 for k in KS:
-                    hits[k] += e in ranked[:k]
-                    prior[k] += e in freq[:k]
-    return {"cases": len(cs), "folds": FOLDS, "held_out": _recall(hits, len(cs)), "prior": _recall(prior, len(cs))}
+                    hits[k] += label(e) in ranked[:k]
+                    prior[k] += label(e) in freq[:k]
+    return {"recall": _recall(hits, len(cs)), "prior": _recall(prior, len(cs))}
+
+
+def held_out(corpus: Path) -> dict:
+    """Recall of the category under each split, `by_qaida` the headline (audit PR-38, PR-48), and of
+    the encoder beside it."""
+    cs, qs = cases(corpus), _qawaid(corpus)
+    splits = {"by_qaida": (_qaida, True), "within_qaida": (str, True), "unseen_qaida": (_qaida, False)}
+    return {"cases": len(cs), "folds": FOLDS, "label": "category",
+            **{s: _split(cs, qs, u, st) for s, (u, st) in splits.items()},
+            "encoder": {s: _split(cs, qs, u, st, str) for s, (u, st) in splits.items()}}
 
 
 def _babs(corpus: Path) -> list[dict]:
@@ -174,13 +215,16 @@ def ood(root: Path) -> dict:
     need = {c["far"].rsplit(".", 1)[0] for c in tranche}
     with gzip.open(root / ANSWERS, "rt", encoding="utf-8") as fh:
         asked = {r["id"]: f"{r['title']} {r['question']}" for r in map(json.loads, fh) if r["id"] in need}
-    model = Model.fit(evidence(corpus))
-    freq = [e for e, _ in sorted(Counter(e for _, e, _ in cases(corpus)).items(), key=lambda x: (-x[1], x[0]))]
-    routed = [(c["encoder"], model.rank(asked[a])) for c in tranche if (a := c["far"].rsplit(".", 1)[0]) in asked]
-    hits = Counter(k for e, r in routed for k in KS if e in r[:k])
-    prior = Counter(k for e, _ in routed for k in KS if e in freq[:k])
+    tranche = [(c["encoder"], asked[a]) for c in tranche if (a := c["far"].rsplit(".", 1)[0]) in asked]
+
+    def recall(label: Callable[[str], str]) -> dict:
+        model = Model.fit([(label(e), t) for e, t in evidence(corpus)])
+        freq = [e for e, _ in sorted(Counter(label(e) for _, e, _ in cases(corpus)).items(), key=lambda x: (-x[1], x[0]))]
+        routed = [(label(e), model.rank(t)) for e, t in tranche]
+        return {"recall": _recall(Counter(k for e, r in routed for k in KS if e in r[:k]), len(routed)),
+                "prior": _recall(Counter(k for e, _ in routed for k in KS if e in freq[:k]), len(routed))}
     return {"schema_version": 1, "status": "candidate", "set": TRANCHE, "text": "title and question",
-            "cases": len(routed), "recall": _recall(hits, len(routed)), "prior": _recall(prior, len(routed))}
+            "label": "category", "cases": len(tranche), **recall(category), "encoder": recall(str)}
 
 
 def render_ood(root: Path) -> str:

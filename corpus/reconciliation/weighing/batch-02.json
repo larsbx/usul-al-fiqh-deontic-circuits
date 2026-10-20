@@ -34,7 +34,8 @@
      "note": "This is Ibn Rajab's second ground for invalidity. It is qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2d0a210c870ffdc2af99819c1c7f2d2bbc307e4676385dfb518da1cd751d45f5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f005",
@@ -76,7 +77,8 @@
      "note": "This is one of al-Shāfiʿī's qawls, the same ruling as Abū Bakr's in al-Shāfī (invalid in the zakat's amount). No Ḥanbalī ground for Abū Bakr is given. It is qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2f250aeadfbb61275019c8029573fce34eb3e38e11acfc92047e18a59685414d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f006",
@@ -109,7 +111,8 @@
      "note": "This is al-Shāfiʿī's other qawl, the same ruling as Abū al-Khaṭṭāb's in al-Intiṣār, which Ibn Rajab grounds «لتعلق الحق بعينه». It is qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "586ef3e0830f647146d278217138572405e695e6b62d9c8f9ced15c615bf0b51"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f007",
@@ -128,7 +131,7 @@
      "tier": "qiyas",
      "dalil": "Analogy: the master's demand bars disposal, as the shafīʿ's demand bars the purchaser's disposal.",
      "ref": "src:openiti-rajab-shamela21730/v01:p088",
-     "excerpt_ar": "والأظهر أن المطالبة تمنع التصرف كالشفعة",
+     "excerpt_ar": "لا والأظهر أن المطالبة تمنع التصرف كالشفعة",
      "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
      "note": "This is Ibn Rajab's «الأظهر» on the demand branch. It is qiyas."
     },
@@ -142,7 +145,8 @@
      "note": "This is al-Iqnāʿ with al-Kashshāf adopting Ibn Rajab's view on the same analogy. It is qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0976753f40493b20bca702d0c873b72831034be96232e2621c40cc45108e245d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f008",
@@ -152,7 +156,7 @@
      "tier": "zanni",
      "dalil": "The marfūʿ ḥadīth «whoever leaves a right or property, it is his heirs'»: the estate passes to them at once, so their disposal is a disposal of their own property.",
      "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p438",
-     "excerpt_ar": "وله - صلى الله عليه وسلم - «من ترك حقا أو مالا فلورثته»",
+     "excerpt_ar": "لقوله - صلى الله عليه وسلم - «من ترك حقا أو مالا فلورثته»",
      "who": "al-Buhūtī, Kashshāf al-Qināʿ",
      "note": "al-Buhūtī cites it for the estate passing to the heirs despite the debt, and grounds valid disposal on that passing («لانتقالها إليهم»). Ibn Qudāma calls it «الخبر». It reaches the validity of disposal by implication, so zanni."
     },
@@ -184,7 +188,8 @@
      "note": "Ibn Qudāma gives it for the riwāya that the debt bars the transfer. On that riwāya he concludes «لم يصح تصرفهم»; al-Inṣāf: «فعلى الثانية: لا إشكال في عدم النفوذ». So it is cited for this ruling, though from a premise outside the madhhab. The āya does not explicitly address the heirs' disposal; it bears on it by its apparent sense, so zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f5d70ba267eb0d4c4943157c5123b64b773f0c6eba1dac54d0585c8c8e201342"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f009",
@@ -208,7 +213,8 @@
      "note": "This is the invalidity iḥtimāl in al-Targhīb, as relayed in Taṣḥīḥ al-Furūʿ. Ibn Mufliḥ's lead «يصح ولا يتصرف», which al-Mardāwī calls the correct view of the madhhab, bars her disposal. It is qiyas. The excerpt runs through the qualifier that follows in the source."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d295c0144782f203120220affd0037a96bbf0fb743cf02460b50f54d337cfbfc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
@@ -241,7 +247,8 @@
      "note": "Ibn Rajab's ground for the side of Ibn ʿAqīl, al-Shīrāzī and Taqī al-Dīn, set on Aḥmad's naṣṣ via Ibn Manṣūr «ردها ورجع عليه بقدر النماء». The growth is the buyer's and he recovers its value. It is qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c398767270b582e42df0cb22f3373e6aab4c8bf51a357c035a51ef55e006894f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f001",
@@ -292,7 +299,8 @@
      "note": "This is Ibn Rajab's takhrīj for the third position. It is qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3e2dcacfb08280b8508a1b47305e38954c97ce2eee73fb921bfb55cfbb4f30ea"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f002",
@@ -345,7 +353,8 @@
      "note": "This compares the qiyas proofs. The bar's ʿilla is shown in several uṣūl: the dower on annulment, half the dower on divorce, and, in the passage that follows, the seller's return on bankruptcy. The other side's analogy rests on increase before delivery and detached increase only. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
      "basis": "applied"
     }
-   ]
+   ],
+   "positions_sha256": "91d64d2fad7e38caa89a02f0d13379b129d7a278a9cfc75df905299076ef58b7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f003",
@@ -387,7 +396,8 @@
      "note": "This is Ibn Rajab's own wajh. It is qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3a7cebfa421a4de9ec3e252af665f3294a6410e8565111751fedd03c89eb60a6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
@@ -449,7 +459,8 @@
      "note": "This is between the two qiyas proofs. Abū Bakr's ʿilla leads to averting the ḥadd («يدرأ بالشبهات»), and the other side's analogy leads to imposing it. The murajjiḥ is dariHadd, recorded although the sources do not adopt it here. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
      "basis": "applied"
     }
-   ]
+   ],
+   "positions_sha256": "5d48412a7f56c6a8fd96b21fc4b8d648099dc59726cb67b7ee5aae6f1e2219e2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036",
@@ -491,7 +502,8 @@
      "note": "Ibn Rajab's own takhrīj of a riwāya of one divorce when no intent is stated, resting on certainty. The garbled word in the cached text («الرستفغني») stands for «الواحدة». The ground is the certain, so istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "18589a5a8c19358cbde04e02978c0fad6b8152114469ddd8cda0e645a37a1598"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
@@ -533,7 +545,8 @@
      "note": "This is the ground for three, given for «أنت طالق الطلاق» and carried over to «الطلاق يلزمني» by «وجههما ما تقدم». It is a linguistic rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e774ca41302053610131c6523b7a87570d21eec748a9556009b69257f6b0ee21"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
@@ -584,7 +597,8 @@
      "note": "This is Ibn Qudāma's preference of the aṣl. Ibn Rajab glosses it «ولو كان الجمع أظهر فيه ترجيحا للأصل على الظاهر». The ground is certainty, so istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ef28e47f418f8bd1c41d37dcbaab0b4f1d4ad0d7b154aeff2ef2e9bcdafe76f2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
@@ -617,7 +631,8 @@
      "note": "This is Ibn Qudāma's ground for three dirhams with no stated intent. It is a linguistic rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "39e1f83f2805435e51c58cdc30a574e8c9eb6377fb4251f4c3f9d3467931ac2a"
   }
  ]
 }

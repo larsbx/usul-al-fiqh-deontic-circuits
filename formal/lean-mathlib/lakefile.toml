@@ -1,0 +1,16 @@
+# Mathlib, pinned for future use. Kept outside `formal/lean` so the kernel and its CI stay
+# Mathlib-free: nothing in `usul` may import from here (docs/architecture/mathlib-pin.md).
+name = "usul_mathlib"
+defaultTargets = ["UsulMathlib"]
+
+[[require]]
+name = "usul"
+path = "../lean"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.34.1"
+
+[[lean_lib]]
+name = "UsulMathlib"

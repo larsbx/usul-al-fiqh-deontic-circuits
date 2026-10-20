@@ -18,13 +18,14 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import subprocess
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
 
-from . import routing
+from . import mahall, routing
 from .fatawa_prolog import atom
 
 TYPING = "examples/v41_typing.pl"
@@ -48,9 +49,15 @@ class Typed:
 @dataclass(frozen=True)
 class TestSet(Typed):
     """A labelled test set: its cases as (unit, encoder, needs), and the routing index's ranking of
-    the encoders for each unit (the lexical baseline, held out where the index was fitted on the set)."""
+    the encoders for each unit (the lexical baseline, held out where the index was fitted on the set).
+    A set typed from a reading list carries it: ``shortlist`` is then committed beside its situations."""
     cases: Callable[[Path], list[tuple[str, str, list[str]]]]
     ranker: Callable[[Path], dict[str, list[str]]]
+    listed: bool = False
+
+    @property
+    def shortlist(self) -> str:
+        return f"corpus/typing/{self.name}_shortlist.json"
 
     @property
     def report(self) -> str:
@@ -117,8 +124,97 @@ def _classical_ranker(root: Path) -> dict[str, list[str]]:
     return {i: model.rank(t) for i, _, t in cs if routing._fold(i) == FOLD}
 
 
+def _fold_cases(fold: int) -> Callable[[Path], list[tuple[str, str, list[str]]]]:
+    def cases(root: Path) -> list[tuple[str, str, list[str]]]:
+        from . import takhrij
+        needs = {c["far"]: c.get("needs", []) for c in takhrij.load(root / "corpus")}
+        return [(far, enc, needs.get(far, [])) for far, enc, _ in routing.cases(root / "corpus") if routing._fold(far) == fold]
+    return cases
+
+
+def _strict_ranker(fold: int) -> Callable[[Path], dict[str, list[str]]]:
+    """Each farʿ ranked by the index refitted without every farʿ of its qāʿida's fold (the formalised
+    statements kept, as in use): its own qāʿida's furūʿ never train the ranking (audit PR-48)."""
+    def ranker(root: Path) -> dict[str, list[str]]:
+        corpus = root / "corpus"
+        cs, qs = routing.cases(corpus), routing.qawaid(corpus)
+        held = [(i, t) for i, _, t in cs if routing._fold(i) == fold]
+        out = {}
+        for f in sorted({routing._fold(routing._qaida(i)) for i, _ in held}):
+            model = routing.Model.fit(qs + [(e, t) for i, e, t in cs if routing._fold(routing._qaida(i)) != f])
+            out |= {i: model.rank(t) for i, t in held if routing._fold(routing._qaida(i)) == f}
+        return out
+    return ranker
+
+
 SETS = (TestSet("islamqa_tranche1", _islamqa_cases, _islamqa_ranker),
-        TestSet("rajab_fold0", _classical_cases, _classical_ranker))
+        TestSet("rajab_fold0", _classical_cases, _classical_ranker),
+        TestSet("rajab_fold1", _fold_cases(1), _strict_ranker(1), listed=True))
+SHORTLIST = 20
+
+
+def by_name(name: str) -> TestSet:
+    return next(ts for ts in SETS if ts.name == name)
+
+
+def shortlist(root: Path, ranking: dict[str, list[str]], n: int = SHORTLIST) -> dict[str, list[str]]:
+    """Per unit, the typist's reading list: the qāʿida types whose fields the router's best-ranked
+    encoders read, in rank order, until ``n`` types (types from ``examples/v41_types.pl``)."""
+    from . import deduction
+    export = (root / "examples/v41_types.pl").read_text(encoding="utf-8")
+    reads = deduction.reads(export)
+    owner: dict[str, list[str]] = {}
+    for q, f in re.findall(r"^type_field\((\w+), (\w+), ", export, re.M):
+        owner.setdefault(f, []).append(q)
+    out = {}
+    for unit, ranked in sorted(ranking.items()):
+        types: list[str] = []
+        for e in ranked:
+            for q in (q for f in reads.get(e, []) for q in owner.get(f, [])):
+                if q not in types:
+                    types.append(q)
+            if len(types) >= n:
+                break
+        out[unit] = types[:n]
+    return out
+
+
+def catalogue(root: Path, withheld: frozenset[str] = frozenset()) -> dict[str, dict]:
+    """The typist's catalogue: every qāʿida type with its statement, its scope (the opening clauses
+    of the furūʿ its source places under it, ``scope``; without the ``withheld`` furūʿ), and each
+    field with its allowed values, its gloss and its anchor, the verbatim phrase of the source that
+    defines it (``corpus/types/anchors``). Generated from the Lean export, the anchors and the
+    segmented witnesses, nothing else."""
+    from . import anchors, scope
+    export = (root / "examples/v41_types.pl").read_text(encoding="utf-8")
+    statement = {n: re.sub(r"\s*Read by .*$", "", s.replace("''", "'"))
+                 for n, s in re.findall(r"^qaida_type\((\w+), '((?:[^']|'')*)'\)\.", export, re.M)}
+    ctors: dict[str, list[str]] = {}
+    for ty, v in re.findall(r"^type_value\('([^']*)', (\w+)\)\.", export, re.M):
+        ctors.setdefault(ty, []).append(v)
+    anchor = {(e["type"], e["field"]): e for e in anchors.load(root / "corpus")}
+    out: dict[str, dict] = {}
+    for q, f, ty in re.findall(r"^type_field\((\w+), (\w+), '([^']*)'\)\.", export, re.M):
+        inner, nested = ty, 0
+        while inner.startswith("Option "):
+            inner, nested = inner[len("Option "):].strip("()"), nested + 1
+        values = [True, False] if inner == "Bool" else ctors.get(inner)
+        if values is None:
+            continue
+        a = anchor.get((q, f), {})
+        out.setdefault(q, {"statement": statement.get(q, ""),
+                           "scope": scope.scope(root / "corpus", q, statement.get(q, ""), withheld),
+                           "fields": []})["fields"].append(
+            {"field": f, "values": values + (["none"] if nested > 1 else []), "gloss": a.get("gloss"),
+             **({"defined_by": a["anchor"]["excerpt_ar"]} if "anchor" in a else {})})
+    return out
+
+
+def render_shortlist(root: Path, ts: TestSet) -> str:
+    return json.dumps({"schema_version": 1, "status": "candidate", "set": ts.name, "size": SHORTLIST,
+                       "method": "the strict router's best-ranked encoders' qāʿida types, in rank order; "
+                                 "the typist reads these statements first, then the full catalogue",
+                       "units": shortlist(root, ts.ranker(root))}, ensure_ascii=False, indent=2) + "\n"
 
 
 def sid(answer: str, i: int) -> str:
@@ -168,8 +264,10 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
     cases = ts.cases(root)
     typed = {a["answer"] for a in data["answers"]}
     lexical = ts.ranker(root)
-    hits, named_hits, lex_hits, hyb_hits, applied, rows = (defaultdict(int), defaultdict(int), defaultdict(int),
-                                                          defaultdict(int), 0, [])
+    tied = mahall.links(root / "corpus")
+    hits, named_hits, lex_hits, hyb_hits, qaida_hits, applied, rows = (defaultdict(int), defaultdict(int),
+                                                                      defaultdict(int), defaultdict(int),
+                                                                      defaultdict(int), 0, [])
     for unit, encoder, needs in cases:
         scores = shares(cov.get(unit, {}))
         words = lexical[unit]
@@ -179,6 +277,7 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             s = scores.get(e, 0.0)
             return sum(v >= s for v in scores.values()) if s > 0 else None
         rank, s = rank_of(encoder), scores.get(encoder, 0.0)
+        gold = set(mahall.under(tied[unit]) if unit in tied else mahall.encoder_qawaid(encoder))
         named = sorted({n[5:] for n in needs if n.startswith("rule:") and n[5:] in encoders})
         best = min((r for r in [rank, *map(rank_of, named)] if r is not None), default=None)
         applied += s == 1.0
@@ -187,6 +286,7 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             named_hits[k] += best is not None and best <= k
             lex_hits[k] += encoder in words[:k]
             hyb_hits[k] += encoder in ranked[:k]
+            qaida_hits[k] += any(set(mahall.encoder_qawaid(e)) & gold for e in ranked[:k])
         rows.append({"case": unit, "encoder": encoder, "settled": round(s, 4), "rank": rank,
                      **({"named_rules": named, "best_rank_with_named": best} if named else {})})
     n = len(cases)
@@ -202,6 +302,9 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             "recall_with_named_rules": {str(k): round(named_hits[k] / n, 4) for k in KS},
             "lexical_recall": {str(k): round(lex_hits[k] / n, 4) for k in KS},
             "hybrid_recall": {str(k): round(hyb_hits[k] / n, 4) for k in KS},
+            "hybrid_recall_by_qaida": {str(k): round(qaida_hits[k] / n, 4) for k in KS},
+            "by_qaida": "a hit when a top-k encoder reads a qāʿida the bank ties the case to (mahall.links: "
+                        "placement, encoder, types, co-annotation), the case's encoder's own for units outside it",
             "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
             "prior_recall": {str(k): round(sum(e in prior_order[:k] for _, e, _ in cases) / n, 4) for k in KS},
             "encoders_applying_per_answer": round(sum(applying) / len(applying), 2),

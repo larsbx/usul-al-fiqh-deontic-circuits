@@ -16,13 +16,15 @@
      "note": "al-Mubdiʿ on the answer «كل امرأة لي طالق» to «تزوجت علي؟»: she is divorced with them, Aḥmad's naṣṣ (position 1). A stated rationale about the reach of the wording: qiyas. No work consulted argues position 0 (Ibn ʿAqīl's extracted riwāya) on these facts."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bd5d63de26996ae2809454cccb10bdd17d8350eec640beaa7acc557c35bb9a57"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f002",
    "proofs": [],
    "advantages": [],
-   "searched": "al-Mubdiʿ v07:p412-413, Kashshāf v06:p113-114 and Sharḥ al-Muntahā v03:p359 report only Ḥarb's question and Aḥmad's answer («لم يبلغني فيه شيء وذهب إلى حد واحد») and Sharḥ al-Muntahā's «ولا يكفر من قذف أباه إلى آدم نصا», with no proof attached; the Q 24:4 argument that follows is for one ḥadd for slandering a group in one word, a different masʾala. Searched al-Mughnī, al-Sharḥ al-Kabīr and al-Kāfī for «إلى آدم» and «آدم وحواء» in the qadhf chapters: nothing. No source argues the apostasy wajh."
+   "searched": "al-Mubdiʿ v07:p412-413, Kashshāf v06:p113-114 and Sharḥ al-Muntahā v03:p359 report only Ḥarb's question and Aḥmad's answer («لم يبلغني فيه شيء وذهب إلى حد واحد») and Sharḥ al-Muntahā's «ولا يكفر من قذف أباه إلى آدم نصا», with no proof attached; the Q 24:4 argument that follows is for one ḥadd for slandering a group in one word, a different masʾala. Searched al-Mughnī, al-Sharḥ al-Kabīr and al-Kāfī for «إلى آدم» and «آدم وحواء» in the qadhf chapters: nothing. No source argues the apostasy wajh.",
+   "positions_sha256": "6556064bedb1a1bee19cda58350a2f0fc9ae687115a33c7cc3e0d6e69a0e21c8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f003",
@@ -55,7 +57,8 @@
      "note": "al-Majd's choice in al-Muḥarrar as al-Mubdiʿ reports it: position 1. A stated rationale (the ʿilla of including tawḥīd): qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "14881723123d5f225b811c1869e744d0b227205367f851487855c84a4facb3a2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f004",
@@ -79,7 +82,8 @@
      "note": "al-Mughnī's ground for freeing by the ṣarīḥ word «وإن لم ينو شيئا», under which it cites Aḥmad's naṣṣ that the unknown umm walad is freed: position 1. A linguistic rationale: qiyas. Kashshāf v04:p511 gives the same ground (لأنهما لفظان ورد الشرع بهما)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b0daeff6c7d99bb684e850857727c8065c02413882472a0057ee574d9867ac97"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007",
@@ -112,7 +116,8 @@
      "note": "al-Mubdiʿ reports «وقيل: يجزئ» with a likening to the case where his life is later learned (position 1, the iḥtimāl). An analogy: qiyas. The objection «الأصل حياته» is raised in the sources only to be rebutted, so it is not recorded as a proof."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5c02187793c5d09a4f6265688d1571f46df7a0bd79170c42a39a2be5edab3f70"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f008",
@@ -145,7 +150,8 @@
      "note": "Same passage, the analogy completing the buyer's riwāya (aṣl: a dispute over receipt of the sold item). qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "33af762aac5242ef603a086eac5179b80ce4268b3c164881cd9524597344aaa7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009",
@@ -178,7 +184,8 @@
      "note": "al-Mubdiʿ on al-Muqniʿ's text: the madhhab ruling for the claimant, with the aṣl of no defect. istishab. No work consulted argues position 0 (the ghārim's word on a claimed defect); al-Mughnī's «لأنه غارم» is given only where the defect is seen and its time disputed, which the record marks as different facts."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6b46cc39a0f882f8a4628791b2e728e191260f62c1b5c4a7c1c20ac47ddf9ed7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
@@ -211,7 +218,8 @@
      "note": "al-Mughnī's ground for the second riwāya on the same facts, the lessor's word (position 0). «الأصل السلامة» → istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1658b3ae79333a62caa471cd553eadcc5814eea0766b95d60cc4bd9d8d409189"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f011",
@@ -253,7 +261,8 @@
      "note": "Ibn Qudāma's own tarjīḥ for the husband's word, against the semen test and the second-wife test. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ceb1bed1163202325a80cac63d6fdb0256d45dbd50ec845db6a95968c73434fb"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f012",
@@ -286,7 +295,8 @@
      "note": "al-Kāfī, the second wajh on the same facts: position 1. istishab. al-Mughnī states the same ground in the passage cited for position 0."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "652da081193e2b46e8bf8198773fad55fa1cca89b1c071f9224fb168c0594c3d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f013",
@@ -319,7 +329,8 @@
      "note": "al-Kāfī, second wajh: his word (Ibn Qudāma's taʿlīl as the record names it). «والأصل عدم وجوبه» → istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d990647dc93280db3c048cd98be95e5208d7645e4e630f44b70c0e938af1aa1b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
@@ -352,7 +363,8 @@
      "note": "Same passage of al-Mughnī: the first wajh, ṭalāq occurs, on the aṣl that the absent condition persists (position 1). istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0fee3ec822e3cf8b96dfa3340434207658c83705133dfd5e05fba8256247c040"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f015",
@@ -394,7 +406,8 @@
      "note": "Given in al-Mughnī for al-Shāfiʿī's other qawl, the same ruling as position 0 (the killer's word, Abū Bakr's report in the record). istishab. al-Mughnī rebuts it."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4bc86afcd9a52d60b98e0169e95de9aca6944e7acd7e20d05feaaae907e33571"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
@@ -418,7 +431,8 @@
      "note": "al-Mughnī's general ground behind its tafṣīl (half when the husband denies consummation), the branch of position 1. istishab. No work consulted argues position 0 (the whole mahr by the contract) on these facts."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b3c59d0fe1dee9000073f70da983c1048bec21a14cced061ba0f8c5695a425a0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f017",
@@ -460,7 +474,8 @@
      "note": "Cited in al-Mughnī for al-Shāfiʿī's prohibiting qawl (also a riwāya from Aḥmad with ʿAṭāʾ and al-Thawrī disliking what vanished): position 1. A ṣaḥābī's view with no other ṣaḥābī reported against it in the source: fatwaSahabi (al-Mughnī also gives a fuller report of Ibn ʿAbbās permitting within the day)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d1477dc8511b80f4116bb247b4146d3e8ea5503649b07aec4886e4cd6fadfeab"
   }
  ]
 }

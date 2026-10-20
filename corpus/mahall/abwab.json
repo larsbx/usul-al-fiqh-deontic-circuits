@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "note": "The roots of the maḥall tree: the bābs of Ḥanbalī fiqh in the order of the mutūn, plus «amma» for issues across them and «usul» for the evidence itself.",
+  "abwab": [
+    {
+      "id": "tahara",
+      "ar": "الطهارة",
+      "en": "purification"
+    },
+    {
+      "id": "salat",
+      "ar": "الصلاة",
+      "en": "prayer"
+    },
+    {
+      "id": "janaiz",
+      "ar": "الجنائز",
+      "en": "funerals"
+    },
+    {
+      "id": "zakat",
+      "ar": "الزكاة",
+      "en": "alms"
+    },
+    {
+      "id": "siyam",
+      "ar": "الصيام",
+      "en": "fasting"
+    },
+    {
+      "id": "itikaf",
+      "ar": "الاعتكاف",
+      "en": "retreat"
+    },
+    {
+      "id": "hajj",
+      "ar": "الحج والعمرة",
+      "en": "pilgrimage"
+    },
+    {
+      "id": "jihad",
+      "ar": "الجهاد",
+      "en": "jihad and its spoils"
+    },
+    {
+      "id": "atima",
+      "ar": "الأطعمة والذبائح والصيد",
+      "en": "food, slaughter and hunting"
+    },
+    {
+      "id": "udhiya",
+      "ar": "الأضحية والعقيقة",
+      "en": "sacrifice"
+    },
+    {
+      "id": "ayman",
+      "ar": "الأيمان",
+      "en": "oaths"
+    },
+    {
+      "id": "nudhur",
+      "ar": "النذور",
+      "en": "vows"
+    },
+    {
+      "id": "buyu",
+      "ar": "البيوع",
+      "en": "sale"
+    },
+    {
+      "id": "riba",
+      "ar": "الربا والصرف",
+      "en": "usury and exchange"
+    },
+    {
+      "id": "salam",
+      "ar": "السلم",
+      "en": "forward sale"
+    },
+    {
+      "id": "qard",
+      "ar": "القرض",
+      "en": "loan"
+    },
+    {
+      "id": "rahn",
+      "ar": "الرهن",
+      "en": "pledge"
+    },
+    {
+      "id": "daman",
+      "ar": "الضمان والكفالة",
+      "en": "surety"
+    },
+    {
+      "id": "hawala",
+      "ar": "الحوالة",
+      "en": "transfer of debt"
+    },
+    {
+      "id": "sulh",
+      "ar": "الصلح",
+      "en": "settlement"
+    },
+    {
+      "id": "hajr",
+      "ar": "الحجر والتفليس",
+      "en": "interdiction and bankruptcy"
+    },
+    {
+      "id": "wakala",
+      "ar": "الوكالة",
+      "en": "agency"
+    },
+    {
+      "id": "sharika",
+      "ar": "الشركة والمضاربة",
+      "en": "partnership"
+    },
+    {
+      "id": "musaqat",
+      "ar": "المساقاة والمزارعة",
+      "en": "share-cropping"
+    },
+    {
+      "id": "ijara",
+      "ar": "الإجارة",
+      "en": "hire"
+    },
+    {
+      "id": "jiala",
+      "ar": "الجعالة",
+      "en": "reward contract"
+    },
+    {
+      "id": "ariyya",
+      "ar": "العارية",
+      "en": "loan for use"
+    },
+    {
+      "id": "wadia",
+      "ar": "الوديعة",
+      "en": "deposit"
+    },
+    {
+      "id": "ghasb",
+      "ar": "الغصب والإتلاف",
+      "en": "usurpation and destruction"
+    },
+    {
+      "id": "shufa",
+      "ar": "الشفعة",
+      "en": "pre-emption"
+    },
+    {
+      "id": "ihya",
+      "ar": "إحياء الموات",
+      "en": "reviving dead land"
+    },
+    {
+      "id": "luqata",
+      "ar": "اللقطة واللقيط",
+      "en": "found property"
+    },
+    {
+      "id": "waqf",
+      "ar": "الوقف",
+      "en": "endowment"
+    },
+    {
+      "id": "hiba",
+      "ar": "الهبة والعطية",
+      "en": "gift"
+    },
+    {
+      "id": "wasaya",
+      "ar": "الوصايا",
+      "en": "bequests"
+    },
+    {
+      "id": "faraid",
+      "ar": "الفرائض",
+      "en": "inheritance"
+    },
+    {
+      "id": "itq",
+      "ar": "العتق والتدبير والكتابة",
+      "en": "manumission"
+    },
+    {
+      "id": "nikah",
+      "ar": "النكاح",
+      "en": "marriage"
+    },
+    {
+      "id": "sadaq",
+      "ar": "الصداق",
+      "en": "dower"
+    },
+    {
+      "id": "khul",
+      "ar": "الخلع",
+      "en": "khulʿ"
+    },
+    {
+      "id": "talaq",
+      "ar": "الطلاق",
+      "en": "divorce"
+    },
+    {
+      "id": "raja",
+      "ar": "الرجعة",
+      "en": "return"
+    },
+    {
+      "id": "ila",
+      "ar": "الإيلاء",
+      "en": "ilāʾ"
+    },
+    {
+      "id": "zihar",
+      "ar": "الظهار",
+      "en": "ẓihār"
+    },
+    {
+      "id": "lian",
+      "ar": "اللعان",
+      "en": "liʿān"
+    },
+    {
+      "id": "idda",
+      "ar": "العدد والاستبراء",
+      "en": "waiting periods"
+    },
+    {
+      "id": "rada",
+      "ar": "الرضاع",
+      "en": "fosterage"
+    },
+    {
+      "id": "nafaqat",
+      "ar": "النفقات والحضانة",
+      "en": "maintenance and custody"
+    },
+    {
+      "id": "jinayat",
+      "ar": "الجنايات والقصاص",
+      "en": "injuries and retaliation"
+    },
+    {
+      "id": "diyat",
+      "ar": "الديات",
+      "en": "blood money"
+    },
+    {
+      "id": "hudud",
+      "ar": "الحدود",
+      "en": "fixed penalties"
+    },
+    {
+      "id": "qada",
+      "ar": "القضاء",
+      "en": "judgeship"
+    },
+    {
+      "id": "shahadat",
+      "ar": "الشهادات",
+      "en": "testimony"
+    },
+    {
+      "id": "iqrar",
+      "ar": "الإقرار",
+      "en": "admission"
+    },
+    {
+      "id": "dawa",
+      "ar": "الدعاوى والبينات",
+      "en": "claims and proof"
+    },
+    {
+      "id": "amma",
+      "ar": "أحكام عامة",
+      "en": "issues across the abwab (intention, doubt, ignorance, compulsion, necessity)"
+    },
+    {
+      "id": "usul",
+      "ar": "أصول الفقه",
+      "en": "the evidence and its indication"
+    }
+  ]
+}

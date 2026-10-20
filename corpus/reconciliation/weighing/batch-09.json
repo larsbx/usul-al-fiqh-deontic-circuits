@@ -43,7 +43,8 @@
      "note": "Cited in al-Mughnī for al-Shāfiʿī, who holds the same ruling as position 1 (no spending without the judge where one is found); it counts for that ruling. Stated rationale and analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "23e40f1d799788c1afe02b88497715f06b585bcd5a20516dcaea66a02170a990"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003",
@@ -76,7 +77,8 @@
      "note": "Ibn Rajab reports this as the ground of al-Qāḍī in al-Mujarrad and Ibn ʿAqīl for limiting the naṣṣ to where the judge's permission cannot be had. It carries a ruling on a known absent owner over to an unknown one: qiyas. Ibn Rajab records that al-Majd and others rejected the taʾwīl."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "df043bf0afaa010912f915d021efc4d534698a363c1fc41f6aa340e3d6abd69b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004",
@@ -118,7 +120,8 @@
      "note": "al-Qāḍī's second iḥtimāl in al-Mujarrad, as Ibn Rajab reports it, for requiring the judge except where his permission cannot be had. Rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6023967f6ca88652251d895a5cce04f913deaecc3889b635f43e2d260b3760ff"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005",
@@ -160,7 +163,8 @@
      "note": "Ibn Rajab gives this as the basis on which al-Qāḍī in Kitāb al-Riwāyatayn extended the khilāf to usurped goods. Rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9088ebe5383c1cc4be7afd85fc4435c729b307c9074d09b5b09dc2b29c64b454"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f001",
@@ -202,7 +206,8 @@
      "note": "al-Mughnī gives this for those who allow it (Ḥammād, Abū Ḥanīfa, al-Ḥasan), the same ruling as the second riwāya where non-genus goods are on both sides or the single item is more. It counts for that ruling. Rationale and analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c0df8b0c408231e30a96f26f0357ecba5e566e24fd7adf55f8675df8b3ecae56"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f003",
@@ -244,7 +249,8 @@
      "note": "al-Mubdiʿ on «وإن رهنه رجلان شيئا فوفاه أحدهما انفك في نصيبه». Rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e41a95458bb911460c17299e3feee0e469492b8e006bcf3d7566ade5ebbad9a4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f004",
@@ -277,7 +283,8 @@
      "note": "Cited in al-Mughnī for Abū Ḥanīfa, who holds position 1's ruling for a divisible pledge (they divide it). It counts for that ruling. al-Mughnī answers that a store with two locks removes the hardship. Rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "53b6aed3638e8f597fc4d141787ae4d6c58878f01b54e5c3ad4eb4f96ae55204"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005",
@@ -301,7 +308,8 @@
      "note": "al-Mubdiʿ, quoting al-Qawāʿid, gives al-Qāḍī's basis for liability by shares. Rationale: qiyas. The works checked (al-Mughnī v04:p414-415, al-Sharḥ al-Kabīr v05:p096-097, al-Mubdiʿ, Kashshāf, Ibn Rajab) state the naṣṣ for position 0 (Muhannā) but give no proof for it."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bededd25bf585a9f928944e2f80cc266933816c434fc7b89ca960aa6a1d22ca7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
@@ -334,7 +342,8 @@
      "note": "al-Mughnī's ground for the first wajh, that each is divorced once each has spoken to one man (the same for the two houses). Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c799cb4f8ae44fd3010293cf7eed709d332ead25834cf6aeb8b9732f0d89e2df"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
@@ -367,7 +376,8 @@
      "note": "al-Mughnī's second ground for the same view: holding to certainty against doubt, i.e. the marriage continuing in the original state as to the extra ṭalqa: istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c4289dff41a4f683bf15d81b7da5a716d8ffe32a7718b41d7cb7192d84c61b1f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f000",
@@ -382,7 +392,8 @@
      "note": "al-Mubdiʿ's ground for the emancipator's ʿaṣaba inheriting «الأقرب فالأقرب»; al-Inṣāf explains this as «كعصبات النسب. فيقدم الأخ من الأبوين على الأخ من الأب». The proof is general and reaches the full brother through the nasab order. Analogy: qiyas. No source gives a proof for Ibn al-Zāghūnī's takhrīj (position 1) in the walāʾ chapter. Its basis is the nikāḥ masʾala (see q120.f001)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "98cd912bf086d022b400bf0d7b733fbcd25bd5938e72f0750a198df205b5366a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f001",
@@ -415,7 +426,8 @@
      "note": "al-Mughnī's ground for the riwāya that they are equal (al-Khiraqī). Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ee6174b91f1be24e0b2aa7211ad03faaa97b915891d18057e2c6f6c6ccd00950"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f002",
@@ -439,7 +451,8 @@
      "note": "Reported in al-Furūʿ for al-Qāḍī's equalising. The analogy to nikāḥ carries over the equal-kinship ground: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "092c1f821ca5ac209a53cbecf5586e9a64f3e75b3e6c80f574c095e734d19009"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003",
@@ -481,7 +494,8 @@
      "note": "Ibn Mufliḥ's proposed riwāya in al-Furūʿ, on the bequest to the nearest relative, for equality. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5855e5ac8a02093a1a1a1d5a8295ae376502a0c84faa66d02d216118cb6084e8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
@@ -523,7 +537,8 @@
      "note": "Kashshāf gives this for doubling with fruit and palm-pith, «بخلاف غيرها», which limits the doubling to them. Rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "52390290927c2f0bfd6e1262b2c6bd35dff0ae3306d3c9d635580009181ddd7a"
   }
  ]
 }

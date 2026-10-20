@@ -1,0 +1,478 @@
+{
+ "entries": [
+  {
+   "type": "rajab107",
+   "field": "by_origin",
+   "gloss": "the non-existent is granted to by way of origin, in its own right, not as following an existent",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p238",
+    "excerpt_ar": "أن يكون بطريق الأصالة"
+   }
+  },
+  {
+   "type": "rajab107",
+   "field": "explicit_inclusion",
+   "gloss": "the grant expressly names the inclusion of the non-existent",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p238",
+    "excerpt_ar": "إذا صرح بدخول المعدوم"
+   }
+  },
+  {
+   "type": "rajab107",
+   "field": "object_entails",
+   "gloss": "the object (locus) of the grant entails the non-existent; the text states the case where it does not",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p239",
+    "excerpt_ar": "وكان المحل لا يستلزم المعدوم"
+   }
+  },
+  {
+   "type": "rajab108",
+   "field": "known_simultaneous",
+   "gloss": "the two events are known to have occurred together",
+   "unanchored": "the qāʿida and its furūʿ speak only of an order that is unknown («ما جهل وقوعه مترتبا أو متقارنا»); a known simultaneity is the reading's complement case, stated nowhere"
+  },
+  {
+   "type": "rajab108",
+   "field": "known_sequential",
+   "gloss": "the two events are known to have occurred one after the other (the precedence of one is known)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p240",
+    "excerpt_ar": "لو علم سبق أحدهما بالموت"
+   }
+  },
+  {
+   "type": "rajab109",
+   "field": "combining_amount",
+   "gloss": "the items in question are the amount by which the barred combination comes about",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p241",
+    "excerpt_ar": "القدر الذي يحصل به الجمع"
+   }
+  },
+  {
+   "type": "rajab109",
+   "field": "bars_common_amount",
+   "gloss": "what is barred is the amount common to all the items (the third kind)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p241",
+    "excerpt_ar": "والمنع من القدر المشترك"
+   }
+  },
+  {
+   "type": "rajab109",
+   "field": "has_precedence",
+   "gloss": "in a combination made at once, one item has a precedence over the other (it can validly come upon the other, not conversely)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p241",
+    "excerpt_ar": "فإن كان لواحد منهما مزية على غيره"
+   }
+  },
+  {
+   "type": "rajab109",
+   "field": "confusion_effective",
+   "gloss": "what is barred is one unspecified among the items, or a specific one confused with them, and the confusion has effect",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p241",
+    "excerpt_ar": "معين مشتبهة بأعيان يؤثر الاشتباه فيها"
+   }
+  },
+  {
+   "type": "rajab109",
+   "field": "distinguished",
+   "gloss": "the barred one has been singled out (distinguished) from the others; the text bars dealing before that",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p241",
+    "excerpt_ar": "قبل تمييزه"
+   }
+  },
+  {
+   "type": "rajab110",
+   "field": "chose_one",
+   "gloss": "he chose one of the two matters established for him (rather than dropping one)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p244",
+    "excerpt_ar": "فإن اختار أحدهما"
+   }
+  },
+  {
+   "type": "rajab110",
+   "field": "harms_other",
+   "gloss": "his refusal of both harms another",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p245",
+    "excerpt_ar": "فإن كان امتناعه ضررا على غيره"
+   }
+  },
+  {
+   "type": "rajab110",
+   "field": "financial_q110",
+   "gloss": "the right in question is financial",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p245",
+    "excerpt_ar": "إذا كان ماليا"
+   }
+  },
+  {
+   "type": "rajab110",
+   "field": "established",
+   "gloss": "the right is an original right established for him",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p245",
+    "excerpt_ar": "الحق الأصلي الثابت له"
+   }
+  },
+  {
+   "type": "rajab110",
+   "field": "right_on_him",
+   "gloss": "the right is owed by him (against the refuser)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p245",
+    "excerpt_ar": "وإن كان حقا عليه"
+   }
+  },
+  {
+   "type": "rajab110",
+   "field": "exactable",
+   "gloss": "the right owed by him can be exacted from him",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p245",
+    "excerpt_ar": "وأمكن استيفاؤه منه"
+   }
+  },
+  {
+   "type": "rajab110",
+   "field": "refused_substitute",
+   "gloss": "owing an original and a substitute, he refused the substitute",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p245",
+    "excerpt_ar": "فامتنع من البدل"
+   }
+  },
+  {
+   "type": "rajab111",
+   "field": "proof_establishes_cause",
+   "gloss": "the proof is one by which the single cause itself (and so either alternative) is established",
+   "unanchored": "the qāʿida states only a proof establishing one alternative without the other («فقامت حجة بها أحدهما دون الآخر») and leaves it «على روايتين»; that a proof establishing the cause itself makes the alternative owed is the reading's criterion, and the body sets the proof-of-money-without-the-crime case aside as «نوع آخر»"
+  },
+  {
+   "type": "rajab112",
+   "field": "heavier",
+   "gloss": "this option is the greater in harm of the two forbidden things before the one in necessity (the text orders the lighter in harm first)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p246",
+    "excerpt_ar": "وجب تقديم أخفهما مفسدة وأقلهما ضررا"
+   }
+  },
+  {
+   "type": "rajab113",
+   "field": "qarina_one_to_one",
+   "gloss": "a qarīna (custom, the sharʿ, or the impossibility of anything else) points to distributing each individual of one set onto one individual of the other",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p247",
+    "excerpt_ar": "فمثال ما دلت القرينة فيه على توزيع الجملة على الجملة الأخرى"
+   }
+  },
+  {
+   "type": "rajab114",
+   "field": "is_iqrar",
+   "gloss": "the unqualified partnership is stated in an admission (iqrār)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p260",
+    "excerpt_ar": "والذي ذكره الأصحاب في الإقرار أنه مبهم"
+   }
+  },
+  {
+   "type": "rajab115",
+   "field": "each_entitled_whole",
+   "gloss": "the shared right is of the first kind: each holder alone is entitled to the whole of it, and they crowd in it when together",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p261",
+    "excerpt_ar": "ما يقع استحقاق كل واحد بانفراده لجميع الحق"
+   }
+  },
+  {
+   "type": "rajab116",
+   "field": "settled_cause",
+   "gloss": "the ownership rests on a settled cause that cannot be voided",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p265",
+    "excerpt_ar": "سبب مستقر لا يمكن إبطاله"
+   }
+  },
+  {
+   "type": "rajab116",
+   "field": "condition_within_time",
+   "gloss": "in a worship for which attaining some conditions within its time suffices, the condition was attained midway",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p266",
+    "excerpt_ar": "يكتفي بحصول بعض شرائطها في أثناء وقتها إذا وجد الشرط في أثنائها"
+   }
+  },
+  {
+   "type": "rajab117",
+   "field": "suspension_barred",
+   "gloss": "taking the state of suspension into account leads to what is sharʿan impossible",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p267",
+    "excerpt_ar": "إلا أن يقتضي اعتبار أحدهما إلى ما هو ممتنع شرعا فيلغي"
+   }
+  },
+  {
+   "type": "rajab117",
+   "field": "occurrence_barred",
+   "gloss": "taking the state of occurrence into account leads to what is sharʿan impossible",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p267",
+    "excerpt_ar": "إلا أن يقتضي اعتبار أحدهما إلى ما هو ممتنع شرعا فيلغي"
+   }
+  },
+  {
+   "type": "rajab118",
+   "field": "legitimate_purpose",
+   "gloss": "the suspension of the cancellation serves a purpose the sharʿ recognises",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p268",
+    "excerpt_ar": "إن كان فيه مقصود معتبر شرعا"
+   }
+  },
+  {
+   "type": "rajab119",
+   "field": "combined_attributes",
+   "gloss": "several attributes, each a ground of entitlement, meet in one person or thing",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p272",
+    "excerpt_ar": "إذا اجتمعت صفات في عين"
+   }
+  },
+  {
+   "type": "rajab119",
+   "field": "single_jiha",
+   "gloss": "the attributes all lead to one and the same head (jiha) of entitlement",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p273",
+    "excerpt_ar": "إذا كانت الجهة واحدة"
+   }
+  },
+  {
+   "type": "rajab119",
+   "field": "connected",
+   "gloss": "the general and the specific are in one connected utterance",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p269",
+    "excerpt_ar": "أن يكون الخاص والعام في كلام واحد متصل"
+   }
+  },
+  {
+   "type": "rajab119",
+   "field": "revocable",
+   "gloss": "the speaker may retract what he said (a bequest, an appointment)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p272",
+    "excerpt_ar": "أن يكون الرجوع ممكنا"
+   }
+  },
+  {
+   "type": "rajab119",
+   "field": "special_title",
+   "gloss": "the claimant holds an entitlement by a special title beside an entitlement by a general one",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p272",
+    "excerpt_ar": "إذا اجتمع في شخص استحقاق بجهة خاصة كوصية معينة وميراث واستحقاق بجهة عامة كالفقر والمسكنة"
+   }
+  },
+  {
+   "type": "rajab120",
+   "field": "double_kinship",
+   "gloss": "the claimant is related by two kinships against a rival related by one",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p273",
+    "excerpt_ar": "يرجح ذو القرابتين على ذي القرابة الواحدة، وإن لم تكن إحداهما لها مدخل في الاستحقاق"
+   }
+  },
+  {
+   "type": "rajab121",
+   "field": "urfi_haqiqa",
+   "gloss": "the general name has come to be used for some of its members until it became a customary ḥaqīqa",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p273",
+    "excerpt_ar": "غلب استعمال الاسم العام في بعض أفراده حتى صار حقيقة عرفية"
+   }
+  },
+  {
+   "type": "rajab121",
+   "field": "only_qualified",
+   "gloss": "the instance is called by the general name only with a qualifier, never alone",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p274",
+    "excerpt_ar": "ما لا يطلق عليه الاسم العام إلا مقيدا به ولا يفرد بحال"
+   }
+  },
+  {
+   "type": "rajab121",
+   "field": "mostly_qualified",
+   "gloss": "the instance is called by the general name, but mostly only with a qualifier or qarīna, and is hardly understood under the bare name",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p274",
+    "excerpt_ar": "ما يطلق عليه الاسم العام لكن الأكثر أن لا يذكر معه إلا بقيد أو قرينة"
+   }
+  },
+  {
+   "type": "rajab122",
+   "field": "customary_usage",
+   "gloss": "an established custom or habit bears on the general term",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p275",
+    "excerpt_ar": "يخص العموم بالعادة"
+   }
+  },
+  {
+   "type": "rajab123",
+   "field": "shar_excludes",
+   "gloss": "the sharʿ sets the instance apart from what the general wording covers",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p277",
+    "excerpt_ar": "ويخص العموم بالشرع"
+   }
+  },
+  {
+   "type": "rajab124",
+   "field": "prompting_cause",
+   "gloss": "the general word was uttered on a particular cause that prompted it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p277",
+    "excerpt_ar": "إذا كان السبب هو المقتضي له"
+   }
+  },
+  {
+   "type": "rajab125",
+   "field": "restricts_absolute",
+   "gloss": "the intention would restrict an absolute term",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p279",
+    "excerpt_ar": "وهل تقيد المطلق"
+   }
+  },
+  {
+   "type": "rajab125",
+   "field": "excepts_from_text",
+   "gloss": "the intention would make an exception from an explicit text (naṣṣ)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p279",
+    "excerpt_ar": "تكون استثناء من النص"
+   }
+  },
+  {
+   "type": "rajab126",
+   "field": "rare_or_barred",
+   "gloss": "the instance is not ordinarily intended by the general, for its rarity or an impediment proper to it, though the wording covers it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p282",
+    "excerpt_ar": "الصور التي لا تقصد من العموم عادة إما لندورها أو لاختصاصها بمانع لكن يشملها اللفظ"
+   }
+  },
+  {
+   "type": "rajab126",
+   "field": "intended_q126",
+   "gloss": "the speaker declared that he meant the instance to be included",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p284",
+    "excerpt_ar": "حتى يصرح بدخولهم"
+   }
+  },
+  {
+   "type": "rajab128",
+   "field": "guaranteed_at_injury",
+   "gloss": "the victim was guaranteed (maḍmūn) when the injury was done",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p288",
+    "excerpt_ar": "أن تكون الجناية في حال الضمان"
+   }
+  },
+  {
+   "type": "rajab128",
+   "field": "guaranteed_at_spread",
+   "gloss": "the victim was guaranteed when the injury spread (to his death)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p288",
+    "excerpt_ar": "والسراية في حال الضمان"
+   }
+  },
+  {
+   "type": "rajab129",
+   "field": "member_at_shot",
+   "gloss": "the shooter belonged to that ʿāqila at the time of the shot; the farʿ states he did not",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p292",
+    "excerpt_ar": "لأنه لم يكن مسلما حال الرمي لتعقله عاقلته المسلمون"
+   }
+  },
+  {
+   "type": "rajab129",
+   "field": "member_at_hit",
+   "gloss": "the shooter belonged to that ʿāqila at the time of the hit",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p292",
+    "excerpt_ar": "لأنه حين الإصابة كان مسلما"
+   }
+  },
+  {
+   "type": "rajab129",
+   "field": "liability_ruling",
+   "gloss": "the ruling in question is liability (ḍamān), as against retaliation (qawad)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p290",
+    "excerpt_ar": "أم يفرق بين القود والضمان"
+   }
+  },
+  {
+   "type": "rajab130",
+   "field": "needed_q130",
+   "gloss": "the house, servant or mount is needed by him",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p295",
+    "excerpt_ar": "المسكن والخادم والمركب المحتاج إليه"
+   }
+  },
+  {
+   "type": "rajab131",
+   "field": "has_wealth",
+   "gloss": "the person holds wealth that counts as richness",
+   "unanchored": "the qāʿida speaks only of the capacity to earn by the buḍʿ («القدرة على اكتساب المال بالبضع ليس بغنى معتبر»); possession of wealth is the reading's other input, stated nowhere (the furūʿ presuppose its absence, «إذا أفلست المرأة»)"
+  },
+  {
+   "type": "rajab131",
+   "field": "can_earn_by_budh",
+   "gloss": "she can obtain wealth by the buḍʿ (by marrying and taking a mahr), or he by marrying off his umm walad",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p296",
+    "excerpt_ar": "القدرة على اكتساب المال بالبضع"
+   }
+  },
+  {
+   "type": "rajab132",
+   "field": "has_wealth_q132",
+   "gloss": "the person holds wealth that counts as richness",
+   "unanchored": "the qāʿida speaks only of the capacity to earn by crafts («القدرة على اكتساب المال بالصناعات»); possession of wealth is the reading's other input, stated nowhere"
+  },
+  {
+   "type": "rajab132",
+   "field": "can_earn_by_craft",
+   "gloss": "he is able to earn wealth by a craft",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p297",
+    "excerpt_ar": "القدرة على اكتساب المال بالصناعات"
+   }
+  },
+  {
+   "type": "rajab132",
+   "field": "beyond_own_maintenance",
+   "gloss": "the obligation in question lies beyond his own maintenance and his dependants' (ḥajj, debts, the ʿaql, the jizya)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p297",
+    "excerpt_ar": "وهل هو غني فاضل عن ذلك"
+   }
+  }
+ ]
+}

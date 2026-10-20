@@ -43,7 +43,8 @@
      "note": "Given for Abū Ḥanīfa's ruling and the takhrīj of the same for the madhhab: the generality side (it covers the farḍ as well). Aṣl water-purification, farʿ tayammum: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "751c2e0a9233f3f9fc4ec15beae5a1eb6d0fcdeb31d2dacbc826c02fbf2ce25b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
@@ -76,7 +77,8 @@
      "note": "Ibn Rajab's report of the reason al-Qāḍī gave when he came back to Aḥmad's naṣṣ for prayer. A stated rationale distinguishing prayer from iḥrām: qiyas. No source gives a proof for al-Qāḍī's first view that the attached is no covering."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f2404d833bd8c85c9dafac23c7483ef25558ea20cf9e2404159bb97b444ee3b5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f002",
@@ -109,7 +111,8 @@
      "note": "Given for the Shāfiʿī holders of the same ruling (not liable while the owner's hand is on it). Counts for this ruling. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6628d42b03430d06bf1505d364bc7ed307b8eaa9e39425852789a16bd9306224"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f004",
@@ -133,7 +136,8 @@
      "note": "Second reason in the same «ولنا» (repeated in Kashshāf v04:p077). Qiyas. No source argues al-Talkhīṣ's liability of the entrant with intent and strength on these facts; the Shāfiʿī rationale in al-Mughnī concerns an absent owner."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "864c4fecb6484cfe41a24f61560da09d12565545ebd74c6d33a0c833c028f541"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
@@ -157,7 +161,8 @@
      "note": "Given for the one carried for God's sake, then extended to «كرديف ربها». Stated rationale: qiyas. No source gives a proof for the iḥtimāl of half the value as a borrower (al-Inṣāf and al-Mubdiʿ only report «وقيل: يضمن نصف القيمة»)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "69809e2b9800ad1edfa47621a5fa0555914f7c7da314ba825b5eee0dcd83c9d0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f009",
@@ -217,7 +222,8 @@
      "note": "Given for the madhhab side. Qiyas (a fortiori)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "80f481f112153c9a840ab24829a1bcbdc20977bdebc610585d6890c5edac139d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001",
@@ -250,7 +256,8 @@
      "note": "Abū Bakr's reason for qawad. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8478263ce460a0b5b9aeab0d02dc1c38b138359e1e17c097d411577452bc892c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f001",
@@ -283,7 +290,8 @@
      "note": "Abū al-Khaṭṭāb's takhrīj, also the view of Mālik and al-Shāfiʿī: the heirs may claim it. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8ea6de81bb374445667d9712418b59cc6f96226e761eb15d25f18e81602b7906"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f002",
@@ -316,7 +324,8 @@
      "note": "Second reason for the same takhrīj. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7e36b09ce9745c196e80d6b884f5883f49a626b55821cae99a88de67db24e042"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f003",
@@ -367,7 +376,8 @@
      "note": "Given for the reclaiming side. Other reports from the same two Companions are cited for the opposite side, so aqrabSahabi."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "014c262d6be7162b1904592d074e6274c3b4812edb53acc851ddbd3f8c40839d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f004",
@@ -400,7 +410,8 @@
      "note": "Same holders. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3b054a1d14df1fc8cfea178a6f60512aae91ba87c50b73bfd1543729a6be10a8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005",
@@ -424,7 +435,8 @@
      "note": "Al-Mughnī's distinction in the question of the qadhf victim who dies without claiming: it grants that an unclaimed qiṣāṣ passes, for the same ʿilla as the majority's. Qiyas. No source argues for Aḥmad's ẓāhir that it lapses."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c2a53b1617a07765c0aa020f947b2332b8adb031c55a354d97209200c437765f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f006",
@@ -466,7 +478,8 @@
      "note": "Al-Mughnī's «ولنا» for the madhhab side. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "437b5146f251f3c1041a466d972d2cdf9aabcfd26a975afa9812e6588acc6084"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f009",
@@ -508,7 +521,8 @@
      "note": "Same side. Stated rationale: qiyas. Al-Mughnī calls it a ruling by maṣlaḥa mursala, but that is a rebuttal and does not change what the proof is."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "125b9b6c79a8c812bed4c89b17cc24d611066e4ceb695022217b5f897174f58c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f014",
@@ -532,7 +546,8 @@
      "note": "Al-Qāḍī's reason for the gift lapsing at the donor's death: the other side. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "da4098fffa41371ba4eade1a13481454dd56ad9c4bd780a5833235aba024e165"
   }
  ]
 }

@@ -52,7 +52,8 @@
      "note": "Cited for the same riwāya. A report of his deed: zanni. For the third riwāya (equality) al-Mughnī gives only «لتعارض الأخبار», the conflict of reports, which is not itself a proof, so none is recorded."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "04132f4c8f1765b8fcf447bd17b3b045c12c9ca0f8a6c6a66c2945ece768d3d9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002",
@@ -85,7 +86,8 @@
      "note": "Kashshāf's reason for Taqī al-Dīn's preference. qiyas. Ibn Rajab refers to a ḥadīth in Abū Dāwūd for this side but does not quote it, so it is not recorded."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6e0174272f9daf3b25f984d006bec57031fd56a57d982f6b4127f92f334c3324"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
@@ -127,7 +129,8 @@
      "note": "Ibn Rajab reports the view as explicitly stated by the Companions and reports no Companion against it: fatwaSahabi. No named Companion is quoted."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3abb065adce43a3e6a47de52220064b7902ac02e536f09d5c5d04ddd1cdd3201"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004",
@@ -169,7 +172,8 @@
      "note": "Given for the same side. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "258a8707acc2f72905f9e909f9560e8753304d388bf63fbf3bd2b15e2c12cffb"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005",
@@ -220,7 +224,8 @@
      "note": "Carried from charity in food to manumission («وهذا في العتق أولى»), so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c26eba39ad1e203ba76ce3091ae022386b9fed085a735a546e0eb17870f49ef8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
@@ -253,7 +258,8 @@
      "note": "Ibn Rajab's report. qiyas. No source gives a proof for the other wajh (keeping the higher description) on these facts."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fd3855f6fcbae98fd6d5d6107bf31962c3a7ca1b7844d6375daf8bc363f415cd"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
@@ -286,7 +292,8 @@
      "note": "Kashshāf reproduces it, citing Ibn Rajab's 31st qāʿida. qiyas. No proof is given for the other wajh."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "79179969ef299c1ce580ea040f73a0c839923b8141d1834ca800e6897ada1b25"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f000",
@@ -346,7 +353,8 @@
      "note": "Taqī al-Dīn's ground. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bc7ad0901c225508380585d200a1ac97984bb751a9ced54c520369e23991304d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f001",
@@ -397,7 +405,8 @@
      "note": "Ibn Rajab reports the takhrīj and then calls it weak («وهذا ضعيف»): a guardian's authority ends altogether, a master's does not. His verdict judges the analogy; it does not call a report weak, so the tier stays qiyas. No source gives a proof for Taqī al-Dīn's sirāya ground beyond his view itself."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e8a7966848b72a51128e1ef3dec9041fde3e602874db9acb055fd61e9c32d6f9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
@@ -448,7 +457,8 @@
      "note": "Ibn Rajab's report of the reason for the drop (the position's own holder). qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c58c44fe82ada0ce44b1ed4103309ee7acd8848e73186a623864f308b25c0e2e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
@@ -508,7 +518,8 @@
      "note": "The ʿilla that Ibn Rajab carries over to the mahr. Cited on mutʿa and inheritance, not stated for the mahr, so a carried-over rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "5641e9f3223f8a0d7cc52ebf5cca08f1f8e935ae6d4ad537be776b18642fcd60"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f015",
@@ -550,7 +561,8 @@
      "note": "Ibn Rajab's statement of the second wajh. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bb5d4fe78606fee1ae3b9fd40fed1de571bfa69041ec4752678e5f240d527cac"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f016",
@@ -574,7 +586,8 @@
      "note": "Taqī al-Dīn's takhrīj, with its stated reason. qiyas. No other source checked argues the mahr on these facts."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3709282382a5174fa2bf5a9a6a036dabeab92b8817ea602f563b1d0d2f78201f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f017",
@@ -607,7 +620,8 @@
      "note": "Ibn Rajab reports the reason with the ruling. qiyas. No source gives a proof for the halving wajh, which Ibn Rajab only extracts from the next masʾala."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2e8d48f7b98fa13ff98e4d993f2a8c8436337c0aa8fd8c55f656d822767e51bf"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f018",
@@ -658,7 +672,8 @@
      "note": "Ibn Rajab's report of the reason. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1fcf3991c87efbaf697f7090c7101d55be6cb2ed538d1187eaf8eb5b7ff15fa2"
   }
  ]
 }

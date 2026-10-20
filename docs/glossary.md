@@ -743,7 +743,7 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 **Related:** [hukm](#hukm), [wajib](#wajib), [mandub](#mandub), [mubah](#mubah), [makruh](#makruh), [haram](#haram)
 
-**Lean:** `Usul.Hukm`, `Usul.Hukm.mode`, `Usul.Hukm.binding`, `Usul.Hukm.σ`, `Usul.Hukm.σ_involutive`, `Usul.Hukm.valence`, `Usul.Subject.IsMukallaf`
+**Lean:** `Usul.Hukm`, `Usul.Hukm.mode`, `Usul.Hukm.binding`, `Usul.Hukm.σ`, `Usul.Hukm.σ_involutive`, `Usul.Hukm.fil`, `Usul.Hukm.tark`, `Usul.Subject.IsMukallaf`
 
 **Texts**
 
@@ -2123,8 +2123,10 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 **Texts**
 
-- `src:shamela-9942/v01:p080`: Ibn ʿUthaymīn.
-  > وجب العمل بكل منهما فيما لا يتعارضان فيه، والتوقف في الصورة التي يتعارضان فيها.
+- `src:shamela-9942/v01:p081`: Ibn ʿUthaymīn: suspension where two general texts conflict, with his qualification that follows.
+  > والتوقف في الصورة التي يتعارضان فيها. لكن لا يمكن التعارض بين النصوص في نفس الأمر على وجه لا يمكن فيه الجمع، ولا النسخ، ولا الترجيح
+- `src:shamela-9942/v01:p081`: Ibn ʿUthaymīn: the conflict is in the mujtahid's view, not in the texts.
+  > لأن النصوص لا تتناقض، والرسول صلّى الله عليه وسلّم قد بيّن وبلّغ، ولكن قد يقع ذلك بحسب نظر المجتهد لقصوره.
 - `src:openiti-rajab-shamela21730/v01:p019`: Ibn Rajab q14: Aḥmad's tawaqquf (and the iʿtizāl wajh).
   > ولنا وجه آخر بوجوب اعتزال كل منهما زوجته حتى يتيقن الأمر ونص عليه أحمد رحمه الله في رواية عبد الله ونقل حرب عن أحمد رحمه الله أنه ذكر هذه المسألة فتوقف فيها
 - `src:openiti-majmufatawa-shamela7289/v13:p120`: Ibn Taymiyya: no known preponderance, no view.

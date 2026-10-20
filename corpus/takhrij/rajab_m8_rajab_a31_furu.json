@@ -1,0 +1,495 @@
+{
+  "suite": "m8_rajab_rajab_a31",
+  "status": "candidate",
+  "provenance": "Shard rajab-a31 (lane A): every farʿ record of Ibn Rajab's qawāʿid 87 and 88, annotated against the readings formalised from each qāʿida's own statement (Usul.Readings.RajabA31). Both qawāʿid are typological; each record is annotated for its leading ruling, the other rulings it carries named in its note. Annotated by reading the full paragraph in the pinned witness, each ikhtilāf side then checked against al-Inṣāf and the muʿtamad (al-Iqnāʿ, Kashshāf, Sharḥ al-Muntahā); candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f001",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "holding": "manfaa",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the lessee may lease the leased thing on, at the rent, more or less («على المذهب الصحيح»; al-Inṣāf: «هذا المذهب. وعليه الأصحاب»)",
+          "ruling": true
+        },
+        {
+          "who": "he may not lease it on (the riwāya al-Qāḍī reports, «وعنه: لا تجوز إجارتها», in al-Inṣāf; Ibn Rajab's «على المذهب الصحيح» marks a contrary)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the mustaʾjir's ijāra of what he leased. He owns the manfaʿa by a lāzim contract (ijāra) and transfers it by the same contract for ʿiwaḍ: «ملك فيه نقل الملك بمثل العقد الذي ملك به … ويملك المعاوضة عليه أيضا». The reading gives valid, the side Ibn Rajab labels «على المذهب الصحيح». The amount (more than the rent) is not read; al-Inṣāf records further riwāyas on the ziyāda («لا تجوز بزيادة إلا بإذنه») that turn on it. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f002",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "manfaa",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the manāfiʿ may be leased (listed by Ibn Rajab under milk al-manāfiʿ by a lāzim contract: «ويندرج تحت هذا صور»)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «إجارة الوقف.»: the one the waqf is for owns its manāfiʿ by the waqf, a lāzim title, and leases them. The record is a bare listing; its ruling is the qāʿida's own, by subsumption: a manfaʿa owned by a lāzim title passes by ijāra, for ʿiwaḍ («ويملك المعاوضة عليه أيضا»), which is not above the title. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f003",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "manfaa",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the manāfiʿ may be leased (listed by Ibn Rajab under milk al-manāfiʿ by a lāzim contract: «ويندرج تحت هذا صور»)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «إجارة المنافع الموصى بها وصرح بها القاضي في خلافه»: the legatee owns the manāfiʿ by the waṣiyya, lāzim once accepted after death. The record is a bare listing; its ruling is the qāʿida's own, by subsumption: a manfaʿa owned by a lāzim title passes by ijāra, for ʿiwaḍ («ويملك المعاوضة عليه أيضا»), which is not above the title. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f004",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "manfaa",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the manāfiʿ may be leased (listed by Ibn Rajab under milk al-manāfiʿ by a lāzim contract: «ويندرج تحت هذا صور»)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «إجارة المنافع المستثناة في عقد البيع»: the seller keeps the manāfiʿ under the sale, a lāzim contract (the exception's validity is Q32, `Usul.Refinements.benefitExceptionValid`; link theorem `excepted_benefit_leasable`). The record is a bare listing; its ruling is the qāʿida's own, by subsumption: a manfaʿa owned by a lāzim title passes by ijāra, for ʿiwaḍ («ويملك المعاوضة عليه أيضا»), which is not above the title. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f005",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "holding": "manfaa",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ijāra of the kharāj ʿanwa land is valid («والمذهب الصحيح صحتها وهو نص أحمد»)",
+          "ruling": true
+        },
+        {
+          "who": "it is barred, like the ribāʿ of Makka (the other riwāya al-Qāḍī and Ibn ʿAqīl report)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the holder of ʿanwa land under kharāj leases it. Ibn Rajab lists it under milk al-manāfiʿ by a lāzim title (the kharāj is «شبيه» of an ujra, f015), so the reading gives valid, the madhhab side and Aḥmad's naṣṣ. The riwāya of manʿ treats the land like the ribāʿ of Makka. Aḥmad's preference for muzāraʿa over leasing («استحب المزارعة فيها على الاستئجار») is a matter of the mustaḥabb, not read. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f006",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "manfaa",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the borrower under a fixed-term ʿāriya, held lāzim, may lend it on (al-Qāḍī in his Khilāf)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «إعارة العارية المؤقتة إذا قيل بلزومها وملك المنفعة فيها فإنه يجوز». On that view the borrower owns the manfaʿa by a lāzim contract and passes it by the same contract (iʿāra): valid. The record's own contrast is the reading's bar on the higher contract: «ولا تجوز الإجارة ; لأنها أعلى» (`manfaa_not_higher`). The view of luzūm is the record's own qualifier, «إذا قيل بلزومها» (al-Inṣāf: «قطع في القاعدة السابعة والثمانين بجواز إعارة العين المعارة المؤقتة إذا قيل بلزومها»). Follow-ons not read as the leading ruling: the ijāra of iqṭāʿ al-istighlāl (no naql; al-Qāḍī's ground suggests manʿ for want of luzūm, Taqī al-Dīn allows it), the muhāyaʾa partner's ijāra of his share («الأظهر جوازه»), and the exception of the rights that repel the harm of amlāk (`harm_right_never`). Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f007",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the yad over the dog and the usable najis oil passes by inheritance, waṣiyya and (for the dog) iʿāra; on the hiba al-Qāḍī and the author of al-Mughnī differ, «وليس بينهما خلاف في الحقيقة»",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «ما ثبتت عليه يد الاختصاص … فإنه تنتقل اليد فيه بالإرث والوصية والإعارة». A lāzim ḥaqq al-ikhtiṣāṣ passes without ʿiwaḍ: valid. Ibn Rajab himself removes the khilāf of the hiba wujūh («لأن نقل اليد في هذه الأعيان بغير عوض جائز»). The follow-on, the ijāra of the dog («فالمذهب أنها لا تصح ; لأنها معاوضة ولا مالية فيه», against al-Ḥalwānī's two wujūh and Abū al-Khaṭṭāb's takhrīj), is the reading's own ʿiwaḍ case (`for_iwad`: true gives false). Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f008",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": false,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the mustaʿīr may not pass on his right of intifāʿ unless the ʿāriya is held lāzim",
+          "ruling": false
+        }
+      ],
+      "note": "Leading ruling: «المستعير لا يملك نقل حقه من الانتفاع إلا أن يقول بلزوم العارية كما سبق». A milk al-intifāʿ that is not lāzim does not pass (`not_lazim_no_transfer`). The exception sends back to f006. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f009",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the shared afniya and alleys may be made mubāḥ and their use permitted, like the leave to open a door (an iʿāra «على الأشبه», al-Talkhīṣ)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «مرافق الأملاك من الأفنية والأزقة المشتركة تصح إباحتها والإذن في الانتفاع بها». A lāzim right in the marāfiq passed without ʿiwaḍ: valid. The muʿāwaḍa for opening doors (al-Mughnī, al-Talkhīṣ) Ibn Rajab grounds on the milk of the marāfiq, «أما على القول بعدم الملك فهو شبيه بنقل اليد بعوض» (the khilāf the reading withholds). The follow-ons (ṣulḥ on the rawshan, the tree, use of the afniya without leave: «فإن كان فيه ضرر لم يجز وإلا ففي جوازه روايتان») are not read here. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f010",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the one who fenced dead land, or was given it by the imām to revive, may pass his ḥaqq al-tamalluk by hiba and iʿāra, and it goes to his heirs",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «لا يملكه بمجرد ذلك على المذهب لكن يثبت له فيه حق التملك فيجوز نقل الحق إلى غيره بهبة وإعارة وينتقل إلى ورثته». A lāzim ḥaqq al-tamalluk passes without ʿiwaḍ: valid. The muʿāwaḍa for it («على وجهين أصلهما المعاوضة عن الحقوق») is the khilāf the reading withholds. The follow-on on the shufʿa («فإن النقل فيها ممتنع ; لأنها من حقوق الأملاك فهي مما استثني من القاعدة») is the reading's `harmRight` (never transferred); the ṣulḥ of the buyer with the shafīʿ Ibn Rajab likens to the ṣulḥ on not placing beams. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f011",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "the owner of the land may permit the taking of the kalaʾ and water, but may not take ʿiwaḍ for it («عند أكثر الأصحاب»)",
+          "ruling": false
+        },
+        {
+          "who": "he may take ʿiwaḍ (the riwāya al-Muqniʿ and al-Muḥarrar give, though the two are not owned; Ibn Rajab: «ولعله من باب المعاوضة عما يستحق تملكه»)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the muʿāwaḍa for the kalaʾ and water of an owned land, on the view that they are not owned before ḥiyāza. The owner's right is a lāzim ḥaqq (he is aḥaqq by it); the permission without ʿiwaḍ the reading allows, and with ʿiwaḍ the qāʿida leaves «وفي جوازه بعوض خلاف», which the reading withholds: no muʿāwaḍa, the side of most aṣḥāb. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f012",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the right in market seats and mosque places may be passed on without ʿiwaḍ, «لأن الحق فيهما لازم بالسبق»",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «مقاعد الأسواق ومجالس المساجد ونحوها يصح نقل الحق فيهما بغير عوض». A lāzim right of ikhtiṣāṣ without ʿiwaḍ: valid. The follow-on (one he preferred, then a third came first: two wujūh, built on whether īthār in qurab is makrūh) is not the leading ruling. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f013",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the yad over food that is mubāḥ in dār al-ḥarb may pass to another entitled to the ghanīma; it is no tamlīk (al-Qāḍī, Ibn ʿAqīl)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «الطعام المباح في دار الحرب يجوز نقل اليد فيه إلى من هو من أهل الاستحقاق». A settled right of intifāʿ passed without ʿiwaḍ: valid. The follow-on, two poor ṣāʿ given for one good ṣāʿ, Ibn Rajab allows because «هو مأخوذ على الإباحة دون التمليك»: an exchange within the shared ibāḥa, not a muʿāwaḍa for the right, so it is not read as the reading's ʿiwaḍ case. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f014",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "what may be eaten from zakāt and aḍāḥī may be fed to guests, «لاستقرار الحق فيه»",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «المباح أكله من مال الزكاة والأضاحي يجوز إطعامه للضيفان ونحوهم». A settled (lāzim) right of intifāʿ without ʿiwaḍ: valid. Both contrasts in the record are the reading's: guest food, whose right is not settled («بخلاف طعام الضيافة»: `lazim` false), and «ولا يجوز المعاوضة عن شيء من ذلك» (`for_iwad` true). Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f015",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "ikhtisas",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the manāfiʿ of kharāj land pass without ʿiwaḍ to one who stands in the holder's place, and to his heir",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «منافع الأرض الخراجية فيجوز نقلها بغير عوض إلى من يقوم مقامه فيها وينتقل إلى الوارث». Listed under milk al-intifāʿ: a lāzim right passed without ʿiwaḍ, valid. The rest of the record is the khilāf over ʿiwaḍ the reading withholds: giving it as mahr (Aḥmad's naṣṣ, «وهذا معاوضة عن منافعها المملوكة») and its sale (Aḥmad «كرهه … ونهى عنه»; a riwāya of jawāz from al-Ḥalwānī, his son and Ibn ʿAqīl, on two maʾkhadhs), closing on the taḥqīq of the two kinds of manāfiʿ. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f016",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "derivable",
+      "facts": {
+        "holding": "tamm",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "the ṣulḥ for ʿiwaḍ on placing beams, opening doors and the passage of water is valid, «شبيه بالبيع» (the aṣḥāb allow the sale of such manāfiʿ)",
+          "ruling": true
+        }
+      ],
+      "note": "Leading ruling: «المصالحة بعوض على وضع الأخشاب وفتح الأبواب ومرور المياه ونحوها». Ibn Rajab lists it under the first kind of manāfiʿ, «منافع الأعيان المملوكة التي تقبل المعاوضة مع أعيانها فهذه قد جوز الأصحاب بيعها», which the reading counts with the full milk: it passes by ʿiwaḍ. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f017",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "holding": "tamm",
+        "lazim": true,
+        "higher_than_title": false,
+        "for_iwad": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "he may sell the excepted service to the freed slave (one manṣūṣa riwāya; Ḥarb: «لا بأس ببيعها»; Ibn Rajab: «لأن هذه المنافع كانت بملك المعاوضة عنها في حال الرق وقد استبقاها»)",
+          "ruling": true
+        },
+        {
+          "who": "he may not (the other manṣūṣa riwāya; both reported by Ibn Abī Mūsā)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: he freed his slave and excepted his service for a year; may he sell it to him? «على روايتين ذكرهما ابن أبي موسى وهما منصوصتان عن أحمد». Ibn Rajab lists it under the first kind of manāfiʿ (of owned aʿyān, accepting muʿāwaḍa with them) and argues that the manāfiʿ kept their muʿāwaḍa after the riqq ended, so the reading counts them with the full milk: the sale passes. The excepted service rests on the exception's validity, Q32 (`Usul.Refinements.benefitExceptionValid`; al-Inṣāf cites «القاعدة الثانية والثلاثين»). al-Iqnāʿ, Kashshāf and Sharḥ al-Muntahā state the sale («نصا»; «لعل المراد بالمبيع الإجارة»); al-Mardāwī prefers the other riwāya («وهو الصواب»). On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f001",
+      "encoder": "a31_rajab88_road_use",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "layer": "below",
+        "narrow_or_harmful": false,
+        "permanent": true,
+        "public_benefit": true,
+        "imam_leave": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "digging a well in a wide road for the Muslims' benefit with the imām's leave is allowed (the ṭarīqa of al-Qāḍī, Ibn ʿAqīl and the author of al-Muḥarrar: «إن كان بإذن الإمام جاز»)",
+          "ruling": true
+        },
+        {
+          "who": "it is not allowed and the digger is liable (one of the two riwāyas, on the ṭarīqa of Abū al-Khaṭṭāb and the author of al-Mughnī that gives them «على الإطلاق … إذ البئر مظنة العطب»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the well in a wide road for public benefit, first stated with the imām's leave. A lasting thing in the ground below («القرار الباطن»), harmless, for a public benefit, with leave: the reading takes the ṭarīqa that confines the khilāf to the absence of leave, so allowed. On the other ṭarīqa a riwāya of ḍamān stands even with leave. Without leave the reading withholds, while the later madhhab has no ḍamān in a wide sābila whether or not the imām gave leave (al-Inṣāf «لم يضمن في أصح الروايتين»; al-Iqnāʿ «جاز»): a residue for a refinement, not this record's leading case. The follow-on, digging for himself, «ضمن بكل حال ولو كان في فنائه», is the reading's private lasting use. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f002",
+      "encoder": "a31_rajab88_road_use",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "layer": "surface",
+        "narrow_or_harmful": false,
+        "permanent": true,
+        "public_benefit": true,
+        "imam_leave": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "a mosque built in a wide road without harm to the passers is allowed with the imām's leave («قال الأكثرون من الأصحاب إن كان بإذن الإمام جاز»)",
+          "ruling": true
+        },
+        {
+          "who": "it is not allowed (the riwāyas some give unrestricted; Aḥmad in al-Marrūdhī's riwāya: «المساجد التي في الطرقات حكمها أن تهدم»)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the mosque in a wide, unharmed road, as most aṣḥāb state it first, with the imām's leave. A lasting thing for a public benefit, with leave: the reading allows it, on the ṭarīqa of «الأكثرون». Against it, the riwāyas given unrestricted («ومنهم من أطلق الروايتين وكلام أحمد أكثره غير مقيد»), with al-Marrūdhī's «تهدم». Al-Shālanjī's naṣṣ «لا بأس بذلك إذا لم يضر بالطريق» allows it without naming the leave. The follow-on (al-Jūzajānī's seven cubits; Aḥmad's naṣṣ that the ḥadīth «إذا اختلفتم في الطريق فاجعلوه سبعة أذرع» is about owned land) is not read. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f003",
+      "encoder": "a31_rajab88_road_use",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "layer": "surface",
+        "narrow_or_harmful": false,
+        "permanent": true,
+        "public_benefit": false,
+        "imam_leave": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "a building in the road for one person's benefit is not allowed, and the imām cannot give leave for it («فالمشهور عدم جوازه»; Aḥmad in Ibn al-Qāsim's riwāya: «فليس لأحد أن يأخذ منها شيئا قليلا ولا كثيرا»)",
+          "ruling": false
+        },
+        {
+          "who": "it is allowed (some aṣḥāb's fatwa in Ibn Baṭṭa's Kitāb al-Ṭuruqāt, taken from Aḥmad's naṣṣ on building a mosque)",
+          "ruling": true
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: «وإن كان لمنفعة تختص بأحد الناس فالمشهور عدم جوازه ; لأن الطريق مشترك فلا يملك أحد إسقاط الحق المشترك منه». A lasting thing for one person's benefit: barred, leave or none (`private_permanent_barred`). Ibn Rajab rejects the contrary fatwa: «والفرق واضح», the mosque keeps the shared right, moved from passing to staying for worship. The record's opening (a building in waqf for a mosque, or for a public benefit such as a khān musabbal, is as the mosque) and its follow-ons (the water mill, the planting, «وحكم الغراس حكم البناء») are not read as the leading ruling. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f004",
+      "encoder": "a31_rajab88_road_use",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "layer": "surface",
+        "narrow_or_harmful": false,
+        "permanent": false,
+        "public_benefit": false,
+        "imam_leave": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "sitting to buy and sell in a wide road, harmless to the passers, is allowed with the imām's leave and without it («فقال الأكثرون»)",
+          "ruling": true
+        },
+        {
+          "who": "without the imām's leave it is not allowed (one of the two riwāyas al-Qāḍī gives in al-Aḥkām al-Sulṭāniyya; Ibn Baṭṭa's two unrestricted riwāyas)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: a passing use for one person, sitting to trade, in a wide road without harm and without leave. «وإن كان غير متأبد ونفعه خاص … ففيه خلاف أيضا»; the reading takes the side the record reports from most aṣḥāb, and Ibn Rajab's ground that it «لا يعطل حق المرور بالكلية فهو كالقيام لحاجة»: allowed. The follow-ons (tethering or stopping the animal: «والمنصوص منعه», al-Āmidī's harmonization by width; mooring the boat; throwing sweepings and water on the road) are not read as the leading ruling. On the madhhab side; ledger entry."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f005",
+      "encoder": "a31_rajab88_road_use",
+      "class": "derivable",
+      "facts": {
+        "layer": "below",
+        "narrow_or_harmful": false,
+        "permanent": true,
+        "public_benefit": false,
+        "imam_leave": false
+      },
+      "expected": false,
+      "positions": [
+        {
+          "who": "digging in the road is barred, whether left open or covered (Aḥmad in al-Marrūdhī's riwāya: «أليس في طريق المسلمين أكره هذا كله»)",
+          "ruling": false
+        }
+      ],
+      "note": "Leading ruling: «الحفر في الطريق وهو ممنوع سواء تركه ظاهرا أو غطاه وأسقف عليه». A lasting use of the ground below for one person (a well or a closed drain in his own finā'): barred. Ibn Rajab draws the qāʿida's own point, «فمنع من التصرف في باطن الطريق بالحفر» (`below_as_surface`). The follow-on on roots of a tree spreading under another's land (al-Qāḍī: no uprooting where hidden, «وفيه نظر»; Ibn ʿAqīl: removal due) concerns a neighbour's ground, not the road. Derivable."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f006",
+      "encoder": "a31_rajab88_road_use",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "layer": "air",
+        "narrow_or_harmful": false,
+        "permanent": true,
+        "public_benefit": false,
+        "imam_leave": true
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "wings, sābāṭs, beams and stones jutting from the wall into the road are allowed with the imām's leave where they do not harm («وقال القاضي في خلافه والأكثرون يجوز بإذن الإمام مع انتفاء الضرر»)",
+          "ruling": true
+        },
+        {
+          "who": "they are not allowed and the owner is liable, the imām's leave not considered (Aḥmad's naṣṣ in the riwāyas of Abū Ṭālib, Ibn Manṣūr and Muhannā; al-Qāḍī in al-Mujarrad; the author of al-Mughnī)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": true,
+      "note": "Leading ruling: the use of the road's air for one person, a jutting wing or sābāṭ, harmless, with the imām's leave. «وأما الهواء فإن كان الانتفاع به خاصا بدون إذن الإمام فالمعروف منعه بإذنه فيه خلاف»: the reading allows it with leave, the side of al-Qāḍī in his Khilāf and the akthar. Without leave the reading bars it, as every position does. Al-Majd (Sharḥ al-Hidāya): allowed without harm, the leave on two riwāyas. The follow-on, the mīzāb, «فكذلك عند الأصحاب» (Taqī al-Dīn: «هو السنة», with the ḥadīth of al-ʿAbbās). On the madhhab side; ledger entry."
+    }
+  ]
+}

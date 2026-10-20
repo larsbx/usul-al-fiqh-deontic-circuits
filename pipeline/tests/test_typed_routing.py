@@ -87,3 +87,59 @@ def test_a_proposal_set_is_its_deterministic_sample_of_r2_units(ps):
 def test_the_proposals_are_current(ps, swipl):
     assert json.dumps(tr.proposals(ROOT, ps, tr.coverage(ROOT, ps)), ensure_ascii=False, indent=2) + "\n" == \
         (ROOT / ps.proposals).read_text(encoding="utf-8")
+
+
+def _source_text(ts) -> dict[str, str]:
+    """Each unit's own text: the committed record for classical sets, the question and answer for IslamQA."""
+    import gzip
+    units = {a["answer"] for a in _data(ts)["answers"]}
+    if ts.name.startswith("islamqa"):
+        with gzip.open(ROOT / tr.routing.ANSWERS, "rt", encoding="utf-8") as fh:
+            return {r["id"]: f"{r.get('question') or ''}\n{r.get('answer') or ''}" for r in map(json.loads, fh) if r["id"] in units}
+    return {i: tr.routing._text(r) for i, r in tr.routing._records(ROOT / "corpus", units).items()}
+
+
+# IslamQA's own text is the separately pinned LFS archive: its receipts replay in the external gate.
+RECEIPTED = [pytest.param(ts, marks=pytest.mark.external_source) if ts.name.startswith("islamqa") else ts for ts in SETS]
+
+
+@pytest.mark.parametrize("ts", RECEIPTED, ids=ids)
+def test_every_fact_is_receipted_by_a_verbatim_quote_of_its_own_text(ts):
+    """Replay: each settled fact can be re-checked against the text it was read from."""
+    text = _source_text(ts)
+    bad = [(a["answer"], q) for a in _data(ts)["answers"] for s in a["situations"] for q in s["evidence"].values()
+           if q not in text[a["answer"]]]
+    assert bad == []
+
+
+def test_the_reading_list_is_regenerated_from_the_corpus():
+    """The typist's shortlist is a function of the corpus: the strict router's best-ranked qāʿida types."""
+    ts = tr.by_name("rajab_fold1")
+    assert tr.render_shortlist(ROOT, ts) == (ROOT / ts.shortlist).read_text(encoding="utf-8")
+
+
+def test_the_strict_ranker_never_saw_the_cases_qaida():
+    """Each case is ranked by a model fitted without any farʿ of its qāʿida (the statements kept)."""
+    from usul_corpus import routing
+    ts = tr.by_name("rajab_fold1")
+    assert {routing._fold(u) for u, _, _ in ts.cases(ROOT)} == {1}
+    ranked, corpus = ts.ranker(ROOT), ROOT / "corpus"
+    cs, qs = routing.cases(corpus), routing.qawaid(corpus)
+    u = sorted(ranked)[0]
+    model = routing.Model.fit(qs + [(e, t) for i, e, t in cs if routing._qaida(i) != routing._qaida(u)
+                                    and routing._fold(routing._qaida(i)) != routing._fold(routing._qaida(u))])
+    assert ranked[u] == model.rank(dict((i, t) for i, _, t in cs)[u])
+
+
+def test_shortlist_typing_routes_held_out_qawaid_far_above_the_router():
+    """PR-48: frozen before fold 1 was typed; whole qawāʿid held out from the lexical ranking."""
+    r = json.loads((ROOT / tr.by_name("rajab_fold1").report).read_text(encoding="utf-8"))
+    assert r["hybrid_recall"]["5"] >= 0.85 and r["lexical_recall"]["5"] < 0.6
+
+
+@pytest.mark.parametrize("ts", tr.SETS, ids=ids)
+def test_routing_to_a_tied_qaida_never_scores_below_routing_to_the_encoder(ts):
+    """By qāʿida, a top-k encoder counts when it reads any qāʿida the bank ties the case to; the
+    case's own encoder is always one of those, so the qāʿida recall bounds the encoder recall."""
+    rep = json.loads((ROOT / ts.report).read_text(encoding="utf-8"))
+    assert all(rep["hybrid_recall_by_qaida"][k] >= rep["hybrid_recall"][k] for k in rep["hybrid_recall"])

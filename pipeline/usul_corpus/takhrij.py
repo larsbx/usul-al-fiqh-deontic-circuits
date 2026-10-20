@@ -15,6 +15,7 @@ from collections import Counter
 from pathlib import Path
 
 from .shards import encoder_shards, merge_encoders
+from .values import code, among, same
 
 B = (False, True)
 GRADES = ("wahm", "shakk", "zann", "qat")
@@ -508,13 +509,25 @@ def lean_expr(encoder: str, facts: dict) -> str:
     return ENCODERS[encoder]["lean"].format(**{k: literal(encoder, k, v) for k, v in facts.items()})
 
 
-def code(v: object) -> str:
-    """A ruling's or fact's identity: its JSON, so 1 is not true and key order is moot."""
-    return json.dumps(v, ensure_ascii=False, sort_keys=True)
+def position_errors(case: dict) -> list[str]:
+    """Validate reported positions without discarding an unencoded textual alternative.
 
-
-def among(v: object, values) -> bool:
-    return code(v) in map(code, values)
+    An explicit outside explanation preserves a source claim as a range gap. It
+    cannot coerce an integer into a Boolean or establish that interpretation's truth.
+    """
+    enc = ENCODERS.get(case.get("encoder"))
+    if enc is None:
+        return [f"unknown encoder {case.get('encoder')}"]
+    errors = []
+    for i, position in enumerate(case.get("positions") or []):
+        value = position.get("ruling")
+        outside = position.get("outside")
+        if among(value, enc["out"]):
+            if "outside" in position:
+                errors.append(f"position {i}: outside marker on an encoder output")
+        elif not (type(value) is str and value.strip() and type(outside) is str and outside.strip()):
+            errors.append(f"position {i}: ruling outside the encoder's output domain needs an explicit textual outside explanation")
+    return errors
 
 
 def check_case(case: dict) -> list[str]:
@@ -535,9 +548,16 @@ def check_case(case: dict) -> list[str]:
             errs.append("class contradicts the kernel's output")
     if case["class"] == "genuine_ikhtilaf" and len(case.get("positions") or []) < 2:
         errs.append("ikhtilāf needs at least two positions")
+    if case["class"] == "genuine_ikhtilaf" and type(case.get("matches_madhhab")) is not bool:
+        errs.append("an ikhtilāf states matches_madhhab (true or false)")
+    if case["class"] == "derivable":
+        errs += [f"position {i}'s ruling disagrees with a derivable case's expected ruling"
+                 for i, p in enumerate(case.get("positions") or [])
+                 if "outside" not in p and not same(p["ruling"], case.get("expected"))]
     elif case["class"] == "genuine_ikhtilaf" and not errs and not among(case.get("expected"),
                                                                          [p["ruling"] for p in case["positions"]]):
         errs.append("no position holds the expected ruling")
+    errs.extend(position_errors(case))
     for n in case.get("needs", []):
         if not n.startswith(("fact:", "rule:")):
             errs.append(f"need {n} is neither fact: nor rule:")

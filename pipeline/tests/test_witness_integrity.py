@@ -8,10 +8,9 @@ from pathlib import Path
 import pytest
 
 from usul_corpus.__main__ import CACHE
-from usul_corpus.source_verify import required_witnesses
+from witnesses import REQUIRED
 
 ROOT = Path(__file__).parents[2]
-REQUIRED = required_witnesses(ROOT / "corpus")
 LOCK = json.loads((ROOT / "corpus/lock.json").read_text(encoding="utf-8"))["witnesses"]
 FORMAT = {w["id"]: w.get("format", "text") for work in json.loads((ROOT / "corpus/registry.json").read_text())["works"]
           for w in work["witnesses"]}

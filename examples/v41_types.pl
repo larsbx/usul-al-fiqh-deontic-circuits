@@ -203,6 +203,9 @@ qaida_type(rajab129, 'Ibn Rajab 129 «إذا تعينت حال المرمي تج
 type_field(rajab129, member_at_shot, 'Option Bool').
 type_field(rajab129, member_at_hit, 'Option Bool').
 type_field(rajab129, liability_ruling, 'Option Bool').
+qaida_type(rajab13, 'Ibn Rajab 13 «إذا وجدنا أثرا معلولا لعلة ووجدنا في محله علة صالحة له، ويمكن أن يكون الأثر معلولا لغيرها لكن لا يتحقق وجود غيرها، فهل يحال ذلك الأثر على تلك العلة المعلومة أم لا؟ في المسألة خلاف ولها صور كثيرة قد يقوى في بعضها الإحالة وفي بعضها العدم ; …». Read by `a26_ihala_on_known_cause`.').
+type_field(rajab13, known_cause_fit, 'Option Bool').
+type_field(rajab13, zahir_points_elsewhere, 'Option Bool').
 qaida_type(rajab130, 'Ibn Rajab 130 «المسكن والخادم والمركب المحتاج إليه ليس بمال فاضل يمنع أخذ الزكوات ولا يجب فيه الحج والكفارات ولا يوفي منه الديون والنفقات نص على ذلك أحمد في مسائل: (منها) الزكاة قال أبو داود سئل أحمد عن رجل له دار يقبل من الزكاة قال …». Read by `needed_item_is_surplus`.').
 type_field(rajab130, needed_q130, 'Option Bool').
 qaida_type(rajab131, 'Ibn Rajab 131 «القدرة على اكتساب المال بالبضع ليس بغنى معتبر، صرح به القاضي في خلافه وفرع عليه مسائل: (منها) إذا أفلست المرأة وهي ممن يرغب في نكاحها لم تجبر على النكاح لأخذ المهر بغير خلاف ومنها: أنه لا يجب عليها نفقة الأقارب بقدرتها …». Read by `budh_capacity_is_wealth`.').
@@ -306,6 +309,9 @@ qaida_type(rajab2, 'Ibn Rajab 2 «شعر الحيوان في حكم المنفص
 type_field(rajab2, hair_or_nail, 'Option Bool').
 qaida_type(rajab20, 'Ibn Rajab 20 «النماء المتولد من العين حكمه حكم الجزء، والمتولد من الكسب بخلافه على الصحيح.»; Ibn Rajab 21 «وقد يختص الولد من بين سائر النماء المتولد من العين بأحكام ويعبر عن ذلك بأن الولد هل هو كالجزء أو كالكسب؟». Read by `growth_from_substance`.').
 type_field(rajab20, from_substance, 'Option Bool').
+qaida_type(rajab23, 'Ibn Rajab 23 «من حرم عليه الامتناع من بدل شيء سئله فامتنع فهل يسقط إذنه بالكلية أو يعتبر ويجبره الحاكم عليه هذا نوعان: (أحدهما) : أن يكون المطلوب منه إذنا مجردا ويندرج تحته صور: (منها) وضع الخشب على جدار جاره إذا لم يضر به وقد نص أحمد على عدم اعتبار …». Read by `a26_refused_idhn_lapses`.').
+type_field(rajab23, refusal_forbidden, 'Option Bool').
+type_field(rajab23, mere_permission, 'Option Bool').
 qaida_type(rajab24, 'Ibn Rajab 24 «من تعلق بماله حق واجب عليه فبادر إلى نقل الملك عنه صح، ثم إن كان الحق متعلقا بالمال نفسه لم يسقط وإن كان متعلقا بمالكه لمعنى زال بانتقاله عنه سقط، وإن كان لا يزول بانتقاله لم يسقط على الأصح، ويدخل تحت ذلك صور: (منها) لو …». Read by `right_after_transfer`.').
 type_field(rajab24, on_property, 'Option Bool').
 type_field(rajab24, reason_ceases, 'Option Bool').
@@ -350,6 +356,9 @@ qaida_type(rajab39, 'Ibn Rajab 39 «في انعقاد العقود بالكنا�
 type_field(rajab39, needs_witnessing, 'Option Bool').
 qaida_type(rajab4, 'Ibn Rajab 4 «العبادات كلها سواء كانت بدنية أو مالية أو مركبة منهما لا يجوز تقديمها على سبب وجوبها ويجوز تقديمها بعد سبب الوجوب وقبل الوجوب أو قبل شرط الوجوب ويتفرع على ذلك مسائل كثيرة: (منها) الطهارة سبب وجوبها الحدث وشرط الوجوب فعل …». Read by `advance_after_cause`.').
 type_field(rajab4, cause_present, 'Option Bool').
+qaida_type(rajab40, 'Ibn Rajab 40 «الأحكام المتعلقة بالأعيان بالنسبة إلى تبدل الأملاك واختلافها عليها نوعان: أحدهما: ما يتعلق الحكم فيه بملك واحد فإذا زال ذلك الملك سقط الحكم وصور ذلك كثيرة: منها: الإجارة فمن استأجر شيئا مدة فزال ملك صاحبه عنه بتملك قهري يشمل العين والمنفعة …». Read by `a27_ain_ruling_survives_owner_change`.').
+type_field(rajab40, tied_to_ain, 'Option Bool').
+type_field(rajab40, holder_consented, 'Option Bool').
 qaida_type(rajab41, 'Ibn Rajab 41 «إذا تعلق بعين حق تعلقا لازما فأتلفها من يلزمه الضمان] فهل يعود الحق إلى البدل المأخوذ من غير عقد آخر؟». Read by `right_to_substitute`.').
 type_field(rajab41, bound_to_thing, 'Option Bool').
 qaida_type(rajab42, 'Ibn Rajab 42 «في أداء الواجبات المالية وهي منقسمة إلى دين وعين فأما الدين فلا يجب أداؤه بدون مطالبة المستحق إذا كان آدميا حتى ذكر ابن عقيل في جواز السفر قبل المطالبة وجهين، وهذا ما لم يكن قراخاني له وقتا للوفاء فأما إن عين وقتا كيوم …». Read by `return_of_held_property`.').
@@ -419,6 +428,9 @@ qaida_type(rajab69, 'Ibn Rajab 69 «العقد الوارد على عمل معي
 type_field(rajab69, binding_q69, 'Option Bool').
 type_field(rajab69, personal_required, 'Option Bool').
 type_field(rajab69, permission_indicated, 'Option Bool').
+qaida_type(rajab70, 'Ibn Rajab 70 «الفعل المتعدي إلى مفعول أو المتعلق بظرف أو مجرور إذا كان مفعوله أو متعلقه عاما فهل يدخل الفاعل الخاص في عمومه أم يكون ذكر الفاعل قرينة مخرجة له من العموم أو يختلف ذلك بحسب القرائن؟ فيه خلاف في المذهب، والمرجح فيه التخصيص إلا مع التصريح …». Read by `a27_specific_agent_in_general_object`.').
+type_field(rajab70, agent_explicitly_included, 'Option Bool').
+type_field(rajab70, agent_included_by_qarina, 'Option Bool').
 qaida_type(rajab71, 'Ibn Rajab 71 «فيما يجوز الأكل من الأموال بغير إذن مستحقيها وهي نوعان: مملوك تعلق به حق الغير ومملوك للغير.». Read by `eating_without_permission`.').
 type_field(rajab71, necessity_q71, 'Option Bool').
 type_field(rajab71, ward_wilaya, 'Option Bool').
@@ -448,6 +460,51 @@ qaida_type(rajab81, 'Ibn Rajab 81 «النماء المتصل في الأعيا�
 type_field(rajab81, reverts_to_transferor, 'Option Bool').
 type_field(rajab81, security_or_liability, 'Option Bool').
 type_field(rajab81, left_until_ripe, 'Option Bool').
+qaida_type(rajab82, 'Ibn Rajab 82 «والنماء المنفصل تارة يكون متولدا من عين الذات كالولد والطلع والصوف واللبن والبيض وتارة يكون متولدا من غيرها واستحق بسبب العين كالمهر والأرش. والحقوق المتعلقة بالأعيان ثلاثة: عقود وسبابته وحقوق يتعلق بغير فسخ ولا عقد فأما العقود فلها حالتان …». Read by `rajab_a28_toward_ownership_growth`, `rajab_a28_growth_in_nonownership_contract`, `rajab_a28_growth_follows_hand`, `rajab_a28_faskh_growth_returns`, `rajab_a28_right_reaches_growth`.').
+type_extends(rajab82, rajab20).
+type_field(rajab82, lazim_q82, 'Option Bool').
+type_field(rajab82, on_substance, 'Option Bool').
+type_field(rajab82, shares_ground, 'Option Bool').
+type_field(rajab82, lifts_from_origin, 'Option Bool').
+type_field(rajab82, lazim_right, 'Option Bool').
+qaida_type(rajab84, 'Ibn Rajab 84 «الحمل هل له حكم قبل انفصاله أم لا] [الأحكام المتعلقة بالحمل نوعان] [النوع الأول ما يتعلق بسبب الحمل بغيره] (القاعدة الرابعة والثمانون) : الحمل هل له حكم قبل انفصاله أم لا؟ حكى القاضي وابن عقيل وغيرهما في المسألة روايتين قالوا والصحيح من …». Read by `a29_haml_hukm_before_separation`.').
+type_field(rajab84, haml_ruling_for_another, 'Option Bool').
+type_field(rajab84, haml_amara_evident, 'Option Bool').
+qaida_type(rajab85, 'Ibn Rajab 85 «الحقوق خمسة أنواع (أحدها) حق ملك كحق السيد في مال المكاتب ومال القن إذا قلنا يملك بالتمليك وما يمتنع إرثه لمانع كالتركة المستغرقة بالدين على رواية، كالمحرم إذا مات موروثه وفي ملكه صيد على أظهر الوجهين. [النوع الثاني حق تملك كحق الأب في مال …». Read by `rajab_a30_tamalluk_awaits_choice`, `rajab_a30_use_right_not_passed`, `rajab_a30_use_right_for_need`, `rajab_a30_ikhtisas_hand_stands`, `rajab_a30_ikhtisas_first_comer`, `rajab_a30_tie_binds_whole`, `rajab_a30_tie_for_recovery`, `rajab_a30_tied_right_precedes`.').
+type_extends(rajab85, rajab99).
+type_field(rajab85, cause_concluded, 'Option Bool').
+type_field(rajab85, cause_completes_milk, 'Option Bool').
+type_field(rajab85, use_right_only, 'Option Bool').
+type_field(rajab85, harmful_q85, 'Option Bool').
+type_field(rajab85, permitted_benefit, 'Option Bool').
+type_field(rajab85, may_become_mal, 'Option Bool').
+type_field(rajab85, preceded_q85, 'Option Bool').
+type_field(rajab85, left_by_choice, 'Option Bool').
+type_field(rajab85, pledge_tie, 'Option Bool').
+type_field(rajab85, jinaya_tie, 'Option Bool').
+type_field(rajab85, tied_q85, 'Option Bool').
+type_field(rajab85, rival_in_dhimma_only, 'Option Bool').
+qaida_type(rajab86, 'Ibn Rajab 86 «الملك أربعة أنواع: ملك عين ومنفعة، وملك عين بلا منفعة، وملك منفعة بلا عين، وملك انتفاع من غير ملك المنفعة. أما النوع الأول فهو عامة الأملاك الواردة على الأعيان المملوكة بالأسباب المقتضية لها من بيع وهبة وإرث وغير ذلك. واعلم أن ابن عقيل ذكر …». Read by `a29_four_kinds_of_milk`.').
+type_field(rajab86, milk_holds_ayn, 'Option Bool').
+type_field(rajab86, milk_benefit_by_tamlik, 'Option Bool').
+qaida_type(rajab87, 'Ibn Rajab 87 «فيما يقبل النقل والمعاوضة من الحقوق المالية والأملاك، أما الأملاك التامة فقابلة للنقل بالعوض وغيره في الجملة، وأما ملك المنافع فإن كان بعقد لازم ملك فيه نقل الملك بمثل العقد الذي ملك به أو دونه دون ما هو أعلى منه ويملك المعاوضة عليه أيضا …». Read by `a31_rajab87_transfer_of_holding`.').
+type_field(rajab87, holding_q87, 'Option Usul.Readings.RajabA31.Holding').
+type_value('Usul.Readings.RajabA31.Holding', tamm).
+type_value('Usul.Readings.RajabA31.Holding', manfaa).
+type_value('Usul.Readings.RajabA31.Holding', harmRight).
+type_value('Usul.Readings.RajabA31.Holding', ikhtisas).
+type_field(rajab87, lazim_title, 'Option Bool').
+type_field(rajab87, higher_than_title, 'Option Bool').
+type_field(rajab87, for_iwad, 'Option Bool').
+qaida_type(rajab88, 'Ibn Rajab 88 «في الانتفاع وإحداث ما ينتفع به من الطرق المسلوكة في الأمصار والقرى وهوائها وقرارها. أما الطريق نفسه فإن كان ضيقا أو أحدث فيه ما يضر بالمارة فلا يجوز بكل حال، وأما مع السعة وانتفاء الضرر فإن كان المحدث فيه متأبدا كالبناء والغراس فإن كان …». Read by `a31_rajab88_road_use`.').
+type_field(rajab88, road_layer, 'Option Usul.Readings.RajabA31.Layer').
+type_value('Usul.Readings.RajabA31.Layer', surface).
+type_value('Usul.Readings.RajabA31.Layer', below).
+type_value('Usul.Readings.RajabA31.Layer', air).
+type_field(rajab88, narrow_or_harmful, 'Option Bool').
+type_field(rajab88, permanent_use, 'Option Bool').
+type_field(rajab88, public_benefit, 'Option Bool').
+type_field(rajab88, imam_leave, 'Option Bool').
 qaida_type(rajab9, 'Ibn Rajab 9 «في العبادات الواقعة على وجه محرم، إن كان التحريم عائدا إلى ذات العبادة على وجه يختص بها لم يصح، وإن كان عائدا إلى شرطها فإن كان على وجه يختص بها فكذلك أيضا، وإن كان لا يختص بها ففي الصحة روايتان أشهرهما عدمها، وإن عاد …». Read by `prohibited_worship`.').
 type_field(rajab9, target, 'Option Usul.Refinements.Prohibited').
 type_value('Usul.Refinements.Prohibited', essence).
@@ -558,6 +615,35 @@ qaida_type(zann_error, 'Ibn Rajab Q6: an act done on a presumption later shown w
 type_field(zann_error, others_right, 'Option Bool').
 type_field(zann_error, negligent_inquiry, 'Option Bool').
 
+encoder_type(a26_ihala_on_known_cause, 'Bool').
+encoder_reads(a26_ihala_on_known_cause, 1, known_cause_fit).
+encoder_reads(a26_ihala_on_known_cause, 2, zahir_points_elsewhere).
+encoder_type(a26_refused_idhn_lapses, 'Bool').
+encoder_reads(a26_refused_idhn_lapses, 1, refusal_forbidden).
+encoder_reads(a26_refused_idhn_lapses, 2, mere_permission).
+encoder_type(a27_ain_ruling_survives_owner_change, 'Bool').
+encoder_reads(a27_ain_ruling_survives_owner_change, 1, tied_to_ain).
+encoder_reads(a27_ain_ruling_survives_owner_change, 2, holder_consented).
+encoder_type(a27_specific_agent_in_general_object, 'Bool').
+encoder_reads(a27_specific_agent_in_general_object, 1, agent_explicitly_included).
+encoder_reads(a27_specific_agent_in_general_object, 2, agent_included_by_qarina).
+encoder_type(a29_four_kinds_of_milk, 'Usul.Readings.RajabA29.MilkKind').
+encoder_reads(a29_four_kinds_of_milk, 1, milk_holds_ayn).
+encoder_reads(a29_four_kinds_of_milk, 2, milk_benefit_by_tamlik).
+encoder_type(a29_haml_hukm_before_separation, 'Bool').
+encoder_reads(a29_haml_hukm_before_separation, 1, haml_ruling_for_another).
+encoder_reads(a29_haml_hukm_before_separation, 2, haml_amara_evident).
+encoder_type(a31_rajab87_transfer_of_holding, 'Bool').
+encoder_reads(a31_rajab87_transfer_of_holding, 1, holding_q87).
+encoder_reads(a31_rajab87_transfer_of_holding, 2, lazim_title).
+encoder_reads(a31_rajab87_transfer_of_holding, 3, higher_than_title).
+encoder_reads(a31_rajab87_transfer_of_holding, 4, for_iwad).
+encoder_type(a31_rajab88_road_use, 'Bool').
+encoder_reads(a31_rajab88_road_use, 1, road_layer).
+encoder_reads(a31_rajab88_road_use, 2, narrow_or_harmful).
+encoder_reads(a31_rajab88_road_use, 3, permanent_use).
+encoder_reads(a31_rajab88_road_use, 4, public_benefit).
+encoder_reads(a31_rajab88_road_use, 5, imam_leave).
 encoder_type(abstention_under_possible_condition, 'Bool').
 encoder_reads(abstention_under_possible_condition, 1, suspended).
 encoder_reads(abstention_under_possible_condition, 2, possible).
@@ -914,6 +1000,42 @@ encoder_reads(qawad_choice_forfeits_attached_right, 1, either_of_two).
 encoder_reads(qawad_choice_forfeits_attached_right, 2, victim_encumbered).
 encoder_type(qisas_belongs_to_whom, 'Bool').
 encoder_reads(qisas_belongs_to_whom, 1, right_is_victims).
+encoder_type(rajab_a28_faskh_growth_returns, 'Bool').
+encoder_reads(rajab_a28_faskh_growth_returns, 1, from_substance).
+encoder_reads(rajab_a28_faskh_growth_returns, 2, lifts_from_origin).
+encoder_type(rajab_a28_growth_follows_hand, 'Bool').
+encoder_reads(rajab_a28_growth_follows_hand, 1, shares_ground).
+encoder_type(rajab_a28_growth_in_nonownership_contract, 'Bool').
+encoder_reads(rajab_a28_growth_in_nonownership_contract, 1, on_substance).
+encoder_reads(rajab_a28_growth_in_nonownership_contract, 2, lazim_q82).
+encoder_type(rajab_a28_right_reaches_growth, 'Bool').
+encoder_reads(rajab_a28_right_reaches_growth, 1, lazim_right).
+encoder_reads(rajab_a28_right_reaches_growth, 2, from_substance).
+encoder_type(rajab_a28_toward_ownership_growth, 'Bool').
+encoder_reads(rajab_a28_toward_ownership_growth, 1, lazim_q82).
+encoder_reads(rajab_a28_toward_ownership_growth, 2, from_substance).
+encoder_type(rajab_a30_ikhtisas_first_comer, 'Bool').
+encoder_reads(rajab_a30_ikhtisas_first_comer, 1, preceded_q85).
+encoder_reads(rajab_a30_ikhtisas_first_comer, 2, left_by_choice).
+encoder_type(rajab_a30_ikhtisas_hand_stands, 'Bool').
+encoder_reads(rajab_a30_ikhtisas_hand_stands, 1, permitted_benefit).
+encoder_reads(rajab_a30_ikhtisas_hand_stands, 2, may_become_mal).
+encoder_type(rajab_a30_tamalluk_awaits_choice, 'Bool').
+encoder_reads(rajab_a30_tamalluk_awaits_choice, 1, cause_concluded).
+encoder_reads(rajab_a30_tamalluk_awaits_choice, 2, cause_completes_milk).
+encoder_type(rajab_a30_tie_binds_whole, 'Bool').
+encoder_reads(rajab_a30_tie_binds_whole, 1, pledge_tie).
+encoder_reads(rajab_a30_tie_binds_whole, 2, jinaya_tie).
+encoder_type(rajab_a30_tie_for_recovery, 'Bool').
+encoder_reads(rajab_a30_tie_for_recovery, 1, tied_q85).
+encoder_type(rajab_a30_tied_right_precedes, 'Bool').
+encoder_reads(rajab_a30_tied_right_precedes, 1, tied_q85).
+encoder_reads(rajab_a30_tied_right_precedes, 2, rival_in_dhimma_only).
+encoder_type(rajab_a30_use_right_for_need, 'Bool').
+encoder_reads(rajab_a30_use_right_for_need, 1, needed).
+encoder_reads(rajab_a30_use_right_for_need, 2, harmful_q85).
+encoder_type(rajab_a30_use_right_not_passed, 'Bool').
+encoder_reads(rajab_a30_use_right_not_passed, 1, use_right_only).
 encoder_type(rajiyya_takes_wife_rule, 'Bool').
 encoder_reads(rajiyya_takes_wife_rule, 1, rajiyya).
 encoder_reads(rajiyya_takes_wife_rule, 2, listed_difference).

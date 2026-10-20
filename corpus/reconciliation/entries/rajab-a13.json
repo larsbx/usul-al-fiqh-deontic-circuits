@@ -38,7 +38,8 @@
           "who": "al-Iqnāʿ with al-Buhūtī's Kashshāf",
           "note": "The matn: «كان الوقف على المسمين، وأولادهما، وأولاد الثالث الذي لم يذكره ... ولا شيء للثالث»."
         }
-      ]
+      ],
+      "positions_sha256": "7623909491cac58b47ebf406e60ec7d85e0ef906db6ae8cc18c75db71e003b82"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
@@ -61,7 +62,8 @@
           "who": "Aḥmad's naṣṣ, as Ibn Mufliḥ reports it in al-Furūʿ",
           "note": "«وكذا قوله جوابا لقولها تزوجت علي: كل امرأة لي طالق تطلق على نصه وقطع به جماعة»; al-Inṣāf (v11:p058) repeats it verbatim."
         }
-      ]
+      ],
+      "positions_sha256": "b5616d13e6f9b8ee19f8bc0ffe5736d7a07fda6b050c8924f88a610f43e15396"
     }
   ]
 }

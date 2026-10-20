@@ -121,6 +121,45 @@ def Murajjih.standing : Murajjih → Standing
   | .dariHadd => .rejected
   | _ => .asserted
 
+/-- What an advantage weighs, by where the sources place it. The chain, the text and «from outside»
+(Rawḍa v02 p391–396), with agreement of the two Ṣaḥīḥs (al-Kawkab v04 p650–703), weigh reports;
+the strength of the indication (al-Kawkab; al-Ṭūfī v03 p729–746) weighs texts; the advantages
+between ʿilal (Rawḍa p397–401), the weak ones among them included, weigh qiyās; the more learned of
+two ṣaḥāba (al-Ṭūfī p743) weighs ṣaḥābī views. -/
+inductive Domain where
+  | report | text | illa | sahabi
+  deriving DecidableEq, Repr
+
+/-- The tiers whose proofs a domain's advantages can weigh. -/
+def Domain.admits : Domain → Tier → Bool
+  | .report, t => match t with
+    | .zanni | .qati | .mursalDaif | .fatwaSahabi | .aqrabSahabi => true | _ => false
+  | .text, t => match t with | .zanni | .qati => true | _ => false
+  | .illa, t => match t with | .qiyas => true | _ => false
+  | .sahabi, t => match t with | .fatwaSahabi | .aqrabSahabi => true | _ => false
+
+def Murajjih.domain : Murajjih → Domain
+  | .kathratRuwat | .tayaqquz | .wara | .sahibWaqia | .mubashir
+  | .corroborated | .marfu | .consistentNarrator | .muttasil
+  | .naqil | .muthbit | .hazir | .dariHadd | .sahihayn => .report
+  | .usulMany | .tardAks | .mutaaddiya | .wasf | .ithbat | .aslShari | .aslAgreed | .aslStronger
+  | .muaththira | .mulaima | .munasaba | .khiffa | .hissiyya | .fewerAwsaf => .illa
+  | .afqah => .sahabi
+  | _ => .text
+
+def Tier.all : List Tier := [.istishab, .qiyas, .mursalDaif, .aqrabSahabi, .fatwaSahabi, .zanni, .qati, .ijma]
+
+/-- The advantage can weigh two proofs whose common tier has rank `n`. -/
+def Murajjih.admitsRank (m : Murajjih) (n : Nat) : Bool :=
+  Tier.all.any fun t => t.rank == n && m.domain.admits t
+
+/-- No advantage weighs ijmāʿ or istiṣḥāb: the first is not weighed, the second is the last resort. -/
+theorem admitsRank_ijma (m : Murajjih) : m.admitsRank Tier.ijma.rank = false := by
+  cases m <;> decide
+
+theorem admitsRank_istishab (m : Murajjih) : m.admitsRank Tier.istishab.rank = false := by
+  cases m <;> decide
+
 /-- Where an advantage comes from. `stated`: a cited source compares the two proofs itself («وهذا
 أخص من حديث أبي سعيد، فيقدم عليه»). `applied`: the bank applies a murajjiḥ of the uṣūl works to
 properties each proof shows in its source, which no source compares. Both are kept; the policy
@@ -178,16 +217,16 @@ variable {P : Type} [DecidableEq P]
 def top (ps : List (P × Tier)) (p : P) : Option Nat :=
   ((ps.filter (·.1 = p)).map (·.2.rank)).max?
 
-/-- Some advantage the policy counts prefers `p` to `q`. -/
-def favours (π : Policy) (as : List (Advantage P)) (p q : P) : Bool :=
-  as.any fun a => a.winner = p && a.loser = q && a.counts π
+/-- Some advantage the policy counts, of a kind that weighs proofs of the tier ranked `n`, prefers `p` to `q`. -/
+def favours (π : Policy) (as : List (Advantage P)) (n : Nat) (p q : P) : Bool :=
+  as.any fun a => a.winner = p && a.loser = q && a.counts π && a.by_.admitsRank n
 
 /-- `p` outweighs `q`: a proof of a higher tier, or of the same tier with a counted advantage over
 `q` and none from `q` back. A position citing no proof outweighs nothing. -/
 def beats (π : Policy) (ps : List (P × Tier)) (as : List (Advantage P)) (p q : P) : Bool :=
   match top ps p, top ps q with
   | some _, none => true
-  | some a, some b => a > b || (a == b && favours π as p q && !favours π as q p)
+  | some a, some b => a > b || (a == b && favours π as a p q && !favours π as a q p)
   | none, _ => false
 
 /-- Tarjīḥ: the reported ruling that outweighs every other, if any. -/
@@ -237,20 +276,25 @@ theorem beats_asymm (h : beats π ps as p q = true) : beats π ps as q p = false
   · simp_all
 
 /-- Advantages the policy does not count never decide. -/
-theorem favours_uncounted (h : ∀ a ∈ as, a.counts π = false) : favours π as p q = false := by
+theorem favours_uncounted {n : Nat} (h : ∀ a ∈ as, a.counts π = false) : favours π as n p q = false := by
   simp only [favours, List.any_eq_false]
   intro a ha; simp [h a ha]
 
 /-- Under the default, what a cited source calls weak or rejects never decides. -/
-theorem favours_sources_weak (h : ∀ a ∈ as, a.by_.standing = .weak ∨ a.by_.standing = .rejected) :
-    favours Policy.sources as p q = false :=
+theorem favours_sources_weak {n : Nat} (h : ∀ a ∈ as, a.by_.standing = .weak ∨ a.by_.standing = .rejected) :
+    favours Policy.sources as n p q = false :=
   favours_uncounted fun a ha => by
     simp [Advantage.counts, (Policy.sources_false_iff _).2 (h a ha)]
 
 /-- A policy that does not count applied advantages is decided only by what the sources state. -/
-theorem favours_applied_ignored (hπ : π.applied = false) (h : ∀ a ∈ as, a.basis = .applied) :
-    favours π as p q = false :=
+theorem favours_applied_ignored {n : Nat} (hπ : π.applied = false) (h : ∀ a ∈ as, a.basis = .applied) :
+    favours π as n p q = false :=
   favours_uncounted fun a ha => by simp [Advantage.counts, hπ, h a ha]
+
+/-- An advantage outside its domain never decides: a report's murajjiḥ cannot weigh two qiyāsāt. -/
+theorem favours_out_of_domain {n : Nat} (h : ∀ a ∈ as, a.by_.admitsRank n = false) : favours π as n p q = false := by
+  simp only [favours, List.any_eq_false]
+  intro a ha; simp [h a ha]
 
 theorem reconcile_jam_first {jam : P} {naskh : Option P} : reconcile π (some jam) naskh rs ps as = .jam jam :=
   rfl
@@ -268,8 +312,13 @@ section
 -- Advantages on both sides: the weighing is the mujtahid's own, so tawaqquf.
 #guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .muttasil, .stated⟩, ⟨"b", "a", .muthbit, .stated⟩] == none
 -- A weak advantage decides only under the policy that counts everything.
-#guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa, .stated⟩] == none
-#guard prevail all ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa, .stated⟩] == some "a"
+#guard prevail sources ["a", "b"] [("a", Tier.qiyas), ("b", .qiyas)] [⟨"a", "b", .khiffa, .stated⟩] == none
+#guard prevail all ["a", "b"] [("a", Tier.qiyas), ("b", .qiyas)] [⟨"a", "b", .khiffa, .stated⟩] == some "a"
+-- An advantage outside its domain decides nothing under any policy: agreement of the two Ṣaḥīḥs weighs reports,
+-- not two qiyāsāt; an ʿilla advantage does not weigh two reports.
+#guard prevail all ["a", "b"] [("a", Tier.qiyas), ("b", .qiyas)] [⟨"a", "b", .sahihayn, .stated⟩] == none
+#guard prevail all ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .khiffa, .stated⟩] == none
+#guard prevail sources ["a", "b"] [("a", Tier.aqrabSahabi), ("b", .aqrabSahabi)] [⟨"a", "b", .afqah, .stated⟩] == some "a"
 -- A disputed advantage decides by default, not under the strict policy.
 #guard prevail sources ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl, .stated⟩] == some "a"
 #guard prevail strict ["a", "b"] [("a", Tier.zanni), ("b", .zanni)] [⟨"a", "b", .qawl, .stated⟩] == none

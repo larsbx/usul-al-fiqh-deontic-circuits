@@ -11,7 +11,9 @@ import UsulTest.CommandSchemata
 import UsulTest.TanaqudTable
 import UsulTest.FuruqTable
 import UsulTest.NususTable
+import UsulTest.MahallGraph
 import UsulTest.Reconcile
+import UsulTest.TypedRulings
 import UsulTest.FatawaBank
 import UsulTest.FatawaTakhrij
 import UsulTest.R2Sample1Semantic
@@ -20,5 +22,6 @@ import UsulTest.Judgement
 import UsulTest.EncoderTypes
 import UsulTest.Cat
 import UsulTest.Obstructions
+import UsulTest.Interval
 import UsulTest.TaklifBehaviour
 import UsulTest.Institutions

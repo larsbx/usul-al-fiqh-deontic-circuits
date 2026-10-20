@@ -25,7 +25,8 @@
      "note": "al-Qāḍī in al-Jāmiʿ for the wajh that it lapses as the Qurʾān does. Aṣl the Qurʾān, farʿ the takbīr: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "248652adb3a503dff979d50d1d932e2ee17d9f434d0c47b983d8b8fa94f5b451"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
@@ -58,7 +59,8 @@
      "note": "Ground for the validity of nikāḥ in his tongue for one without Arabic. Aṣl the mute: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "398860367956591cff3e39182f998947505c4bbe4322bda60ff29a4afdec7b87"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
@@ -82,7 +84,8 @@
      "note": "al-Mughnī's ground for liʿān in their tongue by those without Arabic. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4dc26618c9cf0a2cbf83b1b3339b89926b0c1947a44a6027fdebcc0e858a6c31"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
@@ -97,7 +100,8 @@
      "note": "For the validity of ʿāriya with a stipulated countervalue. Aṣl the gift with a countervalue; a stated rationale (meaning over word): qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "38cdf3a7faf2e1e1ceba419f020bb129c7b6cee35468086160200c51d220ed6f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
@@ -121,7 +125,8 @@
      "note": "al-Mughnī's own argument here for «خذه مضاربة، والربح كله لك، أو كله لي. فهو عقد فاسد» (the void side; the valid ibḍāʿ reading is al-Mughnī elsewhere). Aṣl shirkat al-ʿinān: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b7ef4cce3674f798c9cecae6ffb7cd818e93141273d0725a136411fdc859cb2b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
@@ -154,7 +159,8 @@
      "note": "Same holders, a linguistic rationale against reading the hire as a loan: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "c57b021ed9ebbff7c408b1138d06fd6f4110921955940a2fb10f7038be2ddf03"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004",
@@ -178,7 +184,8 @@
      "note": "al-Kāfī's grounds for the nullity of salam in a present thing. Stated rationales: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7b627dfd0652cd7193563a241d6471f7cf1c5f83c6d4d2509976da22981ed662"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
@@ -229,7 +236,8 @@
      "note": "Cited for «إنه ظهار... نوى الطلاق أو لم ينوه». ʿUmar is reported on the other side: aqrabSahabi."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ed5a9a9e306ddf9b653845a4fd3350553fe0ae2ed13d25a91fcab4a20f7bb150"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
@@ -244,7 +252,8 @@
      "note": "For the validity of the ṣulḥ over the salam debt for the like of the price, read as iqāla. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1a23bd63f084db15983b886f13e80e64fdcd337e2bfb17051a2378db952a05f3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f001",
@@ -268,7 +277,8 @@
      "note": "Given for the case where the imam sends the collector without hire («وإن شاء بعثه بغير إجارة، ويدفع إليه أجر مثله»): the very facts. A report of the Prophet's practice, āḥād: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e262fdfa1a5943d860dcdd34321bc896afbdde8f1735f2a93976cd366ad73686"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f003",
@@ -301,7 +311,8 @@
      "note": "The only stated ground for the no-wage side on these facts; al-Inṣāf reports it with Aḥmad's naṣṣ on the sheep saved from the lion. An analogy («ك…»): qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ca7131ec2dc0943be8c12d9162d30e2364c9aef78aeb140f1e71dac7b9e62b29"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f007",
@@ -320,7 +331,7 @@
      "tier": "qiyas",
      "dalil": "Ruling a fast without an actual intention is not impossible, as when one forgets the fast after intending it; and one who catches part of a rakʿa or of the congregation catches all of it",
      "ref": "src:openiti-ibnqudama-mughni-shamela8463/v03:p115",
-     "excerpt_ar": "نية حقيقة، كما لو نسي الصوم بعد نيته، أو غفل عنه، ولأنه لو أدرك بعض الركعة أو بعض الجماعة كان مدركا لجميعها",
+     "excerpt_ar": "غير نية حقيقة، كما لو نسي الصوم بعد نيته، أو غفل عنه، ولأنه لو أدرك بعض الركعة أو بعض الجماعة كان مدركا لجميعها",
      "who": "Ibn Qudāma, al-Mughnī",
      "note": "Same position. Analogies to the forgetful faster and the late joiner: qiyas."
     },
@@ -343,7 +354,8 @@
      "note": "Same position. A stated rationale with an aṣl: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2c759a9a3f47e8efbf9af3b5b12938d4f6c3c5d420a4da5eb793bb0e5eda50e0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f008",
@@ -376,7 +388,8 @@
      "note": "Given for Mālik and the Ḥanafīs (non-Ḥanbalī holders of the other riwāya's ruling). A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "edff60dd9f4b665b20bc33322dce54751c10382203fcec699189a9a90e72bf89"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
@@ -418,7 +431,8 @@
      "note": "The only ground given for the seventeen-day riwāya: an observed custom, on the same principle of referring menses to custom. A rationale from custom: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "a332e0ecb07ddbfaff1f4d1d54db9f219b905d0baf0818d4feccd2f4ac6b6c09"
   }
  ]
 }

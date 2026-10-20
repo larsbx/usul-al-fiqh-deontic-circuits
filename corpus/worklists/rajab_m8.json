@@ -15,7 +15,7 @@
     "lock.json": "d93b3b2763061a7eef5c10d935b2603118fd78aced53e78881841900d4926219",
     "records/openiti-rajab-shamela21730.jsonl": "3ec424ea5e677a4bdaad4ce68295d411f0ea64bf3e4fe608781a60f36c835ca0",
     "takhrij/dalala_furu.json": "9f3591e7bc77c8a4302d6ef3af3e6237f9e05ff7276ccd036ea8939c46e1a4e8",
-    "takhrij/r2_sample1_lane_b.json": "1b21e281eb6f369ad489574654977c7662aeaf09a3f06f45674ed56b81c91bda",
+    "takhrij/r2_sample1_lane_b.json": "d6e2d4afc1a69bfbb605ce5ab8007df6c1d74f6d2b427d4f5fe5e41436947fe3",
     "takhrij/rajab_m8_furu.json": "cecff6e34886a3d8ef6b8977ba5f9dafbefbf036b3ccd141826f294be1adf395",
     "takhrij/rajab_m8_pr30_furu.json": "ef1b0ef138ea2a6416962d0d12419496a5aa92fc9db18b604bcf0a2e43cc2342",
     "takhrij/rajab_m8_q127_furu.json": "30b8235eb9b912b13748f15baab93d96bd18bbb146eb6e0639f20c435f1d740a",
@@ -36,7 +36,13 @@
     "takhrij/rajab_m8_rajab_a23_furu.json": "ce221bcd0edd9fad7f63180b78dc1af0b780ca61852f08ab6e7341322e1ab42b",
     "takhrij/rajab_m8_rajab_a24_furu.json": "66d1018e96c91d74b284ba2c879cb93dedc6969931d4c23e5c5874627583456d",
     "takhrij/rajab_m8_rajab_a25_furu.json": "c3ffd4086afb092e710be4a42c2ad3c5500ee2d650f14b026e9e1fd66743fa5e",
+    "takhrij/rajab_m8_rajab_a26_furu.json": "818e2e8d1b7ecb24c3e5ce73ec899364826d02b1a6c41181b55786e2d7b35d95",
+    "takhrij/rajab_m8_rajab_a27_furu.json": "a615a89010230af3b36ba7344fedc83d562ecb1e3180d0ac2f3c94daa566b783",
+    "takhrij/rajab_m8_rajab_a28_furu.json": "2ff4f4928892fcf2229bc4c3122d883f507a5f573dcc55b1744277457d6d3c72",
+    "takhrij/rajab_m8_rajab_a29_furu.json": "69d343ed8c1e0a659369fb0ab1dee16fcb490fc5873c5628355686c6d832a7a6",
     "takhrij/rajab_m8_rajab_a2_furu.json": "bc5dd8fc00825216a93c2d5ef97b5c30c08db76ab219c96348585d0aef508c68",
+    "takhrij/rajab_m8_rajab_a30_furu.json": "94c86c8fb6cb5adeee09e6043341f566c1a591e5774c3a54596219956205daa2",
+    "takhrij/rajab_m8_rajab_a31_furu.json": "65d49e555fc7dc514885d47c039e72768ef88d07158de339a4a9fc6a07333a52",
     "takhrij/rajab_m8_rajab_a3_furu.json": "ebfe8d01288eb07a831ea93206ccbdba6404e9997578cfdd16cdf1026f6d0cac",
     "takhrij/rajab_m8_rajab_a4_furu.json": "38f7eb3f66079728f5b40733cb618267afe4705ddf78dc6cb963ddda30487d33",
     "takhrij/rajab_m8_rajab_a5_furu.json": "c90c1d5e1dc0a0417176c22b20103905a1df31f0bf085d311c72476b372a9949",
@@ -54,17 +60,17 @@
     "takhrij/rajab_m8_tranche7_furu.json": "1a11a26a6765c2e4abd93daf2bc7cb45f84aeeea5e79c6a8b6e1b3da83c6ec76",
     "takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
-    "takhrij/sadi_furu.json": "77416f91c9861af89ae974759ade551cec62894c774f14519438e902ed3c8c08"
+    "takhrij/sadi_furu.json": "acc3c370ec9dcc3d52e1b53b1856223c7f5cd5bc96f3919d697329c5a13c660f"
   },
   "summary": {
     "qawaid": 160,
     "qawaid_with_segmented_furu": 154,
     "qawaid_needing_source_segmentation": 6,
-    "qawaid_annotated": 144,
-    "qawaid_awaiting_annotation": 10,
+    "qawaid_annotated": 154,
+    "qawaid_awaiting_annotation": 0,
     "segmented_furu": 1189,
-    "annotated_furu": 1017,
-    "pending_furu": 172
+    "annotated_furu": 1189,
+    "pending_furu": 0
   },
   "suites": {
     "m8_rajab_tranche_1": {
@@ -227,6 +233,33 @@
         158
       ]
     },
+    "m8_rajab_rajab_a26": {
+      "annotated_furu": 33,
+      "qawaid": [
+        13,
+        23
+      ]
+    },
+    "m8_rajab_rajab_a27": {
+      "annotated_furu": 32,
+      "qawaid": [
+        40,
+        70
+      ]
+    },
+    "m8_rajab_rajab_a28": {
+      "annotated_furu": 30,
+      "qawaid": [
+        82
+      ]
+    },
+    "m8_rajab_rajab_a29": {
+      "annotated_furu": 28,
+      "qawaid": [
+        84,
+        86
+      ]
+    },
     "m8_rajab_rajab_a2": {
       "annotated_furu": 21,
       "qawaid": [
@@ -235,6 +268,19 @@
         74,
         79,
         80
+      ]
+    },
+    "m8_rajab_rajab_a30": {
+      "annotated_furu": 26,
+      "qawaid": [
+        85
+      ]
+    },
+    "m8_rajab_rajab_a31": {
+      "annotated_furu": 23,
+      "qawaid": [
+        87,
+        88
       ]
     },
     "m8_rajab_rajab_a3": {
@@ -416,19 +462,19 @@
     }
   },
   "aggregate_report": {
-    "total": 1084,
+    "total": 1256,
     "classes": {
-      "derivable": 441,
-      "genuine_ikhtilaf": 598,
-      "missing_fact": 3,
-      "missing_rule": 41,
+      "derivable": 510,
+      "genuine_ikhtilaf": 684,
+      "missing_fact": 4,
+      "missing_rule": 57,
       "segmentation_error": 1
     },
-    "coverage": 0.959,
-    "decided_coverage": 0.909,
-    "disputed": 598,
+    "coverage": 0.951,
+    "decided_coverage": 0.893,
+    "disputed": 684,
     "encoding_error": 0,
-    "gaps_open": 44,
+    "gaps_open": 61,
     "revisited": 38
   },
   "tranche3_report": {
@@ -629,28 +675,13 @@
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013",
       "number": 13,
       "locator": "src:openiti-rajab-shamela21730/v01:p015#q013",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 16,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f000",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f014",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f015"
-      ],
-      "home_encoders": []
+      "annotated_furu": 16,
+      "pending_furu": [],
+      "home_encoders": [
+        "a26_ihala_on_known_cause"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014",
@@ -769,29 +800,13 @@
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023",
       "number": 23,
       "locator": "src:openiti-rajab-shamela21730/v01:p031#q023",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 17,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f014",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f015",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f016"
-      ],
-      "home_encoders": []
+      "annotated_furu": 17,
+      "pending_furu": [],
+      "home_encoders": [
+        "a26_refused_idhn_lapses"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024",
@@ -990,27 +1005,13 @@
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040",
       "number": 40,
       "locator": "src:openiti-rajab-shamela21730/v01:p050#q040",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 15,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f000",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f014"
-      ],
-      "home_encoders": []
+      "annotated_furu": 15,
+      "pending_furu": [],
+      "home_encoders": [
+        "a27_ain_ruling_survives_owner_change"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041",
@@ -1372,29 +1373,13 @@
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070",
       "number": 70,
       "locator": "src:openiti-rajab-shamela21730/v01:p125#q070",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 17,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f014",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f015",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f016"
-      ],
-      "home_encoders": []
+      "annotated_furu": 17,
+      "pending_furu": [],
+      "home_encoders": [
+        "a27_specific_agent_in_general_object"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071",
@@ -1534,42 +1519,17 @@
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082",
       "number": 82,
       "locator": "src:openiti-rajab-shamela21730/v01:p163#q082",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 30,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f014",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f015",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f016",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f017",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f018",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f019",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f020",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f021",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f022",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f023",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f024",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f025",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f026",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f027",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f028",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f029",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f030"
-      ],
-      "home_encoders": []
+      "annotated_furu": 30,
+      "pending_furu": [],
+      "home_encoders": [
+        "rajab_a28_faskh_growth_returns",
+        "rajab_a28_growth_follows_hand",
+        "rajab_a28_growth_in_nonownership_contract",
+        "rajab_a28_right_reaches_growth",
+        "rajab_a28_toward_ownership_growth"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q083",
@@ -1585,133 +1545,68 @@
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084",
       "number": 84,
       "locator": "src:openiti-rajab-shamela21730/v01:p178#q084",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 20,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f014",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f015",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f016",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f017",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f018",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f019",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f020"
-      ],
-      "home_encoders": []
+      "annotated_furu": 20,
+      "pending_furu": [],
+      "home_encoders": [
+        "a29_haml_hukm_before_separation"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085",
       "number": 85,
       "locator": "src:openiti-rajab-shamela21730/v01:p188#q085",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 26,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f014",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f015",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f016",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f017",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f018",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f019",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f020",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f021",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f022",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f023",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f024",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f025",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f026"
-      ],
-      "home_encoders": []
+      "annotated_furu": 26,
+      "pending_furu": [],
+      "home_encoders": [
+        "rajab_a30_ikhtisas_first_comer",
+        "rajab_a30_ikhtisas_hand_stands",
+        "rajab_a30_tamalluk_awaits_choice",
+        "rajab_a30_tie_binds_whole",
+        "rajab_a30_tie_for_recovery",
+        "rajab_a30_tied_right_precedes",
+        "rajab_a30_use_right_for_need",
+        "rajab_a30_use_right_not_passed"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086",
       "number": 86,
       "locator": "src:openiti-rajab-shamela21730/v01:p195#q086",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 8,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f008"
-      ],
-      "home_encoders": []
+      "annotated_furu": 8,
+      "pending_furu": [],
+      "home_encoders": [
+        "a29_four_kinds_of_milk"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087",
       "number": 87,
       "locator": "src:openiti-rajab-shamela21730/v01:p197#q087",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 17,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f006",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f007",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f008",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f009",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f010",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f011",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f012",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f013",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f014",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f015",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f016",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f017"
-      ],
-      "home_encoders": []
+      "annotated_furu": 17,
+      "pending_furu": [],
+      "home_encoders": [
+        "a31_rajab87_transfer_of_holding"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088",
       "number": 88,
       "locator": "src:openiti-rajab-shamela21730/v01:p201#q088",
-      "state": "awaiting_annotation",
+      "state": "annotated",
       "segmented_furu": 6,
-      "annotated_furu": 0,
-      "pending_furu": [
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f001",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f002",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f003",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f004",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f005",
-        "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f006"
-      ],
-      "home_encoders": []
+      "annotated_furu": 6,
+      "pending_furu": [],
+      "home_encoders": [
+        "a31_rajab88_road_use"
+      ]
     },
     {
       "qaida": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q089",

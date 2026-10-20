@@ -6,6 +6,7 @@ from pathlib import Path
 
 import jsonschema
 import pytest
+from witnesses import cached
 
 from usul_corpus import takhrij
 from usul_corpus.arabic import locate
@@ -49,21 +50,17 @@ def test_excerpts_are_verbatim(ref):
     """Letters-only comparison against the cached witness, and the page is the one the excerpt
     ends on (the next page marker). A witness without page markers (al-Saʿdī's born-digital edition)
     is anchored instead by a furūq item or qāʿida (`src:<witness>#F019`, `#q013`): the excerpt must
-    then occur exactly once in it (PR-11). Skipped where the witness is not cached (CI)."""
+    then occur exactly once in it (PR-11). A required witness that is not cached fails; any other is skipped."""
     if "#" in ref["ref"] and "/" not in ref["ref"]:
         from usul_corpus.nusus import key
         w, anchor = ref["ref"][4:].split("#")
-        src = CACHE / f"{w}.txt"
-        if not src.exists():
-            pytest.skip(f"{w} not cached")
+        src = cached(w)
         assert key(src.read_text(encoding="utf-8")).count(key(ref["excerpt_ar"])) == 1, ref["ref"]
         items = {i["id"] for p in (ROOT / "corpus/furuq").glob("*.json") for i in _json(p)["items"]}
         assert anchor in items or (anchor[0] == "q" and anchor[1:].isdigit()), ref["ref"]
         return
     w, loc = ref["ref"][4:].split("/")
-    src = CACHE / f"{w}.txt"
-    if not src.exists():
-        pytest.skip(f"{w} not cached")
+    src = cached(w)
     assert locate(src.read_text(encoding="utf-8"), ref["excerpt_ar"]) == loc, ref["ref"]
 
 
@@ -113,9 +110,7 @@ def test_excerpts_do_not_stop_before_a_qualifier(ref):
     """An excerpt that ends where its witness goes on with «إلا», «لكن», «ما لم» … reads as
     unqualified (problem register PR-07)."""
     from usul_corpus.nusus import cut_before_qualifier
-    src = CACHE / f"{ref['ref'][4:].split('/')[0].split('#')[0]}.txt"
-    if not src.exists():
-        pytest.skip("witness not cached")
+    src = cached(ref['ref'][4:].split('/')[0].split('#')[0])
     assert not cut_before_qualifier(src.read_text(encoding="utf-8"), ref["excerpt_ar"])
 
 

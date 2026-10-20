@@ -786,6 +786,48 @@ import Usul
 #guard (Usul.Readings.RajabA25.firstAslGoverns false true) == false
 #guard (Usul.Readings.RajabA25.firstAslGoverns true false) == true
 #guard (Usul.Readings.RajabA25.firstAslGoverns true true) == true
+#guard (Usul.Readings.RajabA26.ihalaOnKnownCause false false) == false
+#guard (Usul.Readings.RajabA26.ihalaOnKnownCause false true) == false
+#guard (Usul.Readings.RajabA26.ihalaOnKnownCause true false) == true
+#guard (Usul.Readings.RajabA26.ihalaOnKnownCause true true) == false
+#guard (Usul.Readings.RajabA26.idhnLapses false false) == false
+#guard (Usul.Readings.RajabA26.idhnLapses false true) == false
+#guard (Usul.Readings.RajabA26.idhnLapses true false) == false
+#guard (Usul.Readings.RajabA26.idhnLapses true true) == true
+#guard (Usul.Readings.RajabA27.survivesOwnershipChange false false) == false
+#guard (Usul.Readings.RajabA27.survivesOwnershipChange false true) == false
+#guard (Usul.Readings.RajabA27.survivesOwnershipChange true false) == true
+#guard (Usul.Readings.RajabA27.survivesOwnershipChange true true) == false
+#guard (Usul.Readings.RajabA27.agentIncluded false false) == false
+#guard (Usul.Readings.RajabA27.agentIncluded false true) == true
+#guard (Usul.Readings.RajabA27.agentIncluded true false) == true
+#guard (Usul.Readings.RajabA27.agentIncluded true true) == true
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows false false) == false
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows false true) == false
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows true false) == true
+#guard (Usul.Readings.RajabA28.towardOwnershipFollows true true) == true
+#guard (Usul.Readings.RajabA28.growthInContract false false) == false
+#guard (Usul.Readings.RajabA28.growthInContract false true) == false
+#guard (Usul.Readings.RajabA28.growthInContract true false) == false
+#guard (Usul.Readings.RajabA28.growthInContract true true) == true
+#guard (Usul.Readings.RajabA28.growthFollowsHand false) == true
+#guard (Usul.Readings.RajabA28.growthFollowsHand true) == true
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows false false) == false
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows false true) == false
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows true false) == false
+#guard (Usul.Readings.RajabA28.faskhGrowthFollows true true) == true
+#guard (Usul.Readings.RajabA28.rightGrowthFollows false false) == false
+#guard (Usul.Readings.RajabA28.rightGrowthFollows false true) == false
+#guard (Usul.Readings.RajabA28.rightGrowthFollows true false) == false
+#guard (Usul.Readings.RajabA28.rightGrowthFollows true true) == true
+#guard (Usul.Readings.RajabA29.hamlHukm false false) == false
+#guard (Usul.Readings.RajabA29.hamlHukm false true) == true
+#guard (Usul.Readings.RajabA29.hamlHukm true false) == false
+#guard (Usul.Readings.RajabA29.hamlHukm true true) == true
+#guard (Usul.Readings.RajabA29.milkKind false false) == .intifaOnly
+#guard (Usul.Readings.RajabA29.milkKind false true) == .manfaaWithoutAyn
+#guard (Usul.Readings.RajabA29.milkKind true false) == .aynWithoutManfaa
+#guard (Usul.Readings.RajabA29.milkKind true true) == .aynAndManfaa
 #guard (Usul.Readings.RajabA3.disposalStands false false) == true
 #guard (Usul.Readings.RajabA3.disposalStands false true) == true
 #guard (Usul.Readings.RajabA3.disposalStands true false) == true
@@ -798,6 +840,114 @@ import Usul
 #guard (Usul.Readings.RajabA3.lossLiable true false true) == false
 #guard (Usul.Readings.RajabA3.lossLiable true true false) == false
 #guard (Usul.Readings.RajabA3.lossLiable true true true) == false
+#guard (Usul.Readings.RajabA30.awaitsChoice false false) == false
+#guard (Usul.Readings.RajabA30.awaitsChoice false true) == false
+#guard (Usul.Readings.RajabA30.awaitsChoice true false) == true
+#guard (Usul.Readings.RajabA30.awaitsChoice true true) == false
+#guard (Usul.Readings.RajabA30.mayPassBenefit false) == true
+#guard (Usul.Readings.RajabA30.mayPassBenefit true) == false
+#guard (Usul.Readings.RajabA30.useRightForNeed false false) == false
+#guard (Usul.Readings.RajabA30.useRightForNeed false true) == false
+#guard (Usul.Readings.RajabA30.useRightForNeed true false) == true
+#guard (Usul.Readings.RajabA30.useRightForNeed true true) == false
+#guard (Usul.Readings.RajabA30.handStands false false) == false
+#guard (Usul.Readings.RajabA30.handStands false true) == true
+#guard (Usul.Readings.RajabA30.handStands true false) == true
+#guard (Usul.Readings.RajabA30.handStands true true) == true
+#guard (Usul.Readings.RajabA30.firstComerAhaqq false false) == false
+#guard (Usul.Readings.RajabA30.firstComerAhaqq false true) == false
+#guard (Usul.Readings.RajabA30.firstComerAhaqq true false) == true
+#guard (Usul.Readings.RajabA30.firstComerAhaqq true true) == false
+#guard (Usul.Readings.RajabA30.wholeBound false false) == false
+#guard (Usul.Readings.RajabA30.wholeBound false true) == true
+#guard (Usul.Readings.RajabA30.wholeBound true false) == true
+#guard (Usul.Readings.RajabA30.wholeBound true true) == true
+#guard (Usul.Readings.RajabA30.recoverFrom false) == false
+#guard (Usul.Readings.RajabA30.recoverFrom true) == true
+#guard (Usul.Readings.RajabA30.tiedPrecedes false false) == false
+#guard (Usul.Readings.RajabA30.tiedPrecedes false true) == false
+#guard (Usul.Readings.RajabA30.tiedPrecedes true false) == false
+#guard (Usul.Readings.RajabA30.tiedPrecedes true true) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm false false false) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm false false true) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm false true false) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm false true true) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm true false false) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm true false true) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm true true false) == true
+#guard (Usul.Readings.RajabA31.transferValid .tamm true true true) == true
+#guard (Usul.Readings.RajabA31.transferValid .manfaa false false false) == false
+#guard (Usul.Readings.RajabA31.transferValid .manfaa false false true) == false
+#guard (Usul.Readings.RajabA31.transferValid .manfaa false true false) == false
+#guard (Usul.Readings.RajabA31.transferValid .manfaa false true true) == false
+#guard (Usul.Readings.RajabA31.transferValid .manfaa true false false) == true
+#guard (Usul.Readings.RajabA31.transferValid .manfaa true false true) == true
+#guard (Usul.Readings.RajabA31.transferValid .manfaa true true false) == false
+#guard (Usul.Readings.RajabA31.transferValid .manfaa true true true) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight false false false) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight false false true) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight false true false) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight false true true) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight true false false) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight true false true) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight true true false) == false
+#guard (Usul.Readings.RajabA31.transferValid .harmRight true true true) == false
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas false false false) == false
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas false false true) == false
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas false true false) == false
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas false true true) == false
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas true false false) == true
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas true false true) == false
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas true true false) == true
+#guard (Usul.Readings.RajabA31.transferValid .ikhtisas true true true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false false false false) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false false false true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false false true false) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false false true true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false true false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false true false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false true true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface false true true true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true false false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true false false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true false true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true false true true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true true false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true true false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true true true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .surface true true true true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false false false false) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false false false true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false false true false) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false false true true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false true false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false true false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false true true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below false true true true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true false false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true false false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true false true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true false true true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true true false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true true false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true true true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .below true true true true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false false false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false false false true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false false true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false false true true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false true false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false true false true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false true true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air false true true true) == true
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true false false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true false false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true false true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true false true true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true true false false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true true false true) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true true true false) == false
+#guard (Usul.Readings.RajabA31.roadUseAllowed .air true true true true) == false
 #guard (Usul.Readings.RajabA4.takenOverAtValue false false) == true
 #guard (Usul.Readings.RajabA4.takenOverAtValue false true) == false
 #guard (Usul.Readings.RajabA4.takenOverAtValue true false) == false

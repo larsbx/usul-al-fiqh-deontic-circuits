@@ -1,0 +1,272 @@
+{
+  "suite": "m8_rajab_rajab_a30",
+  "status": "candidate",
+  "provenance": "Shard rajab-a30 (lane A): every farʿ record of Ibn Rajab's qāʿida 85, «الحقوق خمسة أنواع», annotated against readings formalised from the qāʿida's own statement of each kind (Usul.Readings.RajabA30). Typological records are annotated for their leading ruling. Where that ruling is which kind a cause yields (ḥaqq milk or ḥaqq tamalluk, ḥaqq ikhtiṣāṣ or ḥaqq milk, the kind of an attachment) and the text reports it disputed or decides it by the bāb's own rule, the record is a missing_rule gap naming that rule, never forced onto a kind. Annotated by reading the full paragraph in the pinned witness, the ikhtilāf side then checked against al-Inṣāf and the muʿtamad; candidate, awaiting human review.",
+  "cases": [
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f001",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:ghanima_owned_by_istila"],
+      "note": "Leading ruling: the ghānim's right in the ghanīma before division (qisma): ḥaqq milk or ḥaqq tamalluk? «وفيه وجهان»: the manṣūṣ, «وعليه جمهور الأصحاب أنه يثبت الملك فيها بمجرد الاستيلاء» (then two wujūh on whether securing it, iḥrāz, is required: al-Qāḍī in al-Mujarrad no; al-Khiraqī and Ibn Abī Mūsā yes, «ورجحه صاحب المغني»); the second, al-Qāḍī's choice in his Khilāf, «لا يملك الغنيمة إلا باختيار الملك ... فعلى هذا إنما ثبت لهم حق التملك كالشفيع». The reading (awaitsChoice) gives the kind once it is known whether conquest (istīlāʾ) completes the ownership; that is the bāb's rule, which the qāʿida reports disputed («وههنا صور مختلف فيها هل يثبت فيها الملك أو حق التمليك؟»), so the record is a gap, not forced onto either kind. Follow-ons: on the second wajh, one who dies before choosing «فلا حق له» (al-Targhīb; qāʿida 144's «حقوق التملكات ... لا يورث», RajabA30.unclaimed_tamalluk_not_inherited), against the ẓāhir of al-Qāḍī's Khilāf that it passes to the heirs; their waiver before choosing drops the right «على الوجهين لضعف الملك وعدم استقراره» and it becomes fayʾ. Segmentation: the kind's first disputed ṣūra, the muḍārib's profit after it appears («حق المضارب في الربح بعد الظهور وقبل القسمة وفيه روايتان», opened by «فمنها»), has no record of its own."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f002",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:former_owner_right_in_ghanima"],
+      "note": "Leading ruling: one who finds his own property, which the unbelievers had come to own by conquest (istīlāʾ), in the ghanīma before division: «فإنه يثبت له حق التمليك عند الأصحاب», and Taqī al-Dīn Ibn Taymiyya «خرجه ... على الخلاف في حق الغانمين» (so, on the ghānim's milk wajh of q085.f001, a takhrīj of ownership without choice). The kind turns on whether his former ownership, against the unbelievers' intervening ownership, completes his ownership again without his choice: a rule of the bāb of jihād, not of the typology. A gap naming it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f003",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:half_mahr_returns_by_talaq_without_choice"],
+      "note": "Leading ruling: the husband's right in half the ṣadāq when he divorces before consummation: «هل يثبت له فيه الملك قهرا أو يثبت له حق التملك فلا يملك بدونه فيه وجهان والأول هو المنصوص»; on the second, a claim and choosing to own suffice («كرجوع الأب», Abū al-Khaṭṭāb). Whether the ṭalāq itself completes the ownership is the bāb of ṣadāq's rule, which the record reports disputed: a gap. Follow-ons, on the waiver (ʿafw): Ibn Rajab rejects al-Targhīb's tying of the khilāf to who holds «عقدة النكاح» («فإن العفو يصح عما يثبت فيه حق التملك كالشفعة»); «والصحيح المشهور أنه يصح عفوه إن كان مالكا»; if a debt, it is waived by any of the words of release without acceptance; if a thing he owns, by the word of hiba, and by the word of ʿafw «على وجهين ... والثاني يصح قاله القاضي ورجحه صاحب المغني وهو الصحيح»; «والصحيح أن القبض لا يشترط في الفسوخ كالإقالة»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f004",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:luqata_owned_after_hawl_without_choice"],
+      "note": "Leading ruling: the finder's right in the found thing (luqṭa) after the year of announcing: «وفيه وجهان أشهرهما أنه يثبت له الملك بغير اختياره واختاره القاضي وقال: إنه ظاهر كلام أحمد والثاني لا يدخل حتى يختار وهو اختيار أبي الخطاب فيكون حقه فيها حق تملك». Whether the lapse of the year completes the ownership is the bāb of luqṭa's rule; the typology only says which kind follows from each answer. A gap naming that rule."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f005",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:wasiyya_owned_before_qabul"],
+      "note": "Leading ruling: the legatee after the testator's death: «أحدهما: أنه يثبت له الملك وقيل إنه ظاهر كلام أحمد. والثاني: إنما يثبت له حق التملك بالقبول وهو المشهور عند الأصحاب». Whether the death completes the ownership before acceptance (qabūl) is the bāb of waṣiyya's rule; a gap naming it. Related: qāʿida 55's legatee after the death, whose cause (sabab) of ownership «قد استقر له» (Refinements.disposalTakes), which the reading links in RajabA30.tamalluk_disposal_does_not_take."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f006",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:mubah_in_land_owned_by_landowner"],
+      "note": "Leading ruling: pasture or another permitted thing (mubāḥ) grows in his land, or game or fish is mired in it: «فهل يملكه بذلك في المسألة روايتان معروفتان وأكثر النصوص عن أحمد يدل على الملك وعلى الرواية الأخرى إنما ثبت حق التملك وهو مقدم على غيره بذلك». Whether the land's holding completes the ownership is the bāb of iḥyāʾ and the mubāḥāt's rule; a gap. Follow-ons: another who goes first and takes it by possession (ḥiyāza): «فقال القاضي والأكثرون يملكه وخرج ابن عقيل أنه لا يملكه ; لأنه سبب منهي عنه فلا يفيد الملك», with al-Qāḍī's two statements on prohibited factual causes and «وهو الصحيح من المذهب» that the Muslim does not own by them."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f007",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:tahajjur_conveys_milk"],
+      "note": "Leading ruling: one who marks off dead land (taḥajjur) without reviving it: «المشهور. أنه لا يملكه بذلك ونقل صالح عن أبيه ما يدل على أنه يملكه وعلى الأول فهو أحق بتملكه بالأحياء فإن بادر الغير فأحياه ففي ملكه وجهان معروفان». Whether taḥajjur completes the ownership is the bāb of iḥyāʾ's rule; a gap naming it. The record then gives the kind's ḍābiṭ, which the reading formalises: «هذا كله فيمن انعقد له سبب التملك وصار التملك واقفا على اختياره»; and, where no cause is concluded, only a wish and a promise (the one bargaining, the suitor relied on), «فلا يجوز مزاحمتهما أيضا ولكن يصح على المنصوص» (RajabA30.no_cause_no_tamalluk), with al-Qāḍī's takhrīj of invalidity from selling over another's sale and Ibn Rajab's farq."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
+      "encoder": "rajab_a30_use_right_for_need",
+      "class": "genuine_ikhtilaf",
+      "facts": {
+        "needed": true,
+        "harmful": false
+      },
+      "expected": true,
+      "positions": [
+        {
+          "who": "a ḥaqq intifāʿ is established: he may run his water through the other's land without leave (one of the two riwāyas, «لقضاء عمرته», i.e. ʿUmar's judgement; Taqī al-Dīn extends it to running his water in his neighbour's channel; chosen by Taqī al-Dīn and the author of al-Fāʾiq per al-Inṣāf)",
+          "ruling": true
+        },
+        {
+          "who": "not without the owner's leave, even under compulsion (the other riwāya; «على الصحيح من المذهب» per al-Inṣāf; al-Mughnī: «والأول أقيس»; al-Iqnāʿ and Kashshāf state it)",
+          "ruling": false
+        }
+      ],
+      "matches_madhhab": false,
+      "note": "Leading ruling: running water through another's land when compelled to: «إذا اضطر إلى ذلك في إحدى الروايتين لقضاء عمرته», a ṣūra of the third kind, ḥaqq intifāʿ. The use is needed and harms no one, so the reading (useRightForNeed, = qāʿida 99's freeAyn on the same ṣuwar) gives the right. The later madhhab holds the other riwāya: al-Inṣāf (v05:p248) «وإن كان مضرورا إلى ذلك: لم يجز أيضا إلا بإذنه، على الصحيح من المذهب», then «وعنه يجوز، ولو مع حفر. اختاره الشيخ تقي الدين»; al-Iqnāʿ «ويحرم إجراء ماء في ملك إنسان بلا أذنه ولو مع عدم تضرره أو تضرر أرضه ولو كان مضطرا إلى ذلك», Kashshāf likewise. Off the madhhab side; ledger entry. Follow-ons: Abū Ṭālib's report of Aḥmad on a divided house whose four roofs drained across each other, «يرد الماء إلى ما كان وإن لم يشرط ذلك ولا يضر به», read by some aṣḥāb as need (as in running water over another's land, or beams on his wall) and by others as the amenities of a divided house staying shared, with al-Mughnī's takhrīj in the road and Ibn Rajab's farq («فإن الطريق لا يراد منه سوى الاستطراق»). Segmentation: the kind's first ṣūra, beams on a neighbour's wall where it does no harm («وضع الجار خشبه على جدار جاره إذا لم يضر به للنص الوارد فيه»), has no record of its own."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f009",
+      "encoder": "rajab_a30_use_right_not_passed",
+      "class": "derivable",
+      "facts": {
+        "use_right_only": true
+      },
+      "expected": false,
+      "note": "Leading ruling: he sells land with a once-harvested crop, or trees with fruit, before it is fit: it stays to harvest without rent, and «ولو أراد تفريغ الأرض من الزرع لينتفع بها إلى وقت الجذاذ أو يؤجرها لم يكن له ذلك كما لا يملك الجار إعارة غيره ما يستحقه من الانتفاع بملك جاره». His right in the land is a bare ḥaqq intifāʿ, so he may neither use it otherwise nor lease it. No dispute reported. Follow-ons: a crop already fit, sold in the land, is kept to harvest; whether a sold tree's ground enters the sale, two wujūh (al-Qāḍī; Ibn Shāqilā: it does not, and the ẓāhir of Aḥmad that it does), and on Ibn Shāqilā's view, as with harvested crop, «فلا يكون له في الأرض سوى حق الانتفاع»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f010",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "class": "derivable",
+      "facts": {
+        "permitted_benefit": true,
+        "may_become_mal": false
+      },
+      "expected": true,
+      "note": "Leading ruling: «الكلب المباح اقتناؤه كالمعلم لمن يصطاد به»: a ṣūra of the fourth kind, ḥaqq ikhtiṣāṣ. It is not wealth owned, but its keeping is permitted, so the holder's hand stands on it. Follow-on: «فإن كان لا يصطاد به أو كان الكلب جروا يحتاج إلى تعليم فوجهان», which is whether its keeping (the reading's permitted_benefit) is permitted."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f011",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "class": "derivable",
+      "facts": {
+        "permitted_benefit": true,
+        "may_become_mal": false
+      },
+      "expected": true,
+      "note": "Leading ruling: «الأدهان المتنجسة المنتفع بها بالإيقاد وغيره على القول بالجواز»: on the view the record names, the oils that became najis have a permitted use, so they are held by ḥaqq ikhtiṣāṣ. Follow-on: oil najis in itself, as the fat of carrion: «فالمنصوص أنه لا يجوز الانتفاع به، ونقل ابن منصور عن أحمد ما يدل على جوازه»; on the manṣūṣ no hand stands on it («فلا يد ثابتة عليه», q085.f012)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f012",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "class": "derivable",
+      "facts": {
+        "permitted_benefit": true,
+        "may_become_mal": false
+      },
+      "expected": true,
+      "note": "Leading ruling: «جلد الميتة المدبوغ إذا قيل يجوز الانتفاع به في اليابسات»: on that view it has a permitted use, so a hand of ḥaqq ikhtiṣāṣ stands on it, against «فأما ما لا يجوز الانتفاع به من النجاسات بحال فلا يد ثابتة عليه، وآية ذلك أنه لا يجب رده على من انتزعه ممن هو في يده بخلاف ما فيه نفع مباح فإنه يجب رده». Follow-ons, on wine, which the reading covers by may_become_mal: wine usurped that turns to vinegar in the usurper's hand is returned, «لأن يد الأول لم تزل عنها بالغصب» (al-Qāḍī, Ibn ʿAqīl, the aṣḥāb); whether ownership lapses by the fermenting (most: it lapses; the author of al-Mughnī in the ḥajj: it does not); if it returns to vinegar, the first ownership returns with its rights (the pledge; a debt paid from it); wine given and delivered, or poured out and gathered by another, then turning to vinegar: «على احتمالين»; and Ibn Rajab's conclusion, «وهذا كله يدل على ثبوت اليد على الخمر لإمكان عودها مالا»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f013",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:marafiq_al_amlak_owned"],
+      "note": "Leading ruling: the amenities of properties (roads, courtyards, water runs): «هل هي مملوكة أو ثبت فيها حق الاختصاص؟ وفي المسألة وجهان»: ḥaqq ikhtiṣāṣ without ownership (al-Qāḍī and Ibn ʿAqīl decisively, from Aḥmad's naṣṣ that one who digs a well in his courtyard «متعد بحفره في غير ملك»), or ownership (the aṣḥāb stated it in roads; the author of al-Mughnī decisively in all, from the naṣṣ of Aḥmad and al-Khiraqī on owning a well's precinct). Which kind the amenity is, is the bāb of iḥyāʾ's rule, reported disputed; a gap. Follow-on: on the first wajh, al-Qāḍī: selling land with its courtyard is void (bāṭil), «لأن الفناء لا يختص به إذ استطراقه عام» (the kind does not take an exchange, RajabA30.ikhtisas_takes_no_exchange), unlike selling it with its road; Ibn ʿAqīl's iḥtimāl that it is valid, as a right like a water run."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f014",
+      "encoder": "rajab_a30_ikhtisas_first_comer",
+      "class": "derivable",
+      "facts": {
+        "preceded": true,
+        "left_by_choice": false
+      },
+      "expected": true,
+      "note": "Leading ruling: the wide markets' amenities where buying and selling is permitted, as open stalls: «فالسابق إليها أحق بها». A ṣūra of ḥaqq ikhtiṣāṣ; no dispute reported on the precedence. Follow-ons: whether his right ends at the day's end or lasts until he moves his goods, «إلى وجهين، وظاهر كلام أحمد في رواية حرب الأول لجريان العادة»; on the second, if he sits long, is he moved: two wujūh, «لأنه يفضي إلى الاختصاص بالحق المشترك»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f015",
+      "encoder": "rajab_a30_ikhtisas_first_comer",
+      "class": "derivable",
+      "facts": {
+        "preceded": true,
+        "left_by_choice": false
+      },
+      "expected": true,
+      "note": "Leading ruling: sitting in mosques and the like for worship or a permitted thing: «فيكون الجالس أحق بمجلسه إلى أن يقوم عنه باختياره قاطعا للجلوس أما إن قام لحاجة عارضة ونيته العود فهو أحق بمجلسه». No dispute reported. Follow-on: the exception of the boy who stands in a front row or the row's middle, «فإنه يجوز نقله عنه صرح به القاضي، وهو ظاهر كلام أحمد», on which «حمل فعل طرفة بن كعب بقيس بن عباد» (so the witness); the reading does not express the boy's case as a fact."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f016",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "class": "derivable",
+      "facts": {
+        "pledge_tie": true,
+        "jinaya_tie": false
+      },
+      "expected": true,
+      "note": "Leading ruling: the pledgee's right attached to the pledge (rahn), a ṣūra of the fifth kind: «ومعناه أن جميع أجزاء الرهن محبوس بكل جزء من الدين حتى يستوفي جميعه». The whole is held for the right until all of it is recovered. No dispute reported."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f017",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "class": "derivable",
+      "facts": {
+        "pledge_tie": false,
+        "jinaya_tie": true
+      },
+      "expected": true,
+      "note": "Leading ruling: the right of an injury (jināya) attached to the slave who injured: «ومعناه أن حقه انحصر في ماليته وله المطالبة بالاستيفاء منه ويتعلق الحق بمجموع الرقبة لا بقدر الأرش على ظاهر كلام الأصحاب ويباع جميعه في الجناية ويوفى منه الحق ويرد الفضل على السيد». The whole slave is held for the right. No contrary position is reported on the whole; follow-ons: al-Qāḍī in al-Mujarrad, «أن ظاهر كلام أحمد أنه لا يرد عليه شيء وهذا صريح في تعلق الحق بالجميع», on the surplus; and the pledged slave who injures, whose value exceeds the arsh: whether the whole of him is sold or the arsh's measure, «فيه وجهان لكن بيع جميعه يندفع به عن السيد ضرر نقص القيمة بالتشقيص»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f018",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:estate_debt_bars_transfer_to_heirs", "rule:estate_debt_tie_kind"],
+      "note": "Leading ruling: the creditors' right attached to the estate (tarika): «هل يمنع انتقالها بالإرث على روايتين، وهل هو كتعلق الجناية أو الرهن؟ اختلف كلام الأصحاب في ذلك وصرح الأكثرون بأنه كمتعلق الرهن». Both questions are of the kind's ṣūra, not decided by it: whether the debt bars the transfer is two riwāyas (the qāʿida's first kind gives «التركة المستغرقة بالدين على رواية» as a ḥaqq milk barred from inheritance), and which tie it is, is disputed. A gap naming both. Ibn Rajab's three explanations of the rahn-tie view: every part bound by every part of the debt, «ولا فرق في ذلك بين أن يكون الدين مستغرقا للتركة أو غير مستغرق» (divided among several heirs by shares, per al-Qāḍī's Khilāf); the debt in a dhimma and attached to the estate (whose dhimma: two wujūh); it bars the validity of disposal (two wujūh). Follow-ons: whether the creditors' right attaches from the illness; al-Maymūnī's report from Aḥmad that the one whose debt exhausts what he leaves may free and give («دعها فإنها مسألة فيها لبس»), al-Qāḍī's two readings of it and Taqī al-Dīn's, and the heirs' right to bar the sick man's spending on desires («ففي موضع جزما بثبوت المنع لهم ... وأنكر ذلك في مواضع»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f019",
+      "encoder": "rajab_a30_tie_for_recovery",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:musa_bihi_passes_to_heirs"],
+      "note": "Leading ruling: the legatee's right attached to the property: «هل يتبع الانتقال إلى الورثة؟ جعل طائفة من الأصحاب حكمه حكم الدين ومنهم أبو الخطاب في انتصاره وأبو الحسين في فروعه», supported by «أن الموصى به قبل القبول على ملك الورثة»; al-Qāḍī in his Khilāf decisively: it does not pass to the heirs, «مفرقا بين الدين والوصية بأن حق الموصى له في عين التركة ولا يملك الورثة إبدال حقه بخلاف الدين فإن حق صاحبه في التركة والذمة وللورثة التوفية من غيره», from Ibn Manṣūr's report «لا يقسم المال حتى ينفذوا ما قال إلا أن يضمنوا أن يخرجوه». The transfer to the heirs is the bāb of waṣiyya and inheritance's rule; the typology says only that the right is attached for its recovery. A gap. Follow-ons: in al-Mujarrad and al-Fuṣūl, a determinate legatee is a partner in his share, and for an indeterminate one the heirs may not dispose until they set it apart; the mashhūr validity of a bequest beyond the third, «وإن إجازة الورثة لها تنفيذ لا ابتداء عطية»."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f020",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:zakat_tie_kind"],
+      "note": "Leading ruling: the zakāt's attachment to the niṣāb: «هل هو تعلق شركة أو ارتهان أو تعلق الاستيفاء كالجناية اضطرب كلام الأصحاب في ذلك اضطرابا كثيرا. ويحصل منه ثلاثة أوجه»: a partnership tie (al-Qāḍī in one place of Sharḥ al-Madhhab; the ẓāhir of Abū Bakr), a tie of recovery (al-Qāḍī and others, likened by some to the injury's tie, by others to the debt's on the estate), and a pledge's tie. Which kind it is, is the bāb of zakāt's rule, reported disputed; a gap. Ibn Rajab: «وينكشف هذا النزاع بتحرير مسائل» (q085.f021–f023)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f021",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:zakat_tie_on_measure"],
+      "note": "Leading ruling, the first of the masāʾil that settle q085.f020: «أن الحق هل هو متعلق بجميع النصاب أو بمقدار الزكاة فيه غير معين؟ وقد نقل القاضي وابن عقيل الاتفاق على الثاني». The reading (wholeBound) holds the whole for a pledge's or an injury's tie, and two of f020's three wujūh make the zakāt's tie such; the agreed answer is the measure, so it is decided by the bāb of zakāt's own rule, not by the kind. A gap naming it. That the agreed measure departs from the reading on those wujūh is the record's own argument against them («وينكشف هذا النزاع»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f022",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:zakat_in_dhimma_with_ayn"],
+      "note": "Leading ruling, the second masʾala of q085.f020: «أنه مع التعلق بالمال هل يكون ثابتا في ذمة المالك أم لا؟ وظاهر كلام الأكثرين أنه على القول بالتعلق بالعين لا يثبت في الذمة منه شيء إلا أن يتلف المال أو يتصرف فيه المالك بعد الحول»; Abū al-Khaṭṭāb and the author of al-Muḥarrar: if zakāt is in the dhimma, it attaches to the thing «تعلق استيفاء محض كتعلق الديون بالتركة», Taqī al-Dīn's choice, «وهو حسن». The bāb of zakāt's rule, not the kind's; a gap."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f023",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:zakat_tie_bars_disposal"],
+      "note": "Leading ruling, the third masʾala of q085.f020: «منع التصرف والمذهب أن لا يمنع كما سبق»: the zakāt's attachment does not bar the owner's disposal. A single ruling, decided by the bāb of zakāt (Ibn Rajab refers back to it), not by the kind: the qāʿida gives no general rule that a tie of recovery bars or permits disposal (for the estate's debt it reports two wujūh, q085.f018). A gap naming that rule."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f024",
+      "encoder": "rajab_a30_tie_for_recovery",
+      "class": "derivable",
+      "facts": {
+        "tied": true
+      },
+      "expected": true,
+      "note": "Leading ruling: «تعلق حق غرماء المفلس بماله بعد الحجر وهو تعلق استحقاق الاستيفاء منه»: after the ḥajr, the bankrupt's (muflis) creditors' right is tied to his property, so they are entitled to recover from it. A ṣūra of the fifth kind, stated without dispute; the ḥajr is the tying cause (sabab) («بعد الحجر»)."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f025",
+      "encoder": "rajab_a30_tie_for_recovery",
+      "class": "missing_rule",
+      "facts": null,
+      "expected": null,
+      "needs": ["rule:mathun_debts_on_raqaba"],
+      "note": "Leading ruling: the creditors' debts attached to the property of the slave permitted to trade (maʾdhūn): al-Qāḍī in al-Mujarrad, whether the master's purchase from him is valid, like the mukātab's property with his master, or not, like the pledge to the pledgor, «على احتمالين»; Ibn Rajab: «وهذا لا يتوجه على ظاهر المذهب، وهو تعلق ديونه بذمة السيد وإنما يتوجه على قولنا يتعلق برقبة العبد», as al-Qāḍī built it in al-Khilāf al-Kabīr. Whether the tie arises at all turns on where the maʾdhūn's debts lie (the master's dhimma, the slave's raqaba), the bāb of the maʾdhūn's rule, not the kind's; a gap naming it."
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f026",
+      "encoder": "rajab_a30_tied_right_precedes",
+      "class": "derivable",
+      "facts": {
+        "tied": true,
+        "rival_in_dhimma_only": true
+      },
+      "expected": true,
+      "note": "Leading ruling: «تعلق حقوق الفقراء بالهدي والأضاحي المعينة ويقدمون بما يجب صرفه إليهم منها على الغرماء في حياة الموجب وبعد وفاته». The designation ties the poor's right to the animal; the creditors' debts are in the dhimma, so the poor are paid from it first, in his life and after his death. No dispute reported."
+    }
+  ]
+}

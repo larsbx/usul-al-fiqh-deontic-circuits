@@ -1,0 +1,517 @@
+{
+ "entries": [
+  {
+   "type": "rajab134",
+   "field": "impediment",
+   "gloss": "an impediment (or preventive measure) to the ruling or state is present: prevention, which the qaida says is easier than removal",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p300",
+    "excerpt_ar": "المنع أسهل من الرفع"
+   }
+  },
+  {
+   "type": "rajab134",
+   "field": "before_establishment",
+   "gloss": "the impediment is present at the outset, before the ruling or state is established, rather than supervening on it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p301",
+    "excerpt_ar": "يمنعه ابتداء ولا يفسخه في الدوام"
+   }
+  },
+  {
+   "type": "rajab136",
+   "field": "weak_ownership",
+   "gloss": "the bar on intercourse is due to the weakness or deficiency of the ownership, or fear that it is not established",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p302",
+    "excerpt_ar": "لضعف الملك وقصوره أو خشية عدم ثبوته"
+   }
+  },
+  {
+   "type": "rajab136",
+   "field": "worship",
+   "gloss": "the bar on intercourse is an act of worship that prevents intercourse",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p302",
+    "excerpt_ar": "العبادات المانعة من الوطء"
+   }
+  },
+  {
+   "type": "rajab136",
+   "field": "bars_indulgence",
+   "gloss": "the worship bars the genus of indulgence and enjoyment of women (strong ihram, itikaf), not intercourse alone",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p302",
+    "excerpt_ar": "ضرب يمتنع فيه جنس الترفه والاستمتاع بالنساء"
+   }
+  },
+  {
+   "type": "rajab137",
+   "field": "either_of_two",
+   "gloss": "what deliberate killing makes due is one of two things, qawad or diya, not qawad specifically",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p303",
+    "excerpt_ar": "أحد أمرين إما القود وإما الدية"
+   }
+  },
+  {
+   "type": "rajab137",
+   "field": "victim_encumbered",
+   "gloss": "the slave killed was property to which another party's right was already attached (e.g. the pledgee's right in a pledged slave)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p303",
+    "excerpt_ar": "تعلق حقه برقبة العبد المرهون"
+   }
+  },
+  {
+   "type": "rajab137",
+   "field": "victim_owned",
+   "gloss": "the one killed was a slave owned by the claimant who makes the sulh (a slave of his trade wealth)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p308",
+    "excerpt_ar": "عبدا من مال التجارة عمدا فصالح المالك عنه بمال"
+   }
+  },
+  {
+   "type": "rajab138",
+   "field": "guaranteed_q138",
+   "gloss": "the thing burdened with a right of God or of a person is guaranteed (madmuna)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p308",
+    "excerpt_ar": "فإن كانت مضمونة"
+   }
+  },
+  {
+   "type": "rajab138",
+   "field": "destroyed",
+   "gloss": "the thing was destroyed by an act (itlaf), as against perishing (talaf), which does not make an unguaranteed thing liable",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p308",
+    "excerpt_ar": "لم يجب ضمانها بالتلف ووجب بالإتلاف"
+   }
+  },
+  {
+   "type": "rajab138",
+   "field": "claimant_exists",
+   "gloss": "there is an existing beneficiary entitled to the right in the thing",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p308",
+    "excerpt_ar": "إن كان مستحق موجود وإلا فلا"
+   }
+  },
+  {
+   "type": "rajab139",
+   "field": "takes_all_when_alone",
+   "gloss": "the holder of the unfixed right takes the whole when he is alone (as the agnates beside the sharers)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p311",
+    "excerpt_ar": "من لم يقدر حقه يستحق الجميع عند الانفراد"
+   }
+  },
+  {
+   "type": "rajab139",
+   "field": "tied_to_base",
+   "gloss": "the unfixed right is estimated by ijtihad, but the estimate goes back to a base that governs it",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p311",
+    "excerpt_ar": "يرجع إلى أصل يضبط به"
+   }
+  },
+  {
+   "type": "rajab139",
+   "field": "same_locus",
+   "gloss": "the fixed and the estimated right fall on one and the same locus",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p311",
+    "excerpt_ar": "إن كان محلهما واحدا"
+   }
+  },
+  {
+   "type": "rajab141",
+   "field": "custodian_until_term",
+   "gloss": "the destroyer is the one bound to keep the thing (burdened with a right of God) and render it until a known term",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p312",
+    "excerpt_ar": "من يجب عليه حفظها واستيفاؤها إلى مدة معلومة"
+   }
+  },
+  {
+   "type": "rajab142",
+   "field": "restored_by_life",
+   "gloss": "what was lost returned by the original creation (regrowth, a limb that takes hold), not by human making",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p312",
+    "excerpt_ar": "عاد بأصل الخلقة"
+   }
+  },
+  {
+   "type": "rajab142",
+   "field": "old_materials",
+   "gloss": "what was rebuilt was rebuilt with its own former materials",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p313",
+    "excerpt_ar": "إن أعاده بآلته العتيقة"
+   }
+  },
+  {
+   "type": "rajab143",
+   "field": "sold_for_price",
+   "gloss": "the original is given up for a price, rather than exchanged for a like substitute",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p315",
+    "excerpt_ar": "بخلاف ما لو باعه بثمن"
+   }
+  },
+  {
+   "type": "rajab144",
+   "field": "accrues_at_death",
+   "gloss": "the right of the deceased is one that falls due by his death (diya, qisas for his life)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p315",
+    "excerpt_ar": "من حقوقه يجب بموته"
+   }
+  },
+  {
+   "type": "rajab144",
+   "field": "claimed_or_held",
+   "gloss": "the right was due to him in his life and he had claimed it, or it was in his hand",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p315",
+    "excerpt_ar": "إن كان قد طالب به أو هو في يده"
+   }
+  },
+  {
+   "type": "rajab144",
+   "field": "attached_to_inherited_property",
+   "gloss": "the right is a property right attached to the property the heirs inherit (rahn, kafala, daman, a debt's term, return for defect)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p317",
+    "excerpt_ar": "حقوق أملاك ثابتة متعلقة بالأملاك الموروثة"
+   }
+  },
+  {
+   "type": "rajab144",
+   "field": "obligation_binding",
+   "gloss": "the right owed by the deceased is binding (lazim)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p317",
+    "excerpt_ar": "فإذا كانت لازمة قام الوارث مقامه"
+   }
+  },
+  {
+   "type": "rajab144",
+   "field": "tends_to_binding",
+   "gloss": "the obligation is a permissible contract that tends to bindingness (rahn or hiba before delivery)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p318",
+    "excerpt_ar": "لأنه عقد يئول إلى اللزوم"
+   }
+  },
+  {
+   "type": "rajab145",
+   "field": "in_idda",
+   "gloss": "the finally divorced (bain) woman is still in her idda",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p318",
+    "excerpt_ar": "المعتدة البائن في حكم الزوجات"
+   }
+  },
+  {
+   "type": "rajab145",
+   "field": "ties_cut",
+   "gloss": "the remaining ties of the marriage have been cut (by her death)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p319",
+    "excerpt_ar": "لانقطاع علق الزوجية عنه بموتها"
+   }
+  },
+  {
+   "type": "rajab146",
+   "field": "rajiyya",
+   "gloss": "the woman is a revocably divorced wife (rajiyya) in her idda",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p319",
+    "excerpt_ar": "المطلقة الرجعية"
+   }
+  },
+  {
+   "type": "rajab146",
+   "field": "listed_difference",
+   "gloss": "the ruling is one of the points (suwar) the qaida lists on which the rajiyya differs from wives",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p319",
+    "excerpt_ar": "تفارق المطلقة الرجعية الزوجات في صور"
+   }
+  },
+  {
+   "type": "rajab147",
+   "field": "woman_party",
+   "gloss": "the party whose measure is in question is a woman",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p320",
+    "excerpt_ar": "أحكام النساء"
+   }
+  },
+  {
+   "type": "rajab147",
+   "field": "listed_halving_point",
+   "gloss": "the ruling is one of the places (mawadi) the qaida lists where women's rulings are half of men's",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p320",
+    "excerpt_ar": "على النصف من أحكام الرجال في مواضع"
+   }
+  },
+  {
+   "type": "rajab149",
+   "field": "right_holder_determinate",
+   "gloss": "the right is established for a determinate holder (a known heir, owner or creditor)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p320",
+    "excerpt_ar": "الحق الثابت لمعين"
+   }
+  },
+  {
+   "type": "rajab150",
+   "field": "transfer_given_for_cause",
+   "gloss": "the transfer of ownership (gift, waiver, added portion) was made because of a cause, and causes count in such contracts",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p321",
+    "excerpt_ar": "تعتبر الأسباب في عقود التمليكات"
+   }
+  },
+  {
+   "type": "rajab150",
+   "field": "independent_gift_cause",
+   "gloss": "another cause is shown for the gift: a prior custom of gifting between them, independent of the loan or office",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p321",
+    "excerpt_ar": "ممن لم يجر له منه عادة"
+   }
+  },
+  {
+   "type": "rajab151",
+   "field": "hal_supports_claim",
+   "gloss": "the circumstance (hal) agrees with the claim, which is then accepted",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p322",
+    "excerpt_ar": "قبول دعوى ما يوافقها"
+   }
+  },
+  {
+   "type": "rajab151",
+   "field": "hal_belies_claim",
+   "gloss": "the circumstance contradicts the claim, which is then rejected",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p322",
+    "excerpt_ar": "ورد ما يخالفها"
+   }
+  },
+  {
+   "type": "rajab152",
+   "field": "nasab_dabit",
+   "gloss": "she falls under the dabit of prohibition by lineage: one's ascendants, descendants, the descendants of the nearest ascendant, and the immediate daughters of remoter ascendants",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p324",
+    "excerpt_ar": "يحرم على الإنسان أصوله وفروعه، وفروع أصله الأدنى وإن سفلن، وفروع أصوله البعيدة دون بناتهن"
+   }
+  },
+  {
+   "type": "rajab152",
+   "field": "sihr_class",
+   "gloss": "she is in one of the four classes prohibited by affinity",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p324",
+    "excerpt_ar": "حلائل الآباء والأبناء وأمهات النساء وبنات النساء المدخول بهن"
+   }
+  },
+  {
+   "type": "rajab152",
+   "field": "jam_rahm_mahram",
+   "gloss": "she and a wife already held are two women with a mahram kinship between them by lineage (were one male he could not marry the other), so combining them is prohibited",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p324",
+    "excerpt_ar": "فكل امرأتين بينهما رحم محرم يحرم الجمع بينهما بحيث لو كانت إحداهما ذكرا لم يجز له التزوج بالأخرى لأجل النسب دون الصهر"
+   }
+  },
+  {
+   "type": "rajab152",
+   "field": "rada_counterpart",
+   "gloss": "she stands to him by fosterage where by lineage she would fall under one of the three preceding kinds",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p324",
+    "excerpt_ar": "فيحرم به ما يحرم من النسب في الأنواع الثلاثة المتقدمة"
+   }
+  },
+  {
+   "type": "rajab153",
+   "field": "included_with_or_without_child",
+   "gloss": "the ruling is of the first kind: the grandchild is included under \"child\" absolutely, whether the child exists or not",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p325",
+    "excerpt_ar": "يدخل في مسماه مطلقا مع وجود الولد وعدمه"
+   }
+  },
+  {
+   "type": "rajab153",
+   "field": "included_only_absent_child",
+   "gloss": "the ruling is of the second kind: the grandchild is included when the child is absent, not when present",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p326",
+    "excerpt_ar": "ما يدخل فيه عند عدم الولد لا مع وجوده"
+   }
+  },
+  {
+   "type": "rajab153",
+   "field": "intermediate_child_present",
+   "gloss": "the intermediate child (the grandchild's parent) exists",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p325",
+    "excerpt_ar": "مع وجود الولد"
+   }
+  },
+  {
+   "type": "rajab154",
+   "field": "charged_unconsummated_mahr",
+   "gloss": "the one who spoiled the marriage before consummation fixed on the husband the half-mahr (for a bud he had not consummated)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p327",
+    "excerpt_ar": "المفسد قرر هذا النصف على الزوج"
+   }
+  },
+  {
+   "type": "rajab154",
+   "field": "husband_elects_mahr",
+   "gloss": "the husband, his marriage still standing, chooses the mahr in place of his wife (the returning missing husband)",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p328",
+    "excerpt_ar": "فإنه يخير بين زوجته وبين المهر"
+   }
+  },
+  {
+   "type": "rajab154",
+   "field": "wife_bears_exit",
+   "gloss": "the one the exit of the bud would be charged to is the wife herself, whom the majority exclude from the dispute",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p327",
+    "excerpt_ar": "وخصوا هذا الخلاف بمن عدا الزوجة"
+   }
+  },
+  {
+   "type": "rajab155",
+   "field": "intercourse_occurred",
+   "gloss": "he had intercourse with her, which establishes the whole mahr in every case",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p329",
+    "excerpt_ar": "الوطء فيتقرر به المهر على كل حال"
+   }
+  },
+  {
+   "type": "rajab155",
+   "field": "khalwa_occurred",
+   "gloss": "he was alone with her in seclusion (khalwa), the second establishing cause",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p329",
+    "excerpt_ar": "والثاني: الخلوة"
+   }
+  },
+  {
+   "type": "rajab155",
+   "field": "husband_capable_of_intercourse",
+   "gloss": "the one alone with her is one whose like can have intercourse",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p329",
+    "excerpt_ar": "ممن يمكن الوطء بمثله"
+   }
+  },
+  {
+   "type": "rajab155",
+   "field": "death_before_consummation",
+   "gloss": "one of the spouses died before consummation, the third establishing cause",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p330",
+    "excerpt_ar": "الموت قبل الدخول"
+   }
+  },
+  {
+   "type": "rajab156",
+   "field": "sep_by_husband",
+   "gloss": "the separation before consummation comes from the husband's side alone",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p330",
+    "excerpt_ar": "من جهة الزوج وحده"
+   }
+  },
+  {
+   "type": "rajab156",
+   "field": "sep_by_stranger",
+   "gloss": "the separation before consummation comes from a stranger's side alone",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p330",
+    "excerpt_ar": "من جهة أجنبي وحده"
+   }
+  },
+  {
+   "type": "rajab156",
+   "field": "sep_by_wife",
+   "gloss": "the separation before consummation comes from the wife's side alone",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p330",
+    "excerpt_ar": "من جهة الزوجة وحدها"
+   }
+  },
+  {
+   "type": "rajab156",
+   "field": "husband_fasakh_for_her_harm",
+   "gloss": "the separation is an annulment the husband holds for a harm to him (her defect, a lapsed condition), excepted from the husband's kind",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p331",
+    "excerpt_ar": "الفسوخ التي يملكها الزوج لضرر يلحقه"
+   }
+  },
+  {
+   "type": "rajab157",
+   "field": "idda_status_changes",
+   "gloss": "the woman's state changes during the idda (slave to free) or a cause of another idda from the husband (his death) supervenes",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p334",
+    "excerpt_ar": "تغير حال المرأة التي في العدة بانتقالها من رق إلى حرية أو طرأ عليها سبب موجب لعدة أخرى من الزوج"
+   }
+  },
+  {
+   "type": "rajab157",
+   "field": "husband_can_remedy_in_idda",
+   "gloss": "the husband is able to remedy (restore) the marriage within the idda",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p334",
+    "excerpt_ar": "إن كان زوجها متمكنا من تلافي نكاحها في العدة"
+   }
+  },
+  {
+   "type": "rajab157",
+   "field": "sick_husband_ibana",
+   "gloss": "the case is the excepted one: her final separation (ibana) by a husband in his illness",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p334",
+    "excerpt_ar": "إلا ما يستثنى من ذلك من الإبانة في المريض"
+   }
+  },
+  {
+   "type": "rajab158",
+   "field": "first_asl_reinforced",
+   "gloss": "the first-stated of the two conflicting usul is reinforced by what makes it preponderate",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p335",
+    "excerpt_ar": "عمل بالأرجح منهما لاعتضاده بما يرجحه"
+   }
+  },
+  {
+   "type": "rajab158",
+   "field": "second_asl_reinforced",
+   "gloss": "the second-stated of the two conflicting usul is reinforced by what makes it preponderate",
+   "anchor": {
+    "ref": "src:openiti-rajab-shamela21730/v01:p335",
+    "excerpt_ar": "عمل بالأرجح منهما لاعتضاده بما يرجحه"
+   }
+  }
+ ]
+}

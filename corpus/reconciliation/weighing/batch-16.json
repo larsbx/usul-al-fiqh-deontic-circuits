@@ -34,7 +34,8 @@
      "note": "Reported for al-Qāḍī (and al-Shāfiʿī) on this very case. «فأشبه…»: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7feffb72c68e5c38d3b27658fabd91ec915a3e44f6a278339f1518d8f1333db5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f002",
@@ -58,7 +59,8 @@
      "note": "Sharḥ al-Muntahā on the consumed case. «لأنه…»: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "244fcf285ee84837b0918f022682c602370880922c8b7eea91b5d2fe3b2474ce"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f003",
@@ -100,7 +102,8 @@
      "note": "Al-Qāḍī again, given for the better/worse/other-kind mixture but resting on the same claim (mixing = consumption) that decides the same-kind case. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9c4dab936d326484bb23945320cbe44b98f74092e99e1edef1513d6b9f67a519"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004",
@@ -124,7 +127,8 @@
      "note": "Kashshāf's reason for the madhhab ruling on the parallel case. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0f5f6afeb1ec41cf74fb6be8cce0696aba95ebf17a99541aa14594877a754a92"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f006",
@@ -175,7 +179,8 @@
      "note": "Kashshāf's reasons for the madhhab ruling (no breaking) on this case. Stated rationales: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b258d13281630196dd2d9f36fe98d3c314d9ae7ad349465dd9083d1ab715d246"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
@@ -208,7 +213,8 @@
      "note": "Reported for Abū Bakr (and Abū Ḥanīfa) on these facts. «أشبه…»: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8b60ad4d9bc0faed19e2a0a78a52aaaef9e57a15e9713c23684ca667822ba935"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005",
@@ -241,7 +247,8 @@
      "note": "Reads the general ḥadīth as covering thorns by its apparent sense (ẓāhir), so zanni rather than a separate qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f0191653ddd94751bc7bc11c26879fc6c2cdbc51a39b17598d6d595bede64420"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f000",
@@ -274,7 +281,8 @@
      "note": "Al-Mughnī's iḥtimāl of dissolution, the position the case labels al-Mughnī's wajh, carried from the first-tier waqf lessor who dies. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ca98b182031d47f572cef2225a9f36a6025d04297238cdd7da919c40a35a1096"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f009",
@@ -307,7 +315,8 @@
      "note": "Taqī al-Dīn's second iḥtimāl, which he calls nearer to right; it sits in position 1 with Ibn ʿAqīl because both deny the lot. A stated rationale from custom: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "add7794149a3cc9837e8877756b4f8a24e6881a0008216bcd2607ef1f186a97e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
@@ -331,7 +340,8 @@
      "note": "Al-Qāḍī's preferred answer («وأجود ما يقال فيها»). «كما قلنا…»: qiyas. The second iḥtimāl (agreement) is reported with no proof."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e50ea553d4f06230a4e3735d218a877030c7f2be4cde746a7be82e7471ed39f1"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f008",
@@ -364,7 +374,8 @@
      "note": "Al-Mubdiʿ's reason for the wajh that the ruler chooses. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "61e10c2104ab6cd7857f54b8a732a75db079b763d6ec9f19decf56c7eaaf960f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
@@ -397,7 +408,8 @@
      "note": "Al-Mughnī's own iḥtimāl of division; it counts for the divide ruling that al-Qāḍī lists in the need case. qiyas. No source gives a proof for rotation (muhāyaʾa) or for the neediest first."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0531736c498441548b6d374c29d5c8df34c031cf39efa2f899d86420c577eb17"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f011",
@@ -421,7 +433,8 @@
      "note": "Al-Mughnī's reason for the lot (al-Qāḍī), which he calls sounder and closer to the madhhab's uṣūl; he also distinguishes Abū al-Khaṭṭāb's aṣl (a thing in both hands, where each hand covers half). qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "81b53409c3ea9e7fe4a2b4cad0fd00c75b7bcc2856e89999763dc3126a50ee8c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012",
@@ -454,7 +467,8 @@
      "note": "Ibn Rajab's qiyās al-madhhab for validity with a lot, the reading's position; he adds Aḥmad's naṣṣ (Ṣāliḥ's riwāya on three slaves named Faraj) as showing validity despite the shared name, which is an imām's text, not a proof. qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "520a76fe2def3c7de9d9285904efed72ab62ee962fe287d8b363a0d5fe02fc4c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f013",
@@ -496,7 +510,8 @@
      "note": "Ibn Rajab's farq against the analogy to manumission. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "dfd13913d732ccec2d73b7e6c2244f8776dc1af11bd87833456f8ae907aed34e"
   }
  ]
 }

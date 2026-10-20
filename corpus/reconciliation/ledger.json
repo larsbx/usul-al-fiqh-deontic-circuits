@@ -45,7 +45,8 @@
           "who": "al-Mardāwī, al-Taḥbīr",
           "note": "Al-Mardāwī reports a riwāya from Aḥmad (wa-ʿanhu) that the ruling reverts to what it was before, matching the no-residual-jawāz position."
         }
-      ]
+      ],
+      "positions_sha256": "ac35b79ad3eeabf5b76c1f342a727c8b48ee0e4e67b930d997e0c796d74ad241"
     },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f001",
@@ -81,7 +82,8 @@
           "who": "al-Mardāwī, al-Taḥbīr",
           "note": "Al-Taḥbīr names the Ḥanbalī al-Ḥulwānī as holding the verse mujmal (with al-Qāḍī giving both views), a named holder of position 1."
         }
-      ]
+      ],
+      "positions_sha256": "b9c077bcf39240ed04a08d49e5ce30bf5bbb462ea7d17a5720ad20ce9371752d"
     },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
@@ -116,7 +118,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf/Iqnāʿ rule that without an intention of three only one falls, because ordinary speakers do not take the al- as istighrāq."
         }
-      ]
+      ],
+      "positions_sha256": "9cef1942c549db4777e7017429888c502a5602b3834a8c5d60c11d25af69f7d6"
     },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005",
@@ -129,7 +132,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v02:p085",
-          "excerpt_ar": "يجزه على الصحيح من المذهب، وقيل: يجزيه، ذكره القاضي. وهما وجهان ذكرهما",
+          "excerpt_ar": "لم يجزه على الصحيح من المذهب، وقيل: يجزيه، ذكره القاضي. وهما وجهان ذكرهما",
           "position": 1,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -143,7 +146,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf/Iqnāʿ list \"ʿalaykum al-salām\", the indefinite \"salāmun ʿalaykum\" and the other variants among forms that do not suffice, with no dispute mentioned."
         }
-      ]
+      ],
+      "positions_sha256": "a8fd02614ef1cd4293dac13f7a9c63dd80255125b6218df97bb437e66c01424b"
     },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f006",
@@ -178,7 +182,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā rules the present governor is not fixed, so reporting to whoever governs later fulfils the oath."
         }
-      ]
+      ],
+      "positions_sha256": "4a883539c240f2ddb108ea3b9c8ddec17f1fb781ab784d510a9db7eb3b7218d4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f000",
@@ -225,7 +230,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-irādāt",
           "note": "Sharḥ al-Muntahā says the Muntahā mentions the per-jirya riwāya only because it is strong and well known, and that «the madhhab is that running water is like still and its whole is counted»."
         }
-      ]
+      ],
+      "positions_sha256": "c362fbdabcd4def4d78178b2ccdc011373721a747813a75d6dcd41ade7c74f8a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f001",
@@ -252,7 +258,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf confirms the Iqnāʿ ruling (one washing), likening it to moving the vessel in much still water."
         }
-      ]
+      ],
+      "positions_sha256": "baf0a6c1e4fbea58b20bcc40f72825d98074ec55810ffcd2678e9888f8e6103c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f003",
@@ -283,7 +290,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf glosses the Iqnāʿ ruling (ḥinth) and names al-Qawāʿid al-fiqhiyya (Ibn Rajab) as its source."
         }
-      ]
+      ],
+      "positions_sha256": "d824afe45cda5b390833e0bd99a0c73d062cefd34b77ac2f6890c1f14ff106b6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f002",
@@ -311,7 +319,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: in ghusl the outside and inside of the hair must be washed, man or woman, hanging (mustarsil) or not, citing «تحت كل شعرة جنابة»."
         }
-      ]
+      ],
+      "positions_sha256": "d313eee06293d80e509cd0f5649e8468a76478f7ad4a2f69933b70cfa3de326e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f000",
@@ -351,7 +360,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states decisively that whoever catches the rukūʿ without the ṭumaʾnīna with the imam settles himself, follows, and has caught the rakʿa."
         }
-      ]
+      ],
+      "positions_sha256": "bd18540b5f901a4a3cfb3dd1fe2fc709324598ed8623f01f0e0972c31f2ab42e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f001",
@@ -394,7 +404,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn states without dispute that the whole badana is obligatory."
         }
-      ]
+      ],
+      "positions_sha256": "5cbaad2c2c828221058b49be1f91ede252f32e1b9c71535dc7b086aa63e66732"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
@@ -413,7 +424,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "For wiping the whole head at once on the riwāya that the farḍ is the nāṣiya's measure, al-Mardāwī says of the two wujūh that the correct one is that the obligatory part is the nāṣiya's measure (the line ends \"qadr / al-nāṣiya\")."
         }
-      ]
+      ],
+      "positions_sha256": "097328e22102b9cedb8700333afd96ee9be34eaa51b2bad7ec5d8ea25b958e7c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
@@ -433,7 +445,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf justifies accepting an older animal (a musinna for a tabīʿ) as \"paying the obligatory plus an excess that benefits and does no harm\", which treats the excess as extra beyond the farḍ (position 0), though it does not say so in taṣḥīḥ terms. Graded takhrīj: the source rules by implication, not on this masʾala."
         }
-      ]
+      ],
+      "positions_sha256": "ced437a7461e488b80c05177be7500d75f8be9b22ff96e33c8b51fba6527ddb0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f001",
@@ -473,7 +486,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "Al-Inṣāf adds al-Shāriḥ and others to al-Mughnī for \"it does not suffice\", then quotes Ibn Rajab's report that the unqualified statements of most aṣḥāb disagree, giving no taṣḥīḥ of its own."
         }
-      ]
+      ],
+      "positions_sha256": "e35b236e5ff6e28dd29927a19698d73f320a2b453d92a0060ba9b1505e565876"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
@@ -482,7 +496,8 @@
         "ashab"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "65a82df755e1c7f771e8b4f816692c221f11e7895458d324785489e1eb15cf51"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
@@ -491,7 +506,8 @@
         "wajh"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "92ae7b83ec9542a967edd8a91cb2ce71b74343fcb33d7b58f1671a6ab35efb94"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
@@ -518,7 +534,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states decisively that finding water during the prayer or ṭawāf voids them."
         }
-      ]
+      ],
+      "positions_sha256": "515b399a20f57615fc455dddbb13d735cfe4d90767d80c120e8b0322a4b65e76"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f002",
@@ -545,7 +562,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ rules that whether he becomes wealthy or his fear of ʿanat ends, the marriage to the slave woman is not void."
         }
-      ]
+      ],
+      "positions_sha256": "af3df250fedafe3c0af37150de43570f6fb87d968bb6b7b1eba5fa22c534d744"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f003",
@@ -572,7 +590,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā rules that even the muḥdith who finds insufficient water uses it and then performs tayammum."
         }
-      ]
+      ],
+      "positions_sha256": "5dcc5b39c62553af6d528cc2c2a27139b0c45a88e9e159c1dd9bf941fa0d0556"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f002",
@@ -600,7 +619,8 @@
           "note": "Kashshāf/Iqnāʿ rule that every obligatory dhikr, including the tasbīḥ of rukūʿ and sujūd, is like takbīrat al-iḥrām, which the one unable says in his tongue."
         }
       ],
-      "note": "Annotated for its leading example, the takbīr, an obligatory dhikr. The later works rule the recommended dhikr and duʿāʾ separately (not translated, by Aḥmad's naṣṣ), which is a different fact, so that evidence is not graded here."
+      "note": "Annotated for its leading example, the takbīr, an obligatory dhikr. The later works rule the recommended dhikr and duʿāʾ separately (not translated, by Aḥmad's naṣṣ), which is a different fact, so that evidence is not graded here.",
+      "positions_sha256": "248652adb3a503dff979d50d1d932e2ee17d9f434d0c47b983d8b8fa94f5b451"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f004",
@@ -625,7 +645,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p039",
-          "excerpt_ar": "يلزمه) تعلمها بالعربية لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم",
+          "excerpt_ar": "لم يلزمه) تعلمها بالعربية لأن النكاح غير واجب بأصل الشرع فلم يجب تعلم",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
@@ -647,7 +667,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "For the other wajh, al-Inṣāf quotes the two Riʿāyas and al-Ḥāwī al-ṣaghīr that learning is obligatory \"fī aṣaḥḥ al-wajhayn\", put first in al-Hidāya and al-Mustawʿib."
         }
-      ]
+      ],
+      "positions_sha256": "398860367956591cff3e39182f998947505c4bbe4322bda60ff29a4afdec7b87"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
@@ -686,7 +707,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā likewise says the one unable in Arabic need not learn it, while one who knows Arabic must use it."
         }
-      ]
+      ],
+      "positions_sha256": "4dc26618c9cf0a2cbf83b1b3339b89926b0c1947a44a6027fdebcc0e858a6c31"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f002",
@@ -713,7 +735,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn has the hearer substitute the ḥawqala for the ḥayʿala and \"ṣadaqta wa-barirta\" at the tathwīb, without combining."
         }
-      ]
+      ],
+      "positions_sha256": "d57f0b92e2d57d87421f6863edd96aaf09572d48b8ae6f25062df8b1724c5823"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q012.f004",
@@ -748,7 +771,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "Al-Inṣāf reports a riwāya from Aḥmad that the best form is the combined \"kamā ṣallayta ʿalā Ibrāhīma wa-ʿalā āli Ibrāhīm\", which supports the combining view."
         }
-      ]
+      ],
+      "positions_sha256": "6d5675317fce2473e7966ec8e7ad1b80d4029107515d583b8c7e3b629f4dc3c7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
@@ -787,7 +811,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā states decisively that if another person of wet-dream age sleeps in the garment, neither of them owes a ghusl, though neither may follow the other in prayer or stand alone in a row with him."
         }
-      ]
+      ],
+      "positions_sha256": "8c85ae3c51418cb7375e1079451a0483e8d2d8494917bab9c0d55d0be560759f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q015.f004",
@@ -796,7 +821,8 @@
         "takhrij"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "ce3dd2b5312fc731cc7694ffe36a01adcb7501709a77a9e1c8c52ab4ec1d7ebb"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f000",
@@ -836,7 +862,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf grounds the same ruling in 'regard for the time of obligation, as in the other kaffārāt', i.e. position 1."
         }
-      ]
+      ],
+      "positions_sha256": "2666fbb41ad5e88c7bb53793dd7e515633d317cd3aa52e89862baf3e6b25df98"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f001",
@@ -867,7 +894,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ makes the state at obligation decisive in kaffārāt: he is not obliged to move to the original, but may."
         }
-      ]
+      ],
+      "positions_sha256": "257a2ba6d858c537bd6761f6d3613bf405aa6ea64fa339f4f521de092bd8a37a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f003",
@@ -898,7 +926,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "In Taṣḥīḥ al-Furūʿ al-Mardāwī presents 'he may not take her, only the value' first, as the ẓāhir of the Hidāya, Mudhhab, Mustawʿib, Muqniʿ, Mughnī and Sharḥ. The second iḥtimāl (he takes her) follows unweighted."
         }
-      ]
+      ],
+      "positions_sha256": "62f613e128db764275c316a86fc1472a60aabc05d5b82f25c7fdd07934224c88"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f004",
@@ -929,7 +958,8 @@
           "who": "Shams al-Dīn Ibn Qudāma, al-Sharḥ al-Kabīr",
           "note": "al-Sharḥ al-Kabīr repeats the Mughnī: no party is compelled because the right has moved to the value (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "5aa01b6ece8dc974cd2fd8beb7d1d72ebcd298066d529a323d3a870b700732f3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
@@ -943,7 +973,8 @@
         "from": "substitute",
         "farq": "src:openiti-hajjawi-iqna-shamela7360/v04:p086"
       },
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "25a8b761489eadf4a01a4c63f756e5cf04d9ce024eb712762d479b3c00c0ba26"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
@@ -978,7 +1009,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf confirms the seller's right of return once the competing right is dropped."
         }
-      ]
+      ],
+      "positions_sha256": "69a87edf20b10af4d4918a1ce2408bc31e2ee7dff670b42b552ef1601f4eb7b5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
@@ -1009,7 +1041,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf endorses the Iqnāʿ preference for reflection, citing Q 38:29."
         }
-      ]
+      ],
+      "positions_sha256": "3abb065adce43a3e6a47de52220064b7902ac02e536f09d5c5d04ddd1cdd3201"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f005",
@@ -1044,7 +1077,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā also declares multiplicity (taʿaddud) better, alongside the general merit of the most precious slave."
         }
-      ]
+      ],
+      "positions_sha256": "c26eba39ad1e203ba76ce3091ae022386b9fed085a735a546e0eb17870f49ef8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f002",
@@ -1074,7 +1108,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "In Taṣḥīḥ al-Furūʿ al-Mardāwī states that the ḥajj counts only for ḥajjat al-islām, «الصحيح من المذهب» and held by the majority, which is position 1."
         }
-      ]
+      ],
+      "positions_sha256": "e637ce4b24f410dafa8ce8dbd2dd34a4842fa8df22f481e53e4cabc20222756e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
@@ -1112,7 +1147,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā rules decisively that an arrival day falling in Ramaḍān requires qaḍāʾ and kaffāra, i.e. no tadākhul (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "295f51a058487f8a74f688f18064731dc8d2238abb3b2525c7cd2c8a02505245"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f004",
@@ -1147,7 +1183,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā (with the Muntahā matn) holds that the payer is quit of both zakāt and vow if he intends both (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "2352779e73a3445bdb16865781ffc4f543a34547b38fb285b1fc43ad57386d6e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
@@ -1174,7 +1211,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn rules decisively that the delayed ṭawāf done at departure suffices for both, which is position 0."
         }
-      ]
+      ],
+      "positions_sha256": "36c115963997a00119548d6e898cd49f85000fc4f34a8c55fa2d499ee8a91370"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f006",
@@ -1209,7 +1247,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf (with the Iqnāʿ matn) rules decisively that the prayer does not start, giving al-Qāḍī's tashrīk reason, which is position 1."
         }
-      ]
+      ],
+      "positions_sha256": "27fd70615cb956bbe79364040d3925a444c5892852dafbf31ab3cdd756e65130"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f008",
@@ -1244,7 +1283,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn states the two-prostration rule decisively (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "c374d156ae7b279eae5612a033be8665d99662c95c899c7ff2cdf5de1442bf6f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f010",
@@ -1280,7 +1320,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā on the Muntahā matn rules that an obligatory prayer suffices for them (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "b85547aeaff9be32a4ab2a17a11a2d557f163d888215111c859ce69f8d1d1d0e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
@@ -1315,7 +1356,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf (with the Iqnāʿ matn) rules decisively that the one ṭawāf covers both (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "3da9e55766e7c92cd3b703fd7af29198d2e7fed885f6b6ffd5fb3e9c88d40ac9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f014",
@@ -1358,7 +1400,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā confirms the mutual sufficiency (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "4a6d65ca7e038bcd94d70e9a7f0eec9873c3fb875dfed87c09dbe60780920c84"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f001",
@@ -1405,7 +1448,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā (with the Muntahā) likewise exempts the traveller who reaches water as the time runs short: he does tayammum, being unable to use the water within the time."
         }
-      ]
+      ],
+      "positions_sha256": "1e5c1bb341a4c45d62f7b28b59949bcf9e42730a2ba01fccce5cf439d4510ac6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
@@ -1460,7 +1504,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "For the other side, al-Inṣāf says al-Muqniʿ's view (conditions only of performance, so it settles in the dhimma) is held by most aṣḥāb, as al-Majd says, and is decisive in al-Wajīz."
         }
-      ]
+      ],
+      "positions_sha256": "59088dee32cdea1ce4eb9d4b043c2c2be30623e4486e56e108628868fcb881b4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
@@ -1503,7 +1548,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā matn rules decisively that the ḥawl of all runs from completion (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "3780730fef287b4481ba6a6e70a190789c3971c3e7ce33cb765d88b6a4b531db"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f001",
@@ -1530,7 +1576,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā on the Muntahā matn rules early zakāt for future increase invalid «نصا», which is position 1."
         }
-      ]
+      ],
+      "positions_sha256": "1f892a4f283973b561b572abe70d6e1fbd330282277a99e78cc0c3ef74a8814d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f002",
@@ -1557,7 +1604,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā matn rules decisively that separate growth is not returned with the defective item, except for an excuse, which is position 1."
         }
-      ]
+      ],
+      "positions_sha256": "78e5594d91a7d66c4b14a19ca70b14d977d4b0f1c088fe74ebc1b412763b4328"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f001",
@@ -1593,7 +1641,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā on the Muntahā matn rules decisively the child is for the owner of the raqaba (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "afb4a33bec2c342473846affeaf7dd89dda47de197fdd9714e16855e4462e04d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f002",
@@ -1628,7 +1677,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā on the Muntahā matn rules that the child follows but earnings do not, which matches position 0's part-not-earnings analysis."
         }
-      ]
+      ],
+      "positions_sha256": "42e73dfe0775364419b53439984f46843e2c169d43952ad1ed8f776e91f36a03"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f001",
@@ -1663,7 +1713,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn makes prohibition by mixed milk conditional on its qualities remaining, which by implication excludes consumed milk (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "7feffb72c68e5c38d3b27658fabd91ec915a3e44f6a278339f1518d8f1333db5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f006",
@@ -1699,7 +1750,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā matn rules he does not break the oath unless the taste of the sworn-off thing shows (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "b258d13281630196dd2d9f36fe98d3c314d9ae7ad349465dd9083d1ab715d246"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f007",
@@ -1720,7 +1772,8 @@
           "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
           "note": "Taṣḥīḥ al-Furūʿ masʾala 3: of the reports (forbidden unless the lawful is much; only one unlawful in two; ten or fewer), al-Mardāwī declares correct al-Qāḍī's other view, the aṣḥāb's and al-Shaykh's, that Aḥmad's words set no limit and the share must be taken out - «هو الصواب، وهو المذهب» - position 1."
         }
-      ]
+      ],
+      "positions_sha256": "63600180b0472fb309149f42ccc8271a5fab919ea665a6de07993bd4e29be51d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
@@ -1747,7 +1800,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ states decisively that his goods are burned unless he has sold or gifted them, matching the wajh that the sale is valid and the burning lapses."
         }
-      ]
+      ],
+      "positions_sha256": "57323ad1107a0b3a08f3b2b90bece0988245bc3fbfc775c4589d7b8e6e9c54b2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f003",
@@ -1774,7 +1828,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf affirms no liability for the seller because the wall was not his at the time of the fall, recording Ibn ʿAqīl's ḥīla exception only as a quoted dissent."
         }
-      ]
+      ],
+      "positions_sha256": "57d652baae81d9187333ac81630e28d42a7b83f175ae5fd37208f2865daac462"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f004",
@@ -1802,7 +1857,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf states the resale is invalid and adds that this is what the author of the Iqnāʿ decisively held, and that Ibn Rajab agrees if the right is God's."
         }
-      ]
+      ],
+      "positions_sha256": "bc78b693b0fc8ba2ae845ce610d8a9557d6f0b1438b846ec1958c07f2e75d82a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
@@ -1829,7 +1885,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "Ibn Qudāma by contrast holds the zakāt becomes a debt on his dhimma like other debts in every case, i.e. the sale is not undone."
         }
-      ]
+      ],
+      "positions_sha256": "6b116c08b9a60156cf833be5e8e8d9438d490871452a6341bfa5f068085ce76a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f000",
@@ -1838,7 +1895,8 @@
         "ashab"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "3f769e23c7aceb74ace22e36df8421eb67a21b24ff730554ab4e86901913b48b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002",
@@ -1847,7 +1905,8 @@
         "ashab"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "f927f50ad42ccf740e91e49e102cdb8f988a8602ada3085eb0177dfb2bf0f313"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005",
@@ -1885,13 +1944,14 @@
         },
         {
           "ref": "src:openiti-insaf-shamela21609/v03:p554",
-          "excerpt_ar": "يعضد شوكه» ، وقدمه ابن رزين في شرحه، واختار أكثر الأصحاب: جواز قطع ذلك.",
+          "excerpt_ar": "لا يعضد شوكه» ، وقدمه ابن رزين في شرحه، واختار أكثر الأصحاب: جواز قطع ذلك.",
           "position": 0,
           "grade": "jazm",
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf reports that most of the aṣḥāb (al-Qāḍī and his followers, many books, al-Zarkashī: jumhūr) permit cutting harmful thorns, supporting position 0."
         }
-      ]
+      ],
+      "positions_sha256": "f0191653ddd94751bc7bc11c26879fc6c2cdbc51a39b17598d6d595bede64420"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f002",
@@ -1919,7 +1979,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf (and al-Furūʿ) report from al-Fuṣūl that one who kills in defence of another's life or property is liable, a report of Ibn ʿAqīl contrary to the Rajabiyyāt attribution in position 1."
         }
-      ]
+      ],
+      "positions_sha256": "a7dee70f8a07f73e38b51b950191aceec5db8e966f15720dc59a81fe64eb07e2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f003",
@@ -1939,7 +2000,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "The unqualified rule that a coerced oath does not bind is labelled hādhā al-madhhab. Graded qiyās: the taṣḥīḥ is of the premise, the general rule or a cognate masʾala, applied to this farʿ."
         }
-      ]
+      ],
+      "positions_sha256": "a926b6955751a8aa000d6825fe162c822b23cab0d249915c8a8cc27e457bb057"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f001",
@@ -1974,7 +2036,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā states that when the shortfall is beyond the tolerated, they are liable for the entire deficit from the fair price."
         }
-      ]
+      ],
+      "positions_sha256": "17501b61e254cba988780822fd3d2d112cb7cdbbdef55eb2be5e0b38191a636d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
@@ -2009,7 +2072,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ likewise sets liability at the least that bears the name, in kind as meat."
         }
-      ]
+      ],
+      "positions_sha256": "5459db1ed31f948fde064d49d2558edb18faf8d66a6ba56fb1f2967d58ead1ab"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f004",
@@ -2028,7 +2092,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "On the riwāya requiring three recipients, al-Majd derived the two wujūh from the sacrifice, and al-Mardāwī notes the correct view there is liability for the least that bears the name, pointing to position 1. Graded takhrīj: the source rules by implication or by analogy, not on this masʾala."
         }
-      ]
+      ],
+      "positions_sha256": "8553e4b96f99020ef7340692035401de19e1b7f5d503762e159aa8b2e432120c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f000",
@@ -2055,7 +2120,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states he may not reclaim the perished, defective or recovered-lost animal."
         }
-      ]
+      ],
+      "positions_sha256": "5af5da9e9f23e232373af162c173ed2d2ab2e7152f550ffd9199e6ceaa2337c2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f001",
@@ -2090,7 +2156,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: he cannot reclaim it, since it was paid to one entitled and counts as voluntary charity."
         }
-      ]
+      ],
+      "positions_sha256": "6b495fceff83d25e36626b334570ec2263ff3378edbdecd8ca2027e68382e169"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
@@ -2117,7 +2184,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "In al-Inṣāf al-Mardāwī says reclaiming is allowed if the advanced animal still exists."
         }
-      ]
+      ],
+      "positions_sha256": "116d8737d1023f14971fe929f95b53296305d5a68909f04060e4733a4415e11a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
@@ -2144,7 +2212,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "al-Furūʿ states the same restriction to negligence, which al-Mardāwī's Taṣḥīḥ glosses as the like of the better designated animal when lost through his fault. Graded takhrīj: the source rules by implication or by analogy, not on this masʾala."
         }
-      ]
+      ],
+      "positions_sha256": "fd3855f6fcbae98fd6d5d6107bf31962c3a7ca1b7844d6375daf8bc363f415cd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
@@ -2153,7 +2222,8 @@
         "wajh"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "79179969ef299c1ce580ea040f73a0c839923b8141d1834ca800e6897ada1b25"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f000",
@@ -2167,7 +2237,8 @@
         "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003"
       },
       "naskh": null,
-      "note": "Abū al-Barakāt's farq: a non-binding contract does not displace a binding one."
+      "note": "Abū al-Barakāt's farq: a non-binding contract does not displace a binding one.",
+      "positions_sha256": "453aeb9fc9f6b2005f4564273110eb125acd321e8ccdb9decb8f90445023847a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
@@ -2177,7 +2248,8 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "The binding refinement keeps the deposit liable (deposit and loan alike non-binding, «وفرق صاحب المحرر بينهما»), but a jamʿ must land on the prevailing side, and the later authors' ẓāhir of Aḥmad outranks it here: a residue."
+      "note": "The binding refinement keeps the deposit liable (deposit and loan alike non-binding, «وفرق صاحب المحرر بينهما»), but a jamʿ must land on the prevailing side, and the later authors' ẓāhir of Aḥmad outranks it here: a residue.",
+      "positions_sha256": "69c613a58871f1f7bc845148100867eca0463bb51241159f6f0e859b1a05325a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f006",
@@ -2191,7 +2263,8 @@
         "farq": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f003"
       },
       "naskh": null,
-      "note": "«لأن الشرط يفسد فيصير وجوده كعدمه»: the void sale binds nothing."
+      "note": "«لأن الشرط يفسد فيصير وجوده كعدمه»: the void sale binds nothing.",
+      "positions_sha256": "1ffc1014a0da07c2dcf8fc19121a8aae62767fefdb1b73d19851eb42bb0aba37"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
@@ -2227,7 +2300,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf states decisively that on the master's death before payment he is freed by tadbīr, the kitāba lapses and what is in his hand goes to the master's heirs."
         }
-      ]
+      ],
+      "positions_sha256": "3e35e9e225c8037228042390207c1d31a238b6cda5464e622195cd47f625971a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
@@ -2263,7 +2337,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: valid and becomes ijāra «تغليبا للمعنى», like a gift with known reward becoming a sale, i.e. position 0."
         }
-      ]
+      ],
+      "positions_sha256": "38cdf3a7faf2e1e1ceba419f020bb129c7b6cee35468086160200c51d220ed6f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f001",
@@ -2290,7 +2365,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf states decisively that saying 'take it as muḍāraba, all profit yours/mine' makes the muḍāraba fāsid (with the usual wage in the first form and nothing in the second), i.e. position 1."
         }
-      ]
+      ],
+      "positions_sha256": "b7ef4cce3674f798c9cecae6ffb7cd818e93141273d0725a136411fdc859cb2b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f002",
@@ -2317,7 +2393,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: an unspecified ijāra of money is not valid as ijāra and becomes a loan in the recipient's dhimma; for makīl, mawzūn and fulūs «وعلى قياس ما سبق تكون قرضا»."
         }
-      ]
+      ],
+      "positions_sha256": "c57b021ed9ebbff7c408b1138d06fd6f4110921955940a2fb10f7038be2ddf03"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004",
@@ -2352,7 +2429,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn states decisively that a sale is not concluded with the word salam/salaf (citing al-Talkhīṣ), i.e. against position 0's 'valid as a sale'."
         }
-      ]
+      ],
+      "positions_sha256": "7b627dfd0652cd7193563a241d6471f7cf1c5f83c6d4d2509976da22981ed662"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f005",
@@ -2387,7 +2465,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā states decisively that «أنت علي حرام ... أعني به الطلاق» is divorce (like «ما أحل الله علي حرام أعني به الطلاق»), unlike «كظهر أمي أعني به الطلاق»."
         }
-      ]
+      ],
+      "positions_sha256": "ed5a9a9e306ddf9b653845a4fd3350553fe0ae2ed13d25a91fcab4a20f7bb150"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
@@ -2415,7 +2494,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: it is an iqāla in the word of ṣulḥ, since iqāla is valid with any word conveying its meaning: position 0."
         }
-      ]
+      ],
+      "positions_sha256": "1a23bd63f084db15983b886f13e80e64fdcd337e2bfb17051a2378db952a05f3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f001",
@@ -2450,7 +2530,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf (on the Iqnāʿ) states decisively that ijāra is concluded with the word of sale added to the benefit («بعتك نفعها»), citing Taṣḥīḥ al-Furūʿ's taṣḥīḥ."
         }
-      ]
+      ],
+      "positions_sha256": "7956610cef3bb3665c72b65383a83e16d99730ae96440d5b77f141bb0411bbdc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q039.f002",
@@ -2489,7 +2570,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "Al-Mardāwī in Taṣḥīḥ al-Furūʿ marks 'rajʿa does not occur' with nakaḥtuhā/tazawwajtuhā (treated as kināya) «وهو الصحيح»."
         }
-      ]
+      ],
+      "positions_sha256": "158fecce91d5727e0f7ac86477712cd6bc9173b88ae0172133c08f9d67b2eaa2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
@@ -2532,7 +2614,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā (on the Muntahā matn): by the mere purchase of the replacement for the waqf it becomes waqf, like the replacement of a sacrifice."
         }
-      ]
+      ],
+      "positions_sha256": "e1a66c724902ab7ec4126c94cc73ce40199716036b5d37fc05262d074a869c9b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
@@ -2559,7 +2642,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: the waqf replacement becomes waqf by the purchase «كبدل أضحية و) بدل (رهن أتلف)», taking the sacrifice replacement as the settled base case."
         }
-      ]
+      ],
+      "positions_sha256": "f37d8b89390906e329ae679d3162d44fb4d7c9cec75ef06e33efc2bdd3473026"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f001",
@@ -2595,7 +2679,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf adopts the Muntahā ruling that the sale object after faskh is an amāna (not guaranteed), matching position 1's outcome. The muʿtamad's ground is the trust of the hand, Ibn Rajab's fourth wajh, but its ruling is position 1's."
         }
-      ]
+      ],
+      "positions_sha256": "024ae101b4e10ffe80d49784b2a914a8411fd136aee418c3baee4d9273678953"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
@@ -2604,7 +2689,8 @@
         "takhrij"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "0d1624043b593dc2cc3d2bbf533af34d15d542d8829d9a96607beadc3eb44035"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f001",
@@ -2647,7 +2733,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ states decisively that the share is owned by the demand, even before he receives it, provided he can pay the price, so ownership comes before the price is paid. On the shufʿa, the record's leading example."
         }
-      ]
+      ],
+      "positions_sha256": "dd84fbe9c342711a75ca7e3262805dcbe353adcbed5bda5c7e8213b2d938955c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f001",
@@ -2695,7 +2782,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ allows the sale of a settled debt to the debtor and then rules decisively «ولا يصح بيعه لغيره»."
         }
-      ]
+      ],
+      "positions_sha256": "d48cb6b53220b9c5c367ada30a268e74982f742625b6f1a2aa66332a0822a95f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f002",
@@ -2747,7 +2835,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "Iqnāʿ matn: the sale is void and the kitāba valid by its share."
         }
-      ]
+      ],
+      "positions_sha256": "bd5f3ec912541b0162bed006c387dc0545b9ac857251aa1da94c4b84aa31c879"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
@@ -2767,7 +2856,8 @@
           "who": "Ibn Qudāma, al-Mughnī",
           "note": "al-Mughnī: the self-styled agent's claim for his principal is not heard before his agency is proven; a cognate ruling for position 1, not the same masʾala."
         }
-      ]
+      ],
+      "positions_sha256": "0ae5946e63ce6731ce0df79309d0a7ba6d1ee0692b337ea909b70944b50033ea"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f004",
@@ -2803,7 +2893,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā/Muntahā: agency in divorcing a woman he will marry is invalid, explicitly contrasting 'إن تزوجت فلانة فقد وكلتك في طلاقها' with the valid conditional manumission agency."
         }
-      ]
+      ],
+      "positions_sha256": "5f6abc62fe164b1834313a1704df0bc01b503f7bbdb381bbffba66d54f977224"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f006",
@@ -2839,7 +2930,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ rules decisively that when the master of an umm walad dies, she must observe istibrāʾ (one period, by the following faṣl), not a free woman's ʿidda."
         }
-      ]
+      ],
+      "positions_sha256": "38fbc271bcb769e098b6db98d732f003a9dc0c68f684cf66337f72c0f7d7bbd2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
@@ -2859,7 +2951,8 @@
           "who": "Ibn Rajab's fāʾida, quoted in al-Inṣāf",
           "note": "Where the free woman alone would suffice him: only her marriage valid, «وهو ظاهر كلام القاضي في المجرد. وهو أصح», a single author's preference."
         }
-      ]
+      ],
+      "positions_sha256": "8b4d108bd7bb35e71fda2eaaa1d59ff04aa6f44dc4e57a7172cde2e302699b35"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f001",
@@ -2895,7 +2988,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā likewise: menses beginning during intercourse with immediate withdrawal still entails the kaffāra, since withdrawal is intercourse - position 0."
         }
-      ]
+      ],
+      "positions_sha256": "476c8b9a37aaa34d1b5c4f732e6d6b9df48914126f724caf2dc1bfed934e5526"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f004",
@@ -2941,7 +3035,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn lists perishing among the cases where the arsh is fixed («تعين الأرش»)."
         }
-      ]
+      ],
+      "positions_sha256": "8f4c584194db075299a6f3bfdedea80b776f353dbdd4b88ab2f1d29db161c9b8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f005",
@@ -2988,7 +3083,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā: not valid with the perishing of the thing sold 'absolutely' (i.e. even though iqāla is faskh), because the object of annulment is gone - position 1."
         }
-      ]
+      ],
+      "positions_sha256": "d8b347045e1d789599d799359cc777875ebec9189d1a41b5dedc2550dbd406e7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q061.f001",
@@ -3036,7 +3132,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn: if the delegator is a qāḍī whose authority lapses by death etc., they (his deputies) are removed - position 1."
         }
-      ]
+      ],
+      "positions_sha256": "f72947c326fb94bd9c44cc126037c3d9c9733af99cf7d1fbfce78f8aa861b6dd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
@@ -3083,7 +3180,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "Iqnāʿ: the seller must be owner or authorised at the time of offer and acceptance «ولو لم يعلم», e.g. he thought it another's and it turned out he had been made agent."
         }
-      ]
+      ],
+      "positions_sha256": "788522b215c7a5377b6c28cc42a56d6d2ad64a820ced0f2401461d3d94756002"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
@@ -3114,7 +3212,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn: acceptance of agency is valid by any word or act of the agent «ولو لم يعلم بها» — the base case of the takhrīj resolved as effective."
         }
-      ]
+      ],
+      "positions_sha256": "42a7d87d8335de835f22f2581d467dd63c858650067942cdbb3f4b8b3909e1cb"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f003",
@@ -3149,7 +3248,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "Al-Mardāwī reports Ibn Mufliḥ's tawjīh of the opposing wajh, which he glosses as non-liability (the sentence continues 'الضمان' on the next line): position 1."
         }
-      ]
+      ],
+      "positions_sha256": "3f8aec8d707b1b2a7554911783208406f01209550157a56749cbaf9d5b4de9b0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f000",
@@ -3196,7 +3296,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "Taṣḥīḥ al-Furūʿ (under the ibrāʾ masʾala) states the correct view on selling the presumed-living legator's property is validity."
         }
-      ]
+      ],
+      "positions_sha256": "a1d61d100545117792611e06e6aaa7cf8bd8837a118d17e941444c2640ff6fc4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f001",
@@ -3231,7 +3332,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "The Muntahā («وكذا عكسها») and its sharḥ rule that the wife taken for a stranger is divorced, since she was addressed with explicit words."
         }
-      ]
+      ],
+      "positions_sha256": "fb5005fd9e3bfe280fc92cb1ff34548d872fa6f8fcea0027b64bd6ca2cc5ebc6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f002",
@@ -3275,7 +3377,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf marks as the madhhab the general rule this case rests on: explicit ʿitq takes effect even without intention, which gives freed (it does not name the 'yā ḥurra' case itself). Graded qiyās: the taṣḥīḥ is of the premise, the general rule or a cognate masʾala, applied to this farʿ."
         }
-      ]
+      ],
+      "positions_sha256": "2c0516fdd4d8600b1385e860b606f5027e7ef5dc20a17ec18dba29fcf1fe1b66"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f003",
@@ -3322,7 +3425,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf reports that al-Nāẓim judged the release invalid and that al-Ḥārithī called this «أظهر». These named choices support position 0 but are outweighed by the muʿtamad."
         }
-      ]
+      ],
+      "positions_sha256": "8f117b76877f2dc8ffb54c98292d780a501a5c3ed13c63224d71b12748de4c57"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f005",
@@ -3365,7 +3469,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā glosses the ruling as invalid, likening her to the muʿtadda and the murtāba."
         }
-      ]
+      ],
+      "positions_sha256": "3ac6970f339482a7f53eef376fe2c9451d835f5f09857b93b622ab522d76ead8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f006",
@@ -3374,7 +3479,8 @@
         "takhrij"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "97244e47222a45fc6bc5fa32ce53c81f99337d600eec0c0b160e42ccac31492e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f007",
@@ -3409,7 +3515,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ likewise voids the sale of a runaway even to one able to recover it, which covers the case."
         }
-      ]
+      ],
+      "positions_sha256": "ae2b5cc90aba5e01b65cb06e0b7965f8730ff2d8321cc3c0f5c0bdcb01f0b8ad"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f001",
@@ -3436,7 +3543,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The Iqnāʿ and Kashshāf rule decisively in the parallel case that the wuḍūʾ is valid and only the prayer made under doubt is repeated. Graded takhrīj: the source rules by implication or by analogy, not on this masʾala."
         }
-      ]
+      ],
+      "positions_sha256": "d723a3f0145fcbaeab5333694521ece067ddb65eefbb085ea561bdd83394a44a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
@@ -3445,7 +3553,8 @@
         "takhrij"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "336f4375f1fc79cf9787e5acf13b5f84da4f8f29fd0018b99d575af49fac0fcd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
@@ -3481,7 +3590,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Riʿāya al-kubrā gives priority (qaddamahu) to invalidity, adding a holder not already listed for position 0."
         }
-      ]
+      ],
+      "positions_sha256": "e7d84070c73581ab44ae8572c05cec270f60b18e4866d5330aea534876634e01"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
@@ -3524,7 +3634,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "al-Furūʿ gives the same ruling, by agreement."
         }
-      ]
+      ],
+      "positions_sha256": "f18ecb0fef2ba33e8be14d63c3396604ab9c58e11a9e1bd43a4a5a10905839ad"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f001",
@@ -3559,7 +3670,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "Aḥmad (Ibn Manṣūr's report) treats recourse for ransoming a captive as agreed by all («أليس كلهم قال يرجع»)."
         }
-      ]
+      ],
+      "positions_sha256": "6cdcd1aa998dedc0c8171e711b2842b4538b2ab57a7013782b4cea40cc52147f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
@@ -3605,7 +3717,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf notes that al-Furūʿ gives priority to recourse with intention, following al-Mughnī."
         }
-      ]
+      ],
+      "positions_sha256": "e38cfd9111bf0b82047763ec6c4ac062a8aea86197d3ddd5e08d65ef2953b17c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f007",
@@ -3640,7 +3753,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf on spending on a stray animal (the same naṣṣ in al-Mughnī) marks recourse with intention as the madhhab. Graded qiyās: the taṣḥīḥ is of the premise, the general rule or a cognate masʾala, applied to this farʿ."
         }
-      ]
+      ],
+      "positions_sha256": "84bf97a2b79ebdbcbf31fa65b6a128eeb1beb7fa662dd77b52a63cd319bd2fd1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f009",
@@ -3675,7 +3789,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf gives the same ruling, because rebuilding is not owed by the owner, unlike feeding an animal."
         }
-      ]
+      ],
+      "positions_sha256": "f29fe41d66250174423e109dc97dd5828c909f003497d4add8d24564890938b5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f011",
@@ -3713,7 +3828,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf (al-Rahn) gives the same ruling for the fled cameleer's animals."
         }
-      ]
+      ],
+      "positions_sha256": "82ee99143324c04a2c9a1f7b2bf7330ddaadf44769fde6b0fd1f2d8bb90f6249"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f012",
@@ -3732,7 +3848,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "For the owner who does the fled musāqī's work without the judge's permission but intending recourse, al-Inṣāf marks recourse as «الصحيح»."
         }
-      ]
+      ],
+      "positions_sha256": "e0d3d4fdf11dd417e4b2360a0acef6cb2a1bcd44ab3c3125e7a2638529a8d0d8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f003",
@@ -3779,7 +3896,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf notes that al-Furūʿ reads al-Muwaffaq's and al-Majd's words as implying no compulsion, a minority holding for position 1."
         }
-      ]
+      ],
+      "positions_sha256": "ec2b083d2338fc5a80f5242244aa21ed042e9385495794863a47920ba18d7e4b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009",
@@ -3814,7 +3932,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf gives the same, since the Lawgiver did not bound a suckling by time."
         }
-      ]
+      ],
+      "positions_sha256": "807f831cfb35a266ebc05139d276638a1b78596330e18dcf6618035b76e3ceb9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f004",
@@ -3857,7 +3976,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf gives the reason Ibn Rajab gives: the fiṭr would rest on one witness."
         }
-      ]
+      ],
+      "positions_sha256": "7e29dd9271173436988099d55193b01454c2589938aadfe86e4fab816d350c90"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f006",
@@ -3900,7 +4020,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "The opposing wajh (no tarāwīḥ, confined to the naṣṣ: Abū Ḥafṣ and the Tamīmīs) is stated decisively by Ibn ʿAbdūs and al-Munawwar and corrected in Taṣḥīḥ al-Muḥarrar."
         }
-      ]
+      ],
+      "positions_sha256": "f07301c451f4cf63e447a5c476b41293c22d4b2f0f5dff43f3c50e6922f75380"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f007",
@@ -3909,7 +4030,8 @@
         "takhrij"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "76428e3aed5d996fed73f40965e28f999a96865d480d6cd65dce5cb93fec315f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008",
@@ -3952,7 +4074,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "Ibn ʿAbdūs chose that the divorce falls, joining al-Sāmarrī (already listed) in position 1."
         }
-      ]
+      ],
+      "positions_sha256": "f3decd21bff089fe81451efceebbd13cfd476a2072afb19932a8942b5186df5a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f010",
@@ -3987,7 +4110,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states the same ruling without dispute."
         }
-      ]
+      ],
+      "positions_sha256": "ca6bbef0f4553fb2cddee1d4092f66bac3ad4201e1aa96410132f9f323c1b568"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f014",
@@ -3996,7 +4120,8 @@
         "wajh"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "5ca5efbdff0142379f92b4cac11c003cc4c704f52e31f3c64ea8a919b0b0d406"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f018",
@@ -4043,7 +4168,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "The Muntahā and its sharḥ state decisively that the one freed by lot does not inherit, since the lot has no role in lineage."
         }
-      ]
+      ],
+      "positions_sha256": "6b13e1a2399d75c7ffa6ef592d102f02c1f5abf6e021f01cce7c547f5146d832"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f019",
@@ -4078,7 +4204,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā (the preceding words: \"man ṭallaqa muʿayyana wa-nasiyahā aw mubhama thumma māta qabla qurʿa iʿtadda kull\") makes every non-pregnant wife observe the longer term."
         }
-      ]
+      ],
+      "positions_sha256": "006a88b9cccc841988cc81f1edabad9a3f75c7d9669ad936760d9ba4ea5f67f6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020",
@@ -4087,7 +4214,8 @@
         "wajh"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "05118f0c0048a63200d8c04977e9e3e59443fbd720aee1918fd1387a7eaa1ac7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
@@ -4123,7 +4251,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: the value of fruit is made heavier on its thief as deterrence, «بخلاف غيرها» - doubling is specific to fruit, position 1."
         }
-      ]
+      ],
+      "positions_sha256": "52390290927c2f0bfd6e1262b2c6bd35dff0ae3306d3c9d635580009181ddd7a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
@@ -4166,7 +4295,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā reads the Muntahā's general rule as covering this case: not impure, though what is thought impure is disliked as a precaution (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "3bfda1f44bd95980ee379344c808a7570658af26c2f3bb5b6cb1dcb698bd92a5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
@@ -4185,7 +4315,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "Under masʾala 25, after quoting Ibn Rajab's two wujūh, al-Mardāwī rules that the creature is pure because that is the aṣl ('al-ṣawāb'), i.e. position 1."
         }
-      ]
+      ],
+      "positions_sha256": "40a6067d9e5cef8f5bffaa64760de0a17449a0e7831a9d763ef66e18ff392839"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
@@ -4227,7 +4358,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā also rules street mud thought impure to be pure by the aṣl, with only small amounts excused once its impurity is certain (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "6447b24f2f4a91b79c3107ad5bfc09a3b709450c6e3a99d76e9e1ee7d5fc0f71"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
@@ -4262,7 +4394,8 @@
           "who": "Ibn Qudāma, al-Mughnī",
           "note": "al-Mughnī permits tayammum where repeated burial is doubted, because purity is the aṣl and is not removed by doubt (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "aa406f4ef8ea1fc5db8dff890a1ebf1dd8cb9b2341fb9b06f9198802235fc940"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
@@ -4299,7 +4432,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf extends this to Magians and idolaters as well: pure if their state is unknown, because the aṣl of purity is not removed by doubt (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "df2d664798df15a930da8663f7a10f0d23601ceb610f6c05608562d73c460048"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
@@ -4335,7 +4469,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf gives karāha as the position Majmaʿ al-Baḥrayn puts first, records a riwāya of no karāha, and notes that Ibn Abī Mūsā likened a child's garment to a Magian's (no prayer before washing)."
         }
-      ]
+      ],
+      "positions_sha256": "c7d95f3a64b5f5f1f43e1b552fff988b206f13a1cb7b71b60bf9285637ba4335"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
@@ -4371,7 +4506,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The Iqnāʿ and Kashshāf rule that one builds on certainty even when the one in doubt is the imam, which rejects riwāya 3's distinction (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "2b12818d6d9f22949adeb5751186d5b7afb9574693a8dcd97a51f36d69cf47e3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028",
@@ -4398,7 +4534,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The Iqnāʿ and Kashshāf rule that the certain count is taken, and that the word of two upright witnesses is accepted as in prayer (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "d0de508a07bc0bd67f4b0644a3ec1f2fa7e083c2de1d4d4086e7e624b42bbfca"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
@@ -4441,7 +4578,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā rules that in disputes over the amount of the ṣadāq the husband's (or his heir's) word is taken with his oath, as the next line states (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "f2c9ac772c140aaf5c60d8429b6eb5e695922a71c8324b3a819794cda86f8002"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031",
@@ -4476,7 +4614,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states decisively that the wife's word is taken (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "b1905c155287fcc5fd8a92b76725c39144ad968bd85797587f6a741aec1d83d2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
@@ -4489,7 +4628,8 @@
       ],
       "jam": null,
       "naskh": null,
-      "note": "Ibn Rajab gives the better reason for the second wajh."
+      "note": "Ibn Rajab gives the better reason for the second wajh.",
+      "positions_sha256": "b720babf1a334c0efeffa3e8f19fc4cc93593530b5eaf2ce952734bf565e9193"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
@@ -4524,7 +4664,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā names the father, brother and uncle explicitly: their denial of knowing the defect is accepted, because the aṣl is ignorance (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "60bc83a1e88020af335f9106e8dbdcdb42a90c0f88bc13a36e2d987a9a47d67f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
@@ -4559,7 +4700,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "The third view in al-Inṣāf, forbidding eating when the ḥarām is the majority, was stated decisively by Ibn al-Jawzī in al-Minhāj. It supports position 1 but is not the madhhab."
         }
-      ]
+      ],
+      "positions_sha256": "0a10f3c8d37ac7d48c34687c25c939c8db269876eb2802d99db306347d6f34d2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
@@ -4594,7 +4736,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "The Muntahā and its sharḥ rule the hadd, because the aṣl is freedom (position 1)."
         }
-      ]
+      ],
+      "positions_sha256": "5d48412a7f56c6a8fd96b21fc4b8d648099dc59726cb67b7ee5aae6f1e2219e2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037",
@@ -4629,7 +4772,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: without an intention of three, one divorce falls, because ordinary speakers do not take the article as exhaustive (position 0)."
         }
-      ]
+      ],
+      "positions_sha256": "e774ca41302053610131c6523b7a87570d21eec748a9556009b69257f6b0ee21"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
@@ -4664,7 +4808,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā rules three for a threefold repetition with wa- (with no ta'kīd accepted when there is a conjunction), i.e. position 1."
         }
-      ]
+      ],
+      "positions_sha256": "39e1f83f2805435e51c58cdc30a574e8c9eb6377fb4251f4c3f9d3467931ac2a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
@@ -4701,7 +4846,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf on the Iqnāʿ: the lot view, fronted in al-Riʿāya al-Kubrā; the joint sale with division by value is cited only as «وقيل» with al-Qāḍī's «أجود ما يقال فيه» - position 0."
         }
-      ]
+      ],
+      "positions_sha256": "e50ea553d4f06230a4e3735d218a877030c7f2be4cde746a7be82e7471ed39f1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
@@ -4739,7 +4885,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn states the lot without a dispute."
         }
-      ]
+      ],
+      "positions_sha256": "0531736c498441548b6d374c29d5c8df34c031cf39efa2f899d86420c577eb17"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f011",
@@ -4766,7 +4913,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ rules decisively that when two describe it together (or the second before handover) lots are drawn and the winner swears and takes it."
         }
-      ]
+      ],
+      "positions_sha256": "81b53409c3ea9e7fe4a2b4cad0fd00c75b7bcc2856e89999763dc3126a50ee8c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f012",
@@ -4791,7 +4939,7 @@
         },
         {
           "ref": "src:openiti-insaf-shamela21609/v07:p231",
-          "excerpt_ar": "تصح، للإبهام. واختار الصحة في غير الأولى: القاضي، وأبو بكر في الشافي،",
+          "excerpt_ar": "لا تصح، للإبهام. واختار الصحة في غير الأولى: القاضي، وأبو بكر في الشافي،",
           "position": 1,
           "grade": "ashab",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -4821,7 +4969,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: invalid, since specifying the beneficiary is a condition, unless a qarīna shows a specific one was meant - position 0."
         }
-      ]
+      ],
+      "positions_sha256": "520a76fe2def3c7de9d9285904efed72ab62ee962fe287d8b363a0d5fe02fc4c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f013",
@@ -4856,7 +5005,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn states decisively that the heirs give him whichever slave they wish."
         }
-      ]
+      ],
+      "positions_sha256": "dfd13913d732ccec2d73b7e6c2244f8776dc1af11bd87833456f8ae907aed34e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f014",
@@ -4916,7 +5066,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā rules decisively that disputing heirs swear and there is no mutual inheritance."
         }
-      ]
+      ],
+      "positions_sha256": "302ca6e4719e3b991369411026d9daa58c8cc0861af40c9df19b1633f5073d83"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f017",
@@ -4964,7 +5115,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ likewise rules annulment by the ḥākim, with a lot only over the half-mahr."
         }
-      ]
+      ],
+      "positions_sha256": "a3ac2e8d01484a082792233197dd6e16dfb1b5b9232e11e62574e5d43a5ba8f3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
@@ -5003,7 +5155,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "The Muntahā and its sharḥ likewise give her one by lot, since the uncertainty is slight and the lot can fix it."
         }
-      ]
+      ],
+      "positions_sha256": "2098f36c4924d786536b0ec82cedc1eacdb4f9bcddf429589c18fc0f152d290b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
@@ -5033,7 +5186,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p338",
-          "excerpt_ar": "تعتقا) أي الأمتان (ولم تطلقا) أي المرأتان، لأن الحانث منهما ليس معلوما",
+          "excerpt_ar": "لم تعتقا) أي الأمتان (ولم تطلقا) أي المرأتان، لأن الحانث منهما ليس معلوما",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
@@ -5047,7 +5200,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states the same: no divorce, but intercourse forbidden unless one believes the other wrong; a lot comes in only if one buys the other's slave-girl."
         }
-      ]
+      ],
+      "positions_sha256": "28112545e7c1026840eb0a7b00b8d574b63f641818cc47ce47c8858637f8b10e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
@@ -5082,7 +5236,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf/Iqnāʿ rule decisively for the wife: the two claims cancel out and the default is no rajʿa."
         }
-      ]
+      ],
+      "positions_sha256": "f58360836170e8251ca8d16ae779f5bd4959d12d1b57d3c0c77d5332501e2446"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f031",
@@ -5103,7 +5258,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v06:p457",
-          "excerpt_ar": "يوجد قافة) أو اختلف قائفان (ضاع نسبه في أحد الوجهين) . وهو المذهب. نص",
+          "excerpt_ar": "لم يوجد قافة) أو اختلف قائفان (ضاع نسبه في أحد الوجهين) . وهو المذهب. نص",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -5125,7 +5280,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states the loss of lineage decisively."
         }
-      ]
+      ],
+      "positions_sha256": "c011795d66d807a49dd0bceb833c7415cdc1cb8082a1c529e6afee2589852949"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f034",
@@ -5160,7 +5316,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā states decisively that killing and enslaving them are forbidden."
         }
-      ]
+      ],
+      "positions_sha256": "cd256a99b5046df9bcf16156bc0f90f2e636ed0df689ce7b819b068d7f8a2107"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f035",
@@ -5169,7 +5326,8 @@
         "ashab"
       ],
       "jam": null,
-      "naskh": null
+      "naskh": null,
+      "positions_sha256": "ca6bce26371f38641b329d00a88387e1713a62e2123fe265c933644e488d0b88"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f036",
@@ -5198,7 +5356,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "In Taṣḥīḥ al-Furūʿ (masʾala 6) al-Mardāwī says he inclines to the lot, since his liability is certainly engaged by a divorce or a ẓihār; this is a personal ikhtiyār, not a taṣḥīḥ of the madhhab."
         }
-      ]
+      ],
+      "positions_sha256": "da260656352ce037952e204cdf0ba6607dd11f18371d8126a2c808a6d9c879d9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f040",
@@ -5226,7 +5385,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The Iqnāʿ matn states the voidness of both contracts without a dispute."
         }
-      ]
+      ],
+      "positions_sha256": "46a4129c6a5d6affba86cf562ea25b583d8910f4febce6b8a5929865a2258bed"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f045",
@@ -5261,7 +5421,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf rules for the lot, citing the naṣṣ of Ṣāliḥ and Ḥanbal and al-Furūʿ's taqdīm, while noting that he gave halving earlier in the chapter."
         }
-      ]
+      ],
+      "positions_sha256": "f1512c2ab50463343cc83584fe750e7428e59c98d1c826a032a4252238236466"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f046",
@@ -5290,7 +5451,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The Muntahā rules decisively that equal proofs conflict and fall away; then the parties swear and halve what is in their hands, with a lot for what is in no one's hand or a third party's."
         }
-      ]
+      ],
+      "positions_sha256": "5019ba6552871ac070281fbd899d5c2e7d321eda2f690c218565b66b86f7f4a2"
     }
   ]
 }

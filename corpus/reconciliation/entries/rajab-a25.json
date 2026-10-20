@@ -45,7 +45,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ, citing Ḥarb's report of the rukhṣa."
         }
-      ]
+      ],
+      "positions_sha256": "9054c4b072acda98bd6af0ffb2b1c0972d2c9a7e1f2bb107951eadd0b637443a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f002",
@@ -81,7 +82,8 @@
           "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
           "note": "Al-Mardāwī's «قلت»: an author's preference, after reporting that the qāʿida leaves the khilāf open."
         }
-      ]
+      ],
+      "positions_sha256": "93716728bde11f574585ad4e75863552d09a204c6bd3a9828934340c56c273c8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
@@ -117,7 +119,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn, adding «ويسجد لذلك»."
         }
-      ]
+      ],
+      "positions_sha256": "181246fb21369947e6268f58d02041633f1666eef1512f0fcd11ff3d18e7de12"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f004",
@@ -153,7 +156,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ: «لأن الأصل عدم وجوبه»."
         }
-      ]
+      ],
+      "positions_sha256": "d7b41cc98816c228642773207c92bf594085222602b5b582b969c6645c3bf12f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f005",
@@ -189,7 +193,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Qāḍī and Ibn ʿAqīl: payment due before receipt, the wealth being in his hand constructively."
         }
-      ]
+      ],
+      "positions_sha256": "7c60a79491ebdc1c4755aec46640a34da9d32192ceebda640356c33276cf4fff"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f006",
@@ -225,7 +230,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn: fiṭra for the runaway «لا إن شك في حياته»."
         }
-      ]
+      ],
+      "positions_sha256": "d9e949321ed924adfc32015ff44c6aab5d37f10224f1b758c45fac4d28b13ca7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f007",
@@ -253,7 +259,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn, adding that it suffices once he is shown to have been alive."
         }
-      ]
+      ],
+      "positions_sha256": "5c02187793c5d09a4f6265688d1571f46df7a0bd79170c42a39a2be5edab3f70"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f008",
@@ -297,7 +304,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "33af762aac5242ef603a086eac5179b80ce4268b3c164881cd9524597344aaa7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009",
@@ -325,7 +333,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn, of the item after its loss; same exception."
         }
-      ]
+      ],
+      "positions_sha256": "6b46cc39a0f882f8a4628791b2e728e191260f62c1b5c4a7c1c20ac47ddf9ed7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f010",
@@ -361,7 +370,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "1658b3ae79333a62caa471cd553eadcc5814eea0766b95d60cc4bd9d8d409189"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f011",
@@ -389,7 +399,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn, after the ʿunna is established."
         }
-      ]
+      ],
+      "positions_sha256": "ceb1bed1163202325a80cac63d6fdb0256d45dbd50ec845db6a95968c73434fb"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f012",
@@ -417,7 +428,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ: «لأن الأصل بقاء النكاح»."
         }
-      ]
+      ],
+      "positions_sha256": "652da081193e2b46e8bf8198773fad55fa1cca89b1c071f9224fb168c0594c3d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f013",
@@ -461,7 +473,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "d990647dc93280db3c048cd98be95e5208d7645e4e630f44b70c0e938af1aa1b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
@@ -478,7 +491,7 @@
       "evidence": [
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p060",
-          "excerpt_ar": "ولو كان الشرط عدميا نحو لقد فعلت كذا أو إن لم أفعله اليوم فمضى وشك في فعله لم تطلق وله الوطء",
+          "excerpt_ar": "ولو كان الشرط عدميا نحو لقد فعلت كذا أو إن لم أفعله اليوم فمضى وشك في فعله لم تطلق وله الوطء - لكن قال الموفق ومن تابعه الورع التزام الطلاق",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
@@ -492,7 +505,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "0fee3ec822e3cf8b96dfa3340434207658c83705133dfd5e05fba8256247c040"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f015",
@@ -520,7 +534,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn, «إذا لم تكن بينة»."
         }
-      ]
+      ],
+      "positions_sha256": "4bc86afcd9a52d60b98e0169e95de9aca6944e7acd7e20d05feaaae907e33571"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
@@ -548,7 +563,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ: «لأن الأصل عدم لزومه له»."
         }
-      ]
+      ],
+      "positions_sha256": "b3c59d0fe1dee9000073f70da983c1048bec21a14cced061ba0f8c5695a425a0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f017",
@@ -576,7 +592,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "d1477dc8511b80f4116bb247b4146d3e8ea5503649b07aec4886e4cd6fadfeab"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f018",
@@ -612,7 +629,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "The sharḥ: «لأن الأصل عدم الأمان»."
         }
-      ]
+      ],
+      "positions_sha256": "dbe99a6829169dd21ad3897be29c1df93da602f26041bf3656d37f8118fc0e51"
     }
   ]
 }

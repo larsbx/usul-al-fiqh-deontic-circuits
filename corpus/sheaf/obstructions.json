@@ -1,19 +1,19 @@
 {
   "summary": {
-    "cases": 598,
-    "obstructed": 598,
-    "records": 675,
-    "records_within_reading": 609,
-    "conflicts_of_khitab": 303,
+    "cases": 684,
+    "obstructed": 684,
+    "records": 775,
+    "records_within_reading": 699,
+    "conflicts_of_khitab": 329,
     "records_within_reading_by_sort": {
-      "dalala": 60,
+      "dalala": 72,
       "effect": 84,
-      "epistemic": 52,
-      "judgement": 303,
+      "epistemic": 65,
+      "judgement": 329,
       "procedure": 23,
-      "takyif": 87
+      "takyif": 126
     },
-    "positions_outside_reading": 36
+    "positions_outside_reading": 40
   },
   "cases": [
     {
@@ -567,6 +567,178 @@
       "encoder": "combining_forms",
       "sort": "judgement",
       "question": "aspect:permitted",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f000",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f001",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f002",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f003",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f005",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f006",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f007",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f009",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f011",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 3,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f012",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f013",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f014",
+      "encoder": "a26_ihala_on_known_cause",
+      "sort": "epistemic",
+      "question": null,
       "positions": 2,
       "outside": [],
       "obstructions": [
@@ -1261,6 +1433,118 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f001",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f002",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f003",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f004",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f010",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f012",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f013",
+      "encoder": "a26_refused_idhn_lapses",
+      "sort": "judgement",
+      "question": "wadi:shart",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f000",
       "encoder": "right_after_transfer",
       "sort": "judgement",
@@ -1909,6 +2193,112 @@
       "encoder": "contract_by_kinaya",
       "sort": "judgement",
       "question": "wadi:validity",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f005",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "sort": "judgement",
+      "question": "wadi:sabab",
+      "positions": 3,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f007",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "sort": "judgement",
+      "question": "wadi:sabab",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f010",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "sort": "judgement",
+      "question": "wadi:sabab",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f011",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "sort": "judgement",
+      "question": "wadi:sabab",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f013",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "sort": "judgement",
+      "question": "wadi:sabab",
+      "positions": 4,
+      "outside": [
+        3
+      ],
+      "obstructions": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f014",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "sort": "judgement",
+      "question": "wadi:sabab",
       "positions": 2,
       "outside": [],
       "obstructions": [
@@ -3103,6 +3493,184 @@
       ]
     },
     {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f001",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f003",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f004",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f005",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f006",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f007",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f008",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f011",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f013",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 3,
+      "outside": [
+        2
+      ],
+      "obstructions": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f016",
+      "encoder": "a27_specific_agent_in_general_object",
+      "sort": "dalala",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001",
       "encoder": "eating_without_permission",
       "sort": "judgement",
@@ -3655,6 +4223,705 @@
       "encoder": "cut_sale_left_to_ripen",
       "sort": "judgement",
       "question": "wadi:validity",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f003",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f004",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f007",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "sort": "takyif",
+      "question": null,
+      "positions": 3,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f009",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f015",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f016",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f017",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f018",
+      "encoder": "rajab_a28_growth_follows_hand",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f019",
+      "encoder": "rajab_a28_growth_in_nonownership_contract",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f021",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f022",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f023",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f024",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f025",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f026",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f027",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f028",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f029",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f030",
+      "encoder": "rajab_a28_right_reaches_growth",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f003",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f004",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f005",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f008",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f009",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f010",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f011",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f012",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f013",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f014",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f016",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f017",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f018",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f019",
+      "encoder": "a29_haml_hukm_before_separation",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
+      "encoder": "rajab_a30_use_right_for_need",
+      "sort": "judgement",
+      "question": "aspect:obligatory",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f002",
+      "encoder": "a29_four_kinds_of_milk",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f004",
+      "encoder": "a29_four_kinds_of_milk",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f007",
+      "encoder": "a29_four_kinds_of_milk",
+      "sort": "takyif",
+      "question": null,
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f008",
+      "encoder": "a29_four_kinds_of_milk",
+      "sort": "takyif",
+      "question": null,
+      "positions": 4,
+      "outside": [
+        2,
+        3
+      ],
+      "obstructions": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f001",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "sort": "judgement",
+      "question": "wadi:validity",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f005",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "sort": "judgement",
+      "question": "wadi:validity",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f011",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "sort": "judgement",
+      "question": "wadi:validity",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f017",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "sort": "judgement",
+      "question": "wadi:validity",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f001",
+      "encoder": "a31_rajab88_road_use",
+      "sort": "judgement",
+      "question": "aspect:permitted",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f002",
+      "encoder": "a31_rajab88_road_use",
+      "sort": "judgement",
+      "question": "aspect:permitted",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f003",
+      "encoder": "a31_rajab88_road_use",
+      "sort": "judgement",
+      "question": "aspect:permitted",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f004",
+      "encoder": "a31_rajab88_road_use",
+      "sort": "judgement",
+      "question": "aspect:permitted",
+      "positions": 2,
+      "outside": [],
+      "obstructions": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f006",
+      "encoder": "a31_rajab88_road_use",
+      "sort": "judgement",
+      "question": "aspect:permitted",
       "positions": 2,
       "outside": [],
       "obstructions": [

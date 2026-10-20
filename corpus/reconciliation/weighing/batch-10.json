@@ -25,7 +25,8 @@
      "note": "Ibn ʿAqīl's second possibility (no ḥadd). A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ce3dd2b5312fc731cc7694ffe36a01adcb7501709a77a9e1c8c52ab4ec1d7ebb"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f002",
@@ -49,7 +50,8 @@
      "note": "Ibn Rajab gives this as the ground of Abū al-Ḥusayn's view (validity). A stated rationale, not a text: qiyas. None of the listed works argues for this view; al-Mubdiʿ (v01:p043) only reports it."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fe27d9eebf3a605b145657bc7ad1a9ac03ebf4fe216e456d97ca32e3f53d6233"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
@@ -73,7 +75,8 @@
      "note": "The extracted wajh for insufficiency is a qiyās (awlā) from the following farʿ; Ibn Rajab himself notes it is answered by ghalabat al-ẓann on the time. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "336f4375f1fc79cf9787e5acf13b5f84da4f8f29fd0018b99d575af49fac0fcd"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f004",
@@ -106,7 +109,8 @@
      "note": "al-Mubdiʿ attaches Abū Bakr's denial to this very conditional formula («إن كان سالما ... وإلا فنفل»); in al-Mughnī the same reason is given for «زكاة مالي الغائب أو تطوع». A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3dfc7b773549884f5c59763c5e321f9ee25bcd027856fa4259ea33cdafcc0b68"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f005",
@@ -148,7 +152,8 @@
      "note": "Cited for sufficiency on the same formula, on the riwāya on which Ṣāliḥ's report is built (al-Inṣāf v03:p295). Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "bd229d03a56d004f9154538a8b4d13e8e1ba762ad5f5877fd743f54a0dd75ea3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
@@ -181,7 +186,8 @@
      "note": "Given for al-Qāḍī's view (not valid), also al-Shāfiʿī's naṣṣ. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8ad8e581485363e6f633a350edd551c0b5101adc7aaf05634e9034e3a4338474"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001",
@@ -214,7 +220,8 @@
      "note": "al-Qāḍī's second view, which al-Mardāwī calls «الصواب». A takhrīj and analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9f974c8460ab24ad3c211c39da033ae449b3f292e8ca23b86b000558b1bd3d96"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f002",
@@ -233,7 +240,7 @@
      "tier": "qiyas",
      "dalil": "Qiyās on the zakāt collector, who takes for his work even when rich.",
      "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p180",
-     "excerpt_ar": "يحتج أكل) منه (بمعروف) إلحاقا له بعامل الزكاة",
+     "excerpt_ar": "لم يحتج أكل) منه (بمعروف) إلحاقا له بعامل الزكاة",
      "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
      "note": "Sharḥ al-Muntahā's reason for the nāẓir eating without need and without a stipulation. Qiyas."
     },
@@ -247,7 +254,8 @@
      "note": "The ṣaḥābī's own stipulation in his waqf, with no ṣaḥābī reported against it, read by Aḥmad as making the stipulation the ground of eating. fatwaSahabi; the denial rests on the mafhūm of Aḥmad's wording, which Ibn Rajab draws out."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "585214571efafc245ca1c3960976bf601f822708f4495636e322e28c9ce208af"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f003",
@@ -280,7 +288,8 @@
      "note": "Not a sharʿī proof of its own but an inference from the imām's analogy (the agent as aṣl), drawn by al-Qāḍī; recorded as the only stated ground for this position. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2ee22e3d91b77b0291671619ec44da037c20390445417bb87303512a02ad2f8b"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f004",
@@ -322,7 +331,8 @@
      "note": "Cited in al-Kāfī for the riwāya that only fallen fruit is permitted. Connected marfūʿ āḥād: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b7c8a9befa15101b6f16e66a2842f2ecd0d8d5245b436f61865ec3bbd7d0f86d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000",
@@ -364,7 +374,8 @@
      "note": "al-Sharḥ al-Kabīr, same passage: the returning owner may also claim from the heir who consumed it. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "017d2f4e4d5e901697302b6a709ec37daeb645048e5c9c8938c75984b5a400e6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
@@ -388,7 +399,8 @@
      "note": "Ibn Rajab's statement of the ground of the riwāya of liability. A stated rationale resting on Aḥmad's naṣṣ: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "dc7beaaf15608c1ca61faf36d136cca5c9378ac11ea3259fc55a7eaf730a2fb1"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f004",
@@ -403,7 +415,8 @@
      "note": "Sharḥ al-Muntahā for no liability after spending a bequest to an unknown legatee who then proves it. A stated rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6094564a283bef06d0399ff204d92186ef71e0672bd889f425d1b455c4011220"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f005",
@@ -427,7 +440,8 @@
      "note": "Ibn Rajab's extracted wajh; aṣl the executor's case, carried over to the heirs executing the bequest. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ce364257f29f852c423f7e048c6419d3e2160b12814908031311e77cea919cb2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f011",
@@ -460,7 +474,8 @@
      "note": "Taqī al-Dīn's ground for one divorce only. A linguistic and customary rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6d3dde59106aa3723b0f83d21d10150fe3d2f6f38c3e71d66fac4ec6a26f7959"
   }
  ]
 }

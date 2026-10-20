@@ -70,6 +70,11 @@
                   "type": "string",
                   "minLength": 1,
                   "description": "What the source adds to the position beyond its ruling, which stays an encoder code where the encoder has one."
+                },
+                "outside": {
+                  "type": "string",
+                  "pattern": "\\S",
+                  "description": "Explicit explanation for a reported textual ruling outside the encoder output domain; preserves a range gap, not an accepted derivation."
                 }
               }
             }

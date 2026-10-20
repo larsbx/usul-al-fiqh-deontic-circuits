@@ -565,7 +565,8 @@ import Usul
 #check @Usul.applies
 #check @Usul.Hukm.σ
 #check @Usul.Hukm.σ_involutive
-#check @Usul.Hukm.valence
+#check @Usul.Hukm.fil
+#check @Usul.Hukm.tark
 #check @Usul.Wad.sabab
 #check @Usul.Wad.shart
 #check @Usul.Wad.mani

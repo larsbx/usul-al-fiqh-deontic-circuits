@@ -16,11 +16,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "The listed positive nullifiers; hopes the other acts do not require wudu."
+          "ruling": "The listed positive nullifiers; hopes the other acts do not require wudu.",
+          "outside": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty («بلا رجاء»: dropping Aḥmad's hedge «أرجو», which marks a ẓann; not a tarjīḥ)."
         },
         {
           "who": "Ishaq",
-          "ruling": "Agrees with all, without the qualification of hope."
+          "ruling": "Agrees with all, without the qualification of hope.",
+          "outside": "Hair attachment, concession certainty and consumption transformation cannot enumerate nullifiers. Ishaq agrees, with a stronger expression of certainty («بلا رجاء»: dropping Aḥmad's hedge «أرجو», which marks a ẓann; not a tarjīḥ)."
         }
       ],
       "routing_label": false,
@@ -53,11 +55,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "Follow imam or prostrate on a man's back, with the stated restart condition."
+          "ruling": "Follow imam or prostrate on a man's back, with the stated restart condition.",
+          "outside": "SCOPED guard: inability permits a substitute. It does not choose the back, decide imam-following, or determine restart; these remain rule:crowded_jumua_procedure."
         },
         {
           "who": "Ishaq",
-          "ruling": "Agrees with Ahmad."
+          "ruling": "Agrees with Ahmad.",
+          "outside": "SCOPED guard: inability permits a substitute. It does not choose the back, decide imam-following, or determine restart; these remain rule:crowded_jumua_procedure."
         }
       ],
       "routing_label": false
@@ -140,11 +144,13 @@
       "positions": [
         {
           "who": "Sufyan (reported)",
-          "ruling": "A triple divorce removes the stated breach condition."
+          "ruling": "A triple divorce removes the stated breach condition.",
+          "outside": "OathBody models flows, not persistence across divorce (ṭalāq). Sufyan's reported triple-divorce cancellation must remain attributed."
         },
         {
           "who": "Ahmad; Ishaq agrees",
-          "ruling": "Triple and single are alike: the condition persists until breach."
+          "ruling": "Triple and single are alike: the condition persists until breach.",
+          "outside": "OathBody models flows, not persistence across divorce (ṭalāq). Sufyan's reported triple-divorce cancellation must remain attributed."
         }
       ],
       "routing_label": false,
@@ -320,15 +326,18 @@
       "positions": [
         {
           "who": "Ishaq",
-          "ruling": "Valid seclusion entails full mahr, subject to stated impediments."
+          "ruling": "Valid seclusion entails full mahr, subject to stated impediments.",
+          "outside": "Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule."
         },
         {
           "who": "Ibn Masud (reported)",
-          "ruling": "Half mahr until intercourse, even if seated between her legs."
+          "ruling": "Half mahr until intercourse, even if seated between her legs.",
+          "outside": "Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule."
         },
         {
           "who": "Ibn Abbas (reported)",
-          "ruling": "Half mahr until seclusion."
+          "ruling": "Half mahr until seclusion.",
+          "outside": "Half/full outputs in concurrentShare concern concurrent causes (asbāb), not khalwa. Preserve reported Ibn Masud and Ibn Abbas distinctions; do not collapse the evidence into a single mahr rule."
         }
       ],
       "routing_label": false,
@@ -347,11 +356,13 @@
       "positions": [
         {
           "who": "Ishaq",
-          "ruling": "The listed marriages do not restore eligibility for the former husband."
+          "ruling": "The listed marriages do not restore eligibility for the former husband.",
+          "outside": "Property disposal without a judge is unrelated. The reports distinguish minor husband, slave permission and wali; no marriage-validity vocabulary exists."
         },
         {
           "who": "al-Hasan (reported)",
-          "ruling": "The slave is not a qualifying husband even in the reported permission variant."
+          "ruling": "The slave is not a qualifying husband even in the reported permission variant.",
+          "outside": "Property disposal without a judge is unrelated. The reports distinguish minor husband, slave permission and wali; no marriage-validity vocabulary exists."
         }
       ],
       "routing_label": false,
@@ -413,11 +424,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "Without illness or other cause, a year from cessation: nine months plus three."
+          "ruling": "Without illness or other cause, a year from cessation: nine months plus three.",
+          "outside": "Excused mistakes do not calculate idda. Preserve the unattributed contrary indefinite-waiting position without inventing its school."
         },
         {
           "who": "Unspecified people (قوم)",
-          "ruling": "Wait indefinitely until menstruation returns."
+          "ruling": "Wait indefinitely until menstruation returns.",
+          "outside": "Excused mistakes do not calculate idda. Preserve the unattributed contrary indefinite-waiting position without inventing its school."
         }
       ],
       "routing_label": false,
@@ -438,11 +451,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "After intercourse following manumission, no option whether informed or uninformed."
+          "ruling": "After intercourse following manumission, no option whether informed or uninformed.",
+          "outside": "Choosing one option is only a partial Boolean cue. The source requires husband status, intercourse and knowledge, and records a real disagreement; do not declare this fully expressible."
         },
         {
           "who": "Sufyan",
-          "ruling": "If uninformed she may swear and obtain the option; if informed she has no option."
+          "ruling": "If uninformed she may swear and obtain the option; if informed she has no option.",
+          "outside": "Choosing one option is only a partial Boolean cue. The source requires husband status, intercourse and knowledge, and records a real disagreement; do not declare this fully expressible."
         }
       ],
       "routing_label": false,
@@ -474,11 +489,13 @@
       "positions": [
         {
           "who": "Ahmad",
-          "ruling": "A dhimmi may be addressed with a kunya."
+          "ruling": "A dhimmi may be addressed with a kunya.",
+          "outside": "General-wording scope does not resolve this attributed disagreement. Visiting, handshaking and condolences are separate contexts within the unit."
         },
         {
           "who": "al-Awzai",
-          "ruling": "Do not give the Christian a kunya."
+          "ruling": "Do not give the Christian a kunya.",
+          "outside": "General-wording scope does not resolve this attributed disagreement. Visiting, handshaking and condolences are separate contexts within the unit."
         }
       ],
       "routing_label": false,

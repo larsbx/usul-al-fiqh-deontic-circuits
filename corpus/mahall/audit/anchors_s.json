@@ -1,0 +1,962 @@
+[
+ {
+  "label": "amma.aqd_fasid",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "من أحدث في أمرنا هذا ما ليس فيه فهو رد",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "General rule that innovations contrary to the Law are void; an invalid contract falls under it."
+ },
+ {
+  "label": "amma.haml",
+  "ref": "src:tanzil-quran-simple#Q065:006",
+  "excerpt_ar": "وإن كن أولات حمل فأنفقوا عليهن",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Verse orders maintenance of pregnant divorcees until they deliver, naming the pregnancy directly."
+ },
+ {
+  "label": "amma.jahl",
+  "ref": "src:tanzil-quran-simple#Q002:286",
+  "excerpt_ar": "ربنا لا تؤاخذنا إن نسينا أو أخطأنا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Explicitly asks not to be taken to account for forgetting or mistake."
+ },
+ {
+  "label": "amma.jahl",
+  "ref": "src:tanzil-quran-simple#Q033:005",
+  "excerpt_ar": "وليس عليكم جناح فيما أخطأتم به",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "States there is no sin in what is done by mistake as opposed to intent."
+ },
+ {
+  "label": "amma.yad",
+  "ref": "src:openiti-ibnmaja-shamela1198",
+  "excerpt_ar": "على اليد ما أخذت حتى تؤديه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "States the taker's hand is liable for what it took until returned."
+ },
+ {
+  "label": "atima.janin_mudhakka",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "ذكاة الجنين ذكاة أمه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Rules that the slaughter of the mother suffices for the foetus."
+ },
+ {
+  "label": "atima.kalb",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "من اقتنى كلبا إلا كلب ماشية أو ضاريا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Rules on keeping a dog, excepting herding and hunting dogs."
+ },
+ {
+  "label": "atima.mayta",
+  "ref": "src:tanzil-quran-simple#Q005:003",
+  "excerpt_ar": "حرمت عليكم الميتة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Explicitly prohibits carrion."
+ },
+ {
+  "label": "atima.sayd",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "وإن وقع في الماء فلا تأكل",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Rules on game shot that falls into water: do not eat it."
+ },
+ {
+  "label": "buyu.araya",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "رخص في بيع العرايا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Reports the Prophet's licence for the ʿarāyā sale."
+ },
+ {
+  "label": "buyu.bay_fuduli",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "أعطاه دينارا يشتري له به شاة فاشترى له به شاتين فباع إحداهما بدينار",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "ʿUrwa sold one sheep without authority and the Prophet approved, a direct case of unauthorised dealing."
+ },
+ {
+  "label": "buyu.bay_gharar",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "أن النبي صلى الله عليه وسلم نهى عن بيع الغرر",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prohibits the gharar sale by name."
+ },
+ {
+  "label": "buyu.bay_ribaa_makka",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "وهل ترك لنا عقيل من رباع",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Speaks of ʿAqīl having disposed of/inherited the Makka dwellings (ribāʿ), the case itself."
+ },
+ {
+  "label": "buyu.bay_ribaa_makka",
+  "ref": "src:tanzil-quran-simple#Q022:025",
+  "excerpt_ar": "سواء العاكف فيه والباد",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "Verse on equal access to the Sacred Mosque; used broadly for Makka's dwellings but does not name sale or hire."
+ },
+ {
+  "label": "buyu.bay_usul_wa_thimar",
+  "ref": "src:openiti-ibnmaja-shamela1198",
+  "excerpt_ar": "من باع نخلا قد أبرت، فثمرتها للذي باعها، إلا أن يشترط المبتاع",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Rules who owns the fruit of pollinated palms when the trees are sold."
+ },
+ {
+  "label": "buyu.iqala",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "من أقال مسلما أقاله الله",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Promises reward for granting rescission (iqāla) of a sale."
+ },
+ {
+  "label": "buyu.jaiha",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "أمر بوضع الجوائح",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "The Prophet ordered remission for crop calamities (jawāʾiḥ)."
+ },
+ {
+  "label": "buyu.khiyar_ayb",
+  "ref": "src:openiti-tirmidhi-shamela7895",
+  "excerpt_ar": "الخراج بالضمان",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "General maxim 'yield follows liability'; the return-for-defect case falls under it (chapter heading frames it)."
+ },
+ {
+  "label": "buyu.ziyada_fil_bay",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "زن وأرجح",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Orders the weigher to weigh and give extra in the sale."
+ },
+ {
+  "label": "daman.daman",
+  "ref": "src:tanzil-quran-simple#Q012:072",
+  "excerpt_ar": "ولمن جاء به حمل بعير وأنا به زعيم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "'I am its guarantor' names suretyship for the promised reward."
+ },
+ {
+  "label": "dawa.dawa",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "لو يعطى الناس بدعواهم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Rules that claims alone are not accepted and the oath is on the defendant."
+ },
+ {
+  "label": "diyat.janin",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "في جنين امرأة من بني لحيان سقط ميتا بغرة عبد أو أمة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Judgment of a ghurra for a miscarried foetus."
+ },
+ {
+  "label": "faraid.tarika",
+  "ref": "src:tanzil-quran-simple#Q004:011",
+  "excerpt_ar": "من بعد وصية يوصي بها أو دين",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Inheritance shares come only after bequests and debts, naming the estate's debts."
+ },
+ {
+  "label": "ghasb.daman_mutlafat",
+  "ref": "src:tanzil-quran-simple#Q002:194",
+  "excerpt_ar": "فمن اعتدى عليكم فاعتدوا عليه بمثل ما اعتدى عليكم",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "General rule of equivalent reprisal; liability for destroyed property falls under it."
+ },
+ {
+  "label": "hajj.hady",
+  "ref": "src:tanzil-quran-simple#Q022:036",
+  "excerpt_ar": "والبدن جعلناها لكم من شعائر الله",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Names the sacrificial camels as rites of God with rulings on eating and feeding."
+ },
+ {
+  "label": "hajj.hajj_an_ghayr",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "أفأحج عنه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Woman asks to perform hajj for her incapable father and is told yes."
+ },
+ {
+  "label": "hajj.hajj_islam",
+  "ref": "src:tanzil-quran-simple#Q003:097",
+  "excerpt_ar": "ولله على الناس حج البيت من استطاع إليه سبيلا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Imposes the pilgrimage on those able to undertake it."
+ },
+ {
+  "label": "hajj.sayd_haram",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "ولا ينفر صيدها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prohibits disturbing the game of the Makka sanctuary."
+ },
+ {
+  "label": "hajj.tawaf",
+  "ref": "src:tanzil-quran-simple#Q022:029",
+  "excerpt_ar": "وليطوفوا بالبيت العتيق",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Commands circumambulation of the Ancient House."
+ },
+ {
+  "label": "hajr.abd_madhun",
+  "ref": "src:tanzil-quran-simple#Q016:075",
+  "excerpt_ar": "ضرب الله مثلا عبدا مملوكا لا يقدر على شيء",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "A parable of the slave who has no power over anything; concerns slave capacity generally, not the licensed slave."
+ },
+ {
+  "label": "hawala.hawala",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "فإذا أتبع أحدكم على ملي فليتبع",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Orders the creditor referred to a solvent party to accept the transfer."
+ },
+ {
+  "label": "hiba.atiyyat_marid",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "الثلث والثلث كثير",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "Limits bequest to a third; gifts in the final illness are assimilated to it but not named."
+ },
+ {
+  "label": "hiba.hiba",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "العائد في هبته كالكلب يقيء ثم يعود في قيئه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Condemns taking back a gift."
+ },
+ {
+  "label": "hiba.ibra",
+  "ref": "src:tanzil-quran-simple#Q002:280",
+  "excerpt_ar": "وأن تصدقوا خير لكم إن كنتم تعلمون",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Remitting a debt to an insolvent debtor as charity is better."
+ },
+ {
+  "label": "hiba.ruju_hiba",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "إلا الوالد فيما يعطي ولده",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Forbids revoking a gift except a father's gift to his child."
+ },
+ {
+  "label": "hudud.rajm",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "والرجم في كتاب الله حق على من زنى إذا أحصن",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "ʿUmar affirms stoning for the married fornicator."
+ },
+ {
+  "label": "hudud.shurb_khamr",
+  "ref": "src:tanzil-quran-simple#Q005:090",
+  "excerpt_ar": "إنما الخمر والميسر والأنصاب والأزلام رجس",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Declares wine abomination and commands avoiding it."
+ },
+ {
+  "label": "idda.idda",
+  "ref": "src:tanzil-quran-simple#Q002:228",
+  "excerpt_ar": "والمطلقات يتربصن بأنفسهن ثلاثة قروء",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Sets three qurūʾ as the divorcee's waiting period."
+ },
+ {
+  "label": "idda.iddat_ama",
+  "ref": "src:openiti-tirmidhi-shamela7895",
+  "excerpt_ar": "طلاق الأمة تطليقتان وعدتها حيضتان",
+  "verdict": "names",
+  "weak_hint": true,
+  "note": "Sets the slave-woman's ʿidda at two menses; Tirmidhī calls it gharīb via an otherwise unknown narrator."
+ },
+ {
+  "label": "idda.iddat_wafat",
+  "ref": "src:tanzil-quran-simple#Q002:234",
+  "excerpt_ar": "يتربصن بأنفسهن أربعة أشهر وعشرا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Sets four months and ten days after a husband's death."
+ },
+ {
+  "label": "idda.sukna_mutadda",
+  "ref": "src:tanzil-quran-simple#Q065:001",
+  "excerpt_ar": "لا تخرجوهن من بيوتهن",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Forbids expelling divorcees from their homes during the ʿidda."
+ },
+ {
+  "label": "idda.umm_walad",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "عدة المتوفى عنها أربعة أشهر وعشر يعني أم الولد",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "ʿAmr b. al-ʿĀṣ gives the umm walad's ʿidda (gloss 'yaʿnī umm al-walad' in text)."
+ },
+ {
+  "label": "ihya.tariq",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "إياكم والجلوس بالطرقات",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prescribes the rights of the road for those who sit in it."
+ },
+ {
+  "label": "ijara.ijara",
+  "ref": "src:openiti-ibnmaja-shamela1198",
+  "excerpt_ar": "أعطوا الأجير أجره قبل أن يجف عرقه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Orders paying the hired worker promptly."
+ },
+ {
+  "label": "ijara.ujra",
+  "ref": "src:tanzil-quran-simple#Q002:233",
+  "excerpt_ar": "وعلى المولود له رزقهن وكسوتهن بالمعروف",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "Father's duty of provision and clothing for nursing mothers; relevant to wages for nursing but not a wage rule as such."
+ },
+ {
+  "label": "iqrar.iqrar",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "فإن اعترفت فارجمها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Stoning made conditional on her admission."
+ },
+ {
+  "label": "itq.mukatab",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "المكاتب عبد ما بقي عليه من مكاتبته درهم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "The mukātab remains a slave while any of his contract is unpaid."
+ },
+ {
+  "label": "janaiz.dafn",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "أيهم أكثر أخذا للقرآن",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "In context, ordering the martyrs in the grave by Qurʾān knowledge and burying them in their blood; excerpt alone is only the question."
+ },
+ {
+  "label": "janaiz.salat_janaza",
+  "ref": "src:openiti-ibnmaja-shamela1198",
+  "excerpt_ar": "على امرأة ماتت في نفاسها فقام وسطها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Describes where the imam stands in the funeral prayer over a woman."
+ },
+ {
+  "label": "jihad.ghanima",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "نهى رسول الله صلى الله عليه وسلم عن بيع الغنائم حتى تقسم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prohibits selling spoils before division."
+ },
+ {
+  "label": "jihad.ghanima",
+  "ref": "src:tanzil-quran-simple#Q008:041",
+  "excerpt_ar": "واعلموا أنما غنمتم من شيء",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Names war spoils and their fifth."
+ },
+ {
+  "label": "jihad.ghulul",
+  "ref": "src:tanzil-quran-simple#Q003:161",
+  "excerpt_ar": "ومن يغلل يأت بما غل يوم القيامة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Threatens whoever steals from the spoils."
+ },
+ {
+  "label": "jihad.jizya",
+  "ref": "src:tanzil-quran-simple#Q009:029",
+  "excerpt_ar": "حتى يعطوا الجزية عن يد وهم صاغرون",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Names the jizya to be paid by the People of the Book."
+ },
+ {
+  "label": "jihad.khums",
+  "ref": "src:tanzil-quran-simple#Q008:041",
+  "excerpt_ar": "فأن لله خمسه وللرسول ولذي القربى واليتامى والمساكين وابن السبيل",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Allocates the fifth of the spoils."
+ },
+ {
+  "label": "jihad.nafal",
+  "ref": "src:tanzil-quran-simple#Q008:001",
+  "excerpt_ar": "يسألونك عن الأنفال",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Names the anfāl and assigns them to God and the Messenger."
+ },
+ {
+  "label": "jinayat.abd_jani",
+  "ref": "src:openiti-ibnqudama-mughni-shamela8463",
+  "excerpt_ar": "تعلقت الجناية برقبته فكانت مقدمة على حق المرتهن لا نعلم في هذا خلافا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Ijmāʿ report that an injuring pledged slave's liability attaches to his person ahead of the pledgee."
+ },
+ {
+  "label": "jinayat.jirah",
+  "ref": "src:tanzil-quran-simple#Q005:045",
+  "excerpt_ar": "والجروح قصاص",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Wounds are subject to retaliation."
+ },
+ {
+  "label": "jinayat.qisas",
+  "ref": "src:tanzil-quran-simple#Q002:178",
+  "excerpt_ar": "كتب عليكم القصاص في القتلى",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prescribes retaliation for killing."
+ },
+ {
+  "label": "jinayat.qisas_atraf",
+  "ref": "src:tanzil-quran-simple#Q005:045",
+  "excerpt_ar": "والجروح قصاص",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Wounds are subject to retaliation, i.e. retaliation below life."
+ },
+ {
+  "label": "khul.khul",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "أتردين عليه حديقته",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "The Thābit b. Qays khulʿ case: return the garden and be separated (Bukhārī notes the Ibn ʿAbbās link is not corroborated)."
+ },
+ {
+  "label": "luqata.dalla",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "ضالة الإبل المكتومة غرامتها ومثلها معها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Concealed stray camel: liable for it and its like again."
+ },
+ {
+  "label": "luqata.laqit",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "المرأة تحرز ثلاثة مواريث عتيقها ولقيطها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Woman inherits from her foundling."
+ },
+ {
+  "label": "nafaqat.fasakh_iisar",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني",
+  "verdict": "names",
+  "weak_hint": true,
+  "note": "The wife's 'feed me or divorce me' names the issue, but the context says it is Abū Hurayra's own words, not the Prophet's."
+ },
+ {
+  "label": "nafaqat.nafaqat_bahaim",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "عذبت امرأة في هرة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Woman punished for starving a cat; direct ruling on feeding animals in one's keeping."
+ },
+ {
+  "label": "nafaqat.nafaqat_zawja",
+  "ref": "src:tanzil-quran-simple#Q002:233",
+  "excerpt_ar": "وعلى المولود له رزقهن وكسوتهن بالمعروف",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Father must provide food and clothing for the mothers by custom, a direct maintenance ruling."
+ },
+ {
+  "label": "nafaqat.takhyir_mahdun",
+  "ref": "src:openiti-tirmidhi-shamela7895",
+  "excerpt_ar": "خير غلاما بين أبيه وأمه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "The Prophet let a boy choose between his father and mother."
+ },
+ {
+  "label": "nikah.idhn_mara",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "والبكر تستأذن في نفسها وإذنها صماتها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "The virgin is asked and her silence is consent."
+ },
+ {
+  "label": "nikah.muharramat_musahara",
+  "ref": "src:tanzil-quran-simple#Q004:023",
+  "excerpt_ar": "وأمهات نسائكم وربائبكم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prohibits wives' mothers and stepdaughters, the affinity prohibitions."
+ },
+ {
+  "label": "nikah.musahara",
+  "ref": "src:tanzil-quran-simple#Q004:023",
+  "excerpt_ar": "وأمهات نسائكم وربائبكم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prohibits wives' mothers and stepdaughters, the affinity prohibitions."
+ },
+ {
+  "label": "nikah.qasm_bayn_zawjat",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "إذا تزوج البكر أقام عندها سبعا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Sunna of staying seven nights with a new virgin wife then dividing turns."
+ },
+ {
+  "label": "nikah.sighat_nikah",
+  "ref": "src:tanzil-quran-simple#Q033:037",
+  "excerpt_ar": "فلما قضى زيد منها وطرا زوجناكها",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "Narrates God marrying Zaynab using the word tazwīj; bears on the marriage formula only by inference."
+ },
+ {
+  "label": "qada.hukm",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "إذا حكم الحاكم فاجتهد ثم أصاب فله أجران وإذا حكم فاجتهد ثم أخطأ فله أجر",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Reward of the judge who rules by ijtihād, right or wrong."
+ },
+ {
+  "label": "qada.imam",
+  "ref": "src:tanzil-quran-simple#Q004:059",
+  "excerpt_ar": "أطيعوا الله وأطيعوا الرسول وأولي الأمر منكم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Commands obedience to those in authority."
+ },
+ {
+  "label": "qada.qisma",
+  "ref": "src:tanzil-quran-simple#Q004:008",
+  "excerpt_ar": "وإذا حضر القسمة أولو القربى",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Names the division (of an estate) and orders giving to attending kin."
+ },
+ {
+  "label": "rada.laban",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "لا تحرم المصة والمصتان",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "One or two sucks do not create the fosterage prohibition."
+ },
+ {
+  "label": "rada.muharramat_rada",
+  "ref": "src:tanzil-quran-simple#Q004:023",
+  "excerpt_ar": "وأمهاتكم اللاتي أرضعنكم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prohibits foster mothers and foster sisters."
+ },
+ {
+  "label": "sadaq.istiqrar_mahr",
+  "ref": "src:tanzil-quran-simple#Q004:021",
+  "excerpt_ar": "وكيف تأخذونه وقد أفضى بعضكم إلى بعض",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Forbids taking back the dower after consummation."
+ },
+ {
+  "label": "sadaq.sadaq",
+  "ref": "src:tanzil-quran-simple#Q004:004",
+  "excerpt_ar": "وآتوا النساء صدقاتهن نحلة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Commands giving women their dowers."
+ },
+ {
+  "label": "sadaq.tansif_mahr",
+  "ref": "src:tanzil-quran-simple#Q002:237",
+  "excerpt_ar": "وإن طلقتموهن من قبل أن تمسوهن وقد فرضتم لهن فريضة فنصف ما فرضتم إلا أن يعفون أو يعفو الذي بيده عقدة النكاح",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Half the dower on divorce before consummation."
+ },
+ {
+  "label": "salam.salam",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "من أسلف في شيء فلا يصرفه إلى غيره",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Forbids switching the subject of a salam contract."
+ },
+ {
+  "label": "salat.adhkar_salat",
+  "ref": "src:tanzil-quran-simple#Q056:074",
+  "excerpt_ar": "فسبح باسم ربك العظيم",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "General command to glorify the Lord's name; the prayer formulae are tied to it only by exegesis."
+ },
+ {
+  "label": "salat.ijtinab_najasa",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "أتاني فأخبرني أن فيهما قذرا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prophet removed sandals mid-prayer upon learning they bore filth; orders checking them."
+ },
+ {
+  "label": "salat.imama",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "يؤم القوم أقرؤهم لكتاب الله",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Sets precedence for who leads the prayer."
+ },
+ {
+  "label": "salat.majlis_masjid",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "لا يقيم الرجل الرجل من مجلسه ثم يجلس فيه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Forbids making someone leave his seat to take it."
+ },
+ {
+  "label": "salat.majlis_masjid",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "من قام من مجلسه ثم رجع إليه فهو أحق به",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Whoever leaves his seat and returns has the better right to it."
+ },
+ {
+  "label": "salat.masjid",
+  "ref": "src:tanzil-quran-simple#Q024:036",
+  "excerpt_ar": "في بيوت أذن الله أن ترفع ويذكر فيها اسمه",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Houses God permitted to be raised for His remembrance, i.e. mosques."
+ },
+ {
+  "label": "salat.qiraat_quran",
+  "ref": "src:openiti-tirmidhi-shamela7895",
+  "excerpt_ar": "من قرأ حرفا من كتاب الله فله به حسنة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Reward per letter of the Qurʾān recited."
+ },
+ {
+  "label": "salat.qiraat_quran",
+  "ref": "src:tanzil-quran-simple#Q073:004",
+  "excerpt_ar": "ورتل القرآن ترتيلا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Commands measured recitation of the Qurʾān."
+ },
+ {
+  "label": "salat.salat_id",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "قد اجتمع في يومكم هذا عيدان",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Ruling when ʿĪd coincides with Friday."
+ },
+ {
+  "label": "salat.tarawih",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "من قام رمضان إيمانا واحتسابا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Merit of standing in prayer in Ramaḍān."
+ },
+ {
+  "label": "salat.taslim",
+  "ref": "src:openiti-tirmidhi-shamela7895",
+  "excerpt_ar": "وتحليلها التسليم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "The prayer's release is the taslīm (Tirmidhī: soundest in the chapter; narrator Ibn ʿAqīl mildly criticised)."
+ },
+ {
+  "label": "siyam.ayyam_tashriq",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "أيام التشريق أيام أكل وشرب",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Tashrīq days are days of eating and drinking, under a chapter forbidding fasting them."
+ },
+ {
+  "label": "siyam.ruyat_hilal",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "صوموا لرؤيته وأفطروا لرؤيته",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Fast and break the fast upon sighting the new moon."
+ },
+ {
+  "label": "sulh.irtifaq_jiwar",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "لا يمنع جار جاره أن يغرز خشبه في جداره",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "A neighbour may not prevent resting beams in his wall."
+ },
+ {
+  "label": "sulh.jidar",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "لا يمنع جار جاره أن يغرز خشبه في جداره",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "A neighbour may not prevent resting beams in his wall."
+ },
+ {
+  "label": "tahara.bawl",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "كان لا يستتر من البول",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Punishment in the grave for not guarding against urine."
+ },
+ {
+  "label": "tahara.dibagh",
+  "ref": "src:openiti-tirmidhi-shamela7895",
+  "excerpt_ar": "أيما إهاب دبغ فقد طهر",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Any hide that is tanned is purified."
+ },
+ {
+  "label": "tahara.hayd",
+  "ref": "src:tanzil-quran-simple#Q002:222",
+  "excerpt_ar": "فاعتزلوا النساء في المحيض",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Commands keeping away from wives during menstruation."
+ },
+ {
+  "label": "tahara.mash_ras",
+  "ref": "src:tanzil-quran-simple#Q005:006",
+  "excerpt_ar": "وامسحوا برءوسكم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Commands wiping the head in ablution."
+ },
+ {
+  "label": "tahara.muwalat",
+  "ref": "src:openiti-muslim-shamela1727",
+  "excerpt_ar": "ارجع فأحسن وضوءك",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "Order to redo ablution well after a missed spot; bears on continuity only by inference (chapter is about full coverage)."
+ },
+ {
+  "label": "tahara.tathir_inaa",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "إذا شرب الكلب في إناء أحدكم فليغسله سبعا",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Wash a vessel seven times when a dog drinks from it."
+ },
+ {
+  "label": "talaq.mutallaqa_thalathan",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "لا حتى تذوقي عسيلته ويذوق عسيلتك",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Triply divorced wife may not return until the second husband consummates."
+ },
+ {
+  "label": "talaq.talaq_muallaq",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Ibn ʿUmar rules on a divorce conditional on her going out."
+ },
+ {
+  "label": "udhiya.aqiqa",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "كل غلام رهينة بعقيقته",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Every boy is pledged by his ʿaqīqa (Abū Dāwūd flags only 'yudammā' as Hammām's error)."
+ },
+ {
+  "label": "udhiya.udhiya",
+  "ref": "src:tanzil-quran-simple#Q108:002",
+  "excerpt_ar": "فصل لربك وانحر",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Pray to your Lord and sacrifice."
+ },
+ {
+  "label": "usul.amr",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "لولا أن أشق على أمتي لأمرتهم",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "About delaying ʿishāʾ; shows a prophetic command would entail obligation, evidence for the command by inference."
+ },
+ {
+  "label": "usul.amr",
+  "ref": "src:tanzil-quran-simple#Q024:063",
+  "excerpt_ar": "فليحذر الذين يخالفون عن أمره",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Warns those who contravene His command, directly about the command."
+ },
+ {
+  "label": "wadia.wadia",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "أد الأمانة إلى من ائتمنك",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "General duty to render trusts; the deposit falls under it."
+ },
+ {
+  "label": "wadia.wadia",
+  "ref": "src:tanzil-quran-simple#Q002:283",
+  "excerpt_ar": "فليؤد الذي اؤتمن أمانته",
+  "verdict": "governs",
+  "weak_hint": false,
+  "note": "Duty of the entrusted to render the trust, in the context of unsecured debt; deposit falls under it."
+ },
+ {
+  "label": "wakala.wakala",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "أعطاه دينارا يشتري له به شاة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prophet gave ʿUrwa a dinar to buy a sheep for him, a direct agency case."
+ },
+ {
+  "label": "wasaya.wasiyya_aqarib",
+  "ref": "src:tanzil-quran-simple#Q002:180",
+  "excerpt_ar": "الوصية للوالدين والأقربين بالمعروف",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prescribes bequest to parents and near kin."
+ },
+ {
+  "label": "wasaya.wasiyya_warith",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "إن الله قد أعطى كل ذي حق حقه فلا وصية لوارث",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "No bequest to an heir."
+ },
+ {
+  "label": "zakat.amil",
+  "ref": "src:tanzil-quran-simple#Q009:060",
+  "excerpt_ar": "والعاملين عليها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Names zakat collectors as recipients."
+ },
+ {
+  "label": "zakat.amil",
+  "ref": "src:tanzil-quran-simple#Q009:060",
+  "excerpt_ar": "والعاملين عليها والمؤلفة قلوبهم",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Names zakat collectors as recipients."
+ },
+ {
+  "label": "zakat.madin",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "فتلك المعادن لا يؤخذ منها إلا الزكاة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Only zakat is taken from those mines (narrator's remark in a mursal report)."
+ },
+ {
+  "label": "zakat.nisab",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "ليس فيما دون خمس أواق صدقة",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "No zakat below five awāq, the threshold."
+ },
+ {
+  "label": "zakat.sadaqat_tatawwu",
+  "ref": "src:tanzil-quran-simple#Q002:271",
+  "excerpt_ar": "إن تبدوا الصدقات فنعما هي",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Praises open and hidden voluntary charity."
+ },
+ {
+  "label": "zakat.urud_tijara",
+  "ref": "src:openiti-abudawud-shamela1726",
+  "excerpt_ar": "كان يأمرنا أن نخرج الصدقة من الذي نعد للبيع",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Ordered to pay alms on what is held for sale."
+ },
+ {
+  "label": "zakat.zakat",
+  "ref": "src:tanzil-quran-simple#Q009:103",
+  "excerpt_ar": "خذ من أموالهم صدقة تطهرهم وتزكيهم بها",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Take alms from their wealth."
+ },
+ {
+  "label": "zakat.zakat_fitr",
+  "ref": "src:openiti-bukhari-shamela1681",
+  "excerpt_ar": "زكاة الفطر صاعا من تمر أو صاعا من شعير على العبد والحر",
+  "verdict": "names",
+  "weak_hint": false,
+  "note": "Prophet prescribed zakāt al-fiṭr of a ṣāʿ."
+ }
+]

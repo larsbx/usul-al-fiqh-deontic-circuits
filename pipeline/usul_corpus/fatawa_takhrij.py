@@ -28,8 +28,9 @@ def _flat(s: str | None) -> str:
     return " ".join(normalize_ar(s or "").split())
 
 
-def check(cases: list[dict], answers: Mapping[str, Mapping]) -> dict[str, list[str]]:
-    """Problems per case: takhrīj's own checks, plus the answer and its verbatim quote."""
+def check(cases: list[dict], answers: Mapping[str, Mapping] | None) -> dict[str, list[str]]:
+    """Problems per case: takhrīj's own checks, plus the answer and its verbatim quote. Without the fetched
+    answers (`None`, an LFS pointer checkout) every check but the answer's and the quote's still runs."""
     seen = Counter(c["far"] for c in cases)
     out: dict[str, list[str]] = {}
     for c in cases:
@@ -37,10 +38,12 @@ def check(cases: list[dict], answers: Mapping[str, Mapping]) -> dict[str, list[s
         m = _FAR.match(c["far"])
         if not m:
             errs.append("far is not islamqa.<answer>.fNNN")
-        elif m.group(1) not in answers:
-            errs.append(f"unknown answer {m.group(1)}")
         elif not c.get("quote"):
             errs.append("quote missing")
+        elif answers is None:
+            pass
+        elif m.group(1) not in answers:
+            errs.append(f"unknown answer {m.group(1)}")
         else:
             a = answers[m.group(1)]
             source = _flat(" ".join(a.get(k) or "" for k in ("title", "question", "summary", "answer")))

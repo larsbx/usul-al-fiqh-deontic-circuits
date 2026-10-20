@@ -1,0 +1,794 @@
+{
+ "entries": [
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f005",
+   "grades": [
+    "nass",
+    "jazm",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The pledge stands without its binding force: al-Inṣāf labels «زال لزومه» the madhhab and «ظاهر كلام الأصحاب», al-Qāḍī and Ibn ʿAqīl's taʾwīl; Ibn Rajab's own ẓāhir keeps it whole; Abū Bakr's voiding stands alone.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p051",
+     "excerpt_ar": "إن عاد الرهن إلى الراهن بطل الرهن، فإن عاد إليه عاد رهنا كما كان، وفي كلام أحمد نحوه",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Abū Bakr's statement, with Aḥmad's words like it."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p051",
+     "excerpt_ar": "وتأوله القاضي وابن عقيل على أنه بطل لزومه لأنه لو بطل بالكلية لم يعد بدون عقد",
+     "position": 1,
+     "grade": "jazm",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī and Ibn ʿAqīl: only its luzūm is void."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p051",
+     "excerpt_ar": "والظاهر أن الرهن لا يبطل بعد لزومه بدون رضى المرتهن",
+     "position": 2,
+     "grade": "ashab",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's own ẓāhir."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p151",
+     "excerpt_ar": "قوله (فإن أخرجه المرتهن باختياره إلى الراهن: زال لزومه) . ظاهره: سواء أخذه الراهن بإذنه نيابة أو لا. وهو صحيح. وهو المذهب، وظاهر كلام الأصحاب.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The matn of al-Muqniʿ with al-Mardāwī's label: the luzūm lapses, not the pledge."
+    }
+   ],
+   "positions_sha256": "9638bb39c3ae3d37c0b08d37823397211b23aa580152c758c87c1ee0a2a164b7"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f007",
+   "grades": [
+    "tashih",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Tadbīr returns: al-Inṣāf labels it the madhhab of the majority (jamāhīr al-aṣḥāb); the riwāya that it is void builds on tadbīr as a bequest.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p051",
+     "excerpt_ar": "ومنها: التدبير على إحدى الروايتين.",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Of the second kind on one riwāya."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p439",
+     "excerpt_ar": "قوله (وإن عاد إليه عاد التدبير) . هذا المذهب. وعليه جماهير الأصحاب. وجزم به في الوجيز، وغيره.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The matn with al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p439",
+     "excerpt_ar": "وعنه: يبطل التدبير. وهما مبنيان على أن التدبير: هل هو عتق بصفة، أو وصية؟",
+     "position": 1,
+     "grade": "nass",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The other riwāya and the ground of the khilāf."
+    }
+   ],
+   "positions_sha256": "c5d8c137eefa055f1bc3350c83f8ea72fa82a1e3eab761a88eeea24bfd0b89a6"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f010",
+   "grades": [
+    "nass",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The suspended divorce returns: al-Inṣāf gives Aḥmad's naṣṣ and labels it the madhhab of the majority (jamāhīr al-aṣḥāb); against it a takhrīj from manumission, al-Tamīmī's choice.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p051",
+     "excerpt_ar": "ومنها صفة الطلاق، تعود بعود النكاح، وسواء وجدت في زمن البينونة أو لم توجد، على المذهب الصحيح.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's «على المذهب الصحيح»."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p423",
+     "excerpt_ar": "فوجدت الصفة. ثم عاد فتزوجها، فوجدت الصفة) طلقت نص عليه. وهو المذهب. وعليه جماهير الأصحاب.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The matn with Aḥmad's naṣṣ and the label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p423",
+     "excerpt_ar": "ويتخرج أن لا تطلق، بناء على الرواية في العتق. واختاره أبو الحسن التميمي.",
+     "position": 1,
+     "grade": "takhrij",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The takhrīj from the riwāya on manumission."
+    }
+   ],
+   "positions_sha256": "751adff0fb3bdcfba21da203331974d73cf3cbde192b9382fb98eda098a96788"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f011",
+   "grades": [
+    "tashih",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The suspended manumission returns: al-Inṣāf labels it the madhhab with Aḥmad's naṣṣ, quoting this qāʿida's «أشهر الروايتين»; the other riwāya stands against it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p051",
+     "excerpt_ar": "صفة العتق تعود بعود ملك الرقيق في أشهر الروايتين، وفي الأخرى لا تعود إذا وجدت الصفة بعد زوال الملك",
+     "position": 0,
+     "grade": "tashih",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Both riwāyas, the first «أشهر»."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p414",
+     "excerpt_ar": "إحداهما: تعود بعوده. وهو المذهب فيهما. نص عليه.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī's label for ʿitq and ṭalāq both."
+    }
+   ],
+   "positions_sha256": "21d4949e3435c1358bce81b44b362b46d70dc77f9903400fdc170b28cd4bd986"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f013",
+   "grades": [
+    "wajh",
+    "wajh",
+    "wajh",
+    "wajh"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The seller's return against the bankrupt: al-Mardāwī gives his own taṣḥīḥ for the right of return; the denial and the split by mode of return are each a reported «وقيل». The reading's first-stated wajh is off that side.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p052",
+     "excerpt_ar": "أحدها: لا حق لهما فيها ; لأن حقهما متعلق بالعقد الأول المتلقى عنهما.",
+     "position": 0,
+     "grade": "wajh",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The first wajh."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p052",
+     "excerpt_ar": "والثاني: غير متعلق عنهما فلا يستحقان فيه رجوعا.",
+     "position": 1,
+     "grade": "wajh",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The second wajh, its ground garbled in the witness."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p052",
+     "excerpt_ar": "والثالث: لهما الرجوع نظرا إلى أن حقهما ثابت في العين وهي موجودة فأشبه الرد بالعيب.",
+     "position": 2,
+     "grade": "wajh",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The third wajh, by likeness to return for a defect."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p052",
+     "excerpt_ar": "والرابع: إن عاد بملك جديد سقط حقهما، وإن عاد بفسخ العقد فلهما الرجوع",
+     "position": 3,
+     "grade": "wajh",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The fourth wajh."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p289",
+     "excerpt_ar": "قلت: الصحيح من المذهب: أن له الرجوع. على ما يأتي. وقدمه ابن رزين في شرحه. وقيل: ليس له الرجوع مطلقا.",
+     "position": 2,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī's own taṣḥīḥ on goods that left the bankrupt's ownership before the ḥajr and came back after it."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p289",
+     "excerpt_ar": "وقيل: إن عادت إليه بسبب جديد كبيع وهبة وإرث، ووصية لم يرجع. وإن عادت إليه بفسخ كالإقالة، والرد بالعيب والخيار ونحوه فله ms1723 الرجوع",
+     "position": 3,
+     "grade": "wajh",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The split by mode of return, reported with «وقيل»."
+    }
+   ],
+   "positions_sha256": "26e9c620aed960cae60c00e48dc76e8c88c01b97bb5014e99358e7d973835ca4"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f014",
+   "grades": [
+    "nass",
+    "ashab"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The firāsh returns: al-Inṣāf labels it the madhhab, «ظاهر نصوصه», al-Khiraqī's choice, citing this qāʿida's «هذا الأشهر. وهو المنصوص»; al-Majd's choice stands against it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p052",
+     "excerpt_ar": "على وجهين، أشهرهما أنه يعود، وهو المنصوص ; فيجب عليه اجتنابهما حتى يحرم إحداهما.",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The better known wajh, the naṣṣ."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p052",
+     "excerpt_ar": "والثاني: له استدامة استفراش الثانية ويجتنب الراجعة",
+     "position": 1,
+     "grade": "ashab",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The second wajh, al-Majd's choice."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p128",
+     "excerpt_ar": "قوله (فإن عادت إلى ملكه: لم يصب واحدة منهما حتى يحرم الأخرى) . سواء كان وطئ الثانية أو لا. وهذا المذهب.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The matn with al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v08:p129",
+     "excerpt_ar": "واختار المجد في المحرر: أنها إذا رجعت إليه، بعد أن وطئ الباقية: أنه يقيم على وطئها، ويجتنب الراجعة.",
+     "position": 1,
+     "grade": "ashab",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Majd's choice."
+    }
+   ],
+   "positions_sha256": "b0f9f2fa3cada70eb15ed6565730053e614782a59fcd0a3e1b28d25dce0ee92c"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
+   "grades": [
+    "tashih",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The imām is outside the prohibition: Ibn Rajab's «على المذهب المشهور» and al-Inṣāf's label for permitted speech between the imām and another; the riwāya of karāha for both stands against it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p125",
+     "excerpt_ar": "منها النهي عن الكلام والإمام يخطب لا يشمل الإمام على المذهب المشهور.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v02:p417",
+     "excerpt_ar": "فإن كان بين الإمام وغيره، فالصحيح من المذهب: إباحة ذلك إذا كان لمصلحة، وعليه أكثر الأصحاب",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v02:p417",
+     "excerpt_ar": "وعنه يكره لهما مطلقا.",
+     "position": 1,
+     "grade": "nass",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The riwāya of karāha for both."
+    }
+   ],
+   "positions_sha256": "622aee0596c9d7272903ca1b9029aafe82568334ddd77c52913f13655753c6b3"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f001",
+   "grades": [
+    "wajh",
+    "tashih"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The muʾadhdhin answers himself: al-Inṣāf labels it the madhhab, Aḥmad's naṣṣ and the majority (jumhūr); the denial is a «وقيل» with a reported riwāya, which Ibn Rajab prefers by his qāʿida.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p125",
+     "excerpt_ar": "ومنها الأمر بإجابة المؤذن هل يشمل المؤذن نفسه؟ المنصوص هاهنا الشمول والأرجح عدمه طردا للقاعدة.",
+     "position": 1,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The naṣṣ: inclusion."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p125",
+     "excerpt_ar": "ومنها الأمر بإجابة المؤذن هل يشمل المؤذن نفسه؟ المنصوص هاهنا الشمول والأرجح عدمه طردا للقاعدة.",
+     "position": 0,
+     "grade": "wajh",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's preference by his qāʿida."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p426",
+     "excerpt_ar": "المؤذن نفسه وهو المذهب المنصوص عن أحمد. فيجيب نفسه خفية. وعليه الجمهور.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v01:p426",
+     "excerpt_ar": "وقيل: لا يجيب نفسه. ويحتمله كلام المصنف وغيره. وحكي رواية عن أحمد. قال ابن رجب في القاعدة السبعين: هذا الأرجح.",
+     "position": 0,
+     "grade": "wajh",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The denial, with the reported riwāya and Ibn Rajab's preference."
+    }
+   ],
+   "positions_sha256": "df3bf9b007ed96438a4707d82ab6e316eff92ccaca258006c82e25997ebfebea"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f003",
+   "grades": [
+    "ashab",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "No later work labels a side. Ibn Rajab states the denial and reports Abū Bakr's takhrīj on two wujūh; al-Mughnī reports the two qawl of Abū Bakr's tafrīʿ with their grounds.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p126",
+     "excerpt_ar": "إذا أذن السيد لعبده أن يعتق عن كفارته من رقيق السيد لم يملك أن يعتق نفسه",
+     "position": 0,
+     "grade": "ashab",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The record's ruling."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p126",
+     "excerpt_ar": "وخرجها أبو بكر على وجهين",
+     "position": 1,
+     "grade": "takhrij",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Abū Bakr's takhrīj."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p556",
+     "excerpt_ar": "والآخر لا يجزئه؛ لأن الإذن له في الإعتاق ينصرف إلى إعتاق غيره.",
+     "position": 0,
+     "grade": "wajh",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The second qawl, on the qāʿida's ground."
+    },
+    {
+     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v09:p556",
+     "excerpt_ar": "أحدهما، يجزئه؛ لأنه رقبة تجزئ عن غيره فأجزأت عن نفسه كغيره.",
+     "position": 1,
+     "grade": "wajh",
+     "who": "Ibn Qudāma, al-Mughnī",
+     "note": "The first qawl."
+    }
+   ],
+   "positions_sha256": "67379e5569b8240d54a2270a02eaaadb392c2180aa7b156370e1b26a8664d2b3"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f004",
+   "grades": [
+    "nass",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "Two riwāyas on the general question; al-Inṣāf reports for the kaffāra of intercourse, on the riwāya that it does not fall, al-Rāʿiya's «فله أخذها» with al-Muḥarrar's jazm, and «وعنه لا يأخذها».",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p126",
+     "excerpt_ar": "ومنها هل يكون الرجل مصرفا لكفارة نفسه؟ في المسألة روايتان",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The two riwāyas."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p126",
+     "excerpt_ar": "ومنها هل يكون الرجل مصرفا لكفارة نفسه؟ في المسألة روايتان",
+     "position": 1,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The two riwāyas."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v03:p323",
+     "excerpt_ar": "فلو كفر عنه غيره بإذنه فله أخذها، وجزم به في المحرر، وقدمه في الحاويين.",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "On the kaffāra of intercourse in Ramaḍān."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v03:p323",
+     "excerpt_ar": "وعنه لا يأخذها، وأطلق ابن أبي موسى في أنه: هل يجوز له أكلها، أم كان خاصا بذلك الأعرابي؟ على روايتين",
+     "position": 0,
+     "grade": "nass",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The riwāya against taking it."
+    }
+   ],
+   "positions_sha256": "a8bb5deb62425969bd9976dfdb4497c6ac16b56472509c703e15763899e559e2"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f005",
+   "grades": [
+    "ashab",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The zakāt returned by the collector may be taken: Aḥmad's naṣṣ and al-Qāḍī's choice, stated decisively in Kashshāf and labelled «الصحيح» in Taṣḥīḥ al-Furūʿ for the fiṭra; Abū Bakr's denial stands alone.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p126",
+     "excerpt_ar": "وقال أبو بكر مذهب أحمد لا يحل له أخذها ذكره في زكاة الفطر وعلل بأنها طهرة فلا يجوز أن يتطهر بما قد تطهر به",
+     "position": 0,
+     "grade": "ashab",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Abū Bakr."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p126",
+     "excerpt_ar": "فله أن يعيدها إليه بعد ذلك، هذا هو المنصوص عن أحمد واختيار القاضي",
+     "position": 1,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The naṣṣ and al-Qāḍī's choice."
+    },
+    {
+     "ref": "src:openiti-buhuti-kashshaf-shamela21642/v02:p214",
+     "excerpt_ar": "(أو ردها) أي الزكاة (له الإمام بعد قبضه منه لكونه) أي المالك (من أهلها) أي الزكاة جاز له أخذها (لما يأتي) في الباب لأنها عادت إليه بسبب آخر فهو كما لو عادت إليه بميراث.",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Buhūtī, Kashshāf al-Qināʿ",
+     "note": "Sharḥ of al-Iqnāʿ, decisive."
+    },
+    {
+     "ref": "src:openiti-ibnmuflih-furu-shamela12052/v04:p240",
+     "excerpt_ar": "الصحيح قول القاضي، قال في التلخيص: من رد الفقير إليه فطرته جاز في أصح الوجهين",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ",
+     "note": "Masʾala 17 of the Taṣḥīḥ, on fiṭra returned to its payer."
+    }
+   ],
+   "positions_sha256": "9e614d8893960f1ac51878f0fa476f7ea84aa1d06dce7906ce808695e49fe287"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f006",
+   "grades": [
+    "takhrij",
+    "tashih"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The founder become poor enters his endowment on the poor: al-Inṣāf labels it the madhhab of the majority (jamāhīr al-aṣḥāb), Aḥmad's naṣṣ, al-Iqnāʿ states it; the denial is an iḥtimāl in al-Talkhīṣ.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p127",
+     "excerpt_ar": "الأصح ونص عليه أحمد في رواية المروذي",
+     "position": 1,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's «على الأصح» and the naṣṣ."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p019",
+     "excerpt_ar": "لو وقف على الفقراء ثم افتقر: أبيح له التناول منه، على الصحيح من المذهب. وعليه جماهير الأصحاب. ونص عليه في رواية المروذي.",
+     "position": 1,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v07:p019",
+     "excerpt_ar": "وقيل: لا يباح ذلك. وهو احتمال في التلخيص.",
+     "position": 0,
+     "grade": "takhrij",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The denial, an iḥtimāl."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v03:p005",
+     "excerpt_ar": "ولو وقف على الفقراء فافتقر شمله وتناول منه",
+     "position": 1,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The matn."
+    }
+   ],
+   "positions_sha256": "08639ba2cc74e9d29722019920669fd8bd0fc19c4efebc055c4067e886050e19"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f007",
+   "grades": [
+    "tashih",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The agent may not buy from himself: al-Inṣāf labels it the madhhab of the majority (jumhūr); the riwāya of permission, with its conditions, stands against it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p127",
+     "excerpt_ar": "ومنها الوكيل في البيع هل له الشراء من نفسه؟ فيه روايتان معروفتان",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The two riwāyas."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p127",
+     "excerpt_ar": "ومنها الوكيل في البيع هل له الشراء من نفسه؟ فيه روايتان معروفتان",
+     "position": 1,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The two riwāyas."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p375",
+     "excerpt_ar": "قوله (ولا يجوز للوكيل في البيع أن يبيع لنفسه) . هذا المذهب. وعليه الجمهور.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The matn with al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p375",
+     "excerpt_ar": "وعنه: يجوز. كما لو أذن له، على الصحيح، إذا زاد على مبلغ ثمنه في النداء",
+     "position": 1,
+     "grade": "nass",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The riwāya of permission."
+    }
+   ],
+   "positions_sha256": "ac6cddb90dc8f635804de865e5861b9b286bc63b4eb929e66b5872d19604e3c1"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f008",
+   "grades": [
+    "tashih",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The agent buying for his principal from his own property follows f007: al-Inṣāf extends the madhhab's prohibition to it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p128",
+     "excerpt_ar": "الوكيل لموكله من ماله وحكمه حكم شراء الوكيل من مال موكله ذكره ابن أبي موسى وغيره",
+     "position": 0,
+     "grade": "ashab",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Abī Mūsā and others: the same ruling as f007."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p377",
+     "excerpt_ar": "إحداهما: وكذا الحكم في شراء الوكيل من نفسه للموكل.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Under the madhhab's prohibition."
+    }
+   ],
+   "positions_sha256": "584de586bf84c1048d56bc4c95538e8639ba29f858b1b143f16ae7552203960d"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
+   "grades": [
+    "tashih",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The executor follows the agent: al-Inṣāf extends the madhhab's prohibition to the judge, his trustee and the executor, and notes Ibn Abī Mūsā's prohibition alone.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p128",
+     "excerpt_ar": "ومنها شراء الوصي من مال اليتيم وحكمه حكم شراء الوكيل ، وفيه روايتان منصوصتان ولم يذكر ابن أبي موسى فيه سوى المنع",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Two manṣūṣ riwāyas; Ibn Abī Mūsā only the prohibition."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p128",
+     "excerpt_ar": "ومنها شراء الوصي من مال اليتيم وحكمه حكم شراء الوكيل ، وفيه روايتان منصوصتان ولم يذكر ابن أبي موسى فيه سوى المنع",
+     "position": 1,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Two manṣūṣ riwāyas."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p377",
+     "excerpt_ar": "وكذا الحاكم وأمينه والوصي وناظر الوقف والمضارب كالوكيل. ولم يذكر ابن أبي موسى في الوصي سوى المنع.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "Under the madhhab's prohibition."
+    }
+   ],
+   "positions_sha256": "545c77820ac7f785c26241466e102d481585074a39373ac51a92ceb98f11870c"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f011",
+   "grades": [
+    "tashih",
+    "nass"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The partner takes no wage for his own work: al-Inṣāf labels it the madhhab, al-Iqnāʿ states it; the other wajh stands against it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p129",
+     "excerpt_ar": "ومنها إذا عمل أحد الشريكين في مال الشركة عملا يملك الاستئجار عليه ودفع الأجرة فهل له أن يأخذ الأجرة أم لا؟ على روايتين.",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The two riwāyas."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p129",
+     "excerpt_ar": "ومنها إذا عمل أحد الشريكين في مال الشركة عملا يملك الاستئجار عليه ودفع الأجرة فهل له أن يأخذ الأجرة أم لا؟ على روايتين.",
+     "position": 1,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The two riwāyas."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p423",
+     "excerpt_ar": "أحدهما: ليس له أخذ أجرة. وهو المذهب. صححه المصنف في المغني، وصاحب التصحيح، والنظم.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p423",
+     "excerpt_ar": "والوجه الثاني: يجوز له الأخذ.",
+     "position": 1,
+     "grade": "wajh",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The other wajh."
+    },
+    {
+     "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p257",
+     "excerpt_ar": "وليس له فعله ليأخذ أجرته بلا شرط",
+     "position": 0,
+     "grade": "jazm",
+     "who": "al-Ḥajjāwī, al-Iqnāʿ",
+     "note": "The matn."
+    }
+   ],
+   "positions_sha256": "ede0b87cb34e89eb7f10696f76d341b1cebfc69844c777e4096fea253084a552"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f013",
+   "grades": [
+    "tashih",
+    "takhrij",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "One permitted to give alms does not take for himself: Ibn Rajab and al-Inṣāf label it the madhhab with Aḥmad's naṣṣ; al-Mughnī's two iḥtimāl stand against it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p129",
+     "excerpt_ar": "المذهب أنه لا يجوز ونص عليه أحمد في رواية ابن بختان",
+     "position": 0,
+     "grade": "tashih",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "Ibn Rajab's label and the naṣṣ."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p129",
+     "excerpt_ar": "أحدهما: الجواز مطلقا.",
+     "position": 1,
+     "grade": "takhrij",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Mughnī's first iḥtimāl."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p129",
+     "excerpt_ar": "والثاني: الرجوع إلى القرائن فإن دلت قرينة على الدخول جاز الأخذ أو على عدمه لم يجز ومع التردد يحتمل وجهين",
+     "position": 2,
+     "grade": "takhrij",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Mughnī's second iḥtimāl."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p357",
+     "excerpt_ar": "لو أذن له أن يتصدق بمال: لم يجز له أن يأخذ منه لنفسه إذا كان من أهل الصدقة. على الصحيح من المذهب.",
+     "position": 0,
+     "grade": "tashih",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Mardāwī's label."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p357",
+     "excerpt_ar": "ويحتمل الجواز مطلقا.",
+     "position": 1,
+     "grade": "takhrij",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The first iḥtimāl."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v05:p357",
+     "excerpt_ar": "ويحتمل الجواز إن دلت قرينة على إرادة أخذه منه. ذكرهما في المغني.",
+     "position": 2,
+     "grade": "takhrij",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The second iḥtimāl."
+    }
+   ],
+   "positions_sha256": "068633161e6707ece1cfe620f5514c6cac0658eef6c0b3fc512e6cd6eb5ab237"
+  },
+  {
+   "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f016",
+   "grades": [
+    "nass",
+    "takhrij"
+   ],
+   "jam": null,
+   "naskh": null,
+   "note": "The holder does not take from property to be given away for its unknown owners: Aḥmad's naṣṣ, restated in al-Inṣāf; al-Qāḍī's takhrīj and Taqī al-Dīn's fatwā stand against it.",
+   "evidence": [
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p129",
+     "excerpt_ar": "لا يجوز لمن هي في يده الأخذ منها على المنصوص",
+     "position": 0,
+     "grade": "nass",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "The naṣṣ."
+    },
+    {
+     "ref": "src:openiti-rajab-shamela21730/v01:p129",
+     "excerpt_ar": "وخرج القاضي جواز الأكل له منها إذا كان فقيرا على",
+     "position": 1,
+     "grade": "takhrij",
+     "who": "Ibn Rajab, Taqrīr al-Qawāʿid",
+     "note": "al-Qāḍī's takhrīj."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p213",
+     "excerpt_ar": "الثانية: لا يجوز لمن هذه الأشياء في يده وقلنا: له الصدقة بها أن يأخذ منها لنفسه إذا كان من أهل الصدقة. نص عليه.",
+     "position": 0,
+     "grade": "nass",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "The naṣṣ restated."
+    },
+    {
+     "ref": "src:openiti-insaf-shamela21609/v06:p213",
+     "excerpt_ar": "وخرج القاضي: جواز الأكل منها إذا كان فقيرا، على الروايتين في شراء الوصي من نفسه. نقله عنه ابن عقيل في فنونه. وأفتى به الشيخ تقي الدين - رحمه الله - في الغاصب إذا تاب.",
+     "position": 1,
+     "grade": "takhrij",
+     "who": "al-Mardāwī, al-Inṣāf",
+     "note": "al-Qāḍī's takhrīj and Taqī al-Dīn's fatwā."
+    }
+   ],
+   "positions_sha256": "ed4b21994eca5c347f11655e3a3692a259edbce70d1ea5a4090ea51035c32ba1"
+  }
+ ]
+}

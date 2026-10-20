@@ -3,41 +3,95 @@
   "status": "candidate",
   "set": "rajab_fold0",
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
-  "answers": 197,
-  "situations": 255,
-  "fields_stated": 286,
-  "cases": 197,
-  "encoders": 202,
-  "applies": 0.3503,
+  "answers": 240,
+  "situations": 312,
+  "fields_stated": 378,
+  "cases": 240,
+  "encoders": 223,
+  "applies": 0.2875,
   "recall": {
-    "1": 0.4873,
-    "5": 0.6548,
-    "10": 0.6548
+    "1": 0.4292,
+    "5": 0.5917,
+    "10": 0.5917
   },
   "recall_with_named_rules": {
-    "1": 0.4873,
-    "5": 0.6548,
-    "10": 0.6548
+    "1": 0.4292,
+    "5": 0.5917,
+    "10": 0.5917
   },
   "lexical_recall": {
-    "1": 0.5635,
-    "5": 0.8274,
-    "10": 0.8579
+    "1": 0.5083,
+    "5": 0.8,
+    "10": 0.8458
   },
   "hybrid_recall": {
-    "1": 0.6294,
-    "5": 0.9036,
-    "10": 0.9239
+    "1": 0.5542,
+    "5": 0.8792,
+    "10": 0.9125
   },
+  "hybrid_recall_by_qaida": {
+    "1": 0.6333,
+    "5": 0.8958,
+    "10": 0.9333
+  },
+  "by_qaida": "a hit when a top-k encoder reads a qāʿida the bank ties the case to (mahall.links: placement, encoder, types, co-annotation), the case's encoder's own for units outside it",
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {
-    "1": 0.0558,
-    "5": 0.1066,
-    "10": 0.1878
+    "1": 0.0458,
+    "5": 0.1042,
+    "10": 0.175
   },
-  "encoders_applying_per_answer": 0.51,
-  "encoders_touched_per_answer": 1.18,
+  "encoders_applying_per_answer": 0.47,
+  "encoders_touched_per_answer": 1.3,
   "by_encoder": {
+    "a26_ihala_on_known_cause": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 3
+    },
+    "a26_refused_idhn_lapses": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 2
+    },
+    "a27_ain_ruling_survives_owner_change": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 3
+    },
+    "a27_specific_agent_in_general_object": {
+      "cases": 5,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 3
+    },
+    "a29_four_kinds_of_milk": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 3
+    },
+    "a29_haml_hukm_before_separation": {
+      "cases": 5,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 4
+    },
+    "a31_rajab87_transfer_of_holding": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 2
+    },
+    "a31_rajab88_road_use": {
+      "cases": 3,
+      "applies": 0,
+      "top5": 3,
+      "unrouted": 0
+    },
     "advance_after_cause": {
       "cases": 1,
       "applies": 1,
@@ -440,6 +494,48 @@
       "top5": 5,
       "unrouted": 1
     },
+    "rajab_a28_faskh_growth_returns": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 2
+    },
+    "rajab_a28_growth_in_nonownership_contract": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "rajab_a28_toward_ownership_growth": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
+    "rajab_a30_ikhtisas_hand_stands": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 2,
+      "unrouted": 0
+    },
+    "rajab_a30_tamalluk_awaits_choice": {
+      "cases": 4,
+      "applies": 0,
+      "top5": 1,
+      "unrouted": 3
+    },
+    "rajab_a30_tie_binds_whole": {
+      "cases": 2,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 2
+    },
+    "rajab_a30_use_right_not_passed": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
+    },
     "rajiyya_takes_wife_rule": {
       "cases": 2,
       "applies": 0,
@@ -815,6 +911,30 @@
       "rank": 1
     },
     {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f003",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f004",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f008",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f014",
+      "encoder": "a26_ihala_on_known_cause",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
       "encoder": "cause_on_certainty",
       "settled": 0.0,
@@ -867,6 +987,30 @@
       "encoder": "istihlak",
       "settled": 1.0,
       "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f000",
+      "encoder": "a26_refused_idhn_lapses",
+      "settled": 0.5,
+      "rank": 4
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f001",
+      "encoder": "a26_refused_idhn_lapses",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f002",
+      "encoder": "a26_refused_idhn_lapses",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f003",
+      "encoder": "a26_refused_idhn_lapses",
+      "settled": 0.0,
+      "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f006",
@@ -939,6 +1083,30 @@
       "encoder": "words_out_of_nature",
       "settled": 1.0,
       "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f005",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "settled": 0.5,
+      "rank": 5
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f006",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f010",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f014",
+      "encoder": "a27_ain_ruling_survives_owner_change",
+      "settled": 0.0,
+      "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f003",
@@ -1097,6 +1265,36 @@
       "rank": 1
     },
     {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f003",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f006",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f010",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f011",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f012",
+      "encoder": "a27_specific_agent_in_general_object",
+      "settled": 0.5,
+      "rank": 3
+    },
+    {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f001",
       "encoder": "eating_without_permission",
       "settled": 0.25,
@@ -1191,6 +1389,162 @@
       "encoder": "attached_growth_follows",
       "settled": 0.5,
       "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f008",
+      "encoder": "rajab_a28_toward_ownership_growth",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f012",
+      "encoder": "rajab_a28_growth_in_nonownership_contract",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f024",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f029",
+      "encoder": "rajab_a28_faskh_growth_returns",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f006",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f007",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f010",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f011",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f013",
+      "encoder": "a29_haml_hukm_before_separation",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f002",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f004",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f006",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f007",
+      "encoder": "rajab_a30_tamalluk_awaits_choice",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f009",
+      "encoder": "rajab_a30_use_right_not_passed",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f011",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f012",
+      "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "settled": 0.5,
+      "rank": 1
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f020",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f023",
+      "encoder": "rajab_a30_tie_binds_whole",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f004",
+      "encoder": "a29_four_kinds_of_milk",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f005",
+      "encoder": "a29_four_kinds_of_milk",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f008",
+      "encoder": "a29_four_kinds_of_milk",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f002",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f005",
+      "encoder": "a31_rajab87_transfer_of_holding",
+      "settled": 0.0,
+      "rank": null
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f001",
+      "encoder": "a31_rajab88_road_use",
+      "settled": 0.6,
+      "rank": 2
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f002",
+      "encoder": "a31_rajab88_road_use",
+      "settled": 0.4,
+      "rank": 4
+    },
+    {
+      "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q088.f006",
+      "encoder": "a31_rajab88_road_use",
+      "settled": 0.4,
+      "rank": 4
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q091.f000",

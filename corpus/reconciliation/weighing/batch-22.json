@@ -43,7 +43,8 @@
      "note": "Given in al-Mughnī for the second riwāya (validity), there attributed to Abū Ḥanīfa, Mālik and al-Shāfiʿī's other qawl; it counts for the same ruling held by the Ḥanbalī riwāya (al-Khallāl, Ibn ʿAqīl): position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "109a1e7e51b237e901f7b07f6c7201ac2ce4a07531f869e16401dd112ac207b4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
@@ -67,7 +68,8 @@
      "note": "Kashshāf's ground for validity in these items: position 0. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0f97c9b83429d4a994abb734fc76324e53963128e610f1b3019fbd948ddd4da7"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
@@ -91,7 +93,8 @@
      "note": "al-Buhūtī's ground for the Muntahā's «ولا يصح عفوه عن قود شجة لا قود فيها»: position 0. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "93a46066ec7250c92eeb615f4e97c4c883186e852d0f1d1991e7d908d498dff4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f001",
@@ -151,7 +154,8 @@
      "note": "al-Kāfī's iḥtimāl that it does not suffice between him and God without his intention, Abū al-Khaṭṭāb's and Ibn ʿAqīl's choice: position 1. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1caa7db7c2e6a8e8f02414f1b83b4014813791d56a747eb9e2854d3489bbf6ab"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005",
@@ -193,7 +197,8 @@
      "note": "The ground Ibn Rajab reports from al-Mubhij for liability of the releaser (unless a ḥākim or a child's guardian): position 1. (The printed «أنه لا يضمن» before it is contradicted by this very reason.) Analogy to killing: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1b34128ecd739d09218eb8f3dddb7bb194b41ba993e3bce6fb4d7e43b8a46f86"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f006",
@@ -217,7 +222,8 @@
      "note": "al-Qāḍī's farq for his and Ibn ʿAqīl's view that the giver is liable: position 1. Ibn Rajab rejects it («وهذا ممنوع»), but it is the ground cited for this side. Analogy to zakāt: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "710af6eeb687a1d80477efe199819a9ee4dd078f9376ebc3563c1f9ffece97f4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f009",
@@ -241,7 +247,8 @@
      "note": "The reason Ibn Rajab gives for the aṣḥāb's rule on the bequeathed debt, which he sets against Aḥmad's «أخاف» in support of the leading ruling that handing a bequest to its determined beneficiary falls in its place: position 0. Assimilation to the determined heir: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e614830f68a0a31090b5a2a1d44a2a1b3d4701ff80e327756fffb73a31a219b4"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f001",
@@ -292,7 +299,8 @@
      "note": "Given in al-Mughnī for the takhrīj that nothing is due, al-Shāfiʿī's madhhab; it counts for the same ruling as al-Majd's: position 1. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6627c879dc9a27e5a65bc5354b2e967692389925d31b1b54d80119671ede0ed1"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f004",
@@ -334,7 +342,8 @@
      "note": "al-Qāḍī's (al-Khilāf) qiyās al-madhhab for barring him: position 1. A qiyās on another farʿ: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0bf2249468959de620d606662da59137bc009189b635da78c5f499339f55525a"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f008",
@@ -394,7 +403,8 @@
      "note": "al-Buhūtī's report of the Muntahā's ground (and al-Mughnī's): position 1. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "596e6e9050e8f71d178ba216f51c62416896c6ba31ee89fd3e4837dbf78c57af"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f009",
@@ -427,7 +437,8 @@
      "note": "al-Buhūtī names the mukātab: position 1. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "fbd1aa7b85fde73664c2f4e72b6ac530faf994bc91bb90aa6eebd7ee29331946"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f010",
@@ -469,7 +480,8 @@
      "note": "al-Buhūtī's list includes «ووارث المفلس»: position 1. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "00646c88287886d55221eef2bdd382f959c488f1a6c05afb985367365d05ddc8"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f011",
@@ -511,7 +523,8 @@
      "note": "al-Buhūtī's ground for the Muntahā's «وإن أوجب قود أنفذ من أصل التركة»: position 1. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1dce928453fe8be4568d01f7a41dc7e7ff1f93ff3247301f97c9ccc9b02b5a73"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014",
@@ -535,7 +548,8 @@
      "note": "Ibn Qudāma's reason why the third plays no part in the waiver of deliberate injury; it answers the wajh of suspension on the heirs' consent: position 0. A rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "cc32916754a82ea8c2d87f2d14abd67fd69cba107a3983a7023fb8cd4a7068b0"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f000",
@@ -577,7 +591,8 @@
      "note": "al-Sharḥ al-Kabīr's ground for the riwāya that she is not lawful: position 1. Qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1ed87c2fb2dc6b638fed0b3c494999bd9819972ea5a1e51a6ddcfc270095fc58"
   }
  ]
 }

@@ -135,3 +135,46 @@ def test_concurrent_pins_are_not_lost(tmp_path, monkeypatch):
     for t in ts:
         t.join()
     assert set(json.loads((tmp_path / "lock.json").read_text())["witnesses"]) == {f"w{i}" for i in range(8)}
+
+
+def test_an_incomplete_read_is_retried_then_reported_as_a_connection_error(monkeypatch):
+    """Audit (low): `http.client.IncompleteRead` escaped the source gate without a report."""
+    import http.client
+    calls = []
+
+    def urlopen(req, timeout):
+        calls.append(req)
+        raise http.client.IncompleteRead(b"partial")
+
+    monkeypatch.setattr(fetch_mod.urllib.request, "urlopen", urlopen)
+    monkeypatch.setattr(fetch_mod.time, "sleep", lambda s: None)
+    with pytest.raises(ConnectionError, match="IncompleteRead"):
+        fetch_mod._get("https://example.invalid/")
+    assert len(calls) == 5  # the first try and four retries
+
+
+def test_a_checkpoint_cut_short_resumes_from_its_last_whole_page(monkeypatch, tmp_path):
+    """Audit (low): a corrupt `.part` blocked every later fetch. A write cut short leaves a broken last
+    line; the pages before it are kept and the rest is discarded."""
+    book, served = _book(4), []
+    monkeypatch.setattr(fetch_mod.time, "sleep", lambda s: None)
+
+    def get(url, backoff=()):
+        served.append(int(url.rsplit("/", 1)[1]))
+        return book[served[-1]].encode()
+
+    monkeypatch.setattr(fetch_mod, "_get", get)
+    w = {"id": "shamela-1", "kind": "shamela", "book_id": 1}
+    clean = fetch_mod.fetch(w, tmp_path / "clean")
+    served.clear()
+    part = tmp_path / "shamela-1.part"
+    first = fetch_mod._checkpoint_line(fetch_mod.shamela_page_to_markdown(book[1]), 2)
+    part.write_bytes(first.encode() + b'{"md": "\xd8')  # a second page whose write was cut short
+    assert fetch_mod.fetch(w, tmp_path)["sha256"] == clean["sha256"]
+    assert served == [2, 3, 4]
+    # Review (#101): a readable line without its next page is no whole page either.
+    served.clear()
+    (tmp_path / "shamela-1.txt").unlink()
+    part.write_bytes(first.encode() + b'{"md": "page"}\n')
+    assert fetch_mod.fetch(w, tmp_path)["sha256"] == clean["sha256"]
+    assert served == [2, 3, 4]

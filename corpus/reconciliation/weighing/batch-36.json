@@ -43,13 +43,15 @@
      "note": "The second wajh where he intends the effect. It is an analogy to one who knows the meaning, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f9d0824fe4af45a2c976f9381b3e8ad65ac2a49ad19310cd5ac37df5291c7f50"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f006",
    "proofs": [],
    "advantages": [],
-   "searched": "al-Mughnī (kitāb al-ʿitq, and the related ṭalāq passage v07:p397 «فإن قال الأعجمي لامرأته: أنت طالق، ولا يفهم معناه»), al-Sharḥ al-Kabīr v08:p284, al-Mubdiʿ v06:p313, al-Kāfī, Kashshāf and Sharḥ al-Muntahā, searched for manumission in a tongue the speaker does not understand («لا يفهم», «لا يعرف معناه», «بالعجمية», «بالفارسية», «بغير العربية»). The proofs found are given only for divorce, never for manumission, so none is attached here."
+   "searched": "al-Mughnī (kitāb al-ʿitq, and the related ṭalāq passage v07:p397 «فإن قال الأعجمي لامرأته: أنت طالق، ولا يفهم معناه»), al-Sharḥ al-Kabīr v08:p284, al-Mubdiʿ v06:p313, al-Kāfī, Kashshāf and Sharḥ al-Muntahā, searched for manumission in a tongue the speaker does not understand («لا يفهم», «لا يعرف معناه», «بالعجمية», «بالفارسية», «بغير العربية»). The proofs found are given only for divorce, never for manumission, so none is attached here.",
+   "positions_sha256": "70c7436596806521b052b70ac754eec44af67916eb15d7c9b7b719e5c6c71dd2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f007",
@@ -59,7 +61,7 @@
      "tier": "istishab",
      "dalil": "One divorce is certain, and anything beyond it is in doubt, so only one takes effect.",
      "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p263",
-     "excerpt_ar": "طلق فلان زوجته (فطلقة) لأنها اليقين وما زاد مشكوك فيه",
+     "excerpt_ar": "ما طلق فلان زوجته (فطلقة) لأنها اليقين وما زاد مشكوك فيه",
      "who": "al-Buhūtī, Kashshāf al-Qināʿ",
      "note": "Given for «أنت طالق بعدد ما طلق فلان زوجته» where he does not know the number, which are these facts. It holds to the certain and drops the doubtful, so istishab."
     },
@@ -73,7 +75,8 @@
      "note": "In al-Mubdiʿ this reason is followed directly by «وكذا لو قال لها: أنت طالق بعدد ما طلق فلان زوجته، وجهل عدده، فطلقة», so it is cited for this case. It is an analogy to doubt about the divorce itself, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4cfaa76aac84304a7875a73f035b7512ae8d2fae3eb39c8ea66fd56d859c8b25"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f008",
@@ -97,7 +100,8 @@
      "note": "Given for «وإن لم يعرفها … أو نواها ولم يعرفها فلا شيء عليه». This covers one who does not know them even if he intends them, so it answers the second wajh as well. It is a stated rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e70b19d1c02c8fe6d775d20b72349e5685ba590062607885bce33420139f5244"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f009",
@@ -121,7 +125,8 @@
      "note": "Given for «أيمان المسلمين», which binds only with intention and is otherwise void («وإلا فلغو»). It is an analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6ee751db4c32906056fe1c6b544a2a3ffa0686854d57b9feb0929b6e50dc929c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f010",
@@ -154,7 +159,8 @@
      "note": "Given for validity «ولو لم يتعذر علمه», whether one or both parties are ignorant, which is the «أشهر الروايات». It is an analogy to manumission and divorce, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "4b26e78a3008c8284425e39d6d8e91e4fb4e21c0ca675d26b9db52a3a40bfca9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f011",
@@ -196,7 +202,8 @@
      "note": "Cited for Abū al-Khaṭṭāb's takhrīj, that he is released from every defect («فيخرج من هذا صحة البراءة من كل عيب»), which falls on the releasing side. A connected marfūʿ āḥād ḥadīth bearing on this case by extension, so zanni. The excerpt also states the qiyās (dropping a right, like manumission and divorce)."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "28d2bea4168f32b5a3ceff29848f26117372a751263762d31d460d5effca6310"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f012",
@@ -229,7 +236,8 @@
      "note": "This is the other wajh in the same case. It holds his ratification binding although he says he did not know the amount, so it treats ratification of the unknown as effective. al-Mubdiʿ (v05:p239) reports that al-Qāḍī and al-Majd built this case on whether what is ratified must be known. It is an analogy to ratifying a sale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d02cefb878270b963830f28dd19355357ce4f90c4443ad4f76bb7cdaa7a3ec06"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f002",
@@ -271,7 +279,8 @@
      "note": "Ibn Rajab's statement of the rationale for the second wajh. It is a stated rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3afcc34526a9e73d396dfd777ab24193ea9246282934abdd3c77c159f6956cd6"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003",
@@ -304,7 +313,8 @@
      "note": "Ibn Rajab's statement of the rationale for each wajh: possible simultaneity voids both, and its unlikelihood favours the sequential treatment. Only the first half is the proof for this position. It is a stated rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1c23aedfa7c432e52772ada04dea36574e41a7599154a72274f02047db4ba82d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f004",
@@ -346,7 +356,8 @@
      "note": "al-Kāfī's first wajh on these facts. Istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "8ce393a2baf3588e265a9b9ede378ff32bd6f0d8b27a5cd0cdec6de7672f62e2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f005",
@@ -388,7 +399,8 @@
      "note": "al-Kāfī's iḥtimāl on these facts: the proofs fall and he is presumed free of the debt. It rests on barāʾa, so istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9760dc3e768241eb79e3d245d16fc66fe5cfed8bdd26e192c415ba877f27110d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f001",
@@ -421,7 +433,8 @@
      "note": "The only stated reason for the invalidity wajh (al-Mubdiʿ has just «وقيل: لا يصح»). Jahāla is a rationale, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "9b78fa9888afacb43b0304b8790c7aa99726e2893fe76a23d097b65a9de74562"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002",
@@ -454,7 +467,8 @@
      "note": "Cited for Abū Yūsuf, a non-Ḥanbalī holder of the same ruling as al-Qāḍī (halves), so it counts for that ruling. The āya is about uterine siblings in inheritance and is carried over to the word «شركة» in an admission («كذا هاهنا»), so qiyas, not qati. Ibn Qudāma rebuts it: the equality in the āya rests on other evidence."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "34d4a74a0ec1a67fcd384e03b3d78851fe728aaa046164de0cda9deb8a0e4bb9"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
@@ -487,7 +501,8 @@
      "note": "Kashshāf rules on «طلق زوجته … ثم قال عقبه لضرتها: شركتك معها», which these facts fall under. It says nothing about the count. Its rationale (the same ruling for both, as though the same words were repeated to her) leads to her receiving the same three, which is why the ledger matched it to this position. It is an analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b42e5784bdd29a620b8364fe4d224ee6ef5c1c3cabcb7653db1b4f3b442bae9c"
   }
  ]
 }

@@ -2,7 +2,13 @@
   "entries": [
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f003",
-      "grades": [["nass", "ashab"], "ashab"],
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "ashab"
+      ],
       "jam": null,
       "naskh": null,
       "note": "Aḥmad's naṣṣ (riwāyat Muhannā) and Abū Bakr, Ibn Abī Mūsā and Abū al-Khaṭṭāb keep the whole house pledged, against al-Qāḍī's two-contract reading and the release; al-Inṣāf's «هذا المذهب أيضا. وعليه أكثر الأصحاب» with the decisive statements of al-Iqnāʿ and Kashshāf carry the release. Against the reading.",
@@ -31,11 +37,18 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Released in his share, «لأن الراهن متعدد فتعلق على كل منهما بنصيبه»."
         }
-      ]
+      ],
+      "positions_sha256": "e41a95458bb911460c17299e3feee0e469492b8e006bcf3d7566ade5ebbad9a4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005",
-      "grades": [["nass", "ashab"], "ashab"],
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        "ashab"
+      ],
       "jam": null,
       "naskh": null,
       "note": "Aḥmad's naṣṣ (riwāyat Muhannā) and Abū Bakr make each of two unqualified guarantors liable for the whole, against al-Qāḍī and al-Mughnī's shares; al-Inṣāf's «وهذا الصحيح من المذهب» and al-Iqnāʿ's decisive statement carry the shares. Against the reading.",
@@ -56,11 +69,15 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "The unqualified joint guarantee is by shares, stated decisively."
         }
-      ]
+      ],
+      "positions_sha256": "bededd25bf585a9f928944e2f80cc266933816c434fc7b89ca960aa6a1d22ca7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
-      "grades": ["takhrij", "ashab"],
+      "grades": [
+        "takhrij",
+        "ashab"
+      ],
       "jam": null,
       "naskh": null,
       "note": "Two wives told «if you enter these two houses» (or speak to these two), each entering one: the takhrīj that neither is divorced against Abū al-Khaṭṭāb's «المذهب الوقوع»; al-Inṣāf's «هذا المذهب، وعليه أكثر الأصحاب», noting the madhhab here departs from the Qawāʿid, with al-Iqnāʿ and al-Muntahā decisive, carry the divorce. Against the reading.",
@@ -89,11 +106,21 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "Each speaking to one of the two: both divorced, stated decisively."
         }
-      ]
+      ],
+      "positions_sha256": "c799cb4f8ae44fd3010293cf7eed709d332ead25834cf6aeb8b9732f0d89e2df"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
-      "grades": [["nass", "ashab"], ["nass", "ashab"]],
+      "grades": [
+        [
+          "nass",
+          "ashab"
+        ],
+        [
+          "nass",
+          "ashab"
+        ]
+      ],
       "jam": null,
       "naskh": null,
       "note": "«أوقعت بينكن ثلاثا» to four wives: two riwāyas, three each (Abū Bakr, al-Qāḍī) or one each (Abū al-Khaṭṭāb, al-Mughnī); al-Inṣāf's «هذا المذهب، وعليه أكثر الأصحاب» and al-Iqnāʿ's decisive statement carry one each. Against the reading.",
@@ -114,11 +141,16 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "One each, stated decisively; three each only where he intended dividing every ṭalqa among them."
         }
-      ]
+      ],
+      "positions_sha256": "c4289dff41a4f683bf15d81b7da5a716d8ffe32a7718b41d7cb7192d84c61b1f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
-      "grades": ["takhrij", "takhrij", "takhrij"],
+      "grades": [
+        "takhrij",
+        "takhrij",
+        "takhrij"
+      ],
       "jam": null,
       "naskh": null,
       "note": "Joining a co-wife to three ṭalāqs: two on halving, one on vagueness, three as an iḥtimāl; no later work treats the count. al-Inṣāf's taṣḥīḥ of halving for the unqualified «أشركتك» in sale, the cognate inshāʾ, is graded qiyās for two; Kashshāf's ground that the joining makes «الحكم فيهما واحدا … كما لو أعاده عليها» implies three, graded takhrīj. Tarjīḥ for the reading, from a cognate only. Integrator: Ibn Rajab's iḥtimāl grades takhrīj, not a bare wajh.",
@@ -139,11 +171,15 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "«شركتك معها» to the co-wife is explicit «لأنه جعل الحكم فيهما واحدا … كما لو أعاده عليها بلفظه»; the count follows only by implication."
         }
-      ]
+      ],
+      "positions_sha256": "b42e5784bdd29a620b8364fe4d224ee6ef5c1c3cabcb7653db1b4f3b442bae9c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f002",
-      "grades": ["ashab", "wajh"],
+      "grades": [
+        "ashab",
+        "wajh"
+      ],
       "jam": null,
       "naskh": null,
       "note": "Two half-free sons: the whole estate (al-Qāḍī, al-Sāmarrī and a group) against not the whole; al-Inṣāf's «لا تكمل. وهو المذهب. صححه في التصحيح» with al-Muntahā and Kashshāf decisive carry the second, then three-quarters by the aḥwāl. Against the reading.",
@@ -166,13 +202,14 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v04:p496",
-          "excerpt_ar": "تكمل الحرية) فيهما لأنها لو كملت لم يظهر للرق فائدة وكانا في ميراثهما",
+          "excerpt_ar": "لم تكمل الحرية) فيهما لأنها لو كملت لم يظهر للرق فائدة وكانا في ميراثهما",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Not completed, «لأنها لو كملت لم يظهر للرق فائدة»."
         }
-      ]
+      ],
+      "positions_sha256": "265c7ca767d0ee4ad71336b6e8227184bdad0f281b747d5031dcdb2423f326fb"
     }
   ]
 }

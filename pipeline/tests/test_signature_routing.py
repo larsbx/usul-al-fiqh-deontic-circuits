@@ -61,7 +61,7 @@ def test_partial_report_preserves_original_ood_and_has_no_modern_metrics():
     assert all(v == {} for v in report["ood"]["recall"].values())
     assert report["bab"]["accuracy"] is None
     assert report["classical"]["recall"]["lexical"] == json.loads(
-        (ROOT / "corpus" / routing.INDEX).read_text())["recall"]["held_out"]
+        (ROOT / "corpus" / routing.INDEX).read_text())["recall"]["encoder"]["within_qaida"]["recall"]
 
 
 def test_inner_selection_prefers_less_structure_on_ties(monkeypatch):

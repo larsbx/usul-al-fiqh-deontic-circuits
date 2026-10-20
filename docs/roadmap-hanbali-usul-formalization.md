@@ -33,6 +33,90 @@ Ibn Taymiyya's critique fixes three design decisions **before** any axiom is wri
 
 This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility and is open to the Chisholm/Ross paradoxes. KD remains a possible *fragment*, valid for strict (qaṭʿī) rules only.
 
+### First-principles refactor
+
+Baseline inspected: `57a3b1c`, 2026-10-16. This migration takes priority over
+expanding annotation volume. Existing proofs retain their stated scope; legacy
+milestone counts below are historical until regenerated. Architecture ownership
+and authority rules are in [separated concerns](architecture/separated-concerns.md#repository-wide-authority-boundaries).
+
+| Stage | Deliverable | Acceptance gate | Status |
+|---|---|---|---|
+| R0 — interpretation/inference seam | Pure reconciliation kernel; shared typed JSON identity; explicit textual range gaps; compatible adapters | Wrong-type q043.f005 mutation rejected at validation and execution; all existing reconciliation outcomes preserved; Python/Lean identity agrees | Implemented in this refactor; full CI required |
+| R1 — stable evidence subjects | Case-scoped position IDs, content receipts and legacy index migration | Reordering positions cannot reassign proof/grade/evidence; editing a position invalidates receipts; all associations accounted for | Interim gate implemented: 1,192 per-entry receipts checked before overlays and resolution; stable-ID migration remains open (PR-37 in #91) |
+| R2 — evidence admission | Strict weighing schema, per-position search coverage, proof-bound advantages, explicit applicability/strength claims | Typo fields rejected; unsearched sides remain pending; no unsupported qaṭʿī/ijmāʿ promotion; policy changes replay in Lean/Python | Open; PR-34/36 in #91 |
+| R3 — source and occurrence completeness | Context-aware quotation verification and occurrence-preserving segmentation | Negation/qualifier/word-boundary mutations rejected; repeated bāb obligations retained; every required witness replayed | Open; PR-35/40 in #91; integrate #86 on its own source gates |
+| R4 — application orchestration | Split CLI handlers from source services, admission, inference and output generation | No I/O or corpus dependency enters pure modules; public commands stay compatible; source and semantic checks reported separately | Open; current CLI remains adapter |
+| R5 — derived views and evaluation | Explicit generated-output inventory, grouped routing evaluation, receipt-bound explanations | Every generated file checked; held-out qāʿida metrics and prior disclosed; routing cannot assert a ruling | Open; PR-38/39 in #91 |
+| R6 — remove legacy authority paths | Retire index adapters after complete migration; review acceptance transitions | No silent coercion, inferred acceptance, source skip counted as verified, or view-to-premise promotion | Open |
+
+R0 and the R1 receipt gate do not close evidence completeness, source fidelity or scholarly acceptance.
+The 53 added `outside` annotations only make already-present range gaps explicit;
+no reported ruling changes. The combined #92/#93 implementation retains current proof-ranking
+semantics, including comparison against a side with no recorded proof. R2 must
+separate that conditional computation from evidence adequacy before promoting it.
+
+Each later stage needs its own behavior-preserving replay, negative controls, and
+explicitly reviewed semantic changes. Coordinate with open #86 (mutūn/source
+restoration), #88 (source publication) and #91 (audit plan); do not absorb their
+content or bypass their blockers as part of this refactor. Full source verification,
+Lean, Prolog and generated-output CI remain integration gates.
+
+### Semantic tagging development follow-up (2026-10-19)
+
+[PR #72](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/72)
+merged on 2026-10-14. Its first 12 authored records are preserved unchanged. The
+2026-10-19 continuation adds a candidate pass for the other 41 question IDs;
+integration does not promote the interpretations to reviewed facts. The committed
+[development report](../corpus/fatawa/semantic-propositions-report.json) records:
+
+| Development scope | Current state |
+|---|---|
+| Distinct questions behind 123 IslamQA cases | 53 |
+| Questions with an initial candidate pass / without one | 53 / 0 |
+| Act-relative propositions / candidate roles | 365 / 1,074 |
+| Proposed bank mappings | 58, all on hold |
+| Candidate typed fact values | 2, unreviewed (`trust_loss.hand = trustee`, questions 4652 and 152192) |
+| New kernel executions | 0 |
+| Semantic accuracy / retrieval improvement | Unmeasured |
+
+The [development protocol](semantic-tagging-development.md) ties evidence to
+the pinned Arabic source, question-body spans and individual propositions.
+Editorial titles cannot supply factual evidence; actors, negation and hypothetical
+branches cannot be pooled to fill a fact map. These checks establish source and
+structural integrity, not the correctness of an interpretation. In particular,
+four years of possessing a found watch does not establish the bank's required
+year of public announcement. All-question coverage is not a claim of exhaustive
+segmentation: question 13717 is a general request without a concrete deposit
+event, and reported claims or hypothetical events do not become established facts.
+
+**Next work, within the existing source/interpretation/admission boundaries:**
+
+1. Audit segmentation completeness and scope across all 53 candidate-annotated
+   questions, including the original 12. Preserve distinct actors, acts,
+   conditions, polarity and modality; use each new record's `review_note` as an
+   advisory review prompt. The initial pass for the remaining 41 is complete;
+   completeness and correctness of its interpretations remain unreviewed.
+2. Independently review the authored propositions and field-specific entailment
+   rationales. Record corrections and missing evidence before admitting any
+   complete typed fact map; merging code or documentation is not that review.
+3. Evaluate semantic tags, typed facts, encoder retrieval and kernel agreement
+   separately. Preserve all subcases of a question in the same split and freeze a
+   different modern question-held-out set before tuning; also check near-duplicate
+   questions for leakage. These 53 published questions are development data,
+   not a fresh blind test.
+
+The October 19 continuation reverified the complete Arabic archive's size and
+SHA-256, passed 58 focused tests, and passed both source-backed deterministic
+generation checks. Corpus schema/registry validation also passes. The expanded
+workset test rejects any attempted development kernel execution. The October 14
+type-export consistency result remains prior evidence; no new formal-kernel proof
+run is claimed. Historical retrieval figures, the verified original lexical replay
+and later candidate routing experiments remain separate evidence
+records. This annotation batch supplies no new retrieval score and does not
+overturn the signature proxy's zero-weight selection. The separate typed-situation
+routing experiments must not be attributed to this question-body annotation batch.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |
@@ -52,14 +136,14 @@ This rejects Standard Deontic Logic (KD) as the core: it has no defeasibility an
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
-**Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,017 annotated + **172 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 144 are fully annotated and **10 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
+**Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
 
 The unit is a committed farʿ record, which can contain multiple examples. Annotated gaps and disagreements are already counted as annotated; annotation does not mean independently reviewed or scholarly accepted. No count is imputed for unsegmented examples. The exact ID worklist and input hashes are in `corpus/worklists/rajab_m8.json`; rebuild with `python -m usul_corpus m8-worklist`.
 
 | Current scope (generated) | Cases | Coverage | Decided coverage | Disputed | Encoding errors | Open gaps |
 |---|---|---|---|---|---|---|
 | Combined M8 tranche 3 | 29 | 1.000 | 1.000 | 21 | 0 | 0 |
-| All annotation suites | 1084 | 0.959 | 0.909 | 598 | 0 | 44 |
+| All annotation suites | 1256 | 0.951 | 0.893 | 684 | 0 | 61 |
 
 Coverage counts derivability under the candidate encoding. Decided coverage scores the kernel only on cases that state one ruling; disputed cases are weighed by their evidence, not by who holds a position. Neither metric establishes scholarly acceptance.
 <!-- END GENERATED M8 SCOPE -->
@@ -100,7 +184,7 @@ Taklīfī status, with an involution for the status of omission (*al-amr bi'l-sh
 ```text
 Ḥukm  ::= W | N | M | K | Ḥ          -- wājib, mandūb, mubāḥ, makrūh, ḥarām
 σ : Ḥukm → Ḥukm,  σW = Ḥ, σN = K, σM = M, σK = N, σḤ = W
-Law:  σ ∘ σ = id,  σ antitone on the valence order  Ḥ < K < M < N < W
+Law:  σ ∘ σ = id,  σ antitone on the order  Ḥ < K < M < N < W  read off reward and liability for doing and leaving
 ```
 
 Waḍʿī structure as a dependent precondition:
@@ -439,4 +523,3 @@ semantic-categorical-oracle/
 - **Proof debt:** zero `sorry` on `main` for completed milestones.
 - **Differential parity:** Lean ↔ Haskell disagreements = 0 on the fixture corpus.
 - **Provenance:** 100% of accepted records resolve to a pinned-edition locator.
-

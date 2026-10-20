@@ -53,13 +53,21 @@ def span(text: str, excerpt: str) -> tuple[int, int] | None:
     return idx[k], end
 
 
-QUALIFIER = re.compile(r"^[\s،,:؛.()0-9٠-٩]*(إلا|ما لم|بشرط|لكن|إن لم|بخلاف|غير أن|إذا لم)")
+# An exception or condition, matched after diacritics are stripped and hamza on alif unified, past any
+# punctuation, dash or quotation mark; «الا» only as a whole word, not «الاستثناء».
+QUALIFIER = re.compile(r"^[\s،,:؛.()\[\]0-9٠-٩\-–—\"'«»“”‘’]*(الا(?![ء-ي])|ما لم|بشرط|لكن|ان لم|بخلاف|غير ان|اذا لم)")
+_HAMZA = str.maketrans("أإآ", "ااا")
+
+
+def qualified(tail: str) -> bool:
+    """``tail`` opens with an exception or condition."""
+    return bool(QUALIFIER.match(_DIACRITICS.sub("", tail).translate(_HAMZA)))
 
 
 def cut_before_qualifier(text: str, excerpt: str) -> bool:
     """The excerpt stops where its witness goes on with an exception or condition."""
     sp = span(text, excerpt)
-    return bool(sp and QUALIFIER.match(text[sp[1]:sp[1] + 40]))
+    return bool(sp and qualified(text[sp[1]:sp[1] + 40]))
 
 
 def aya(quran: str, sura: int, n: int) -> str | None:

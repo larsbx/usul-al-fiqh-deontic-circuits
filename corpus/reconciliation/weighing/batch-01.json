@@ -34,7 +34,8 @@
      "note": "Taqi al-Din's argument for the husband's word, as Ibn Rajab reports it. It rests on the aṣl and barāʾa, so istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "e1c2a20ba9b7eedef397ad5d8bb49a19bfd195977a5527dc82db94da122b5a5e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021",
@@ -76,7 +77,8 @@
      "note": "Sharh al-Muntaha cites this hadith for the general rule of acting on certainty and then says the rule covers the dog that put its head in with a wet mouth: the water is not impure (only disliked as a precaution). It is a connected marfūʿ report that bears on the case only through a general rule, so zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "3bfda1f44bd95980ee379344c808a7570658af26c2f3bb5b6cb1dcb698bd92a5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
@@ -91,7 +93,8 @@
      "note": "Al-Mardawi gives this for purity in Ibn Rajab's case of a non-blood creature nearer the latrine than the well. It rests on the aṣl, so istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "40a6067d9e5cef8f5bffaa64760de0a17449a0e7831a9d763ef66e18ff392839"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023",
@@ -133,7 +136,8 @@
      "note": "Ibn Rajab's only stated ground for the impurity riwaya. It is a rationale from the zahir, so qiyas, and it is weak as stated."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6447b24f2f4a91b79c3107ad5bfc09a3b709450c6e3a99d76e9e1ee7d5fc0f71"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024",
@@ -157,7 +161,8 @@
      "note": "Ibn Qudama gives this for the purity (and usability for tayammum) of cemetery soil when repeated exhumation is doubted, which is exactly these facts. It rests on the aṣl, so istishab."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "aa406f4ef8ea1fc5db8dff890a1ebf1dd8cb9b2341fb9b06f9198802235fc940"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025",
@@ -226,28 +231,8 @@
      "note": "Cited for the strong-zahir riwaya: do not use these before washing. An analogy, so qiyas."
     }
    ],
-   "advantages": [
-    {
-     "for": 1,
-     "over": 0,
-     "by": "qawl",
-     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
-     "excerpt_ar": "فقال رسول الله - صلى الله عليه وسلم -: إن وجدتم غيرها فلا تأكلوا فيها",
-     "who": "Ibn Qudama, al-Mughni",
-     "note": "Both are zanni. The proof for dislike (Abu Thaʿlaba) is the Prophet's own saying. The proof for permission (the mazāda report) is a report of his deed (توضئوا من مزادة مشركة). Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
-     "basis": "applied"
-    },
-    {
-     "for": 1,
-     "over": 0,
-     "by": "hazir",
-     "ref": "src:openiti-ibnqudama-mughni-shamela8463/v01:p061",
-     "excerpt_ar": "إن وجدتم غيرها فلا تأكلوا فيها، وإن لم تجدوا غيرها فاغسلوها وكلوا فيها",
-     "who": "Ibn Qudama, al-Mughni",
-     "note": "The Abu Thaʿlaba hadith is a prohibition («فلا تأكلوا فيها»). The proof for the first riwaya shows only permission (his wuḍūʾ from the polytheist woman's water-skin), so prohibition is preferred over permission. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
-     "basis": "applied"
-    }
-   ]
+   "advantages": [],
+   "positions_sha256": "df2d664798df15a930da8663f7a10f0d23601ceb610f6c05608562d73c460048"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026",
@@ -284,7 +269,7 @@
      "tier": "zanni",
      "dalil": "Hadith, agreed upon: the Prophet prayed carrying Umama bint Abi al-ʿAs. A further report says al-Hasan leapt on his back when he prostrated.",
      "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p064",
-     "excerpt_ar": "تتحقق نجاسته وهو قول الثوري وأصحاب الرأي لأن النبي صلى الله عليه وسلم صلى وهو حامل أمامة بنت أبي العاص بن الربيع متفق عليه",
+     "excerpt_ar": "لم تتحقق نجاسته وهو قول الثوري وأصحاب الرأي لأن النبي صلى الله عليه وسلم صلى وهو حامل أمامة بنت أبي العاص بن الربيع متفق عليه",
      "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
      "note": "The Sharh's own ruling is that prayer in children's clothes is permitted (تباح), and it gives this proof for it. The precaution it then adds is attributed to «أصحابنا». This fits the no-dislike wajh, which al-Insaf records as a riwaya and an ikhtiyar in Majmaʿ al-Bahrayn. A connected marfūʿ report, so zanni."
     },
@@ -298,18 +283,8 @@
      "note": "This is the only ground stated anywhere for the prohibition wajh, which is Ibn Abi Musa's choice. It is an ilḥāq, so qiyas."
     }
    ],
-   "advantages": [
-    {
-     "for": 1,
-     "over": 0,
-     "by": "sahihayn",
-     "ref": "src:openiti-shamsibnqudama-sharhkabir-shamela1153/v01:p064",
-     "excerpt_ar": "صلى وهو حامل أمامة بنت أبي العاص بن الربيع متفق عليه",
-     "who": "Shams al-Din Ibn Qudama, al-Sharh al-Kabir",
-     "note": "Both are zanni. The Umama hadith cited for permissibility is agreed upon (al-Bukhari and Muslim). The ʿAʾisha report cited for avoidance is given only from Abu Dawud. Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
-     "basis": "applied"
-    }
-   ]
+   "advantages": [],
+   "positions_sha256": "c7d95f3a64b5f5f1f43e1b552fff988b206f13a1cb7b71b60bf9285637ba4335"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027",
@@ -398,7 +373,8 @@
      "note": "Both are zanni. Ibn Masʿud's hadith for preponderant belief is agreed upon. Abu Saʿid's hadith for certainty is attributed only to Muslim, Abu Dawud and Ibn Majah («أخرجه مسلم، وأبو داود، وابن ماجه»). Basis: applied — the excerpt shows the property, but no source compares the two proofs; the bank applies the uṣūl murajjiḥ.",
      "basis": "applied"
     }
-   ]
+   ],
+   "positions_sha256": "2b12818d6d9f22949adeb5751186d5b7afb9574693a8dcd97a51f36d69cf47e3"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028",
@@ -440,7 +416,8 @@
      "note": "This is the only ground stated for the second riwaya. An analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "d0de508a07bc0bd67f4b0644a3ec1f2fa7e083c2de1d4d4086e7e624b42bbfca"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029",
@@ -464,7 +441,8 @@
      "note": "Ibn Qudama makes the marks decisive and falls back on the dār only when there are no marks. That supports Ahmad's text that a corpse bearing only marks of kufr gets no prayer. It is a rationale from indicators, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "83742ab6c7c84ee27319302d3c058ff2aed7e02ccfd8b69e3bd77bf52abfe5a5"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030",
@@ -497,7 +475,8 @@
      "note": "Ibn Qudama's «ولنا» for the word of whoever claims the fair mahr, the Khiraqi text. An explicit qiyās, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f2c9ac772c140aaf5c60d8429b6eb5e695922a71c8324b3a819794cda86f8002"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031",
@@ -521,7 +500,8 @@
      "note": "Al-Qadi's ground for the wife's word on these facts. A rationale from the zahir with the possessor as analogue, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b1905c155287fcc5fd8a92b76725c39144ad968bd85797587f6a741aec1d83d2"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032",
@@ -554,7 +534,8 @@
      "note": "Ibn Rajab's preferred reasoning for non-settlement. A rationale and distinction, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "b720babf1a334c0efeffa3e8f19fc4cc93593530b5eaf2ce952734bf565e9193"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033",
@@ -587,7 +568,8 @@
      "note": "Al-Qadi's wajh, which Ibn ʿAqil follows, as Ibn Rajab gives it. A rationale from the zahir, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "60bc83a1e88020af335f9106e8dbdcdb42a90c0f88bc13a36e2d987a9a47d67f"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
@@ -629,7 +611,8 @@
      "note": "Al-Azaji gives this for the broader view that eating is forbidden outright. On these facts, where the unlawful is the majority, that view gives the same ruling, so it counts for this position. An analogy, so qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0a10f3c8d37ac7d48c34687c25c939c8db269876eb2802d99db306347d6f34d2"
   }
  ]
 }

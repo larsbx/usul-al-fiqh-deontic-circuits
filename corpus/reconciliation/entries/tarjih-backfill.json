@@ -58,7 +58,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā: «نصا»."
         }
-      ]
+      ],
+      "positions_sha256": "5a40fbfefe7bfb41e33c5b8ce83bcd80053414fefc4a3dbfc2e36925a6f2a226"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011",
@@ -91,7 +92,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v02:p108",
-          "excerpt_ar": "أو في ضمين فقول من ينفيه نص عليه في دعوى عدم الإذن ودعوى البائع الصغر",
+          "excerpt_ar": "لا أو في ضمين فقول من ينفيه نص عليه في دعوى عدم الإذن ودعوى البائع الصغر",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
@@ -115,13 +116,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p056",
-          "excerpt_ar": "يفسد العقد من سفه أو صغر أو إكراه أو عبد عدم إذن سيده ونحوه وأنكره الآخر",
+          "excerpt_ar": "ما يفسد العقد من سفه أو صغر أو إكراه أو عبد عدم إذن سيده ونحوه وأنكره الآخر",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«فإذا ادعى أحدهما ما يفسد العقد من سفه أو صغر ... فقول المنكر ; لأن الأصل في العقود الصحة»."
         }
-      ]
+      ],
+      "positions_sha256": "8a7bc13920e4be9dcca723f0f2085b1a516d690cb7b021e80cb2e4851203373b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
@@ -181,7 +183,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā, with al-Muntahā's matn",
           "note": "«فاكتفى فيه بغلبة الظن كغيره»."
         }
-      ]
+      ],
+      "positions_sha256": "02f81d7e63bdc3cf2256ad9b6a309016d269a2c3cb58e0a26e13ca151153b2de"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013",
@@ -236,7 +239,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(ويباح) فطره (إن غلب على ظنه) غروب شمس، إقامة للظن مقام اليقين»."
         }
-      ]
+      ],
+      "positions_sha256": "84682bef75a5ea54645dcd2e30f716c2da1ce45e4143ca1ea89a7f3746e811b1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020",
@@ -291,7 +295,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(ف) القول (قولها) بيمينها ; لأن الظاهر أن الثاني عقد صحيح»."
         }
-      ]
+      ],
+      "positions_sha256": "e1c2a20ba9b7eedef397ad5d8bb49a19bfd195977a5527dc82db94da122b5a5e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029",
@@ -302,7 +307,8 @@
       "jam": null,
       "naskh": null,
       "note": "No later treatment found (as lane D recorded): none of the six later works takes up the corpse in Dār al-Islām bearing only marks of kufr. The tarjīḥ rests on Ibn Rajab's report: Aḥmad's manṣūṣ (no prayer, buried) over «من الأصحاب من قال».",
-      "evidence": []
+      "evidence": [],
+      "positions_sha256": "83742ab6c7c84ee27319302d3c058ff2aed7e02ccfd8b69e3bd77bf52abfe5a5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036",
@@ -378,7 +384,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "18589a5a8c19358cbde04e02978c0fad6b8152114469ddd8cda0e645a37a1598"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038",
@@ -441,7 +448,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«نصا», citing Ḥarb's riwāya."
         }
-      ]
+      ],
+      "positions_sha256": "ef28e47f418f8bd1c41d37dcbaab0b4f1d4ad0d7b154aeff2ef2e9bcdafe76f2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f006",
@@ -501,7 +509,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "a0198b699ef8bc6c1977a15b39cdfe11c9dcc908a8927a72895e388a8dce8651"
     },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f004",
@@ -564,7 +573,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«نصا»; the variant only as «وفي: الله الأكبر وجه تنعقد»."
         }
-      ]
+      ],
+      "positions_sha256": "e51374322af3af9df1f0302056c961fa2d932500c690ffe237c390d96d5208fe"
     },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
@@ -624,7 +634,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "751c2e0a9233f3f9fc4ec15beae5a1eb6d0fcdeb31d2dacbc826c02fbf2ce25b"
     },
     {
       "far": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q054.f002",
@@ -673,7 +684,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v05:p294",
-          "excerpt_ar": "لي بينة ثم أتى بها أو قال: كذب شهودي أو قال كل بينة أقيمها فهي زور،",
+          "excerpt_ar": "ما لي بينة ثم أتى بها أو قال: كذب شهودي أو قال كل بينة أقيمها فهي زور،",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -687,7 +698,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«نصا»."
         }
-      ]
+      ],
+      "positions_sha256": "6fa55c631f7cd1244c2ac26e396e9c180a0c63188542107d1482fafae1f33a18"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
@@ -755,7 +767,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "8b60ad4d9bc0faed19e2a0a78a52aaaef9e57a15e9713c23684ca667822ba935"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f008",
@@ -815,7 +828,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "61e10c2104ab6cd7857f54b8a732a75db079b763d6ec9f19decf56c7eaaf960f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f018",
@@ -876,7 +890,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(أربعا بقرعة) فكن المختارات»."
         }
-      ]
+      ],
+      "positions_sha256": "1d80b171f695ba14abe94b5f4a4e357fa126a89607728e514cceac2dcdee7c45"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f023",
@@ -940,7 +955,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«نصا»."
         }
-      ]
+      ],
+      "positions_sha256": "f9848397eb30c5c0cfcff81cffb32480bc0c794d278ce12913a07e0561a6ff32"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f024",
@@ -995,7 +1011,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā, with al-Muntahā's matn («كمعينة منسية»)",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "1bfb7b2524d029945138cc720477e9e777a0dedc9217860c7adfada000bc4861"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
@@ -1031,7 +1048,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(ولا يصح تنفله) براتبة ولا غيرها (إذن) أي عند ضيق الوقت»."
         }
-      ]
+      ],
+      "positions_sha256": "60a1ebf6f7d01ca6dc9915c2dfff4a861576c977d097d338fe565ea9817f228c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f001",
@@ -1091,7 +1109,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā, with al-Muntahā's matn («ولا يصح نفل مطلق إذن»)",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "24ee88713be458ef4e72bed555ab98a2f0f5a41fae207498bd2d807fa612548d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f002",
@@ -1151,7 +1170,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "0e44d08835436185729957f94aaf064082aa0e6ef60881e2bff33a3cc55564d1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f002",
@@ -1219,7 +1239,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "c4d4e5dbb02eac52de4142a08b8f59d71f749ffab168b96063eca7a03709413d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003",
@@ -1279,7 +1300,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«فرط أو لا»."
         }
-      ]
+      ],
+      "positions_sha256": "ed1824cc4dc7282e58cda80a8987772c37777e399b740a5b070f7998cd9a9599"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f004",
@@ -1350,7 +1372,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«فيجب الإمساك والقضاء»."
         }
-      ]
+      ],
+      "positions_sha256": "834a54bd8b54c4e897c094d4abc3e221acb78cbb741f78368c17c7a34bb0dec4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f004",
@@ -1370,7 +1393,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
           "note": "The matn: «فإن بادر صاحب الطعام فباعه أو رهنه قبل الطلب صح ... وبعد الطلب لا يصح البيع في الأظهر قاله في القواعد»: the muʿtamad adopts the after-demand invalidity, citing Ibn Rajab. Graded jazm as the matn's own ruling; Kashshāf's sharḥ of it adds nothing independent and is not entered."
         }
-      ]
+      ],
+      "positions_sha256": "2d0a210c870ffdc2af99819c1c7f2d2bbc307e4676385dfb518da1cd751d45f5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f005",
@@ -1416,7 +1440,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v01:p447",
-          "excerpt_ar": "قيمته وله التصرف ببيع وغيره ولا يرجع بائع بعد لزوم بيعه في قدرها إلا إن",
+          "excerpt_ar": "لا قيمته وله التصرف ببيع وغيره ولا يرجع بائع بعد لزوم بيعه في قدرها إلا إن",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -1430,7 +1454,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "Sharḥ of al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "2f250aeadfbb61275019c8029573fce34eb3e38e11acfc92047e18a59685414d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f006",
@@ -1485,7 +1510,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā, with al-Muntahā's matn",
           "note": "In the list of valid sales: «(و) كقن جان ذكر أو أنثى ; لأنها لا تمنع بيعه كالدين»."
         }
-      ]
+      ],
+      "positions_sha256": "586ef3e0830f647146d278217138572405e695e6b62d9c8f9ced15c615bf0b51"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f007",
@@ -1513,7 +1539,8 @@
           "who": "al-Buhūtī's Kashshāf",
           "note": "Sharḥ of al-Iqnāʿ, explaining the analogy with the shufʿa."
         }
-      ]
+      ],
+      "positions_sha256": "0976753f40493b20bca702d0c873b72831034be96232e2621c40cc45108e245d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f008",
@@ -1535,7 +1562,7 @@
         },
         {
           "ref": "src:openiti-insaf-shamela21609/v05:p310",
-          "excerpt_ar": "إشكال في عدم النفوذ. وعلى المذهب قيل: لا ينفذ. قاله القاضي في المجرد،",
+          "excerpt_ar": "لا إشكال في عدم النفوذ. وعلى المذهب قيل: لا ينفذ. قاله القاضي في المجرد،",
           "position": 1,
           "grade": "ashab",
           "who": "al-Qāḍī (al-Mujarrad) and Ibn ʿAqīl (bāb al-shirka), as al-Inṣāf reports them",
@@ -1575,13 +1602,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p169",
-          "excerpt_ar": "يزيل الملك في حق الجاني والراهن والمفلس فلم يمنع نقله فيصح تصرف ورثة في",
+          "excerpt_ar": "لا يزيل الملك في حق الجاني والراهن والمفلس فلم يمنع نقله فيصح تصرف ورثة في",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«فيصح تصرف ورثة في تركة بنحو بيع»."
         }
-      ]
+      ],
+      "positions_sha256": "f5d70ba267eb0d4c4943157c5123b64b773f0c6eba1dac54d0585c8c8e201342"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f032",
@@ -1641,7 +1669,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Sharḥ on the Muntahā's «ويقرع إن لم يختر أو اختارهما»: «لأنه لا مزية لأحدهما على الآخر»."
         }
-      ]
+      ],
+      "positions_sha256": "8b7da1e15ff4e5803ba0e6bc8697a28a2e8916fb82677223b899b7bcc342da49"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033",
@@ -1685,7 +1714,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On the Muntahā's «وأراد كل مباشرته قدم واحد بقرعة ووكله من بقي»."
         }
-      ]
+      ],
+      "positions_sha256": "e9e79657cb73914725c1e8782929eabc045e98d175968ee029286606c79150c6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f041",
@@ -1745,7 +1775,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«... من خرجت له (القرعة) لأنه لا مرجح غيرها»."
         }
-      ]
+      ],
+      "positions_sha256": "7d05433711fd9d0b505161936cad61ab87468418feabd4e7ef38ce8343b94b74"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f048",
@@ -1805,7 +1836,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive sharḥ statement."
         }
-      ]
+      ],
+      "positions_sha256": "1108747e576862c7fccbb963081f9bf6d5736c6d5b5ae202aeef0aab77e1b0fa"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q008.f004",
@@ -1873,7 +1905,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«... لحديث إذا أمرتكم بأمر فأتوا منه ما استطعتم»."
         }
-      ]
+      ],
+      "positions_sha256": "8776fecafa9a050f70c27b973a0d1be453dc0d2c963d4914f9d00a09ef6cf711"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f001",
@@ -1936,7 +1969,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "The preceding line names the case: «(أو) في (سقف انهدم) مشاعا بينهما أو بين سفل أحدهما وعلو الآخر»."
         }
-      ]
+      ],
+      "positions_sha256": "d54403449b0e9fa5a5dd0feb235e82b3218205765a800e918f36f9adb105395a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f002",
@@ -2002,7 +2036,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "3104298e71b570546d494a79e44f1ded06afd99b0e9767e99963f8e33b8172b0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f004",
@@ -2057,7 +2092,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "1b7648aa8650650eecd5e3dff2941c2dd944b9620834da981676e214dfafbec5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f008",
@@ -2117,7 +2153,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "df2201e86470820ada4dcf7dc2102611e456790412345294d31f693e493de98a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f009",
@@ -2141,7 +2178,8 @@
           "who": "al-Qāḍī and his companions: the ẓāhir of Aḥmad's words, as al-Inṣāf reports it",
           "note": "«... وقالوا: هذا ظاهر كلامه، قال في القواعد: المشهور الوقوع»; al-Furūʿ (v08) has the same «وأنه ظاهر كلامه», not added again."
         }
-      ]
+      ],
+      "positions_sha256": "5790b6a566bde38bcd71ede51f2c6a41c4413c34860938cf4b6ba18f8c9a99cc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f011",
@@ -2212,7 +2250,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Continues «فيصح لأنه تبرع مشروط بالموت»."
         }
-      ]
+      ],
+      "positions_sha256": "9a25948ebf15a4ee805343a91878e8d46312b1ef119a61accef25f9f4ea9d0e3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f001",
@@ -2256,7 +2295,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "81fe0aa9480c3e45ec549da1d3e004ad373a264058ac69d43a6810620fffdfa4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f012",
@@ -2324,7 +2364,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "b2ef03f818f72ecf768657f4ed6f32f54b5f1c05d99294979ec331109a97fbb9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004",
@@ -2357,7 +2398,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p012",
-          "excerpt_ar": "يتحر للنكاح وكف عنهن وفى قبيلة كبيرة وبلدة كبيرة له النكاح من غير تحر",
+          "excerpt_ar": "لم يتحر للنكاح وكف عنهن وفى قبيلة كبيرة وبلدة كبيرة له النكاح من غير تحر",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
@@ -2371,7 +2412,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "4bedfe673f550dd0ca7dc0428a95eec3e10742e91b6d108f760369abd19cdc83"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f007",
@@ -2431,7 +2473,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "3a4c7c4153f06332885ee329fe1ec2fd979b8a8e011dba7e8fcd30f41db28cf5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
@@ -2445,7 +2488,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v06:p331",
-          "excerpt_ar": "يضمن إذا كسر ختم كيسها، أو حله. فعلى المذهب: لا يعود عقد الوديعة بغير",
+          "excerpt_ar": "لا يضمن إذا كسر ختم كيسها، أو حله. فعلى المذهب: لا يعود عقد الوديعة بغير",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -2483,7 +2526,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "421395fe39398e20314835bf3121ba8f509326a06d2d61824d0f591b20176b32"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
@@ -2543,7 +2587,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "31fa828b95f2a4cc0fe18e369e51c20bf23a90ecd71dacc6293a2b68a77d2e3a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f004",
@@ -2565,7 +2610,7 @@
         },
         {
           "ref": "src:openiti-ibnmuflih-furu-shamela12052/v08:p344",
-          "excerpt_ar": "اختاره الخرقي والشيخ هو الصحيح واختاره الشارح أيضا، وقدمه في الرعايتين",
+          "excerpt_ar": "ما اختاره الخرقي والشيخ هو الصحيح واختاره الشارح أيضا، وقدمه في الرعايتين",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, Taṣḥīḥ al-Furūʿ (masʾala 30)",
@@ -2603,7 +2648,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "aa310ac3b75d474be03d0244d5144ba3da63ec033ba6c1f59bbc59b383f851db"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f007",
@@ -2669,7 +2715,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "ab3e7772fcc772e51b2797539f61ace961a7ad0ca0f35894f31f6683aefc9019"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
@@ -2712,7 +2759,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On the sale rescinded «بخيار أو عيب أو تقايل»: the attached increase follows the thing sold."
         }
-      ]
+      ],
+      "positions_sha256": "c398767270b582e42df0cb22f3373e6aab4c8bf51a357c035a51ef55e006894f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f004",
@@ -2776,7 +2824,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«... البيع بزيادته»."
         }
-      ]
+      ],
+      "positions_sha256": "f27e339173acdab3ca540b7046c461ea3c51a6217c716d41a25604f0128c927b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003",
@@ -2815,7 +2864,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "«... قبل التمكن، لم يضمنه؛ لأنه محسن»."
         }
-      ]
+      ],
+      "positions_sha256": "4a6a12e34c869830edb4c7ae53f814b872500f6aaef7227cbd22ab0132d6ec32"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f004",
@@ -2851,7 +2901,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "864c4fecb6484cfe41a24f61560da09d12565545ebd74c6d33a0c833c028f541"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
@@ -2905,7 +2956,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p154",
-          "excerpt_ar": "يضمن كرديف ربها ورائض ووكيل ومن قال لا أركب إلا بأجرة فقال ما آخذ أجرة",
+          "excerpt_ar": "لم يضمن كرديف ربها ورائض ووكيل ومن قال لا أركب إلا بأجرة فقال ما آخذ أجرة",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
@@ -2913,13 +2964,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p293",
-          "excerpt_ar": "ينفرد بحفظها. أشبه ما لو غطى ضيفه بلحاف فتلف عليه لم يضمنه (كرديف ربها)",
+          "excerpt_ar": "لم ينفرد بحفظها. أشبه ما لو غطى ضيفه بلحاف فتلف عليه لم يضمنه (كرديف ربها)",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "69809e2b9800ad1edfa47621a5fa0555914f7c7da314ba825b5eee0dcd83c9d0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001",
@@ -2982,7 +3034,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "8478263ce460a0b5b9aeab0d02dc1c38b138359e1e17c097d411577452bc892c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003",
@@ -3010,7 +3063,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ",
           "note": "«كمن رمى سهما ثم أسلم أو كفر قبل إصابته, في الأصح»: in his wealth. The «وجه» reported is that nothing is owed, a different ruling, and is not graded."
         }
-      ]
+      ],
+      "positions_sha256": "d5fea2d66bca7ec7b0414679956855b0edcd633c300ae463f8ed879ab1f698ec"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f004",
@@ -3038,7 +3092,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "The preceding line: «وإن رمى محل صيدا ثم أحرم قبل إصابته»."
         }
-      ]
+      ],
+      "positions_sha256": "750ab8dc4b90b06c971aa06d044a40d62e1d99769513b2128188e8eb05a13b2e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f005",
@@ -3102,7 +3157,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "fb10bda5482c26fb92757c4466227eb88f394cf40f1b2c884e69b0691080f2b5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f006",
@@ -3157,7 +3213,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "9992502c575fc92277758e1b00d051bb0065d658d8c6b883b4c626aae5f4b897"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f001",
@@ -3228,7 +3285,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "The forced taking suffices outwardly only."
         }
-      ]
+      ],
+      "positions_sha256": "1caa7db7c2e6a8e8f02414f1b83b4014813791d56a747eb9e2854d3489bbf6ab"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f005",
@@ -3261,7 +3319,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p363",
-          "excerpt_ar": "يضمنه وإن أرسله إنسان من يده المشاهدة قهرا لم يضمنه ومن أمسك صيدا في",
+          "excerpt_ar": "لم يضمنه وإن أرسله إنسان من يده المشاهدة قهرا لم يضمنه ومن أمسك صيدا في",
           "position": 0,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
@@ -3291,7 +3349,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "1b34128ecd739d09218eb8f3dddb7bb194b41ba993e3bce6fb4d7e43b8a46f86"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f009",
@@ -3332,7 +3391,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v03:p499",
-          "excerpt_ar": "يضمنه وإن وصى بإعطاء مدع عينه دينا بيمينه نقده من رأس ماله ومن أوصي إليه",
+          "excerpt_ar": "لم يضمنه وإن وصى بإعطاء مدع عينه دينا بيمينه نقده من رأس ماله ومن أوصي إليه",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
@@ -3347,7 +3406,8 @@
           "note": "Decisive."
         }
       ],
-      "register": "RQ-03"
+      "register": "RQ-03",
+      "positions_sha256": "e614830f68a0a31090b5a2a1d44a2a1b3d4701ff80e327756fffb73a31a219b4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
@@ -3399,7 +3459,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(ويعزلان) أي المرتهن والعدل ... (بعزله) أي الراهن لهما نصا»."
         }
-      ]
+      ],
+      "positions_sha256": "c45253c1c05a33cc5c7d1f5962b4816497512e6627a9434e855d01faf7a244e0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f005",
@@ -3465,7 +3526,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(وإن أبى مالك البيع) بعد فسخ المضاربة والمال عرض وطلبه عامل (أجبر) ... نصا»."
         }
-      ]
+      ],
+      "positions_sha256": "b60ca6e1f8ef9e95b5770d28dccb4a1cf544ef19d41f0f07c8108e614a21cc43"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f006",
@@ -3520,7 +3582,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
           "note": "The matn: «هذا إذا نض المال وإن كان عرضا لم ينعزل وله التصرف بالبيع»."
         }
-      ]
+      ],
+      "positions_sha256": "59ba0667d1147752260a467e1c03d6785294779d4af188c4e8e4342fd04ce6bf"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
@@ -3588,7 +3651,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(فلا شيء عليهما) ... وأما الموكل فلأنه محسن بالعفو»."
         }
-      ]
+      ],
+      "positions_sha256": "45bd64b4ddeedee94606d8db3f93a0835f499030f9fe06d049f2cf5410053ecb"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f000",
@@ -3651,7 +3715,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "The cognate ṣadāq: «(ومتى أسقطته) أي: المهر (عنه) ... (رجع)»."
         }
-      ]
+      ],
+      "positions_sha256": "3a66413eb9c0dcd1477b104ccdd213c5e4b2f1f8258b996f4a90c940f1fd3add"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f001",
@@ -3695,7 +3760,8 @@
           "who": "Ibn al-Najjār's al-Muntahā, of the cognate ṣadāq",
           "note": "«كعوده إليه ببيع أو هبتها العين لأجنبي ثم وهبها له»: what came back by gift is still recovered."
         }
-      ]
+      ],
+      "positions_sha256": "6fab9f2a3204b0923e364e2c739b9312a0bb7f7541f9b73a26179c17076d8256"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f002",
@@ -3758,7 +3824,8 @@
           "who": "Ibn al-Najjār's al-Muntahā",
           "note": "«كعوده إليه ببيع أو هبتها العين لأجنبي ثم وهبها له»: the ʿayn returned through a gift is recovered on the halving (cognate)."
         }
-      ]
+      ],
+      "positions_sha256": "e3cba829b154045d645665d599f73c86f478c9a23d147607faa6b9fa08c0e8b4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f004",
@@ -3810,7 +3877,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(غرماه) كما لو تنصف الصداق بعد هبتها إياه للزوج»."
         }
-      ]
+      ],
+      "positions_sha256": "b2bcbb61ebae07b627823255e500df88a2c172f052e0fe42f32d6719c122bd66"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f005",
@@ -3840,7 +3908,7 @@
         },
         {
           "ref": "src:openiti-ibnmuflih-furu-shamela12052/v06:p402",
-          "excerpt_ar": "يقل: إلي فهو مقر بقبضه, لا أبرأتك, وقوله له: وهبتك الحق تمليك له, فيرجع",
+          "excerpt_ar": "لم يقل: إلي فهو مقر بقبضه, لا أبرأتك, وقوله له: وهبتك الحق تمليك له, فيرجع",
           "position": 1,
           "grade": "qiyas",
           "who": "Ibn Mufliḥ's al-Furūʿ, of the cognate gift",
@@ -3870,7 +3938,8 @@
           "who": "Ibn al-Najjār's al-Muntahā, of the cognate gift",
           "note": "«ووهبتكه تمليك له فيرجع على مضمون»."
         }
-      ]
+      ],
+      "positions_sha256": "e2ea2e7fd64fc0b5b9786c07ca986e4be29e16c3bb5738a305dde5ed640d39d8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f002",
@@ -3912,7 +3981,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p512",
-          "excerpt_ar": "يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
+          "excerpt_ar": "لم يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
           "position": 1,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -3926,7 +3995,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(وإن وكل) مأذون له من حر وعبد مميز (فكوكيل) فله أن يوكل فيما يعجزه أو لا يتولاه مثله دون غيره إلا بإذن»."
         }
-      ]
+      ],
+      "positions_sha256": "fce9ca7aa9e9382a378a33f24dd161cb585f998d8e86c956f98b038c0ac8c0ea"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f003",
@@ -3964,7 +4034,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v02:p512",
-          "excerpt_ar": "يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
+          "excerpt_ar": "لم يقيد عليه وإن وكل فكوكيل ومتى عزل سيد قنه انعزل وكيله كوكيل ومضارب لا",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār's al-Muntahā",
@@ -3978,7 +4048,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(وإن وكل) مأذون له من حر وعبد مميز (فكوكيل)»."
         }
-      ]
+      ],
+      "positions_sha256": "e86d83f9345f23acc15b22204d9ab9b058662070b9d0b51653aa1e84d92b1ef3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004",
@@ -3995,7 +4066,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v05:p417",
-          "excerpt_ar": "يعجز عنه فكذلك هنا. والطريق الثاني: يجوز لهما التوكيل هنا. وإن منعنا في",
+          "excerpt_ar": "لم يعجز عنه فكذلك هنا. والطريق الثاني: يجوز لهما التوكيل هنا. وإن منعنا في",
           "position": 0,
           "grade": "qiyas",
           "who": "al-Mardāwī in al-Inṣāf, by the agent's madhhab",
@@ -4033,7 +4104,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
           "note": "The matn: «وليس له أن يوكل فيما يتولى مثله بنفسه وهو كمضارب فيما له وعليه»."
         }
-      ]
+      ],
+      "positions_sha256": "c4199b9aebb20e2682608c49311d040f6920ac6014e986c67d660b20003e633f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f005",
@@ -4112,7 +4184,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ, kitāb al-qaḍāʾ",
           "note": "The matn: «وإن نهاه عن الاستخلاف لم يكن له أن يستخلف وإن أطلق فله ذلك»."
         }
-      ]
+      ],
+      "positions_sha256": "b3be103d06f3711e2293603a25dcdd579f861d9dcf6e2e4295fbf9967a459683"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f002",
@@ -4150,13 +4223,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p180",
-          "excerpt_ar": "يحتج أكل) منه (بمعروف) إلحاقا له بعامل الزكاة فإن شرط له الواقف شيئا",
+          "excerpt_ar": "لم يحتج أكل) منه (بمعروف) إلحاقا له بعامل الزكاة فإن شرط له الواقف شيئا",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(ولناظر وقف ولو لم يحتج أكل) منه (بمعروف) ... فإن شرط له الواقف شيئا فله ما شرطه»."
         }
-      ]
+      ],
+      "positions_sha256": "585214571efafc245ca1c3960976bf601f822708f4495636e322e28c9ce208af"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f003",
@@ -4195,7 +4269,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ, of the cognate agent for alms",
           "note": "The matn: «والوكيل في الصدقة لا يأكل منها شيئا لأجل العمل»."
         }
-      ]
+      ],
+      "positions_sha256": "2ee22e3d91b77b0291671619ec44da037c20390445417bb87303512a02ad2f8b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q071.f004",
@@ -4256,7 +4331,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«منها ساقطة كانت أو بشجرها (ولو بلا حاجة)»."
         }
-      ]
+      ],
+      "positions_sha256": "b7c8a9befa15101b6f16e66a2842f2ecd0d8d5245b436f61865ec3bbd7d0f86d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f000",
@@ -4300,7 +4376,8 @@
           "who": "Ibn Mufliḥ's al-Furūʿ, on the naṣṣ, for the Ramaḍān kaffāra",
           "note": "«وإن قدر على العتق في الصيام لم يلزمه الانتقال, نص عليه»."
         }
-      ]
+      ],
+      "positions_sha256": "6df97d4832e6b9b5ae56e0c6e81fe7832c533cf9e5ead7d0e4c4b7e581405f17"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f000",
@@ -4333,7 +4410,7 @@
         },
         {
           "ref": "src:openiti-ibnmuflih-furu-shamela12052/v10:p036",
-          "excerpt_ar": "يغرقها اتفاقا, ذكره ابن عقيل, وعنه: نصفها وقيل: ديته على الأسواط إن زاد",
+          "excerpt_ar": "لا يغرقها اتفاقا, ذكره ابن عقيل, وعنه: نصفها وقيل: ديته على الأسواط إن زاد",
           "position": 1,
           "grade": "nass",
           "who": "the riwāya of half, as al-Furūʿ reports it",
@@ -4365,13 +4442,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p339",
-          "excerpt_ar": "يحتمله) المضروب (فتلف ضمنه) الضارب (بديته) كاملة لحصول تلفه بعدوانه وكما",
+          "excerpt_ar": "لا يحتمله) المضروب (فتلف ضمنه) الضارب (بديته) كاملة لحصول تلفه بعدوانه وكما",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(فتلف ضمنه) الضارب (بديته) كاملة لحصول تلفه بعدوانه»."
         }
-      ]
+      ],
+      "positions_sha256": "33f09ea2805ee06a038320a49fad01c08a81a6256e84ef959153d89f054e3690"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f001",
@@ -4407,7 +4485,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ, of the cognate masʾala",
           "note": "The matn: «لكن لو اقتص قهرا مع حر أو برد أو بآلة كالة أو مسمومة ونحوه لزمه بقية الدية»."
         }
-      ]
+      ],
+      "positions_sha256": "7bd615a533a38e1cb098a5b06a6e6a11f8b50b4f5619e83afbbbc884f5a7a0a7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f002",
@@ -4461,13 +4540,14 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p322",
-          "excerpt_ar": "نقصه من خرق جلده ونحوه وإن كان الأول غير موح حرم وقيمته للأول مجروحا",
+          "excerpt_ar": "ما نقصه من خرق جلده ونحوه وإن كان الأول غير موح حرم وقيمته للأول مجروحا",
           "position": 0,
           "grade": "qiyas",
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
           "note": "The matn has the full value where the second kills: «وإن كان الأول غير موح حرم وقيمته للأول مجروحا»; the both-wounds case only by the sharḥ."
         }
-      ]
+      ],
+      "positions_sha256": "12a58ab574a8fba4d2ab10d26f01faad4be530cdd2a660084ecbe441d4e12403"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
@@ -4527,7 +4607,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«على المكتري (قيمتها كلها، ولو أنها) أي: الدابة (بيد صاحبها)»."
         }
-      ]
+      ],
+      "positions_sha256": "9841a4e67f255cc5167db6d90693b65234da0ca044ecf9b511487ec83667738a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f004",
@@ -4595,7 +4676,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«بأن اشترك حلال ومحرم في قتل صيد فلا ضمان على الحلال ... ويضمنه المحرم كله تغليبا للإيجاب»."
         }
-      ]
+      ],
+      "positions_sha256": "9f0ccb4e67da02cbabd5d3ec2dd3c5bccc83afa763f6f87573c39981f140df62"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f005",
@@ -4647,7 +4729,8 @@
           "who": "Ibn al-Najjār's al-Muntahā, of the cognate",
           "note": "The matn: «وإن فعله زوج ثم طلق قبل دخول لم يكن عليه إلا نصف المسمى»."
         }
-      ]
+      ],
+      "positions_sha256": "0b9605c59c7bd8ed873c8f5ff0db1997f9d6aa58d274f8e13019c3af983d8c00"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f001",
@@ -4710,7 +4793,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(أو أذن) لها في الخروج (ولم تعلم) بإذنه فخرجت طلقت ; لأن الإذن هو الإعلام»."
         }
-      ]
+      ],
+      "positions_sha256": "f0cf2a67714f18351fa4bcba620b5b6e8d5d6609a57e8ada03a784be04ff08c6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
@@ -4771,7 +4855,8 @@
           "note": "«(ولا يصح عفوه) ... (عن قود شجة لا قود فيها) ... (فلوليه) ... (مع سرايتها) ... (القود أو الدية)»."
         }
       ],
-      "register": "RQ-03"
+      "register": "RQ-03",
+      "positions_sha256": "93a46066ec7250c92eeb615f4e97c4c883186e852d0f1d1991e7d908d498dff4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f010",
@@ -4826,7 +4911,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(وإن نذرها بمال ونيته ألف يخرج ما شاء) من ماله ; لأن اسم المال يقع على القليل»."
         }
-      ]
+      ],
+      "positions_sha256": "7107e360a4799cb79dc067accc9758e6dfe8e49c7dc4bdca74d8ea1eb0217f46"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
@@ -4886,7 +4972,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ, by implication",
           "note": "The matn: «واستثنى واحدة بقبله طلقت في الحكم», silent on the bāṭin."
         }
-      ]
+      ],
+      "positions_sha256": "a1619752395056f9a810c203144c6bf2279ac4aa286da79f04ee91f4e23938ed"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f014",
@@ -4933,7 +5020,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā, of the cognate",
           "note": "«(لم تطلق المستثناة) ; لأنه اسم عام يجوز التعبير به عن بعض ما وضع له»."
         }
-      ]
+      ],
+      "positions_sha256": "e99a7b2c617a5d4ed6cd6e2315dc48b503194e5c2623fabd9877bb27feeecd2c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f004",
@@ -4993,7 +5081,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«(ومن قطع طرف مرتد) فأسلم ثم مات (أو) قطع طرف (حربي فأسلم ثم مات) فهدر»."
         }
-      ]
+      ],
+      "positions_sha256": "68dd5a54a284fffe1b2ccded4d9f5a48614ea32b43d013e1e941fcb6413bbc26"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f000",
@@ -5049,7 +5138,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
           "note": "The matn: «ولا تنفسخ بشراء مستأجرها ولا بانتقالها إليه بإرث»."
         }
-      ]
+      ],
+      "positions_sha256": "5b47213335c316a0c5e2fa264456078d83622704d1f408a5c297194d8c479d93"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q035.f001",
@@ -5093,7 +5183,8 @@
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
           "note": "The matn: «ولا تنفسخ بشراء مستأجرها ولا بانتقالها إليه بإرث»."
         }
-      ]
+      ],
+      "positions_sha256": "c8564fa22399feed845195e55057e2fe835b3945d0dcab57eb6e68c7b4b54654"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000",
@@ -5140,7 +5231,8 @@
           "who": "al-Buhūtī's Sharḥ al-Muntahā, of the cognate arsh",
           "note": "«(وأرش جناية عليه) أي الرهن (رهن) ; لأنه بدل جزئه فكان منه كقيمته لو أتلف»."
         }
-      ]
+      ],
+      "positions_sha256": "f87b20849ad4b16294609d6991c807cb50e8c903caed3b32eec6f58358f79eef"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f001",
@@ -5168,7 +5260,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "On the same matn: annulment needs the word, and the manumission is from a non-owner."
         }
-      ]
+      ],
+      "positions_sha256": "3c2b89118db8f6db0222ef719328bdb478bcfdc6fa947d750a86cb21305597f2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f002",
@@ -5204,7 +5297,8 @@
           "who": "al-Iqnāʿ with Kashshāf",
           "note": "Retrieval by word; by implication not by intercourse."
         }
-      ]
+      ],
+      "positions_sha256": "cd2504a086fdec376860eb615cd72d061f157c0f74ead312a5e6b088a50a084e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f003",
@@ -5240,7 +5334,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On al-Muntahā «ويملك به فيصح تصرفه»: ownership and valid disposal follow the worded demand; by implication not before it."
         }
-      ]
+      ],
+      "positions_sha256": "e8271f6de024d41aca02ef562d98d8c51dd05a834617229f91ce3a0f371ed6c3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f004",
@@ -5300,7 +5395,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "On the same matn."
         }
-      ]
+      ],
+      "positions_sha256": "24b1b69d5e31528cd3d0b63ca6bad47a65e88dab1a78300e2a1b3b16db075311"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f005",
@@ -5366,7 +5462,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "2884fa4edb73ee30219c27458708e8453f145dde678726fc1841b5cab1aa4e8f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f007",
@@ -5429,7 +5526,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "944ba76b47d69ec396a9ffc8fb3029e3eb287de40ab3b4a4be6b83cada6eb4bf"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
@@ -5492,7 +5590,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "1e24bbb6020d67df94b49209260a4cbf3e7826a4a88022bbb95a7586c171dcf9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f003",
@@ -5560,7 +5659,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "6e8371e15b21c5049be0934f366f12310a4882abb1b30e36d8eebec96bed34c3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f004",
@@ -5623,7 +5723,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "On «إن كلمتك فأنت طالق ثم قاله ثانيا طلقت واحدة»."
         }
-      ]
+      ],
+      "positions_sha256": "6a714de39ac76f98ffe953f480802f8aaf05cfb6ac0551911b119ea5f55f01ce"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f005",
@@ -5659,7 +5760,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "d913af69c3ec7c4c6063c702befe9a6e0ba0fb393d6e446cde6804ed6d24e918"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f006",
@@ -5687,7 +5789,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "5e01f7591f5690a65e144d9248ca23d20c3bc8143fdd8940b1dd7e989080a293"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f007",
@@ -5747,7 +5850,8 @@
           "who": "al-Iqnāʿ",
           "note": "al-Iqnāʿ: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "a55474290ea60e1a94329264c4c368c5988b78b75ab6a316c47fab89a24d1683"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f003",
@@ -5802,7 +5906,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "9e0301a66cf9acf57e895aa9047eb3f362295a24430fd737052b72b047ab407d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",
@@ -5825,7 +5930,8 @@
           "who": "al-Mardāwī, al-Inṣāf, on al-Muqniʿ",
           "note": "«بلا نزاع أعلمه»: a sale of part; the annulment on loss is not treated, so only by implication."
         }
-      ]
+      ],
+      "positions_sha256": "883738c69fe5989e5dcecdfa52eb60d09a29a4d7f7a20c9caa7572670282b4c5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f001",
@@ -5888,7 +5994,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "76b741bbeead11459cbe0f1970eb271d2f5921a9bddc7ae350b25fdde6baeb4c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f006",
@@ -5940,7 +6047,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Cognate; by implication only."
         }
-      ]
+      ],
+      "positions_sha256": "cabdf40e290c28ab412a2e2cd196ef8417727aadceb938d989e3d5a7b74ba1a9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f001",
@@ -6003,7 +6111,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "1069a07f138f2ab147e0eb157973b327a021c691c0c565138808d0432d6759f6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f000",
@@ -6058,7 +6167,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "5bdcf29dad43158b03c9cd48f162efde2a2cdd7e022321d9bed9da1d7037c359"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f001",
@@ -6105,7 +6215,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "By implication."
         }
-      ]
+      ],
+      "positions_sha256": "e262fdfa1a5943d860dcdd34321bc896afbdde8f1735f2a93976cd366ad73686"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f003",
@@ -6171,7 +6282,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "ca7131ec2dc0943be8c12d9162d30e2364c9aef78aeb140f1e71dac7b9e62b29"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q079.f001",
@@ -6210,7 +6322,8 @@
           "who": "al-Iqnāʿ",
           "note": "By implication only."
         }
-      ]
+      ],
+      "positions_sha256": "da8e684afd05192b840699898c5ea779fd06eb2e7d2f3b841213ff263b7e5dcc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f000",
@@ -6270,7 +6383,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "ce1ba8aa9f4fafef76b09b4e27761c71d79e064b43e5c314c4eb2721e7c0dfab"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f003",
@@ -6330,7 +6444,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "318f901ef14e76b74060223a04f35a346ccef94eb4d3626fa63870b957b678f8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f004",
@@ -6401,7 +6516,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "4c3618c8ca065c550d482408e443b0f907204c02e8b0a5c624ad59b65802bc03"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f001",
@@ -6419,7 +6535,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v05:p033",
-          "excerpt_ar": "جنسهما، كمد عجوة ودرهم بمدين، أو بدرهمين، أو بمد ودرهم) . وهو المذهب بلا",
+          "excerpt_ar": "غير جنسهما، كمد عجوة ودرهم بمدين، أو بدرهمين، أو بمد ودرهم) . وهو المذهب بلا",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -6435,7 +6551,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p070",
-          "excerpt_ar": "جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو أن المدين والدرهمين",
+          "excerpt_ar": "غير جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو أن المدين والدرهمين",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
@@ -6451,13 +6567,14 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v03:p260",
-          "excerpt_ar": "جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو كان الدرهمان",
+          "excerpt_ar": "غير جنسهما كمد عجوة ودرهم بمثلهما) أي بمد عجوة ودرهم ولو كان الدرهمان",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "c0df8b0c408231e30a96f26f0357ecba5e566e24fd7adf55f8675df8b3ecae56"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f004",
@@ -6501,7 +6618,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "53b6aed3638e8f597fc4d141787ae4d6c58878f01b54e5c3ad4eb4f96ae55204"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f001",
@@ -6564,7 +6682,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "9b78fa9888afacb43b0304b8790c7aa99726e2893fe76a23d097b65a9de74562"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002",
@@ -6635,7 +6754,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "34d4a74a0ec1a67fcd384e03b3d78851fe728aaa046164de0cda9deb8a0e4bb9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f003",
@@ -6649,7 +6769,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v07:p311",
-          "excerpt_ar": "ترث. فعليها: لأم الأم مع الأب وأمه: السدس كاملا. على الصحيح. قدمه في",
+          "excerpt_ar": "لا ترث. فعليها: لأم الأم مع الأب وأمه: السدس كاملا. على الصحيح. قدمه في",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -6663,7 +6783,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ",
           "note": "«وعنه: لا، فعليها لأم أم مع الأب وأمه السدس»: put first."
         }
-      ]
+      ],
+      "positions_sha256": "34099f6933f9f95c2bde4b265b49cf2c7734c767a224b77e5d7092137a43b767"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f004",
@@ -6723,7 +6844,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "3e7fe47911c3dca4660e0215bc7e28dff149385e8cf8deb42152a0432c4c6274"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f002",
@@ -6786,7 +6908,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "109a1e7e51b237e901f7b07f6c7201ac2ce4a07531f869e16401dd112ac207b4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
@@ -6846,7 +6969,8 @@
           "who": "al-Buhūtī, Kashshāf",
           "note": "al-Buhūtī, Kashshāf: stated decisively, without a contrary, in a muʿtamad work."
         }
-      ]
+      ],
+      "positions_sha256": "0f97c9b83429d4a994abb734fc76324e53963128e610f1b3019fbd948ddd4da7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q001.f002",
@@ -6871,7 +6995,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v01:p008",
-          "excerpt_ar": "يرتفع حدثه حتى يخرج مرتبا نصا كالراكد ولو مر عليه أربع جريات ولو حلف لا",
+          "excerpt_ar": "لم يرتفع حدثه حتى يخرج مرتبا نصا كالراكد ولو مر عليه أربع جريات ولو حلف لا",
           "position": 1,
           "grade": "jazm",
           "who": "al-Ḥajjāwī's al-Iqnāʿ",
@@ -6887,13 +7011,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p050",
-          "excerpt_ar": "يجزئه. ولو انغمس في ماء راكد أو جار، ينوي به رفع الحدث لم يرتفع حدثه،",
+          "excerpt_ar": "لم يجزئه. ولو انغمس في ماء راكد أو جار، ينوي به رفع الحدث لم يرتفع حدثه،",
           "position": 1,
           "grade": "jazm",
           "who": "al-Buhūtī's Sharḥ al-Muntahā",
           "note": "«لم يرتفع حدثه، حتى يخرج مرتبا ... أن الجاري، كالراكد»."
         }
-      ]
+      ],
+      "positions_sha256": "120e334d50cd8bcf6b4a05af61bda2353a113ebf73b30b6dff0deea1abe46542"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f001",
@@ -6946,7 +7071,8 @@
           "who": "Kashshāf",
           "note": "«فكثرة الركوع والسجود فيه أفضل من طول القيام»."
         }
-      ]
+      ],
+      "positions_sha256": "04132f4c8f1765b8fcf447bd17b3b045c12c9ca0f8a6c6a66c2945ece768d3d9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f002",
@@ -6982,7 +7108,8 @@
           "who": "Sharḥ al-Muntahā, on al-Muntahā's «ومن المغالاة تعدد في جنس»",
           "note": "The matn line in al-Muntahā is too short to excerpt alone; the sharḥ quotes it."
         }
-      ]
+      ],
+      "positions_sha256": "6e0174272f9daf3b25f984d006bec57031fd56a57d982f6b4127f92f334c3324"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f004",
@@ -6993,7 +7120,8 @@
       "jam": null,
       "naskh": null,
       "note": "Not found in al-Inṣāf, al-Furūʿ or the muʿtamad. The ẓāhir of Aḥmad (citing «فله أجران») outranks the named choice of al-Junayd and Taqī al-Dīn. On the reading.",
-      "evidence": []
+      "evidence": [],
+      "positions_sha256": "258a8707acc2f72905f9e909f9560e8753304d388bf63fbf3bd2b15e2c12cffb"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f000",
@@ -7056,7 +7184,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "On al-Muntahā's «ويضمن هو وزيادته كمغصوب»."
         }
-      ]
+      ],
+      "positions_sha256": "2d0ef5cabe4a9155b5d2dfabc50189bfbf4c1ba313df3a90ad01d7f8954acbbe"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f001",
@@ -7124,7 +7253,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«فإن تسلم المؤجرة في إجارة فاسدة حتى مضت المدة ... فعليه أجرة المثل»."
         }
-      ]
+      ],
+      "positions_sha256": "c8ab941e4c1949230d5d60b6ed97b149cd23294f08e105baa9d4188805ad68bd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q047.f003",
@@ -7198,7 +7328,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "Continues «(المسمى) نصا»."
         }
-      ]
+      ],
+      "positions_sha256": "a8695a280b505bdf323f1dd07d8a858092926484054fa44f227176331a5e7ef6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
@@ -7258,7 +7389,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "Explaining «عقد أمانة» as «كوكالة الوديعة ورهن»: Ibn Rajab's third and fourth hands."
         }
-      ]
+      ],
+      "positions_sha256": "159156d81d56eeb871dca1e4ad046de75bc5fecac5dc8f48e496bccc939ce0b1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f003",
@@ -7302,7 +7434,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "The pledge is named under the trust contracts that have recourse."
         }
-      ]
+      ],
+      "positions_sha256": "a2d594499d87bac71a555d70b6e54b4e90b98d044889988065cde437ddcf3364"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f004",
@@ -7316,7 +7449,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v06:p178",
-          "excerpt_ar": "يرجع على الغاصب بقيمة العين. ويرجع عليه بضمان المنفعة. على الصحيح من",
+          "excerpt_ar": "لم يرجع على الغاصب بقيمة العين. ويرجع عليه بضمان المنفعة. على الصحيح من",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī's taṣḥīḥ in al-Inṣāf (al-ʿāriya from the usurper)",
@@ -7362,7 +7495,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "Ibn Rajab's borrower, the fifth hand there."
         }
-      ]
+      ],
+      "positions_sha256": "9480a6b08ccade999d3b783b4a7c1de81d3cd06d875c904605a2ebc56050425e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f005",
@@ -7430,7 +7564,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "Ibn Rajab's first hand."
         }
-      ]
+      ],
+      "positions_sha256": "6aefbf7aaa52b7119db30cfd50f3bba1c785efde62be25ab4422b77c0b0de3fe"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
@@ -7466,7 +7601,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«لدخوله على أنها مضمونة عليه بحقه»."
         }
-      ]
+      ],
+      "positions_sha256": "74c424d45917d95e4f2bdadfc1db9ad10829fbb110790f5f3d23f14eaf2f0c9a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
@@ -7518,7 +7654,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "Ibn Rajab's lessee, the second hand there."
         }
-      ]
+      ],
+      "positions_sha256": "e31f2167f09c5b78e2f469bcf0d40fd23f862ed0ec9813e82463b9a39052ee18"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f008",
@@ -7554,7 +7691,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«ضمانها»."
         }
-      ]
+      ],
+      "positions_sha256": "d21f5887fc21a494c59f1cdfe8cfc4c2ae19bdb6d96a78f3d989792ba2e41722"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f002",
@@ -7574,7 +7712,8 @@
           "who": "al-Mardāwī's taṣḥīḥ on the waqf «على من سيولد لي»",
           "note": "A cognate masʾala (a grant to the non-existent by way of origin), not the licence itself: qiyās."
         }
-      ]
+      ],
+      "positions_sha256": "87d7da0b617bf9a8be787f9d0cef2f685e536848f0c0d75a434dac8c24a01c3a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f003",
@@ -7634,7 +7773,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«فلا يصح أصالة»."
         }
-      ]
+      ],
+      "positions_sha256": "75734ec9f85e803a3b2c1d95594a90d62d00717e92c4d1525573fb88b6d73201"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f005",
@@ -7689,7 +7829,8 @@
           "who": "Kashshāf",
           "note": "Noting that al-Muntahā follows al-Tanqīḥ against it."
         }
-      ]
+      ],
+      "positions_sha256": "e09a367882e25bf06078b48ee17df6b92314c14c887332db9e4534851da01e3b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f001",
@@ -7757,7 +7898,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "On al-Muntahā's matn."
         }
-      ]
+      ],
+      "positions_sha256": "8a12fb632f150603b2638357af5c339d58d09f222f1bf0bd964e496097b36d88"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f002",
@@ -7819,13 +7961,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v01:p319",
-          "excerpt_ar": "يعلم سبق أحدهما ولا معيتهما (صلوا ظهرا) لاحتمال سبق إحداهما فتصح ولا",
+          "excerpt_ar": "لم يعلم سبق أحدهما ولا معيتهما (صلوا ظهرا) لاحتمال سبق إحداهما فتصح ولا",
           "position": 0,
           "grade": "jazm",
           "who": "Sharḥ al-Muntahā",
           "note": "On al-Muntahā's matn."
         }
-      ]
+      ],
+      "positions_sha256": "3afcc34526a9e73d396dfd777ab24193ea9246282934abdd3c77c159f6956cd6"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003",
@@ -7877,7 +8020,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«فسخهما حاكم ... لأن أحدهما صحيح»: by implication."
         }
-      ]
+      ],
+      "positions_sha256": "1c23aedfa7c432e52772ada04dea36574e41a7599154a72274f02047db4ba82d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f004",
@@ -7945,7 +8089,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "On al-Muntahā's matn."
         }
-      ]
+      ],
+      "positions_sha256": "8ce393a2baf3588e265a9b9ede378ff32bd6f0d8b27a5cd0cdec6de7672f62e2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f005",
@@ -8005,7 +8150,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«أنهما عقدان»."
         }
-      ]
+      ],
+      "positions_sha256": "9760dc3e768241eb79e3d245d16fc66fe5cfed8bdd26e192c415ba877f27110d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f010",
@@ -8073,7 +8219,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "On al-Muntahā's matn."
         }
-      ]
+      ],
+      "positions_sha256": "0d0d8c1d606a86214b9754e0b42c33cf3dea05e119baaef17b16b880dc743e06"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f000",
@@ -8128,7 +8275,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«نهي»."
         }
-      ]
+      ],
+      "positions_sha256": "40a6437e81bd0cdc649ccc77e2307078162854a5a9c0f97d671885d01a7aa1ca"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f004",
@@ -8188,7 +8336,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "Going out to the jumuʿa is allowed in iʿtikāf."
         }
-      ]
+      ],
+      "positions_sha256": "57aec33dd5403801b875ba1db675dbcb67ef739d182479bac5a037323be1fe73"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f002",
@@ -8216,7 +8365,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "Followed by Ḥarb's question."
         }
-      ]
+      ],
+      "positions_sha256": "6556064bedb1a1bee19cda58350a2f0fc9ae687115a33c7cc3e0d6e69a0e21c8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f003",
@@ -8246,7 +8396,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p336",
-          "excerpt_ar": "أمرني به أو محوت المصحف إن فعلت وحنث - لا كفارة وإن قال: أخزاه الله أو",
+          "excerpt_ar": "ما أمرني به أو محوت المصحف إن فعلت وحنث - لا كفارة وإن قال: أخزاه الله أو",
           "position": 0,
           "grade": "jazm",
           "who": "al-Iqnāʿ",
@@ -8268,7 +8418,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«وإن قال عصيت الله ... فلغو»."
         }
-      ]
+      ],
+      "positions_sha256": "14881723123d5f225b811c1869e744d0b227205367f851487855c84a4facb3a2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f005",
@@ -8306,7 +8457,7 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v03:p137",
-          "excerpt_ar": "حلف لا يفعله قاصدا له (إلا في السلام) إذا سلم عليه أو على قوم هو فيهم",
+          "excerpt_ar": "ما حلف لا يفعله قاصدا له (إلا في السلام) إذا سلم عليه أو على قوم هو فيهم",
           "position": 0,
           "grade": "jazm",
           "who": "Sharḥ al-Muntahā",
@@ -8344,7 +8495,8 @@
           "who": "Kashshāf, aymān chapter",
           "note": "«فيحنث في طلاق وعتق»."
         }
-      ]
+      ],
+      "positions_sha256": "d36933640280db0f9e5bfcc3214eebe40e0e4c2f4ea82bd38ca22bc59ee2abe3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f007",
@@ -8415,7 +8567,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«فيها»."
         }
-      ]
+      ],
+      "positions_sha256": "4be63d98e8d321f5743aaabaae7c9e70dc43e3160a534d5424ddfd2088f7aa0a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f000",
@@ -8478,7 +8631,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "«كما لو زوجه أو باع داره»."
         }
-      ]
+      ],
+      "positions_sha256": "ca98b182031d47f572cef2225a9f36a6025d04297238cdd7da919c40a35a1096"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f002",
@@ -8538,7 +8692,8 @@
           "who": "Sharḥ al-Muntahā",
           "note": "On al-Muntahā's matn."
         }
-      ]
+      ],
+      "positions_sha256": "b466d8ed6cecc004794490ef0348332ec517e418e85952b5dd6133ee43341ff5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001",
@@ -8601,7 +8756,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā: «أو هذه الدار له وهذا البيت لي قبل»."
         }
-      ]
+      ],
+      "positions_sha256": "477af13b77a15a2a2e231e8f21ebd88816df748770e3a5ffad9042e0ee52f2e9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f002",
@@ -8661,7 +8817,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā: «ولا يستحق معهم بالفقر والمسكنة»; the separate bequest follows: «لم يشاركهم»."
         }
-      ]
+      ],
+      "positions_sha256": "7233f82e30d6d6d8c9b847ccf9b0414106e606edfeef95e46d7248841bd9acf4"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f004",
@@ -8681,7 +8838,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: «صح فإن مات وبقي شيء فهو للأول نص عليه ذكره في المبدع»."
         }
-      ]
+      ],
+      "positions_sha256": "ed02152ce5cb8b5e412087c34ab890b094c83b7d4b8187b81dfa4da7324655c7"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f005",
@@ -8725,7 +8883,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā: «ولو وصى بشيء لزيد وبشيء للفقراء أو لجيرانه وزيد منهم لم يشاركهم»."
         }
-      ]
+      ],
+      "positions_sha256": "067b23462c544a4dae0ac30a08dd428acbaa6d2ba7d86d395ef30fee137b1841"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006",
@@ -8785,7 +8944,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā: «ولو وصى بشيء لزيد وبشيء للفقراء ... وزيد منهم لم يشاركهم»."
         }
-      ]
+      ],
+      "positions_sha256": "d7a3d0e3349ff42ee0fa0cb1c8c27c52d7180213447b73c824b2cc5a7e09739c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f011",
@@ -8837,7 +8997,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "6d3dde59106aa3723b0f83d21d10150fe3d2f6f38c3e71d66fac4ec6a26f7959"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f000",
@@ -8873,7 +9034,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā: «ثم عصبته الأقرب فالأقرب كنسب»; by implication only."
         }
-      ]
+      ],
+      "positions_sha256": "98cd912bf086d022b400bf0d7b733fbcd25bd5938e72f0750a198df205b5366a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f001",
@@ -8936,7 +9098,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā: «فأخ لأبوين فأخ لأب لأن ولاية النكاح حق يستفاد بالتعصيب فقدم فيه الأخ لأبوين كالميراث». (The Muntahā matn's own line is defective in the witness and is not used.)"
         }
-      ]
+      ],
+      "positions_sha256": "ee6174b91f1be24e0b2aa7211ad03faaa97b915891d18057e2c6f6c6ccd00950"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f002",
@@ -8980,7 +9143,8 @@
           "who": "Ibn Mufliḥ, al-Furūʿ (with Taṣḥīḥ al-Furūʿ)",
           "note": "al-Furūʿ: «وإنما قدم أخ وعم وابنهما لأبوين لأن للنساء مدخلا مأمومة ومنفردة، وجعلهما القاضي في التسوية كنكاح»."
         }
-      ]
+      ],
+      "positions_sha256": "092c1f821ca5ac209a53cbecf5586e9a64f3e75b3e6c80f574c095e734d19009"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003",
@@ -9051,7 +9215,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "5855e5ac8a02093a1a1a1d5a8295ae376502a0c84faa66d02d216118cb6084e8"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f000",
@@ -9090,7 +9255,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā's general rule; the lunch is not among its examples."
         }
-      ]
+      ],
+      "positions_sha256": "753a311dc52043bd55a3332e766d123cf6e99247536a9a9631426fbe56159efe"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f001",
@@ -9156,7 +9322,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā: «العبرة في اليمين بخصوص السبب ... لم يحنث»."
         }
-      ]
+      ],
+      "positions_sha256": "a247385a5920d1b39dbf30084e945fa05a729ebc56b0cf4a6785efa2a0ab0383"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f002",
@@ -9214,7 +9381,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā: «(فطلقها أو) حلف (على رقيقه) ... (فأعتقه ونحوه) ... (لم يحنث)»."
         }
-      ]
+      ],
+      "positions_sha256": "c0bd98559dac9a54da32b3663549f195c74538b1efbf8aaa045f8697ad037b44"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f003",
@@ -9274,7 +9442,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "e09b5e89eb7fcb845f3d9ebbbd324954df7ad3b9c0f445f01ffe404ac5d366fd"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f004",
@@ -9334,7 +9503,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "a20ee90d62eeee984607ce74b56a09502b6d459b83f7d34d8f3854b713c9ce3d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f005",
@@ -9373,7 +9543,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: «فولاؤه للموروث يرث به أقرب عصبته»."
         }
-      ]
+      ],
+      "positions_sha256": "690020cb32a0d62793adc1d7d46ec5c67293a1c0eb16d3a628389b4182bb7869"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q116.f008",
@@ -9436,7 +9607,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "al-Muntahā: «ويجزيان من أسلم أو أفاق ثم أحرم أو بلغ أو عتق محرما قبل دفع من عرفة» (on the grounding «وأن ما قبله تطوع لم ينقلب فرضا»; the ruling is the same)."
         }
-      ]
+      ],
+      "positions_sha256": "edff60dd9f4b665b20bc33322dce54751c10382203fcec699189a9a90e72bf89"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001",
@@ -9483,7 +9655,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf."
         }
-      ]
+      ],
+      "positions_sha256": "89058a252c1959738fd5eb7e9d8d9d47cf99e71735b9b0fc4c2ec497a1b80a61"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f002",
@@ -9549,7 +9722,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "c07257d0be5b923e8945153d458582284a384bb83f9d2e537d2dbcb575a63fdc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f007",
@@ -9593,7 +9767,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "Kashshāf: «لملك الثلاث حين الوقوع»."
         }
-      ]
+      ],
+      "positions_sha256": "391529ba2f8277ae7ed5c1ef6b0f022f3fb8b93299037a611f4403c2ae11f2ac"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f001",
@@ -9656,7 +9831,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "54cd3685cbc935aa4a02f0810d332b99ebd31f1a8f2727b8c25ceb3695bf6690"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f002",
@@ -9711,7 +9887,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā (the Muntahā matn in parentheses)."
         }
-      ]
+      ],
+      "positions_sha256": "69b6ec899f18d0028915dd085988b7f631ac8f1af6d3cb7acb2474cc7bebc73a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f000",
@@ -9763,7 +9940,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "4572d42a21587bd3a86338ad210430077d69a0d9de67af11eb5be3bbfe2ff547"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q054.f000",
@@ -9826,7 +10004,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "79c1432bf87c7778cbd669eb9e02d47e130827062158e8c8566416b020fc6dae"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f001",
@@ -9878,7 +10057,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā: «فيصح نصا»."
         }
-      ]
+      ],
+      "positions_sha256": "7cb2c125a50ec0d45d42bafe73c78f0c27c2f446f8ce1be67e73bb0fb94de4e2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f005",
@@ -9889,7 +10069,8 @@
       "jam": null,
       "naskh": null,
       "note": "Taqī al-Dīn's «قياس المذهب صحته» against a wajh by takhrīj. al-Inṣāf only reports Taqī al-Dīn (v08:p110, already a holder); no other later treatment found. For the reading.",
-      "evidence": []
+      "evidence": [],
+      "positions_sha256": "63872fd0d7e07023c5330249ca29f0507462b5eb58dec05b2b0af6aeae60c5bc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
@@ -9939,7 +10120,7 @@
         },
         {
           "ref": "src:openiti-hajjawi-iqna-shamela7360/v04:p368",
-          "excerpt_ar": "فرضه فارض في المستقبل ولا ينعزل حيث صح عزله قبل علمه بالعزل فليس كوكيل",
+          "excerpt_ar": "ما فرضه فارض في المستقبل ولا ينعزل حيث صح عزله قبل علمه بالعزل فليس كوكيل",
           "position": 1,
           "grade": "jazm",
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
@@ -9969,7 +10150,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "22d87d128076d96c7faac2dfced124a303d949972038f4a59e87c29c159a25c1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f001",
@@ -10021,7 +10203,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "66751fc730415f45d2744aa89004098ec9801a37bf7f42d8f714cea7955cff29"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f002",
@@ -10065,7 +10248,8 @@
           "who": "al-Buhūtī, Sharḥ Muntahā al-Irādāt",
           "note": "Sharḥ al-Muntahā."
         }
-      ]
+      ],
+      "positions_sha256": "8fa3bede11c7702f9a9b48cd95c5f12f4987c5b55f13f4c0bc0c75c731f49141"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004",
@@ -10133,7 +10317,8 @@
           "who": "Ibn Ḥamdān (al-Riʿāya al-Kubrā), as al-Inṣāf reports",
           "note": "al-Inṣāf: al-Riʿāya al-Kubrā puts liability on the destroyer alone."
         }
-      ]
+      ],
+      "positions_sha256": "3b27fdebbbeb628ebe8ec82131b1cf31d000ca07f4cffafbac2da14c97713b55"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f006",
@@ -10177,7 +10362,8 @@
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "The matn: «ولمستأجر عين إعارتها لمن يقوم مقامه (ولا يضمنها مستعير بتلف عنده) بلا تفريط»."
         }
-      ]
+      ],
+      "positions_sha256": "1e701282d3819c6843e44c33c2a749026bb758157bb8d42319ad8eeea024c69a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
@@ -10221,7 +10407,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وإن فرقه ثم ظهر دين يستغرقه ... لم يضمن»."
         }
-      ]
+      ],
+      "positions_sha256": "dc7beaaf15608c1ca61faf36d136cca5c9378ac11ea3259fc55a7eaf730a2fb1"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f004",
@@ -10266,7 +10453,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«أو جهل موصى له فتصدق هو أو حاكم به ثم ثبت لم يضمن»."
         }
-      ]
+      ],
+      "positions_sha256": "6094564a283bef06d0399ff204d92186ef71e0672bd889f425d1b455c4011220"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f005",
@@ -10277,7 +10465,8 @@
       "jam": null,
       "naskh": null,
       "note": "No later treatment found (the later works treat the freeing by the testator himself in his last illness, a different case). al-Qāḍī's and Ibn ʿAqīl's liability outranks Ibn Rajab's takhrīj. For the reading.",
-      "evidence": []
+      "evidence": [],
+      "positions_sha256": "ce364257f29f852c423f7e048c6419d3e2160b12814908031311e77cea919cb2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f009",
@@ -10332,7 +10521,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وإن قدم بعد قسم أخذ ما وجده بعينه ورجع على من أخذ الباقي»."
         }
-      ]
+      ],
+      "positions_sha256": "1441ef06f3307f2b0f0f859b008a15349fc231d5c6302177c220a2104063a8ff"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f010",
@@ -10376,7 +10566,8 @@
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "The matn: «ومن أنفق يظنها حاملا فبانت حائلا رجع»."
         }
-      ]
+      ],
+      "positions_sha256": "849ff64010461fd757c57fd6c8bf62555a3690ca4b0af20044029cb010e503b3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
@@ -10420,7 +10611,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "What she spent herself after his death is reckoned against her, «لتبين عدم استحقاقها له»."
         }
-      ]
+      ],
+      "positions_sha256": "24fa4394e115b026e25cd74f09cf23319fcec894af506301401cc4996f183b3b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f012",
@@ -10472,7 +10664,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn on zakāt."
         }
-      ]
+      ],
+      "positions_sha256": "5eae467ab8535f646bf30163279609b802292eda666ab60db3c19b97fc2f5285"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f002",
@@ -10516,7 +10709,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وله حفظ ماله والإنفاق عليه منه ... بغير حكم حاكم»."
         }
-      ]
+      ],
+      "positions_sha256": "23e40f1d799788c1afe02b88497715f06b585bcd5a20516dcaea66a02170a990"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003",
@@ -10549,13 +10743,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
-          "excerpt_ar": "يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
+          "excerpt_ar": "لم يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
           "position": 0,
           "grade": "jazm",
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "For the usurped goods, pledges and trusts whose owners are unknown: «وله ... الصدقة بها عنهم ... بلا إذن حاكم»."
         }
-      ]
+      ],
+      "positions_sha256": "df043bf0afaa010912f915d021efc4d534698a363c1fc41f6aa340e3d6abd69b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004",
@@ -10588,13 +10783,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
-          "excerpt_ar": "يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
+          "excerpt_ar": "لم يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
           "position": 0,
           "grade": "jazm",
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "The trusts «من ودائع وغيرها (لا يعرف أربابها)»: charity «بلا إذن حاكم»."
         }
-      ]
+      ],
+      "positions_sha256": "6023967f6ca88652251d895a5cce04f913deaecc3889b635f43e2d260b3760ff"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005",
@@ -10635,13 +10831,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p323",
-          "excerpt_ar": "يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
+          "excerpt_ar": "لم يدفعها لحاكم (الصدقة بها عنهم) أي: عن أربابها بلا إذن حاكم. ونقل المروزي",
           "position": 0,
           "grade": "jazm",
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "«ومن بيده غصوب لا يعرف أربابها ... (الصدقة بها عنهم) ... بلا إذن حاكم»."
         }
-      ]
+      ],
+      "positions_sha256": "9088ebe5383c1cc4be7afd85fc4435c729b307c9074d09b5b09dc2b29c64b454"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f003",
@@ -10693,7 +10890,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وتصح من معذور ولو زال عذره قبله»."
         }
-      ]
+      ],
+      "positions_sha256": "99a3dbe2cf7846ebb65521acab282b9f6692c413f635302fefd13211d6c11445"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q006.f005",
@@ -10729,7 +10927,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وإن بان بعد حكم كفر شاهد به أو فسقهما ... نقض»."
         }
-      ]
+      ],
+      "positions_sha256": "dbf1320e8820ef51ba8a52c6be30bef66bddb759d3c7018ce5665299a3d5b356"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f002",
@@ -10757,7 +10956,8 @@
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "The matn's «ولم يستهلك» with al-Buhūtī's «فإن استهلك في الماء فلا حد»."
         }
-      ]
+      ],
+      "positions_sha256": "244fcf285ee84837b0918f022682c602370880922c8b7eea91b5d2fe3b2474ce"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f003",
@@ -10807,7 +11007,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "9c4dab936d326484bb23945320cbe44b98f74092e99e1edef1513d6b9f67a519"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004",
@@ -10851,7 +11052,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "Among what is not a revocation: «أو بقفيز من صبرة فخلطها ولو بخير منها»."
         }
-      ]
+      ],
+      "positions_sha256": "0f5f6afeb1ec41cf74fb6be8cce0696aba95ebf17a99541aa14594877a754a92"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008",
@@ -10887,7 +11089,8 @@
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "The matn «أو خلطها» with al-Buhūtī's «ضمنها»."
         }
-      ]
+      ],
+      "positions_sha256": "ae28e694874afc056214147d516462c18213a50fe8241fcb716a3b6c2f6714d5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f002",
@@ -10923,7 +11126,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Stated decisively."
         }
-      ]
+      ],
+      "positions_sha256": "fe27d9eebf3a605b145657bc7ad1a9ac03ebf4fe216e456d97ca32e3f53d6233"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f004",
@@ -10967,7 +11171,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The matn."
         }
-      ]
+      ],
+      "positions_sha256": "3dfc7b773549884f5c59763c5e321f9ee25bcd027856fa4259ea33cdafcc0b68"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f005",
@@ -11011,7 +11216,8 @@
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "The matn «لم تجزئه»; its exception, the night of the thirtieth of Ramaḍān, rests on an aṣl mustaṣḥab, which these facts lack."
         }
-      ]
+      ],
+      "positions_sha256": "bd229d03a56d004f9154538a8b4d13e8e1ba762ad5f5877fd743f54a0dd75ea3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
@@ -11039,7 +11245,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«فإن صارف بوديعة صح ولو شك في بقائها إلا إن ظن عدمه»."
         }
-      ]
+      ],
+      "positions_sha256": "8ad8e581485363e6f633a350edd551c0b5101adc7aaf05634e9034e3a4338474"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f001",
@@ -11050,7 +11257,8 @@
       "jam": null,
       "naskh": null,
       "note": "No later treatment found. Taqī al-Dīn's fatwā (with the ẓāhir of al-Qāḍī and Ibn ʿAqīl) outranks the other takhrīj. For the reading.",
-      "evidence": []
+      "evidence": [],
+      "positions_sha256": "821295ea8acb419ffdf2a40ad0104df990cbaff8510e1843264dba25d7b5d78e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f004",
@@ -11064,7 +11272,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v12:p232",
-          "excerpt_ar": "يكون مقرا بذلك وهو المذهب قال في القاعدة الخامسة والعشرين: أشهرهما يكون",
+          "excerpt_ar": "لا يكون مقرا بذلك وهو المذهب قال في القاعدة الخامسة والعشرين: أشهرهما يكون",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -11094,7 +11302,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وله تمر في جراب أو سكين في قرب ... ليس بإقرار بالثاني»."
         }
-      ]
+      ],
+      "positions_sha256": "1d0fd5fc0cc637abf690038dec59e79f794f23872745f2e31b3f3c24a39d0f64"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003",
@@ -11146,7 +11355,8 @@
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "«فيتعين الماء لما تعدى، ويجزي الحجر في الذي في محل العادة»."
         }
-      ]
+      ],
+      "positions_sha256": "002313cf93c2607cce2f1e95a99d8b09e577a3d826fa44f15faa9134a038a516"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
@@ -11193,7 +11403,8 @@
           "who": "al-Muntahā with al-Buhūtī's Sharḥ",
           "note": "The Muntahā's matn «وحامل بحر»."
         }
-      ]
+      ],
+      "positions_sha256": "c7492ce83e904c6a8cae60923cfb44041ee2125e3162ac48acca8d1fb5133dd0"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
@@ -11213,7 +11424,8 @@
           "who": "al-Mardāwī's own «الصواب», al-Inṣāf",
           "note": "An author's taṣwīb, not a label of the madhhab; al-Majd and al-Muwaffaq are the listed holders."
         }
-      ]
+      ],
+      "positions_sha256": "a75accd395051fa09a52705a9f906fbb7799a54e271e4a8f2512c5c1ea914cf5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f000",
@@ -11257,7 +11469,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "«وإلا ... فلا»: no option otherwise."
         }
-      ]
+      ],
+      "positions_sha256": "bc7ad0901c225508380585d200a1ac97984bb751a9ced54c520369e23991304d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f001",
@@ -11296,7 +11509,8 @@
           "who": "al-Ḥajjāwī, al-Iqnāʿ",
           "note": "It dissolves only where the master knew the freeing would fall within the period (a suspended manumission); otherwise «لم تنفسخ»."
         }
-      ]
+      ],
+      "positions_sha256": "e8a7966848b72a51128e1ef3dec9041fde3e602874db9acb055fd61e9c32d6f9"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f002",
@@ -11359,7 +11573,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive; «لأنها واجبة، أشبهت الفرائض»."
         }
-      ]
+      ],
+      "positions_sha256": "40899c8fce4ea0dea53f0ccbc647201e6bc1374edd1c6499526bfe7e96a3f848"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f004",
@@ -11419,7 +11634,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "6a6bd44f31481350829feab9bd9b610e1ac1496698a273eff754600dbfc58471"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f005",
@@ -11479,7 +11695,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«حملا للنذر على المعهود شرعا»."
         }
-      ]
+      ],
+      "positions_sha256": "2658b087efa1f28c90aec136580b8fb3845f88ef1a0790d0306a88e39551db31"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
@@ -11531,7 +11748,7 @@
         },
         {
           "ref": "src:openiti-ibnnajjar-muntaha-sham19y13664/v04:p363",
-          "excerpt_ar": "بقي أو نصف قنين أجزأ لا ما سرى بعتق جزء ومن علق عتقه بظهار ثم ظاهر عتق",
+          "excerpt_ar": "ما بقي أو نصف قنين أجزأ لا ما سرى بعتق جزء ومن علق عتقه بظهار ثم ظاهر عتق",
           "position": 0,
           "grade": "jazm",
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
@@ -11545,7 +11762,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Adds «ولا فرق بين كون الباقي منهما حرا أو رقيقا لغيره»."
         }
-      ]
+      ],
+      "positions_sha256": "2e4d630ec91302985092de95080edb9dfc1f82240ab3fe2f13c6b536491e3605"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f002",
@@ -11612,7 +11830,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«فإذا اختار إخراجها وعشرة جاز، وكإخراج كفارة من جنسين»."
         }
-      ]
+      ],
+      "positions_sha256": "4278fb90dbe5fb70036b1e008331847fb8d60f32159790cf671854c03619c25b"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f003",
@@ -11680,7 +11899,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "3e3416e9f4208ffb63230504414508df3f5a46104eb664ccf9a4b298878b0041"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f004",
@@ -11724,7 +11944,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On the matn's «أو صاع مجموع من ذلك»."
         }
-      ]
+      ],
+      "positions_sha256": "e7f1f6e4abf51701e166cd5f8902221b078912ab499261bc299d9afd2f3a165c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f005",
@@ -11776,7 +11997,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«لأنه كفارة واحدة كباقي الكفارات»."
         }
-      ]
+      ],
+      "positions_sha256": "9b79d058b297167f7fd507083a64b4f3d56580a27ca7dfa73ffe7a08602c3bef"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f003",
@@ -11836,7 +12058,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On «لا يرث مكلف أو غيره»."
         }
-      ]
+      ],
+      "positions_sha256": "b7f4abc50462006fe6c1472f9abd16af1a0f57507909f7dd750c0e202154e00f"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f004",
@@ -11902,7 +12125,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«لأنه يمنع الميراث وهو آكد منها فهي أولى»."
         }
-      ]
+      ],
+      "positions_sha256": "f6bfbc0ae6efefa6c476eafae6689571a74f32fa9762bffaf18bd9e48e8007cc"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f005",
@@ -11965,7 +12189,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "a186de86c8b7c49b4d4406ff76ee630ddb6b5284a3a5387378054719995c20b2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f007",
@@ -12028,7 +12253,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "2cb361c281ac9975c0a380fad0bc90f8b3f7c7fdeb2d9ea745d13b2c3e5b116e"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010",
@@ -12094,7 +12320,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "b16803ef10ebc44dcab6865636c48d4b9f4f60523f710da6fd4fe6b5ccd76132"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012",
@@ -12130,7 +12357,8 @@
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
           "note": "«لأنه لا يجوز إلا في ملك كوطء الجارية التي اشتراها بشرط الخيار له»: by implication the intercourse is lawful as falling in a marriage."
         }
-      ]
+      ],
+      "positions_sha256": "41c0d9f5963f3e65782801367ae8bfae8cfeecc666ca23ecc88a27114101e052"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f013",
@@ -12150,7 +12378,7 @@
       "evidence": [
         {
           "ref": "src:openiti-insaf-shamela21609/v09:p180",
-          "excerpt_ar": "يصر موليا حتى يطأ ثلاثا، فحينئذ يصير موليا من الرابعة، على الصحيح من",
+          "excerpt_ar": "لم يصر موليا حتى يطأ ثلاثا، فحينئذ يصير موليا من الرابعة، على الصحيح من",
           "position": 0,
           "grade": "tashih",
           "who": "al-Mardāwī, al-Inṣāf",
@@ -12196,7 +12424,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«لأنه يمكن وطء بعضهن بلا حنث (حتى يطأ ثلاثا)»."
         }
-      ]
+      ],
+      "positions_sha256": "a705883f0410e68def0cddb62c3a72b91b5100e23a4eb8a8881fdc75afec7fce"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014",
@@ -12256,7 +12485,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«لو كان له أربع زوجات ووطئ امرأة بشبهة أو زنا لم يحل له أن يطأ منهن أكثر من ثلاث»."
         }
-      ]
+      ],
+      "positions_sha256": "7bf94851831e10c3ae1b02948f5c9b7c3bb040b60d45bb4dfa71fede79fa2dc2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f015",
@@ -12322,7 +12552,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«وكذا لو تزوج خمس زوجات في عقد واحد»."
         }
-      ]
+      ],
+      "positions_sha256": "c1b35ce80a178704a88d0378a4f9776e37b8be97e455e383487f9519d52e1c3a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f019",
@@ -12360,7 +12591,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p089",
-          "excerpt_ar": "يجتمع معها فيه مثلها فصح كما لو انفردت به وفارق العقد على نحو أختين لأنه",
+          "excerpt_ar": "لم يجتمع معها فيه مثلها فصح كما لو انفردت به وفارق العقد على نحو أختين لأنه",
           "position": 0,
           "grade": "qiyas",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
@@ -12382,7 +12613,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "With the same farq from the two sisters."
         }
-      ]
+      ],
+      "positions_sha256": "c0cb118a612891f92b6a0650a44bb4ce1f03b86224d3cf36643f0c4a6fef6459"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f020",
@@ -12434,7 +12666,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "dce7ed7dc115d0c280f717910c235ad544b334b2bfa7a4963f9e241dcf3a51e3"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001",
@@ -12497,7 +12730,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Deliberate killing; «لأن العمد يوجب القصاص والمال بدل عنه»."
         }
-      ]
+      ],
+      "positions_sha256": "53734eecf2a852c413d1b641b85f86422778f1b060c18f7b06fe0e9fa89e165a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002",
@@ -12557,7 +12791,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«أي لا قصاص ولا دية»."
         }
-      ]
+      ],
+      "positions_sha256": "1256b5310b8393b88984beca1bfd88f03acdf75a67d45ce0d48ccedc11a64795"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f004",
@@ -12621,7 +12856,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Continues «معناه لم يقع ... (ولو نوى موجبه)»."
         }
-      ]
+      ],
+      "positions_sha256": "bff4e592dc545675772748fd40cce26dacc43237751ae7a03134546244b2ab9a"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f005",
@@ -12685,7 +12921,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Then «(ولو نوى موجبه)»."
         }
-      ]
+      ],
+      "positions_sha256": "f9d0824fe4af45a2c976f9381b3e8ad65ac2a49ad19310cd5ac37df5291c7f50"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f006",
@@ -12713,7 +12950,8 @@
           "who": "Ibn al-Najjār, Muntahā al-Irādāt",
           "note": "The cognate divorce only."
         }
-      ]
+      ],
+      "positions_sha256": "70c7436596806521b052b70ac754eec44af67916eb15d7c9b7b719e5c6c71dd2"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f007",
@@ -12751,7 +12989,7 @@
         },
         {
           "ref": "src:openiti-buhuti-kashshaf-shamela21642/v05:p263",
-          "excerpt_ar": "طلق فلان زوجته (فطلقة) لأنها اليقين وما زاد مشكوك فيه.",
+          "excerpt_ar": "ما طلق فلان زوجته (فطلقة) لأنها اليقين وما زاد مشكوك فيه.",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Kashshāf al-Qināʿ",
@@ -12773,7 +13011,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On the matn's «فطلقة»."
         }
-      ]
+      ],
+      "positions_sha256": "4cfaa76aac84304a7875a73f035b7512ae8d2fae3eb39c8ea66fd56d859c8b25"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f008",
@@ -12836,7 +13075,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Continues «(لغو) ولا شيء عليه»."
         }
-      ]
+      ],
+      "positions_sha256": "e70b19d1c02c8fe6d775d20b72349e5685ba590062607885bce33420139f5244"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f009",
@@ -12907,7 +13147,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "On «ويلزم بحلف بأيمان المسلمين ... مع النية»."
         }
-      ]
+      ],
+      "positions_sha256": "6ee751db4c32906056fe1c6b544a2a3ffa0686854d57b9feb0929b6e50dc929c"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f011",
@@ -12973,7 +13214,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "28d2bea4168f32b5a3ceff29848f26117372a751263762d31d460d5effca6310"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f003",
@@ -13033,7 +13275,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "c0726e0471c749f422a508b3245435eda86f1b0e2e4e59ea7d0e213984d1a504"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
@@ -13096,7 +13339,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Decisive."
         }
-      ]
+      ],
+      "positions_sha256": "f2404d833bd8c85c9dafac23c7483ef25558ea20cf9e2404159bb97b444ee3b5"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f003",
@@ -13150,13 +13394,14 @@
         },
         {
           "ref": "src:openiti-buhuti-sharhmuntaha-shamela21693/v02:p216",
-          "excerpt_ar": "لو حابى أجيرا في الأجر فإن الأجر يؤخذ من ماله، أو ساقى أو زارع محاباة،",
+          "excerpt_ar": "ما لو حابى أجيرا في الأجر فإن الأجر يؤخذ من ماله، أو ساقى أو زارع محاباة،",
           "position": 0,
           "grade": "jazm",
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "«فتعتبر من ثلثه لخروج المشروط فيهما من عين ملكه»."
         }
-      ]
+      ],
+      "positions_sha256": "b662398e44ef8954f6e37795357abcd412ec3e4e7cc2aefc6930f95d00874abe"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f005",
@@ -13203,7 +13448,8 @@
           "who": "al-Buhūtī, Sharḥ al-Muntahā",
           "note": "Continues «ونسلها وصوفها ... لأنه غير معلوم»."
         }
-      ]
+      ],
+      "positions_sha256": "33a26f8ac8d577ef2a529d5424c9d5c8bf91d8d17b7dc86bdff90bd0400d757d"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f000",
@@ -13223,7 +13469,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf: a madhhab label on this farʿ."
         }
-      ]
+      ],
+      "positions_sha256": "4b6cb8d94d7d43842fceb7642dd5034353a85338049609ffb2b5a87eb048b189"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q032.f000",
@@ -13243,7 +13490,8 @@
           "who": "al-Mardāwī, al-Inṣāf",
           "note": "al-Inṣāf: a madhhab label on this farʿ."
         }
-      ]
+      ],
+      "positions_sha256": "42387af10f3ac5b49e0060e26b94ed4de88ba6e6b30ab5101bd748b2a849ff14"
     },
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f000",
@@ -13271,7 +13519,8 @@
           "who": "al-Buhūtī's own «قلت» (the direct agent first, if he can be made to pay)",
           "note": "One author's own qualification, read toward the heirs paying first."
         }
-      ]
+      ],
+      "positions_sha256": "017d2f4e4d5e901697302b6a709ec37daeb645048e5c9c8938c75984b5a400e6"
     }
   ]
 }

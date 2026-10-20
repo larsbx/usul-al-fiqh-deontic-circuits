@@ -6,6 +6,14 @@ Turn the ADQ Prolog corpus into a database-backed, auditable deontic-circuit res
 
 Long-range Ḥanbalī uṣūl formalization track (Lean 4, TLA+, Haskell, category theory, type theory): see [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md).
 
+## Active architecture migration
+
+The repository-wide [first-principles refactor](roadmap-hanbali-usul-formalization.md#first-principles-refactor)
+now organizes work by source, occurrence, interpretation, evidence admission,
+inference and derived-view boundaries. Its first tranche isolates reconciliation
+and typed value identity; the remaining stages have explicit migration gates.
+The ADQ milestones below remain track-specific, not a separate competing refactor.
+
 ## Working principle
 
 Natural language and LLM prompting are allowed at the authoring boundary. They may propose candidate records. They may not directly create accepted normative facts or verdicts.
@@ -85,6 +93,15 @@ Optional mathematical research lanes may consume explicit data and emit reproduc
 - Add review queues for extracted records.
 - Require explicit acceptance actions before canonical insertion.
 - Generate explanations from derivation traces, not free-form verdict invention.
+
+Semantic tagging has a merged development implementation (PR #72) and a candidate
+pass covering all 53 IslamQA question IDs: 365 propositions, 1,074 candidate roles
+and 58 bank mappings all on hold. Audit segmentation completeness, independently
+review interpretations and typed fact entailments, then evaluate on a separately
+frozen modern set. The two proposed typed values remain unreviewed. See the
+[formalization roadmap's follow-up](roadmap-hanbali-usul-formalization.md#semantic-tagging-development-follow-up-2026-10-19)
+for evidence, boundaries and acceptance steps. No semantic accuracy or retrieval
+improvement is claimed by this batch.
 
 ## Milestone 6 — Optional Gleam lane
 

@@ -54,7 +54,8 @@
      "note": "Between the two zanni ḥadīths: al-Mughnī calls «من قتل قتيلا فله سلبه» one of the Prophet's well-known rulings acted on by the caliphs, against the single incident in ʿAwf's report (which it reads as a punishment). ashhar. Basis: stated — the source itself compares the two proofs in the excerpt.",
      "basis": "stated"
     }
-   ]
+   ],
+   "positions_sha256": "5bdcf29dad43158b03c9cd48f162efde2a2cdd7e022321d9bed9da1d7037c359"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
@@ -87,7 +88,8 @@
      "note": "Kashshāf cites it for dividing in thirds, eating included, even from a vowed udhiya. A marfūʿ report of the Prophet's deed, ḥasan per the source, reaching the vowed udhiya by generality: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7e04a0d4ee0087bc6cd8368832f177abfcd53ae2db459631ebe0d7ee94e9ef43"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f002",
@@ -120,7 +122,8 @@
      "note": "The takhrīj for the madhhab and Abū Ḥanīfa's view rest on «عموم النهي», i.e. the marfūʿ prohibitions read by their generality: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "40899c8fce4ea0dea53f0ccbc647201e6bc1374edd1c6499526bfe7e96a3f848"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f003",
@@ -171,7 +174,8 @@
      "note": "Cited for the prohibition on fasting tashrīq, the ground of the bar. A connected marfūʿ ḥadīth (the source adds «متفق عليه»), reaching the vow by generality: zanni."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "0a37bac213dc1e3e91caf3b9f7631d41acb9c293acd6efee0bee93c59060f32c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f004",
@@ -204,7 +208,8 @@
      "note": "For one rakʿa sufficing: analogy to the least voluntary prayer: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6a6bd44f31481350829feab9bd9b610e1ac1496698a273eff754600dbfc58471"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f005",
@@ -228,7 +233,8 @@
      "note": "Ibn Rajab's own iḥtimāl; he adds that Aḥmad's naṣṣ in the bequest also requires a sound slave, which weakens the aṣl. Analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "2658b087efa1f28c90aec136580b8fb3845f88ef1a0790d0306a88e39551db31"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f000",
@@ -270,7 +276,8 @@
      "note": "For al-Qāḍī's view; the analogy to salt and impure water follows. A stated linguistic ʿilla: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "f3ceca9845cd54d2416d669b0524be18c87e32368dab3c1e59907862a71d967d"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f001",
@@ -312,7 +319,8 @@
      "note": "Kashshāf gives this for al-Qāḍī's ḥinth by fish and locust eggs, then cites al-Inṣāf that it is the madhhab. Linguistic rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1fc5ca0e6667062afbac95e06b2ce10414bd411b504a396b0670bc5ce076ea58"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f002",
@@ -354,7 +362,8 @@
      "note": "Second proof for ḥinth. Stated ʿilla and aṣl: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "6e4aabd035c1113a4f3f8329c9a007f4a683f511de250a27e3342e0d168c5b54"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f003",
@@ -387,7 +396,8 @@
      "note": "Stated ʿilla with an aṣl: qiyas. al-Mughnī also cites unattributed reports «المسجد بيت كل تقي» and «بئس البيت الحمام» with «روي», which are not recorded here."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "81465bf0354128696298c1a3196098746047c2cede5a6d868db6c38ca5edafdc"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f004",
@@ -429,13 +439,15 @@
      "note": "Kashshāf's ground for the Iqnāʿ's ḥinth, on these facts. Linguistic rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "7712a57bef8d95aaff1c4a12666b4fdd3c257dff557be132917e470ba9ef3b9e"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f005",
    "proofs": [],
    "advantages": [],
-   "searched": "No proof work argues the oath against beef and wild-cattle meat (or the cognate oath not to ride a donkey). Searched for بقر الوحش / حمارا وحشيا / البقر الوحشي and لحم بقر in al-Mughnī (oaths v09 p605–612; hits only zakāt v02 p444, iḥrām, ribā), al-Sharḥ al-Kabīr (v02 p436 zakāt, v11 p080 foods), al-Kāfī (v02 p034 ribā), al-Mubdiʿ, Kashshāf (v06 p261–263 oaths) and Sharḥ al-Muntahā (v03 p460–461 oaths). The zakāt masʾala that Ibn Rajab compares (al-Mughnī v02 p444: «لأن اسم البقر يشملها» vs «لأن اسم البقر عند الإطلاق لا ينصرف إليها») is argued for zakāt, not for the oath, so it is not recorded."
+   "searched": "No proof work argues the oath against beef and wild-cattle meat (or the cognate oath not to ride a donkey). Searched for بقر الوحش / حمارا وحشيا / البقر الوحشي and لحم بقر in al-Mughnī (oaths v09 p605–612; hits only zakāt v02 p444, iḥrām, ribā), al-Sharḥ al-Kabīr (v02 p436 zakāt, v11 p080 foods), al-Kāfī (v02 p034 ribā), al-Mubdiʿ, Kashshāf (v06 p261–263 oaths) and Sharḥ al-Muntahā (v03 p460–461 oaths). The zakāt masʾala that Ibn Rajab compares (al-Mughnī v02 p444: «لأن اسم البقر يشملها» vs «لأن اسم البقر عند الإطلاق لا ينصرف إليها») is argued for zakāt, not for the oath, so it is not recorded.",
+   "positions_sha256": "85e3561fc30b40afb32f89f0ae7c8ea88c3fb245382ceef489487cae40b7a533"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
@@ -477,7 +489,8 @@
      "note": "For «كل مملوك لي حر» freeing mudabbars, mukātabs, umm walads and part-shares. A linguistic ʿilla with analogy: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "1e9d4bc5590aa8b737c8dd942a12909ff9ef6941e572e9f4aa747eda2187347c"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
@@ -492,7 +505,8 @@
      "note": "Cited in al-Mubdiʿ beside the oath that he has no property. Its ground is the reach of «مال» in usage, the same ground as Aḥmad's naṣṣ and al-Qāḍī's reference to custom (position 0); strictly it is the coin-only riwāya that al-Inṣāf lists apart. A usage rationale: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "ec5b0b8d95681beafe264223e40d7305cf1c62730b6faa65c13541ff3c5906be"
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f009",
@@ -525,7 +539,8 @@
      "note": "Kashshāf gives this for ḥinth by non-zakāt goods (property, land, furnishings, animals) and debts. Stated ʿilla: qiyas."
     }
    ],
-   "advantages": []
+   "advantages": [],
+   "positions_sha256": "20d3aaefc1cbc15aee75dbde4b0148235395ac9fa541e6ef9d29df958874e2fd"
   }
  ]
 }

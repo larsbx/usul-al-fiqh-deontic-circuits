@@ -5,15 +5,21 @@ import json
 import pytest
 
 from usul_corpus import source_verify as gate
+from usul_corpus import position_receipts
 
 TEXT = "# هذا الحكم ثابت إلا عند الضرورة\nPageV01P001\n# لا إجمال في البيع\nPageV01P002\n"
 QUOTE = "لا إجمال في البيع"
+
+
+def receipt_case(far):
+    return {"far": far, "positions": [{"who": "fixture holder", "ruling": False}]}
 
 
 @pytest.fixture
 def fixture(tmp_path):
     corpus, cache = tmp_path / "corpus", tmp_path / "cache"
     (corpus / "reconciliation").mkdir(parents=True)
+    (corpus / "takhrij").mkdir()
     cache.mkdir()
     witness = {"id": "test-source", "kind": "openiti", "repo": "test",
                "commit": "a" * 40, "path": "source"}
@@ -21,10 +27,15 @@ def fixture(tmp_path):
     lock = {"witnesses": {"test-source": {"url": gate.fetch.witness_url(witness),
             "bytes": len(TEXT.encode()), "sha256": hashlib.sha256(TEXT.encode()).hexdigest()}}}
     evidence = {"ref": "src:test-source/v01:p002", "excerpt_ar": QUOTE}
-    ledger = {"entries": [{"far": "base-case", "evidence": [evidence]}]}
-    for name, data in (("registry.json", registry), ("lock.json", lock), ("reconciliation/ledger.json", ledger)):
+    cases = [receipt_case(far) for far in ("base-case", "shard-case")]
+    ledger = {"entries": [{"far": "base-case", "evidence": [evidence],
+                           position_receipts.FIELD: position_receipts.digest(cases[0])}]}
+    for name, data in (("registry.json", registry), ("lock.json", lock),
+                       ("takhrij/cases.json", {"cases": cases}), ("reconciliation/ledger.json", ledger)):
         (corpus / name).write_text(json.dumps(data), encoding="utf-8")
     (cache / "test-source.txt").write_text(TEXT, encoding="utf-8")
+    # Every negative control must begin with an admissible, passing source case.
+    assert gate.verify(corpus, cache)["status"] == "verified_required_subset"
     return corpus, cache
 
 
@@ -166,9 +177,69 @@ def test_negated_parenthesised_footnote_anchors_are_markup():
         assert gate.check_quote(text, quote, "v03:p1011") is None
 
 
+def test_a_parenthesised_zero_is_a_numeral():
+    """Review (#104): «(0)» keys as a numeral in every witness; the Taʿrīf's rank excerpts quote it verbatim."""
+    text = "# على خمس مراتب (0) الاولى (0) من لم يوصف بذلك الا نادرا\nPageV01P013\n# المبلغ (0) درهم\nPageV01P014\n"
+    assert gate.check_quote(text, "الاولى (0) من لم يوصف بذلك الا نادرا", "v01:p013") is None
+    assert "absent" in gate.check_quote(text, "المبلغ درهم", "v01:p014")
+
+
 def test_page_break_does_not_hide_a_qualifier():
     text = "# هذا الحكم ثابت\nPageV01P001\n# إلا عند الضرورة\nPageV01P002\n"
     assert "qualifier" in gate.check_quote(text, "هذا الحكم ثابت", "v01:p001")
+
+
+LA_TEXT = "# قال لا يجوز البيع إلا بالقبض\nPageV01P001\n"
+
+
+def test_a_presentation_form_ligature_keys_as_its_letters():
+    """Audit PR-35: «ﻻ» (U+FEFB) carried no key, so «قال ﻻ يجوز البيع» matched «قال يجوز البيع»."""
+    assert "absent" in gate.check_quote("# قال يجوز البيع\nPageV01P001\n", "قال ﻻ يجوز البيع", "v01:p001")
+    assert gate.check_quote("# قال ﻻ يجوز البيع\nPageV01P001\n", "قال لا يجوز البيع", "v01:p001") is None
+
+
+def test_an_arabic_letter_outside_the_key_is_rejected():
+    """A letter the key does not carry would be skipped by the comparison, so the excerpt may not hold one."""
+    assert gate.check_quote(LA_TEXT, "قال لا يجوز ٻالبيع", "v01:p001") == "letters outside the quotation key: ٻ"
+
+
+def test_a_quotation_cannot_drop_a_negation_just_before_it():
+    """Audit PR-35: «يجوز البيع» passed against «قال لا يجوز البيع»."""
+    assert gate.check_quote(LA_TEXT, "يجوز البيع إلا بالقبض", "v01:p001") == "quotation drops the negation «لا» before it"
+    assert gate.check_quote("# (لم\n~~يلزمه) شيء\nPageV01P001\n", "يلزمه) شيء", "v01:p001") == \
+        "quotation drops the negation «لم» before it"
+    # Punctuation ends the negation's clause: «أم لا؟ الأظهر …» starts a new sentence.
+    assert gate.check_quote("# هل يسترد أم لا؟ الأظهر استرداده\nPageV01P001\n", "الأظهر استرداده", "v01:p001") is None
+
+
+def test_a_quotation_starts_and_ends_on_word_boundaries():
+    """Audit PR-35: «يجوز البي» passed against «يجوز البيع إلا …», hiding the qualifier after the word."""
+    assert gate.check_quote(LA_TEXT, "لا يجوز البي", "v01:p001") == "quotation ends mid-word"
+    assert gate.check_quote(LA_TEXT, "ال لا يجوز البيع إلا بالقبض", "v01:p001") == "quotation starts mid-word"
+    assert gate.check_quote(LA_TEXT, "قال لا يجوز البيع إلا بالقبض", "v01:p001") is None
+
+
+def test_markup_inside_a_word_is_not_a_word_boundary():
+    """Review (#95): a page marker inside a word must not let a quotation start or end there."""
+    assert gate.check_quote("# قال الPageV01P001بيع جائز\nPageV01P002\n", "بيع جائز", "v01:p002") == "quotation starts mid-word"
+    assert gate.check_quote("# قال البيPageV01P001ع جائز\nPageV01P002\n", "قال البي", "v01:p001") == "quotation ends mid-word"
+
+
+def test_a_quotation_wholly_in_presentation_forms_is_not_empty():
+    """Review (#95): emptiness is judged on the key, after presentation forms unfold."""
+    assert gate.check_quote("# ﻗﺎﻝ ﻻ ﻳﺠﻮﺯ\nPageV01P001\n", "ﻗﺎﻝ ﻻ ﻳﺠﻮﺯ", "v01:p001") is None
+    assert gate.check_quote(LA_TEXT, "12", "v01:p001") == "empty Arabic quotation"
+
+
+@pytest.mark.parametrize("tail", ["الا عند الضرورة", "- لكن قال الموفق", "«إلا عند الضرورة»", "— إلا عند الضرورة",
+                                  "غير ان الموفق قال", "اذا لم يضطر"])
+def test_a_qualifier_is_found_across_hamza_dashes_and_quotation_marks(tail):
+    """Audit PR-35: al-Iqnāʿ v04:p060 stops before «- لكن قال الموفق …»; hamza-less «الا» was missed too."""
+    assert "qualifier" in gate.check_quote(f"# هذا الحكم ثابت {tail}\nPageV01P001\n", "هذا الحكم ثابت", "v01:p001")
+
+
+def test_a_word_that_merely_starts_like_a_qualifier_is_not_one():
+    assert gate.check_quote("# هذا الحكم ثابت الاستثناء نادر\nPageV01P001\n", "هذا الحكم ثابت", "v01:p001") is None
 
 
 def test_exclusions_are_explicit_and_required_failure_cannot_be_excluded(fixture):
@@ -190,6 +261,21 @@ def test_empty_required_set_is_not_success(fixture):
     assert gate.verify(corpus, cache)["status"] == "failed"
 
 
+@pytest.mark.parametrize("mutation", ["missing", "stale"])
+def test_bad_position_receipt_cannot_be_hidden_by_verified_source(fixture, mutation):
+    corpus, cache = fixture
+    path = corpus / "reconciliation/ledger.json"
+    ledger = json.loads(path.read_text())
+    if mutation == "missing":
+        del ledger["entries"][0][position_receipts.FIELD]
+    else:
+        ledger["entries"][0][position_receipts.FIELD] = "0" * 64
+    path.write_text(json.dumps(ledger))
+    report = gate.verify(corpus, cache)
+    assert report["status"] == "failed"
+    assert any("positions receipt" in error for error in report["errors"])
+
+
 def test_shard_only_witness_is_required_and_cannot_hide_in_exclusions(fixture):
     corpus, cache = fixture
     registry = json.loads((corpus / "registry.json").read_text())
@@ -201,7 +287,8 @@ def test_shard_only_witness_is_required_and_cannot_hide_in_exclusions(fixture):
     (corpus / "lock.json").write_text(json.dumps(locks))
     fragments = corpus / "reconciliation/entries"
     fragments.mkdir()
-    (fragments / "new.json").write_text(json.dumps({"entries": [{"far": "shard-case", "evidence": [
+    (fragments / "new.json").write_text(json.dumps({"entries": [{"far": "shard-case",
+        position_receipts.FIELD: position_receipts.digest(receipt_case("shard-case")), "evidence": [
         {"ref": "src:shard-source/v01:p002", "excerpt_ar": QUOTE}]}]}))
     assert gate.required_witnesses(corpus) == {"test-source", "shard-source"}
     report = gate.verify(corpus, cache)
@@ -224,3 +311,21 @@ def test_foundation_witnesses_are_required(fixture):
     report = gate.verify(corpus, cache)
     assert report["status"] == "failed"
     assert any(e.startswith("foundation-source:") for e in report["errors"])
+
+
+def test_dossier_and_hadith_text_witnesses_are_required(fixture):
+    """Audit PR-40: the dossier's and the ḥadīth methodology's verbatim checks skipped in CI. Their text
+    witnesses are now required; a DOC or PDF witness stays excluded until its text derivation is pinned."""
+    corpus, cache = fixture
+    registry = json.loads((corpus / "registry.json").read_text())
+    base = registry["works"][0]["witnesses"][0]
+    registry["works"][0]["witnesses"] += [{**base, "id": "dossier-text"}, {**base, "id": "hadith-text"},
+                                          {**base, "id": "dossier-doc", "format": "doc"}]
+    (corpus / "registry.json").write_text(json.dumps(registry))
+    (corpus / "dossier").mkdir()
+    (corpus / "dossier/terms.json").write_text(json.dumps({"refs": [
+        {"ref": "src:dossier-text/v01:p001"}, {"ref": "src:dossier-doc#F01"}]}))
+    (corpus / "hadith").mkdir()
+    (corpus / "hadith/scales.json").write_text(json.dumps({"items": [{"ref": "src:hadith-text/v02:p003"}]}))
+    required = gate.required_witnesses(corpus)
+    assert {"dossier-text", "hadith-text"} <= required and "dossier-doc" not in required

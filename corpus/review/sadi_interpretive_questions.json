@@ -188,7 +188,7 @@
      "excerpt_ar": "للحاكم أن يعرض للمقر بحد أن يرجع عن إقراره، وقال في الانتصار: تلقينه الرجوع مشروع"
     },
     {
-     "ref": "src:openiti-ilam-shamela11496/v03:p295",
+     "ref": "src:openiti-ilam-shamela11496/v03:p296",
      "relation": "refines",
      "note": "Retracting the confession drops the ḥadd (the case of Māʿiz: 'why did you not leave him to repent').",
      "excerpt_ar": "فالحيلة أن يرجع عن إقراره فيسقط عنه الحد"
@@ -715,7 +715,7 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-musawwada-shamela11814/v01:p328",
+     "ref": "src:openiti-musawwada-shamela11814/v01:p329",
      "relation": "agrees",
      "note": "It is permissible to give the aṣl two ʿillas, as one proves a thing by two proofs, when what they require is one; if they conflict, it is not; some refused it.",
      "excerpt_ar": "يجوز تعليل الأصل بعلتين كما يستدل على شيء بدليلين وهذا في العلتين إذا كان موجبهما واحدا فأما إذا تنافيا فلا يجوز"
@@ -751,7 +751,7 @@
    "status": "referenced",
    "established": [
     {
-     "ref": "src:openiti-musawwada-shamela11814/v01:p428",
+     "ref": "src:openiti-musawwada-shamela11814/v01:p429",
      "relation": "refines",
      "note": "They disagree whether kasr, a naqḍ of the meaning of the ʿilla, is a valid objection; two views; Abū al-Khaṭṭāb chose that it is not.",
      "excerpt_ar": "اختلفوا في الكسر هل هو سؤال صحيح وهو نقض لمعنى العلة فيه قولان اختار أبو الخطاب أنه ليس بسؤال صحيح"
@@ -819,7 +819,7 @@
      "excerpt_ar": "مسألة: المصالح المرسلة لا يجوز بناء الاحكام عليها قاله ابن الباقلاني ني وجماعة المتكلمين وهوقول متأخري أصحابنا أهل الأصول والجدل وقال مالك يجوز ذلك"
     },
     {
-     "ref": "src:openiti-rawda-shamela12010/v01:p477",
+     "ref": "src:openiti-rawda-shamela12010/v01:p478",
      "relation": "agrees",
      "note": "Maṣlaḥa is threefold: what the law recognises (that is qiyās), what it cancels (making a king fast in expiation), and the mursal, which is disputed. The same division as Recognition.",
      "excerpt_ar": "والمصلحة: هي جلب المنفعة، أو دفع المضرة. وهي ثلاثة أقسام: قسم شهد الشرع باعتبارها. فهذا هو القياس"

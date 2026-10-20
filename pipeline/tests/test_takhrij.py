@@ -41,12 +41,14 @@ def test_check_case_requires_an_ikhtilaf_position_to_hold_the_kernel_ruling():
     glossed = [{"who": "a", "ruling": "divide"}, {"who": "b", "ruling": "lot; whoever wins, his word"}]
     coded = [glossed[0], {"who": "b", "ruling": "lot", "detail": "whoever wins, his word"}]
     assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=glossed, matches_madhhab=False)) == [
-        "no position holds the expected ruling"]
+        "no position holds the expected ruling",
+        "position 1: ruling outside the encoder's output domain needs an explicit textual outside explanation"]
     assert takhrij.check_case(_case("genuine_ikhtilaf", facts, "lot", positions=coded, matches_madhhab=False)) == []
     abstain = {"suspended": True, "possible": True, "absence_known": False}
     ints = [{"who": "a", "ruling": 1}, {"who": "b", "ruling": False}]
     assert takhrij.check_case(_case("genuine_ikhtilaf", abstain, True, encoder="abstention_under_possible_condition",
-                                    positions=ints, matches_madhhab=False)) == ["no position holds the expected ruling"]
+                                    positions=ints, matches_madhhab=False)) == ["no position holds the expected ruling",
+        "position 0: ruling outside the encoder's output domain needs an explicit textual outside explanation"]
 
 
 def test_code_is_typed_identity():
@@ -144,3 +146,19 @@ def test_the_case_schema_admits_unit_ids():
     import re
     assert all(re.search(pattern, i) for i in ("a.b.q001.f001", "a.b.qa00001", "a.b.m00001", "a.b.b00001"))
     assert not re.search(pattern, "a.b.q001")
+
+
+def test_an_ikhtilaf_states_whether_it_matches_the_madhhab_and_a_derivable_case_agrees_with_its_positions():
+    """Audit (low): `matches_madhhab` was optional on an ikhtilāf, and a derivable case could carry positions
+    disagreeing with its expected ruling. An explicit range gap (`outside`) is not a competing ruling."""
+    unknown = {"entitled_known": False, "divisible": False, "confusion_category": False}
+    two = [{"who": "a", "ruling": "lot"}, {"who": "b", "ruling": "divide"}]
+    ikh = _case("genuine_ikhtilaf", unknown, "lot", positions=two, matches_madhhab=True)
+    assert takhrij.check_case(ikh) == []
+    assert "an ikhtilāf states matches_madhhab (true or false)" in takhrij.check_case(
+        {k: v for k, v in ikh.items() if k != "matches_madhhab"})
+    der = _case("derivable", unknown, "lot", positions=[{"who": "a", "ruling": "lot"}])
+    assert takhrij.check_case(der) == []
+    assert takhrij.check_case({**der, "positions": two}) == ["position 1's ruling disagrees with a derivable case's expected ruling"]
+    gap = {**der, "positions": [{"who": "a", "ruling": "lot"}, {"who": "b", "ruling": "by agreement", "outside": "not an output"}]}
+    assert takhrij.check_case(gap) == []

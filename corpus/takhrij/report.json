@@ -1,17 +1,17 @@
 {
- "total": 1084,
+ "total": 1256,
  "classes": {
-  "derivable": 441,
-  "genuine_ikhtilaf": 598,
-  "missing_fact": 3,
-  "missing_rule": 41,
+  "derivable": 510,
+  "genuine_ikhtilaf": 684,
+  "missing_fact": 4,
+  "missing_rule": 57,
   "segmentation_error": 1
  },
- "coverage": 0.959,
- "decided_coverage": 0.909,
- "disputed": 598,
+ "coverage": 0.951,
+ "decided_coverage": 0.893,
+ "disputed": 684,
  "encoding_error": 0,
- "gaps_open": 44,
+ "gaps_open": 61,
  "revisited": 38,
  "revisit_queue": [],
  "per_encoder": {
@@ -606,6 +606,50 @@
   "two_usul_reinforced_governs": {
    "genuine_ikhtilaf": 18
   },
+  "a26_ihala_on_known_cause": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 12
+  },
+  "a26_refused_idhn_lapses": {
+   "derivable": 9,
+   "genuine_ikhtilaf": 8
+  },
+  "a27_ain_ruling_survives_owner_change": {
+   "derivable": 9,
+   "genuine_ikhtilaf": 6
+  },
+  "a27_specific_agent_in_general_object": {
+   "derivable": 5,
+   "genuine_ikhtilaf": 12
+  },
+  "rajab_a28_toward_ownership_growth": {
+   "derivable": 6,
+   "genuine_ikhtilaf": 5
+  },
+  "rajab_a28_growth_in_nonownership_contract": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 1
+  },
+  "rajab_a28_growth_follows_hand": {
+   "derivable": 2,
+   "genuine_ikhtilaf": 4
+  },
+  "rajab_a28_faskh_growth_returns": {
+   "genuine_ikhtilaf": 9
+  },
+  "rajab_a28_right_reaches_growth": {
+   "genuine_ikhtilaf": 1
+  },
+  "a29_haml_hukm_before_separation": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 14,
+   "missing_fact": 1,
+   "missing_rule": 1
+  },
+  "a29_four_kinds_of_milk": {
+   "derivable": 4,
+   "genuine_ikhtilaf": 4
+  },
   "attached_right_disposal": {
    "derivable": 4,
    "genuine_ikhtilaf": 7
@@ -613,6 +657,41 @@
   "rescue_loss_liability": {
    "derivable": 9,
    "genuine_ikhtilaf": 1
+  },
+  "rajab_a30_tamalluk_awaits_choice": {
+   "missing_rule": 7
+  },
+  "rajab_a30_use_right_not_passed": {
+   "derivable": 1
+  },
+  "rajab_a30_use_right_for_need": {
+   "genuine_ikhtilaf": 1
+  },
+  "rajab_a30_ikhtisas_hand_stands": {
+   "derivable": 3,
+   "missing_rule": 1
+  },
+  "rajab_a30_ikhtisas_first_comer": {
+   "derivable": 2
+  },
+  "rajab_a30_tie_binds_whole": {
+   "derivable": 2,
+   "missing_rule": 5
+  },
+  "rajab_a30_tie_for_recovery": {
+   "derivable": 1,
+   "missing_rule": 2
+  },
+  "rajab_a30_tied_right_precedes": {
+   "derivable": 1
+  },
+  "a31_rajab87_transfer_of_holding": {
+   "derivable": 13,
+   "genuine_ikhtilaf": 4
+  },
+  "a31_rajab88_road_use": {
+   "derivable": 1,
+   "genuine_ikhtilaf": 5
   },
   "attached_takeover_at_value": {
    "derivable": 7,
