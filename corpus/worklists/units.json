@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "unit": "one committed fatwa, masala or bab record; obligations are its record ids",
+  "unit": "one committed fatwa, masala or bab record; obligations are its record ids, less a bab whose masāʾil are split",
   "summary": {
     "witnesses": 21,
-    "units": 48760,
+    "units": 49413,
     "annotated": 40,
-    "pending": 48720
+    "pending": 49373
   },
   "witnesses": [
     {
@@ -264,10 +264,10 @@
       "kind": "abwab",
       "source_sha256": "1ff4cb3cf3fe17937474f0923e17a0f906f20f20f69d1e453cc9928a99a99e7b",
       "records": "records/openiti-mubarak-ghurarnaqiyya-shamay36516.jsonl",
-      "records_sha256": "4d2b7d2c730740ad4ec027a3df599bbc3a49f0443c97e1487931dd60a12b8ad2",
-      "units": 123,
+      "records_sha256": "12ad8d28c94d067dc326ca1454e2622f95628697a07ad21821d52656e871f2f0",
+      "units": 776,
       "annotated": 0,
-      "pending": 123,
+      "pending": 776,
       "annotated_ids": []
     },
     {

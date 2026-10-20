@@ -44,6 +44,14 @@ def test_a_witness_segmenter_overrides_the_work_and_may_stand_alone():
     assert [units.segmenter_of(bare, x) for x in bare["witnesses"]] == [None, {"kind": "abwab"}]
 
 
+def test_a_bab_split_into_masail_is_routing_not_an_obligation():
+    """A shard claims masāʾil, not the bāb that holds them; an unsplit bāb is still an obligation, and a
+    Masāʾil collection's own m-ids are untouched."""
+    rows = [{"id": i} for i in ("w.x.b00001", "w.x.b00001.m001", "w.x.b00001.m002", "w.x.b00002", "w.y.m00001")]
+    raw = "".join(json.dumps(r) + "\n" for r in rows).encode()
+    assert units._obligations(raw) == ["w.x.b00001.m001", "w.x.b00001.m002", "w.x.b00002", "w.y.m00001"]
+
+
 def test_unit_records_are_pending_obligations_a_shard_can_claim():
     first = json.loads((CORPUS / "records/openiti-kawsaj-masailahmad-shamela3125.jsonl").read_text(encoding="utf-8").split("\n", 1)[0])["id"]
     pending = shards.pending_obligations(CORPUS)
