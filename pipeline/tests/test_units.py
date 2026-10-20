@@ -30,8 +30,8 @@ def test_the_inventory_covers_every_unit_witness_exactly_once():
     rows = _committed()["witnesses"]
     assert [r["witness"] for r in rows] == expected
     for r in rows:
-        lines = (CORPUS / r["records"]).read_text(encoding="utf-8").splitlines()
-        assert r["units"] == len(lines) and r["pending"] == r["units"] - len(r["annotated_ids"])
+        obligations = units._obligations((CORPUS / r["records"]).read_bytes())  # a bāb split into masāʾil is not one
+        assert r["units"] == len(obligations) and r["pending"] == r["units"] - len(r["annotated_ids"])
     assert _committed()["summary"]["units"] == sum(r["units"] for r in rows)
 
 
