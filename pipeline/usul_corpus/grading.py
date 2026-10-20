@@ -43,7 +43,8 @@ WORKS = {"albani.sahih_daif_tirmidhi": "openiti-albani-sdtirmidhi-shamela782",
          "albani.daif_abi_dawud": "shamela-5914",
          "albani.sahih_daif_abi_dawud": "shamela-epub-1755",
          "albani.sahih_daif_nasai": "shamela-epub-783",
-         "albani.sahih_daif_ibn_maja": "shamela-epub-810"}
+         "albani.sahih_daif_ibn_maja": "shamela-epub-810",
+         nusus.MUKHTASAR: "shamela-121381"}
 # The Ṣaḥīḥ wa-Ḍaʿīf Sunan work numbered as each Sunan witness is.
 SERIES = {"openiti-tirmidhi-shamela7895": "albani.sahih_daif_tirmidhi",
           "openiti-abudawud-shamela1726": "albani.sahih_daif_abi_dawud",
@@ -51,6 +52,8 @@ SERIES = {"openiti-tirmidhi-shamela7895": "albani.sahih_daif_tirmidhi",
           "openiti-ibnmaja-shamela1198": "albani.sahih_daif_ibn_maja"}
 OWN = {"openiti-abudawud-shamela1726": ("albani.sahih_abi_dawud", "albani.daif_abi_dawud", "albani.sahih_daif_abi_dawud")} | \
       {w: (s,) for w, s in SERIES.items() if w != "openiti-abudawud-shamela1726"}
+# His takhrīj of the athar a collection quotes, consulted for that collection's athar only.
+ATHAR = {"openiti-bukhari-shamela1681": nusus.MUKHTASAR}
 SAHIHAYN = {"openiti-bukhari-shamela1681", "openiti-muslim-shamela1727"}
 HUJJA = {"sahih", "hasan"}
 MIN = 15
@@ -68,6 +71,8 @@ def heads(work: str, body: str) -> list[tuple[int, int]]:
         return nusus.irwa_heads(body)
     if work in nusus.SERIES:
         return [(int(m.group(1)), m.start()) for m in nusus.SERIES_HEAD.finditer(body)]
+    if work == nusus.MUKHTASAR:
+        return sorted(((n, at) for n, (at, _) in nusus.mukhtasar_notes(body).items()), key=lambda h: h[1])
     return nusus.dawud_heads(body)
 
 
@@ -83,7 +88,7 @@ def occurrences(body: str, excerpt: str) -> list[int]:
 
 
 VERDICT_LINE = {"albani.irwa": r"^# \* ", "albani.sahih_abi_dawud": r"\(قلت: ", "albani.daif_abi_dawud": r"\(قلت: "} | \
-               dict.fromkeys(nusus.SERIES, r"تحقيق الألباني")
+               dict.fromkeys(nusus.SERIES, r"تحقيق الألباني") | {nusus.MUKHTASAR: r"^# \[هامش\]"}
 
 
 def head(work: str, entry: str) -> str:
@@ -140,7 +145,8 @@ def grade(nass: dict, cache_dir: Path) -> dict:
     witness = mahall.REF.fullmatch(nass["ref"])[1]
     excerpt, own = nass["excerpt_ar"], text(cache_dir, witness)
     longer = len(nusus.key(excerpt)) >= MIN
-    order = OWN.get(witness, ()) + tuple(w for w in WORKS if w not in OWN.get(witness, ()))
+    first = OWN.get(witness, ()) + ((ATHAR[witness],) if nass["kind"] == "athar" and witness in ATHAR else ())
+    order = first + tuple(w for w in WORKS if w not in first and w not in ATHAR.values())
     found = [(w, n, v) for w in order if longer for n, v in entries(w, text(cache_dir, WORKS[w]), excerpt) if v]
     if (s := SERIES.get(witness)) and (v := holds(s, text(cache_dir, WORKS[s]), nass["number"], excerpt)) \
             and (longer or agreed(own, s, text(cache_dir, WORKS[s]), excerpt) == v) and (s, nass["number"], v) not in found:
@@ -153,6 +159,8 @@ def grade(nass: dict, cache_dir: Path) -> dict:
     if sahihayn:            # his verdict on another collection's route is not on theirs
         weaker = [cite(*f) for f in found]
         return {"sahihayn": {"witness": witness, "number": nass["number"]}, **({"weaker_routes": weaker} if weaker else {})}
+    if longer and (silent := [n for w in first if w in ATHAR.values() for n, _ in entries(w, text(cache_dir, WORKS[w]), excerpt)]):
+        return {"ungraded": f"al-Albānī's note on it in his Mukhtaṣar al-Bukhārī ({', '.join(map(str, silent))}) gives no verdict"}
     if longer:
         return {"ungraded": "no entry of al-Albānī's pinned works holds the excerpt"}
     if not SERIES.get(witness):

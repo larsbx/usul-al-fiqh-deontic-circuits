@@ -24,6 +24,16 @@ def test_shamela_page_to_markdown_round_trips_through_openiti_parser():
     assert sec.text == "الأحكام: جمع حُكم وهو لغةً: القضاء."
 
 
+HAMESH_PAGE = PAGE.replace("</div>", '<hr><p class="hamesh">١١٥٢ - وصله ابن أبي شيبة بسند صحيح عنه.<br />١١٥٣ - وصله سعيد.</p> </div>')
+
+
+def test_a_witness_with_hamesh_keeps_its_footnotes_before_the_page_marker():
+    """al-Albānī's Mukhtaṣar puts his takhrīj of each athar in the page's footnotes («hamesh»)."""
+    assert shamela_page_to_markdown(HAMESH_PAGE) == shamela_page_to_markdown(PAGE)     # off: pins unchanged
+    assert shamela_page_to_markdown(HAMESH_PAGE, hamesh=True).splitlines()[-3:] == [
+        "# [هامش] ١١٥٢ - وصله ابن أبي شيبة بسند صحيح عنه.", "# [هامش] ١١٥٣ - وصله سعيد.", "PageV01P010"]
+
+
 def test_next_page_id():
     assert next_page_id(PAGE) == 6
     assert next_page_id("<div></div>") is None
