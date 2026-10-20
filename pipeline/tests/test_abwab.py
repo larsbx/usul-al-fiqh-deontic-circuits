@@ -2,8 +2,9 @@ import json
 from pathlib import Path
 
 import jsonschema
-from usul_corpus.abwab import segment_abwab
+from usul_corpus.abwab import segment_abwab, split_masail
 from usul_corpus.records import bab_record
+from usul_corpus.units import unit_records
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -129,3 +130,114 @@ def test_a_heading_the_edition_misranks_can_be_ranked_as_a_kitab():
         ("bab", ("كتاب الحج",), "باب النكاح"), ("fasl", ("كتاب الحج", "باب النكاح"), "فصل")]
     assert [(u.rank, u.path, u.heading) for u in segment_abwab(text, body_headings=True, kitab_headings={"باب النكاح"})][1:] == [
         ("kitab", (), "باب النكاح"), ("fasl", ("باب النكاح",), "فصل")]
+
+
+MASAIL = """#META#Header#End#
+# كتاب الصلاة
+# [1 - باب مواقيت الصلاة]
+# - أول وقت الظهر: الزوال.
+# - وأوقات الكراهة:
+# 1 - بعد الفجر.
+# 2 - وعند الزوال.
+PageV01P008
+# 2 - باب الأذان
+# - يشرع لأهل كل بلد:
+# 1 - أن يتخذوا مؤذنا.
+# - ويشرع للسامع أن يتابع
+~~المؤذن.
+# 3 - باب
+# ويجب على المصلي:
+# 1 - تطهير ثوبه.
+# 2 - ولا يصلي:
+# - في ثوب حرير.
+# - ولا مغصوب.
+# 3 - وعليه استقبال الكعبة.
+# فصل
+# [في مبطلات الصلاة]
+# - وتبطل بالكلام.
+PageV01P009
+"""
+
+
+def test_numbered_body_headings_open_babs_titled_from_the_rank_word():
+    """al-Ghurar numbers some bāb headings («2 - باب الأذان», «[1 - باب مواقيت الصلاة]»); the title
+    starts at the rank word, as al-Darārī prints them."""
+    assert [(u.rank, u.heading, u.path) for u in segment_abwab(MASAIL, body_headings=True)] == [
+        ("bab", "باب مواقيت الصلاة", ("كتاب الصلاة",)),
+        ("bab", "باب الأذان", ("كتاب الصلاة",)),
+        ("bab", "باب", ("كتاب الصلاة",)),
+        ("fasl", "فصل", ("كتاب الصلاة", "باب")),
+    ]
+
+
+def test_a_unit_splits_into_masail_with_their_enumerations():
+    """«- …» or a plain statement opens a masʾala; «N - …» items belong to it; after an item ending «:»
+    its «- …» lines are sub-items; «[…]» is a subtitle; a «~~» line continues the one before."""
+    units = segment_abwab(MASAIL, body_headings=True, masail=True)
+    assert [[m.text for m in split_masail(u)] for u in units] == [
+        ["- أول وقت الظهر: الزوال.", "- وأوقات الكراهة: 1 - بعد الفجر. 2 - وعند الزوال."],
+        ["- يشرع لأهل كل بلد: 1 - أن يتخذوا مؤذنا.", "- ويشرع للسامع أن يتابع المؤذن."],
+        ["ويجب على المصلي: 1 - تطهير ثوبه. 2 - ولا يصلي: - في ثوب حرير. - ولا مغصوب. 3 - وعليه استقبال الكعبة."],
+        ["- وتبطل بالكلام."],
+    ]
+    assert [(m.page, m.end_page) for m in split_masail(units[0])] == [((1, 8), (1, 8)), ((1, 8), (1, 8))]
+
+
+def test_masala_records_follow_their_bab_and_conform_to_the_schema():
+    schema = json.loads((ROOT / "schemas/usul_rule.schema.json").read_text())
+    seg = {"kind": "abwab", "body_headings": True, "masail": True}
+    records = unit_records({"id": "a.b", "rights": "public_domain_text"}, "w-x", seg, MASAIL)
+    for r in records:
+        jsonschema.validate(r, schema)
+    assert [(r["id"], r["record_type"]) for r in records[:3]] == [
+        ("a.b.w_x.b00001", "bab"), ("a.b.w_x.b00001.m001", "masala"), ("a.b.w_x.b00001.m002", "masala")]
+    m = records[1]
+    assert (m["path_ar"], m["heading_ar"], m["locator"], m["page_span"]) == (
+        ["كتاب الصلاة"], "باب مواقيت الصلاة", "src:w-x/v01:p008#b00001.m001", [8, 8])
+    fasl = next(r for r in records if r["id"] == "a.b.w_x.b00004.m001")
+    assert (fasl["path_ar"], fasl["heading_ar"]) == (["كتاب الصلاة", "باب"], "فصل")
+    assert unit_records({"id": "a.b", "rights": "public_domain_text"}, "w-x", {"kind": "abwab"}, ZAD) == [
+        bab_record({"id": "a.b", "rights": "public_domain_text"}, "w-x", i, u) for i, u in enumerate(segment_abwab(ZAD), 1)]
+
+
+def test_the_audit_counts_units_and_masail_apart():
+    from usul_corpus.__main__ import unit_audit
+    seg = {"kind": "abwab", "body_headings": True, "masail": True}
+    records = unit_records({"id": "a.b", "rights": "public_domain_text"}, "w-x", seg, MASAIL)
+    assert unit_audit(records) == {"found": 4, "masail": 6, "ranks": {"bab": 3, "fasl": 1}}
+    assert unit_audit([r for r in records if r["record_type"] == "bab"]) == {"ranks": {"bab": 3, "fasl": 1}}
+
+
+def test_a_wrapped_line_that_opens_a_masala_does_not_continue_the_line_before():
+    """OpenITI wraps «# باب حد القذف PageV01P084» and the first masʾala as «~~- من رمى …»: the masʾala
+    is not part of the heading."""
+    text = ("#META#Header#End#\n# كتاب الحدود\n# باب حد السرقة\n# - وقد ثبت القطع في جحد\n~~العارية.\n"
+            "# باب حد القذف PageV01P084\n~~- من رمى غيره وجب عليه الحد.\n# - ويسقط بأربعة شهود.\nPageV01P085\n")
+    units = segment_abwab(text, body_headings=True, masail=True)
+    assert [u.heading for u in units] == ["باب حد السرقة", "باب حد القذف"]
+    assert [[m.text for m in split_masail(u)] for u in units] == [
+        ["- وقد ثبت القطع في جحد العارية."], ["- من رمى غيره وجب عليه الحد.", "- ويسقط بأربعة شهود."]]
+
+
+def test_a_sentence_broken_across_lines_is_one_masala_and_a_bare_title_is_a_subtitle():
+    """al-Ghurar's manāsik print one step per line and break a sentence across lines: a plain line
+    continues a masʾala whose last line has no sentence end. Before the first masʾala, an unpunctuated
+    plain line («مستحبات الوضوء», «في حقوق الراعي والرعية») is a subtitle, as «[…]» is."""
+    text = ("#META#Header#End#\n# كتاب الحج\n# فصل\n# [في صفة الحج]\n# - ثم يأتي عرفة صبح يوم عرفة\n# ملبيا مكبرا\n"
+            "# ويخطب.\n# ثم يفيض من عرفة\n# ويبيت بها (¬1).\n# - ولا حرج.\n# فصل\n# مستحبات الوضوء\n"
+            "# ويستحب: 1 - التثليث.\n# فصل\n# - المهر واجب\n# - وتكره المغالاة فيه\nPageV01P037\n")
+    assert [[m.text for m in split_masail(u)] for u in segment_abwab(text, body_headings=True, masail=True)] == [
+        ["- ثم يأتي عرفة صبح يوم عرفة ملبيا مكبرا ويخطب.", "ثم يفيض من عرفة ويبيت بها (¬1).", "- ولا حرج."],
+        ["ويستحب: 1 - التثليث."],
+        ["- المهر واجب", "- وتكره المغالاة فيه"],
+    ]
+
+
+def test_a_numbered_fasl_heading_opens_a_fasl():
+    """«5 - فصل» in al-Ghurar's Kitāb al-Ṣalāt is a heading, not the fifth item of a list."""
+    text = ("#META#Header#End#\n# كتاب الصلاة\n# 4 - باب كيفية الصلاة\n# - ويكبر.\n# 5 - فصل\n"
+            "# [في مبطلات الصلاة]\n# وتبطل الصلاة:\n# 1 - بالكلام.\nPageV01P011\n")
+    units = segment_abwab(text, body_headings=True, masail=True)
+    assert [(u.rank, u.heading, u.path) for u in units] == [
+        ("bab", "باب كيفية الصلاة", ("كتاب الصلاة",)), ("fasl", "فصل", ("كتاب الصلاة", "باب كيفية الصلاة"))]
+    assert [[m.text for m in split_masail(u)] for u in units] == [["- ويكبر."], ["وتبطل الصلاة: 1 - بالكلام."]]

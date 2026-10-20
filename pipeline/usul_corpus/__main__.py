@@ -42,7 +42,7 @@ from .hudud import extract_hudud
 from .ocr import MODELS, OcrOptions, cache_dir, ocr_pdf, page_markdown, quality, tesseract_version
 from .openiti import parse_markdown
 from .records import hadd_record, qaida_records, sharh_record, unit_tags, with_recovered
-from .units import UNIT_SEGMENTERS, segmenter_of
+from .units import UNIT_SEGMENTERS, segmenter_of, unit_records
 from .segment import (
     audit_numbering,
     consensus_numbering,
@@ -179,8 +179,7 @@ def _segment(work: dict, w: dict, text: str) -> tuple[list[dict], tuple | None]:
     """Records for one witness, plus the numbered units when the segmenter yields any."""
     seg, witness = segmenter_of(work, w), w["id"]
     if seg["kind"] in UNIT_SEGMENTERS:
-        cut, record = UNIT_SEGMENTERS[seg["kind"]]
-        return [record(work, witness, i, u) for i, u in enumerate(cut(text, seg), 1)], None
+        return unit_records(work, witness, seg, text), None
     if seg["kind"] == "hudud_brackets":
         hudud = extract_hudud(parse_markdown(text))
         return [hadd_record(work, witness, i, h) for i, h in enumerate(hudud, 1)], None
@@ -211,11 +210,14 @@ def _commentary(work: dict, witness: str, text: str, units: tuple) -> tuple[list
 
 
 def unit_audit(records: list[dict]) -> dict:
-    """Audit fields for unit records: the answered share, the printed numbering, the ranks."""
+    """Audit fields for unit records: the answered share, the printed numbering, the ranks (of the bāb
+    units, with their masāʾil counted apart where they are split)."""
     if not records or records[0]["record_type"] not in ("fatwa", "masala", "bab"):
         return {}
     if records[0]["record_type"] == "bab":
-        return {"ranks": dict(sorted(Counter(r["rank"] for r in records).items()))}
+        units = [r for r in records if r["record_type"] == "bab"]
+        split = {"found": len(units), "masail": len(records) - len(units)} if len(units) < len(records) else {}
+        return {**split, "ranks": dict(sorted(Counter(r["rank"] for r in units).items()))}
     out = {"answered": sum(r["answer_ar"] is not None for r in records)} if records[0]["record_type"] == "fatwa" else {}
     nums = [r["number"] for r in records if r.get("number")]
     if nums:
