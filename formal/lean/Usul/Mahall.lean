@@ -72,6 +72,13 @@ theorem Below.trans {a b c : L} (h₁ : Below g a b) (h₂ : Below g b c) : Belo
 theorem Below.snoc {a l m : L} (h : Below g a l) (hu : g.up l m) : Below g a m :=
   h.trans g (.step hu (.refl m))
 
+/-- `Below` carries over to any graph with at least the same broader edges. -/
+theorem Below.mono {g' : Graph F Q L N} (hup : ∀ l m, g.up l m → g'.up l m) {a b : L} (h : Below g a b) :
+    Below g' a b := by
+  induction h with
+  | refl => exact .refl _
+  | step hu _ ih => exact .step (hup _ _ hu) ih
+
 /-- An up-closed set holding `a` holds everything above `a`. -/
 theorem UpClosed.below {S : L → Prop} (hS : UpClosed g S) {a b : L} (h : Below g a b) (ha : S a) : S b := by
   induction h with
@@ -272,6 +279,21 @@ theorem exactB_sound {n : Nat} {q : String} {S G : List String} (h : d.exactB n 
   · have : l ∈ S := (fp l).mp hl
     simp [this] at h
   · simpa using h
+
+/-! ### Grounds through a gate on the texts
+
+`gated keep` keeps only the definitions by texts that pass `keep`. `UsulTest.MahallGraph` takes as
+`keep` the texts that are ḥujja: the Qurʾān, a reported ijmāʿ, the Ṣaḥīḥayn where al-Albānī does
+not grade them, and the ḥadīth `Usul.Seam.admitted` admits on al-Albānī's verdict. -/
+
+def gated (keep : String → Bool) : Data := { d with defines := d.defines.filter (keep ·.1) }
+
+/-- Grounds through the gate are grounds of the whole graph, by a text that passes the gate. -/
+theorem grounds_gated {keep : String → Bool} {q n : String} (h : grounds (d.gated keep).graph q n) :
+    grounds d.graph q n ∧ keep n = true := by
+  obtain ⟨l, ⟨f, m, hf, hq, hm, hb⟩, hd⟩ := h
+  simp only [graph, gated, List.mem_filter] at hd
+  exact ⟨⟨l, ⟨f, m, hf, hq, hm, Below.mono (d.gated keep).graph (g' := d.graph) (fun _ _ h => h) hb⟩, hd.1⟩, hd.2⟩
 
 /-- Every upward path from every label ends within `n` steps: no label is its own ancestor. -/
 def rootedB (n : Nat) : Bool :=

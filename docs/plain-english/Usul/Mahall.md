@@ -47,6 +47,8 @@ None of the links is one-to-one, and the graph does not force any of them to be:
 | `belowB_complete` | When the relation holds, the computation says yes for some bound. |
 | `restrict`, `footprintB_restrict`, `groundsB_restrict` | Keeping only the furūʿ tied to one qāʿida does not change that qāʿida's answers, so the checks can run on the smaller graph. |
 | `upClosedB`, `holdsB`, `groundsClosedB`, `exactB`, `footprint_sub`, `exactB_sound` | To show a list is exactly a qāʿida's footprint, it is enough that each label in it is computed in, that it is closed upwards, and that it holds the furūʿ's maḥalls; the same for the grounds. |
+| `Below.mono` | Being above carries over to any graph with at least the same broader-label links. |
+| `gated`, `grounds_gated` | Keep only the definitions by texts that pass a gate, such as "is ḥujja". A qāʿida grounded through the gate is grounded in the whole graph, by a text that passes the gate. |
 | `heightL`, `rootedB` | Every upward path from every label ends within the bound, so no label is its own ancestor. |
 
 `UsulTest.MahallGraph` evaluates these computations on the exported graph. The soundness theorems carry each check over to the relations above.
