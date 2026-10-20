@@ -30,8 +30,8 @@ def test_the_inventory_covers_every_unit_witness_exactly_once():
     rows = _committed()["witnesses"]
     assert [r["witness"] for r in rows] == expected
     for r in rows:
-        lines = (CORPUS / r["records"]).read_text(encoding="utf-8").splitlines()
-        assert r["units"] == len(lines) and r["pending"] == r["units"] - len(r["annotated_ids"])
+        obligations = units._obligations((CORPUS / r["records"]).read_bytes())  # a bāb split into masāʾil is not one
+        assert r["units"] == len(obligations) and r["pending"] == r["units"] - len(r["annotated_ids"])
     assert _committed()["summary"]["units"] == sum(r["units"] for r in rows)
 
 
@@ -42,6 +42,14 @@ def test_a_witness_segmenter_overrides_the_work_and_may_stand_alone():
     assert [units.segmenter_of(work, x)["kind"] for x in work["witnesses"]] == ["abwab", "qa"]
     bare = {"witnesses": [{"id": "c"}, {"id": "d", "segmenter": {"kind": "abwab"}}]}
     assert [units.segmenter_of(bare, x) for x in bare["witnesses"]] == [None, {"kind": "abwab"}]
+
+
+def test_a_bab_split_into_masail_is_routing_not_an_obligation():
+    """A shard claims masāʾil, not the bāb that holds them; an unsplit bāb is still an obligation, and a
+    Masāʾil collection's own m-ids are untouched."""
+    rows = [{"id": i} for i in ("w.x.b00001", "w.x.b00001.m001", "w.x.b00001.m002", "w.x.b00002", "w.y.m00001")]
+    raw = "".join(json.dumps(r) + "\n" for r in rows).encode()
+    assert units._obligations(raw) == ["w.x.b00001.m001", "w.x.b00001.m002", "w.x.b00002", "w.y.m00001"]
 
 
 def test_unit_records_are_pending_obligations_a_shard_can_claim():

@@ -90,8 +90,12 @@ which prints the whole matn with its commentary as closing endnotes.
 - **Fetch.** Truncated Shamela pages are retried, so long page walks no longer
   abort.
 
-Open: edition-level grants for any held witness; splitting the new mutūn units
-into masāʾil (R2's next step). Nothing here is reviewed or accepted.
+Follow-up (2026-10-20): the *Durar*'s units are split into 776 masāʾil
+(`masail`); numbered body headings («2 - باب الأذان», «5 - فصل») now open their
+units, giving 128. A split unit's masāʾil, not the unit, are its obligations.
+
+Open: edition-level grants for any held witness; splitting the other mutūn into
+masāʾil (R2's next step). Nothing here is reviewed or accepted.
 
 ### Semantic tagging development follow-up (2026-10-19)
 

@@ -186,3 +186,25 @@ def bab_record(work: dict, witness: str, idx: int, u) -> dict:
         "status": "candidate",
         "extraction": {"pipeline": PIPELINE, "method": "abwab"},
     }
+
+
+
+def unit_masala_record(work: dict, witness: str, idx: int, j: int, m, unit) -> dict:
+    """The j-th masʾala (``abwab.Masala``) of unit idx: located like its unit (the enclosing kitāb and
+    bāb, and the unit's own heading), whose record ``…b<idx>`` is its parent by id, with its excerpt,
+    page span and sha256 receipt."""
+    tag = f"b{idx:05d}.m{j:03d}"
+    return {
+        "id": f"{work['id']}.{witness.replace('-', '_')}.{tag}",
+        "work": work["id"],
+        "witness": witness,
+        "record_type": "masala",
+        "heading_ar": unit.heading[:EXCERPT_LEN[work["rights"]]],
+        "path_ar": list(unit.path),
+        "locator": _loc(witness, m.page, tag),
+        "page_span": _span(m),
+        "excerpt_ar": m.text[:EXCERPT_LEN[work["rights"]]],
+        "sha256": m.sha256,
+        "status": "candidate",
+        "extraction": {"pipeline": PIPELINE, "method": "abwab"},
+    }

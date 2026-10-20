@@ -13,15 +13,15 @@ import hashlib
 import json
 from pathlib import Path
 
-from .abwab import segment_abwab
+from .abwab import segment_abwab, split_masail
 from .qa import segment_entries, segment_qa
-from .records import bab_record, fatwa_record, masala_record
+from .records import bab_record, fatwa_record, masala_record, unit_masala_record
 
 # kind ↦ (cut the witness text into units, the record for unit i), records numbered from 1.
 UNIT_SEGMENTERS = {
     "qa": (lambda text, seg: segment_qa(text, seg.get("question"), seg["answer"], seg.get("question_heading", False)), fatwa_record),
     "masail": (lambda text, seg: segment_entries(text, seg["start"], seg.get("ordered", False)), masala_record),
-    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end"), seg.get("body_headings", False), seg.get("kitab_headings", ())), bab_record),
+    "abwab": (lambda text, seg: segment_abwab(text, seg.get("end"), seg.get("body_headings", False), seg.get("kitab_headings", ()), seg.get("masail", False)), bab_record),
 }
 INVENTORY = "worklists/units.json"
 
@@ -31,8 +31,21 @@ def segmenter_of(work: dict, witness: dict) -> dict | None:
     return witness.get("segmenter", work.get("segmenter"))
 
 
-def _ids(raw: bytes) -> list[str]:
-    return [json.loads(line)["id"] for line in raw.decode("utf-8").splitlines()]
+def unit_records(work: dict, witness: str, seg: dict, text: str) -> list[dict]:
+    """The records of one unit witness: one per unit, each followed by its masāʾil under ``masail``."""
+    cut, record = UNIT_SEGMENTERS[seg["kind"]]
+    split = seg.get("masail", False)
+    return [r for i, u in enumerate(cut(text, seg), 1)
+            for r in (record(work, witness, i, u),
+                      *(unit_masala_record(work, witness, i, j, m, u) for j, m in enumerate(split_masail(u) if split else (), 1)))]
+
+
+def _obligations(raw: bytes) -> list[str]:
+    """The record ids that are obligations: a unit split into masāʾil is a routing record, its masāʾil
+    the obligations (the parent of ``…b00001.m001`` is ``…b00001``)."""
+    ids = [json.loads(line)["id"] for line in raw.decode("utf-8").splitlines()]
+    parents = {i.rsplit(".", 1)[0] for i in ids if i.rsplit(".", 1)[-1].startswith("m") and ".b" in i}
+    return [i for i in ids if i not in parents]
 
 
 def inventory(corpus: Path, annotated: set[str]) -> dict:
@@ -47,7 +60,7 @@ def inventory(corpus: Path, annotated: set[str]) -> dict:
                 continue
             path = f"records/{x['id']}.jsonl"
             raw = (corpus / path).read_bytes()
-            ids = _ids(raw)
+            ids = _obligations(raw)
             done = sorted(annotated.intersection(ids))
             rows.append({"work": work["id"], "witness": x["id"], "kind": kind, "source_sha256": lock[x["id"]]["sha256"],
                          "records": path, "records_sha256": hashlib.sha256(raw).hexdigest(),
@@ -55,7 +68,7 @@ def inventory(corpus: Path, annotated: set[str]) -> dict:
     rows.sort(key=lambda r: r["witness"])
     totals = {k: sum(r[k] for r in rows) for k in ("units", "annotated", "pending")}
     return {"schema_version": 1, "status": "candidate",
-            "unit": "one committed fatwa, masala or bab record; obligations are its record ids",
+            "unit": "one committed fatwa, masala or bab record; obligations are its record ids, less a bab whose masāʾil are split",
             "summary": {"witnesses": len(rows), **totals}, "witnesses": rows}
 
 
@@ -73,5 +86,5 @@ def pending(corpus: Path) -> set[str]:
         raw = (corpus / r["records"]).read_bytes()
         if hashlib.sha256(raw).hexdigest() != r["records_sha256"]:
             raise ValueError(f"{r['records']} drifted from {INVENTORY}: run python -m usul_corpus worklist")
-        out |= set(_ids(raw)) - set(r["annotated_ids"])
+        out |= set(_obligations(raw)) - set(r["annotated_ids"])
     return out
