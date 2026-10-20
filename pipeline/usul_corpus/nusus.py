@@ -89,12 +89,9 @@ def number_at(text: str, pos: int) -> int | None:
 _IRWA_HEAD = re.compile(r"^# \[?\(([٠-٩]+)\)\]?\s*(?:[-ـ]\s*)?", re.M)   # «# (٦) - حديث», «# [(٢٠) - (», «# (١٤٣) (حديث»
 
 
-def irwa_heads(irwa: str) -> list[tuple[int, int]]:
-    """(entry number, offset) of every al-Irwāʾ entry header. Headers run in order, so the entries are
-    the longest strictly increasing run of candidate headers (by offset): a cross-reference or a
-    misnumbered header (Shamela prints «(٣٣٨)» for 238) is one outlier, not a reset (PR-26)."""
-    cands = [(int(m.group(1).translate(str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789"))), m.start())
-             for m in _IRWA_HEAD.finditer(irwa)]
+def _increasing(cands: list[tuple[int, int]]) -> list[tuple[int, int]]:
+    """The longest strictly increasing run of (number, offset) candidates, taken in offset order: a
+    cross-reference or a misnumbered header is one outlier, not a reset (PR-26)."""
     tails: list[int] = []          # tails[k]: the candidate ending the best run of length k+1
     ends: list[int] = []           # its entry number, kept sorted for bisection
     prev = [-1] * len(cands)
@@ -106,6 +103,54 @@ def irwa_heads(irwa: str) -> list[tuple[int, int]]:
     while i >= 0:
         out.append(cands[i]); i = prev[i]
     return out[::-1]
+
+
+def _arabic_int(s: str) -> int:
+    return int(s.translate(str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789")))
+
+
+def irwa_heads(irwa: str) -> list[tuple[int, int]]:
+    """(entry number, offset) of every al-Irwāʾ entry header. Headers run in order, so the entries are
+    the longest strictly increasing run of candidate headers (by offset): a cross-reference or a
+    misnumbered header (Shamela prints «(٣٣٨)» for 238) is one outlier, not a reset (PR-26)."""
+    return _increasing([(_arabic_int(m.group(1)), m.start()) for m in _IRWA_HEAD.finditer(irwa)])
+
+
+# «# ٤٥ - قال أبو داود», «# ٤- عن همام»; not a bāb heading «# ١٠- باب …».
+_DAWUD_HEAD = re.compile(r"^# ([٠-٩]+) ?- (?!(?:و?من )?باب)", re.M)
+
+
+@lru_cache(maxsize=4)
+def dawud_heads(text: str) -> list[tuple[int, int]]:
+    """(entry number, offset) of the entries of al-Albānī's Ṣaḥīḥ or Ḍaʿīf Abī Dāwūd (his numbering)."""
+    return _increasing([(_arabic_int(m.group(1)), m.start()) for m in _DAWUD_HEAD.finditer(text)])
+
+
+def _term(word: str) -> str | None:
+    """The verdict a phrase of al-Albānī's states: «حسن صحيح» is ṣaḥīḥ; otherwise its first term."""
+    w = _DIACRITICS.sub("", word)
+    if "حسن صحيح" in w:
+        return "sahih"
+    hits = [(w.find(k), -len(k), VERDICT[k]) for k in VERDICT if k in w]
+    return min(hits)[2] if hits else None
+
+
+def dawud_entry(text: str, n: int, weak_book: bool) -> tuple[str | None, str]:
+    """al-Albānī's verdict on entry n of his Ṣaḥīḥ (``weak_book`` False) or Ḍaʿīf Abī Dāwūd, and the
+    entry's text. The verdict is his «(قلت: …)» on the entry. Inclusion is itself a verdict: an entry of
+    the Ḍaʿīf whose word is not one of `VERDICT` («منكر», «شاذ») is ḍaʿīf; one of the Ṣaḥīḥ is ḥasan
+    at least."""
+    heads = dawud_heads(text)
+    k = next((i for i, (m, _) in enumerate(heads) if m == n), None)
+    if k is None:
+        return None, ""
+    end = heads[k + 1][1] if k + 1 < len(heads) else heads[k][1] + 4000
+    body = text[heads[k][1]: end]
+    said = re.search(r"\(قلت: ([^)]{1,300})\)", body)
+    term = _term(said.group(1)) if said else None
+    if weak_book:
+        return (term if term in ("daif", "daifJiddan", "mawdu") else "daif"), body
+    return (term if term in ("sahih", "hasan") else "hasan" if said else None), body
 
 
 def irwa_entry(irwa: str, n: int) -> tuple[str | None, str]:
@@ -132,6 +177,8 @@ def albani_verdict(work: str, text: str, n: int) -> tuple[str | None, str]:
     """al-Albānī's verdict on entry n of one of his pinned works, and the entry's text."""
     if work == "albani.irwa":
         return irwa_entry(text, n)
+    if work in ("albani.sahih_abi_dawud", "albani.daif_abi_dawud"):
+        return dawud_entry(text, n, work == "albani.daif_abi_dawud")
     if work == "albani.sahih_daif_tirmidhi":
         m = re.search(rf"^# {n} ", text, re.M)
         if not m:

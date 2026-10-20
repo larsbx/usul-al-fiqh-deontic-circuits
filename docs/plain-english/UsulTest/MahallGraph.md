@@ -12,3 +12,5 @@ Ids are short:
 | --- | --- |
 | `data.rootedB 16` | Every upward path from every label ends within 16 steps. No label is its own ancestor, though a label may have several broader labels. |
 | `data.exactB 16 q S G` (one per qāʿida, 178) | The labels the furūʿ (cases) tied to it fall under, closed upwards, are exactly `S`. The texts grounding it are exactly `G`. By `exactB_sound` this is a statement about the relations `footprint` and `grounds` themselves, not only about the computation. |
+| `verdicts`, `proof`, `hujja` | al-Albānī's verdict on each graded ḥadīth or athar anchor, and the texts that are proof without a verdict of his (the Qurʾān, a reported ijmāʿ, the Ṣaḥīḥayn where his works do not grade the ḥadīth). A text is ḥujja when it is proof, or a ḥadīth the kernel's gate `Usul.Seam.admitted` admits on his verdict. |
+| `(data.gated hujja).exactB 16 q S G` (one per qāʿida, 178) | The texts that ground the qāʿida *and are ḥujja* are exactly `G`. By `grounds_gated`, each of them grounds the qāʿida in the whole graph and passes the gate. |

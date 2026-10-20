@@ -791,6 +791,17 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
 def cmd_mahall(args: argparse.Namespace) -> int:
     """PR-51: check the maḥall annotation; regenerate (or ``--check``) its label graph and Lean guards."""
     from . import mahall
+    if args.grade:
+        from . import grading
+        p = CORPUS / mahall.DIR / "labels/all.json"
+        doc = json.loads(p.read_text(encoding="utf-8"))
+        for l in doc["labels"]:
+            for n in l.get("nass", []):
+                if n["kind"] in ("sunnah", "athar"):
+                    for k in ("albani", "weaker_routes", "sahihayn", "ungraded"):
+                        n.pop(k, None)
+                    n.update(grading.grade(n, CACHE))
+        p.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     if errs := mahall.check(CORPUS):
         print("\n".join(errs[:50]))
         return 1
@@ -918,6 +929,7 @@ def parser() -> argparse.ArgumentParser:
     jd.set_defaults(run=cmd_judgement)
     mh = sub.add_parser("mahall", help="the maḥall label graph: check, regenerate or --check its Lean guards")
     mh.add_argument("--check", action="store_true")
+    mh.add_argument("--grade", action="store_true", help="grade every ḥadīth and athar anchor from al-Albānī's works first (needs them cached)")
     mh.set_defaults(run=cmd_mahall)
     fa = sub.add_parser("fatawa")
     fa.add_argument("--lang")
