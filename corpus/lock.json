@@ -849,6 +849,24 @@
       "bytes": 452192,
       "sha256": "3f2e34b62693bc6eef15368c4c9c8cf2b67d837eefacc41d71eeed57b6f92ee0"
     },
+    "shamela-epub-1755": {
+      "witness": "shamela-epub-1755",
+      "url": "https://old.shamela.ws/epubs/017/1755.epub",
+      "bytes": 3358785,
+      "sha256": "4ec35ae812d64f60ede91247d210d4ef063b783154dbc282c5fa21d6bf7f3607"
+    },
+    "shamela-epub-783": {
+      "witness": "shamela-epub-783",
+      "url": "https://old.shamela.ws/epubs/007/783.epub",
+      "bytes": 3679467,
+      "sha256": "78d5a4d800cb26047bfb68b56d59ab65b0c412029098ba4e3cb44561838c2138"
+    },
+    "shamela-epub-810": {
+      "witness": "shamela-epub-810",
+      "url": "https://old.shamela.ws/epubs/008/810.epub",
+      "bytes": 2706095,
+      "sha256": "9c084f0f73c27c0f5034393ce3b9d3c009ae71afbeb34579c50a11c4af2796ae"
+    },
     "tanzil-quran-simple": {
       "witness": "tanzil-quran-simple",
       "url": "https://tanzil.net/pub/download/index.php?quranType=simple&outType=txt-2&agree=true",
