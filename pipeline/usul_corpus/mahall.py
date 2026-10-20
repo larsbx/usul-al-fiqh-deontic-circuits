@@ -178,9 +178,13 @@ def check(corpus: Path) -> list[str]:
                 errs.append(f"{l['id']}: only a ḥadīth (sunnah) has the Ṣaḥīḥayn's standing")
             if graded and n["kind"] not in ("sunnah", "athar") or len(graded) > 1:
                 errs.append(f"{l['id']}: a ḥadīth or athar carries at most one of albani, sahihayn, ungraded")
-            if "albani" in n and (set(n["albani"]) != {"work", "witness", "number", "verdict"}
-                                  or n["albani"]["verdict"] not in nusus.VERDICT.values()):
-                errs.append(f"{l['id']}: bad albani grade {n['albani']}")
+            if (type(n.get("number")) is int) != (n.get("kind") != "quran"):
+                errs.append(f"{l['id']}: a ḥadīth, athar or ijmāʿ cites its number in its witness; a verse its āya")
+            for c in ([n["albani"]] if "albani" in n else []) + n.get("weaker_routes", []):
+                if set(c) != {"work", "witness", "number", "verdict"} or c["verdict"] not in nusus.VERDICT.values():
+                    errs.append(f"{l['id']}: bad albani citation {c}")
+            if "sahihayn" in n and n["sahihayn"] != {"witness": m and m[1], "number": n.get("number")}:
+                errs.append(f"{l['id']}: the Ṣaḥīḥayn standing cites the anchor's own ḥadīth {n['sahihayn']}")
     up = parents(abwab, labels)
     for l in labels:
         if not isinstance(l.get("broader"), list) or not l["broader"]:
@@ -258,7 +262,7 @@ def export(corpus: Path) -> dict:
         for n in l.get("nass", []):
             v = nass.setdefault((n["ref"], n["excerpt_ar"]), f"n{len(nass) + 1:04d}")
             meta.setdefault(v, {"ref": n["ref"], "excerpt_ar": n["excerpt_ar"], "kind": n["kind"],
-                                **{k: n[k] for k in ("albani", "weaker_routes", "sahihayn", "ungraded") if k in n},
+                                **{k: n[k] for k in ("number", "albani", "weaker_routes", "sahihayn", "ungraded") if k in n},
                                 "hujja": grading.hujja(n)})
     defines = sorted({(nass[n["ref"], n["excerpt_ar"]], l["id"]) for l in labels for n in l.get("nass", [])})
     fp, tied = footprint(corpus), links(corpus)

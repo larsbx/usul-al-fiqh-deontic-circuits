@@ -178,3 +178,35 @@ def test_a_checkpoint_cut_short_resumes_from_its_last_whole_page(monkeypatch, tm
     part.write_bytes(first.encode() + b'{"md": "page"}\n')
     assert fetch_mod.fetch(w, tmp_path)["sha256"] == clean["sha256"]
     assert served == [2, 3, 4]
+
+
+def _epub(pages: dict[str, str], spine: list[str]) -> bytes:
+    import io
+    import zipfile
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("OEBPS/content.opf", "<package><manifest>"
+                   + "".join(f'<item id="{p}" href="xhtml/{p}.xhtml"/>' for p in pages)
+                   + "</manifest><spine>" + "".join(f'<itemref idref="{p}"/>' for p in spine) + "</spine></package>")
+        for p, body in pages.items():
+            z.writestr(f"OEBPS/xhtml/{p}.xhtml", body)
+    return buf.getvalue()
+
+
+def _epub_page(text: str, part: int, page: int) -> str:
+    return (f'<body><div dir="rtl" id="book-container"><hr/><a id="C1"></a>{text}</div><hr/>'
+            f'<div class="center">الجزء: {part} ¦ الصفحة: {page}</div></body>')
+
+
+def test_an_old_shamela_epub_reads_in_spine_order_as_markdown():
+    """Old Shamela's epubs (the Nūr al-Islām gradings of the Sunan): one line per <br />, a page marker
+    closing each page, pages in the spine's order, not the archive's."""
+    from usul_corpus.fetch import shamela_epub_to_markdown
+    epub = _epub({"P2": _epub_page("12 حدثنا &amp; قال<br /><br />تحقيق الألباني:<br />صحيح، الإرواء (88)", 1, 2),
+                  "P1": _epub_page("(سنن ابن ماجة)<br />11 حدثنا", 1, 1), "info": "<body>الكتاب</body>"},
+                 ["info", "P1", "P2"])
+    assert shamela_epub_to_markdown(epub).splitlines() == [
+        "#META#Header#End#", "# (سنن ابن ماجة)", "# 11 حدثنا", "PageV01P001",
+        "# 12 حدثنا & قال", "# تحقيق الألباني:", "# صحيح، الإرواء (88)", "PageV01P002"]
+    assert witness_url({"kind": "shamela_epub", "book_id": 810}) == "https://old.shamela.ws/epubs/008/810.epub"
+    assert witness_url({"kind": "shamela_epub", "book_id": 1755}) == "https://old.shamela.ws/epubs/017/1755.epub"

@@ -173,22 +173,43 @@ def irwa_coverage(irwa: str) -> dict:
             "missing": [n for n in range(1, found[-1] + 1) if n not in set(found)]}
 
 
+SERIES = ("albani.sahih_daif_tirmidhi", "albani.sahih_daif_abi_dawud", "albani.sahih_daif_nasai", "albani.sahih_daif_ibn_maja")
+SERIES_HEAD = re.compile(r"^# \[?(\d+)\]? ", re.M)     # «# 667 حدثنا», «# [1] حدثنا»
+
+
+def series_entry(text: str, n: int) -> tuple[str | None, str]:
+    """Entry n of a Ṣaḥīḥ wa-Ḍaʿīf Sunan work (the Sunan's own numbering) and al-Albānī's verdict, the
+    first words after «تحقيق الألباني:». A number the work repeats gives its first entry."""
+    m = re.search(rf"^# \[?{n}\]? ", text, re.M)
+    if not m:
+        return None, ""
+    nxt = SERIES_HEAD.search(text, m.end())
+    body = text[m.start(): nxt.start() if nxt else m.end() + 4000]
+    v = re.search(r"تحقيق الألباني:\s*\n# ([^\n،,]+)", body)
+    word = v.group(1).strip() if v else ""
+    return next((VERDICT[k] for k in sorted(VERDICT, key=len, reverse=True) if word.startswith(k)), None), body
+
+
+def locus(text: str, excerpt: str) -> int | None:
+    """The number of the ḥadīth (or masʾala) that holds the excerpt: its first occurrence under a
+    number marker (an editor's preface may quote it before the first)."""
+    k, (idx, flat) = key(excerpt), _flat(text)
+    i = flat.find(k)
+    while i >= 0:
+        if (n := number_at(text, idx[i])) is not None:
+            return n
+        i = flat.find(k, i + 1)
+    return None
+
+
 def albani_verdict(work: str, text: str, n: int) -> tuple[str | None, str]:
     """al-Albānī's verdict on entry n of one of his pinned works, and the entry's text."""
     if work == "albani.irwa":
         return irwa_entry(text, n)
     if work in ("albani.sahih_abi_dawud", "albani.daif_abi_dawud"):
         return dawud_entry(text, n, work == "albani.daif_abi_dawud")
-    if work == "albani.sahih_daif_tirmidhi":
-        m = re.search(rf"^# {n} ", text, re.M)
-        if not m:
-            return None, ""
-        nxt = re.search(r"^# \d+ ", text[m.end():], re.M)
-        body = text[m.start(): m.end() + (nxt.start() if nxt else 4000)]
-        v = re.search(r"# تحقيق الألباني:\s*\n# ([^\n،,]+)", body)
-        word = v.group(1).strip() if v else ""
-        tag = next((VERDICT[k] for k in sorted(VERDICT, key=len, reverse=True) if word.startswith(k)), None)
-        return tag, body
+    if work in SERIES:
+        return series_entry(text, n)
     raise ValueError(work)
 
 

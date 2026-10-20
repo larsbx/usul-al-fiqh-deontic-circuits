@@ -16,6 +16,8 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import zipfile
+from io import BytesIO
 from pathlib import Path
 
 USER_AGENT = "usul-corpus-pipeline/1 (research; +https://github.com/larsbx/usul-al-fiqh-deontic-circuits)"
@@ -37,6 +39,8 @@ def witness_url(w: dict) -> str:
         return f"https://archive.org/download/{w['item']}/{urllib.parse.quote(w['file'])}"
     if kind == "shamela":
         return f"https://shamela.ws/book/{w['book_id']}/{w.get('pages', [1])[0]}"
+    if kind == "shamela_epub":
+        return f"https://old.shamela.ws/epubs/{w['book_id'] // 100:03d}/{w['book_id']}.epub"
     if kind == "url":
         return w["url"]
     if kind == "zadapps":
@@ -60,6 +64,29 @@ def shamela_page_to_markdown(page_html: str) -> str:
 
     lines = [line(p) for p in _PARA.findall(m.group(3)) if _text(p)]
     return "\n".join([*lines, f"PageV01P{int(m.group(2)):03d}"])  # OpenITI: marker closes the page
+
+
+_SPINE = re.compile(r'<itemref idref="([^"]+)"')
+_ITEM = re.compile(r'<item id="([^"]+)" href="([^"]+)"')
+_CONTAINER = re.compile(r'id="book-container">(.*?)</div>', re.S)
+_EPUB_PAGE = re.compile(r"الجزء: (\d+) ¦ الصفحة: (\d+)")
+
+
+def shamela_epub_to_markdown(epub: bytes) -> str:
+    """An old Shamela epub → mARkdown: its pages in spine order, a ``#`` line per ``<br />`` line and
+    the page marker closing each page (as `shamela_page_to_markdown`). Pages without a text body
+    (the info page) are left out."""
+    z = zipfile.ZipFile(BytesIO(epub))
+    opf = z.read("OEBPS/content.opf").decode()
+    href = dict(_ITEM.findall(opf))
+    out = ["#META#Header#End#"]
+    for page in (z.read(f"OEBPS/{href[i]}").decode() for i in _SPINE.findall(opf)):
+        body, num = _CONTAINER.search(page), _EPUB_PAGE.search(page)
+        if not (body and num):
+            continue
+        out += [f"# {t}" for t in map(_text, re.split(r"<br\s*/?>", body.group(1))) if t]
+        out.append(f"PageV{int(num[1]):02d}P{int(num[2]):03d}")
+    return "\n".join(out) + "\n"
 
 
 def next_page_id(page_html: str) -> int | None:
@@ -142,7 +169,8 @@ def fetch(w: dict, cache: Path, max_pages: int | None = None, refresh: bool = Fa
         part = path.with_suffix(".part") if max_pages is None else None  # full fetches only
         if refresh and part:
             part.unlink(missing_ok=True)
-        data = _shamela(w, max_pages, part) if w["kind"] == "shamela" else _get(witness_url(w))
+        data = _shamela(w, max_pages, part) if w["kind"] == "shamela" else \
+            shamela_epub_to_markdown(_get(witness_url(w))).encode() if w["kind"] == "shamela_epub" else _get(witness_url(w))
         path.write_bytes(data)
         if part:
             part.unlink(missing_ok=True)

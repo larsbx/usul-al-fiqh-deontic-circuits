@@ -29865,13 +29865,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أحدث في أمرنا هذا ما ليس فيه فهو رد",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2697,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 4606,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0002": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "من عمل عملا ليس عليه أمرنا فهو رد",
    "kind": "sunnah",
+   "number": 1718,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -29908,6 +29915,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "ليس على المسلم في عبده ولا فرسه صدقة",
    "kind": "sunnah",
+   "number": 982,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -29926,10 +29934,11 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "وما استكرهوا عليه",
    "kind": "sunnah",
+   "number": 2043,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1027,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2043,
     "verdict": "sahih"
    },
    "hujja": true
@@ -29938,10 +29947,11 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "الخطأ والنسيان وما استكرهوا عليه",
    "kind": "sunnah",
+   "number": 2043,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1027,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2043,
     "verdict": "sahih"
    },
    "hujja": true
@@ -29974,8 +29984,14 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "وعن المجنون حتى يعقل",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 4403,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3432,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0016": {
    "ref": "src:tanzil-quran-simple#Q005:089",
@@ -29987,6 +30003,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما الأعمال بالنيات",
    "kind": "sunnah",
+   "number": 1,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30005,15 +30022,25 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "وقد نهى رسول الله صلى الله عليه وسلم عن بيع الطعام حتى يستوفى",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1528,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1528
+   },
    "hujja": true
   },
   "n0020": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ولا لقوي مكتسب",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 1633,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 1633,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0021": {
    "ref": "src:tanzil-quran-simple#Q003:044",
@@ -30025,20 +30052,29 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فجزأهم أثلاثا ثم أقرع بينهم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1668,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1668
+   },
    "hujja": true
   },
   "n0023": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فجزأهم أثلاثا ثم أقرع بينهم فأعتق اثنين وأرق أربعة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1668,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1668
+   },
    "hujja": true
   },
   "n0024": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا ينصرف حتى يسمع صوتا أو يجد ريحا",
    "kind": "sunnah",
+   "number": 361,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30051,13 +30087,20 @@
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "فدع ما يريبك إلى ما لا يريبك",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 5397,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 5397,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0026": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا ينصرف حتى يسمع صوتا أو يجد ريحا",
    "kind": "sunnah",
+   "number": 137,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30070,6 +30113,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فليطرح الشك وليبن على ما استيقن",
    "kind": "sunnah",
+   "number": 571,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30082,6 +30126,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الحلال بين والحرام بين",
    "kind": "sunnah",
+   "number": 52,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30094,7 +30139,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الحلال بين والحرام بين وبينهما مشبهات",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 52,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 52
+   },
    "hujja": true
   },
   "n0030": {
@@ -30113,24 +30162,35 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "والذي يقرأ القرآن ويتتعتع فيه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 798,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 798
+   },
    "hujja": true
   },
   "n0033": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "على اليد ما أخذت حتى تؤديه",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2400,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2400,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0034": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "العارية مؤداة والمنحة مردودة",
    "kind": "sunnah",
+   "number": 2398,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 2120,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2398,
     "verdict": "sahih"
    },
    "hujja": true
@@ -30145,6 +30205,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "العارية مؤداة، والمنحة مردودة",
    "kind": "sunnah",
+   "number": 2120,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30157,6 +30218,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "العارية مؤداة والزعيم غارم",
    "kind": "sunnah",
+   "number": 1265,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30175,13 +30237,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فخذوا منهم حق الضيف",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2461,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3752,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0040": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من كان يؤمن بالله واليوم الآخر فليكرم ضيفه",
    "kind": "sunnah",
+   "number": 6018,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30194,13 +30263,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فليكرم ضيفه جائزته يوم وليلة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 6135,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 6135
+   },
    "hujja": true
   },
   "n0042": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ذكاة الجنين ذكاة أمه",
    "kind": "sunnah",
+   "number": 2828,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -30213,14 +30287,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من اقتنى كلبا إلا كلب ماشية أو ضاريا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5482,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5482
+   },
    "hujja": true
   },
   "n0044": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى عن ثمن الكلب",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2237,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2237
+   },
    "hujja": true
   },
   "n0045": {
@@ -30269,7 +30351,13 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وإن وقع في الماء فلا تأكل",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5484,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4299,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0053": {
@@ -30282,7 +30370,11 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "سئل عن الخمر تتخذ خلا فقال لا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1983,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1983
+   },
    "hujja": true
   },
   "n0055": {
@@ -30295,6 +30387,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من أصاب بفيه من ذي حاجة غير متخذ خبنة فلا شيء عليه",
    "kind": "sunnah",
+   "number": 1710,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -30319,7 +30412,13 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "اليمين على نية المستحلف",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1653,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2120,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0060": {
@@ -30356,13 +30455,20 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "إن الله وضع عن أمتي الخطأ والنسيان وما استكرهوا عليه",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2045,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2045,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0066": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "رخص في بيع العرايا",
    "kind": "sunnah",
+   "number": 2190,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30375,29 +30481,51 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "باع من أخيه بيعا فيه عيب إلا بينه له",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2246,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2246,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0068": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "من غشنا فليس منا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 43,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 43
+   },
    "hujja": true
   },
   "n0069": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا يحل لمسلم باع من أخيه بيعا فيه عيب إلا بينه له",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2246,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2246,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0070": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "الخراج بالضمان",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 3508,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3508,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0071": {
    "ref": "src:tanzil-quran-simple#Q002:275",
@@ -30421,31 +30549,46 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أحللت بيع الصكاك وقد نهى رسول الله صلى الله عليه وسلم عن بيع الطعام حتى يستوفى",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1528,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1528
+   },
    "hujja": true
   },
   "n0075": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "كل شرط ليس في كتاب الله فهو باطل",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2521,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2521,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0076": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعطاه دينارا يشتري له به شاة فاشترى له به شاتين فباع إحداهما بدينار",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3642,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3642
+   },
    "hujja": true
   },
   "n0077": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أن النبي صلى الله عليه وسلم نهى عن بيع الغرر",
    "kind": "sunnah",
+   "number": 3376,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1294,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3376,
     "verdict": "sahih"
    },
    "hujja": true
@@ -30454,15 +30597,27 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "وعن شراء العبد وهو آبق",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2196,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2196,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0079": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا تبايعتم بالعينة",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3462,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3462,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0080": {
    "ref": "src:tanzil-quran-simple#Q022:025",
@@ -30474,20 +30629,31 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "وهل ترك لنا عقيل من رباع",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1351,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2730,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0082": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "سألت جابرا عن ثمن الكلب والسنور",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1569,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1569
+   },
    "hujja": true
   },
   "n0083": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى عن بيع الثمار حتى يبدو صلاحها",
    "kind": "sunnah",
+   "number": 2194,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30500,8 +30666,14 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "من باع نخلا قد أبرت، فثمرتها للذي باعها، إلا أن يشترط المبتاع",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2211,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2211,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0085": {
    "ref": "src:tanzil-quran-simple#Q002:282",
@@ -30519,6 +30691,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى عن بيع حبل الحبلة",
    "kind": "sunnah",
+   "number": 2143,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30531,27 +30704,46 @@
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "إذا اختلف البيعان وليس بينهما بينة فهو ما يقول رب السلعة أو يتركا",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 4648,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4648,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0089": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من أقال مسلما أقاله الله عثرته",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3460,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3460,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0090": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من أقال مسلما أقاله الله",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3460,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3460,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0091": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أن النبي صلى الله عليه وسلم أمر بوضع الجوائح",
    "kind": "sunnah",
+   "number": 1554,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30564,20 +30756,29 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أمر بوضع الجوائح",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1554,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1554
+   },
    "hujja": true
   },
   "n0093": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لو بعت من أخيك ثمرا فأصابته جائحة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1554,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1554
+   },
    "hujja": true
   },
   "n0094": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "البيعان بالخيار ما لم يتفرقا",
    "kind": "sunnah",
+   "number": 2079,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30587,8 +30788,15 @@
    "weaker_routes": [
     {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 1247,
      "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 4482,
+     "verdict": "daif"
     }
    ],
    "hujja": true
@@ -30597,10 +30805,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ولا يحل له أن يفارق صاحبه خشية أن يستقيله",
    "kind": "sunnah",
+   "number": 3456,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1247,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3456,
     "verdict": "hasan"
    },
    "hujja": true
@@ -30609,6 +30818,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تصروا الإبل والغنم",
    "kind": "sunnah",
+   "number": 2148,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30621,27 +30831,46 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "الخراج بالضمان",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 1285,
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1285,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0098": {
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "فهو بخير النظرين فإن شاء أمسكها وإن شاء أن يردها ردها",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 4487,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4487,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0099": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "قال رسول الله صلى الله عليه وسلم الخراج بالضمان",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3508,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3508,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0100": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من ابتاع طعاما فلا يبعه حتى يستوفيه",
    "kind": "sunnah",
+   "number": 2126,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30654,20 +30883,33 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ولا ربح ما لم يضمن",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 1234,
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1234,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0102": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "ولا يسوم على سوم أخيه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1408,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2172,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0103": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى أن يسافر بالقرآن إلى أرض العدو",
    "kind": "sunnah",
+   "number": 2990,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30680,6 +30922,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من ابتاع نخلا بعد أن تؤبر فثمرتها للبائع إلا أن يشترط المبتاع",
    "kind": "sunnah",
+   "number": 2379,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30692,10 +30935,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا يحل سلف وبيع ولا شرطان في بيع",
    "kind": "sunnah",
+   "number": 3504,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1234,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3504,
     "verdict": "hasan"
    },
    "hujja": true
@@ -30704,41 +30948,61 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فبعته، فاستثنيت حملانه إلى أهلي",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2718,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2718
+   },
    "hujja": true
   },
   "n0107": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اشتريها فأعتقيها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2560,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4643,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0108": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "واستثنيت عليه حملانه إلى أهلي",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 715,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 715
+   },
    "hujja": true
   },
   "n0109": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فيقولان له أشركنا فإن النبي صلى الله عليه وسلم قد دعا لك بالبركة فيشركهم",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2501,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0110": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من باع نخلا قد أبرت فثمرتها للبائع إلا أن يشترط المبتاع",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2716,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2716
+   },
    "hujja": true
   },
   "n0111": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من ابتاع عبدا وله مال فماله للذي باعه إلا أن يشترط المبتاع",
    "kind": "sunnah",
+   "number": 2379,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30757,15 +31021,25 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "من باع نخلا قد أبرت فثمرتها للبائع إلا أن يشترط المبتاع",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1543,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1543
+   },
    "hujja": true
   },
   "n0114": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "زن وأرجح",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 3336,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3336,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0115": {
    "ref": "src:tanzil-quran-simple#Q012:072",
@@ -30777,10 +31051,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "والدين مقضي والزعيم غارم",
    "kind": "sunnah",
+   "number": 3565,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 2120,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3565,
     "verdict": "sahih"
    },
    "hujja": true
@@ -30789,8 +31064,14 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "الزعيم غارم",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 3565,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3565,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0118": {
    "ref": "src:tanzil-quran-simple#Q012:072",
@@ -30808,13 +31089,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صل عليه يا رسول الله وعلي دينه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2289,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2289
+   },
    "hujja": true
   },
   "n0121": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "البينة على المدعي واليمين على المدعى عليه",
    "kind": "sunnah",
+   "number": 1339,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30827,13 +31113,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "شاهداك أو يمينه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2515,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2515
+   },
    "hujja": true
   },
   "n0123": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لو يعطى الناس بدعواهم لادعى ناس دماء رجال وأموالهم",
    "kind": "sunnah",
+   "number": 1711,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30846,6 +31137,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لو يعطى الناس بدعواهم",
    "kind": "sunnah",
+   "number": 4552,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30858,6 +31150,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "قضى أن اليمين على المدعى عليه",
    "kind": "sunnah",
+   "number": 2514,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30870,27 +31163,44 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "قضى بيمين وشاهد",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1712,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1712
+   },
    "hujja": true
   },
   "n0127": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فبعث كل واحد منهما شاهدين فقسمه النبي صلى الله عليه وسلم بينهما نصفين",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 3615,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3615,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0128": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "استهما على اليمين ما كان أحبا ذلك أو كرها",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3616,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3616,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0129": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "ولكن اليمين على المدعى عليه",
    "kind": "sunnah",
+   "number": 1711,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30903,13 +31213,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "قضى باليمين على المدعى عليه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2668,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3619,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0131": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "خذي ما يكفيك وولدك بالمعروف",
    "kind": "sunnah",
+   "number": 2209,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -30922,13 +31239,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وقضى أن دية المرأة على عاقلتها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 6910,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 6910
+   },
    "hujja": true
   },
   "n0133": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "في المواضح خمس خمس",
    "kind": "sunnah",
+   "number": 1390,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30941,6 +31263,7 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "قضوا في عين الأعور بالدية ولم نعلم لهم في الصحابة مخالفا فيكون إجماعا",
    "kind": "ijma",
+   "number": 6901,
    "hujja": true
   },
   "n0135": {
@@ -30953,20 +31276,33 @@
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "وفي السن خمس من الإبل",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 4853,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4853,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0137": {
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "عقل أهل الذمة نصف عقل المسلمين",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 4806,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4806,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0138": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "في جنين امرأة من بني لحيان سقط ميتا بغرة عبد أو أمة",
    "kind": "sunnah",
+   "number": 6740,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -30979,10 +31315,11 @@
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "في جنين امرأة من بني لحيان سقط ميتا بغرة عبد أو أمة",
    "kind": "sunnah",
+   "number": 4817,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 2111,
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4817,
     "verdict": "sahih"
    },
    "hujja": true
@@ -30991,12 +31328,14 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "أجمع أهل العلم أن في العبد الذي لا تبلغ قيمته دية الحر قيمته",
    "kind": "ijma",
+   "number": 6646,
    "hujja": true
   },
   "n0141": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ألحقوا الفرائض بأهلها فما بقي فهو لأولى رجل ذكر",
    "kind": "sunnah",
+   "number": 6732,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31021,6 +31360,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يرث المسلم الكافر ولا الكافر المسلم",
    "kind": "sunnah",
+   "number": 6763,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31033,6 +31373,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "جعل للجدة السدس إذا لم يكن دونها أم",
    "kind": "sunnah",
+   "number": 2895,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -31045,27 +31386,36 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "أجمع كل من نحفظ عنه من أهل العلم على أن الخنثى يورث من حيث يبول",
    "kind": "ijma",
+   "number": 4910,
    "hujja": true
   },
   "n0147": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإذا انقطع خبره فسنته سنة المفقود",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 5290,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0148": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "واتفق الفقهاء على أنه لا يرث المفقود إلا الأحياء من ورثته يوم قسم ماله",
    "kind": "ijma",
+   "number": 4973,
    "hujja": true
   },
   "n0149": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "وأنا وارث من لا وارث له",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2899,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2899,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0150": {
    "ref": "src:tanzil-quran-simple#Q004:011",
@@ -31077,6 +31427,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا استهل المولود ورث",
    "kind": "sunnah",
+   "number": 2920,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -31089,19 +31440,27 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "ورث تماضر بنت الأصبغ الكلبية من عبد الرحمن بن عوف وكان طلقها في مرضه فبتها واشتهر ذلك في الصحابة فلم ينكر فكان إجماعا",
    "kind": "ijma",
+   "number": 4977,
    "hujja": true
   },
   "n0153": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ولا يرث القاتل شيئا",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 4564,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 4564,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0154": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإنما الولاء لمن أعتق",
    "kind": "sunnah",
+   "number": 1493,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31114,8 +31473,14 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا ضرر ولا ضرار",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 2340,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2340,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0156": {
    "ref": "src:tanzil-quran-simple#Q002:194",
@@ -31133,6 +31498,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "طعام بطعام وإناء بإناء",
    "kind": "sunnah",
+   "number": 1359,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31151,7 +31517,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من ظلم من الأرض شيئا طوقه من سبع أرضين",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2452,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2452
+   },
    "hujja": true
   },
   "n0161": {
@@ -31164,17 +31534,24 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا يأخذن أحدكم متاع أخيه لاعبا ولا جادا",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 5003,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 5003,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0163": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "على اليد ما أخذت حتى تؤدي",
    "kind": "sunnah",
+   "number": 3561,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1266,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3561,
     "verdict": "daif"
    },
    "hujja": false
@@ -31183,27 +31560,52 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ورجل باع حرا فأكل ثمنه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2227,
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 2442,
+     "verdict": "daif"
+    }
+   ],
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2227
+   },
    "hujja": true
   },
   "n0165": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ليس لعرق ظالم حق",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 3073,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3073,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0166": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أنت مضار",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
+   "number": 3636,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3636,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0167": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن دماءكم وأموالكم وأعراضكم عليكم حرام",
    "kind": "sunnah",
+   "number": 1739,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31222,13 +31624,20 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "على أهل الأموال حفظها بالنهار",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3569,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3569,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0170": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "من زرع في أرض قوم بغير إذنهم فليس له من الزرع شيء وله نفقته",
    "kind": "sunnah",
+   "number": 1366,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31247,7 +31656,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أيؤذيك هوام رأسك",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 4190,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 4190
+   },
    "hujja": true
   },
   "n0173": {
@@ -31284,6 +31697,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن فريضة الله على عباده في الحج أدركت أبي شيخا كبيرا",
    "kind": "sunnah",
+   "number": 1513,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -31296,7 +31710,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أفأحج عنه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1513,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1513
+   },
    "hujja": true
   },
   "n0180": {
@@ -31309,6 +31727,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "ألهذا حج قال نعم ولك أجر",
    "kind": "sunnah",
+   "number": 1336,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31327,7 +31746,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أهللت بما أهل به النبي",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1651,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1651
+   },
    "hujja": true
   },
   "n0184": {
@@ -31340,14 +31763,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يعضد شوكه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1587,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1587
+   },
    "hujja": true
   },
   "n0186": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أفأحج عنه قال نعم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1513,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1513
+   },
    "hujja": true
   },
   "n0187": {
@@ -31360,6 +31791,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "أجزأه طواف واحد وسعي واحد",
    "kind": "sunnah",
+   "number": 948,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31384,14 +31816,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ولا ينفر صيدها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1349,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1349
+   },
    "hujja": true
   },
   "n0192": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ولا ينفر صيده",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1349,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1349
+   },
    "hujja": true
   },
   "n0193": {
@@ -31416,7 +31856,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أمنكم أحد أمره أن يحمل عليها أو أشار إليها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1824,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1824
+   },
    "hujja": true
   },
   "n0197": {
@@ -31429,14 +31873,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أول شيء بدأ به حين قدم أنه توضأ ثم طاف",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1641,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1641
+   },
    "hujja": true
   },
   "n0199": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أمر الناس أن يكون آخر عهدهم بالبيت إلا أنه خفف عن الحائض",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1755,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1755
+   },
    "hujja": true
   },
   "n0200": {
@@ -31449,6 +31901,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "نفس المؤمن معلقة بدينه حتى يقضى عنه",
    "kind": "sunnah",
+   "number": 1077,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31461,6 +31914,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "قد أفلس فهو أحق به من غيره",
    "kind": "sunnah",
+   "number": 2402,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -31479,17 +31933,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "مطل الغني ظلم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2287,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2287
+   },
    "hujja": true
   },
   "n0205": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "ومن ابتاع عبدا وله مال",
    "kind": "sunnah",
+   "number": 2211,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1244,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2211,
     "verdict": "sahih"
    },
    "hujja": true
@@ -31516,20 +31975,29 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أدرك ماله بعينه عند رجل أو إنسان قد أفلس فهو أحق به من غيره",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2402,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2402
+   },
    "hujja": true
   },
   "n0210": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أدرك ماله بعينه عند رجل أو إنسان قد أفلس فهو أحق به",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2402,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2402
+   },
    "hujja": true
   },
   "n0211": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أدرك ماله بعينه عند رجل",
    "kind": "sunnah",
+   "number": 2402,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -31554,6 +32022,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "وإذا أتبع أحدكم على ملي فليتبع",
    "kind": "sunnah",
+   "number": 1308,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31566,61 +32035,104 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإذا أتبع أحدكم على ملي فليتبع",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2287,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2287
+   },
    "hujja": true
   },
   "n0216": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أعتق ستة مملوكين له عند موته",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1668,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 1958,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0217": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أن تصدق وأنت صحيح شحيح",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1419,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 2542,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0218": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فاتقوا الله واعدلوا بين أولادكم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2587,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2587
+   },
    "hujja": true
   },
   "n0219": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أن رجلا أعتق ستة مملوكين له عند موته لم يكن له مال غيرهم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1668,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1668
+   },
    "hujja": true
   },
   "n0220": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الثلث والثلث كثير",
    "kind": "sunnah",
+   "number": 2742,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
     "number": 975,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 3631,
+     "verdict": "daif"
+    }
+   ],
    "hujja": true
   },
   "n0221": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فقد أتى بابا عظيما من أبواب الربا",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3541,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3541,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0222": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فهلا جلس في بيت أبيه أو بيت أمه فينظر يهدى له أم لا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2597,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2597
+   },
    "hujja": true
   },
   "n0223": {
@@ -31633,6 +32145,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "العائد في هبته كالكلب يعود في قيئه",
    "kind": "sunnah",
+   "number": 2587,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31645,13 +32158,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "العائد في هبته كالكلب يقيء ثم يعود في قيئه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2589,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3691,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0226": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "يقبل الهدية ويثيب عليها",
    "kind": "sunnah",
+   "number": 2585,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31670,13 +32190,20 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا يحل لرجل أن يعطي عطية أو يهب هبة فيرجع فيها إلا الوالد فيما يعطي ولده",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3539,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3539,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0229": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تشتره ولا تعد في صدقتك",
    "kind": "sunnah",
+   "number": 2636,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -31689,10 +32216,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إلا الوالد فيما يعطي ولده",
    "kind": "sunnah",
+   "number": 3539,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1299,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3539,
     "verdict": "sahih"
    },
    "hujja": true
@@ -31701,6 +32229,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "إلا الوالد فيما يعطي ولده",
    "kind": "sunnah",
+   "number": 1298,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31713,15 +32242,27 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا يحل للرجل أن يعطي العطية ثم يرجع فيها إلا الوالد فيما يعطي ولده",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2377,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2377,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0233": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "أنت ومالك لأبيك",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 2291,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2291,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0234": {
    "ref": "src:tanzil-quran-simple#Q049:009",
@@ -31757,13 +32298,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "والرجم في كتاب الله حق على من زنى إذا أحصن",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 6830,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 6830
+   },
    "hujja": true
   },
   "n0240": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من بدل دينه فاقتلوه",
    "kind": "sunnah",
+   "number": 3017,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31788,6 +32334,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "تقطع اليد في ربع دينار فصاعدا",
    "kind": "sunnah",
+   "number": 6789,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -31800,6 +32347,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فعليه غرامة مثليه والعقوبة",
    "kind": "sunnah",
+   "number": 1710,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -31818,18 +32366,28 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من شرب الخمر فاجلدوه",
    "kind": "sunnah",
+   "number": 4485,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
     "number": 1444,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 4485,
+     "verdict": "daif"
+    }
+   ],
    "hujja": true
   },
   "n0247": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن امرأتي ولدت غلاما أسود",
    "kind": "sunnah",
+   "number": 6847,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31842,6 +32400,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يجلد فوق عشر جلدات إلا في حد من حدود الله",
    "kind": "sunnah",
+   "number": 6848,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31866,6 +32425,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "طلاق الأمة تطليقتان وعدتها حيضتان",
    "kind": "sunnah",
+   "number": 1182,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31884,6 +32444,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا توطأ حامل حتى تضع",
    "kind": "sunnah",
+   "number": 2157,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -31902,10 +32463,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "امكثي في بيتك حتى يبلغ الكتاب أجله",
    "kind": "sunnah",
+   "number": 2300,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1204,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2300,
     "verdict": "sahih"
    },
    "hujja": true
@@ -31914,7 +32476,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا فقد في الصف عند القتال تربص امرأته سنة",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 5290,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0257": {
@@ -31939,6 +32502,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "عدة المتوفى عنها أربعة أشهر وعشر يعني أم الولد",
    "kind": "sunnah",
+   "number": 2308,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -31951,6 +32515,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يمنع فضل الماء ليمنع به الكلأ",
    "kind": "sunnah",
+   "number": 2353,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -31963,60 +32528,102 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "المسلمون شركاء في ثلاث",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3477,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3477,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0263": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أعمر أرضا ليست لأحد فهو أحق",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2335,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2335
+   },
    "hujja": true
   },
   "n0264": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من أحيا أرضا ميتة فهي له",
    "kind": "sunnah",
+   "number": 3073,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
     "number": 2698,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 3074,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0265": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "المسلمون شركاء في ثلاث في الكلإ والماء والنار",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3477,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3477,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0266": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من سبق إلى ماء لم يسبقه إليه مسلم فهو له",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 3071,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3071,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0267": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا تشاجروا في الطريق بسبعة أذرع",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2473,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2473
+   },
    "hujja": true
   },
   "n0268": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "منى مناخ من سبق",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
+   "number": 3006,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 3006,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0269": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "اسق يا زبير ثم أرسل الماء إلى جارك",
    "kind": "sunnah",
+   "number": 2357,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32029,36 +32636,58 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أحيا أرضا ميتة فهي له",
    "kind": "athar",
+   "number": 2334,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
     "number": 1550,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 3074,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0271": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إياكم والجلوس بالطرقات",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 6229,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 4815,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0272": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فأعطوا الطريق حقه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2465,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 4815,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0273": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "أعطوا الأجير أجره قبل أن يجف عرقه",
    "kind": "sunnah",
+   "number": 2443,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1498,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2443,
     "verdict": "sahih"
    },
    "hujja": true
@@ -32067,7 +32696,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ورجل استأجر أجيرا فاستوفى منه ولم يعطه أجره",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2270,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2270
+   },
    "hujja": true
   },
   "n0275": {
@@ -32080,12 +32713,14 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "ولا خلاف بين أهل العلم في إباحة إجارة العقار",
    "kind": "ijma",
+   "number": 4173,
    "hujja": true
   },
   "n0277": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "وأجمع أهل العلم في كل عصر وكل مصر على جواز الإجارة إلا ما يحكى عن عبد الرحمن بن الأصم",
    "kind": "ijma",
+   "number": 4151,
    "hujja": true
   },
   "n0278": {
@@ -32134,6 +32769,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإن اعترفت فارجمها",
    "kind": "sunnah",
+   "number": 2314,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32152,7 +32788,8 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "إن الله قد تجاوز عن أمتي الخطأ والنسيان وما استكرهوا عليه",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2043,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0288": {
@@ -32165,22 +32802,38 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نذرت في الجاهلية أن أعتكف ليلة في المسجد الحرام قال فأوف بنذرك",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2032,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2032
+   },
    "hujja": true
   },
   "n0290": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إني نذرت في الجاهلية أن أعتكف",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2042,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3325,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0291": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أن تخدم رسول الله صلى الله عليه وسلم ما عشت",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3932,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3932,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0292": {
    "ref": "src:tanzil-quran-simple#Q024:033",
@@ -32198,7 +32851,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعلاها ثمنا وأنفسها عند أهلها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2518,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2518
+   },
    "hujja": true
   },
   "n0295": {
@@ -32211,13 +32868,20 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "عليك أن تخدم رسول الله صلى الله عليه وسلم ما عشت",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3932,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3932,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0297": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أعتق شركا له في عبد",
    "kind": "sunnah",
+   "number": 2522,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -32230,7 +32894,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أيما رجل أعتق امرأ مسلما استنقذ الله بكل عضو منه عضوا منه من النار",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2517,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2517
+   },
    "hujja": true
   },
   "n0299": {
@@ -32243,13 +32911,20 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أن رجلا أعتق ستة مملوكين له عند موته",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1668,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 1958,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0301": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ولا عتق له فيما لا يملك",
    "kind": "sunnah",
+   "number": 1181,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32262,25 +32937,41 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا طلاق قبل نكاح ولا عتق قبل ملك",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2048,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2048,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0303": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من ملك ذا رحم محرم فهو حر",
    "kind": "sunnah",
+   "number": 3949,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1365,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3949,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 3950,
+     "verdict": "daif"
+    }
+   ],
    "hujja": true
   },
   "n0304": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا يجزي ولد والدا إلا أن يجده مملوكا فيشتريه فيعتقه",
    "kind": "sunnah",
+   "number": 1510,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32305,6 +32996,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وإلا فقد عتق منه ما عتق",
    "kind": "sunnah",
+   "number": 2491,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32317,62 +33009,105 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "المكاتب عبد ما بقي عليه من مكاتبته درهم",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3926,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3926,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0309": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "فأعتقه النبي صلى الله عليه وسلم بالمثلة",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2679,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2679,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0310": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعتق رجل منا عبدا له عن دبر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2534,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2534
+   },
    "hujja": true
   },
   "n0311": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعتق رجل منا عبدا له عن دبر فدعا النبي صلى الله عليه وسلم به فباعه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2534,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2534
+   },
    "hujja": true
   },
   "n0312": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعتق رجل غلاما له عن دبر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2403,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2403
+   },
    "hujja": true
   },
   "n0313": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعتق غلاما له عن دبر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2141,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3955,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0314": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "أيما رجل ولدت أمته منه فهي معتقة عن دبر منه",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2515,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2515,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0315": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "أعتقها ولدها",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
+   "number": 2516,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2516,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0316": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما الولاء لمن أعتق",
    "kind": "sunnah",
+   "number": 1493,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32385,6 +33120,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أيهم أكثر أخذا للقرآن",
    "kind": "sunnah",
+   "number": 1343,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -32397,6 +33133,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اغسلوه بماء وسدر وكفنوه في ثوبيه",
    "kind": "sunnah",
+   "number": 1851,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32409,20 +33146,31 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "على امرأة ماتت في نفاسها فقام وسطها",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 1493,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 1493,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0320": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صلوا على صاحبكم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1321,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1321
+   },
    "hujja": true
   },
   "n0321": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "جعل في جعل الآبق، إذا جاء به خارجا من الحرم، دينارا # وأيضا فإنه قول من سمينا من الصحابة، ولم نعرف لهم في زمنهم مخالفا، فكان إجماعا",
    "kind": "ijma",
+   "number": 4532,
    "hujja": true
   },
   "n0322": {
@@ -32435,6 +33183,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ذمة المسلمين واحدة",
    "kind": "sunnah",
+   "number": 1870,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32447,6 +33196,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "وذمة المسلمين واحدة يسعى بها أدناهم",
    "kind": "sunnah",
+   "number": 1370,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32459,6 +33209,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لولا آخر المسلمين ما فتحت قرية إلا قسمتها",
    "kind": "sunnah",
+   "number": 2334,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -32489,7 +33240,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فكوا العاني",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3046,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3046
+   },
    "hujja": true
   },
   "n0330": {
@@ -32502,7 +33257,13 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "نهى رسول الله صلى الله عليه وسلم عن بيع الغنائم حتى تقسم",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 3369,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3369,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0332": {
@@ -32515,7 +33276,8 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ذهب فرس له فأخذه العدو",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 3067,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0334": {
@@ -32528,33 +33290,62 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فأحرقوا متاعه",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
+   "number": 2713,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2713,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0336": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ففيهما فجاهد",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3004,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3004
+   },
    "hujja": true
   },
   "n0337": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أمرت أن أقاتل الناس حتى يشهدوا أن لا إله إلا الله",
    "kind": "sunnah",
+   "number": 25,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
     "number": 2608,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 3094,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 3969,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0338": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ذهب فرس له، فأخذه العدو، فظهر عليه المسلمون، فرد عليه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3067,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3067
+   },
    "hujja": true
   },
   "n0339": {
@@ -32579,17 +33370,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ارموا بني إسماعيل فإن أباكم كان راميا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2899,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2899
+   },
    "hujja": true
   },
   "n0343": {
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "لا سبق إلا في نصل أو خف أو حافر",
    "kind": "sunnah",
+   "number": 3586,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1700,
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3586,
     "verdict": "sahih"
    },
    "hujja": true
@@ -32610,13 +33406,18 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "يحذين من الغنيمة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1812,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1812
+   },
    "hujja": true
   },
   "n0347": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من قتل قتيلا له عليه بينة فله سلبه",
    "kind": "sunnah",
+   "number": 3142,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32629,13 +33430,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "العسل والعنب، فنأكله ولا نرفعه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3154,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3154
+   },
    "hujja": true
   },
   "n0349": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فأبواه يهودانه أو ينصرانه",
    "kind": "sunnah",
+   "number": 1358,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32648,6 +33454,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من جهز غازيا في سبيل الله فقد غزا",
    "kind": "sunnah",
+   "number": 2843,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32660,28 +33467,37 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "حملت على فرس في سبيل الله",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1490,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 2615,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0352": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "تعلقت الجناية برقبته فكانت مقدمة على حق المرتهن لا نعلم في هذا خلافا",
    "kind": "ijma",
+   "number": 3342,
    "hujja": true
   },
   "n0353": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "ألا لا يجني جان إلا على نفسه",
    "kind": "sunnah",
+   "number": 2669,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 2159,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2669,
     "verdict": "sahih"
    },
    "weaker_routes": [
     {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 3087,
      "verdict": "hasan"
     }
@@ -32692,6 +33508,7 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "أن العبد المرهون إذا جنى على إنسان أو على ماله تعلقت الجناية برقبته فكانت مقدمة على حق المرتهن لا نعلم في هذا خلافا",
    "kind": "ijma",
+   "number": 3342,
    "hujja": true
   },
   "n0355": {
@@ -32704,6 +33521,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من قتل دون ماله فهو شهيد",
    "kind": "sunnah",
+   "number": 2480,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32716,7 +33534,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "والبئر جبار",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1499,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1499
+   },
    "hujja": true
   },
   "n0358": {
@@ -32729,8 +33551,14 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أن غلاما لأناس فقراء قطع أذن غلام لأناس أغنياء",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 4590,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 4590,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0360": {
    "ref": "src:tanzil-quran-simple#Q005:045",
@@ -32748,6 +33576,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من قتل له قتيل فهو بخير النظرين",
    "kind": "sunnah",
+   "number": 2434,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32760,6 +33589,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يقتل مسلم بكافر",
    "kind": "sunnah",
+   "number": 111,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -32769,7 +33599,14 @@
    "weaker_routes": [
     {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 1413,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 2659,
      "verdict": "hasan"
     }
    ],
@@ -32779,13 +33616,20 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أقر القسامة على ما كانت عليه في الجاهلية",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1670,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4707,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0365": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أتحلفون خمسين يمينا فتستحقون صاحبكم أو قاتلكم",
    "kind": "sunnah",
+   "number": 1669,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32822,13 +33666,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فهو بخير النظرين",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 112,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 112
+   },
    "hujja": true
   },
   "n0371": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "لا يقاد الوالد بالولد",
    "kind": "sunnah",
+   "number": 1400,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32841,10 +33690,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "رفع القلم عن ثلاثة",
    "kind": "sunnah",
+   "number": 4398,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1423,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 4398,
     "verdict": "sahih"
    },
    "hujja": true
@@ -32865,7 +33715,21 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أتردين عليه حديقته",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5273,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3463,
+    "verdict": "sahih"
+   },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 2057,
+     "verdict": "daif"
+    }
+   ],
    "hujja": true
   },
   "n0376": {
@@ -32878,18 +33742,28 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الولد للفراش وللعاهر الحجر",
    "kind": "sunnah",
+   "number": 2053,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
     "number": 1157,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 2274,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0378": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن هذه الأقدام بعضها من بعض",
    "kind": "sunnah",
+   "number": 3731,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32902,6 +33776,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ضالة الإبل المكتومة غرامتها ومثلها معها",
    "kind": "sunnah",
+   "number": 1718,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -32914,33 +33789,46 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "أجمع كل من نحفظ عنه من أهل العلم، على أن نفقة اللقيط غير واجبة على الملتقط",
    "kind": "ijma",
+   "number": 4561,
    "hujja": true
   },
   "n0381": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وجدت منبوذا فلما رآني عمر",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2661,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0382": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "المرأة تحرز ثلاثة مواريث عتيقها ولقيطها",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2906,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2906,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0383": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اعرف عفاصها ووكاءها ثم عرفها سنة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2372,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2372
+   },
    "hujja": true
   },
   "n0384": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اعرف عفاصها ووكاءها",
    "kind": "sunnah",
+   "number": 2372,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -32953,13 +33841,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإن جاء أحد يخبرك بعفاصها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2438,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2438
+   },
    "hujja": true
   },
   "n0386": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فإن جاء صاحبها وإلا فشأنك بها",
    "kind": "sunnah",
+   "number": 2372,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -32972,13 +33865,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "عامل النبي صلى الله عليه وسلم خيبر بشطر ما يخرج منها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2329,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2329
+   },
    "hujja": true
   },
   "n0388": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "عامل أهل خيبر بشطر ما يخرج منها من ثمر أو زرع",
    "kind": "sunnah",
+   "number": 1551,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -32991,6 +33889,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "عامل أهل خيبر بشطر ما يخرج منها",
    "kind": "sunnah",
+   "number": 1551,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33003,20 +33902,26 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "عامل خيبر بشطر ما يخرج منها من ثمر أو زرع",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2328,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2328
+   },
    "hujja": true
   },
   "n0391": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 5355,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0392": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أنت أحق به ما لم تنكحي",
    "kind": "sunnah",
+   "number": 2276,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33041,7 +33946,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "عذبت امرأة في هرة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2365,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2365
+   },
    "hujja": true
   },
   "n0396": {
@@ -33054,6 +33963,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "خير غلاما بين أبيه وأمه",
    "kind": "sunnah",
+   "number": 1357,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33072,8 +33982,14 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "أسلم وله عشر نسوة",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 1128,
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 1128,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0400": {
    "ref": "src:tanzil-quran-simple#Q004:003",
@@ -33085,8 +34001,14 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "اختر منهن أربعا",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 2241,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2241,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0402": {
    "ref": "src:tanzil-quran-simple#Q004:024",
@@ -33104,6 +34026,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "والبكر تستأذن في نفسها وإذنها صماتها",
    "kind": "sunnah",
+   "number": 1421,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33116,7 +34039,13 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تنكح الأيم حتى تستأمر ولا تنكح البكر حتى تستأذن",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5136,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3267,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0406": {
@@ -33135,6 +34064,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "أسلم وله عشر نسوة في الجاهلية فأسلمن معه",
    "kind": "sunnah",
+   "number": 1128,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33147,6 +34077,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "رد ابنته زينب على أبي العاص",
    "kind": "sunnah",
+   "number": 1142,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33171,25 +34102,41 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يجمع بين المرأة وعمتها ولا بين المرأة وخالتها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5109,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3288,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0413": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أسلمت وعندي ثمان نسوة",
    "kind": "sunnah",
+   "number": 2241,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
     "number": 1939,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 1952,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0414": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "إذا خطب إليكم من ترضون دينه وخلقه فزوجوه إلا تفعلوا تكن فتنة في الأرض وفساد عريض",
    "kind": "sunnah",
+   "number": 1084,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33202,6 +34149,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فخيرها رسول الله صلى الله عليه وسلم فاختارت نفسها",
    "kind": "sunnah",
+   "number": 1504,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33214,6 +34162,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كان زوجها عبدا فخيرها رسول الله صلى الله عليه وسلم فاختارت نفسها",
    "kind": "sunnah",
+   "number": 2233,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33226,13 +34175,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان في بريرة ثلاث سنن عتقت فخيرت",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5097,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5097
+   },
    "hujja": true
   },
   "n0418": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كان زوجها عبدا فخيرها رسول الله صلى الله عليه وسلم",
    "kind": "sunnah",
+   "number": 2233,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33245,6 +34199,7 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "وكذلك لو ملكت المرأة زوجها انفسخ نكاحها ولا نعلم في هذا خلافا",
    "kind": "ijma",
+   "number": 5421,
    "hujja": true
   },
   "n0420": {
@@ -33323,6 +34278,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "فإن دخل بها فلها المهر بما استحل من فرجها",
    "kind": "sunnah",
+   "number": 1102,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -33347,6 +34303,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا أراد سفرا أقرع بين نسائه",
    "kind": "sunnah",
+   "number": 2593,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33359,7 +34316,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا تزوج البكر أقام عندها سبعا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5213,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5213
+   },
    "hujja": true
   },
   "n0437": {
@@ -33372,6 +34333,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أيما امرأة زوجها وليان فهي للأول منهما",
    "kind": "sunnah",
+   "number": 2088,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -33384,15 +34346,27 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما معه مثل هدبة الثوب",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2639,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 1932,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0440": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا نكاح إلا بولي",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 2085,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2085,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0441": {
    "ref": "src:tanzil-quran-simple#Q002:232",
@@ -33404,26 +34378,47 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا دعي أحدكم إلى الوليمة فليأتها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5173,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3736,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0443": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا اجتمع الداعيان فأجب أقربهما بابا",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 3756,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3756,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0444": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "الثيب أحق بنفسها من وليها",
    "kind": "sunnah",
+   "number": 1421,
    "albani": {
-    "work": "albani.sahih_abi_dawud",
-    "witness": "shamela-25881",
-    "number": 1829,
-    "verdict": "hasan"
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2099,
+    "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_abi_dawud",
+     "witness": "shamela-25881",
+     "number": 1829,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0445": {
@@ -33436,6 +34431,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من نذر أن يطيع الله فليطعه",
    "kind": "sunnah",
+   "number": 6696,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33448,7 +34444,13 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن أمي ماتت وعليها نذر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2761,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3307,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0448": {
@@ -33461,6 +34463,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أمسك عليك بعض مالك فهو خير لك",
    "kind": "sunnah",
+   "number": 1425,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33473,21 +34476,35 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا حكم الحاكم فاجتهد ثم أصاب فله أجران وإذا حكم فاجتهد ثم أخطأ فله أجر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 7352,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 7352
+   },
    "hujja": true
   },
   "n0451": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما أنا بشر وإنكم تختصمون إلي",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 6967,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3583,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0452": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا حكم الحاكم فاجتهد ثم أصاب فله أجران",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 7352,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 7352
+   },
    "hujja": true
   },
   "n0453": {
@@ -33500,7 +34517,11 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا بويع لخليفتين فاقتلوا الآخر منهما",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1853,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1853
+   },
    "hujja": true
   },
   "n0455": {
@@ -33513,6 +34534,7 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "الأصل في كتاب القاضي إلى القاضي والأمير إلى الأمير الكتاب والسنة والإجماع",
    "kind": "ijma",
+   "number": 8278,
    "hujja": true
   },
   "n0457": {
@@ -33555,32 +34577,54 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "إذا أقرض أحدكم قرضا فأهدى له",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2432,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2432,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0464": {
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "أجمعوا على أن المسلف إذا شرط على المستسلف زيادة أو هدية، فأسلف على ذلك، أن أخذ الزيادة على ذلك ربا",
    "kind": "ijma",
+   "number": 3263,
    "hujja": true
   },
   "n0465": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أن رسول الله صلى الله عليه وسلم استسلف من رجل بكرا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1600,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4617,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0466": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "ما من مسلم يقرض مسلما قرضا مرتين إلا كان كصدقتها مرة",
    "kind": "sunnah",
+   "number": 2430,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
     "number": 1389,
     "verdict": "hasan"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 2430,
+     "verdict": "daif"
+    }
+   ],
    "hujja": true
   },
   "n0467": {
@@ -33593,13 +34637,20 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا تحرم المصة والمصتان",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1450,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3309,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0469": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "يحرم من الرضاع ما يحرم من النسب",
    "kind": "sunnah",
+   "number": 2645,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -33609,6 +34660,7 @@
    "weaker_routes": [
     {
      "work": "albani.daif_abi_dawud",
+     "witness": "shamela-5914",
      "number": 349,
      "verdict": "daif"
     }
@@ -33625,28 +34677,46 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كيف وقد قيل",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 88,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 88
+   },
    "hujja": true
   },
   "n0472": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "عليه وسلم قال لا يغلق الرهن",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2441,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2441,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0473": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الرهن يركب بنفقته إذا كان مرهونا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2512,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2512
+   },
    "hujja": true
   },
   "n0474": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "اشترى طعاما من يهودي إلى أجل ورهنه درعا من حديد",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2068,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2068
+   },
    "hujja": true
   },
   "n0475": {
@@ -33683,27 +34753,44 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا تباع حتى تفصل",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1591,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1591
+   },
    "hujja": true
   },
   "n0481": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الذهب بالذهب ربا إلا هاء وهاء",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2134,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2253,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0482": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "الذهب بالذهب والفضة بالفضة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1587,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4561,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0483": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أيما امرأة نكحت على صداق أو حباء أو عدة قبل عصمة النكاح فهو لها",
    "kind": "sunnah",
+   "number": 2129,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -33728,6 +34815,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أعتق صفية وجعل عتقها صداقها",
    "kind": "sunnah",
+   "number": 2054,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33740,6 +34828,7 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "ولنا إجماع الصحابة، روى الإمام أحمد، الأثرم، بإسنادهما عن زرارة بن أوفى، قال: قضى الخلفاء الراشدون أن من أرخى سترا، أو أغلق بابا، فقد وجب المهر",
    "kind": "ijma",
+   "number": 6303,
    "hujja": true
   },
   "n0488": {
@@ -33758,8 +34847,14 @@
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "بمثل صداق نسائها ولها الميراث وعليها العدة",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 3354,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3354,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0491": {
    "ref": "src:tanzil-quran-simple#Q028:027",
@@ -33771,6 +34866,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "زوجتكها بما معك من القرآن",
    "kind": "sunnah",
+   "number": 5029,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33780,6 +34876,7 @@
    "weaker_routes": [
     {
      "work": "albani.daif_abi_dawud",
+     "witness": "shamela-5914",
      "number": 361,
      "verdict": "daif"
     }
@@ -33802,17 +34899,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من أسلف في شيء ففي كيل معلوم ووزن معلوم إلى أجل معلوم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2240,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2240
+   },
    "hujja": true
   },
   "n0496": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "من أسلف في شيء فلا يصرفه إلى غيره",
    "kind": "sunnah",
+   "number": 3468,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1375,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3468,
     "verdict": "daif"
    },
    "hujja": false
@@ -33821,13 +34923,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لو يعلم الناس ما في النداء والصف الأول ثم لم يجدوا إلا أن يستهموا عليه لاستهموا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 615,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 540,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0498": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "اجعلوها في ركوعكم",
    "kind": "sunnah",
+   "number": 869,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -33846,13 +34955,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا صلاة بعد الصبح حتى ترتفع الشمس",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 586,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 586
+   },
    "hujja": true
   },
   "n0501": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا صلاة لمن لم يقرأ بفاتحة الكتاب",
    "kind": "sunnah",
+   "number": 756,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33865,6 +34979,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ومن أدرك الركعة فقد أدرك الصلاة",
    "kind": "sunnah",
+   "number": 893,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33877,6 +34992,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا سمعتم النداء فقولوا مثل ما يقول المؤذن",
    "kind": "sunnah",
+   "number": 611,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33889,6 +35005,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أتاني فأخبرني أن فيهما قذرا",
    "kind": "sunnah",
+   "number": 650,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33901,6 +35018,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "يؤم القوم أقرؤهم لكتاب الله",
    "kind": "sunnah",
+   "number": 673,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -33913,14 +35031,24 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "سبحانك اللهم وبحمدك تبارك اسمك",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 399,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 899,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0507": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "بين الظهر والعصر والمغرب والعشاء بالمدينة في غير خوف ولا مطر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 705,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 705
+   },
    "hujja": true
   },
   "n0508": {
@@ -33933,6 +35061,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "الجمعة حق واجب على كل مسلم في جماعة إلا أربعة",
    "kind": "sunnah",
+   "number": 1067,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -33951,57 +35080,93 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا قلت لصاحبك يوم الجمعة أنصت والإمام يخطب فقد لغوت",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 934,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 934
+   },
    "hujja": true
   },
   "n0512": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان النبي صلى الله عليه وسلم يخطب قائما",
    "kind": "sunnah",
+   "number": 920,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
     "number": 614,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 1418,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 1584,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0513": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تلبسوا الحرير",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5426,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5426
+   },
    "hujja": true
   },
   "n0514": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى عن خاتم الذهب",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5864,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5864
+   },
    "hujja": true
   },
   "n0515": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يقيم الرجل الرجل من مجلسه ثم يجلس فيه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 6269,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 6269
+   },
    "hujja": true
   },
   "n0516": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "من قام من مجلسه ثم رجع إليه فهو أحق به",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2179,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 2179
+   },
    "hujja": true
   },
   "n0517": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "الأرض كلها مسجد إلا المقبرة والحمام",
    "kind": "sunnah",
+   "number": 745,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 317,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 745,
     "verdict": "sahih"
    },
    "hujja": true
@@ -34016,6 +35181,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "الأرض كلها مسجد إلا المقبرة والحمام",
    "kind": "sunnah",
+   "number": 316,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34028,7 +35194,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من نسي صلاة فليصل إذا ذكرها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 597,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 597
+   },
    "hujja": true
   },
   "n0521": {
@@ -34053,6 +35223,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "من قرأ حرفا من كتاب الله فله به حسنة",
    "kind": "sunnah",
+   "number": 2910,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34071,6 +35242,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صل قائما فإن لم تستطع فقاعدا",
    "kind": "sunnah",
+   "number": 1117,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34083,6 +35255,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أقصرت الصلاة أم نسيت",
    "kind": "sunnah",
+   "number": 714,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34101,6 +35274,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كما صليت على آل إبراهيم",
    "kind": "sunnah",
+   "number": 3369,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34110,7 +35284,14 @@
    "weaker_routes": [
     {
      "work": "albani.daif_abi_dawud",
+     "witness": "shamela-5914",
      "number": 174,
+     "verdict": "daif"
+    },
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 982,
      "verdict": "daif"
     }
    ],
@@ -34120,6 +35301,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "قد اجتمع في يومكم هذا عيدان",
    "kind": "sunnah",
+   "number": 1073,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34138,12 +35320,21 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "مروا أولادكم بالصلاة وهم أبناء سبع سنين",
    "kind": "sunnah",
+   "number": 495,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
     "number": 509,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 495,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0533": {
@@ -34156,6 +35347,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا يقبل الله صلاة حائض إلا بخمار",
    "kind": "sunnah",
+   "number": 641,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34168,13 +35360,18 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا شك أحدكم في صلاته فلم يدر كم صلى ثلاثا أم أربعا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 571,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 571
+   },
    "hujja": true
   },
   "n0536": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أمرت أن أسجد على سبعة أعظم",
    "kind": "sunnah",
+   "number": 812,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34187,6 +35384,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فليتحر الصواب فليتم عليه ثم ليسلم ثم يسجد سجدتين",
    "kind": "sunnah",
+   "number": 401,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34205,20 +35403,33 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا صلى أحدكم الجمعة فليصل بعدها أربعا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 881,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 1426,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0540": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا دخل أحدكم المسجد فليركع ركعتين قبل أن يجلس",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 443,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 730,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0541": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "تحريمها التكبير وتحليلها التسليم",
    "kind": "sunnah",
+   "number": 61,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34227,8 +35438,27 @@
    },
    "weaker_routes": [
     {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 61,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 618,
+     "verdict": "hasan"
+    },
+    {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 3,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 275,
      "verdict": "hasan"
     }
    ],
@@ -34238,25 +35468,45 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ثم يكبر حين يركع",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 789,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 789
+   },
    "hujja": true
   },
   "n0543": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "من قام رمضان إيمانا واحتسابا",
    "kind": "sunnah",
+   "number": 37,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
     "number": 808,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 2192,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_nasai",
+     "witness": "shamela-epub-783",
+     "number": 2208,
+     "verdict": "daif"
+    }
+   ],
    "hujja": true
   },
   "n0544": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "وتحليلها التسليم",
    "kind": "sunnah",
+   "number": 3,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34266,13 +35516,33 @@
    "weaker_routes": [
     {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 3,
      "verdict": "hasan"
     },
     {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 408,
      "verdict": "daif"
+    },
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 61,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 618,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 275,
+     "verdict": "hasan"
     }
    ],
    "hujja": true
@@ -34281,6 +35551,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا أقيمت الصلاة فلا صلاة إلا المكتوبة",
    "kind": "sunnah",
+   "number": 710,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34299,6 +35570,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أفضل الصلاة طول القنوت",
    "kind": "sunnah",
+   "number": 22,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34323,14 +35595,16 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لو علمت أنكما تعمدتما لقطعتكما",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 6895,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0551": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فأبطل شهادتهما وأخذا بدية الأول",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 6895,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0552": {
@@ -34355,7 +35629,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أليس شهادة المرأة مثل نصف شهادة الرجل",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 304,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 304
+   },
    "hujja": true
   },
   "n0556": {
@@ -34368,6 +35646,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ولا ظنين في ولاء ولا قرابة",
    "kind": "sunnah",
+   "number": 2298,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34380,6 +35659,7 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "وأجمع أهل العلم على جواز المضاربة في الجملة",
    "kind": "ijma",
+   "number": 3642,
    "hujja": true
   },
   "n0559": {
@@ -34392,10 +35672,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أنا ثالث الشريكين ما لم يخن أحدهما صاحبه",
    "kind": "sunnah",
+   "number": 3383,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1468,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3383,
     "verdict": "daif"
    },
    "hujja": false
@@ -34410,20 +35691,29 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "قضى النبي صلى الله عليه وسلم بالشفعة في كل ما لم يقسم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2496,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2496
+   },
    "hujja": true
   },
   "n0563": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "قضى رسول الله صلى الله عليه وسلم بالشفعة في كل ما لم يقسم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2257,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2257
+   },
    "hujja": true
   },
   "n0564": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "بالشفعة في كل ما لم يقسم",
    "kind": "sunnah",
+   "number": 2257,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34436,6 +35726,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لم يرخص في أيام التشريق أن يصمن إلا لمن لم يجد الهدي",
    "kind": "sunnah",
+   "number": 1997,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34448,7 +35739,11 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أيام التشريق أيام أكل وشرب",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1141,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1141
+   },
    "hujja": true
   },
   "n0567": {
@@ -34461,6 +35756,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "وعن الحامل أو المرضع الصوم",
    "kind": "sunnah",
+   "number": 715,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34479,6 +35775,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وقعت على امرأتي وأنا صائم",
    "kind": "sunnah",
+   "number": 1936,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34491,7 +35788,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ثم قال أطعمه أهلك",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1936,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1936
+   },
    "hujja": true
   },
   "n0572": {
@@ -34504,6 +35805,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صوموا لرؤيته وأفطروا لرؤيته",
    "kind": "sunnah",
+   "number": 1909,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34522,6 +35824,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أني رأيته فصامه وأمر الناس بصيامه",
    "kind": "sunnah",
+   "number": 2342,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34534,28 +35837,46 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا صام من صام الأبد",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1977,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 2378,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0577": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نهى النبي صلى الله عليه وسلم عن صوم يوم الفطر والنحر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1991,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1991
+   },
    "hujja": true
   },
   "n0578": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ليس من البر الصوم في السفر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1945,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1945
+   },
    "hujja": true
   },
   "n0579": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "فإني إذن صائم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1154,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1154
+   },
    "hujja": true
   },
   "n0580": {
@@ -34574,6 +35895,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا أقبل الليل من ها هنا",
    "kind": "sunnah",
+   "number": 1954,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34586,6 +35908,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا أقبل الليل من ها هنا وأدبر النهار من ها هنا",
    "kind": "sunnah",
+   "number": 1954,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34598,10 +35921,11 @@
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "من صام اليوم الذي يشك فيه فقد عصى أبا القاسم",
    "kind": "sunnah",
+   "number": 2188,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 961,
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 2188,
     "verdict": "sahih"
    },
    "hujja": true
@@ -34610,14 +35934,24 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فاقتسما وتوخيا الحق ثم استهما ثم تحالا",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 3584,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3584,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0586": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا يمنع جار جاره أن يغرز خشبه في جداره",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2462,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2462
+   },
    "hujja": true
   },
   "n0587": {
@@ -34630,6 +35964,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "الصلح جائز بين المسلمين",
    "kind": "sunnah",
+   "number": 3594,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34638,12 +35973,20 @@
    },
    "weaker_routes": [
     {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 3594,
+     "verdict": "hasan"
+    },
+    {
      "work": "albani.irwa",
+     "witness": "shamela-22592",
      "number": 1420,
      "verdict": "hasan"
     },
     {
      "work": "albani.irwa",
+     "witness": "shamela-22592",
      "number": 1425,
      "verdict": "hasan"
     }
@@ -34654,6 +35997,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "وما صالحوا عليه فهو لهم",
    "kind": "sunnah",
+   "number": 1387,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34666,34 +36010,53 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "لا يمنع أحدكم جاره أن يغرز خشبه في جداره",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1609,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2336,
+    "verdict": "hasan"
+   },
    "hujja": true
   },
   "n0591": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فلا تأكلوا فيها وإن لم تجدوا فاغسلوها وكلوا فيها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5478,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5478
+   },
    "hujja": true
   },
   "n0592": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وإن لم تجدوا فاغسلوها وكلوا فيها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5478,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5478
+   },
    "hujja": true
   },
   "n0593": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان لا يستتر من البول",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 218,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 218
+   },
    "hujja": true
   },
   "n0594": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "أيما إهاب دبغ فقد طهر",
    "kind": "sunnah",
+   "number": 1728,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34706,14 +36069,22 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ألقوها وما حولها فاطرحوه، وكلوا سمنكم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 235,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 235
+   },
    "hujja": true
   },
   "n0596": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أرأيت شحوم الميتة فإنها يطلى بها السفن",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2236,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2236
+   },
    "hujja": true
   },
   "n0597": {
@@ -34726,6 +36097,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إن تحت كل شعرة جنابة",
    "kind": "sunnah",
+   "number": 248,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -34738,7 +36110,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا تقبل صلاة من أحدث حتى يتوضأ",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 135,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 135
+   },
    "hujja": true
   },
   "n0600": {
@@ -34763,6 +36139,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أليس إذا حاضت لم تصل ولم تصم",
    "kind": "sunnah",
+   "number": 304,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34775,13 +36152,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إنما ذلك عرق وليس بالحيضة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 306,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 212,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0605": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فتحيضي ستة أيام أو سبعة أيام في علم الله",
    "kind": "sunnah",
+   "number": 287,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34791,6 +36175,7 @@
    "weaker_routes": [
     {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 128,
      "verdict": "hasan"
     }
@@ -34801,13 +36186,18 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "اصنعوا كل شيء إلا النكاح",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 301,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 301
+   },
    "hujja": true
   },
   "n0607": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا ذهب أحدكم إلى الغائط فليذهب معه بثلاثة أحجار يستطيب بهن",
    "kind": "sunnah",
+   "number": 40,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34820,7 +36210,13 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "هلا انتفعتم بجلدها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1492,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 4235,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0609": {
@@ -34833,13 +36229,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "في الماء الدائم الذي لا يجري",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 239,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 400,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0611": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إذا كان الماء قلتين لم يحمل الخبث",
    "kind": "sunnah",
+   "number": 63,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34852,6 +36255,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "إن الماء طهور لا ينجسه شيء",
    "kind": "sunnah",
+   "number": 66,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34864,6 +36268,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ما قطع من البهيمة وهي حية فهي ميتة",
    "kind": "sunnah",
+   "number": 1480,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -34876,27 +36281,40 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "يغسل ذكره ويتوضأ",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 303,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 303
+   },
    "hujja": true
   },
   "n0615": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "نعم إذا رأت الماء",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 282,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 282
+   },
    "hujja": true
   },
   "n0616": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إنما الماء من الماء",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 21,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 21
+   },
    "hujja": true
   },
   "n0617": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "دعهما فإني أدخلتهما طاهرتين",
    "kind": "sunnah",
+   "number": 206,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -34909,7 +36327,11 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "جعل رسول الله صلى الله عليه وسلم ثلاثة أيام ولياليهن للمسافر ويوما وليلة للمقيم",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 276,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 276
+   },
    "hujja": true
   },
   "n0619": {
@@ -34922,21 +36344,35 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "الأذنان من الرأس",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 37,
+   "albani": {
+    "work": "albani.sahih_daif_tirmidhi",
+    "witness": "openiti-albani-sdtirmidhi-shamela782",
+    "number": 37,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0621": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا وقع الذباب في شراب أحدكم فليغمسه",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3319,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3319
+   },
    "hujja": true
   },
   "n0622": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "ارجع فأحسن وضوءك",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 243,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 243
+   },
    "hujja": true
   },
   "n0623": {
@@ -34949,6 +36385,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "وكاء السه العينان فمن نام فليتوضأ",
    "kind": "sunnah",
+   "number": 203,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34961,7 +36398,8 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "لا تقرأ الحائض ولا الجنب شيئا من القرآن",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 131,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0626": {
@@ -34974,7 +36412,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إذا شرب الكلب في إناء أحدكم فليغسله سبعا",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 172,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 172
+   },
    "hujja": true
   },
   "n0628": {
@@ -34987,6 +36429,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "كان يصلي وهو حامل أمامة بنت زينب",
    "kind": "sunnah",
+   "number": 516,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -34999,20 +36442,33 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "يطهره ما بعده",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 383,
+   "albani": {
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 383,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0631": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "ولا نتوضأ من موطأ",
    "kind": "athar",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 1041,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 1041,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0632": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "في الذي يأتي امرأته وهي حائض قال يتصدق بدينار أو بنصف دينار",
    "kind": "sunnah",
+   "number": 2168,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35037,6 +36493,7 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "إذا ولغ الكلب في إناء أحدكم",
    "kind": "sunnah",
+   "number": 279,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35067,6 +36524,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ثلاث جدهن جد وهزلهن جد",
    "kind": "sunnah",
+   "number": 2194,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35079,21 +36537,35 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "الحقي بأهلك",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3364,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3364
+   },
    "hujja": true
   },
   "n0641": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لقد عذت بعظيم الحقي بأهلك",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5254,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 3417,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0642": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "الحقي بأهلك فكوني عندهم حتى يقضي الله في هذا الأمر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2769,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 2769
+   },
    "hujja": true
   },
   "n0643": {
@@ -35106,6 +36578,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا حتى تذوقي عسيلته ويذوق عسيلتك",
    "kind": "sunnah",
+   "number": 2639,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35136,13 +36609,18 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "وأجمع الناس على جواز الطلاق",
    "kind": "ijma",
+   "number": 5813,
    "hujja": true
   },
   "n0649": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "مره فليراجعها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 5251,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 5251
+   },
    "hujja": true
   },
   "n0650": {
@@ -35155,6 +36633,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "مره فليراجعها ثم ليمسكها حتى تطهر",
    "kind": "sunnah",
+   "number": 5251,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35167,27 +36646,31 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 5268,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0653": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "طلق رجل امرأته البتة إن خرجت فقال ابن عمر إن خرجت فقد بتت منه",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 5268,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0654": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن خرجت فقد بتت منه",
    "kind": "athar",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 5268,
+   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
    "hujja": false
   },
   "n0655": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا طلاق إلا فيما تملك ولا عتق إلا فيما تملك",
    "kind": "sunnah",
+   "number": 2190,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35200,13 +36683,20 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا طلاق قبل نكاح",
    "kind": "sunnah",
-   "ungraded": "excerpt under 15 letters: too short to identify an entry",
-   "hujja": false
+   "number": 2048,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2048,
+    "verdict": "hasan"
+   },
+   "hujja": true
   },
   "n0657": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ولا طلاق له فيما لا يملك",
    "kind": "sunnah",
+   "number": 1181,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35219,6 +36709,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "والله ما أردت إلا واحدة",
    "kind": "sunnah",
+   "number": 2206,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -35237,10 +36728,11 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كل غلام رهينة بعقيقته",
    "kind": "sunnah",
+   "number": 2837,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1165,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2837,
     "verdict": "sahih"
    },
    "hujja": true
@@ -35249,20 +36741,23 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "عن الغلام شاتان مكافئتان وعن الجارية شاة",
    "kind": "sunnah",
+   "number": 2834,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1513,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 2834,
     "verdict": "sahih"
    },
    "weaker_routes": [
     {
      "work": "albani.sahih_abi_dawud",
+     "witness": "shamela-25881",
      "number": 2532,
      "verdict": "hasan"
     },
     {
      "work": "albani.sahih_daif_tirmidhi",
+     "witness": "openiti-albani-sdtirmidhi-shamela782",
      "number": 1514,
      "verdict": "hasan"
     }
@@ -35273,19 +36768,32 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أن أتصدق بجلال البدن التي نحرت وبجلودها",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1707,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1707
+   },
    "hujja": true
   },
   "n0663": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أربع لا تجوز في الأضاحي",
    "kind": "sunnah",
+   "number": 2802,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
     "number": 2497,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 2802,
+     "verdict": "daif"
+    }
+   ],
    "hujja": true
   },
   "n0664": {
@@ -35298,6 +36806,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ضحى النبي صلى الله عليه وسلم بكبشين",
    "kind": "sunnah",
+   "number": 5558,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35310,6 +36819,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ضحى النبي صلى الله عليه وسلم بكبشين أملحين",
    "kind": "sunnah",
+   "number": 5558,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35328,6 +36838,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لولا أن أشق على أمتي لأمرتهم",
    "kind": "sunnah",
+   "number": 571,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35346,6 +36857,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "صلوا كما رأيتموني أصلي",
    "kind": "sunnah",
+   "number": 6008,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35358,7 +36870,11 @@
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "كتب إلى كسرى",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1774,
+   "sahihayn": {
+    "witness": "openiti-muslim-shamela1727",
+    "number": 1774
+   },
    "hujja": true
   },
   "n0672": {
@@ -35383,12 +36899,21 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أد الأمانة إلى من ائتمنك ولا تخن من خانك",
    "kind": "sunnah",
+   "number": 3534,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1264,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3534,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 3535,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0676": {
@@ -35401,12 +36926,21 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أد الأمانة إلى من ائتمنك",
    "kind": "sunnah",
+   "number": 3534,
    "albani": {
-    "work": "albani.sahih_daif_tirmidhi",
-    "witness": "openiti-albani-sdtirmidhi-shamela782",
-    "number": 1264,
+    "work": "albani.sahih_daif_abi_dawud",
+    "witness": "shamela-epub-1755",
+    "number": 3534,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 3535,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0678": {
@@ -35419,7 +36953,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "أعطاه دينارا يشتري له به شاة",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 3642,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 3642
+   },
    "hujja": true
   },
   "n0680": {
@@ -35432,6 +36970,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "لا جناح على من وليها أن يأكل منها بالمعروف",
    "kind": "sunnah",
+   "number": 2737,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35444,6 +36983,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "إن شئت حبست أصلها وتصدقت بها",
    "kind": "sunnah",
+   "number": 2737,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35456,6 +36996,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "من يشتري بئر رومة فيجعل دلوه مع دلاء المسلمين",
    "kind": "sunnah",
+   "number": 3703,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35468,7 +37009,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وإني أرى أن تجعلها في الأقربين",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1461,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1461
+   },
    "hujja": true
   },
   "n0685": {
@@ -35487,6 +37032,7 @@
    "ref": "src:openiti-ibnqudama-mughni-shamela8463",
    "excerpt_ar": "تصح الوصية إلى الرجل العاقل المسلم الحر العدل إجماعا",
    "kind": "ijma",
+   "number": 4773,
    "hujja": true
   },
   "n0688": {
@@ -35511,19 +37057,32 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فالثلث والثلث كثير",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 2742,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 2742
+   },
    "hujja": true
   },
   "n0692": {
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "إن الله قد أعطى كل ذي حق حقه فلا وصية لوارث",
    "kind": "sunnah",
+   "number": 2870,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
     "number": 2554,
     "verdict": "sahih"
    },
+   "weaker_routes": [
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 2870,
+     "verdict": "hasan"
+    }
+   ],
    "hujja": true
   },
   "n0693": {
@@ -35536,6 +37095,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "لا حظ فيها لغني ولا لقوي مكتسب",
    "kind": "sunnah",
+   "number": 1633,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35560,13 +37120,20 @@
    "ref": "src:openiti-nasai-shamela829",
    "excerpt_ar": "أمره أن يأخذ من كل ثلاثين من البقر تبيعا أو تبيعة",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
-   "hujja": false
+   "number": 2452,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 2452,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0698": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ولا يجمع بين متفرق ولا يفرق بين مجتمع خشية الصدقة",
    "kind": "sunnah",
+   "number": 1450,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35585,10 +37152,11 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا زكاة في مال حتى يحول عليه الحول",
    "kind": "sunnah",
+   "number": 1792,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 787,
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 1792,
     "verdict": "sahih"
    },
    "hujja": true
@@ -35597,6 +37165,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "حتى يحول عليه الحول",
    "kind": "sunnah",
+   "number": 630,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35609,6 +37178,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ويعطيه المصدق عشرين درهما أو شاتين",
    "kind": "sunnah",
+   "number": 1448,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35621,6 +37191,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "فتلك المعادن لا يؤخذ منها إلا الزكاة",
    "kind": "sunnah",
+   "number": 3061,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -35633,6 +37204,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "من ولي يتيما له مال فليتجر فيه",
    "kind": "sunnah",
+   "number": 641,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35645,6 +37217,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "ومن منعها فإنا آخذوها وشطر ماله",
    "kind": "sunnah",
+   "number": 1575,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35663,6 +37236,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ليس فيما دون خمس أواق صدقة",
    "kind": "sunnah",
+   "number": 1405,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -35675,7 +37249,11 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "وفي الركاز الخمس",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1498,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1498
+   },
    "hujja": true
   },
   "n0709": {
@@ -35694,6 +37272,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "أن العباس سأل النبي صلى الله عليه وسلم في تعجيل صدقته قبل أن تحل فرخص له في ذلك",
    "kind": "sunnah",
+   "number": 1624,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35706,6 +37285,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "في تعجيل صدقته قبل أن تحل",
    "kind": "sunnah",
+   "number": 1624,
    "albani": {
     "work": "albani.sahih_abi_dawud",
     "witness": "shamela-25881",
@@ -35718,6 +37298,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "كان يأمرنا أن نخرج الصدقة من الذي نعد للبيع",
    "kind": "sunnah",
+   "number": 1562,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -35730,6 +37311,7 @@
    "ref": "src:openiti-abudawud-shamela1726",
    "excerpt_ar": "نخرج الصدقة من الذي نعد للبيع",
    "kind": "sunnah",
+   "number": 1562,
    "albani": {
     "work": "albani.daif_abi_dawud",
     "witness": "shamela-5914",
@@ -35748,7 +37330,13 @@
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "وعن شراء الصدقات حتى تقبض",
    "kind": "sunnah",
-   "ungraded": "no entry of al-Albānī's pinned works contains the excerpt",
+   "number": 2196,
+   "albani": {
+    "work": "albani.sahih_daif_ibn_maja",
+    "witness": "shamela-epub-810",
+    "number": 2196,
+    "verdict": "daif"
+   },
    "hujja": false
   },
   "n0717": {
@@ -35761,6 +37349,7 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "في أربع وعشرين من الإبل فما دونها من الغنم",
    "kind": "sunnah",
+   "number": 1454,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35773,13 +37362,20 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فرض رسول الله صلى الله عليه وسلم زكاة الفطر صاعا من تمر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1503,
+   "albani": {
+    "work": "albani.sahih_daif_nasai",
+    "witness": "shamela-epub-783",
+    "number": 2504,
+    "verdict": "sahih"
+   },
    "hujja": true
   },
   "n0720": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فرض رسول الله صلى الله عليه وسلم زكاة الفطر",
    "kind": "sunnah",
+   "number": 1503,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35789,7 +37385,20 @@
    "weaker_routes": [
     {
      "work": "albani.sahih_abi_dawud",
+     "witness": "shamela-25881",
      "number": 1427,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_abi_dawud",
+     "witness": "shamela-epub-1755",
+     "number": 1609,
+     "verdict": "hasan"
+    },
+    {
+     "work": "albani.sahih_daif_ibn_maja",
+     "witness": "shamela-epub-810",
+     "number": 1827,
      "verdict": "hasan"
     }
    ],
@@ -35799,13 +37408,18 @@
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "زكاة الفطر صاعا من تمر أو صاعا من شعير على العبد والحر",
    "kind": "sunnah",
-   "sahihayn": true,
+   "number": 1503,
+   "sahihayn": {
+    "witness": "openiti-bukhari-shamela1681",
+    "number": 1503
+   },
    "hujja": true
   },
   "n0722": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "ففي كل أربعين بنت لبون وفي كل خمسين حقة",
    "kind": "sunnah",
+   "number": 1454,
    "albani": {
     "work": "albani.irwa",
     "witness": "shamela-22592",
@@ -35818,6 +37432,7 @@
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "إذا خرصتم فخذوا ودعوا الثلث",
    "kind": "sunnah",
+   "number": 643,
    "albani": {
     "work": "albani.sahih_daif_tirmidhi",
     "witness": "openiti-albani-sdtirmidhi-shamela782",
@@ -47733,14 +49348,18 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0373",
    "n0375",
    "n0377",
    "n0398",
+   "n0399",
    "n0400",
+   "n0401",
    "n0467",
    "n0468",
    "n0470",
@@ -47789,6 +49408,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -47828,6 +49448,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -47869,6 +49490,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -48086,6 +49708,7 @@
    "n0528",
    "n0529",
    "n0539",
+   "n0620",
    "n0633",
    "n0634"
   ],
@@ -48103,6 +49726,7 @@
    "n0158",
    "n0167",
    "n0168",
+   "n0169",
    "n0193",
    "n0194",
    "n0195",
@@ -48111,6 +49735,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0360",
@@ -48124,6 +49749,7 @@
    "n0477",
    "n0478",
    "n0489",
+   "n0490",
    "n0491",
    "n0492",
    "n0611",
@@ -48136,6 +49762,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0615",
@@ -48188,6 +49815,7 @@
    "n0344",
    "n0345",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494",
@@ -48203,6 +49831,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0523",
@@ -48249,12 +49878,18 @@
    "n0717"
   ],
   "r020": [
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
+   "n0089",
+   "n0090",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0142",
    "n0209",
    "n0210",
@@ -48265,14 +49900,17 @@
    "n0223",
    "n0224",
    "n0225",
+   "n0228",
    "n0229",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
    "n0306",
+   "n0308",
    "n0310",
    "n0311",
    "n0312",
@@ -48300,12 +49938,18 @@
    "n0717"
   ],
   "r021": [
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
+   "n0089",
+   "n0090",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0142",
    "n0209",
    "n0210",
@@ -48316,14 +49960,17 @@
    "n0223",
    "n0224",
    "n0225",
+   "n0228",
    "n0229",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
    "n0306",
+   "n0308",
    "n0310",
    "n0311",
    "n0312",
@@ -48383,21 +50030,25 @@
    "n0086",
    "n0107",
    "n0115",
+   "n0117",
    "n0119",
    "n0131",
    "n0180",
    "n0214",
    "n0215",
    "n0261",
+   "n0262",
    "n0280",
    "n0281",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
    "n0306",
+   "n0309",
    "n0393",
    "n0395",
    "n0398",
@@ -48405,6 +50056,7 @@
    "n0413",
    "n0427",
    "n0439",
+   "n0440",
    "n0441",
    "n0474",
    "n0508",
@@ -48419,6 +50071,7 @@
    "n0073",
    "n0107",
    "n0142",
+   "n0155",
    "n0158",
    "n0167",
    "n0326",
@@ -48468,6 +50121,7 @@
    "n0062",
    "n0063",
    "n0064",
+   "n0065",
    "n0356",
    "n0567",
    "n0568",
@@ -48494,6 +50148,7 @@
    "n0369",
    "n0370",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494"
@@ -48521,6 +50176,7 @@
    "n0664",
    "n0665",
    "n0666",
+   "n0697",
    "n0711",
    "n0712",
    "n0715",
@@ -48551,9 +50207,11 @@
    "n0223",
    "n0224",
    "n0225",
+   "n0291",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -48562,6 +50220,7 @@
    "n0375",
    "n0486",
    "n0489",
+   "n0490",
    "n0491",
    "n0587",
    "n0588",
@@ -48600,6 +50259,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0415",
@@ -48643,12 +50303,15 @@
    "n0072",
    "n0073",
    "n0100",
+   "n0101",
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -48673,6 +50336,8 @@
    "n0072",
    "n0073",
    "n0086",
+   "n0089",
+   "n0090",
    "n0273",
    "n0275",
    "n0276",
@@ -48704,6 +50369,7 @@
    "n0478",
    "n0486",
    "n0489",
+   "n0490",
    "n0491"
   ],
   "r040": [
@@ -48714,12 +50380,16 @@
    "n0037",
    "n0045",
    "n0046",
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0142",
    "n0173",
    "n0209",
@@ -48729,6 +50399,7 @@
    "n0223",
    "n0224",
    "n0225",
+   "n0232",
    "n0273",
    "n0275",
    "n0276",
@@ -48738,9 +50409,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0301",
+   "n0302",
    "n0310",
    "n0311",
    "n0312",
@@ -48752,6 +50425,7 @@
    "n0423",
    "n0474",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494",
@@ -48802,6 +50476,7 @@
    "n0072",
    "n0073",
    "n0100",
+   "n0101",
    "n0674",
    "n0675",
    "n0676",
@@ -48843,6 +50518,7 @@
    "n0071",
    "n0072",
    "n0073",
+   "n0075",
    "n0273",
    "n0275",
    "n0276",
@@ -48852,12 +50528,14 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
    "n0306",
    "n0432",
    "n0489",
+   "n0490",
    "n0491"
   ],
   "r049": [
@@ -48877,6 +50555,7 @@
    "n0072",
    "n0073",
    "n0100",
+   "n0101",
    "n0142",
    "n0220",
    "n0223",
@@ -48920,6 +50599,7 @@
    "n0354",
    "n0474",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494",
@@ -48931,24 +50611,33 @@
    "n0717"
   ],
   "r054": [
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494"
   ],
   "r055": [
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0142",
    "n0209",
    "n0210",
@@ -48957,6 +50646,8 @@
    "n0223",
    "n0224",
    "n0225",
+   "n0232",
+   "n0233",
    "n0475",
    "n0476",
    "n0477",
@@ -48976,6 +50667,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -48988,6 +50680,7 @@
    "n0647",
    "n0648",
    "n0655",
+   "n0656",
    "n0657",
    "n0678",
    "n0679",
@@ -49003,6 +50696,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0303",
@@ -49015,6 +50709,7 @@
    "n0430",
    "n0431",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494",
@@ -49032,16 +50727,24 @@
    "n0632"
   ],
   "r059": [
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
+   "n0088",
+   "n0089",
+   "n0090",
    "n0091",
    "n0092",
    "n0093",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0100",
+   "n0101",
    "n0113",
    "n0273",
    "n0275",
@@ -49087,6 +50790,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0373",
@@ -49117,11 +50821,13 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0227",
    "n0250",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0637",
@@ -49145,11 +50851,13 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0227",
    "n0250",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0355",
@@ -49165,30 +50873,40 @@
    "n0071",
    "n0072",
    "n0073",
+   "n0075",
    "n0522"
   ],
   "r067": [
    "n0037",
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
+   "n0089",
+   "n0090",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0115",
    "n0116",
+   "n0117",
    "n0118",
    "n0227",
    "n0292",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
    "n0306",
    "n0477",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494",
@@ -49197,6 +50915,7 @@
   ],
   "r068": [
    "n0024",
+   "n0025",
    "n0026",
    "n0027",
    "n0071",
@@ -49243,6 +50962,7 @@
    "n0459",
    "n0460",
    "n0489",
+   "n0490",
    "n0491",
    "n0558",
    "n0559"
@@ -49256,11 +50976,13 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0200",
    "n0206",
    "n0207",
    "n0208",
    "n0227",
+   "n0440",
    "n0441",
    "n0503",
    "n0511",
@@ -49341,6 +51063,7 @@
    "n0037",
    "n0115",
    "n0116",
+   "n0117",
    "n0118",
    "n0120",
    "n0131",
@@ -49388,6 +51111,8 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
+   "n0165",
    "n0209",
    "n0210",
    "n0211",
@@ -49410,10 +51135,13 @@
    "n0035",
    "n0036",
    "n0037",
+   "n0084",
    "n0158",
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
+   "n0165",
    "n0167",
    "n0209",
    "n0210",
@@ -49438,6 +51166,7 @@
    "n0071",
    "n0072",
    "n0073",
+   "n0084",
    "n0091",
    "n0092",
    "n0093",
@@ -49445,11 +51174,13 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0387",
    "n0388",
    "n0389"
   ],
   "r081": [
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
@@ -49457,10 +51188,14 @@
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0209",
    "n0210",
    "n0211",
    "n0224",
+   "n0228",
    "n0229",
    "n0488"
   ],
@@ -49475,15 +51210,22 @@
    "n0062",
    "n0063",
    "n0064",
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
+   "n0089",
+   "n0090",
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0102",
    "n0115",
    "n0116",
+   "n0117",
    "n0118",
    "n0142",
    "n0209",
@@ -49495,6 +51237,7 @@
    "n0223",
    "n0224",
    "n0225",
+   "n0228",
    "n0229",
    "n0273",
    "n0274",
@@ -49506,9 +51249,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0310",
    "n0311",
    "n0312",
@@ -49548,8 +51293,10 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
+   "n0319",
    "n0320",
    "n0330",
    "n0332",
@@ -49581,7 +51328,9 @@
    "n0018",
    "n0043",
    "n0044",
+   "n0084",
    "n0142",
+   "n0155",
    "n0173",
    "n0174",
    "n0175",
@@ -49594,10 +51343,12 @@
    "n0261",
    "n0263",
    "n0264",
+   "n0265",
    "n0267",
    "n0330",
    "n0332",
    "n0338",
+   "n0359",
    "n0383",
    "n0384",
    "n0385",
@@ -49628,6 +51379,7 @@
    "n0040",
    "n0041",
    "n0142",
+   "n0155",
    "n0220",
    "n0325",
    "n0348",
@@ -49648,10 +51400,12 @@
    "n0105",
    "n0106",
    "n0142",
+   "n0155",
    "n0220",
    "n0261",
    "n0263",
    "n0264",
+   "n0265",
    "n0267",
    "n0273",
    "n0275",
@@ -49662,6 +51416,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0325",
@@ -49684,6 +51439,7 @@
    "n0272"
   ],
   "r090": [
+   "n0233",
    "n0234",
    "n0330",
    "n0332",
@@ -49695,9 +51451,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0310",
    "n0311",
    "n0312",
@@ -49711,6 +51469,7 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0273",
    "n0274",
    "n0275",
@@ -49731,6 +51490,7 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0273",
    "n0275",
    "n0276",
@@ -49747,6 +51507,7 @@
    "n0466",
    "n0474",
    "n0489",
+   "n0490",
    "n0491",
    "n0558",
    "n0559",
@@ -49798,6 +51559,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0303",
@@ -49836,6 +51598,7 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0193",
    "n0194",
    "n0195",
@@ -49862,6 +51625,7 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0380",
    "n0383",
    "n0384",
@@ -49876,6 +51640,7 @@
    "n0159",
    "n0160",
    "n0161",
+   "n0162",
    "n0242",
    "n0243",
    "n0273",
@@ -49908,7 +51673,9 @@
    "n0080",
    "n0081",
    "n0082",
+   "n0155",
    "n0261",
+   "n0262",
    "n0586",
    "n0590"
   ],
@@ -49916,6 +51683,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0445",
@@ -49936,6 +51704,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0702",
@@ -49947,12 +51716,14 @@
    "n0722"
   ],
   "r102": [
+   "n0015",
    "n0030",
    "n0045",
    "n0046",
    "n0054",
    "n0142",
    "n0152",
+   "n0153",
    "n0193",
    "n0194",
    "n0195",
@@ -49996,7 +51767,10 @@
    "n0062",
    "n0063",
    "n0064",
+   "n0067",
    "n0068",
+   "n0069",
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
@@ -50007,6 +51781,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0637",
@@ -50053,11 +51828,13 @@
   "r106": [
    "n0022",
    "n0047",
+   "n0149",
    "n0182",
    "n0183",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0383",
@@ -50073,6 +51850,8 @@
    "n0604",
    "n0605",
    "n0623",
+   "n0630",
+   "n0631",
    "n0637",
    "n0645",
    "n0646",
@@ -50091,6 +51870,7 @@
    "n0124",
    "n0125",
    "n0427",
+   "n0440",
    "n0441",
    "n0508",
    "n0509",
@@ -50105,6 +51885,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0322",
@@ -50135,7 +51916,10 @@
   ],
   "r110": [
    "n0018",
+   "n0067",
    "n0068",
+   "n0069",
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
@@ -50204,10 +51988,12 @@
    "n0073",
    "n0115",
    "n0116",
+   "n0117",
    "n0118",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0474",
@@ -50250,6 +52036,7 @@
    "n0355",
    "n0369",
    "n0370",
+   "n0440",
    "n0441",
    "n0562",
    "n0563",
@@ -50275,6 +52062,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -50296,9 +52084,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0301",
+   "n0302",
    "n0637",
    "n0645",
    "n0646",
@@ -50318,12 +52108,16 @@
    "n0071",
    "n0072",
    "n0073",
+   "n0089",
+   "n0090",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0301",
+   "n0302",
    "n0310",
    "n0311",
    "n0312",
@@ -50338,6 +52132,7 @@
    "n0647",
    "n0648",
    "n0655",
+   "n0656",
    "n0657",
    "n0678",
    "n0679",
@@ -50372,7 +52167,9 @@
    "n0142",
    "n0154",
    "n0220",
+   "n0319",
    "n0320",
+   "n0440",
    "n0444",
    "n0682",
    "n0683",
@@ -50389,9 +52186,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0445",
    "n0446",
    "n0449",
@@ -50468,6 +52267,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0427",
@@ -50505,6 +52305,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0307",
@@ -50551,6 +52352,7 @@
   ],
   "r128": [
    "n0135",
+   "n0137",
    "n0138",
    "n0139",
    "n0140",
@@ -50589,6 +52391,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0393",
@@ -50603,9 +52406,11 @@
    "n0210",
    "n0211",
    "n0489",
+   "n0490",
    "n0491"
   ],
   "r132": [
+   "n0020",
    "n0131",
    "n0132",
    "n0180",
@@ -50615,9 +52420,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0326",
    "n0393",
    "n0394",
@@ -50651,14 +52458,18 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0373",
    "n0375",
    "n0377",
    "n0398",
+   "n0399",
    "n0400",
+   "n0401",
    "n0467",
    "n0468",
    "n0470",
@@ -50703,6 +52514,7 @@
    "n0430",
    "n0431",
    "n0489",
+   "n0490",
    "n0491",
    "n0569",
    "n0594",
@@ -50732,9 +52544,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0355",
    "n0369",
    "n0370",
@@ -50762,6 +52576,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0352",
@@ -50789,6 +52604,7 @@
   "r140": [
    "n0134",
    "n0135",
+   "n0137",
    "n0242",
    "n0243",
    "n0244",
@@ -50843,9 +52659,11 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0481",
    "n0482",
    "n0508",
@@ -50871,6 +52689,7 @@
   "r144": [
    "n0018",
    "n0037",
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
@@ -50878,8 +52697,12 @@
    "n0094",
    "n0095",
    "n0096",
+   "n0097",
+   "n0098",
+   "n0099",
    "n0115",
    "n0116",
+   "n0117",
    "n0118",
    "n0119",
    "n0142",
@@ -50914,7 +52737,9 @@
    "n0250",
    "n0258",
    "n0398",
+   "n0399",
    "n0400",
+   "n0401",
    "n0411",
    "n0421",
    "n0422",
@@ -50957,6 +52782,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0477",
@@ -50989,12 +52815,16 @@
    "n0071",
    "n0072",
    "n0073",
+   "n0079",
+   "n0114",
+   "n0221",
    "n0222",
    "n0330",
    "n0332",
    "n0464",
    "n0484",
    "n0489",
+   "n0490",
    "n0491"
   ],
   "r151": [
@@ -51026,6 +52856,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -51040,6 +52871,7 @@
    "n0378",
    "n0380",
    "n0489",
+   "n0490",
    "n0491",
    "n0637",
    "n0641",
@@ -51074,16 +52906,19 @@
    "n0225",
    "n0230",
    "n0231",
+   "n0233",
    "n0242",
    "n0243",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0303",
    "n0304",
    "n0316",
+   "n0319",
    "n0320",
    "n0336",
    "n0337",
@@ -51098,6 +52933,7 @@
    "n0421",
    "n0422",
    "n0423",
+   "n0440",
    "n0444",
    "n0477",
    "n0553",
@@ -51115,6 +52951,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0373",
@@ -51129,6 +52966,7 @@
    "n0477",
    "n0478",
    "n0489",
+   "n0490",
    "n0491",
    "n0494",
    "n0552",
@@ -51138,6 +52976,7 @@
    "n0485",
    "n0487",
    "n0489",
+   "n0490",
    "n0491"
   ],
   "r156": [
@@ -51158,7 +52997,9 @@
    "n0376",
    "n0393",
    "n0398",
+   "n0399",
    "n0400",
+   "n0401",
    "n0406",
    "n0407",
    "n0411",
@@ -51198,12 +53039,16 @@
   ],
   "r158": [
    "n0024",
+   "n0025",
    "n0026",
    "n0027",
    "n0051",
    "n0052",
    "n0053",
+   "n0067",
    "n0068",
+   "n0069",
+   "n0070",
    "n0071",
    "n0072",
    "n0073",
@@ -51220,6 +53065,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0299",
@@ -51234,6 +53080,7 @@
    "n0407",
    "n0439",
    "n0489",
+   "n0490",
    "n0491",
    "n0502",
    "n0537",
@@ -51257,6 +53104,7 @@
    "n0013",
    "n0014",
    "n0024",
+   "n0025",
    "n0026",
    "n0027",
    "n0029",
@@ -51278,8 +53126,10 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
+   "n0319",
    "n0320",
    "n0404",
    "n0405",
@@ -51294,6 +53144,7 @@
    "n0485",
    "n0487",
    "n0489",
+   "n0490",
    "n0491",
    "n0504",
    "n0517",
@@ -51320,6 +53171,8 @@
    "n0624",
    "n0627",
    "n0629",
+   "n0630",
+   "n0631",
    "n0635",
    "n0636",
    "n0637",
@@ -51332,6 +53185,7 @@
   "r160": [
    "n0022",
    "n0024",
+   "n0025",
    "n0026",
    "n0027",
    "n0062",
@@ -51342,21 +53196,25 @@
    "n0073",
    "n0124",
    "n0125",
+   "n0128",
    "n0141",
    "n0142",
    "n0150",
    "n0220",
    "n0250",
+   "n0265",
    "n0269",
    "n0281",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0300",
    "n0317",
    "n0318",
+   "n0319",
    "n0320",
    "n0322",
    "n0323",
@@ -51381,10 +53239,13 @@
    "n0392",
    "n0397",
    "n0398",
+   "n0399",
    "n0400",
+   "n0401",
    "n0434",
    "n0435",
    "n0436",
+   "n0440",
    "n0442",
    "n0444",
    "n0453",
@@ -51397,6 +53258,7 @@
    "n0477",
    "n0478",
    "n0489",
+   "n0490",
    "n0491",
    "n0497",
    "n0505",
@@ -51430,6 +53292,7 @@
    "n0013",
    "n0014",
    "n0024",
+   "n0025",
    "n0026",
    "n0027",
    "n0029",
@@ -51459,8 +53322,10 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
+   "n0319",
    "n0320",
    "n0404",
    "n0405",
@@ -51481,6 +53346,7 @@
    "n0485",
    "n0487",
    "n0489",
+   "n0490",
    "n0491",
    "n0504",
    "n0508",
@@ -51518,6 +53384,8 @@
    "n0624",
    "n0627",
    "n0629",
+   "n0630",
+   "n0631",
    "n0633",
    "n0634",
    "n0635",
@@ -51567,6 +53435,7 @@
    "n0062",
    "n0063",
    "n0064",
+   "n0149",
    "n0246",
    "n0383",
    "n0384",
@@ -51584,11 +53453,14 @@
    "n0605",
    "n0611",
    "n0612",
-   "n0623"
+   "n0623",
+   "n0630",
+   "n0631"
   ],
   "s025": [
    "n0022",
    "n0024",
+   "n0025",
    "n0026",
    "n0027",
    "n0062",
@@ -51599,21 +53471,25 @@
    "n0073",
    "n0124",
    "n0125",
+   "n0128",
    "n0141",
    "n0142",
    "n0150",
    "n0220",
    "n0250",
+   "n0265",
    "n0269",
    "n0281",
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0300",
    "n0317",
    "n0318",
+   "n0319",
    "n0320",
    "n0322",
    "n0323",
@@ -51638,10 +53514,13 @@
    "n0392",
    "n0397",
    "n0398",
+   "n0399",
    "n0400",
+   "n0401",
    "n0434",
    "n0435",
    "n0436",
+   "n0440",
    "n0442",
    "n0444",
    "n0453",
@@ -51654,6 +53533,7 @@
    "n0477",
    "n0478",
    "n0489",
+   "n0490",
    "n0491",
    "n0497",
    "n0505",
@@ -51696,6 +53576,7 @@
    "n0430",
    "n0431",
    "n0489",
+   "n0490",
    "n0491",
    "n0493",
    "n0494",
@@ -51718,6 +53599,7 @@
    "n0037",
    "n0115",
    "n0116",
+   "n0117",
    "n0118",
    "n0120",
    "n0131",
@@ -51749,6 +53631,7 @@
   "s035": [
    "n0134",
    "n0135",
+   "n0137",
    "n0242",
    "n0243",
    "n0244",
@@ -51824,6 +53707,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0373",
@@ -51882,14 +53766,18 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
+   "n0308",
    "n0373",
    "n0375",
    "n0377",
    "n0398",
+   "n0399",
    "n0400",
+   "n0401",
    "n0467",
    "n0468",
    "n0470",
@@ -51927,6 +53815,7 @@
    "n0013",
    "n0014",
    "n0024",
+   "n0025",
    "n0026",
    "n0027",
    "n0029",
@@ -51950,8 +53839,10 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
+   "n0319",
    "n0320",
    "n0404",
    "n0405",
@@ -51971,6 +53862,7 @@
    "n0485",
    "n0487",
    "n0489",
+   "n0490",
    "n0491",
    "n0504",
    "n0517",
@@ -51999,6 +53891,8 @@
    "n0624",
    "n0627",
    "n0629",
+   "n0630",
+   "n0631",
    "n0633",
    "n0634",
    "n0635",
@@ -52033,6 +53927,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",
@@ -52071,6 +53966,7 @@
    "n0293",
    "n0294",
    "n0295",
+   "n0296",
    "n0297",
    "n0298",
    "n0305",

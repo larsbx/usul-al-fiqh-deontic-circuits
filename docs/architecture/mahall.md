@@ -160,49 +160,71 @@ Agreement: κ 0.875; both judge «names» for 105. Neither reviewer found an unr
 
 ## al-Albānī's verdicts on the ḥadīth anchors
 
-The verbatim gate checks a ḥadīth's wording, not its standing. Every ḥadīth and athar anchor (497) is now graded from al-Albānī's own works, by its wording. `pipeline/usul_corpus/grading.py` does the grading and `test_mahall_grades.py` gates it.
+The verbatim gate checks a ḥadīth's wording, not its standing. Every ḥadīth and athar anchor (497) is graded from al-Albānī's own works. `pipeline/usul_corpus/grading.py` does the grading and `test_mahall_grades.py` gates it.
 
-- **The works.** Four of his works give a verdict per entry, and all four are pinned:
-  - Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Tirmidhī;
-  - al-Irwāʾ al-Ghalīl, his takhrīj of the Ḥanbalī *Manār al-Sabīl*;
-  - Ṣaḥīḥ Abī Dāwūd and Ḍaʿīf Abī Dāwūd.
-- **Matching by wording.** An entry grades an anchor when the ḥadīth the entry is about holds the anchor's excerpt (letters only, at least 15 letters). That ḥadīth is the entry's head, before his verdict line. The rest of an entry is takhrīj that quotes other narrations: the first run matched anywhere in the entry, and graded a narration of Muslim weak by an al-Irwāʾ entry on another ḥadīth.
-- **The verdict on a wording.** In his Sunan books al-Albānī grades each route (riwāya) apart; in al-Irwāʾ he grades the ḥadīth with all its routes. A wording he grades ṣaḥīḥ or ḥasan by any route is established. So the grade is his strongest verdict on any entry holding the wording, and his weaker verdicts on other routes are kept beside it (`weaker_routes`, 14 anchors).
-- **Recorded and replayed.** Each grade is recorded as `albani: {work, witness, number, verdict}`. The test re-reads the entry: the verdict is his, and the entry's ḥadīth holds the excerpt. Regrading from the pinned works reproduces every grade.
+**Sources are always cited.** Every text but a verse (which cites its sūra and āya in its ref) carries `number`: its ḥadīth number in its witness, or the Mughnī's masʾala for an ijmāʿ. Every grade cites where it comes from: al-Albānī's entry (`albani: {work, witness, number, verdict}`), each weaker route he grades (`weaker_routes`, same form), or the ḥadīth of the Ṣaḥīḥayn whose standing it keeps (`sahihayn: {witness, number}`). `mahall.check` rejects a grade without its citation; the test re-reads every cited entry and number.
 
-| 497 ḥadīth and athar anchors | |
-|---|---|
-| Graded by al-Albānī | **240**: ṣaḥīḥ 198, ḥasan 24, weak 18 (ḍaʿīf; none mawḍūʿ) |
-| By work | Tirmidhī 127, Abū Dāwūd 57, al-Irwāʾ 56 |
-| Ḥadīth of the Ṣaḥīḥayn not graded by these works | 170: the Ṣaḥīḥayn's own standing, not a verdict of his. This includes excerpts too short to find in his works. An athar the Ṣaḥīḥayn quote does not have it. |
-| Ungraded | 87. No entry of these works holds the excerpt (63), or it is too short to identify one (24) |
+- **The works.** Seven of his works give a verdict per entry, all pinned:
+
+  | Work | Witness | Entries |
+  |---|---|---|
+  | Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Tirmidhī | [OpenITI, Shamela 782](https://raw.githubusercontent.com/OpenITI/1425AH/6d71d2af1be5a49f1db3b52cdda15ea11da569de/data/1420MuhammadNasirDinAlbani/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi/1420MuhammadNasirDinAlbani.SahihWaDacifSunanTirmidhi.Shamela0000782-ara1) | every ḥadīth, al-Tirmidhī's numbering |
+  | Ṣaḥīḥ wa-Ḍaʿīf Sunan Abī Dāwūd | [old Shamela 1755](https://old.shamela.ws/index.php/book/1755) (epub) | every ḥadīth, Abū Dāwūd's numbering |
+  | Ṣaḥīḥ wa-Ḍaʿīf Sunan al-Nasāʾī | [old Shamela 783](https://old.shamela.ws/index.php/book/783) (epub) | every ḥadīth, al-Nasāʾī's numbering |
+  | Ṣaḥīḥ wa-Ḍaʿīf Sunan Ibn Māja | [old Shamela 810](https://old.shamela.ws/index.php/book/810) (epub) | every ḥadīth, Ibn Māja's numbering |
+  | al-Irwāʾ al-Ghalīl, his takhrīj of the Ḥanbalī *Manār al-Sabīl* | [Shamela 22592](https://shamela.ws/book/22592) | his numbering |
+  | Ṣaḥīḥ Abī Dāwūd (al-Umm) | [Shamela 25881](https://shamela.ws/book/25881) | his numbering, to 2,734 |
+  | Ḍaʿīf Abī Dāwūd (al-Umm) | [Shamela 5914](https://shamela.ws/book/5914) | his numbering, to 561 |
+
+  The four Ṣaḥīḥ wa-Ḍaʿīf works are the Nūr al-Islām centre's compilation of his verdicts (Manẓūmat al-Taḥqīqāt al-Ḥadīthiyya), each verdict with the books of his it comes from. The three on old Shamela exist only as its epubs, a witness kind (`shamela_epub`) this PR adds; they are pinned like any witness, by the hash of their text.
+- **An entry grades an anchor** when the ḥadīth it is about holds the anchor's excerpt. That ḥadīth is the entry's head, before his verdict line; the rest is takhrīj quoting other narrations. An entry is found two ways:
+  - **by wording** (letters only, at least 15 letters), in all seven works;
+  - **by number**: the anchor's own Sunan's entry in his Ṣaḥīḥ wa-Ḍaʿīf of it. The numbering agrees for 179 of the 185 anchors of the four Sunan; where it does not, the entry fails the head check and grades nothing. A short excerpt that recurs in its Sunan (الخراج بالضمان, لا ضرر ولا ضرار, أنت ومالك لأبيك) goes by number only when he grades every ḥadīth of the Sunan that holds it alike, so the grade is the anchor's whichever of them it is.
+- **The verdict on a wording.** In his Sunan books al-Albānī grades each route (riwāya) apart; in al-Irwāʾ he grades the ḥadīth with all its routes. A wording he grades ṣaḥīḥ or ḥasan by any route is established. So the grade is his strongest verdict on any entry holding it, and his weaker verdicts on other routes are kept (`weaker_routes`, 39 anchors).
+- **The Ṣaḥīḥayn's standing.** A Prophetic ḥadīth of al-Bukhārī or Muslim that no work of his grades ṣaḥīḥ or ḥasan keeps the Ṣaḥīḥayn's own standing, cited to its number there; it is not a verdict of his. A weak verdict of his found by wording is on another collection's route, not on theirs: al-Bukhārī's ḥadīth qudsī «ورجل باع حرا فأكل ثمنه» is found only in Ibn Māja's route (2442), which he grades ḍaʿīf, and keeps the Ṣaḥīḥayn's standing with that route as a weaker one. An athar they quote has no such standing.
+
+| 497 ḥadīth and athar anchors | Now | Before ([#115](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/115)) |
+|---|---|---|
+| Graded by al-Albānī | **357**: ṣaḥīḥ 281, ḥasan 40, ḍaʿīf 36 (none mawḍūʿ) | 240: ṣaḥīḥ 198, ḥasan 24, ḍaʿīf 18 |
+| By work | Tirmidhī 112, Abū Dāwūd 67, al-Irwāʾ 46, Ṣaḥīḥ Abī Dāwūd 46, al-Nasāʾī 39, Ibn Māja 37, Ḍaʿīf Abī Dāwūd 10 | |
+| Ḥadīth of the Ṣaḥīḥayn his works don't grade ṣaḥīḥ or ḥasan | 127, each citing its number there | 170 |
+| Ungraded | **13**: no entry of these works holds the excerpt | 87 |
+
+The 13 ungraded are 11 athar that al-Bukhārī quotes (ʿUmar, ʿAlī, Ibn ʿUmar, Ibn ʿAbbās and others, mostly muʿallaq), which these works do not grade, and two ḥadīth whose wording differs from his entry by a word: Ibn Māja's «إن الله قد تجاوز عن أمتي الخطأ والنسيان» (his entry 2043 reads «إن الله تجاوز»; he grades it ṣaḥīḥ) and al-Tirmidhī's «لا تقرأ الحائض ولا الجنب شيئا من القرآن». The wording gate does not bridge such variants, so they stay ungraded.
 
 **The ḥujja gate.**
 
-- **What counts.** A text is ḥujja when it is the Qurʾān, a reported ijmāʿ, a ḥadīth of the Ṣaḥīḥayn his works do not grade, or a ḥadīth the kernel's gate `Usul.Seam.admitted` admits on his verdict (ṣaḥīḥ or ḥasan). An ungraded ḥadīth is not.
+- **What counts.** A text is ḥujja when it is the Qurʾān, a reported ijmāʿ, a ḥadīth of the Ṣaḥīḥayn his works don't grade ṣaḥīḥ or ḥasan, or a ḥadīth the kernel's gate `Usul.Seam.admitted` admits on his verdict (ṣaḥīḥ or ḥasan). An ungraded ḥadīth is not.
 - **How it is checked.** `UsulTest.MahallGraph` decides ḥujja through `Usul.Seam.admitted` itself. For each of the 178 qawāʿid it checks that the texts grounding it *and ḥujja* are exactly the pipeline's (`(data.gated hujja).exactB`, with `grounds_gated`). So the Python classification and the kernel's gate agree, qāʿida by qāʿida. Flipping one verdict breaks four guards.
 
-| | |
-|---|---|
-| Texts that are ḥujja | 629 of 725 |
-| Labels with a ḥujja text | 476 of 525 anchored |
-| Cases whose own maḥall has a ḥujja text | 1,088 of 1,216 |
-| ḥujja grounds per qāʿida | 22.7 on average (of 25.8). No qāʿida is left without one |
+| | Now | Before |
+|---|---|---|
+| Texts that are ḥujja | 674 of 725 | 629 |
+| Labels with a ḥujja text | 501 of 525 anchored | 476 |
+| Cases whose own maḥall has a ḥujja text | 1,136 of 1,216 | 1,088 |
+| ḥujja grounds per qāʿida | 24.2 on average (of 25.8). No qāʿida is left without one | 22.7 |
 
-**Labels whose only texts he grades weak (10).** These are maḥalls the bank anchors on ḥadīth al-Albānī does not accept, with no other ḥujja text. Each needs a sound text or an ijmāʿ, or stands as a finding:
+**Labels whose only texts he grades weak (18).** These are maḥalls the bank anchors on ḥadīth al-Albānī does not accept, with no other ḥujja text. Each needs a sound text or an ijmāʿ, or stands as a finding. Grading more anchors moved eight labels here from "ungraded only":
 
+- possession and its liability («على اليد ما أخذت»; `amma.yad`);
+- conflicting proofs (`dawa.taarud_bayyinat`);
+- compensation for limbs and faculties, as anchored («وفي السن خمس من الإبل»; `diyat.diyat_atraf`);
 - the grandmother's sixth;
 - the slave woman's ʿidda;
+- market pitches, and fencing off dead land (two labels, both on «من سبق إلى ماء»);
+- the slave mother (`itq.umm_walad`);
 - the conversion of non-Muslim spouses: «رد ابنته زينب», in the wording of the «مهر جديد» report;
 - a woman married off by two guardians;
+- forfeiture of the pledge to the creditor («لا يغلق الرهن»; `rahn.ghalq_rahn`);
 - gifts around the marriage;
 - testimony for a relative;
+- release from a claim (`sulh.ibra`);
 - the mine;
 - zakāt on a minor's wealth;
 - trade goods;
 - the estimation of fruits.
 
-39 more labels have only ungraded ḥadīth or athar.
+Six more labels have only ungraded texts: `buyu.tashrik`, `idda.mafqud`, `iqrar.iqrar_mukrah`, `nafaqat.fasakh_iisar`, `tahara.qiraat_junub` and `talaq.talaq_muallaq` (39 before).
 
 ## For review
 
@@ -217,7 +239,7 @@ All entries are `candidate`. The shards flagged these:
   - `buyu.ziyada_fil_bay` («زن وأرجح»);
   - `ihya.tahjir` (a reviving ḥadīth for staking a claim);
   - market pitches and fencing, via the water ḥadīth.
-- **Weak ḥadīth.** Now graded: see [al-Albānī's verdicts](#al-albānīs-verdicts-on-the-ḥadīth-anchors). Ten labels rest on texts he grades weak and have no other ḥujja text.
+- **Weak ḥadīth.** Now graded: see [al-Albānī's verdicts](#al-albānīs-verdicts-on-the-ḥadīth-anchors). Eighteen labels rest on texts he grades weak and have no other ḥujja text.
 - **Ijmāʿ via a tacit consensus**, e.g. the case of Tumāḍir («فكان إجماعا»).
 - **Conventions that differ between shards:**
   - For the cases on what halves or forfeits the dower (q156), the cause of separation is the primary maḥall. The dower is `also`.
