@@ -35,7 +35,8 @@ def sample_cases(corpus: Path) -> list[str]:
 
 
 def sample_anchors(corpus: Path) -> list[str]:
-    """``label|ref|excerpt`` of the sampled (label, naṣṣ) pairs."""
+    """``label|ref|excerpt`` of the (label, naṣṣ) pairs whose hash sorts lowest now. The reviewed
+    sample was drawn this way before four labels were merged; it is kept as drawn."""
     return sorted(_lowest("|".join((l["id"], n["ref"], n["excerpt_ar"]))
                           for l in mahall.load(corpus)[1] for n in l.get("nass", [])))
 
@@ -63,12 +64,26 @@ def _compare(mine: dict, theirs: dict, up: dict, kind: dict) -> dict:
     return dict(out)
 
 
+def aliases(corpus: Path) -> dict[str, str]:
+    """Label ids merged into one (``corpus/mahall/aliases.json``)."""
+    return json.loads((corpus / "mahall/aliases.json").read_text(encoding="utf-8"))["aliases"]
+
+
+def _aliased(e: dict, alias: dict[str, str]) -> dict:
+    return {**e, "label": alias.get(e["label"], e["label"]),
+            "also": [{**x, "label": alias.get(x["label"], x["label"])} for x in e.get("also", [])]}
+
+
 def identification(corpus: Path) -> dict:
-    """Each blind annotation against the committed one, and the two against each other."""
+    """Each blind annotation against the committed one, and the two against each other. The blind
+    annotations were made against the catalogue before the last merge, so they are read through
+    ``aliases``."""
     abwab, labels, entries = mahall.load(corpus)
+    alias = aliases(corpus)
     up, kind = mahall.parents(abwab, labels), {l["id"]: l["kind"] for l in labels}
     committed = {e["far"]: e for e in entries}
-    blind = {p.stem.removeprefix("identify_"): json.loads(p.read_text(encoding="utf-8"))
+    blind = {p.stem.removeprefix("identify_"): {f: _aliased(e, alias) for f, e in
+                                                 json.loads(p.read_text(encoding="utf-8")).items()}
              for p in sorted((corpus / DIR).glob("identify_*.json"))}
     out = {k: _compare(v, {f: committed[f] for f in v}, up, kind) for k, v in blind.items()}
     if len(blind) == 2:

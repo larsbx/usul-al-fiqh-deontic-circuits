@@ -4641,28 +4641,15 @@
    "en": "a vowed retreat",
    "kind": "act",
    "broader": [
-    "itikaf"
+    "itikaf",
+    "itikaf.itikaf"
    ],
    "nass": [
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "نذرت في الجاهلية أن أعتكف ليلة في المسجد الحرام قال فأوف بنذرك"
-    }
-   ],
-   "shards": [
-    "b"
-   ]
-  },
-  {
-   "id": "itikaf.nadhr_itikaf",
-   "ar": "نذر الاعتكاف",
-   "en": "a vowed retreat",
-   "kind": "act",
-   "broader": [
-    "itikaf.itikaf"
-   ],
-   "nass": [
+    },
     {
      "kind": "sunnah",
      "ref": "src:openiti-bukhari-shamela1681",
@@ -4670,6 +4657,7 @@
     }
    ],
    "shards": [
+    "b",
     "e"
    ]
   },
@@ -4757,30 +4745,6 @@
     "c",
     "d",
     "e",
-    "f"
-   ]
-  },
-  {
-   "id": "itq.itq_bil_milk",
-   "ar": "العتق بملك ذي الرحم",
-   "en": "manumission on owning a close relative",
-   "kind": "act",
-   "broader": [
-    "itq.itq"
-   ],
-   "nass": [
-    {
-     "kind": "sunnah",
-     "ref": "src:openiti-abudawud-shamela1726",
-     "excerpt_ar": "من ملك ذا رحم محرم فهو حر"
-    },
-    {
-     "kind": "sunnah",
-     "ref": "src:openiti-muslim-shamela1727",
-     "excerpt_ar": "لا يجزي ولد والدا إلا أن يجده مملوكا فيشتريه فيعتقه"
-    }
-   ],
-   "shards": [
     "f"
    ]
   },
@@ -4884,10 +4848,16 @@
      "kind": "sunnah",
      "ref": "src:openiti-abudawud-shamela1726",
      "excerpt_ar": "من ملك ذا رحم محرم فهو حر"
+    },
+    {
+     "kind": "sunnah",
+     "ref": "src:openiti-muslim-shamela1727",
+     "excerpt_ar": "لا يجزي ولد والدا إلا أن يجده مملوكا فيشتريه فيعتقه"
     }
    ],
    "shards": [
-    "b"
+    "b",
+    "f"
    ]
   },
   {
@@ -6351,7 +6321,7 @@
    ],
    "nass": [
     {
-     "kind": "sunnah",
+     "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني"
     }
@@ -6674,7 +6644,8 @@
    "en": "a convert with more than four wives",
    "kind": "issue",
    "broader": [
-    "nikah"
+    "nikah",
+    "nikah.jam_fawq_arba"
    ],
    "nass": [
     {
@@ -7723,8 +7694,8 @@
   },
   {
    "id": "rahn.marhun",
-   "ar": "الرهن",
-   "en": "the pledge",
+   "ar": "المرهون",
+   "en": "the pledged property",
    "kind": "item",
    "broader": [
     "rahn"
@@ -7748,7 +7719,7 @@
   {
    "id": "rahn.rahn",
    "ar": "الرهن",
-   "en": "the pledge",
+   "en": "the contract of pledge",
    "kind": "item",
    "broader": [
     "rahn"
@@ -8530,7 +8501,8 @@
    "en": "shortening prayer",
    "kind": "act",
    "broader": [
-    "salat"
+    "salat",
+    "salat.salat_musafir"
    ],
    "nass": [
     {
@@ -9630,25 +9602,6 @@
    ]
   },
   {
-   "id": "sulh.jidar",
-   "ar": "الجدار بين الجارين ووضع الخشب عليه",
-   "en": "the wall between neighbours and resting beams on it",
-   "kind": "item",
-   "broader": [
-    "sulh"
-   ],
-   "nass": [
-    {
-     "kind": "sunnah",
-     "ref": "src:openiti-bukhari-shamela1681",
-     "excerpt_ar": "لا يمنع جار جاره أن يغرز خشبه في جداره"
-    }
-   ],
-   "shards": [
-    "e"
-   ]
-  },
-  {
    "id": "sulh.jidar_mushtarak",
    "ar": "الجدار بين الجارين",
    "en": "the wall between neighbours",
@@ -9664,7 +9617,8 @@
     }
    ],
    "shards": [
-    "c"
+    "c",
+    "e"
    ]
   },
   {
@@ -9862,7 +9816,7 @@
   {
    "id": "tahara.hadath",
    "ar": "الحدث",
-   "en": "ritual impurity",
+   "en": "the state of ritual impurity (ḥadath)",
    "kind": "issue",
    "broader": [
     "tahara"
@@ -10271,7 +10225,7 @@
   {
    "id": "tahara.najasa",
    "ar": "النجاسة",
-   "en": "ritual impurity",
+   "en": "physical impurity (najāsa)",
    "kind": "item",
    "broader": [
     "tahara"
@@ -10786,7 +10740,8 @@
     "a",
     "b",
     "d",
-    "e"
+    "e",
+    "f"
    ]
   },
   {
@@ -10857,25 +10812,6 @@
    "shards": [
     "d",
     "e"
-   ]
-  },
-  {
-   "id": "talaq.taliq_talaq",
-   "ar": "تعليق الطلاق",
-   "en": "conditional divorce",
-   "kind": "act",
-   "broader": [
-    "talaq.talaq"
-   ],
-   "nass": [
-    {
-     "kind": "athar",
-     "ref": "src:openiti-bukhari-shamela1681",
-     "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء"
-    }
-   ],
-   "shards": [
-    "f"
    ]
   },
   {
