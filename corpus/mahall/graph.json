@@ -235,12 +235,10 @@
   "itikaf",
   "itikaf.itikaf",
   "itikaf.itikaf_mandhur",
-  "itikaf.nadhr_itikaf",
   "itq",
   "itq.istithna_khidma",
   "itq.ita_mukatab",
   "itq.itq",
-  "itq.itq_bil_milk",
   "itq.itq_fil_kaffara",
   "itq.itq_fil_marad",
   "itq.itq_muallaq",
@@ -486,7 +484,6 @@
   "sulh",
   "sulh.ibra",
   "sulh.irtifaq_jiwar",
-  "sulh.jidar",
   "sulh.jidar_mushtarak",
   "sulh.sulh",
   "sulh.sulh_dam",
@@ -543,7 +540,6 @@
   "talaq.talaq_mubham",
   "talaq.talaq_qabl_nikah",
   "talaq.talaq_thalath",
-  "talaq.taliq_talaq",
   "udhiya",
   "udhiya.akl_udhiya",
   "udhiya.aqiqa",
@@ -19242,7 +19238,7 @@
     "co": []
    },
    "labels": [
-    "itikaf.nadhr_itikaf",
+    "itikaf.itikaf_mandhur",
     "salat.jumua"
    ]
   },
@@ -22226,7 +22222,7 @@
     "co": []
    },
    "labels": [
-    "sulh.jidar",
+    "sulh.jidar_mushtarak",
     "ariyya.ariyya"
    ]
   },
@@ -22269,7 +22265,7 @@
     "co": []
    },
    "labels": [
-    "sulh.jidar"
+    "sulh.jidar_mushtarak"
    ]
   },
   {
@@ -23964,7 +23960,7 @@
     "co": []
    },
    "labels": [
-    "itq.itq_bil_milk"
+    "itq.itq_qarib"
    ]
   },
   {
@@ -25232,7 +25228,7 @@
     "co": []
    },
    "labels": [
-    "talaq.taliq_talaq",
+    "talaq.talaq_muallaq",
     "amma.shakk"
    ]
   },
@@ -26925,7 +26921,7 @@
     "co": []
    },
    "labels": [
-    "talaq.taliq_talaq",
+    "talaq.talaq_muallaq",
     "amma.shakk"
    ]
   },
@@ -26972,7 +26968,7 @@
     "co": []
    },
    "labels": [
-    "talaq.taliq_talaq",
+    "talaq.talaq_muallaq",
     "siyam.laylat_qadr"
    ]
   },
@@ -26996,7 +26992,7 @@
     "co": []
    },
    "labels": [
-    "talaq.taliq_talaq"
+    "talaq.talaq_muallaq"
    ]
   },
   {
@@ -28424,7 +28420,7 @@
    "itikaf"
   ],
   [
-   "itikaf.nadhr_itikaf",
+   "itikaf.itikaf_mandhur",
    "itikaf.itikaf"
   ],
   [
@@ -28438,10 +28434,6 @@
   [
    "itq.itq",
    "itq"
-  ],
-  [
-   "itq.itq_bil_milk",
-   "itq.itq"
   ],
   [
    "itq.itq_fil_kaffara",
@@ -28828,6 +28820,10 @@
    "nikah"
   ],
   [
+   "nikah.islam_ala_akthar",
+   "nikah.jam_fawq_arba"
+  ],
+  [
    "nikah.islam_zawjayn",
    "nikah.nikah"
   ],
@@ -29176,6 +29172,10 @@
    "salat"
   ],
   [
+   "salat.qasr",
+   "salat.salat_musafir"
+  ],
+  [
    "salat.qibla",
    "salat"
   ],
@@ -29393,10 +29393,6 @@
   ],
   [
    "sulh.irtifaq_jiwar",
-   "sulh"
-  ],
-  [
-   "sulh.jidar",
    "sulh"
   ],
   [
@@ -29633,10 +29629,6 @@
   ],
   [
    "talaq.talaq_thalath",
-   "talaq.talaq"
-  ],
-  [
-   "talaq.taliq_talaq",
    "talaq.talaq"
   ],
   [
@@ -31062,28 +31054,28 @@
    "excerpt_ar": "أيما رجل أعتق امرأ مسلما استنقذ الله بكل عضو منه عضوا منه من النار"
   },
   "n0299": {
-   "ref": "src:openiti-abudawud-shamela1726",
-   "excerpt_ar": "من ملك ذا رحم محرم فهو حر"
-  },
-  "n0300": {
-   "ref": "src:openiti-muslim-shamela1727",
-   "excerpt_ar": "لا يجزي ولد والدا إلا أن يجده مملوكا فيشتريه فيعتقه"
-  },
-  "n0301": {
    "ref": "src:tanzil-quran-simple#Q058:003",
    "excerpt_ar": "فتحرير رقبة من قبل أن يتماسا"
   },
-  "n0302": {
+  "n0300": {
    "ref": "src:openiti-muslim-shamela1727",
    "excerpt_ar": "أن رجلا أعتق ستة مملوكين له عند موته"
   },
-  "n0303": {
+  "n0301": {
    "ref": "src:openiti-tirmidhi-shamela7895",
    "excerpt_ar": "ولا عتق له فيما لا يملك"
   },
-  "n0304": {
+  "n0302": {
    "ref": "src:openiti-ibnmaja-shamela1198",
    "excerpt_ar": "لا طلاق قبل نكاح ولا عتق قبل ملك"
+  },
+  "n0303": {
+   "ref": "src:openiti-abudawud-shamela1726",
+   "excerpt_ar": "من ملك ذا رحم محرم فهو حر"
+  },
+  "n0304": {
+   "ref": "src:openiti-muslim-shamela1727",
+   "excerpt_ar": "لا يجزي ولد والدا إلا أن يجده مملوكا فيشتريه فيعتقه"
   },
   "n0305": {
    "ref": "src:tanzil-quran-simple#Q024:033",
@@ -34141,7 +34133,7 @@
   ],
   [
    "n0290",
-   "itikaf.nadhr_itikaf"
+   "itikaf.itikaf_mandhur"
   ],
   [
    "n0291",
@@ -34189,39 +34181,35 @@
   ],
   [
    "n0299",
-   "itq.itq_bil_milk"
-  ],
-  [
-   "n0299",
-   "itq.itq_qarib"
-  ],
-  [
-   "n0299",
-   "itq.milk_dhi_rahim"
-  ],
-  [
-   "n0300",
-   "itq.itq_bil_milk"
-  ],
-  [
-   "n0301",
    "itq.itq_fil_kaffara"
   ],
   [
-   "n0301",
+   "n0299",
    "zihar.kaffarat_zihar"
   ],
   [
-   "n0302",
+   "n0300",
    "itq.itq_fil_marad"
   ],
   [
-   "n0303",
+   "n0301",
    "itq.itq_muallaq"
   ],
   [
-   "n0304",
+   "n0302",
    "itq.itq_muallaq"
+  ],
+  [
+   "n0303",
+   "itq.itq_qarib"
+  ],
+  [
+   "n0303",
+   "itq.milk_dhi_rahim"
+  ],
+  [
+   "n0304",
+   "itq.itq_qarib"
   ],
   [
    "n0305",
@@ -35465,10 +35453,6 @@
   ],
   [
    "n0586",
-   "sulh.jidar"
-  ],
-  [
-   "n0586",
    "sulh.jidar_mushtarak"
   ],
   [
@@ -35770,10 +35754,6 @@
   [
    "n0652",
    "talaq.talaq_muallaq"
-  ],
-  [
-   "n0652",
-   "talaq.taliq_talaq"
   ],
   [
    "n0653",
@@ -36309,6 +36289,7 @@
    "salat",
    "salat.jam",
    "salat.qasr",
+   "salat.salat_musafir",
    "salat.salat_sabi",
    "tahara",
    "tahara.tayammum",
@@ -36671,6 +36652,8 @@
    "nafaqat.nafaqat_zawja",
    "nikah",
    "nikah.islam_ala_akthar",
+   "nikah.jam_fawq_arba",
+   "nikah.nikah",
    "nikah.unna",
    "nikah.wali",
    "qard",
@@ -36781,6 +36764,7 @@
    "hajj.hady",
    "hajj.jima_muhrim",
    "itikaf",
+   "itikaf.itikaf",
    "itikaf.itikaf_mandhur",
    "salat",
    "salat.salat_musafir",
@@ -37951,6 +37935,7 @@
    "salat",
    "salat.qasr",
    "salat.sahw",
+   "salat.salat_musafir",
    "tahara",
    "tahara.ma_najis",
    "tahara.muwalat",
@@ -38303,7 +38288,7 @@
    "ayman.yamin",
    "itikaf",
    "itikaf.itikaf",
-   "itikaf.nadhr_itikaf",
+   "itikaf.itikaf_mandhur",
    "nudhur",
    "nudhur.nadhr",
    "salat",
@@ -38650,7 +38635,7 @@
    "jihad",
    "jihad.kanisa",
    "sulh",
-   "sulh.jidar",
+   "sulh.jidar_mushtarak",
    "tahara",
    "tahara.ma_ubina",
    "wasaya",
@@ -38856,7 +38841,7 @@
    "hudud.sariqa",
    "itq",
    "itq.itq",
-   "itq.itq_bil_milk",
+   "itq.itq_qarib",
    "itq.wala",
    "janaiz",
    "janaiz.salat_janaza",
@@ -38992,7 +38977,7 @@
    "tahara.najasa",
    "talaq",
    "talaq.talaq",
-   "talaq.taliq_talaq",
+   "talaq.talaq_muallaq",
    "zakat",
    "zakat.zakat",
    "zakat.zakat_fitr"
@@ -39124,8 +39109,8 @@
    "siyam.laylat_qadr",
    "talaq",
    "talaq.talaq",
+   "talaq.talaq_muallaq",
    "talaq.talaq_mubham",
-   "talaq.taliq_talaq",
    "wadia",
    "wadia.amana",
    "wadia.amanat",
@@ -39220,7 +39205,7 @@
    "talaq",
    "talaq.adad_talaq",
    "talaq.talaq",
-   "talaq.taliq_talaq",
+   "talaq.talaq_muallaq",
    "wadia",
    "wadia.amana",
    "wadia.amanat",
@@ -39337,8 +39322,8 @@
    "salat.satr_awra",
    "talaq",
    "talaq.talaq",
+   "talaq.talaq_muallaq",
    "talaq.talaq_mubham",
-   "talaq.taliq_talaq",
    "wadia",
    "wadia.amana",
    "wadia.amanat",
@@ -39508,6 +39493,7 @@
    "salat",
    "salat.qasr",
    "salat.sahw",
+   "salat.salat_musafir",
    "tahara",
    "tahara.ma_najis",
    "tahara.muwalat",
@@ -40006,6 +39992,7 @@
    "n0190",
    "n0507",
    "n0521",
+   "n0531",
    "n0532",
    "n0628",
    "n0711",
@@ -40031,7 +40018,7 @@
    "n0574"
   ],
   "r007": [
-   "n0301",
+   "n0299",
    "n0427",
    "n0428",
    "n0429",
@@ -40215,7 +40202,7 @@
    "n0176",
    "n0177",
    "n0202",
-   "n0301",
+   "n0299",
    "n0330",
    "n0331",
    "n0332",
@@ -40465,7 +40452,10 @@
    "n0309",
    "n0393",
    "n0395",
+   "n0398",
    "n0408",
+   "n0413",
+   "n0427",
    "n0438",
    "n0439",
    "n0440",
@@ -40606,7 +40596,9 @@
    "n0175",
    "n0176",
    "n0184",
+   "n0288",
    "n0289",
+   "n0290",
    "n0531",
    "n0663",
    "n0664",
@@ -40834,8 +40826,8 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0303",
-   "n0304",
+   "n0301",
+   "n0302",
    "n0310",
    "n0311",
    "n0312",
@@ -41142,7 +41134,8 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0299",
+   "n0303",
+   "n0304",
    "n0373",
    "n0375",
    "n0427",
@@ -42059,7 +42052,7 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0299",
+   "n0303",
    "n0383",
    "n0384",
    "n0385",
@@ -42264,6 +42257,7 @@
    "n0470",
    "n0521",
    "n0527",
+   "n0531",
    "n0611",
    "n0612",
    "n0622",
@@ -42615,8 +42609,8 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0303",
-   "n0304",
+   "n0301",
+   "n0302",
    "n0637",
    "n0645",
    "n0646",
@@ -42647,8 +42641,8 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0303",
-   "n0304",
+   "n0301",
+   "n0302",
    "n0310",
    "n0311",
    "n0312",
@@ -42763,6 +42757,7 @@
    "n0142",
    "n0220",
    "n0288",
+   "n0289",
    "n0290",
    "n0445",
    "n0446",
@@ -43490,8 +43485,8 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0299",
-   "n0300",
+   "n0303",
+   "n0304",
    "n0316",
    "n0319",
    "n0320",
@@ -43650,7 +43645,7 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0301",
+   "n0299",
    "n0322",
    "n0323",
    "n0324",
@@ -43675,6 +43670,8 @@
    "n0647",
    "n0648",
    "n0652",
+   "n0653",
+   "n0654",
    "n0715",
    "n0716",
    "n0717",
@@ -43798,7 +43795,7 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0302",
+   "n0300",
    "n0317",
    "n0318",
    "n0319",
@@ -43864,6 +43861,8 @@
    "n0647",
    "n0648",
    "n0652",
+   "n0653",
+   "n0654",
    "n0674",
    "n0675",
    "n0676",
@@ -43992,6 +43991,8 @@
    "n0647",
    "n0648",
    "n0652",
+   "n0653",
+   "n0654",
    "n0674",
    "n0675",
    "n0676",
@@ -44086,7 +44087,7 @@
    "n0296",
    "n0297",
    "n0298",
-   "n0302",
+   "n0300",
    "n0317",
    "n0318",
    "n0319",
@@ -44151,6 +44152,8 @@
    "n0647",
    "n0648",
    "n0652",
+   "n0653",
+   "n0654",
    "n0674",
    "n0675",
    "n0676",
@@ -44172,7 +44175,7 @@
    "n0176",
    "n0177",
    "n0202",
-   "n0301",
+   "n0299",
    "n0330",
    "n0331",
    "n0332",
@@ -44353,6 +44356,7 @@
    "n0470",
    "n0521",
    "n0527",
+   "n0531",
    "n0611",
    "n0612",
    "n0622",

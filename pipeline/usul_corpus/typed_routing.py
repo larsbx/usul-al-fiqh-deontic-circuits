@@ -25,7 +25,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
 
-from . import routing
+from . import mahall, routing
 from .fatawa_prolog import atom
 
 TYPING = "examples/v41_typing.pl"
@@ -264,8 +264,10 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
     cases = ts.cases(root)
     typed = {a["answer"] for a in data["answers"]}
     lexical = ts.ranker(root)
-    hits, named_hits, lex_hits, hyb_hits, applied, rows = (defaultdict(int), defaultdict(int), defaultdict(int),
-                                                          defaultdict(int), 0, [])
+    tied = mahall.links(root / "corpus")
+    hits, named_hits, lex_hits, hyb_hits, qaida_hits, applied, rows = (defaultdict(int), defaultdict(int),
+                                                                      defaultdict(int), defaultdict(int),
+                                                                      defaultdict(int), 0, [])
     for unit, encoder, needs in cases:
         scores = shares(cov.get(unit, {}))
         words = lexical[unit]
@@ -275,6 +277,7 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             s = scores.get(e, 0.0)
             return sum(v >= s for v in scores.values()) if s > 0 else None
         rank, s = rank_of(encoder), scores.get(encoder, 0.0)
+        gold = set(mahall.under(tied[unit]) if unit in tied else mahall.encoder_qawaid(encoder))
         named = sorted({n[5:] for n in needs if n.startswith("rule:") and n[5:] in encoders})
         best = min((r for r in [rank, *map(rank_of, named)] if r is not None), default=None)
         applied += s == 1.0
@@ -283,6 +286,7 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             named_hits[k] += best is not None and best <= k
             lex_hits[k] += encoder in words[:k]
             hyb_hits[k] += encoder in ranked[:k]
+            qaida_hits[k] += any(set(mahall.encoder_qawaid(e)) & gold for e in ranked[:k])
         rows.append({"case": unit, "encoder": encoder, "settled": round(s, 4), "rank": rank,
                      **({"named_rules": named, "best_rank_with_named": best} if named else {})})
     n = len(cases)
@@ -298,6 +302,9 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             "recall_with_named_rules": {str(k): round(named_hits[k] / n, 4) for k in KS},
             "lexical_recall": {str(k): round(lex_hits[k] / n, 4) for k in KS},
             "hybrid_recall": {str(k): round(hyb_hits[k] / n, 4) for k in KS},
+            "hybrid_recall_by_qaida": {str(k): round(qaida_hits[k] / n, 4) for k in KS},
+            "by_qaida": "a hit when a top-k encoder reads a qāʿida the bank ties the case to (mahall.links: "
+                        "placement, encoder, types, co-annotation), the case's encoder's own for units outside it",
             "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
             "prior_recall": {str(k): round(sum(e in prior_order[:k] for _, e, _ in cases) / n, 4) for k in KS},
             "encoders_applying_per_answer": round(sum(applying) / len(applying), 2),

@@ -184,3 +184,6 @@ The figure reproduces within 0.04, but the reading step is only moderately repro
 **Next, to make the step text-defined:** give every field the phrase of its qāʿida's statement (or of the reading's docstring, which quotes it) that defines it. Many readings already do this, e.g. «`refusalForbidden`: the refusal is ḥarām on him («من حرم عليه الامتناع»)». A field with no such anchor is itself a finding: a fact the bank states that its source does not.
 
 **Follow-up (done).** The field anchors and the qāʿida scope are reported in [field anchors](field-anchors.md). Anchors raised field agreement to κ 0.69. Scope raised accuracy slightly (recall@1 0.75 / 0.73) but not agreement on the qāʿida. The disagreements are between cross-listed qawāʿid that the farʿ turns on together.
+
+**Accuracy by qāʿida.** Counted by the qāʿida the case is tied to rather than by its exact encoder, the frozen fold-1 hybrid routes correctly at the first rank 0.779 of the time (0.685 by encoder). At k = 5 it is 0.872 (0.860 by encoder). See [field anchors, accuracy](field-anchors.md#accuracy).
+

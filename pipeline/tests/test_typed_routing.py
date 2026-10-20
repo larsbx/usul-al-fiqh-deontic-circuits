@@ -135,3 +135,11 @@ def test_shortlist_typing_routes_held_out_qawaid_far_above_the_router():
     """PR-48: frozen before fold 1 was typed; whole qawāʿid held out from the lexical ranking."""
     r = json.loads((ROOT / tr.by_name("rajab_fold1").report).read_text(encoding="utf-8"))
     assert r["hybrid_recall"]["5"] >= 0.85 and r["lexical_recall"]["5"] < 0.6
+
+
+@pytest.mark.parametrize("ts", tr.SETS, ids=ids)
+def test_routing_to_a_tied_qaida_never_scores_below_routing_to_the_encoder(ts):
+    """By qāʿida, a top-k encoder counts when it reads any qāʿida the bank ties the case to; the
+    case's own encoder is always one of those, so the qāʿida recall bounds the encoder recall."""
+    rep = json.loads((ROOT / ts.report).read_text(encoding="utf-8"))
+    assert all(rep["hybrid_recall_by_qaida"][k] >= rep["hybrid_recall"][k] for k in rep["hybrid_recall"])

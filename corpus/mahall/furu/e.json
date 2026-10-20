@@ -239,7 +239,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f004",
-   "label": "itikaf.nadhr_itikaf",
+   "label": "itikaf.itikaf_mandhur",
    "term_ar": "نذر اعتكاف شهر متتابع",
    "also": [
     {
@@ -1304,7 +1304,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f003",
-   "label": "sulh.jidar",
+   "label": "sulh.jidar_mushtarak",
    "term_ar": "أعاره حائطا لوضع خشبه عليه",
    "also": [
     {
@@ -1320,7 +1320,7 @@
   },
   {
    "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f005",
-   "label": "sulh.jidar",
+   "label": "sulh.jidar_mushtarak",
    "term_ar": "الجدار المشترك إذا انهدم"
   },
   {
