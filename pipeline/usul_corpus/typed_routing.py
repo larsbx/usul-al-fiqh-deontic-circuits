@@ -231,10 +231,10 @@ def prolog_file(ts: Typed, data: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def coverage(root: Path, ts: Typed) -> dict[str, dict[str, tuple[int, int]]]:
+def coverage(root: Path, ts: Typed, *, prolog: Path | None = None) -> dict[str, dict[str, tuple[int, int]]]:
     """unit ↦ encoder ↦ (fields settled, fields read), best over the unit's situations (needs swipl)."""
     goal = "forall((coverage(E,S,K,N), K > 0, situation_of(S,A)), format('~w\\t~w\\t~w\\t~w~n',[A,E,K,N]))"
-    out = subprocess.run(["swipl", "-q", "-g", goal, "-t", "halt", str(root / TYPING), str(root / ts.prolog)],
+    out = subprocess.run(["swipl", "-q", "-g", goal, "-t", "halt", str(root / TYPING), str(prolog or root / ts.prolog)],
                          capture_output=True, text=True, check=True).stdout
     best: dict[str, dict[str, tuple[int, int]]] = defaultdict(dict)
     for a, e, k, n in (l.split("\t") for l in out.splitlines()):
@@ -256,11 +256,21 @@ def by_encoder(rows: list[dict]) -> dict[str, dict]:
     return dict(sorted(out.items()))
 
 
-def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) -> dict:
+def summarize_ranks(rows: list[dict]) -> dict:
+    """Descriptive retrieval by frozen labels; no relabelling or applicability claim."""
+    return {"cases": len(rows), **{metric: {str(k): round(sum(r[field] is not None and r[field] <= k
+                          for r in rows) / len(rows), 4) if rows else None for k in KS}
+            for metric, field in (("hybrid_recall", "hybrid_rank"),
+                                  ("hybrid_recall_by_qaida", "hybrid_qaida_rank"))}}
+
+
+def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]],
+           *, data: dict | None = None) -> dict:
     """Recall against each case's labelled encoder; beside it, recall where routing to a rule the case
     itself named as missing (``needs: rule:E``, E now an encoder) also counts. Labels are not rewritten."""
     from .takhrij import ENCODERS as encoders
-    data = json.loads((root / ts.situations).read_text(encoding="utf-8"))
+    overridden = data is not None
+    data = data if overridden else json.loads((root / ts.situations).read_text(encoding="utf-8"))
     cases = ts.cases(root)
     typed = {a["answer"] for a in data["answers"]}
     lexical = ts.ranker(root)
@@ -268,7 +278,10 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
     hits, named_hits, lex_hits, hyb_hits, qaida_hits, applied, rows = (defaultdict(int), defaultdict(int),
                                                                       defaultdict(int), defaultdict(int),
                                                                       defaultdict(int), 0, [])
-    for unit, encoder, needs in cases:
+    # The routing unit is an answer, but its separate cases must stay identifiable.
+    source_cases = (json.loads((root / routing.TRANCHE).read_text(encoding="utf-8"))["cases"]
+                    if ts.name == "islamqa_tranche1" else [])
+    for case_index, (unit, encoder, needs) in enumerate(cases):
         scores = shares(cov.get(unit, {}))
         words = lexical[unit]
         ranked = hybrid(scores, words)
@@ -287,14 +300,23 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
             lex_hits[k] += encoder in words[:k]
             hyb_hits[k] += encoder in ranked[:k]
             qaida_hits[k] += any(set(mahall.encoder_qawaid(e)) & gold for e in ranked[:k])
-        rows.append({"case": unit, "encoder": encoder, "settled": round(s, 4), "rank": rank,
+        metadata = ({"case_id": source_cases[case_index]["far"],
+                     "annotation_class": source_cases[case_index]["class"]} if source_cases else {})
+        qaida_rank = next((i for i, e in enumerate(ranked, 1)
+                           if set(mahall.encoder_qawaid(e)) & gold), None)
+        rows.append({"case": unit, **metadata, "encoder": encoder,
+                     "hybrid_rank": ranked.index(encoder) + 1 if encoder in ranked else None,
+                     "hybrid_qaida_rank": qaida_rank, "gold_qawaid": sorted(gold),
+                     "gold_qawaid_basis": "bank_links" if unit in tied else "encoder_fallback",
+                     "settled": round(s, 4), "rank": rank,
                      **({"named_rules": named, "best_rank_with_named": best} if named else {})})
     n = len(cases)
     applying = [sum(k == m for k, m in cov.get(a, {}).values()) for a in sorted(typed)]
     touched = [len(cov.get(a, {})) for a in sorted(typed)]
     prior_order = [e for e, _ in sorted(Counter(e for _, e, _ in routing.cases(root / "corpus")).items(), key=lambda x: (-x[1], x[0]))]
     return {"schema_version": 1, "status": "candidate", "set": ts.name,
-            "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
+            "method": ("override situations: unblinded candidate diagnostic; " if overridden else "blind typing into Usul.Typing situations; ")
+                      + "Prolog routing by coverage of each encoder's fields",
             "answers": len(typed), "situations": sum(len(a["situations"]) for a in data["answers"]),
             "fields_stated": sum(len(s["facts"]) for a in data["answers"] for s in a["situations"]),
             "cases": n, "encoders": len(encoders), "applies": round(applied / n, 4),
@@ -307,6 +329,10 @@ def report(root: Path, ts: TestSet, cov: dict[str, dict[str, tuple[int, int]]]) 
                         "placement, encoder, types, co-annotation), the case's encoder's own for units outside it",
             "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
             "prior_recall": {str(k): round(sum(e in prior_order[:k] for _, e, _ in cases) / n, 4) for k in KS},
+            "rank_semantics": "rank is pessimistic type-only rank; null means zero typed coverage, not absence from hybrid retrieval",
+            "target_semantics": "legacy recall includes gap annotations; an examined encoder is not necessarily a valid whole-case target",
+            "by_annotation_class": {cls: summarize_ranks([r for r in rows if r.get("annotation_class") == cls])
+                                    for cls in sorted({r["annotation_class"] for r in rows if "annotation_class" in r})},
             "encoders_applying_per_answer": round(sum(applying) / len(applying), 2),
             "encoders_touched_per_answer": round(sum(touched) / len(touched), 2),
             "by_encoder": by_encoder(rows), "cases_detail": rows}

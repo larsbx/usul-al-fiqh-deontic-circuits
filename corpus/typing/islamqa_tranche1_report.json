@@ -41,6 +41,88 @@
     "5": 0.2195,
     "10": 0.2195
   },
+  "rank_semantics": "rank is pessimistic type-only rank; null means zero typed coverage, not absence from hybrid retrieval",
+  "target_semantics": "legacy recall includes gap annotations; an examined encoder is not necessarily a valid whole-case target",
+  "by_annotation_class": {
+    "derivable": {
+      "cases": 63,
+      "hybrid_recall": {
+        "1": 0.6508,
+        "5": 0.8889,
+        "10": 0.9365
+      },
+      "hybrid_recall_by_qaida": {
+        "1": 0.7778,
+        "5": 0.9365,
+        "10": 0.9365
+      }
+    },
+    "encoding_error": {
+      "cases": 3,
+      "hybrid_recall": {
+        "1": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "hybrid_recall_by_qaida": {
+        "1": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      }
+    },
+    "genuine_ikhtilaf": {
+      "cases": 2,
+      "hybrid_recall": {
+        "1": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      },
+      "hybrid_recall_by_qaida": {
+        "1": 1.0,
+        "5": 1.0,
+        "10": 1.0
+      }
+    },
+    "missing_fact": {
+      "cases": 29,
+      "hybrid_recall": {
+        "1": 0.5172,
+        "5": 0.5862,
+        "10": 0.5862
+      },
+      "hybrid_recall_by_qaida": {
+        "1": 0.5862,
+        "5": 0.6552,
+        "10": 0.6552
+      }
+    },
+    "missing_rule": {
+      "cases": 25,
+      "hybrid_recall": {
+        "1": 0.12,
+        "5": 0.28,
+        "10": 0.32
+      },
+      "hybrid_recall_by_qaida": {
+        "1": 0.12,
+        "5": 0.32,
+        "10": 0.32
+      }
+    },
+    "segmentation_error": {
+      "cases": 1,
+      "hybrid_recall": {
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      },
+      "hybrid_recall_by_qaida": {
+        "1": 0.0,
+        "5": 0.0,
+        "10": 0.0
+      }
+    }
+  },
   "encoders_applying_per_answer": 0.51,
   "encoders_touched_per_answer": 2.23,
   "by_encoder": {
@@ -78,175 +160,463 @@
   "cases_detail": [
     {
       "case": "islamqa.23424",
+      "case_id": "islamqa.23424.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.23424",
+      "case_id": "islamqa.23424.f002",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.83025",
+      "case_id": "islamqa.83025.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.103846",
+      "case_id": "islamqa.103846.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.103846",
+      "case_id": "islamqa.103846.f002",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.103846",
+      "case_id": "islamqa.103846.f003",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.103846",
+      "case_id": "islamqa.103846.f004",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.108549",
+      "case_id": "islamqa.108549.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.110860",
+      "case_id": "islamqa.110860.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 7,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.110860",
+      "case_id": "islamqa.110860.f002",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 7,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.110860",
+      "case_id": "islamqa.110860.f003",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 7,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.110860",
+      "case_id": "islamqa.110860.f004",
+      "annotation_class": "missing_rule",
       "encoder": "asl_zahir",
+      "hybrid_rank": 7,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.114793",
+      "case_id": "islamqa.114793.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.114793",
+      "case_id": "islamqa.114793.f002",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.114793",
+      "case_id": "islamqa.114793.f003",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.114793",
+      "case_id": "islamqa.114793.f004",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.128887",
+      "case_id": "islamqa.128887.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.170478",
+      "case_id": "islamqa.170478.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "islamqa.170478",
+      "case_id": "islamqa.170478.f002",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "islamqa.170478",
+      "case_id": "islamqa.170478.f003",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "islamqa.176193",
+      "case_id": "islamqa.176193.f001",
+      "annotation_class": "missing_rule",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "islamqa.176193",
+      "case_id": "islamqa.176193.f002",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "islamqa.187157",
+      "case_id": "islamqa.187157.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.187157",
+      "case_id": "islamqa.187157.f002",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.198294",
+      "case_id": "islamqa.198294.f001",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.198294",
+      "case_id": "islamqa.198294.f002",
+      "annotation_class": "missing_fact",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.198294",
+      "case_id": "islamqa.198294.f003",
+      "annotation_class": "derivable",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.164604",
+      "case_id": "islamqa.164604.f002",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 171,
+      "hybrid_qaida_rank": 171,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.223512",
+      "case_id": "islamqa.223512.f001",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 209,
+      "hybrid_qaida_rank": 209,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -256,43 +626,106 @@
     },
     {
       "case": "islamqa.223512",
+      "case_id": "islamqa.223512.f002",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 209,
+      "hybrid_qaida_rank": 209,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.242731",
+      "case_id": "islamqa.242731.f001",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 208,
+      "hybrid_qaida_rank": 208,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.266167",
+      "case_id": "islamqa.266167.f001",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 131,
+      "hybrid_qaida_rank": 131,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.266167",
+      "case_id": "islamqa.266167.f002",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 131,
+      "hybrid_qaida_rank": 131,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.272160",
+      "case_id": "islamqa.272160.f001",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 212,
+      "hybrid_qaida_rank": 212,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.286486",
+      "case_id": "islamqa.286486.f001",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 216,
+      "hybrid_qaida_rank": 216,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.305083",
+      "case_id": "islamqa.305083.f001",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 179,
+      "hybrid_qaida_rank": 179,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -302,7 +735,16 @@
     },
     {
       "case": "islamqa.305083",
+      "case_id": "islamqa.305083.f002",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 179,
+      "hybrid_qaida_rank": 179,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -312,7 +754,16 @@
     },
     {
       "case": "islamqa.305083",
+      "case_id": "islamqa.305083.f003",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 179,
+      "hybrid_qaida_rank": 179,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -322,25 +773,61 @@
     },
     {
       "case": "islamqa.315435",
+      "case_id": "islamqa.315435.f001",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 62,
+      "hybrid_qaida_rank": 62,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.315435",
+      "case_id": "islamqa.315435.f002",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 62,
+      "hybrid_qaida_rank": 62,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.315435",
+      "case_id": "islamqa.315435.f003",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 62,
+      "hybrid_qaida_rank": 62,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.317604",
+      "case_id": "islamqa.317604.f001",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 205,
+      "hybrid_qaida_rank": 205,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -350,7 +837,16 @@
     },
     {
       "case": "islamqa.317604",
+      "case_id": "islamqa.317604.f002",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 205,
+      "hybrid_qaida_rank": 205,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -360,19 +856,46 @@
     },
     {
       "case": "islamqa.328808",
+      "case_id": "islamqa.328808.f001",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 201,
+      "hybrid_qaida_rank": 201,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.344230",
+      "case_id": "islamqa.344230.f001",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 3
     },
     {
       "case": "islamqa.344230",
+      "case_id": "islamqa.344230.f002",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 3,
       "named_rules": [
@@ -382,19 +905,46 @@
     },
     {
       "case": "islamqa.345284",
+      "case_id": "islamqa.345284.f001",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 138,
+      "hybrid_qaida_rank": 138,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.345284",
+      "case_id": "islamqa.345284.f002",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 138,
+      "hybrid_qaida_rank": 138,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.348122",
+      "case_id": "islamqa.348122.f001",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 207,
+      "hybrid_qaida_rank": 207,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -404,7 +954,16 @@
     },
     {
       "case": "islamqa.348122",
+      "case_id": "islamqa.348122.f002",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 207,
+      "hybrid_qaida_rank": 207,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null,
       "named_rules": [
@@ -414,439 +973,1096 @@
     },
     {
       "case": "islamqa.348122",
+      "case_id": "islamqa.348122.f003",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 207,
+      "hybrid_qaida_rank": 207,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.363963",
+      "case_id": "islamqa.363963.f001",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 219,
+      "hybrid_qaida_rank": 219,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.363963",
+      "case_id": "islamqa.363963.f002",
+      "annotation_class": "missing_fact",
       "encoder": "itlaf",
+      "hybrid_rank": 219,
+      "hybrid_qaida_rank": 219,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.363963",
+      "case_id": "islamqa.363963.f003",
+      "annotation_class": "missing_rule",
       "encoder": "itlaf",
+      "hybrid_rank": 219,
+      "hybrid_qaida_rank": 219,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.4046",
+      "case_id": "islamqa.4046.f001",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.4046",
+      "case_id": "islamqa.4046.f002",
+      "annotation_class": "encoding_error",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.4046",
+      "case_id": "islamqa.4046.f003",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.4046",
+      "case_id": "islamqa.4046.f004",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.4050",
+      "case_id": "islamqa.4050.f001",
+      "annotation_class": "encoding_error",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.4588",
+      "case_id": "islamqa.4588.f001",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.5049",
+      "case_id": "islamqa.5049.f001",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.5049",
+      "case_id": "islamqa.5049.f002",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.5049",
+      "case_id": "islamqa.5049.f003",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.5049",
+      "case_id": "islamqa.5049.f004",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.5049",
+      "case_id": "islamqa.5049.f005",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.5049",
+      "case_id": "islamqa.5049.f006",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.5049",
+      "case_id": "islamqa.5049.f007",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.10284",
+      "case_id": "islamqa.10284.f001",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.10284",
+      "case_id": "islamqa.10284.f002",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.126387",
+      "case_id": "islamqa.126387.f001",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 11,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.126502",
+      "case_id": "islamqa.126502.f001",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 181,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.128510",
+      "case_id": "islamqa.128510.f001",
+      "annotation_class": "missing_fact",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.128510",
+      "case_id": "islamqa.128510.f002",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.131070",
+      "case_id": "islamqa.131070.f001",
+      "annotation_class": "missing_rule",
       "encoder": "luqata",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 2
     },
     {
       "case": "islamqa.131070",
+      "case_id": "islamqa.131070.f002",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 2
     },
     {
       "case": "islamqa.131070",
+      "case_id": "islamqa.131070.f003",
+      "annotation_class": "missing_rule",
       "encoder": "luqata",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 2
     },
     {
       "case": "islamqa.146191",
+      "case_id": "islamqa.146191.f001",
+      "annotation_class": "missing_rule",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.146191",
+      "case_id": "islamqa.146191.f002",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.146191",
+      "case_id": "islamqa.146191.f003",
+      "annotation_class": "missing_rule",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "islamqa.191459",
+      "case_id": "islamqa.191459.f001",
+      "annotation_class": "encoding_error",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.191459",
+      "case_id": "islamqa.191459.f002",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.191459",
+      "case_id": "islamqa.191459.f003",
+      "annotation_class": "genuine_ikhtilaf",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.209303",
+      "case_id": "islamqa.209303.f001",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.209303",
+      "case_id": "islamqa.209303.f002",
+      "annotation_class": "derivable",
       "encoder": "luqata",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.4652",
+      "case_id": "islamqa.4652.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.13717",
+      "case_id": "islamqa.13717.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.13717",
+      "case_id": "islamqa.13717.f002",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.13717",
+      "case_id": "islamqa.13717.f003",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.13717",
+      "case_id": "islamqa.13717.f004",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.13717",
+      "case_id": "islamqa.13717.f005",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.22830",
+      "case_id": "islamqa.22830.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.22830",
+      "case_id": "islamqa.22830.f002",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.22830",
+      "case_id": "islamqa.22830.f003",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.83827",
+      "case_id": "islamqa.83827.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "islamqa.140833",
+      "case_id": "islamqa.140833.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 3
     },
     {
       "case": "islamqa.140833",
+      "case_id": "islamqa.140833.f002",
+      "annotation_class": "missing_rule",
       "encoder": "trust_loss",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 3
     },
     {
       "case": "islamqa.152192",
+      "case_id": "islamqa.152192.f001",
+      "annotation_class": "missing_fact",
       "encoder": "trust_loss",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.3333,
       "rank": 3
     },
     {
       "case": "islamqa.164604",
+      "case_id": "islamqa.164604.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "islamqa.165409",
+      "case_id": "islamqa.165409.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 42,
+      "hybrid_qaida_rank": 42,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.165409",
+      "case_id": "islamqa.165409.f002",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 42,
+      "hybrid_qaida_rank": 42,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.252463",
+      "case_id": "islamqa.252463.f001",
+      "annotation_class": "missing_rule",
       "encoder": "trust_loss",
+      "hybrid_rank": 30,
+      "hybrid_qaida_rank": 30,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.252463",
+      "case_id": "islamqa.252463.f002",
+      "annotation_class": "segmentation_error",
       "encoder": "trust_loss",
+      "hybrid_rank": 30,
+      "hybrid_qaida_rank": 30,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.253293",
+      "case_id": "islamqa.253293.f001",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 4,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.3333,
       "rank": 4
     },
     {
       "case": "islamqa.253293",
+      "case_id": "islamqa.253293.f002",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 4,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.3333,
       "rank": 4
     },
     {
       "case": "islamqa.253293",
+      "case_id": "islamqa.253293.f003",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 4,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.3333,
       "rank": 4
     },
     {
       "case": "islamqa.253293",
+      "case_id": "islamqa.253293.f004",
+      "annotation_class": "derivable",
       "encoder": "trust_loss",
+      "hybrid_rank": 4,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.3333,
       "rank": 4
     },
     {
       "case": "islamqa.104241",
+      "case_id": "islamqa.104241.f001",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.104241",
+      "case_id": "islamqa.104241.f002",
+      "annotation_class": "genuine_ikhtilaf",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.104241",
+      "case_id": "islamqa.104241.f003",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.107436",
+      "case_id": "islamqa.107436.f001",
+      "annotation_class": "missing_rule",
       "encoder": "unknown_owner",
+      "hybrid_rank": 13,
+      "hybrid_qaida_rank": 13,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.179911",
+      "case_id": "islamqa.179911.f001",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.179911",
+      "case_id": "islamqa.179911.f002",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.179911",
+      "case_id": "islamqa.179911.f003",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.196584",
+      "case_id": "islamqa.196584.f001",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.196584",
+      "case_id": "islamqa.196584.f002",
+      "annotation_class": "missing_fact",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.196584",
+      "case_id": "islamqa.196584.f003",
+      "annotation_class": "missing_fact",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.260724",
+      "case_id": "islamqa.260724.f001",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 14,
+      "hybrid_qaida_rank": 14,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.260724",
+      "case_id": "islamqa.260724.f002",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 14,
+      "hybrid_qaida_rank": 14,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "islamqa.287215",
+      "case_id": "islamqa.287215.f001",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.287215",
+      "case_id": "islamqa.287215.f002",
+      "annotation_class": "missing_fact",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.287215",
+      "case_id": "islamqa.287215.f003",
+      "annotation_class": "missing_fact",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "islamqa.304828",
+      "case_id": "islamqa.304828.f001",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "islamqa.304828",
+      "case_id": "islamqa.304828.f002",
+      "annotation_class": "derivable",
       "encoder": "unknown_owner",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 1.0,
       "rank": 1
     }

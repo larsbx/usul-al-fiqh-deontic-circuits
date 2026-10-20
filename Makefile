@@ -9,7 +9,7 @@ all: source-verify test validate generated lean tla
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
-INTEGRATION_TESTS = tests/test_fatawa_prolog.py tests/test_typed_routing.py tests/test_multiple_annotations.py tests/test_routing.py
+INTEGRATION_TESTS = tests/test_fatawa_prolog.py tests/test_typed_routing.py tests/test_itlaf_audit.py tests/test_multiple_annotations.py tests/test_routing.py
 .PHONY: integration integration-external
 integration: ; cd pipeline && $(PY) -m pytest -q --integration-gate -m 'not external_source' $(INTEGRATION_TESTS) tests/test_integration_gate.py --junitxml=../.cache/integration-committed.xml
 integration-external: ; cd pipeline && $(PY) -m pytest -q --integration-gate -m external_source $(INTEGRATION_TESTS) --junitxml=../.cache/integration-external.xml
