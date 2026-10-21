@@ -25,8 +25,9 @@
 | `corpus/tanaqud/` | `**` |
 | `corpus/types/` | `**` |
 | `corpus/typing/` | `**` |
-| `pipeline/usul_corpus/` | `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
+| `pipeline/usul_corpus/` | `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `records.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
 | `pipeline/usul_corpus/encoders/` | `**` |
+| `pipeline/tests/` | `test_abwab.py` |
 <!-- END GENERATED TRACK PATHS -->
 
 ## 0. Scope and thesis
@@ -201,6 +202,7 @@ routing experiments must not be attributed to this question-body annotation batc
 | M10 sheaf madhhab | **exit met for one-point covers** | `Usul.Cat.Sheaf`: verdict presheaf on contexts, gluing ⇔ matching with unique glue, failure ⇔ ikhtilāf `Obstruction`; finite `obstructions` records, empty ⇔ glues; vector on Ibn Rajab Q2 f2; `positions_glue_iff` (a case's positions glue iff they agree) and `usul_corpus sheaf`: every `genuine_ikhtilaf` case emits obstruction records in `corpus/sheaf/obstructions.json` (totals in its generated summary), each guarded in `UsulTest/Obstructions.lean`. `Usul.Cat.Scales`: σ as `hukmCat ≅ hukmCatᵒᵖ`, the ḥadīth seam as a functor, ḥujja an up-set |
 | M11 oracle | started | `semantic-categorical-oracle` `Oracle.Usul.*` advisory laws; three-way agreement on `grounded-v1.json` |
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
+| M14 maqāṣid | **readings proved, two encoders, two cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 derivable; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -516,6 +518,24 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 - Explanations are generated from derivation terms `d` (§2.1), never from free text.
 - **Exit:** an end-to-end path from source locator → candidate → reviewed → accepted → derivation → explanation, with the trace preserved.
 
+
+#### M14 · Maqāṣid al-sharīʿa ⟵ M3, M5
+- **Sources** (registered and pinned): al-Shāṭibī, [*al-Muwāfaqāt*](https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0790IbnMusaGharnatiShatibi/0790IbnMusaGharnatiShatibi.Muwafaqat/0790IbnMusaGharnatiShatibi.Muwafaqat.Shamela0011435-ara1), Kitāb al-Maqāṣid v02 p017–033 (newly registered, Shamela 11435); al-Ghazālī, [*al-Mustaṣfā*](https://raw.githubusercontent.com/OpenITI/0525AH/6290621b58e063ed1aa47ffd0a6fc1630191e7cb/data/0505Ghazali/0505Ghazali.Mustasfa/0505Ghazali.Mustasfa.Shamela0005459-ara1) v01 p173–177; Ibn Qudāma, [*Rawḍat al-Nāẓir*](https://raw.githubusercontent.com/OpenITI/0625AH/f1e38210b32fd0d043949ff6471e869d658c3b16/data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.Shamela0012010-ara1) v01 p478–483; Ibn al-Najjār, [*Sharḥ al-Kawkab al-Munīr*](https://raw.githubusercontent.com/OpenITI/0975AH/c47ff1c47a9108eab999d7fa68ef30be16bc0f85/data/0972IbnAhmadIbnNajjarHanbali/0972IbnAhmadIbnNajjarHanbali.SharhKawkabMunir/0972IbnAhmadIbnNajjarHanbali.SharhKawkabMunir.Shamela0012019-ara1) v04 p158–169, p726–728. Cases from [*Fatāwā al-Lajna al-Dāʾima*](https://raw.githubusercontent.com/OpenITI/1450AH/c35eac871bfcb6ff9677d8867ed544b973b7a5be/data/1450LajnaDaima/1450LajnaDaima.Fatawa/1450LajnaDaima.Fatawa.Shamela0008381-ara1) (qa09648 v24 p389–395, qa06346 v17 p087–089).
+- **Paths** (this track): `formal/lean/Usul/Readings/Maqasid.lean`; `formal/lean/Usul/Typing/Qaida.lean` (`Istislah`, `MaqasidTarjih`) and `Usul/Typing/Encoders.lean`; `pipeline/usul_corpus/encoders/maqasid.py`; `corpus/takhrij/maqasid_furu.json`; `corpus/dossier/entries/maqasid.json` and the glossary terms `maqasid`, `daruriyyat`, `hajiyyat`, `tahsiniyyat`, `takmila`; `corpus/types/anchors/maqasid.json`; `corpus/types/encoders.json` (sorts). Companion: [`plain-english/Usul/Readings/Maqasid.md`](plain-english/Usul/Readings/Maqasid.md).
+- **State (2026-10-21).**
+  - Readings, all proved: the ranks and the five (`muwafaqat_same_five`, `rawda_is_mustasfa`, `kawkab_adds_ird`); preservation from two sides (`both_sides`, `wujud_partition`); the deterrents one to one (`deterrents_cover_the_five`); istiṣlāḥ (`hujja`, `dispute_locus`, `stances_nested`, `refines_recognition` into `Usul.Qiyas.Recognition`, al-Ghazālī's furūʿ as theorems); complements (`takmila_never_cancels_asl`, `takmila_dropped`); dependence of the ranks one way only (`daruri_disrupts_all`, `others_need_not_disrupt_daruri`); tarjīḥ order (`taqdim`: `tier_decides`, `taqdim_swap`, `taqdim_trans`, `din_reading_locus`).
+  - Encoders `istislah` (108 inputs) and `maqasid_tarjih` (162 inputs), typed; mirror ≡ Lean on all 270. Two cases, both derivable under `maqasid_tarjih`; `istislah` has none yet.
+  - Not in M5's `Usul.Tarjih.Murajjih`: the maqāṣid order is a separate reading, not yet a murajjiḥ between ʿilal.
+- **Open questions** (policy points pinned as facts, never chosen; method §4, invariant 8):
+  1. Is the unattested ḍarūrī maṣlaḥa a proof? The Rawḍa: no («والصحيح: أن ذلك ليس بحجة»); al-Ghazālī: only if ḍarūriyya, qaṭʿiyya and kulliyya; Mālik, as the Rawḍa reports him: yes (`Stance`).
+  2. Does dīn precede the other ḍarūriyyāt? al-Kawkab: yes; the dissent he reports («وقيل»): the other four first (`DinReading`).
+  3. The order among the non-dīn ḍarūriyyāt is read from al-Kawkab's «ف» (`Kulli.rank`), not stated as a tarjīḥ rule; al-ʿirḍ is placed level with wealth.
+  4. Annotation choices to review: qa06346's khalwa prohibition classed as a complement of the ḍarūrī, and the traveller's arrangement as a ḥājī; qa09648's relief of carers as a ḥājī.
+  5. Judgement sorts chosen: `istislah` epistemic, `maqasid_tarjih` procedure.
+  6. Whether the maqāṣid order should enter `Usul.Tarjih.Murajjih` as an advantage between ʿilal (al-Kawkab states it among the murajjiḥāt of qiyās, v04 p726–727).
+- **Next:** cases for `istislah` (al-Ghazālī's own furūʿ need segmented records first); al-Ṭūfī's maṣlaḥa discussion (*Sharḥ Mukhtaṣar al-Rawḍa*, already pinned) as a fourth stance; the Muwāfaqāt's later masāʾil (tabaʿiyya of the maqāṣid, intent of the mukallaf).
+- **Exit:** every open question above answered at the review gate, and each encoder with source-grounded cases.
+
 ---
 
 ## 4. Dependency DAG
@@ -540,6 +560,8 @@ graph TD
   M9 --> M11
   M2 --> M12[M12 ʿAqīda, optional]
   M2 --> M13[M13 Harness integration]
+  M3 --> M14[M14 Maqāṣid]
+  M5 --> M14
 ```
 
 **Critical path:** M0 → M1 → M2 → M3 → M5 → M7 → M9 → M11.
