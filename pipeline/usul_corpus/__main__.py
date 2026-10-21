@@ -20,6 +20,7 @@
     python -m usul_corpus fatawa-takhrij  # check the IslamQA takhrīj tranches; regenerate their Lean guards and report
     python -m usul_corpus fatawa-prolog   # write the tranches as Prolog cases; run the oracle and report (needs swipl)
     python -m usul_corpus judgement       # check each encoder's declared question; Lean type guards; typing report
+    python -m usul_corpus roadmap [--base REF]  # the tracks' roadmaps: structure, and updated with what changed since REF
 """
 
 from __future__ import annotations
@@ -788,6 +789,27 @@ def cmd_fatawa_prolog(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_roadmap(args: argparse.Namespace) -> int:
+    """The parallel tracks' roadmaps (docs/roadmap-tracks.json): consistent, and, against ``--base``,
+    updated with the paths their tracks own that changed since it."""
+    import subprocess
+
+    from . import roadmap
+    errs = roadmap.check(ROOT)
+    if args.base:
+        try:
+            changed, messages = roadmap.changes(ROOT, args.base)
+        except subprocess.CalledProcessError:
+            if not args.if_available:
+                print(f"roadmap: cannot compare with {args.base}", file=sys.stderr)
+                return 1
+        else:
+            errs += [f"{e}; update the roadmap, or say why not with a `Roadmap-Unchanged: <reason>` commit trailer"
+                     for e in roadmap.stale(roadmap.load(ROOT), changed, roadmap.waived(messages))]
+    print("\n".join(errs) or "roadmap: consistent", file=sys.stderr if errs else sys.stdout)
+    return 1 if errs else 0
+
+
 def cmd_mahall(args: argparse.Namespace) -> int:
     """PR-51: check the maḥall annotation; regenerate (or ``--check``) its label graph and Lean guards."""
     from . import mahall
@@ -929,6 +951,10 @@ def parser() -> argparse.ArgumentParser:
     jd = sub.add_parser("judgement", help="the types layer: each encoder's sort and question, guarded in Lean")
     jd.add_argument("--check", action="store_true", help="validate the types and their Lean guards without writing")
     jd.set_defaults(run=cmd_judgement)
+    rm = sub.add_parser("roadmap", help="the tracks' roadmaps: consistent, and updated with what changed since --base")
+    rm.add_argument("--base", help="a ref (origin/main): require each track whose paths changed since it to update its roadmap")
+    rm.add_argument("--if-available", action="store_true", help="skip the change check when --base cannot be resolved")
+    rm.set_defaults(run=cmd_roadmap)
     mh = sub.add_parser("mahall", help="the maḥall label graph: check, regenerate or --check its Lean guards")
     mh.add_argument("--check", action="store_true")
     mh.add_argument("--grade", action="store_true", help="grade every ḥadīth and athar anchor from al-Albānī's works first (needs them cached)")

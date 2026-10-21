@@ -19,3 +19,14 @@ Every claim the corpus records about a text cites its source, down to the locus:
 - a cited witness is registered in `corpus/registry.json` and pinned in `corpus/lock.json`, so the citation can be re-read.
 
 Checks enforce it where they can (`mahall.check`, `test_mahall_grades.py`); new layers add the same. Docs and PR descriptions link the sources they report on.
+
+## Roadmaps move with their tracks
+
+The work runs in parallel tracks, each with a roadmap; [`docs/roadmap-tracks.json`](docs/roadmap-tracks.json) names them and the paths each owns, and [`docs/roadmap.md`](docs/roadmap.md#tracks) links them all.
+
+- Each path belongs to one track. A change to it updates that track's roadmap in the same PR: its milestone entry and its status row.
+- A change that leaves the roadmap true as it stands (a refactor, a typo) says so in a commit trailer: `Roadmap-Unchanged: <reason>`.
+- A new milestone is a `#### <Id> · <Name> ⟵ <deps>` heading; a dependency on another track names it («uṣūl M5»). Where a roadmap draws a Mermaid DAG, draw the new edges too.
+- A new track, or a new directory a track owns, goes in `docs/roadmap-tracks.json`, under one track only.
+
+`python -m usul_corpus roadmap --base origin/main` (from `pipeline/`) checks both the structure and the change. CI runs it on every PR (`.github/workflows/roadmap.yml`); the Stop hook in `.claude/settings.json` runs it before a session ends; `git config core.hooksPath .githooks` adds it as a pre-push hook.

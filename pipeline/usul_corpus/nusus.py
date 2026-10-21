@@ -199,12 +199,12 @@ _SANAD = re.compile(r"(?:بسند|بإسناد|وسنده|سنده|وإسناد�
 
 
 @lru_cache(maxsize=2)
-def mukhtasar_notes(text: str) -> dict[int, tuple[int, str]]:
-    """Entry number → (offset of its head, al-Albānī's note on it) in his Mukhtaṣar Ṣaḥīḥ al-Bukhārī.
+def mukhtasar_notes(text: str) -> dict[int, list[tuple[int, str]]]:
+    """Entry number → [(offset of its head, al-Albānī's note on it)] in his Mukhtaṣar Ṣaḥīḥ al-Bukhārī.
 
-    He numbers the musnad ḥadīth and the muʿallaq and athar apart, so a number recurs; his takhrīj of
-    a muʿallaq or athar is a footnote of its page keyed by its number (or a range of them). An entry
-    is the one on the page of a note keyed to it; a number two such entries share is left out."""
+    His takhrīj of a muʿallaq or athar is a footnote of its page keyed by its number (or a range of
+    them), so an annotated entry is one on the page of a note keyed to it. He numbers the musnad
+    ḥadīth, the muʿallaq and the athar each apart, so a number may name several annotated entries."""
     seen: dict[int, list[tuple[int, str]]] = {}
     bounds = [0, *(m.end() for m in _PAGE_END.finditer(text))]
     for start, end in zip(bounds, bounds[1:]):
@@ -213,22 +213,29 @@ def mukhtasar_notes(text: str) -> dict[int, tuple[int, str]]:
         for h in _ENTRY.finditer(page):
             if (n := _arabic_int(h[1])) in notes:
                 seen.setdefault(n, []).append((start + h.start(), notes[n]))
-    return {n: v[0] for n, v in seen.items() if len(v) == 1}
+    return seen
 
 
-def mukhtasar_entry(text: str, n: int) -> tuple[str | None, str]:
-    """al-Albānī's verdict on entry n of his Mukhtaṣar, and the entry's text: its lines up to the next
-    numbered entry, over a page break, without the notes. The verdict is his note's on the chain
+def _mukhtasar_body(text: str, at: int) -> str:
+    """An entry's lines up to the next numbered entry or heading, over a page break, without the notes."""
+    first, *rest = text[at:].split("\n")
+    return "\n".join([first, *takewhile(lambda l: not re.match(r"# [٠-٩]|###", l),
+                                        (l for l in rest if not (l.startswith("# [هامش]") or _PAGE_END.match(l) or l == "")))])
+
+
+def mukhtasar_entry(text: str, n: int, excerpt: str | None = None) -> tuple[str | None, str]:
+    """al-Albānī's verdict on entry n of his Mukhtaṣar, and the entry's text. Of the annotated entries
+    numbered n, the entry is the one whose text holds ``excerpt`` (with none given, the only one): the
+    number and the anchor's wording together name it. The verdict is his note's on the chain
     («بسند صحيح عنه», «وسنده حسن»); a note that connects it without some of its words («دون قوله»),
     only names who connects it («وصله البيهقي»), or says none did («لم يخرجه الحافظ») gives none."""
-    if n not in (notes := mukhtasar_notes(text)):
+    named = [(note, body) for at, note in mukhtasar_notes(text).get(n, []) for body in [_mukhtasar_body(text, at)]
+             if excerpt is None or key(excerpt) in key(body)]
+    if len(named) != 1:
         return None, ""
-    at, note = notes[n]
-    first, *rest = text[at:].split("\n")
-    body = [first, *takewhile(lambda l: not re.match(r"# [٠-٩]|###", l),
-                              (l for l in rest if not (l.startswith("# [هامش]") or _PAGE_END.match(l) or l == "")))]
+    (note, body), = named
     said = _SANAD.search(_DIACRITICS.sub("", note))
-    return (VERDICT[said[1]] if said and "دون قوله" not in note else None), "\n".join(body)
+    return (VERDICT[said[1]] if said and "دون قوله" not in note else None), body
 
 
 def locus(text: str, excerpt: str) -> int | None:
@@ -243,8 +250,9 @@ def locus(text: str, excerpt: str) -> int | None:
     return None
 
 
-def albani_verdict(work: str, text: str, n: int) -> tuple[str | None, str]:
-    """al-Albānī's verdict on entry n of one of his pinned works, and the entry's text."""
+def albani_verdict(work: str, text: str, n: int, excerpt: str | None = None) -> tuple[str | None, str]:
+    """al-Albānī's verdict on entry n of one of his pinned works, and the entry's text. Where his numbers
+    recur (the Mukhtaṣar's series), ``excerpt`` picks the entry holding it."""
     if work == "albani.irwa":
         return irwa_entry(text, n)
     if work in ("albani.sahih_abi_dawud", "albani.daif_abi_dawud"):
@@ -252,7 +260,7 @@ def albani_verdict(work: str, text: str, n: int) -> tuple[str | None, str]:
     if work in SERIES:
         return series_entry(text, n)
     if work == MUKHTASAR:
-        return mukhtasar_entry(text, n)
+        return mukhtasar_entry(text, n, excerpt)
     raise ValueError(work)
 
 

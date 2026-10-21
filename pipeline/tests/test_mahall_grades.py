@@ -22,7 +22,7 @@ CITED = [(n, c) for n in HADITH for c in ([n["albani"]] if "albani" in n else []
 
 @pytest.mark.parametrize("n,c", CITED, ids=lambda x: f"{x['work']}:{x['number']}" if "work" in x else x["label"])
 def test_each_cited_verdict_is_al_albanis_on_an_entry_that_holds_the_excerpt(n, c):
-    verdict, entry = nusus.albani_verdict(c["work"], cached(c["witness"]).read_text(encoding="utf-8"), c["number"])
+    verdict, entry = nusus.albani_verdict(c["work"], cached(c["witness"]).read_text(encoding="utf-8"), c["number"], n["excerpt_ar"])
     assert c["witness"] == grading.WORKS[c["work"]] and verdict == c["verdict"]
     assert nusus.key(n["excerpt_ar"]) in nusus.key(grading.head(c["work"], entry)), "not the ḥadīth the entry grades"
 
@@ -95,6 +95,21 @@ def test_the_mukhtasar_grades_an_athar_by_his_note_on_its_page():
     assert grading.heads("albani.mukhtasar_bukhari", MUKHTASAR) == [(1193, MUKHTASAR.find("# ١١٩٣")),
                                                                   (1196, MUKHTASAR.find("# ١١٩٦")),
                                                                   (1154, MUKHTASAR.find("# ١١٥٤"))]
+
+
+TWO_SERIES = MUKHTASAR + "\n".join([
+    "# ١١٩٣ - وقالَ أبو جميلة: وَجَدْتُ مَنْبوذاً فلما رآني عُمَرُ",
+    "# [هامش] ١١٩٣ - وصله البيهقي.", "PageV01P409", ""])
+
+
+def test_a_number_both_annotated_series_use_is_told_apart_by_the_excerpt():
+    """He annotates the muʿallaq and the athar each in its own series: a number names two entries, and
+    the anchor's excerpt picks the one it is in; without it the number names none."""
+    v = nusus.albani_verdict
+    assert v("albani.mukhtasar_bukhari", TWO_SERIES, 1193) == (None, "")
+    assert v("albani.mukhtasar_bukhari", TWO_SERIES, 1193, "تربص امرأته سنة")[0] == "sahih"
+    assert v("albani.mukhtasar_bukhari", TWO_SERIES, 1193, "وجدت منبوذا فلما رآني عمر") == \
+        (None, "# ١١٩٣ - وقالَ أبو جميلة: وَجَدْتُ مَنْبوذاً فلما رآني عُمَرُ")
 
 
 def test_an_entry_runs_on_over_the_page_without_its_notes():

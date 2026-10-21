@@ -8,7 +8,9 @@ The works, each with per-entry verdicts:
 - his Ṣaḥīḥ wa-Ḍaʿīf of the Sunan of al-Tirmidhī, Abū Dāwūd, al-Nasāʾī and Ibn Māja: his verdict on
   every ḥadīth, in the Sunan's own numbering (``SERIES``);
 - al-Irwāʾ al-Ghalīl, his takhrīj of the Ḥanbalī *Manār al-Sabīl*;
-- Ṣaḥīḥ Abī Dāwūd and Ḍaʿīf Abī Dāwūd (al-Umm, his numbering).
+- Ṣaḥīḥ Abī Dāwūd and Ḍaʿīf Abī Dāwūd (al-Umm, his numbering);
+- his Mukhtaṣar Ṣaḥīḥ al-Bukhārī, for the athar al-Bukhārī quotes (``ATHAR``): his note on each, a
+  footnote of its page, gives his verdict on its chain (``nusus.mukhtasar_entry``).
 
 An entry grades an anchor when the ḥadīth it is about (its head, before his verdict line) holds the
 anchor's excerpt. It is found by wording (letters only, at least ``MIN`` letters), or by the anchor's
@@ -72,7 +74,7 @@ def heads(work: str, body: str) -> list[tuple[int, int]]:
     if work in nusus.SERIES:
         return [(int(m.group(1)), m.start()) for m in nusus.SERIES_HEAD.finditer(body)]
     if work == nusus.MUKHTASAR:
-        return sorted(((n, at) for n, (at, _) in nusus.mukhtasar_notes(body).items()), key=lambda h: h[1])
+        return sorted(((n, at) for n, es in nusus.mukhtasar_notes(body).items() for at, _ in es), key=lambda h: h[1])
     return nusus.dawud_heads(body)
 
 
@@ -106,7 +108,7 @@ def entries(work: str, body: str, excerpt: str) -> list[tuple[int, str | None]]:
     k = nusus.key(excerpt)
     out = []
     for n in sorted(near):
-        verdict, entry = nusus.albani_verdict(work, body, n)
+        verdict, entry = nusus.albani_verdict(work, body, n, excerpt)
         if k in nusus.key(head(work, entry)):
             out.append((n, verdict))
     return out
@@ -117,7 +119,7 @@ RANK = {"mawdu": 0, "daifJiddan": 1, "daif": 2, "hasan": 3, "sahih": 4}   # Hadi
 
 def holds(work: str, body: str, n: int, excerpt: str) -> str | None:
     """al-Albānī's verdict on entry n, if the ḥadīth it grades holds the excerpt."""
-    verdict, entry = nusus.albani_verdict(work, body, n)
+    verdict, entry = nusus.albani_verdict(work, body, n, excerpt)
     return verdict if nusus.key(excerpt) in nusus.key(head(work, entry)) else None
 
 
@@ -159,8 +161,11 @@ def grade(nass: dict, cache_dir: Path) -> dict:
     if sahihayn:            # his verdict on another collection's route is not on theirs
         weaker = [cite(*f) for f in found]
         return {"sahihayn": {"witness": witness, "number": nass["number"]}, **({"weaker_routes": weaker} if weaker else {})}
-    if longer and (silent := [n for w in first if w in ATHAR.values() for n, _ in entries(w, text(cache_dir, WORKS[w]), excerpt)]):
+    athar = [text(cache_dir, WORKS[w]) for w in first if w in ATHAR.values()]
+    if longer and (silent := [n for body in athar for n, _ in entries(nusus.MUKHTASAR, body, excerpt)]):
         return {"ungraded": f"al-Albānī's note on it in his Mukhtaṣar al-Bukhārī ({', '.join(map(str, silent))}) gives no verdict"}
+    if longer and any(nusus.find(body, excerpt) is not None for body in athar):
+        return {"ungraded": "al-Albānī's Mukhtaṣar al-Bukhārī carries it without a note on its chain"}
     if longer:
         return {"ungraded": "no entry of al-Albānī's pinned works holds the excerpt"}
     if not SERIES.get(witness):

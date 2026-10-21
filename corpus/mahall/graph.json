@@ -30984,7 +30984,7 @@
    "excerpt_ar": "فيقولان له أشركنا فإن النبي صلى الله عليه وسلم قد دعا لك بالبركة فيشركهم",
    "kind": "athar",
    "number": 2501,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
+   "ungraded": "al-Albānī's Mukhtaṣar al-Bukhārī carries it without a note on its chain",
    "hujja": false
   },
   "n0110": {
@@ -31394,7 +31394,7 @@
    "excerpt_ar": "فإذا انقطع خبره فسنته سنة المفقود",
    "kind": "athar",
    "number": 5290,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
+   "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1196) gives no verdict",
    "hujja": false
   },
   "n0148": {
@@ -32477,8 +32477,13 @@
    "excerpt_ar": "إذا فقد في الصف عند القتال تربص امرأته سنة",
    "kind": "athar",
    "number": 5290,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
-   "hujja": false
+   "albani": {
+    "work": "albani.mukhtasar_bukhari",
+    "witness": "shamela-121381",
+    "number": 1193,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0257": {
    "ref": "src:tanzil-quran-simple#Q065:004",
@@ -32638,9 +32643,9 @@
    "kind": "athar",
    "number": 2334,
    "albani": {
-    "work": "albani.irwa",
-    "witness": "shamela-22592",
-    "number": 1550,
+    "work": "albani.mukhtasar_bukhari",
+    "witness": "shamela-121381",
+    "number": 515,
     "verdict": "sahih"
    },
    "weaker_routes": [
@@ -33797,7 +33802,7 @@
    "excerpt_ar": "وجدت منبوذا فلما رآني عمر",
    "kind": "athar",
    "number": 2661,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
+   "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (591) gives no verdict",
    "hujja": false
   },
   "n0382": {
@@ -33914,7 +33919,7 @@
    "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني",
    "kind": "athar",
    "number": 5355,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
+   "ungraded": "al-Albānī's Mukhtaṣar al-Bukhārī carries it without a note on its chain",
    "hujja": false
   },
   "n0392": {
@@ -35596,16 +35601,26 @@
    "excerpt_ar": "لو علمت أنكما تعمدتما لقطعتكما",
    "kind": "athar",
    "number": 6895,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
-   "hujja": false
+   "albani": {
+    "work": "albani.mukhtasar_bukhari",
+    "witness": "shamela-121381",
+    "number": 1358,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0551": {
    "ref": "src:openiti-bukhari-shamela1681",
    "excerpt_ar": "فأبطل شهادتهما وأخذا بدية الأول",
    "kind": "athar",
    "number": 6895,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
-   "hujja": false
+   "albani": {
+    "work": "albani.mukhtasar_bukhari",
+    "witness": "shamela-121381",
+    "number": 1358,
+    "verdict": "sahih"
+   },
+   "hujja": true
   },
   "n0552": {
    "ref": "src:tanzil-quran-simple#Q022:030",
@@ -36647,7 +36662,7 @@
    "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء",
    "kind": "athar",
    "number": 5268,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
+   "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1156) gives no verdict",
    "hujja": false
   },
   "n0653": {
@@ -36655,7 +36670,7 @@
    "excerpt_ar": "طلق رجل امرأته البتة إن خرجت فقال ابن عمر إن خرجت فقد بتت منه",
    "kind": "athar",
    "number": 5268,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
+   "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1156) gives no verdict",
    "hujja": false
   },
   "n0654": {
@@ -36663,7 +36678,7 @@
    "excerpt_ar": "إن خرجت فقد بتت منه",
    "kind": "athar",
    "number": 5268,
-   "ungraded": "no entry of al-Albānī's pinned works holds the excerpt",
+   "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1156) gives no verdict",
    "hujja": false
   },
   "n0655": {
@@ -50824,6 +50839,7 @@
    "n0162",
    "n0227",
    "n0250",
+   "n0256",
    "n0293",
    "n0294",
    "n0295",
@@ -50854,6 +50870,7 @@
    "n0162",
    "n0227",
    "n0250",
+   "n0256",
    "n0293",
    "n0294",
    "n0295",
@@ -50910,6 +50927,8 @@
    "n0491",
    "n0493",
    "n0494",
+   "n0550",
+   "n0551",
    "n0552",
    "n0553"
   ],
@@ -51575,6 +51594,8 @@
    "n0460",
    "n0477",
    "n0549",
+   "n0550",
+   "n0551",
    "n0552",
    "n0553",
    "n0558",
@@ -52343,6 +52364,8 @@
    "n0459",
    "n0460",
    "n0477",
+   "n0550",
+   "n0551",
    "n0552",
    "n0553",
    "n0674",
@@ -52948,6 +52971,7 @@
   ],
   "r154": [
    "n0250",
+   "n0256",
    "n0293",
    "n0294",
    "n0295",
@@ -52969,6 +52993,8 @@
    "n0490",
    "n0491",
    "n0494",
+   "n0550",
+   "n0551",
    "n0552",
    "n0553"
   ],
@@ -53118,6 +53144,7 @@
    "n0239",
    "n0249",
    "n0250",
+   "n0256",
    "n0282",
    "n0283",
    "n0284",
@@ -53313,6 +53340,7 @@
    "n0241",
    "n0249",
    "n0250",
+   "n0256",
    "n0257",
    "n0282",
    "n0283",
@@ -53831,6 +53859,7 @@
    "n0241",
    "n0249",
    "n0250",
+   "n0256",
    "n0282",
    "n0283",
    "n0284",

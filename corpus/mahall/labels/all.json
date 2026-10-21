@@ -2125,7 +2125,7 @@
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فيقولان له أشركنا فإن النبي صلى الله عليه وسلم قد دعا لك بالبركة فيشركهم",
      "number": 2501,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "ungraded": "al-Albānī's Mukhtaṣar al-Bukhārī carries it without a note on its chain"
     }
    ],
    "shards": [
@@ -2986,7 +2986,7 @@
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فإذا انقطع خبره فسنته سنة المفقود",
      "number": 5290,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1196) gives no verdict"
     },
     {
      "kind": "ijma",
@@ -5299,7 +5299,12 @@
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "إذا فقد في الصف عند القتال تربص امرأته سنة",
      "number": 5290,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "albani": {
+      "work": "albani.mukhtasar_bukhari",
+      "witness": "shamela-121381",
+      "number": 1193,
+      "verdict": "sahih"
+     }
     }
    ],
    "shards": [
@@ -5714,9 +5719,9 @@
      "excerpt_ar": "من أحيا أرضا ميتة فهي له",
      "number": 2334,
      "albani": {
-      "work": "albani.irwa",
-      "witness": "shamela-22592",
-      "number": 1550,
+      "work": "albani.mukhtasar_bukhari",
+      "witness": "shamela-121381",
+      "number": 515,
       "verdict": "sahih"
      },
      "weaker_routes": [
@@ -8039,7 +8044,7 @@
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "وجدت منبوذا فلما رآني عمر",
      "number": 2661,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (591) gives no verdict"
     },
     {
      "kind": "sunnah",
@@ -8224,7 +8229,7 @@
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "تقول المرأة إما أن تطعمني وإما أن تطلقني",
      "number": 5355,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "ungraded": "al-Albānī's Mukhtaṣar al-Bukhārī carries it without a note on its chain"
     }
    ],
    "shards": [
@@ -11706,14 +11711,24 @@
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "لو علمت أنكما تعمدتما لقطعتكما",
      "number": 6895,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "albani": {
+      "work": "albani.mukhtasar_bukhari",
+      "witness": "shamela-121381",
+      "number": 1358,
+      "verdict": "sahih"
+     }
     },
     {
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "فأبطل شهادتهما وأخذا بدية الأول",
      "number": 6895,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "albani": {
+      "work": "albani.mukhtasar_bukhari",
+      "witness": "shamela-121381",
+      "number": 1358,
+      "verdict": "sahih"
+     }
     },
     {
      "kind": "quran",
@@ -13912,21 +13927,21 @@
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "إن خرجت فقد بتت منه وإن لم تخرج فليس بشيء",
      "number": 5268,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1156) gives no verdict"
     },
     {
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "طلق رجل امرأته البتة إن خرجت فقال ابن عمر إن خرجت فقد بتت منه",
      "number": 5268,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1156) gives no verdict"
     },
     {
      "kind": "athar",
      "ref": "src:openiti-bukhari-shamela1681",
      "excerpt_ar": "إن خرجت فقد بتت منه",
      "number": 5268,
-     "ungraded": "no entry of al-Albānī's pinned works holds the excerpt"
+     "ungraded": "al-Albānī's note on it in his Mukhtaṣar al-Bukhārī (1156) gives no verdict"
     }
    ],
    "shards": [

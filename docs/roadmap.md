@@ -4,7 +4,18 @@
 
 Turn the ADQ Prolog corpus into a database-backed, auditable deontic-circuit research harness.
 
-Long-range Ḥanbalī uṣūl formalization track (Lean 4, TLA+, Haskell, category theory, type theory): see [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md).
+## Tracks
+
+The work runs in parallel tracks, each with its own roadmap. [`roadmap-tracks.json`](roadmap-tracks.json) names them and the paths each owns.
+
+| Track | Roadmap | Milestones |
+|---|---|---|
+| ADQ deontic-circuit harness | this file | Milestone 1–7 |
+| Ḥanbalī uṣūl formalization (Lean 4, TLA+, Haskell, category theory, type theory) | [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md) | M0–M13 |
+| al-Albānī's ḥadīth methodology | [`roadmap-albani-hadith-methodology.md`](roadmap-albani-hadith-methodology.md) | H0–H9 |
+| Derivation method and the parallel lanes | [`roadmap-parallel-derivation.md`](roadmap-parallel-derivation.md) | phases and rounds |
+
+**Keeping them consistent.** Each path belongs to one track, and a change to it updates that track's roadmap in the same PR. A change that leaves its roadmap true as it stands says so in a commit trailer, `Roadmap-Unchanged: <reason>`. Structure is checked always: every roadmap is linked here; milestone ids are unique; every `⟵` dependency resolves, across tracks too («uṣūl M5»); the dependencies are acyclic and agree with the Mermaid DAG; status rows name real milestones; no file belongs to two tracks. `python -m usul_corpus roadmap --base origin/main` (from `pipeline/`) runs both checks. CI runs them on every PR, and a Claude Code Stop hook (`.claude/settings.json`) runs them before a session ends.
 
 ## Active architecture migration
 

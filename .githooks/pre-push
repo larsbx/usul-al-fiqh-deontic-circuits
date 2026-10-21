@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Refuse a push while a track whose paths changed has a stale roadmap (docs/roadmap.md#tracks).
+# Enable once per clone: git config core.hooksPath .githooks
+root=$(git rev-parse --show-toplevel) || exit 1
+cd "$root/pipeline" && exec python3 -m usul_corpus roadmap --base origin/main --if-available
