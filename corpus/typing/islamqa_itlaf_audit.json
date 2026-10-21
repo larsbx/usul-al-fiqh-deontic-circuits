@@ -1,0 +1,2644 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "human_reviewed": false,
+  "evaluation_status": "unblinded targeted audit; never a replacement blind test",
+  "baseline_commit": "1b33a22cb90a22ec33c92a8c80b1966ff6bb4764",
+  "source_archive_sha256": "621fcd30c854a45407a5c303de8656c402eab4c59abde884a06038348ffbb205",
+  "input_sha256": {
+    "corpus/typing/islamqa_itlaf_corrections.json": "a61a53f89d8adb8685bf1e16db45b4ff509321c5f661230fbbc99c12c928fd90",
+    "corpus/typing/islamqa_tranche1_situations.json": "00a9dba98009d0da4a87752fad5f6a553d8e1b4556cf800de9eb98ad15f2af5d",
+    "examples/v41_islamqa_tranche1_situations.pl": "2d71448e480104569798196056f8d7f19a188a47bdef9122ddaac1c8a0b272c0",
+    "corpus/fatawa/takhrij/islamqa_tranche1.json": "2e1bce1bf3cacd32fa4a28f013f6dd0ced299b250da4c67561a5c671a19c2a00",
+    "examples/v41_typing.pl": "7fea50df549ec3525641423e4be9e13669503e0ae7b3540856a9b1ec13db6155",
+    "examples/v41_types.pl": "4fb5ae9fb8865d408219e9a39f098f05c407dd4593e0ad3a41e5f81e89cd7d88",
+    "formal/lean/Usul/Typing/Qaida.lean": "22a4319d8489a8af9448582f5ee08a05f75f872d7b74a84966613d77e7c8440f",
+    "corpus/types/anchors/anchors-a.json": "2d8209b2f67fc7af2f3402db80e65db7ebbd464863f1c7b2ae11a8d2b3aab9c8"
+  },
+  "limits": [
+    "The original blind benchmark, labels, needs, bindings and ranker are unchanged.",
+    "Corrections were selected after inspecting failures: after is an unblinded development diagnostic.",
+    "Legacy metrics score gap labels too; no itlaf case here is a successful encoder application.",
+    "Type coverage and qawāʿida retrieval are not correctness of a ruling.",
+    "The 25 null ranks are type-only ranks. Hybrid always has a separate rank.",
+    "No new human review or independently measured accuracy gain is asserted."
+  ],
+  "counts": {
+    "itlaf_cases": 27,
+    "itlaf_answers": 14,
+    "baseline_unrouted_cases": 25,
+    "primary_diagnoses_unrouted": {
+      "encoder_field_coverage": 10,
+      "legitimate_encoder_mismatch": 15
+    },
+    "withdrawals": 16
+  },
+  "before": {
+    "applies": 0.3577,
+    "recall": {
+      "1": 0.3008,
+      "5": 0.6911,
+      "10": 0.6911
+    },
+    "recall_with_named_rules": {
+      "1": 0.3008,
+      "5": 0.7398,
+      "10": 0.7398
+    },
+    "lexical_recall": {
+      "1": 0.0,
+      "5": 0.2114,
+      "10": 0.2846
+    },
+    "hybrid_recall": {
+      "1": 0.5203,
+      "5": 0.6911,
+      "10": 0.7236
+    },
+    "hybrid_recall_by_qaida": {
+      "1": 0.6016,
+      "5": 0.7398,
+      "10": 0.7398
+    },
+    "by_encoder": {
+      "asl_zahir": {
+        "cases": 27,
+        "applies": 6,
+        "top5": 23,
+        "unrouted": 4
+      },
+      "itlaf": {
+        "cases": 27,
+        "applies": 0,
+        "top5": 2,
+        "unrouted": 25
+      },
+      "luqata": {
+        "cases": 30,
+        "applies": 16,
+        "top5": 28,
+        "unrouted": 2
+      },
+      "trust_loss": {
+        "cases": 22,
+        "applies": 8,
+        "top5": 18,
+        "unrouted": 4
+      },
+      "unknown_owner": {
+        "cases": 17,
+        "applies": 14,
+        "top5": 14,
+        "unrouted": 3
+      }
+    },
+    "by_annotation_class": {
+      "derivable": {
+        "cases": 63,
+        "hybrid_recall": {
+          "1": 0.6508,
+          "5": 0.8889,
+          "10": 0.9365
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.7778,
+          "5": 0.9365,
+          "10": 0.9365
+        }
+      },
+      "encoding_error": {
+        "cases": 3,
+        "hybrid_recall": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "genuine_ikhtilaf": {
+        "cases": 2,
+        "hybrid_recall": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "missing_fact": {
+        "cases": 29,
+        "hybrid_recall": {
+          "1": 0.5172,
+          "5": 0.5862,
+          "10": 0.5862
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.5862,
+          "5": 0.6552,
+          "10": 0.6552
+        }
+      },
+      "missing_rule": {
+        "cases": 25,
+        "hybrid_recall": {
+          "1": 0.12,
+          "5": 0.28,
+          "10": 0.32
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.12,
+          "5": 0.32,
+          "10": 0.32
+        }
+      },
+      "segmentation_error": {
+        "cases": 1,
+        "hybrid_recall": {
+          "1": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        }
+      }
+    }
+  },
+  "after": {
+    "applies": 0.3577,
+    "recall": {
+      "1": 0.3008,
+      "5": 0.6911,
+      "10": 0.6911
+    },
+    "recall_with_named_rules": {
+      "1": 0.3496,
+      "5": 0.7398,
+      "10": 0.7398
+    },
+    "lexical_recall": {
+      "1": 0.0,
+      "5": 0.2114,
+      "10": 0.2846
+    },
+    "hybrid_recall": {
+      "1": 0.5203,
+      "5": 0.6911,
+      "10": 0.7236
+    },
+    "hybrid_recall_by_qaida": {
+      "1": 0.6016,
+      "5": 0.7398,
+      "10": 0.7398
+    },
+    "by_encoder": {
+      "asl_zahir": {
+        "cases": 27,
+        "applies": 6,
+        "top5": 23,
+        "unrouted": 4
+      },
+      "itlaf": {
+        "cases": 27,
+        "applies": 0,
+        "top5": 2,
+        "unrouted": 25
+      },
+      "luqata": {
+        "cases": 30,
+        "applies": 16,
+        "top5": 28,
+        "unrouted": 2
+      },
+      "trust_loss": {
+        "cases": 22,
+        "applies": 8,
+        "top5": 18,
+        "unrouted": 4
+      },
+      "unknown_owner": {
+        "cases": 17,
+        "applies": 14,
+        "top5": 14,
+        "unrouted": 3
+      }
+    },
+    "by_annotation_class": {
+      "derivable": {
+        "cases": 63,
+        "hybrid_recall": {
+          "1": 0.6508,
+          "5": 0.8889,
+          "10": 0.9365
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.7778,
+          "5": 0.9365,
+          "10": 0.9365
+        }
+      },
+      "encoding_error": {
+        "cases": 3,
+        "hybrid_recall": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "genuine_ikhtilaf": {
+        "cases": 2,
+        "hybrid_recall": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 1.0,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "missing_fact": {
+        "cases": 29,
+        "hybrid_recall": {
+          "1": 0.5172,
+          "5": 0.5862,
+          "10": 0.5862
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.5862,
+          "5": 0.6552,
+          "10": 0.6552
+        }
+      },
+      "missing_rule": {
+        "cases": 25,
+        "hybrid_recall": {
+          "1": 0.12,
+          "5": 0.28,
+          "10": 0.32
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.12,
+          "5": 0.32,
+          "10": 0.32
+        }
+      },
+      "segmentation_error": {
+        "cases": 1,
+        "hybrid_recall": {
+          "1": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.0,
+          "5": 0.0,
+          "10": 0.0
+        }
+      }
+    }
+  },
+  "by_encoder": {
+    "asl_zahir": {
+      "before": {
+        "cases": 27,
+        "hybrid_recall": {
+          "1": 0.5926,
+          "5": 0.8519,
+          "10": 1.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.8519,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "after": {
+        "cases": 27,
+        "hybrid_recall": {
+          "1": 0.5926,
+          "5": 0.8519,
+          "10": 1.0
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.8519,
+          "5": 1.0,
+          "10": 1.0
+        }
+      }
+    },
+    "itlaf": {
+      "before": {
+        "cases": 27,
+        "hybrid_recall": {
+          "1": 0.0,
+          "5": 0.0741,
+          "10": 0.0741
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.0,
+          "5": 0.0741,
+          "10": 0.0741
+        }
+      },
+      "after": {
+        "cases": 27,
+        "hybrid_recall": {
+          "1": 0.0,
+          "5": 0.0741,
+          "10": 0.0741
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.0,
+          "5": 0.0741,
+          "10": 0.0741
+        }
+      }
+    },
+    "luqata": {
+      "before": {
+        "cases": 30,
+        "hybrid_recall": {
+          "1": 0.8333,
+          "5": 0.9333,
+          "10": 0.9333
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.9,
+          "5": 1.0,
+          "10": 1.0
+        }
+      },
+      "after": {
+        "cases": 30,
+        "hybrid_recall": {
+          "1": 0.8333,
+          "5": 0.9333,
+          "10": 0.9333
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.9,
+          "5": 1.0,
+          "10": 1.0
+        }
+      }
+    },
+    "trust_loss": {
+      "before": {
+        "cases": 22,
+        "hybrid_recall": {
+          "1": 0.4091,
+          "5": 0.8182,
+          "10": 0.8182
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.4545,
+          "5": 0.8182,
+          "10": 0.8182
+        }
+      },
+      "after": {
+        "cases": 22,
+        "hybrid_recall": {
+          "1": 0.4091,
+          "5": 0.8182,
+          "10": 0.8182
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.4545,
+          "5": 0.8182,
+          "10": 0.8182
+        }
+      }
+    },
+    "unknown_owner": {
+      "before": {
+        "cases": 17,
+        "hybrid_recall": {
+          "1": 0.8235,
+          "5": 0.8235,
+          "10": 0.8235
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.8235,
+          "5": 0.8235,
+          "10": 0.8235
+        }
+      },
+      "after": {
+        "cases": 17,
+        "hybrid_recall": {
+          "1": 0.8235,
+          "5": 0.8235,
+          "10": 0.8235
+        },
+        "hybrid_recall_by_qaida": {
+          "1": 0.8235,
+          "5": 0.8235,
+          "10": 0.8235
+        }
+      }
+    }
+  },
+  "changed_cases_all_families": [
+    {
+      "case_id": "islamqa.223512.f001",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.223512",
+        "case_id": "islamqa.223512.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 209,
+        "hybrid_qaida_rank": 209,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.223512",
+        "case_id": "islamqa.223512.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 209,
+        "hybrid_qaida_rank": 209,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      }
+    },
+    {
+      "case_id": "islamqa.305083.f001",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 179,
+        "hybrid_qaida_rank": 179,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 178,
+        "hybrid_qaida_rank": 178,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      }
+    },
+    {
+      "case_id": "islamqa.305083.f002",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 179,
+        "hybrid_qaida_rank": 179,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 178,
+        "hybrid_qaida_rank": 178,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      }
+    },
+    {
+      "case_id": "islamqa.305083.f003",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 179,
+        "hybrid_qaida_rank": 179,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 178,
+        "hybrid_qaida_rank": 178,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      }
+    },
+    {
+      "case_id": "islamqa.317604.f001",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 3
+      },
+      "after": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      }
+    },
+    {
+      "case_id": "islamqa.317604.f002",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 3
+      },
+      "after": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      }
+    },
+    {
+      "case_id": "islamqa.345284.f001",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 138,
+        "hybrid_qaida_rank": 138,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 137,
+        "hybrid_qaida_rank": 137,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      }
+    },
+    {
+      "case_id": "islamqa.345284.f002",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 138,
+        "hybrid_qaida_rank": 138,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 137,
+        "hybrid_qaida_rank": 137,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      }
+    },
+    {
+      "case_id": "islamqa.348122.f001",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 207,
+        "hybrid_qaida_rank": 207,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      },
+      "after": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 206,
+        "hybrid_qaida_rank": 206,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      }
+    },
+    {
+      "case_id": "islamqa.348122.f002",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 207,
+        "hybrid_qaida_rank": 207,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      },
+      "after": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 206,
+        "hybrid_qaida_rank": 206,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      }
+    },
+    {
+      "case_id": "islamqa.348122.f003",
+      "encoder": "itlaf",
+      "before": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 207,
+        "hybrid_qaida_rank": 207,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 206,
+        "hybrid_qaida_rank": 206,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      }
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "islamqa.164604.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "The unauthorized taking and collision are alternatives, not evidence for a purpose. Purpose has only benefit/repelHarm; MentalState lacks an accidental constructor. Do not equate accident with ignorant or forgetful.",
+      "source_excerpt": "أما إن كان قد أخذها بدون إذنك أو اصطدم بها فانكسرت ، فعليه الضمان",
+      "remaining_need": [
+        "fact:accidental"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.164604",
+      "source_url": "https://islamqa.info/ar/answers/164604",
+      "source_sha256": "9980dda1a6b0249dfb735aaa77ecf731c1cfe07ab0c80e75f88ca71ee13626a1",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.164604",
+        "case_id": "islamqa.164604.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 171,
+        "hybrid_qaida_rank": 171,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.164604",
+        "case_id": "islamqa.164604.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 171,
+        "hybrid_qaida_rank": 171,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        0
+      ]
+    },
+    {
+      "case_id": "islamqa.223512.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "ولكن لا تلزمكم الدية والكفارة ؛ لأن المباشر لهذا العمل والذي قد يكون تسبب في الوفاة هو المعالج الشعبي وليس أنتم.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.223512",
+      "source_url": "https://islamqa.info/ar/answers/223512",
+      "source_sha256": "45fcc452162f2cb243bea2355585f4cd20f5870986b8a7e123b82a71a2bcc670",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.223512",
+        "case_id": "islamqa.223512.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 209,
+        "hybrid_qaida_rank": 209,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.223512",
+        "case_id": "islamqa.223512.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 209,
+        "hybrid_qaida_rank": 209,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "case_id": "islamqa.223512.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "Skill, exceeding treatment and causal connection govern this case. Treatment benefiting a patient is not evidence that destruction was for benefit under Q36. Physician-liability conditions are outside itlaf.",
+      "source_excerpt": "وإن كانت الوفاة بسببه إما لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه .",
+      "remaining_need": [
+        "rule:physician_liability"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.223512",
+      "source_url": "https://islamqa.info/ar/answers/223512",
+      "source_sha256": "45fcc452162f2cb243bea2355585f4cd20f5870986b8a7e123b82a71a2bcc670",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.223512",
+        "case_id": "islamqa.223512.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 209,
+        "hybrid_qaida_rank": 209,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.223512",
+        "case_id": "islamqa.223512.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 209,
+        "hybrid_qaida_rank": 209,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "case_id": "islamqa.242731.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "Skill, exceeding treatment and causal connection govern this case. Treatment benefiting a patient is not evidence that destruction was for benefit under Q36. Physician-liability conditions are outside itlaf.",
+      "source_excerpt": "الطبيب إذا جنت يده : ضمن ، ولو كان ماهرا، لكن لا إثم عليه حينئذ ، فإن كان غير ماهر: أثم ، وضمن.",
+      "remaining_need": [
+        "rule:physician_liability"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.242731",
+      "source_url": "https://islamqa.info/ar/answers/242731",
+      "source_sha256": "147b507cd6cf0b7b29b93210447e9344d8f23e473759c0115d9b2b39efa39669",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.242731",
+        "case_id": "islamqa.242731.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 208,
+        "hybrid_qaida_rank": 208,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.242731",
+        "case_id": "islamqa.242731.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 208,
+        "hybrid_qaida_rank": 208,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.266167.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "فإنك تتحمل ذلك ما دام الخطأ منك، ولا علاقة لمؤسستك بخطئك.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.266167",
+      "source_url": "https://islamqa.info/ar/answers/266167",
+      "source_sha256": "ef8957675dbb14dd852e876472d9618d162fbbf17283bbfc7788eed382fba404",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.266167",
+        "case_id": "islamqa.266167.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 131,
+        "hybrid_qaida_rank": 131,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.266167",
+        "case_id": "islamqa.266167.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 131,
+        "hybrid_qaida_rank": 131,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.266167.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case allocates responsibility between employer and actual actor. The Q13/Q36 Boolean purpose test does not select the responsible person.",
+      "source_excerpt": "ولا وجه لتحمل صاحب العمل غرامة ما أتلفت؛ فإن الضمان على المتلِف.",
+      "remaining_need": [
+        "rule:daman_on_mutlif"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.266167",
+      "source_url": "https://islamqa.info/ar/answers/266167",
+      "source_sha256": "ef8957675dbb14dd852e876472d9618d162fbbf17283bbfc7788eed382fba404",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.266167",
+        "case_id": "islamqa.266167.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 131,
+        "hybrid_qaida_rank": 131,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.266167",
+        "case_id": "islamqa.266167.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 131,
+        "hybrid_qaida_rank": 131,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.272160.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "والأصل أن من أتلف سيارة لغيره لزمه ضمان ما أتلف، إضافة إلى ما نقص من قيمة السيارة بسبب الحادث.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.272160",
+      "source_url": "https://islamqa.info/ar/answers/272160",
+      "source_sha256": "b50fa974dc9b77f90f801e37bb3de1c7617e7776f31941107d239435908f4608",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.272160",
+        "case_id": "islamqa.272160.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 212,
+        "hybrid_qaida_rank": 212,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.272160",
+        "case_id": "islamqa.272160.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 212,
+        "hybrid_qaida_rank": 212,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.286486.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "من تعرض لحادث سيارة، فأصيب في نفسه أو ماله، نتيجة لخطأ الغير، فالأصل أن يأخذ التعويض ممن أصابه",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.286486",
+      "source_url": "https://islamqa.info/ar/answers/286486",
+      "source_sha256": "12bb39d22ee280324cfd78466e9faebc9a68793605e6e71bff4ac14896cb1702",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.286486",
+        "case_id": "islamqa.286486.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 216,
+        "hybrid_qaida_rank": 216,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.286486",
+        "case_id": "islamqa.286486.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 216,
+        "hybrid_qaida_rank": 216,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.305083.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كنت تسير بسيارتك السير المسموح به من جهة السرعة، ومكان السير، فلا شيء عليك",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.305083",
+      "source_url": "https://islamqa.info/ar/answers/305083",
+      "source_sha256": "bb8fd1680c58651bf1f7d903cba304c14b33c0503cb174d1c2f2410fe4082d11",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 179,
+        "hybrid_qaida_rank": 179,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 178,
+        "hybrid_qaida_rank": 178,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "case_id": "islamqa.305083.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "وعليه: فضمان ما أصاب هذه المرأة على السائق الآخر، إلا إذا كان لا يمكنه تفادي إصابتها لقربه منها، فلا شيء عليه؛ لأن الخطأ من المرأة.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.305083",
+      "source_url": "https://islamqa.info/ar/answers/305083",
+      "source_sha256": "bb8fd1680c58651bf1f7d903cba304c14b33c0503cb174d1c2f2410fe4082d11",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 179,
+        "hybrid_qaida_rank": 179,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 178,
+        "hybrid_qaida_rank": 178,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "case_id": "islamqa.305083.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كنت متعديا بسيرك، والسائق الآخر لم يتعدَّ ، كما لو جاوزت السرعة المسموح بها، فإنك تضمن ما أصاب المرأة، لأنك متسبب متعدٍّ، فتقدم على المباشر في الضمان.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.305083",
+      "source_url": "https://islamqa.info/ar/answers/305083",
+      "source_sha256": "bb8fd1680c58651bf1f7d903cba304c14b33c0503cb174d1c2f2410fe4082d11",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 179,
+        "hybrid_qaida_rank": 179,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 2
+      },
+      "after": {
+        "case": "islamqa.305083",
+        "case_id": "islamqa.305083.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 178,
+        "hybrid_qaida_rank": 178,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "case_id": "islamqa.315435.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "إذا كنت تسير بالسرعة المسموح بها، ولم يمكنك تفادي الرجل، لأنه لا يفصلك عنه سوى متر أو مترين، فأنت معذور، ولا شيء عليك، لا دية ولا كفارة.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.315435",
+      "source_url": "https://islamqa.info/ar/answers/315435",
+      "source_sha256": "b4d865b6020c48da64cd635fc3b739a439a85f208848d6d2b75a71061ce31977",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.315435",
+        "case_id": "islamqa.315435.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 62,
+        "hybrid_qaida_rank": 62,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.315435",
+        "case_id": "islamqa.315435.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 62,
+        "hybrid_qaida_rank": 62,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.315435.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "وإن كان يمكنك تلافي الصدام، أو كنت تسير بسرعة زائدة منعتك من التفادي فأنت ضامن .",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.315435",
+      "source_url": "https://islamqa.info/ar/answers/315435",
+      "source_sha256": "b4d865b6020c48da64cd635fc3b739a439a85f208848d6d2b75a71061ce31977",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.315435",
+        "case_id": "islamqa.315435.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 62,
+        "hybrid_qaida_rank": 62,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.315435",
+        "case_id": "islamqa.315435.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 62,
+        "hybrid_qaida_rank": 62,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.315435.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "Shared fault, proportional blood money and indivisible expiation require separate outputs and conditions. A Boolean purpose test cannot express this allocation.",
+      "source_excerpt": "فعليه الكفارة، وعليه من الدية بقدر نسبة خطئه.",
+      "remaining_need": [
+        "rule:shared_fault_apportionment"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.315435",
+      "source_url": "https://islamqa.info/ar/answers/315435",
+      "source_sha256": "b4d865b6020c48da64cd635fc3b739a439a85f208848d6d2b75a71061ce31977",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.315435",
+        "case_id": "islamqa.315435.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 62,
+        "hybrid_qaida_rank": 62,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.315435",
+        "case_id": "islamqa.315435.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 62,
+        "hybrid_qaida_rank": 62,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.317604.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كان الأمر كما ذكرت فلا ضمان عليك",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.317604",
+      "source_url": "https://islamqa.info/ar/answers/317604",
+      "source_sha256": "a942a0c107fcc30dcdd5cc142923bd414d33a454cf6047ec0b6c61fc2722ffb4",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 3
+      },
+      "after": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "case_id": "islamqa.317604.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "مع أن الشخص المعاند يعتبر متسببا أيضا، لا مباشرا، لكنه معتد ومفرط، فالضمان يكون عليه، لا على سائق السيارة المنقلبة إذا لم يمكنه تفادي الحادث.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.317604",
+      "source_url": "https://islamqa.info/ar/answers/317604",
+      "source_sha256": "a942a0c107fcc30dcdd5cc142923bd414d33a454cf6047ec0b6c61fc2722ffb4",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 3
+      },
+      "after": {
+        "case": "islamqa.317604",
+        "case_id": "islamqa.317604.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 205,
+        "hybrid_qaida_rank": 205,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 1
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "case_id": "islamqa.328808.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "The source explicitly distinguishes a common hired worker. Its liability despite no transgression/negligence is a role-specific rule, not a Q36 destruction purpose.",
+      "source_excerpt": "والأجير المشترك يضمن مطلقا ولو لم يحصل منه تعد أو تفريط، وهذا مذهب جمهور أهل العلم.",
+      "remaining_need": [
+        "rule:ajir_mushtarak_liability"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.328808",
+      "source_url": "https://islamqa.info/ar/answers/328808",
+      "source_sha256": "9eaa8a86b6b5ca12239fc8cf92e790c3419a5d27c10acd930d49cc1602b6db7d",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.328808",
+        "case_id": "islamqa.328808.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 201,
+        "hybrid_qaida_rank": 201,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.328808",
+        "case_id": "islamqa.328808.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 201,
+        "hybrid_qaida_rank": 201,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": []
+    },
+    {
+      "case_id": "islamqa.344230.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "إذا أخطأ قائد السيارة، وترتب على ذلك غرم، فالغرم عليه، لا على من أمره، أو طلب منه أن يسوق السيارة مجانا أو بأجرة، ولا على من ركب معه، سواء كان السائق يعلم بذلك ",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.344230",
+      "source_url": "https://islamqa.info/ar/answers/344230",
+      "source_sha256": "2417cc8028e5d6b58a48ab52ad093348e67585bdab08b94d7ef188ab240379d2",
+      "baseline_unrouted": false,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.344230",
+        "case_id": "islamqa.344230.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 3,
+        "hybrid_qaida_rank": 3,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.5,
+        "rank": 3
+      },
+      "after": {
+        "case": "islamqa.344230",
+        "case_id": "islamqa.344230.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 3,
+        "hybrid_qaida_rank": 3,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.5,
+        "rank": 3
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose"
+        ]
+      ],
+      "correction_indices": [
+        8
+      ]
+    },
+    {
+      "case_id": "islamqa.344230.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "فالجناية تتربت آثارها على الجاني المباشر لها، سواء جنى على نفسه أو على غيره.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.344230",
+      "source_url": "https://islamqa.info/ar/answers/344230",
+      "source_sha256": "2417cc8028e5d6b58a48ab52ad093348e67585bdab08b94d7ef188ab240379d2",
+      "baseline_unrouted": false,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.344230",
+        "case_id": "islamqa.344230.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 3,
+        "hybrid_qaida_rank": 3,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.5,
+        "rank": 3,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 3
+      },
+      "after": {
+        "case": "islamqa.344230",
+        "case_id": "islamqa.344230.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 3,
+        "hybrid_qaida_rank": 3,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.5,
+        "rank": 3,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": 3
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose"
+        ]
+      ],
+      "correction_indices": [
+        8
+      ]
+    },
+    {
+      "case_id": "islamqa.345284.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "وعليه ؛ فإذا لم يكن منك تفريط ، ولم يمكنك تفادي الحادث، فلا شيء عليك",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.345284",
+      "source_url": "https://islamqa.info/ar/answers/345284",
+      "source_sha256": "69a0f36a55dadd48444acb5b7a08ab6974ae57d3f118abe79b0d5c6e44e52b8d",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 138,
+        "hybrid_qaida_rank": 138,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 137,
+        "hybrid_qaida_rank": 137,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "case_id": "islamqa.345284.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "وإلا لزمك ضمان ما أتلفت.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.345284",
+      "source_url": "https://islamqa.info/ar/answers/345284",
+      "source_sha256": "69a0f36a55dadd48444acb5b7a08ab6974ae57d3f118abe79b0d5c6e44e52b8d",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 138,
+        "hybrid_qaida_rank": 138,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.345284",
+        "case_id": "islamqa.345284.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 137,
+        "hybrid_qaida_rank": 137,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "case_id": "islamqa.348122.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كنت قد وضعت العربة في جانب من البيت لا يأتيه أهل البيت كثيرا، فأنت غير معتدية، ولا يلزمك ضمان من عثر بهذه العربة",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.348122",
+      "source_url": "https://islamqa.info/ar/answers/348122",
+      "source_sha256": "7de7390825881147bf7609fa2b2b55dcd65c7fdd91c8db971fc14df29141276c",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 207,
+        "hybrid_qaida_rank": 207,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      },
+      "after": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f001",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 206,
+        "hybrid_qaida_rank": 206,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        12,
+        13
+      ]
+    },
+    {
+      "case_id": "islamqa.348122.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "على فرض أنك معتدية بفعلك فإنك تضمنين الكسر",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.348122",
+      "source_url": "https://islamqa.info/ar/answers/348122",
+      "source_sha256": "7de7390825881147bf7609fa2b2b55dcd65c7fdd91c8db971fc14df29141276c",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 207,
+        "hybrid_qaida_rank": 207,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      },
+      "after": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f002",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 206,
+        "hybrid_qaida_rank": 206,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null,
+        "named_rules": [
+          "mubashara_tasabbub"
+        ],
+        "best_rank_with_named": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        12,
+        13
+      ]
+    },
+    {
+      "case_id": "islamqa.348122.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "The consequence must be causally connected to the injury; death after injury alone is insufficient. The purpose encoder has no causal attribution or consequence field.",
+      "source_excerpt": "ولا تضمنين النفس، إلا إذا ثبت أن جدتك ماتت من مضاعفات الكسر، وهو ما يعبر عنه الفقهاء بسراية الجرح.",
+      "remaining_need": [
+        "rule:sirayat_al_jinaya"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.348122",
+      "source_url": "https://islamqa.info/ar/answers/348122",
+      "source_sha256": "7de7390825881147bf7609fa2b2b55dcd65c7fdd91c8db971fc14df29141276c",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 207,
+        "hybrid_qaida_rank": 207,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.348122",
+        "case_id": "islamqa.348122.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 206,
+        "hybrid_qaida_rank": 206,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        12,
+        13
+      ]
+    },
+    {
+      "case_id": "islamqa.363963.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "إذا كنت تسيرين بالسرعة المعقولة التي يمكنك معها التحكم في السيارة، وكان الأمر ما ذكرت من تنبيهك للرجل، وأنه تجاوز حارتك ثم عاد فجأة، فلا يلزمك ضمان شيء مما أصاب",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.363963",
+      "source_url": "https://islamqa.info/ar/answers/363963",
+      "source_sha256": "be76b17f7755386f21e9ba41a624391ff6991740aefc190f71ea2b0c42489610",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.363963",
+        "case_id": "islamqa.363963.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 219,
+        "hybrid_qaida_rank": 219,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.363963",
+        "case_id": "islamqa.363963.f001",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 219,
+        "hybrid_qaida_rank": 219,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        14,
+        15
+      ]
+    },
+    {
+      "case_id": "islamqa.363963.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "على فرض أنك أخطأت بتجاوز السرعة مثلا، أو بالتقصير في محاولة تفادي الحادث عند عودة الرجل، فإنك تضمنين كسره وجرحه",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.363963",
+      "source_url": "https://islamqa.info/ar/answers/363963",
+      "source_sha256": "be76b17f7755386f21e9ba41a624391ff6991740aefc190f71ea2b0c42489610",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_fact",
+      "before": {
+        "case": "islamqa.363963",
+        "case_id": "islamqa.363963.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 219,
+        "hybrid_qaida_rank": 219,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.363963",
+        "case_id": "islamqa.363963.f002",
+        "annotation_class": "missing_fact",
+        "encoder": "itlaf",
+        "hybrid_rank": 219,
+        "hybrid_qaida_rank": 219,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        14,
+        15
+      ]
+    },
+    {
+      "case_id": "islamqa.363963.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "The consequence must be causally connected to the injury; death after injury alone is insufficient. The purpose encoder has no causal attribution or consequence field.",
+      "source_excerpt": "ولا ضمان عليك في موته؛ لأن الكسر المذكور لا يؤدي للموت، ولأن سبب الموت ظاهر وهو نقص الأكسجين الذي يلحق المصاب بكورونا",
+      "remaining_need": [
+        "rule:sirayat_al_jinaya"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost",
+      "unit": "islamqa.363963",
+      "source_url": "https://islamqa.info/ar/answers/363963",
+      "source_sha256": "be76b17f7755386f21e9ba41a624391ff6991740aefc190f71ea2b0c42489610",
+      "baseline_unrouted": true,
+      "annotation_class": "missing_rule",
+      "before": {
+        "case": "islamqa.363963",
+        "case_id": "islamqa.363963.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 219,
+        "hybrid_qaida_rank": 219,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "after": {
+        "case": "islamqa.363963",
+        "case_id": "islamqa.363963.f003",
+        "annotation_class": "missing_rule",
+        "encoder": "itlaf",
+        "hybrid_rank": 219,
+        "hybrid_qaida_rank": 219,
+        "gold_qawaid": [
+          "r026",
+          "s036"
+        ],
+        "gold_qawaid_basis": "encoder_fallback",
+        "settled": 0.0,
+        "rank": null
+      },
+      "itlaf_missing_stated_fields_by_situation": [
+        [
+          "purpose",
+          "mental"
+        ],
+        [
+          "purpose",
+          "mental"
+        ]
+      ],
+      "correction_indices": [
+        14,
+        15
+      ]
+    }
+  ]
+}
