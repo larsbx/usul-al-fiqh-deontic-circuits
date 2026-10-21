@@ -70,12 +70,15 @@ al-Bahiyya* (bare matn, ShamAY 34280) and his own sharḥ *al-Darārī al-Muḍi
 (Shamela 7264), and Fayṣal Āl Mubārak's *al-Ghurar al-Naqiyya* (ShamAY 36516),
 which prints the whole matn with its commentary as closing endnotes.
 
-- **Segmentation (R2 mutūn).** `abwab` gains two per-witness options:
+- **Segmentation (R2 mutūn).** `abwab` gains per-witness options:
   `body_headings`, where headings are body lines and `end` also matches body
-  lines, and `kitab_headings`, which corrects a kitāb the edition prints as a bāb
-  (*al-Ghurar*'s «باب النكاح»). The *Durar*'s tabwīb is read from its *al-Ghurar*
-  witness, ShamAY 36516 (123 units, filed under `shawkani.durar_bahiyya` with a
-  witness-level segmenter, so the bare-matn witness 34280 is not cut).
+  lines; `kitab_headings`, which corrects a kitāb the edition prints as a bāb
+  (*al-Ghurar*'s «باب النكاح»); and `masail`, which splits each unit into its
+  masāʾil. Numbered body headings («2 - باب الأذان», «5 - فصل») open their units.
+  The *Durar*'s tabwīb is read from its *al-Ghurar* witness, ShamAY 36516 (128
+  units split into 776 masāʾil, filed under `shawkani.durar_bahiyya` with a
+  witness-level segmenter, so the bare-matn witness 34280 is not cut); a split
+  unit's masāʾil, not the unit, are its obligations (PRs #118, #120).
   *al-Darārī* gives 127 units. Both are in the unit inventory and the
   routing index.
 - **Reception.** The *Durar* has 5 citations, all in *Tamām al-Minna*; the
@@ -89,10 +92,6 @@ which prints the whole matn with its commentary as closing endnotes.
   see [`corpus/texts`](../corpus/texts/README.md#where-the-lfs-objects-are).
 - **Fetch.** Truncated Shamela pages are retried, so long page walks no longer
   abort.
-
-Follow-up (2026-10-20): the *Durar*'s units are split into 776 masāʾil
-(`masail`); numbered body headings («2 - باب الأذان», «5 - فصل») now open their
-units, giving 128. A split unit's masāʾil, not the unit, are its obligations.
 
 Open: edition-level grants for any held witness; splitting the other mutūn into
 masāʾil (R2's next step). Nothing here is reviewed or accepted.
