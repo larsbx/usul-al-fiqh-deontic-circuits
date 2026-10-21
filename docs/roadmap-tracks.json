@@ -1,5 +1,5 @@
 {
-  "description": "The parallel tracks, each with its roadmap and the paths it owns. A change to a track's paths updates its roadmap (any one, for a path tracks share), or a commit says why not with a `Roadmap-Unchanged: <reason>` trailer. Shared infrastructure (registry, lock, fetch, Arabic normalisation, the CLI) belongs to no track. Checked by pipeline/usul_corpus/roadmap.py.",
+  "description": "The parallel tracks, each with its roadmap and the paths it owns. Each path belongs to one track, and a change to it updates that track's roadmap, or a commit says why not with a `Roadmap-Unchanged: <reason>` trailer. Shared infrastructure (registry, lock, fetch, Arabic normalisation, the CLI) belongs to no track. Checked by pipeline/usul_corpus/roadmap.py.",
   "hub": "docs/roadmap.md",
   "tracks": {
     "adq": {
@@ -15,7 +15,7 @@
       "paths": ["formal/lean/Usul.lean", "formal/lean/Usul/**", "formal/lean/UsulTest.lean", "formal/lean/UsulTest/**",
                 "formal/lean-mathlib/**", "formal/tla/**",
                 "corpus/citations/**", "corpus/dossier/**", "corpus/fatawa/**", "corpus/furuq/**", "corpus/mahall/**",
-                "corpus/nusus/**", "corpus/proposals/**", "corpus/records/**", "corpus/reconciliation/**", "corpus/review/**",
+                "corpus/nusus/**", "corpus/proposals/**", "corpus/records/**", "corpus/review/**",
                 "corpus/sheaf/**", "corpus/signature_map.json", "corpus/takhrij/**", "corpus/tanaqud/**", "corpus/types/**",
                 "corpus/typing/**",
                 "pipeline/usul_corpus/abwab.py", "pipeline/usul_corpus/deduction.py", "pipeline/usul_corpus/dossier.py",
@@ -23,8 +23,7 @@
                 "pipeline/usul_corpus/hudud.py", "pipeline/usul_corpus/judgement.py", "pipeline/usul_corpus/m5_commands.py",
                 "pipeline/usul_corpus/m8_worklist.py", "pipeline/usul_corpus/mahall*.py", "pipeline/usul_corpus/nusus.py",
                 "pipeline/usul_corpus/reconcil*.py", "pipeline/usul_corpus/scope.py", "pipeline/usul_corpus/sheaf.py",
-                "pipeline/usul_corpus/signature_routing.py", "pipeline/usul_corpus/takhrij.py", "pipeline/usul_corpus/tanaqud.py",
-                "pipeline/usul_corpus/typed_routing.py"]
+                "pipeline/usul_corpus/signature_routing.py", "pipeline/usul_corpus/takhrij.py", "pipeline/usul_corpus/tanaqud.py"]
     },
     "hadith": {
       "title": "al-Albānī's ḥadīth methodology",

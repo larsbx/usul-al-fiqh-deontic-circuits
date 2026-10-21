@@ -63,8 +63,7 @@ def test_a_broken_roadmap_says_where(bad, err):
 
 TRACKS = {"hub": "docs/roadmap.md", "tracks": {
     "usul": {"roadmap": "docs/roadmap-usul.md", "paths": ["formal/lean/Usul/**", "corpus/mahall/**"]},
-    "hadith": {"roadmap": "docs/roadmap-hadith.md", "paths": ["formal/lean/Hadith/**", "pipeline/usul_corpus/grading.py",
-                                                              "corpus/mahall/**"]}}}
+    "hadith": {"roadmap": "docs/roadmap-hadith.md", "paths": ["formal/lean/Hadith/**", "pipeline/usul_corpus/grading.py"]}}}
 
 
 def test_a_change_to_a_tracks_paths_updates_its_roadmap():
@@ -73,9 +72,20 @@ def test_a_change_to_a_tracks_paths_updates_its_roadmap():
     assert roadmap.stale(TRACKS, {"formal/lean/Usul/Seam.lean", "docs/roadmap-usul.md"}, waived=False) == []
 
 
-def test_a_path_two_tracks_share_is_settled_by_either_roadmap_and_an_unowned_path_by_none():
-    assert roadmap.stale(TRACKS, {"corpus/mahall/graph.json", "docs/roadmap-hadith.md"}, waived=False) == []
+def test_each_track_answers_for_its_own_paths_and_an_unowned_path_for_none():
+    changed = {"corpus/mahall/graph.json", "pipeline/usul_corpus/grading.py", "docs/roadmap-hadith.md"}
+    assert roadmap.stale(TRACKS, changed, waived=False) == \
+        ["corpus/mahall/graph.json (usul) changed, but docs/roadmap-usul.md did not"]
     assert roadmap.stale(TRACKS, {"Makefile", "README.md"}, waived=False) == []
+
+
+def test_a_path_belongs_to_one_track():
+    """Each path answers to its own roadmap: two tracks claiming a file is an error, not a choice."""
+    shared = {**TRACKS, "tracks": {**TRACKS["tracks"], "hadith": {**TRACKS["tracks"]["hadith"],
+                                                                  "paths": ["corpus/mahall/*.json"]}}}
+    assert roadmap.overlaps(shared, ["corpus/mahall/graph.json", "Makefile"]) == \
+        ["corpus/mahall/graph.json is claimed by usul and hadith"]
+    assert roadmap.overlaps(TRACKS, ["corpus/mahall/graph.json"]) == []
 
 
 def test_a_roadmap_unchanged_trailer_waives_the_rule():

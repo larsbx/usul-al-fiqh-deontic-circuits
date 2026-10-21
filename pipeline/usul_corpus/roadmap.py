@@ -3,11 +3,12 @@
 Structure, checked always (`check`): the hub links every track's roadmap; in each, milestone ids
 are unique, every ``⟵`` dependency resolves (in its track, in another by its name, «uṣūl M5», or in
 the hub, «existing Milestone 1b»), the dependencies are acyclic, a Mermaid DAG draws exactly the
-headings' edges within the track (and may draw their edges from another), and a status row names a milestone that exists. Each track's paths match a file,
-and every registry ``track`` is declared.
+headings' edges within the track (and may draw their edges from another), and a status row names a
+milestone that exists. Each track's paths match a file, no file belongs to two tracks, and every
+registry ``track`` is declared.
 
 Change, checked against a base (`stale`): a change to a path a track owns updates that track's
-roadmap (any one of them, for a path tracks share), unless a commit in the range says why not with
+roadmap, unless a commit in the range says why not with
 a ``Roadmap-Unchanged: <reason>`` trailer. Paths no track owns need nothing.
 """
 
@@ -100,6 +101,11 @@ def owners(tracks: dict, path: str) -> list[str]:
     return [t for t, v in tracks["tracks"].items() if any(_glob(g).fullmatch(path) for g in v["paths"])]
 
 
+def overlaps(tracks: dict, files: list[str]) -> list[str]:
+    """Each file answers to one roadmap: the files two tracks claim."""
+    return [f"{f} is claimed by {' and '.join(os)}" for f in files if len(os := owners(tracks, f)) > 1]
+
+
 def registry_tracks(root: Path) -> set[str]:
     return {w["track"] for w in json.loads((root / "corpus/registry.json").read_text(encoding="utf-8"))["works"] if "track" in w}
 
@@ -121,6 +127,7 @@ def check(root: Path) -> list[str]:
                 if d not in milestones(docs.get(other, ""), o.get("prefix", "?")):
                     errs.append(f"{t}: {m} depends on {other} {d}, which that roadmap lacks")
         errs += [f"{t}: path {g} matches no file" for g in v["paths"] if not any(_glob(g).fullmatch(f) for f in files)]
+    errs += overlaps(tr, files)
     declared = {v.get("registry") for v in tr["tracks"].values()}
     errs += [f"corpus/registry.json: track {r!r} is not declared in {MANIFEST}" for r in sorted(registry_tracks(root) - declared)]
     return errs
@@ -131,16 +138,16 @@ def waived(messages: str) -> bool:
 
 
 def stale(tracks: dict, changed: set[str], waived: bool) -> list[str]:
-    """For each set of tracks whose paths changed without any of their roadmaps changing: what changed."""
+    """For each track whose paths changed while its roadmap did not: what changed."""
     if waived:
         return []
-    roadmaps = {v["roadmap"] for v in tracks["tracks"].values()}
-    missed: dict[tuple[str, ...], list[str]] = {}
-    for p in sorted(changed - roadmaps):
-        if (os := tuple(owners(tracks, p))) and not {tracks["tracks"][o]["roadmap"] for o in os} & changed:
-            missed.setdefault(os, []).append(p)
-    return [f"{ps[0]}{f' and {len(ps) - 1} more' if len(ps) > 1 else ''} ({', '.join(os)}) changed, but "
-            f"{' or '.join(tracks['tracks'][o]['roadmap'] for o in os)} did not" for os, ps in missed.items()]
+    missed: dict[str, list[str]] = {}
+    for p in sorted(changed):
+        for t in owners(tracks, p):
+            if tracks["tracks"][t]["roadmap"] not in changed:
+                missed.setdefault(t, []).append(p)
+    return [f"{ps[0]}{f' and {len(ps) - 1} more' if len(ps) > 1 else ''} ({t}) changed, but "
+            f"{tracks['tracks'][t]['roadmap']} did not" for t, ps in missed.items()]
 
 
 def _git(root: Path, *args: str) -> str:
