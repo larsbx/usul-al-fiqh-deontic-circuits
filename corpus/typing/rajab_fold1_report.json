@@ -41,6 +41,9 @@
     "5": 0.0975,
     "10": 0.1441
   },
+  "rank_semantics": "rank is pessimistic type-only rank; null means zero typed coverage, not absence from hybrid retrieval",
+  "target_semantics": "legacy recall includes gap annotations; an examined encoder is not necessarily a valid whole-case target",
+  "by_annotation_class": {},
   "encoders_applying_per_answer": 0.6,
   "encoders_touched_per_answer": 1.32,
   "by_encoder": {
@@ -847,1416 +850,2910 @@
     {
       "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f004",
       "encoder": "amr",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l043"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f002",
       "encoder": "generality",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l052",
+        "l053",
+        "l054",
+        "s059",
+        "s060"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f005",
       "encoder": "generality",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l052",
+        "l053",
+        "l054",
+        "s059",
+        "s060"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q052.f008",
       "encoder": "haml_ala_adna",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q053.f003",
       "encoder": "generality",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l052",
+        "l053",
+        "l054",
+        "s059",
+        "s060"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f001",
       "encoder": "umum_lafz",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l061"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f001",
       "encoder": "hair_detached",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r002"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
       "encoder": "hair_detached",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r002"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
       "encoder": "excess_in_following",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r003"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
       "encoder": "excess_in_following",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r003"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f001",
       "encoder": "advance_after_cause",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r004"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q004.f002",
       "encoder": "advance_after_cause",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r004"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q007.f001",
       "encoder": "switch_to_original",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r007",
+        "s028"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
       "encoder": "nafl_before_fard",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r011"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f000",
       "encoder": "a26_ihala_on_known_cause",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r013"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f005",
       "encoder": "a26_ihala_on_known_cause",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r013"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f010",
       "encoder": "a26_ihala_on_known_cause",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r013"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f013",
       "encoder": "a26_ihala_on_known_cause",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r013"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q013.f015",
       "encoder": "a26_ihala_on_known_cause",
+      "hybrid_rank": 4,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r013"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
       "encoder": "substitute_at_obligation",
+      "hybrid_rank": 166,
+      "hybrid_qaida_rank": 165,
+      "gold_qawaid": [
+        "r016",
+        "s028"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q017.f003",
       "encoder": "many_over_noble",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r017"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f003",
       "encoder": "tadakhul",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r018",
+        "s041"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f005",
       "encoder": "tadakhul",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r018",
+        "s041"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f009",
       "encoder": "tadakhul",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r018",
+        "s041"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f011",
       "encoder": "tadakhul",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r018",
+        "s041"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f003",
       "encoder": "settles_without_ability",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r019"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q019.f005",
       "encoder": "settles_without_ability",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r019"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f000",
       "encoder": "growth_from_substance",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r020",
+        "r021"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f004",
       "encoder": "growth_from_substance",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r020",
+        "r021"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f000",
       "encoder": "istihlak",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r022",
+        "s020"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f009",
       "encoder": "a26_refused_idhn_lapses",
+      "hybrid_rank": 7,
+      "hybrid_qaida_rank": 7,
+      "gold_qawaid": [
+        "r023"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q023.f010",
       "encoder": "a26_refused_idhn_lapses",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r023"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f001",
       "encoder": "right_after_transfer",
+      "hybrid_rank": 25,
+      "hybrid_qaida_rank": 25,
+      "gold_qawaid": [
+        "r024"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f007",
       "encoder": "right_after_transfer",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r024"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f003",
       "encoder": "follows_proven_ownership",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000",
       "encoder": "itlaf",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001",
       "encoder": "itlaf",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002",
       "encoder": "itlaf",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004",
       "encoder": "itlaf",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r026",
+        "s036"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f001",
       "encoder": "benefit_to_other",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r027"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q028.f003",
       "encoder": "concurrent_causes",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r028"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
       "encoder": "tolerance_exceeded",
+      "hybrid_rank": 6,
+      "hybrid_qaida_rank": 6,
+      "gold_qawaid": [
+        "r029"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
       "encoder": "failed_obligation_returns",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r030"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f000",
       "encoder": "implicit_exception",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r033"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f001",
       "encoder": "implicit_exception",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r033"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q033.f002",
       "encoder": "implicit_exception",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r033"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q034.f002",
       "encoder": "manumission_spread",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r034"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q036.f001",
       "encoder": "lease_after_authority",
+      "hybrid_rank": 4,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r036"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
       "encoder": "successive_by_binding",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r037"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f002",
       "encoder": "successive_by_binding",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r037"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f007",
       "encoder": "successive_by_binding",
+      "hybrid_rank": 107,
+      "hybrid_qaida_rank": 107,
+      "gold_qawaid": [
+        "r037"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f000",
       "encoder": "a27_ain_ruling_survives_owner_change",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r040"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f008",
       "encoder": "a27_ain_ruling_survives_owner_change",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r040"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q040.f012",
       "encoder": "a27_ain_ruling_survives_owner_change",
+      "hybrid_rank": 17,
+      "hybrid_qaida_rank": 17,
+      "gold_qawaid": [
+        "r040"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q043.f000",
       "encoder": "continued_holding",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r043"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f000",
       "encoder": "trust_voidance",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f005",
       "encoder": "trust_voidance",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r045",
+        "s014"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q046.f001",
       "encoder": "void_contract_concluded",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r046"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q050.f000",
       "encoder": "forced_acquisition_solvent",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r050"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f000",
       "encoder": "daman_without_qabd",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r051"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q051.f001",
       "encoder": "daman_without_qabd",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r051"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q052.f003",
       "encoder": "disposal_before_qabd_debt",
+      "hybrid_rank": 16,
+      "hybrid_qaida_rank": 15,
+      "gold_qawaid": [
+        "r052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q053.f000",
       "encoder": "attached_right_disposal",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r053"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f003",
       "encoder": "concurrent_condition",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r056"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f000",
       "encoder": "ruling_with_bar",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r057"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q058.f000",
       "encoder": "desisting_at_once",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r058"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f000",
       "encoder": "rescission_harm",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r060"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f001",
       "encoder": "rescission_harm",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r060"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f004",
       "encoder": "rescission_harm",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r060"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f007",
       "encoder": "rescission_harm",
+      "hybrid_rank": 82,
+      "hybrid_qaida_rank": 82,
+      "gold_qawaid": [
+        "r060"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q062.f000",
       "encoder": "removal_before_knowledge",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r062"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q063.f001",
       "encoder": "knowledge",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r063",
+        "s045"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
       "encoder": "unknown_condition_in_fact",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r064",
+        "r065"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f003",
       "encoder": "recourse_after_return",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r067"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f003",
       "encoder": "doubt_in_condition",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r068",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f006",
       "encoder": "doubt_in_condition",
+      "hybrid_rank": 58,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r068",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f007",
       "encoder": "taliq_al_bay",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r068"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f008",
       "encoder": "doubt_in_condition",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r068",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f010",
       "encoder": "doubt_in_condition",
+      "hybrid_rank": 31,
+      "hybrid_qaida_rank": 31,
+      "gold_qawaid": [
+        "r068",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f000",
       "encoder": "delegating_work",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r069"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q069.f004",
       "encoder": "delegating_work",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r069"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f000",
       "encoder": "a27_specific_agent_in_general_object",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r070"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f009",
       "encoder": "a27_specific_agent_in_general_object",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r070"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q070.f014",
       "encoder": "a27_specific_agent_in_general_object",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r070"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f005",
       "encoder": "nafaqa_taken_owned",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r072"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q072.f007",
       "encoder": "nafaqa_taken_owned",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r072"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q073.f002",
       "encoder": "benefit_condition_against_compensation",
+      "hybrid_rank": 25,
+      "hybrid_qaida_rank": 25,
+      "gold_qawaid": [
+        "r073"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f002",
       "encoder": "wage_without_stipulation",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r074"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f000",
       "encoder": "recourse",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r075",
+        "s032"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.75,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f005",
       "encoder": "recourse",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r075",
+        "s032"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f010",
       "encoder": "recourse",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r075",
+        "s032"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.25,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f000",
       "encoder": "partners",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r076",
+        "s030"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f001",
       "encoder": "partners",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r076",
+        "s030"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f002",
       "encoder": "partners",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r076",
+        "s030"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f005",
       "encoder": "partners",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r076",
+        "s030"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q077.f008",
       "encoder": "attached_takeover_at_value",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r077"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f006",
       "encoder": "rescue_loss_liability",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r078"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q078.f007",
       "encoder": "rescue_loss_liability",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r078"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f002",
       "encoder": "repeat_bearing_roots_as_trees",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r080"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q081.f000",
       "encoder": "attached_growth_follows",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r081"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f004",
       "encoder": "rajab_a28_toward_ownership_growth",
+      "hybrid_rank": 142,
+      "hybrid_qaida_rank": 32,
+      "gold_qawaid": [
+        "r020",
+        "r021",
+        "r082"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f007",
       "encoder": "rajab_a28_toward_ownership_growth",
+      "hybrid_rank": 97,
+      "hybrid_qaida_rank": 28,
+      "gold_qawaid": [
+        "r020",
+        "r021",
+        "r082"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f011",
       "encoder": "rajab_a28_toward_ownership_growth",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r020",
+        "r021",
+        "r082"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f015",
       "encoder": "rajab_a28_growth_follows_hand",
+      "hybrid_rank": 167,
+      "hybrid_qaida_rank": 166,
+      "gold_qawaid": [
+        "r082"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f019",
       "encoder": "rajab_a28_growth_in_nonownership_contract",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r082"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q082.f027",
       "encoder": "rajab_a28_faskh_growth_returns",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r020",
+        "r021",
+        "r082"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f002",
       "encoder": "a29_haml_hukm_before_separation",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r084"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f005",
       "encoder": "a29_haml_hukm_before_separation",
+      "hybrid_rank": 167,
+      "hybrid_qaida_rank": 167,
+      "gold_qawaid": [
+        "r084"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f009",
       "encoder": "a29_haml_hukm_before_separation",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r084"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q084.f020",
       "encoder": "a29_haml_hukm_before_separation",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r084"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f008",
       "encoder": "rajab_a30_use_right_for_need",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r085",
+        "r099"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f010",
       "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "hybrid_rank": 153,
+      "hybrid_qaida_rank": 152,
+      "gold_qawaid": [
+        "r085"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f013",
       "encoder": "rajab_a30_ikhtisas_hand_stands",
+      "hybrid_rank": 12,
+      "hybrid_qaida_rank": 11,
+      "gold_qawaid": [
+        "r085"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f017",
       "encoder": "rajab_a30_tie_binds_whole",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r085"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q085.f021",
       "encoder": "rajab_a30_tie_binds_whole",
+      "hybrid_rank": 86,
+      "hybrid_qaida_rank": 83,
+      "gold_qawaid": [
+        "r085"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q086.f006",
       "encoder": "a29_four_kinds_of_milk",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r086"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f016",
       "encoder": "a31_rajab87_transfer_of_holding",
+      "hybrid_rank": 67,
+      "hybrid_qaida_rank": 67,
+      "gold_qawaid": [
+        "r087"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q087.f017",
       "encoder": "a31_rajab87_transfer_of_holding",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r087"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q090.f003",
       "encoder": "seizing_hand_liable",
+      "hybrid_rank": 119,
+      "hybrid_qaida_rank": 119,
+      "gold_qawaid": [
+        "r090"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
       "encoder": "hand_with_owner_liable",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r092"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f001",
       "encoder": "taker_from_usurper",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r093"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f002",
       "encoder": "taker_from_usurper",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r093"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f001",
       "encoder": "error_actor_liable",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r095",
+        "r127"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.4,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f003",
       "encoder": "error_actor_liable",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r095"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.2,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f007",
       "encoder": "error_actor_liable",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r095"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.4,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
       "encoder": "error_actor_liable",
+      "hybrid_rank": 5,
+      "hybrid_qaida_rank": 5,
+      "gold_qawaid": [
+        "r095"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f002",
       "encoder": "performed_without_leave_owned",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r096"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f003",
       "encoder": "performed_without_leave_owned",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r096"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f004",
       "encoder": "performed_without_leave_owned",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r096"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f007",
       "encoder": "performed_without_leave_not_owned",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r096"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f001",
       "encoder": "dispose_without_judge",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r097"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f003",
       "encoder": "dispose_without_judge",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r097"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f004",
       "encoder": "dispose_without_judge",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r097"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q097.f005",
       "encoder": "dispose_without_judge",
+      "hybrid_rank": 133,
+      "hybrid_qaida_rank": 133,
+      "gold_qawaid": [
+        "r097"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f003",
       "encoder": "free_bestowal_of_needed_benefit",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r099"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f005",
       "encoder": "free_bestowal_of_needed_ayn",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r099"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q099.f006",
       "encoder": "free_bestowal_of_needed_benefit",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r099"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f001",
       "encoder": "vowed_as_shar_obligation",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r100"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f004",
       "encoder": "vowed_as_shar_obligation",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r100"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f001",
       "encoder": "split_halves_suffice",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r101"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f006",
       "encoder": "forbidden_cause_voided",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r102"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q102.f011",
       "encoder": "hastened_right_forfeited",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r102"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f003",
       "encoder": "continuity",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r103",
+        "s048"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f007",
       "encoder": "continuity",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r103",
+        "s048"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f009",
       "encoder": "continuity",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r103",
+        "s048"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f002",
       "encoder": "unknown_consent_binds",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r104"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q105.f001",
       "encoder": "vague_report_accepted",
+      "hybrid_rank": 5,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r105"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f005",
       "encoder": "unknown_as_nonexistent",
+      "hybrid_rank": 211,
+      "hybrid_qaida_rank": 132,
+      "gold_qawaid": [
+        "r106",
+        "s020"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f004",
       "encoder": "maadum_grant_valid",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r107"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
       "encoder": "maadum_grant_valid",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r107"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q108.f003",
       "encoder": "unknown_order_judged_sequential",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r108"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f007",
       "encoder": "vague_one_bars_all",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r109"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f008",
       "encoder": "vague_one_bars_all",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r109"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f009",
       "encoder": "vague_one_bars_all",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r109"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f017",
       "encoder": "simultaneous_combination_voids",
+      "hybrid_rank": 6,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r109"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q110.f009",
       "encoder": "substitute_refusal_judged_by_original",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r110"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f001",
       "encoder": "necessity_spares_lighter",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r112"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q112.f003",
       "encoder": "necessity_spares_lighter",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r112"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f002",
       "encoder": "distribution_each_over_whole",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r113"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f006",
       "encoder": "distribution_each_over_whole",
+      "hybrid_rank": 183,
+      "hybrid_qaida_rank": 183,
+      "gold_qawaid": [
+        "r113"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f007",
       "encoder": "distribution_each_over_whole",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r113"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f002",
       "encoder": "unqualified_sharika_halves",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r114"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q115.f006",
       "encoder": "shared_right_accrues_to_rest",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r115"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001",
       "encoder": "occurrence_state_governs",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r117"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f005",
       "encoder": "occurrence_state_governs",
+      "hybrid_rank": 4,
+      "hybrid_qaida_rank": 4,
+      "gold_qawaid": [
+        "r117"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f008",
       "encoder": "occurrence_state_governs",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r117"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q118.f006",
       "encoder": "cancel_on_existence_valid",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r118"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f001",
       "encoder": "specific_singled_out",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r119"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f003",
       "encoder": "specific_singled_out",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r119"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f006",
       "encoder": "takes_only_by_special",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r119"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f010",
       "encoder": "entitlement_multiplies",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r119"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f003",
       "encoder": "double_kinship_preferred",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r120"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f007",
       "encoder": "urf_specialises_general",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r121"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
       "encoder": "urf_specialises_general",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r121"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q124.f003",
       "encoder": "cause_restricts_general",
+      "hybrid_rank": 142,
+      "hybrid_qaida_rank": 142,
+      "gold_qawaid": [
+        "r124"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f001",
       "encoder": "intention_shapes_wording",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r125"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f004",
       "encoder": "intention_shapes_wording",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r125"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
       "encoder": "intention_shapes_wording",
+      "hybrid_rank": 198,
+      "hybrid_qaida_rank": 198,
+      "gold_qawaid": [
+        "r125"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
       "encoder": "intention_shapes_wording",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r125"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f003",
       "encoder": "unintended_instance_covered",
+      "hybrid_rank": 215,
+      "hybrid_qaida_rank": 215,
+      "gold_qawaid": [
+        "r126"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f007",
       "encoder": "unintended_instance_covered",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r126"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f008",
       "encoder": "unintended_instance_covered",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r126"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f000",
       "encoder": "mubashara_tasabbub",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r127"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f004",
       "encoder": "mubashara_tasabbub",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r127"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q127.f006",
       "encoder": "mubashara_tasabbub",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r127"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f006",
       "encoder": "spread_follows_injury",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r128"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f001",
       "encoder": "hit_state_governs",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r129"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f002",
       "encoder": "hit_state_governs",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r129"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003",
       "encoder": "aqila_bears_across_change",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r129"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q130.f005",
       "encoder": "needed_item_is_surplus",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r130"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q131.f001",
       "encoder": "budh_capacity_is_wealth",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r131"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f012",
       "encoder": "tabaa",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l043",
+        "r133",
+        "s050"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f017",
       "encoder": "tabaa",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "l043",
+        "r133",
+        "s050"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f001",
       "encoder": "prevention_easier_than_removal",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r134"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q134.f007",
       "encoder": "prevention_easier_than_removal",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 3,
+      "gold_qawaid": [
+        "r134"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f003",
       "encoder": "supervening_bar_extends_to_preliminaries",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r136"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q138.f002",
       "encoder": "burdened_thing_compensated",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r138"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f001",
       "encoder": "doubled",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r140",
+        "s035"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q140.f004",
       "encoder": "doubled",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r140",
+        "s035"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q142.f000",
       "encoder": "returned_takes_first_ruling",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r142"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f004",
       "encoder": "badal_stands_for_original",
+      "hybrid_rank": 123,
+      "hybrid_qaida_rank": 123,
+      "gold_qawaid": [
+        "r143"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f007",
       "encoder": "heir_takes_deceased_right",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r144"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f010",
       "encoder": "heir_takes_deceased_right",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r144"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f011",
       "encoder": "heir_stands_in_owed_right",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r144"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f012",
       "encoder": "heir_stands_in_owed_right",
+      "hybrid_rank": 58,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r144"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f002",
       "encoder": "rajiyya_takes_wife_rule",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r146"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q147.f003",
       "encoder": "woman_half_of_man",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r147"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q149.f004",
       "encoder": "determinate_holder_right",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r149"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q150.f002",
       "encoder": "transfer_follows_cause",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r150"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q151.f006",
       "encoder": "dalalat_hal_carries_claim",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r151"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f007",
       "encoder": "grandchild_in_child_term",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r153"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f008",
       "encoder": "grandchild_in_child_term",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r153"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f010",
       "encoder": "grandchild_in_child_term",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r153"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f014",
       "encoder": "grandchild_in_child_term",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r153"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q153.f015",
       "encoder": "grandchild_in_child_term",
+      "hybrid_rank": 139,
+      "hybrid_qaida_rank": 139,
+      "gold_qawaid": [
+        "r153"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f003",
       "encoder": "bud_exit_charged",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r154"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q155.f000",
       "encoder": "mahr_fully_established",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r155"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.25,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f013",
       "encoder": "mahr_halved_by_separation",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r156"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.25,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f014",
       "encoder": "mahr_halved_by_separation",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r156"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q157.f003",
       "encoder": "idda_transfer_on_change",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r157"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f003",
       "encoder": "two_usul_reinforced_governs",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r158"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.5,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f014",
       "encoder": "two_usul_reinforced_governs",
+      "hybrid_rank": 8,
+      "hybrid_qaida_rank": 8,
+      "gold_qawaid": [
+        "r158"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015",
       "encoder": "asl_zahir",
+      "hybrid_rank": 26,
+      "hybrid_qaida_rank": 11,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034",
       "encoder": "asl_zahir",
+      "hybrid_rank": 23,
+      "hybrid_qaida_rank": 23,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.0,
       "rank": null
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039",
       "encoder": "asl_zahir",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r159",
+        "s011",
+        "s052"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f005",
       "encoder": "lots",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f008",
       "encoder": "lots",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f010",
       "encoder": "lots",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f017",
       "encoder": "lots",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f022",
       "encoder": "lots",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f028",
       "encoder": "abstention_under_possible_condition",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r160",
+        "s011"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 1.0,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033",
       "encoder": "lots",
+      "hybrid_rank": 3,
+      "hybrid_qaida_rank": 2,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 3
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f037",
       "encoder": "lots",
+      "hybrid_rank": 2,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.6667,
       "rank": 2
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f044",
       "encoder": "lots",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f047",
       "encoder": "lots",
+      "hybrid_rank": 1,
+      "hybrid_qaida_rank": 1,
+      "gold_qawaid": [
+        "r160",
+        "s025"
+      ],
+      "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
     },
     {
       "case": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346",
       "encoder": "maqasid_tarjih",
+      "hybrid_rank": null,
+      "hybrid_qaida_rank": null,
+      "gold_qawaid": [],
+      "gold_qawaid_basis": "encoder_fallback",
       "settled": 0.0,
       "rank": null
     }

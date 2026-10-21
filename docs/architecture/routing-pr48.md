@@ -187,3 +187,11 @@ The figure reproduces within 0.04, but the reading step is only moderately repro
 
 **Accuracy by qāʿida.** Counted by the qāʿida the case is tied to rather than by its exact encoder, the frozen fold-1 hybrid routes correctly at the first rank 0.779 of the time (0.685 by encoder). At k = 5 it is 0.872 (0.860 by encoder). See [field anchors, accuracy](field-anchors.md#accuracy).
 
+
+### IslamQA itlāf gap audit (20 October 2026)
+
+The [case-level itlāf audit](itlaf-routing-audit-2026-10-20.md) distinguishes
+zero type coverage from hybrid retrieval, preserves missing-rule/fact labels,
+and evaluates source-receipted candidate withdrawals separately from the frozen
+blind inputs. The headline recall figures are unchanged; the audit does not
+claim a blind accuracy improvement.
