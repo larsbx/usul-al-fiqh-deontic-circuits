@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "human_reviewed": false,
+  "evaluation_status": "unblinded targeted audit; never a replacement blind test",
+  "baseline_commit": "1b33a22cb90a22ec33c92a8c80b1966ff6bb4764",
+  "method": "Source-checked withdrawals only. Unknown stays absent; no values, labels, needs, bindings or conclusions are fed into ranking. Original blind situations remain immutable.",
+  "scope_authority": [
+    "formal/lean/Usul/Typing/Qaida.lean",
+    "corpus/types/anchors/anchors-a.json"
+  ],
+  "corrections": [
+    {
+      "answer": "islamqa.164604",
+      "situation": 3,
+      "field": "held_by_consent",
+      "old_value": false,
+      "evidence": "أما إن كان قد أخذها بدون إذنك أو اصطدم بها فانكسرت ، فعليه الضمان",
+      "action": "withdraw",
+      "reason": "disjunction: taking without permission OR bumping into the furniture does not establish lack of consent for every branch. Separate branches require a future annotation pass; do not infer true."
+    },
+    {
+      "answer": "islamqa.223512",
+      "situation": 3,
+      "field": "transgressed",
+      "old_value": true,
+      "evidence": "لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.223512",
+      "situation": 3,
+      "field": "udwan_in_mubashara",
+      "old_value": true,
+      "evidence": "لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه",
+      "action": "withdraw",
+      "reason": "disjunction: lack of skill OR transgression OR shortcoming does not settle transgression in every branch. Preserve the unresolved physician-liability condition; do not infer false."
+    },
+    {
+      "answer": "islamqa.223512",
+      "situation": 4,
+      "field": "transgressed",
+      "old_value": false,
+      "evidence": "أن لا تجني أيديهم ، فيتجاوزوا ما ينبغي أن يقطع",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.305083",
+      "situation": 1,
+      "field": "transgressed",
+      "old_value": false,
+      "evidence": "فإنك لم تكن متعديا",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.305083",
+      "situation": 3,
+      "field": "transgressed",
+      "old_value": true,
+      "evidence": "إذا كنت متعديا بسيرك",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.317604",
+      "situation": 2,
+      "field": "transgressed",
+      "old_value": true,
+      "evidence": "لكنه معتد ومفرط، فالضمان يكون عليه",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.317604",
+      "situation": 2,
+      "field": "negligent",
+      "old_value": true,
+      "evidence": "لكنه معتد ومفرط، فالضمان يكون عليه",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.344230",
+      "situation": 1,
+      "field": "negligent",
+      "old_value": false,
+      "evidence": "ما دمت قد سقت لمصلحته ولم تكن مفرطا",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.345284",
+      "situation": 2,
+      "field": "negligent",
+      "old_value": true,
+      "evidence": "فإن كان بتفريط من السائق، فإنه يضمن ما أتلفه",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.345284",
+      "situation": 3,
+      "field": "transgressed",
+      "old_value": false,
+      "evidence": "لعدم تعديه وتفريطه",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.345284",
+      "situation": 3,
+      "field": "negligent",
+      "old_value": false,
+      "evidence": "وإن كان بغير تفريط، لم يضمن",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.348122",
+      "situation": 1,
+      "field": "transgressed",
+      "old_value": false,
+      "evidence": "فأنت غير معتدية، ولا يلزمك ضمان من عثر بهذه العربة",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.348122",
+      "situation": 2,
+      "field": "transgressed",
+      "old_value": true,
+      "evidence": "على فرض أنك معتدية بفعلك فإنك تضمنين الكسر",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.363963",
+      "situation": 1,
+      "field": "negligent",
+      "old_value": false,
+      "evidence": "إذا كنت تسيرين بالسرعة المعقولة التي يمكنك معها التحكم في السيارة",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    },
+    {
+      "answer": "islamqa.363963",
+      "situation": 2,
+      "field": "negligent",
+      "old_value": true,
+      "evidence": "أو بالتقصير في محاولة تفادي الحادث عند عودة الرجل، فإنك تضمنين كسره وجرحه",
+      "action": "withdraw",
+      "reason": "scope: Amana fields describe a trustee and the entrusted property; this receipt describes injury/traffic/medical causation, not loss of entrusted property. Withdraw this assignment; do not infer its negation."
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "islamqa.164604.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "The unauthorized taking and collision are alternatives, not evidence for a purpose. Purpose has only benefit/repelHarm; MentalState lacks an accidental constructor. Do not equate accident with ignorant or forgetful.",
+      "source_excerpt": "أما إن كان قد أخذها بدون إذنك أو اصطدم بها فانكسرت ، فعليه الضمان",
+      "remaining_need": [
+        "fact:accidental"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.223512.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "ولكن لا تلزمكم الدية والكفارة ؛ لأن المباشر لهذا العمل والذي قد يكون تسبب في الوفاة هو المعالج الشعبي وليس أنتم.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.223512.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "Skill, exceeding treatment and causal connection govern this case. Treatment benefiting a patient is not evidence that destruction was for benefit under Q36. Physician-liability conditions are outside itlaf.",
+      "source_excerpt": "وإن كانت الوفاة بسببه إما لكونه غير حاذق في عمله أو لوجود تعدٍ منه أو تقصير : فيكون الضمان عليه .",
+      "remaining_need": [
+        "rule:physician_liability"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.242731.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "Skill, exceeding treatment and causal connection govern this case. Treatment benefiting a patient is not evidence that destruction was for benefit under Q36. Physician-liability conditions are outside itlaf.",
+      "source_excerpt": "الطبيب إذا جنت يده : ضمن ، ولو كان ماهرا، لكن لا إثم عليه حينئذ ، فإن كان غير ماهر: أثم ، وضمن.",
+      "remaining_need": [
+        "rule:physician_liability"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.266167.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "فإنك تتحمل ذلك ما دام الخطأ منك، ولا علاقة لمؤسستك بخطئك.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.266167.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case allocates responsibility between employer and actual actor. The Q13/Q36 Boolean purpose test does not select the responsible person.",
+      "source_excerpt": "ولا وجه لتحمل صاحب العمل غرامة ما أتلفت؛ فإن الضمان على المتلِف.",
+      "remaining_need": [
+        "rule:daman_on_mutlif"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.272160.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "والأصل أن من أتلف سيارة لغيره لزمه ضمان ما أتلف، إضافة إلى ما نقص من قيمة السيارة بسبب الحادث.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.286486.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "من تعرض لحادث سيارة، فأصيب في نفسه أو ماله، نتيجة لخطأ الغير، فالأصل أن يأخذ التعويض ممن أصابه",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.305083.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كنت تسير بسيارتك السير المسموح به من جهة السرعة، ومكان السير، فلا شيء عليك",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.305083.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "وعليه: فضمان ما أصاب هذه المرأة على السائق الآخر، إلا إذا كان لا يمكنه تفادي إصابتها لقربه منها، فلا شيء عليه؛ لأن الخطأ من المرأة.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.305083.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كنت متعديا بسيرك، والسائق الآخر لم يتعدَّ ، كما لو جاوزت السرعة المسموح بها، فإنك تضمن ما أصاب المرأة، لأنك متسبب متعدٍّ، فتقدم على المباشر في الضمان.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.315435.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "إذا كنت تسير بالسرعة المسموح بها، ولم يمكنك تفادي الرجل، لأنه لا يفصلك عنه سوى متر أو مترين، فأنت معذور، ولا شيء عليك، لا دية ولا كفارة.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.315435.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "وإن كان يمكنك تلافي الصدام، أو كنت تسير بسرعة زائدة منعتك من التفادي فأنت ضامن .",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.315435.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "Shared fault, proportional blood money and indivisible expiation require separate outputs and conditions. A Boolean purpose test cannot express this allocation.",
+      "source_excerpt": "فعليه الكفارة، وعليه من الدية بقدر نسبة خطئه.",
+      "remaining_need": [
+        "rule:shared_fault_apportionment"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.317604.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كان الأمر كما ذكرت فلا ضمان عليك",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.317604.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "مع أن الشخص المعاند يعتبر متسببا أيضا، لا مباشرا، لكنه معتد ومفرط، فالضمان يكون عليه، لا على سائق السيارة المنقلبة إذا لم يمكنه تفادي الحادث.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.328808.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "The source explicitly distinguishes a common hired worker. Its liability despite no transgression/negligence is a role-specific rule, not a Q36 destruction purpose.",
+      "source_excerpt": "والأجير المشترك يضمن مطلقا ولو لم يحصل منه تعد أو تفريط، وهذا مذهب جمهور أهل العلم.",
+      "remaining_need": [
+        "rule:ajir_mushtarak_liability"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.344230.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "إذا أخطأ قائد السيارة، وترتب على ذلك غرم، فالغرم عليه، لا على من أمره، أو طلب منه أن يسوق السيارة مجانا أو بأجرة، ولا على من ركب معه، سواء كان السائق يعلم بذلك ",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.344230.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "فالجناية تتربت آثارها على الجاني المباشر لها، سواء جنى على نفسه أو على غيره.",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.345284.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "وعليه ؛ فإذا لم يكن منك تفريط ، ولم يمكنك تفادي الحادث، فلا شيء عليك",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.345284.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "وإلا لزمك ضمان ما أتلفت.",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.348122.f001",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "إذا كنت قد وضعت العربة في جانب من البيت لا يأتيه أهل البيت كثيرا، فأنت غير معتدية، ولا يلزمك ضمان من عثر بهذه العربة",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.348122.f002",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "This case concerns the responsible actor or direct/indirect causation, not the Q36 purpose test. Q127 is a relevant separate candidate, but its arising_from_sabab and direct-actor transgression must both be justified; mere causation or liability does not settle them. Avoidability exceptions are not automatically covered.",
+      "source_excerpt": "على فرض أنك معتدية بفعلك فإنك تضمنين الكسر",
+      "remaining_need": [
+        "rule:mubashara_tasabbub"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.348122.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "The consequence must be causally connected to the injury; death after injury alone is insufficient. The purpose encoder has no causal attribution or consequence field.",
+      "source_excerpt": "ولا تضمنين النفس، إلا إذا ثبت أن جدتك ماتت من مضاعفات الكسر، وهو ما يعبر عنه الفقهاء بسراية الجرح.",
+      "remaining_need": [
+        "rule:sirayat_al_jinaya"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.363963.f001",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "إذا كنت تسيرين بالسرعة المعقولة التي يمكنك معها التحكم في السيارة، وكان الأمر ما ذكرت من تنبيهك للرجل، وأنه تجاوز حارتك ثم عاد فجأة، فلا يلزمك ضمان شيء مما أصاب",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.363963.f002",
+      "primary": "encoder_field_coverage",
+      "reason": "Accident fault/avoidability is not destruction for benefit or repelling the damaged thing. The source leaves purpose open; current itlaf cannot encode the deciding condition. Amana negligence is not a generic traffic-fault field.",
+      "source_excerpt": "على فرض أنك أخطأت بتجاوز السرعة مثلا، أو بالتقصير في محاولة تفادي الحادث عند عودة الرجل، فإنك تضمنين كسره وجرحه",
+      "remaining_need": [
+        "fact:negligence"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    },
+    {
+      "case_id": "islamqa.363963.f003",
+      "primary": "legitimate_encoder_mismatch",
+      "reason": "The consequence must be causally connected to the injury; death after injury alone is insufficient. The purpose encoder has no causal attribution or consequence field.",
+      "source_excerpt": "ولا ضمان عليك في موته؛ لأن الكسر المذكور لا يؤدي للموت، ولأن سبب الموت ظاهر وهو نقص الأكسجين الذي يلحق المصاب بكورونا",
+      "remaining_need": [
+        "rule:sirayat_al_jinaya"
+      ],
+      "annotation_action": "retain original gap; no relabelling",
+      "ranking_action": "no label-conditioned boost"
+    }
+  ]
+}
