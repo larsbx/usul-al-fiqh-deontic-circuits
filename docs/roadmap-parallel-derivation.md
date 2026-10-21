@@ -19,6 +19,7 @@ Nothing here changes a status. Every artifact the plan produces is `candidate`, 
 | `corpus/reconciliation/` | `**` |
 | `examples/` | `v41_*.pl` |
 | `pipeline/usul_corpus/` | `shards.py`, `r2_sample1.py`, `routing.py`, `units.py`, `typed_routing.py`, `semantic_*.py`, `bank_review.py` |
+| `pipeline/tests/` | `test_units.py` |
 <!-- END GENERATED TRACK PATHS -->
 
 ## Part I: the derivation method
