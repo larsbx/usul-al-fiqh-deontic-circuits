@@ -70,8 +70,11 @@ def test_author_conditional_results_and_competing_stances_remain_distinct():
     assert report["reviewed_cases"] == 0
     assert rows["tatarrus"]["reachable_by_stance"] == {"rawda": [False], "mustasfa": [True], "malik": [True]}
     assert rows["king_fast"]["reachable_by_stance"] == dict.fromkeys(("rawda", "mustasfa", "malik"), [False])
-    for label in ("fortress", "ship", "famine"):
+    for label in ("ship", "famine"):
         assert rows[label]["reachable_by_stance"] == {"rawda": [False], "mustasfa": [False], "malik": [False, True]}
+    assert rows["fortress"]["reachable_by_stance"] == dict.fromkeys(("rawda", "mustasfa", "malik"), [False])
+    assert rows["fortress"]["guard_overapproximation_by_stance"]["malik"] == [False, True]
+    assert rows["fortress"]["source_excluded_values"] == {"maslaha_rutba": ["daruri"]}
     # Source qualifiers and non-modelled objections cannot vanish from the evidence layer.
     assert "إذ لا ضرورة" in receipt["cases"][2]["evidence"][0]["excerpt_ar"]
     assert "ولا أصل لها" in receipt["cases"][3]["evidence"][0]["excerpt_ar"]
@@ -89,7 +92,8 @@ def test_partial_cases_use_exported_typing_and_existing_deduction():
         settled = {field: c["facts"][name] for field, name in zip(read, names) if name in c["facts"]}
         assert deduction.reach("istislah", settled, read) == {c["expected"]}
         guards = takhrij.lean_file([c])
-        assert guards.count("#guard") == len(takhrij.case_completions(c))
+        assert guards.count("#guard") == 1
+        assert guards.count("Usul.Readings.Maqasid.hujja") == len(takhrij.case_completions(c))
 
 
 def test_quantification_never_silently_fills_or_selects_facts():

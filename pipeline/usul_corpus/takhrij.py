@@ -601,11 +601,15 @@ def lean_file(cases: list[dict], command: str = "takhrij", source: str = "corpus
              "import Usul", ""]
     for c in cases:
         if c["class"] in GUARDED:
-            lines.append(f"-- {c['far']} ({c['class']})")
+            completions = case_completions(c)
             if c.get("quantified_facts"):
                 lines.append("-- All typed completions of unsettled fields: " + ", ".join(c["quantified_facts"]))
-            for facts in case_completions(c):
-                lines.append(f"#guard ({lean_expr(c['encoder'], facts)}) {GUARDED[c['class']]} {_lit(c['expected'])}")
+            lines.append(f"-- {c['far']} ({c['class']})")
+            checks = [f"({lean_expr(c['encoder'], facts)}) {GUARDED[c['class']]} {_lit(c['expected'])}"
+                      for facts in completions]
+            # Keep the established one-guard-per-case identity contract. A universal
+            # case is one conjunction, not extra case identities or an arbitrary default.
+            lines.append("#guard " + (checks[0] if len(checks) == 1 else " && ".join(f"({check})" for check in checks)))
     return "\n".join(lines) + "\n"
 
 

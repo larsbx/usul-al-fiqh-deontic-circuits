@@ -2,7 +2,7 @@
   "status": "candidate",
   "source_cases": 5,
   "reviewed_cases": 0,
-  "scope": "Reachability of the hujja question under three existing modeled stances, not historical attributions of every concrete ruling. malik means Mālik as the Rawḍa reports him. A two-valued set records unresolved attributes; no default fills them.",
+  "scope": "Reachability of the hujja question under three existing modeled stances, not historical attributions of every concrete ruling. malik means Mālik as the Rawḍa reports him. Reachable sets enforce explicit source exclusions; guard over-approximations additionally test all typed values. A two-valued set records unresolved attributes; no default fills them.",
   "author_completion_checks": 31,
   "cases": [
     {
@@ -19,7 +19,19 @@
         "maslaha_kulliyya"
       ],
       "author_completions": 12,
+      "source_excluded_values": {},
       "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false
+        ]
+      },
+      "guard_overapproximation_by_stance": {
         "rawda": [
           false
         ],
@@ -45,7 +57,19 @@
       ],
       "quantified_fields": [],
       "author_completions": 1,
+      "source_excluded_values": {},
       "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          true
+        ],
+        "malik": [
+          true
+        ]
+      },
+      "guard_overapproximation_by_stance": {
         "rawda": [
           false
         ],
@@ -72,7 +96,23 @@
         "maslaha_kulliyya"
       ],
       "author_completions": 6,
+      "source_excluded_values": {
+        "maslaha_rutba": [
+          "daruri"
+        ]
+      },
       "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false
+        ]
+      },
+      "guard_overapproximation_by_stance": {
         "rawda": [
           false
         ],
@@ -100,7 +140,20 @@
         "maslaha_qatiyya"
       ],
       "author_completions": 6,
+      "source_excluded_values": {},
       "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false,
+          true
+        ]
+      },
+      "guard_overapproximation_by_stance": {
         "rawda": [
           false
         ],
@@ -128,7 +181,20 @@
         "maslaha_qatiyya"
       ],
       "author_completions": 6,
+      "source_excluded_values": {},
       "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false,
+          true
+        ]
+      },
+      "guard_overapproximation_by_stance": {
         "rawda": [
           false
         ],

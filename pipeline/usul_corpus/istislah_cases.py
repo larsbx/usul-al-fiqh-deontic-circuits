@@ -108,20 +108,34 @@ def coverage(receipt: dict, cases: list[dict], export: str) -> dict:
     names = deduction.names("istislah")
     rows = []
     for row, case in zip(receipt["cases"], cases):
-        reached = {}
+        reached, overapproximation = {}, {}
+        excluded = row["interpretation"].get("excluded_values", {})
+        enc = takhrij.ENCODERS["istislah"]
+        if any(k not in enc["facts"] or k in case["facts"] or not values
+               or any(not takhrij.among(v, enc["facts"][k]) for v in values)
+               or all(takhrij.among(v, values) for v in enc["facts"][k])
+               for k, values in excluded.items()):
+            raise ValueError("invalid source exclusion")
         for stance in takhrij.ENCODERS["istislah"]["facts"]["istislah_stance"]:
             facts = {**case["facts"], "istislah_stance": stance}
             settled = {f: facts[n] for f, n in zip(read, names) if n in facts}
-            reached[stance] = sorted(deduction.reach("istislah", settled, read))
+            overapproximation[stance] = sorted(deduction.reach("istislah", settled, read))
+            # The fortress explicitly denies necessity. Its guard proves the stronger
+            # all-ranks claim, but source-compatible reach must exclude daruri.
+            compatible = [f for f in takhrij.case_completions({**case, "facts": facts})
+                          if all(not takhrij.among(f[k], values) for k, values in excluded.items())]
+            reached[stance] = sorted({enc["py"](f) for f in compatible})
         rows.append({"far": case["far"], "label": row["label"], "sort": "epistemic",
                      "author_stance": "mustasfa", "stated_fields": list(row["interpretation"]["facts"]),
                      "quantified_fields": case.get("quantified_facts", []),
                      "author_completions": len(takhrij.case_completions(case)),
-                     "reachable_by_stance": reached, "review_status": "pending"})
+                     "source_excluded_values": excluded, "reachable_by_stance": reached,
+                     "guard_overapproximation_by_stance": overapproximation, "review_status": "pending"})
     return {"status": "candidate", "source_cases": len(cases), "reviewed_cases": 0,
             "scope": "Reachability of the hujja question under three existing modeled stances, not historical "
                      "attributions of every concrete ruling. malik means Mālik as the Rawḍa reports him. "
-                     "A two-valued set records unresolved attributes; no default fills them.",
+                     "Reachable sets enforce explicit source exclusions; guard over-approximations additionally test all "
+                     "typed values. A two-valued set records unresolved attributes; no default fills them.",
             "author_completion_checks": sum(r["author_completions"] for r in rows), "cases": rows}
 
 

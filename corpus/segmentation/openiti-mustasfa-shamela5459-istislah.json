@@ -133,7 +133,12 @@
           "maslaha_qatiyya": false
         },
         "expected_under_mustasfa": false,
-        "theorem": "Usul.Readings.Maqasid.qala"
+        "theorem": "Usul.Readings.Maqasid.qala",
+        "excluded_values": {
+          "maslaha_rutba": [
+            "daruri"
+          ]
+        }
       },
       "uncertainty": [
         "No haji/tahsini rank is inferred from the denial of necessity. All ranks are checked as a conservative over-approximation, including daruri, which the source denies for this case.",

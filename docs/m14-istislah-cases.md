@@ -39,11 +39,12 @@ unconditional authorial, normative or consensus ruling.
 | --- | --- | --- | --- |
 | King’s fast | {false} | {false} | {false} |
 | Tatarrus | {false} | {true} | {true} |
-| Fortress, ship, famine | {false} | {false} | {false, true} |
+| Fortress (source denies necessity) | {false} | {false} | {false} |
+| Ship, famine | {false} | {false} | {false, true} |
 
 These are computed reachable outputs, not new historical attributions. The two-valued results
-retain the unknown rank: on the modeled `malik` stance an unattested necessary benefit is accepted,
-whereas the lower ranks are not. No default fills this uncertainty. The source comparison remains
+retain the unknown rank in the ship and famine: on the modeled `malik` stance an unattested necessary benefit is accepted,
+whereas the lower ranks are not. No default fills this uncertainty. The fortress’s explicit exclusion of `daruri` is enforced for source-compatible reach; a separate report field retains its stronger all-ranks guard over-approximation. The source comparison remains
 Rawḍa v01 p482 and al-Mustaṣfā v01 p176–177, as recorded by the existing dossier.
 
 ## Auditable path and replay
@@ -56,7 +57,7 @@ Rawḍa v01 p482 and al-Mustaṣfā v01 p176–177, as recorded by the existing 
   explicitly names unsettled fields. Every completion must agree; existential agreement is insufficient.
 - `corpus/typing/istislah-cases.json`: existing exported field types and `deduction.reach`
   give the stance comparison. `istislah` stays epistemic.
-- `UsulTest/Takhrij.lean`: 31 generated author-case guards. The unchanged exhaustive mirror
+- `UsulTest/Takhrij.lean`: 31 generated author-case assertions in five conjunctive guards. The unchanged exhaustive mirror
   additionally checks 108 `istislah` and 162 `maqasid_tarjih` inputs, including all stances.
 
 From `pipeline/`, run:
@@ -81,11 +82,16 @@ al-Ṭūfī remains future work. This is five selected examples, not complete ch
 
 ## Validation on 2026-10-21
 
-The 34 targeted source/takhrīj/deduction/typing tests passed, including corruption regressions.
+The 200 focused source/takhrīj/deduction/typing/roadmap/companion/judgement tests passed, including corruption regressions.
 Registry and schema validation passed for all 53,673 records; roadmap consistency passed.
 The repository-wide source gate failed closed on 23 unavailable witnesses, reporting 5,196
 verified excerpt checks, 135 failed checks and 2,068 exclusions. The new al-Mustaṣfā receipts
 are checked independently and do not skip. The initial full pytest attempt was stopped after
-missing-witness failures. The installed pinned Lean 4.34.1 binary could not locate its application
-path in this environment; fresh Lean/differential validation is pending CI. The previously
-merged 270-input agreement is retained as historical evidence, not claimed as a new local run.
+missing-witness failures. The local pinned Lean binary could not locate its application path. CI at `ed9d8a8` passed
+`make lean` and the no-sorry gate, including the 270 M14 differential inputs and all 31
+completion assertions. A subsequent guard-format repair keeps those assertions conjunctive
+inside one guard per case, preserving the existing case-inventory contract; fresh CI is pending
+for that formatting change. The broader local regression selection passed 4,433 tests before
+that repair. The final source/guard/typing/companion/judgement selection passed 230 tests with one unrelated SWI-Prolog-dependent skip; six routing tests passed with one external-source test deselected. No new M14 source test skips.
+The corpus CI job at that first head failed its initial integration step. Locally reproducing the guard inventory exposed the one-guard-per-case incompatibility; the new
+conjunctive guards address the reproduced regression without weakening the inventory check.
