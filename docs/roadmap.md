@@ -15,7 +15,18 @@ The work runs in parallel tracks, each with its own roadmap. [`roadmap-tracks.js
 | al-Albānī's ḥadīth methodology | [`roadmap-albani-hadith-methodology.md`](roadmap-albani-hadith-methodology.md) | H0–H9 |
 | Derivation method and the parallel lanes | [`roadmap-parallel-derivation.md`](roadmap-parallel-derivation.md) | phases and rounds |
 
-**Keeping them consistent.** Each path belongs to one track, and a change to it updates that track's roadmap in the same PR. A change that leaves its roadmap true as it stands says so in a commit trailer, `Roadmap-Unchanged: <reason>`. Structure is checked always: every roadmap is linked here; milestone ids are unique; every `⟵` dependency resolves, across tracks too («uṣūl M5»); the dependencies are acyclic and agree with the Mermaid DAG; status rows name real milestones; no file belongs to two tracks. `python -m usul_corpus roadmap --base origin/main` (from `pipeline/`) runs both checks. CI runs them on every PR, and a Claude Code Stop hook (`.claude/settings.json`) runs them before a session ends.
+**Keeping them consistent.** Each path belongs to one track, and a change to it updates that track's roadmap in the same PR. A change that leaves its roadmap true as it stands says so in a commit trailer, `Roadmap-Unchanged: <reason>`. Structure is checked always: every roadmap is linked here; milestone ids are unique; every `⟵` dependency resolves, across tracks too («uṣūl M5»); the dependencies are acyclic and agree with the Mermaid DAG; status rows name real milestones; no file belongs to two tracks. `python -m usul_corpus roadmap --base origin/main` (from `pipeline/`) runs both checks. CI runs them on every PR, and a Claude Code Stop hook (`.claude/settings.json`) runs them before a session ends. Each roadmap lists the paths its track owns in a block generated from the manifest; `python -m usul_corpus roadmap --write` regenerates them, and the check fails while one is stale.
+
+The ADQ harness, this file's track:
+
+<!-- BEGIN GENERATED TRACK PATHS -->
+**Paths this track owns** (generated from [`roadmap-tracks.json`](roadmap-tracks.json)). A change to one updates this roadmap, or its commit says why not: `Roadmap-Unchanged: <reason>`.
+
+| Under | Paths |
+|---|---|
+| `examples/` | `v3*.pl`, `v40_*.pl`, `*.json` |
+| `schemas/` | `deontic_fact_bundle.schema.json`, `finite_deontic_boundary.schema.json` |
+<!-- END GENERATED TRACK PATHS -->
 
 ## Active architecture migration
 

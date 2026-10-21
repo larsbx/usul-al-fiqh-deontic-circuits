@@ -92,3 +92,20 @@ def test_a_roadmap_unchanged_trailer_waives_the_rule():
     assert roadmap.stale(TRACKS, {"formal/lean/Hadith/Grade.lean"}, waived=True) == []
     assert roadmap.waived("Fix a typo\n\nRoadmap-Unchanged: comment only\n")
     assert not roadmap.waived("Fix a typo\n\nRoadmap-Unchanged:\n")
+
+
+def test_each_roadmap_lists_the_paths_its_track_owns_as_the_manifest_does():
+    """The paths block of each roadmap is generated from docs/roadmap-tracks.json, so it cannot drift."""
+    tracks = roadmap.load(ROOT)
+    for t, v in tracks["tracks"].items():
+        assert roadmap.paths_block(tracks, t) in (ROOT / v["roadmap"]).read_text(encoding="utf-8"), t
+
+
+def test_the_paths_block_groups_by_area_and_is_replaced_in_place():
+    block = roadmap.paths_block(TRACKS, "hadith")
+    assert block.startswith(roadmap.BEGIN) and block.endswith(roadmap.END)
+    assert "| `formal/lean/Hadith/` | `**` |" in block and "| `pipeline/usul_corpus/` | `grading.py` |" in block
+    doc = f"# H\n\nIntro.\n\n{roadmap.BEGIN}\nold\n{roadmap.END}\n\n## 0. Scope\n"
+    assert roadmap.with_paths(doc, block) == doc.replace(f"{roadmap.BEGIN}\nold\n{roadmap.END}", block)
+    assert roadmap.with_paths("# H\n\nIntro.\n\n## 0. Scope\n", block) == f"# H\n\nIntro.\n\n{block}\n\n## 0. Scope\n"
+    assert any("paths block" in e for e in roadmap.doc_errors("t", "# H\n", "M", paths=block))
