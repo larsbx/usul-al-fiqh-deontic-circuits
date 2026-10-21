@@ -1,0 +1,26 @@
+name: Roadmap consistency
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  roadmap:
+    name: Roadmaps consistent and updated with their tracks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0   # the merge base with the PR's base branch
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Structure (every event) and, on a PR, each changed track's roadmap updated
+        working-directory: pipeline
+        run: python -m usul_corpus roadmap ${{ github.event_name == 'pull_request' && format('--base origin/{0}', github.base_ref) || '' }}
