@@ -1,9 +1,9 @@
 """RQ-05: distinguish a textual variant from a legal position or a Lean proof.
 
 The immutable research URLs and hashes live in the existing question register.
-For full receipt replay, fetch each URL byte-for-byte to
-`.cache/<cache_group>/<cache_file>`; missing external caches are skipped in CI,
-as for the bank's other source-grounding checks. No network access in tests.
+`make source-verify-fetch` provisions and verifies all five receipts, including
+external witnesses, before CI runs these tests. Missing bytes fail; tests do not
+fetch evidence or accept schema validity as a substitute for receipt replay.
 """
 
 import copy
@@ -15,7 +15,7 @@ from pathlib import Path
 import jsonschema
 import pytest
 
-from usul_corpus import takhrij
+from usul_corpus import source_verify, takhrij
 from usul_corpus.arabic import letters, locate
 from usul_corpus.reception import pages
 
@@ -24,6 +24,14 @@ REGISTER = json.loads((ROOT / "corpus/review/research_questions.json").read_text
 QUESTION = next(q for q in REGISTER["questions"] if q["id"] == "RQ-05")
 SCHEMA = json.loads((ROOT / "schemas/research_question.schema.json").read_text())
 WITNESSES = QUESTION["collation"]["witnesses"]
+
+
+def test_required_source_gate_replays_all_five_rq05_receipts():
+    checks = [c for c in source_verify.verify_collations(ROOT / "corpus", ROOT / ".cache/corpus")
+              if c["question"] == "RQ-05"]
+    assert len(checks) == len(WITNESSES) == 5
+    assert {c["witness"] for c in checks} == {w["id"] for w in WITNESSES}
+    assert all(c["status"] == "verified" for c in checks), checks
 
 
 @pytest.mark.parametrize("source", QUESTION["sources"], ids=lambda s: s["ref"])
@@ -62,8 +70,7 @@ def test_collation_quote_retains_its_declared_polarity(w):
 @pytest.mark.parametrize("w", WITNESSES, ids=lambda w: w["id"])
 def test_cached_collation_receipt_and_negation_mutation(w):
     cached = ROOT / ".cache" / w["cache_group"] / w["cache_file"]
-    if not cached.exists():
-        pytest.skip(f"{w['id']} not cached; replay the pinned collation URL")
+    assert cached.is_file(), f"{w['id']} unavailable; run make source-verify-fetch"
     data = cached.read_bytes()
     assert len(data) == w["bytes"]
     assert hashlib.sha256(data).hexdigest() == w["sha256"]
@@ -99,3 +106,4 @@ def test_collation_schema_rejects_unreplayable_receipts(field, value):
     question["collation"]["witnesses"][0][field] = value
     with pytest.raises(jsonschema.ValidationError):
         jsonschema.validate(bad, SCHEMA)
+

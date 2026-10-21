@@ -329,3 +329,89 @@ def test_dossier_and_hadith_text_witnesses_are_required(fixture):
     (corpus / "hadith/scales.json").write_text(json.dumps({"items": [{"ref": "src:hadith-text/v02:p003"}]}))
     required = gate.required_witnesses(corpus)
     assert {"dossier-text", "hadith-text"} <= required and "dossier-doc" not in required
+
+
+@pytest.fixture
+def collation_fixture(fixture):
+    corpus, cache = fixture
+    (corpus / "review").mkdir()
+    lock = json.loads((corpus / "lock.json").read_text())["witnesses"]["test-source"]
+    witnesses = [dict(lock, id="test-source", cache_group="corpus", cache_file="test-source.txt",
+                      locator="v01:p002", excerpt_ar=QUOTE),
+                 dict(lock, id="external-source", cache_group="rq05", cache_file="external.txt",
+                      locator="v01:p002", excerpt_ar=QUOTE)]
+    path = corpus / "review/research_questions.json"
+    path.write_text(json.dumps({"questions": [{"id": "RQ-05", "collation": {"witnesses": witnesses}}]}))
+    return corpus, cache, path
+
+
+def test_clean_cache_fetches_every_collation_receipt_without_repinning(collation_fixture, monkeypatch):
+    corpus, cache, register = collation_fixture
+    (cache / "test-source.txt").unlink()
+    before = register.read_bytes(), (corpus / "lock.json").read_bytes()
+    calls = []
+    monkeypatch.setattr(gate.fetch, "_get", lambda url: calls.append(url) or TEXT.encode())
+    report = gate.verify(corpus, cache, fetch_source=True)
+    assert report["status"] == "verified_required_subset"
+    assert report["counts"] == {"verified": 3}  # ledger plus both collation receipts
+    assert len(calls) == 2  # the primary's verified bytes are also reused by the ledger
+    checks = [c for c in report["checks"] if c.get("question") == "RQ-05"]
+    assert {c["witness"] for c in checks} == {"test-source", "external-source"}
+    assert all(c["sha256"] == hashlib.sha256(TEXT.encode()).hexdigest() for c in checks)
+    assert (cache.parent / "rq05/external.txt").read_bytes() == TEXT.encode()
+    assert before == (register.read_bytes(), (corpus / "lock.json").read_bytes())
+    # A warm offline replay still verifies both receipts and never downloads.
+    calls.clear()
+    assert gate.verify(corpus, cache)["counts"] == {"verified": 3}
+    assert calls == []
+
+
+@pytest.mark.parametrize("index", [0, 1], ids=["primary", "external"])
+@pytest.mark.parametrize("mutation", ["missing", "stale", "sha256", "bytes", "locator", "quotation", "negation"])
+def test_collation_receipt_mutations_fail_the_required_cli(collation_fixture, monkeypatch, index, mutation):
+    corpus, cache, register = collation_fixture
+    monkeypatch.setattr(gate.fetch, "_get", lambda url: TEXT.encode())
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    data = json.loads(register.read_text())
+    witness = data["questions"][0]["collation"]["witnesses"][index]
+    path = (cache if index == 0 else cache.parent / "rq05") / witness["cache_file"]
+    if mutation == "missing": path.unlink()
+    elif mutation == "stale": path.write_bytes(TEXT.encode() + b"changed")
+    elif mutation == "sha256": witness["sha256"] = "0" * 64  # valid format, wrong receipt
+    elif mutation == "bytes": witness["bytes"] += 1
+    elif mutation == "locator": witness["locator"] = "v01:p001"
+    elif mutation == "quotation": witness["excerpt_ar"] = "لا إجمال في النكاح"
+    elif mutation == "negation": witness["excerpt_ar"] = QUOTE.replace("لا ", "")
+    register.write_text(json.dumps(data))
+    report_path = corpus.parent / "report.json"
+    assert gate.main(["--corpus", str(corpus), "--cache", str(cache), "--report", str(report_path)]) == 1
+    report = json.loads(report_path.read_text())
+    failed = [c for c in report["checks"] if c.get("witness") == witness["id"]]
+    assert len(failed) == 1 and failed[0]["status"] == "failed" and failed[0]["reason"]
+
+
+@pytest.mark.parametrize("failure", ["unavailable", "wrong_download"])
+def test_collation_fetch_failure_cannot_be_excluded(collation_fixture, monkeypatch, failure):
+    corpus, cache, register = collation_fixture
+    def download(url):
+        if failure == "unavailable":
+            raise OSError("network unavailable")
+        return TEXT.encode() + b"changed"
+    monkeypatch.setattr(gate.fetch, "_get", download)
+    before = register.read_bytes()
+    report = gate.verify(corpus, cache, fetch_source=True)
+    assert report["status"] == "failed"
+    assert report["counts"] == {"verified": 2, "failed": 1}
+    assert not (cache.parent / "rq05/external.txt").exists()
+    assert register.read_bytes() == before
+
+
+def test_stale_collation_cache_is_refetched_and_rechecked(collation_fixture, monkeypatch):
+    corpus, cache, _ = collation_fixture
+    path = cache.parent / "rq05/external.txt"
+    path.parent.mkdir()
+    path.write_bytes(b"stale")
+    monkeypatch.setattr(gate.fetch, "_get", lambda url: TEXT.encode())
+    assert gate.verify(corpus, cache, fetch_source=True)["status"] == "verified_required_subset"
+    assert path.read_bytes() == TEXT.encode()
+

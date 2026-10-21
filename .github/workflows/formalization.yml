@@ -46,7 +46,8 @@ jobs:
         run: git lfs pull --include=data/islamqa/answers/islamqa-ar.jsonl.gz
       - name: Replay external-source routing and quotation checks (no skips)
         run: make integration-external
-      # Witness bytes are judged against corpus/lock.json, never trusted from the cache: a stale file is
+      # Witness bytes are judged against corpus/lock.json and the research collation receipts,
+      # never trusted from the cache: a stale file is
       # refetched by source-verify-fetch, and a partial Shamela fetch (.part) resumes on the next run.
       - name: Restore the witness cache
         uses: actions/cache/restore@v4
@@ -54,9 +55,14 @@ jobs:
           path: .cache/corpus
           key: witnesses-${{ github.run_id }}
           restore-keys: witnesses-
+      - name: Restore external collation witnesses
+        uses: actions/cache@v4
+        with:
+          path: .cache/rq05
+          key: rq05-collation-${{ hashFiles('corpus/review/research_questions.json') }}
       - name: Replay locked M5 command-schema evidence
         run: cd pipeline && python -m usul_corpus m5-commands --fetch-source
-      - name: Verify required locked sources (fail closed)
+      - name: Verify required locked sources and collation receipts (fail closed)
         run: make source-verify-fetch
       - name: Save the witness cache
         if: always()
@@ -105,3 +111,4 @@ jobs:
           distribution: temurin
           java-version: "21"
       - run: make tla
+
