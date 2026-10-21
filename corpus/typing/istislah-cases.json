@@ -1,0 +1,146 @@
+{
+  "status": "candidate",
+  "source_cases": 5,
+  "reviewed_cases": 0,
+  "scope": "Reachability of the hujja question under three existing modeled stances, not historical attributions of every concrete ruling. malik means Mālik as the Rawḍa reports him. A two-valued set records unresolved attributes; no default fills them.",
+  "author_completion_checks": 31,
+  "cases": [
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00001",
+      "label": "king_fast",
+      "sort": "epistemic",
+      "author_stance": "mustasfa",
+      "stated_fields": [
+        "maslaha_shahada"
+      ],
+      "quantified_fields": [
+        "maslaha_rutba",
+        "maslaha_qatiyya",
+        "maslaha_kulliyya"
+      ],
+      "author_completions": 12,
+      "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false
+        ]
+      },
+      "review_status": "pending"
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00002",
+      "label": "tatarrus",
+      "sort": "epistemic",
+      "author_stance": "mustasfa",
+      "stated_fields": [
+        "maslaha_shahada",
+        "maslaha_rutba",
+        "maslaha_qatiyya",
+        "maslaha_kulliyya"
+      ],
+      "quantified_fields": [],
+      "author_completions": 1,
+      "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          true
+        ],
+        "malik": [
+          true
+        ]
+      },
+      "review_status": "pending"
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00003",
+      "label": "fortress",
+      "sort": "epistemic",
+      "author_stance": "mustasfa",
+      "stated_fields": [
+        "maslaha_shahada",
+        "maslaha_qatiyya"
+      ],
+      "quantified_fields": [
+        "maslaha_rutba",
+        "maslaha_kulliyya"
+      ],
+      "author_completions": 6,
+      "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false,
+          true
+        ]
+      },
+      "review_status": "pending"
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00004",
+      "label": "ship",
+      "sort": "epistemic",
+      "author_stance": "mustasfa",
+      "stated_fields": [
+        "maslaha_shahada",
+        "maslaha_kulliyya"
+      ],
+      "quantified_fields": [
+        "maslaha_rutba",
+        "maslaha_qatiyya"
+      ],
+      "author_completions": 6,
+      "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false,
+          true
+        ]
+      },
+      "review_status": "pending"
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00005",
+      "label": "famine",
+      "sort": "epistemic",
+      "author_stance": "mustasfa",
+      "stated_fields": [
+        "maslaha_shahada",
+        "maslaha_kulliyya"
+      ],
+      "quantified_fields": [
+        "maslaha_rutba",
+        "maslaha_qatiyya"
+      ],
+      "author_completions": 6,
+      "reachable_by_stance": {
+        "rawda": [
+          false
+        ],
+        "mustasfa": [
+          false
+        ],
+        "malik": [
+          false,
+          true
+        ]
+      },
+      "review_status": "pending"
+    }
+  ]
+}

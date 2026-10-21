@@ -20,7 +20,7 @@
                 "corpus/typing/**",
                 "pipeline/usul_corpus/abwab.py", "pipeline/usul_corpus/deduction.py", "pipeline/usul_corpus/dossier.py",
                 "pipeline/usul_corpus/encoders/**", "pipeline/usul_corpus/fatawa*.py", "pipeline/usul_corpus/furuq.py",
-                "pipeline/usul_corpus/hudud.py", "pipeline/usul_corpus/judgement.py", "pipeline/usul_corpus/m5_commands.py",
+                "pipeline/usul_corpus/hudud.py", "pipeline/usul_corpus/judgement.py", "pipeline/usul_corpus/istislah_cases.py", "pipeline/usul_corpus/m5_commands.py",
                 "pipeline/usul_corpus/m8_worklist.py", "pipeline/usul_corpus/mahall*.py", "pipeline/usul_corpus/nusus.py",
                 "pipeline/usul_corpus/reconcil*.py", "pipeline/usul_corpus/records.py", "pipeline/usul_corpus/scope.py", "pipeline/usul_corpus/sheaf.py",
                 "pipeline/usul_corpus/signature_routing.py", "pipeline/usul_corpus/takhrij.py", "pipeline/usul_corpus/tanaqud.py",

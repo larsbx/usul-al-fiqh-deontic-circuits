@@ -16,7 +16,7 @@
   "cases": {
     "dalala": 122,
     "effect": 209,
-    "epistemic": 114,
+    "epistemic": 119,
     "judgement/aspect:obligatory": 36,
     "judgement/aspect:permitted": 58,
     "judgement/taklifi": 5,
@@ -27,7 +27,7 @@
     "procedure": 52,
     "takyif": 191
   },
-  "cases_typed_by_judgement": 0.501,
+  "cases_typed_by_judgement": 0.499,
   "untyped": [],
   "hard": {
     "advance_after_cause": "wadi:validity: in worship «لا يجوز» here also means the advanced act does not count",

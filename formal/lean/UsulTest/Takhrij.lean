@@ -13,6 +13,46 @@ import Usul
 #guard (Usul.Dalala.coversBeyondSabab true false true) == true
 -- ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q061.f003 (derivable)
 #guard (Usul.Dalala.coversBeyondSabab true false false) == false
+-- ghazali.mustasfa.openiti_mustasfa_shamela5459.m00001 (derivable)
+-- All typed completions of unsettled fields: maslaha_rutba, maslaha_qatiyya, maslaha_kulliyya
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, true, true⟩) == false
+-- ghazali.mustasfa.openiti_mustasfa_shamela5459.m00002 (derivable)
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, true, true⟩) == true
+-- ghazali.mustasfa.openiti_mustasfa_shamela5459.m00003 (derivable)
+-- All typed completions of unsettled fields: maslaha_rutba, maslaha_kulliyya
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, false, true⟩) == false
+-- ghazali.mustasfa.openiti_mustasfa_shamela5459.m00004 (derivable)
+-- All typed completions of unsettled fields: maslaha_rutba, maslaha_qatiyya
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, true, false⟩) == false
+-- ghazali.mustasfa.openiti_mustasfa_shamela5459.m00005 (derivable)
+-- All typed completions of unsettled fields: maslaha_rutba, maslaha_qatiyya
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, true, false⟩) == false
 -- lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648 (derivable)
 #guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .haji) == .first
 -- lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346 (derivable)

@@ -530,6 +530,29 @@ def position_errors(case: dict) -> list[str]:
     return errors
 
 
+def case_completions(case: dict) -> list[dict]:
+    """Explicit universal checks; never silently fill a missing source fact.
+
+    Only derivable cases may quantify fields. Ordinary cases still require total facts.
+    In particular, this cannot hide a doctrinal choice inside an ikhtilaf annotation.
+    """
+    from itertools import product
+    enc = ENCODERS[case["encoder"]]
+    facts = case.get("facts") or {}
+    quantified = case.get("quantified_facts", [])
+    if not isinstance(facts, dict) or not isinstance(quantified, list):
+        raise ValueError("facts do not match the encoder")
+    if "quantified_facts" in case and (case["class"] != "derivable" or not quantified):
+        raise ValueError("quantified facts require a derivable case and a nonempty field list")
+    if (any(not isinstance(k, str) for k in quantified) or len(set(quantified)) != len(quantified)
+            or set(facts) & set(quantified) or set(facts) | set(quantified) != set(enc["facts"])
+            or any(not among(v, enc["facts"][k]) for k, v in facts.items())):
+        raise ValueError("facts do not match the encoder")
+    keys = list(enc["facts"])
+    return [dict(zip(keys, values)) for values in product(
+        *([facts[k]] if k in facts else enc["facts"][k] for k in keys))]
+
+
 def check_case(case: dict) -> list[str]:
     """Structural problems with a case (empty when well-formed)."""
     errs = []
@@ -539,13 +562,18 @@ def check_case(case: dict) -> list[str]:
     if case["class"] not in CLASSES:
         errs.append(f"unknown class {case['class']}")
     if case["class"] in GUARDED:
-        f = case.get("facts") or {}
-        if set(f) != set(enc["facts"]) or not all(among(f[k], dom) for k, dom in enc["facts"].items()):
-            errs.append("facts do not match the encoder")
-        elif not among(case.get("expected"), enc["out"]):
-            errs.append("expected outside the encoder's output domain")
-        elif (code(enc["py"](f)) == code(case["expected"])) != (GUARDED[case["class"]] == "=="):
-            errs.append("class contradicts the kernel's output")
+        try:
+            completions = case_completions(case)
+        except ValueError as exc:
+            errs.append(str(exc))
+        else:
+            if not among(case.get("expected"), enc["out"]):
+                errs.append("expected outside the encoder's output domain")
+            elif any((code(enc["py"](f)) == code(case["expected"])) != (GUARDED[case["class"]] == "==")
+                     for f in completions):
+                errs.append("class contradicts the kernel's output")
+    elif "quantified_facts" in case:
+        errs.append("quantified facts require a derivable case and a nonempty field list")
     if case["class"] == "genuine_ikhtilaf" and len(case.get("positions") or []) < 2:
         errs.append("ikhtilāf needs at least two positions")
     if case["class"] == "genuine_ikhtilaf" and type(case.get("matches_madhhab")) is not bool:
@@ -574,7 +602,10 @@ def lean_file(cases: list[dict], command: str = "takhrij", source: str = "corpus
     for c in cases:
         if c["class"] in GUARDED:
             lines.append(f"-- {c['far']} ({c['class']})")
-            lines.append(f"#guard ({lean_expr(c['encoder'], c['facts'])}) {GUARDED[c['class']]} {_lit(c['expected'])}")
+            if c.get("quantified_facts"):
+                lines.append("-- All typed completions of unsettled fields: " + ", ".join(c["quantified_facts"]))
+            for facts in case_completions(c):
+                lines.append(f"#guard ({lean_expr(c['encoder'], facts)}) {GUARDED[c['class']]} {_lit(c['expected'])}")
     return "\n".join(lines) + "\n"
 
 
