@@ -3,49 +3,49 @@
   "status": "candidate",
   "set": "rajab_fold0",
   "method": "blind typing into Usul.Typing situations; Prolog routing by coverage of each encoder's fields",
-  "answers": 240,
+  "answers": 241,
   "situations": 312,
   "fields_stated": 378,
-  "cases": 240,
-  "encoders": 223,
-  "applies": 0.2875,
+  "cases": 241,
+  "encoders": 225,
+  "applies": 0.2863,
   "recall": {
-    "1": 0.4292,
-    "5": 0.5917,
-    "10": 0.5917
+    "1": 0.4274,
+    "5": 0.5892,
+    "10": 0.5892
   },
   "recall_with_named_rules": {
-    "1": 0.4292,
-    "5": 0.5917,
-    "10": 0.5917
+    "1": 0.4274,
+    "5": 0.5892,
+    "10": 0.5892
   },
   "lexical_recall": {
-    "1": 0.5083,
-    "5": 0.8,
-    "10": 0.8458
+    "1": 0.5062,
+    "5": 0.7967,
+    "10": 0.8423
   },
   "hybrid_recall": {
-    "1": 0.5542,
-    "5": 0.8792,
-    "10": 0.9125
+    "1": 0.5519,
+    "5": 0.8755,
+    "10": 0.9087
   },
   "hybrid_recall_by_qaida": {
-    "1": 0.6333,
-    "5": 0.8958,
-    "10": 0.9333
+    "1": 0.6307,
+    "5": 0.8921,
+    "10": 0.9295
   },
   "by_qaida": "a hit when a top-k encoder reads a qāʿida the bank ties the case to (mahall.links: placement, encoder, types, co-annotation), the case's encoder's own for units outside it",
   "hybrid": "types first: encoders by the share of their fields the situation settles, lexical rank breaking ties and ordering the rest",
   "prior_recall": {
-    "1": 0.0458,
-    "5": 0.1042,
-    "10": 0.175
+    "1": 0.0456,
+    "5": 0.1037,
+    "10": 0.1743
   },
   "rank_semantics": "rank is pessimistic type-only rank; null means zero typed coverage, not absence from hybrid retrieval",
   "target_semantics": "legacy recall includes gap annotations; an examined encoder is not necessarily a valid whole-case target",
   "by_annotation_class": {},
-  "encoders_applying_per_answer": 0.47,
-  "encoders_touched_per_answer": 1.3,
+  "encoders_applying_per_answer": 0.46,
+  "encoders_touched_per_answer": 1.29,
   "by_encoder": {
     "a26_ihala_on_known_cause": {
       "cases": 4,
@@ -424,6 +424,12 @@
       "applies": 1,
       "top5": 1,
       "unrouted": 0
+    },
+    "maqasid_tarjih": {
+      "cases": 1,
+      "applies": 0,
+      "top5": 0,
+      "unrouted": 1
     },
     "mistaken_basis": {
       "cases": 1,
@@ -3748,6 +3754,16 @@
       "gold_qawaid_basis": "bank_links",
       "settled": 0.3333,
       "rank": 1
+    },
+    {
+      "case": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648",
+      "encoder": "maqasid_tarjih",
+      "hybrid_rank": null,
+      "hybrid_qaida_rank": null,
+      "gold_qawaid": [],
+      "gold_qawaid_basis": "encoder_fallback",
+      "settled": 0.0,
+      "rank": null
     }
   ]
 }

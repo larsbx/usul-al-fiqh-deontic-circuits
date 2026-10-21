@@ -7,6 +7,7 @@ import Usul.Dalala
 import Usul.CommandSchemata
 import Usul.Readings.RajabA31
 import Usul.Readings.RajabA29
+import Usul.Readings.Maqasid
 
 /-!
 # The types the qawāʿid define
@@ -922,5 +923,21 @@ structure Rajab82 extends Rajab20 where
   sharesGround : Option (Bool) := none
   liftsFromOrigin : Option (Bool) := none
   lazimRight : Option (Bool) := none
+
+/-! ## The maqāṣid (`Usul.Readings.Maqasid`) -/
+
+/-- Ibn Qudāma, the Rawḍa (v01 p478–482) «الاستصلاح: وهو: اتباع المصلحة المرسلة … وهي ثلاثة أقسام: قسم شهد الشرع باعتبارها … ما شهد ببطلانه … ما لم يشهد له بإبطال، ولا اعتبار معين»; al-Ghazālī's «ضرورة قطعية كلية» (al-Mustaṣfā v01 p176). Read by `istislah`. -/
+structure Istislah where
+  maslahaShahada : Option Usul.Readings.Maqasid.Shahada := none
+  maslahaRutba : Option Usul.Readings.Maqasid.Rutba := none
+  maslahaQatiyya : Option Bool := none
+  maslahaKulliyya : Option Bool := none
+  istislahStance : Option Usul.Readings.Maqasid.Stance := none
+
+/-- Ibn al-Najjār, Sharḥ al-Kawkab al-Munīr (v04 p727) «تقدم المقاصد الضرورية … على غيرها … ومكملها … على الحاجية … وتقدم المصلحة الحاجية على التحسينية … ويقدم حفظ الدين على باقي الضرورية». Read by `maqasid_tarjih`. -/
+structure MaqasidTarjih where
+  maqsadFirst : Option Usul.Readings.Maqasid.Maqsad := none
+  maqsadSecond : Option Usul.Readings.Maqasid.Maqsad := none
+  dinReading : Option Usul.Readings.Maqasid.DinReading := none
 
 end Usul.Typing.Qaida

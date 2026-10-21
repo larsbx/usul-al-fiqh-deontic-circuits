@@ -23,7 +23,7 @@ All encoders of legal maxims read from one common record of facts, the `Situatio
 
 ## 2. The situation type
 
-- **`Situation`**: the join of all the maxim types in `Usul.Typing.Qaida`, 156 of them: al-Saʿdī's, Ibn Rajab's and Ibn al-Laḥḥām's. Each field is optional until a text settles it.
+- **`Situation`**: the join of all the maxim types in `Usul.Typing.Qaida`, 168 of them: al-Saʿdī's, Ibn Rajab's and Ibn al-Laḥḥām's, and the two of the maqāṣid. Each field is optional until a text settles it.
 - A maxim that builds on another extends its type: Q52 extends Q11.
 - Same word, different notion, different field. Negligence in safekeeping (Q14, «يفرط») and negligence in inquiry (Ibn Rajab Q6, «فرط بترك البحث») are kept apart. Lean checks that a field merged through `extends` has one type.
 - Two encoders that apply to one situation and disagree are material for taʿāruḍ (conflict of proofs, `Usul.Taarud`).

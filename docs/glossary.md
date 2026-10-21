@@ -345,6 +345,30 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:archive-pdf1995-tess/v01:p061`: Al-Saʿdī Q14.
   > التلف في يد الأمين غير مضمون إذا لم يتعد؛ أو يفرط؛
 
+<a id="daruriyyat"></a>
+
+## al-ḍarūriyyāt (الضروريات)
+
+*necessities.* What the interests of religion and the world cannot do without: lost, the world runs to corruption and the hereafter to loss (al-Shāṭibī). They are five, dīn, nafs, ʿaql, nasl and māl, kept from the side of existence by what establishes them and from the side of non-existence by what wards off their disruption. al-Kawkab adds al-ʿirḍ at the rank of wealth, and in tarjīḥ puts dīn first.
+
+**Conditions**
+
+- kept from two sides (wujūd, ʿadam)
+- five: dīn, nafs, ʿaql, nasl, māl; al-Kawkab adds al-ʿirḍ
+
+**Related:** [maqasid](#maqasid), [hajiyyat](#hajiyyat), [takmila](#takmila)
+
+**Lean:** `Usul.Readings.Maqasid.Kulli`, `Usul.Readings.Maqasid.fiveMuwafaqat`, `Usul.Readings.Maqasid.both_sides`, `Usul.Readings.Maqasid.deterrents_cover_the_five`, `Usul.Readings.Maqasid.din_first`
+
+**Texts**
+
+- `src:openiti-muwafaqat-shamela11435/v02:p020`: al-Muwāfaqāt: the five.
+  > ومجموع الضروريات خمسة، وهي: حفظ الدين، والنفس، والنسل، والمال، والعقل، وقد قالوا: إنها مراعاة في كل ملة.
+- `src:openiti-muwafaqat-shamela11435/v02:p018`: Preservation from two sides.
+  > والحفظ لها يكون بأمرين: أحدهما: ما يقيم أركانها ويثبت قواعدها، وذلك عبارة عن مراعاتها من جانب الوجود. والثاني: ما يدرأ عنها الاختلال الواقع أو المتوقع فيها، وذلك عبارة عن مراعاتها من جانب العدم.
+- `src:openiti-rawda-shamela12010/v01:p481`: The Rawḍa: the five.
+  > الضرب الثالث- ما يقع في رتبة الضروريات: وهو ما عرف من الشارع الالتفات إليها. وهي خمسة: أن يحفظ عليهم دينهم، وأنفسهم، وعقلهم، ونسبهم، ومالهم.
+
 <a id="dawaran"></a>
 
 ## al-dawarān (الدوران)
@@ -654,6 +678,27 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 - `src:openiti-ilam-shamela11496/v01:p222`: Iʿlām: najāsa is removed and ḥadath lifted.
   > وجمعتم بين ما فرق الله بينه من إزالة النجاسة ورفع الحدث
+
+<a id="hajiyyat"></a>
+
+## al-ḥājiyyāt (الحاجيات)
+
+*needs.* What is needed for ease and to lift the constraint that mostly leads to hardship; neglected, hardship enters on the mukallafūn, but not the corruption of the ḍarūrī (al-Shāṭibī). The Rawḍa's example is the guardian's marrying the minor girl: no necessity, but needed. An unattested ḥājī is not held to without an aṣl.
+
+**Conditions**
+
+- not held to without an aṣl (the Rawḍa, «لا نعلم خلافا»)
+
+**Related:** [maqasid](#maqasid), [daruriyyat](#daruriyyat), [tahsiniyyat](#tahsiniyyat)
+
+**Lean:** `Usul.Readings.Maqasid.Rutba`, `Usul.Readings.Maqasid.hujja`
+
+**Texts**
+
+- `src:openiti-rawda-shamela12010/v01:p479`: The Rawḍa: the ḥājī.
+  > الثالث- ما لم يشهد له بإبطال، ولا اعتبار معين: وهذا على ثلاثة ضروب: أحدها: ما يقع في مرتبة الحاجات: كتسليط الولي على تزويج الصغيرة، فذلك لا ضرورة إليه، لكنه محتاج إليه
+- `src:openiti-rawda-shamela12010/v01:p480`: Not held to without an aṣl.
+  > فهذان الضربان لا نعلم خلافا في أنه لا يجوز التمسك بهما من غير أصل؛ فإنه لو جاز ذلك: كان وضعا للشرع بالرأي، ولما احتجنا إلى بعثة الرسل.
 
 <a id="haram"></a>
 
@@ -1267,6 +1312,28 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:shamela-22592/v01:p162`: al-Irwāʾ 125, «* صحيح»: al-madhy obliges washing and wuḍūʾ, al-manī ghusl.
   > إذا رأيت المذى فاغسل ذكرك وتوضأ وضوءك للصلاة , فإذا فضخت الماء فاغتسل
 
+<a id="maqasid"></a>
+
+## maqāṣid al-sharīʿa (مقاصد الشريعة)
+
+*the purposes of the law.* al-Shāṭibī: the law's takālīf return to preserving its purposes in creation, which are of three ranks, ḍarūrī, ḥājī and taḥsīnī, each with its complements. al-Ghazālī: the law's purpose from creation is five, to preserve their religion, life, mind, offspring and wealth; whatever keeps these is maṣlaḥa and whatever loses them mafsada.
+
+**Conditions**
+
+- three ranks, each with complements
+- the ḍarūrī is the original of the other two
+
+**Related:** [daruriyyat](#daruriyyat), [hajiyyat](#hajiyyat), [tahsiniyyat](#tahsiniyyat), [takmila](#takmila), [maslaha_mursala](#maslaha_mursala), [munasaba](#munasaba), [hikma](#hikma)
+
+**Lean:** `Usul.Readings.Maqasid.Rutba`, `Usul.Readings.Maqasid.Maqsad`, `Usul.Readings.Maqasid.taqdim`
+
+**Texts**
+
+- `src:openiti-muwafaqat-shamela11435/v02:p017`: al-Muwāfaqāt: the three ranks.
+  > تكاليف الشريعة ترجع إلى حفظ مقاصدها في الخلق، وهذه المقاصد لا تعدو ثلاثة أقسام: أحدها: أن تكون ضرورية. والثاني: أن تكون حاجية. والثالث: أن تكون تحسينية.
+- `src:openiti-mustasfa-shamela5459/v01:p174`: al-Mustaṣfā: the law's purpose is five.
+  > لكنا نعني بالمصلحة المحافظة على مقصود الشرع ومقصود الشرع من الخلق خمسة: وهو أن يحفظ عليهم دينهم ونفسهم وعقلهم ونسلهم ومالهم، فكل ما يتضمن حفظ هذه الأصول الخمسة فهو مصلحة، وكل ما يفوت هذه الأصول فهو مفسدة ودفعها مصلحة.
+
 <a id="masalik_al_illa"></a>
 
 ## masālik al-ʿilla (مسالك العلة)
@@ -1288,11 +1355,11 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 
 ## al-maṣlaḥa al-mursala (المصلحة المرسلة)
 
-*unattested interest.* Ibn Qudāma: istiṣlāḥ is following the maṣlaḥa mursala; maṣlaḥa is securing benefit or repelling harm. A maṣlaḥa neither attested nor cancelled by the law is called mursala, not qiyās, since qiyās returns to a specific aṣl. Mālik and some Shāfiʿīs accept it as a proof; Ibn Qudāma and, per al-Kawkab, most Ḥanbalīs do not.
+*unattested interest.* Ibn Qudāma: istiṣlāḥ is following the maṣlaḥa mursala; maṣlaḥa is securing benefit or repelling harm. A maṣlaḥa neither attested nor cancelled by the law is called mursala, not qiyās, since qiyās returns to a specific aṣl. Mālik and some Shāfiʿīs accept it as a proof; Ibn Qudāma and, per al-Kawkab, most Ḥanbalīs do not. al-Ghazālī admits the unattested ḍarūrī only when it is necessary, certain and universal, as in the shield (tatarrus).
 
-**Related:** [munasaba](#munasaba), [hikma](#hikma)
+**Related:** [munasaba](#munasaba), [hikma](#hikma), [maqasid](#maqasid), [daruriyyat](#daruriyyat)
 
-**Lean:** `Usul.Qiyas.Recognition.mursal`, `Usul.Qiyas.Recognition.accepted`
+**Lean:** `Usul.Qiyas.Recognition.mursal`, `Usul.Qiyas.Recognition.accepted`, `Usul.Readings.Maqasid.hujja`, `Usul.Readings.Maqasid.refines_recognition`
 
 **Texts**
 
@@ -1302,6 +1369,8 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > فيسمى ذلك مصلحة مرسلة، ولا نسميه قياسا؛ لأن القياس يرجع إلى أصل معين. والصحيح: أن ذلك ليس بحجة
 - `src:openiti-kawkab-shamela12019/v04:p169`: Al-Kawkab: not a proof for most, against Mālik and some Shāfiʿīs.
   > "وليست هذه المصلحة بحجة" عند الأكثر، خلافا لمالك وبعض الشافعية، وتسمى المصلحة المرسلة.
+- `src:openiti-mustasfa-shamela5459/v01:p176`: al-Mustaṣfā: the three properties.
+  > وانقدح اعتبارها باعتبار ثلاثة أوصاف أنها ضرورة قطعية كلية
 
 <a id="muarada"></a>
 
@@ -1952,6 +2021,27 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
 - `src:shamela-282/v01:p380`: Al-Shinqīṭī's remark.
   > والمناطُ هنا ليس بمعناه الاصطلاحي
 
+<a id="tahsiniyyat"></a>
+
+## al-taḥsīniyyāt (التحسينيات)
+
+*refinements.* Taking what befits the good customs and avoiding what discerning minds disdain; the noble traits of character (al-Shāṭibī). Below the ḥājī, it serves it as the ḥājī serves the ḍarūrī; an unattested taḥsīnī is not held to without an aṣl.
+
+**Conditions**
+
+- not held to without an aṣl
+
+**Related:** [maqasid](#maqasid), [hajiyyat](#hajiyyat)
+
+**Lean:** `Usul.Readings.Maqasid.Rutba`, `Usul.Readings.Maqasid.Maqsad.tier`
+
+**Texts**
+
+- `src:openiti-muwafaqat-shamela11435/v02:p017`: al-Muwāfaqāt: the third rank.
+  > تكاليف الشريعة ترجع إلى حفظ مقاصدها في الخلق، وهذه المقاصد لا تعدو ثلاثة أقسام: أحدها: أن تكون ضرورية. والثاني: أن تكون حاجية. والثالث: أن تكون تحسينية.
+- `src:openiti-rawda-shamela12010/v01:p480`: Not held to without an aṣl.
+  > فهذان الضربان لا نعلم خلافا في أنه لا يجوز التمسك بهما من غير أصل؛ فإنه لو جاز ذلك: كان وضعا للشرع بالرأي، ولما احتجنا إلى بعثة الرسل.
+
 <a id="tahur"></a>
 
 ## al-ṭahūr (الطهور)
@@ -2025,6 +2115,29 @@ Status: `candidate`. Drafted by an LLM agent from committed records (corpus/reco
   > وفرق قوم بين العلة المنصوص عليها، وبين المستنبطة، وجعل نقض المستنبطة مبطلا لها
 - `src:openiti-ilam-shamela11496/v03:p027`: Ibn al-Qayyim.
   > وبالجملة فلا يمتنع تخصيص العلة لفوات شرط أو لقيام مانع
+
+<a id="takmila"></a>
+
+## al-takmila (التكملة)
+
+*complement.* What joins a rank as its completion, whose loss would not disrupt the rank's original wisdom, such as equivalence in qiṣāṣ or the prohibition of a little of an intoxicant. Its sharṭ: that considering it not nullify its original; where it would, the original is considered without it (al-Shāṭibī). In tarjīḥ the complement of a ḍarūrī comes after the ḍarūrī and before the ḥājī (al-Kawkab).
+
+**Conditions**
+
+- considered only if it does not nullify its original
+
+**Related:** [maqasid](#maqasid), [daruriyyat](#daruriyyat)
+
+**Lean:** `Usul.Readings.Maqasid.required`, `Usul.Readings.Maqasid.takmila_never_cancels_asl`, `Usul.Readings.Maqasid.takmila_dropped`, `Usul.Readings.Maqasid.asl_before_takmila`
+
+**Texts**
+
+- `src:openiti-muwafaqat-shamela11435/v02:p024`: al-Muwāfaqāt: complements of each rank.
+  > كل مرتبة من هذه المراتب ينضم إليها ما هو كالتتمة والتكملة، مما لو فرضنا فقده لم يخل بحكمتها الأصلية.
+- `src:openiti-muwafaqat-shamela11435/v02:p026`: Their sharṭ.
+  > كل تكملة فلها- من حيث هي تكملة- شرط، وهو: أن لا يعود اعتبارها على الأصل بالإبطال، وذلك أن كل تكملة يفضي اعتبارها إلى رفض أصلها، فلا يصح اشتراطها عند ذلك
+- `src:openiti-kawkab-shamela12019/v04:p163`: al-Kawkab: the complement joined to the ḍarūrī.
+  > "و" يلحق بالضروري ما هو "مكمل له، كحفظ العقل بالحد بقليل مسكر".
 
 <a id="talaq"></a>
 

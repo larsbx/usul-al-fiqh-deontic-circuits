@@ -1672,4 +1672,23 @@ def causeOnCertainty : Typed Situation (Usul.Refinements.Attach) where
   run | (x1, x2) => Usul.Readings.Concordance.attachOnCertainty x1 x2
   proj_embed := fun _ => rfl
 
+/-! ## The maqāṣid -/
+
+/-- `istislah` reads `Qaida.Istislah`. -/
+def istislah : Typed Situation Bool where
+  Local := Usul.Readings.Maqasid.Shahada × Usul.Readings.Maqasid.Rutba × Bool × Bool × Usul.Readings.Maqasid.Stance
+  proj s := do pure (← s.maslahaShahada, ← s.maslahaRutba, ← s.maslahaQatiyya, ← s.maslahaKulliyya, ← s.istislahStance)
+  embed | (x1, x2, x3, x4, x5) => { maslahaShahada := some x1, maslahaRutba := some x2, maslahaQatiyya := some x3,
+                                     maslahaKulliyya := some x4, istislahStance := some x5 }
+  run | (x1, x2, x3, x4, x5) => Usul.Readings.Maqasid.hujja x5 ⟨x1, x2, x3, x4⟩
+  proj_embed := fun _ => rfl
+
+/-- `maqasid_tarjih` reads `Qaida.MaqasidTarjih`. -/
+def maqasidTarjih : Typed Situation Usul.Readings.Maqasid.Taqdim where
+  Local := Usul.Readings.Maqasid.Maqsad × Usul.Readings.Maqasid.Maqsad × Usul.Readings.Maqasid.DinReading
+  proj s := do pure (← s.maqsadFirst, ← s.maqsadSecond, ← s.dinReading)
+  embed | (x1, x2, x3) => { maqsadFirst := some x1, maqsadSecond := some x2, dinReading := some x3 }
+  run | (x1, x2, x3) => Usul.Readings.Maqasid.taqdim x3 x1 x2
+  proj_embed := fun _ => rfl
+
 end Usul.Typing

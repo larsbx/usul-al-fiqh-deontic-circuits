@@ -1135,6 +1135,159 @@ Status: `candidate`. Each statement and excerpt verified verbatim against the pi
 **Lean:** `Usul.Readings.Concordance.attachOnCertainty`, `Usul.Readings.Concordance.attachOnCertainty_conservative`, `Usul.Readings.Concordance.attachOnCertainty_departs`, `Usul.Readings.Concordance.attachOnCertainty_abstains`, `Usul.Readings.Concordance.q14_alone_is_q15`, `Usul.Readings.Concordance.q14_together_attaches_alone_not`, `Usul.Readings.Concordance.q3_readings_agree`, `Usul.Readings.Concordance.q9_readings_agree`, `Usul.Readings.Concordance.validDespite_refines_q38`, `Usul.Readings.Concordance.q15_readings_agree`  
 **Conservative over the earlier reading:** `Usul.Readings.Concordance.attachOnCertainty_conservative`
 
+<a id="maqasid"></a>
+
+## The maqāṣid al-sharīʿa: three ranks, the five kulliyyāt, preservation from two sides, complements, and the ḍarūrī as the original
+
+**Terms:** [maqāṣid al-sharīʿa](../glossary.md#maqasid), [al-ḍarūriyyāt](../glossary.md#daruriyyat), [al-ḥājiyyāt](../glossary.md#hajiyyat), [al-taḥsīniyyāt](../glossary.md#tahsiniyyat), [al-takmila](../glossary.md#takmila), [al-maṣlaḥa al-mursala](../glossary.md#maslaha_mursala)  
+**Closes:** `rule:istislah`, `rule:maqasid_tarjih`  
+**Register:** —
+
+**Statement**
+
+- `src:openiti-muwafaqat-shamela11435/v02:p017`: al-Shāṭibī opens Kitāb al-Maqāṣid: the law's obligations return to preserving its purposes in creation, and these are of three ranks only, ḍarūrī, ḥājī and taḥsīnī.
+  > تكاليف الشريعة ترجع إلى حفظ مقاصدها في الخلق، وهذه المقاصد لا تعدو ثلاثة أقسام: أحدها: أن تكون ضرورية. والثاني: أن تكون حاجية. والثالث: أن تكون تحسينية.
+
+**Conditions**
+
+1. the three ranks: ḍarūrī, ḥājī, taḥsīnī (al-Muwāfaqāt v02 p017)
+2. the five ḍarūriyyāt: dīn, nafs, ʿaql, nasl, māl (al-Mustaṣfā, the Rawḍa, al-Muwāfaqāt); al-Kawkab adds al-ʿirḍ at the rank of wealth
+3. a complement is considered only if considering it does not nullify its original (al-Muwāfaqāt v02 p026)
+
+**Texts**
+
+- `src:openiti-muwafaqat-shamela11435/v02:p018`: Preservation of the ḍarūriyyāt from two sides: establishing them (existence) and warding off their disruption (non-existence).
+  > والحفظ لها يكون بأمرين: أحدهما: ما يقيم أركانها ويثبت قواعدها، وذلك عبارة عن مراعاتها من جانب الوجود. والثاني: ما يدرأ عنها الاختلال الواقع أو المتوقع فيها، وذلك عبارة عن مراعاتها من جانب العدم.
+- `src:openiti-muwafaqat-shamela11435/v02:p019`: ʿIbādāt keep dīn, ʿādāt life and mind, from the side of existence.
+  > فأصول العبادات راجعة إلى حفظ الدين من جانب الوجود، كالإيمان. والنطق بالشهادتين، والصلاة، والزكاة، والصيام، والحج، وما أشبه ذلك. والعادات راجعة إلى حفظ النفس والعقل من جانب الوجود أيضا
+- `src:openiti-muwafaqat-shamela11435/v02:p020`: Muʿāmalāt keep lineage and wealth directly and life and mind through the ʿādāt; jināyāt keep all from the side of non-existence.
+  > والمعاملات راجعة إلى حفظ النسل والمال من جانب الوجود، وإلى حفظ النفس والعقل أيضا، لكن بواسطة العادات. والجنايات- ويجمعها الأمر بالمعروف والنهي عن المنكر- ترجع إلى حفظ الجميع من جانب العدم.
+- `src:openiti-muwafaqat-shamela11435/v02:p020`: The five ḍarūriyyāt in al-Shāṭibī's order, «مراعاة في كل ملة».
+  > ومجموع الضروريات خمسة، وهي: حفظ الدين، والنفس، والنسل، والمال، والعقل، وقد قالوا: إنها مراعاة في كل ملة.
+- `src:openiti-mustasfa-shamela5459/v01:p174`: al-Ghazālī: maṣlaḥa is preserving the law's purpose, which is five; whatever keeps them is maṣlaḥa, whatever loses them mafsada.
+  > لكنا نعني بالمصلحة المحافظة على مقصود الشرع ومقصود الشرع من الخلق خمسة: وهو أن يحفظ عليهم دينهم ونفسهم وعقلهم ونسلهم ومالهم، فكل ما يتضمن حفظ هذه الأصول الخمسة فهو مصلحة، وكل ما يفوت هذه الأصول فهو مفسدة ودفعها مصلحة.
+- `src:openiti-mustasfa-shamela5459/v01:p174`: The five lie in the rank of necessities, the strongest of the ranks.
+  > وهذه الأصول الخمسة حفظها واقع في رتبة الضرورات، فهي أقوى المراتب في المصالح
+- `src:openiti-rawda-shamela12010/v01:p481`: The Rawḍa: the third kind of unattested maṣlaḥa is in the rank of necessities, and they are five.
+  > الضرب الثالث- ما يقع في رتبة الضروريات: وهو ما عرف من الشارع الالتفات إليها. وهي خمسة: أن يحفظ عليهم دينهم، وأنفسهم، وعقلهم، ونسبهم، ومالهم.
+- `src:openiti-rawda-shamela12010/v01:p481`: The Rawḍa's deterrents, one to each of the five, in its own order.
+  > ومثاله: قضاء الشرع بقتل الكافر المضل، وعقوبة المبتدع الداعي إلى البدع، صيانة لدينهم. وقضاؤه بالقصاص، إذ به حفظ النفوس. وإيجابه حد الشرب؛ إذ به حفظ العقول. وإيجابه حد الزنا، حفظا للنسل والأنساب. وإيجابه زجر السارق؛ حفظا للأموال.
+- `src:openiti-kawkab-shamela12019/v04:p160`: al-Kawkab: the kulliyyāt joined by «ف», with al-ʿirḍ as a sixth.
+  > ويتنوع إلى خمسة أنواع، وهي التي روعيت في كل ملة، وهي "حفظ الدين، ف" حفظ "النفس، ف" حفظ "العقل، ف" حفظ "النسل، ف" حفظ "المال، و" حفظ "العرض"
+- `src:openiti-kawkab-shamela12019/v04:p163`: al-ʿIrḍ at the rank of wealth, «من أدنى الكليات».
+  > وجعله في جمع الجوامع ومنظومة البرماوي في رتبة المال، لعطفه بالواو. وتابعناه، فيكون من أدنى الكليات.
+- `src:openiti-muwafaqat-shamela11435/v02:p024`: Every rank has its complements, whose loss would not disrupt its original wisdom.
+  > كل مرتبة من هذه المراتب ينضم إليها ما هو كالتتمة والتكملة، مما لو فرضنا فقده لم يخل بحكمتها الأصلية.
+- `src:openiti-muwafaqat-shamela11435/v02:p025`: The ḥājiyyāt complete the ḍarūriyyāt and the taḥsīniyyāt the ḥājiyyāt; the ḍarūriyyāt are the original of the maṣāliḥ.
+  > ومن أمثلة هذه المسألة أن الحاجيات كالتتمة للضروريات، وكذلك التحسينات كالتكملة للحاجيات، فإن الضروريات هي أصل المصالح
+- `src:openiti-muwafaqat-shamela11435/v02:p026`: The condition of every complement: that considering it not nullify its original.
+  > كل تكملة فلها- من حيث هي تكملة- شرط، وهو: أن لا يعود اعتبارها على الأصل بالإبطال، وذلك أن كل تكملة يفضي اعتبارها إلى رفض أصلها، فلا يصح اشتراطها عند ذلك
+- `src:openiti-muwafaqat-shamela11435/v02:p026`: Why: a complement that removes what it qualifies removes itself; then the original is considered without addition.
+  > فإذا كان اعتبار الصفة يؤدي إلى ارتفاع الموصوف، لزم من ذلك ارتفاع الصفة أيضا، فاعتبار هذه التكملة على هذا الوجه مؤد إلى عدم اعتبارها، وهذا محال لا يتصور، وإذا لم يتصور، لم تعتبر التكملة، واعتبر الأصل من غير مزيد.
+- `src:openiti-muwafaqat-shamela11435/v02:p026`: The example: impurity is forbidden for manliness, but to save life eating the impure is preferred.
+  > فحرمت النجاسات حفظا للمروءات، وإجراء لأهلها على محاسن العادات، فإن دعت الضرورة إلى إحياء المهجة بتناول النجس، كان تناوله أولى.
+- `src:openiti-muwafaqat-shamela11435/v02:p031`: The ḍarūrī is the original of the ḥājī and taḥsīnī: its absolute disruption disrupts them, not conversely.
+  > المقاصد الضرورية في الشريعة أصل للحاجية والتحسينية. فلو فرض اختلال الضروري بإطلاق، لاختلا باختلاله بإطلاق، ولا يلزم من اختلالهما [أو اختلال أحدهما] اختلال الضروري بإطلاق
+- `src:openiti-muwafaqat-shamela11435/v02:p031`: The other two may disrupt the ḍarūrī in some way, so they are to be preserved for its sake.
+  > نعم، قد يلزم من اختلال التحسيني بإطلاق اختلال الحاجي بوجه ما، وقد يلزم من اختلال الحاجي بإطلاق اختلال الضروري بوجه ما، فلذلك إذا حوفظ على الضروري، فينبغي المحافظة على الحاجي، وإذا حوفظ على الحاجي، فينبغي أن يحافظ على التحسيني
+
+**Rationale.** The bank had maṣlaḥa only as munāsaba's recognition (Usul.Qiyas.Recognition) and the glossary's maṣlaḥa mursala; the maqāṣid that ground both were not formalised. They are read from al-Shāṭibī's al-Muwāfaqāt, the doctrine's systematic statement (newly registered and pinned), al-Ghazālī's al-Mustaṣfā and Ibn Qudāma's Rawḍa, which abridges it, and Ibn al-Najjār's Sharḥ al-Kawkab al-Munīr for the Ḥanbalī order. The four lists of kulliyyāt are proved to agree (al-Kawkab's sixth aside), the Rawḍa's deterrents to cover its five one to one, al-Shāṭibī's divisions to keep every one of the five from both sides, his complement condition never to cancel an original, and his dependence of the ranks to hold one way only.
+
+**Lean:** `Usul.Readings.Maqasid.Rutba`, `Usul.Readings.Maqasid.Kulli`, `Usul.Readings.Maqasid.fiveMustasfa`, `Usul.Readings.Maqasid.fiveMuwafaqat`, `Usul.Readings.Maqasid.sixKawkab`, `Usul.Readings.Maqasid.rawda_is_mustasfa`, `Usul.Readings.Maqasid.muwafaqat_same_five`, `Usul.Readings.Maqasid.kawkab_adds_ird`, `Usul.Readings.Maqasid.kawkab_descending`, `Usul.Readings.Maqasid.ird_lowest`, `Usul.Readings.Maqasid.preserves`, `Usul.Readings.Maqasid.both_sides`, `Usul.Readings.Maqasid.wujud_partition`, `Usul.Readings.Maqasid.adam_only_jinayat`, `Usul.Readings.Maqasid.Zajr.hifz`, `Usul.Readings.Maqasid.deterrents_cover_the_five`, `Usul.Readings.Maqasid.deterrents_are_jinayat`, `Usul.Readings.Maqasid.required`, `Usul.Readings.Maqasid.takmila_never_cancels_asl`, `Usul.Readings.Maqasid.required_implies_asl`, `Usul.Readings.Maqasid.takmila_considered`, `Usul.Readings.Maqasid.takmila_dropped`, `Usul.Readings.Maqasid.najis_for_the_mahja`, `Usul.Readings.Maqasid.Intact.Coherent`, `Usul.Readings.Maqasid.daruri_disrupts_all`, `Usul.Readings.Maqasid.others_need_not_disrupt_daruri`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="istislah"></a>
+
+## Istiṣlāḥ: when a maṣlaḥa is a proof
+
+**Terms:** [al-maṣlaḥa al-mursala](../glossary.md#maslaha_mursala), [al-ḍarūriyyāt](../glossary.md#daruriyyat), [al-ḥājiyyāt](../glossary.md#hajiyyat), [al-taḥsīniyyāt](../glossary.md#tahsiniyyat)  
+**Closes:** `rule:istislah`  
+**Register:** —
+
+**Statement**
+
+- `src:openiti-rawda-shamela12010/v01:p478`: The Rawḍa: maṣlaḥa is securing benefit or repelling harm, in three divisions; the attested is qiyās.
+  > والمصلحة: هي جلب المنفعة، أو دفع المضرة. وهي ثلاثة أقسام: قسم شهد الشرع باعتبارها. فهذا هو القياس، وهو: اقتباس الحكم من معقول النص أو الإجماع.
+
+**Conditions**
+
+1. the law's witness: attested (iʿtibār), cancelled (ilghāʾ) or neither (irsāl)
+2. the rank of the unattested maṣlaḥa
+3. for al-Ghazālī, whether the unattested ḍarūrī is certain and universal
+4. the stance on the unattested ḍarūrī, pinned (Rawḍa, al-Mustaṣfā, Mālik as the Rawḍa reports him), never chosen
+
+**Texts**
+
+- `src:openiti-rawda-shamela12010/v01:p479`: The cancelled: the king's fast, «لا خلاف في بطلانه؛ لمخالفته النص».
+  > ما شهد ببطلانه: كإيجاب الصوم بالوقاع في رمضان على الملك؛ إذ العتق سهل عليه فلا ينزجر، والكفارة وضعت للزجر، فهذا لا خلاف في بطلانه؛ لمخالفته النص، وفتح هذا يؤدي إلى تغيير حدود الشرع.
+- `src:openiti-rawda-shamela12010/v01:p479`: The unattested, in three kinds, the ḥājī first.
+  > الثالث- ما لم يشهد له بإبطال، ولا اعتبار معين: وهذا على ثلاثة ضروب: أحدها: ما يقع في مرتبة الحاجات: كتسليط الولي على تزويج الصغيرة، فذلك لا ضرورة إليه، لكنه محتاج إليه
+- `src:openiti-rawda-shamela12010/v01:p480`: No dispute that the ḥājī and taḥsīnī are not held to without an aṣl.
+  > فهذان الضربان لا نعلم خلافا في أنه لا يجوز التمسك بهما من غير أصل؛ فإنه لو جاز ذلك: كان وضعا للشرع بالرأي، ولما احتجنا إلى بعثة الرسل.
+- `src:openiti-rawda-shamela12010/v01:p482`: Mālik and some Shāfiʿīs: the unattested ḍarūrī is a proof.
+  > فذهب مالك، وبعض الشافعية إلى أن هذه المصلحة حجة؛ لأنا قد علمنا أن ذلك من مقاصد الشرع.
+- `src:openiti-rawda-shamela12010/v01:p482`: Ibn Qudāma: it is not.
+  > والصحيح: أن ذلك ليس بحجة؛ لأنه ما عرف من الشارع المحافظة على الدماء بكل طريق.
+- `src:openiti-mustasfa-shamela5459/v01:p175`: al-Ghazālī: an unattested ḍarūrī may be reached by ijtihād without a specific aṣl.
+  > أما الواقع في رتبة الضرورات فلا بعد في أن يؤدي إليه اجتهاد مجتهد، وإن لم يشهد له أصل معين
+- `src:openiti-mustasfa-shamela5459/v01:p176`: His three conditions: necessary, certain, universal.
+  > وانقدح اعتبارها باعتبار ثلاثة أوصاف أنها ضرورة قطعية كلية
+- `src:openiti-mustasfa-shamela5459/v01:p177`: Certainty includes a ẓann near certainty.
+  > ونحن إنما نجوز ذلك عند القطع أو ظن قريب من القطع
+- `src:openiti-mustasfa-shamela5459/v01:p177`: The shield (tatarrus): certain of the law's purpose, needing no aṣl.
+  > فإن حفظ أهل الإسلام عن اصطلام الكفار أهم في مقصود الشرع من حفظ دم مسلم واحد فهذا مقطوع به من مقصود الشرع والمقطوع به لا يحتاج شهادة أصل
+- `src:openiti-mustasfa-shamela5459/v01:p176`: The fortress: neither necessary nor certain.
+  > وليس في معناها ما لو تترس الكفار في قلعة بمسلم إذ لا يحل رمي الترس إذ لا ضرورة فبنا غنية عن القلعة فنعدل عنها إذ لم نقطع بظفرنا بها؛ لأنها ليست قطعية بل ظنية
+- `src:openiti-mustasfa-shamela5459/v01:p176`: The ship: not universal.
+  > وليس في معناها جماعة في سفينة لو طرحوا واحدا منهم لنجوا، وإلا غرقوا بجملتهم؛ لأنها ليست كلية إذ يحصل بها هلاك عدد محصور
+- `src:openiti-mustasfa-shamela5459/v01:p176`: The famine: not universal.
+  > وكذلك جماعة في مخمصة لو أكلوا واحدا بالقرعة لنجوا فلا رخصة فيه؛ لأن المصلحة ليست كلية
+
+**Rationale.** The Rawḍa and al-Mustaṣfā agree on everything but the unattested ḍarūrī, and dispute_locus proves that is the only place the stances differ; stances_nested proves the Rawḍa ⊆ al-Ghazālī ⊆ Mālik. Which stance is right is a policy point (method §4, invariant 8), so it is a fact of the encoder, not a refinement. refines_recognition ties the reading to Usul.Qiyas.Recognition: the cancelled is its never-accepted mulgha, and the unattested ḍarūrī its mursal, whose disputed acceptance parameter each stance fixes. al-Ghazālī's own furūʿ are theorems.
+
+**Lean:** `Usul.Readings.Maqasid.Shahada`, `Usul.Readings.Maqasid.Stance`, `Usul.Readings.Maqasid.Maslaha`, `Usul.Readings.Maqasid.Stance.acceptsMursal`, `Usul.Readings.Maqasid.hujja`, `Usul.Readings.Maqasid.dispute_locus`, `Usul.Readings.Maqasid.stances_nested`, `Usul.Readings.Maqasid.refines_recognition`, `Usul.Readings.Maqasid.tatarrus`, `Usul.Readings.Maqasid.qala`, `Usul.Readings.Maqasid.safina`, `Usul.Readings.Maqasid.kaffarat_al_malik`, `Usul.Readings.Maqasid.tatarrus_disputed`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
+<a id="maqasid_tarjih"></a>
+
+## The order of the maqāṣid in tarjīḥ
+
+**Terms:** [maqāṣid al-sharīʿa](../glossary.md#maqasid), [al-tarjīḥ](../glossary.md#tarjih), [al-ḍarūriyyāt](../glossary.md#daruriyyat), [al-ḥājiyyāt](../glossary.md#hajiyyat), [al-taḥsīniyyāt](../glossary.md#tahsiniyyat), [al-takmila](../glossary.md#takmila)  
+**Closes:** `rule:maqasid_tarjih`  
+**Register:** —
+
+**Statement**
+
+- `src:openiti-kawkab-shamela12019/v04:p727`: al-Kawkab: the ḍarūrī maqāṣid before the others, their complement before the ḥājī, the ḥājī before the taḥsīnī, dīn before the rest of the ḍarūrī.
+  > "و" تقدم "المقاصد الضرورية" الخمسة "على غيرها" من المقاصد. "ومكملها" أي مكمل الخمسة الضرورية "على الحاجية". "وهي" أي: وتقدم المصلحة الحاجية "على التحسينية. و" يقدم "حفظ الدين على باقي الضرورية".
+
+**Conditions**
+
+1. the two maṣāliḥ in conflict, each a ḍarūrī (by kullī), a complement of the ḍarūrī, a ḥājī or a taḥsīnī
+2. the reading on dīn against the other ḍarūriyyāt, pinned (al-Kawkab, or «وقيل»)
+
+**Texts**
+
+- `src:openiti-kawkab-shamela12019/v04:p727`: From Sharḥ al-Taḥrīr: where the five conflict, the religious is put first, «لأنها المقصود الأعظم».
+  > قال في شرح التحرير: وإذا تعارضت بعض الخمس الضرورية: قدمت الدينية على الأربع الأخر، لأنها المقصود الأعظم.
+- `src:openiti-kawkab-shamela12019/v04:p728`: The dissent: the other four before dīn, as the right of humans.
+  > وقيل: تقدم الأربع الأخر على الدينية؛ لأنها حق آدمي، وهو يتضرر. والدينية حق لله سبحانه وتعالى، وهو لا يتضرر به
+- `src:openiti-kawkab-shamela12019/v04:p163`: The complement joined to the ḍarūrī: the ḥadd for a little of an intoxicant.
+  > "و" يلحق بالضروري ما هو "مكمل له، كحفظ العقل بالحد بقليل مسكر".
+- `src:openiti-kawkab-shamela12019/v04:p164`: The complement of lineage: forbidding the look, the touch and khalwa.
+  > والمبالغة في حفظ النسب3: 4بتحريم النظر واللمس5 والخلوة، والتعزير عليه.
+- `src:openiti-kawkab-shamela12019/v04:p160`: The order of the five read from al-Kawkab's «ف».
+  > ويتنوع إلى خمسة أنواع، وهي التي روعيت في كل ملة، وهي "حفظ الدين، ف" حفظ "النفس، ف" حفظ "العقل، ف" حفظ "النسل، ف" حفظ "المال، و" حفظ "العرض"
+- `src:openiti-kawkab-shamela12019/v04:p163`: al-ʿIrḍ at the rank of wealth, the lowest.
+  > وجعله في جمع الجوامع ومنظومة البرماوي في رتبة المال، لعطفه بالواو. وتابعناه، فيكون من أدنى الكليات.
+- `src:openiti-lajnadaima-fatawa-shamela8381/v24:p391`: The Lajna: life in the second rank after dīn.
+  > حفظ نفس الإنسان، وهو في المرتبة الثانية بعد حفظ الدين
+
+**Rationale.** Usul.Tarjih weighs proofs; al-Kawkab also orders the maqāṣid a proof serves, which no reading held. The order is formalised as taqdim, proved antisymmetric (taqdim_swap), transitive (taqdim_trans) and decided by tier whatever the reading (tier_decides), consistent with al-Shāṭibī's dependence (asl_before_takmila, tier_refines_rank). The dissent on dīn is pinned as a fact; din_reading_locus proves the readings differ only where dīn meets another ḍarūrī. Where al-Kawkab states no order (two of one tier outside the ḍarūriyyāt, wealth and honour) the verdict is tawaqquf.
+
+**Lean:** `Usul.Readings.Maqasid.Maqsad`, `Usul.Readings.Maqasid.Maqsad.ofKulli`, `Usul.Readings.Maqasid.Maqsad.kulli`, `Usul.Readings.Maqasid.kulli_ofKulli`, `Usul.Readings.Maqasid.ofKulli_kulli`, `Usul.Readings.Maqasid.Maqsad.tier`, `Usul.Readings.Maqasid.Maqsad.rutba`, `Usul.Readings.Maqasid.tier_refines_rank`, `Usul.Readings.Maqasid.DinReading`, `Usul.Readings.Maqasid.Taqdim`, `Usul.Readings.Maqasid.Kulli.tarjihRank`, `Usul.Readings.Maqasid.taqdim`, `Usul.Readings.Maqasid.tier_decides`, `Usul.Readings.Maqasid.taqdim_swap`, `Usul.Readings.Maqasid.taqdim_trans`, `Usul.Readings.Maqasid.din_first`, `Usul.Readings.Maqasid.din_reading_locus`, `Usul.Readings.Maqasid.mal_ird_suspended`, `Usul.Readings.Maqasid.asl_before_takmila`  
+**Conservative over the earlier reading:** none (a new principle, not a refinement of an earlier reading)
+
 <a id="mubashara_tasabbub"></a>
 
 ## The direct act and the cause: on whom the ḍamān of an itlāf falls

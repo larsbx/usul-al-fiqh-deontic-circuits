@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "candidate",
-  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. The 22 fold-0 cases of the RajabA17–A20 shards (qawāʿid 132–146), added at the round-5 merge, were typed blind again, by one agent that saw only each farʿ's text under an opaque id and the generated field catalogue. The 18 fold-0 cases of the RajabA21–A25 shards (qawāʿid 147–158), added at the round-6 merge, were typed blind in the same way. The 43 fold-0 cases of the RajabA26–A31 shards (qawāʿid 13, 23, 40, 70, 82, 84–88), added at the round-7 merge, were typed blind in the same way, by one agent that saw only each farʿ's text under an opaque, shuffled id and the generated field catalogue. Not human-reviewed.",
+  "provenance": "The 157 cases of fold 0 of the routing index's held-out split (corpus/routing/index.json; Ibn Rajab and Ibn al-Laḥḥām furūʿ) typed into Usul.Typing situations, LLM-assisted by four agents working blind: they saw each farʿ's committed text under an opaque id (record ids name the qāʿida) and a field catalogue generated from the Lean export, never the qāʿida, encoder or label. Quotes are verbatim, at most 160 characters. The 17 fold-0 cases of the RajabA13–A16 shards (qawāʿid 119–130), added at the 2026-10-14 merge, were typed by one agent that had seen their annotations, so not blind; likewise q128.f000, recovered and annotated at PR-30. The 22 fold-0 cases of the RajabA17–A20 shards (qawāʿid 132–146), added at the round-5 merge, were typed blind again, by one agent that saw only each farʿ's text under an opaque id and the generated field catalogue. The 18 fold-0 cases of the RajabA21–A25 shards (qawāʿid 147–158), added at the round-6 merge, were typed blind in the same way. The 43 fold-0 cases of the RajabA26–A31 shards (qawāʿid 13, 23, 40, 70, 82, 84–88), added at the round-7 merge, were typed blind in the same way, by one agent that saw only each farʿ's text under an opaque, shuffled id and the generated field catalogue. Not human-reviewed. The maqāṣid shard's Lajna case (qa09648) is listed without situations: a fatwā record's committed text carries no receipt-able excerpt for its facts.",
   "answers": [
     {
       "answer": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f001",
@@ -4054,6 +4054,10 @@
           }
         }
       ]
+    },
+    {
+      "answer": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648",
+      "situations": []
     }
   ]
 }

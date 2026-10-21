@@ -11,8 +11,8 @@
     "examples/v41_islamqa_tranche1_situations.pl": "2d71448e480104569798196056f8d7f19a188a47bdef9122ddaac1c8a0b272c0",
     "corpus/fatawa/takhrij/islamqa_tranche1.json": "2e1bce1bf3cacd32fa4a28f013f6dd0ced299b250da4c67561a5c671a19c2a00",
     "examples/v41_typing.pl": "7fea50df549ec3525641423e4be9e13669503e0ae7b3540856a9b1ec13db6155",
-    "examples/v41_types.pl": "4fb5ae9fb8865d408219e9a39f098f05c407dd4593e0ad3a41e5f81e89cd7d88",
-    "formal/lean/Usul/Typing/Qaida.lean": "22a4319d8489a8af9448582f5ee08a05f75f872d7b74a84966613d77e7c8440f",
+    "examples/v41_types.pl": "32b9530619d4a40c6bc42e95f8e987ef2d76fd80175c06221b75c5fd0dc08071",
+    "formal/lean/Usul/Typing/Qaida.lean": "d9576086e1f016d5ed1de73069613345ef890cacd679f50ce3bd78341a36d7e3",
     "corpus/types/anchors/anchors-a.json": "2d8209b2f67fc7af2f3402db80e65db7ebbd464863f1c7b2ae11a8d2b3aab9c8"
   },
   "limits": [

@@ -1,0 +1,76 @@
+{
+ "entries": [
+  {
+   "type": "istislah",
+   "field": "maslaha_shahada",
+   "gloss": "the law's witness to the maṣlaḥa: attested (iʿtibār), cancelled (ilghāʾ), or neither (irsāl, the maṣlaḥa mursala)",
+   "anchor": {
+    "ref": "src:openiti-rawda-shamela12010/v01:p478",
+    "excerpt_ar": "وهي ثلاثة أقسام: قسم شهد الشرع باعتبارها"
+   }
+  },
+  {
+   "type": "istislah",
+   "field": "maslaha_rutba",
+   "gloss": "the rank of the maṣlaḥa: ḍarūrī, ḥājī or taḥsīnī; the unattested comes in these three kinds",
+   "anchor": {
+    "ref": "src:openiti-rawda-shamela12010/v01:p479",
+    "excerpt_ar": "وهذا على ثلاثة ضروب: أحدها: ما يقع في مرتبة الحاجات"
+   }
+  },
+  {
+   "type": "istislah",
+   "field": "maslaha_qatiyya",
+   "gloss": "al-Ghazālī's certainty: the maṣlaḥa is known for certain (or by a ẓann near certainty), not merely probable, as the fortress is not",
+   "anchor": {
+    "ref": "src:openiti-mustasfa-shamela5459/v01:p176",
+    "excerpt_ar": "لأنها ليست قطعية بل ظنية"
+   }
+  },
+  {
+   "type": "istislah",
+   "field": "maslaha_kulliyya",
+   "gloss": "al-Ghazālī's universality: the maṣlaḥa concerns the whole community, not a limited number, as the ship does not",
+   "anchor": {
+    "ref": "src:openiti-mustasfa-shamela5459/v01:p176",
+    "excerpt_ar": "لأنها ليست كلية إذ يحصل بها هلاك عدد محصور"
+   }
+  },
+  {
+   "type": "istislah",
+   "field": "istislah_stance",
+   "gloss": "the pinned position on the unattested ḍarūrī maṣlaḥa: the Rawḍa (not a proof), al-Ghazālī (only if certain and universal), Mālik as the Rawḍa reports him (a proof)",
+   "anchor": {
+    "ref": "src:openiti-rawda-shamela12010/v01:p482",
+    "excerpt_ar": "فذهب مالك، وبعض الشافعية إلى أن هذه المصلحة حجة"
+   }
+  },
+  {
+   "type": "maqasid_tarjih",
+   "field": "maqsad_first",
+   "gloss": "what the first of two conflicting maṣāliḥ preserves: a ḍarūrī (by its kullī), a complement of the ḍarūrī, a ḥājī or a taḥsīnī",
+   "anchor": {
+    "ref": "src:openiti-kawkab-shamela12019/v04:p727",
+    "excerpt_ar": "\"و\" تقدم \"المقاصد الضرورية\" الخمسة \"على غيرها\" من المقاصد."
+   }
+  },
+  {
+   "type": "maqasid_tarjih",
+   "field": "maqsad_second",
+   "gloss": "what the second of the two conflicting maṣāliḥ preserves, on the same scale as the first",
+   "anchor": {
+    "ref": "src:openiti-kawkab-shamela12019/v04:p727",
+    "excerpt_ar": "\"ومكملها\" أي مكمل الخمسة الضرورية \"على الحاجية\"."
+   }
+  },
+  {
+   "type": "maqasid_tarjih",
+   "field": "din_reading",
+   "gloss": "the pinned position on dīn against the other ḍarūriyyāt: al-Kawkab's (dīn first) or the dissent he reports (the other four first)",
+   "anchor": {
+    "ref": "src:openiti-kawkab-shamela12019/v04:p728",
+    "excerpt_ar": "وقيل: تقدم الأربع الأخر على الدينية؛ لأنها حق آدمي"
+   }
+  }
+ ]
+}

@@ -39,6 +39,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.QiyasLimits` | [Usul/QiyasLimits.md](Usul/QiyasLimits.md) | [doc](https://claude.ai/code/artifact/f37a2aff-ac8e-4952-9a4f-7dc96b64fe57) |
 | `Usul.Readings` | [Usul/Readings.md](Usul/Readings.md) | [doc](https://claude.ai/code/artifact/255b602c-a109-4ec8-a677-7a5919f86c0a) |
 | `Usul.Readings.Concordance` | [Usul/Readings/Concordance.md](Usul/Readings/Concordance.md) | [doc](https://claude.ai/code/artifact/3fda628e-6292-4a70-9097-ccf88581b1bc) |
+| `Usul.Readings.Maqasid` | [Usul/Readings/Maqasid.md](Usul/Readings/Maqasid.md) | pending |
 | `Usul.Readings.Mubashara` | [Usul/Readings/Mubashara.md](Usul/Readings/Mubashara.md) | [doc](https://claude.ai/code/artifact/5aedaba3-6fc8-44ef-8a69-b25b729bc081) |
 | `Usul.Readings.RajabA1` | [Usul/Readings/RajabA1.md](Usul/Readings/RajabA1.md) | [doc](https://claude.ai/code/artifact/b8f78163-42be-45d1-9117-2e7ef8cd0d0f) |
 | `Usul.Readings.RajabA10` | [Usul/Readings/RajabA10.md](Usul/Readings/RajabA10.md) | [doc](https://claude.ai/code/artifact/43659a27-6401-46bc-9afb-212beae691d5) |

@@ -1621,6 +1621,32 @@
       "status": "located"
     },
     {
+      "id": "shatibi.muwafaqat",
+      "title_ar": "الموافقات",
+      "title_tr": "al-Muwāfaqāt",
+      "author": {
+        "name_tr": "Abū Isḥāq al-Shāṭibī",
+        "death_ah": 790
+      },
+      "layers": [
+        "inference"
+      ],
+      "kernel": false,
+      "rights": "public_domain_text",
+      "note": "maqāṣid source: Kitāb al-Maqāṣid, al-naw' al-awwal (qaṣd al-shāriʿ fī waḍʿ al-sharīʿa): the three ranks, the five ḍarūriyyāt, preservation from the side of existence and of non-existence, the complements and their condition, and the dependence of the ḥājī and taḥsīnī on the ḍarūrī",
+      "witnesses": [
+        {
+          "id": "openiti-muwafaqat-shamela11435",
+          "kind": "openiti",
+          "repo": "0800AH",
+          "commit": "7b745ec7b83d6d4971f937364dbdec2fe0ba2a40",
+          "path": "data/0790IbnMusaGharnatiShatibi/0790IbnMusaGharnatiShatibi.Muwafaqat/0790IbnMusaGharnatiShatibi.Muwafaqat.Shamela0011435-ara1",
+          "edition": "Shamela 11435, ed. Abū ʿUbayda Mashhūr b. Ḥasan Āl Salmān, Dār Ibn ʿAffān, 1st ed. 1417/1997"
+        }
+      ],
+      "status": "located"
+    },
+    {
       "id": "sarakhsi.usul",
       "title_ar": "أصول السرخسي",
       "title_tr": "Uṣūl al-Sarakhsī",

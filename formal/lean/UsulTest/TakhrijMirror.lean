@@ -488,6 +488,276 @@ import Usul
 #guard (Usul.Readings.Concordance.attachOnCertainty false true) == .abstain
 #guard (Usul.Readings.Concordance.attachOnCertainty true false) == .each
 #guard (Usul.Readings.Concordance.attachOnCertainty true true) == .neither
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .daruri, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .daruri, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .daruri, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .daruri, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .daruri, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .daruri, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .daruri, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .daruri, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .daruri, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .daruri, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .daruri, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .daruri, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .haji, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .haji, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .haji, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .haji, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .haji, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .haji, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .haji, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .haji, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .haji, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .haji, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .haji, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .haji, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .tahsini, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .tahsini, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .tahsini, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .tahsini, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .tahsini, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .tahsini, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .tahsini, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .tahsini, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .tahsini, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.itibar, .tahsini, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.itibar, .tahsini, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.itibar, .tahsini, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .daruri, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .daruri, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .daruri, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .daruri, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .daruri, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .haji, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .haji, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .haji, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .tahsini, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .tahsini, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .tahsini, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .tahsini, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.ilgha, .tahsini, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.ilgha, .tahsini, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.ilgha, .tahsini, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .daruri, false, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .daruri, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .daruri, false, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .daruri, true, false⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .daruri, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .daruri, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .daruri, true, true⟩) == true
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .haji, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .haji, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .haji, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .haji, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .haji, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .haji, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .tahsini, false, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .tahsini, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .tahsini, false, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .tahsini, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .tahsini, true, false⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .rawda ⟨.irsal, .tahsini, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .mustasfa ⟨.irsal, .tahsini, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.hujja .malik ⟨.irsal, .tahsini, true, true⟩) == false
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .din) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .din) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .nafs) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .aql) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .nasl) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .mal) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .mal) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .ird) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .ird) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .din .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .din .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .din) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .nafs) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .nafs) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .aql) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .aql) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .nasl) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .nasl) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .mal) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .mal) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .ird) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .ird) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nafs .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nafs .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .din) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .aql) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .aql) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .nasl) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .nasl) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .mal) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .mal) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .ird) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .ird) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .aql .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .aql .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .din) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .nasl) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .nasl) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .mal) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .mal) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .ird) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .ird) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .nasl .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .nasl .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .din) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .mal) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .mal) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .ird) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .ird) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mal .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .mal .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .din) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .mal) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .mal) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .ird) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .ird) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .mukammil) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .ird .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .ird .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .mal) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .mal) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .ird) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .ird) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .mukammil) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .mukammil) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .haji) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .mukammil .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .mukammil .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .mal) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .mal) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .ird) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .ird) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .mukammil) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .mukammil) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .haji) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .haji) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .haji .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .qila .haji .tahsini) == .first
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .din) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .nafs) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .aql) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .nasl) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .mal) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .mal) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .ird) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .ird) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .mukammil) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .mukammil) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .haji) == .second
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .haji) == .second
+#guard (Usul.Readings.Maqasid.taqdim .kawkab .tahsini .tahsini) == .tawaqquf
+#guard (Usul.Readings.Maqasid.taqdim .qila .tahsini .tahsini) == .tawaqquf
 #guard (Usul.Readings.Mubashara.damanOn false false) == .mubashir
 #guard (Usul.Readings.Mubashara.damanOn false true) == .mubashir
 #guard (Usul.Readings.Mubashara.damanOn true false) == .sabab

@@ -483,6 +483,12 @@
       "bytes": 2357163,
       "sha256": "0f2e523e2d1aaa044f015dad6e5ba8c5acb0f6f7238ef8b3f59eb2c81ddb98a4"
     },
+    "openiti-muwafaqat-shamela11435": {
+      "witness": "openiti-muwafaqat-shamela11435",
+      "url": "https://raw.githubusercontent.com/OpenITI/0800AH/7b745ec7b83d6d4971f937364dbdec2fe0ba2a40/data/0790IbnMusaGharnatiShatibi/0790IbnMusaGharnatiShatibi.Muwafaqat/0790IbnMusaGharnatiShatibi.Muwafaqat.Shamela0011435-ara1",
+      "bytes": 3949173,
+      "sha256": "548ba30e3d0088f72cd7c27bd97a25ea2277239aea591e0c3a081ccc03678ef4"
+    },
     "openiti-muwatta-shamela1699": {
       "witness": "openiti-muwatta-shamela1699",
       "url": "https://raw.githubusercontent.com/OpenITI/0200AH/599f22fe249871f602efe2e0ddc801d3742960a3/data/0179MalikIbnAnas/0179MalikIbnAnas.Muwatta/0179MalikIbnAnas.Muwatta.Shamela0001699-ara1.completed",

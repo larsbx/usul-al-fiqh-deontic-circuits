@@ -1034,6 +1034,31 @@
         true
       ]
     },
+    "istislah": {
+      "istislah_stance": [
+        "rawda",
+        "mustasfa",
+        "malik"
+      ],
+      "maslaha_kulliyya": [
+        false,
+        true
+      ],
+      "maslaha_qatiyya": [
+        false,
+        true
+      ],
+      "maslaha_rutba": [
+        "daruri",
+        "haji",
+        "tahsini"
+      ],
+      "maslaha_shahada": [
+        "itibar",
+        "ilgha",
+        "irsal"
+      ]
+    },
     "itlaf": {
       "mental": [
         "deliberate",
@@ -1165,6 +1190,34 @@
       "same_cost": [
         false,
         true
+      ]
+    },
+    "maqasid_tarjih": {
+      "din_reading": [
+        "kawkab",
+        "qila"
+      ],
+      "maqsad_first": [
+        "din",
+        "nafs",
+        "aql",
+        "nasl",
+        "mal",
+        "ird",
+        "mukammil",
+        "haji",
+        "tahsini"
+      ],
+      "maqsad_second": [
+        "din",
+        "nafs",
+        "aql",
+        "nasl",
+        "mal",
+        "ird",
+        "mukammil",
+        "haji",
+        "tahsini"
       ]
     },
     "mistaken_basis": {
@@ -2115,9 +2168,12 @@
     }
   },
   "coverage": {
-    "registry_encoders": 223,
+    "registry_encoders": 225,
     "ranked_encoders": 223,
-    "without_lexical_evidence": [],
+    "without_lexical_evidence": [
+      "istislah",
+      "maqasid_tarjih"
+    ],
     "learned_fields": [
       "a27_explicit_inclusion",
       "a27_holder_consented",
@@ -2465,51 +2521,59 @@
     "undetected_fields": [
       "cause_completes_milk",
       "cause_concluded",
+      "din_reading",
       "expression",
       "imitation_established",
+      "istislah_stance",
+      "maqsad_first",
+      "maqsad_second",
+      "maslaha_kulliyya",
+      "maslaha_qatiyya",
+      "maslaha_rutba",
+      "maslaha_shahada",
       "qarina",
       "reading"
     ]
   },
   "classical": {
-    "cases": 1216,
+    "cases": 1218,
     "fixed_weight_recall": {
       "0.0": {
-        "1": 0.509,
-        "5": 0.7895,
-        "10": 0.8479
+        "1": 0.5074,
+        "5": 0.7865,
+        "10": 0.8465
       },
       "0.25": {
-        "1": 0.5016,
-        "5": 0.7796,
-        "10": 0.8347
+        "1": 0.4984,
+        "5": 0.7775,
+        "10": 0.8333
       },
       "0.5": {
-        "1": 0.4646,
-        "5": 0.7418,
-        "10": 0.8166
+        "1": 0.4639,
+        "5": 0.7406,
+        "10": 0.8144
       },
       "1.0": {
-        "1": 0.4128,
-        "5": 0.6694,
-        "10": 0.7516
+        "1": 0.4138,
+        "5": 0.6683,
+        "10": 0.7504
       }
     },
     "recall": {
       "lexical": {
-        "1": 0.509,
-        "5": 0.7895,
-        "10": 0.8479
+        "1": 0.5074,
+        "5": 0.7865,
+        "10": 0.8465
       },
       "structural": {
-        "1": 0.4128,
-        "5": 0.6694,
-        "10": 0.7516
+        "1": 0.4138,
+        "5": 0.6683,
+        "10": 0.7504
       },
       "hybrid": {
-        "1": 0.509,
-        "5": 0.7895,
-        "10": 0.8479
+        "1": 0.5074,
+        "5": 0.7865,
+        "10": 0.8465
       }
     },
     "rows": [
@@ -2557,16 +2621,16 @@
         "record_id": "ibn_lahham.qawaid_fawaid.openiti_lahham_shamela8526.q043.f002",
         "encoder": "amr",
         "lexical": [
-          "fay_tie_break",
-          "amr_mixed",
           "command_intended_usage",
           "command_nonverbal_usage",
           "command_obligation_status",
           "command_prophetic_act_usage",
           "residual_jawaz_after_sarf",
           "amr",
+          "amr_mixed",
+          "fay_tie_break",
           "failed_obligation_returns",
-          "benefit_condition_against_compensation"
+          "generality"
         ],
         "structural": [
           "fay_tie_break",
@@ -2581,16 +2645,16 @@
           "burdened_thing_compensated"
         ],
         "hybrid": [
-          "fay_tie_break",
-          "amr_mixed",
           "command_intended_usage",
           "command_nonverbal_usage",
           "command_obligation_status",
           "command_prophetic_act_usage",
           "residual_jawaz_after_sarf",
           "amr",
+          "amr_mixed",
+          "fay_tie_break",
           "failed_obligation_returns",
-          "benefit_condition_against_compensation"
+          "generality"
         ]
       },
       {
@@ -2599,14 +2663,14 @@
         "lexical": [
           "amr",
           "urf_specialises_general",
-          "combining_forms",
+          "generality",
           "amr_mixed",
           "command_intended_usage",
           "command_nonverbal_usage",
           "command_obligation_status",
           "command_prophetic_act_usage",
           "residual_jawaz_after_sarf",
-          "successive_contracts"
+          "combining_forms"
         ],
         "structural": [
           "urf_specialises_general",
@@ -2623,14 +2687,14 @@
         "hybrid": [
           "amr",
           "urf_specialises_general",
-          "combining_forms",
+          "generality",
           "amr_mixed",
           "command_intended_usage",
           "command_nonverbal_usage",
           "command_obligation_status",
           "command_prophetic_act_usage",
           "residual_jawaz_after_sarf",
-          "successive_contracts"
+          "combining_forms"
         ]
       },
       {
@@ -2733,12 +2797,12 @@
           "umum_lafz",
           "residual_jawaz_after_sarf",
           "excess_in_following",
-          "partial_capability",
           "rescue_loss_liability",
+          "partial_capability",
           "unintended_instance_covered",
           "a26_ihala_on_known_cause",
-          "excess_over_sufficient",
-          "disposal_before_qabd_debt"
+          "lots",
+          "excess_over_sufficient"
         ],
         "hybrid": [
           "residual_jawaz_after_sarf",
@@ -2758,15 +2822,15 @@
         "encoder": "amr",
         "lexical": [
           "generality",
-          "amr_mixed",
           "amr",
+          "amr_mixed",
           "command_intended_usage",
           "command_nonverbal_usage",
           "command_obligation_status",
           "command_prophetic_act_usage",
           "residual_jawaz_after_sarf",
           "rajab_a30_tamalluk_awaits_choice",
-          "khalt_as_shirka"
+          "rajab_a28_faskh_growth_returns"
         ],
         "structural": [
           "wording_need_not_learn",
@@ -2782,15 +2846,15 @@
         ],
         "hybrid": [
           "generality",
-          "amr_mixed",
           "amr",
+          "amr_mixed",
           "command_intended_usage",
           "command_nonverbal_usage",
           "command_obligation_status",
           "command_prophetic_act_usage",
           "residual_jawaz_after_sarf",
           "rajab_a30_tamalluk_awaits_choice",
-          "khalt_as_shirka"
+          "rajab_a28_faskh_growth_returns"
         ]
       },
       {
@@ -3003,10 +3067,10 @@
           "distribution_each_over_whole",
           "shared_right_accrues_to_rest",
           "returned_takes_first_ruling",
-          "dalalat_hal_carries_claim",
           "lots",
-          "vague_insha_valid",
-          "intention_shapes_wording"
+          "repeat_bearing_roots_as_trees",
+          "dalalat_hal_carries_claim",
+          "rajab_a28_growth_in_nonownership_contract"
         ],
         "structural": [
           "generality",
@@ -3027,10 +3091,10 @@
           "distribution_each_over_whole",
           "shared_right_accrues_to_rest",
           "returned_takes_first_ruling",
-          "dalalat_hal_carries_claim",
           "lots",
-          "vague_insha_valid",
-          "intention_shapes_wording"
+          "repeat_bearing_roots_as_trees",
+          "dalalat_hal_carries_claim",
+          "rajab_a28_growth_in_nonownership_contract"
         ]
       },
       {
@@ -3124,9 +3188,9 @@
           "excess_in_following",
           "generality",
           "cause_restricts_general",
-          "abstention_under_possible_condition",
-          "shar_specialises_general",
-          "rajab_a30_tie_for_recovery"
+          "void_contract_concluded",
+          "rajab_a30_tie_for_recovery",
+          "abstention_under_possible_condition"
         ],
         "structural": [
           "urf_specialises_general",
@@ -3148,9 +3212,9 @@
           "excess_in_following",
           "generality",
           "cause_restricts_general",
-          "abstention_under_possible_condition",
-          "shar_specialises_general",
-          "rajab_a30_tie_for_recovery"
+          "void_contract_concluded",
+          "rajab_a30_tie_for_recovery",
+          "abstention_under_possible_condition"
         ]
       },
       {
@@ -3376,8 +3440,8 @@
           "heir_takes_deceased_right",
           "error_actor_liable",
           "a31_rajab87_transfer_of_holding",
-          "wording_need_not_learn",
           "rajab_a28_toward_ownership_growth",
+          "wording_need_not_learn",
           "maadum_grant_valid"
         ],
         "hybrid": [
@@ -3559,14 +3623,14 @@
         "lexical": [
           "disposal_before_qabd_debt",
           "generality",
-          "many_over_noble",
-          "combining_forms",
           "umum_lafz",
           "needed_item_is_surplus",
+          "many_over_noble",
+          "combining_forms",
           "annulment_on_nonexistent",
           "follows_proven_ownership",
           "haml_ala_adna",
-          "switch_to_original"
+          "annulment_without_return"
         ],
         "structural": [
           "disposal_before_qabd_debt",
@@ -3583,14 +3647,14 @@
         "hybrid": [
           "disposal_before_qabd_debt",
           "generality",
-          "many_over_noble",
-          "combining_forms",
           "umum_lafz",
           "needed_item_is_surplus",
+          "many_over_noble",
+          "combining_forms",
           "annulment_on_nonexistent",
           "follows_proven_ownership",
           "haml_ala_adna",
-          "switch_to_original"
+          "annulment_without_return"
         ]
       },
       {
@@ -4004,9 +4068,9 @@
           "other_option_stands",
           "qawad_choice_forfeits_attached_right",
           "advanced_worship",
-          "woman_half_of_man",
+          "sulh_replaces_owned_wealth",
           "performed_without_leave_owned",
-          "failed_obligation_returns"
+          "woman_half_of_man"
         ],
         "structural": [
           "excess_in_following",
@@ -4028,9 +4092,9 @@
           "other_option_stands",
           "qawad_choice_forfeits_attached_right",
           "advanced_worship",
-          "woman_half_of_man",
+          "sulh_replaces_owned_wealth",
           "performed_without_leave_owned",
-          "failed_obligation_returns"
+          "woman_half_of_man"
         ]
       },
       {
@@ -4926,7 +4990,7 @@
           "unknown_order_judged_sequential",
           "rajab_a30_tamalluk_awaits_choice",
           "eating_without_permission",
-          "a29_haml_hukm_before_separation"
+          "unknown_condition"
         ],
         "structural": [
           "error_actor_liable",
@@ -4950,7 +5014,7 @@
           "unknown_order_judged_sequential",
           "rajab_a30_tamalluk_awaits_choice",
           "eating_without_permission",
-          "a29_haml_hukm_before_separation"
+          "unknown_condition"
         ]
       },
       {
@@ -5412,8 +5476,8 @@
           "asl_zahir",
           "prohibited_worship",
           "burdened_thing_compensated",
-          "handover_by_description",
           "haml_ala_adna",
+          "handover_by_description",
           "dispose_without_judge",
           "shar_specialises_general",
           "performed_without_leave_not_owned",
@@ -5495,10 +5559,10 @@
           "wording_need_not_learn",
           "right_after_transfer",
           "a27_specific_agent_in_general_object",
-          "wording_in_other_tongue",
           "concurrent_condition",
           "unknown_consent_binds",
-          "contract_by_kinaya"
+          "contract_by_kinaya",
+          "wording_in_other_tongue"
         ],
         "hybrid": [
           "wording_in_other_tongue",
@@ -5775,10 +5839,10 @@
           "refusal_exacted_for_him",
           "haml_ala_adna",
           "vague_insha_valid",
-          "wording_need_not_learn",
           "forced_acquisition",
           "switch_to_original",
-          "woman_half_of_man"
+          "woman_half_of_man",
+          "wording_need_not_learn"
         ],
         "hybrid": [
           "nafl_before_fard",
@@ -6003,8 +6067,8 @@
           "combination_bars_its_amount",
           "asl_zahir",
           "vowed_as_shar_obligation",
-          "supervening_bar_extends_to_preliminaries",
           "four_kinds_marriage_prohibition",
+          "supervening_bar_extends_to_preliminaries",
           "unknown_condition",
           "aqila_bears_across_change"
         ],
@@ -6027,8 +6091,8 @@
           "combination_bars_its_amount",
           "asl_zahir",
           "vowed_as_shar_obligation",
-          "supervening_bar_extends_to_preliminaries",
           "four_kinds_marriage_prohibition",
+          "supervening_bar_extends_to_preliminaries",
           "unknown_condition",
           "aqila_bears_across_change"
         ]
@@ -6478,15 +6542,15 @@
         "encoder": "a26_ihala_on_known_cause",
         "lexical": [
           "rajiyya_takes_wife_rule",
-          "cancel_on_existence_valid",
           "a29_haml_hukm_before_separation",
+          "cancel_on_existence_valid",
           "bain_in_idda_as_wife",
           "a26_ihala_on_known_cause",
           "tabaa",
           "a27_ain_ruling_survives_owner_change",
           "ruling_with_bar",
-          "grandchild_in_child_term",
-          "error_actor_liable"
+          "error_actor_liable",
+          "grandchild_in_child_term"
         ],
         "structural": [
           "rajiyya_takes_wife_rule",
@@ -6502,15 +6566,15 @@
         ],
         "hybrid": [
           "rajiyya_takes_wife_rule",
-          "cancel_on_existence_valid",
           "a29_haml_hukm_before_separation",
+          "cancel_on_existence_valid",
           "bain_in_idda_as_wife",
           "a26_ihala_on_known_cause",
           "tabaa",
           "a27_ain_ruling_survives_owner_change",
           "ruling_with_bar",
-          "grandchild_in_child_term",
-          "error_actor_liable"
+          "error_actor_liable",
+          "grandchild_in_child_term"
         ]
       },
       {
@@ -7083,8 +7147,8 @@
           "unintended_instance_covered",
           "supervening_bar_extends_to_preliminaries",
           "words_out_of_nature",
-          "recourse",
           "daman_without_qabd",
+          "recourse",
           "trust_loss",
           "prevention_easier_than_removal"
         ],
@@ -7107,8 +7171,8 @@
           "unintended_instance_covered",
           "supervening_bar_extends_to_preliminaries",
           "words_out_of_nature",
-          "recourse",
           "daman_without_qabd",
+          "recourse",
           "trust_loss",
           "prevention_easier_than_removal"
         ]
@@ -7121,10 +7185,10 @@
           "switch_to_original",
           "trust_voidance",
           "substitute",
-          "substitute_at_obligation",
           "excess_in_following",
-          "settles_without_ability",
+          "substitute_at_obligation",
           "performed_without_leave_owned",
+          "settles_without_ability",
           "two_usul_reinforced_governs",
           "rescission_harm"
         ],
@@ -7145,10 +7209,10 @@
           "switch_to_original",
           "trust_voidance",
           "substitute",
-          "substitute_at_obligation",
           "excess_in_following",
-          "settles_without_ability",
+          "substitute_at_obligation",
           "performed_without_leave_owned",
+          "settles_without_ability",
           "two_usul_reinforced_governs",
           "rescission_harm"
         ]
@@ -7524,9 +7588,9 @@
           "performed_without_leave_owned",
           "ihram_specification",
           "vowed_as_shar_obligation",
+          "generality",
           "recourse",
-          "split_halves_suffice",
-          "badal_stands_for_original"
+          "split_halves_suffice"
         ],
         "structural": [
           "tadakhul",
@@ -7548,9 +7612,9 @@
           "performed_without_leave_owned",
           "ihram_specification",
           "vowed_as_shar_obligation",
+          "generality",
           "recourse",
-          "split_halves_suffice",
-          "badal_stands_for_original"
+          "split_halves_suffice"
         ]
       },
       {
@@ -7606,7 +7670,7 @@
           "advanced_worship",
           "haml_ala_adna",
           "a26_refused_idhn_lapses",
-          "amr"
+          "unintended_instance_covered"
         ],
         "structural": [
           "doubt_in_condition",
@@ -7630,7 +7694,7 @@
           "advanced_worship",
           "haml_ala_adna",
           "a26_refused_idhn_lapses",
-          "amr"
+          "unintended_instance_covered"
         ]
       },
       {
@@ -8082,8 +8146,8 @@
           "woman_half_of_man",
           "tadakhul",
           "free_bestowal_of_needed_benefit",
-          "cancel_on_existence_valid",
           "combining_forms",
+          "cancel_on_existence_valid",
           "bud_exit_charged",
           "performed_without_leave_owned",
           "ruling_with_bar"
@@ -8106,8 +8170,8 @@
           "woman_half_of_man",
           "tadakhul",
           "free_bestowal_of_needed_benefit",
-          "cancel_on_existence_valid",
           "combining_forms",
+          "cancel_on_existence_valid",
           "bud_exit_charged",
           "performed_without_leave_owned",
           "ruling_with_bar"
@@ -8770,8 +8834,8 @@
         ],
         "structural": [
           "istihlak",
-          "asl_zahir",
           "each_on_its_asl",
+          "asl_zahir",
           "running_water",
           "error_actor_liable",
           "mahr_halved_by_separation",
@@ -8922,11 +8986,11 @@
           "ayman_by_urf",
           "cause_restricts_general",
           "rajab_a28_growth_in_nonownership_contract",
+          "contract_by_kinaya",
           "shar_specialises_general",
           "intention_shapes_wording",
-          "contract_by_kinaya",
           "ownership_relates_back",
-          "unqualified_sharika_halves"
+          "unknown_condition_in_fact"
         ],
         "structural": [
           "urf_specialises_general",
@@ -8946,11 +9010,11 @@
           "ayman_by_urf",
           "cause_restricts_general",
           "rajab_a28_growth_in_nonownership_contract",
+          "contract_by_kinaya",
           "shar_specialises_general",
           "intention_shapes_wording",
-          "contract_by_kinaya",
           "ownership_relates_back",
-          "unqualified_sharika_halves"
+          "unknown_condition_in_fact"
         ]
       },
       {
@@ -9098,7 +9162,7 @@
           "vague_insha_valid",
           "eating_without_permission",
           "unknown_condition",
-          "asl_zahir"
+          "unintended_instance_covered"
         ],
         "hybrid": [
           "a26_refused_idhn_lapses",
@@ -9485,8 +9549,8 @@
           "attached_takeover_at_value",
           "manumission_spread",
           "ownership_relates_back",
-          "attached_right_disposal",
-          "refusal_exacted_for_him"
+          "refusal_exacted_for_him",
+          "attached_right_disposal"
         ],
         "structural": [
           "a26_refused_idhn_lapses",
@@ -9509,8 +9573,8 @@
           "attached_takeover_at_value",
           "manumission_spread",
           "ownership_relates_back",
-          "attached_right_disposal",
-          "refusal_exacted_for_him"
+          "refusal_exacted_for_him",
+          "attached_right_disposal"
         ]
       },
       {
@@ -9845,8 +9909,8 @@
           "heir_takes_deceased_right",
           "mahr_halved_by_separation",
           "error_actor_liable",
-          "a26_refused_idhn_lapses",
-          "ownership_relates_back"
+          "ownership_relates_back",
+          "a26_refused_idhn_lapses"
         ],
         "structural": [
           "error_actor_liable",
@@ -9869,8 +9933,8 @@
           "heir_takes_deceased_right",
           "mahr_halved_by_separation",
           "error_actor_liable",
-          "a26_refused_idhn_lapses",
-          "ownership_relates_back"
+          "ownership_relates_back",
+          "a26_refused_idhn_lapses"
         ]
       },
       {
@@ -9972,13 +10036,13 @@
           "right_after_transfer",
           "partial_capability",
           "a26_refused_idhn_lapses",
-          "fay_tie_break",
+          "wording_need_not_learn",
           "unknown_condition_in_fact",
-          "disposal_over_anothers_right",
+          "eating_without_permission",
+          "fay_tie_break",
           "contract_by_kinaya",
-          "a31_rajab87_transfer_of_holding",
           "error_actor_liable",
-          "unknown_condition"
+          "wording_in_other_tongue"
         ],
         "hybrid": [
           "right_after_transfer",
@@ -10892,8 +10956,8 @@
           "error_actor_liable",
           "trust_loss",
           "trust_voidance",
-          "recourse",
           "burdened_thing_compensated",
+          "recourse",
           "right_after_transfer",
           "rescission_harm",
           "a27_specific_agent_in_general_object",
@@ -12492,13 +12556,13 @@
           "taliq_al_bay",
           "concurrent_condition",
           "heir_stands_in_owed_right",
-          "occurrence_state_governs",
           "doubt_in_condition",
+          "occurrence_state_governs",
           "shared_name_insha_valid",
           "a31_rajab87_transfer_of_holding",
           "bud_exit_charged",
-          "words_out_of_nature",
-          "successive_by_binding"
+          "successive_by_binding",
+          "words_out_of_nature"
         ],
         "hybrid": [
           "words_out_of_nature",
@@ -12563,8 +12627,8 @@
           "concurrent_causes",
           "prohibited_worship",
           "nafaqa_stipulated_in_contract",
-          "attached_right_disposal",
           "concurrent_condition",
+          "attached_right_disposal",
           "rajiyya_takes_wife_rule",
           "rajab_a28_faskh_growth_returns"
         ],
@@ -12587,8 +12651,8 @@
           "concurrent_causes",
           "prohibited_worship",
           "nafaqa_stipulated_in_contract",
-          "attached_right_disposal",
           "concurrent_condition",
+          "attached_right_disposal",
           "rajiyya_takes_wife_rule",
           "rajab_a28_faskh_growth_returns"
         ]
@@ -12806,7 +12870,7 @@
           "tabaa",
           "disposal_over_anothers_right",
           "amr",
-          "qisas_belongs_to_whom"
+          "right_to_own_disposal"
         ],
         "structural": [
           "doubt_in_condition",
@@ -12830,7 +12894,7 @@
           "tabaa",
           "disposal_over_anothers_right",
           "amr",
-          "qisas_belongs_to_whom"
+          "right_to_own_disposal"
         ]
       },
       {
@@ -13138,7 +13202,7 @@
           "free_bestowal_of_needed_ayn",
           "double_kinship_preferred",
           "recourse",
-          "successive_contracts"
+          "unknown_consent_binds"
         ],
         "hybrid": [
           "free_bestowal_of_needed_benefit",
@@ -13257,7 +13321,7 @@
           "wording_need_not_learn",
           "forbidden_cause_voided",
           "rajiyya_takes_wife_rule",
-          "wording_in_other_tongue",
+          "defective_compensation",
           "ruling_with_bar"
         ],
         "hybrid": [
@@ -13598,15 +13662,15 @@
         "encoder": "return_of_held_property",
         "lexical": [
           "return_of_held_property",
+          "void_contract_concluded",
           "removal_before_knowledge",
           "hand_with_owner_liable",
-          "void_contract_concluded",
           "trust_loss",
           "seizing_hand_liable",
           "follows_proven_ownership",
           "qabd_in_contracts",
-          "defective_compensation",
-          "attached_right_disposal"
+          "attached_right_disposal",
+          "defective_compensation"
         ],
         "structural": [
           "return_of_held_property",
@@ -13622,15 +13686,15 @@
         ],
         "hybrid": [
           "return_of_held_property",
+          "void_contract_concluded",
           "removal_before_knowledge",
           "hand_with_owner_liable",
-          "void_contract_concluded",
           "trust_loss",
           "seizing_hand_liable",
           "follows_proven_ownership",
           "qabd_in_contracts",
-          "defective_compensation",
-          "attached_right_disposal"
+          "attached_right_disposal",
+          "defective_compensation"
         ]
       },
       {
@@ -13692,8 +13756,8 @@
           "successive_by_binding",
           "annulment_without_return",
           "mahr_halved_by_separation",
-          "return_of_held_property",
           "a31_rajab87_transfer_of_holding",
+          "return_of_held_property",
           "hand_with_owner_liable",
           "recourse",
           "delegating_work",
@@ -13883,10 +13947,10 @@
           "tolerance_exceeded",
           "spread_follows_injury",
           "rescue_loss_liability",
-          "a27_ain_ruling_survives_owner_change",
           "successive_by_binding",
-          "taker_from_usurper",
-          "delegating_work"
+          "delegating_work",
+          "a27_ain_ruling_survives_owner_change",
+          "taker_from_usurper"
         ],
         "structural": [
           "trust_voidance",
@@ -13907,10 +13971,10 @@
           "tolerance_exceeded",
           "spread_follows_injury",
           "rescue_loss_liability",
-          "a27_ain_ruling_survives_owner_change",
           "successive_by_binding",
-          "taker_from_usurper",
-          "delegating_work"
+          "delegating_work",
+          "a27_ain_ruling_survives_owner_change",
+          "taker_from_usurper"
         ]
       },
       {
@@ -14092,13 +14156,13 @@
           "intention_shapes_wording",
           "trust_loss",
           "a31_rajab87_transfer_of_holding",
-          "right_to_own_disposal",
           "error_actor_liable",
+          "right_to_own_disposal",
           "rescission_harm",
           "unknown_condition_in_fact",
+          "return_of_held_property",
           "a31_rajab88_road_use",
-          "delegating_work",
-          "trust_voidance"
+          "delegating_work"
         ],
         "hybrid": [
           "void_contract_concluded",
@@ -14166,7 +14230,7 @@
           "performed_without_leave_not_owned",
           "rescission_harm",
           "hand_with_owner_liable",
-          "annulment_on_nonexistent"
+          "tolerance_exceeded"
         ],
         "structural": [
           "annulment_without_return",
@@ -14190,7 +14254,7 @@
           "performed_without_leave_not_owned",
           "rescission_harm",
           "hand_with_owner_liable",
-          "annulment_on_nonexistent"
+          "tolerance_exceeded"
         ]
       },
       {
@@ -14241,8 +14305,8 @@
           "growth_from_substance",
           "rajab_a28_toward_ownership_growth",
           "burdened_thing_compensated",
-          "void_contract_concluded",
           "cancel_on_existence_valid",
+          "void_contract_concluded",
           "badal_stands_for_original",
           "rescission_harm",
           "injury_state_measures",
@@ -14265,8 +14329,8 @@
           "growth_from_substance",
           "rajab_a28_toward_ownership_growth",
           "burdened_thing_compensated",
-          "void_contract_concluded",
           "cancel_on_existence_valid",
+          "void_contract_concluded",
           "badal_stands_for_original",
           "rescission_harm",
           "injury_state_measures",
@@ -14359,9 +14423,9 @@
         "lexical": [
           "qabd_in_contracts",
           "daman_without_qabd",
+          "disposal_before_qabd_debt",
           "continued_holding",
           "annulment_on_nonexistent",
-          "disposal_before_qabd_debt",
           "maadum_grant_valid",
           "a29_haml_hukm_before_separation",
           "a27_ain_ruling_survives_owner_change",
@@ -14383,9 +14447,9 @@
         "hybrid": [
           "qabd_in_contracts",
           "daman_without_qabd",
+          "disposal_before_qabd_debt",
           "continued_holding",
           "annulment_on_nonexistent",
-          "disposal_before_qabd_debt",
           "maadum_grant_valid",
           "a29_haml_hukm_before_separation",
           "a27_ain_ruling_survives_owner_change",
@@ -14601,11 +14665,11 @@
           "disposal_before_qabd",
           "repeat_bearing_roots_as_trees",
           "a31_rajab88_road_use",
-          "a31_rajab87_transfer_of_holding",
           "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "dispose_without_judge",
           "right_to_substitute",
           "return_of_held_property",
-          "a26_refused_idhn_lapses",
           "attached_right_disposal"
         ],
         "structural": [
@@ -14625,11 +14689,11 @@
           "disposal_before_qabd",
           "repeat_bearing_roots_as_trees",
           "a31_rajab88_road_use",
-          "a31_rajab87_transfer_of_holding",
           "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "dispose_without_judge",
           "right_to_substitute",
           "return_of_held_property",
-          "a26_refused_idhn_lapses",
           "attached_right_disposal"
         ]
       },
@@ -14893,10 +14957,10 @@
           "taliq_al_bay",
           "right_after_transfer",
           "concurrent_condition",
-          "occurrence_state_governs",
           "doubt_in_condition",
-          "heir_takes_deceased_right",
+          "occurrence_state_governs",
           "forced_acquisition_solvent",
+          "heir_takes_deceased_right",
           "rescission_harm",
           "vague_insha_valid"
         ],
@@ -14999,13 +15063,13 @@
         "lexical": [
           "attached_right_disposal",
           "rajab_a30_tie_for_recovery",
-          "manumission_spread",
           "successive_by_binding",
+          "manumission_spread",
           "a27_specific_agent_in_general_object",
-          "nafaqa_stipulated_in_contract",
-          "a27_ain_ruling_survives_owner_change",
-          "disposal_over_anothers_right",
           "heir_takes_deceased_right",
+          "a27_ain_ruling_survives_owner_change",
+          "nafaqa_stipulated_in_contract",
+          "disposal_over_anothers_right",
           "attached_takeover_at_value"
         ],
         "structural": [
@@ -15023,13 +15087,13 @@
         "hybrid": [
           "attached_right_disposal",
           "rajab_a30_tie_for_recovery",
-          "manumission_spread",
           "successive_by_binding",
+          "manumission_spread",
           "a27_specific_agent_in_general_object",
-          "nafaqa_stipulated_in_contract",
-          "a27_ain_ruling_survives_owner_change",
-          "disposal_over_anothers_right",
           "heir_takes_deceased_right",
+          "a27_ain_ruling_survives_owner_change",
+          "nafaqa_stipulated_in_contract",
+          "disposal_over_anothers_right",
           "attached_takeover_at_value"
         ]
       },
@@ -15241,12 +15305,12 @@
           "combination_bars_its_amount",
           "refusal_compelled_to_choose",
           "annulment_without_return",
-          "dispose_without_judge",
           "a26_ihala_on_known_cause",
+          "dispose_without_judge",
           "ruling_with_bar",
           "rajab_a28_faskh_growth_returns",
           "attached_right_disposal",
-          "a29_haml_hukm_before_separation"
+          "necessity_spares_lighter"
         ],
         "structural": [
           "right_to_own_disposal",
@@ -15265,12 +15329,12 @@
           "combination_bars_its_amount",
           "refusal_compelled_to_choose",
           "annulment_without_return",
-          "dispose_without_judge",
           "a26_ihala_on_known_cause",
+          "dispose_without_judge",
           "ruling_with_bar",
           "rajab_a28_faskh_growth_returns",
           "attached_right_disposal",
-          "a29_haml_hukm_before_separation"
+          "necessity_spares_lighter"
         ]
       },
       {
@@ -15444,9 +15508,9 @@
           "ownership_relates_back",
           "worship_ruled_from_start",
           "attached_takeover_at_value",
-          "disposal_over_anothers_right",
+          "void_contract_concluded",
           "a31_rajab87_transfer_of_holding",
-          "rescission_harm"
+          "disposal_over_anothers_right"
         ],
         "structural": [
           "a31_rajab87_transfer_of_holding",
@@ -15468,9 +15532,9 @@
           "ownership_relates_back",
           "worship_ruled_from_start",
           "attached_takeover_at_value",
-          "disposal_over_anothers_right",
+          "void_contract_concluded",
           "a31_rajab87_transfer_of_holding",
-          "rescission_harm"
+          "disposal_over_anothers_right"
         ]
       },
       {
@@ -15643,10 +15707,10 @@
           "removal_before_knowledge",
           "contract_by_kinaya",
           "hastened_right_forfeited",
-          "unknown_condition_in_fact",
-          "rescission_harm",
           "words_out_of_nature",
-          "prohibited_worship"
+          "rescission_harm",
+          "unknown_condition_in_fact",
+          "rajiyya_takes_wife_rule"
         ],
         "structural": [
           "taliq_al_bay",
@@ -15667,10 +15731,10 @@
           "removal_before_knowledge",
           "contract_by_kinaya",
           "hastened_right_forfeited",
-          "unknown_condition_in_fact",
-          "rescission_harm",
           "words_out_of_nature",
-          "prohibited_worship"
+          "rescission_harm",
+          "unknown_condition_in_fact",
+          "rajiyya_takes_wife_rule"
         ]
       },
       {
@@ -15679,14 +15743,14 @@
         "lexical": [
           "ruling_with_bar",
           "occurrence_state_governs",
-          "rajab_a28_toward_ownership_growth",
           "cancel_on_existence_valid",
+          "rajab_a28_toward_ownership_growth",
           "concurrent_condition",
           "grandchild_in_child_term",
           "tabaa",
           "manumission_spread",
           "hand_liability",
-          "takes_only_by_special"
+          "a26_ihala_on_known_cause"
         ],
         "structural": [
           "occurrence_state_governs",
@@ -15703,14 +15767,14 @@
         "hybrid": [
           "ruling_with_bar",
           "occurrence_state_governs",
-          "rajab_a28_toward_ownership_growth",
           "cancel_on_existence_valid",
+          "rajab_a28_toward_ownership_growth",
           "concurrent_condition",
           "grandchild_in_child_term",
           "tabaa",
           "manumission_spread",
           "hand_liability",
-          "takes_only_by_special"
+          "a26_ihala_on_known_cause"
         ]
       },
       {
@@ -15810,12 +15874,12 @@
         ],
         "structural": [
           "mahr_halved_by_separation",
-          "recourse",
           "asl_zahir",
-          "knowledge",
+          "recourse",
           "ruling_with_bar",
-          "rajiyya_takes_wife_rule",
+          "knowledge",
           "unknown_condition_in_fact",
+          "rajiyya_takes_wife_rule",
           "concurrent_condition",
           "unknown_order_judged_sequential",
           "two_usul_reinforced_governs"
@@ -15856,8 +15920,8 @@
           "heir_stands_in_owed_right",
           "ruling_with_bar",
           "asl_zahir",
-          "abstention_under_possible_condition",
           "lots",
+          "abstention_under_possible_condition",
           "unknown_condition_in_fact"
         ],
         "hybrid": [
@@ -15883,8 +15947,8 @@
           "manumission_spread",
           "ownership_relates_back",
           "rajab_a30_tamalluk_awaits_choice",
-          "knowledge",
           "heir_takes_deceased_right",
+          "knowledge",
           "intention_shapes_wording",
           "tabaa"
         ],
@@ -15907,8 +15971,8 @@
           "manumission_spread",
           "ownership_relates_back",
           "rajab_a30_tamalluk_awaits_choice",
-          "knowledge",
           "heir_takes_deceased_right",
+          "knowledge",
           "intention_shapes_wording",
           "tabaa"
         ]
@@ -15921,8 +15985,8 @@
           "unintended_instance_covered",
           "ruling_with_bar",
           "intention_shapes_wording",
-          "cause_restricts_general",
           "a27_specific_agent_in_general_object",
+          "cause_restricts_general",
           "ayman_by_urf",
           "tabaa",
           "excused_error",
@@ -15945,8 +16009,8 @@
           "unintended_instance_covered",
           "ruling_with_bar",
           "intention_shapes_wording",
-          "cause_restricts_general",
           "a27_specific_agent_in_general_object",
+          "cause_restricts_general",
           "ayman_by_urf",
           "tabaa",
           "excused_error",
@@ -16005,8 +16069,8 @@
           "two_usul_reinforced_governs",
           "budh_capacity_is_wealth",
           "disposal_over_anothers_right",
-          "shared_right_accrues_to_rest",
-          "bain_in_idda_as_wife"
+          "unfixed_right_reaches_fixed",
+          "shared_right_accrues_to_rest"
         ],
         "structural": [
           "mahr_halved_by_separation",
@@ -16029,8 +16093,8 @@
           "two_usul_reinforced_governs",
           "budh_capacity_is_wealth",
           "disposal_over_anothers_right",
-          "shared_right_accrues_to_rest",
-          "bain_in_idda_as_wife"
+          "unfixed_right_reaches_fixed",
+          "shared_right_accrues_to_rest"
         ]
       },
       {
@@ -16278,15 +16342,15 @@
         "encoder": "annulment_without_return",
         "lexical": [
           "annulment_without_return",
-          "knowledge",
-          "benefit_condition_against_compensation",
           "rajab_a28_faskh_growth_returns",
+          "knowledge",
           "annulment_on_nonexistent",
+          "benefit_condition_against_compensation",
           "right_after_transfer",
+          "attached_right_disposal",
           "partners",
-          "disposal_over_anothers_right",
           "ruling_with_bar",
-          "taliq_al_bay"
+          "two_usul_reinforced_governs"
         ],
         "structural": [
           "annulment_without_return",
@@ -16298,19 +16362,19 @@
           "attached_right_disposal",
           "taliq_al_bay",
           "lots",
-          "disposal_over_anothers_right"
+          "trust_loss"
         ],
         "hybrid": [
           "annulment_without_return",
-          "knowledge",
-          "benefit_condition_against_compensation",
           "rajab_a28_faskh_growth_returns",
+          "knowledge",
           "annulment_on_nonexistent",
+          "benefit_condition_against_compensation",
           "right_after_transfer",
+          "attached_right_disposal",
           "partners",
-          "disposal_over_anothers_right",
           "ruling_with_bar",
-          "taliq_al_bay"
+          "two_usul_reinforced_governs"
         ]
       },
       {
@@ -16680,8 +16744,8 @@
           "removal_before_knowledge",
           "rescission_harm",
           "annulment_without_return",
-          "knowledge",
           "a27_specific_agent_in_general_object",
+          "knowledge",
           "second_receiver_liable",
           "right_after_transfer",
           "unqualified_sharika_halves",
@@ -16704,8 +16768,8 @@
           "removal_before_knowledge",
           "rescission_harm",
           "annulment_without_return",
-          "knowledge",
           "a27_specific_agent_in_general_object",
+          "knowledge",
           "second_receiver_liable",
           "right_after_transfer",
           "unqualified_sharika_halves",
@@ -16892,8 +16956,8 @@
           "rescission_harm",
           "error_actor_liable",
           "trust_loss",
-          "return_of_held_property",
           "unknown_condition_in_fact",
+          "return_of_held_property",
           "unintended_instance_covered",
           "vague_one_bars_all",
           "determinate_holder_right",
@@ -16935,8 +16999,8 @@
           "rajab_a28_growth_follows_hand",
           "mahr_halved_by_separation",
           "second_receiver_liable",
-          "burdened_thing_compensated",
           "custom_restricts_general",
+          "burdened_thing_compensated",
           "recourse",
           "mubashara_tasabbub"
         ],
@@ -16972,13 +17036,13 @@
           "mahr_halved_by_separation",
           "knowledge",
           "right_after_transfer",
-          "concurrent_condition",
           "rajab_a28_faskh_growth_returns",
+          "concurrent_condition",
           "rescission_harm",
+          "doubt_in_condition",
           "tabaa",
-          "cancel_on_existence_valid",
-          "taliq_al_bay",
-          "doubt_in_condition"
+          "annulment_without_return",
+          "cancel_on_existence_valid"
         ],
         "hybrid": [
           "knowledge",
@@ -17172,13 +17236,13 @@
           "error_actor_liable",
           "doubt_in_condition",
           "unknown_condition_in_fact",
-          "hand_with_owner_liable",
           "burdened_thing_compensated",
-          "seizing_hand_liable",
+          "hand_with_owner_liable",
           "unknown_condition",
+          "seizing_hand_liable",
           "successive_by_binding",
-          "injury_state_measures",
-          "spread_follows_injury"
+          "rescue_loss_liability",
+          "injury_state_measures"
         ],
         "hybrid": [
           "hand_with_owner_liable",
@@ -17251,14 +17315,14 @@
         "structural": [
           "unknown_condition_in_fact",
           "tabaa",
-          "unknown_condition",
           "error_actor_liable",
           "asl_zahir",
+          "unknown_condition",
           "bud_exit_charged",
           "lots",
           "dalalat_hal_carries_claim",
-          "cause_restricts_general",
-          "mahr_halved_by_separation"
+          "mahr_halved_by_separation",
+          "doubt_in_condition"
         ],
         "hybrid": [
           "qisas_belongs_to_whom",
@@ -17291,13 +17355,13 @@
         "structural": [
           "a31_rajab88_road_use",
           "burdened_thing_compensated",
-          "dispose_without_judge",
-          "a31_rajab87_transfer_of_holding",
           "asl_zahir",
+          "a31_rajab87_transfer_of_holding",
+          "dispose_without_judge",
           "error_actor_liable",
           "right_to_own_disposal",
-          "recourse",
           "unknown_condition_in_fact",
+          "return_of_held_property",
           "a29_haml_hukm_before_separation"
         ],
         "hybrid": [
@@ -17574,10 +17638,10 @@
           "error_actor_liable",
           "unknown_condition",
           "mahr_halved_by_separation",
-          "shared_name_insha_valid",
           "generality",
-          "asl_zahir",
+          "shared_name_insha_valid",
           "a26_ihala_on_known_cause",
+          "asl_zahir",
           "maadum_grant_valid"
         ],
         "hybrid": [
@@ -17761,12 +17825,12 @@
           "recourse_after_return",
           "taker_from_usurper",
           "hand_with_owner_liable",
-          "successive_by_binding",
           "seizing_hand_liable",
+          "successive_by_binding",
           "refusal_exacted_for_him",
           "annulment_without_return",
           "performed_without_leave_owned",
-          "holding_after_contract_end"
+          "rajab_a28_faskh_growth_returns"
         ],
         "structural": [
           "error_actor_liable",
@@ -17785,12 +17849,12 @@
           "recourse_after_return",
           "taker_from_usurper",
           "hand_with_owner_liable",
-          "successive_by_binding",
           "seizing_hand_liable",
+          "successive_by_binding",
           "refusal_exacted_for_him",
           "annulment_without_return",
           "performed_without_leave_owned",
-          "holding_after_contract_end"
+          "rajab_a28_faskh_growth_returns"
         ]
       },
       {
@@ -17891,14 +17955,14 @@
         "structural": [
           "doubt_in_condition",
           "rajiyya_takes_wife_rule",
-          "benefit_exception",
-          "unknown_condition_in_fact",
           "asl_zahir",
+          "unknown_condition_in_fact",
+          "benefit_exception",
           "partial_capability",
           "two_usul_reinforced_governs",
           "error_actor_liable",
           "umum_lafz",
-          "prevention_easier_than_removal"
+          "returned_takes_first_ruling"
         ],
         "hybrid": [
           "rukhsa_under_doubt",
@@ -18200,13 +18264,13 @@
           "refusal_right_falls",
           "a29_haml_hukm_before_separation",
           "error_actor_liable",
-          "unknown_condition_in_fact",
           "unknown_owner",
+          "unknown_condition_in_fact",
           "qawad_choice_forfeits_attached_right",
           "doubt_in_condition",
-          "substitute_refusal_judged_by_original",
           "a27_specific_agent_in_general_object",
-          "unknown_as_nonexistent"
+          "unknown_as_nonexistent",
+          "substitute_refusal_judged_by_original"
         ],
         "structural": [
           "error_actor_liable",
@@ -18224,13 +18288,13 @@
           "refusal_right_falls",
           "a29_haml_hukm_before_separation",
           "error_actor_liable",
-          "unknown_condition_in_fact",
           "unknown_owner",
+          "unknown_condition_in_fact",
           "qawad_choice_forfeits_attached_right",
           "doubt_in_condition",
-          "substitute_refusal_judged_by_original",
           "a27_specific_agent_in_general_object",
-          "unknown_as_nonexistent"
+          "unknown_as_nonexistent",
+          "substitute_refusal_judged_by_original"
         ]
       },
       {
@@ -18319,11 +18383,11 @@
         "lexical": [
           "delegating_work",
           "simultaneous_combination_voids",
+          "recourse",
           "dalalat_hal_carries_claim",
           "a27_specific_agent_in_general_object",
-          "recourse",
-          "common_amount_general",
           "second_receiver_liable",
+          "common_amount_general",
           "combination_bars_its_amount",
           "tolerance_exceeded",
           "growth_from_substance"
@@ -18343,11 +18407,11 @@
         "hybrid": [
           "delegating_work",
           "simultaneous_combination_voids",
+          "recourse",
           "dalalat_hal_carries_claim",
           "a27_specific_agent_in_general_object",
-          "recourse",
-          "common_amount_general",
           "second_receiver_liable",
+          "common_amount_general",
           "combination_bars_its_amount",
           "tolerance_exceeded",
           "growth_from_substance"
@@ -18657,8 +18721,8 @@
           "error_actor_liable",
           "a29_haml_hukm_before_separation",
           "recourse",
-          "doubt_in_condition",
-          "partial_capability"
+          "partial_capability",
+          "doubt_in_condition"
         ],
         "hybrid": [
           "rajab_a30_tie_for_recovery",
@@ -18841,8 +18905,8 @@
           "rescission_harm",
           "removal_before_knowledge",
           "heir_takes_deceased_right",
-          "dispose_without_judge",
           "heir_stands_in_owed_right",
+          "dispose_without_judge",
           "cut_sale_left_to_ripen",
           "taker_from_usurper",
           "recourse",
@@ -18865,8 +18929,8 @@
           "rescission_harm",
           "removal_before_knowledge",
           "heir_takes_deceased_right",
-          "dispose_without_judge",
           "heir_stands_in_owed_right",
+          "dispose_without_judge",
           "cut_sale_left_to_ripen",
           "taker_from_usurper",
           "recourse",
@@ -19202,11 +19266,11 @@
           "a27_specific_agent_in_general_object",
           "wage_without_stipulation",
           "dispose_without_judge",
-          "free_bestowal_of_needed_ayn",
           "performed_without_leave_owned",
+          "free_bestowal_of_needed_ayn",
+          "error_actor_liable",
           "growth_from_substance",
-          "free_bestowal_of_needed_benefit",
-          "rajab_a30_tamalluk_awaits_choice"
+          "free_bestowal_of_needed_benefit"
         ],
         "structural": [
           "eating_without_permission",
@@ -19226,11 +19290,11 @@
           "a27_specific_agent_in_general_object",
           "wage_without_stipulation",
           "dispose_without_judge",
-          "free_bestowal_of_needed_ayn",
           "performed_without_leave_owned",
+          "free_bestowal_of_needed_ayn",
+          "error_actor_liable",
           "growth_from_substance",
-          "free_bestowal_of_needed_benefit",
-          "rajab_a30_tamalluk_awaits_choice"
+          "free_bestowal_of_needed_benefit"
         ]
       },
       {
@@ -19249,8 +19313,8 @@
           "wage_without_stipulation"
         ],
         "structural": [
-          "error_actor_liable",
           "eating_without_permission",
+          "error_actor_liable",
           "a26_refused_idhn_lapses",
           "grandchild_in_child_term",
           "a27_specific_agent_in_general_object",
@@ -19370,15 +19434,15 @@
         ],
         "structural": [
           "eating_without_permission",
-          "forbidden_cause_voided",
-          "unknown_condition_in_fact",
-          "removal_before_knowledge",
-          "a27_specific_agent_in_general_object",
-          "unknown_condition",
           "return_of_held_property",
-          "delegating_work",
-          "urf_specialises_general",
-          "free_bestowal_of_needed_ayn"
+          "forbidden_cause_voided",
+          "wording_need_not_learn",
+          "unknown_condition_in_fact",
+          "a27_specific_agent_in_general_object",
+          "burdened_thing_compensated",
+          "asl_zahir",
+          "wording_in_other_tongue",
+          "unknown_condition"
         ],
         "hybrid": [
           "eating_without_permission",
@@ -19602,8 +19666,8 @@
           "occurrence_state_governs",
           "craft_capacity_is_wealth",
           "attached_right_disposal",
-          "determinate_holder_right",
           "free_bestowal_of_needed_benefit",
+          "determinate_holder_right",
           "rajab_a28_toward_ownership_growth",
           "free_bestowal_of_needed_ayn",
           "second_receiver_liable"
@@ -19626,8 +19690,8 @@
           "occurrence_state_governs",
           "craft_capacity_is_wealth",
           "attached_right_disposal",
-          "determinate_holder_right",
           "free_bestowal_of_needed_benefit",
+          "determinate_holder_right",
           "rajab_a28_toward_ownership_growth",
           "free_bestowal_of_needed_ayn",
           "second_receiver_liable"
@@ -19680,8 +19744,8 @@
           "benefit_condition_against_compensation",
           "rescission_harm",
           "crop_without_valid_permission",
-          "continued_holding",
           "implicit_exception",
+          "continued_holding",
           "taliq_al_bay",
           "doubt_in_condition",
           "attached_right_disposal",
@@ -19704,8 +19768,8 @@
           "benefit_condition_against_compensation",
           "rescission_harm",
           "crop_without_valid_permission",
-          "continued_holding",
           "implicit_exception",
+          "continued_holding",
           "taliq_al_bay",
           "doubt_in_condition",
           "attached_right_disposal",
@@ -20290,15 +20354,15 @@
         ],
         "structural": [
           "recourse",
-          "rajab_a30_tie_binds_whole",
           "attached_right_disposal",
+          "rajab_a30_tie_binds_whole",
           "a27_ain_ruling_survives_owner_change",
-          "successive_by_binding",
           "burdened_thing_compensated",
+          "successive_by_binding",
           "a31_rajab87_transfer_of_holding",
           "qawad_choice_forfeits_attached_right",
           "taliq_al_bay",
-          "rajab_a30_ikhtisas_first_comer"
+          "return_of_held_property"
         ],
         "hybrid": [
           "recourse",
@@ -20572,13 +20636,13 @@
           "recourse",
           "error_actor_liable",
           "rajab_a28_right_reaches_growth",
-          "rajab_a30_tie_binds_whole",
           "partners",
+          "rajab_a30_tie_binds_whole",
           "rajab_a30_tie_for_recovery",
           "recourse_after_return",
           "heir_takes_deceased_right",
           "rajab_a30_tied_right_precedes",
-          "right_to_own_disposal"
+          "rescue_loss_liability"
         ],
         "hybrid": [
           "rajab_a30_tie_for_recovery",
@@ -20842,9 +20906,9 @@
           "forced_acquisition",
           "continued_holding",
           "repeat_bearing_roots_as_trees",
-          "hand_with_owner_liable",
           "crop_without_valid_permission",
           "right_to_own_disposal",
+          "hand_with_owner_liable",
           "rescue_loss_liability",
           "second_receiver_liable"
         ],
@@ -20866,9 +20930,9 @@
           "forced_acquisition",
           "continued_holding",
           "repeat_bearing_roots_as_trees",
-          "hand_with_owner_liable",
           "crop_without_valid_permission",
           "right_to_own_disposal",
+          "hand_with_owner_liable",
           "rescue_loss_liability",
           "second_receiver_liable"
         ]
@@ -21085,8 +21149,8 @@
           "specific_singled_out",
           "unintended_instance_covered",
           "rajab_a28_faskh_growth_returns",
-          "needed_item_is_surplus",
-          "crop_without_valid_permission"
+          "crop_without_valid_permission",
+          "implicit_exception"
         ],
         "structural": [
           "attached_takeover_at_value",
@@ -21109,8 +21173,8 @@
           "specific_singled_out",
           "unintended_instance_covered",
           "rajab_a28_faskh_growth_returns",
-          "needed_item_is_surplus",
-          "crop_without_valid_permission"
+          "crop_without_valid_permission",
+          "implicit_exception"
         ]
       },
       {
@@ -21279,8 +21343,8 @@
         "lexical": [
           "rescue_loss_liability",
           "settles_without_ability",
-          "repeat_bearing_roots_as_trees",
           "mixed_haram_by_proportion",
+          "repeat_bearing_roots_as_trees",
           "benefit_to_other",
           "implicit_exception",
           "attached_growth_follows",
@@ -21303,8 +21367,8 @@
         "hybrid": [
           "rescue_loss_liability",
           "settles_without_ability",
-          "repeat_bearing_roots_as_trees",
           "mixed_haram_by_proportion",
+          "repeat_bearing_roots_as_trees",
           "benefit_to_other",
           "implicit_exception",
           "attached_growth_follows",
@@ -21321,11 +21385,11 @@
           "recourse",
           "common_amount_general",
           "mubashara_tasabbub",
-          "follows_proven_ownership",
           "return_of_held_property",
+          "follows_proven_ownership",
           "right_to_own_disposal",
-          "rajab_a28_growth_follows_hand",
           "daman_without_qabd",
+          "rajab_a28_growth_follows_hand",
           "simultaneous_combination_voids"
         ],
         "structural": [
@@ -21345,11 +21409,11 @@
           "recourse",
           "common_amount_general",
           "mubashara_tasabbub",
-          "follows_proven_ownership",
           "return_of_held_property",
+          "follows_proven_ownership",
           "right_to_own_disposal",
-          "rajab_a28_growth_follows_hand",
           "daman_without_qabd",
+          "rajab_a28_growth_follows_hand",
           "simultaneous_combination_voids"
         ]
       },
@@ -21455,8 +21519,8 @@
           "hand_with_owner_liable",
           "burdened_thing_compensated",
           "luqata",
-          "return_of_held_property",
           "performed_without_leave_not_owned",
+          "return_of_held_property",
           "injury_state_measures",
           "spread_follows_injury"
         ],
@@ -21681,12 +21745,12 @@
           "attached_takeover_at_value",
           "wage_without_stipulation",
           "words_out_of_nature",
-          "worship_ruled_from_start",
-          "ownership_relates_back",
-          "taker_from_usurper",
+          "annulment_without_return",
           "substitute_at_obligation",
           "rescission_harm",
-          "annulment_without_return"
+          "ownership_relates_back",
+          "worship_ruled_from_start",
+          "rajab_a28_faskh_growth_returns"
         ],
         "structural": [
           "attached_right_disposal",
@@ -21705,12 +21769,12 @@
           "attached_takeover_at_value",
           "wage_without_stipulation",
           "words_out_of_nature",
-          "worship_ruled_from_start",
-          "ownership_relates_back",
-          "taker_from_usurper",
+          "annulment_without_return",
           "substitute_at_obligation",
           "rescission_harm",
-          "annulment_without_return"
+          "ownership_relates_back",
+          "worship_ruled_from_start",
+          "rajab_a28_faskh_growth_returns"
         ]
       },
       {
@@ -21776,8 +21840,8 @@
           "mahr_fully_established",
           "recourse",
           "rajab_a28_toward_ownership_growth",
-          "delegating_work",
           "rajab_a28_faskh_growth_returns",
+          "delegating_work",
           "rajab_a28_right_reaches_growth"
         ],
         "hybrid": [
@@ -21842,8 +21906,8 @@
           "annulment_without_return",
           "a29_haml_hukm_before_separation",
           "performed_without_leave_not_owned",
-          "needed_item_is_surplus",
           "rajab_a28_toward_ownership_growth",
+          "needed_item_is_surplus",
           "follows_proven_ownership",
           "continued_holding",
           "rajab_a30_use_right_not_passed"
@@ -21866,8 +21930,8 @@
           "annulment_without_return",
           "a29_haml_hukm_before_separation",
           "performed_without_leave_not_owned",
-          "needed_item_is_surplus",
           "rajab_a28_toward_ownership_growth",
+          "needed_item_is_surplus",
           "follows_proven_ownership",
           "continued_holding",
           "rajab_a30_use_right_not_passed"
@@ -22046,7 +22110,7 @@
           "attached_right_disposal",
           "knowledge",
           "ownership_relates_back",
-          "mahr_halved_by_separation"
+          "refusal_right_falls"
         ],
         "structural": [
           "recourse",
@@ -22070,7 +22134,7 @@
           "attached_right_disposal",
           "knowledge",
           "ownership_relates_back",
-          "mahr_halved_by_separation"
+          "refusal_right_falls"
         ]
       },
       {
@@ -22119,8 +22183,8 @@
         "lexical": [
           "benefit_condition_against_compensation",
           "annulment_without_return",
-          "annulment_on_nonexistent",
           "rajab_a28_growth_in_nonownership_contract",
+          "annulment_on_nonexistent",
           "trust_loss",
           "right_to_substitute",
           "qabd_in_contracts",
@@ -22143,8 +22207,8 @@
         "hybrid": [
           "benefit_condition_against_compensation",
           "annulment_without_return",
-          "annulment_on_nonexistent",
           "rajab_a28_growth_in_nonownership_contract",
+          "annulment_on_nonexistent",
           "trust_loss",
           "right_to_substitute",
           "qabd_in_contracts",
@@ -22282,8 +22346,8 @@
           "rajab_a28_toward_ownership_growth",
           "a31_rajab87_transfer_of_holding",
           "double_kinship_preferred",
-          "ownership_relates_back",
           "benefit_exception",
+          "ownership_relates_back",
           "occurrence_state_governs",
           "grandchild_in_child_term",
           "rajab_a28_faskh_growth_returns"
@@ -22306,8 +22370,8 @@
           "rajab_a28_toward_ownership_growth",
           "a31_rajab87_transfer_of_holding",
           "double_kinship_preferred",
-          "ownership_relates_back",
           "benefit_exception",
+          "ownership_relates_back",
           "occurrence_state_governs",
           "grandchild_in_child_term",
           "rajab_a28_faskh_growth_returns"
@@ -22922,11 +22986,11 @@
           "annulment_without_return",
           "attached_growth_follows",
           "right_after_transfer",
+          "cancel_on_existence_valid",
           "recourse",
           "rajab_a28_right_reaches_growth",
-          "cancel_on_existence_valid",
           "heir_takes_deceased_right",
-          "manumission_spread"
+          "mahr_halved_by_separation"
         ],
         "structural": [
           "rajab_a28_faskh_growth_returns",
@@ -22946,11 +23010,11 @@
           "annulment_without_return",
           "attached_growth_follows",
           "right_after_transfer",
+          "cancel_on_existence_valid",
           "recourse",
           "rajab_a28_right_reaches_growth",
-          "cancel_on_existence_valid",
           "heir_takes_deceased_right",
-          "manumission_spread"
+          "mahr_halved_by_separation"
         ]
       },
       {
@@ -23732,12 +23796,12 @@
           "vague_insha_valid",
           "a29_haml_hukm_before_separation",
           "concurrent_condition",
+          "specific_singled_out",
           "implicit_exception",
           "substitute_refusal_judged_by_original",
-          "specific_singled_out",
+          "doubt_in_condition",
           "unqualified_sharika_halves",
           "taliq_al_bay",
-          "doubt_in_condition",
           "shared_name_insha_valid"
         ],
         "hybrid": [
@@ -23817,8 +23881,8 @@
           "rescission_harm",
           "a26_ihala_on_known_cause",
           "ownership_relates_back",
-          "eating_without_permission",
-          "right_to_own_disposal"
+          "right_to_own_disposal",
+          "eating_without_permission"
         ],
         "hybrid": [
           "forced_acquisition_solvent",
@@ -24119,14 +24183,14 @@
         "lexical": [
           "rajab_a30_tamalluk_awaits_choice",
           "ownership_relates_back",
-          "two_usul_reinforced_governs",
           "asl_zahir",
+          "two_usul_reinforced_governs",
           "seizing_hand_liable",
           "ruling_with_bar",
           "tabaa",
           "wage_without_stipulation",
-          "doubt_in_condition",
-          "settles_without_ability"
+          "settles_without_ability",
+          "doubt_in_condition"
         ],
         "structural": [
           "asl_zahir",
@@ -24143,14 +24207,14 @@
         "hybrid": [
           "rajab_a30_tamalluk_awaits_choice",
           "ownership_relates_back",
-          "two_usul_reinforced_governs",
           "asl_zahir",
+          "two_usul_reinforced_governs",
           "seizing_hand_liable",
           "ruling_with_bar",
           "tabaa",
           "wage_without_stipulation",
-          "doubt_in_condition",
-          "settles_without_ability"
+          "settles_without_ability",
+          "doubt_in_condition"
         ]
       },
       {
@@ -24643,8 +24707,8 @@
           "a31_rajab87_transfer_of_holding",
           "rajab_a30_ikhtisas_first_comer",
           "right_after_transfer",
-          "worship_ruled_from_start",
           "disposal_over_anothers_right",
+          "worship_ruled_from_start",
           "bud_exit_charged",
           "attached_right_disposal"
         ],
@@ -24667,8 +24731,8 @@
           "a31_rajab87_transfer_of_holding",
           "rajab_a30_ikhtisas_first_comer",
           "right_after_transfer",
-          "worship_ruled_from_start",
           "disposal_over_anothers_right",
+          "worship_ruled_from_start",
           "bud_exit_charged",
           "attached_right_disposal"
         ]
@@ -24963,10 +25027,10 @@
           "performed_without_leave_owned",
           "two_usul_reinforced_governs",
           "heir_takes_deceased_right",
-          "ruling_with_bar",
           "rajab_a28_right_reaches_growth",
+          "ruling_with_bar",
           "recourse",
-          "shar_specialises_general"
+          "dispose_without_judge"
         ],
         "structural": [
           "burdened_thing_compensated",
@@ -24987,10 +25051,10 @@
           "performed_without_leave_owned",
           "two_usul_reinforced_governs",
           "heir_takes_deceased_right",
-          "ruling_with_bar",
           "rajab_a28_right_reaches_growth",
+          "ruling_with_bar",
           "recourse",
-          "shar_specialises_general"
+          "dispose_without_judge"
         ]
       },
       {
@@ -25017,8 +25081,8 @@
           "delegating_work",
           "second_receiver_liable",
           "error_actor_liable",
-          "attached_right_disposal",
-          "a31_rajab87_transfer_of_holding"
+          "a31_rajab87_transfer_of_holding",
+          "attached_right_disposal"
         ],
         "hybrid": [
           "vague_one_bars_all",
@@ -25458,7 +25522,7 @@
           "bud_exit_charged",
           "rajab_a28_toward_ownership_growth",
           "right_to_own_disposal",
-          "supervening_bar_extends_to_preliminaries"
+          "ruling_with_bar"
         ],
         "hybrid": [
           "a29_four_kinds_of_milk",
@@ -25656,8 +25720,8 @@
           "lots",
           "right_to_own_disposal",
           "annulment_without_return",
-          "rescue_loss_liability",
           "tadakhul",
+          "rescue_loss_liability",
           "unknown_as_nonexistent"
         ],
         "hybrid": [
@@ -25722,11 +25786,11 @@
           "hand_liability",
           "follows_proven_ownership",
           "hand_with_owner_liable",
-          "prohibited_worship",
-          "benefit_then_thing",
           "heir_takes_deceased_right",
-          "recourse",
-          "unknown_condition_in_fact"
+          "rajab_a28_faskh_growth_returns",
+          "unknown_condition_in_fact",
+          "prohibited_worship",
+          "maadum_grant_valid"
         ],
         "structural": [
           "a31_rajab87_transfer_of_holding",
@@ -25746,11 +25810,11 @@
           "hand_liability",
           "follows_proven_ownership",
           "hand_with_owner_liable",
-          "prohibited_worship",
-          "benefit_then_thing",
           "heir_takes_deceased_right",
-          "recourse",
-          "unknown_condition_in_fact"
+          "rajab_a28_faskh_growth_returns",
+          "unknown_condition_in_fact",
+          "prohibited_worship",
+          "maadum_grant_valid"
         ]
       },
       {
@@ -25762,11 +25826,11 @@
           "successive_contracts",
           "partners",
           "substitute_at_obligation",
+          "attached_takeover_at_value",
           "rajab_a30_tie_binds_whole",
           "istihlak",
-          "attached_takeover_at_value",
           "second_receiver_liable",
-          "rajab_a30_ikhtisas_hand_stands"
+          "forced_acquisition"
         ],
         "structural": [
           "a29_four_kinds_of_milk",
@@ -25786,11 +25850,11 @@
           "successive_contracts",
           "partners",
           "substitute_at_obligation",
+          "attached_takeover_at_value",
           "rajab_a30_tie_binds_whole",
           "istihlak",
-          "attached_takeover_at_value",
           "second_receiver_liable",
-          "rajab_a30_ikhtisas_hand_stands"
+          "forced_acquisition"
         ]
       },
       {
@@ -26280,8 +26344,8 @@
           "a31_rajab88_road_use",
           "a26_refused_idhn_lapses",
           "common_amount_general",
-          "dispose_without_judge",
           "a27_specific_agent_in_general_object",
+          "dispose_without_judge",
           "rajiyya_takes_wife_rule",
           "determinate_holder_right",
           "right_to_own_disposal",
@@ -26304,8 +26368,8 @@
           "a31_rajab88_road_use",
           "a26_refused_idhn_lapses",
           "common_amount_general",
-          "dispose_without_judge",
           "a27_specific_agent_in_general_object",
+          "dispose_without_judge",
           "rajiyya_takes_wife_rule",
           "determinate_holder_right",
           "right_to_own_disposal",
@@ -26376,9 +26440,9 @@
           "tadakhul",
           "delegating_work",
           "a27_specific_agent_in_general_object",
-          "a31_rajab87_transfer_of_holding",
           "craft_capacity_is_wealth",
-          "successive_by_binding"
+          "a31_rajab87_transfer_of_holding",
+          "asl_zahir"
         ],
         "hybrid": [
           "a31_rajab88_road_use",
@@ -26559,8 +26623,8 @@
         "lexical": [
           "seizing_hand_liable",
           "wage_without_stipulation",
-          "hand_with_owner_liable",
           "hand_liability",
+          "hand_with_owner_liable",
           "a31_rajab88_road_use",
           "deputy_of_principal",
           "deputy_of_qadi",
@@ -26583,8 +26647,8 @@
         "hybrid": [
           "seizing_hand_liable",
           "wage_without_stipulation",
-          "hand_with_owner_liable",
           "hand_liability",
+          "hand_with_owner_liable",
           "a31_rajab88_road_use",
           "deputy_of_principal",
           "deputy_of_qadi",
@@ -26658,7 +26722,7 @@
           "rajab_a28_toward_ownership_growth",
           "lots",
           "occurrence_state_governs",
-          "injury_state_measures"
+          "tabaa"
         ],
         "hybrid": [
           "hand_with_owner_liable",
@@ -26775,8 +26839,8 @@
           "follows_proven_ownership",
           "trust_loss",
           "taker_from_usurper",
-          "return_of_held_property",
           "continued_holding",
+          "return_of_held_property",
           "second_receiver_liable",
           "a27_ain_ruling_survives_owner_change"
         ],
@@ -27085,8 +27149,8 @@
           "holding_after_contract_end",
           "attached_growth_follows",
           "recourse",
-          "settles_without_ability",
-          "cut_sale_left_to_ripen"
+          "cut_sale_left_to_ripen",
+          "settles_without_ability"
         ],
         "structural": [
           "taker_from_usurper",
@@ -27109,8 +27173,8 @@
           "holding_after_contract_end",
           "attached_growth_follows",
           "recourse",
-          "settles_without_ability",
-          "cut_sale_left_to_ripen"
+          "cut_sale_left_to_ripen",
+          "settles_without_ability"
         ]
       },
       {
@@ -27369,8 +27433,8 @@
           "error_actor_liable"
         ],
         "structural": [
-          "taker_from_usurper",
           "second_receiver_liable",
+          "taker_from_usurper",
           "error_actor_liable",
           "burdened_thing_compensated",
           "a31_rajab87_transfer_of_holding",
@@ -27480,12 +27544,12 @@
           "error_actor_liable",
           "a29_haml_hukm_before_separation",
           "seizing_hand_liable",
-          "dispose_without_judge",
           "hand_with_owner_liable",
+          "dispose_without_judge",
           "performed_without_leave_owned",
           "mubashara_tasabbub",
-          "heir_takes_deceased_right",
           "spread_follows_injury",
+          "heir_takes_deceased_right",
           "second_receiver_liable"
         ],
         "structural": [
@@ -27504,12 +27568,12 @@
           "error_actor_liable",
           "a29_haml_hukm_before_separation",
           "seizing_hand_liable",
-          "dispose_without_judge",
           "hand_with_owner_liable",
+          "dispose_without_judge",
           "performed_without_leave_owned",
           "mubashara_tasabbub",
-          "heir_takes_deceased_right",
           "spread_follows_injury",
+          "heir_takes_deceased_right",
           "second_receiver_liable"
         ]
       },
@@ -27640,11 +27704,11 @@
           "a26_refused_idhn_lapses",
           "rescission_harm",
           "continued_holding",
-          "takes_only_by_special",
           "hand_liability",
+          "takes_only_by_special",
           "error_actor_liable",
-          "eating_without_permission",
           "dispose_without_judge",
+          "eating_without_permission",
           "holding_after_contract_end",
           "performed_without_leave_owned"
         ],
@@ -27664,11 +27728,11 @@
           "a26_refused_idhn_lapses",
           "rescission_harm",
           "continued_holding",
-          "takes_only_by_special",
           "hand_liability",
+          "takes_only_by_special",
           "error_actor_liable",
-          "eating_without_permission",
           "dispose_without_judge",
+          "eating_without_permission",
           "holding_after_contract_end",
           "performed_without_leave_owned"
         ]
@@ -27696,8 +27760,8 @@
           "a26_ihala_on_known_cause",
           "rescission_harm",
           "mubashara_tasabbub",
-          "attached_right_disposal",
           "concurrent_condition",
+          "attached_right_disposal",
           "rajab_a28_faskh_growth_returns"
         ],
         "hybrid": [
@@ -27718,12 +27782,12 @@
         "encoder": "error_actor_liable",
         "lexical": [
           "error_actor_liable",
+          "continued_holding",
           "injury_state_measures",
           "spread_follows_injury",
           "removal_before_knowledge",
           "eating_without_permission",
           "burdened_thing_compensated",
-          "continued_holding",
           "hit_state_governs",
           "holding_after_contract_end",
           "hand_liability"
@@ -27742,12 +27806,12 @@
         ],
         "hybrid": [
           "error_actor_liable",
+          "continued_holding",
           "injury_state_measures",
           "spread_follows_injury",
           "removal_before_knowledge",
           "eating_without_permission",
           "burdened_thing_compensated",
-          "continued_holding",
           "hit_state_governs",
           "holding_after_contract_end",
           "hand_liability"
@@ -27815,8 +27879,8 @@
           "trust_loss",
           "handover_by_description",
           "mistaken_basis",
-          "return_of_held_property",
           "taker_from_usurper",
+          "return_of_held_property",
           "burdened_thing_compensated",
           "performed_without_leave_not_owned"
         ],
@@ -27842,11 +27906,11 @@
           "mahr_halved_by_separation",
           "rajab_a28_faskh_growth_returns",
           "attached_right_disposal",
-          "partners",
           "unknown_condition_in_fact",
+          "dispose_without_judge",
           "asl_zahir",
-          "a27_specific_agent_in_general_object",
-          "lots"
+          "annulment_without_return",
+          "partners"
         ],
         "structural": [
           "error_actor_liable",
@@ -27866,11 +27930,11 @@
           "mahr_halved_by_separation",
           "rajab_a28_faskh_growth_returns",
           "attached_right_disposal",
-          "partners",
           "unknown_condition_in_fact",
+          "dispose_without_judge",
           "asl_zahir",
-          "a27_specific_agent_in_general_object",
-          "lots"
+          "annulment_without_return",
+          "partners"
         ]
       },
       {
@@ -28201,9 +28265,9 @@
           "continued_holding",
           "second_receiver_liable",
           "tolerance_exceeded",
+          "performed_without_leave_not_owned",
           "hand_liability",
           "holding_after_contract_end",
-          "performed_without_leave_not_owned",
           "burdened_thing_compensated",
           "performed_without_leave_owned",
           "spread_follows_injury"
@@ -28225,9 +28289,9 @@
           "continued_holding",
           "second_receiver_liable",
           "tolerance_exceeded",
+          "performed_without_leave_not_owned",
           "hand_liability",
           "holding_after_contract_end",
-          "performed_without_leave_not_owned",
           "burdened_thing_compensated",
           "performed_without_leave_owned",
           "spread_follows_injury"
@@ -28576,8 +28640,8 @@
           "heir_takes_deceased_right",
           "lots",
           "right_to_own_disposal",
-          "a31_rajab88_road_use",
           "rajab_a28_toward_ownership_growth",
+          "a31_rajab88_road_use",
           "lot_distinguishes_hidden_entitled"
         ],
         "hybrid": [
@@ -28646,7 +28710,7 @@
           "a26_ihala_on_known_cause",
           "fay_tie_break",
           "unknown_condition_in_fact",
-          "tadakhul"
+          "wage_without_stipulation"
         ],
         "structural": [
           "a31_rajab88_road_use",
@@ -28670,7 +28734,7 @@
           "a26_ihala_on_known_cause",
           "fay_tie_break",
           "unknown_condition_in_fact",
-          "tadakhul"
+          "wage_without_stipulation"
         ]
       },
       {
@@ -28841,8 +28905,8 @@
           "free_bestowal_of_needed_benefit",
           "attached_takeover_at_value",
           "eating_without_permission",
-          "repeat_bearing_roots_as_trees",
           "rajab_a30_tamalluk_awaits_choice",
+          "repeat_bearing_roots_as_trees",
           "a31_rajab87_transfer_of_holding",
           "rescue_loss_liability",
           "ayman_by_urf",
@@ -28865,8 +28929,8 @@
           "free_bestowal_of_needed_benefit",
           "attached_takeover_at_value",
           "eating_without_permission",
-          "repeat_bearing_roots_as_trees",
           "rajab_a30_tamalluk_awaits_choice",
+          "repeat_bearing_roots_as_trees",
           "a31_rajab87_transfer_of_holding",
           "rescue_loss_liability",
           "ayman_by_urf",
@@ -29237,16 +29301,16 @@
         "record_id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q100.f005",
         "encoder": "vowed_as_shar_obligation",
         "lexical": [
+          "tadakhul",
           "ihram_specification",
           "vowed_as_shar_obligation",
-          "tadakhul",
           "tolerance_exceeded",
           "advanced_kaffara_at_obligation",
-          "advanced_worship",
           "occurrence_state_governs",
+          "advanced_worship",
           "split_halves_suffice",
           "takes_only_by_special",
-          "vague_insha_valid"
+          "cause_restricts_general"
         ],
         "structural": [
           "ihram_specification",
@@ -29261,16 +29325,16 @@
           "khalt_as_shirka"
         ],
         "hybrid": [
+          "tadakhul",
           "ihram_specification",
           "vowed_as_shar_obligation",
-          "tadakhul",
           "tolerance_exceeded",
           "advanced_kaffara_at_obligation",
-          "advanced_worship",
           "occurrence_state_governs",
+          "advanced_worship",
           "split_halves_suffice",
           "takes_only_by_special",
-          "vague_insha_valid"
+          "cause_restricts_general"
         ]
       },
       {
@@ -29562,11 +29626,11 @@
           "a26_refused_idhn_lapses",
           "mahr_halved_by_separation",
           "rajab_a30_tamalluk_awaits_choice",
-          "nafl_before_fard",
           "attached_right_disposal",
-          "dalalat_hal_carries_claim",
-          "disposal_over_anothers_right",
-          "supervening_bar_extends_to_preliminaries"
+          "cause_restricts_general",
+          "nafl_before_fard",
+          "error_actor_liable",
+          "dalalat_hal_carries_claim"
         ],
         "structural": [
           "a26_refused_idhn_lapses",
@@ -29586,11 +29650,11 @@
           "a26_refused_idhn_lapses",
           "mahr_halved_by_separation",
           "rajab_a30_tamalluk_awaits_choice",
-          "nafl_before_fard",
           "attached_right_disposal",
-          "dalalat_hal_carries_claim",
-          "disposal_over_anothers_right",
-          "supervening_bar_extends_to_preliminaries"
+          "cause_restricts_general",
+          "nafl_before_fard",
+          "error_actor_liable",
+          "dalalat_hal_carries_claim"
         ]
       },
       {
@@ -29845,8 +29909,8 @@
           "unintended_instance_covered",
           "ruling_with_bar",
           "bain_in_idda_as_wife",
-          "dispose_without_judge",
-          "rajab_a28_faskh_growth_returns"
+          "a26_ihala_on_known_cause",
+          "dispose_without_judge"
         ],
         "structural": [
           "bud_exit_charged",
@@ -29869,8 +29933,8 @@
           "unintended_instance_covered",
           "ruling_with_bar",
           "bain_in_idda_as_wife",
-          "dispose_without_judge",
-          "rajab_a28_faskh_growth_returns"
+          "a26_ihala_on_known_cause",
+          "dispose_without_judge"
         ]
       },
       {
@@ -30250,15 +30314,15 @@
         ],
         "structural": [
           "continuity",
-          "partial_capability",
           "lots",
+          "partial_capability",
           "unfixed_right_reaches_fixed",
           "abstention_under_possible_condition",
           "dalalat_hal_carries_claim",
           "a27_specific_agent_in_general_object",
+          "wording_need_not_learn",
           "distribution_each_over_whole",
-          "injury_state_measures",
-          "spread_follows_injury"
+          "vowed_as_shar_obligation"
         ],
         "hybrid": [
           "continuity",
@@ -30521,8 +30585,8 @@
           "needed_item_is_surplus",
           "ownership_relates_back",
           "wording_need_not_learn",
-          "generality",
           "hastened_right_forfeited",
+          "generality",
           "haml_ala_adna",
           "combining_forms",
           "right_to_own_disposal",
@@ -30545,8 +30609,8 @@
           "needed_item_is_surplus",
           "ownership_relates_back",
           "wording_need_not_learn",
-          "generality",
           "hastened_right_forfeited",
+          "generality",
           "haml_ala_adna",
           "combining_forms",
           "right_to_own_disposal",
@@ -30563,8 +30627,8 @@
           "cause_from_one_of_two",
           "intention_shapes_wording",
           "cause_restricts_general",
-          "makeup_after_failure",
           "burdened_thing_compensated",
+          "makeup_after_failure",
           "unqualified_sharika_halves",
           "mistaken_basis"
         ],
@@ -30587,8 +30651,8 @@
           "cause_from_one_of_two",
           "intention_shapes_wording",
           "cause_restricts_general",
-          "makeup_after_failure",
           "burdened_thing_compensated",
+          "makeup_after_failure",
           "unqualified_sharika_halves",
           "mistaken_basis"
         ]
@@ -30599,14 +30663,14 @@
         "lexical": [
           "unknown_consent_binds",
           "lots",
-          "substitute_refusal_judged_by_original",
-          "takes_only_by_special",
           "asl_zahir",
-          "rajab_a30_tamalluk_awaits_choice",
-          "split_halves_suffice",
-          "worship_ruled_from_start",
+          "substitute_refusal_judged_by_original",
           "tadakhul",
-          "a29_haml_hukm_before_separation"
+          "vowed_as_shar_obligation",
+          "takes_only_by_special",
+          "generality",
+          "rajab_a30_tamalluk_awaits_choice",
+          "split_halves_suffice"
         ],
         "structural": [
           "unknown_consent_binds",
@@ -30623,14 +30687,14 @@
         "hybrid": [
           "unknown_consent_binds",
           "lots",
-          "substitute_refusal_judged_by_original",
-          "takes_only_by_special",
           "asl_zahir",
-          "rajab_a30_tamalluk_awaits_choice",
-          "split_halves_suffice",
-          "worship_ruled_from_start",
+          "substitute_refusal_judged_by_original",
           "tadakhul",
-          "a29_haml_hukm_before_separation"
+          "vowed_as_shar_obligation",
+          "takes_only_by_special",
+          "generality",
+          "rajab_a30_tamalluk_awaits_choice",
+          "split_halves_suffice"
         ]
       },
       {
@@ -30723,10 +30787,10 @@
           "asl_zahir",
           "successive_by_binding",
           "concurrent_causes",
-          "rajab_a30_tamalluk_awaits_choice",
+          "annulment_without_return",
+          "maadum_grant_valid",
           "knowledge",
-          "tabaa",
-          "annulment_without_return"
+          "rajab_a30_tamalluk_awaits_choice"
         ],
         "structural": [
           "heir_takes_deceased_right",
@@ -30747,10 +30811,10 @@
           "asl_zahir",
           "successive_by_binding",
           "concurrent_causes",
-          "rajab_a30_tamalluk_awaits_choice",
+          "annulment_without_return",
+          "maadum_grant_valid",
           "knowledge",
-          "tabaa",
-          "annulment_without_return"
+          "rajab_a30_tamalluk_awaits_choice"
         ]
       },
       {
@@ -31494,8 +31558,8 @@
           "benefit_exception",
           "asl_zahir",
           "eating_without_permission",
-          "mistaken_basis",
           "rajab_a28_toward_ownership_growth",
+          "mistaken_basis",
           "occurrence_state_governs",
           "shared_name_insha_valid",
           "heir_stands_in_owed_right"
@@ -31519,8 +31583,8 @@
         "lexical": [
           "maadum_grant_valid",
           "a29_haml_hukm_before_separation",
-          "attached_right_disposal",
           "a31_rajab87_transfer_of_holding",
+          "attached_right_disposal",
           "a27_specific_agent_in_general_object",
           "lot_distinguishes_hidden_entitled",
           "implicit_exception",
@@ -31543,8 +31607,8 @@
         "hybrid": [
           "maadum_grant_valid",
           "a29_haml_hukm_before_separation",
-          "attached_right_disposal",
           "a31_rajab87_transfer_of_holding",
+          "attached_right_disposal",
           "a27_specific_agent_in_general_object",
           "lot_distinguishes_hidden_entitled",
           "implicit_exception",
@@ -31858,7 +31922,7 @@
           "follows_proven_ownership",
           "handover_by_description",
           "second_receiver_liable",
-          "ihram_specification"
+          "bud_exit_charged"
         ],
         "hybrid": [
           "lots",
@@ -32365,8 +32429,8 @@
           "distribution_each_over_whole",
           "lots",
           "a29_haml_hukm_before_separation",
-          "cause_restricts_general",
-          "cause_from_one_of_two"
+          "cause_from_one_of_two",
+          "cause_restricts_general"
         ],
         "structural": [
           "vague_one_bars_all",
@@ -32389,8 +32453,8 @@
           "distribution_each_over_whole",
           "lots",
           "a29_haml_hukm_before_separation",
-          "cause_restricts_general",
-          "cause_from_one_of_two"
+          "cause_from_one_of_two",
+          "cause_restricts_general"
         ]
       },
       {
@@ -32612,13 +32676,13 @@
           "simultaneous_combination_voids",
           "bain_in_idda_as_wife",
           "delegating_work",
-          "combination_bars_its_amount",
           "mahr_halved_by_separation",
+          "combination_bars_its_amount",
           "lots",
           "budh_capacity_is_wealth",
           "a26_ihala_on_known_cause",
-          "intention_shapes_wording",
-          "forced_acquisition_solvent"
+          "forced_acquisition_solvent",
+          "intention_shapes_wording"
         ],
         "hybrid": [
           "common_amount_general",
@@ -32978,7 +33042,7 @@
           "refusal_exacted_for_him",
           "attached_right_disposal",
           "recourse",
-          "dispose_without_judge"
+          "refusal_right_falls"
         ],
         "hybrid": [
           "a26_refused_idhn_lapses",
@@ -33442,11 +33506,11 @@
           "handover_by_description",
           "shared_right_accrues_to_rest",
           "partners",
+          "common_amount_general",
           "recourse",
-          "concurrent_condition",
           "specific_singled_out",
-          "right_to_substitute",
-          "common_amount_general"
+          "concurrent_condition",
+          "right_to_substitute"
         ],
         "structural": [
           "lots",
@@ -33466,11 +33530,11 @@
           "handover_by_description",
           "shared_right_accrues_to_rest",
           "partners",
+          "common_amount_general",
           "recourse",
-          "concurrent_condition",
           "specific_singled_out",
-          "right_to_substitute",
-          "common_amount_general"
+          "concurrent_condition",
+          "right_to_substitute"
         ]
       },
       {
@@ -33721,12 +33785,12 @@
           "occurrence_state_governs",
           "abstention_under_possible_condition",
           "sulh_replaces_owned_wealth",
+          "lots",
           "growth_from_substance",
           "shared_right_accrues_to_rest",
-          "lots",
           "distribution_each_over_whole",
           "mahr_halved_by_separation",
-          "ruling_with_bar"
+          "intention_shapes_wording"
         ],
         "structural": [
           "abstention_under_possible_condition",
@@ -33745,12 +33809,12 @@
           "occurrence_state_governs",
           "abstention_under_possible_condition",
           "sulh_replaces_owned_wealth",
+          "lots",
           "growth_from_substance",
           "shared_right_accrues_to_rest",
-          "lots",
           "distribution_each_over_whole",
           "mahr_halved_by_separation",
-          "ruling_with_bar"
+          "intention_shapes_wording"
         ]
       },
       {
@@ -33960,13 +34024,13 @@
           "shared_right_accrues_to_rest",
           "custom_restricts_general",
           "heir_stands_in_owed_right",
-          "disposal_over_anothers_right",
           "free_bestowal_of_needed_benefit",
+          "disposal_over_anothers_right",
+          "annulment_on_nonexistent",
           "bud_exit_charged",
           "grandchild_in_child_term",
-          "annulment_on_nonexistent",
-          "umum_lafz",
-          "deputy_of_principal"
+          "determinate_holder_right",
+          "advanced_kaffara_at_obligation"
         ],
         "structural": [
           "shared_right_accrues_to_rest",
@@ -33984,13 +34048,13 @@
           "shared_right_accrues_to_rest",
           "custom_restricts_general",
           "heir_stands_in_owed_right",
-          "disposal_over_anothers_right",
           "free_bestowal_of_needed_benefit",
+          "disposal_over_anothers_right",
+          "annulment_on_nonexistent",
           "bud_exit_charged",
           "grandchild_in_child_term",
-          "annulment_on_nonexistent",
-          "umum_lafz",
-          "deputy_of_principal"
+          "determinate_holder_right",
+          "advanced_kaffara_at_obligation"
         ]
       },
       {
@@ -34480,13 +34544,13 @@
           "ruling_with_bar",
           "occurrence_state_governs",
           "rajab_a28_toward_ownership_growth",
-          "unintended_instance_covered",
           "a29_haml_hukm_before_separation",
+          "unintended_instance_covered",
           "asl_zahir",
-          "urf_specialises_general",
           "cancel_on_existence_valid",
-          "a27_specific_agent_in_general_object",
-          "lots"
+          "urf_specialises_general",
+          "rajab_a28_faskh_growth_returns",
+          "a27_specific_agent_in_general_object"
         ],
         "structural": [
           "occurrence_state_governs",
@@ -34504,13 +34568,13 @@
           "ruling_with_bar",
           "occurrence_state_governs",
           "rajab_a28_toward_ownership_growth",
-          "unintended_instance_covered",
           "a29_haml_hukm_before_separation",
+          "unintended_instance_covered",
           "asl_zahir",
-          "urf_specialises_general",
           "cancel_on_existence_valid",
-          "a27_specific_agent_in_general_object",
-          "lots"
+          "urf_specialises_general",
+          "rajab_a28_faskh_growth_returns",
+          "a27_specific_agent_in_general_object"
         ]
       },
       {
@@ -35297,8 +35361,8 @@
           "nafaqa_taken_owned",
           "rajab_a28_toward_ownership_growth",
           "error_actor_liable",
-          "eating_without_permission",
-          "takes_only_by_special"
+          "takes_only_by_special",
+          "eating_without_permission"
         ],
         "hybrid": [
           "nafaqa_taken_owned",
@@ -35598,15 +35662,15 @@
         "encoder": "urf_specialises_general",
         "lexical": [
           "urf_specialises_general",
-          "ayman_by_urf",
           "cause_restricts_general",
+          "ayman_by_urf",
           "words_out_of_nature",
           "rajab_a28_growth_in_nonownership_contract",
           "intention_shapes_wording",
+          "repeat_bearing_roots_as_trees",
           "custom_restricts_general",
-          "distribution_each_over_whole",
-          "tolerance_exceeded",
-          "contract_by_kinaya"
+          "contract_by_kinaya",
+          "distribution_each_over_whole"
         ],
         "structural": [
           "urf_specialises_general",
@@ -35622,15 +35686,15 @@
         ],
         "hybrid": [
           "urf_specialises_general",
-          "ayman_by_urf",
           "cause_restricts_general",
+          "ayman_by_urf",
           "words_out_of_nature",
           "rajab_a28_growth_in_nonownership_contract",
           "intention_shapes_wording",
+          "repeat_bearing_roots_as_trees",
           "custom_restricts_general",
-          "distribution_each_over_whole",
-          "tolerance_exceeded",
-          "contract_by_kinaya"
+          "contract_by_kinaya",
+          "distribution_each_over_whole"
         ]
       },
       {
@@ -35693,10 +35757,10 @@
           "intention_shapes_wording",
           "istihlak",
           "ayman_by_urf",
+          "eating_without_permission",
           "rajab_a28_growth_in_nonownership_contract",
-          "shar_specialises_general",
           "ruling_with_bar",
-          "recourse",
+          "shar_specialises_general",
           "lots",
           "asl_zahir"
         ],
@@ -36085,8 +36149,8 @@
           "generality",
           "a29_haml_hukm_before_separation",
           "partial_capability",
-          "amr_mixed",
-          "returned_takes_first_ruling"
+          "returned_takes_first_ruling",
+          "amr_mixed"
         ],
         "structural": [
           "maadum_grant_valid",
@@ -36109,8 +36173,8 @@
           "generality",
           "a29_haml_hukm_before_separation",
           "partial_capability",
-          "amr_mixed",
-          "returned_takes_first_ruling"
+          "returned_takes_first_ruling",
+          "amr_mixed"
         ]
       },
       {
@@ -36294,8 +36358,8 @@
           "error_actor_liable",
           "vague_insha_valid",
           "takes_only_by_special",
-          "specific_singled_out",
           "occurrence_state_governs",
+          "specific_singled_out",
           "unintended_instance_covered",
           "shar_specialises_general",
           "bud_exit_charged"
@@ -36679,8 +36743,8 @@
         "lexical": [
           "intention_shapes_wording",
           "urf_specialises_general",
-          "desisting_at_once",
           "ayman_by_urf",
+          "desisting_at_once",
           "shared_right_accrues_to_rest",
           "istihlak",
           "distribution_each_over_whole",
@@ -36703,8 +36767,8 @@
         "hybrid": [
           "intention_shapes_wording",
           "urf_specialises_general",
-          "desisting_at_once",
           "ayman_by_urf",
+          "desisting_at_once",
           "shared_right_accrues_to_rest",
           "istihlak",
           "distribution_each_over_whole",
@@ -37322,8 +37386,8 @@
           "cause_restricts_general",
           "vague_one_bars_all",
           "partners",
-          "abstention_under_possible_condition",
           "lots",
+          "abstention_under_possible_condition",
           "removal_before_knowledge",
           "shar_specialises_general",
           "cause_from_one_of_two"
@@ -37346,8 +37410,8 @@
           "cause_restricts_general",
           "vague_one_bars_all",
           "partners",
-          "abstention_under_possible_condition",
           "lots",
+          "abstention_under_possible_condition",
           "removal_before_knowledge",
           "shar_specialises_general",
           "cause_from_one_of_two"
@@ -37519,8 +37583,8 @@
         "lexical": [
           "mubashara_tasabbub",
           "second_receiver_liable",
-          "concurrent_causes",
           "returned_takes_first_ruling",
+          "concurrent_causes",
           "trust_loss",
           "a31_rajab87_transfer_of_holding",
           "error_actor_liable",
@@ -37543,8 +37607,8 @@
         "hybrid": [
           "mubashara_tasabbub",
           "second_receiver_liable",
-          "concurrent_causes",
           "returned_takes_first_ruling",
+          "concurrent_causes",
           "trust_loss",
           "a31_rajab87_transfer_of_holding",
           "error_actor_liable",
@@ -37686,7 +37750,7 @@
           "alternative_proven_alone",
           "taker_from_usurper",
           "doubled",
-          "error_actor_liable"
+          "rajab_a30_use_right_for_need"
         ],
         "structural": [
           "mubashara_tasabbub",
@@ -37710,7 +37774,7 @@
           "alternative_proven_alone",
           "taker_from_usurper",
           "doubled",
-          "error_actor_liable"
+          "rajab_a30_use_right_for_need"
         ]
       },
       {
@@ -37878,15 +37942,15 @@
         "encoder": "injury_state_measures",
         "lexical": [
           "spread_follows_injury",
-          "injury_state_measures",
           "a29_haml_hukm_before_separation",
-          "hit_state_governs",
+          "injury_state_measures",
           "concurrent_causes",
-          "burdened_thing_compensated",
-          "a26_ihala_on_known_cause",
-          "alternative_proven_alone",
           "hand_liability",
-          "heir_stands_in_owed_right"
+          "defective_compensation",
+          "hit_state_governs",
+          "a26_ihala_on_known_cause",
+          "burdened_thing_compensated",
+          "alternative_proven_alone"
         ],
         "structural": [
           "injury_state_measures",
@@ -37902,15 +37966,15 @@
         ],
         "hybrid": [
           "spread_follows_injury",
-          "injury_state_measures",
           "a29_haml_hukm_before_separation",
-          "hit_state_governs",
+          "injury_state_measures",
           "concurrent_causes",
-          "burdened_thing_compensated",
-          "a26_ihala_on_known_cause",
-          "alternative_proven_alone",
           "hand_liability",
-          "heir_stands_in_owed_right"
+          "defective_compensation",
+          "hit_state_governs",
+          "a26_ihala_on_known_cause",
+          "burdened_thing_compensated",
+          "alternative_proven_alone"
         ]
       },
       {
@@ -38282,10 +38346,10 @@
           "itlaf",
           "spread_follows_injury",
           "two_usul_reinforced_governs",
-          "injury_state_measures",
-          "hand_liability",
-          "mubashara_tasabbub",
           "rajab_a28_faskh_growth_returns",
+          "injury_state_measures",
+          "mubashara_tasabbub",
+          "hand_liability",
           "returned_takes_first_ruling"
         ],
         "structural": [
@@ -38306,10 +38370,10 @@
           "itlaf",
           "spread_follows_injury",
           "two_usul_reinforced_governs",
-          "injury_state_measures",
-          "hand_liability",
-          "mubashara_tasabbub",
           "rajab_a28_faskh_growth_returns",
+          "injury_state_measures",
+          "mubashara_tasabbub",
+          "hand_liability",
           "returned_takes_first_ruling"
         ]
       },
@@ -38360,13 +38424,13 @@
           "aqila_bears_across_change",
           "hit_state_governs",
           "spread_follows_injury",
-          "substitute",
           "injury_state_measures",
+          "substitute",
           "occurrence_state_governs",
           "necessity_spares_lighter",
           "prohibited_worship",
-          "returned_takes_first_ruling",
-          "substitute_at_obligation"
+          "substitute_at_obligation",
+          "burdened_thing_compensated"
         ],
         "structural": [
           "aqila_bears_across_change",
@@ -38384,13 +38448,13 @@
           "aqila_bears_across_change",
           "hit_state_governs",
           "spread_follows_injury",
-          "substitute",
           "injury_state_measures",
+          "substitute",
           "occurrence_state_governs",
           "necessity_spares_lighter",
           "prohibited_worship",
-          "returned_takes_first_ruling",
-          "substitute_at_obligation"
+          "substitute_at_obligation",
+          "burdened_thing_compensated"
         ]
       },
       {
@@ -38440,13 +38504,13 @@
           "needed_item_is_surplus",
           "disposal_over_anothers_right",
           "a27_ain_ruling_survives_owner_change",
+          "follows_proven_ownership",
           "implicit_exception",
           "rajab_a30_use_right_not_passed",
-          "follows_proven_ownership",
-          "specific_singled_out",
-          "rescue_loss_liability",
           "substitute_at_obligation",
-          "dalalat_hal_carries_claim"
+          "specific_singled_out",
+          "right_after_transfer",
+          "rescue_loss_liability"
         ],
         "structural": [
           "free_bestowal_of_needed_benefit",
@@ -38464,13 +38528,13 @@
           "needed_item_is_surplus",
           "disposal_over_anothers_right",
           "a27_ain_ruling_survives_owner_change",
+          "follows_proven_ownership",
           "implicit_exception",
           "rajab_a30_use_right_not_passed",
-          "follows_proven_ownership",
-          "specific_singled_out",
-          "rescue_loss_liability",
           "substitute_at_obligation",
-          "dalalat_hal_carries_claim"
+          "specific_singled_out",
+          "right_after_transfer",
+          "rescue_loss_liability"
         ]
       },
       {
@@ -39521,12 +39585,12 @@
           "a31_rajab88_road_use",
           "nafaqa_taken_owned",
           "prohibited_worship",
+          "performed_without_leave_owned",
           "tabaa",
           "advance_after_cause",
           "nafl_before_fard",
-          "performed_without_leave_owned",
           "vowed_as_shar_obligation",
-          "continuity"
+          "right_to_own_disposal"
         ],
         "structural": [
           "a31_rajab88_road_use",
@@ -39545,12 +39609,12 @@
           "a31_rajab88_road_use",
           "nafaqa_taken_owned",
           "prohibited_worship",
+          "performed_without_leave_owned",
           "tabaa",
           "advance_after_cause",
           "nafl_before_fard",
-          "performed_without_leave_owned",
           "vowed_as_shar_obligation",
-          "continuity"
+          "right_to_own_disposal"
         ]
       },
       {
@@ -40570,15 +40634,15 @@
         ],
         "structural": [
           "qawad_choice_forfeits_attached_right",
-          "sulh_replaces_owned_wealth",
-          "qisas_belongs_to_whom",
-          "heir_takes_deceased_right",
           "wording_need_not_learn",
-          "error_actor_liable",
+          "sulh_replaces_owned_wealth",
           "wording_in_other_tongue",
-          "dispose_without_judge",
+          "qisas_belongs_to_whom",
+          "error_actor_liable",
+          "heir_takes_deceased_right",
           "craft_capacity_is_wealth",
-          "grandchild_in_child_term"
+          "grandchild_in_child_term",
+          "dispose_without_judge"
         ],
         "hybrid": [
           "qawad_choice_forfeits_attached_right",
@@ -42045,8 +42109,8 @@
           "implicit_exception",
           "right_to_substitute",
           "a27_specific_agent_in_general_object",
-          "ownership_relates_back",
-          "dispose_without_judge"
+          "dispose_without_judge",
+          "ownership_relates_back"
         ],
         "structural": [
           "disposal_before_qabd_debt",
@@ -42069,8 +42133,8 @@
           "implicit_exception",
           "right_to_substitute",
           "a27_specific_agent_in_general_object",
-          "ownership_relates_back",
-          "dispose_without_judge"
+          "dispose_without_judge",
+          "ownership_relates_back"
         ]
       },
       {
@@ -42134,11 +42198,11 @@
           "right_to_substitute",
           "badal_stands_for_original",
           "qabd_in_contracts",
-          "luqata",
-          "rajab_a30_tie_for_recovery",
+          "return_of_held_property",
+          "wording_need_not_learn",
           "mahr_halved_by_separation",
-          "a31_rajab87_transfer_of_holding",
-          "substitute_at_obligation"
+          "craft_capacity_is_wealth",
+          "luqata"
         ],
         "hybrid": [
           "right_to_substitute",
@@ -42526,7 +42590,7 @@
           "rajab_a30_tamalluk_awaits_choice",
           "specific_singled_out",
           "returned_takes_first_ruling",
-          "heir_stands_in_owed_right"
+          "generality"
         ],
         "structural": [
           "forbidden_cause_voided",
@@ -42550,7 +42614,7 @@
           "rajab_a30_tamalluk_awaits_choice",
           "specific_singled_out",
           "returned_takes_first_ruling",
-          "heir_stands_in_owed_right"
+          "generality"
         ]
       },
       {
@@ -42846,7 +42910,7 @@
           "heir_stands_in_owed_right",
           "ruling_with_bar",
           "right_after_transfer",
-          "concurrent_condition"
+          "prohibited_worship"
         ],
         "structural": [
           "heir_takes_deceased_right",
@@ -42870,7 +42934,7 @@
           "heir_stands_in_owed_right",
           "ruling_with_bar",
           "right_after_transfer",
-          "concurrent_condition"
+          "prohibited_worship"
         ]
       },
       {
@@ -42963,10 +43027,10 @@
           "shared_right_accrues_to_rest",
           "simultaneous_combination_voids",
           "rajiyya_takes_wife_rule",
-          "cause_from_one_of_two",
           "distribution_each_over_whole",
+          "cause_from_one_of_two",
           "lots",
-          "cause_on_certainty"
+          "mahr_halved_by_separation"
         ],
         "structural": [
           "idda_transfer_on_change",
@@ -42987,10 +43051,10 @@
           "shared_right_accrues_to_rest",
           "simultaneous_combination_voids",
           "rajiyya_takes_wife_rule",
-          "cause_from_one_of_two",
           "distribution_each_over_whole",
+          "cause_from_one_of_two",
           "lots",
-          "cause_on_certainty"
+          "mahr_halved_by_separation"
         ]
       },
       {
@@ -44213,12 +44277,12 @@
           "error_actor_liable",
           "mahr_halved_by_separation",
           "a31_rajab88_road_use",
-          "delegating_work",
-          "unintended_instance_covered",
           "asl_zahir",
+          "delegating_work",
+          "doubt_in_condition",
+          "unintended_instance_covered",
           "vague_report_accepted",
-          "tabaa",
-          "a31_rajab87_transfer_of_holding"
+          "tabaa"
         ],
         "hybrid": [
           "dalalat_hal_carries_claim",
@@ -45204,8 +45268,8 @@
           "seizing_hand_liable",
           "right_to_own_disposal",
           "tadakhul",
-          "rajab_a30_tied_right_precedes",
           "eating_without_permission",
+          "rajab_a30_tied_right_precedes",
           "attached_growth_follows"
         ],
         "structural": [
@@ -45228,8 +45292,8 @@
           "seizing_hand_liable",
           "right_to_own_disposal",
           "tadakhul",
-          "rajab_a30_tied_right_precedes",
           "eating_without_permission",
+          "rajab_a30_tied_right_precedes",
           "attached_growth_follows"
         ]
       },
@@ -45480,13 +45544,13 @@
           "nafaqa_stipulated_in_contract",
           "nafaqa_taken_owned",
           "error_actor_liable",
+          "recourse",
           "alternative_proven_alone",
           "determinate_holder_right",
-          "recourse",
           "a29_haml_hukm_before_separation",
           "concurrent_causes",
           "switch_to_original",
-          "craft_capacity_is_wealth"
+          "two_usul_reinforced_governs"
         ],
         "structural": [
           "error_actor_liable",
@@ -45504,13 +45568,13 @@
           "nafaqa_stipulated_in_contract",
           "nafaqa_taken_owned",
           "error_actor_liable",
+          "recourse",
           "alternative_proven_alone",
           "determinate_holder_right",
-          "recourse",
           "a29_haml_hukm_before_separation",
           "concurrent_causes",
           "switch_to_original",
-          "craft_capacity_is_wealth"
+          "two_usul_reinforced_governs"
         ]
       },
       {
@@ -45717,8 +45781,8 @@
         "record_id": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f005",
         "encoder": "bud_exit_charged",
         "lexical": [
-          "bud_exit_charged",
           "mahr_halved_by_separation",
+          "bud_exit_charged",
           "words_out_of_nature",
           "manumission_spread",
           "recourse",
@@ -45726,7 +45790,7 @@
           "cancel_on_existence_valid",
           "attached_growth_follows",
           "cut_sale_left_to_ripen",
-          "concurrent_condition"
+          "heir_takes_deceased_right"
         ],
         "structural": [
           "mahr_halved_by_separation",
@@ -45741,8 +45805,8 @@
           "doubt_in_condition"
         ],
         "hybrid": [
-          "bud_exit_charged",
           "mahr_halved_by_separation",
+          "bud_exit_charged",
           "words_out_of_nature",
           "manumission_spread",
           "recourse",
@@ -45750,7 +45814,7 @@
           "cancel_on_existence_valid",
           "attached_growth_follows",
           "cut_sale_left_to_ripen",
-          "concurrent_condition"
+          "heir_takes_deceased_right"
         ]
       },
       {
@@ -45880,13 +45944,13 @@
           "mahr_fully_established",
           "supervening_bar_extends_to_preliminaries",
           "mahr_halved_by_separation",
+          "repeat_bearing_roots_as_trees",
           "holding_after_contract_end",
-          "budh_capacity_is_wealth",
-          "vague_one_bars_all",
-          "continuity",
           "recourse",
-          "bud_exit_charged",
-          "distribution_each_over_whole"
+          "continuity",
+          "budh_capacity_is_wealth",
+          "asl_zahir",
+          "vague_one_bars_all"
         ],
         "structural": [
           "mahr_fully_established",
@@ -45904,13 +45968,13 @@
           "mahr_fully_established",
           "supervening_bar_extends_to_preliminaries",
           "mahr_halved_by_separation",
+          "repeat_bearing_roots_as_trees",
           "holding_after_contract_end",
-          "budh_capacity_is_wealth",
-          "vague_one_bars_all",
-          "continuity",
           "recourse",
-          "bud_exit_charged",
-          "distribution_each_over_whole"
+          "continuity",
+          "budh_capacity_is_wealth",
+          "asl_zahir",
+          "vague_one_bars_all"
         ]
       },
       {
@@ -45923,8 +45987,8 @@
           "occurrence_state_governs",
           "mahr_fully_established",
           "ruling_with_bar",
-          "bain_in_idda_as_wife",
           "two_usul_reinforced_governs",
+          "bain_in_idda_as_wife",
           "recourse_after_return",
           "concurrent_causes"
         ],
@@ -45947,8 +46011,8 @@
           "occurrence_state_governs",
           "mahr_fully_established",
           "ruling_with_bar",
-          "bain_in_idda_as_wife",
           "two_usul_reinforced_governs",
+          "bain_in_idda_as_wife",
           "recourse_after_return",
           "concurrent_causes"
         ]
@@ -45963,8 +46027,8 @@
           "cancel_on_existence_valid",
           "ruling_with_bar",
           "dalalat_hal_carries_claim",
-          "follows_proven_ownership",
           "a26_ihala_on_known_cause",
+          "follows_proven_ownership",
           "tabaa",
           "bain_in_idda_as_wife"
         ],
@@ -45987,8 +46051,8 @@
           "cancel_on_existence_valid",
           "ruling_with_bar",
           "dalalat_hal_carries_claim",
-          "follows_proven_ownership",
           "a26_ihala_on_known_cause",
+          "follows_proven_ownership",
           "tabaa",
           "bain_in_idda_as_wife"
         ]
@@ -46359,13 +46423,13 @@
         "lexical": [
           "mahr_halved_by_separation",
           "bud_exit_charged",
-          "annulment_without_return",
           "heir_takes_deceased_right",
+          "annulment_without_return",
           "nafaqa_stipulated_in_contract",
           "concurrent_causes",
           "two_usul_reinforced_governs",
-          "a26_ihala_on_known_cause",
           "rajab_a28_faskh_growth_returns",
+          "a26_ihala_on_known_cause",
           "ruling_with_bar"
         ],
         "structural": [
@@ -46383,13 +46447,13 @@
         "hybrid": [
           "mahr_halved_by_separation",
           "bud_exit_charged",
-          "annulment_without_return",
           "heir_takes_deceased_right",
+          "annulment_without_return",
           "nafaqa_stipulated_in_contract",
           "concurrent_causes",
           "two_usul_reinforced_governs",
-          "a26_ihala_on_known_cause",
           "rajab_a28_faskh_growth_returns",
+          "a26_ihala_on_known_cause",
           "ruling_with_bar"
         ]
       },
@@ -47922,8 +47986,8 @@
           "each_on_its_asl",
           "desisting_at_once",
           "a26_ihala_on_known_cause",
-          "rukhsa_under_doubt",
           "substitute",
+          "rukhsa_under_doubt",
           "cause_on_certainty",
           "mahr_halved_by_separation",
           "hukm_against_own_ijtihad"
@@ -47946,8 +48010,8 @@
           "each_on_its_asl",
           "desisting_at_once",
           "a26_ihala_on_known_cause",
-          "rukhsa_under_doubt",
           "substitute",
+          "rukhsa_under_doubt",
           "cause_on_certainty",
           "mahr_halved_by_separation",
           "hukm_against_own_ijtihad"
@@ -48285,8 +48349,8 @@
           "needed_item_is_surplus",
           "tabaa",
           "unknown_condition_in_fact",
-          "determinate_holder_right",
-          "asl_zahir"
+          "asl_zahir",
+          "determinate_holder_right"
         ],
         "structural": [
           "knowledge",
@@ -48309,8 +48373,8 @@
           "needed_item_is_surplus",
           "tabaa",
           "unknown_condition_in_fact",
-          "determinate_holder_right",
-          "asl_zahir"
+          "asl_zahir",
+          "determinate_holder_right"
         ]
       },
       {
@@ -48883,10 +48947,10 @@
           "a26_ihala_on_known_cause",
           "tabaa",
           "manumission_spread",
+          "rajab_a28_growth_in_nonownership_contract",
+          "a26_refused_idhn_lapses",
           "ruling_with_bar",
-          "lease_after_authority",
-          "unknown_order_judged_sequential",
-          "umum_lafz"
+          "lease_after_authority"
         ],
         "structural": [
           "two_usul_reinforced_governs",
@@ -48907,10 +48971,10 @@
           "a26_ihala_on_known_cause",
           "tabaa",
           "manumission_spread",
+          "rajab_a28_growth_in_nonownership_contract",
+          "a26_refused_idhn_lapses",
           "ruling_with_bar",
-          "lease_after_authority",
-          "unknown_order_judged_sequential",
-          "umum_lafz"
+          "lease_after_authority"
         ]
       },
       {
@@ -49082,11 +49146,11 @@
           "tabaa",
           "intention_shapes_wording",
           "ruling_with_bar",
-          "amr",
-          "two_usul_reinforced_governs",
           "contract_by_kinaya",
           "entitlement_multiplies",
-          "abstention_under_possible_condition"
+          "two_usul_reinforced_governs",
+          "amr",
+          "lots"
         ],
         "structural": [
           "asl_zahir",
@@ -49106,11 +49170,11 @@
           "tabaa",
           "intention_shapes_wording",
           "ruling_with_bar",
-          "amr",
-          "two_usul_reinforced_governs",
           "contract_by_kinaya",
           "entitlement_multiplies",
-          "abstention_under_possible_condition"
+          "two_usul_reinforced_governs",
+          "amr",
+          "lots"
         ]
       },
       {
@@ -49403,8 +49467,8 @@
           "fay_tie_break",
           "dalalat_hal_carries_claim",
           "combining_forms",
-          "rescission_harm",
           "generality",
+          "rescission_harm",
           "cause_restricts_general",
           "intention_shapes_wording"
         ],
@@ -49414,8 +49478,8 @@
           "urf_specialises_general",
           "a31_rajab88_road_use",
           "fay_tie_break",
-          "dalalat_hal_carries_claim",
           "mahr_fully_established",
+          "dalalat_hal_carries_claim",
           "tabaa",
           "intention_shapes_wording",
           "trust_loss"
@@ -49427,8 +49491,8 @@
           "fay_tie_break",
           "dalalat_hal_carries_claim",
           "combining_forms",
-          "rescission_harm",
           "generality",
+          "rescission_harm",
           "cause_restricts_general",
           "intention_shapes_wording"
         ]
@@ -49486,7 +49550,7 @@
           "unknown_condition_in_fact",
           "unqualified_sharika_halves",
           "a27_specific_agent_in_general_object",
-          "follows_proven_ownership"
+          "right_after_transfer"
         ],
         "structural": [
           "lots",
@@ -49510,7 +49574,7 @@
           "unknown_condition_in_fact",
           "unqualified_sharika_halves",
           "a27_specific_agent_in_general_object",
-          "follows_proven_ownership"
+          "right_after_transfer"
         ]
       },
       {
@@ -49601,11 +49665,11 @@
           "generality",
           "lots",
           "lot_distinguishes_hidden_entitled",
-          "occurrence_state_governs",
           "ownership_relates_back",
+          "occurrence_state_governs",
           "cause_from_one_of_two",
-          "maadum_grant_valid",
           "khalt_as_shirka",
+          "maadum_grant_valid",
           "takes_only_by_special"
         ],
         "structural": [
@@ -49625,11 +49689,11 @@
           "generality",
           "lots",
           "lot_distinguishes_hidden_entitled",
-          "occurrence_state_governs",
           "ownership_relates_back",
+          "occurrence_state_governs",
           "cause_from_one_of_two",
-          "maadum_grant_valid",
           "khalt_as_shirka",
+          "maadum_grant_valid",
           "takes_only_by_special"
         ]
       },
@@ -50320,9 +50384,9 @@
           "vague_one_bars_all",
           "lots",
           "combination_bars_its_amount",
+          "successive_by_binding",
           "continuity",
           "successive_contracts",
-          "successive_by_binding",
           "unknown_consent_binds",
           "common_amount_general",
           "necessity_spares_lighter",
@@ -50344,9 +50408,9 @@
           "vague_one_bars_all",
           "lots",
           "combination_bars_its_amount",
+          "successive_by_binding",
           "continuity",
           "successive_contracts",
-          "successive_by_binding",
           "unknown_consent_binds",
           "common_amount_general",
           "necessity_spares_lighter",
@@ -50358,15 +50422,15 @@
         "encoder": "lots",
         "lexical": [
           "lots",
+          "many_over_noble",
           "unfixed_right_reaches_fixed",
           "benefit_condition_against_compensation",
-          "many_over_noble",
+          "rescission_harm",
           "vague_one_bars_all",
           "tabaa",
-          "rescission_harm",
           "disposal_before_qabd_debt",
-          "cause_from_one_of_two",
-          "mistaken_basis"
+          "annulment_on_nonexistent",
+          "a29_haml_hukm_before_separation"
         ],
         "structural": [
           "lots",
@@ -50382,15 +50446,15 @@
         ],
         "hybrid": [
           "lots",
+          "many_over_noble",
           "unfixed_right_reaches_fixed",
           "benefit_condition_against_compensation",
-          "many_over_noble",
+          "rescission_harm",
           "vague_one_bars_all",
           "tabaa",
-          "rescission_harm",
           "disposal_before_qabd_debt",
-          "cause_from_one_of_two",
-          "mistaken_basis"
+          "annulment_on_nonexistent",
+          "a29_haml_hukm_before_separation"
         ]
       },
       {
@@ -50484,8 +50548,8 @@
           "vague_report_accepted",
           "shared_right_accrues_to_rest",
           "distribution_each_over_whole",
-          "maadum_grant_valid",
           "supervening_bar_extends_to_preliminaries",
+          "maadum_grant_valid",
           "manumission_spread"
         ],
         "structural": [
@@ -50508,8 +50572,8 @@
           "vague_report_accepted",
           "shared_right_accrues_to_rest",
           "distribution_each_over_whole",
-          "maadum_grant_valid",
           "supervening_bar_extends_to_preliminaries",
+          "maadum_grant_valid",
           "manumission_spread"
         ]
       },
@@ -50965,8 +51029,8 @@
           "rajab_a28_right_reaches_growth",
           "lot_distinguishes_hidden_entitled",
           "rajab_a28_growth_in_nonownership_contract",
-          "urf_specialises_general",
-          "handover_by_description"
+          "handover_by_description",
+          "urf_specialises_general"
         ],
         "structural": [
           "lots",
@@ -50989,8 +51053,8 @@
           "rajab_a28_right_reaches_growth",
           "lot_distinguishes_hidden_entitled",
           "rajab_a28_growth_in_nonownership_contract",
-          "urf_specialises_general",
-          "handover_by_description"
+          "handover_by_description",
+          "urf_specialises_general"
         ]
       },
       {
@@ -51151,6 +51215,86 @@
           "cause_restricts_general",
           "tabaa",
           "occurrence_state_governs"
+        ]
+      },
+      {
+        "record_id": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa06346",
+        "encoder": "maqasid_tarjih",
+        "lexical": [
+          "a26_ihala_on_known_cause",
+          "a26_refused_idhn_lapses",
+          "a27_ain_ruling_survives_owner_change",
+          "a27_specific_agent_in_general_object",
+          "a29_four_kinds_of_milk",
+          "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "a31_rajab88_road_use",
+          "abstention_under_possible_condition",
+          "advance_after_cause"
+        ],
+        "structural": [
+          "a26_ihala_on_known_cause",
+          "a26_refused_idhn_lapses",
+          "a27_ain_ruling_survives_owner_change",
+          "a27_specific_agent_in_general_object",
+          "a29_four_kinds_of_milk",
+          "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "a31_rajab88_road_use",
+          "abstention_under_possible_condition",
+          "advance_after_cause"
+        ],
+        "hybrid": [
+          "a26_ihala_on_known_cause",
+          "a26_refused_idhn_lapses",
+          "a27_ain_ruling_survives_owner_change",
+          "a27_specific_agent_in_general_object",
+          "a29_four_kinds_of_milk",
+          "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "a31_rajab88_road_use",
+          "abstention_under_possible_condition",
+          "advance_after_cause"
+        ]
+      },
+      {
+        "record_id": "lajna_daima.fatawa.openiti_lajnadaima_fatawa_shamela8381.qa09648",
+        "encoder": "maqasid_tarjih",
+        "lexical": [
+          "a26_ihala_on_known_cause",
+          "a26_refused_idhn_lapses",
+          "a27_ain_ruling_survives_owner_change",
+          "a27_specific_agent_in_general_object",
+          "a29_four_kinds_of_milk",
+          "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "a31_rajab88_road_use",
+          "abstention_under_possible_condition",
+          "advance_after_cause"
+        ],
+        "structural": [
+          "a26_ihala_on_known_cause",
+          "a26_refused_idhn_lapses",
+          "a27_ain_ruling_survives_owner_change",
+          "a27_specific_agent_in_general_object",
+          "a29_four_kinds_of_milk",
+          "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "a31_rajab88_road_use",
+          "abstention_under_possible_condition",
+          "advance_after_cause"
+        ],
+        "hybrid": [
+          "a26_ihala_on_known_cause",
+          "a26_refused_idhn_lapses",
+          "a27_ain_ruling_survives_owner_change",
+          "a27_specific_agent_in_general_object",
+          "a29_four_kinds_of_milk",
+          "a29_haml_hukm_before_separation",
+          "a31_rajab87_transfer_of_holding",
+          "a31_rajab88_road_use",
+          "abstention_under_possible_condition",
+          "advance_after_cause"
         ]
       }
     ]
@@ -55219,7 +55363,7 @@
   },
   "inputs_sha256": {
     "corpus/fatawa/takhrij/islamqa_tranche1.json": "2e1bce1bf3cacd32fa4a28f013f6dd0ced299b250da4c67561a5c671a19c2a00",
-    "corpus/lock.json": "c2e26625e6238009e7572e10bce9525e4156d0e881b271ecec5c26ad8c1e772e",
+    "corpus/lock.json": "797bd77bf0dbaf7583d291bcae7612e9da83759364f745981ed1c970a0dba055",
     "corpus/records/archive-manzuma-djvu.jsonl": "bf3b1ffe55721df374f129d8a345c945cfbd848556e989c5023f98d3477ba202",
     "corpus/records/archive-manzuma-tess.jsonl": "18018bf7958a0f8ed2034a141f707fe5c0cc0f1124d58831d4e433dbb8f39fde",
     "corpus/records/archive-pdf1995-tess.jsonl": "05131a016719223fbe1c4778a4ed284dbb5f3366f2f281d54a1cfb788a5f9ad1",
@@ -55252,6 +55396,7 @@
     "corpus/records/shamela-9942.jsonl": "b55665119a973aa1dc17ba322406aa9757bc55a6c6375f4ce862838b71db8c33",
     "corpus/routing/ood.json": "b74749211e4eba426983af54adde5770d6299b1c02fbb393a748bc4c1a6dd965",
     "corpus/takhrij/dalala_furu.json": "9f3591e7bc77c8a4302d6ef3af3e6237f9e05ff7276ccd036ea8939c46e1a4e8",
+    "corpus/takhrij/maqasid_furu.json": "0972901f8dd9f9bf9b17963d50fa0d43a317ba21434ea5c1eb1b6cad657f2ad6",
     "corpus/takhrij/r2_sample1_lane_b.json": "d6e2d4afc1a69bfbb605ce5ab8007df6c1d74f6d2b427d4f5fe5e41436947fe3",
     "corpus/takhrij/rajab_m8_furu.json": "cecff6e34886a3d8ef6b8977ba5f9dafbefbf036b3ccd141826f294be1adf395",
     "corpus/takhrij/rajab_m8_pr30_furu.json": "ef1b0ef138ea2a6416962d0d12419496a5aa92fc9db18b604bcf0a2e43cc2342",
@@ -55297,11 +55442,12 @@
     "corpus/takhrij/rajab_m8_tranche7_furu.json": "1a11a26a6765c2e4abd93daf2bc7cb45f84aeeea5e79c6a8b6e1b3da83c6ec76",
     "corpus/takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "corpus/takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
-    "corpus/takhrij/report.json": "d9c06c1d774bfe14de8294724c1b6a053a84f7da641a8b2825736aa7d3718fdb",
+    "corpus/takhrij/report.json": "d6fddf60df8177bdc3326391b342f75c2891c4670cf0ae46538b7140bdfd31e2",
     "corpus/takhrij/sadi_furu.json": "acc3c370ec9dcc3d52e1b53b1856223c7f5cd5bc96f3919d697329c5a13c660f",
     "pipeline/usul_corpus/arabic.py": "d3fa63d357d9d548c8c5a9fbbf28e63505201c514ba1f8f9f17a049da8758a59",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
     "pipeline/usul_corpus/encoders/concordance.py": "f527d8841df4052aa40649f00d6837888777e02fcbf804832411f581effc3c39",
+    "pipeline/usul_corpus/encoders/maqasid.py": "25f857a60d0e07f819420949599417ca71019068efb60533b86067c1234fda99",
     "pipeline/usul_corpus/encoders/mubashara.py": "2b332735630e96fb6350f2179444e220cc2e66eadb4d537e9b67d0ac5ec1b31f",
     "pipeline/usul_corpus/encoders/rajab_a1.py": "d21b57b625411a2a56c5382575a256a1c46a3819f0798b9c1eb8b7007b6ef4b1",
     "pipeline/usul_corpus/encoders/rajab_a10.py": "b0edbd751ec4e21942b9feb020c9c106b4167538f7af42b6efe9c26c077fe6d9",
