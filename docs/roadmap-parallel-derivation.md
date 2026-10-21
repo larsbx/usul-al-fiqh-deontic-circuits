@@ -6,6 +6,21 @@ Nothing here changes a status. Every artifact the plan produces is `candidate`, 
 
 ---
 
+<!-- BEGIN GENERATED TRACK PATHS -->
+**Paths this track owns** (generated from [`roadmap-tracks.json`](roadmap-tracks.json)). A change to one updates this roadmap, or its commit says why not: `Roadmap-Unchanged: <reason>`.
+
+| Under | Paths |
+|---|---|
+| `.claude/skills/derivation-tranche/` | `**` |
+| `docs/architecture/` | `derivation-method.md` |
+| `corpus/worklists/` | `**` |
+| `corpus/routing/` | `**` |
+| `corpus/segmentation/` | `**` |
+| `corpus/reconciliation/` | `**` |
+| `examples/` | `v41_*.pl` |
+| `pipeline/usul_corpus/` | `shards.py`, `r2_sample1.py`, `routing.py`, `units.py`, `typed_routing.py`, `semantic_*.py`, `bank_review.py` |
+<!-- END GENERATED TRACK PATHS -->
+
 ## Part I: the derivation method
 
 The method is specified in [`architecture/derivation-method.md`](architecture/derivation-method.md):

@@ -4,8 +4,9 @@ Structure, checked always (`check`): the hub links every track's roadmap; in eac
 are unique, every ``⟵`` dependency resolves (in its track, in another by its name, «uṣūl M5», or in
 the hub, «existing Milestone 1b»), the dependencies are acyclic, a Mermaid DAG draws exactly the
 headings' edges within the track (and may draw their edges from another), and a status row names a
-milestone that exists. Each track's paths match a file, no file belongs to two tracks, and every
-registry ``track`` is declared.
+milestone that exists. Each track's paths match a file, no file belongs to two tracks, every
+registry ``track`` is declared, and each roadmap lists its track's paths as the manifest does (a
+block generated between ``BEGIN`` and ``END``; ``python -m usul_corpus roadmap --write``).
 
 Change, checked against a base (`stale`): a change to a path a track owns updates that track's
 roadmap, unless a commit in the range says why not with
@@ -28,6 +29,8 @@ _HUB = re.compile(r"^existing Milestones? (\d+[a-z]?)(?:[–-](\d+[a-z]?))?$")
 _ROW = re.compile(r"^\| ([A-Z]\d+)\b", re.M)
 _EDGE = re.compile(r"([A-Z]\d+)(?:\[[^\]]*\])? --> ([A-Z]\d+)")
 _TRAILER = re.compile(r"^Roadmap-Unchanged:[ \t]*\S", re.M)
+BEGIN, END = "<!-- BEGIN GENERATED TRACK PATHS -->", "<!-- END GENERATED TRACK PATHS -->"
+_BLOCK = re.compile(re.escape(BEGIN) + ".*?" + re.escape(END), re.S)
 
 
 def load(root: Path) -> dict:
@@ -64,7 +67,32 @@ def _cycle(graph: dict[str, set[str]]) -> list[str] | None:
     return next((c for n in sorted(graph) if (c := visit(n, []))), None)
 
 
-def doc_errors(name: str, doc: str, prefix: str, hub: str = "") -> list[str]:
+def paths_block(tracks: dict, track: str) -> str:
+    """The roadmap's list of the paths its track owns, by area, as `docs/roadmap-tracks.json` has them."""
+    areas: dict[str, list[str]] = {}
+    for g in tracks["tracks"][track]["paths"]:
+        cut = g.rfind("/", 0, min((g.find(c) for c in "*?[" if c in g), default=len(g))) + 1
+        areas.setdefault(g[:cut], []).append(g[cut:])
+    rows = [f"| `{a}` | {', '.join(f'`{r}`' for r in rs)} |" for a, rs in areas.items()]
+    return "\n".join([BEGIN, "**Paths this track owns** (generated from [`roadmap-tracks.json`](roadmap-tracks.json)). A change "
+                      "to one updates this roadmap, or its commit says why not: `Roadmap-Unchanged: <reason>`.", "",
+                      "| Under | Paths |", "|---|---|", *rows, END])
+
+
+def with_paths(doc: str, block: str) -> str:
+    """The roadmap with its paths block replaced, or placed before its first ``##`` section."""
+    if _BLOCK.search(doc):
+        return _BLOCK.sub(lambda _: block, doc, count=1)
+    at = re.search(r"^## ", doc, re.M)
+    return doc[:at.start()] + block + "\n\n" + doc[at.start():] if at else doc.rstrip("\n") + "\n\n" + block + "\n"
+
+
+def _paths_errors(name: str, doc: str, paths: str | None) -> list[str]:
+    return [f"{name}: the paths block differs from {MANIFEST}; run `python -m usul_corpus roadmap --write`"] \
+        if paths is not None and paths not in doc else []
+
+
+def doc_errors(name: str, doc: str, prefix: str, hub: str = "", paths: str | None = None) -> list[str]:
     """What is inconsistent in one track's roadmap."""
     errs, ids = [], [m[1] for m in _HEAD.finditer(doc) if m[1].startswith(prefix)]
     errs += [f"{name}: milestone {i} twice" for i in sorted({i for i in ids if ids.count(i) > 1})]
@@ -88,7 +116,7 @@ def doc_errors(name: str, doc: str, prefix: str, hub: str = "") -> list[str]:
                         f"stated only {sorted(undrawn)}")
     errs += [f"{name}: status row {r} names no milestone" for r in sorted(set(_ROW.findall(doc)))
              if r.startswith(prefix) and r not in graph]
-    return errs
+    return errs + _paths_errors(name, doc, paths)
 
 
 @cache
@@ -120,8 +148,9 @@ def check(root: Path) -> list[str]:
     errs = [f"{tr['hub']} does not link {v['roadmap']}" for v in tr["tracks"].values()
             if v["roadmap"] != tr["hub"] and Path(v["roadmap"]).name not in hub]
     for t, v in tr["tracks"].items():
+        errs += doc_errors(t, docs[t], v["prefix"], hub, paths_block(tr, t)) if "prefix" in v else \
+            _paths_errors(t, docs[t], paths_block(tr, t))
         if "prefix" in v:
-            errs += doc_errors(t, docs[t], v["prefix"], hub)
             for m, other, d in sorted(cross(docs[t])):
                 o = tr["tracks"].get(other, {})
                 if d not in milestones(docs.get(other, ""), o.get("prefix", "?")):
@@ -131,6 +160,18 @@ def check(root: Path) -> list[str]:
     declared = {v.get("registry") for v in tr["tracks"].values()}
     errs += [f"corpus/registry.json: track {r!r} is not declared in {MANIFEST}" for r in sorted(registry_tracks(root) - declared)]
     return errs
+
+
+def write(root: Path) -> list[str]:
+    """Regenerate each roadmap's paths block; the roadmaps rewritten."""
+    tr, out = load(root), []
+    for t, v in tr["tracks"].items():
+        p = root / v["roadmap"]
+        doc = p.read_text(encoding="utf-8")
+        if (new := with_paths(doc, paths_block(tr, t))) != doc:
+            p.write_text(new, encoding="utf-8")
+            out.append(v["roadmap"])
+    return out
 
 
 def waived(messages: str) -> bool:

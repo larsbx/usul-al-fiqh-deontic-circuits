@@ -1,5 +1,18 @@
 # al-Albānī's Ḥadīth Methodology — Roadmap and Milestones
 
+<!-- BEGIN GENERATED TRACK PATHS -->
+**Paths this track owns** (generated from [`roadmap-tracks.json`](roadmap-tracks.json)). A change to one updates this roadmap, or its commit says why not: `Roadmap-Unchanged: <reason>`.
+
+| Under | Paths |
+|---|---|
+| `formal/lean/` | `Hadith.lean`, `HadithTest.lean` |
+| `formal/lean/Hadith/` | `**` |
+| `formal/lean/HadithTest/` | `**` |
+| `formal/oracle/` | `**` |
+| `corpus/hadith/` | `**` |
+| `pipeline/usul_corpus/` | `hadith.py`, `grading.py`, `oracle.py` |
+<!-- END GENERATED TRACK PATHS -->
+
 ## 0. Scope and thesis
 
 **Goal.** Formalize the critical method of Muḥammad Nāṣir al-Dīn al-Albānī (d. 1420) as a checkable evidential calculus, and connect its output to the Ḥanbalī uṣūl kernel ([`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md)) at exactly one typed seam.

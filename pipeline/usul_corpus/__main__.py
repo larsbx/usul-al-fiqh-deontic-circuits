@@ -20,7 +20,7 @@
     python -m usul_corpus fatawa-takhrij  # check the IslamQA takhrīj tranches; regenerate their Lean guards and report
     python -m usul_corpus fatawa-prolog   # write the tranches as Prolog cases; run the oracle and report (needs swipl)
     python -m usul_corpus judgement       # check each encoder's declared question; Lean type guards; typing report
-    python -m usul_corpus roadmap [--base REF]  # the tracks' roadmaps: structure, and updated with what changed since REF
+    python -m usul_corpus roadmap [--write] [--base REF]  # the tracks' roadmaps: structure (--write: their paths blocks), and updated with what changed since REF
 """
 
 from __future__ import annotations
@@ -795,6 +795,8 @@ def cmd_roadmap(args: argparse.Namespace) -> int:
     import subprocess
 
     from . import roadmap
+    if args.write:
+        print("\n".join(f"wrote {p}" for p in roadmap.write(ROOT)) or "roadmap: paths blocks up to date")
     errs = roadmap.check(ROOT)
     if args.base:
         try:
@@ -953,6 +955,7 @@ def parser() -> argparse.ArgumentParser:
     jd.set_defaults(run=cmd_judgement)
     rm = sub.add_parser("roadmap", help="the tracks' roadmaps: consistent, and updated with what changed since --base")
     rm.add_argument("--base", help="a ref (origin/main): require each track whose paths changed since it to update its roadmap")
+    rm.add_argument("--write", action="store_true", help="regenerate each roadmap's block of the paths its track owns first")
     rm.add_argument("--if-available", action="store_true", help="skip the change check when --base cannot be resolved")
     rm.set_defaults(run=cmd_roadmap)
     mh = sub.add_parser("mahall", help="the maḥall label graph: check, regenerate or --check its Lean guards")
