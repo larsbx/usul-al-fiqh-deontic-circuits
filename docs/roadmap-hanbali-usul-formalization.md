@@ -79,6 +79,9 @@ which prints the whole matn with its commentary as closing endnotes.
   units split into 776 masāʾil, filed under `shawkani.durar_bahiyya` with a
   witness-level segmenter, so the bare-matn witness 34280 is not cut); a split
   unit's masāʾil, not the unit, are its obligations (PRs #118, #120).
+  The code path and its owners are set out under R2 in the
+  [parallel-derivation roadmap](roadmap-parallel-derivation.md); `records.py` and
+  `tests/test_abwab.py` are now explicitly uṣūl paths.
   *al-Darārī* gives 127 units. Both are in the unit inventory and the
   routing index.
 - **Reception.** The *Durar* has 5 citations, all in *Tamām al-Minna*; the
