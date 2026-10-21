@@ -6,6 +6,21 @@ Nothing here changes a status. Every artifact the plan produces is `candidate`, 
 
 ---
 
+<!-- BEGIN GENERATED TRACK PATHS -->
+**Paths this track owns** (generated from [`roadmap-tracks.json`](roadmap-tracks.json)). A change to one updates this roadmap, or its commit says why not: `Roadmap-Unchanged: <reason>`.
+
+| Under | Paths |
+|---|---|
+| `.claude/skills/derivation-tranche/` | `**` |
+| `docs/architecture/` | `derivation-method.md` |
+| `corpus/worklists/` | `**` |
+| `corpus/routing/` | `**` |
+| `corpus/segmentation/` | `**` |
+| `corpus/reconciliation/` | `**` |
+| `examples/` | `v41_*.pl` |
+| `pipeline/usul_corpus/` | `shards.py`, `r2_sample1.py`, `routing.py`, `units.py`, `typed_routing.py`, `semantic_*.py`, `bank_review.py` |
+<!-- END GENERATED TRACK PATHS -->
+
 ## Part I: the derivation method
 
 The method is specified in [`architecture/derivation-method.md`](architecture/derivation-method.md):
@@ -59,6 +74,7 @@ Precedents:
   - Seven collections are segmented, totalling 21,168 units (answered share in brackets): *Majmūʿ al-Fatāwā* 1,847 (0.99), *al-Fatāwā al-Kubrā* 971 (0.80), *Jāmiʿ al-Masāʾil* 122 (0.73), *al-Durar al-Saniyya* 1,651 (0.99), the Lajna 10,437 (0.97), Ibn Bāz 4,597 (0.98), Ibn ʿUthaymīn 1,543 (1.00). Page markers and milestones are stripped wherever they fall in a line.
   - `masail` (`qa.segment_entries`) cuts a *Masāʾil* collection at a line-start opening formula; a named group `n` captures the printed number. It emits `masala` records with the same receipt and replay. Three collections give 5,700 entries: al-Kawsaj 3,575 (numbered 1–3,609: 6 duplicates, 40 numbers missing, listed in `corpus/audit.json`), Abū Dāwūd 1,585 (699 on pages the witness leaves unnumbered, `PageV00P000`), Ḥarb 540.
   - `abwab` (`pipeline/usul_corpus/abwab.py`) cuts a matn into kitāb › bāb › faṣl units, ranking each heading by its first word, not its mARkdown level. It emits `bab` records carrying the rank, the heading, the enclosing kitāb and bāb titles (`path_ar`), the excerpt and the receipt, replayed like the others. Six mutūn give 2,613 units: *Zād* 286, *ʿUmda* 207, *al-Muqniʿ* 631, *al-Muḥarrar* 212, *Muntahā* 383, *al-Iqnāʿ* 894 (ranks per witness in `corpus/audit.json`). Two more give 255: *al-Durar al-Bahiyya* 128, read from its *al-Ghurar al-Naqiyya* witness, which prints its headings as body lines, some numbered (`body_headings`), and its commentary as closing endnotes (cut by `end`), and *al-Darārī al-Muḍiyya* 127. A unit routes a masʾala to its bāb. The *Durar*'s units are also split into their **776 masāʾil** (`masail`: the edition prints one per line), each a `masala` record `…b<unit>.m<n>` after its bāb record. Its masāʾil, not its units, are the obligations; the bāb records stay routing targets. Splitting the other mutūn into masāʾil is the next step for R2.
+  - **The masāʾil path**, end to end. `build` (`cmd_build` → `_segment` in `pipeline/usul_corpus/__main__.py`) takes each witness's segmenter from `units.segmenter_of` (the witness's own, else its work's). `units.unit_records` cuts the text with `abwab.segment_abwab` and writes each unit as a `records.bab_record`. Under `masail: true`, each unit is followed by one `records.unit_masala_record` per masʾala that `abwab.split_masail` cuts from it. The records go to `corpus/records/<witness>.jsonl`, and `unit_audit` counts units and masāʾil apart in `corpus/audit.json`. `units._obligations` makes a split unit's masāʾil, not the unit, the obligations, for `worklist` (`corpus/worklists/units.json`) and `routing` (`corpus/routing/`). Owners, per [`roadmap-tracks.json`](roadmap-tracks.json): `abwab.py`, `records.py`, `tests/test_abwab.py` and `corpus/records/**` belong to uṣūl; `units.py`, `tests/test_units.py`, the worklists and the routing belong to derivation; the CLI is shared. A change along the path updates both roadmaps, or carries `Roadmap-Unchanged`.
   - *Nūr ʿalā al-Darb*: Ibn Bāz 7,607 units by «س:/ج:» (0.997), Ibn ʿUthaymīn 7,448 (0.997). Ibn ʿUthaymīn's witness prints each question as a section heading with no marker word, so `qa` takes `question_heading`; follow-ups inside an episode open with «فضيلة الشيخ:».
   - Fatāwā Muḥammad b. Ibrāhīm is letters, not Q/A, but the collection numbers them: `masail` with `ordered` opens entries only at the longest increasing run of printed numbers, so a letter's own enumeration and reference numbers stay in its text. 3,974 entries numbered 1–4,575, no duplicates; of the 601 missing numbers, most never occur at a line start in the witness.
   - In *al-Kubrā* and *Jāmiʿ*, many answers begin without a «الجواب» marker. Their unanswered units keep only the question header, so they wait for review rather than absorbing text.

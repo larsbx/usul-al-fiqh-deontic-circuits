@@ -1,5 +1,34 @@
 # Ḥanbalī Uṣūl Formalization — Roadmap and Milestones
 
+<!-- BEGIN GENERATED TRACK PATHS -->
+**Paths this track owns** (generated from [`roadmap-tracks.json`](roadmap-tracks.json)). A change to one updates this roadmap, or its commit says why not: `Roadmap-Unchanged: <reason>`.
+
+| Under | Paths |
+|---|---|
+| `formal/lean/` | `Usul.lean`, `UsulTest.lean` |
+| `formal/lean/Usul/` | `**` |
+| `formal/lean/UsulTest/` | `**` |
+| `formal/lean-mathlib/` | `**` |
+| `formal/tla/` | `**` |
+| `corpus/citations/` | `**` |
+| `corpus/dossier/` | `**` |
+| `corpus/fatawa/` | `**` |
+| `corpus/furuq/` | `**` |
+| `corpus/mahall/` | `**` |
+| `corpus/nusus/` | `**` |
+| `corpus/proposals/` | `**` |
+| `corpus/records/` | `**` |
+| `corpus/review/` | `**` |
+| `corpus/sheaf/` | `**` |
+| `corpus/` | `signature_map.json` |
+| `corpus/takhrij/` | `**` |
+| `corpus/tanaqud/` | `**` |
+| `corpus/types/` | `**` |
+| `corpus/typing/` | `**` |
+| `pipeline/usul_corpus/` | `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
+| `pipeline/usul_corpus/encoders/` | `**` |
+<!-- END GENERATED TRACK PATHS -->
+
 ## 0. Scope and thesis
 
 **Goal.** Build a machine-checkable formalization of Ḥanbalī uṣūl al-fiqh along the silsila
@@ -79,6 +108,9 @@ which prints the whole matn with its commentary as closing endnotes.
   units split into 776 masāʾil, filed under `shawkani.durar_bahiyya` with a
   witness-level segmenter, so the bare-matn witness 34280 is not cut); a split
   unit's masāʾil, not the unit, are its obligations (PRs #118, #120).
+  The code path and its owners are set out under R2 in the
+  [parallel-derivation roadmap](roadmap-parallel-derivation.md); `records.py` and
+  `tests/test_abwab.py` are now explicitly uṣūl paths.
   *al-Darārī* gives 127 units. Both are in the unit inventory and the
   routing index.
 - **Reception.** The *Durar* has 5 citations, all in *Tamām al-Minna*; the
