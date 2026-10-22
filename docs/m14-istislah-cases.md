@@ -106,3 +106,9 @@ and the ambiguous English gloss “stipulates” in the tatarrus scenario.
 The inventories and receipt have been regenerated; “assumes” now describes the hypothetical
 without suggesting a technical stipulation. No candidate facts, source pins or stances changed.
 The repaired head must pass the full CI gates before merging PR #129.
+
+Local generated-output replay also found the fatāwā bank comparison missing the new
+`istislah_furu` bank. Its summary now includes five cases, with no modern case changes.
+The fatāwā report was regenerated from the existing report/compare functions; local
+`--check` passed without fetched IslamQA answers, so external quotation replay remains
+the CI gate (already passed at `9fc0e70` for these unchanged modern cases).
