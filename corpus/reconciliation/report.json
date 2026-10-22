@@ -209,6 +209,3134 @@
     "against_reading": 23,
     "unsearched": 93
   },
+  "search_obligations": {
+    "note": "Review obligations for weighed cases with ruling sides citing no proof. An entry-level search note does not establish per-side coverage or scholarly acceptance. Existing conditional resolutions are unchanged; wholly unproven cases are included.",
+    "cases": 131,
+    "rulings": 154,
+    "unrecorded_cases": 103,
+    "entries": [
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q002.f004",
+        "positions_sha256": "f2404d833bd8c85c9dafac23c7483ef25558ea20cf9e2404159bb97b444ee3b5",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "detached"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "attached",
+            "ruling_code": "\"attached\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī's first view: the attached is no covering"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f002",
+        "positions_sha256": "097328e22102b9cedb8700333afd96ee9be34eaa51b2bad7ec5d8ea25b958e7c",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf, Sharḥ al-Muntahā and al-Furūʿ searched for the whole-head-at-once masʾala («رأسه كله»/«جميع رأسه» near «دفعة»/«الناصية», «الكل فرض»): not treated there. al-Inṣāf v01:p162 and Ibn Rajab v01:p005 state the two wujūh (al-Inṣāf: the ṣaḥīḥ is the nāṣiya's measure) without argument.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: the measure of the nāṣiya"
+              }
+            ]
+          },
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: all of it"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q003.f003",
+        "positions_sha256": "ced437a7461e488b80c05177be7500d75f8be9b22ff96e33c8b51fba6527ddb0",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū al-Khaṭṭāb: all farḍ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f002",
+        "positions_sha256": "65a82df755e1c7f771e8b4f816692c221f11e7895458d324785489e1eb15cf51",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "No proof argued for either side. Checked al-Mughnī v03:p420 (§§2613–2614, fasting then able to afford the hady: the case of fasting after wujūb only); Kashshāf v02:p454 (reports Ibn al-Zāghūnī against the unqualified statements of most aṣḥāb, with no proof); al-Mubdiʿ v03:p162; al-Inṣāf v03:p516 (reports only). Grepped al-Sharḥ al-Kabīr, al-Kāfī and Sharḥ al-Muntahā for the fast before wujūb with the hady affordable at wujūb.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "most aṣḥāb, perhaps Aḥmad's words: it suffices"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn al-Zāghūnī: it does not"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q005.f003",
+        "positions_sha256": "92ae7b83ec9542a967edd8a91cb2ce71b74343fcb33d7b58f1671a6ab35efb94",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "No source found arguing advanced sheep for twenty-four camels with a birth before the ḥawl. Checked al-Mughnī v02:p472–473 (§1751: advanced zakāt where a birth changes the farḍ, for 120 sheep → second sheep, not the change of kind from sheep to bint makhāḍ); al-Kāfī v01:p418; al-Mubdiʿ v02:p400–401; Kashshāf v02:p267; grepped al-Sharḥ al-Kabīr and Sharḥ al-Muntahā for «أربع شياه»/«أربعا وعشرين» with تعجيل/نتج.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: suffices for twenty"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: does not suffice"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q009.f003",
+        "positions_sha256": "0f97c9b83429d4a994abb734fc76324e53963128e610f1b3019fbd948ddd4da7",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū Bakr: invalid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q010.f005",
+        "positions_sha256": "4dc26618c9cf0a2cbf83b1b3339b89926b0c1947a44a6027fdebcc0e858a6c31",
+        "resolution": {
+          "stage": "jam",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: not valid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f000",
+        "positions_sha256": "60a1ebf6f7d01ca6dc9915c2dfff4a861576c977d097d338fe565ea9817f228c",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: concluded"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q011.f001",
+        "positions_sha256": "24ee88713be458ef4e72bed555ab98a2f0f5a41fae207498bd2d807fa612548d",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: valid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q014.f000",
+        "positions_sha256": "8c85ae3c51418cb7375e1079451a0483e8d2d8494917bab9c0d55d0be560759f",
+        "resolution": {
+          "stage": "jam",
+          "ruling": "neither"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "each",
+            "ruling_code": "\"each\"",
+            "positions": [
+              {
+                "index": 0,
+                "who": "riwāya: both wash and do wuḍūʾ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f003",
+        "positions_sha256": "62f613e128db764275c316a86fc1472a60aabc05d5b82f25c7fdd07934224c88",
+        "resolution": {
+          "stage": "jam",
+          "ruling": true
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v09:p230 (the slave-girl promised as a reward who becomes Muslim before the conquest), al-Sharḥ al-Kabīr v10:p432–433, al-Kāfī v04:p140, al-Mubdiʿ v03:p309 and Kashshāf v03:p067. All give her value to the unbelieving claimant «لأن الكافر لا يبتدئ الملك على مسلم». al-Mubdiʿ and Kashshāf then note only «ثم إن أسلم ففي أخذها احتمالان», with no argument. No source argues either side of whether the right returns to her after he becomes Muslim.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: does not return (settled in the value)"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: returns to her (obstacle removed)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f005",
+        "positions_sha256": "25a8b761489eadf4a01a4c63f756e5cf04d9ce024eb712762d479b3c00c0ba26",
+        "resolution": {
+          "stage": "jam",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn Rajab's takhrij (return to the thing)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q016.f006",
+        "positions_sha256": "69a87edf20b10af4d4918a1ce2408bc31e2ee7dff670b42b552ef1601f4eb7b5",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "Position 1 (the takhrīj ranking the seller with the creditors): no argument found in al-Mughnī v04 p321–325 (taflīs, fourth condition), al-Sharḥ al-Kabīr, al-Kāfī, Kashshāf v03 p427–428.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "takhrij (equal with creditors)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f004",
+        "positions_sha256": "2352779e73a3445bdb16865781ffc4f543a34547b38fb285b1fc43ad57386d6e",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ṣāḥib Sharḥ al-Hidāya"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f008",
+        "positions_sha256": "c374d156ae7b279eae5612a033be8665d99662c95c899c7ff2cdf5de1442bf6f",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "takhrīj: one suffices"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q018.f014",
+        "positions_sha256": "4a6d65ca7e038bcd94d70e9a7f0eec9873c3fb875dfed87c09dbe60780920c84",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "riwāya: does not"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q020.f005",
+        "positions_sha256": "33a26f8ac8d577ef2a529d5424c9d5c8bf91d8d17b7dc86bdff90bd0400d757d",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "part"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "separate",
+            "ruling_code": "\"separate\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "riwāya, Taqī al-Dīn: allowed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q021.f001",
+        "positions_sha256": "afb4a33bec2c342473846affeaf7dd89dda47de197fdd9714e16855e4462e04d",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "part"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "separate",
+            "ruling_code": "\"separate\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the child is earnings"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f002",
+        "positions_sha256": "244fcf285ee84837b0918f022682c602370880922c8b7eea91b5d2fe3b2474ce",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū Bakr in al-Tanbīh: ḥadd"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f004",
+        "positions_sha256": "0f5f6afeb1ec41cf74fb6be8cce0696aba95ebf17a99541aa14594877a754a92",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "shared"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "consumed",
+            "ruling_code": "\"consumed\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "on consumption: it lapses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q024.f003",
+        "positions_sha256": "57d652baae81d9187333ac81630e28d42a7b83f175ae5fd37208f2865daac462",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn ʿAqīl: does not lapse if sold to escape"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f001",
+        "positions_sha256": "821295ea8acb419ffdf2a40ad0104df990cbaff8510e1843264dba25d7b5d78e",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other takhrīj: does not"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q025.f002",
+        "positions_sha256": "f927f50ad42ccf740e91e49e102cdb8f988a8602ada3085eb0177dfb2bf0f313",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "possibility: what follows in sale follows"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q027.f002",
+        "positions_sha256": "a7dee70f8a07f73e38b51b950191aceec5db8e966f15720dc59a81fe64eb07e2",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "No proof found for al-Qāḍī's liability (position 0). Checked al-Mughnī v09:p183 (fasl 7385: aiding the attacked is allowed, no word on liability), al-Kāfī v04:p112–113, Kashshāf v04:p129 (states al-Qāḍī's view and the Rajabiyyāt without reasons), al-Mubdiʿ and al-Sharḥ al-Kabīr on dafʿ al-ṣāʾil.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "al-Qāḍī: liable"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f002",
+        "positions_sha256": "5459db1ed31f948fde064d49d2558edb18faf8d66a6ba56fb1f2967d58ead1ab",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "excess"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "all",
+            "ruling_code": "\"all\"",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: a third"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q029.f003",
+        "positions_sha256": "002313cf93c2607cce2f1e95a99d8b09e577a3d826fa44f15faa9134a038a516",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "excess"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "all",
+            "ruling_code": "\"all\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū Yaʿlā the younger: all"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q030.f002",
+        "positions_sha256": "116d8737d1023f14971fe929f95b53296305d5a68909f04060e4733a4415e11a",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v02:p472–473 (tabīʿ for thirty cattle, offspring) treats only whether the early payment suffices, not reclaiming it; al-Furūʿ with Taṣḥīḥ al-Furūʿ v04:p286 and al-Inṣāf v03:p211 state the two wujūh on reclaiming (al-Mardāwī: «وهو الصواب» for reclaiming) without argument; Ibn Rajab v01:p040 derives it on the preceding wujūh. The general argument for early zakāt (al-Mughnī v02:p475) is recorded under the preceding farʿ, not for these facts.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: reclaims"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: does not"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f003",
+        "positions_sha256": "fd3855f6fcbae98fd6d5d6107bf31962c3a7ca1b7844d6375daf8bc363f415cd",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "baseline"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "asBegun",
+            "ruling_code": "\"asBegun\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "other reported wajh: retain the enhanced designated description"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q031.f004",
+        "positions_sha256": "79179969ef299c1ce580ea040f73a0c839923b8141d1834ca800e6897ada1b25",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "asBegun"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "baseline",
+            "ruling_code": "\"baseline\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "other reported wajh: no requirement of corresponding days"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q037.f001",
+        "positions_sha256": "69c613a58871f1f7bc845148100867eca0463bb51241159f6f0e859b1a05325a",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "Position 1 (not liable, the later authors' ẓāhir of Aḥmad): no argument found in al-Mughnī (wadīʿa and rahn, v04 p289), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf v04 p165–166.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "later authors, ẓāhir of Aḥmad: not liable"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f000",
+        "positions_sha256": "38cdf3a7faf2e1e1ceba419f020bb129c7b6cee35468086160200c51d220ed6f",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū al-Khaṭṭāb elsewhere, as the madhhab: void"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f004",
+        "positions_sha256": "7b627dfd0652cd7193563a241d6471f7cf1c5f83c6d4d2509976da22981ed662",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "al-Qāḍī: valid, read as sale"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q038.f006",
+        "positions_sha256": "1a23bd63f084db15983b886f13e80e64fdcd337e2bfb17051a2378db952a05f3",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "by the word: not allowed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f000",
+        "positions_sha256": "f87b20849ad4b16294609d6991c807cb50e8c903caed3b32eec6f58358f79eef",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Kāfī, al-Talkhīṣ, Abū al-Khaṭṭāb: needs the pledger"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f001",
+        "positions_sha256": "e1a66c724902ab7ec4126c94cc73ce40199716036b5d37fc05262d074a869c9b",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: needs a new waqf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q041.f002",
+        "positions_sha256": "f37d8b89390906e329ae679d3162d44fb4d7c9cec75ef06e33efc2bdd3473026",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v09 p443-444 (destroyed designated sacrifice: value or like owed, «فإن شاء اشترى بها أضحية»; no ruling on whether the purchase itself designates); al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf (v03 p011; v04 p295, which only uses «كبدل أضحية» as the aṣl for the waqf), Sharḥ Muntahā v02 p427 (same). No source argues whether the substitute is designated by the purchase or needs a new designation.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: designated by the purchase"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: needs designation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f001",
+        "positions_sha256": "3c2b89118db8f6db0222ef719328bdb478bcfdc6fa947d750a86cb21305597f2",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "iḥtimāl (al-Mujarrad; Ibn ʿAqīl, al-Fuṣūl): his intercourse is retrieval, as with the rajʿiyya"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f002",
+        "positions_sha256": "cd2504a086fdec376860eb615cd72d061f157c0f74ead312a5e6b088a50a084e",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v04 p307-316 (taflīs: «من أدرك متاعه», the seller's retrieval, the bankrupt's intercourse); Sharḥ Muntahā v02 p164 («ويصح رجوعه... بقول... فلا يحصل رجوعه بفعل»: ruling only, its «كرجوع أب في هبة» is for delay); Kashshāf v03 p428-429; al-Mubdiʿ, al-Sharḥ al-Kabīr, al-Kāfī searched for وطء/عتق البائع with المفلس. No source gives a proof that the seller's intercourse or disposal is or is not retrieval of the bankrupt's slave woman.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "al-Qāḍī (al-Khilāf): not effective, not retrieval, the bankrupt's ownership being complete"
+              }
+            ]
+          },
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Mujarrad, al-Fuṣūl: intercourse is retrieval"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f003",
+        "positions_sha256": "e8271f6de024d41aca02ef562d98d8c51dd05a834617229f91ce3a0f371ed6c3",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "the qāʿida's «المذهب المشهور»: no taking"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q055.f005",
+        "positions_sha256": "2884fa4edb73ee30219c27458708e8453f145dde678726fc1841b5cab1aa4e8f",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū Ḥafṣ's takhrīj (al-Marrūdhī); Abū Bakr, al-Tanbīh: effective"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q056.f005",
+        "positions_sha256": "63872fd0d7e07023c5330249ca29f0507462b5eb58dec05b2b0af6aeae60c5bc",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "takhrīj: not"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q057.f002",
+        "positions_sha256": "8b4d108bd7bb35e71fda2eaaa1d59ff04aa6f44dc4e57a7172cde2e302699b35",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v07 p123, p136-139 (free and slave woman, the conditions of marrying a slave woman), al-Sharḥ al-Kabīr v07 p514-521, al-Mubdiʿ v04 p037-038: no proof for position 0 (both valid where the free woman suffices); Ibn Rajab's Qawāʿid (q057) states the two wujūh without a ground.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "al-Qāḍī, Abū al-Khaṭṭāb (their Khilāfs): both valid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q059.f006",
+        "positions_sha256": "883738c69fe5989e5dcecdfa52eb60d09a29a4d7f7a20c9caa7572670282b4c5",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "No proof found for the allocation of loss in «أشركتك في نصفه» on annulment. Checked al-Inṣāf v04:p436–437 (the ishrāk masʾala: shares only); al-Mughnī v05:p015–028 (waḍīʿa in shirka by capital, a different masʾala); grepped al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, Kashshāf, Sharḥ al-Muntahā and al-Kāfī for «أشركتك» with loss, profit or perishing, and for profit-shared/loss-on-one formulas.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "Aḥmad's naṣṣ in many riwāyas, Ibn Abī Mūsā: valid, the loss on the buyer by an annulment deemed at the end of ownership"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Shīrāzī's wajh: the loss on both, as the profit"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q060.f005",
+        "positions_sha256": "b60ca6e1f8ef9e95b5770d28dccb4a1cf544ef19d41f0f07c8108e614a21cc43",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "withRemedy"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "barred",
+            "ruling_code": "\"barred\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī (al-Mujarrad), Ibn ʿAqīl (bāb al-sharika), ẓāhir of Aḥmad in Ḥanbal's riwāya: he is not dismissed while it is goods, and the owner may not dismiss him"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f000",
+        "positions_sha256": "788522b215c7a5377b6c28cc42a56d6d2ad64a820ced0f2401461d3d94756002",
+        "resolution": {
+          "stage": "jam",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: not valid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q064.f002",
+        "positions_sha256": "42a7d87d8335de835f22f2581d467dd63c858650067942cdbb3f4b8b3909e1cb",
+        "resolution": {
+          "stage": "jam",
+          "ruling": true
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī (bayʿ al-khiyār and wakāla, incl. v05:p088-089 on the agent unaware of dismissal), al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ, Kashshāf (v03:p157, v03:p462), Sharḥ al-Muntahā, al-Inṣāf and al-Furūʿ searched for the buyer acting in the option period after the seller's unknown permission (إذن البائع … لم يعلم / قبل العلم بالإذن): no source argues this farʿ. The ledger's reconciliation rests on the agency analogy only.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "al-Qāḍī: not effective"
+              }
+            ]
+          },
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other wajh: effective"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q065.f004",
+        "positions_sha256": "93a46066ec7250c92eeb615f4e97c4c883186e852d0f1d1991e7d908d498dff4",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other wajh: valid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q067.f001",
+        "positions_sha256": "6fab9f2a3204b0923e364e2c739b9312a0bb7f7541f9b73a26179c17076d8256",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v07 p257–258 (fasl 5632, the sale/ṣadāq/mukātab cases, no iqāla); al-Sharḥ al-Kabīr v08 (same faṣl); al-Kāfī (ṣadāq faṣl with the sale case); al-Mubdiʿ v06 p215; Kashshāf v05 p146; grep of all six works and Taqrīr al-Qawāʿid for iqāla after gift/release of the price («تقايلا», «أقاله», «الإقالة» with هبة/أبرأ): only Ibn Rajab lists the ṣūra, with no proof.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: after the iqāla he recovers the price he had been given"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: he recovers nothing, the price having already come back to him"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q068.f009",
+        "positions_sha256": "f18ecb0fef2ba33e8be14d63c3396604ab9c58e11a9e1bd43a4a5a10905839ad",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "Ibn Abī Mūsā: he sins, the ruling is not undone unless it contradicts a clear text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q074.f001",
+        "positions_sha256": "e262fdfa1a5943d860dcdd34321bc896afbdde8f1735f2a93976cd366ad73686",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī, al-Aḥkām al-Sulṭāniyya («قياس المذهب»): nothing unless a fee was stipulated (al-shurūṭ fīhā) or he is known to take a wage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f001",
+        "positions_sha256": "6cdcd1aa998dedc0c8171e711b2842b4538b2ab57a7013782b4cea40cc52147f",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "riwāya in Kitāb al-Riwāyatayn (needs permission)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q075.f009",
+        "positions_sha256": "f29fe41d66250174423e109dc97dd5828c909f003497d4add8d24564890938b5",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī (al-Khilāf al-kabīr)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q076.f003",
+        "positions_sha256": "ec2b083d2338fc5a80f5242244aa21ed042e9385495794863a47920ba18d7e4b",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn Mansur's report (no compulsion, each sells his share)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f001",
+        "positions_sha256": "ae08b7a451cfe69729d583fb79542ffdfaa9bbd7f91350eae49b46bfb455df36",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "Ibn ʿAqīl and al-Muḥarrir («أن حكمها حكم الشجر في تبقية الأرض»): the tree's ruling in a sale of the land"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f003",
+        "positions_sha256": "318f901ef14e76b74060223a04f35a346ccef94eb4d3626fa63870b957b678f8",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh: like crops, on the two wujūh for blight on crops"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q080.f004",
+        "positions_sha256": "1480bb6bcc9e556bbe40f323abb9001cbca54366fbdb8ff4b1f6c8f872c310ad",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: like trees, a musāqāh on these roots is valid"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f004",
+        "positions_sha256": "864c4fecb6484cfe41a24f61560da09d12565545ebd74c6d33a0c833c028f541",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Talkhīṣ (with intent and strength); some aṣḥāb in his Khilāf (the sitter): liable"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q092.f005",
+        "positions_sha256": "69809e2b9800ad1edfa47621a5fa0555914f7c7da314ba825b5eee0dcd83c9d0",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "iḥtimāl in al-Talkhīṣ: half the value, as a borrower"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f006",
+        "positions_sha256": "74c424d45917d95e4f2bdadfc1db9ad10829fbb110790f5f3d23f14eaf2f0c9a",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "For position 1 (the takhrīj from sale giving recourse for the value) Ibn Rajab only refers back to «الوجه المذكور في البيع» without a proof of its own here (Taqrīr al-Qawāʿid v01 p214); Kashshāf v04 p102, Sharḥ al-Muntahā v02 p314 and al-Inṣāf v06 p180 state the rule without argument; al-Mughnī's ghaṣb chapter (v05 p201–205) does not treat this hand.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "takhrīj from sale: recourse"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q093.f007",
+        "positions_sha256": "e31f2167f09c5b78e2f469bcf0d40fd23f862ed0ec9813e82463b9a39052ee18",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "For position 1 (Abū al-Barakāt's takhrīj that the lessee bears no liability at all) Ibn Rajab only says it is built on the view that the maghrūr is not liable at all (Taqrīr al-Qawāʿid v01 p214); al-Inṣāf v06 p181 reports it without argument; al-Mughnī v05 p202–203 and Kashshāf v04 p100 give no proof for it.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "takhrīj: no liability at all"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q094.f006",
+        "positions_sha256": "1e701282d3819c6843e44c33c2a749026bb758157bb8d42319ad8eeea024c69a",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "For position 1 (liable as a borrower): al-Inṣāf v06 p049 and al-Furūʿ with Taṣḥīḥ v07 p169 report the wajh («وقيل: يضمنها»; «وهو ظاهر كلام كثير من الأصحاب») without a proof; al-Mughnī and al-Sharḥ al-Kabīr (ʿāriya, ijāra) do not argue the borrower from a lessee.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the wajh al-Inṣāf records («وقيل: يضمنها»): he is liable as a borrower"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f004",
+        "positions_sha256": "6094564a283bef06d0399ff204d92186ef71e0672bd889f425d1b455c4011220",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other riwāya: the distributor is liable"
+              },
+              {
+                "index": 2,
+                "who": "Abū Bakr: liable only if the executor acted without the judge's permission"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q095.f011",
+        "positions_sha256": "24fa4394e115b026e25cd74f09cf23319fcec894af506301401cc4996f183b3b",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the riwāya of no recourse"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q096.f009",
+        "positions_sha256": "e614830f68a0a31090b5a2a1d44a2a1b3d4701ff80e327756fffb73a31a219b4",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Aḥmad in Ḥanbal's riwāya («أخاف») and in Muhannā's riwāya: liable for handing it to the legatee alone"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f004",
+        "positions_sha256": "e7f1f6e4abf51701e166cd5f8902221b078912ab499261bc299d9afd2f3a165c",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the wajh that «ويتخرج فيه» (Ibn Rajab's takhrīj)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q101.f005",
+        "positions_sha256": "9b79d058b297167f7fd507083a64b4f3d56580a27ca7dfa73ffe7a08602c3bef",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī in Aḥkām al-Qurʾān: «يحتمل الجواز ; لأنها على التخيير بخلاف كفارة اليمين»"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q103.f006",
+        "positions_sha256": "a0198b699ef8bc6c1977a15b39cdfe11c9dcc908a8927a72895e388a8dce8651",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other tariq (no building if muwalat is a condition)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f006",
+        "positions_sha256": "70c7436596806521b052b70ac754eec44af67916eb15d7c9b7b719e5c6c71dd2",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī (kitāb al-ʿitq, and the related ṭalāq passage v07:p397 «فإن قال الأعجمي لامرأته: أنت طالق، ولا يفهم معناه»), al-Sharḥ al-Kabīr v08:p284, al-Mubdiʿ v06:p313, al-Kāfī, Kashshāf and Sharḥ al-Muntahā, searched for manumission in a tongue the speaker does not understand («لا يفهم», «لا يعرف معناه», «بالعجمية», «بالفارسية», «بغير العربية»). The proofs found are given only for divorce, never for manumission, so none is attached here.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "naṣṣ of Aḥmad (riwāyat ʿAbd Allāh): the manumission does not bind"
+              }
+            ]
+          },
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other side of the khilāf: it binds"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f007",
+        "positions_sha256": "4cfaa76aac84304a7875a73f035b7512ae8d2fae3eb39c8ea66fd56d859c8b25",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other wajh: Fulān's divorce binds him whatever it was"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f008",
+        "positions_sha256": "e70b19d1c02c8fe6d775d20b72349e5685ba590062607885bce33420139f5244",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "second wajh (al-Khiraqī's fatwā via Ibn Baṭṭa): contracted if he commits to it and intends it; third: so except the oath by God; fourth (ẓāhir of al-Qāḍī's Khilāf): its effect binds him intended or not"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q104.f009",
+        "positions_sha256": "6ee751db4c32906056fe1c6b544a2a3ffa0686854d57b9feb0929b6e50dc929c",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī (al-Khilāf): the oath by God, divorce, manumission, ẓihār and vow bind him intended or not; al-Muḥarrar reports no khilāf on binding"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f004",
+        "positions_sha256": "4bedfe673f550dd0ca7dc0428a95eec3e10742e91b6d108f760369abd19cdc83",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other wajh (investigate)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f002",
+        "positions_sha256": "87d7da0b617bf9a8be787f9d0cef2f685e536848f0c0d75a434dac8c24a01c3a",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "No source argues the licence (ijāza) to whoever is born to Fulān. Checked al-Mughnī, al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Kashshāf al-Qināʿ and Sharḥ al-Muntahā for الإجازة للمعدوم, أجزت لمن يولد, الإجازة لمن, لمن يولد لفلان: no hits. The waqf analogue (q107.f003) is argued in al-Mughnī v06:p182, Kashshāf v04:p250 and al-Mubdiʿ v05:p160, but not for the ijāza.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "qiyās of al-Qāḍī's own statement on the waqf: invalid"
+              }
+            ]
+          },
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī's fatwā, reported by al-Khaṭīb: valid absolutely"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f005",
+        "positions_sha256": "e09a367882e25bf06078b48ee17df6b92314c14c887332db9e4534851da01e3b",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "the other riwāya: the later-born child does not enter"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q107.f006",
+        "positions_sha256": "cc139776177c82a91fbc62eb462c0bd5ecefb863d6de254b6acd2d551f9084ad",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "the wajh takhrīj-ed from q107.f005: the later one does not share"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f010",
+        "positions_sha256": "b16803ef10ebc44dcab6865636c48d4b9f4f60523f710da6fd4fe6b5ccd76132",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū al-Khaṭṭāb, with what Ibn Hāniʾ reports from Aḥmad: he is barred from both until one is made forbidden"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f012",
+        "positions_sha256": "41c0d9f5963f3e65782801367ae8bfae8cfeecc666ca23ecc88a27114101e052",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "another way of reading al-Qāḍī's words: all are forbidden before he chooses"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q109.f014",
+        "positions_sha256": "7bf94851831e10c3ae1b02948f5c9b7c3bb040b60d45bb4dfa71fede79fa2dc2",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī in al-Taʿlīq: he is barred from all four until the adulteress is shown not to be pregnant"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f001",
+        "positions_sha256": "53734eecf2a852c413d1b641b85f86422778f1b060c18f7b06fe0e9fa89e165a",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the other riwāya: the diya of the wound is owed"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q111.f002",
+        "positions_sha256": "1256b5310b8393b88984beca1bfd88f03acdf75a67d45ce0d48ccedc11a64795",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the riwāya of Ibn Manṣūr (reported in al-Muḥarrar): the value of the slave is owed, without retaliation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q113.f005",
+        "positions_sha256": "bededd25bf585a9f928944e2f80cc266933816c434fc7b89ca960aa6a1d22ca7",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "naṣṣ of Aḥmad (riwāyat Muhannā) «كل واحد منهما كفيل ضامن فأيهما شاء أخذ جميع حقه منه»; Abū Bakr in al-Tanbīh: each guarantor liable for the whole"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q114.f003",
+        "positions_sha256": "b42e5784bdd29a620b8364fe4d224ee6ef5c1c3cabcb7653db1b4f3b442bae9c",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "on the wajh that the unqualified partnership is halves: «اقتضى وقوع اثنتين»"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q117.f001",
+        "positions_sha256": "89058a252c1959738fd5eb7e9d8d9d47cf99e71735b9b0fc4c2ec497a1b80a61",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the weak reported khilāf: the state at the bequest governs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f002",
+        "positions_sha256": "7233f82e30d6d6d8c9b847ccf9b0414106e606edfeef95e46d7248841bd9acf4",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the wajh Ibn ʿAqīl in al-Funūn reports al-Qāḍī deriving: Zayd shares with them when he is poor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q119.f004",
+        "positions_sha256": "ed02152ce5cb8b5e412087c34ab890b094c83b7d4b8187b81dfa4da7324655c7",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v06:p190 (§4690), al-Sharḥ al-Kabīr v06:p460, al-Mubdiʿ v05:p248 and v05:p285, Kashshāf v04:p380 (Ibn Thawāb's riwāya). Each reports Aḥmad's naṣṣ only, with «فحكم بصحة الوصية وإنفاذها على ما أمر به الموصي». None gives an argument for either position, and none mentions the four-share division. Searched al-Kāfī and Sharḥ al-Muntahā for «كل شهر» and «ثلثي» with no treatment found.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "Aḥmad's naṣṣ (riwāyat al-Ḥasan b. Thawāb): the fixed monthly sum is paid from the third first and any surplus returns to the legatee of the third, the fixed bequest being as the specific to the general (Ibn Rajab: «فتعين حملها على ما قدمناه»; Kashshāf «نص عليه»)"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the wajh al-Qāḍī reports, «وقد قيل لا يكون رجوعا»: the third is divided into four shares between the two legatees, as with a bequest of all one's property and of a third"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q120.f000",
+        "positions_sha256": "98cd912bf086d022b400bf0d7b733fbcd25bd5938e72f0750a198df205b5366a",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn al-Zāghūnī's takhrīj in al-Talkhīṣ from the nikāḥ masʾala: another riwāya that they share"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f005",
+        "positions_sha256": "85e3561fc30b40afb32f89f0ae7c8ea88c3fb245382ceef489487cae40b7a533",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "No proof work argues the oath against beef and wild-cattle meat (or the cognate oath not to ride a donkey). Searched for بقر الوحش / حمارا وحشيا / البقر الوحشي and لحم بقر in al-Mughnī (oaths v09 p605–612; hits only zakāt v02 p444, iḥrām, ribā), al-Sharḥ al-Kabīr (v02 p436 zakāt, v11 p080 foods), al-Kāfī (v02 p034 ribā), al-Mubdiʿ, Kashshāf (v06 p261–263 oaths) and Sharḥ al-Muntahā (v03 p460–461 oaths). The zakāt masʾala that Ibn Rajab compares (al-Mughnī v02 p444: «لأن اسم البقر يشملها» vs «لأن اسم البقر عند الإطلاق لا ينصرف إليها») is argued for zakāt, not for the oath, so it is not recorded.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "a wajh in al-Targhīb: no ḥinth by wild cattle"
+              }
+            ]
+          },
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "a wajh in al-Targhīb: ḥinth by wild cattle"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q121.f008",
+        "positions_sha256": "ec5b0b8d95681beafe264223e40d7305cf1c62730b6faa65c13541ff3c5906be",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the aṣḥāb: a third of all his property (al-Qāḍī «والمذهب التعميم»; al-Zarkashī per al-Inṣāf: the majority)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q123.f002",
+        "positions_sha256": "30405f7434acd72373b5cabbfd717ececf7d660c8049fa24e66386865c4359bc",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the ẓāhir of al-Targhīb: they are within it (al-Furūʿ «والأصح»; Kashshāf)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f012",
+        "positions_sha256": "aa0dce603d782c632f8dd2f76394f84d468ce818969a729b1ca44ceddcc49fe9",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the wajh of validity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f013",
+        "positions_sha256": "a1619752395056f9a810c203144c6bf2279ac4aa286da79f04ee91f4e23938ed",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the wajh that the excepted one is not divorced in the bāṭin (Abū al-Khaṭṭāb and al-Ḥalwānī's companion in the parallel)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q125.f014",
+        "positions_sha256": "e99a7b2c617a5d4ed6cd6e2315dc48b503194e5c2623fabd9877bb27feeecd2c",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the riwāya of invalidity (Ibn Abī Mūsā's report)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f001",
+        "positions_sha256": "bd5d63de26996ae2809454cccb10bdd17d8350eec640beaa7acc557c35bb9a57",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "the riwāya Ibn ʿAqīl extracts (from Aḥmad's tawaqquf): she is not divorced"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q126.f002",
+        "positions_sha256": "6556064bedb1a1bee19cda58350a2f0fc9ae687115a33c7cc3e0d6e69a0e21c8",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mubdiʿ v07:p412-413, Kashshāf v06:p113-114 and Sharḥ al-Muntahā v03:p359 report only Ḥarb's question and Aḥmad's answer («لم يبلغني فيه شيء وذهب إلى حد واحد») and Sharḥ al-Muntahā's «ولا يكفر من قذف أباه إلى آدم نصا», with no proof attached; the Q 24:4 argument that follows is for one ḥadd for slandering a group in one word, a different masʾala. Searched al-Mughnī, al-Sharḥ al-Kabīr and al-Kāfī for «إلى آدم» and «آدم وحواء» in the qadhf chapters: nothing. No source argues the apostasy wajh.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "Aḥmad's naṣṣ (Ḥarb): one ḥadd, not apostasy (carried in al-Furūʿ and Kashshāf)"
+              }
+            ]
+          },
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Shaykh al-Islām Ibn Taymiyya's extracted wajh: apostasy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f004",
+        "positions_sha256": "68dd5a54a284fffe1b2ccded4d9f5a48614ea32b43d013e1e941fcb6413bbc26",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "the takhrīj of al-Targhīb on the case of Islam supervening between the shot and the hit, where a wajh makes the diya due"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q128.f007",
+        "positions_sha256": "1b3e59caeff335ccc57912c3bfe70a257920896d0a8cdb71d7aa6fe308da28a9",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī (jazāʾ al-ṣayd, v03:p319, v03:p445), al-Sharḥ al-Kabīr v03:p362–363, al-Kāfī v01:p505–506, Kashshāf v02:p438 and v02:p469–471, al-Mubdiʿ and Sharḥ al-Muntahā. These treat only the converse case: wounded in the ḥill, died in the ḥaram, which is no jazāʾ «لأن الذكاة حصلت في الحل». They also treat game shot from the ḥill that enters the ḥaram, and game taken out of the ḥaram. None treats game wounded in the ḥaram that dies in the ḥill, and none argues for full ḍamān or for the arsh only.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "al-Qāḍī and Abū al-Khaṭṭāb in their Khilāfs: «لزمه كمال ضمانه» («تغليبا لضمان الصيد»)"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn Rajab's tawajjuh from the masʾala before it: «ويتوجه أن يضمن أرش جرحه خاصة»"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f003",
+        "positions_sha256": "d5fea2d66bca7ec7b0414679956855b0edcd633c300ae463f8ed879ab1f698ec",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "on the Muslims, reckoning by the hit (the second wajh Ibn Rajab extracts)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q129.f006",
+        "positions_sha256": "9992502c575fc92277758e1b00d051bb0065d658d8c6b883b4c626aae5f4b897",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "they are reckoned at the hit (al-Qāḍī in his Khilāf, Kitāb al-jināyāt; Abū al-Khaṭṭāb in Ruʾūs al-masāʾil)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q132.f006",
+        "positions_sha256": "d34095a374fb41ef5780290d00b98eb80df7b0f90596d0450ac659ce12861a74",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "not due (riwāya; the ẓāhir of al-Khiraqī per al-Inṣāf)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f008",
+        "positions_sha256": "f3decd21bff089fe81451efceebbd13cfd476a2072afb19932a8942b5186df5a",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Sāmarrī"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q133.f020",
+        "positions_sha256": "05118f0c0048a63200d8c04977e9e3e59443fbd720aee1918fd1387a7eaa1ac7",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh: all male rulings follow"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q136.f004",
+        "positions_sha256": "2c99d1d9cd31e730e2faa547ae6abf10dabeedeecabae640c9c5f45128d13192",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "Position 0 (Ibn ʿAqīl: disliked, not forbidden): Kashshāf v05 p077, al-Iqnāʿ v03 p184 state it without proof; nothing found in al-Mughnī, al-Sharḥ al-Kabīr, al-Kāfī, al-Mubdiʿ.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "disliked, not forbidden (Ibn ʿAqīl)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f014",
+        "positions_sha256": "cc32916754a82ea8c2d87f2d14abd67fd69cba107a3983a7023fb8cd4a7068b0",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "suspended on the heirs' consent (Ibn Rajab's «ويتوجه فيه وجه آخر»)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f015",
+        "positions_sha256": "9e32544fc0de7262b99f4eda5a5cbfd59a1d2fc4c6bbf65552c7b2ec8b433d71",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "Position 1 (Abū al-Khaṭṭāb's al-Intiṣār, not beyond the diya in its genus): no argument for deliberate killing found; al-Mughnī v04 p369 and al-Kāfī v02 p117 bar exceeding the diya only for khaṭaʾ, which is not these facts.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "not valid beyond the diya in its genus (Abū al-Khaṭṭāb in al-Intiṣār; al-Talkhīṣ within the genus)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q137.f017",
+        "positions_sha256": "63fbb9cf7f73820e8e12448410e908cea7f759a9195d77911ab881162f06f1d6",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "Position 1 (not trade wealth without intention): no argument in al-Mughnī (zakāt al-tijāra), al-Sharḥ al-Kabīr, al-Mubdiʿ, al-Kāfī, Sharḥ al-Muntahā v01 p394; Kashshāf v02 p244 gives only position 0.",
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "not without intention, the ṣulḥ being over the qawad (Ibn Rajab's «وقد يقال», which he finds in the ẓāhir of al-Qāḍī's taʿlīl)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q143.f005",
+        "positions_sha256": "3a201bf0bd34412f6caec60a29302aa8db3ea4a6a013306966321ac2b2399d72",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "forbidden («وعنه يحرم», as al-Inṣāf reports it)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q144.f005",
+        "positions_sha256": "c2a53b1617a07765c0aa020f947b2332b8adb031c55a354d97209200c437765f",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 0,
+                "who": "it lapses without his claim (the ẓāhir of Aḥmad's words)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f004",
+        "positions_sha256": "a9ca6e04c87fd6d4f64f4e9d449f1381fe7878a3e563324d2743e8bc199d8776",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "al-Mughnī v07:p516–518 (conditions for the thrice-divorced woman to become lawful to the first husband), v07:p532–533 and v08:p127–128 (intercourse with the rajʿiyya in the ʿidda); al-Sharḥ al-Kabīr v08:p481–482, v09:p142; al-Mubdiʿ v06:p420; al-Kāfī v03:p150–151; Kashshāf; regex searches for the khalwa-ʿidda intercourse with taḥlīl («يحلها», «الخلوة … لزوجها الأول»). None argues whether intercourse in an ʿidda established by khalwa makes her lawful to the first husband; only al-Inṣāf (v09:p166) records the two riwāyas and al-Mardāwī's «الصواب أنه يحلها» without a proof.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "it makes her lawful to the first, as with a wife (a riwāya; al-Mardāwī's «الصواب»)"
+              }
+            ]
+          },
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "it does not (a riwāya)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q146.f007",
+        "positions_sha256": "b5a83c12132f3ca9aa9b5f707eb8bb4bc9b7507980fa66f9a2658321bc55733c",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "she observes the longer of the two (a riwāya)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q152.f004",
+        "positions_sha256": "a8e253c9f721dc10caae14f79b6f5c4361eaa57d96eb63adffdc27dabd4e9dfd",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "lawful: riḍāʿ does not establish the prohibition of ṣihr (Shaykh Taqī al-Dīn's choice)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q154.f006",
+        "positions_sha256": "0615d8c32f2ecc6f47992c0323c0620b5e9bce46db505785251cd9514df6172f",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "entry_note_only",
+        "entry_search_note": "No proof found for position 1 (the father may, the exit being of value). Al-Sharḥ al-Kabīr v08:p180 and al-Mubdiʿ v06:p270 give an iḥtimāl that he may when he sees her interest in it (ḥaẓẓ), a different ground the case does not state, so it is not recorded. Also checked al-Mughnī and al-Kāfī on the father's khulʿ.",
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "he may, the exit being of value so that her property is not given away (a wajh some later scholars extracted; extracted also from the riwāya that the father may remit half the mahr)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f002",
+        "positions_sha256": "0f847fa55a7143c1b4de63ed845b56611cc6f930ce958cdb8e07e35625c1e2cc",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "it drops the mahr (a wajh: as an annulment, or as shared by both spouses since it is at her request)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f010",
+        "positions_sha256": "0ad7dd3fd51289c67473df326260deb869b90a82e73407c8ab2aba1e03b30568",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "halved: the cause (sabab) is his defect and she is excused (Taqī al-Dīn, from Aḥmad's answer on the majbūb in Muhannā's report)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q156.f017",
+        "positions_sha256": "2e8d48f7b98fa13ff98e4d993f2a8c8436337c0aa8fd8c55f656d822767e51bf",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 1,
+                "who": "halved (a wajh Ibn Rajab extracts from the next masʾala)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f009",
+        "positions_sha256": "6b46cc39a0f882f8a4628791b2e728e191260f62c1b5c4a7c1c20ac47ddf9ed7",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "his word: he is the one liable (ghārim) and the aṣl is freedom of his dhimma (the first wajh)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q158.f016",
+        "positions_sha256": "b3c59d0fe1dee9000073f70da983c1048bec21a14cced061ba0f8c5695a425a0",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "the whole mahr: it fell due by the contract and no cause (sabab) of its lapse is established (the implication of Abū al-Khaṭṭāb and al-Majd)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012",
+        "positions_sha256": "02f81d7e63bdc3cf2256ad9b6a309016d269a2c3cb58e0a26e13ca151153b2de",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn Hamid (certainty required)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013",
+        "positions_sha256": "84682bef75a5ea54645dcd2e30f716c2da1ce45e4143ca1ea89a7f3746e811b1",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": true
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": false,
+            "ruling_code": "false",
+            "positions": [
+              {
+                "index": 1,
+                "who": "some ashab / sahib al-Talkhis (certainty of sunset required)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022",
+        "positions_sha256": "40a6067d9e5cef8f5bffaa64760de0a17449a0e7831a9d763ef66e18ff392839",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": false
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": true,
+            "ruling_code": "true",
+            "positions": [
+              {
+                "index": 0,
+                "who": "wajh 1: najis"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f006",
+        "positions_sha256": "e50ea553d4f06230a4e3735d218a877030c7f2be4cde746a7be82e7471ed39f1",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "mutual agreement (murāḍāt)",
+            "ruling_code": "\"mutual agreement (murāḍāt)\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī, iḥtimāl 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f009",
+        "positions_sha256": "0531736c498441548b6d374c29d5c8df34c031cf39efa2f899d86420c577eb17",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "ruler rotates turns (muhāyaʾa)",
+            "ruling_code": "\"ruler rotates turns (muhāyaʾa)\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī (trade)"
+              }
+            ]
+          },
+          {
+            "ruling": "most needy first",
+            "ruling_code": "\"most needy first\"",
+            "positions": [
+              {
+                "index": 4,
+                "who": "al-Qāḍī (need), iḥtimāl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f014",
+        "positions_sha256": "302ca6e4719e3b991369411026d9daa58c8cc0861af40c9df19b1633f5073d83",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "lot",
+            "ruling_code": "\"lot\"",
+            "positions": [
+              {
+                "index": 0,
+                "who": "al-Qāḍī (forgotten order)"
+              },
+              {
+                "index": 2,
+                "who": "Ibn Abī Mūsā"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f018",
+        "positions_sha256": "1d80b171f695ba14abe94b5f4a4e357fa126a89607728e514cceac2dcdee7c45",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "lot"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "all divorced thrice",
+            "ruling_code": "\"all divorced thrice\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Qāḍī (Khilāf)"
+              }
+            ]
+          },
+          {
+            "ruling": "divorce here is faskh",
+            "ruling_code": "\"divorce here is faskh\"",
+            "positions": [
+              {
+                "index": 2,
+                "who": "Taqī al-Dīn"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f019",
+        "positions_sha256": "2098f36c4924d786536b0ec82cedc1eacdb4f9bcddf429589c18fc0f152d290b",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "lot"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "the middle one",
+            "ruling_code": "\"the middle one\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "riwāya 2 / Aḥmad via Muhannā"
+              }
+            ]
+          },
+          {
+            "ruling": "husband chooses",
+            "ruling_code": "\"husband chooses\"",
+            "positions": [
+              {
+                "index": 2,
+                "who": "Ibn ʿAqīl takhrīj"
+              }
+            ]
+          },
+          {
+            "ruling": "wife chooses",
+            "ruling_code": "\"wife chooses\"",
+            "positions": [
+              {
+                "index": 3,
+                "who": "Ibn ʿAqīl takhrīj"
+              }
+            ]
+          },
+          {
+            "ruling": "lot if equal, else the middle",
+            "ruling_code": "\"lot if equal, else the middle\"",
+            "positions": [
+              {
+                "index": 4,
+                "who": "Ibn ʿAqīl ikhtiyār"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f023",
+        "positions_sha256": "f9848397eb30c5c0cfcff81cffb32480bc0c794d278ce12913a07e0561a6ff32",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "lot"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "tawaqquf",
+            "ruling_code": "\"tawaqquf\"",
+            "positions": [
+              {
+                "index": 2,
+                "who": "Aḥmad (Abū al-Ḥārith)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f025",
+        "positions_sha256": "28112545e7c1026840eb0a7b00b8d574b63f641818cc47ce47c8858637f8b10e",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "both abstain until certain"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "lot",
+            "ruling_code": "\"lot\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "al-Shīrāzī, Ibn ʿAqīl, al-Ḥulwānī, al-Qāḍī (Jāmiʿ)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f029",
+        "positions_sha256": "f58360836170e8251ca8d16ae779f5bd4959d12d1b57d3c0c77d5332501e2446",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "the wife's word (she denies, he claims)"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "lot",
+            "ruling_code": "\"lot\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "wajh 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f033",
+        "positions_sha256": "e9e79657cb73914725c1e8782929eabc045e98d175968ee029286606c79150c6",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "lot"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "imam designates",
+            "ruling_code": "\"imam designates\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Ibn Abī Mūsā"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f035",
+        "positions_sha256": "ca6bce26371f38641b329d00a88387e1713a62e2123fe265c933644e488d0b88",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "divide"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "lot",
+            "ruling_code": "\"lot\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Abū Bakr qawl 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f036",
+        "positions_sha256": "da260656352ce037952e204cdf0ba6607dd11f18371d8126a2c808a6d9c879d9",
+        "resolution": {
+          "stage": "tawaqquf",
+          "ruling": null
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "tawaqquf",
+            "ruling_code": "\"tawaqquf\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "Aḥmad (Ṣāliḥ)"
+              }
+            ]
+          },
+          {
+            "ruling": "expiation for every oath",
+            "ruling_code": "\"expiation for every oath\"",
+            "positions": [
+              {
+                "index": 3,
+                "who": "Ibn ʿAqīl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q160.f041",
+        "positions_sha256": "7d05433711fd9d0b505161936cad61ab87468418feabd4e7ef38ce8343b94b74",
+        "resolution": {
+          "stage": "tarjih",
+          "ruling": "lot"
+        },
+        "search_record_status": "unrecorded",
+        "entry_search_note": null,
+        "unproven_rulings": [
+          {
+            "ruling": "both barred until they agree",
+            "ruling_code": "\"both barred until they agree\"",
+            "positions": [
+              {
+                "index": 1,
+                "who": "qīla"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "advantages_outside_domain": [
     {
       "far": "ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035",
