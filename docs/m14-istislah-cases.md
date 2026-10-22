@@ -95,3 +95,14 @@ for that formatting change. The broader local regression selection passed 4,433 
 that repair. The final source/guard/typing/companion/judgement selection passed 230 tests with one unrelated SWI-Prolog-dependent skip; six routing tests passed with one external-source test deselected. No new M14 source test skips.
 The corpus CI job at that first head failed its initial integration step. Locally reproducing the guard inventory exposed the one-guard-per-case incompatibility; the new
 conjunctive guards address the reproduced regression without weakening the inventory check.
+
+## Pre-merge validation on 2026-10-22
+
+CI at `9fc0e70` passed Lean/no-sorry (including all 270 M14 differential inputs),
+committed Python/Prolog integration, external-source routing/quotations and required locked-source
+verification. The full corpus test run reported 8,058 passed, 251 explicitly reported exclusions
+and four failures: stale M8 inventory and scope counts, a stale typed-routing input receipt,
+and the ambiguous English gloss “stipulates” in the tatarrus scenario.
+The inventories and receipt have been regenerated; “assumes” now describes the hypothetical
+without suggesting a technical stipulation. No candidate facts, source pins or stances changed.
+The repaired head must pass the full CI gates before merging PR #129.

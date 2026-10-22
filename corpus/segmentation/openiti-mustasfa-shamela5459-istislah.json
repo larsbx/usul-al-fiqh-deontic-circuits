@@ -83,7 +83,7 @@
           "excerpt_ar": "قلنا: لهذا نرى المسألة في محل الاجتهاد، ولا يبعد المنع من ذلك، ويتأيد بمسألة السفينة"
         }
       ],
-      "stated_scenario": "The hypothetical stipulates that refraining from striking the shield leads to the destruction of all Muslims, including the captives. The stated purpose is reducing otherwise unavoidable loss; the particular means lacks a specific analogical precedent.",
+      "stated_scenario": "The hypothetical assumes that refraining from striking the shield leads to the destruction of all Muslims, including the captives. The stated purpose is reducing otherwise unavoidable loss; the particular means lacks a specific analogical precedent.",
       "interpretation": {
         "status": "candidate",
         "encoder": "istislah",
@@ -98,7 +98,7 @@
       },
       "uncertainty": [
         "The modeled true value for certainty covers certainty or near-certainty (p177), not ordinary probability.",
-        "At p177 al-Ghazālī expressly leaves the issue within ijtihad and allows the possibility of prohibition. The positive guard is conditional on the formal reading, not a reviewed or unconditional ruling."
+        "At p177 al-Ghazālī expressly leaves the issue within ijtihad and allows the possibility of prohibition. The positive guard evaluates the formal reading; it does not establish a reviewed authorial ruling."
       ],
       "review": {
         "status": "pending",

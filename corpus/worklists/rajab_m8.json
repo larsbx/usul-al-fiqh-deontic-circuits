@@ -11,10 +11,11 @@
     "bytes": 1660710
   },
   "input_sha256": {
-    "registry.json": "4f1a2d1aab62cd2315046766431190d08c47f57a11f20c7cd852ee5f9a43b6b7",
-    "lock.json": "797bd77bf0dbaf7583d291bcae7612e9da83759364f745981ed1c970a0dba055",
+    "registry.json": "456fa288de936243c79d9b50201b2e7313d37672cacbe7d64ed01268fdae1a60",
+    "lock.json": "9ca16fd44e3b87c50695b49b3a0e18f76449254142187e2ac4bda4d78c5b6801",
     "records/openiti-rajab-shamela21730.jsonl": "3ec424ea5e677a4bdaad4ce68295d411f0ea64bf3e4fe608781a60f36c835ca0",
     "takhrij/dalala_furu.json": "9f3591e7bc77c8a4302d6ef3af3e6237f9e05ff7276ccd036ea8939c46e1a4e8",
+    "takhrij/istislah_furu.json": "0f0ad20db0b29c755d59605854f1f2779ec55c0b3290c1a6488b0d3ce7799870",
     "takhrij/maqasid_furu.json": "0972901f8dd9f9bf9b17963d50fa0d43a317ba21434ea5c1eb1b6cad657f2ad6",
     "takhrij/r2_sample1_lane_b.json": "d6e2d4afc1a69bfbb605ce5ab8007df6c1d74f6d2b427d4f5fe5e41436947fe3",
     "takhrij/rajab_m8_furu.json": "cecff6e34886a3d8ef6b8977ba5f9dafbefbf036b3ccd141826f294be1adf395",
@@ -463,15 +464,15 @@
     }
   },
   "aggregate_report": {
-    "total": 1258,
+    "total": 1263,
     "classes": {
-      "derivable": 512,
+      "derivable": 517,
       "genuine_ikhtilaf": 684,
       "missing_fact": 4,
       "missing_rule": 57,
       "segmentation_error": 1
     },
-    "coverage": 0.951,
+    "coverage": 0.952,
     "decided_coverage": 0.894,
     "disputed": 684,
     "encoding_error": 0,

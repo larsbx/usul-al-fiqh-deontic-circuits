@@ -55363,7 +55363,7 @@
   },
   "inputs_sha256": {
     "corpus/fatawa/takhrij/islamqa_tranche1.json": "2e1bce1bf3cacd32fa4a28f013f6dd0ced299b250da4c67561a5c671a19c2a00",
-    "corpus/lock.json": "797bd77bf0dbaf7583d291bcae7612e9da83759364f745981ed1c970a0dba055",
+    "corpus/lock.json": "9ca16fd44e3b87c50695b49b3a0e18f76449254142187e2ac4bda4d78c5b6801",
     "corpus/records/archive-manzuma-djvu.jsonl": "bf3b1ffe55721df374f129d8a345c945cfbd848556e989c5023f98d3477ba202",
     "corpus/records/archive-manzuma-tess.jsonl": "18018bf7958a0f8ed2034a141f707fe5c0cc0f1124d58831d4e433dbb8f39fde",
     "corpus/records/archive-pdf1995-tess.jsonl": "05131a016719223fbe1c4778a4ed284dbb5f3366f2f281d54a1cfb788a5f9ad1",
@@ -55390,12 +55390,14 @@
     "corpus/records/openiti-majmufatawa-shamela7289.jsonl": "f9c0423d7a3961bf49edc476bd5f40f7021b5d3402004edf0dd479bfce87a827",
     "corpus/records/openiti-mubarak-ghurarnaqiyya-shamay36516.jsonl": "12ad8d28c94d067dc326ca1454e2622f95628697a07ad21821d52656e871f2f0",
     "corpus/records/openiti-muhammadibnibrahim-fatawa-shamela8476.jsonl": "06eb66046035456a46f2a2b167d8d131984a9175c1f9dfb936e99841465832c3",
+    "corpus/records/openiti-mustasfa-shamela5459.jsonl": "ea72e1623072c3381800d1862305bad5368f154c40f82164bb96b60a2da34e27",
     "corpus/records/openiti-rajab-shamela21730.jsonl": "3ec424ea5e677a4bdaad4ce68295d411f0ea64bf3e4fe608781a60f36c835ca0",
     "corpus/records/openiti-shawkani-dararimudiyya-shamela7264.jsonl": "8ddce2550c43bd8eefb5ff793ee0a009ab649c592e649b09a4752cd3f6ead3d2",
     "corpus/records/openiti-ulamanajd-durarsaniyya-shamela3055.jsonl": "7073c1f6bee0085e9e5aed5216613d3e05a89062e74ed2c90779c3a0abceecfa",
     "corpus/records/shamela-9942.jsonl": "b55665119a973aa1dc17ba322406aa9757bc55a6c6375f4ce862838b71db8c33",
     "corpus/routing/ood.json": "b74749211e4eba426983af54adde5770d6299b1c02fbb393a748bc4c1a6dd965",
     "corpus/takhrij/dalala_furu.json": "9f3591e7bc77c8a4302d6ef3af3e6237f9e05ff7276ccd036ea8939c46e1a4e8",
+    "corpus/takhrij/istislah_furu.json": "0f0ad20db0b29c755d59605854f1f2779ec55c0b3290c1a6488b0d3ce7799870",
     "corpus/takhrij/maqasid_furu.json": "0972901f8dd9f9bf9b17963d50fa0d43a317ba21434ea5c1eb1b6cad657f2ad6",
     "corpus/takhrij/r2_sample1_lane_b.json": "d6e2d4afc1a69bfbb605ce5ab8007df6c1d74f6d2b427d4f5fe5e41436947fe3",
     "corpus/takhrij/rajab_m8_furu.json": "cecff6e34886a3d8ef6b8977ba5f9dafbefbf036b3ccd141826f294be1adf395",
@@ -55442,7 +55444,7 @@
     "corpus/takhrij/rajab_m8_tranche7_furu.json": "1a11a26a6765c2e4abd93daf2bc7cb45f84aeeea5e79c6a8b6e1b3da83c6ec76",
     "corpus/takhrij/rajab_m8_tranche8_furu.json": "3931bd2b0415488c1f33f27da28d1f164c8355cbd2029d084eac7d374e8f05ee",
     "corpus/takhrij/rajab_m8_tranche9_furu.json": "65d72a6ad2b11ccfee124b7f7ea6449a412ceb430322e62567395335abb6c8e0",
-    "corpus/takhrij/report.json": "d6fddf60df8177bdc3326391b342f75c2891c4670cf0ae46538b7140bdfd31e2",
+    "corpus/takhrij/report.json": "2b4eddd530d659b3522bcd0f70663451b2090f9a9ff2dfc3280a3cc816ac5f7e",
     "corpus/takhrij/sadi_furu.json": "acc3c370ec9dcc3d52e1b53b1856223c7f5cd5bc96f3919d697329c5a13c660f",
     "pipeline/usul_corpus/arabic.py": "d3fa63d357d9d548c8c5a9fbbf28e63505201c514ba1f8f9f17a049da8758a59",
     "pipeline/usul_corpus/encoders/__init__.py": "4a133416eed03eb1397708ac65895cf7802cd91866ab49428cd493a39d35fa11",
@@ -55482,7 +55484,7 @@
     "pipeline/usul_corpus/encoders/rajab_a9.py": "6189b8b1dcc9767188b840594fbf74a052a68a7d90aa54f726c21eb25a674747",
     "pipeline/usul_corpus/routing.py": "8ddad7fcb995d3f77cebd81be0886902c588f16b5a4e245f6719c6b69d3c3fb8",
     "pipeline/usul_corpus/signature_routing.py": "f9e3020a26971b7d84bc3ef35fc30377202439e4c94386bc6982174d8c01a120",
-    "pipeline/usul_corpus/takhrij.py": "c461eb1ab75c13df0fef737331f975866fa9f4365b9cd8bddb32707637cc2a51"
+    "pipeline/usul_corpus/takhrij.py": "59d9a1cdda12db29dc76664688caddcf6cee9caba0f1705dd68b991340aac4ab"
   },
   "questions_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 }
