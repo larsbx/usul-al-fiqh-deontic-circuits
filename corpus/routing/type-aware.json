@@ -55363,7 +55363,7 @@
   },
   "inputs_sha256": {
     "corpus/fatawa/takhrij/islamqa_tranche1.json": "2e1bce1bf3cacd32fa4a28f013f6dd0ced299b250da4c67561a5c671a19c2a00",
-    "corpus/lock.json": "797bd77bf0dbaf7583d291bcae7612e9da83759364f745981ed1c970a0dba055",
+    "corpus/lock.json": "9ca16fd44e3b87c50695b49b3a0e18f76449254142187e2ac4bda4d78c5b6801",
     "corpus/records/archive-manzuma-djvu.jsonl": "bf3b1ffe55721df374f129d8a345c945cfbd848556e989c5023f98d3477ba202",
     "corpus/records/archive-manzuma-tess.jsonl": "18018bf7958a0f8ed2034a141f707fe5c0cc0f1124d58831d4e433dbb8f39fde",
     "corpus/records/archive-pdf1995-tess.jsonl": "05131a016719223fbe1c4778a4ed284dbb5f3366f2f281d54a1cfb788a5f9ad1",
