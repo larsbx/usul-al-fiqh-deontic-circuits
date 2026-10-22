@@ -5,6 +5,8 @@ textual foundation (`nusus/foundation.json`) is checked against in test_nusus.py
 the dossier and the ḥadīth methodology cite (PR-40). A DOC or PDF witness stays excluded until its text
 derivation is pinned.
 All paged ref/excerpt pairs in corpus JSON using those witnesses are replayed.
+Research-question collations are also required: their own pinned receipts provision
+both the primary witness and external witnesses, then replay each quotation and locus.
 Other references are inventoried as excluded, never silently counted as passes.
 This is source fidelity under the existing Arabic-letters comparison, not review.
 """
@@ -161,11 +163,69 @@ def locked_text(wid: str, witness: dict, lock: dict, corpus: Path, cache: Path,
     return data.decode("utf-8")
 
 
+def collation_text(witness: dict, cache: Path, fetch_source: bool = False) -> str:
+    """Replay a research receipt without promoting it to the corpus registry or rewriting its pin.
+
+    `cache` is the regular corpus cache; external research bytes live beside it.
+    A cache hit still requires the declared size and digest. A cold/stale cache is
+    fetched only on request, and downloaded bytes must match before being saved.
+    """
+    group, name = witness["cache_group"], witness["cache_file"]
+    if group not in {"corpus", "rq05"} or not re.fullmatch(r"[A-Za-z0-9_.-]+", name) or name in {".", ".."}:
+        raise ValueError("invalid collation cache path")
+    if not re.match(r"https://raw\.githubusercontent\.com/[^/]+/[^/]+/[0-9a-f]{40}/", witness["url"]):
+        raise ValueError("collation URL must pin a full commit SHA")
+    path = (cache if group == "corpus" else cache.parent / group) / name
+    data = path.read_bytes() if path.exists() else None
+    if fetch_source and (data is None or not _matches(data, witness)):
+        data = fetch._get(witness["url"])
+        if not _matches(data, witness):
+            raise ValueError("downloaded collation bytes differ from receipt")
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(data)
+    if data is None:
+        raise ValueError("required collation witness unavailable; run make source-verify-fetch")
+    if not _matches(data, witness):
+        raise ValueError("cached collation bytes differ from receipt")
+    return data.decode("utf-8")
+
+
+def verify_collations(corpus: Path, cache: Path, fetch_source: bool = False) -> list[dict]:
+    """Every declared collation receipt is required, including witnesses without `ref` fields."""
+    path = corpus / "review/research_questions.json"
+    checks = []
+    if not path.exists():
+        return checks
+    for i, question in enumerate(json.loads(path.read_text(encoding="utf-8"))["questions"]):
+        if "collation" not in question:
+            continue
+        witnesses = question["collation"]["witnesses"]
+        if not witnesses:
+            raise ValueError(f"{question['id']}: declared collation has no witnesses")
+        for j, witness in enumerate(witnesses):
+            out = {"path": "review/research_questions.json", "pointer": f"/questions/{i}/collation/witnesses/{j}",
+                   "question": question["id"], "witness": witness["id"], "status": "failed"}
+            try:
+                text = collation_text(witness, cache, fetch_source)
+                error = check_quote(text, witness["excerpt_ar"], witness["locator"])
+                if error:
+                    raise ValueError(error)
+                out.update({k: witness[k] for k in ("url", "bytes", "sha256", "locator")})
+                out["excerpt_sha256"] = hashlib.sha256(witness["excerpt_ar"].encode()).hexdigest()
+                out["status"] = "verified"
+            except (ValueError, OSError, KeyError) as exc:
+                out["reason"] = str(exc)
+            finally:
+                arabic._indexed.cache_clear()
+            checks.append(out)
+    return checks
+
+
 def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
-    report = {"schema_version": 1, "scope": "reconciliation-and-foundation-witnesses-v2",
+    report = {"schema_version": 1, "scope": "reconciliation-foundation-and-collation-witnesses-v3",
               "comparison": "Arabic letters and standalone numerals; exact letter forms; whole words, no dropped negation before or qualifier after; closing-page locator",
               "status": "failed", "witnesses": [], "checks": [], "errors": [],
-              "outside_scope": ["JSONL records and non-ref quotation fields", "Quran aya, hadith number and Albani verdict replay (witnesses provisioned here; replayed by test_nusus.py)",
+              "outside_scope": ["JSONL records and non-ref quotation fields other than research collations", "Quran aya, hadith number and Albani verdict replay (witnesses provisioned here; replayed by test_nusus.py)",
                                 "interpretive relevance, formal correctness and scholarly validation"]}
     registry = json.loads((corpus / "registry.json").read_text(encoding="utf-8"))
     witnesses = {w["id"]: w for work in registry["works"] for w in work["witnesses"]}
@@ -176,6 +236,7 @@ def verify(corpus: Path, cache: Path, fetch_source: bool = False) -> dict:
         report["errors"].append(str(exc))
         return report
     rows = list(excerpts(corpus))
+    report["checks"].extend(verify_collations(corpus, cache, fetch_source))
     # Group verification to bound the memory used by large full-witness indexes.
     for wid in sorted(required):
         receipt = {"witness": wid, "status": "failed"}
@@ -240,3 +301,4 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
