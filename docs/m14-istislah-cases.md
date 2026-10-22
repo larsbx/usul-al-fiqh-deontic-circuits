@@ -105,10 +105,23 @@ and four failures: stale M8 inventory and scope counts, a stale typed-routing in
 and the ambiguous English gloss “stipulates” in the tatarrus scenario.
 The inventories and receipt have been regenerated; “assumes” now describes the hypothetical
 without suggesting a technical stipulation. No candidate facts, source pins or stances changed.
-The repaired head must pass the full CI gates before merging PR #129.
+The full corpus gate for the repaired head passed at `b5f3831`; see the final validation record below.
 
 Local generated-output replay also found the fatāwā bank comparison missing the new
 `istislah_furu` bank. Its summary now includes five cases, with no modern case changes.
 The fatāwā report was regenerated from the existing report/compare functions; local
 `--check` passed without fetched IslamQA answers, so external quotation replay remains
 the CI gate (already passed at `9fc0e70` for these unchanged modern cases).
+
+## Final validation for PR #129
+
+At `b5f3831`, the full corpus CI job passed: **8,062 tests passed, 251 explicitly
+reported source exclusions**, required locked-source verification, committed and external-source
+integration, and `make validate generated` for all 53,673 records.
+Lean/no-sorry (including all 270 M14 differential inputs), TLA+, Prolog fixtures and
+semantic-development CI passed at `9fc0e70`. Their executable code, formal files,
+fixtures and semantic-development inputs are unchanged in the repair commits.
+Their latest reruns remain queued as of this validation record; this is not a claim
+that those reruns completed. Roadmap consistency also passes locally on the repaired branch.
+The final update changes validation documentation only. All five interpretations remain
+candidates, with zero reviewed conclusions and the same open decisions listed above.
