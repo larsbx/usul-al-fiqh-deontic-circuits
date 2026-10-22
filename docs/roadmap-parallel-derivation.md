@@ -1,5 +1,13 @@
 # Derivation method and the parallel attack on the source texts
 
+PR-34 follow-up (2026-10-22): `corpus/reconciliation/report.json` now exposes
+`search_obligations`, a derived queue of 154 unsupported typed ruling sides across
+131 weighed cases, each tied to the recorded position receipt. The 103 cases
+without a search record remain pinned. Existing entry notes are copied as
+`entry_note_only`, never promoted to per-side coverage or scholarly acceptance.
+All 2,728 policy and 682 attribution resolutions are preserved; actual searches,
+stable position IDs, source review and the remaining refactor stages stay open.
+
 M14 update (2026-10-21): five selected al-Mustaṣfā examples now have candidate
 segmentation receipts at `corpus/segmentation/openiti-mustasfa-shamela5459-istislah.json`.
 Offsets, hashes, closing-page locators and quotations replay without optional source skips.
