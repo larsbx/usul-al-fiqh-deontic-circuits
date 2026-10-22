@@ -1,5 +1,13 @@
 # Derivation method and the parallel attack on the source texts
 
+M14 update (2026-10-21): five selected al-Mustaṣfā examples now have candidate
+segmentation receipts at `corpus/segmentation/openiti-mustasfa-shamela5459-istislah.json`.
+Offsets, hashes, closing-page locators and quotations replay without optional source skips.
+This is a selected-case profile, not a whole-chapter census; local identifiers are editorial.
+Unstated attributes remain partial situations and are checked over all typed completions.
+No stance is selected and no review status is promoted. See [the case audit](m14-istislah-cases.md)
+and [M14](roadmap-hanbali-usul-formalization.md#m14--maqāṣid-al-sharīʿa--m3-m5).
+
 The method itself (how a ruling in a text is derived by the kernel, checked, extended and governed) is specified in [`architecture/derivation-method.md`](architecture/derivation-method.md). Part II maps the 138 registered text witnesses (89 of them committed under [`corpus/texts`](../corpus/texts/README.md); 38 are held `cache_only` by the [PR #88 publication audit](architecture/pr88-source-publication-audit-2026-10-15.md)) onto the roles the method knows. Part III plans running the method over them in parallel, with the write isolation and integration discipline the parallel tranche 3 (PRs #31, #32) showed to be necessary.
 
 Nothing here changes a status. Every artifact the plan produces is `candidate`, and every interpretive commitment goes to the review gate ([schemata.md](architecture/schemata.md#governance-where-the-explanations-live-and-why-there)).

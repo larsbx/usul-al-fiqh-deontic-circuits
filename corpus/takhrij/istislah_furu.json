@@ -1,0 +1,95 @@
+{
+  "suite": "istislah",
+  "status": "candidate",
+  "provenance": "Five selected al-Ghazālī examples, replayed from the pinned al-Mustaṣfā v01 p174–177. Derivable means the conditional mustasfa reading agrees with the annotated conclusion. Unsettled fields are universally quantified, never filled as facts. rawda/mustasfa/malik remain unresolved; corpus/typing/istislah-cases.json compares all three. Review pending. Scoped component checks are excluded from whole-unit routing labels.",
+  "cases": [
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00001",
+      "encoder": "istislah",
+      "class": "derivable",
+      "facts": {
+        "maslaha_shahada": "ilgha",
+        "istislah_stance": "mustasfa"
+      },
+      "expected": false,
+      "routing_label": false,
+      "quote": "فهذا قول باطل ومخالف لنص الكتاب بالمصلحة وفتح هذا الباب يؤدي إلى تغيير جميع حدود الشرائع ونصوصها بسبب تغير الأحوال.",
+      "note": "Candidate source-author reading only, not a reviewed ruling or normative stance selection. A wealthy ruler is directed to fast for two consecutive months after intercourse during a Ramadan day; the proposed deterrence rationale bypasses manumission despite his means. Al-Ghazālī rejects that rationale as contrary to the text. Rank, certainty and universality are not assigned. They are immaterial once shahada=ilgha; check all twelve completions. Source receipt: corpus/segmentation/openiti-mustasfa-shamela5459-istislah.json (king_fast); existing theorem: Usul.Readings.Maqasid.kaffarat_al_malik.",
+      "quantified_facts": [
+        "maslaha_rutba",
+        "maslaha_qatiyya",
+        "maslaha_kulliyya"
+      ]
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00002",
+      "encoder": "istislah",
+      "class": "derivable",
+      "facts": {
+        "maslaha_shahada": "irsal",
+        "maslaha_rutba": "daruri",
+        "maslaha_qatiyya": true,
+        "maslaha_kulliyya": true,
+        "istislah_stance": "mustasfa"
+      },
+      "expected": true,
+      "routing_label": false,
+      "quote": "فهذا مثال مصلحة غير مأخوذة بطريق القياس على أصل معين.",
+      "note": "Candidate source-author reading only, not a reviewed ruling or normative stance selection. The hypothetical assumes that refraining from striking the shield leads to the destruction of all Muslims, including the captives. The stated purpose is reducing otherwise unavoidable loss; the particular means lacks a specific analogical precedent. The modeled true value for certainty covers certainty or near-certainty (p177), not ordinary probability. At p177 al-Ghazālī expressly leaves the issue within ijtihad and allows the possibility of prohibition. The positive guard evaluates the formal reading; it does not establish a reviewed authorial ruling. Source receipt: corpus/segmentation/openiti-mustasfa-shamela5459-istislah.json (tatarrus); existing theorem: Usul.Readings.Maqasid.tatarrus."
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00003",
+      "encoder": "istislah",
+      "class": "derivable",
+      "facts": {
+        "maslaha_shahada": "irsal",
+        "maslaha_qatiyya": false,
+        "istislah_stance": "mustasfa"
+      },
+      "expected": false,
+      "routing_label": false,
+      "quote": "إذ لا يحل رمي الترس إذ لا ضرورة فبنا غنية عن القلعة فنعدل عنها إذ لم نقطع بظفرنا بها؛ لأنها ليست قطعية بل ظنية،",
+      "note": "Candidate source-author reading only, not a reviewed ruling or normative stance selection. The fortress can be left alone: taking it is unnecessary and victory is uncertain. Both limitations are explicit, not just the certainty limitation used by the existing qala theorem. No haji/tahsini rank is inferred from the denial of necessity. All ranks are checked as a conservative over-approximation, including daruri, which the source denies for this case. Universality is not stated; both Boolean values are checked. Source receipt: corpus/segmentation/openiti-mustasfa-shamela5459-istislah.json (fortress); existing theorem: Usul.Readings.Maqasid.qala.",
+      "quantified_facts": [
+        "maslaha_rutba",
+        "maslaha_kulliyya"
+      ]
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00004",
+      "encoder": "istislah",
+      "class": "derivable",
+      "facts": {
+        "maslaha_shahada": "irsal",
+        "maslaha_kulliyya": false,
+        "istislah_stance": "mustasfa"
+      },
+      "expected": false,
+      "routing_label": false,
+      "quote": "لأنها ليست كلية إذ يحصل بها هلاك عدد محصور، وليس ذلك كاستئصال كافة المسلمين؛ ولأنه ليس يتعين واحد للإغراق إلا أن يتعين بالقرعة ولا أصل لها.",
+      "note": "Candidate source-author reading only, not a reviewed ruling or normative stance selection. A limited group on a ship would survive by casting one person overboard. Al-Ghazālī denies universality and additionally objects that no individual is designated except by a lottery lacking a basis. The encoder captures the universality objection only; designation and lottery are outside its fields. Rank and certainty are left unset; a hypothetical promise of survival is not silently turned into a sourced certainty judgment. Source receipt: corpus/segmentation/openiti-mustasfa-shamela5459-istislah.json (ship); existing theorem: Usul.Readings.Maqasid.safina.",
+      "quantified_facts": [
+        "maslaha_rutba",
+        "maslaha_qatiyya"
+      ]
+    },
+    {
+      "far": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00005",
+      "encoder": "istislah",
+      "class": "derivable",
+      "facts": {
+        "maslaha_shahada": "irsal",
+        "maslaha_kulliyya": false,
+        "istislah_stance": "mustasfa"
+      },
+      "expected": false,
+      "routing_label": false,
+      "quote": "وكذلك جماعة في مخمصة لو أكلوا واحدا بالقرعة لنجوا فلا رخصة فيه؛ لأن المصلحة ليست كلية،",
+      "note": "Candidate source-author reading only, not a reviewed ruling or normative stance selection. A limited group in famine would survive by eating one member selected by lot. The text explicitly denies a concession because the proposed benefit is not universal. Rank and certainty are not assigned; all six completions are checked. The following discussion of removing diseased tissue or a piece of one's own flesh is a distinct example and excluded from this segment. Source receipt: corpus/segmentation/openiti-mustasfa-shamela5459-istislah.json (famine); existing theorem: Usul.Readings.Maqasid.safina.",
+      "quantified_facts": [
+        "maslaha_rutba",
+        "maslaha_qatiyya"
+      ]
+    }
+  ]
+}

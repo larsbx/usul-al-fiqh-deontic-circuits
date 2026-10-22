@@ -1,13 +1,13 @@
 {
- "total": 1258,
+ "total": 1263,
  "classes": {
-  "derivable": 512,
+  "derivable": 517,
   "genuine_ikhtilaf": 684,
   "missing_fact": 4,
   "missing_rule": 57,
   "segmentation_error": 1
  },
- "coverage": 0.951,
+ "coverage": 0.952,
  "decided_coverage": 0.894,
  "disputed": 684,
  "encoding_error": 0,
@@ -364,6 +364,9 @@
   },
   "cause_on_certainty": {
    "genuine_ikhtilaf": 1
+  },
+  "istislah": {
+   "derivable": 5
   },
   "maqasid_tarjih": {
    "derivable": 2

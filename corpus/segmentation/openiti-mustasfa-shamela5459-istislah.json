@@ -1,0 +1,231 @@
+{
+  "format": "istislah-cases/v1",
+  "status": "candidate",
+  "source": {
+    "witness": "openiti-mustasfa-shamela5459",
+    "url": "https://raw.githubusercontent.com/OpenITI/0525AH/6290621b58e063ed1aa47ffd0a6fc1630191e7cb/data/0505Ghazali/0505Ghazali.Mustasfa/0505Ghazali.Mustasfa.Shamela0005459-ara1",
+    "bytes": 1807610,
+    "sha256": "59cda7d5424b26ab73aa2d7d8130d1fbe28fc465ab6075d759dc782ebe1697ac"
+  },
+  "span_basis": "Unicode code-point offsets in the complete pinned UTF-8 witness, end exclusive; span sha256 hashes raw UTF-8 bytes. OpenITI markers close pages. Local m00001..m00005 identifiers are editorial, not source numbering.",
+  "scope": "Five selected examples only, not a complete segmentation of the chapter. Facts are candidate interpretations of cited evidence. mustasfa identifies the author reading tested, never a normative choice. No reviewed conclusions are recorded.",
+  "stance_sources": {
+    "rawda": "src:openiti-rawda-shamela12010/v01:p482",
+    "mustasfa": "src:openiti-mustasfa-shamela5459/v01:p176",
+    "malik": "src:openiti-rawda-shamela12010/v01:p482"
+  },
+  "cases": [
+    {
+      "id": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00001",
+      "label": "king_fast",
+      "heading_ar": "كفارة الملك",
+      "source_span": {
+        "start": 459740,
+        "end": 460271,
+        "sha256": "1155c42621276b4445dc6328224cac7b34742c4a67de8cc592ed88a4963b66c5",
+        "page_span": [
+          174,
+          174
+        ]
+      },
+      "evidence": [
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p174",
+          "excerpt_ar": "فهذا قول باطل ومخالف لنص الكتاب بالمصلحة وفتح هذا الباب يؤدي إلى تغيير جميع حدود الشرائع ونصوصها بسبب تغير الأحوال."
+        }
+      ],
+      "stated_scenario": "A wealthy ruler is directed to fast for two consecutive months after intercourse during a Ramadan day; the proposed deterrence rationale bypasses manumission despite his means. Al-Ghazālī rejects that rationale as contrary to the text.",
+      "interpretation": {
+        "status": "candidate",
+        "encoder": "istislah",
+        "facts": {
+          "maslaha_shahada": "ilgha"
+        },
+        "expected_under_mustasfa": false,
+        "theorem": "Usul.Readings.Maqasid.kaffarat_al_malik"
+      },
+      "uncertainty": [
+        "Rank, certainty and universality are not assigned. They are immaterial once shahada=ilgha; check all twelve completions."
+      ],
+      "review": {
+        "status": "pending",
+        "conclusion": null
+      }
+    },
+    {
+      "id": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00002",
+      "label": "tatarrus",
+      "heading_ar": "التترس",
+      "source_span": {
+        "start": 464600,
+        "end": 465412,
+        "sha256": "ae4f4cee22ae15ca4874a2841863a0163300d5e266d6f5cccd23732cace4c784",
+        "page_span": [
+          175,
+          176
+        ]
+      },
+      "evidence": [
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p176",
+          "excerpt_ar": "فهذا مثال مصلحة غير مأخوذة بطريق القياس على أصل معين."
+        },
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p176",
+          "excerpt_ar": "وانقدح اعتبارها باعتبار ثلاثة أوصاف أنها ضرورة قطعية كلية،"
+        },
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p177",
+          "excerpt_ar": "ونحن إنما نجوز ذلك عند القطع أو ظن قريب من القطع،"
+        },
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p177",
+          "excerpt_ar": "قلنا: لهذا نرى المسألة في محل الاجتهاد، ولا يبعد المنع من ذلك، ويتأيد بمسألة السفينة"
+        }
+      ],
+      "stated_scenario": "The hypothetical assumes that refraining from striking the shield leads to the destruction of all Muslims, including the captives. The stated purpose is reducing otherwise unavoidable loss; the particular means lacks a specific analogical precedent.",
+      "interpretation": {
+        "status": "candidate",
+        "encoder": "istislah",
+        "facts": {
+          "maslaha_shahada": "irsal",
+          "maslaha_rutba": "daruri",
+          "maslaha_qatiyya": true,
+          "maslaha_kulliyya": true
+        },
+        "expected_under_mustasfa": true,
+        "theorem": "Usul.Readings.Maqasid.tatarrus"
+      },
+      "uncertainty": [
+        "The modeled true value for certainty covers certainty or near-certainty (p177), not ordinary probability.",
+        "At p177 al-Ghazālī expressly leaves the issue within ijtihad and allows the possibility of prohibition. The positive guard evaluates the formal reading; it does not establish a reviewed authorial ruling."
+      ],
+      "review": {
+        "status": "pending",
+        "conclusion": null
+      }
+    },
+    {
+      "id": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00003",
+      "label": "fortress",
+      "heading_ar": "القلعة",
+      "source_span": {
+        "start": 465412,
+        "end": 465575,
+        "sha256": "6e7a146d0d0952d7ce6bcadac1fd13583261904d02a85b325f83e8242a584359",
+        "page_span": [
+          176,
+          176
+        ]
+      },
+      "evidence": [
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p176",
+          "excerpt_ar": "إذ لا يحل رمي الترس إذ لا ضرورة فبنا غنية عن القلعة فنعدل عنها إذ لم نقطع بظفرنا بها؛ لأنها ليست قطعية بل ظنية،"
+        }
+      ],
+      "stated_scenario": "The fortress can be left alone: taking it is unnecessary and victory is uncertain. Both limitations are explicit, not just the certainty limitation used by the existing qala theorem.",
+      "interpretation": {
+        "status": "candidate",
+        "encoder": "istislah",
+        "facts": {
+          "maslaha_shahada": "irsal",
+          "maslaha_qatiyya": false
+        },
+        "expected_under_mustasfa": false,
+        "theorem": "Usul.Readings.Maqasid.qala",
+        "excluded_values": {
+          "maslaha_rutba": [
+            "daruri"
+          ]
+        }
+      },
+      "uncertainty": [
+        "No haji/tahsini rank is inferred from the denial of necessity. All ranks are checked as a conservative over-approximation, including daruri, which the source denies for this case.",
+        "Universality is not stated; both Boolean values are checked."
+      ],
+      "review": {
+        "status": "pending",
+        "conclusion": null
+      }
+    },
+    {
+      "id": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00004",
+      "label": "ship",
+      "heading_ar": "السفينة",
+      "source_span": {
+        "start": 465575,
+        "end": 465798,
+        "sha256": "59aa7d155e1dff9e57fc5ba54f5c5f119447e4565f9af956b98fb7fdbe9729ee",
+        "page_span": [
+          176,
+          176
+        ]
+      },
+      "evidence": [
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p176",
+          "excerpt_ar": "لأنها ليست كلية إذ يحصل بها هلاك عدد محصور، وليس ذلك كاستئصال كافة المسلمين؛ ولأنه ليس يتعين واحد للإغراق إلا أن يتعين بالقرعة ولا أصل لها."
+        }
+      ],
+      "stated_scenario": "A limited group on a ship would survive by casting one person overboard. Al-Ghazālī denies universality and additionally objects that no individual is designated except by a lottery lacking a basis.",
+      "interpretation": {
+        "status": "candidate",
+        "encoder": "istislah",
+        "facts": {
+          "maslaha_shahada": "irsal",
+          "maslaha_kulliyya": false
+        },
+        "expected_under_mustasfa": false,
+        "theorem": "Usul.Readings.Maqasid.safina"
+      },
+      "uncertainty": [
+        "The encoder captures the universality objection only; designation and lottery are outside its fields.",
+        "Rank and certainty are left unset; a hypothetical promise of survival is not silently turned into a sourced certainty judgment."
+      ],
+      "review": {
+        "status": "pending",
+        "conclusion": null
+      }
+    },
+    {
+      "id": "ghazali.mustasfa.openiti_mustasfa_shamela5459.m00005",
+      "label": "famine",
+      "heading_ar": "المخمصة",
+      "source_span": {
+        "start": 465798,
+        "end": 465889,
+        "sha256": "9e598a85879e23d0013fc567aa7ecfc8d8664424566d8e134fab0843ff2d1517",
+        "page_span": [
+          176,
+          176
+        ]
+      },
+      "evidence": [
+        {
+          "ref": "src:openiti-mustasfa-shamela5459/v01:p176",
+          "excerpt_ar": "وكذلك جماعة في مخمصة لو أكلوا واحدا بالقرعة لنجوا فلا رخصة فيه؛ لأن المصلحة ليست كلية،"
+        }
+      ],
+      "stated_scenario": "A limited group in famine would survive by eating one member selected by lot. The text explicitly denies a concession because the proposed benefit is not universal.",
+      "interpretation": {
+        "status": "candidate",
+        "encoder": "istislah",
+        "facts": {
+          "maslaha_shahada": "irsal",
+          "maslaha_kulliyya": false
+        },
+        "expected_under_mustasfa": false,
+        "theorem": "Usul.Readings.Maqasid.safina"
+      },
+      "uncertainty": [
+        "Rank and certainty are not assigned; all six completions are checked.",
+        "The following discussion of removing diseased tissue or a piece of one's own flesh is a distinct example and excluded from this segment."
+      ],
+      "review": {
+        "status": "pending",
+        "conclusion": null
+      }
+    }
+  ]
+}

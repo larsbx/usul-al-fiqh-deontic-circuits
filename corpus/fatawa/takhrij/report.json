@@ -71,6 +71,15 @@
       "gaps_open": 4,
       "encoders": 4
     },
+    "istislah_furu": {
+      "total": 5,
+      "coverage": 1.0,
+      "decided_coverage": 1.0,
+      "disputed": 0,
+      "encoding_error": 0,
+      "gaps_open": 0,
+      "encoders": 1
+    },
     "maqasid_furu": {
       "total": 2,
       "coverage": 1.0,
