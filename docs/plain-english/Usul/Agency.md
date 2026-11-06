@@ -56,7 +56,8 @@ states, which are included in the finite comparison to test both implementations
 
 Revocation, notice, and withdrawal may occur after acceptance. They do not erase the historical
 receipt. Consequently, a valid invariant is authority **at the accepted event**, not authority
-in every subsequent state. The model does not decide restitution, third-party effects, or the
+in every subsequent state. Receipt persistence does not decide whether the underlying act is void
+(al-bāṭil, الباطل). The model does not decide restitution, third-party effects, or the
 continuing legal consequences of a completed transaction.
 
 ## 3. History and reachability theorems
@@ -130,4 +131,5 @@ It checks finite executable conformance; it is not a kernel-checked proof of the
 the Lean compiler, a future application, or the correctness of the source interpretation.
 
 Delegation, asymmetric grants, multiple tasks, partial revocation, third-party rights, death,
-incapacity, compensation, and open or disputed factual evidence remain outside this pilot.
+incapacity, financial liability and compensation (al-ḍamān, الضمان), and open or disputed
+factual evidence remain outside this pilot.

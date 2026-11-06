@@ -10,13 +10,15 @@ See `docs/research/agency-source-profile.md` for the source ledger and candidate
 `immediate` and `onKnowledge` keep the two reported revocation positions separate. Requiring
 both joint actors to retain effective authority in a mixed-knowledge situation is a candidate
 composition of the passages, not a separately quoted ruling. Independent permission is
-symmetric; asymmetric grants, delegation, death, incapacity, compensation and third parties
-are outside this pilot. At-most-once acceptance and no reappointment are implementation
+symmetric; asymmetric grants, delegation, death, incapacity, financial liability and
+compensation (al-ḍamān, الضمان), and third-party effects are outside this pilot.
+At-most-once acceptance and no reappointment are implementation
 assumptions for the single fixed task, not claims about all wakāla contracts.
 
 The state contains no unbounded history, so its 256 raw states are exhaustible. `Run` carries
 arbitrarily long histories on the proof side. In particular, authority is checked at the act;
-later revocation or notification does not retroactively invalidate an accepted receipt.
+later revocation or notification preserves the recorded receipt. Receipt persistence does
+not decide whether the underlying act is void (al-bāṭil, الباطل).
 -/
 
 namespace Usul.Agency
