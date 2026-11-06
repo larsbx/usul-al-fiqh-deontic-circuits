@@ -1,0 +1,71 @@
+name: Agency Lean and Quint
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/agency.yml'
+      - 'Makefile'
+      - 'formal/check-agency-sources.mjs'
+      - 'formal/check-agency-axioms.mjs'
+      - 'formal/lean/**'
+      - 'formal/quint/**'
+      - 'corpus/registry.json'
+      - 'corpus/lock.json'
+      - 'corpus/texts/openiti-buhuti-kashshaf-shamela21642.txt'
+      - 'corpus/texts/openiti-ibnqudama-mughni-shamela8463.txt'
+      - 'docs/research/agency-*.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/agency.yml'
+      - 'Makefile'
+      - 'formal/check-agency-sources.mjs'
+      - 'formal/check-agency-axioms.mjs'
+      - 'formal/lean/**'
+      - 'formal/quint/**'
+      - 'corpus/registry.json'
+      - 'corpus/lock.json'
+      - 'corpus/texts/openiti-buhuti-kashshaf-shamela21642.txt'
+      - 'corpus/texts/openiti-ibnqudama-mughni-shamela8463.txt'
+      - 'docs/research/agency-*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  agency:
+    name: Agency source, Lean, Quint, and parity
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Restore only the pilot's existing pinned witnesses
+        run: git lfs pull --include="corpus/texts/openiti-buhuti-kashshaf-shamela21642.txt,corpus/texts/openiti-ibnqudama-mughni-shamela8463.txt"
+      - name: Verify source bytes and passage anchors
+        run: node formal/check-agency-sources.mjs
+      - name: Install elan for the repository's pinned Lean version
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build all kernel modules and existing Lean checks
+        run: make lean
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Check scenarios, exhaustive transition parity, negative controls, and axioms
+        run: make agency
+      - name: Retain the verification receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agency-verification
+          path: |
+            .cache/agency/
+            formal/quint/.out/
+          if-no-files-found: error

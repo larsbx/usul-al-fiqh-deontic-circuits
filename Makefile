@@ -1,11 +1,12 @@
 # Formalization pipeline: corpus → records → Lean / TLA+ checks.
 PY      ?= python3
+NODE    ?= node
 TLA_JAR ?= .cache/tla2tools.jar
 TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar
 
 .PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
-all: source-verify test validate generated lean tla
+all: source-verify test validate generated lean tla agency
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
@@ -30,6 +31,13 @@ generated: ; cd pipeline && $(PY) -m usul_corpus.istislah_cases && cd .. && $(PY
 lean:      ; cd formal/lean && lake build && lake env lean scripts/ExportTypes.lean && git diff --exit-code ../../examples/v41_types.pl
 # Mathlib, pinned (formal/lean-mathlib); not part of `all`, the kernel stays Mathlib-free.
 lean-mathlib: ; cd formal/lean-mathlib && lake exe cache get && lake build
+.PHONY: agency
+# Install the pinned tool first: npm --prefix formal/quint ci
+# Missing tools, source bytes, or parity evidence fail this gate.
+agency:
+	$(NODE) formal/check-agency-sources.mjs
+	cd formal/quint && npm run check
+	$(NODE) formal/check-agency-axioms.mjs
 prolog-oracle: ; formal/oracle/run_all.sh   # needs swipl: independent Prolog mirror of the Lean kernels
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh
