@@ -47,7 +47,8 @@ This lane is explicitly downstream of canonical/test data. Its invariants are no
 - Qawāʿid (the foundation): [`docs/architecture/schemata.md`](docs/architecture/schemata.md): al-Saʿdī's rules, their readings, and the eight shapes under them
 - Types: [`docs/architecture/judgement.md`](docs/architecture/judgement.md): `Usul.Judgement` and `Usul.Typing`, the judgement form and what each encoder's output answers
 - Categories: [`docs/architecture/category-theory.md`](docs/architecture/category-theory.md): `Usul.Cat`, downstream of the types (`Usul.Cat.Typing`: L-QIY-1 over typed encoders, the category of typed encoders, pinned by `test_layers.py`): the scales as thin categories (σ as a duality, the ḥadīth seam as a functor), qiyās as factorization (L-QIY-1), the gluing lemma with ikhtilāf as obstruction (M10), and the carriers as institutions (M11)
-- `make all` runs the corpus tests, record validation, the generated-file drift check, the Lean build and TLC. `make fetch build` refreshes the corpus cache and records.
+- Joint agency: [Lean–Quint pilot](docs/research/agency-pilot.md), with a [candidate source profile](docs/research/agency-source-profile.md), arbitrary-history proofs, exhaustive finite transition comparison, and negative controls. Install its pinned tooling with `npm --prefix formal/quint ci`.
+- `make all` runs source verification, the corpus tests, record validation, the generated-file drift check, the Lean build, TLC, and the agency Lean–Quint gate. `make fetch build` refreshes the corpus cache and records.
 
 ## al-Albānī ḥadīth-methodology track
 

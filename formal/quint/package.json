@@ -1,0 +1,17 @@
+{
+  "name": "usul-agency-quint",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Pinned Quint checks for the finite joint-agency pilot",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "quint typecheck agency.qnt && quint typecheck table.qnt",
+    "test": "quint test agency.qnt --backend typescript --max-samples 1 --seed 20261106",
+    "check": "node check.mjs"
+  },
+  "devDependencies": {
+    "@informalsystems/quint": "0.33.1"
+  }
+}

@@ -10,6 +10,10 @@
 | `formal/lean/UsulTest/` | `**` |
 | `formal/lean-mathlib/` | `**` |
 | `formal/tla/` | `**` |
+| `formal/quint/` | `**` |
+| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs` |
+| `formal/lean/scripts/` | `ExportAgency.lean` |
+| `docs/research/` | `agency-source-profile.md`, `agency-pilot.md` |
 | `corpus/citations/` | `**` |
 | `corpus/dossier/` | `**` |
 | `corpus/fatawa/` | `**` |
@@ -203,6 +207,7 @@ routing experiments must not be attributed to this question-body annotation batc
 | M11 oracle | started | `semantic-categorical-oracle` `Oracle.Usul.*` advisory laws; three-way agreement on `grounded-v1.json` |
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 | M14 maqāṣid | **readings proved, two encoders, seven candidate cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 plus five source-located al-Mustaṣfā cases (31 conditional istiṣlāḥ completion checks); 0 reviewed new conclusions; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
+| M15 joint agency | **candidate implementation; interpretation review open** | `Usul.Agency`, `UsulTest.Agency`, and `formal/quint/`: two revocation profiles, joint/independent permission, arbitrary-history proofs, 13,312 finite transition inputs, source-byte and passage checks, and semantic negative controls. [Scope and reproduction](research/agency-pilot.md); [source profile](research/agency-source-profile.md). |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -540,6 +545,16 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 
 ---
 
+#### M15 · Joint-agency Lean–Quint pilot ⟵ M3, M6
+- **Scope (2026-11-06):** one principal, two agents, one task; symmetric independent permission; whole-mandate revocation and each agent's knowledge; withdrawal; explicit out-of-scope attempts. One appointment and at-most-once acceptance are implementation restrictions.
+- **Sources:** the existing locked al-Mughni witness, sections 3747 and 3776, and al-Buhuti's joint-agency paragraph at printed 3:472–473. [The profile](research/agency-source-profile.md) distinguishes source statements, reported alternatives, and the candidate mixed-knowledge composition. No source pin or accepted corpus proposition is changed.
+- **Implementation:** `Usul.Agency` proves coherence and constraints over arbitrary successful histories; the independent Quint relation is compared on all 4 configurations, 256 raw states, and 13 events. Declared scenarios and deliberately defective model variants test joint permission and revocation semantics. `make agency` requires actual Lean and Quint output and verified primary-source bytes.
+- **Acceptance:** the [reproduction guide](research/agency-pilot.md) separates kernel proofs, finite executable conformance, source-byte identity, and remaining interpretation/application obligations. The dedicated workflow retains verification receipts; source interpretation remains candidate.
+- **Next:** review mixed-knowledge and withdrawal compositions; add asymmetric permission only with explicit source/implementation treatment; then specify application refinement. Inheritance and hawala/guarantee modules remain proposed follow-ups, not coverage delivered here.
+- **Exit:** source-linked candidate models, kernel acceptance, complete declared finite comparison, and successful semantic negative controls. Scholarly acceptance and application refinement are separate exits.
+
+---
+
 ## 4. Dependency DAG
 
 ```mermaid
@@ -564,6 +579,8 @@ graph TD
   M2 --> M13[M13 Harness integration]
   M3 --> M14[M14 Maqāṣid]
   M5 --> M14
+  M3 --> M15[M15 Joint agency Lean and Quint]
+  M6 --> M15
 ```
 
 **Critical path:** M0 → M1 → M2 → M3 → M5 → M7 → M9 → M11.

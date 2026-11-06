@@ -9,6 +9,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | Module | Companion | Doc |
 | --- | --- | --- |
 | `Usul` | [Usul.md](Usul.md) | [doc](https://claude.ai/code/artifact/55366f5e-12b6-483d-b68b-0e3e3e0b5f01) |
+| `Usul.Agency` | [Usul/Agency.md](Usul/Agency.md) | pending |
 | `Usul.Cat` | [Usul/Cat.md](Usul/Cat.md) | [doc](https://claude.ai/code/artifact/09453465-8fc6-4318-920a-0651ba72289b) |
 | `Usul.Cat.Basic` | [Usul/Cat/Basic.md](Usul/Cat/Basic.md) | [doc](https://claude.ai/code/artifact/a533ef02-7b97-4fba-ba96-5b17b8d26312) |
 | `Usul.Cat.Carriers` | [Usul/Cat/Carriers.md](Usul/Cat/Carriers.md) | [doc](https://claude.ai/code/artifact/19bfc2ed-0683-44d4-b814-d83a6bee0dcb) |
@@ -104,6 +105,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | Module | Companion | Doc |
 | --- | --- | --- |
 | `UsulTest` | [UsulTest.md](UsulTest.md) | [doc](https://claude.ai/code/artifact/4b67fe61-8814-4251-a282-e3a2e086b76f) |
+| `UsulTest.Agency` | [UsulTest/Agency.md](UsulTest/Agency.md) | pending |
 | `UsulTest.Cat` | [UsulTest/Cat.md](UsulTest/Cat.md) | [doc](https://claude.ai/code/artifact/920fb122-37d2-4f62-9779-3391caf224f4) |
 | `UsulTest.CommandSchemata` | [UsulTest/CommandSchemata.md](UsulTest/CommandSchemata.md) | [doc](https://claude.ai/code/artifact/8c28fca3-bfbc-4361-8e00-1aaa2615fd2a) |
 | `UsulTest.EncoderTypes` | [UsulTest/EncoderTypes.md](UsulTest/EncoderTypes.md) | [doc](https://claude.ai/code/artifact/491f3492-5e85-4d4a-91bd-f5ef3528c244) |
@@ -146,6 +148,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 
 | Module | Companion | Doc |
 | --- | --- | --- |
+| `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
 
 ## UsulMathlib

@@ -1,0 +1,189 @@
+{
+  "schema": "agency-scenarios-v1",
+  "sourceProfile": "../../docs/research/agency-source-profile.md",
+  "description": "Manually declared expected outcomes, independent of both implementations. Events that are disabled produce -1; the next attempted event starts from the last accepted state. Configurations and states use the wire contract in README.md.",
+  "scenarios": [
+    {
+      "name": "beforeAppointment",
+      "claim": "Execution, revocation, notice, and withdrawal require their prerequisites; stuttering does not.",
+      "config": 0,
+      "events": ["executeA", "executeB", "executeJoint", "revoke", "notifyA", "notifyB", "withdrawA", "withdrawB", "stutter"],
+      "expected": [-1, -1, -1, -1, -1, -1, -1, -1, 0]
+    },
+    {
+      "name": "jointSoloARejected",
+      "claim": "A joint mandate does not authorize A to execute alone.",
+      "config": 0,
+      "events": ["appoint", "executeA"],
+      "expected": [1, -1]
+    },
+    {
+      "name": "jointSoloBRejected",
+      "claim": "The joint requirement applies symmetrically to B.",
+      "config": 0,
+      "events": ["appoint", "executeB"],
+      "expected": [1, -1]
+    },
+    {
+      "name": "jointExecution",
+      "claim": "Both authorized agents may jointly execute the scoped act.",
+      "config": 0,
+      "events": ["appoint", "executeJoint"],
+      "expected": [1, 193]
+    },
+    {
+      "name": "independentA",
+      "claim": "Explicit independent permission allows A to execute alone.",
+      "config": 1,
+      "events": ["appoint", "executeA"],
+      "expected": [1, 65]
+    },
+    {
+      "name": "independentB",
+      "claim": "Explicit independent permission allows B to execute alone.",
+      "config": 1,
+      "events": ["appoint", "executeB"],
+      "expected": [1, 129]
+    },
+    {
+      "name": "independentJoint",
+      "claim": "Independent permission does not prevent joint execution.",
+      "config": 1,
+      "events": ["appoint", "executeJoint"],
+      "expected": [1, 193]
+    },
+    {
+      "name": "immediateRevocationBeforeNotice",
+      "claim": "In the immediate profile, revocation blocks joint execution before either agent knows.",
+      "config": 0,
+      "events": ["appoint", "revoke", "executeJoint"],
+      "expected": [1, 3, -1]
+    },
+    {
+      "name": "immediateIndependentRevocation",
+      "claim": "In the immediate profile, lack of notice does not preserve either solo authority.",
+      "config": 1,
+      "events": ["appoint", "revoke", "executeA", "executeB"],
+      "expected": [1, 3, -1, -1]
+    },
+    {
+      "name": "knowledgeJointBeforeNotice",
+      "claim": "The alternative knowledge profile retains both authorities before notice.",
+      "config": 2,
+      "events": ["appoint", "revoke", "executeJoint"],
+      "expected": [1, 3, 195]
+    },
+    {
+      "name": "knowledgeIndependentBeforeNotice",
+      "claim": "The alternative knowledge profile retains independent authority before notice.",
+      "config": 3,
+      "events": ["appoint", "revoke", "executeA"],
+      "expected": [1, 3, 67]
+    },
+    {
+      "name": "noticeABreaksJoint",
+      "claim": "Notice to A prevents a later joint act in the knowledge profile.",
+      "config": 2,
+      "events": ["appoint", "revoke", "notifyA", "executeJoint"],
+      "expected": [1, 3, 7, -1]
+    },
+    {
+      "name": "noticeBBreaksJoint",
+      "claim": "Notice to B prevents a later joint act in the knowledge profile.",
+      "config": 2,
+      "events": ["appoint", "revoke", "notifyB", "executeJoint"],
+      "expected": [1, 3, 11, -1]
+    },
+    {
+      "name": "asymmetricNoticeA",
+      "claim": "Notice to A does not become knowledge of B; B's independent authority remains.",
+      "config": 3,
+      "events": ["appoint", "revoke", "notifyA", "executeA", "executeB"],
+      "expected": [1, 3, 7, -1, 135]
+    },
+    {
+      "name": "asymmetricNoticeB",
+      "claim": "Notice to B does not become knowledge of A; A's independent authority remains.",
+      "config": 3,
+      "events": ["appoint", "revoke", "notifyB", "executeB", "executeA"],
+      "expected": [1, 3, 11, -1, 75]
+    },
+    {
+      "name": "bothKnow",
+      "claim": "After both agents know of revocation, neither solo nor joint execution is authorized.",
+      "config": 3,
+      "events": ["appoint", "revoke", "notifyA", "notifyB", "executeA", "executeB", "executeJoint"],
+      "expected": [1, 3, 7, 15, -1, -1, -1]
+    },
+    {
+      "name": "withdrawalABreaksJoint",
+      "claim": "A's withdrawal prevents joint execution without granting B solo permission.",
+      "config": 0,
+      "events": ["appoint", "withdrawA", "executeJoint", "executeB"],
+      "expected": [1, 17, -1, -1]
+    },
+    {
+      "name": "withdrawalBBreaksJoint",
+      "claim": "B's withdrawal prevents joint execution without granting A solo permission.",
+      "config": 0,
+      "events": ["appoint", "withdrawB", "executeJoint", "executeA"],
+      "expected": [1, 33, -1, -1]
+    },
+    {
+      "name": "withdrawalIndependentA",
+      "claim": "A's withdrawal blocks A but leaves an independently authorized B able to execute.",
+      "config": 1,
+      "events": ["appoint", "withdrawA", "executeA", "executeB"],
+      "expected": [1, 17, -1, 145]
+    },
+    {
+      "name": "withdrawalIndependentB",
+      "claim": "B's withdrawal blocks B but leaves an independently authorized A able to execute.",
+      "config": 1,
+      "events": ["appoint", "withdrawB", "executeB", "executeA"],
+      "expected": [1, 33, -1, 97]
+    },
+    {
+      "name": "outsideScopeRejected",
+      "claim": "Independent permission changes the participants requirement, not the scope of the grant.",
+      "config": 1,
+      "events": ["appoint", "executeAOutsideScope", "executeBOutsideScope", "executeJointOutsideScope", "executeJoint"],
+      "expected": [1, -1, -1, -1, 193]
+    },
+    {
+      "name": "acceptedHistoryPersists",
+      "claim": "Later revocation, notice, and withdrawals do not erase an already accepted execution.",
+      "config": 1,
+      "events": ["appoint", "executeA", "revoke", "notifyA", "withdrawA", "notifyB", "withdrawB", "stutter"],
+      "expected": [1, 65, 67, 71, 87, 95, 127, 127]
+    },
+    {
+      "name": "oneModeledExecution",
+      "claim": "The pilot admits only one recorded execution, not repeated acts under the same grant.",
+      "config": 1,
+      "events": ["appoint", "executeA", "executeB", "executeJoint", "executeA"],
+      "expected": [1, 65, -1, -1, -1]
+    },
+    {
+      "name": "noRepeatedLifecycleEvents",
+      "claim": "Appointment, revocation, each notice, and each withdrawal are one-time events in this abstraction.",
+      "config": 3,
+      "events": ["appoint", "appoint", "revoke", "revoke", "notifyA", "notifyA", "notifyB", "notifyB", "withdrawA", "withdrawA", "withdrawB", "withdrawB", "stutter"],
+      "expected": [1, -1, 3, -1, 7, -1, 15, -1, 31, -1, 63, -1, 63]
+    },
+    {
+      "name": "noticeRequiresRevocation",
+      "claim": "The modeled notice is notice of an actual revocation; earlier notice attempts are disabled.",
+      "config": 3,
+      "events": ["appoint", "notifyA", "notifyB", "executeJoint"],
+      "expected": [1, -1, -1, 193]
+    },
+    {
+      "name": "withdrawalDespiteAbsentNotice",
+      "claim": "An agent's own withdrawal blocks execution even if that agent has not learned of revocation.",
+      "config": 3,
+      "events": ["appoint", "revoke", "withdrawA", "executeA", "executeB"],
+      "expected": [1, 3, 19, -1, 147]
+    }
+  ]
+}
