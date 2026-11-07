@@ -1,6 +1,7 @@
 # Mathlib, pinned beside the kernel
 
-The kernel (`formal/lean`) stays Mathlib-free, and `make lean` and CI never fetch Mathlib.
+The kernel (`formal/lean`) and its CI job stay Mathlib-free.
+The separate Mathlib bridge workflow runs when its package or shared audit inputs change.
 Mathlib is pinned in a sibling Lake package, `formal/lean-mathlib`. That package requires the
 kernel by path, so work that needs Mathlib's order, lattice or category theory starts there.
 It never starts in `usul`.
@@ -14,11 +15,11 @@ It never starts in `usul`.
 ## Use
 
 ```
-make lean-mathlib        # lake exe cache get && lake build, in formal/lean-mathlib
+make lean-mathlib        # fetch the bridge's Mathlib cache, build, and audit compiled axioms
 ```
 
-`lake exe cache get` downloads Mathlib's prebuilt `.olean` files for the pinned commit, so nothing
-in Mathlib is compiled locally. The download unpacks to several GB under
+`lake exe cache get` downloads prebuilt `.olean` files for the pinned commit and the bridge's
+current Mathlib imports. The download unpacks under
 `formal/lean-mathlib/.lake/`, which is git-ignored.
 
 ## The hook
