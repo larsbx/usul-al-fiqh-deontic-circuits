@@ -60,12 +60,30 @@ jobs:
         run: npm ci
       - name: Check scenarios, exhaustive transition parity, negative controls, and axioms
         run: make agency
+      - name: Check candidate asymmetric permissions and the symmetric projection
+        run: make agency-mask
       - name: Retain the verification receipts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: agency-verification
           path: |
-            .cache/agency/
-            formal/quint/.out/
+            .cache/agency/PrintAgencyAxioms.lean
+            .cache/agency/axioms-verification.json
+            .cache/agency/source-verification.json
+            formal/quint/.out/report.json
+            formal/quint/.out/lean-transitions.csv
+            formal/quint/.out/quint-transitions.csv
+            formal/quint/.out/quint-transitions.itf.json
+          if-no-files-found: error
+          include-hidden-files: true
+      - name: Retain candidate permission-mask evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: agency-mask-verification
+          path: |
+            .cache/agency-mask/report.json
+            .cache/agency-mask/lean-transitions.csv
+            .cache/agency-mask/quint-transitions.json
+          include-hidden-files: true
           if-no-files-found: error

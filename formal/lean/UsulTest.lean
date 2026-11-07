@@ -26,3 +26,4 @@ import UsulTest.Interval
 import UsulTest.TaklifBehaviour
 import UsulTest.Institutions
 import UsulTest.Agency
+import UsulTest.AgencyMask

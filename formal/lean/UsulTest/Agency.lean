@@ -81,7 +81,7 @@ def historicalReceipt : State :=
   { initial with
     appointed := true, revoked := true, knownA := true, withdrawnB := true, accepted := .joint }
 
-/-- A valid receipt records the time of the act; later termination does not erase history. -/
+/-- Later termination preserves the modeled execution receipt. -/
 theorem acceptance_survives_later_termination :
     Run jointImmediate initial
       [.appoint, .executeJoint, .revoke, .notifyA, .withdrawB] historicalReceipt :=
@@ -91,5 +91,16 @@ theorem historical_execution_count :
     executions [.appoint, .executeJoint, .revoke, .notifyA, .withdrawB] = 1 := by
   exact (run_accepted_iff_one_execution acceptance_survives_later_termination).mp
     (by decide)
+
+/-- A raw state can carry a coherent-looking receipt without an initial-state history. -/
+theorem raw_receipt_does_not_establish_reachability :
+    let supplied := { initial with appointed := true, accepted := .a }
+    Coherent supplied ∧ replay jointImmediate supplied [.stutter] = some supplied ∧
+      ¬ Reachable jointImmediate supplied := by
+  dsimp
+  refine ⟨by simp [Coherent, initial], rfl, ?_⟩
+  intro h
+  have hj := reachable_joint_only (c := jointImmediate) rfl h
+  simp [JointOnly] at hj
 
 end UsulTest.Agency

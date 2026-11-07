@@ -48,7 +48,7 @@ runs remove their temporary files.
 | Declared scenarios | 26 cases in `scenarios.json` | Manually written expected outcomes are checked in Quint and against both exported tables. |
 | One-step parity | **13,312 inputs** | Every one of 4 configurations × 256 raw state codes × 13 event codes is compared, including disabled transitions. |
 | Complete reachable graph | **244 configuration/state pairs and 750 enabled edges** | Starting from state 0 in each configuration, breadth-first traversal checks every reachable edge and state against the stated safety requirements. Stuttering edges are included. |
-| Negative controls | 3 deliberately faulty Quint models | The same declared scenarios reject removal of the joint requirement and both directions of confusing revocation with knowledge. |
+| Negative controls | 5 deliberately faulty Quint models | Declared scenarios reject dropping the joint requirement, conflating revocation with knowledge in either direction, ignoring personal withdrawal, and erasing a receipt on revocation. |
 | Sampled action smoke check | 100 runs of at most 20 steps, seed `20261106` | Exercises the stateful wrapper and its safety monitor. This is sampling; the exhaustive checks above do not rely on its coverage. |
 
 The reachable graph has 41 states/123 enabled edges for immediate revocation
@@ -179,6 +179,8 @@ identified clause, typechecks the mutant, and reruns a named scenario:
 | Remove independent permission from the solo guard | `jointSoloARejected` |
 | Replace immediate revocation with the agent's knowledge | `immediateRevocationBeforeNotice` |
 | Replace the knowledge profile with immediate revocation | `knowledgeJointBeforeNotice` |
+| Ignore personal withdrawal in the authority guard | `withdrawalDespiteAbsentNotice` |
+| Clear the recorded execution on revocation | `acceptedHistoryPersists` |
 
 The gate requires the expected scenario to report Quint's assertion-failure
 diagnostic, not merely a nonzero process exit. A parser error, failed tool
