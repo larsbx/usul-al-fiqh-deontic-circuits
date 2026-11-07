@@ -66,6 +66,12 @@ jobs:
         with:
           name: agency-verification
           path: |
-            .cache/agency/
-            formal/quint/.out/
+            .cache/agency/PrintAgencyAxioms.lean
+            .cache/agency/axioms-verification.json
+            .cache/agency/source-verification.json
+            formal/quint/.out/report.json
+            formal/quint/.out/lean-transitions.csv
+            formal/quint/.out/quint-transitions.csv
+            formal/quint/.out/quint-transitions.itf.json
           if-no-files-found: error
+          include-hidden-files: true

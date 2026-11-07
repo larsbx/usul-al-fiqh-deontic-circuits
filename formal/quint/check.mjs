@@ -277,6 +277,18 @@ function checkMutants(source, scenarioText) {
       replacement: "| OnKnowledge => not(s.revoked)",
       test: "knowledgeJointBeforeNoticeTest",
     },
+    {
+      name: "ignore-personal-withdrawal",
+      needle: "s.appointed and not(withdrawn) and revocationAllows",
+      replacement: "s.appointed and revocationAllows",
+      test: "withdrawalDespiteAbsentNoticeTest",
+    },
+    {
+      name: "erase-receipt-on-revocation",
+      needle: 'Enabled(s.with("revoked", true)) else Disabled',
+      replacement: 'Enabled(s.with("revoked", true).with("accepted", NoExecution)) else Disabled',
+      test: "acceptedHistoryPersistsTest",
+    },
   ];
   for (const mutant of mutants) {
     const directory = path.join(temporary, mutant.name);
