@@ -103,7 +103,11 @@ def audit(scope, receipt):
             raise ValueError("Lean emitted an admitted-proof diagnostic")
 
     pin = (package / "lean-toolchain").read_text().strip()
-    version = lake("env", "lean", "--version", capture=True).strip()
+    # The first Lake invocation can install Lean and fetch dependencies. Keep that
+    # setup output visible on stderr and capture only the version on stdout.
+    version = subprocess.check_output(
+        ["lake", "env", "lean", "--version"], cwd=package, text=True
+    ).strip()
     if not pin.startswith("leanprover/lean4:v") or not version.startswith(
         f"Lean (version {pin.removeprefix('leanprover/lean4:v')},"
     ):
