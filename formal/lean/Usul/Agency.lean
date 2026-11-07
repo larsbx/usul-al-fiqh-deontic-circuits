@@ -399,6 +399,29 @@ theorem run_execution_witness {c : Config} {t : State} {pre post : List Event} {
     exact ⟨before, _, hpre, hstep, hpost, step_execution_authorized hstep he,
       (run_receipt_persistent hpost hr.2).trans hr.1⟩
 
+theorem execution_event_of_count_one {es : List Event} (h : executions es = 1) :
+    ∃ e ∈ es, e.executionCount = 1 := by
+  induction es with
+  | nil => simp [executions] at h
+  | cons e es ih =>
+    simp only [executions] at h
+    by_cases he : e.executionCount = 1
+    · exact ⟨e, List.mem_cons_self, he⟩
+    · obtain ⟨event, hm, hc⟩ := ih (by omega)
+      exact ⟨event, List.mem_cons_of_mem _ hm, hc⟩
+
+/-- A receipt in a run from the initial state identifies an actual authorized step in that run.
+The witness concerns modeled authority in the pre-state of the act. -/
+theorem run_receipt_origin {c : Config} {t : State} {es : List Event}
+    (h : Run c initial es t) (hr : t.accepted ≠ .none) :
+    ∃ pre e post before after, es = pre ++ e :: post ∧ Run c initial pre before ∧
+      Step c before e after ∧ Run c after post t ∧ AuthorizedExecution c before e ∧
+      t.accepted = e.receipt := by
+  obtain ⟨e, hm, he⟩ := execution_event_of_count_one ((run_accepted_iff_one_execution h).mp hr)
+  obtain ⟨pre, post, rfl⟩ := List.append_of_mem hm
+  obtain ⟨before, after, hp, hs, ht, ha, heq⟩ := run_execution_witness h he
+  exact ⟨pre, e, post, before, after, rfl, hp, hs, ht, ha, heq⟩
+
 /-! ## Exhaustive wire format shared with Quint
 
 State bits 0..5 are `appointed, revoked, knownA, knownB, withdrawnA, withdrawnB`;
