@@ -60,6 +60,8 @@ jobs:
         run: npm ci
       - name: Check scenarios, exhaustive transition parity, negative controls, and axioms
         run: make agency
+      - name: Check candidate asymmetric permissions and the symmetric projection
+        run: make agency-mask
       - name: Retain the verification receipts
         if: always()
         uses: actions/upload-artifact@v4
@@ -75,3 +77,13 @@ jobs:
             formal/quint/.out/quint-transitions.itf.json
           if-no-files-found: error
           include-hidden-files: true
+      - name: Retain candidate permission-mask evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: agency-mask-verification
+          path: |
+            .cache/agency-mask/report.json
+            .cache/agency-mask/lean-transitions.csv
+            .cache/agency-mask/quint-transitions.json
+          include-hidden-files: true
+          if-no-files-found: error

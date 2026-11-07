@@ -38,6 +38,10 @@ agency:
 	$(NODE) formal/check-agency-sources.mjs
 	cd formal/quint && npm run check
 	$(NODE) formal/check-agency-axioms.mjs
+
+.PHONY: agency-mask
+agency-mask:
+	$(NODE) formal/quint/check-mask.mjs
 prolog-oracle: ; formal/oracle/run_all.sh   # needs swipl: independent Prolog mirror of the Lean kernels
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh
