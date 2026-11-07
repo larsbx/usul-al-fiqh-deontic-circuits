@@ -28,9 +28,12 @@ validate:  ; cd pipeline && $(PY) -m usul_corpus validate
 reception: ; cd pipeline && $(PY) -m usul_corpus reception && $(PY) -m usul_corpus docs   # needs the citers cached
 mentions:  ; cd pipeline && $(PY) -m usul_corpus mentions                                # needs the citers cached
 generated: ; cd pipeline && $(PY) -m usul_corpus.istislah_cases && cd .. && $(PY) formal/fixtures/gen_grounded.py && $(PY) formal/fixtures/gen_taklif.py && cd pipeline && $(PY) -m usul_corpus signature && $(PY) -m usul_corpus reconcile && $(PY) -m usul_corpus judgement --check && $(PY) -m usul_corpus sheaf && $(PY) -m usul_corpus worklist --check && $(PY) -m usul_corpus routing --check && $(PY) -m usul_corpus mahall --check && $(PY) -m usul_corpus fatawa-takhrij --check && $(PY) -m usul_corpus.signature_routing .. --classical-only --check && git diff --exit-code ../formal/lean/Usul/Readings.lean ../formal/fixtures ../formal/tla ../corpus/reconciliation ../corpus/sheaf ../formal/lean/UsulTest ../formal/lean/HadithTest
-lean:      ; cd formal/lean && lake build && lake env lean scripts/ExportTypes.lean && git diff --exit-code ../../examples/v41_types.pl
+lean:
+	$(PY) formal/check-lean-axioms.py core
+	git diff --exit-code -- examples/v41_types.pl
 # Mathlib, pinned (formal/lean-mathlib); not part of `all`, the kernel stays Mathlib-free.
-lean-mathlib: ; cd formal/lean-mathlib && lake exe cache get && lake build
+lean-mathlib:
+	$(PY) formal/check-lean-axioms.py mathlib
 .PHONY: agency
 # Install the pinned tool first: npm --prefix formal/quint ci
 # Missing tools, source bytes, or parity evidence fail this gate.

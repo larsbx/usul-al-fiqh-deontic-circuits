@@ -97,8 +97,13 @@ jobs:
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - run: make lean
-      - name: Reject sorry
-        run: "! grep -rn --include=*.lean -w sorry formal/lean/Usul formal/lean/UsulTest formal/lean/Hadith formal/lean/HadithTest"
+      - name: Retain compiled axiom inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-core-axioms
+          path: .cache/lean-axioms/core.json
+          include-hidden-files: true
+          if-no-files-found: error
 
   tla:
     name: TLA+ model checking (bounded)
