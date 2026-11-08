@@ -1,0 +1,7 @@
+{
+  "schema": "ida-source-auth-test-trust-v1",
+  "syntheticFixtures": true,
+  "trustedIssuerId": "ida-source-auth-fixture-only",
+  "expectedManifestSha256": "4c670ca14868e175371f269c391795c0329e341cd24c1ad53bc260bfb066a34f",
+  "trustedPublicKeySha256": "ddf32952692f609e427183ddf37092e3d9f8a4ce78553c6b8e142853304090ad"
+}

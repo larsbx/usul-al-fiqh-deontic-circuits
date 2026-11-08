@@ -1,4 +1,4 @@
-name: IDA algebra and typed judgments
+name: IDA algebra, judgments, and derivations
 
 on:
   pull_request:
@@ -7,6 +7,10 @@ on:
       - 'Makefile'
       - 'formal/check-ida*.py'
       - 'formal/ida-quint-source-inventory.py'
+      - 'formal/ida-derivation*.json'
+      - 'formal/ida-source-auth.mjs'
+      - 'formal/check-ida-source-auth.mjs'
+      - 'formal/fixtures/ida-source-auth/**'
       - 'formal/check-lean-axioms.py'
       - 'formal/lean-axiom-audit.lean'
       - 'formal/lean/**'
@@ -21,6 +25,10 @@ on:
       - 'Makefile'
       - 'formal/check-ida*.py'
       - 'formal/ida-quint-source-inventory.py'
+      - 'formal/ida-derivation*.json'
+      - 'formal/ida-source-auth.mjs'
+      - 'formal/check-ida-source-auth.mjs'
+      - 'formal/fixtures/ida-source-auth/**'
       - 'formal/check-lean-axioms.py'
       - 'formal/lean-axiom-audit.lean'
       - 'formal/lean/**'
@@ -37,7 +45,7 @@ jobs:
   ida:
     name: IDA Lean, Quint, parity, and axiom audit
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -54,9 +62,9 @@ jobs:
       - name: Install pinned Quint dependencies
         working-directory: formal/quint
         run: npm ci
-      - name: Verify the foundation and typed judgment slices
-        run: make ida ida-judgment
-      - name: Require both receipts to describe the checked head
+      - name: Verify the algebra, judgment, and derivation slices
+        run: make ida ida-judgment ida-derivation
+      - name: Require all three receipts to describe the checked head
         env:
           IDA_EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
@@ -66,12 +74,12 @@ jobs:
           head = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
           if head != os.environ["IDA_EXPECTED_HEAD"]:
               raise SystemExit("Checkout differs from the requested head")
-          for directory in ("ida", "ida-judgment"):
+          for directory in ("ida", "ida-judgment", "ida-derivation"):
               report = json.loads((Path(".cache") / directory / "report.json").read_text())
               if (report.get("status") != "passed" or report.get("inputs_match_head") is not True
                       or report.get("revision") != head):
                   raise SystemExit(f"{directory}: receipt does not verify the checked head")
-          print(f"Both IDA receipts verify {head}")
+          print(f"All three IDA receipts verify {head}")
           PY
       - name: Retain revision-bound verification evidence
         if: always()
@@ -81,5 +89,6 @@ jobs:
           path: |
             .cache/ida/
             .cache/ida-judgment/
+            .cache/ida-derivation/
           include-hidden-files: true
           if-no-files-found: error

@@ -6,7 +6,7 @@ TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools
 
 .PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
-all: source-verify test validate generated lean tla agency ida ida-judgment
+all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
@@ -62,3 +62,8 @@ source-verify-fetch: ; cd pipeline && $(PY) -m usul_corpus.source_verify --fetch
 .PHONY: texts-check texts-verify-bytes
 texts-check: ; cd pipeline && $(PY) -m usul_corpus.texts
 texts-verify-bytes: ; cd pipeline && $(PY) -m usul_corpus.texts --require-bytes
+
+.PHONY: ida-derivation
+# Source-bound required-premise derivations, provenance, and independent controls.
+ida-derivation:
+	$(PY) formal/check-ida-derivation.py

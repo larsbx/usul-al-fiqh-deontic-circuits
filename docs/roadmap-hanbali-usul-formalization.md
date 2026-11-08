@@ -233,11 +233,45 @@ independent Quint model has deterministic assertions and a 1,028-result export:
 All fixtures are synthetic; their status and digest fields admit no real source.
 
 `make ida ida-judgment` runs both scoped gates. The dedicated workflow requires
-both receipts to match the checked commit. Source-byte authentication, source
-interpretation, authority to approve registry entries, correctness of the named
+both receipts to match the checked commit. At this record boundary, source-byte
+authentication, source interpretation, authority to approve registry entries,
+correctness of the named
 derivation, concurrent registry updates, and application refinement remain open.
 This advances the judgment-format obligation without declaring the full
 inference engine or a source profile accepted.
+
+### IDA source-bound derivations (2026-11-08)
+
+The [derivation extension](research/ida-source-derivations.md) adds source leaves
+and conjunction of two required premises over the typed records. Its Lean core
+has no Quint dependency. Complete inquiry identity, question family, and scope
+must agree. Source authorization checks exact registry admission, authenticated
+source-reference membership, current interpretation/profile pins, and a unique
+supported evidence decision bound to the complete premise. Missing, suspended,
+disputed, unauthenticated, and unadmitted required leaves block acceptance.
+
+Every source occurrence survives in ordered provenance, including blocked and
+repeated premises. Evidence grades are retained without automatic promotion;
+alternative interpretations remain separately evaluated alternatives. The
+[native Node adapter](research/ida-source-auth.md) checks an independently pinned,
+Ed25519-signed source catalog and complete file/passage bytes. Its fixtures are
+only `IDA\n` and `IDB\n`, with intentionally public test keys.
+
+The declared gate inventory is 44 fixed Lean contracts, 21 deterministic Quint
+tests, 301 independent contract cases, and 23 typechecked semantic mutants.
+Its 11,032 comparison cells comprise 1,360 evaluations at eight projections,
+16 receipt cases, and 136 source-reference cells linked to the byte adapter.
+Full-value pair scenarios cover all 1,089 taklifi and 64 sign/validity pairs.
+Source authentication has six positive and 38 negative controls. The remaining
+controls cover seven export corruptions, three compiled axiom/import probes,
+two Quint dependency probes, and one theorem-weakening probe.
+
+`make ida ida-judgment ida-derivation` produces revision-bound scoped receipts.
+The inventory states required checks; it does not claim a new revision has passed.
+Faithful source interpretation, production admission/key governance, general
+inference, application refinement, and agency integration remain separate.
+The cold-start audit repair in PR #136 and repository-wide CI keep their own
+acceptance obligations; this extension admits no real juristic position.
 
 ### Status (2026-10-13)
 

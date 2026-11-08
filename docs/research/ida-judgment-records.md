@@ -156,9 +156,15 @@ Mathlib, and agency checks continue to report their own results.
 
 ## Remaining obligations
 
-Source-byte verification and passage extraction need a concrete adapter. Source
-interpretation and admission decisions need their own review evidence. The
-derivation graph, exception/default rules, contextual re-evaluation, action and
+The [source-bound derivation slice](ida-source-derivations.md) adds source leaves
+and required-premise conjunction with complete provenance and separate source,
+current-version, and evidence checks. Its [byte adapter](ida-source-auth.md)
+checks a signed source catalog, full bytes, and half-open passage ranges. This
+extends the record boundary without making an accepted calculation a juristic
+endorsement or an authorization to act.
+
+Source interpretation and admission decisions need their own review evidence.
+General derivation rules, exception/default rules, contextual re-evaluation, action and
 agency semantics, authenticated registry operations, and application refinement
 remain separate tasks. This slice provides the typed and fully bound record
 boundary those tasks can use.

@@ -22,3 +22,5 @@ The root of the uṣūl al-fiqh (legal theory) kernel. Importing `Usul` brings i
 ## In one line
 
 One import gives the whole formal kernel of legal theory, from the five rulings to the category-theory specification layer.
+
+The umbrella includes `Usul.Typing.IDADerivation`, which evaluates source-bound required-premise trees under explicitly supplied trust inputs.
