@@ -274,6 +274,23 @@ inference, application refinement, and agency integration remain separate.
 The cold-start audit repair in PR #136 and repository-wide CI keep their own
 acceptance obligations; this extension admits no real juristic position.
 
+### Native Lean fixture migration (2026-11-08)
+
+The [fixture migration](architecture/lean-fixture-migration.md) moves the default
+`make fixtures` gate to native Lean models for all 389 declared Prolog cases:
+58 contextual/sheaf, 300 fatwa, and 31 typed-routing expectations. It preserves
+the 26 negative cases and their 41 premise results, adds 18 runner controls,
+and retains all 61 original semantic mutation names. Compiling fixed contract
+types and auditing their dependencies remain separate from executable agreement.
+
+Acceptance requires fresh compilation, complete named query/premise agreement,
+407 rejected polarity reversals, compiling semantic mutants rejected by fixtures,
+and a receipt bound to the exact source revision. The frozen reference verifies
+all 16 legacy input hashes against their recorded commit. Independent Prolog
+replay remains available through `make fixtures-legacy`. These finite model
+checks add a Lean test substrate without establishing general Prolog equivalence,
+admitting source interpretations, or completing ACT-00 or M16.
+
 ### Act classification and categorical transformations
 
 **M16 planning update (2026-11-08).** The
