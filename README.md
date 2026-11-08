@@ -46,10 +46,10 @@ This lane is explicitly downstream of canonical/test data. Its invariants are no
 - Parallel derivation plan: [`docs/roadmap-parallel-derivation.md`](docs/roadmap-parallel-derivation.md): the source texts by role, and the lanes for running the method over them in parallel
 - Qawāʿid (the foundation): [`docs/architecture/schemata.md`](docs/architecture/schemata.md): al-Saʿdī's rules, their readings, and the eight shapes under them
 - Types: [`docs/architecture/judgement.md`](docs/architecture/judgement.md): `Usul.Judgement` and `Usul.Typing`, the judgement form and what each encoder's output answers
-- Islamic Deontic Algebra: [concise specification](docs/research/islamic-deontic-algebra-spec.md) and [Lean–Quint foundation](docs/research/ida-foundation.md), with lattice laws, guarded partial-answer conjunction, independent finite comparison, and compiled axiom checks (`make ida`).
+- Islamic Deontic Algebra: [concise specification](docs/research/islamic-deontic-algebra-spec.md), [Lean–Quint foundation](docs/research/ida-foundation.md), and [typed judgment records](docs/research/ida-judgment-records.md). The scoped gates check lattice laws, guarded partial answers, complete registry binding, receipt revalidation, independent finite comparison, and compiled axioms (`make ida ida-judgment`).
 - Categories: [`docs/architecture/category-theory.md`](docs/architecture/category-theory.md): `Usul.Cat`, downstream of the types (`Usul.Cat.Typing`: L-QIY-1 over typed encoders, the category of typed encoders, pinned by `test_layers.py`): the scales as thin categories (σ as a duality, the ḥadīth seam as a functor), qiyās as factorization (L-QIY-1), the gluing lemma with ikhtilāf as obstruction (M10), and the carriers as institutions (M11)
 - Joint agency: [Lean–Quint pilot](docs/research/agency-pilot.md), with a [candidate source profile](docs/research/agency-source-profile.md), arbitrary-history proofs, exhaustive finite transition comparison, and negative controls. Install its pinned tooling with `npm --prefix formal/quint ci`.
-- `make all` runs source verification, the corpus tests, record validation, the generated-file drift check, the Lean build, TLC, and the agency Lean–Quint gate. `make fetch build` refreshes the corpus cache and records.
+- `make all` runs source verification, the corpus tests, record validation, the generated-file drift check, the Lean build, TLC, the agency gate, and both IDA gates. `make fetch build` refreshes the corpus cache and records.
 
 ## al-Albānī ḥadīth-methodology track
 

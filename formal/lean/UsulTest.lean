@@ -28,3 +28,5 @@ import UsulTest.Institutions
 import UsulTest.Agency
 import UsulTest.IDA
 import UsulTest.IDAContracts
+import UsulTest.IDAJudgment
+import UsulTest.IDAJudgmentContracts
