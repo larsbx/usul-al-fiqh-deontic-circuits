@@ -60,4 +60,5 @@ jobs:
         with:
           name: ida-verification
           path: .cache/ida/
+          include-hidden-files: true
           if-no-files-found: error
