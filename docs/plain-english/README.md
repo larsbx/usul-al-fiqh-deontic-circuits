@@ -29,6 +29,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Furuq` | [Usul/Furuq.md](Usul/Furuq.md) | [doc](https://claude.ai/code/artifact/1c4e465a-f7a0-436b-94c2-1305eb290dfa) |
 | `Usul.Grounded` | [Usul/Grounded.md](Usul/Grounded.md) | [doc](https://claude.ai/code/artifact/2c0d694f-8a43-4da1-aaa5-015038e0de3e) |
 | `Usul.Hukm` | [Usul/Hukm.md](Usul/Hukm.md) | [doc](https://claude.ai/code/artifact/3d26f8ed-dfa4-4051-8b72-8e2137ac4adf) |
+| `Usul.IDA` | [Usul/IDA.md](Usul/IDA.md) | pending |
 | `Usul.Jadal` | [Usul/Jadal.md](Usul/Jadal.md) | [doc](https://claude.ai/code/artifact/192bc1c9-55ca-472a-9ed1-04d9d7bef56d) |
 | `Usul.Judgement` | [Usul/Judgement.md](Usul/Judgement.md) | [doc](https://claude.ai/code/artifact/ec7004aa-fbdf-4fd6-af2c-da5156ef10c7) |
 | `Usul.Kulliyyat` | [Usul/Kulliyyat.md](Usul/Kulliyyat.md) | [doc](https://claude.ai/code/artifact/dbec9ed2-c7b5-4f16-b894-1fa9cfd5aac5) |
@@ -115,6 +116,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.FuruqTable` | [UsulTest/FuruqTable.md](UsulTest/FuruqTable.md) | [doc](https://claude.ai/code/artifact/03f21114-712f-4d23-9c47-dee0c71a8f1b) |
 | `UsulTest.GroundedStress` | [UsulTest/GroundedStress.md](UsulTest/GroundedStress.md) | [doc](https://claude.ai/code/artifact/2db228a3-3d91-47b9-9055-c586d41cf61c) |
 | `UsulTest.GroundedVectors` | [UsulTest/GroundedVectors.md](UsulTest/GroundedVectors.md) | [doc](https://claude.ai/code/artifact/8ed4410c-e599-46fb-9489-d0a8c614e0ef) |
+| `UsulTest.IDA` | [UsulTest/IDA.md](UsulTest/IDA.md) | pending |
+| `UsulTest.IDAContracts` | [UsulTest/IDAContracts.md](UsulTest/IDAContracts.md) | pending |
 | `UsulTest.Institutions` | [UsulTest/Institutions.md](UsulTest/Institutions.md) | [doc](https://claude.ai/code/artifact/73cb2d47-cce9-44d7-ac5d-a79426e6a219) |
 | `UsulTest.Interval` | [UsulTest/Interval.md](UsulTest/Interval.md) | [doc](https://claude.ai/code/artifact/10d085fd-7e4a-4589-a057-d7d3f6335251) |
 | `UsulTest.Judgement` | [UsulTest/Judgement.md](UsulTest/Judgement.md) | [doc](https://claude.ai/code/artifact/26403a76-688f-4f69-8929-258fa5e33683) |
@@ -149,6 +152,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | Module | Companion | Doc |
 | --- | --- | --- |
 | `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |
+| `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
 
 ## UsulMathlib

@@ -6,7 +6,7 @@ TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools
 
 .PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
-all: source-verify test validate generated lean tla agency
+all: source-verify test validate generated lean tla agency ida
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
@@ -41,6 +41,10 @@ agency:
 	$(NODE) formal/check-agency-sources.mjs
 	cd formal/quint && npm run check
 	$(NODE) formal/check-agency-axioms.mjs
+.PHONY: ida
+# Pinned Lean/Quint, full finite IDA table, compiled axioms, and semantic controls.
+ida:
+	$(PY) formal/check-ida.py
 prolog-oracle: ; formal/oracle/run_all.sh   # needs swipl: independent Prolog mirror of the Lean kernels
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh

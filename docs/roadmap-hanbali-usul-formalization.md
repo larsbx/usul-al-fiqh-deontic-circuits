@@ -188,6 +188,32 @@ records. This annotation batch supplies no new retrieval score and does not
 overturn the signature proxy's zero-weight selection. The separate typed-situation
 routing experiments must not be attributed to this question-body annotation batch.
 
+### IDA foundation (2026-11-08; PR #137)
+
+The [Islamic Deontic Algebra foundation](research/ida-foundation.md) implements
+the first executable slice of the [specification](research/islamic-deontic-algebra-spec.md).
+`Usul.IDA` reuses the five-value `Usul.Hukm` carrier for meet, join, and omission
+duality. Its separate conjunction operation intersects two required nonempty
+partial answers only when question, subject, target, context, time, profile, and
+profile version all match. Missing, suspended, known, conflict, and out-of-scope
+outcomes remain distinct. An absent ruling, an explicit all-five constraint, and
+a specific mubāḥ answer are distinct inputs.
+
+The [dedicated IDA run](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/actions/runs/42478973501)
+passed for `bfdd5b8cdfb56eba32e12dbb973025f3da358801`: 59 fixed Lean theorem
+contracts, 10 Quint tests, 8,767 Lean–Quint output comparisons, 17 independent
+contract vectors, and compiled-axiom and negative-control checks. The finite
+comparison covers 25 meet pairs, 25 join pairs, 5 omission values, and
+8 key variants × 33 inputs × 33 inputs. The key variants check equality and
+each coordinate mismatch individually; the Lean scope theorems quantify over
+arbitrary keys. This is scoped foundation evidence. Repository-wide and
+whole-bank acceptance still require their separate integration gates.
+
+At this foundation boundary, source-bound question-indexed judgments, evidence
+admission, source and interpretation fidelity, contextual exceptions, and a
+verified application mapping remain open. Algebraic agreement does not select
+a juristic position, authenticate an input, or establish those obligations.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |

@@ -1,0 +1,64 @@
+name: IDA algebra and partial rulings
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ida.yml'
+      - 'Makefile'
+      - 'formal/check-ida.py'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'docs/research/ida-*.md'
+      - 'docs/research/islamic-deontic-algebra-spec.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ida.yml'
+      - 'Makefile'
+      - 'formal/check-ida.py'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'docs/research/ida-*.md'
+      - 'docs/research/islamic-deontic-algebra-spec.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ida:
+    name: IDA Lean, Quint, parity, and axiom audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Install elan for the repository's pinned Lean version
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Verify the complete declared IDA slice
+        run: make ida
+      - name: Retain revision-bound verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-verification
+          path: .cache/ida/
+          include-hidden-files: true
+          if-no-files-found: error
