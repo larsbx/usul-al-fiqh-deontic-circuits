@@ -1,4 +1,5 @@
 import Usul.Hukm
+import Usul.IDA
 import Usul.Signature
 import Usul.Dung
 import Usul.Grounded

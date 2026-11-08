@@ -26,3 +26,5 @@ import UsulTest.Interval
 import UsulTest.TaklifBehaviour
 import UsulTest.Institutions
 import UsulTest.Agency
+import UsulTest.IDA
+import UsulTest.IDAContracts
