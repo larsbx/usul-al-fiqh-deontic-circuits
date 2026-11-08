@@ -17,6 +17,8 @@
                 "formal/check-agency-sources.mjs", "formal/check-agency-axioms.mjs",
                 "formal/lean/scripts/ExportAgency.lean",
                 "docs/research/agency-source-profile.md", "docs/research/agency-pilot.md",
+                "docs/research/ida-*.md", "docs/research/islamic-deontic-algebra-spec.md",
+                "docs/architecture/category-theory.md", "docs/architecture/judgement.md", "docs/architecture/mahall.md",
                 "corpus/citations/**", "corpus/dossier/**", "corpus/fatawa/**", "corpus/furuq/**", "corpus/mahall/**",
                 "corpus/nusus/**", "corpus/proposals/**", "corpus/records/**", "corpus/review/**",
                 "corpus/sheaf/**", "corpus/signature_map.json", "corpus/takhrij/**", "corpus/tanaqud/**", "corpus/types/**",

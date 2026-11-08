@@ -11,7 +11,7 @@ The work runs in parallel tracks, each with its own roadmap. [`roadmap-tracks.js
 | Track | Roadmap | Milestones |
 |---|---|---|
 | ADQ deontic-circuit harness | this file | Milestone 1–7 |
-| Ḥanbalī uṣūl formalization (Lean 4, TLA+, Haskell, category theory, type theory) | [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md) | M0–M13 |
+| Ḥanbalī uṣūl formalization (Lean 4, TLA+, Haskell, category theory, type theory) | [`roadmap-hanbali-usul-formalization.md`](roadmap-hanbali-usul-formalization.md) | M0–M16 |
 | al-Albānī's ḥadīth methodology | [`roadmap-albani-hadith-methodology.md`](roadmap-albani-hadith-methodology.md) | H0–H9 |
 | Derivation method and the parallel lanes | [`roadmap-parallel-derivation.md`](roadmap-parallel-derivation.md) | phases and rounds |
 
@@ -35,6 +35,16 @@ now organizes work by source, occurrence, interpretation, evidence admission,
 inference and derived-view boundaries. Its first tranche isolates reconciliation
 and typed value identity; the remaining stages have explicit migration gates.
 The ADQ milestones below remain track-specific, not a separate competing refactor.
+
+## Act classification and categorical transformations
+
+The uṣūl track's [M16 roadmap](research/ida-act-classification-roadmap.md) records
+the structured act reference, typed-context substitution, information-loss and
+equivalence contracts, interpretation/migration laws, and evidence-bearing
+judgment transport. It reuses the existing categorical modules and keeps
+compound-description, process, and richer-indexing work conditional. Its first
+dependency is integrating draft #140 with main's newer IDA judgment/derivation
+work; the roadmap itself adds no semantic implementation or admitted ruling.
 
 ## Working principle
 
