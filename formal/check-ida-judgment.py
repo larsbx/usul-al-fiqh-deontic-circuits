@@ -466,9 +466,11 @@ def main():
         matches_head = all(
             result.returncode == 0 and hashlib.sha256(result.stdout).hexdigest() == expected
             for name, expected in hashes.items()
-            for result in [subprocess.run(["git", "show", f"HEAD:{name}"], cwd=ROOT,
+            for result in [subprocess.run(["git", "show", f"{revision}:{name}"], cwd=ROOT,
                                           stdout=subprocess.PIPE, stderr=subprocess.PIPE)]
         )
+        require(command(["git", "rev-parse", "HEAD"]).stdout.strip() == revision,
+                "Revision changed while checking committed input blobs")
         report = {
             "schema": "usul.ida.judgment.v1", "status": "passed", "revision": revision,
             "inputs_match_head": matches_head, "source_sha256": hashes, "runtime_overrides": overrides,
@@ -502,6 +504,8 @@ def main():
         (staged / "lean.csv").write_text(lean_csv)
         shutil.copyfile(trace_path, staged / "quint.itf.json")
         shutil.copyfile(tests_path, staged / "quint-tests.json")
+        require(command(["git", "rev-parse", "HEAD"]).stdout.strip() == revision,
+                "Revision changed before receipt publication")
         staged.rename(RECEIPTS)
         print(f"IDA judgments: PASS; {len(required_theorems())} required proofs, "
               f"{len(mutants)} semantic mutants rejected; inputs_match_head={matches_head}.")

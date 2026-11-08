@@ -167,3 +167,7 @@ Pinned Mathlib bridge in `formal/lean-mathlib/`, outside the kernel build.
 | --- | --- | --- |
 | `UsulMathlib` | [UsulMathlib.md](UsulMathlib.md) | [doc](https://claude.ai/code/artifact/8606ce86-4078-4d8e-90a6-fb7ed9abaac0) |
 | `UsulMathlib.Hukm` | [UsulMathlib/Hukm.md](UsulMathlib/Hukm.md) | [doc](https://claude.ai/code/artifact/c527bab3-be81-48a8-8f55-cfeaa989ba30) |
+| `Usul.Typing.IDADerivation` | [Usul/Typing/IDADerivation.md](Usul/Typing/IDADerivation.md) | pending |
+| `UsulTest.IDADerivation` | [UsulTest/IDADerivation.md](UsulTest/IDADerivation.md) | pending |
+| `UsulTest.IDADerivationContracts` | [UsulTest/IDADerivationContracts.md](UsulTest/IDADerivationContracts.md) | pending |
+| `scripts.ExportIDADerivation` | [scripts/ExportIDADerivation.md](scripts/ExportIDADerivation.md) | pending |

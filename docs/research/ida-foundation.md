@@ -143,7 +143,14 @@ revalidation. It preserves missing, suspended, and known answer states while
 keeping validity/sign questions separate from taklifi status. The foundation's
 conjunction still has its separate conflict and out-of-scope results.
 
-Further obligations include source-byte verification and admission authority,
+The [source-bound derivation slice](ida-source-derivations.md) adds authenticated
+source references, separately supplied current interpretation and evidence
+decisions, complete provenance, and source/required-conjunction trees. Its
+[byte adapter](ida-source-auth.md) checks signed catalog and passage bytes on
+synthetic fixtures. Neither layer establishes the correctness of a source
+interpretation or the authority of its configured admission inputs.
+
+Further obligations include production source and admission authority,
 exception/default rules and re-evaluation after context changes, interpretation
 of omissions and affects, alternative and collective duties, agency integration,
 and a verified mapping from application data and concurrent writes to the model.

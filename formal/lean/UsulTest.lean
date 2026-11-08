@@ -30,3 +30,5 @@ import UsulTest.IDA
 import UsulTest.IDAContracts
 import UsulTest.IDAJudgment
 import UsulTest.IDAJudgmentContracts
+import UsulTest.IDADerivation
+import UsulTest.IDADerivationContracts

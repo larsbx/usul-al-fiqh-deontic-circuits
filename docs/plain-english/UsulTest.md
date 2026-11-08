@@ -19,3 +19,5 @@ The following suites:
 ## In one line
 
 One import that runs the whole test suite.
+
+The umbrella includes `UsulTest.IDADerivation` and `UsulTest.IDADerivationContracts` for synthetic derivation scenarios and fixed proposition witnesses.
