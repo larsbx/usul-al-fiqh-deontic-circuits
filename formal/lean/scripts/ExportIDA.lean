@@ -22,3 +22,9 @@ def main : IO Unit := do
     for left in List.range 33 do
       for right in List.range 33 do
         emitIDA "refine" k left right (refineCode k left right)
+  for target in List.range 28 do
+    emitIDA "target_admit" target 0 0 (targetAdmitCode target)
+  for left in List.range 28 do
+    for right in List.range 28 do
+      for premise in List.range 6 do
+        emitIDA "target_refine" left right premise (targetRefineCode left right premise)
