@@ -13,7 +13,8 @@
 | `formal/quint/` | `**` |
 | `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs` |
 | `formal/lean/scripts/` | `ExportAgency.lean` |
-| `docs/research/` | `agency-source-profile.md`, `agency-pilot.md` |
+| `docs/research/` | `agency-source-profile.md`, `agency-pilot.md`, `ida-act-reference.md` |
+| `.github/workflows/` | `fiqh-act-reference.yml` |
 | `corpus/citations/` | `**` |
 | `corpus/dossier/` | `**` |
 | `corpus/fatawa/` | `**` |
@@ -29,9 +30,9 @@
 | `corpus/tanaqud/` | `**` |
 | `corpus/types/` | `**` |
 | `corpus/typing/` | `**` |
-| `pipeline/usul_corpus/` | `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `istislah_cases.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `records.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
+| `pipeline/usul_corpus/` | `act_reference.py`, `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `istislah_cases.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `records.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
 | `pipeline/usul_corpus/encoders/` | `**` |
-| `pipeline/tests/` | `test_abwab.py` |
+| `pipeline/tests/` | `test_abwab.py`, `test_act_reference.py` |
 <!-- END GENERATED TRACK PATHS -->
 
 ## 0. Scope and thesis
@@ -214,13 +215,52 @@ admission, source and interpretation fidelity, contextual exceptions, and a
 verified application mapping remain open. Algebraic agreement does not select
 a juristic position, authenticate an input, or establish those obligations.
 
+### IDA structured target refinement (2026-11-08)
+
+The follow-up replaces the target identifier with a complete checked expression
+in the existing key. Performed acts carry supplied operation signatures and
+named typed operands; omissions include a named occurrence, clock and bounded
+opportunity; affective states retain a quality and typed object. All other
+scope guards and five-valued algebra operations are retained.
+
+The declared gate adds 20 universal structural contracts and five finite
+scenario contracts, for 84 fixed propositions, plus independent Quint checks,
+13,499 output comparisons and targeted semantic negative controls. Verification
+is established by successful revision-bound receipts from the dedicated IDA
+workflow, not by this roadmap entry. No local execution is claimed for this
+follow-up. See the [updated foundation guide](research/ida-foundation.md).
+
+This refines the representation obligation in M2. Authoritative operation
+signatures, reference resolution, opportunity/context consistency and application
+refinement remain open. The synthetic target fixtures assign no source-backed
+rulings.
+
+### Candidate fiqh act reference (2026-11-08)
+
+The [reference and construction bridge](research/ida-act-reference.md) connect
+M2's structured targets to the existing candidate corpus. A versioned catalogue
+preserves 34 proposed act kinds and their source loci, with explicit parameter
+sorts or unresolved reasons. One restricted transfer signature fits the current
+reference sorts completely; 33 proposals still require a modeling decision.
+Twelve normalization cases preserve qualifications, alternate senses, and
+non-act readings instead of silently replacing the original labels.
+
+The reproducible export retains all 537 concepts, the 293 legacy act labels,
+and the 57 topic roots reached through the complete broader graph. The separate
+reference workflow checks graph integrity, source-record alignment, pinned
+witness bytes, role mappings, and candidate/admission boundaries. Its receipt
+records the checkout and input hashes. It does not constitute Lean–Quint
+verification or source-profile admission; the formal target gate remains
+separate. See `pipeline/usul_corpus/act_reference.py` and
+`corpus/proposals/fiqh-acts/reference.json`.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |
 |---|---|---|
 | M0 registry | **done for located texts** | `corpus/registry.json` (20 works, pinned witnesses), `corpus/lock.json`, `corpus/audit.json`: Ibn Rajab's 160, Ibn al-Laḥḥām's 66, al-Saʿdī's 60, the *Manẓūma*'s 103 abyāt and *Ṭarīq al-Wuṣūl*'s 1015 paragraphs confirmed (al-Saʿdī via the [OCR pipeline](architecture/ocr-pipeline.md)) |
 | M1 logic core | **Abstract Lean exit proved; structured layer proposed** | `Usul.Dung`: admissibility preserved by `F`, grounded ⊆ every complete extension. [ADR 0001](architecture/adr-0001-logic-core.md) chooses structured argumentation over Dung AFs (SDL/KD only for the strict fragment), awaiting review; for finitary AFs `grounded` is proved the unique least complete extension (`grounded_complete`, `grounded_unique`), and for finite AFs every admissible set extends to a preferred one (`exists_preferred_superset`) |
-| M2 signature | **seeded** | 26 ḥudūd extracted from *al-Uṣūl*; `Usul.Hukm` / `Usul.Signature`; Σ map checked on both sides |
+| M2 signature | **seeded; structured IDA targets and candidate act reference implemented, separately receipt-gated** | 26 ḥudūd extracted from *al-Uṣūl*; `Usul.Hukm` / `Usul.Signature`; Σ map checked on both sides. `Usul.IDA` now carries structurally checked target expressions; its dedicated gate separately records current-revision acceptance. The source-linked act reference adds 34 versioned proposals with explicit unresolved roles and a reproducible candidate catalogue. Source-signature admission and reference resolution remain open. |
 | M3 qawāʿid | **al-Saʿdī catalogued; 60 of 60 formalised** | `corpus/proposals/sadi_qawaid.json` (all 60: statement, gloss, kind, domain; candidate status, awaiting human review); `Usul.Sadi`: Q1, 2, 4, 6, 8, 11, 16, 22/23, 27, 28, 33, 38, 40, 52, 58, 59, 60, with proved theorems; `Usul.Muamalat`: Q10, 12–14, 18–21, 24–26, 30, 32, 35–37, 42–47, 49, 51, 53–56 (possession, liability, contract), with consistency theorems Q13 ⇔ Q36, Q43 ⊑ Q26, Q51 ∥ Q54 and Q42 as an instance of Q21; `Usul.Kulliyyat`: Q5, 9, 15, 17, 29, 31, 34, 39, 41, 48, 50, 57 (custom, intent, utterance, cause and condition in time); `Usul.Schema`: 39 (rule, schema) pairs, 38 rules, over eight transportable shapes, pinned in `UsulTest/Schemata.lean`; 12 interpretive commitments surfaced for the Sharīʿah-authority gate, each with cited established answers (the cited answers contradict the reading in 2 questions, refine it in 8, agree in 2) and analogies (`corpus/review/`); the review runs on its own principles where stratified (`Usul.Process`); `Usul.Qiyas`: masālik al-ʿilla and qawādiḥ with soundness theorems, disputed points as parameters with established positions cited (IQ-13 to IQ-16), and 23 classical qiyās sources pinned; `Usul.Jadal`: the eighteen objections as one gate with «all reduce to manʿ or muʿāraḍa» proved as `debateGate_holds_iff`; 241 verified citations ground every theorem of the qiyās modules (`corpus/citations/`); `Usul.QiyasLimits`: fallibility, scope, jalī/khafī, tamthīl ≡ shumūl ([`schemata.md`](architecture/schemata.md)); Haskell mirror `Oracle.Usul.Sadi` |
 | M4 tests | **first tranche checked** | harness (`usul_corpus/takhrij.py`, Lean-guarded); 204 furūʿ for 15 readings (Ibn Rajab under the qawāʿid al-Saʿdī compresses, Ibn al-Laḥḥām 52–54 for generality): coverage 0.873, madhhab coverage 0.534, after four self-application rounds (ʿahd-aware generality; conservative refinements; the open gaps' own principles, twice, all in `Usul.Refinements`): 214 cases, coverage 0.977, madhhab coverage 0.648, 0 encoding errors (from 7), 5 open gaps in the ledger (naming and policy points, and one case with no transmitted ruling), 29 cases revisited, see [`takhrij.md`](architecture/takhrij.md). Every closure is cited in the [dossier](architecture/dossier.md); terms in the [glossary](glossary.md) (75 terms, 159 verified excerpts). Ibn al-Laḥḥām's uṣūl rules wait for M5 |
 | M8 scale-up | **tranches 1–11 and lane A rounds 1–6 encoded; human review open** | lane A round 6 (parallel, five shards): qawāʿid 147, 149–158 (103 records, `rajab_m8_rajab_a21…a25_furu.json`): coverage 1.000, madhhab coverage 0.845, no new gaps, every ikhtilāf with a tarjīḥ; lane A round 5 (parallel, four shards): qawāʿid 132, 134, 136–139, 141–146 (92 records, `rajab_m8_rajab_a17…a20_furu.json`): coverage 1.000, madhhab coverage 0.826, no new gaps, every ikhtilāf with a tarjīḥ; lane A round 4 (parallel, four shards): qawāʿid 119–126, 128–131 (80 records, `rajab_m8_rajab_a13…a16_furu.json`; Q127 in `rajab_m8_q127_furu.json`): coverage 1.000, madhhab coverage 0.738, no new gaps; lane A round 3 (parallel, four shards): qawāʿid 107–118 (89 records, `rajab_m8_rajab_a9…a12_furu.json`): coverage 1.000, madhhab coverage 0.764, no new gaps; lane A round 2 (parallel, four shards): qawāʿid 94–102, 104, 105 (89 records, `rajab_m8_rajab_a5…a8_furu.json`): coverage 1.000, madhhab coverage 0.888, no new gaps; lane A round 1 (parallel, four shards): qawāʿid 53, 60, 67, 69, 71, 72, 73, 74, 77, 78, 79, 80, 81, 90, 92 (91 records, `rajab_m8_rajab_a1…a4_furu.json`): coverage 1.000, madhhab coverage 0.813, no new gaps; tranche 11: qawāʿid 55, 57, 59 (22 records, `rajab_m8_tranche11_furu.json`): coverage 1.000, madhhab coverage 0.909, no new gaps; tranche 10: qawāʿid 52, 54, 56, 58, 61, 62 (19 records, `rajab_m8_tranche10_furu.json`): coverage 1.000, madhhab coverage 0.737, no new gaps; tranche 9: qawāʿid 36, 42, 43, 46, 49, 50, 51 (16 records, `rajab_m8_tranche9_furu.json`): coverage 1.000, madhhab coverage 0.938, no new gaps; tranche 8: qawāʿid 4, 11, 14, 15, 19 (27 records, `rajab_m8_tranche8_furu.json`): coverage 1.000, madhhab coverage 0.852, no new gaps; tranche 7: qawāʿid 3, 5, 9, 10, 12 (24 records, `rajab_m8_tranche7_furu.json`): coverage 1.000, madhhab coverage 0.667 after reconciliation, no new gaps; tranche 6: qawāʿid 35, 37, 38, 39, 41 (24 records, `rajab_m8_tranche6_furu.json`): coverage 1.000, madhhab coverage 0.417 (on 38 the marked madhhab follows the wording), no new gaps; tranche 5: qawāʿid 25, 29, 30, 32, 33, 34 (27 records, `rajab_m8_tranche5_furu.json`): coverage 1.000, madhhab coverage 0.704, no new gaps; tranche 4: qawāʿid 2, 20, 21, 24 (21 records, `rajab_m8_tranche4_furu.json`): coverage 1.000, madhhab coverage 0.571, no new gaps; unified tranche 3: all 29 candidates under qawāʿid 1, 17, 31, 47, 66, 91, 93; PR #32's list-and-division segmentation and PR #31's hash-pinned worklist, source receipts and contrast guards are preserved. Tranche 2 (merged #30): qawāʿid 7, 27, 28, 64, 65, 25 records; tranche 1: qawāʿid 6, 22, 68, 26 records with opening examples. Current aggregate metrics and remaining counts come from the generated scope table below; exact IDs and source obligations are in `corpus/worklists/`. After tranche 3, round 5 applied the bank to its own gaps: 8 of 14 closed, each cited in the dossier (see [`takhrij.md`](architecture/takhrij.md)). All interpretation questions remain open; [reconciliation audit](architecture/m8-tranche3-reconciliation-2026-10-08.md) |
@@ -380,6 +420,7 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 **Remaining integration obligations:** source-linked structured derivation terms; typed attacks and preference-to-defeat compilation; subargument/provenance preservation; preferred-family encoding for M4 disagreements; a versioned selection policy with ties/abstention for muʿtamad if needed; final executable grounded stabilization/equality with endpoint bounds; and M7's dialogue correspondence. Existing graded ruling selection and extensional tamthīl/shumūl equivalence do not discharge these obligations. The 10⁴-case differential exit covers grounded fingerprints only. The ADR remains proposed; development can continue with accurate candidate labels.
 
 #### M2 · Signature kernel (Σ) ⟵ M0, M1
+- **Candidate reference increment:** preserve source mentions, act kinds, descriptions, and occurrences separately; validate the [act catalogue](research/ida-act-reference.md), its exact source links, role-order mappings, and unresolved typing decisions. Reference checks establish candidate-data integrity; admission into an interpretation profile and contextual subject/reference binding remain open.
 - Base text: Ibn ʿUthaymīn's *al-Uṣūl*. Cross-check against the *Rawḍa* muqaddima and *al-Kawkab*.
 - Lean: the `Usul.Signature` sorts from §2.1. Haskell: mirror ADTs. JSON Schema is the interchange format, and the Lean and Haskell types are checked by round-trip conformance on shared fixtures. This keeps DRY at the boundary without fragile code generation.
 - **Exit:** these Lean lemmas are proved: `σ_involutive`, `σ_antitone`, `mukallaf_required`. Every ḥadd in *al-Uṣūl* exists as a decidable predicate with ≥1 positive and ≥1 negative fixture. Haskell and Lean agree on 100% of the fixtures.

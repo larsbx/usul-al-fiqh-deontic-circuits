@@ -46,7 +46,11 @@ Judgment = {
 Result = Derived | Unresolved | Conflict | OutOfScope
 ```
 
-Each result carries its value or diagnostic witnesses. Targets distinguish behavioral acts from affective states. Context supplies objects, capacity, voluntary control, intention, history, agency, and exceptions required by the selected rule. Every derivation records source hashes and passage locators, interpretation and profile versions, rule applications, and implementation revision.
+Each result carries its value or diagnostic witnesses. A target is a structurally checked expression: `perform(action)`, `omit(action, opportunity)`, or `affect(quality, concerns)`. An action carries a qualified operation name, its ordered signature of named reference sorts, and operands that match every declared role and sort. Qualified operand references participate directly in target identity. An omission includes its named occurrence, named clock, and strictly ordered opportunity bounds; it accepts an action, not an arbitrary target. An affect carries its quality and typed object. Context supplies additional object facts, capacity, voluntary control, intention, history, agency, and exceptions required by the selected rule. The judgment subject is a separate coordinate. An operation can also carry participant roles, including a performer or payer, but structural checking does not establish that a person reference and the opaque subject identifier denote the same person. A perform expression does not establish actual occurrence. Structural checking does not admit the supplied operation signature under a source profile, resolve its references, or establish that the opportunity is available to the subject. These are separate obligations. Full structural equality is used without automatic synonym resolution or event identification. Numeric fixture selectors are not target identities.
+
+The [candidate act reference](ida-act-reference.md) distinguishes source mentions, versioned operation kinds, qualified act descriptions, and conduct occurrences. It records proposed parameter kinds and unresolved modeling decisions without admitting an operation signature or assigning a ruling. A definition version can participate in the existing qualified operation symbol; enforcing a unique source-approved signature for that symbol remains a profile obligation.
+
+Every derivation records source hashes and passage locators, interpretation and profile versions, rule applications, and implementation revision.
 
 ### 5. Inference and composition
 

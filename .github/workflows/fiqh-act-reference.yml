@@ -1,0 +1,96 @@
+name: Fiqh act reference
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/fiqh-act-reference.yml'
+      - 'corpus/proposals/fiqh-acts/**'
+      - 'corpus/mahall/labels/all.json'
+      - 'corpus/mahall/abwab.json'
+      - 'corpus/records/openiti-ibnqudama-umda-shamela11315.jsonl'
+      - 'corpus/registry.json'
+      - 'corpus/lock.json'
+      - 'pipeline/usul_corpus/act_reference.py'
+      - 'pipeline/tests/test_act_reference.py'
+      - 'formal/lean/Usul/IDA.lean'
+      - 'docs/research/ida-act-reference.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fiqh-act-reference.yml'
+      - 'corpus/proposals/fiqh-acts/**'
+      - 'corpus/mahall/labels/all.json'
+      - 'corpus/mahall/abwab.json'
+      - 'corpus/records/openiti-ibnqudama-umda-shamela11315.jsonl'
+      - 'corpus/registry.json'
+      - 'corpus/lock.json'
+      - 'pipeline/usul_corpus/act_reference.py'
+      - 'pipeline/tests/test_act_reference.py'
+      - 'formal/lean/Usul/IDA.lean'
+      - 'docs/research/ida-act-reference.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reference:
+    name: Candidate catalogue, source pins, and target bridge
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install pytest
+      - name: Check candidate-data contracts and rejection cases
+        working-directory: pipeline
+        run: python -m pytest -q tests/test_act_reference.py
+      - name: Retrieve the three pinned reference witnesses
+        run: |
+          python - <<'PY'
+          import hashlib, json, urllib.request
+          from pathlib import Path
+          reference = json.loads(Path('corpus/proposals/fiqh-acts/reference.json').read_text())
+          output = Path('.cache/fiqh-act-reference-witnesses')
+          output.mkdir(parents=True, exist_ok=True)
+          for pin in reference['source_pins']:
+              with urllib.request.urlopen(pin['url'], timeout=45) as response:
+                  data = response.read()
+              if len(data) != pin['bytes'] or hashlib.sha256(data).hexdigest() != pin['sha256']:
+                  raise SystemExit(f"Witness bytes differ from the lock: {pin['witness']}")
+              (output / (pin['witness'] + '.txt')).write_bytes(data)
+          PY
+      - name: Export the reference with byte-verified source receipts
+        working-directory: pipeline
+        run: >-
+          python -m usul_corpus.act_reference
+          --witness-dir ../.cache/fiqh-act-reference-witnesses
+          --out ../.cache/fiqh-act-reference
+      - name: Require the receipt to describe the checked head
+        env:
+          REFERENCE_EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          report = json.loads(Path('.cache/fiqh-act-reference/source-verification.json').read_text())
+          if (head != os.environ['REFERENCE_EXPECTED_HEAD']
+                  or report['repository_revision'] != head
+                  or report['inputs_match_head'] is not True
+                  or report['status'] != 'passed'):
+              raise SystemExit('Reference receipt does not verify the requested head')
+          print(f'Candidate reference verified at {head}; no interpretation or ruling admission')
+          PY
+      - name: Retain the reference and verification receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fiqh-act-reference
+          path: .cache/fiqh-act-reference/
+          include-hidden-files: true
+          if-no-files-found: error

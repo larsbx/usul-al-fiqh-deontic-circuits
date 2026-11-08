@@ -291,4 +291,145 @@ theorem require_UsulTest_IDA_invalid_codes :
       refineCode 0 1 33 = none ∧ refineCode 100 100 100 = none :=
   UsulTest.IDA.invalid_codes
 
+/-! ## Structured target contracts (20 universal, 5 finite scenarios) -/
+
+theorem require_Usul_IDA_operation_wellFormed_parameter_roles :
+    ∀ {operation : Operation}, operation.WellFormed →
+      ∀ parameter ∈ operation.parameters, parameter.role ≠ "" :=
+  @Usul.IDA.operation_wellFormed_parameter_roles
+
+theorem require_Usul_IDA_operation_wellFormed_unique_roles :
+    ∀ {operation : Operation}, operation.WellFormed →
+      (operation.parameters.map Parameter.role).Nodup :=
+  @Usul.IDA.operation_wellFormed_unique_roles
+
+theorem require_Usul_IDA_action_wellFormed_operation :
+    ∀ {action : Action}, action.WellFormed → action.operation.WellFormed :=
+  @Usul.IDA.action_wellFormed_operation
+
+theorem require_Usul_IDA_action_wellFormed_signature :
+    ∀ {action : Action}, action.WellFormed →
+      action.operands.map Operand.parameter = action.operation.parameters :=
+  @Usul.IDA.action_wellFormed_signature
+
+theorem require_Usul_IDA_action_wellFormed_references :
+    ∀ {action : Action}, action.WellFormed →
+      ∀ operand ∈ action.operands, operand.referent.WellFormed :=
+  @Usul.IDA.action_wellFormed_references
+
+theorem require_Usul_IDA_action_eq_iff_fields :
+    ∀ left right : Action, left = right ↔
+      left.operation = right.operation ∧ left.operands = right.operands :=
+  Usul.IDA.action_eq_iff_fields
+
+theorem require_Usul_IDA_opportunity_wellFormed_bounds :
+    ∀ {opportunity : Opportunity}, opportunity.WellFormed →
+      opportunity.opensAt < opportunity.closesAt :=
+  @Usul.IDA.opportunity_wellFormed_bounds
+
+theorem require_Usul_IDA_omit_wellFormed_iff :
+    ∀ (action : Action) (opportunity : Opportunity),
+      (TargetExpr.omit action opportunity).WellFormed ↔
+        action.WellFormed ∧ opportunity.WellFormed :=
+  Usul.IDA.omit_wellFormed_iff
+
+theorem require_Usul_IDA_perform_ne_omit :
+    ∀ (left right : Action) (opportunity : Opportunity),
+      TargetExpr.perform left ≠ TargetExpr.omit right opportunity :=
+  Usul.IDA.perform_ne_omit
+
+theorem require_Usul_IDA_perform_ne_affect :
+    ∀ (action : Action) (state : Affect),
+      TargetExpr.perform action ≠ TargetExpr.affect state :=
+  Usul.IDA.perform_ne_affect
+
+theorem require_Usul_IDA_omit_ne_affect :
+    ∀ (action : Action) (opportunity : Opportunity) (state : Affect),
+      TargetExpr.omit action opportunity ≠ TargetExpr.affect state :=
+  Usul.IDA.omit_ne_affect
+
+theorem require_Usul_IDA_perform_eq_iff :
+    ∀ left right : Action,
+      TargetExpr.perform left = TargetExpr.perform right ↔ left = right :=
+  Usul.IDA.perform_eq_iff
+
+theorem require_Usul_IDA_omit_eq_iff :
+    ∀ (left right : Action) (lo ro : Opportunity),
+      TargetExpr.omit left lo = TargetExpr.omit right ro ↔
+        left = right ∧ lo = ro :=
+  Usul.IDA.omit_eq_iff
+
+theorem require_Usul_IDA_affect_eq_iff :
+    ∀ left right : Affect,
+      TargetExpr.affect left = TargetExpr.affect right ↔ left = right :=
+  Usul.IDA.affect_eq_iff
+
+theorem require_Usul_IDA_target_eq_iff_expression_eq :
+    ∀ left right : Target, left = right ↔ left.expression = right.expression :=
+  Usul.IDA.target_eq_iff_expression_eq
+
+theorem require_Usul_IDA_target_validate_eq_some_iff :
+    ∀ (expression : TargetExpr) (target : Target),
+      Target.validate expression = some target ↔ target.expression = expression :=
+  Usul.IDA.target_validate_eq_some_iff
+
+theorem require_Usul_IDA_target_validate_eq_none_iff :
+    ∀ expression : TargetExpr,
+      Target.validate expression = none ↔ ¬ expression.WellFormed :=
+  Usul.IDA.target_validate_eq_none_iff
+
+theorem require_Usul_IDA_target_validate_roundTrip :
+    ∀ target : Target, Target.validate target.expression = some target :=
+  Usul.IDA.target_validate_roundTrip
+
+theorem require_Usul_IDA_target_mismatch_outOfScope :
+    ∀ (lk rk : Key) (left right : Input),
+      lk.target.expression ≠ rk.target.expression →
+        combine lk rk left right = .outOfScope :=
+  Usul.IDA.target_mismatch_outOfScope
+
+theorem require_Usul_IDA_known_result_same_target :
+    ∀ {lk rk : Key} {left right result : Constraint},
+      combine lk rk (.known left) (.known right) = .known result →
+        lk.target.expression = rk.target.expression :=
+  @Usul.IDA.known_result_same_target
+
+theorem require_UsulTest_IDA_target_fixture_admission :
+    ∀ code : Fin 28,
+      targetAdmitCode code.val = some (if code.val < 20 then 1 else 0) :=
+  UsulTest.IDA.target_fixture_admission
+
+theorem require_UsulTest_IDA_target_reconstruction :
+    targetRefineCode 0 1 0 = some 16 ∧ targetRefineCode 1 0 5 = some 4 :=
+  UsulTest.IDA.target_reconstruction
+
+theorem require_UsulTest_IDA_target_distinctions :
+    targetRefineCode 0 2 0 = some 34 ∧
+    targetRefineCode 0 5 0 = some 34 ∧
+    targetRefineCode 0 6 0 = some 34 ∧
+    targetRefineCode 0 7 0 = some 34 ∧
+    targetRefineCode 0 8 0 = some 34 ∧
+    targetRefineCode 8 9 0 = some 34 ∧
+    targetRefineCode 8 10 0 = some 34 ∧
+    targetRefineCode 8 11 0 = some 34 ∧
+    targetRefineCode 8 12 0 = some 34 ∧
+    targetRefineCode 8 13 0 = some 34 ∧
+    targetRefineCode 0 14 0 = some 34 ∧
+    targetRefineCode 14 17 0 = some 34 ∧
+    targetRefineCode 0 18 0 = some 34 ∧
+    targetRefineCode 0 19 0 = some 34 :=
+  UsulTest.IDA.target_distinctions
+
+theorem require_UsulTest_IDA_malformed_targets_rejected :
+    ∀ code : Fin 8,
+      targetRefineCode (code.val + 20) 0 5 = some 35 ∧
+      targetRefineCode 0 (code.val + 20) 4 = some 35 :=
+  UsulTest.IDA.malformed_targets_rejected
+
+theorem require_UsulTest_IDA_target_selector_bounds :
+    targetAdmitCode 28 = none ∧ targetAdmitCode 100 = none ∧
+    targetRefineCode 28 0 0 = none ∧ targetRefineCode 0 28 0 = none ∧
+    targetRefineCode 0 0 6 = none :=
+  UsulTest.IDA.target_selector_bounds
+
 end UsulTest.IDAContracts

@@ -36,9 +36,19 @@ all-five set is a supplied but maximally broad constraint. `Input.noRuling` supp
 no known answer, and `Input.suspended` separately records suspension.
 
 Every `Key` contains seven coordinates: question, subject, target, context, time,
-profile, and profile version. All must match. They are identifiers represented by
-natural numbers in this foundation; equality of identifiers does not authenticate
-their source or establish that the represented context is appropriate.
+profile, and profile version. All must match. The target now contains a complete checked expression; the
+other six coordinates remain opaque natural-number identifiers. A performed
+act includes its qualified operation, complete signature, and named typed
+operands. An omitted act also specifies its opportunity. An affect describes
+its quality and typed object. None of these structural checks authenticates
+the source or establishes contextual applicability.
+
+The [candidate act reference](../../research/ida-act-reference.md) supplies a
+source-linked worklist for interpreting operation kinds and their parameters.
+It is separate from this Lean module. Its 34 proposals preserve unresolved
+argument sorts and do not assign rulings. A participant in an operation is not
+automatically identified with the separately supplied judgment subject;
+likewise, `perform` does not establish that the described act occurred.
 
 ## 3. Conjunction of two required premises
 
@@ -82,3 +92,25 @@ codes are rejected, and mask zero cannot construct a known empty set.
 types. [scripts.ExportIDA](../scripts/ExportIDA.md) emits the declared finite family
 for independent Quint comparison. That family checks all 33 inputs on each side
 for eight key variants; it does not enumerate every pair of arbitrary keys.
+
+## 5. Structured target contracts
+
+| Theorem or group | Plain English |
+| --- | --- |
+| operation_wellFormed_parameter_roles / unique_roles | Declared roles have nonempty names and cannot be duplicated. |
+| action_wellFormed_operation / signature / references | Operands fit the complete supplied signature and every reference has a qualified nonempty name. |
+| action_eq_iff_fields | Equality preserves both operation and ordered operands. |
+| opportunity_wellFormed_bounds / omit_wellFormed_iff | An omission names an action and a strictly increasing opportunity interval on a named clock. |
+| perform_ne_omit / perform_ne_affect / omit_ne_affect | The three target forms remain distinct. |
+| perform_eq_iff / omit_eq_iff / affect_eq_iff | Equality preserves all data carried by each constructor. |
+| target_eq_iff_expression_eq | Proof objects do not create hidden identity differences. |
+| target_validate_eq_some_iff / eq_none_iff / roundTrip | Structural checking preserves the supplied expression exactly and rejects precisely malformed expressions. |
+| target_mismatch_outOfScope | Different target expressions prevent conjunction, regardless of premise status. |
+| known_result_same_target | Every known conjunction result preserves the complete target on both sides. |
+
+The symbols and operation signatures are supplied descriptions. Source/profile
+admission, reference resolution and real-world identity remain separate.
+Control and intention stay in context. Opportunity clock positions are numeric
+quantities; the target itself is structured data. The 28 fixture numbers select
+explicit test expressions only. Fixture-boundary tag 35 denotes a rejected
+target shape and is not a ruling or a Result value.
