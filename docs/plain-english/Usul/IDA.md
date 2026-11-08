@@ -43,6 +43,13 @@ operands. An omitted act also specifies its opportunity. An affect describes
 its quality and typed object. None of these structural checks authenticates
 the source or establishes contextual applicability.
 
+The [candidate act reference](../../research/ida-act-reference.md) supplies a
+source-linked worklist for interpreting operation kinds and their parameters.
+It is separate from this Lean module. Its 34 proposals preserve unresolved
+argument sorts and do not assign rulings. A participant in an operation is not
+automatically identified with the separately supplied judgment subject;
+likewise, `perform` does not establish that the described act occurred.
+
 ## 3. Conjunction of two required premises
 
 `combine` applies the following cases in order:

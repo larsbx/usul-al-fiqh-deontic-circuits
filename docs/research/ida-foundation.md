@@ -70,9 +70,12 @@ Target equality preserves the entire expression. It distinguishes performing
 from omitting, omission opportunities, affect from conduct, namespaces, operation
 signatures, reference sorts, operand roles, and order. It does not identify
 synonyms, normalize argument order, or prove real-world event identity.
-The actor is supplied by the separate subject coordinate. Voluntary control,
-capacity and intention remain contextual; an affect description does not imply
-that the feeling was chosen or that a taklifi ruling applies.
+The judgment subject is supplied by the separate subject coordinate. An
+operation may also name participants, including a payer or performer; the
+checker does not bind a person reference to the opaque subject identifier.
+Voluntary control, capacity and intention remain contextual; an affect
+description does not imply that the feeling was chosen or that a taklifi ruling
+applies. `perform` describes an act; it does not prove that the act occurred.
 
 Opportunity bounds are natural-number positions on a named clock. This use
 represents a quantity, not an opaque target. Their relationship to calendar time,
@@ -84,6 +87,29 @@ Target.validate checks raw expressions and either returns the exact same
 payload with its structural proof or rejects it. Lean's Key can contain only
 a checked target. Quint explicitly checks the corresponding raw structures
 before conjunction. These are structural checks, not source admission.
+
+### Candidate fiqh act reference
+
+The [act reference](ida-act-reference.md) connects this grammar to the existing
+corpus without treating its labels as admitted signatures. Its
+[versioned candidate catalogue](../../corpus/proposals/fiqh-acts/reference.json)
+retains 34 proposed kinds, their source loci, role order, legacy classifications,
+and explicit unresolved typing decisions. The legacy graph separately contains
+537 concepts, including 293 labeled `act`, under 57 reachable topic roots.
+Neither those topics nor the proposal family tags are formal subtypes.
+
+The current reference sorts can express the entire proposed role list for one
+restricted illustration, `transfer.pay_zakat`: payer and recipient as person
+references, and transferred property as an asset reference. The other 33
+proposals retain unresolved roles. The convention `fiqh.act.candidate.v1`
+places the definition version in the operation namespace. It does not authorize
+the signature, prove a source interpretation, or add a registry to Lean.
+
+Run `cd pipeline && python -m usul_corpus.act_reference --out
+../.cache/fiqh-act-reference` to validate and export the reference. The separate
+reference workflow checks source pins and candidate-data invariants; its receipt
+does not add a Lean theorem, Quint comparison, or admitted fiqh ruling. The
+existing IDA verification below remains the gate for the formal target model.
 
 ### Additional proof and adversarial obligations
 
