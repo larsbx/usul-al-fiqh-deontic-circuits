@@ -1,0 +1,152 @@
+[
+  {
+    "name": "capacity_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  | .panicOverflow => false",
+    "after": "  | .panicOverflow => true"
+  },
+  {
+    "name": "modality_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  | .conditional condition => conditions.contains (.tag condition)",
+    "after": "  | .conditional condition => conditions.contains (.tag condition) || true"
+  },
+  {
+    "name": "comparative_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  | .comparative object => conditions.contains (.strongerThan object)",
+    "after": "  | .comparative object => conditions.contains (.strongerThan object) || true"
+  },
+  {
+    "name": "subject_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  subject == \"all_mukallafin\" || db.memberships.contains (agent, subject)",
+    "after": "  subject == \"all_mukallafin\" || db.memberships.contains (agent, subject) || true"
+  },
+  {
+    "name": "tier_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "    underTaklifControl o.control && !quarantined o.evidence)",
+    "after": "    underTaklifControl o.control && (!quarantined o.evidence || true))"
+  },
+  {
+    "name": "discharge_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "          !realizes db path context.agent s.affect s.object",
+    "after": "          realizes db path context.agent s.affect s.object"
+  },
+  {
+    "name": "anti_pair_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "          !realizes db path token.agent pair.commanded pair.object",
+    "after": "          realizes db path token.agent pair.commanded pair.object"
+  },
+  {
+    "name": "scope_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  left.affect == right.affect && left.object == right.object",
+    "after": "  (left.affect == right.affect || true) && left.object == right.object"
+  },
+  {
+    "name": "operator_conflict",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  | .o, .f | .f, .o => true",
+    "after": "  | .o, .f | .f, .o => false"
+  },
+  {
+    "name": "alias_normalization",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  let ids := canonical (db.aliases.filterMap (fun (alias, id) => if alias == term then some id else none))",
+    "after": "  let ids := canonical ((db.aliases.filterMap (fun (alias, id) => if alias == term then some id else none)).filter (fun _ => false))"
+  },
+  {
+    "name": "object_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "      if fact.value.object != value.object",
+    "after": "      if fact.value.object != value.object && false"
+  },
+  {
+    "name": "source_fact_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  if candidates.isEmpty then",
+    "after": "  if candidates.isEmpty && false then"
+  },
+  {
+    "name": "context_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  if !sources.isEmpty && contexts.isEmpty then",
+    "after": "  if !sources.isEmpty && contexts.isEmpty && false then"
+  },
+  {
+    "name": "subject_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "    if !subjectMatches db agent fact.subject && !membershipUnknown db agent fact.subject then",
+    "after": "    if !subjectMatches db agent fact.subject && !membershipUnknown db agent fact.subject && false then"
+  },
+  {
+    "name": "membership_closure",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "    !db.closedSubjects.contains agent",
+    "after": "    (!db.closedSubjects.contains agent || true)"
+  },
+  {
+    "name": "world_undetermined_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "          membershipUnknown db context.agent fact.subject\n      then some (.subjectMembership context.agent fact.subject) else none",
+    "after": "          membershipUnknown db context.agent fact.subject && false\n      then some (.subjectMembership context.agent fact.subject) else none"
+  },
+  {
+    "name": "claim_undetermined_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "      if membershipUnknown db claim.agent fact.subject && (claimObstructions db claim).isEmpty",
+    "after": "      if membershipUnknown db claim.agent fact.subject && (claimObstructions db claim).isEmpty && false"
+  },
+  {
+    "name": "unbound_world_guard",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  | none => .error \"instantiation_error: world\"",
+    "after": "  | none => .ok (worldVerdict db \"w_allah_fear\")"
+  },
+  {
+    "name": "undetermined_verdict",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "    else if !unknowns.isEmpty then .undetermined unknowns",
+    "after": "    else if !unknowns.isEmpty && false then .undetermined unknowns"
+  },
+  {
+    "name": "modality_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "      if !modalitySatisfied value.modality context.conditions then",
+    "after": "      if !modalitySatisfied value.modality context.conditions && false then"
+  },
+  {
+    "name": "capacity_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "        if !underTaklifControl observation.control then",
+    "after": "        if !underTaklifControl observation.control && false then"
+  },
+  {
+    "name": "tier_emitter",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "        if quarantined observation.evidence then",
+    "after": "        if quarantined observation.evidence && false then"
+  },
+  {
+    "name": "observation_context_gate",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  if !sources.isEmpty && !contexts.isEmpty then",
+    "after": "  if !sources.isEmpty then"
+  },
+  {
+    "name": "claim_state_precedence",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "      if membershipUnknown db claim.agent fact.subject && (claimObstructions db claim).isEmpty",
+    "after": "      if membershipUnknown db claim.agent fact.subject"
+  },
+  {
+    "name": "claim_to_world",
+    "path": "formal/lean/Usul/Fixtures/Sheaf.lean",
+    "before": "  canonical (claimReasons ++ conflicts)",
+    "after": "  canonical (claimReasons.filter (fun _ => false) ++ conflicts)"
+  }
+]

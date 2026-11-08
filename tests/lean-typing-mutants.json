@@ -1,0 +1,44 @@
+[
+  {
+    "name": "typing_applies_guard",
+    "path": "formal/lean/Usul/Fixtures/Typing.lean",
+    "before": "(readFields encoder).all (known situation)",
+    "after": "(readFields encoder).all (fun _ => true)"
+  },
+  {
+    "name": "typing_missing_guard",
+    "path": "formal/lean/Usul/Fixtures/Typing.lean",
+    "before": "reads encoder field && !known situation field",
+    "after": "reads encoder field && (known situation field || !known situation field)"
+  },
+  {
+    "name": "typing_extends_closure",
+    "path": "formal/lean/Usul/Fixtures/Typing.lean",
+    "before": "child == qaida && fieldOfFuel fuel parent field",
+    "after": "child == qaida && false && fieldOfFuel fuel parent field"
+  },
+  {
+    "name": "typing_ill_typed",
+    "path": "formal/lean/Usul/Fixtures/Typing.lean",
+    "before": "reads encoder field && !typedField field",
+    "after": "reads encoder field && !typedField field && false"
+  },
+  {
+    "name": "typing_unrelated_shared",
+    "path": "formal/lean/Usul/Fixtures/Typing.lean",
+    "before": "!related first second\n",
+    "after": "!related first second && false\n"
+  },
+  {
+    "name": "typing_stated_kept",
+    "path": "formal/lean/Usul/Fixtures/Typing.lean",
+    "before": "!hasField original fact.1 && !current.contains fact",
+    "after": "(hasField original fact.1 || !hasField original fact.1) && !current.contains fact"
+  },
+  {
+    "name": "typing_premise",
+    "path": "formal/lean/Usul/Fixtures/Typing.lean",
+    "before": "rule.premises.all facts.contains",
+    "after": "rule.premises.all (fun fact => facts.contains fact || !facts.contains fact)"
+  }
+]

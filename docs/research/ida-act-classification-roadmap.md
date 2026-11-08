@@ -14,6 +14,12 @@ categorical structures are conditional extensions with their own exit criteria.
 Formal development can proceed with explicitly candidate interpretations;
 interpretive admission remains a separately evidenced decision.
 
+The [native Lean fixture migration](../architecture/lean-fixture-migration.md)
+moves the contextual/sheaf, fatwa, and typed-routing regression expectations
+into the Lean verification substrate. Its finite parity and mutation receipts
+support development here; they do not complete ACT-00 or admit any proposed
+classification or categorical transformation.
+
 ## 1. Baseline and evidence boundaries
 
 ### Inspected main and the separate structured-target branch

@@ -141,7 +141,7 @@ The takhrīj tranche tests the *bank* against the texts. The Prolog oracle asks 
   - `bank(C)`: the Prolog bank equals the Python/Lean kernel (68 cases);
   - `agrees(C)`: the oracle's ruling is the text's, or `expect_false` for a recorded gap.
 - [`examples/v40_fatwa_oracle_fixtures.pl`](../../examples/v40_fatwa_oracle_fixtures.pl) loads both and adds precedence vectors for the rules that the real cases mask.
-- `tests/run_all.sh` runs it. `tests/mutation_test.sh` disables each rule in turn, and every mutant is killed.
+- `make fixtures` now runs the [native Lean migration](lean-fixture-migration.md): all 300 fatwa expectations, their premises, and 29 corresponding semantic mutants. `make fixtures-legacy` retains the independent Prolog replay and `tests/mutation_test.sh` controls. Corpus tools using `make fatawa-prolog` remain supported.
 
 **Result on tranche 1** ([`report.json`](../../corpus/fatawa/prolog/report.json)): 122 cases, segmentation errors excluded.
 

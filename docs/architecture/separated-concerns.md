@@ -106,7 +106,7 @@ It loads the concern modules and contains only smoke-query documentation. This k
 
 ## Promotion path
 
-1. Keep the Prolog fixture split as the executable reference.
+1. Run the [native Lean fixture suites](lean-fixture-migration.md) as the default gate, preserving the Prolog concern split as an independent migration reference.
 2. Mirror the three concerns in the Ash schema as separate resource groups.
 3. Add import adapters that populate affect facts independently from temporal/case fixtures.
 4. Add test runners that can exercise the sheaf concern against multiple temporal fixtures.

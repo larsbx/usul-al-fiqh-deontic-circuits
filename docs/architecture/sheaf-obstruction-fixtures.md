@@ -96,7 +96,13 @@ fixture_expectation(allah_fear_path_glues,
 
 ## Executable vectors
 
-`tests/run_all.sh` runs in CI (`.github/workflows/fixtures.yml`) and has three stages:
+`tests/run_all.sh` now runs the [native Lean fixture gate](lean-fixture-migration.md)
+in CI (`.github/workflows/fixtures.yml`). It preserves all 58 named sheaf
+expectations, their premises, and the 25 original guard/emitter mutations.
+`Usul.Fixtures.Sheaf` implements the model; `UsulTest.Fixtures.Sheaf` states the
+expectations. The legacy Prolog syntax below remains the migration reference.
+
+The optional `tests/run_legacy_fixtures.sh` retains the original three stages:
 
 | Stage | File | Fails when |
 |---|---|---|
@@ -121,7 +127,7 @@ Each implemented guard is pinned from both sides. The guard-withdrawal worlds be
 
 `test_scoped_affect` / `test_subject_class` is a fixture fact like the conflict pair. It is not source-derived. It exists because every ADQ-shaped fact is addressed to `all_mukallafin`, which would leave the subject guard untested.
 
-The fixture runner exits 2 when the fixtures cannot be judged. That covers any load warning or error, a stray source, and a malformed or orphaned `fixture_expectation/3` or `fixture_premise/2`. A premise not written as `query(Goal)` would otherwise be skipped silently. A mutant counts as killed only on exit 1, meaning a vector failed. Every guard and emitter in `tests/mutation_test.sh` is killed this way.
+The legacy Prolog fixture runner exits 2 when the fixtures cannot be judged. That covers any load warning or error, a stray source, and a malformed or orphaned `fixture_expectation/3` or `fixture_premise/2`. A premise not written as `query(Goal)` would otherwise be skipped silently. A mutant counts as killed only on exit 1, meaning a vector failed. Every guard and emitter in `tests/mutation_test.sh` is killed this way.
 
 ## Claim obstruction worlds
 

@@ -171,3 +171,19 @@ Pinned Mathlib bridge in `formal/lean-mathlib/`, outside the kernel build.
 | `UsulTest.IDADerivation` | [UsulTest/IDADerivation.md](UsulTest/IDADerivation.md) | pending |
 | `UsulTest.IDADerivationContracts` | [UsulTest/IDADerivationContracts.md](UsulTest/IDADerivationContracts.md) | pending |
 | `scripts.ExportIDADerivation` | [scripts/ExportIDADerivation.md](scripts/ExportIDADerivation.md) | pending |
+
+## Native Lean fixture migration
+
+| Module | Companion | Doc |
+| --- | --- | --- |
+| `Usul.Fixtures.Runner` | [Usul/Fixtures/Runner.md](Usul/Fixtures/Runner.md) | pending |
+| `Usul.Fixtures.Sheaf` | [Usul/Fixtures/Sheaf.md](Usul/Fixtures/Sheaf.md) | pending |
+| `Usul.Fixtures.Fatwa` | [Usul/Fixtures/Fatwa.md](Usul/Fixtures/Fatwa.md) | pending |
+| `Usul.Fixtures.Typing` | [Usul/Fixtures/Typing.md](Usul/Fixtures/Typing.md) | pending |
+| `UsulTest.Fixtures.Runner` | [UsulTest/Fixtures/Runner.md](UsulTest/Fixtures/Runner.md) | pending |
+| `UsulTest.Fixtures.Sheaf` | [UsulTest/Fixtures/Sheaf.md](UsulTest/Fixtures/Sheaf.md) | pending |
+| `UsulTest.Fixtures.Fatwa` | [UsulTest/Fixtures/Fatwa.md](UsulTest/Fixtures/Fatwa.md) | pending |
+| `UsulTest.Fixtures.Typing` | [UsulTest/Fixtures/Typing.md](UsulTest/Fixtures/Typing.md) | pending |
+| `UsulTest.Fixtures.Contracts` | [UsulTest/Fixtures/Contracts.md](UsulTest/Fixtures/Contracts.md) | pending |
+| `scripts.RunFixtures` | [scripts/RunFixtures.md](scripts/RunFixtures.md) | pending |
+| `Usul.Fixtures.TypingData` | [Usul/Fixtures/TypingData.md](Usul/Fixtures/TypingData.md) | pending |

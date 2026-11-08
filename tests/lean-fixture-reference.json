@@ -1,0 +1,2432 @@
+{
+  "schema": "usul.fixture-migration-reference.v1",
+  "reference_revision": "128f7b92dab524dffbbbe5ea9f2f9318bf2199c9",
+  "source_sha256": {
+    "examples/v38_contextual_affect_deontics.pl": "a64dbf5205a81703c22a548e09422fdfb00fb2f90c7ccf4bb8da3d110461ebc4",
+    "examples/v39_affect_concern.pl": "6c58c14ab81c1efb1783b701b341ed91a9f8217255895d03b1fb05a9ced71c11",
+    "examples/v39_claim_concern.pl": "db388fe343194cb0a4bdb19d2bb38376a50da8b3c502217dcae0905f94002011",
+    "examples/v39_sheaf_concern.pl": "9a098b7c76c8d5f9ea5cfc4167b5aa4f21cb560bbfb30c2c678dc0039fc392b1",
+    "examples/v39_sheaf_obstruction_fixtures.pl": "2369794b87b344d936e7b40bd647942ce9a1931985a6bc9d880e72a19e04530c",
+    "examples/v39_temporal_concern.pl": "0e6128a6e29c1755fe5fcb3ad4837452d38673fb52d817f5614441c08cb192c2",
+    "examples/v40_fatwa_cases.pl": "45145f3f802b6a15feff08521cf355f8fc474a89a7a63c19420fac82be98f6fe",
+    "examples/v40_fatwa_oracle_fixtures.pl": "59fbbf2287a773518624755ac80159be70912e48ea7221d6174d71e4a511ebc1",
+    "examples/v40_fatwa_rules.pl": "192aea1ab45ada12840e47af00a272c355b74e2e549afc073ddbb617ca3d9441",
+    "examples/v41_types.pl": "32b9530619d4a40c6bc42e95f8e987ef2d76fd80175c06221b75c5fd0dc08071",
+    "examples/v41_typing.pl": "7fea50df549ec3525641423e4be9e13669503e0ae7b3540856a9b1ec13db6155",
+    "examples/v41_typing_fixtures.pl": "db873641e66f7ae3a1d735e7a2ae94d725f1ed37e4b5121a894cce2ab73213f9",
+    "tests/fixture_runner.pl": "98ffc6d5a32129b18b14560bcf5a4382b9e0b841cc992c0ceda062534cf69413",
+    "tests/mutation_test.sh": "1bc8d9731a0631724611b158e7b2f666b51fa4c054734044e2a3e0de045900dc",
+    "tests/run_fixture_expectations.pl": "743cc52fc2041ff3f940bbac0fc50bfafca5109c4e54dd70cbc763118d5782a5",
+    "tests/test_fixture_runner.pl": "29c123c2a915df3b6581b977952299ef49940eaaf3bc0d2cf58e99f4e8f46925"
+  },
+  "suites": {
+    "sheaf": [
+      {
+        "actual": true,
+        "expected": true,
+        "name": "alias_gluing_failure_names_alias_and_candidates",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "allah_fear_path_glues",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "allah_fear_with_precedence_lifts_obligation",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "allah_fear_without_precedence_lifts_no_obligation",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "capacity_violation_names_control_status",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_obstruction_blocks_world_gluing",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_on_involuntary_affect_emits_only_capacity_violation",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_on_quarantined_evidence_emits_only_tier_quarantine",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_on_wrong_object_emits_only_object_collision",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_outside_subject_emits_only_subject_collision",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_with_alias_ambiguity_emits_only_alias_gluing_failure",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_with_inactive_modality_emits_only_modality_unsatisfied",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "claim_with_unknown_membership_is_not_obstructed",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_with_unknown_membership_is_undetermined",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_without_context_has_only_no_context",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_without_context_is_unsupported",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_without_observation_is_unsupported",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "claim_without_source_fact_is_unsupported",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "clean_path_verdict_glues",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "clean_world_verdict_glues_with_its_sections",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "closed_outsider_world_glues",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "conflict_world_verdict_is_obstructed",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "display_alias_claim_normalizes_and_is_clean",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "distinct_affects_do_not_conflict",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "every_claim_has_exactly_one_state",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "every_fixture_world_has_exactly_one_verdict",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "every_obstruction_category_is_emitted",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "involuntary_panic_lifts_no_section",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "involuntary_panic_not_direct_liability",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "involuntary_panic_path_has_no_obstruction",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "lifted_claim_is_clean",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "modality_unsatisfied_names_modality",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "object_collision_names_claimed_and_source_objects",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "obstructed_path_verdict_lists_every_reason",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "obstruction_takes_precedence_over_unknown_membership",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "operator_conflict_emits_obstruction",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "other_fear_displacing_taqwa_blocks",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "other_fear_without_displacement_not_forbidden",
+        "premises": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "quarantined_evidence_lifts_no_section",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "quarantined_evidence_supports_no_forbidden_path",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "qunut_without_raja_blocks_by_forbidden_and_antipair",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "qunut_without_raja_emits_anti_pair_displacement",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "qunut_without_raja_emits_forbidden",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "qunut_without_raja_emits_missing_required",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "raja_path_glues",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "raja_path_has_no_missing_required",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "subject_collision_names_agent_and_subject",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "subject_scoped_fact_does_not_lift_outside_subject",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "subject_scoped_fact_lifts_inside_subject",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "tier_quarantine_names_evidence",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "unbound_world_verdict_raises",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "undetermined_world_is_not_gluable",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "undetermined_world_makes_path_undetermined",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "unknown_membership_without_claim_is_undetermined",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "unresolved_subject_world_is_undetermined",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "world_with_obstructed_claim_is_not_gluable",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "world_without_context_is_undetermined",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "yusuf_brothers_hasad_blocks",
+        "premises": []
+      }
+    ],
+    "fatwa": [
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.10284.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.10284.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.103846.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.103846.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.103846.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.103846.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.104241.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.104241.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.104241.f003')",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "agrees('islamqa.107436.f001')",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.108549.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.110860.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.110860.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.110860.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.110860.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.114793.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.114793.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.114793.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.114793.f004')",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "agrees('islamqa.126387.f001')",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.126502.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.128510.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.128510.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.128887.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.131070.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.131070.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.131070.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.13717.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.13717.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.13717.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.13717.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.13717.f005')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.140833.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.140833.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.146191.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.146191.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.146191.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.152192.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.164604.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.164604.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.165409.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.165409.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.170478.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.170478.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.170478.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.176193.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.176193.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.179911.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.179911.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.179911.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.187157.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.187157.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.191459.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.191459.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.191459.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.196584.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.196584.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.196584.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.198294.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.198294.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.198294.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.209303.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.209303.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.223512.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.223512.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.22830.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.22830.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.22830.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.23424.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.23424.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.242731.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.252463.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.253293.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.253293.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.253293.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.253293.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.260724.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.260724.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.266167.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.266167.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.272160.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.286486.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.287215.f001')",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "agrees('islamqa.287215.f002')",
+        "premises": [
+          true,
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.287215.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.304828.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.304828.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.305083.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.305083.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.305083.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.315435.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.315435.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.315435.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.317604.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.317604.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.328808.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.344230.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.344230.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.345284.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.345284.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.348122.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.348122.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.348122.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.363963.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.363963.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.363963.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.4046.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.4046.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.4046.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.4046.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.4050.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.4588.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.4652.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.5049.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.5049.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.5049.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.5049.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.5049.f005')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.5049.f006')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.5049.f007')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.83025.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "agrees('islamqa.83827.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f000')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q045.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q106.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f000')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f005')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f006')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f007')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f008')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f009')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f010')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f014')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f015')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f016')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f017')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f018')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f019')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.10284.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.103846.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.103846.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.103846.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.103846.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.104241.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.104241.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.104241.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.108549.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.110860.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.110860.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.110860.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.114793.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.114793.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.114793.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.114793.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.128510.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.128887.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.131070.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.13717.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.13717.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.13717.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.13717.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.13717.f005')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.140833.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.146191.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.164604.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.165409.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.165409.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.170478.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.170478.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.170478.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.176193.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.179911.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.179911.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.179911.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.187157.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.187157.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.191459.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.191459.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.191459.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.196584.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.198294.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.198294.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.209303.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.209303.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.22830.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.22830.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.22830.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.23424.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.23424.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.253293.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.253293.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.253293.f003')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.253293.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.260724.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.260724.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.287215.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.304828.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.304828.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.4046.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.4046.f002')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.4050.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.4652.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.5049.f006')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.5049.f007')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.83025.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "bank('islamqa.83827.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "precedence(announced_year)",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "precedence(lawful_authority)",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "precedence(physician)",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "precedence(recipient)",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q022.f008')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f001')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q026.f005')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f004')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f011')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f012')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f013')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f020')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f021')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f022')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f023')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f024')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f025')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f026')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f027')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f028')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f029')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f030')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f031')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f032')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f033')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f034')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f035')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f036')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f037')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f038')",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "within_positions('ibn_rajab.taqrir_qawaid.openiti_rajab_shamela21730.q159.f039')",
+        "premises": []
+      }
+    ],
+    "typing": [
+      {
+        "actual": false,
+        "expected": false,
+        "name": "amana_is_not_yaqin",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "consumed_is_unidentified",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "coverage_counts_known_fields",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "ghalaba_is_zahir",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "ill_typed_caught",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "inquiry_is_the_missing_fact",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "itlaf_missing_mental",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "itlaf_needs_q13",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "known_field_not_missing",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "luqata_extends_majhul",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "luqata_routes_to_majhul",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "negligence_does_not_settle_inquiry",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "negligence_fields_not_shared",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "negligence_routes_trust_loss",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "no_silent_identification",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "premise_required",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "q106_unknown_not_q98",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "q14_shared_transgression",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "q28_shared_original",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "q6_diligence_is_q95",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "q95_negligence_is_inquiry",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "q97_despair_is_106",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "q97_known_owner_not_majhul",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "q97_unknown_owner_is_unidentified",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "q98_owner_is_106_unknown",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "rukhsa_reaches_yaqin",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "rukhsa_settles_firmness",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "silent_identification_caught",
+        "premises": []
+      },
+      {
+        "actual": false,
+        "expected": false,
+        "name": "stated_fact_kept",
+        "premises": [
+          true
+        ]
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "well_typed",
+        "premises": []
+      },
+      {
+        "actual": true,
+        "expected": true,
+        "name": "year_settles_despair",
+        "premises": []
+      }
+    ]
+  }
+}
