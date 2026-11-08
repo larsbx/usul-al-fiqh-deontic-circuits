@@ -32,6 +32,19 @@
 
 ## Every encoder typed (`make judgement`)
 
+### Source-bound IDA records
+
+`Usul.IDAJudgment` belongs to this question/answer type layer. It reuses
+`Question.Answer`, supports nonempty partial answers and distinct unresolved
+statuses, and binds a record to its inquiry identity, source reference,
+interpretation/version and a separately supplied current admission entry.
+Its single-source replay contract is documented in
+[`ida-judgments.md`](../research/ida-judgments.md). Question-indexed typing and
+binding are separate from `Judgement.WellTyped`, source correspondence, and the
+authority to admit a position.
+
+### Existing encoder bank
+
 [`corpus/types/encoders.json`](../../corpus/types/encoders.json) gives each of the 202 takhrīj encoders a *sort*. A *judgement* answers a `Question` or a yes/no `Aspect`. The other sorts are outputs that answer no khiṭāb, so they must never be compared with one:
 
 | Sort | What the output is | Encoders | Cases |

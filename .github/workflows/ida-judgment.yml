@@ -1,0 +1,73 @@
+name: IDA source-bound judgments
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ida-judgment.yml'
+      - 'Makefile'
+      - 'formal/check-ida*.py'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'docs/research/ida-*.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ida-judgment.yml'
+      - 'Makefile'
+      - 'formal/check-ida*.py'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'docs/research/ida-*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ida-judgment:
+    name: IDA judgment Lean, Quint, bindings, and axiom audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Install elan for the repository's pinned Lean version
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Verify the complete declared source-bound judgment slice
+        run: make ida-judgment
+      - name: Require evidence for the exact checked-out revision
+        run: |
+          python3 - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          report = json.loads(Path('.cache/ida-judgment/report.json').read_text())
+          assert report['status'] == 'passed'
+          assert report['inputs_match_head'] is True
+          assert report['revision'] == subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          PY
+      - name: Retain revision-bound judgment verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-judgment-verification
+          path: .cache/ida-judgment/
+          include-hidden-files: true
+          if-no-files-found: error
