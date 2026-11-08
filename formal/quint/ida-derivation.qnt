@@ -25,6 +25,7 @@ module idaDerivation {
   type Machine = { nodes: List[Evaluation], structurallyValid: bool }
   type Receipt = { environment: Environment, program: Program, evaluation: Evaluation }
   type LeafFixture = { environment: Environment, premise: Premise }
+  type TargetFixture = { environment: Environment, left: Premise, right: Premise }
   type TreeFixture = { environment: Environment, first: Premise, middle: Premise, last: Premise }
 
   pure def samePremise(left: Premise, right: Premise): bool = and {
@@ -336,6 +337,52 @@ module idaDerivation {
     val right = scopeRight(caseId)
     evaluate(fixtureEnvironment(List(left, right)), pairProgram(left, right))
   }
+  pure def structuredPremise(entryId: int, target: A::Target): Premise = {
+    val premise = fixturePremise(1, 34, entryId)
+    val raw = premise.request.record
+    withRaw(premise, raw.with("scope", raw.scope.with("target", J::DescribedTarget(target))))
+  }
+  pure def targetFixture(caseId: int): TargetFixture = {
+    val pair = List((0,1), (0,6), (8,8), (8,10), (14,14), (14,17), (0,0), (21,21))
+    val selectors = if (caseId < pair.length()) pair.nth(caseId) else (0,0)
+    val left = structuredPremise(1, A::rawTargetCases.nth(selectors._1))
+    val legacy = fixturePremise(1, 34, 2)
+    val right = if (caseId == 6) legacy else structuredPremise(2, A::rawTargetCases.nth(selectors._2))
+    val env = fixtureEnvironment(List(left, right))
+    val oldEnv = fixtureEnvironment(List(left, legacy))
+    val environment =
+      if (caseId == 8) env.with("currentVersions", List(
+        env.currentVersions.nth(0), env.currentVersions.nth(1).with("interpretationVersion", 2)))
+      else if (caseId == 9) env.with("authenticatedSources", List(
+        env.authenticatedSources.nth(0), env.authenticatedSources.nth(1).with("passageStart", 2)))
+      else if (caseId == 10) env.with("registry", oldEnv.registry)
+      else if (caseId == 11) env.with("evidence", oldEnv.evidence)
+      else if (caseId == 12) withEntryStatus(env, 2, J::Candidate)
+      else env
+    { environment: environment, left: left, right: right }
+  }
+  pure def targetOutcome(caseId: int): Evaluation = {
+    val fixture = targetFixture(caseId)
+    evaluate(fixture.environment, pairProgram(fixture.left, fixture.right))
+  }
+  pure def targetReplay(caseId: int): bool = {
+    val fixture = targetFixture(0)
+    val env = fixture.environment
+    val receipt = issueReceipt(env, pairProgram(fixture.left, fixture.right))
+    val legacy = fixturePremise(1, 34, 2)
+    if (caseId == 1) {
+      val output = receipt.evaluation
+      val changed = match output.conclusion {
+        | NoConclusion => NoConclusion
+        | KnownConclusionValue(value) => KnownConclusionValue(
+          value.with("scope", value.scope.with("target", legacy.request.record.scope.target)))
+      }
+      replay(env, receipt.with("evaluation", output.with("conclusion", changed)))
+    } else if (caseId == 2)
+      replay(env.with("registry", fixtureEnvironment(List(fixture.left, legacy)).registry), receipt)
+    else replay(env, receipt)
+  }
+
   pure def treeFixture(caseId: int): TreeFixture = {
     val first = fixturePremise(0, 31, 1)
     val original = fixturePremise(0, 16, 2)
@@ -570,6 +617,25 @@ module idaDerivation {
       else isBlocked(output, List(left, right), List(OutOfScope)),
     }
   }))
+  run derivationStructuredTargetTest = assert(0.to(12).forall(caseId => {
+    val fixture = targetFixture(caseId)
+    val premises = List(fixture.left, fixture.right)
+    val output = targetOutcome(caseId)
+    val expectedIssues = List(List(), List(OutOfScope), List(), List(OutOfScope), List(),
+      List(OutOfScope), List(OutOfScope), List(RegistryRejected(J::IllTyped), RegistryRejected(J::IllTyped)),
+      List(StaleInterpretation), List(SourceUnauthenticated), List(RegistryRejected(J::RecordMismatch)),
+      List(EvidenceMismatch), List(RegistryRejected(J::NotAdmitted))).nth(caseId)
+    if (expectedIssues.length() == 0) and {
+      output.provenance == premises, output.issues == List(), accepted(output),
+      output.conclusion == KnownConclusionValue({
+        questionId: 7, question: J::Sabab, answer: J::SignAnswer(true),
+        scope: fixture.left.request.record.scope
+      }),
+    }
+    else isBlocked(output, premises, expectedIssues)
+  }))
+  run derivationStructuredReplayTest = assert(
+    targetReplay(0) and not(targetReplay(1)) and not(targetReplay(2)))
   run derivationScopeBeforeTaintTest = assert(Set(0,32).forall(answerCode => {
     val left = fixturePremise(1, answerCode, 1)
     val right = scopeRight(8)

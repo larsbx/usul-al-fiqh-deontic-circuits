@@ -118,12 +118,48 @@ The CSV header is `section,a,b,c,result`. The Quint exporter emits one determini
 | tree | 0..9 | 0..2 | 0..7 | 240 |
 | alternatives | 0..1 | 0..1 | 0..7 | 32 |
 | replay | 0..15 | 0 | 0 | 16 |
-| **Total** | | | | **11032** |
+| target | 0..12 | 0 | 0..7 | 104 |
+| target-replay | 0..2 | 0 | 0 | 3 |
+| **Total** | | | | **11139** |
 
 All ranges are inclusive. Iterate coordinates from left to right in the table, smallest to largest, with c as the innermost coordinate.
 
 ## Independent fixed vectors
 
-The fixed-vector inventory contains all 160 leaf cases, 64 typed cases, 13 scope cases, 30 nested cases, 4 alternatives, 16 replay flags, and 14 selected Taklifi pairs: 301 cases in total. The retained gate record specifies these pairs: `(0,0), (0,4), (4,0), (0,32), (32,0), (32,32), (32,4), (4,32), (4,4), (30,31), (30,16), (1,16), (2,8), (31,31)`. Their vectors follow the independently specified blocker and intersection rules above. The exhaustive parity family covers all 1089 pairs.
+The fixed-vector inventory contains all 160 leaf cases, 64 typed cases, 13 scope cases, 30 nested cases, 4 alternatives, 16 replay flags, and 14 selected Taklifi pairs: 301 historical cases. The retained gate record specifies these pairs: `(0,0), (0,4), (4,0), (0,32), (32,0), (32,32), (32,4), (4,32), (4,4), (30,31), (30,16), (1,16), (2,8), (31,31)`. Their vectors follow the independently specified blocker and intersection rules above. The exhaustive parity family covers all 1089 pairs. The 16 ACT-00 cases below bring the fixed inventory to 317.
 
 The 136 authenticated source cells are checked separately against adapter output. Finite parity, fixed examples, mutation detection, and universal Lean proofs are different forms of evidence and must be reported separately. Neither the projection nor the synthetic fixtures establish correctness of an interpretation of religious source material.
+
+
+## Structured targets (ACT-00)
+
+The v2 derivation receipt preserves the historical row families above and
+appends the following cases. They use the complete synthetic repayment grammar
+from `TargetFixtures` in Lean and the independent `rawTargetCases` in Quint.
+Use question family 1, answer 34 and entries 1 and 2. Build a fresh environment
+from both premises unless a row specifies a changed authority input.
+
+| Case | Left and right targets or authority change | Expected issues |
+| --- | --- | --- |
+| 0 | Perform 0 and independently reconstructed perform 1 | [] |
+| 1 | Perform 0 and perform 6 with creditor and recipient exchanged | [21] |
+| 2 | Omit 8 on both sides | [] |
+| 3 | Omit 8 and omit 10 with a different occurrence | [21] |
+| 4 | Affect 14 on both sides | [] |
+| 5 | Affect 14 and affect 17 with a different object sort | [21] |
+| 6 | Perform 0 and legacy behavior ID 1 | [21] |
+| 7 | Malformed perform 21 on both sides, with the wrong sort in a role | [3, 3] |
+| 8 | Perform 0 on both sides. Current right interpretation version is 2. | [11] |
+| 9 | Perform 0 on both sides. Authenticated right source passage start changes. | [10] |
+| 10 | Perform 0 on both sides. Registry still contains the right legacy target. | [8] |
+| 11 | Perform 0 on both sides. Evidence still supports the right legacy premise. | [15] |
+| 12 | Perform 0 on both sides. Right entry is Candidate. | [7] |
+
+All cases preserve both full premises in order. Successful cases preserve the
+exact left scope and have vector `[0,1,8,2,35,2,0,18]`. The other cases use
+the ordinary ordered issue fold, provenance count 2 and fold 18.
+
+Structured replay uses case 0. It accepts the unchanged receipt and rejects
+two variants. The first replaces the stored conclusion target with legacy
+behavior ID 1. The second replaces the right entry in the current registry
+with its legacy record. The three exported flags are `[1,0,0]`.

@@ -136,8 +136,8 @@ def scopeFixture (variant : Nat) : Environment × Tree :=
     | 3 => changeScope r fun s => { s with subjectId := 2 }
     | 4 => changeScope r fun s => { s with subject := { s.subject with baligh := false } }
     | 5 => changeScope r fun s => { s with subject := { s.subject with aqil := false } }
-    | 6 => changeScope r fun s => { s with targetId := 2 }
-    | 7 => changeScope r fun s => { s with targetKind := .affect }
+    | 6 => changeScope r fun s => { s with target := .legacy 2 .behavior }
+    | 7 => changeScope r fun s => { s with target := .legacy 1 .affect }
     | 8 => changeScope r fun s => { s with context := 2 }
     | 9 => changeScope r fun s => { s with time := 2 }
     | 10 => changeScope r fun s => { s with profile := 2 }
@@ -149,6 +149,60 @@ def scopeFixture (variant : Nat) : Environment × Tree :=
 def scopeEval (variant : Nat) : Evaluation :=
   let (env, tree) := scopeFixture variant
   evaluate env tree
+
+def withTarget (p : Premise) (target : Judgment.ScopeTarget) : Premise :=
+  changeScope p fun s => { s with target }
+
+private theorem target_fixture_exists : ∀ code : Fin 28,
+    (TargetFixtures.expression code.val).isSome := by decide
+
+def structuredPremise (i : Nat) (code : Fin 28) : Premise :=
+  let expression := (TargetFixtures.expression code.val).get (target_fixture_exists code)
+  withTarget (P 1 34 i) (.structured expression)
+
+def targetFixture (variant : Nat) : Environment × Tree :=
+  let l := structuredPremise 1 (if variant = 2 ∨ variant = 3 then 8
+    else if variant = 4 ∨ variant = 5 then 14 else if variant = 7 then 21 else 0)
+  let r := match variant with
+    | 0 => structuredPremise 2 1
+    | 1 => structuredPremise 2 6
+    | 2 => structuredPremise 2 8
+    | 3 => structuredPremise 2 10
+    | 4 => structuredPremise 2 14
+    | 5 => structuredPremise 2 17
+    | 6 => P 1 34 2
+    | 7 => structuredPremise 2 21
+    | _ => structuredPremise 2 0
+  let env := E [l, r]
+  let legacy := P 1 34 2
+  let env := match variant with
+    | 8 => { env with currentVersions := [expectedVersion l,
+        { expectedVersion r with interpretationVersion := 2 }] }
+    | 9 =>
+      let source := r.request.record.provenance.source
+      { env with authenticatedSources := [l.request.record.provenance.source,
+          { source with passageStart := 2 }] }
+    | 10 => { env with registry := (E [l, legacy]).registry }
+    | 11 => { env with evidence := (E [l, legacy]).evidence }
+    | 12 => setStatus env 2 .candidate
+    | _ => env
+  (env, .both (.source l) (.source r))
+
+def targetEval (variant : Nat) : Evaluation :=
+  let (env, tree) := targetFixture variant
+  evaluate env tree
+
+def targetReplay (variant : Nat) : Bool :=
+  let (env, tree) := targetFixture 0
+  let r := receipt env tree
+  let legacy : Judgment.ScopeTarget := .legacy 1 .behavior
+  match variant with
+  | 1 =>
+    let conclusion := r.result.conclusion.map fun c =>
+      { c with scope := { c.scope with target := legacy } }
+    verifyReceipt env { r with result := { r.result with conclusion } }
+  | 2 => verifyReceipt { env with registry := (E [structuredPremise 1 0, P 1 34 2]).registry } r
+  | _ => verifyReceipt env r
 
 def treeFixture (variant shape : Nat) : Environment × Tree :=
   let p1 := P 0 31 1
@@ -320,5 +374,23 @@ theorem receipt_mutation_matrix :
 theorem forged_admission_rejected :
     let (env, forged) := replayFixture 7
     forged.result.isAccepted = true ∧ verifyReceipt env forged = false := by decide
+
+def expectedTargetIssues : Nat → List Issue
+  | 0 | 2 | 4 => []
+  | 1 | 3 | 5 | 6 => [.outOfScope]
+  | 7 => [.registryRejected .illTyped, .registryRejected .illTyped]
+  | 8 => [.staleInterpretation]
+  | 9 => [.sourceUnauthenticated]
+  | 10 => [.registryRejected .recordMismatch]
+  | 11 => [.evidenceMismatch]
+  | _ => [.registryRejected .notAdmitted]
+
+theorem structured_target_matrix : ∀ v : Fin 13,
+    (targetEval v.val).issues = expectedTargetIssues v.val ∧
+    (targetEval v.val).isAccepted = (expectedTargetIssues v.val).isEmpty ∧
+    (targetEval v.val).provenance = (targetFixture v.val).2.leaves := by decide
+
+theorem structured_target_replay :
+    targetReplay 0 = true ∧ targetReplay 1 = false ∧ targetReplay 2 = false := by decide
 
 end UsulTest.IDADerivation

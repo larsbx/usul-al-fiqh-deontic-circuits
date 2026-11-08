@@ -37,3 +37,18 @@ denotes `wajib`.
 no-ruling result `some 0`. These examples do not supply source evidence, resolve
 juristic alternatives, or assert that every possible pair of natural-number keys
 has been enumerated.
+
+## 3. Structured target scenarios
+
+| Theorem | Plain English |
+| --- | --- |
+| target_fixture_admission | The 20 declared wellformed entries pass; the eight malformed entries fail structural checking. |
+| target_reconstruction | Separately constructing the same full expression preserves identity and permits conjunction. |
+| target_distinctions | Operation, namespace, reference, role, signature, target form, opportunity and affect differences are preserved. |
+| malformed_targets_rejected | Every malformed fixture is rejected on either side before its premise could affect the result. |
+| target_selector_bounds | Unknown fixture selectors and unknown premise-case selectors are rejected. |
+
+The target cases are synthetic representations, not source-backed rulings.
+Complete export comparison adds all 28 admission checks and all 28 by 28 target
+pairs with six representative premise pairs. The original 33 by 33 premise
+comparison remains intact for each of the eight foundation key variants.

@@ -2,7 +2,7 @@
 
 Source: [`formal/lean/scripts/ExportIDADerivation.lean`](../../../formal/lean/scripts/ExportIDADerivation.lean)
 
-This executable emits 11,032 deterministic cells for independent replay of the
+This executable emits 11,139 deterministic cells for independent replay of the
 source-bound derivation semantics. It reads no Quint output. The CSV header is
 `section,a,b,c,result`. The gate checks the exact domain, order, uniqueness,
 numeric representation, and agreement of the two exports.
@@ -17,6 +17,8 @@ numeric representation, and agreement of the two exports.
 | `tree` | Ten variants, three tree shapes, eight projections | 240 |
 | `alternatives` | Two scenarios, two ordered alternatives, eight projections | 32 |
 | `replay` | Original receipt plus fifteen mutations | 16 |
+| `target` | Thirteen structured-target evaluations, eight projections | 104 |
+| `target-replay` | Original structured receipt plus two mutations | 3 |
 
 Except for source references and replay flags, the eight projections encode the
 primary diagnostic, candidate/admitted classification, question identity, question

@@ -121,8 +121,7 @@
         "Record.question",
         "Scope.subjectId",
         "Scope.subject",
-        "Scope.targetId",
-        "Scope.targetKind",
+        "Scope.target",
         "Scope.context",
         "Scope.time",
         "Scope.profile",
@@ -132,23 +131,31 @@
       "sources": [
         "formal/lean/Usul/Typing/IDADerivation.lean",
         "formal/quint/ida-derivation.qnt",
-        "docs/research/ida-derivation-wire.md"
+        "docs/research/ida-derivation-wire.md",
+        "formal/quint/ida-judgment.qnt",
+        "formal/lean/Usul/Typing/IDAJudgment.lean",
+        "docs/research/ida-target-integration.md"
       ],
       "theorems": [
         "Usul.IDA.Derivation.question_identity_guard",
         "Usul.IDA.Derivation.incompatible_scopes_rejected",
         "Usul.IDA.Derivation.context_guard",
-        "Usul.IDA.Derivation.accepted_conclusion_scope"
+        "Usul.IDA.Derivation.accepted_conclusion_scope",
+        "Usul.IDA.Derivation.target_guard",
+        "Usul.IDA.Derivation.accepted_leaf_target",
+        "UsulTest.IDADerivation.structured_target_matrix"
       ],
       "quint_tests": [
         "derivationScopeTest",
         "derivationQuestionIdentityTest",
-        "derivationScopeBeforeTaintTest"
+        "derivationScopeBeforeTaintTest",
+        "derivationStructuredTargetTest"
       ],
       "mutants": [
         "ignore_context_scope",
         "overwrite_question_identity",
-        "overwrite_derived_context"
+        "overwrite_derived_context",
+        "ignore_structured_target_scope"
       ]
     },
     {
@@ -254,11 +261,13 @@
         "Usul.IDA.Derivation.verifyReceipt_sound",
         "Usul.IDA.Derivation.changed_revision_rejects_receipt",
         "Usul.IDA.Derivation.changed_result_rejects_receipt",
-        "Usul.IDA.Derivation.accepted_receipt_sources"
+        "Usul.IDA.Derivation.accepted_receipt_sources",
+        "UsulTest.IDADerivation.structured_target_replay"
       ],
       "quint_tests": [
         "derivationReceiptReplayTest",
-        "derivationGraphTest"
+        "derivationGraphTest",
+        "derivationStructuredReplayTest"
       ],
       "mutants": [
         "receipt_ignores_current_environment",

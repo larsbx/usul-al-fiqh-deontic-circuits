@@ -51,3 +51,8 @@ issues, and complete provenance records. They are stronger than comparison of
 status codes or compact export projections. All ten are proved by ordinary
 kernel-checked finite decisions; none uses `native_decide`, an admitted proof,
 or a Quint oracle.
+
+The ACT-00 scenarios cover equal acts, omissions and affects, role and
+occurrence changes, a malformed signature, version and source mismatches, and
+reuse of legacy authority. Replay also checks a changed target in the stored
+conclusion and in the current registry.

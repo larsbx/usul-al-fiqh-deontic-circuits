@@ -137,6 +137,12 @@
       "before": "| AnswerConflict => blocked(provenance, List(ConflictingAnswers))",
       "after": "| AnswerConflict => { conclusion: KnownConclusionValue(a), issues: List(), provenance: provenance }",
       "test": "derivationConjunctionTest"
+    },
+    {
+      "name": "ignore_structured_target_scope",
+      "before": "    J::sameScope(left, right)\n",
+      "after": "    J::sameScope(left.with(\"target\", right.target), right)\n",
+      "test": "derivationStructuredTargetTest"
     }
   ]
 }
