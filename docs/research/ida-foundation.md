@@ -136,11 +136,14 @@ repository-wide CI and the agency pilot retain their own results.
 
 ## Remaining specification obligations
 
-The next slice is a question-indexed judgment and derivation format with
-source hashes, passage locators, interpretation versions, evidence grades, and
-explicit candidate/admitted status. It must preserve missing, suspended, known,
-conflict, and out-of-scope outcomes while keeping validity/effect questions
-separate from taklifi status.
+The dependent [source-bound judgment slice](ida-judgments.md) adds a
+question-indexed record and single-source replay format with source hashes,
+passage locators, interpretation versions, evidence grades, and an external
+current admission entry. It preserves missing, suspended, known, conflict and
+out-of-scope outcomes, and keeps validity and Boolean sign questions separate
+from taklifi status. Its verification gate and receipts are independent of this
+foundation gate. The admission entry's authority and source-byte correspondence
+remain explicit assumptions, not consequences of record equality.
 
 Further obligations include source admission and provenance preservation,
 exception/default rules and re-evaluation after context changes, interpretation

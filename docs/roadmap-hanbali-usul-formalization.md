@@ -214,6 +214,22 @@ admission, source and interpretation fidelity, contextual exceptions, and a
 verified application mapping remain open. Algebraic agreement does not select
 a juristic position, authenticate an input, or establish those obligations.
 
+### IDA source-bound judgment replay (2026-11-08; dependent on PR #137)
+
+The dependent [typed judgment slice](research/ida-judgments.md) adds
+question-indexed answers and a single-source replay rule binding a claim to its
+derivation, registered reference, requested scope and trusted admission entry.
+`make ida-judgment` requires Lean proofs, fixed proposition contracts,
+independent Quint checks, the complete declared comparison family and adversarial
+controls. Its generated revision-bound receipt records acceptance of each run.
+The rule assumes an externally trusted snapshot; it supplies neither juristic
+admission authority nor application refinement.
+
+The next integration obligations are source/passage byte verification,
+authenticated full-record admission, multi-source derivations and atomic
+snapshot/revocation handling. The existing agency source profiles and semantics
+remain a separate verification slice.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |

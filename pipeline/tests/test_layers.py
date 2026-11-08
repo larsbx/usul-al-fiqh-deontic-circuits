@@ -17,7 +17,8 @@ def _imports() -> dict[str, set[str]]:
 
 
 def is_types(m: str) -> bool:
-    return m in ("Usul.Typing", "Usul.Judgement", "Usul.DerivedTypes") or m.startswith("Usul.Typing.")
+    # Source-bound records are in the question/answer type layer as well.
+    return m in ("Usul.Typing", "Usul.Judgement", "Usul.DerivedTypes", "Usul.IDAJudgment") or m.startswith("Usul.Typing.")
 
 
 def is_categories(m: str) -> bool:
