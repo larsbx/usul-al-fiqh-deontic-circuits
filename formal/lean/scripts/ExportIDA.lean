@@ -2,7 +2,7 @@ import Usul.IDA
 
 open Usul.IDA
 
-/-- Export only the declared finite audit family; unexpected invalid codes fail. -/
+/-- Export only the declared finite audit family; out-of-range codes fail. -/
 def emitIDA (sectionName : String) (a b c : Nat) (result : Option Nat) : IO Unit := do
   match result with
   | some value => IO.println s!"{sectionName},{a},{b},{c},{value}"
