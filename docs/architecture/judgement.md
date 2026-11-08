@@ -91,3 +91,24 @@ preserves all source provenance, and blocks unresolved or unauthenticated
 premises from accepted conclusions. Alternative interpretations remain separate.
 Its structural proof validity, source-byte evidence, and the correctness of a
 juristic interpretation are separate claims.
+
+## Act descriptions and judgment transport (M16)
+
+The [act-classification roadmap](../research/ida-act-classification-roadmap.md)
+records the next typed-target work. Its ACT-00 prerequisite reconciles draft
+#140's structured targets with the source-bound IDA judgments/derivations on
+main; that integration is not established by a roadmap link.
+
+Act-kind arguments and classification facets describe what a question concerns.
+They do not supply its answer or prove that a performance occurred. A map that
+preserves operand sorts can still change named roles, qualifications, or
+occurrence identity. Transport of a judgment therefore requires the original
+derivation plus an explicit preservation witness for its question, assumptions,
+and complete scope. The plan reuses this judgment/admission layer, preserves
+missing/suspended/conflicting/out-of-scope outcomes, and binds derived evidence
+to the relevant source, definition, and profile versions.
+
+Context substitution, new factual evidence, changing circumstances, and
+cross-profile translation have separate contracts. A semantic equivalence does
+not transfer an existing signature to changed bytes, and a classification alone
+cannot construct an admitted ruling.

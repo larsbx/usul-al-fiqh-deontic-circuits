@@ -69,6 +69,23 @@ Develop **Lean and Quint first**. Lean must prove algebraic laws, typing and pro
 
 Acceptance cases cover all five rulings, partial permission, missing premises, incompatible positions, invalid source references, capacity, and revocation. Record source correspondence, Lean proofs, bounded model checks, cross-model agreement, and runtime refinement independently.
 
+### 8. Act classification and categorical transformations
+
+The [detailed M16 roadmap](ida-act-classification-roadmap.md) records the proposed
+typed act registry, context/substitution laws, information-loss and scoped
+equivalence contracts, supported interpretations, and evidence-bearing judgment
+transport. Its first gate reconciles draft #140's structured targets with the
+mainline IDA judgment/derivation machinery. Source mentions, kinds, qualified
+descriptions, and occurrences remain distinct, as do classification relations
+and legal judgments.
+
+Reuse the existing `Usul.Cat` factorization, typed-encoder, scale-duality, and
+institution interfaces. Category laws do not admit source interpretations,
+identify distinct occurrences, or preserve judgments across arbitrary changes
+of profile or context. Compound descriptions and process/resource composition
+are separate, conditional milestones. This roadmap note does not change the
+implemented algebra or assert completion of those contracts.
+
 [1]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/formal/lean/Usul/Hukm.lean
 [2]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/docs/architecture/judgement.md
 [3]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/docs/architecture/hukm-interval-verdicts.md

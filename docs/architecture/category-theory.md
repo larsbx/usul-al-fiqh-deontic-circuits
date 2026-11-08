@@ -202,6 +202,36 @@ Fixtures (`UsulTest/Institutions.lean`) read `formal/tla/Taklif.tla` in this fra
 `make generated` regenerates both and rejects drift. A stale obligation (bound not rebound after
 an incapacity) and a wrong initial state are each rejected by TLC (mutation-checked).
 
+## Act classification and categorical transformations (M16)
+
+The [detailed roadmap](../research/ida-act-classification-roadmap.md) extends this
+architecture with proposed act-description contracts. It reuses `Factor` for
+constant-on-fiber/factorization and counterexamples, `Typing` for existing
+encoder refinements, `Scales` for the already-proved ruling duality, and
+`Institution` for explicit preservation/reflection hypotheses. None of those
+existing results supplies an interpretation of all candidate act kinds.
+
+The first new categorical structure is a category of typed schematic contexts
+with descriptions reindexed by substitutions. Its identity/composition laws must
+be proved, including named-role and rigid-reference behavior. Later packages
+address supported interpretation fragments, scoped equivalence, provenance-aware
+schema migration, and conditional judgment transport. Topic membership,
+specialization, component membership, manifestation, and interpretation retain
+different relations.
+
+A map that forgets qualifications needs a factorization witness for each answer
+it transports. Structural equality, representation equivalence, and occurrence
+identity remain distinct. The ruling-order category does not imply a monotone
+map from act refinements to `Hukm`. Bounded Quint checks cannot be promoted to
+universal consequences through `Institution` without the theorem's model-class
+and reflection hypotheses.
+
+The roadmap keeps category imports downstream of the types, with
+library-dependent experiments in the separate Mathlib bridge. Its new
+substitution/act contracts are proposed, not additions to the implemented module
+inventory above. Compound-description operads, process interfaces, and richer
+fibrations require concrete use cases and separate acceptance.
+
 ## Open
 
 * **M10, beyond one point:** covers over several situations, such as context separations like
