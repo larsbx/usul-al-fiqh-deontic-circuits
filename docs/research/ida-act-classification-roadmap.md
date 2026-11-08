@@ -2,10 +2,9 @@
 
 ## Proof-first roadmap
 
-**Status: proposed implementation programme; documentation only.** Prepared on
-2026-11-08 from the act-reference and category-theory discussion. This roadmap
-adds no Lean theorem, Quint invariant, admitted interpretation, target constructor,
-or runtime judgment. Its owner is the uṣūl track, milestone
+**Status.** ACT-00 is implemented on the integration branch with scoped
+acceptance tracked at its exact head. The remaining packages retain their
+prerequisites below. This is the uṣūl track's milestone
 [M16](../roadmap-hanbali-usul-formalization.md#m16--typed-act-classification-and-categorical-transformations--m2-m5).
 
 The first deliverable is a small calculus of typed descriptions and substitutions,
@@ -172,14 +171,13 @@ existence of one category does not supply a functor between these levels.
 
 ## 3. Work packages, dependencies, and status
 
-The following names are proposed work packages, not created branches or
-implemented modules. **All ACT packages are planned at this baseline.** ACT-00
-has the concrete #140 integration dependency. ACT-06, ACT-07, and ACT-09 are
+ACT-00 integrates #140. **ACT-01 through ACT-09 remain planned or conditional.**
+ACT-06, ACT-07, and ACT-09 are
 conditional extensions and do not block the first core pilot.
 
 | Package | Deliverable | Entry prerequisites | Initial state |
 |---|---|---|---|
-| ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | Integration pending |
+| ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on the review branch](ida-target-integration.md); exact-head acceptance is the exit gate |
 | ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | Proposed |
 | ACT-02 | Context category and substitution laws | ACT-01 | Proposed; first categorical core |
 | ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Proposed |
@@ -244,10 +242,14 @@ Quint gates at the same head, verify canonical replay and source bindings, and
 retain scoped receipts. Report repository-wide failures separately. A successful
 historical #140 run or a successful documentation check is not this exit.
 
-**Next reproducible obligation.** Reconstruct one well-formed payment target
-independently in the integrated Lean and Quint paths, use it in the existing
-judgment/derivation wire, and show that changing the recipient or omission
-interval breaks the required scope equality.
+**Implemented slice.** The [integration contract](ida-target-integration.md)
+records the legacy embedding, full target comparison, and retained admission
+boundary. Independently reconstructed synthetic repayment descriptions combine.
+Swapped roles, changed omission occurrences, and changed affect object sorts
+block conjunction. A changed passage, stale interpretation pin, or legacy
+admission/evidence blocks the corresponding source. The restricted zakat
+proposal remains a candidate for ACT-08, with its source and profile obligations
+still explicit. ACT-01 starts after scoped acceptance and owns registry authority.
 
 ### ACT-01 — Define the registry and typed descriptions
 

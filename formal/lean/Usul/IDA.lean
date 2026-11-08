@@ -161,11 +161,359 @@ theorem has_member (s : Constraint) : ∃ h, s.set.mem h = true :=
 
 end Constraint
 
+
+/-!
+## Structured targets
+
+Qualified names, named reference sorts, declared operation signatures, and
+ordered operands make the expression inspectable. These predicates check the
+supplied structure, not source authority, reference resolution, applicability,
+or voluntary control. Control remains in the surrounding context.
+-/
+
+/-- A qualified vocabulary name. -/
+structure Symbol where
+  space : String
+  name : String
+  deriving DecidableEq, Repr
+
+namespace Symbol
+def WellFormed (symbol : Symbol) : Prop :=
+  symbol.space ≠ "" ∧ symbol.name ≠ ""
+instance (symbol : Symbol) : Decidable symbol.WellFormed :=
+  inferInstanceAs (Decidable (symbol.space ≠ "" ∧ symbol.name ≠ ""))
+end Symbol
+
+/-- Reference sorts in this representation, not categories of rulings. -/
+inductive RefKind where
+  | person | asset | obligation | occurrence | proposition
+  deriving DecidableEq, Repr
+
+/-- A reference retains both its sort and its qualified name. -/
+structure EntityRef where
+  kind : RefKind
+  symbol : Symbol
+  deriving DecidableEq, Repr
+
+namespace EntityRef
+def WellFormed (referent : EntityRef) : Prop := referent.symbol.WellFormed
+instance (referent : EntityRef) : Decidable referent.WellFormed :=
+  inferInstanceAs (Decidable referent.symbol.WellFormed)
+end EntityRef
+
+/-- One named, typed slot in an operation signature. -/
+structure Parameter where
+  role : String
+  kind : RefKind
+  deriving DecidableEq, Repr
+
+/-- One named, typed argument supplied to an operation. -/
+structure Operand where
+  role : String
+  referent : EntityRef
+  deriving DecidableEq, Repr
+
+namespace Operand
+def parameter (operand : Operand) : Parameter :=
+  ⟨operand.role, operand.referent.kind⟩
+end Operand
+
+/-- The entire declared signature participates in operation identity. -/
+structure Operation where
+  symbol : Symbol
+  parameters : List Parameter
+  deriving DecidableEq, Repr
+
+namespace Operation
+def WellFormed (operation : Operation) : Prop :=
+  operation.symbol.WellFormed ∧
+  operation.parameters.all (fun parameter => decide (parameter.role ≠ "")) = true ∧
+  (operation.parameters.map Parameter.role).Nodup
+instance (operation : Operation) : Decidable operation.WellFormed :=
+  inferInstanceAs (Decidable (
+    operation.symbol.WellFormed ∧
+    operation.parameters.all (fun parameter => decide (parameter.role ≠ "")) = true ∧
+    (operation.parameters.map Parameter.role).Nodup))
+end Operation
+
+/-- An operation instantiated with ordered, named, typed operands. -/
+structure Action where
+  operation : Operation
+  operands : List Operand
+  deriving DecidableEq, Repr
+
+namespace Action
+def WellFormed (action : Action) : Prop :=
+  action.operation.WellFormed ∧
+  action.operands.map Operand.parameter = action.operation.parameters ∧
+  action.operands.all (fun operand => decide operand.referent.WellFormed) = true
+instance (action : Action) : Decidable action.WellFormed :=
+  inferInstanceAs (Decidable (
+    action.operation.WellFormed ∧
+    action.operands.map Operand.parameter = action.operation.parameters ∧
+    action.operands.all (fun operand => decide operand.referent.WellFormed) = true))
+end Action
+
+/-- A named occurrence and strictly ordered interval on a named clock. -/
+structure Opportunity where
+  occurrence : Symbol
+  clock : Symbol
+  opensAt : Nat
+  closesAt : Nat
+  deriving DecidableEq, Repr
+
+namespace Opportunity
+def WellFormed (opportunity : Opportunity) : Prop :=
+  opportunity.occurrence.WellFormed ∧
+  opportunity.clock.WellFormed ∧
+  opportunity.opensAt < opportunity.closesAt
+instance (opportunity : Opportunity) : Decidable opportunity.WellFormed :=
+  inferInstanceAs (Decidable (
+    opportunity.occurrence.WellFormed ∧
+    opportunity.clock.WellFormed ∧
+    opportunity.opensAt < opportunity.closesAt))
+end Opportunity
+
+/-- An affective quality directed toward an explicitly typed referent. -/
+structure Affect where
+  quality : Symbol
+  concerns : EntityRef
+  deriving DecidableEq, Repr
+
+namespace Affect
+def WellFormed (affect : Affect) : Prop :=
+  affect.quality.WellFormed ∧ affect.concerns.WellFormed
+instance (affect : Affect) : Decidable affect.WellFormed :=
+  inferInstanceAs (Decidable (affect.quality.WellFormed ∧ affect.concerns.WellFormed))
+end Affect
+
+/-- Inspectable target syntax before structural checking. -/
+inductive TargetExpr where
+  | perform (action : Action)
+  | omit (action : Action) (opportunity : Opportunity)
+  | affect (state : Affect)
+  deriving DecidableEq, Repr
+
+namespace TargetExpr
+def WellFormed : TargetExpr → Prop
+  | .perform action => action.WellFormed
+  | .omit action opportunity => action.WellFormed ∧ opportunity.WellFormed
+  | .affect state => state.WellFormed
+instance (expression : TargetExpr) : Decidable expression.WellFormed :=
+  match expression with
+  | .perform action => inferInstanceAs (Decidable action.WellFormed)
+  | .omit action opportunity =>
+      inferInstanceAs (Decidable (action.WellFormed ∧ opportunity.WellFormed))
+  | .affect state => inferInstanceAs (Decidable state.WellFormed)
+end TargetExpr
+
+/-- A target carries its complete expression and structural proof. -/
+structure Target where
+  expression : TargetExpr
+  wellFormed : expression.WellFormed
+  deriving DecidableEq
+
+instance : Repr Target where
+  reprPrec target precedence := reprPrec target.expression precedence
+
+namespace Target
+/-- Structural checking preserves the supplied expression exactly. -/
+def validate (expression : TargetExpr) : Option Target :=
+  if h : expression.WellFormed then some ⟨expression, h⟩ else none
+end Target
+
+theorem operation_wellFormed_parameter_roles {operation : Operation}
+    (h : operation.WellFormed) :
+    ∀ parameter ∈ operation.parameters, parameter.role ≠ "" := by
+  simpa only [List.all_eq_true, decide_eq_true_eq] using h.2.1
+
+theorem operation_wellFormed_unique_roles {operation : Operation}
+    (h : operation.WellFormed) :
+    (operation.parameters.map Parameter.role).Nodup := h.2.2
+
+theorem action_wellFormed_operation {action : Action} (h : action.WellFormed) :
+    action.operation.WellFormed := h.1
+
+theorem action_wellFormed_signature {action : Action} (h : action.WellFormed) :
+    action.operands.map Operand.parameter = action.operation.parameters := h.2.1
+
+theorem action_wellFormed_references {action : Action} (h : action.WellFormed) :
+    ∀ operand ∈ action.operands, operand.referent.WellFormed := by
+  simpa only [List.all_eq_true, decide_eq_true_eq] using h.2.2
+
+theorem action_eq_iff_fields (left right : Action) :
+    left = right ↔ left.operation = right.operation ∧ left.operands = right.operands := by
+  cases left
+  cases right
+  simp
+
+theorem opportunity_wellFormed_bounds {opportunity : Opportunity}
+    (h : opportunity.WellFormed) :
+    opportunity.opensAt < opportunity.closesAt := h.2.2
+
+theorem omit_wellFormed_iff (action : Action) (opportunity : Opportunity) :
+    (TargetExpr.omit action opportunity).WellFormed ↔
+      action.WellFormed ∧ opportunity.WellFormed := Iff.rfl
+
+theorem perform_ne_omit (left right : Action) (opportunity : Opportunity) :
+    TargetExpr.perform left ≠ TargetExpr.omit right opportunity := by
+  intro h
+  cases h
+
+theorem perform_ne_affect (action : Action) (state : Affect) :
+    TargetExpr.perform action ≠ TargetExpr.affect state := by
+  intro h
+  cases h
+
+theorem omit_ne_affect (action : Action) (opportunity : Opportunity) (state : Affect) :
+    TargetExpr.omit action opportunity ≠ TargetExpr.affect state := by
+  intro h
+  cases h
+
+theorem perform_eq_iff (left right : Action) :
+    TargetExpr.perform left = TargetExpr.perform right ↔ left = right := by simp
+
+theorem omit_eq_iff (left right : Action) (lo ro : Opportunity) :
+    TargetExpr.omit left lo = TargetExpr.omit right ro ↔
+      left = right ∧ lo = ro := by simp
+
+theorem affect_eq_iff (left right : Affect) :
+    TargetExpr.affect left = TargetExpr.affect right ↔ left = right := by simp
+
+theorem target_eq_iff_expression_eq (left right : Target) :
+    left = right ↔ left.expression = right.expression := by
+  constructor
+  · intro h
+    cases h
+    rfl
+  · intro h
+    cases left with
+    | mk le lw =>
+      cases right with
+      | mk re rw =>
+        cases h
+        rfl
+
+theorem target_validate_eq_some_iff (expression : TargetExpr) (target : Target) :
+    Target.validate expression = some target ↔ target.expression = expression := by
+  constructor
+  · intro h
+    by_cases hw : expression.WellFormed
+    · have ht : (⟨expression, hw⟩ : Target) = target := by
+        simpa [Target.validate, hw] using h
+      cases ht
+      rfl
+    · simp [Target.validate, hw] at h
+  · intro h
+    cases target with
+    | mk te wf =>
+      cases h
+      simp [Target.validate, wf]
+
+theorem target_validate_eq_none_iff (expression : TargetExpr) :
+    Target.validate expression = none ↔ ¬ expression.WellFormed := by
+  by_cases h : expression.WellFormed <;> simp [Target.validate, h]
+
+theorem target_validate_roundTrip (target : Target) :
+    Target.validate target.expression = some target :=
+  (target_validate_eq_some_iff target.expression target).2 rfl
+
+/-! ## Synthetic target fixtures: no doctrinal conclusions are assigned. -/
+namespace TargetFixtures
+
+def debt : EntityRef := ⟨.obligation, ⟨"demo.debt", "D"⟩⟩
+def creditor : EntityRef := ⟨.person, ⟨"demo.person", "creditor"⟩⟩
+def recipient : EntityRef := ⟨.person, ⟨"demo.person", "recipient"⟩⟩
+def signature : Operation :=
+  ⟨⟨"demo.action", "repay_debt"⟩,
+    [⟨"debt", .obligation⟩, ⟨"creditor", .person⟩, ⟨"recipient", .person⟩]⟩
+def baseAction : Action :=
+  ⟨signature, [⟨"debt", debt⟩, ⟨"creditor", creditor⟩, ⟨"recipient", recipient⟩]⟩
+def promiseAction : Action :=
+  { baseAction with operation := { signature with symbol := ⟨"demo.action", "promise_repayment"⟩ } }
+def opportunity : Opportunity :=
+  ⟨⟨"demo.occasion", "installment_one"⟩, ⟨"demo.clock", "ticks"⟩, 100, 200⟩
+def concern : Affect := ⟨⟨"demo.affect", "concern"⟩, debt⟩
+def base : Target := ⟨.perform baseAction, by decide⟩
+def promise : Target := ⟨.perform promiseAction, by decide⟩
+
+/-- Select a fully described synthetic expression; numbers select test cases only. -/
+def expression : Nat → Option TargetExpr
+  | 0 => some (.perform baseAction)
+  | 1 => some (.perform
+      ⟨⟨⟨"demo.action", "repay_debt"⟩,
+        [⟨"debt", .obligation⟩, ⟨"creditor", .person⟩, ⟨"recipient", .person⟩]⟩,
+       [⟨"debt", ⟨.obligation, ⟨"demo.debt", "D"⟩⟩⟩,
+        ⟨"creditor", ⟨.person, ⟨"demo.person", "creditor"⟩⟩⟩,
+        ⟨"recipient", ⟨.person, ⟨"demo.person", "recipient"⟩⟩⟩]⟩)
+  | 2 => some (.perform promiseAction)
+  | 3 => some (.perform { baseAction with
+      operation := { signature with symbol := ⟨"other.action", "repay_debt"⟩ } })
+  | 4 => some (.perform { baseAction with operands :=
+      [⟨"debt", { debt with symbol := ⟨"demo.debt", "E"⟩ }⟩,
+       ⟨"creditor", creditor⟩, ⟨"recipient", recipient⟩] })
+  | 5 => some (.perform { baseAction with operands :=
+      [⟨"debt", { debt with symbol := ⟨"other.debt", "D"⟩ }⟩,
+       ⟨"creditor", creditor⟩, ⟨"recipient", recipient⟩] })
+  | 6 => some (.perform { baseAction with operands :=
+      [⟨"debt", debt⟩, ⟨"creditor", recipient⟩, ⟨"recipient", creditor⟩] })
+  | 7 => some (.perform
+      ⟨{ signature with parameters :=
+          [⟨"debt", .obligation⟩, ⟨"creditor", .person⟩, ⟨"payee", .person⟩] },
+       [⟨"debt", debt⟩, ⟨"creditor", creditor⟩, ⟨"payee", recipient⟩]⟩)
+  | 8 => some (.omit baseAction opportunity)
+  | 9 => some (.omit promiseAction opportunity)
+  | 10 => some (.omit baseAction
+      { opportunity with occurrence := ⟨"demo.occasion", "installment_two"⟩ })
+  | 11 => some (.omit baseAction
+      { opportunity with clock := ⟨"demo.clock", "other_ticks"⟩ })
+  | 12 => some (.omit baseAction { opportunity with opensAt := 101 })
+  | 13 => some (.omit baseAction { opportunity with closesAt := 201 })
+  | 14 => some (.affect concern)
+  | 15 => some (.affect { concern with quality := ⟨"demo.affect", "aversion"⟩ })
+  | 16 => some (.affect { concern with
+      concerns := { debt with symbol := ⟨"demo.debt", "E"⟩ } })
+  | 17 => some (.affect { concern with concerns := { debt with kind := .asset } })
+  | 18 => some (.perform
+      ⟨{ signature with parameters :=
+          [⟨"debt", .asset⟩, ⟨"creditor", .person⟩, ⟨"recipient", .person⟩] },
+       [⟨"debt", { debt with kind := .asset }⟩,
+        ⟨"creditor", creditor⟩, ⟨"recipient", recipient⟩]⟩)
+  | 19 => some (.perform
+      ⟨{ signature with parameters := signature.parameters.reverse },
+       baseAction.operands.reverse⟩)
+  | 20 => some (.perform
+      { baseAction with operands := [⟨"debt", debt⟩, ⟨"creditor", creditor⟩] })
+  | 21 => some (.perform { baseAction with operands :=
+      [⟨"debt", { debt with kind := .person }⟩,
+       ⟨"creditor", creditor⟩, ⟨"recipient", recipient⟩] })
+  | 22 => some (.perform
+      ⟨{ signature with parameters :=
+          [⟨"debt", .obligation⟩, ⟨"recipient", .person⟩, ⟨"recipient", .person⟩] },
+       [⟨"debt", debt⟩, ⟨"recipient", creditor⟩, ⟨"recipient", recipient⟩]⟩)
+  | 23 => some (.perform { baseAction with
+      operation := { signature with symbol := ⟨"demo.action", ""⟩ } })
+  | 24 => some (.perform { baseAction with operands :=
+      [⟨"debt", { debt with symbol := ⟨"demo.debt", ""⟩ }⟩,
+       ⟨"creditor", creditor⟩, ⟨"recipient", recipient⟩] })
+  | 25 => some (.omit baseAction { opportunity with closesAt := 100 })
+  | 26 => some (.omit baseAction { opportunity with opensAt := 200, closesAt := 100 })
+  | 27 => some (.perform { baseAction with operands := baseAction.operands.reverse })
+  | _ => none
+
+end TargetFixtures
+
+/-- Legacy numbers are opaque and live in a separate equality class. -/
+inductive KeyTarget where
+  | legacy (id : Nat)
+  | structured (target : Target)
+  deriving DecidableEq, Repr
+
 /-- All seven coordinates participate in scope equality. -/
 structure Key where
   question : Nat
   subject : Nat
-  target : Nat
+  target : KeyTarget
   context : Nat
   time : Nat
   profile : Nat
@@ -174,7 +522,7 @@ structure Key where
 
 namespace Key
 
-def zero : Key := ⟨0, 0, 0, 0, 0, 0, 0⟩
+def zero : Key := ⟨0, 0, .legacy 0, 0, 0, 0, 0⟩
 
 theorem eq_iff_fields (a b : Key) : a = b ↔
     a.question = b.question ∧ a.subject = b.subject ∧ a.target = b.target ∧
@@ -367,16 +715,16 @@ def encodeResult : Result → Nat
   | .conflict => 33
   | .outOfScope => 34
 
-/-- The finite exported key family; generic `combine` accepts any Nat keys. -/
+/-- The finite exported family; combine accepts arbitrary targets and other coordinates. -/
 def keyVariant : Nat → Option Key
   | 0 => some Key.zero
-  | 1 => some ⟨1, 0, 0, 0, 0, 0, 0⟩
-  | 2 => some ⟨0, 1, 0, 0, 0, 0, 0⟩
-  | 3 => some ⟨0, 0, 1, 0, 0, 0, 0⟩
-  | 4 => some ⟨0, 0, 0, 1, 0, 0, 0⟩
-  | 5 => some ⟨0, 0, 0, 0, 1, 0, 0⟩
-  | 6 => some ⟨0, 0, 0, 0, 0, 1, 0⟩
-  | 7 => some ⟨0, 0, 0, 0, 0, 0, 1⟩
+  | 1 => some { Key.zero with question := 1 }
+  | 2 => some { Key.zero with subject := 1 }
+  | 3 => some { Key.zero with target := .legacy 1 }
+  | 4 => some { Key.zero with context := 1 }
+  | 5 => some { Key.zero with time := 1 }
+  | 6 => some { Key.zero with profile := 1 }
+  | 7 => some { Key.zero with version := 1 }
   | _ => none
 
 def meetCode (a b : Nat) : Option Nat := do
@@ -423,5 +771,64 @@ theorem decodeInput_rejects (n : Nat) (hn : 32 < n) : decodeInput n = none := by
   simp [decodeInput, h0, h32, decodeConstraint, h31]
 
 theorem decodeConstraint_rejects_zero : decodeConstraint 0 = none := by decide
+
+/-- A target mismatch alone suffices to reject conjunction. -/
+theorem target_mismatch_outOfScope (lk rk : Key) (left right : Input)
+    (h : lk.target ≠ rk.target) :
+    combine lk rk left right = .outOfScope := by
+  apply (outOfScope_iff lk rk left right).2
+  intro hk
+  exact h (congrArg (fun key : Key => key.target) hk)
+
+/-- The legacy embedding preserves the original numeric scope comparison. -/
+theorem legacy_scope_preserved (lk rk : Key) (l r : Nat) (left right : Input) :
+    combine { lk with target := .legacy l } { rk with target := .legacy r } left right
+      ≠ .outOfScope ↔
+      lk.question = rk.question ∧ lk.subject = rk.subject ∧ l = r ∧
+      lk.context = rk.context ∧ lk.time = rk.time ∧ lk.profile = rk.profile ∧
+      lk.version = rk.version := by
+  simp only [inScope_iff_all_fields, KeyTarget.legacy.injEq]
+
+theorem legacy_structured_outOfScope (lk rk : Key) (id : Nat) (target : Target)
+    (left right : Input) :
+    combine { lk with target := .legacy id } { rk with target := .structured target }
+      left right = .outOfScope := by
+  simp [outOfScope_iff, Key.eq_iff_fields]
+
+/-- A known output preserves the entire target expression on both sides. -/
+theorem known_result_same_target {lk rk : Key} {left right result : Constraint}
+    (h : combine lk rk (.known left) (.known right) = .known result) :
+    lk.target = rk.target :=
+  congrArg (fun key : Key => key.target) (known_result_exact h).1
+
+/-- Admission bit for one explicit synthetic target; no source admission is implied. -/
+def targetAdmitCode (code : Nat) : Option Nat := do
+  let expression ← TargetFixtures.expression code
+  pure (if (Target.validate expression).isSome then 1 else 0)
+
+/-- Six representative premise pairs; the original table still covers all 33 by 33. -/
+def targetPremiseCase : Nat → Option (Input × Input)
+  | 0 => some (.known Constraint.all, .known (Constraint.singleton .wajib))
+  | 1 => some (.known (Constraint.singleton .haram), .known (Constraint.singleton .wajib))
+  | 2 => some (.noRuling, .known Constraint.all)
+  | 3 => some (.suspended, .known (Constraint.singleton .mubah))
+  | 4 => some (.suspended, .noRuling)
+  | 5 => some (.known (Constraint.singleton .mubah), .known (Constraint.singleton .mubah))
+  | _ => none
+
+/--
+Fixture comparison with an explicit structural-rejection tag 35.
+This tag belongs to this test boundary, not to Result or the ruling carrier.
+-/
+def targetRefineCode (leftCode rightCode premiseCode : Nat) : Option Nat := do
+  let leftExpression ← TargetFixtures.expression leftCode
+  let rightExpression ← TargetFixtures.expression rightCode
+  let (left, right) ← targetPremiseCase premiseCode
+  match Target.validate leftExpression, Target.validate rightExpression with
+  | some leftTarget, some rightTarget =>
+      pure (encodeResult (combine
+        { Key.zero with target := .structured leftTarget }
+        { Key.zero with target := .structured rightTarget } left right))
+  | _, _ => pure 35
 
 end Usul.IDA

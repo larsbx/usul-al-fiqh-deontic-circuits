@@ -25,7 +25,9 @@ and suspension are distinct tagged inputs. In particular:
 
 The conjunction operation requires two premises for the same key. The key has
 seven independent fields: question, subject, target, context, time, profile, and
-profile version. Its ordered cases are:
+profile version. The target is a tagged opaque legacy ID or a checked act,
+omission, or affect. See the [ACT-00 compatibility rules](ida-target-integration.md).
+Its ordered cases are:
 
 1. Different keys produce `OutOfScope`.
 2. With equal keys, either suspended premise produces `Suspended`.
@@ -107,7 +109,7 @@ make ida
 
 The gate requires the exact Lean pin and Quint 0.33.1. Missing tools or failed
 checks fail the command. It checks deterministic Quint assertions, compares all
-8,767 outputs, and audits compiled declarations in the source dependency
+13,499 outputs, and audits compiled declarations in the source dependency
 closure and standalone exporter. Only the repository's standard Lean axiom
 allowlist is admitted. An explicit list of required theorem declarations and
 fixed typed witnesses prevent acceptance after deleting a promised proof or
@@ -155,3 +157,12 @@ exception/default rules and re-evaluation after context changes, interpretation
 of omissions and affects, alternative and collective duties, agency integration,
 and a verified mapping from application data and concurrent writes to the model.
 None is established merely by agreement between these two finite computations.
+
+## Structured comparison domain
+
+The 8,767 legacy rows retain the numeric fixture family through the legacy
+embedding. The additional 4,732 rows cover structural validation of 28 target
+fixtures and all ordered pairs of those fixtures under six premise-status
+combinations. Fixture selectors never enter a judgment as a target identity.
+The shape-rejection code 35 is confined to this finite exporter. The combined
+foundation gate declares 86 fixed contracts and 13,499 comparison rows.

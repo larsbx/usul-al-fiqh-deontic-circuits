@@ -28,7 +28,7 @@ require, command, lake, quint = common.require, common.command, common.lake, com
 LEAN, QUINT = common.LEAN, common.QUINT
 RECEIPTS = ROOT / ".cache/ida-derivation"
 SEED = "20261108"
-ROW_COUNT = 11032
+ROW_COUNT = 11139
 MODULES = (
     "Usul.Hukm", "Usul.IDA", "Usul.Signature", "Usul.Qawaid", "Usul.Judgement",
     "Usul.Typing.IDAJudgment", "Usul.Typing.IDADerivation",
@@ -49,7 +49,9 @@ INPUTS = tuple(sorted(set(common.INPUTS) | {
     *("formal/lean/" + m.replace(".", "/") + ".lean" for m in (*MODULES, EXPORTER)),
     "formal/quint/ida-judgment.qnt", "formal/quint/ida-derivation.qnt",
     "formal/quint/ida-derivation-table.qnt", "docs/research/ida-source-derivations.md",
-    "docs/research/ida-source-auth.md", "docs/research/ida-derivation-wire.md", *FIXTURES,
+    "docs/research/ida-source-auth.md", "docs/research/ida-derivation-wire.md",
+    "docs/research/ida-act-classification-roadmap.md", "docs/research/ida-target-integration.md",
+    "docs/roadmap-hanbali-usul-formalization.md", *FIXTURES,
 }))
 
 
@@ -129,6 +131,11 @@ def expected_rows():
                     yield section, a, b, field
     for variant in range(16):
         yield "replay", variant, 0, 0
+    for variant in range(13):
+        for field in range(8):
+            yield "target", variant, 0, field
+    for variant in range(3):
+        yield "target-replay", variant, 0, 0
 
 
 def parse_lean(text):
@@ -198,7 +205,7 @@ def export_controls(csv_text, trace, values):
 
 def contract_vectors(values):
     # Finite expected examples stated from the wire contract, not imported from
-    # either implementation. There are 285 eight-projection cases and 16 replay flags.
+    # either implementation. There are 298 eight-projection cases and 19 replay flags.
     lookup = dict(zip(expected_rows(), values))
     checked = []
 
@@ -264,7 +271,14 @@ def contract_vectors(values):
         require(lookup[("replay", variant, 0, 0)] == int(variant == 0),
                 f"Receipt contract failed at {variant}")
         checked.append(f"replay:{variant}")
-    require(len(checked) == 301, "Contract case inventory changed")
+    target_issues = [[], [21], [], [21], [], [21], [21], [3, 3], [11], [10], [8], [15], [7]]
+    for variant, issues in enumerate(target_issues):
+        check("target", variant, 0, expected(1, 34, [1, 2], issues))
+    for variant in range(3):
+        require(lookup[("target-replay", variant, 0, 0)] == int(variant == 0),
+                f"Structured target replay contract failed at {variant}")
+        checked.append(f"target-replay:{variant}")
+    require(len(checked) == 317, "Contract case inventory changed")
     return checked
 
 
@@ -276,7 +290,7 @@ def required_theorems():
         "suspended_ruling_blocks_tree", "unauthenticated_source_blocks_tree",
         "stale_interpretation_blocks_tree", "non_admitted_leaf_blocks_tree",
         "substituted_record_blocks_tree", "unsupported_evidence_blocks_tree",
-        "question_identity_guard", "context_guard", "provenance_grades_preserved",
+        "question_identity_guard", "context_guard", "target_guard", "accepted_leaf_target", "provenance_grades_preserved",
         "taklifi_intersection_exact", "taklifi_subset_both", "sign_agreement",
         "accepted_conclusion_scope", "classification_admitted_iff", "alternative_order",
         "alternatives_length", "alternatives_provenance", "receipt_valid_original",
@@ -287,6 +301,7 @@ def required_theorems():
         "source_catalog_shapes", "leaf_guard_matrix", "source_full_values", "taklifi_full_values",
         "typed_full_values", "scope_guard_matrix", "nested_blocker_matrix", "alternatives_unselected",
         "receipt_mutation_matrix", "forged_admission_rejected",
+        "structured_target_matrix", "structured_target_replay",
     }
     return {"Usul.IDA.Derivation." + name for name in core} | {
         "UsulTest.IDADerivation." + name for name in scenarios}
@@ -301,14 +316,14 @@ def required_tests():
         "derivationDeepTaintTest", "derivationAlternativesTest", "derivationReceiptReplayTest",
         "derivationGraphTest", "derivationQuestionIdentityTest", "derivationMetadataAndGradesTest",
         "derivationRawBoundaryTest", "derivationAlgebraTest", "derivationQuestionFamilyTest",
-        "derivationScopePredicateTest",
+        "derivationScopePredicateTest", "derivationStructuredTargetTest", "derivationStructuredReplayTest",
     }
 
 
 def semantic_mutations():
     spec = json.loads((ROOT / "formal/ida-derivation-mutations.json").read_text())
     mutations = spec["mutations"]
-    require(len(mutations) == 23, "Unexpected semantic mutation inventory")
+    require(len(mutations) == 24, "Unexpected semantic mutation inventory")
     require(len({m["name"] for m in mutations}) == len(mutations), "Duplicate semantic mutant")
     return [(m["name"], m["before"], m["after"], m["test"]) for m in mutations]
 
@@ -388,7 +403,7 @@ def compiled_audit(work):
 def semantic_controls(work):
     source = (QUINT / "ida-derivation.qnt").read_text()
     mutations = semantic_mutations()
-    require(len(mutations) == 23, "Insufficient derivation semantic controls")
+    require(len(mutations) == 24, "Insufficient derivation semantic controls")
     results = []
     for name, before, after, test in mutations:
         require(re.fullmatch(r"[a-z][a-z0-9_]*", name) is not None, "Unsafe mutation name")
@@ -655,15 +670,16 @@ def main():
         require(command(["git", "rev-parse", "HEAD"]).stdout.strip() == revision,
                 "Revision changed while checking committed input blobs")
         report = {
-            "schema": "usul.ida.derivation.v1", "status": "passed", "revision": revision,
+            "schema": "usul.ida.derivation.v2", "status": "passed", "revision": revision,
             "inputs_match_head": matches_head, "source_sha256": hashes, "runtime_overrides": overrides,
             "tools": {"lean_pin": pin, "lean": version, "quint": quint_version,
                       "node": command(["node", "--version"]).stdout.strip()},
             "coverage": {
                 "source_reference_cells": 136, "source_leaf_cases": 160,
                 "taklifi_pair_cases": 1089, "typed_pair_cases": 64, "scope_cases": 13,
-                "nested_tree_cases": 30, "alternative_outputs": 4, "evaluation_cases": 1360,
+                "nested_tree_cases": 30, "alternative_outputs": 4, "structured_target_cases": 13, "evaluation_cases": 1373,
                 "projections_per_evaluation": 8, "receipt_replay_cases": 16,
+                "structured_target_replay_cases": 3,
                 "total_comparison_cells": ROW_COUNT, "synthetic_fixtures": True,
                 "projection_boundary": "Eight declared projections; full-value preservation is separately proved and asserted.",
             },

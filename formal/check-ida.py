@@ -25,7 +25,10 @@ QUINT = ROOT / "formal/quint"
 CLI = QUINT / "node_modules/@informalsystems/quint/dist/src/cli.js"
 RECEIPTS = ROOT / ".cache/ida"
 SEED = "20261108"
-ROW_COUNT = 25 + 25 + 5 + 8 * 33 * 33
+BASE_ROW_COUNT = 25 + 25 + 5 + 8 * 33 * 33
+TARGET_COUNT = 28
+TARGET_PREMISE_COUNT = 6
+ROW_COUNT = BASE_ROW_COUNT + TARGET_COUNT + TARGET_COUNT * TARGET_COUNT * TARGET_PREMISE_COUNT
 INPUTS = (
     "formal/check-ida.py",
     "formal/check-lean-axioms.py",
@@ -46,6 +49,10 @@ INPUTS = (
     "formal/quint/package-lock.json",
     "docs/research/islamic-deontic-algebra-spec.md",
     "docs/research/ida-foundation.md",
+    "docs/plain-english/Usul/IDA.md",
+    "docs/plain-english/UsulTest/IDA.md",
+    "docs/plain-english/UsulTest/IDAContracts.md",
+    "docs/plain-english/scripts/ExportIDA.md",
     "Makefile",
     ".github/workflows/ida.yml",
 )
@@ -101,6 +108,17 @@ def expected_rows():
         for left in range(33):
             for right in range(33):
                 yield "refine", key, left, right
+    for target in range(TARGET_COUNT):
+        yield "target_admit", target, 0, 0
+    for left in range(TARGET_COUNT):
+        for right in range(TARGET_COUNT):
+            for premise in range(TARGET_PREMISE_COUNT):
+                yield "target_refine", left, right, premise
+
+
+def result_limit(section):
+    return {"meet": 4, "join": 4, "sigma": 4, "refine": 34,
+            "target_admit": 1, "target_refine": 35}[section]
 
 
 def parse_lean(text):
@@ -115,7 +133,7 @@ def parse_lean(text):
         actual = (row[0], *(int(v) for v in row[1:4]))
         require(actual == expected, f"Noncanonical, missing, or duplicate row: {actual}")
         value = int(row[4])
-        require(0 <= value <= (34 if row[0] == "refine" else 4), "Invalid result code")
+        require(0 <= value <= result_limit(row[0]), "Invalid result code")
         values.append(value)
     return values
 
@@ -133,7 +151,7 @@ def parse_quint(trace):
                 and isinstance(row["#bigint"], str)
                 and re.fullmatch(r"0|[1-9][0-9]*", row["#bigint"]), "Invalid Quint integer")
         value = int(row["#bigint"])
-        require(0 <= value <= (34 if expected[0] == "refine" else 4), "Invalid Quint result")
+        require(0 <= value <= result_limit(expected[0]), "Invalid Quint result")
         values.append(value)
     return values
 
@@ -197,6 +215,84 @@ def contract_vectors(values):
         index = 55 + (key * 33 + left) * 33 + right
         require(values[index] == expected, f"Contract vector failed: {name}")
     return [name for name, *_ in vectors]
+
+
+def target_contract_vectors(values):
+    # Fixed fixture contract, independent of both executable target builders.
+    # 0 and 1 reconstruct the same full target. 20..27 are malformed syntax.
+    for code in range(TARGET_COUNT):
+        require(values[BASE_ROW_COUNT + code] == (1 if code < 20 else 0),
+                f"Target admission contract failed: {code}")
+    vectors = [
+        ("reconstructed_target", 0, 1, 0, 16),
+        ("reconstruction_reverse", 1, 0, 5, 4),
+        ("same_target_conflict", 0, 1, 1, 33),
+        ("same_target_missing", 0, 1, 2, 0),
+        ("same_target_suspended", 0, 1, 3, 32),
+        ("different_act", 0, 2, 0, 34),
+        ("operation_namespace", 0, 3, 0, 34),
+        ("object_name", 0, 4, 0, 34),
+        ("object_namespace", 0, 5, 0, 34),
+        ("operand_roles", 0, 6, 0, 34),
+        ("signature_roles", 0, 7, 0, 34),
+        ("perform_vs_omit", 0, 8, 0, 34),
+        ("omitted_act", 8, 9, 0, 34),
+        ("opportunity_occurrence", 8, 10, 0, 34),
+        ("opportunity_clock", 8, 11, 0, 34),
+        ("opportunity_start", 8, 12, 0, 34),
+        ("opportunity_end", 8, 13, 0, 34),
+        ("perform_vs_affect", 0, 14, 0, 34),
+        ("affect_quality", 14, 15, 0, 34),
+        ("affect_object", 14, 16, 0, 34),
+        ("affect_reference_sort", 14, 17, 0, 34),
+        ("signature_sort", 0, 18, 0, 34),
+        ("signature_order", 0, 19, 0, 34),
+        ("target_scope_before_suspension", 0, 2, 4, 34),
+    ]
+    for malformed in range(20, 28):
+        vectors.extend([
+            (f"malformed_left_{malformed}", malformed, 0, 5, 35),
+            (f"malformed_right_{malformed}", 0, malformed, 4, 35),
+            (f"malformed_same_{malformed}", malformed, malformed, 5, 35),
+        ])
+    for name, left, right, premise, expected in vectors:
+        index = BASE_ROW_COUNT + TARGET_COUNT + (
+            (left * TARGET_COUNT + right) * TARGET_PREMISE_COUNT + premise)
+        require(values[index] == expected, f"Target contract vector failed: {name}")
+    return [f"target_admission_{i}" for i in range(TARGET_COUNT)] + [
+        name for name, *_ in vectors]
+
+
+def weakened_target_contract_control(work):
+    # A weaker theorem must still compile before its fixed witness rejects it.
+    source = (LEAN / "Usul/IDA.lean").read_text()
+    before = """theorem target_mismatch_outOfScope (lk rk : Key) (left right : Input)
+    (h : lk.target ≠ rk.target) :
+    combine lk rk left right = .outOfScope := by
+  apply (outOfScope_iff lk rk left right).2
+  intro hk
+  exact h (congrArg (fun key : Key => key.target) hk)"""
+    after = """theorem target_mismatch_outOfScope (lk rk : Key) (left right : Input)
+    (h : lk.target ≠ rk.target) : True := by
+  trivial"""
+    require(source.count(before) == 1, "Target proposition probe is ambiguous")
+    probe = work / "IDAWeakTargetProbe.lean"
+    probe.write_text(source.replace(before, after))
+    lake("env", "lean", f"--root={work}", probe, "-o", probe.with_suffix(".olean"))
+    witness = work / "IDAWeakTargetContractProbe.lean"
+    witness.write_text("""import IDAWeakTargetProbe
+open Usul.IDA
+example : ∀ (lk rk : Key) (left right : Input),
+    lk.target ≠ rk.target →
+      combine lk rk left right = .outOfScope :=
+  Usul.IDA.target_mismatch_outOfScope
+""")
+    result = lake("env", "lean", witness, env={"LEAN_PATH": str(work)}, allow_failure=True)
+    diagnostic = result.stdout + result.stderr
+    require(result.returncode != 0 and "type mismatch" in diagnostic.lower()
+            and "target_mismatch_outOfScope" in diagnostic,
+            f"Weakened target contract did not fail for the expected reason:\n{diagnostic}")
+    return "IDAWeakTargetContractProbe"
 
 
 def compiled_audit(work):
@@ -278,7 +374,8 @@ def compiled_audit(work):
             "required_theorems": sorted(required_theorems()),
             "typed_contracts": sorted(witnesses),
             "allowed_project_imports": sorted(owned_modules),
-            "negative_controls": list(probes) + ["IDAImportProbe"]}
+            "negative_controls": list(probes) + ["IDAImportProbe",
+                                 weakened_target_contract_control(work)]}
 
 
 def semantic_controls(work):
@@ -311,6 +408,7 @@ def required_tests():
         "latticeLawsTest", "sigmaLawsTest", "codecRoundtripTest", "invalidCodeTest",
         "missingPremiseTest", "suspensionTest", "partialPermissionTest", "conflictTest",
         "commutativeRefinementTest", "keyScopeTest",
+        "targetAdmissionTest", "targetIdentityTest", "targetScopeTest", "targetBoundaryTest",
     }
 
 
@@ -331,12 +429,36 @@ def required_theorems():
         "unknown_ne_all", "unknown_ne_mubah", "all_ne_mubah", "hukm_roundtrip",
         "decodeHukm_rejects", "decodeInput_rejects", "decodeConstraint_rejects_zero",
     }
+    structured_targets = {
+        "operation_wellFormed_parameter_roles",
+        "operation_wellFormed_unique_roles",
+        "action_wellFormed_operation",
+        "action_wellFormed_signature",
+        "action_wellFormed_references",
+        "action_eq_iff_fields",
+        "opportunity_wellFormed_bounds",
+        "omit_wellFormed_iff",
+        "perform_ne_omit",
+        "perform_ne_affect",
+        "omit_ne_affect",
+        "perform_eq_iff",
+        "omit_eq_iff",
+        "affect_eq_iff",
+        "target_eq_iff_expression_eq",
+        "target_validate_eq_some_iff",
+        "target_validate_eq_none_iff",
+        "target_validate_roundTrip",
+        "target_mismatch_outOfScope", "legacy_scope_preserved", "legacy_structured_outOfScope",
+        "known_result_same_target",
+    }
     scenarios = {
         "wire_tags", "all_masks_decode", "all_inputs_decode", "all_key_variants_decode",
         "missing_required", "suspension_priority", "key_priority", "intersect_compatible",
         "intersect_conflict", "all_constraint_identity_on_known", "mubah_explicit", "invalid_codes",
+        "target_fixture_admission", "target_reconstruction", "target_distinctions",
+        "malformed_targets_rejected", "target_selector_bounds",
     }
-    return {f"Usul.IDA.{name}" for name in algebra | partial} | {
+    return {f"Usul.IDA.{name}" for name in algebra | partial | structured_targets} | {
         f"UsulTest.IDA.{name}" for name in scenarios}
 
 
@@ -350,6 +472,22 @@ def semantic_mutations():
          "val common = leftValues.union(rightValues)", "partialPermissionTest"),
         ("missing_time_guard", "    a.time == b.time,\n", "", "keyScopeTest"),
         ("missing_profile_guard", "    a.profile == b.profile,\n", "", "keyScopeTest"),
+        ("target_namespace", "    a.space == b.space,\n", "", "targetIdentityTest"),
+        ("target_operation", "    sameOperation(a.operation, b.operation),\n", "", "targetIdentityTest"),
+        ("target_roles", "sameOperand(a[i], b[i])", "indices(b).exists(j => sameEntity(a[i].referent, b[j].referent))", "targetIdentityTest"),
+        ("target_omitted_action", "sameAct(a.act, b.act) and sameOpportunity(a.opportunity, b.opportunity)", "sameOpportunity(a.opportunity, b.opportunity)", "targetIdentityTest"),
+        ("target_occurrence", "    sameSymbol(a.occurrence, b.occurrence),\n", "", "targetIdentityTest"),
+        ("target_clock", "    sameSymbol(a.clock, b.clock),\n", "", "targetIdentityTest"),
+        ("target_open", "    a.opensAt == b.opensAt,\n", "", "targetIdentityTest"),
+        ("target_close", "    a.closesAt == b.closesAt,\n", "", "targetIdentityTest"),
+        ("target_affect_quality", "    sameSymbol(a.quality, b.quality),\n", "", "targetIdentityTest"),
+        ("target_affect_object", "    sameEntity(a.concerns, b.concerns),\n", "", "targetIdentityTest"),
+        ("target_reference_sort", "    a.kind == b.kind,\n", "", "targetIdentityTest"),
+        ("target_signature_shape", "    operandParameters(act.operands) == act.operation.parameters,\n", "", "targetAdmissionTest"),
+        ("target_empty_interval", "opportunity.opensAt < opportunity.closesAt", "opportunity.opensAt <= opportunity.closesAt", "targetAdmissionTest"),
+        ("target_duplicate_roles", "    indices(operation.parameters).forall(i => indices(operation.parameters).forall(j =>\n      (i != j).implies(operation.parameters[i].role != operation.parameters[j].role))),\n", "", "targetAdmissionTest"),
+        ("target_kind_collapse", "    | Perform(a) => match right {\n      | Perform(b) => sameAct(a, b)\n      | _ => false\n    }", "    | Perform(a) => match right {\n      | Perform(b) => sameAct(a, b)\n      | Omit(b) => sameAct(a, b.act)\n      | _ => false\n    }", "targetIdentityTest"),
+        ("target_raw_admission", "    if (not(validKeyTarget(leftKey.target) and validKeyTarget(rightKey.target))) OutOfScope\n    else if (not(sameKey(leftKey, rightKey))) OutOfScope", "    if (not(sameKey(leftKey, rightKey))) OutOfScope", "targetBoundaryTest"),
     ]
 
 
@@ -401,8 +539,9 @@ def main():
         quint_json = json.loads(itf.read_text())
         quint_values = parse_quint(quint_json)
         compare(lean_values, quint_values)
-        vectors = contract_vectors(lean_values)
+        vectors = contract_vectors(lean_values) + target_contract_vectors(lean_values)
         contract_vectors(quint_values)
+        target_contract_vectors(quint_values)
         parser_controls = export_controls(lean_csv, quint_json, lean_values)
         print(f"IDA: independent agreement on all {ROW_COUNT} declared inputs.", flush=True)
         axioms = compiled_audit(work)
@@ -419,14 +558,19 @@ def main():
         require(command(["git", "rev-parse", "HEAD"]).stdout.strip() == revision,
                 "Revision changed while checking committed input blobs")
         report = {
-            "schema": "usul.ida.foundation.v1", "status": "passed", "revision": revision,
+            "schema": "usul.ida.structured-targets.v1", "status": "passed", "revision": revision,
             "inputs_match_head": matches_head, "source_sha256": hashes,
             "runtime_overrides": overrides,
             "tools": {"lean_pin": pin, "lean": lean_version, "quint": quint_version,
                       "node": command(["node", "--version"]).stdout.strip()},
             "coverage": {"meet_pairs": 25, "join_pairs": 25, "sigma_inputs": 5,
-                         "refinement_inputs": 8 * 33 * 33, "total_inputs": ROW_COUNT,
-                         "key_family": "fixed zero left key; equal right key or one changed field",
+                         "refinement_inputs": 8 * 33 * 33,
+                         "target_admission_inputs": TARGET_COUNT,
+                         "target_refinement_inputs": TARGET_COUNT * TARGET_COUNT * TARGET_PREMISE_COUNT,
+                         "target_cases": "20 wellformed entries (0 and 1 identical); 8 malformed entries",
+                         "target_boundary_tag": "35 is rejected target syntax, not a ruling or Result",
+                         "total_inputs": ROW_COUNT,
+                         "key_family": "fixed baseline left key; equal right key or one changed field; target is a tagged legacy ID",
                          "input_codes": "0 no ruling; 1..31 nonempty status sets; 32 suspension"},
             "quint_tests": sorted(required_tests()), "parser_controls": parser_controls,
             "contract_vectors": vectors,
@@ -437,10 +581,12 @@ def main():
                                "required_obligations": len(required_theorems()),
                                "negative_controls": axioms["negative_controls"]},
             "boundary": {
-                "proved": "the declared algebra and conjunction model",
+                "proved": "the declared algebra, structured target validation, and conjunction model",
                 "agreement": "complete within the explicitly enumerated wire domain",
                 "not_established": ["source interpretation", "evidence authentication",
-                                    "general inference engine", "agency changes", "runtime refinement"],
+                                    "operation-signature authority", "reference resolution",
+                                    "opportunity-to-context consistency", "general inference engine",
+                                    "agency changes", "runtime refinement"],
             },
         }
         staged = work / "receipts"

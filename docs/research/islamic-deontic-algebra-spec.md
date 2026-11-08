@@ -74,8 +74,8 @@ Acceptance cases cover all five rulings, partial permission, missing premises, i
 The [detailed M16 roadmap](ida-act-classification-roadmap.md) records the proposed
 typed act registry, context/substitution laws, information-loss and scoped
 equivalence contracts, supported interpretations, and evidence-bearing judgment
-transport. Its first gate reconciles draft #140's structured targets with the
-mainline IDA judgment/derivation machinery. Source mentions, kinds, qualified
+transport. The [ACT-00 integration](ida-target-integration.md) reconciles #140's
+structured targets with the mainline IDA judgment and derivation machinery. Source mentions, kinds, qualified
 descriptions, and occurrences remain distinct, as do classification relations
 and legal judgments.
 
@@ -83,8 +83,7 @@ Reuse the existing `Usul.Cat` factorization, typed-encoder, scale-duality, and
 institution interfaces. Category laws do not admit source interpretations,
 identify distinct occurrences, or preserve judgments across arbitrary changes
 of profile or context. Compound descriptions and process/resource composition
-are separate, conditional milestones. This roadmap note does not change the
-implemented algebra or assert completion of those contracts.
+are separate, conditional milestones. Those later contracts each have a separate acceptance gate.
 
 [1]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/formal/lean/Usul/Hukm.lean
 [2]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/docs/architecture/judgement.md

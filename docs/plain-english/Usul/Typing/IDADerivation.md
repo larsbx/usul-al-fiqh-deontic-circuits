@@ -125,3 +125,7 @@ correct, settle disagreement, or admit a real legal interpretation. The model
 has no agency integration. See the
 [source derivation contract](../../../research/ida-source-derivations.md) for the
 review scope and remaining obligations.
+
+`target_guard` rejects required leaves with different tagged targets.
+`accepted_leaf_target` establishes structural validity for each accepted leaf.
+The existing authority and conclusion-scope theorems apply to the full target.

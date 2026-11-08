@@ -298,4 +298,17 @@ theorem require_UsulTest_IDAJudgment_export_bounds :
       revalidationCode 0 8 = none :=
   UsulTest.IDAJudgment.export_bounds
 
+theorem require_Usul_IDA_Judgment_accepted_target :
+    ∀ {registry : Registry} {request : Request} {receipt : Receipt},
+      validate registry request = .accepted receipt →
+      receipt.record.scope.target = request.record.scope.target ∧
+        request.record.scope.target.WellFormed :=
+  @accepted_target
+
+theorem require_Usul_IDA_Judgment_legacy_wellTyped :
+    ∀ (r : Record) (id : Nat) (kind : TargetKind),
+      ({ r with scope := { r.scope with target := .legacy id kind } } : Record).WellTyped ↔
+        r.provenance.dalil ≠ [] ∧ (r.question = .taklifi → r.scope.subject.IsMukallaf) :=
+  legacy_wellTyped
+
 end UsulTest.IDAJudgmentContracts

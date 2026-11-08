@@ -38,7 +38,7 @@ not infer that a given grade is sufficient for acting.
 | Part | Bound fields |
 |---|---|
 | Question and payload | Question identity and its full typed answer, including missing or suspended states |
-| Scope | Subject ID and capacity data; target ID and behavior/affect kind; context; time; profile and profile version; domain |
+| Scope | Subject ID and capacity data; checked structured description or opaque legacy ID with its behavior/affect kind; context; time; profile and profile version; domain |
 | Source reference | Source ID; source SHA-256 digest; source byte count; half-open passage byte range; passage SHA-256 digest |
 | Interpretation | Interpretation ID and version |
 | Evidence | Grade, known preponderance, and ordered dalil list |
@@ -54,6 +54,10 @@ natural numbers; uniqueness and version issuance outside this function belong
 to the registry's producer.
 
 ## Admission and revalidation
+
+Structured target shape is checked by `Record.WellTyped`. The codec retains
+the complete raw target. Accepted records preserve that target exactly.
+See [ACT-00](ida-target-integration.md) for the compatibility contract.
 
 A registry contains a snapshot identifier and a list of entries. Each entry
 has an ID, a status (`candidate`, `admitted`, `quarantined`, or `revoked`), and
@@ -103,7 +107,7 @@ Semantic mutants must typecheck and then fail their named assertion. Parser
 failures or tooling errors do not count as successful mutation controls.
 
 The gate also inspects the pinned Quint compiler's resolved source inventory.
-The model loads only its declared source; the table loads itself and the model.
+The model loads the shared Quint target semantics from `ida.qnt`. The table loads the model and its dependency.
 Unlisted direct and transitive imports are rejected even when they typecheck.
 Every accepted source is included in the receipt's before/after hash check.
 

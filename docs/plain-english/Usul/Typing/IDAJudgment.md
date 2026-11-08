@@ -45,3 +45,8 @@ registry producer, certify a source interpretation, or provide a cryptographic
 receipt. See the [judgment slice contract](../../../research/ida-judgment-records.md)
 for the result codes, complete metadata fields, finite comparison, and remaining
 application obligations.
+
+`ScopeTarget` carries either the original opaque number and target kind or
+a structured act, omission, or affect. `legacy_wellTyped` preserves the former
+typing rule for opaque targets. `accepted_target` says acceptance checks the
+target's shape and retains the original target exactly.
