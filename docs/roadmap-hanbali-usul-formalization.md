@@ -214,6 +214,31 @@ admission, source and interpretation fidelity, contextual exceptions, and a
 verified application mapping remain open. Algebraic agreement does not select
 a juristic position, authenticate an input, or establish those obligations.
 
+### IDA typed judgment records (2026-11-08)
+
+The [typed record slice](research/ida-judgment-records.md) builds on the foundation
+with the existing question, subject, validity, and evidence types. Known taklifi
+answers use nonempty partial constraints; Boolean signs and validity retain
+their own answer types. Missing and suspended payloads stay explicit. Records
+bind all scope fields, source and passage digests, byte ranges, interpretation
+versions, evidence grade, and claimed derivation metadata.
+
+Acceptance checks a separately supplied registry snapshot, exactly one matching
+entry, its admitted status, and complete record equality. Receipts preserve the
+typed input and are checked again against the supplied current registry, including
+revocation, quarantine, replacement, removal, and duplicate-entry cases. General
+Lean theorems and 49 fixed proposition contracts cover this record boundary. The
+independent Quint model has deterministic assertions and a 1,028-result export:
+228 question/answer pairs, 760 admission variants, and 40 revalidation cases.
+All fixtures are synthetic; their status and digest fields admit no real source.
+
+`make ida ida-judgment` runs both scoped gates. The dedicated workflow requires
+both receipts to match the checked commit. Source-byte authentication, source
+interpretation, authority to approve registry entries, correctness of the named
+derivation, concurrent registry updates, and application refinement remain open.
+This advances the judgment-format obligation without declaring the full
+inference engine or a source profile accepted.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |

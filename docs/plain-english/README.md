@@ -87,6 +87,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing` | [Usul/Typing.md](Usul/Typing.md) | [doc](https://claude.ai/code/artifact/08087293-8365-49d5-8f3f-1e69ffcf5a5b) |
 | `Usul.Typing.Answers` | [Usul/Typing/Answers.md](Usul/Typing/Answers.md) | [doc](https://claude.ai/code/artifact/41e4455f-351b-46d2-837d-20a5c5bcaf96) |
 | `Usul.Typing.Encoders` | [Usul/Typing/Encoders.md](Usul/Typing/Encoders.md) | [doc](https://claude.ai/code/artifact/0d241211-64c6-4884-ac77-c3fdfc0f3824) |
+| `Usul.Typing.IDAJudgment` | [Usul/Typing/IDAJudgment.md](Usul/Typing/IDAJudgment.md) | pending |
 | `Usul.Typing.Qaida` | [Usul/Typing/Qaida.md](Usul/Typing/Qaida.md) | [doc](https://claude.ai/code/artifact/e77f2feb-7ac1-4d92-9751-c592d15bdcac) |
 | `Usul.Typing.Relations` | [Usul/Typing/Relations.md](Usul/Typing/Relations.md) | [doc](https://claude.ai/code/artifact/81064d2c-3565-4766-84b2-7c816bae389f) |
 
@@ -118,6 +119,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.GroundedVectors` | [UsulTest/GroundedVectors.md](UsulTest/GroundedVectors.md) | [doc](https://claude.ai/code/artifact/8ed4410c-e599-46fb-9489-d0a8c614e0ef) |
 | `UsulTest.IDA` | [UsulTest/IDA.md](UsulTest/IDA.md) | pending |
 | `UsulTest.IDAContracts` | [UsulTest/IDAContracts.md](UsulTest/IDAContracts.md) | pending |
+| `UsulTest.IDAJudgment` | [UsulTest/IDAJudgment.md](UsulTest/IDAJudgment.md) | pending |
+| `UsulTest.IDAJudgmentContracts` | [UsulTest/IDAJudgmentContracts.md](UsulTest/IDAJudgmentContracts.md) | pending |
 | `UsulTest.Institutions` | [UsulTest/Institutions.md](UsulTest/Institutions.md) | [doc](https://claude.ai/code/artifact/73cb2d47-cce9-44d7-ac5d-a79426e6a219) |
 | `UsulTest.Interval` | [UsulTest/Interval.md](UsulTest/Interval.md) | [doc](https://claude.ai/code/artifact/10d085fd-7e4a-4589-a057-d7d3f6335251) |
 | `UsulTest.Judgement` | [UsulTest/Judgement.md](UsulTest/Judgement.md) | [doc](https://claude.ai/code/artifact/26403a76-688f-4f69-8929-258fa5e33683) |
@@ -153,6 +156,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | --- | --- | --- |
 | `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |
 | `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
+| `scripts.ExportIDAJudgment` | [scripts/ExportIDAJudgment.md](scripts/ExportIDAJudgment.md) | pending |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
 
 ## UsulMathlib

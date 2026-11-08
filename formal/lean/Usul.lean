@@ -30,6 +30,7 @@ import Usul.Typing.Encoders
 import Usul.Typing.Relations
 import Usul.DerivedTypes
 import Usul.Judgement
+import Usul.Typing.IDAJudgment
 import Usul.Typing.Answers
 import Usul.Cat
 import Usul.Mahall
