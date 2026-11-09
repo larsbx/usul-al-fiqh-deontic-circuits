@@ -45,8 +45,9 @@ judgment transport. It reuses the existing categorical modules and keeps
 compound-description, process, and richer-indexing work conditional.
 [ACT-00's structured-target integration](research/ida-target-integration.md)
 landed on main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144)
-at `ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`; the remaining packages are
-proposed or conditional. The [context-theory proposal](research/ida-context-theory.md)
+at `ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`. The context design and M16
+roadmap were accepted by the project owner on 2026-11-09; remaining implementation
+is planned or conditional. The [accepted context theory](research/ida-context-theory.md)
 specifies distinct contracts for schematic substitution, contextual facts and
 evidence, temporal changes, and judgment transport. This documentation does not
 implement those contracts or admit a ruling.

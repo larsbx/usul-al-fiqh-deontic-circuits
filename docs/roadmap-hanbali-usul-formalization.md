@@ -288,13 +288,15 @@ admission, evidence, conjunction, and receipt replay. The
 remaining ACT-01–ACT-09 dependencies. Historical verification receipts remain
 evidence for their recorded revisions.
 
-**Context proposal (2026-11-08).** The [context theory](research/ida-context-theory.md)
+**Context design accepted (2026-11-09).** The project owner accepted the
+[context theory](research/ida-context-theory.md) and its implementation roadmap. It
 refines the planned substitution, information-loss, and judgment-transport
 contracts. It separates typed schematic variables, factual situations, evidence,
 source profiles, time/history, and authority/resource state. It reuses existing
 typing, sheaf, and agency interfaces while keeping semantic preservation,
 premise admission, and temporal reevaluation as separate obligations. These
-contracts remain proposed within M16's existing dependencies.
+contracts are the accepted development baseline within M16's existing
+dependencies; implementation and proof completion retain their own status.
 
 ### Status (2026-10-13)
 
@@ -316,7 +318,7 @@ contracts remain proposed within M16's existing dependencies.
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 | M14 maqāṣid | **readings proved, two encoders, seven candidate cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 plus five source-located al-Mustaṣfā cases (31 conditional istiṣlāḥ completion checks); 0 reviewed new conclusions; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
 | M15 joint agency | **candidate implementation; interpretation review open** | `Usul.Agency`, `UsulTest.Agency`, and `formal/quint/`: two revocation profiles, joint/independent permission, arbitrary-history proofs, 13,312 finite transition inputs, source-byte and passage checks, and semantic negative controls. [Scope and reproduction](research/agency-pilot.md); [source profile](research/agency-source-profile.md). |
-| M16 act classification | **ACT-00 on main; context theory proposed** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01–ACT-09](research/ida-act-classification-roadmap.md) and the [context contracts](research/ida-context-theory.md) remain proposed or conditional. Historical Lean–Quint and candidate-source receipts retain their exact revision and scope; ACT-01 owns versioned registry authority. |
+| M16 act classification | **ACT-00 on main; context design accepted** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01–ACT-09](research/ida-act-classification-roadmap.md) and the [context contracts](research/ida-context-theory.md) are accepted design; remaining implementation is planned or conditional. Historical Lean–Quint and candidate-source receipts retain their exact revision and scope; ACT-01 owns versioned registry authority. |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -671,7 +673,7 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   reviewable work packages. Existing M8 catalogue, M9 factorization, M10 scale/
   context, and M11 institution interfaces are reuse points; their unrelated open
   extensions are not additional prerequisites for the small core. The
-  [context-theory proposal](research/ida-context-theory.md) refines ACT-02, ACT-03,
+  [accepted context theory](research/ida-context-theory.md) refines ACT-02, ACT-03,
   ACT-05, and the conditional ACT-07/ACT-09 work without adding core prerequisites.
 - **Implemented prerequisite (ACT-00):** the [integration contract](research/ida-target-integration.md)
   records the structured targets merged with main's typed judgments and
@@ -688,8 +690,8 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   first; same-sort role swaps, rigid-reference changes, lost qualifications,
   occurrence collapse, changed omission opportunities, unsupported profile
   bridges, and stale source/definition/profile receipts are named controls.
-  The context proposal adds contradictory assumptions, unjustified forgetting,
-  and conflation of revocation with an agent's knowledge to the countermodels.
+  The context design also requires countermodels for contradictory assumptions,
+  unjustified forgetting, and conflation of revocation with an agent's knowledge.
 - **Conditional extensions:** typed composite descriptions (ACT-06), actual
   process/interfaces and resource independence (ACT-07), and richer indexing or
   quotient machinery (ACT-09) each require a concrete need and separate evidence.
@@ -700,8 +702,8 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   interpretations, and runtime claims. Candidate meanings remain candidate.
 - **State:** ACT-00 is on main through #144. Verification receipts remain bound
   to the heads and scopes they checked; later acceptance requires its own
-  evidence. The context theory and remaining packages are proposed, with their
-  own contracts and dependencies.
+  evidence. The context theory and roadmap are accepted; remaining implementation
+  is planned or conditional, with its own contracts and dependencies.
 
 ---
 

@@ -1,7 +1,7 @@
 # Islamic Deontic Algebra (IDA)
 ## Concise specification v0.1
 
-**Status:** proposed contract, grounded in `larsbx/usul-al-fiqh-deontic-circuits` at `a52f1e492cd96cb82f08d190c19aad9ae6f2044c`. Requirements below are not a claim of completed implementation.
+**Status:** development contract, originally grounded in `larsbx/usul-al-fiqh-deontic-circuits` at `a52f1e492cd96cb82f08d190c19aad9ae6f2044c`. The context theory and M16 roadmap are accepted design as of 2026-11-09. Implementation and proof completion are tracked by their individual module and package evidence.
 
 ### 1. Purpose and scope
 
@@ -48,12 +48,13 @@ Result = Derived | Unresolved | Conflict | OutOfScope
 
 Each result carries its value or diagnostic witnesses. Targets distinguish behavioral acts from affective states. Context supplies objects, capacity, voluntary control, intention, history, agency, and exceptions required by the selected rule. Every derivation records source hashes and passage locators, interpretation and profile versions, rule applications, and implementation revision.
 
-The [context-theory proposal](ida-context-theory.md) makes those contextual
+The [accepted context theory](ida-context-theory.md) makes those contextual
 obligations explicit. It separates typed schematic variables, factual situations,
 evidence, source profiles, time/history, and authority/resource state. Current
 IDA records bind context and time identifiers; their semantic interpretation,
-refinement, and transport interfaces remain proposed. A derivation under stated
-assumptions and admission of those assumptions are separate checks.
+refinement, and transport interfaces follow the accepted design and await implementation.
+A derivation under stated assumptions and admission of those assumptions are
+separate checks.
 
 ### 5. Inference and composition
 
@@ -79,8 +80,8 @@ Acceptance cases cover all five rulings, partial permission, missing premises, i
 
 ### 8. Act classification and categorical transformations
 
-The [detailed M16 roadmap](ida-act-classification-roadmap.md) records the proposed
-typed act registry, context/substitution laws, information-loss and scoped
+The [detailed M16 roadmap](ida-act-classification-roadmap.md) records the accepted
+design for the typed act registry, context/substitution laws, information-loss and scoped
 equivalence contracts, supported interpretations, and evidence-bearing judgment
 transport. The [ACT-00 integration](ida-target-integration.md) reconciles #140's
 structured targets with the mainline IDA judgment and derivation machinery and
@@ -99,7 +100,7 @@ are separate, conditional milestones. Those later contracts each have a separate
 The [context theory](ida-context-theory.md) refines the planned ACT-02/ACT-03/ACT-05
 contracts and conditional process/indexing work within M16. Its premises,
 consistency conditions, evidence revisions, temporal histories, and forgetting
-witnesses are proposed obligations, with explicit countermodels and acceptance
+witnesses are required obligations, with explicit countermodels and acceptance
 criteria; this specification does not claim their implementation.
 
 [1]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/formal/lean/Usul/Hukm.lean
