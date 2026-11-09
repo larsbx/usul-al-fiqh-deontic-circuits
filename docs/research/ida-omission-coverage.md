@@ -47,11 +47,34 @@ an unseen report. The snapshot adapter proves current snapshot resolution
 on successful review. Its compiled controls cover a stale snapshot and a
 current non-omission inquiry.
 
-The completeness claim is a supplied premise of this bounded observation
-model. Authenticating that claim, establishing actual opportunity and
-capacity, and interpreting unobserved performance or deliberate abstention
-have separate obligations. The review issues an observation status and
-does not publish a ruling or write a judgment registry entry.
+## Authenticated batch replay
+
+The host reuses the [signed source catalog](ida-source-auth.md). Its caller
+supplies the current manifest hash, trusted issuer ID and public key,
+designated source ID, source root, and trusted Lean evaluator independently
+of the candidate bytes. The catalog must contain one whole-file reference
+for that source ID. The submitted batch must match its length and both
+SHA-256 digests. Authentication and canonical UTF-8 JSON validation finish
+before the host calls the evaluator with the exact verified text. The
+result carries the manifest hash, issuer and key fingerprint, catalog
+version, and authenticated source reference.
+
+The wire version is `usul.ida.omission-observations.v1`. The batch contains
+`schema`, `scope`, `reports`, and `coverage`. Reports and coverage inherit
+the single batch scope after exact comparison with the resolved current
+snapshot. Lean proves the scope encoding has a left inverse and is
+injective. A successful typed review requires the exact current snapshot,
+the supported wire version, and the exact encoded omission scope. The
+current snapshot supplies the effective time and recording cutoff. The
+signed batch can therefore be replayed at different valid cutoffs within
+the same opportunity scope while its catalog pin is current.
+
+Authentication identifies the issuer's exact submission, including its
+coverage claim. The truth and exhaustiveness of that claim, the issuer's
+authority to supply observations, production key enrollment and revocation,
+and actual opportunity and capacity require separate evidence. The replay
+returns an observation assessment. Ruling interpretation and judgment
+admission remain separate.
 
 ## Replay
 
@@ -60,3 +83,11 @@ Run `npm --prefix formal/quint ci` and `make ida-context`. The gate compares
 14 report scenarios, and 12 coverage scenarios. It retains the existing
 context and agency comparisons. Nine omission mutations challenge coverage,
 time and interval boundaries, and exact report scope.
+
+Run `make ida-omission-auth` for the host replay and compiled wire proof
+audit. The gate uses the repository's explicitly test-only Ed25519 keys
+and synthetic snapshots. Controls include stripped completion, same-length
+byte substitution, stale catalog, wrong signer, partial passage, stale
+snapshot, changed scope, and unexpected JSON fields. It writes a
+revision-bound report and compiled axiom inventory in
+`.cache/ida-omission-auth/`.

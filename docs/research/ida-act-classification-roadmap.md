@@ -230,7 +230,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review and [omission observation](ida-omission-coverage.md) implemented; core completion gate remains open |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review and [signed omission observation replay](ida-omission-coverage.md) implemented. Core completion gate remains open. |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -707,8 +707,11 @@ and mutation controls. The remaining integrated exit below is still open.
 The [omission observation slice](ida-omission-coverage.md) checks a half-open
 opportunity, exact observation scope and coverage of both modeled performance
 modes. It separates a covered view with no completion from incomplete
-coverage and an open effective window. It uses the same `make ida-context`
-gate and adds no source or ruling admission.
+coverage and an open effective window. The `make ida-context` gate compares
+these results independently. The `make ida-omission-auth` gate checks that a
+whole observation batch is signed under a separately configured catalog pin
+and matches the resolved omission scope. The fixture uses test keys. Concrete
+evidence admission and the integrated pilot exit remain separate.
 
 **Core structural examples.**
 
