@@ -95,9 +95,11 @@ juristic interpretation are separate claims.
 ## Act descriptions and judgment transport (M16)
 
 The [act-classification roadmap](../research/ida-act-classification-roadmap.md)
-records the next typed-target work. Its ACT-00 prerequisite reconciles draft
-#140's structured targets with the source-bound IDA judgments/derivations on
-main; that integration is not established by a roadmap link.
+starts from [ACT-00's structured-target integration](../research/ida-target-integration.md),
+merged on main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144)
+at `ca38f35`. Main now carries full structured targets through judgment records,
+source-bound derivations, and receipt replay. The later transformation packages
+follow the accepted design; implementation remains planned or conditional.
 
 Act-kind arguments and classification facets describe what a question concerns.
 They do not supply its answer or prove that a performance occurred. A map that
@@ -108,7 +110,11 @@ and complete scope. The plan reuses this judgment/admission layer, preserves
 missing/suspended/conflicting/out-of-scope outcomes, and binds derived evidence
 to the relevant source, definition, and profile versions.
 
-Context substitution, new factual evidence, changing circumstances, and
-cross-profile translation have separate contracts. A semantic equivalence does
-not transfer an existing signature to changed bytes, and a classification alone
-cannot construct an admitted ruling.
+The [accepted context theory](../research/ida-context-theory.md) distinguishes
+a well-typed derivation under explicit assumptions from a judgment whose required
+premises are admitted at the complete scope. Context substitution, new factual
+evidence, changing circumstances, and cross-profile translation have separate
+contracts. Current context/time identifiers bind identity; semantic relationships
+between their referents require the specified interpretation and preservation
+witnesses. A semantic equivalence does not transfer an existing signature to
+changed bytes, and a classification alone cannot construct an admitted ruling.

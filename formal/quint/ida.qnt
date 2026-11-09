@@ -25,10 +25,265 @@ module ida {
     | W => H
   }
 
+  // Full target descriptions; signatures and reference meanings still need
+  // source/profile admission outside this structural layer.
+  type Symbol = { space: str, name: str }
+  type RefKind = PersonRef | AssetRef | ObligationRef | OccurrenceRef | PropositionRef
+  type EntityRef = { kind: RefKind, symbol: Symbol }
+  type Parameter = { role: str, kind: RefKind }
+  type Operand = { role: str, referent: EntityRef }
+  type Operation = { symbol: Symbol, parameters: List[Parameter] }
+  type Act = { operation: Operation, operands: List[Operand] }
+  type Opportunity = { occurrence: Symbol, clock: Symbol, opensAt: int, closesAt: int }
+  type Affect = { quality: Symbol, concerns: EntityRef }
+  type Omission = { act: Act, opportunity: Opportunity }
+  type Target = Perform(Act) | Omit(Omission) | Affective(Affect)
+
+  pure def validSymbol(value: Symbol): bool =
+    value.space != "" and value.name != ""
+  pure def validEntity(value: EntityRef): bool = validSymbol(value.symbol)
+
+  pure def validOperation(operation: Operation): bool = and {
+    validSymbol(operation.symbol),
+    indices(operation.parameters).forall(i => operation.parameters[i].role != ""),
+    indices(operation.parameters).forall(i => indices(operation.parameters).forall(j =>
+      (i != j).implies(operation.parameters[i].role != operation.parameters[j].role))),
+  }
+
+  pure def operandParameters(operands: List[Operand]): List[Parameter] =
+    operands.foldl(List(), (parameters, operand) =>
+      parameters.append({ role: operand.role, kind: operand.referent.kind }))
+
+  pure def validAct(act: Act): bool = and {
+    validOperation(act.operation),
+    operandParameters(act.operands) == act.operation.parameters,
+    indices(act.operands).forall(i => validEntity(act.operands[i].referent)),
+  }
+  pure def validOpportunity(opportunity: Opportunity): bool = and {
+    validSymbol(opportunity.occurrence),
+    validSymbol(opportunity.clock),
+    opportunity.opensAt >= 0,
+    opportunity.opensAt < opportunity.closesAt,
+  }
+  pure def validAffect(affect: Affect): bool =
+    validSymbol(affect.quality) and validEntity(affect.concerns)
+  pure def validTarget(target: Target): bool = match target {
+    | Perform(act) => validAct(act)
+    | Omit(omission) => validAct(omission.act) and validOpportunity(omission.opportunity)
+    | Affective(affect) => validAffect(affect)
+  }
+
+  // Field-by-field equality is independent of Lean's derived equality.
+  pure def sameSymbol(a: Symbol, b: Symbol): bool = and {
+    a.space == b.space,
+    a.name == b.name,
+  }
+  pure def sameEntity(a: EntityRef, b: EntityRef): bool = and {
+    a.kind == b.kind,
+    sameSymbol(a.symbol, b.symbol),
+  }
+  pure def sameParameter(left: Parameter, right: Parameter): bool =
+    left.role == right.role and left.kind == right.kind
+  pure def sameParameters(a: List[Parameter], b: List[Parameter]): bool = {
+    if (length(a) != length(b)) false
+    else indices(a).forall(i => sameParameter(a[i], b[i]))
+  }
+  pure def sameOperand(a: Operand, b: Operand): bool = and {
+    a.role == b.role,
+    sameEntity(a.referent, b.referent),
+  }
+  pure def sameOperands(a: List[Operand], b: List[Operand]): bool = {
+    if (length(a) != length(b)) false
+    else indices(a).forall(i => sameOperand(a[i], b[i]))
+  }
+  pure def sameOperation(a: Operation, b: Operation): bool = and {
+    sameSymbol(a.symbol, b.symbol),
+    sameParameters(a.parameters, b.parameters),
+  }
+  pure def sameAct(a: Act, b: Act): bool = and {
+    sameOperation(a.operation, b.operation),
+    sameOperands(a.operands, b.operands),
+  }
+  pure def sameOpportunity(a: Opportunity, b: Opportunity): bool = and {
+    sameSymbol(a.occurrence, b.occurrence),
+    sameSymbol(a.clock, b.clock),
+    a.opensAt == b.opensAt,
+    a.closesAt == b.closesAt,
+  }
+  pure def sameAffect(a: Affect, b: Affect): bool = and {
+    sameSymbol(a.quality, b.quality),
+    sameEntity(a.concerns, b.concerns),
+  }
+  pure def sameTarget(left: Target, right: Target): bool = match left {
+    | Perform(a) => match right {
+      | Perform(b) => sameAct(a, b)
+      | _ => false
+    }
+    | Omit(a) => match right {
+      | Omit(b) => sameAct(a.act, b.act) and sameOpportunity(a.opportunity, b.opportunity)
+      | _ => false
+    }
+    | Affective(a) => match right {
+      | Affective(b) => sameAffect(a, b)
+      | _ => false
+    }
+  }
+
+  pure def targetSymbol(space: str, name: str): Symbol = { space: space, name: name }
+  pure def targetRef(kind: RefKind, space: str, name: str): EntityRef =
+    { kind: kind, symbol: targetSymbol(space, name) }
+
+  pure val debtRef: EntityRef = targetRef(ObligationRef, "demo.debt", "D")
+  pure val creditorRef: EntityRef = targetRef(PersonRef, "demo.person", "creditor")
+  pure val recipientRef: EntityRef = targetRef(PersonRef, "demo.person", "recipient")
+  pure val debtParameter: Parameter = { role: "debt", kind: ObligationRef }
+  pure val creditorParameter: Parameter = { role: "creditor", kind: PersonRef }
+  pure val recipientParameter: Parameter = { role: "recipient", kind: PersonRef }
+  pure val debtOperand: Operand = { role: "debt", referent: debtRef }
+  pure val creditorOperand: Operand = { role: "creditor", referent: creditorRef }
+  pure val recipientOperand: Operand = { role: "recipient", referent: recipientRef }
+
+  pure val repayOperation: Operation = {
+    symbol: targetSymbol("demo.action", "repay_debt"),
+    parameters: List(debtParameter, creditorParameter, recipientParameter)
+  }
+  pure val repayAct: Act = {
+    operation: repayOperation,
+    operands: List(debtOperand, creditorOperand, recipientOperand)
+  }
+  pure val promiseAct: Act = repayAct.with("operation", repayOperation.with(
+    "symbol", targetSymbol("demo.action", "promise_repayment")))
+  pure val baseOpportunity: Opportunity = {
+    occurrence: targetSymbol("demo.occasion", "installment_one"),
+    clock: targetSymbol("demo.clock", "ticks"),
+    opensAt: 100, closesAt: 200
+  }
+  pure val baseAffect: Affect = {
+    quality: targetSymbol("demo.affect", "concern"), concerns: debtRef
+  }
+
+  // Actor comes from Key.subject; control remains in context.
+  // These signatures and case names are synthetic, with no ruling asserted.
+  pure val rawTargetCases: List[Target] = List(
+    // 0
+    Perform(repayAct),
+    // 1: independently reconstructed, identical to 0
+    Perform({
+      operation: {
+        symbol: { space: "demo.action", name: "repay_debt" },
+        parameters: List(
+          { role: "debt", kind: ObligationRef },
+          { role: "creditor", kind: PersonRef },
+          { role: "recipient", kind: PersonRef })
+      },
+      operands: List(
+        { role: "debt", referent: {
+          kind: ObligationRef, symbol: { space: "demo.debt", name: "D" } }},
+        { role: "creditor", referent: {
+          kind: PersonRef, symbol: { space: "demo.person", name: "creditor" } }},
+        { role: "recipient", referent: {
+          kind: PersonRef, symbol: { space: "demo.person", name: "recipient" } }})
+    }),
+    // 2..7: operation, namespace, reference and role changes
+    Perform(promiseAct),
+    Perform(repayAct.with("operation", repayOperation.with(
+      "symbol", targetSymbol("other.action", "repay_debt")))),
+    Perform(repayAct.with("operands", List(
+      { role: "debt", referent: targetRef(ObligationRef, "demo.debt", "E") },
+      creditorOperand, recipientOperand))),
+    Perform(repayAct.with("operands", List(
+      { role: "debt", referent: targetRef(ObligationRef, "other.debt", "D") },
+      creditorOperand, recipientOperand))),
+    Perform(repayAct.with("operands", List(
+      debtOperand, { role: "creditor", referent: recipientRef },
+      { role: "recipient", referent: creditorRef }))),
+    Perform({
+      operation: repayOperation.with("parameters", List(
+        debtParameter, creditorParameter, { role: "payee", kind: PersonRef })),
+      operands: List(
+        debtOperand, creditorOperand, { role: "payee", referent: recipientRef })
+    }),
+    // 8..13: omission, act and every opportunity field
+    Omit({ act: repayAct, opportunity: baseOpportunity }),
+    Omit({ act: promiseAct, opportunity: baseOpportunity }),
+    Omit({ act: repayAct, opportunity: baseOpportunity.with(
+      "occurrence", targetSymbol("demo.occasion", "installment_two")) }),
+    Omit({ act: repayAct, opportunity: baseOpportunity.with(
+      "clock", targetSymbol("demo.clock", "other_ticks")) }),
+    Omit({ act: repayAct, opportunity: baseOpportunity.with("opensAt", 101) }),
+    Omit({ act: repayAct, opportunity: baseOpportunity.with("closesAt", 201) }),
+    // 14..17: affect quality and its typed object
+    Affective(baseAffect),
+    Affective(baseAffect.with("quality", targetSymbol("demo.affect", "aversion"))),
+    Affective(baseAffect.with("concerns", targetRef(ObligationRef, "demo.debt", "E"))),
+    Affective(baseAffect.with("concerns", debtRef.with("kind", AssetRef))),
+    // 18..19: signature identity, with wellformed matching arguments
+    Perform({
+      operation: repayOperation.with("parameters", List(
+        debtParameter.with("kind", AssetRef), creditorParameter, recipientParameter)),
+      operands: List(
+        debtOperand.with("referent", debtRef.with("kind", AssetRef)),
+        creditorOperand, recipientOperand)
+    }),
+    Perform({
+      operation: repayOperation.with("parameters", List(
+        recipientParameter, creditorParameter, debtParameter)),
+      operands: List(recipientOperand, creditorOperand, debtOperand)
+    }),
+    // 20..27: malformed shape, sort, roles, names, intervals or operand order
+    Perform(repayAct.with("operands", List(debtOperand, creditorOperand))),
+    Perform(repayAct.with("operands", List(
+      debtOperand.with("referent", debtRef.with("kind", PersonRef)),
+      creditorOperand, recipientOperand))),
+    Perform({
+      operation: repayOperation.with("parameters", List(
+        debtParameter, recipientParameter, recipientParameter)),
+      operands: List(debtOperand, { role: "recipient", referent: creditorRef }, recipientOperand)
+    }),
+    Perform(repayAct.with("operation", repayOperation.with(
+      "symbol", targetSymbol("demo.action", "")))),
+    Perform(repayAct.with("operands", List(
+      debtOperand.with("referent", targetRef(ObligationRef, "demo.debt", "")),
+      creditorOperand, recipientOperand))),
+    Omit({ act: repayAct, opportunity: baseOpportunity.with("closesAt", 100) }),
+    Omit({ act: repayAct, opportunity:
+      baseOpportunity.with("opensAt", 200).with("closesAt", 100) }),
+    Perform(repayAct.with("operands", List(recipientOperand, creditorOperand, debtOperand)))
+  )
+
+  type TargetCaseDecode = InvalidTargetCase | DecodedTargetCase(Target)
+  pure def targetCase(code: int): TargetCaseDecode = {
+    if (code >= 0 and code < length(rawTargetCases))
+      DecodedTargetCase(rawTargetCases[code])
+    else InvalidTargetCase
+  }
+  pure def targetAdmitCode(code: int): int = match targetCase(code) {
+    | InvalidTargetCase => -1
+    | DecodedTargetCase(target) => if (validTarget(target)) 1 else 0
+  }
+
+  type KeyTarget = LegacyKeyTarget(int) | StructuredKeyTarget(Target)
+
+  pure def validKeyTarget(target: KeyTarget): bool = match target {
+    | LegacyKeyTarget(id) => id >= 0
+    | StructuredKeyTarget(expression) => validTarget(expression)
+  }
+
+  pure def sameKeyTarget(left: KeyTarget, right: KeyTarget): bool = match left {
+    | LegacyKeyTarget(a) => match right {
+      | LegacyKeyTarget(b) => a == b
+      | _ => false
+    }
+    | StructuredKeyTarget(a) => match right {
+      | StructuredKeyTarget(b) => sameTarget(a, b)
+      | _ => false
+    }
+  }
+
   type Key = {
     question: int,
     subject: int,
-    target: int,
+    target: KeyTarget,
     context: int,
     time: int,
     profile: int,
@@ -59,7 +314,7 @@ module ida {
   pure def sameKey(a: Key, b: Key): bool = and {
     a.question == b.question,
     a.subject == b.subject,
-    a.target == b.target,
+    sameKeyTarget(a.target, b.target),
     a.context == b.context,
     a.time == b.time,
     a.profile == b.profile,
@@ -69,7 +324,8 @@ module ida {
   // Both inputs are REQUIRED premises. Precondition: validInput(left/right).
   // Precedence: scope mismatch, suspension, missing premise, intersection.
   pure def refine(leftKey: Key, left: Input, rightKey: Key, right: Input): Result = {
-    if (not(sameKey(leftKey, rightKey))) OutOfScope
+    if (not(validKeyTarget(leftKey.target) and validKeyTarget(rightKey.target))) OutOfScope
+    else if (not(sameKey(leftKey, rightKey))) OutOfScope
     else if (isSuspended(left) or isSuspended(right)) RSuspended
     else if (isMissing(left) or isMissing(right)) RNoRuling
     else match left {
@@ -145,7 +401,7 @@ module ida {
   pure val zeroKey: Key = {
     question: 0,
     subject: 0,
-    target: 0,
+    target: LegacyKeyTarget(0),
     context: 0,
     time: 0,
     profile: 0,
@@ -156,7 +412,7 @@ module ida {
     if (code == 0) DecodedKey(zeroKey)
     else if (code == 1) DecodedKey(zeroKey.with("question", 1))
     else if (code == 2) DecodedKey(zeroKey.with("subject", 1))
-    else if (code == 3) DecodedKey(zeroKey.with("target", 1))
+    else if (code == 3) DecodedKey(zeroKey.with("target", LegacyKeyTarget(1)))
     else if (code == 4) DecodedKey(zeroKey.with("context", 1))
     else if (code == 5) DecodedKey(zeroKey.with("time", 1))
     else if (code == 6) DecodedKey(zeroKey.with("profile", 1))
@@ -193,6 +449,35 @@ module ida {
       | DecodedInput(leftInput) => match decodeInput(right) {
         | InvalidInput => -1
         | DecodedInput(rightInput) => encodeResult(refine(zeroKey, leftInput, rightKey, rightInput))
+      }
+    }
+  }
+
+  pure def targetPremises(code: int): (Input, Input) = {
+    if (code == 0) (Known(carrier), Known(Set(W)))
+    else if (code == 1) (Known(Set(H)), Known(Set(W)))
+    else if (code == 2) (NoRuling, Known(carrier))
+    else if (code == 3) (Suspended, Known(Set(M)))
+    else if (code == 4) (Suspended, NoRuling)
+    else (Known(Set(M)), Known(Set(M)))
+  }
+
+  // 35 is a shape-rejection diagnostic at this test boundary, not a Result.
+  pure def targetRefineCode(leftCase: int, rightCase: int, status: int): int = {
+    if (status < 0 or status > 5) -1
+    else match targetCase(leftCase) {
+      | InvalidTargetCase => -1
+      | DecodedTargetCase(leftTarget) => match targetCase(rightCase) {
+        | InvalidTargetCase => -1
+        | DecodedTargetCase(rightTarget) => {
+          if (not(validTarget(leftTarget) and validTarget(rightTarget))) 35
+          else {
+            val premises = targetPremises(status)
+            encodeResult(refine(
+              zeroKey.with("target", StructuredKeyTarget(leftTarget)), premises._1,
+              zeroKey.with("target", StructuredKeyTarget(rightTarget)), premises._2))
+          }
+        }
       }
     }
   }
@@ -268,7 +553,7 @@ module ida {
     decodeKeyVariant(0) == DecodedKey(zeroKey),
     decodeKeyVariant(1) == DecodedKey(zeroKey.with("question", 1)),
     decodeKeyVariant(2) == DecodedKey(zeroKey.with("subject", 1)),
-    decodeKeyVariant(3) == DecodedKey(zeroKey.with("target", 1)),
+    decodeKeyVariant(3) == DecodedKey(zeroKey.with("target", LegacyKeyTarget(1))),
     decodeKeyVariant(4) == DecodedKey(zeroKey.with("context", 1)),
     decodeKeyVariant(5) == DecodedKey(zeroKey.with("time", 1)),
     decodeKeyVariant(6) == DecodedKey(zeroKey.with("profile", 1)),
@@ -344,10 +629,63 @@ module ida {
     1.to(7).forall(key => 0.to(32).forall(left => 0.to(32).forall(right => refineCode(key, left, right) == 34))),
     not(sameKey(zeroKey, zeroKey.with("question", 1))),
     not(sameKey(zeroKey, zeroKey.with("subject", 1))),
-    not(sameKey(zeroKey, zeroKey.with("target", 1))),
+    not(sameKey(zeroKey, zeroKey.with("target", LegacyKeyTarget(1)))),
     not(sameKey(zeroKey, zeroKey.with("context", 1))),
     not(sameKey(zeroKey, zeroKey.with("time", 1))),
     not(sameKey(zeroKey, zeroKey.with("profile", 1))),
     not(sameKey(zeroKey, zeroKey.with("version", 1))),
+  })
+
+  run targetAdmissionTest = assert(and {
+    length(rawTargetCases) == 28,
+    0.to(19).forall(code => targetAdmitCode(code) == 1),
+    20.to(27).forall(code => targetAdmitCode(code) == 0),
+    Set(-1000, -1, 28, 29, 1000).forall(code => targetAdmitCode(code) == -1),
+    validSymbol(targetSymbol("namespace", "name")),
+    not(validSymbol(targetSymbol("", "name"))),
+    not(validSymbol(targetSymbol("namespace", ""))),
+    not(validOperation(repayOperation.with("parameters", List({ role: "", kind: ObligationRef })))),
+    not(validTarget(Omit({
+      act: repayAct, opportunity: baseOpportunity.with("opensAt", -1)
+    }))),
+  })
+
+  run targetIdentityTest = assert(and {
+    0.to(19).forall(i => 0.to(19).forall(j => {
+      val expected = i == j or ((i == 0 or i == 1) and (j == 0 or j == 1))
+      sameTarget(rawTargetCases[i], rawTargetCases[j]) == expected
+    })),
+    0.to(27).forall(i => 0.to(27).forall(j =>
+      sameTarget(rawTargetCases[i], rawTargetCases[j]) ==
+        (rawTargetCases[i] == rawTargetCases[j]))),
+  })
+
+  run targetScopeTest = assert(
+    0.to(27).forall(i => 0.to(27).forall(j => 0.to(5).forall(status => {
+      val identical = i == j or ((i == 0 or i == 1) and (j == 0 or j == 1))
+      val matchedResults = List(16, 33, 0, 32, 32, 4)
+      val expected =
+        if (i >= 20 or j >= 20) 35
+        else if (identical) matchedResults[status]
+        else 34
+      targetRefineCode(i, j, status) == expected
+    }))))
+
+  run targetBoundaryTest = assert(and {
+    0.to(5).forall(status => {
+      val structured = zeroKey.with("target", StructuredKeyTarget(rawTargetCases[0]))
+      val premises = targetPremises(status)
+      refine(zeroKey, premises._1, structured, premises._2) == OutOfScope
+        and refine(structured, premises._1, zeroKey, premises._2) == OutOfScope
+    }),
+    20.to(27).forall(code => 0.to(5).forall(status => {
+      val invalidKey = zeroKey.with("target", StructuredKeyTarget(rawTargetCases[code]))
+      val premises = targetPremises(status)
+      refine(invalidKey, premises._1, invalidKey, premises._2) == OutOfScope
+    })),
+    Set(-1000, -1, 28, 29, 1000).forall(code =>
+      targetRefineCode(code, 0, 0) == -1 and targetRefineCode(0, code, 0) == -1),
+    Set(-1000, -1, 6, 7, 1000).forall(status =>
+      targetRefineCode(0, 0, status) == -1),
   })
 }

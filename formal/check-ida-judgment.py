@@ -50,7 +50,8 @@ def quint_source_audit(work):
     inventory = module_from("ida_quint_sources", ROOT / "formal/ida-quint-source-inventory.py")
     compiler = QUINT / "node_modules/@informalsystems/quint/dist/src/cliCommands.js"
     model, table = QUINT / "ida-judgment.qnt", QUINT / "ida-judgment-table.qnt"
-    expected = {model: {model}, table: {model, table}}
+    dependency = QUINT / "ida.qnt"
+    expected = {model: {model, dependency}, table: {model, table, dependency}}
     hashed = {ROOT / name for name in INPUTS if name.endswith(".qnt")}
     observed = inventory.verify_exact_quint_closure(compiler, expected, hashed)
 
@@ -58,7 +59,7 @@ def quint_source_audit(work):
     # the receipt boundary must fail for that precise path, not a parser error.
     directory = work / "quint-source-controls"
     directory.mkdir()
-    for source in (model, table):
+    for source in (model, table, dependency):
         shutil.copyfile(source, directory / source.name)
     local_model, local_table = directory / model.name, directory / table.name
     text = local_model.read_text()
@@ -69,7 +70,9 @@ def quint_source_audit(work):
         + '  pure val closureProbe = marker\n'))
     extra, hidden = directory / "closure-extra.qnt", directory / "closure-hidden.qnt"
     extra.write_text("module closureExtra { pure val marker = 1 }\n")
-    local_expected = {local_model: {local_model}, local_table: {local_model, local_table}}
+    local_dependency = directory / dependency.name
+    local_expected = {local_model: {local_model, local_dependency},
+                      local_table: {local_model, local_table, local_dependency}}
 
     def require_rejected(expected_map, approved, forbidden):
         path = directory / "typecheck.json"
@@ -85,12 +88,13 @@ def quint_source_audit(work):
         else:
             raise ValueError("Unlisted Quint source passed the receipt boundary")
 
-    require_rejected(local_expected, {local_model, local_table}, extra)
+    require_rejected(local_expected, {local_model, local_table, local_dependency}, extra)
     extra.write_text('module closureExtra {\n  import closureHidden.secret from "./closure-hidden"\n'
                      '  pure val marker = secret\n}\n')
     hidden.write_text("module closureHidden { pure val secret = 1 }\n")
-    through_extra = {local_model: {local_model, extra}, local_table: {local_model, local_table, extra}}
-    require_rejected(through_extra, {local_model, local_table, extra}, hidden)
+    through_extra = {local_model: {local_model, extra, local_dependency},
+                     local_table: {local_model, local_table, extra, local_dependency}}
+    require_rejected(through_extra, {local_model, local_table, extra, local_dependency}, hidden)
     return {
         "inventories": [{"entry": str(Path(item["entry"]).relative_to(ROOT)),
                          "sources": [str(Path(p).relative_to(ROOT)) for p in item["sources"]]}
@@ -221,7 +225,7 @@ def required_theorems():
         "question_roundtrip", "question_decode_sound", "payload_roundtrip", "payload_decode_sound",
         "record_roundtrip", "record_decode_sound", "accepted_iff", "accepted_decoded",
         "accepted_preserves_record", "accepted_reference_shape", "accepted_well_typed",
-        "accepted_snapshot", "accepted_unique_admitted", "accepted_registered_record",
+        "accepted_target", "legacy_wellTyped", "accepted_snapshot", "accepted_unique_admitted", "accepted_registered_record",
         "accepted_preserves_grade", "mismatched_record_not_accepted", "question_change_not_accepted",
         "source_hash_change_not_accepted", "profile_change_not_accepted",
         "profile_version_change_not_accepted", "non_admitted_not_accepted",
@@ -246,12 +250,14 @@ def required_tests():
         "codecFamiliesTest", "typedPayloadTest", "metadataBindingTest", "admissionStatusTest",
         "duplicateEntryTest", "capacityAndEvidenceTest", "referenceShapeTest",
         "unresolvedAndPartialTest", "snapshotTest", "receiptRevalidationTest",
-        "acceptancePreservationTest", "diagnosticPriorityTest", "negativeNaturalBoundaryTest",
+        "acceptancePreservationTest", "diagnosticPriorityTest", "negativeNaturalBoundaryTest", "structuredTargetAdmissionTest",
     }
 
 
 def semantic_mutations():
-    return [('missing_question_binding', '    a.questionCode == b.questionCode,\n', '', 'metadataBindingTest'),
+    return [('missing_target_shape', '    validScopeTarget(record.scope.target),\n', '', 'structuredTargetAdmissionTest'),
+     ('missing_structured_target_binding', '    sameScopeTarget(a.target, b.target),\n', '', 'structuredTargetAdmissionTest'),
+     ('missing_question_binding', '    a.questionCode == b.questionCode,\n', '', 'metadataBindingTest'),
      ('missing_source_hash_binding', '    a.sourceHash == b.sourceHash,\n', '', 'metadataBindingTest'),
      ('missing_profile_version_binding',
       '    a.profileVersion == b.profileVersion,\n',
@@ -442,9 +448,13 @@ def main():
                 "Quint did not complete judgment tests")
         require(all(tests.get(field, []) == [] for field in ("ignored", "warnings", "errors")),
                 "Quint judgment test had ignored cases or diagnostics")
-        require(required_tests() and set(tests.get("passed", [])) == required_tests()
-                and len(tests["passed"]) == len(required_tests()), "Missing or unexpected judgment tests")
-        print(f"IDA judgments: {len(tests['passed'])} deterministic Quint tests passed.", flush=True)
+        # Quint discovers imported tests as well as local tests.
+        dependency_tests = {"A::" + name for name in common.required_tests()}
+        expected_tests = required_tests() | dependency_tests
+        require(set(tests.get("passed", [])) == expected_tests
+                and len(tests["passed"]) == len(expected_tests), "Missing or unexpected judgment tests")
+        print(f"IDA judgments: {len(required_tests())} deterministic Quint tests passed "
+              f"with {len(dependency_tests)} imported foundation tests.", flush=True)
         lean_csv = lake("env", "lean", "--run", "scripts/ExportIDAJudgment.lean").stdout
         left = parse_lean(lean_csv)
         trace_path = work / "quint.itf.json"
@@ -472,7 +482,7 @@ def main():
         require(command(["git", "rev-parse", "HEAD"]).stdout.strip() == revision,
                 "Revision changed while checking committed input blobs")
         report = {
-            "schema": "usul.ida.judgment.v1", "status": "passed", "revision": revision,
+            "schema": "usul.ida.judgment.v2", "status": "passed", "revision": revision,
             "inputs_match_head": matches_head, "source_sha256": hashes, "runtime_overrides": overrides,
             "tools": {"lean_pin": pin, "lean": version, "quint": quint_version,
                       "node": command(["node", "--version"]).stdout.strip()},
@@ -480,7 +490,7 @@ def main():
                          "total_inputs": ROW_COUNT, "synthetic_fixtures": True,
                          "questions": 5, "statuses": 4, "admission_variants": 38,
                          "codec_question_tags": "0..5", "codec_answer_tags": "0..37"},
-            "quint_tests": sorted(required_tests()), "parser_controls": controls,
+            "quint_tests": sorted(required_tests()), "quint_dependency_tests": sorted(dependency_tests), "parser_controls": controls,
             "quint_source_audit": sources,
             "contract_vectors": vectors, "semantic_mutants": mutants,
             "compiled_audit": {"modules": axioms["modules"], "declarations": len(axioms["declarations"]),

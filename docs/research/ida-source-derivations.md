@@ -72,7 +72,7 @@ is a deliberately explicit rule set, with no default permission rule and no
 generic rule-ID escape hatch.
 
 Conjunction requires equal inquiry identity, question family, and complete
-scope. The scope includes subject identity and capacity, target and kind,
+scope. The scope includes subject identity and capacity, the complete tagged target,
 context, time, profile and version, and domain. For taklifi answers, conjunction
 uses the foundation's nonempty-set intersection. Disjoint constraints remain
 conflicting. For Boolean signs and validity, equal known answers combine;
@@ -114,16 +114,16 @@ citations asserting that a source passage establishes a juristic conclusion.
 
 | Required evidence | Declared scope |
 |---|---|
-| Fixed Lean proposition witnesses | 44: 34 universal contracts and 10 scenario contracts |
+| Fixed Lean proposition witnesses | 48: 36 universal contracts and 12 scenario contracts |
 | Full-value kernel-checked pair scenarios | All 1,089 taklifi pairs and 64 sign/validity pairs, including complete conclusions and provenance |
-| Independent Quint tests | 21 deterministic tests; no ignored cases |
-| Cross-model export | 1,360 evaluations at eight projections each, 16 replay cases, and 136 source-reference cells: 11,032 cells |
-| Independent expected contract cases | 301 cases checked against both exports |
-| Semantic negative controls | 23 mutants, each typechecked before its named assertion must fail |
+| Independent Quint tests | 23 deterministic tests; no ignored cases |
+| Cross-model export | 1,373 evaluations at eight projections each, 19 replay cases, and 136 source-reference cells, for 11,139 cells |
+| Independent expected contract cases | 317 cases checked against both exports |
+| Semantic negative controls | 24 mutants, each typechecked before its named assertion must fail |
 | Source authentication | Six positive and 38 negative controls; two synthetic source references linked to both formal exports |
 | Other controls | Seven export-corruption cases, three source-reference link controls, three compiled axiom/import probes, two Quint dependency probes, and one theorem-weakening probe |
 
-The 11,032 cells are not 11,032 independent trees. The projections include
+The 11,139 cells project the declared finite scenarios. The projections include
 status, classification, inquiry identity, question family, answer, provenance
 length, and ordered diagnostic/provenance encodings. Full-record equality is
 covered by the separate universal proofs and complete-value scenarios, not

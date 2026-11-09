@@ -20,3 +20,6 @@ They establish properties of the encoded registry check. Source authentication,
 interpretation fidelity, approval authority, and application refinement retain
 the separate obligations stated in the
 [judgment slice guide](../../research/ida-judgment-records.md).
+
+Two ACT-00 contracts pin exact preservation and structural checking of the
+target on acceptance, and preserve the previous typing criterion for opaque IDs.

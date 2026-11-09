@@ -226,4 +226,31 @@ theorem require_UsulTest_IDADerivation_forged_admission_rejected :
     let (env, forged) := replayFixture 7
     forged.result.isAccepted = true ∧ verifyReceipt env forged = false := forged_admission_rejected
 
+theorem require_Usul_IDA_Derivation_target_guard :
+    ∀ {env : Environment} {tree : Tree} {p q : Premise},
+      p ∈ tree.leaves → q ∈ tree.leaves →
+      p.request.record.scope.target ≠ q.request.record.scope.target →
+      ¬ (evaluate env tree).Accepted :=
+  @target_guard
+
+theorem require_Usul_IDA_Derivation_accepted_leaf_target :
+    ∀ {env : Environment} {tree : Tree}, (evaluate env tree).Accepted →
+      ∀ p ∈ tree.leaves, p.request.record.scope.target.WellFormed :=
+  @accepted_leaf_target
+
+theorem require_UsulTest_IDADerivation_structured_target_matrix : ∀ v : Fin 13,
+    (UsulTest.IDADerivation.targetEval v.val).issues =
+      UsulTest.IDADerivation.expectedTargetIssues v.val ∧
+    (UsulTest.IDADerivation.targetEval v.val).isAccepted =
+      (UsulTest.IDADerivation.expectedTargetIssues v.val).isEmpty ∧
+    (UsulTest.IDADerivation.targetEval v.val).provenance =
+      (UsulTest.IDADerivation.targetFixture v.val).2.leaves :=
+  UsulTest.IDADerivation.structured_target_matrix
+
+theorem require_UsulTest_IDADerivation_structured_target_replay :
+    UsulTest.IDADerivation.targetReplay 0 = true ∧
+    UsulTest.IDADerivation.targetReplay 1 = false ∧
+    UsulTest.IDADerivation.targetReplay 2 = false :=
+  UsulTest.IDADerivation.structured_target_replay
+
 end UsulTest.IDADerivationContracts

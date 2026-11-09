@@ -66,7 +66,16 @@ Restriction maps are deterministic adapters:
 restrict(Section, FromContext, ToContext, RestrictedSection)
 ```
 
-A restriction may preserve, weaken, suspend, or refine the local verdict only when the kernel has an explicit rule for doing so. No silent LLM rewrite is allowed.
+An evaluation adapter may preserve, weaken, suspend, or refine a local verdict
+only when the kernel has an explicit rule for doing so. Such adapters need
+their own semantics and laws. In the implemented
+[`Usul.Cat.Sheaf`](../../formal/lean/Usul/Cat/Sheaf.lean), a section assigns a
+value to each situation and restriction only narrows its domain: the assigned
+value at every retained situation is unchanged. That theorem does not supply an
+evidence update, a temporal transition, or reevaluation of defeated premises.
+The [accepted IDA context theory](../research/ida-context-theory.md) separates
+these operations and their admission/transport obligations. No silent LLM
+rewrite is allowed.
 
 ## Compatibility and gluing
 
@@ -162,20 +171,29 @@ This preserves ADQ tier discipline:
 
 ## Path-indexed lift
 
-For the contextual deontic-circuit model, the base site can be refined from static contexts to action-prefix contexts:
+For the contextual deontic-circuit model, a conditional extension indexes evaluation
+by action-prefix contexts:
 
 ```text
 ContextPatch = world + agent + path_prefix + evidence + object + subject + modality conditions
 ```
 
-Restriction then follows prefix extension:
+The underlying history-extension relation is:
 
 ```text
 prefix(Prefix, LongerPrefix)
-refines(ctx(World, Agent, LongerPrefix), ctx(World, Agent, Prefix))
 ```
 
-This explains why a permission can become forbidden later without contradiction: the later prefix is a smaller context with more information and fewer admissible continuations.
+Turning that relation into semantic refinement requires an interpretation of
+histories, explicit restriction maps with identity/composition laws, and a
+treatment of facts whose truth changes. Prefix extension alone establishes none
+of those claims. A later evaluation may differ after revocation, a change in
+capacity, or newly admitted evidence; its justification belongs to a temporal or
+evidence-update contract with applicability and exception guards rechecked.
+Restriction of a fixed assignment still preserves its value at every retained
+situation. See the [accepted context theory](../research/ida-context-theory.md)
+for the distinction between historical state, current authority, and the evidence
+available about either.
 
 ## Immediate implementation target
 

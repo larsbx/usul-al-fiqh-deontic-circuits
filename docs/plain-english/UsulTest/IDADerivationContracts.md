@@ -2,8 +2,8 @@
 
 Source: [`formal/lean/UsulTest/IDADerivationContracts.lean`](../../../formal/lean/UsulTest/IDADerivationContracts.lean)
 
-This module fixes 44 explicit proposition types: 34 universal derivation
-requirements and ten deterministic adversarial scenario requirements. Each
+This module fixes 48 explicit proposition types, including 36 universal
+derivation requirements and 12 deterministic scenario requirements. Each
 witness writes its expected type directly and uses the corresponding theorem.
 It does not obtain the required proposition by asking Lean for the implementation
 theorem's type.
@@ -27,3 +27,7 @@ The compiled declaration and axiom audit is a separate check. Fixed proposition
 types catch weakened requirements; the axiom audit catches inadmissible proof
 dependencies. Neither establishes source-interpretation correctness or authority
 of the externally supplied registry, catalog, and evidence decisions.
+
+Four ACT-00 witnesses require target equality across accepted leaves,
+well-formedness of each accepted target, the fixed structured target scenario
+matrix, and the three replay results.

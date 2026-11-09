@@ -18,6 +18,8 @@ module idaDerivationTable {
   pure val alternativeRows: List[int] = range(0,2).foldl(List(), (rows, scenario) =>
     rows.concat(range(0,2).foldl(List(), (values, identity) => values.concat(cells(D::alternativeOutcomes(scenario).nth(identity))))))
   pure val replayRows: List[int] = range(0,16).foldl(List(), (rows, caseId) => rows.append(if (D::replayCase(caseId)) 1 else 0))
-  action init = results' = sourceRows.concat(leafRows).concat(taklifiRows).concat(typedRows).concat(scopeRows).concat(treeRows).concat(alternativeRows).concat(replayRows)
+  pure val targetRows: List[int] = range(0,13).foldl(List(), (rows, caseId) => rows.concat(cells(D::targetOutcome(caseId))))
+  pure val targetReplayRows: List[int] = range(0,3).foldl(List(), (rows, caseId) => rows.append(if (D::targetReplay(caseId)) 1 else 0))
+  action init = results' = sourceRows.concat(leafRows).concat(taklifiRows).concat(typedRows).concat(scopeRows).concat(treeRows).concat(alternativeRows).concat(replayRows).concat(targetRows).concat(targetReplayRows)
   action step = results' = results
 }

@@ -38,3 +38,7 @@ def main : IO Unit := do
       emitEvaluation out "alternatives" scenario index (alternativeEval scenario index)
   for variant in List.range 16 do
     emitCell out "replay" variant 0 0 (replayValue variant)
+  for variant in List.range 13 do
+    emitEvaluation out "target" variant 0 (targetEval variant)
+  for variant in List.range 3 do
+    emitCell out "target-replay" variant 0 0 (if targetReplay variant then 1 else 0)

@@ -3,12 +3,16 @@
 // authenticate bytes, interpretation, a religious position, or a derivation.
 // Every finite fixture below is synthetic.
 module idaJudgment {
+  import ida as A from "./ida"
+
   type Hukm = Haram | Makruh | Mubah | Mandub | Wajib
   type Question = Taklifi | Sabab | Shart | Mani | ValidityQuestion
   type Validity = Fasid | Sahih
   type Answer = TaklifiAnswer(Set[Hukm]) | SignAnswer(bool) | ValidityAnswer(Validity)
   type Payload = NoRuling | Suspended | Known(Answer)
   type TargetKind = Behavior | Affect
+  type LegacyTarget = { id: int, kind: TargetKind }
+  type ScopeTarget = OpaqueTarget(LegacyTarget) | DescribedTarget(A::Target)
   type Domain = Ada | Ibada
   type Grade = Wahm | Shakk | Zann | Qat
   type DalilKind = Nass | Ijma | FatwaSahabi | AqrabSahabi | MursalDaif | Qiyas | Istishab
@@ -16,7 +20,7 @@ module idaJudgment {
 
   type Subject = { baligh: bool, aqil: bool }
   type Scope = {
-    subjectId: int, subject: Subject, targetId: int, targetKind: TargetKind,
+    subjectId: int, subject: Subject, target: ScopeTarget,
     context: int, time: int, profile: int, profileVersion: int, domain: Domain
   }
   type SourceRef = {
@@ -161,11 +165,20 @@ module idaJudgment {
     naturalList(source.sourceHash), naturalList(source.passageHash),
   }
 
+  pure def targetNaturals(target: ScopeTarget): bool = match target {
+    | OpaqueTarget(value) => value.id >= 0
+    | DescribedTarget(expression) => match expression {
+      | Omit(omission) => omission.opportunity.opensAt >= 0 and omission.opportunity.closesAt >= 0
+      | _ => true
+    }
+  }
+
   pure def recordNaturals(record: RawRecord): bool = and {
-    Set(record.questionCode, record.answerCode, record.scope.subjectId, record.scope.targetId,
+    Set(record.questionCode, record.answerCode, record.scope.subjectId,
       record.scope.context, record.scope.time, record.scope.profile, record.scope.profileVersion,
       record.provenance.interpretationId, record.provenance.interpretationVersion,
       record.provenance.ruleId).forall(value => value >= 0),
+    targetNaturals(record.scope.target),
     sourceNaturals(record.provenance.source),
     naturalList(record.provenance.premises),
   }
@@ -188,9 +201,26 @@ module idaJudgment {
     provenance.implementationRevision != "",
   }
 
+  pure def validScopeTarget(target: ScopeTarget): bool = match target {
+    | OpaqueTarget(_) => true
+    | DescribedTarget(expression) => A::validTarget(expression)
+  }
+
+  pure def sameScopeTarget(left: ScopeTarget, right: ScopeTarget): bool = match left {
+    | OpaqueTarget(a) => match right {
+      | OpaqueTarget(b) => a.id == b.id and a.kind == b.kind
+      | _ => false
+    }
+    | DescribedTarget(a) => match right {
+      | DescribedTarget(b) => A::sameTarget(a, b)
+      | _ => false
+    }
+  }
+
   // This retains the existing Judgement gate. Evidence grade is not promoted.
   pure def wellTyped(record: TypedRecord): bool = and {
     record.provenance.dalil.length() > 0,
+    validScopeTarget(record.scope.target),
     record.question != Taklifi or (record.scope.subject.baligh and record.scope.subject.aqil),
   }
 
@@ -198,8 +228,7 @@ module idaJudgment {
   pure def sameScope(a: Scope, b: Scope): bool = and {
     a.subjectId == b.subjectId,
     a.subject == b.subject,
-    a.targetId == b.targetId,
-    a.targetKind == b.targetKind,
+    sameScopeTarget(a.target, b.target),
     a.context == b.context,
     a.time == b.time,
     a.profile == b.profile,
@@ -292,7 +321,7 @@ module idaJudgment {
       answerCode: if (question == 0) 16 else if (question == 4) 36 else 34,
       scope: {
         subjectId: 1, subject: { baligh: true, aqil: true },
-        targetId: 1, targetKind: Behavior, context: 1, time: 1,
+        target: OpaqueTarget({ id: 1, kind: Behavior }), context: 1, time: 1,
         profile: 1, profileVersion: 1, domain: Ada
       },
       provenance: {
@@ -334,8 +363,8 @@ module idaJudgment {
     else if (caseId == 3) record.with("scope", scope.with("subjectId", 2))
     else if (caseId == 4) record.with("scope", scope.with("subject", scope.subject.with("baligh", false)))
     else if (caseId == 5) record.with("scope", scope.with("subject", scope.subject.with("aqil", false)))
-    else if (caseId == 6) record.with("scope", scope.with("targetId", 2))
-    else if (caseId == 7) record.with("scope", scope.with("targetKind", Affect))
+    else if (caseId == 6) record.with("scope", scope.with("target", OpaqueTarget({ id: 2, kind: Behavior })))
+    else if (caseId == 7) record.with("scope", scope.with("target", OpaqueTarget({ id: 1, kind: Affect })))
     else if (caseId == 8) record.with("scope", scope.with("context", 2))
     else if (caseId == 9) record.with("scope", scope.with("time", 2))
     else if (caseId == 10) record.with("scope", scope.with("profile", 2))
@@ -645,6 +674,23 @@ module idaJudgment {
     }
   })
 
+  run structuredTargetAdmissionTest = assert({
+    val baseline = syntheticRequest(1)
+    val raw = baseline.record
+    val structured = raw.with("scope", raw.scope.with("target", DescribedTarget(A::rawTargetCases.nth(0))))
+    val malformed = raw.with("scope", raw.scope.with("target", DescribedTarget(A::rawTargetCases.nth(21))))
+    val legacyRegistry = syntheticRegistry(1, Admitted)
+    val structuredRegistry = legacyRegistry.with("entries",
+      List(legacyRegistry.entries.head().with("record", structured)))
+    and {
+      preservesSyntheticRequest(structured, 1, 1),
+      resultCode(validateSyntheticRecord(malformed)) == 3,
+      resultCode(validate(legacyRegistry, baseline.with("record", structured))) == 8,
+      resultCode(validate(structuredRegistry, baseline)) == 8,
+      resultCode(revalidate(structuredRegistry, syntheticReceipt(1))) == 8,
+    }
+  })
+
   run negativeNaturalBoundaryTest = assert({
     val raw = syntheticBaseline(0)
     val scope = raw.scope
@@ -652,7 +698,7 @@ module idaJudgment {
     val source = provenance.source
     val negativeRecords = Set(
       raw.with("scope", scope.with("subjectId", -1)),
-      raw.with("scope", scope.with("targetId", -1)),
+      raw.with("scope", scope.with("target", OpaqueTarget({ id: -1, kind: Behavior }))),
       raw.with("scope", scope.with("context", -1)),
       raw.with("scope", scope.with("time", -1)),
       raw.with("scope", scope.with("profile", -1)),

@@ -40,11 +40,26 @@ inductive TargetKind where
   | behavior | affect
   deriving DecidableEq, Repr
 
+/-- Historical target kind is retained only on the opaque numeric form.
+Structured records carry raw syntax so validation can reject malformed submissions. -/
+inductive ScopeTarget where
+  | legacy (id : Nat) (kind : TargetKind)
+  | structured (expression : TargetExpr)
+  deriving DecidableEq, Repr
+
+def ScopeTarget.WellFormed : ScopeTarget → Prop
+  | .legacy _ _ => True
+  | .structured expression => expression.WellFormed
+
+instance (target : ScopeTarget) : Decidable target.WellFormed :=
+  match target with
+  | .legacy _ _ => isTrue trivial
+  | .structured expression => inferInstanceAs (Decidable expression.WellFormed)
+
 structure Scope where
   subjectId : Nat
   subject : Subject
-  targetId : Nat
-  targetKind : TargetKind
+  target : ScopeTarget
   context : Nat
   time : Nat
   profile : Nat
@@ -110,7 +125,8 @@ instance (p : Provenance) : Decidable p.WellFormed := by
   infer_instance
 
 def Record.WellTyped (r : Record) : Prop :=
-  r.provenance.dalil ≠ [] ∧ (r.question = .taklifi → r.scope.subject.IsMukallaf)
+  r.provenance.dalil ≠ [] ∧ (r.question = .taklifi → r.scope.subject.IsMukallaf) ∧
+    r.scope.target.WellFormed
 
 instance (r : Record) : Decidable r.WellTyped := by
   unfold Record.WellTyped
@@ -443,7 +459,22 @@ theorem accepted_well_typed {registry : Registry} {request : Request} {receipt :
     (h : validate registry request = .accepted receipt) :
     receipt.record.provenance.dalil ≠ [] ∧
       (receipt.record.question = .taklifi → receipt.record.scope.subject.IsMukallaf) :=
-  ((accepted_iff registry request receipt).mp h).2.2.1
+  let typed := ((accepted_iff registry request receipt).mp h).2.2.1
+  ⟨typed.1, typed.2.1⟩
+
+/-- Exact record binding carries the same target through admission, with its shape checked. -/
+theorem accepted_target {registry : Registry} {request : Request} {receipt : Receipt}
+    (h : validate registry request = .accepted receipt) :
+    receipt.record.scope.target = request.record.scope.target ∧
+      request.record.scope.target.WellFormed := by
+  have ht := congrArg (fun raw : RawRecord => raw.scope.target) (accepted_preserves_record h)
+  change receipt.record.scope.target = request.record.scope.target at ht
+  exact ⟨ht, ht ▸ ((accepted_iff registry request receipt).mp h).2.2.1.2.2⟩
+
+theorem legacy_wellTyped (r : Record) (id : Nat) (kind : TargetKind) :
+    ({ r with scope := { r.scope with target := .legacy id kind } } : Record).WellTyped ↔
+      r.provenance.dalil ≠ [] ∧ (r.question = .taklifi → r.scope.subject.IsMukallaf) := by
+  simp [Record.WellTyped, ScopeTarget.WellFormed]
 
 theorem accepted_snapshot {registry : Registry} {request : Request} {receipt : Receipt}
     (h : validate registry request = .accepted receipt) :
@@ -613,8 +644,8 @@ def syntheticBaseline (q : Nat) : RawRecord :=
   { questionCode := q
     answerCode := if q = 0 then 16 else if q < 4 then 34 else 36
     scope :=
-      { subjectId := 1, subject := ⟨true, true⟩, targetId := 1
-        targetKind := .behavior, context := 1, time := 1, profile := 1
+      { subjectId := 1, subject := ⟨true, true⟩, target := .legacy 1 .behavior,
+        context := 1, time := 1, profile := 1
         profileVersion := 1, domain := .ada }
     provenance :=
       { source :=
@@ -640,8 +671,8 @@ def syntheticRecordVariant (q variant : Nat) (r : RawRecord) : Option RawRecord 
   | 3 => some { r with scope := { r.scope with subjectId := 2 } }
   | 4 => some { r with scope := { r.scope with subject := { r.scope.subject with baligh := false } } }
   | 5 => some { r with scope := { r.scope with subject := { r.scope.subject with aqil := false } } }
-  | 6 => some { r with scope := { r.scope with targetId := 2 } }
-  | 7 => some { r with scope := { r.scope with targetKind := .affect } }
+  | 6 => some { r with scope := { r.scope with target := .legacy 2 .behavior } }
+  | 7 => some { r with scope := { r.scope with target := .legacy 1 .affect } }
   | 8 => some { r with scope := { r.scope with context := 2 } }
   | 9 => some { r with scope := { r.scope with time := 2 } }
   | 10 => some { r with scope := { r.scope with profile := 2 } }

@@ -36,6 +36,7 @@ import Usul.Cat
 import Usul.Mahall
 import Usul.Agency
 import Usul.Typing.IDADerivation
+import Usul.Typing.IDAActRegistry
 import Usul.Fixtures.Runner
 import Usul.Fixtures.Sheaf
 import Usul.Fixtures.Fatwa

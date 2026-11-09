@@ -11,8 +11,13 @@
 | `formal/lean-mathlib/` | `**` |
 | `formal/tla/` | `**` |
 | `formal/quint/` | `**` |
-| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs` |
-| `formal/lean/scripts/` | `ExportAgency.lean` |
+| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `ida-act-registry-wire.py`, `ida-act-registry-mutations.json` |
+| `formal/fixtures/ida-act-registry/` | `**` |
+| `formal/lean/scripts/` | `*IDAActRegistry.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
+| `docs/plain-english/Usul/Typing/` | `IDAActRegistry.md` |
+| `docs/plain-english/UsulTest/` | `IDAActRegistry*.md` |
+| `docs/plain-english/scripts/` | `*IDAActRegistry*.md` |
+| `.github/workflows/` | `ida-act-registry.yml`, `fiqh-act-reference.yml` |
 | `docs/research/` | `agency-source-profile.md`, `agency-pilot.md`, `ida-*.md`, `islamic-deontic-algebra-spec.md` |
 | `docs/architecture/` | `category-theory.md`, `judgement.md`, `mahall.md` |
 | `corpus/citations/` | `**` |
@@ -30,9 +35,9 @@
 | `corpus/tanaqud/` | `**` |
 | `corpus/types/` | `**` |
 | `corpus/typing/` | `**` |
-| `pipeline/usul_corpus/` | `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `istislah_cases.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `records.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
+| `pipeline/usul_corpus/` | `act_reference.py`, `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `istislah_cases.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `records.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
 | `pipeline/usul_corpus/encoders/` | `**` |
-| `pipeline/tests/` | `test_abwab.py` |
+| `pipeline/tests/` | `test_abwab.py`, `test_act_reference.py` |
 <!-- END GENERATED TRACK PATHS -->
 
 ## 0. Scope and thesis
@@ -293,25 +298,26 @@ admitting source interpretations, or completing ACT-00 or M16.
 
 ### Act classification and categorical transformations
 
-**M16 planning update (2026-11-08).** The
-[detailed act-classification roadmap](research/ida-act-classification-roadmap.md)
-records the act-reference discussion and the categorical work as ten explicitly
-scoped packages, ACT-00–ACT-09. Its first implementation target is typed contexts
-and substitution, followed by information-loss/equivalence contracts, supported
-interpretations, and evidence-bearing judgment transport. Compound descriptions,
-process/resource semantics, and richer indexing are conditional later work.
+**M16 implementation update (2026-11-08).** [ACT-00](research/ida-target-integration.md)
+integrated #140's checked target grammar and candidate reference with the
+source-bound judgment and derivation baseline through
+[#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144), merged at
+`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`. It retains opaque legacy IDs,
+compares full structured expressions, and checks exact target binding through
+admission, evidence, conjunction, and receipt replay. The
+[detailed roadmap](research/ida-act-classification-roadmap.md) records the
+remaining ACT-01–ACT-09 dependencies. Historical verification receipts remain
+evidence for their recorded revisions.
 
-The baseline is main `c9743cefe86b9b9c3032c6cc626a51fff1ab8136`, where
-`Key.target` is numeric. [Draft #140](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/140)
-at `a7cf2713c2dfc9cd41e9389bd5db721ef4280db5` contains the structured target and
-candidate act reference, but remains based on `research/ida-algebra-v1`.
-Reconciling that branch with main's judgment/derivation work is ACT-00; historical
-scoped receipts do not prove the combined integration.
-
-Reuse `Usul.Cat.Factor`, `Typing`, `Scales` and `Institution` with their exact
-hypotheses. Preserve candidate source meanings, separate mention/kind/description/
-occurrence identities, and retain the existing admission boundary. This update
-adds a roadmap, not new proofs or admitted act interpretations.
+**Context design accepted (2026-11-09).** The project owner accepted the
+[context theory](research/ida-context-theory.md) and its implementation roadmap. It
+refines the planned substitution, information-loss, and judgment-transport
+contracts. It separates typed schematic variables, factual situations, evidence,
+source profiles, time/history, and authority/resource state. It reuses existing
+typing, sheaf, and agency interfaces while keeping semantic preservation,
+premise admission, and temporal reevaluation as separate obligations. These
+contracts are the accepted development baseline within M16's existing
+dependencies; implementation and proof completion retain their own status.
 
 ### Status (2026-10-13)
 
@@ -333,7 +339,7 @@ adds a roadmap, not new proofs or admitted act interpretations.
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 | M14 maqāṣid | **readings proved, two encoders, seven candidate cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 plus five source-located al-Mustaṣfā cases (31 conditional istiṣlāḥ completion checks); 0 reviewed new conclusions; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
 | M15 joint agency | **candidate implementation; interpretation review open** | `Usul.Agency`, `UsulTest.Agency`, and `formal/quint/`: two revocation profiles, joint/independent permission, arbitrary-history proofs, 13,312 finite transition inputs, source-byte and passage checks, and semantic negative controls. [Scope and reproduction](research/agency-pilot.md); [source profile](research/agency-source-profile.md). |
-| M16 act classification | **roadmap specified; implementation proposed (2026-11-08)** | [ACT-00–ACT-09](research/ida-act-classification-roadmap.md): integrate #140 with current IDA judgments/derivations; typed registry and substitution first; loss/equivalence, supported interpretations, and explicit judgment transport next; conditional composition/process/indexing extensions. No new Lean–Quint acceptance or source admission is claimed. |
+| M16 act classification | **ACT-00 integrated; ACT-01 registry fragment implemented; context design accepted** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01](research/ida-act-registry.md) adds versioned definitions, typed descriptions, exact envelope/source binding, and `make ida-registry`. The [roadmap](research/ida-act-classification-roadmap.md) and [context contracts](research/ida-context-theory.md) are accepted; later implementation remains planned or conditional. Historical Lean–Quint and candidate-source receipts retain their exact revision and scope; ACT-01 owns versioned registry authority. |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -687,18 +693,26 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   turns the act-reference/category-theory discussion into ordered, independently
   reviewable work packages. Existing M8 catalogue, M9 factorization, M10 scale/
   context, and M11 institution interfaces are reuse points; their unrelated open
-  extensions are not additional prerequisites for the small core.
-- **First prerequisite (ACT-00):** reconcile #140's structured targets and
-  candidate reference with main's IDA typed judgments, source-bound derivations,
-  authentication, canonical wire, and replay gates.
+  extensions are not additional prerequisites for the small core. The
+  [accepted context theory](research/ida-context-theory.md) refines ACT-02, ACT-03,
+  ACT-05, and the conditional ACT-07/ACT-09 work without adding core prerequisites.
+- **Implemented prerequisite (ACT-00):** the [integration contract](research/ida-target-integration.md)
+  records the structured targets merged with main's typed judgments and
+  source-bound derivations through #144 at `ca38f35`.
+  It retains existing authentication and checks the full tagged target through
+  required premises and replay.
 - **Core (ACT-01–ACT-05):** versioned kind-specific arguments and typed relations;
   the category of schematic contexts and substitution; explicit information loss,
   reflection/round-trip limits and scoped equivalence; supported interpretation
   fragments and migrations; conditional transport through existing evidence.
+  Context contracts distinguish derivation under assumptions from admitted
+  premises, and schematic substitution from evidence or temporal reevaluation.
 - **Verification:** Lean laws and independently written bounded Quint models
   first; same-sort role swaps, rigid-reference changes, lost qualifications,
   occurrence collapse, changed omission opportunities, unsupported profile
   bridges, and stale source/definition/profile receipts are named controls.
+  The context design also requires countermodels for contradictory assumptions,
+  unjustified forgetting, and conflation of revocation with an agent's knowledge.
 - **Conditional extensions:** typed composite descriptions (ACT-06), actual
   process/interfaces and resource independence (ACT-07), and richer indexing or
   quotient machinery (ACT-09) each require a concrete need and separate evidence.
@@ -707,8 +721,16 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   examples, and source-bound transport with exact-head receipts. Preserve the
   distinction between universal proofs, bounded comparisons, source
   interpretations, and runtime claims. Candidate meanings remain candidate.
-- **State:** documentation and sequencing only; no proposed contract is marked
-  compiled or accepted by this roadmap.
+- **ACT-01 implementation:** the [registry fragment](research/ida-act-registry.md)
+  checks versioned definitions and complete ordered roles, preserves 34 candidate
+  kinds and their explicit unresolveds, and binds omitted qualifications/context
+  metadata through the actual source evaluator. The Lean–Quint and canonical-wire
+  gate is `make ida-registry`; qualification truth and binding-authority
+  publication have separate contracts.
+- **State:** ACT-00 is on main through #144. Verification receipts remain bound
+  to the heads and scopes they checked; later acceptance requires its own
+  evidence. The context theory and roadmap are accepted; remaining implementation
+  is planned or conditional, with its own contracts and dependencies.
 
 ---
 

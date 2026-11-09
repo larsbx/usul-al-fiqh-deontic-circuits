@@ -547,6 +547,19 @@ theorem context_guard {env : Environment} {tree : Tree} {p q : Premise}
   incompatible_scopes_rejected hp hq
     (fun he => hne (congrArg (fun k => k.scope.context) he))
 
+theorem target_guard {env : Environment} {tree : Tree} {p q : Premise}
+    (hp : p ∈ tree.leaves) (hq : q ∈ tree.leaves)
+    (hne : p.request.record.scope.target ≠ q.request.record.scope.target) :
+    ¬ (evaluate env tree).Accepted :=
+  incompatible_scopes_rejected hp hq
+    (fun he => hne (congrArg (fun k => k.scope.target) he))
+
+theorem accepted_leaf_target {env : Environment} {tree : Tree}
+    (h : (evaluate env tree).Accepted) (p : Premise) (hp : p ∈ tree.leaves) :
+    p.request.record.scope.target.WellFormed := by
+  rcases accepted_every_source h p hp with ⟨r, authority, _⟩
+  exact (Judgment.accepted_target authority.registry).2
+
 theorem provenance_grades_preserved (env : Environment) (tree : Tree) :
     (evaluate env tree).provenance.map (fun p => p.request.record.provenance.grade) =
       tree.leaves.map (fun p => p.request.record.provenance.grade) := by

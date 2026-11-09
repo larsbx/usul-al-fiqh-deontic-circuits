@@ -89,6 +89,13 @@ matching     sᵢ = sⱼ on Uᵢ ∩ Uⱼ
   situations, `obstructions` emits `(patch, patch, situation)` records, and the list is empty iff
   the family glues.
 
+For this implemented `Section β U`, restriction preserves the assigned value at
+every retained situation. A factual transition or a change in evidence can
+require reevaluation; neither operation follows from `restrict_comp`. The
+[accepted context theory](../research/ida-context-theory.md) gives those changes
+separate contracts and keeps gluing distinct from premise admission or a choice
+between source profiles.
+
 Example (`UsulTest/Cat.lean`, Ibn Rajab Q2 farʿ 2): al-Mughnī's wajh in janāba and the ṣaḥīḥ for
 the minor ḥadath rule differently in *different* contexts, and they glue. Adding the other janāba
 wajh produces exactly one disagreement, at janāba, and it is emitted as an obstruction record.
@@ -205,11 +212,20 @@ an incapacity) and a wrong initial state are each rejected by TLC (mutation-chec
 ## Act classification and categorical transformations (M16)
 
 The [detailed roadmap](../research/ida-act-classification-roadmap.md) extends this
-architecture with proposed act-description contracts. It reuses `Factor` for
+architecture with accepted act-description contracts awaiting implementation.
+It reuses `Factor` for
 constant-on-fiber/factorization and counterexamples, `Typing` for existing
 encoder refinements, `Scales` for the already-proved ruling duality, and
 `Institution` for explicit preservation/reflection hypotheses. None of those
 existing results supplies an interpretation of all candidate act kinds.
+
+The [accepted context theory](../research/ida-context-theory.md) distinguishes
+schematic variables, factual situations, evidence, source profiles, time/history,
+and authority/resource state. It connects the existing interfaces through
+explicit interpretation and transport obligations; it does not identify
+substitution, restriction, evidence updates, and temporal transitions as one
+operation. `Reads` supplies information-dependence results for the defined
+encoders, while `Sheaf.restrict` restricts a fixed assignment.
 
 The first new categorical structure is a category of typed schematic contexts
 with descriptions reindexed by substitutions. Its identity/composition laws must
@@ -228,9 +244,10 @@ and reflection hypotheses.
 
 The roadmap keeps category imports downstream of the types, with
 library-dependent experiments in the separate Mathlib bridge. Its new
-substitution/act contracts are proposed, not additions to the implemented module
-inventory above. Compound-description operads, process interfaces, and richer
-fibrations require concrete use cases and separate acceptance.
+substitution/act contracts are accepted for implementation; the module
+inventory above records delivered results. Compound-description operads, process
+interfaces, and richer fibrations retain their conditional scope and require
+concrete use cases and separate implementation acceptance.
 
 ## Open
 
