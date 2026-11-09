@@ -14,3 +14,9 @@ source premise without changing the premise or issuing a ruling.
 | `ambiguous_rejected`, `inconsistent_rejected`, `time_identity_unique` | Catalog conflicts block lookup and a legacy time ID fixes its effective clock and tick within the catalog. |
 | `bind_iff` | Success returns the original source premise and exact snapshot after the declared inquiry fields match. |
 | `omission_clock`, `phase_closes` | An omission uses the inquiry clock and its well-formed opportunity is closed at the closing tick. |
+
+The bounded ACT-08 agency review uses one fixed appointment, one execution
+attempt, one revocation report, and optional explicit notice to A. The report
+records the revocation's effective time and the evaluator's recording time
+separately. `reviewAgency_unseen` proves that a well-formed report outside
+the cutoff cannot change replay in that view.

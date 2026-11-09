@@ -30,18 +30,20 @@ MODEL = "ida-context.qnt"
 TABLE = "ida-context-table.qnt"
 QUINT_SOURCES = ("ida", "ida-judgment", "ida-derivation", "ida-act-registry", "agency", "ida-context",
                  "ida-context-table")
-TESTS = {"exactIdentityTest", "syntaxAndTimeTest", "candidateSourceTest", "evidenceRevisionTest"}
+TESTS = {"exactIdentityTest", "syntaxAndTimeTest", "candidateSourceTest", "evidenceRevisionTest", "agencyReviewTest"}
 PROOFS = {
     "decode_encode", "encode_decode", "encode_injective", "resolve_iff", "resolve_unique",
     "resolve_rigid", "changed_snapshot_stale", "changed_qualification_stale",
     "no_target_factorization", "typed_arguments", "bind_iff", "ambiguous_rejected",
     "inconsistent_rejected", "time_identity_unique", "resolved_target_wellFormed", "omission_clock",
-    "phase_closes",
+    "phase_closes", "reviewAgency_unseen",
 }
 WITNESSES = {"guard_controls", "same_target_changed_qualification", "candidate_source_stays_candidate",
-             "historical_receipt_current_authority"}
-COVERAGE = {"binding": 2800, "phase": 6, "agency": 24}
+             "historical_receipt_current_authority", "late_revocation_review"}
+COVERAGE = {"binding": 2800, "phase": 6, "agency": 24, "review": 72}
 MUTANTS = {
+    "ignore_report_cutoff": ("evidence.recordedAt <= cutoff", "true", "agencyReviewTest"),
+    "report_implies_notice": ("visible and notice > 0", "visible", "agencyReviewTest"),
     "first_matching_snapshot": (
         "if (not(unambiguous(catalog))) 1", "if (false) 1",
         "else if (found.length() != 1) 1", "else if (false) 1", "exactIdentityTest"),
@@ -67,6 +69,10 @@ def row_keys():
         for history in range(4):
             for coordinate in range(3):
                 yield ("agency", profile, history, coordinate)
+    for profile in range(2):
+        for scenario in range(6):
+            for coordinate in range(6):
+                yield ("review", profile, scenario, coordinate)
 
 
 def lean_values(source):
@@ -78,7 +84,7 @@ def lean_values(source):
     for row, key in zip(lines[1:], expected):
         require(len(row) == 5, f"Invalid row: {row}")
         observed = int(row[4])
-        limit = 6 if key[0] == "binding" else 2
+        limit = {"binding": 6, "review": 3}.get(key[0], 2)
         require(row == [str(x) for x in (*key, observed)] and 0 <= observed <= limit,
                 f"Invalid or reordered row: {row}")
         values.append(observed)
@@ -199,7 +205,7 @@ def main():
             "coverage": COVERAGE, "required_proofs": audit["required_proofs"],
             "compiled_declarations": len(audit["declarations"]), "quint_tests": sorted(TESTS),
             "rejected_mutants": sorted(mutants),
-            "boundary": "Ground structural context and exact binding. Candidate agency replay is separate.",
+            "boundary": "Ground structural context and exact binding, with a bounded candidate agency review.",
         }
         (RECEIPT / "lean.csv").write_text(lean_csv)
         shutil.copyfile(trace_path, RECEIPT / "quint.itf.json")

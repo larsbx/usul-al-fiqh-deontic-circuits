@@ -270,6 +270,44 @@ module idaContext {
     }
   }
 
+  pure def reviewCase(profile: int, scenario: int, perspective: int, coordinate: int): int = {
+    val cfg = { profile: if (profile == 0) G::Immediate else G::OnKnowledge, independent: true }
+    val execution = 10
+    val cutoff = if (perspective == 0) 10 else 15
+    val evidence = { effectiveAt: List(12, 8, 8, 8, 10, 8)[scenario], recordedAt: 15 }
+    val notice = List(0, 0, 9, 12, 0, 7)[scenario]
+    val visible = evidence.recordedAt <= cutoff
+    val revoked = if (visible) List(G::Revoke) else List()
+    val noticed = if (visible and notice > 0) List(G::NotifyA) else List()
+    val events =
+      if (evidence.effectiveAt >= execution) List(G::ExecuteA).concat(revoked).concat(noticed)
+      else if (notice > 0 and notice < execution) revoked.concat(noticed).append(G::ExecuteA)
+      else revoked.append(G::ExecuteA).concat(noticed)
+    val replay = List(G::Appoint).concat(events).foldl(G::Enabled(G::initialState), (current, event) =>
+      match current {
+        | Disabled => G::Disabled
+        | Enabled(s) => G::transition(cfg, s, event)
+      })
+    if (evidence.effectiveAt == execution or (notice > 0 and notice <= evidence.effectiveAt)) 3
+    else match replay {
+      | Disabled => 2
+      | Enabled(s) => {
+        val observed = if (coordinate == 0) s.accepted == G::AExecution
+          else if (coordinate == 1) G::canAct(cfg, s, G::AgentA) else s.knownA
+        if (observed) 1 else 0
+      }
+    }
+  }
+
+  run agencyReviewTest = assert(and {
+    reviewCase(0, 0, 1, 0) == 1, reviewCase(0, 0, 1, 1) == 0,
+    reviewCase(0, 1, 0, 0) == 1, reviewCase(0, 1, 1, 0) == 2,
+    reviewCase(1, 1, 1, 0) == 1, reviewCase(1, 1, 1, 2) == 0,
+    reviewCase(1, 2, 0, 2) == 0, reviewCase(1, 2, 1, 0) == 2,
+    reviewCase(1, 3, 1, 0) == 1, reviewCase(1, 3, 1, 2) == 1,
+    reviewCase(0, 4, 1, 0) == 3, reviewCase(0, 5, 1, 0) == 3,
+  })
+
   run exactIdentityTest = assert(and {
     compareCase(0, 0, 0) == 0,
     compareCase(0, 2, 0) == 1, compareCase(0, 3, 0) == 1, compareCase(0, 8, 0) == 1,

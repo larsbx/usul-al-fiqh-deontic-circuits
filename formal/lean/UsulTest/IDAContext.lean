@@ -175,4 +175,30 @@ theorem historical_receipt_current_authority :
     agencyCase 0 0 0 = 1 ∧ agencyCase 0 0 1 = 0 ∧
     agencyCase 1 0 1 = 1 ∧ agencyCase 1 1 1 = 0 ∧ agencyCase 1 1 2 = 1 := by decide
 
+def reviewCase (profile scenario perspective coordinate : Nat) : Nat :=
+  let cfg : Agency.Config := ⟨if profile = 0 then .immediate else .onKnowledge, true⟩
+  let evidence : AgencyEvidence := match scenario with
+    | 0 => ⟨12, 15, none⟩
+    | 1 => ⟨8, 15, none⟩
+    | 2 => ⟨8, 15, some 9⟩
+    | 3 => ⟨8, 15, some 12⟩
+    | 4 => ⟨10, 15, none⟩
+    | _ => ⟨8, 15, some 7⟩
+  let view : TimeView :=
+    if perspective = 0 then ⟨1, 10, .asKnown⟩ else ⟨1, 15, .retrospective⟩
+  match reviewAgency cfg view 10 evidence with
+  | .invalid => 3
+  | .blocked => 2
+  | .replayed s =>
+    (if coordinate = 0 then s.accepted == .a
+     else if coordinate = 1 then Agency.effectiveA cfg s else s.knownA).toNat
+
+theorem late_revocation_review :
+    reviewCase 0 0 1 0 = 1 ∧ reviewCase 0 0 1 1 = 0 ∧
+    reviewCase 0 1 0 0 = 1 ∧ reviewCase 0 1 1 0 = 2 ∧
+    reviewCase 1 1 1 0 = 1 ∧ reviewCase 1 1 1 2 = 0 ∧
+    reviewCase 1 2 0 2 = 0 ∧ reviewCase 1 2 1 0 = 2 ∧
+    reviewCase 1 3 1 0 = 1 ∧ reviewCase 1 3 1 2 = 1 ∧
+    reviewCase 0 4 1 0 = 3 ∧ reviewCase 0 5 1 0 = 3 := by decide
+
 end UsulTest.IDAContext

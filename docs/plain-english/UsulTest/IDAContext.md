@@ -8,3 +8,7 @@ stale records, changed temporal or inquiry coordinates, and the loss of
 qualifications when projecting to a target. Separate controls show that
 structural success leaves source candidate status intact and that a historical
 execution receipt survives later revocation in the existing agency pilot.
+
+`late_revocation_review` compares as-known and retrospective replay for later
+revocation, late evidence of earlier revocation, and explicit notice before or
+after execution. Equal-time and malformed notice fixtures fail closed.
