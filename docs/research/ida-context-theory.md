@@ -7,9 +7,10 @@ owner accepted this context theory and its integration with
 through ACT-05 and the ACT-08 pilot.
 
 Design acceptance, implementation progress, proof evidence and source admission
-are tracked separately. ACT-01 through ACT-05 and ACT-08 are planned
-implementation work; ACT-06, ACT-07 and ACT-09 retain their accepted conditional
-scope and triggers. The required Lean/Quint contracts still need implementation
+are tracked separately. [ACT-01's registry fragment](ida-act-registry.md) implements
+structural descriptions and exact source bindings. ACT-02 through ACT-05 and
+ACT-08 are planned implementation work; ACT-06, ACT-07 and ACT-09 retain their
+accepted conditional scope and triggers. Remaining Lean/Quint contracts need implementation
 and verification. Source interpretations retain their recorded admission status.
 The implemented baseline inspected for this design is main
 [`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`][integrated-main], which landed

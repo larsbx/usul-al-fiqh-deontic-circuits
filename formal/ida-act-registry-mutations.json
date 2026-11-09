@@ -1,0 +1,53 @@
+{
+  "required_tests": [
+    "duplicateRegistryTest",
+    "digestAndVersionTest",
+    "unknownKindTest",
+    "declaredSignatureTest",
+    "unresolvedMandateTest",
+    "sameSortRoleSwapTest",
+    "omittedQualificationBindingTest",
+    "snapshotBindingTest",
+    "bindingIdentityTest",
+    "baseAdmissionTest",
+    "multipleSourcesTest",
+    "emptySchemaAndZeroSnapshotTest",
+    "malformedEnvelopeTest",
+    "fieldwiseEqualityTest",
+    "exhaustiveStructuralMatrixTest",
+    "exhaustiveBoundMatrixTest",
+    "decoderBoundariesTest"
+  ],
+  "mutations": [
+    {
+      "name": "first_conflicting_definition",
+      "before": "if (not(uniqueDefinitionKeys(registry.definitions))) 1",
+      "after": "if (false) 1",
+      "test": "duplicateRegistryTest"
+    },
+    {
+      "name": "projected_target_only_binding",
+      "before": "if (not(sameEnvelope(binding.envelope, request.envelope))) 12",
+      "after": "if (not(J::sameScopeTarget(project(binding.envelope), project(request.envelope)))) 12",
+      "test": "omittedQualificationBindingTest"
+    },
+    {
+      "name": "bypass_source_admission",
+      "before": "else if (D::accepted(D::evaluateSource(authority.environment, request.premise))) 0",
+      "after": "else if (true) 0",
+      "test": "baseAdmissionTest"
+    },
+    {
+      "name": "bypass_snapshot_binding",
+      "before": "else if (not(snapshotMatches(request.envelope, request.premise))) 16",
+      "after": "else if (false) 16",
+      "test": "snapshotBindingTest"
+    },
+    {
+      "name": "bypass_target_projection",
+      "before": "else if (not(J::sameScopeTarget(project(request.envelope), request.premise.request.record.scope.target))) 14",
+      "after": "else if (false) 14",
+      "test": "sameSortRoleSwapTest"
+    }
+  ]
+}

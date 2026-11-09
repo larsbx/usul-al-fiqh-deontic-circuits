@@ -47,10 +47,14 @@ compound-description, process, and richer-indexing work conditional.
 landed on main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144)
 at `ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`. The context design and M16
 roadmap were accepted by the project owner on 2026-11-09; remaining implementation
-is planned or conditional. The [accepted context theory](research/ida-context-theory.md)
+is planned or conditional. [ACT-01](research/ida-act-registry.md) now implements
+versioned registries, exact envelope/source binding, and a canonical structural
+wire, with the dedicated `make ida-registry` gate. The
+[accepted context theory](research/ida-context-theory.md)
 specifies distinct contracts for schematic substitution, contextual facts and
-evidence, temporal changes, and judgment transport. This documentation does not
-implement those contracts or admit a ruling.
+evidence, temporal changes, and judgment transport. Their implementation continues
+through the remaining ACT packages; source interpretations retain their own
+admission status.
 
 ## Working principle
 
