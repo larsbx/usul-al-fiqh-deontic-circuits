@@ -1,4 +1,4 @@
-import Usul.Typing.IDAContext
+import Usul.Typing.IDAOmission
 import UsulTest.IDAActRegistry
 import Usul.Agency
 
@@ -200,5 +200,75 @@ theorem late_revocation_review :
     reviewCase 1 2 0 2 = 0 ∧ reviewCase 1 2 1 0 = 2 ∧
     reviewCase 1 3 1 0 = 1 ∧ reviewCase 1 3 1 2 = 1 ∧
     reviewCase 0 4 1 0 = 3 ∧ reviewCase 0 5 1 0 = 3 := by decide
+
+def omissionScope : Omission.Scope :=
+  ⟨base.envelope.action, opportunity, base.inquiry.accountable, base.inquiry.performer,
+    base.envelope.key, base.envelope.definitionDigest, base.time.clockVersion⟩
+
+def otherOccurrence : Omission.Scope :=
+  { omissionScope with opportunity := { opportunity with occurrence := ⟨"synthetic.event", "other"⟩ } }
+
+def otherClock : Omission.Scope :=
+  { omissionScope with opportunity := { opportunity with clock := ⟨"clock", "other"⟩ } }
+
+def otherAct : Omission.Scope :=
+  { omissionScope with action := (IDAActRegistry.envelopeCase 9).action }
+
+def otherDefinition : Omission.Scope :=
+  { omissionScope with definition := { omissionScope.definition with version := 2 } }
+
+def completionCase : Nat → List Omission.Completion
+  | 1 => [⟨omissionScope, .direct, 10, 10⟩]
+  | 2 => [⟨omissionScope, .alternate, 10, 10⟩]
+  | 3 => [⟨omissionScope, .direct, 9, 9⟩]
+  | 4 => [⟨omissionScope, .direct, 12, 12⟩]
+  | 5 => [⟨omissionScope, .direct, 11, 14⟩]
+  | 6 => [⟨otherOccurrence, .direct, 10, 10⟩]
+  | 7 => [⟨otherClock, .direct, 10, 10⟩]
+  | 8 => [⟨omissionScope, .direct, 10, 10⟩, ⟨omissionScope, .direct, 10, 10⟩]
+  | 9 => [⟨omissionScope, .direct, 11, 10⟩]
+  | 10 => [⟨otherAct, .direct, 10, 10⟩]
+  | 11 => [⟨omissionScope, .direct, 8, 8⟩]
+  | 12 => [⟨otherDefinition, .direct, 10, 10⟩]
+  | 13 => [⟨{ omissionScope with performer := ⟨"recipient", recipient⟩ }, .direct, 10, 10⟩]
+  | _ => []
+
+def coverageCase : Nat → Option Omission.Coverage
+  | 0 => none
+  | 2 => some ⟨omissionScope, [.direct], 12⟩
+  | 3 => some ⟨omissionScope, [.alternate], 12⟩
+  | 4 => some ⟨otherOccurrence, [.direct, .alternate], 12⟩
+  | 5 => some ⟨otherClock, [.direct, .alternate], 12⟩
+  | 6 => some ⟨omissionScope, [.direct, .alternate], 11⟩
+  | 7 => some ⟨omissionScope, [.direct, .alternate], 16⟩
+  | 8 => some ⟨{ omissionScope with clockVersion := 2 }, [.direct, .alternate], 12⟩
+  | 9 => some ⟨omissionScope, [.direct, .direct], 12⟩
+  | 10 => some ⟨otherDefinition, [.direct, .alternate], 12⟩
+  | 11 => some ⟨otherAct, [.direct, .alternate], 12⟩
+  | _ => some ⟨omissionScope, [.direct, .alternate], 12⟩
+
+def omissionCase (time reports coverage : Nat) : Nat :=
+  let effective := time / 3 + 8
+  let cutoff := effective + (if time % 3 = 0 then 0 else if time % 3 = 1 then 1 else 4)
+  match Omission.evaluate omissionScope effective cutoff (completionCase reports) (coverageCase coverage) with
+  | .invalidObservation => 0
+  | .completionObserved => 1
+  | .pending => 2
+  | .coverageMissing => 3
+  | .coveredNoCompletion => 4
+
+theorem omission_controls :
+    omissionCase 12 0 0 = 3 ∧ omissionCase 12 0 1 = 4 ∧ omissionCase 12 0 2 = 3 ∧
+    omissionCase 12 0 9 = 3 ∧ omissionCase 12 0 6 = 3 ∧ omissionCase 11 0 1 = 2 ∧
+    omissionCase 12 2 1 = 1 ∧ omissionCase 12 3 1 = 1 ∧ omissionCase 12 4 1 = 4 ∧
+    omissionCase 12 5 1 = 4 ∧ omissionCase 14 5 1 = 1 ∧ omissionCase 8 5 1 = 2 ∧
+    omissionCase 12 8 1 = 1 ∧ omissionCase 12 9 1 = 0 ∧ omissionCase 12 10 1 = 4 ∧
+    omissionCase 12 12 1 = 4 ∧ omissionCase 12 13 1 = 4 ∧ omissionCase 12 0 10 = 3 := by decide
+
+theorem omission_review_binds_snapshot :
+    let closed := atTick 12
+    Omission.review baseRegistry [closed] closed [] (coverageCase 1) = .ok (some .coveredNoCompletion) ∧
+    Omission.review baseRegistry [closed] base [] (coverageCase 1) = .error .stale ∧
+    Omission.review baseRegistry [snapshotCase 23] (snapshotCase 23) [] none = .ok none := by decide
 
 end UsulTest.IDAContext

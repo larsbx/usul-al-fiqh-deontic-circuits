@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay the bounded ACT-01 context proofs and independent Quint comparison."""
+"""Replay the bounded IDA context proofs and independent Quint comparison."""
 
 import csv
 import hashlib
@@ -28,9 +28,11 @@ CONTRACTS = "UsulTest.IDAContextContracts"
 EXPORTER = "scripts.ExportIDAContext"
 MODEL = "ida-context.qnt"
 TABLE = "ida-context-table.qnt"
+OMISSION_MODEL = "ida-omission.qnt"
 QUINT_SOURCES = ("ida", "ida-judgment", "ida-derivation", "ida-act-registry", "agency", "ida-context",
-                 "ida-context-table")
+                 "ida-context-table", "ida-omission")
 TESTS = {"exactIdentityTest", "syntaxAndTimeTest", "candidateSourceTest", "evidenceRevisionTest", "agencyReviewTest"}
+OMISSION_TESTS = {"omissionCoverageTest"}
 PROOFS = {
     "decode_encode", "encode_decode", "encode_injective", "resolve_iff", "resolve_unique",
     "resolve_rigid", "changed_snapshot_stale", "changed_qualification_stale",
@@ -38,9 +40,28 @@ PROOFS = {
     "inconsistent_rejected", "time_identity_unique", "resolved_target_wellFormed", "omission_clock",
     "phase_closes", "reviewAgency_unseen",
 }
+OMISSION_PROOFS = {
+    "covered_iff", "observed_precedes_coverage", "opening_boundary_included",
+    "closing_boundary_excluded", "unseen_append", "review_current",
+}
 WITNESSES = {"guard_controls", "same_target_changed_qualification", "candidate_source_stays_candidate",
-             "historical_receipt_current_authority", "late_revocation_review"}
-COVERAGE = {"binding": 2800, "phase": 6, "agency": 24, "review": 72}
+             "historical_receipt_current_authority", "late_revocation_review",
+             "omission_controls", "omission_review_binds_snapshot"}
+COVERAGE = {"binding": 2800, "phase": 6, "agency": 24, "review": 72, "omission": 3024}
+OMISSION_MUTANTS = {
+    "omission_without_coverage": ("else if (complete) 4", "else if (true) 4", "omissionCoverageTest"),
+    "omit_alternate_mode": ('Set("direct", "alternate").subseteq(coverage.modes)',
+                            'Set("direct").subseteq(coverage.modes)', "omissionCoverageTest"),
+    "premature_coverage": ("coverage.recordedAt >= 12", "true", "omissionCoverageTest"),
+    "cutoff_as_effective_time": ("else if (effective < 12) 2", "else if (cutoff < 12) 2",
+                                "omissionCoverageTest"),
+    "include_closing_boundary": ("report.occurredAt < 12", "report.occurredAt <= 12",
+                                 "omissionCoverageTest"),
+    "ignore_completion_scope": ('report.scope == "current"', 'true', "omissionCoverageTest"),
+    "ignore_coverage_scope": ('coverage.scope == "current"', 'true', "omissionCoverageTest"),
+    "include_unseen_completion": ("report.recordedAt <= cutoff", "true", "omissionCoverageTest"),
+    "include_future_completion": ("report.occurredAt <= effective", "true", "omissionCoverageTest"),
+}
 MUTANTS = {
     "ignore_report_cutoff": ("evidence.recordedAt <= cutoff", "true", "agencyReviewTest"),
     "report_implies_notice": ("visible and notice > 0", "visible", "agencyReviewTest"),
@@ -73,6 +94,10 @@ def row_keys():
         for scenario in range(6):
             for coordinate in range(6):
                 yield ("review", profile, scenario, coordinate)
+    for time in range(18):
+        for reports in range(14):
+            for coverage in range(12):
+                yield ("omission", time, reports, coverage)
 
 
 def lean_values(source):
@@ -84,7 +109,7 @@ def lean_values(source):
     for row, key in zip(lines[1:], expected):
         require(len(row) == 5, f"Invalid row: {row}")
         observed = int(row[4])
-        limit = {"binding": 6, "review": 3}.get(key[0], 2)
+        limit = {"binding": 6, "review": 3, "omission": 4}.get(key[0], 2)
         require(row == [str(x) for x in (*key, observed)] and 0 <= observed <= limit,
                 f"Invalid or reordered row: {row}")
         values.append(observed)
@@ -122,16 +147,16 @@ def inspect(work):
     declarations = registry.AUDIT.parse_inventory(result.stdout, modules)
     names = {d["name"] for d in declarations if d["kind"] == "theorem"}
     proofs = {"Usul.IDA.Context." + name for name in PROOFS}
+    proofs.update("Usul.IDA.Omission." + name for name in OMISSION_PROOFS)
     proofs.update(FIXTURES + "." + name for name in WITNESSES)
     require(proofs <= names, "Missing proof obligations: " + str(sorted(proofs - names)))
     return {"modules": sorted(modules), "required_proofs": sorted(proofs), "declarations": declarations}
 
 
-def run_tests(model, output, match=None, fail=True):
-    args = ["test", model, "--main", "idaContext", "--backend", "typescript",
+def run_tests(model, module, selected, output, fail=True):
+    args = ["test", model, "--main", module, "--backend", "typescript",
             "--max-samples", "1", "--seed", registry.SEED, "--out", output]
-    selected = [match] if match is not None else sorted(TESTS)
-    args += ["--match", "^(" + "|".join(selected) + ")$"]
+    args += ["--match", "^(" + "|".join(sorted(selected)) + ")$"]
     result = quint(*args, fail=fail)
     evidence = json.loads(output.read_text())
     return result, {key: evidence[key] for key in
@@ -140,23 +165,25 @@ def run_tests(model, output, match=None, fail=True):
 
 def negative_controls(work):
     for name in QUINT_SOURCES:
-        if name + ".qnt" != MODEL:
-            shutil.copyfile(QUINT / (name + ".qnt"), work / (name + ".qnt"))
-    original = (QUINT / MODEL).read_text()
+        shutil.copyfile(QUINT / (name + ".qnt"), work / (name + ".qnt"))
     outcomes = {}
-    for name, spec in MUTANTS.items():
-        *edits, test = spec
-        changed = original
-        for before, after in zip(edits[::2], edits[1::2]):
-            require(changed.count(before) == 1, f"Missing or ambiguous mutation point: {name}")
-            changed = changed.replace(before, after)
-        mutant = work / MODEL
-        mutant.write_text(changed)
-        quint("typecheck", mutant)
-        result, evidence = run_tests(mutant, work / (name + ".json"), test, fail=False)
-        require(result.returncode != 0 and evidence.get("stage") == "testing"
-                and evidence.get("failed") == [test], f"Mutation survived or failed for another reason: {name}")
-        outcomes[name] = evidence
+    for model, module, mutations in ((MODEL, "idaContext", MUTANTS),
+                                     (OMISSION_MODEL, "idaOmission", OMISSION_MUTANTS)):
+        original = (QUINT / model).read_text()
+        mutant = work / model
+        for name, spec in mutations.items():
+            *edits, test = spec
+            changed = original
+            for before, after in zip(edits[::2], edits[1::2]):
+                require(changed.count(before) == 1, f"Missing or ambiguous mutation point: {name}")
+                changed = changed.replace(before, after)
+            mutant.write_text(changed)
+            quint("typecheck", mutant)
+            result, evidence = run_tests(mutant, module, {test}, work / (name + ".json"), fail=False)
+            require(result.returncode != 0 and evidence.get("stage") == "testing"
+                    and evidence.get("failed") == [test], f"Mutation survived or failed for another reason: {name}")
+            outcomes[name] = evidence
+        mutant.write_text(original)
     return outcomes
 
 
@@ -176,10 +203,14 @@ def main():
     with tempfile.TemporaryDirectory(prefix="ida-context-", dir=RECEIPT.parent) as temp:
         work = Path(temp)
         audit = inspect(work)
-        _, tests = run_tests(QUINT / MODEL, work / "tests.json")
-        require(tests.get("stage") == "testing" and set(tests.get("passed", [])) == TESTS
-                and all(tests.get(key, []) == [] for key in ("failed", "ignored", "warnings", "errors")),
-                "Incomplete Quint test inventory")
+        tests = {}
+        for model, module, expected_tests in ((MODEL, "idaContext", TESTS),
+                                              (OMISSION_MODEL, "idaOmission", OMISSION_TESTS)):
+            _, evidence = run_tests(QUINT / model, module, expected_tests, work / (module + "-tests.json"))
+            require(evidence.get("stage") == "testing" and set(evidence.get("passed", [])) == expected_tests
+                    and all(not evidence.get(key) for key in ("failed", "ignored", "warnings", "errors")),
+                    f"Incomplete Quint test inventory: {module}")
+            tests[module] = evidence
         lean_csv = lake("env", "lean", "--run", "scripts/ExportIDAContext.lean").stdout
         keys, expected = lean_values(lean_csv)
         trace_path = work / "trace.json"
@@ -203,15 +234,17 @@ def main():
             "inputs_match_head": matches, "source_sha256": hashes, "runtime_overrides": overrides,
             "tools": {"lean": lean_version, "quint": quint_version, "node": command(["node", "--version"]).stdout.strip()},
             "coverage": COVERAGE, "required_proofs": audit["required_proofs"],
-            "compiled_declarations": len(audit["declarations"]), "quint_tests": sorted(TESTS),
+            "compiled_declarations": len(audit["declarations"]), "quint_tests": sorted(TESTS | OMISSION_TESTS),
             "rejected_mutants": sorted(mutants),
-            "boundary": "Ground structural context and exact binding, with a bounded candidate agency review.",
+            "boundary": "Ground structural context, candidate agency replay, and supplied omission observations.",
         }
         (RECEIPT / "lean.csv").write_text(lean_csv)
         shutil.copyfile(trace_path, RECEIPT / "quint.itf.json")
-        for name, data in (("proofs", audit), ("quint-tests", tests), ("mutants", mutants), ("report", report)):
+        for name, data in (("proofs", audit), ("quint-tests", tests["idaContext"]),
+                           ("quint-omission-tests", tests["idaOmission"]),
+                           ("mutants", mutants), ("report", report)):
             (RECEIPT / (name + ".json")).write_text(json.dumps(data, indent=2) + "\n")
-    print(f"ACT-01 context: {len(keys)} matching observations, {len(audit['required_proofs'])} proof obligations"
+    print(f"IDA context: {len(keys)} matching observations, {len(audit['required_proofs'])} proof obligations"
           f" and witnesses, {len(mutants)} rejected model mutations at {revision}.")
 
 

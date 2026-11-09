@@ -21,7 +21,7 @@
                 "docs/plain-english/Usul/Typing/IDAActRegistry.md", "docs/plain-english/UsulTest/IDAActRegistry*.md",
                 "docs/plain-english/scripts/*IDAActRegistry*.md", "docs/plain-english/scripts/ExportIDAContext.md",
                 "docs/plain-english/Usul/Typing/IDAAdmission.md", "docs/plain-english/UsulTest/IDAAdmission.md",
-                "docs/plain-english/Usul/Typing/IDAContext.md", "docs/plain-english/Usul/Typing/IDASubstitution.md",
+                "docs/plain-english/Usul/Typing/IDAContext.md", "docs/plain-english/Usul/Typing/IDAOmission.md", "docs/plain-english/Usul/Typing/IDASubstitution.md",
                 "docs/plain-english/Usul/Cat/IDASubstitution.md", "docs/plain-english/Usul/Cat/IDAProjection.md", "docs/plain-english/Usul/Cat/IDASemantics.md",
                 "docs/plain-english/UsulTest/IDASemantics*.md", "docs/plain-english/scripts/ExportIDASemantics.md",
                 "docs/plain-english/UsulTest/IDAProjection*.md", "docs/plain-english/scripts/ExportIDAProjection.md", "docs/plain-english/UsulTest/IDASubstitution*.md",
