@@ -6,7 +6,7 @@ TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools
 
 .PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
-all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation ida-registry ida-context ida-substitution ida-projection
+all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation ida-registry ida-context ida-substitution ida-projection ida-semantics
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
@@ -87,3 +87,8 @@ ida-substitution:
 # ACT-03 exact observation projection, counterexamples, and bounded parity.
 ida-projection:
 	$(PY) formal/check-ida-projection.py
+
+.PHONY: ida-semantics
+# ACT-04 fixed-history interpretation, satisfaction, and bounded parity.
+ida-semantics:
+	$(PY) formal/check-ida-semantics.py

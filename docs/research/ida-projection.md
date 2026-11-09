@@ -86,6 +86,6 @@ treat absence as a negative report, collapse an occurrence, skip scope, or
 equate equal answers. The replay records source hashes and both outputs in
 `.cache/ida-projection/`.
 
-ACT-04 still needs an interpreted semantic domain and substitution satisfaction
-laws. ACT-05 must reconstruct, authenticate, and revalidate concrete evidence
+[ACT-04](ida-semantics.md) establishes fixed-history interpretation and
+satisfaction under substitution for the synthetic fragment. ACT-05 must reconstruct, authenticate, and revalidate concrete evidence
 before issuing a new receipt.
