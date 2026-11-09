@@ -42,9 +42,14 @@ The uṣūl track's [M16 roadmap](research/ida-act-classification-roadmap.md) re
 the structured act reference, typed-context substitution, information-loss and
 equivalence contracts, interpretation/migration laws, and evidence-bearing
 judgment transport. It reuses the existing categorical modules and keeps
-compound-description, process, and richer-indexing work conditional. Its first
-dependency is integrating draft #140 with main's newer IDA judgment/derivation
-work; the roadmap itself adds no semantic implementation or admitted ruling.
+compound-description, process, and richer-indexing work conditional.
+[ACT-00's structured-target integration](research/ida-target-integration.md)
+landed on main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144)
+at `ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`; the remaining packages are
+proposed or conditional. The [context-theory proposal](research/ida-context-theory.md)
+specifies distinct contracts for schematic substitution, contextual facts and
+evidence, temporal changes, and judgment transport. This documentation does not
+implement those contracts or admit a ruling.
 
 ## Working principle
 
