@@ -88,6 +88,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.Answers` | [Usul/Typing/Answers.md](Usul/Typing/Answers.md) | [doc](https://claude.ai/code/artifact/41e4455f-351b-46d2-837d-20a5c5bcaf96) |
 | `Usul.Typing.Encoders` | [Usul/Typing/Encoders.md](Usul/Typing/Encoders.md) | [doc](https://claude.ai/code/artifact/0d241211-64c6-4884-ac77-c3fdfc0f3824) |
 | `Usul.Typing.IDAActRegistry` | [Usul/Typing/IDAActRegistry.md](Usul/Typing/IDAActRegistry.md) | pending |
+| `Usul.Typing.IDAContext` | [Usul/Typing/IDAContext.md](Usul/Typing/IDAContext.md) | pending |
 | `Usul.Typing.IDAJudgment` | [Usul/Typing/IDAJudgment.md](Usul/Typing/IDAJudgment.md) | pending |
 | `Usul.Typing.Qaida` | [Usul/Typing/Qaida.md](Usul/Typing/Qaida.md) | [doc](https://claude.ai/code/artifact/e77f2feb-7ac1-4d92-9751-c592d15bdcac) |
 | `Usul.Typing.Relations` | [Usul/Typing/Relations.md](Usul/Typing/Relations.md) | [doc](https://claude.ai/code/artifact/81064d2c-3565-4766-84b2-7c816bae389f) |
@@ -121,6 +122,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDA` | [UsulTest/IDA.md](UsulTest/IDA.md) | pending |
 | `UsulTest.IDAActRegistry` | [UsulTest/IDAActRegistry.md](UsulTest/IDAActRegistry.md) | pending |
 | `UsulTest.IDAActRegistryContracts` | [UsulTest/IDAActRegistryContracts.md](UsulTest/IDAActRegistryContracts.md) | pending |
+| `UsulTest.IDAContext` | [UsulTest/IDAContext.md](UsulTest/IDAContext.md) | pending |
+| `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
 | `UsulTest.IDAContracts` | [UsulTest/IDAContracts.md](UsulTest/IDAContracts.md) | pending |
 | `UsulTest.IDAJudgment` | [UsulTest/IDAJudgment.md](UsulTest/IDAJudgment.md) | pending |
 | `UsulTest.IDAJudgmentContracts` | [UsulTest/IDAJudgmentContracts.md](UsulTest/IDAJudgmentContracts.md) | pending |
@@ -161,6 +164,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |
 | `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
 | `scripts.ExportIDAActRegistry` | [scripts/ExportIDAActRegistry.md](scripts/ExportIDAActRegistry.md) | pending |
+| `scripts.ExportIDAContext` | [scripts/ExportIDAContext.md](scripts/ExportIDAContext.md) | pending |
 | `scripts.ExportIDAJudgment` | [scripts/ExportIDAJudgment.md](scripts/ExportIDAJudgment.md) | pending |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
 

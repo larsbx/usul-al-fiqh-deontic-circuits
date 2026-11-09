@@ -8,7 +8,9 @@ through ACT-05 and the ACT-08 pilot.
 
 Design acceptance, implementation progress, proof evidence and source admission
 are tracked separately. [ACT-01's registry fragment](ida-act-registry.md) implements
-structural descriptions and exact source bindings. ACT-02 through ACT-05 and
+structural descriptions and exact source bindings. The [ACT-01 ground context
+fragment](ida-context-foundation.md) adds typed predicates, canonical snapshots,
+clock identity, and exact inquiry binding. ACT-02 through ACT-05 and
 ACT-08 are planned implementation work; ACT-06, ACT-07 and ACT-09 retain their
 accepted conditional scope and triggers. Remaining Lean/Quint contracts need implementation
 and verification. Source interpretations retain their recorded admission status.

@@ -4,8 +4,9 @@
 
 **Design status: accepted.** The project owner accepted the context theory and
 this implementation roadmap on 2026-11-09. ACT-01 now has a minimal
-[registry and bound-source implementation](ida-act-registry.md); remaining core
-work is planned implementation, and conditional extensions retain their stated triggers. Design
+[registry and bound-source implementation](ida-act-registry.md) and a
+[ground context implementation](ida-context-foundation.md). Remaining core work
+is planned, and conditional extensions retain their stated triggers. Design
 acceptance is recorded separately from implementation and proof completion.
 
 **Implementation status.** ACT-00 is integrated on main through [PR #144][pr144] at
@@ -216,7 +217,7 @@ conditional extensions and do not block the first core pilot.
 | Package | Deliverable | Entry prerequisites | State |
 |---|---|---|---|
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
-| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Implemented perform-description fragment](ida-act-registry.md); exact-revision gate `make ida-registry` |
+| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
 | ACT-02 | Context category and substitution laws | ACT-01 | Planned implementation; first categorical core |
 | ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Planned implementation |
 | ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | Planned implementation |
