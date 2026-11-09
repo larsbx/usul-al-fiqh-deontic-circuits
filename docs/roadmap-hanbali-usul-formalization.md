@@ -11,14 +11,14 @@
 | `formal/lean-mathlib/` | `**` |
 | `formal/tla/` | `**` |
 | `formal/quint/` | `**` |
-| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `check-ida-context.py`, `check-ida-substitution.py`, `check-ida-projection.py`, `ida-act-registry-wire.py`, `ida-act-registry-mutations.json` |
+| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `check-ida-context.py`, `check-ida-substitution.py`, `check-ida-projection.py`, `check-ida-semantics.py`, `ida-act-registry-wire.py`, `ida-act-registry-mutations.json` |
 | `formal/fixtures/ida-act-registry/` | `**` |
-| `formal/lean/scripts/` | `*IDAActRegistry.lean`, `ExportIDAContext.lean`, `ExportIDASubstitution.lean`, `ExportIDAProjection.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
+| `formal/lean/scripts/` | `*IDAActRegistry.lean`, `ExportIDAContext.lean`, `ExportIDASubstitution.lean`, `ExportIDAProjection.lean`, `ExportIDASemantics.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
 | `docs/plain-english/Usul/Typing/` | `IDAActRegistry.md`, `IDAContext.md`, `IDASubstitution.md` |
-| `docs/plain-english/UsulTest/` | `IDAActRegistry*.md`, `IDAProjection*.md`, `IDASubstitution*.md`, `IDAContext*.md` |
-| `docs/plain-english/scripts/` | `*IDAActRegistry*.md`, `ExportIDAContext.md`, `ExportIDAProjection.md`, `ExportIDASubstitution.md` |
-| `docs/plain-english/Usul/Cat/` | `IDASubstitution.md`, `IDAProjection.md` |
-| `.github/workflows/` | `ida-act-registry.yml`, `ida-substitution.yml`, `ida-projection.yml`, `fiqh-act-reference.yml` |
+| `docs/plain-english/UsulTest/` | `IDAActRegistry*.md`, `IDASemantics*.md`, `IDAProjection*.md`, `IDASubstitution*.md`, `IDAContext*.md` |
+| `docs/plain-english/scripts/` | `*IDAActRegistry*.md`, `ExportIDAContext.md`, `ExportIDASemantics.md`, `ExportIDAProjection.md`, `ExportIDASubstitution.md` |
+| `docs/plain-english/Usul/Cat/` | `IDASubstitution.md`, `IDAProjection.md`, `IDASemantics.md` |
+| `.github/workflows/` | `ida-act-registry.yml`, `ida-substitution.yml`, `ida-projection.yml`, `ida-semantics.yml`, `fiqh-act-reference.yml` |
 | `docs/research/` | `agency-source-profile.md`, `agency-pilot.md`, `ida-*.md`, `islamic-deontic-algebra-spec.md` |
 | `docs/architecture/` | `category-theory.md`, `judgement.md`, `mahall.md` |
 | `corpus/citations/` | `**` |
@@ -323,7 +323,7 @@ dependencies; implementation and proof completion retain their own status.
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 | M14 maqāṣid | **readings proved, two encoders, seven candidate cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 plus five source-located al-Mustaṣfā cases (31 conditional istiṣlāḥ completion checks); 0 reviewed new conclusions; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
 | M15 joint agency | **candidate implementation; interpretation review open** | `Usul.Agency`, `UsulTest.Agency`, and `formal/quint/`: two revocation profiles, joint/independent permission, arbitrary-history proofs, 13,312 finite transition inputs, source-byte and passage checks, and semantic negative controls. [Scope and reproduction](research/agency-pilot.md); [source profile](research/agency-source-profile.md). |
-| M16 act classification | **ACT-00 integrated; ACT-01 ground context, bounded ACT-02, and first ACT-03 projection implemented** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01](research/ida-act-registry.md) adds versioned definitions, typed descriptions, exact envelope/source binding, and `make ida-registry`. The [ground context fragment](research/ida-context-foundation.md) adds typed predicates, canonical snapshots, temporal identity, and exact inquiry binding with `make ida-context`. [ACT-02](research/ida-substitution.md) supplies typed grounding and conditional premise arrows with `make ida-substitution`. [ACT-03](research/ida-projection.md) verifies one exact scoped projection and loss witnesses with `make ida-projection`. The [roadmap](research/ida-act-classification-roadmap.md) and [context contracts](research/ida-context-theory.md) are accepted; later implementation remains planned or conditional. Historical Lean–Quint and candidate-source receipts retain their exact revision and scope; ACT-01 owns versioned registry authority. |
+| M16 act classification | **ACT-00 integrated; bounded ACT-01 through ACT-04 fragments implemented** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01 registry](research/ida-act-registry.md) and [ground context](research/ida-context-foundation.md) supply versioned definitions and exact inquiry binding. [ACT-02](research/ida-substitution.md) supplies typed substitution and conditional premise arrows. [ACT-03](research/ida-projection.md) proves an exact scoped projection and loss witnesses. [ACT-04](research/ida-semantics.md) proves fixed-history interpretation and conditional soundness for the synthetic fragment. The accepted [context integration sequence](research/ida-context-theory.md#integration-theorem-sequence) separates these results from semantic migration and concrete admission. |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -679,7 +679,7 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   context, and M11 institution interfaces are reuse points; their unrelated open
   extensions are not additional prerequisites for the small core. The
   [accepted context theory](research/ida-context-theory.md) refines ACT-02, ACT-03,
-  ACT-05, and the conditional ACT-07/ACT-09 work without adding core prerequisites.
+  ACT-04, ACT-05, and the conditional ACT-07/ACT-09 work without adding core prerequisites.
 - **Implemented prerequisite (ACT-00):** the [integration contract](research/ida-target-integration.md)
   records the structured targets merged with main's typed judgments and
   source-bound derivations through #144 at `ca38f35`.
@@ -691,12 +691,23 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   fragments and migrations; conditional transport through existing evidence.
   Context contracts distinguish derivation under assumptions from admitted
   premises, and schematic substitution from evidence or temporal reevaluation.
+- **Categorical integration:** the [construction contracts](research/ida-context-theory.md#4-categorical-integration-and-transport)
+  specify descriptions over their contexts, the variance of assignment maps,
+  interpretation naturality and separate migration gates. The
+  [integration theorem sequence](research/ida-context-theory.md#integration-theorem-sequence)
+  separates derivation reconstruction, conditional soundness, exact computed
+  answers and destination admission. The simple category-of-elements reading
+  adds no generic fibration-library prerequisite.
 - **Verification:** Lean laws and independently written bounded Quint models
   first; same-sort role swaps, rigid-reference changes, lost qualifications,
   occurrence collapse, changed omission opportunities, unsupported profile
   bridges, and stale source/definition/profile receipts are named controls.
   The context design also requires countermodels for contradictory assumptions,
   unjustified forgetting, and conflation of revocation with an agent's knowledge.
+  Output relabeling must distinguish `Reads` from answer equality; unseen feature
+  classes must remain undetermined without a justified extrapolation rule. The
+  [worked agency trace](research/ida-context-theory.md#worked-agency-integration-trace)
+  distinguishes later revocation from late evidence about pre-execution authority.
 - **Conditional extensions:** typed composite descriptions (ACT-06), actual
   process/interfaces and resource independence (ACT-07), and richer indexing or
   quotient machinery (ACT-09) each require a concrete need and separate evidence.
@@ -721,7 +732,11 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 - **ACT-03 scoped projection:** [Report dependency factorization](research/ida-projection.md)
   proves an exact frame law for a synthetic evaluator and gives executable
   counterexamples for the core and kind maps. The gate is `make ida-projection`.
-  Interpreted semantic preservation and re-admission have separate contracts.
+- **ACT-04 fixed-history semantics:** [Typed valuations and interpretation](research/ida-semantics.md)
+  establish description naturality, formula satisfaction under substitution,
+  sound conditional reconstruction and a nonvacuous finite assessment.
+  The gate is `make ida-semantics`. Cross-profile translation and concrete
+  evidence admission have separate contracts.
 - **State:** ACT-00 is on main through #144. Verification receipts remain bound
   to the heads and scopes they checked; later acceptance requires its own
   evidence. The context theory and roadmap are accepted; remaining implementation

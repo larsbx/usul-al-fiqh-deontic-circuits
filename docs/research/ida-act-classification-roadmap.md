@@ -26,6 +26,12 @@ integration: typed variables and conditional premises, grounded evidence and
 inquiry snapshots, semantic histories, and temporal/authority changes have
 distinct interfaces. Its required contracts belong to the ACT packages below;
 the note adds no implemented calculus or admitted interpretation.
+Its [construction-level integration](ida-context-theory.md#4-categorical-integration-and-transport)
+now states the category of descriptions over contexts, explicit interpretation
+naturality, separate migration gates, and the
+[integration theorem sequence](ida-context-theory.md#integration-theorem-sequence).
+These refine accepted contracts while implementation and receipt status remain
+separately tracked.
 
 ## 1. Baseline and evidence boundaries
 
@@ -220,7 +226,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
 | ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
 | ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [First exact frame proof and loss witnesses](ida-projection.md) with `make ida-projection` |
-| ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | Planned implementation |
+| ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | [Fixed-history semantic fragment](ida-semantics.md) with `make ida-semantics`; sourced interpretation and migration pending |
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | Planned implementation |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
@@ -377,6 +383,12 @@ First prove the substitution category's identity, associativity, and typing
 laws; then prove the description action. The presheaf name is justified by
 these laws, not by a naming convention.
 
+The [category of elements](ida-context-theory.md#descriptions-over-their-contexts)
+has objects \((\Gamma,d)\) and arrows supplied by substitutions with
+\(e=d[\sigma]\). Its projection to contexts records the unique reindexing
+lift. This is a direct reading of the simple presheaf laws; a generic fibration
+library remains outside the core acceptance requirements.
+
 The [context calculus](ida-context-theory.md#4-categorical-integration-and-transport)
 also specifies arrows between conditional-premise contexts. Their identity
 needs the assumption rule; composition needs substitution admissibility and
@@ -437,6 +449,14 @@ counterexamples in which forgetting a qualification identifies descriptions
 distinguished by a declared toy interpretation. The example proves a modeling
 failure mode; it must not invent a fiqh ruling about coercion or another case.
 
+Keep two reuse limits explicit: `Reads` compares information dependence and
+applicability, not equality of encoder answers, as `Reads.mapRun` illustrates.
+`Factor.unattested_free` shows that consistent supplied cases can leave an
+unseen feature class unconstrained. Add output-relabeling and unattested-class
+controls alongside the existing qualification-loss counterexample; their
+[context contracts](ida-context-theory.md#complete-dependencies) specify the
+separate obligations.
+
 **Deliverables.**
 
 - Maps from qualified description to core and description to kind, each with an
@@ -480,6 +500,10 @@ previous positive reads while changing the answer.
 
 ### ACT-04 — Interpret supported fragments and migrate schemas
 
+The [first semantic fragment](ida-semantics.md) proves fixed-history
+naturality, satisfaction under substitution, conditional soundness and
+finite nonvacuity for the synthetic inquiry.
+
 **Purpose.** Give supported syntax a specified meaning and make changes of
 representation checkable.
 
@@ -494,6 +518,15 @@ Require
 \Rightarrow\mathrm{Supported}_\Delta(d[\sigma])\),
 or restrict the substitution category/domain explicitly. Both sides of a
 semantic commutation equation must be defined.
+
+Use the explicit [description naturality construction](ida-context-theory.md#semantic-interpretation):
+substitution pulls descriptions from \(\Gamma\) to \(\Delta\), while its
+semantic assignment map goes from \(\operatorname{Val}(\Delta)\) to
+\(\operatorname{Val}(\Gamma)\). Fix the semantic history in this square.
+Track [description, derivation, and concrete-application migration](ida-context-theory.md#migration-gates)
+as separate gates; a meaning-preserving migration need not pass admission.
+Distinguish structural registry kinds from a
+[classification derived under contextual premises](ida-context-theory.md#structural-kind-and-contextual-classification).
 
 **Deliverables.**
 
@@ -686,6 +719,13 @@ example. Required controls include absent evidence used as negation, opposing
 reports, an empty compatible-history set, a latent exception and an inadequately
 observed omission. The existing structural examples remain part of the exit.
 
+Follow the [integration theorem sequence](ida-context-theory.md#integration-theorem-sequence)
+and [worked agency trace](ida-context-theory.md#worked-agency-integration-trace).
+Include both revocation effective after an execution and late evidence of
+revocation effective before it. Require a positive nonidentity admitted
+application as well as rejection of absent or mismatched destination evidence;
+an always-rejecting adapter does not meet this pilot's exit.
+
 **Expansion queue.** Prayer, sale, testimony, agency revocation, fasting, an
 explicit state, and a nonhuman damage event follow only when their actual role
 domains and target sorts are defined. A state/event must not be forced through
@@ -702,6 +742,10 @@ decision service.
 
 **Trigger.** ACT-02/ACT-04 reveals a concrete dependency or transport requirement
 that the simple context/presheaf interface cannot express satisfactorily.
+
+The elementary category-of-elements reading of ACT-02's description presheaf
+does not itself trigger this extension. Richer dependent semantics or a reusable
+fibration library need the concrete justification specified here.
 
 Possible work includes indexed categories, comprehension/fibration interfaces,
 dependent semantic families, or proven quotient interfaces. State base and fiber

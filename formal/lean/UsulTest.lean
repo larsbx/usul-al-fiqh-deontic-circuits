@@ -40,3 +40,5 @@ import UsulTest.IDASubstitution
 import UsulTest.IDASubstitutionContracts
 import UsulTest.IDAProjection
 import UsulTest.IDAProjectionContracts
+import UsulTest.IDASemantics
+import UsulTest.IDASemanticsContracts
