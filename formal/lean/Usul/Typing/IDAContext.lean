@@ -1,4 +1,5 @@
 import Usul.Typing.IDAActRegistry
+import Usul.Agency
 
 /-!
 # ACT-01: exact contextual identity
@@ -372,5 +373,59 @@ theorem resolved_target_wellFormed {r : Registry} {c : Catalog} {s : Snapshot}
 theorem phase_closes {o : Opportunity} (h : o.WellFormed) :
     phase o o.closesAt = 2 := by
   simp [phase, Nat.not_lt.mpr (Nat.le_of_lt h.2.2)]
+
+/-- One fixed appointment before the execution, one revocation report, and
+optional explicit notice to A. Tied event times are outside this fragment. -/
+structure AgencyEvidence where
+  effectiveAt : Nat
+  recordedAt : Nat
+  noticeAt : Option Nat
+
+inductive AgencyReview where
+  | invalid | blocked | replayed (state : Agency.State)
+  deriving DecidableEq
+
+def AgencyEvidence.Invalid (evidence : AgencyEvidence) (view : TimeView)
+    (execution : Nat) : Prop :=
+  view.clockVersion ≠ 1 ∨ evidence.effectiveAt = 0 ∨ execution = 0 ∨
+      evidence.effectiveAt = execution ∨ evidence.recordedAt < evidence.effectiveAt ∨
+      (match view.perspective with
+       | .asKnown => view.cutoff ≠ execution
+       | .retrospective => view.cutoff ≤ execution) ∨
+      (match evidence.noticeAt with
+       | none => False
+       | some notice => notice ≤ evidence.effectiveAt ∨ notice = execution ∨
+           evidence.recordedAt < notice)
+
+instance (evidence : AgencyEvidence) (view : TimeView) (execution : Nat) :
+    Decidable (evidence.Invalid view execution) := by
+  unfold AgencyEvidence.Invalid
+  cases view.perspective <;> cases evidence.noticeAt <;> infer_instance
+
+private def agencyOutcome : Option Agency.State → AgencyReview
+  | none => .blocked
+  | some state => .replayed state
+
+def reviewAgency (cfg : Agency.Config) (view : TimeView) (execution : Nat)
+    (evidence : AgencyEvidence) : AgencyReview :=
+  if evidence.Invalid view execution then .invalid
+  else
+    let visible := evidence.recordedAt ≤ view.cutoff
+    let revoked := if visible then [Agency.Event.revoke] else []
+    let noticed := if visible && evidence.noticeAt.isSome then [Agency.Event.notifyA] else []
+    let events :=
+      if evidence.effectiveAt < execution then
+        if evidence.noticeAt.any (· < execution) then
+          revoked ++ noticed ++ [.executeA]
+        else revoked ++ [.executeA] ++ noticed
+      else [.executeA] ++ revoked ++ noticed
+    agencyOutcome (Agency.replay cfg Agency.initial (.appoint :: events))
+
+theorem reviewAgency_unseen (cfg : Agency.Config) (view : TimeView) (execution : Nat)
+    (evidence : AgencyEvidence) (valid : ¬ evidence.Invalid view execution)
+    (unseen : view.cutoff < evidence.recordedAt) :
+    reviewAgency cfg view execution evidence =
+      agencyOutcome (Agency.replay cfg Agency.initial [.appoint, .executeA]) := by
+  simp [reviewAgency, valid, Nat.not_le.mpr unseen]
 
 end Usul.IDA.Context

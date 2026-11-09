@@ -230,7 +230,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Planned implementation; core completion gate |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review implemented; core completion gate remains open |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -692,6 +692,17 @@ acceptance when a runtime is claimed. Revocation is not automatically the invers
 of appointment. Omission is not an identity transition.
 
 ### ACT-08 — Run the first complete pilot
+
+The bounded agency review now replays a fixed appointment and execution with
+one revocation report and optional explicit notice to agent A. It keeps the
+report cutoff separate from event time and agent awareness. A late report can
+block retrospective replay while the earlier as-known replay remains readable.
+Later effective revocation preserves execution in replay and changes current
+authority according to the selected candidate profile. Tied event times and
+inconsistent notice chronology return an invalid input. The review consumes
+fixture report data and makes no source-admission decision. Run
+`make ida-context` for the Lean audit, independent bounded Quint comparison,
+and mutation controls. The remaining integrated exit below is still open.
 
 **Core structural examples.**
 
