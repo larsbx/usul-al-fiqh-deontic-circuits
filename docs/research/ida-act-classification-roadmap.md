@@ -3,8 +3,9 @@
 ## Proof-first roadmap
 
 **Design status: accepted.** The project owner accepted the context theory and
-this implementation roadmap on 2026-11-09. The remaining core work is planned
-implementation; conditional extensions retain their stated triggers. Design
+this implementation roadmap on 2026-11-09. ACT-01 now has a minimal
+[registry and bound-source implementation](ida-act-registry.md); remaining core
+work is planned implementation, and conditional extensions retain their stated triggers. Design
 acceptance is recorded separately from implementation and proof completion.
 
 **Implementation status.** ACT-00 is integrated on main through [PR #144][pr144] at
@@ -207,14 +208,15 @@ not automatically premise-context arrows.
 ## 3. Work packages, dependencies, and status
 
 ACT-00 integrated #140 through [merged #144][pr144]. **The ACT-01 through ACT-09
-roadmap is accepted; implementation remains planned or conditional.**
+roadmap is accepted. ACT-01 has a minimal implemented fragment; later
+implementation remains planned or conditional.**
 ACT-06, ACT-07, and ACT-09 are
 conditional extensions and do not block the first core pilot.
 
 | Package | Deliverable | Entry prerequisites | State |
 |---|---|---|---|
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
-| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | Planned implementation |
+| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Implemented perform-description fragment](ida-act-registry.md); exact-revision gate `make ida-registry` |
 | ACT-02 | Context category and substitution laws | ACT-01 | Planned implementation; first categorical core |
 | ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Planned implementation |
 | ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | Planned implementation |
@@ -335,6 +337,21 @@ omitted qualification while retaining the same projected target.
 **Exit.** A minimal registry and its canonical wire agree across carriers, every
 unresolved pilot role has an explicit outcome, and no candidate status is
 silently promoted.
+
+**Implemented fragment (2026-11-09).** The [ACT-01 contract](ida-act-registry.md)
+records global registry-key uniqueness, canonical structural-definition digests,
+ordered typed roles, explicit unresolved outcomes, attributed qualifications,
+context snapshot pins, and exact envelope/source binding through the existing
+source evaluator. The projection into `Target` is explicitly lossy. The core
+contains arbitrary-input proofs and fixed contracts; the independent Quint gate
+compares 504 structural and 4,320 bound-source cases. Canonical wire checks retain
+all 34 catalogue candidates and 64 unresolved role slots across 33 kinds.
+
+The supported resolver fragment is performed actions. Qualification truth,
+predicate-definition semantics, authenticated publication of binding authority,
+and a serialized admission interface remain separate obligations; none is
+inferred from the new structural JSON adapter. Relation endpoints and composition
+requirements remain as specified above, with no new graph-based inference rule.
 
 ### ACT-02 — Prove the context and substitution calculus
 
