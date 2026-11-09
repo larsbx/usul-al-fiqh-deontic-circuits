@@ -227,7 +227,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
 | ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [First exact frame proof and loss witnesses](ida-projection.md) with `make ida-projection` |
 | ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | [Fixed-history semantic fragment](ida-semantics.md) with `make ida-semantics`; sourced interpretation and migration pending |
-| ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | Planned implementation |
+| ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
 | ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Planned implementation; core completion gate |
@@ -571,6 +571,10 @@ inconsistent selected premises. A finite consistency witness does not establish
 actual-world truth or reflection from a bounded model to all histories.
 
 ### ACT-05 — Transport judgments with explicit evidence
+
+[Bounded implementation and verification](ida-admission.md). The current
+route produces checked contextual formula receipts within one fixed
+interpretation.
 
 **Purpose.** Connect the transformation calculus to the existing typed
 judgment/derivation boundary.

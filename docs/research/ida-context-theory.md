@@ -16,9 +16,10 @@ implements typed reindexing, grounding, and the conjunction premise calculus.
 synthetic loss witnesses. [ACT-04](ida-semantics.md) implements fixed-history
 description naturality, satisfaction under substitution and conditional
 soundness for a synthetic fragment. Source-backed interpretation and migration
-retain separate obligations. ACT-05 and ACT-08 are planned implementation work; ACT-06, ACT-07 and ACT-09 retain their
-accepted conditional scope and triggers. Remaining Lean/Quint contracts need implementation
-and verification. Source interpretations retain their recorded admission status.
+retain separate obligations. [ACT-05](ida-admission.md) implements bounded
+contextual admission. ACT-08 is planned. ACT-06, ACT-07 and ACT-09 retain their
+accepted conditional scope and triggers. Source interpretations retain their
+recorded admission status.
 The implemented baseline inspected for this design is main
 [`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`][integrated-main], which landed
 structured-target integration through [PR #144][pr144].
@@ -657,7 +658,7 @@ ACT-00 through ACT-05 plus ACT-08. ACT-06, ACT-07 and ACT-09 stay conditional.
 | ACT-02 | Typed variable contexts, grounding, formula/description substitution, and conditional premise arrows | Prove identity/composition/typing plus the calculus's substitution and cut hypotheses; keep certificate provenance separate |
 | ACT-03 | Relevant-information projections, scoped equivalence and loss counterexamples | State exact versus approximate preservation and complete dependency sets |
 | ACT-04 | Supported fact language, satisfaction, evidence-to-situation interpretation and declared profile translation | Prove supported-fragment closure and interpretation/substitution laws; expose consistency and missing-language limits |
-| ACT-05 | Exact premise admission, contextual reconstruction, and derived receipts through the existing environment | Prove a nonidentity preservation case from independent semantics/rules and revalidate the new concrete scope |
+| ACT-05 | [Bounded exact premise admission, contextual reconstruction, and derived receipts](ida-admission.md) | The synthetic nonidentity case uses independent fixed-history semantics and revalidates the concrete destination |
 | ACT-08 | Existing structural payment/omission pilot plus a bounded context adapter to the agency example | Reproduce the context contracts and adverse controls; preserve the unresolved mandate-role rejection |
 | Conditional ACT-07 | Split-phase execution and resource/clock interaction when required | Application-specific refinement, atomic revalidation and resource safety |
 | Conditional ACT-09 | Richer dependent indexing, semantic coherence or quotients when needed | Demonstrated need and exact coherence/congruence hypotheses |
