@@ -201,4 +201,32 @@ theorem late_revocation_review :
     reviewCase 1 3 1 0 = 1 ∧ reviewCase 1 3 1 2 = 1 ∧
     reviewCase 0 4 1 0 = 3 ∧ reviewCase 0 5 1 0 = 3 := by decide
 
+def omissionCase (scenario cutoff : Nat) : Nat :=
+  let scope : OmissionScope := ⟨baseEnvelope.action, opportunity, 1⟩
+  let other := { scope with opportunity := { opportunity with occurrence := ⟨"synthetic.event", "other"⟩ } }
+  let report : Nat → PerformanceReport := fun tick => ⟨scope, tick, tick⟩
+  let reports : List PerformanceReport := match scenario with
+    | 2 => [report 9]
+    | 3 => [report 12]
+    | 4 => [{ report 9 with recordedAt := 14 }]
+    | 5 => [{ report 9 with scope := other }]
+    | 9 => [{ report 9 with recordedAt := 8 }]
+    | 10 => [report 9, report 9]
+    | _ => []
+  let coverage : Option ObservationCoverage := match scenario with
+    | 0 => none
+    | 6 => some ⟨scope, 11, 12⟩
+    | 7 => some ⟨scope, 12, 14⟩
+    | 8 => some ⟨{ scope with clockVersion := 2 }, 12, 12⟩
+    | _ => some ⟨scope, 12, 12⟩
+  match observeOmission scope cutoff reports coverage with
+  | .invalid => 0 | .pending => 1 | .performed => 2 | .unresolved => 3
+  | .noRecordedPerformance => 4
+
+theorem omission_observation_controls :
+    [omissionCase 0 12, omissionCase 1 11, omissionCase 1 12, omissionCase 2 9,
+     omissionCase 3 12, omissionCase 4 12, omissionCase 4 14, omissionCase 5 12,
+     omissionCase 6 12, omissionCase 7 12, omissionCase 8 12, omissionCase 9 12,
+     omissionCase 10 12] = [3, 1, 4, 2, 4, 4, 2, 4, 3, 3, 3, 4, 2] := by decide
+
 end UsulTest.IDAContext

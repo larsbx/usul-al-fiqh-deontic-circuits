@@ -21,3 +21,6 @@ def main : IO Unit := do
       for perspective in [:2] do
         for coordinate in [:3] do
           IO.println s!"review,{profile},{scenario},{perspective * 3 + coordinate},{reviewCase profile scenario perspective coordinate}"
+  for scenario in [:11] do
+    for cutoff in [8:16] do
+      IO.println s!"omission,{scenario},{cutoff},0,{omissionCase scenario cutoff}"

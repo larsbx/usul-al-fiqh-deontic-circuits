@@ -12,3 +12,7 @@ execution receipt survives later revocation in the existing agency pilot.
 `late_revocation_review` compares as-known and retrospective replay for later
 revocation, late evidence of earlier revocation, and explicit notice before or
 after execution. Equal-time and malformed notice fixtures fail closed.
+
+`omission_observation_controls` exercises open and closed opportunities,
+exact boundary ticks, wrong occurrences and clock versions, late reports,
+duplicates, malformed chronology and incomplete or unavailable coverage.

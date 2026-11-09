@@ -8,13 +8,16 @@ module idaContextTable {
     else if (i < 2830) {
       val offset = i - 2806
       C::agencyCase(offset / 12, (offset / 3) % 4, offset % 3)
-    } else {
+    } else if (i < 2902) {
       val offset = i - 2830
       C::reviewCase(offset / 36, (offset / 6) % 6, (offset / 3) % 2, offset % 3)
+    } else {
+      val offset = i - 2902
+      C::omissionCase(offset / 8, offset % 8 + 8)
     }
   }
 
   var results: List[int]
-  action init = results' = range(0, 2902).foldl(List(), (cells, i) => cells.append(cell(i)))
+  action init = results' = range(0, 2990).foldl(List(), (cells, i) => cells.append(cell(i)))
   action step = results' = results
 }

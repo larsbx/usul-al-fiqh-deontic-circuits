@@ -30,18 +30,23 @@ MODEL = "ida-context.qnt"
 TABLE = "ida-context-table.qnt"
 QUINT_SOURCES = ("ida", "ida-judgment", "ida-derivation", "ida-act-registry", "agency", "ida-context",
                  "ida-context-table")
-TESTS = {"exactIdentityTest", "syntaxAndTimeTest", "candidateSourceTest", "evidenceRevisionTest", "agencyReviewTest"}
+TESTS = {"exactIdentityTest", "syntaxAndTimeTest", "candidateSourceTest", "evidenceRevisionTest", "agencyReviewTest", "omissionObservationTest"}
 PROOFS = {
     "decode_encode", "encode_decode", "encode_injective", "resolve_iff", "resolve_unique",
     "resolve_rigid", "changed_snapshot_stale", "changed_qualification_stale",
     "no_target_factorization", "typed_arguments", "bind_iff", "ambiguous_rejected",
     "inconsistent_rejected", "time_identity_unique", "resolved_target_wellFormed", "omission_clock",
-    "phase_closes", "reviewAgency_unseen",
+    "phase_closes", "reviewAgency_unseen", "no_recorded_performance_iff",
 }
 WITNESSES = {"guard_controls", "same_target_changed_qualification", "candidate_source_stays_candidate",
-             "historical_receipt_current_authority", "late_revocation_review"}
-COVERAGE = {"binding": 2800, "phase": 6, "agency": 24, "review": 72}
+             "historical_receipt_current_authority", "late_revocation_review", "omission_observation_controls"}
+COVERAGE = {"binding": 2800, "phase": 6, "agency": 24, "review": 72, "omission": 88}
 MUTANTS = {
+    "closed_implies_absent": ("else if (complete) 4", "else if (true) 4", "omissionObservationTest"),
+    "include_closing_tick": ("r.occurredAt < window.closesAt", "r.occurredAt <= window.closesAt",
+                             "omissionObservationTest"),
+    "accept_wrong_coverage_scope": ("c.scope == scope,", "true,", "omissionObservationTest"),
+
     "ignore_report_cutoff": ("evidence.recordedAt <= cutoff", "true", "agencyReviewTest"),
     "report_implies_notice": ("visible and notice > 0", "visible", "agencyReviewTest"),
     "first_matching_snapshot": (
@@ -73,6 +78,9 @@ def row_keys():
         for scenario in range(6):
             for coordinate in range(6):
                 yield ("review", profile, scenario, coordinate)
+    for scenario in range(11):
+        for cutoff in range(8, 16):
+            yield ("omission", scenario, cutoff, 0)
 
 
 def lean_values(source):
@@ -84,7 +92,7 @@ def lean_values(source):
     for row, key in zip(lines[1:], expected):
         require(len(row) == 5, f"Invalid row: {row}")
         observed = int(row[4])
-        limit = {"binding": 6, "review": 3}.get(key[0], 2)
+        limit = {"binding": 6, "review": 3, "omission": 4}.get(key[0], 2)
         require(row == [str(x) for x in (*key, observed)] and 0 <= observed <= limit,
                 f"Invalid or reordered row: {row}")
         values.append(observed)

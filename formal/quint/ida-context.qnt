@@ -299,6 +299,60 @@ module idaContext {
     }
   }
 
+  type OmissionScope = { act: A::Act, opportunity: A::Opportunity, clockVersion: int }
+  type PerformanceReport = { scope: OmissionScope, occurredAt: int, recordedAt: int }
+  type Coverage = { scope: OmissionScope, through: int, recordedAt: int }
+
+  pure def omissionObservation(scope: OmissionScope, cutoff: int, reports: Set[PerformanceReport],
+    coverage: Set[Coverage]): int = {
+    val window = scope.opportunity
+    val performance = reports.exists(r => and {
+      r.scope == scope,
+      window.opensAt <= r.occurredAt,
+      r.occurredAt < window.closesAt,
+      r.occurredAt <= r.recordedAt,
+      r.recordedAt <= cutoff,
+    })
+    val complete = coverage.exists(c => and {
+      c.scope == scope,
+      window.closesAt <= c.through,
+      c.through <= c.recordedAt,
+      c.recordedAt <= cutoff,
+    })
+    if (not(A::validAct(scope.act) and A::validOpportunity(window) and scope.clockVersion > 0)) 0
+    else if (performance) 2
+    else if (cutoff < window.closesAt) 1
+    else if (complete) 4
+    else 3
+  }
+
+  pure def omissionCase(scenario: int, cutoff: int): int = {
+    val scope = { act: R::baseEnvelope.act, opportunity: opportunity, clockVersion: 1 }
+    val other = scope.with("opportunity", opportunity.with("occurrence", { space: "synthetic.event", name: "other" }))
+    val report = { scope: scope, occurredAt: 9, recordedAt: 9 }
+    val reports = if (scenario == 2 or scenario == 10) Set(report)
+      else if (scenario == 3) Set(report.with("occurredAt", 12).with("recordedAt", 12))
+      else if (scenario == 4) Set(report.with("recordedAt", 14))
+      else if (scenario == 5) Set(report.with("scope", other))
+      else if (scenario == 9) Set(report.with("recordedAt", 8))
+      else Set()
+    val certificate = { scope: scope, through: 12, recordedAt: 12 }
+    val coverage = if (scenario == 0) Set()
+      else if (scenario == 6) Set(certificate.with("through", 11))
+      else if (scenario == 7) Set(certificate.with("recordedAt", 14))
+      else if (scenario == 8) Set(certificate.with("scope", scope.with("clockVersion", 2)))
+      else Set(certificate)
+    omissionObservation(scope, cutoff, reports, coverage)
+  }
+
+  run omissionObservationTest = assert(and {
+    omissionCase(0, 12) == 3, omissionCase(1, 11) == 1, omissionCase(1, 12) == 4,
+    omissionCase(2, 9) == 2, omissionCase(3, 12) == 4, omissionCase(4, 12) == 4,
+    omissionCase(4, 14) == 2, omissionCase(5, 12) == 4, omissionCase(6, 12) == 3,
+    omissionCase(7, 12) == 3, omissionCase(8, 12) == 3, omissionCase(9, 12) == 4,
+    omissionCase(10, 12) == 2,
+  })
+
   run agencyReviewTest = assert(and {
     reviewCase(0, 0, 1, 0) == 1, reviewCase(0, 0, 1, 1) == 0,
     reviewCase(0, 1, 0, 0) == 1, reviewCase(0, 1, 1, 0) == 2,

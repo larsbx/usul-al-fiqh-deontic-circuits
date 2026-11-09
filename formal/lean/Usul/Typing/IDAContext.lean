@@ -187,6 +187,62 @@ is closed. No observation or nonperformance follows from the phase. -/
 def phase (o : Opportunity) (tick : Nat) : Nat :=
   if tick < o.opensAt then 0 else if tick < o.closesAt then 1 else 2
 
+structure OmissionScope where
+  action : Action
+  opportunity : Opportunity
+  clockVersion : Nat
+  deriving DecidableEq
+
+structure PerformanceReport where
+  scope : OmissionScope
+  occurredAt : Nat
+  recordedAt : Nat
+
+/-- Completeness of the supplied report log from opening through the watermark
+for this exact scope. The evaluator treats this declaration as supplied data. -/
+structure ObservationCoverage where
+  scope : OmissionScope
+  through : Nat
+  recordedAt : Nat
+
+inductive OmissionObservation where
+  | invalid | pending | performed | unresolved | noRecordedPerformance
+  deriving DecidableEq
+
+def PerformanceReport.visibleWithin (report : PerformanceReport) (scope : OmissionScope)
+    (cutoff : Nat) : Bool :=
+  decide (report.scope = scope ∧ scope.opportunity.opensAt ≤ report.occurredAt ∧
+    report.occurredAt < scope.opportunity.closesAt ∧
+    report.occurredAt ≤ report.recordedAt ∧ report.recordedAt ≤ cutoff)
+
+def ObservationCoverage.complete (coverage : ObservationCoverage) (scope : OmissionScope)
+    (cutoff : Nat) : Bool :=
+  decide (coverage.scope = scope ∧ scope.opportunity.closesAt ≤ coverage.through ∧
+    coverage.through ≤ coverage.recordedAt ∧ coverage.recordedAt ≤ cutoff)
+
+/-- Observation statuses only. A complete scoped log supports a claim about
+its records. Capacity, real-world nonperformance and fiqh remain separate. -/
+def observeOmission (scope : OmissionScope) (cutoff : Nat) (reports : List PerformanceReport)
+    (coverage : Option ObservationCoverage) : OmissionObservation :=
+  if ¬ (scope.action.WellFormed ∧ scope.opportunity.WellFormed ∧ 0 < scope.clockVersion) then .invalid
+  else if reports.any (·.visibleWithin scope cutoff) then .performed
+  else if cutoff < scope.opportunity.closesAt then .pending
+  else if coverage.any (·.complete scope cutoff) then .noRecordedPerformance
+  else .unresolved
+
+theorem no_recorded_performance_iff (scope : OmissionScope) (cutoff : Nat)
+    (reports : List PerformanceReport) (coverage : Option ObservationCoverage) :
+    observeOmission scope cutoff reports coverage = .noRecordedPerformance ↔
+      (scope.action.WellFormed ∧ scope.opportunity.WellFormed ∧ 0 < scope.clockVersion) ∧
+      reports.any (·.visibleWithin scope cutoff) = false ∧
+      scope.opportunity.closesAt ≤ cutoff ∧ coverage.any (·.complete scope cutoff) = true := by
+  by_cases hv : scope.action.WellFormed ∧ scope.opportunity.WellFormed ∧ 0 < scope.clockVersion
+  · cases hr : reports.any (·.visibleWithin scope cutoff) <;>
+      cases hc : coverage.any (·.complete scope cutoff) <;>
+      by_cases ht : cutoff < scope.opportunity.closesAt <;>
+      simp [observeOmission, hv, hr, hc, ht, Nat.not_le.mpr, Nat.le_of_not_gt]
+  · simp [observeOmission, hv]
+
 abbrev Catalog := List Snapshot
 
 def Catalog.Unambiguous (c : Catalog) : Prop :=

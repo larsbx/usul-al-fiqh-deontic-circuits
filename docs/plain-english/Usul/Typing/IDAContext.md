@@ -20,3 +20,10 @@ attempt, one revocation report, and optional explicit notice to A. The report
 records the revocation's effective time and the evaluator's recording time
 separately. `reviewAgency_unseen` proves that a well-formed report outside
 the cutoff cannot change replay in that view.
+
+The ACT-08 omission observer distinguishes an open opportunity, a matching
+performance record, a closed opportunity with insufficient coverage, and
+a closed opportunity with a complete log and no matching record.
+`no_recorded_performance_iff` states all the required conditions. The
+half-open interval includes opening and excludes closing. Reports and
+coverage bind the exact act, opportunity and clock version.

@@ -17,7 +17,7 @@ synthetic loss witnesses. [ACT-04](ida-semantics.md) implements fixed-history
 description naturality, satisfaction under substitution and conditional
 soundness for a synthetic fragment. Source-backed interpretation and migration
 retain separate obligations. [ACT-05](ida-admission.md) implements bounded
-contextual admission. ACT-08 has a bounded candidate agency review. ACT-06, ACT-07 and ACT-09 retain their
+contextual admission. ACT-08 has bounded candidate agency review and omission observation. ACT-06, ACT-07 and ACT-09 retain their
 accepted conditional scope and triggers. Source interpretations retain their
 recorded admission status.
 The implemented baseline inspected for this design is main
