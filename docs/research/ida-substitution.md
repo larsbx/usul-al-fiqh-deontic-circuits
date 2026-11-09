@@ -73,8 +73,8 @@ composition, omitted premises, and conflated namespaces.
 The exact-head receipt records source hashes, compiled declarations, test
 outcomes, and both output tables under `.cache/ida-substitution/`.
 
-ACT-03 can use the typed context and fixed-schema projections to prove a
-specific information-loss or preservation claim. ACT-04 must supply interpreted
+[ACT-03](ida-projection.md) uses the grounded inquiry to prove an exact
+report dependency projection and concrete information-loss witnesses. ACT-04 must supply interpreted
 histories and prove satisfaction and grounding commute for the supported
 language. ACT-05 must reconstruct concrete source premises and revalidate
 admission under the existing source authority before issuing a new receipt.

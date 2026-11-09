@@ -17,6 +17,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Cat.Factor` | [Usul/Cat/Factor.md](Usul/Cat/Factor.md) | [doc](https://claude.ai/code/artifact/0a0d9669-2526-4689-8268-957d58f6a0bc) |
 | `Usul.Cat.Institution` | [Usul/Cat/Institution.md](Usul/Cat/Institution.md) | [doc](https://claude.ai/code/artifact/da69b13c-c1fb-4603-8005-7419cbe340f5) |
 | `Usul.Cat.IDASubstitution` | [Usul/Cat/IDASubstitution.md](Usul/Cat/IDASubstitution.md) | pending |
+| `Usul.Cat.IDAProjection` | [Usul/Cat/IDAProjection.md](Usul/Cat/IDAProjection.md) | pending |
 | `Usul.Cat.Interval` | [Usul/Cat/Interval.md](Usul/Cat/Interval.md) | [doc](https://claude.ai/code/artifact/e49760c6-3969-4ea4-b7e0-37bdf98f0ff1) |
 | `Usul.Cat.Scales` | [Usul/Cat/Scales.md](Usul/Cat/Scales.md) | [doc](https://claude.ai/code/artifact/febfa233-e3e7-4e62-b7dd-84b91d2fc7a9) |
 | `Usul.Cat.Sheaf` | [Usul/Cat/Sheaf.md](Usul/Cat/Sheaf.md) | [doc](https://claude.ai/artifact/Uqh9bDpmnxfZaEAXyVa8Ke) |
@@ -128,6 +129,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
 | `UsulTest.IDASubstitution` | [UsulTest/IDASubstitution.md](UsulTest/IDASubstitution.md) | pending |
 | `UsulTest.IDASubstitutionContracts` | [UsulTest/IDASubstitutionContracts.md](UsulTest/IDASubstitutionContracts.md) | pending |
+| `UsulTest.IDAProjection` | [UsulTest/IDAProjection.md](UsulTest/IDAProjection.md) | pending |
+| `UsulTest.IDAProjectionContracts` | [UsulTest/IDAProjectionContracts.md](UsulTest/IDAProjectionContracts.md) | pending |
 | `UsulTest.IDAContracts` | [UsulTest/IDAContracts.md](UsulTest/IDAContracts.md) | pending |
 | `UsulTest.IDAJudgment` | [UsulTest/IDAJudgment.md](UsulTest/IDAJudgment.md) | pending |
 | `UsulTest.IDAJudgmentContracts` | [UsulTest/IDAJudgmentContracts.md](UsulTest/IDAJudgmentContracts.md) | pending |
@@ -170,6 +173,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `scripts.ExportIDAActRegistry` | [scripts/ExportIDAActRegistry.md](scripts/ExportIDAActRegistry.md) | pending |
 | `scripts.ExportIDAContext` | [scripts/ExportIDAContext.md](scripts/ExportIDAContext.md) | pending |
 | `scripts.ExportIDASubstitution` | [scripts/ExportIDASubstitution.md](scripts/ExportIDASubstitution.md) | pending |
+| `scripts.ExportIDAProjection` | [scripts/ExportIDAProjection.md](scripts/ExportIDAProjection.md) | pending |
 | `scripts.ExportIDAJudgment` | [scripts/ExportIDAJudgment.md](scripts/ExportIDAJudgment.md) | pending |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
 

@@ -12,7 +12,8 @@ structural descriptions and exact source bindings. The [ACT-01 ground context
 fragment](ida-context-foundation.md) adds typed predicates, canonical snapshots,
 clock identity, and exact inquiry binding. [ACT-02](ida-substitution.md)
 implements typed reindexing, grounding, and the conjunction premise calculus.
-ACT-03 through ACT-05 and ACT-08 are planned implementation work; ACT-06, ACT-07 and ACT-09 retain their
+[ACT-03](ida-projection.md) implements one exact scoped projection and
+synthetic loss witnesses. ACT-04, ACT-05 and ACT-08 are planned implementation work; ACT-06, ACT-07 and ACT-09 retain their
 accepted conditional scope and triggers. Remaining Lean/Quint contracts need implementation
 and verification. Source interpretations retain their recorded admission status.
 The implemented baseline inspected for this design is main

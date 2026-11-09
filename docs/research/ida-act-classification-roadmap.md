@@ -219,7 +219,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
 | ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
 | ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
-| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Planned implementation |
+| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [First exact frame proof and loss witnesses](ida-projection.md) with `make ida-projection` |
 | ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | Planned implementation |
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | Planned implementation |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
@@ -411,6 +411,11 @@ declared finite domain. A changed same-sort role assignment remains representabl
 where appropriate but is distinguished from the original target.
 
 ### ACT-03 — Account for forgetting and scoped equivalence
+
+The [first implemented projection](ida-projection.md) proves an exact frame law
+for one synthetic evaluator. It checks an appended exception, loss of
+occurrence identity, equal answers with unequal dependencies, and stale
+bindings despite scoped equivalence.
 
 **Purpose.** Specify what each representation map preserves, forgets, or can
 reflect.

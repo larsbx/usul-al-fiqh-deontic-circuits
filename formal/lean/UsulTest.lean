@@ -38,3 +38,5 @@ import UsulTest.IDAContext
 import UsulTest.IDAContextContracts
 import UsulTest.IDASubstitution
 import UsulTest.IDASubstitutionContracts
+import UsulTest.IDAProjection
+import UsulTest.IDAProjectionContracts
