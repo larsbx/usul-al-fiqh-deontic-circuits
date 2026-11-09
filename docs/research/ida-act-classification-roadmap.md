@@ -218,7 +218,7 @@ conditional extensions and do not block the first core pilot.
 |---|---|---|---|
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
 | ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
-| ACT-02 | Context category and substitution laws | ACT-01 | Planned implementation; first categorical core |
+| ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
 | ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Planned implementation |
 | ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | Planned implementation |
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | Planned implementation |
@@ -355,6 +355,10 @@ inferred from the new structural JSON adapter. Relation endpoints and compositio
 requirements remain as specified above, with no new graph-based inference rule.
 
 ### ACT-02 — Prove the context and substitution calculus
+
+The [implemented fragment](ida-substitution.md) covers typed variables and
+rigid references, registered descriptions, inquiry grounding, and a
+conjunction calculus with checked premise arrows.
 
 **Purpose.** Make reusable schematic descriptions safe to instantiate.
 

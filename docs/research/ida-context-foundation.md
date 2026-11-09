@@ -87,12 +87,8 @@ records the checked Git revision, source hashes, tool versions, local runtime
 overrides, compiled declaration inventory, and the two complete output tables
 under `.cache/ida-context/`.
 
-ACT-02 still needs finite typed variable contexts and sort-correct simultaneous
-substitution for formulas, descriptions, and every reference-bearing inquiry
-field. Prove identity, composition, typing, role preservation, rigidity of
-constants, and grounding with fixed definition/profile/clock pins. For
-premise-context arrows, establish the assumption rule, admissible substitution,
-and simultaneous cut in a specified conditional calculus. Keep proof-relevant
-provenance in receipts and reconstruct concrete evidence leaves under the
-existing source authority. Semantic commutation, information-loss contracts
-beyond this witness, and context-aware re-admission remain later work.
+[ACT-02](ida-substitution.md) implements a typed substitution and grounding
+calculus with conditional conjunction and checked premise arrows. It preserves
+the original evidence boundary. Semantic commutation, information-loss
+contracts beyond the ACT-01 witness, and context-aware re-admission remain
+separate later work.

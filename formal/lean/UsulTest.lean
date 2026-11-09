@@ -36,3 +36,5 @@ import UsulTest.IDAActRegistry
 import UsulTest.IDAActRegistryContracts
 import UsulTest.IDAContext
 import UsulTest.IDAContextContracts
+import UsulTest.IDASubstitution
+import UsulTest.IDASubstitutionContracts

@@ -11,13 +11,14 @@
 | `formal/lean-mathlib/` | `**` |
 | `formal/tla/` | `**` |
 | `formal/quint/` | `**` |
-| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `check-ida-context.py`, `ida-act-registry-wire.py`, `ida-act-registry-mutations.json` |
+| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `check-ida-context.py`, `check-ida-substitution.py`, `ida-act-registry-wire.py`, `ida-act-registry-mutations.json` |
 | `formal/fixtures/ida-act-registry/` | `**` |
-| `formal/lean/scripts/` | `*IDAActRegistry.lean`, `ExportIDAContext.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
-| `docs/plain-english/Usul/Typing/` | `IDAActRegistry.md`, `IDAContext.md` |
-| `docs/plain-english/UsulTest/` | `IDAActRegistry*.md`, `IDAContext*.md` |
-| `docs/plain-english/scripts/` | `*IDAActRegistry*.md`, `ExportIDAContext.md` |
-| `.github/workflows/` | `ida-act-registry.yml`, `fiqh-act-reference.yml` |
+| `formal/lean/scripts/` | `*IDAActRegistry.lean`, `ExportIDAContext.lean`, `ExportIDASubstitution.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
+| `docs/plain-english/Usul/Typing/` | `IDAActRegistry.md`, `IDAContext.md`, `IDASubstitution.md` |
+| `docs/plain-english/UsulTest/` | `IDAActRegistry*.md`, `IDASubstitution*.md`, `IDAContext*.md` |
+| `docs/plain-english/scripts/` | `*IDAActRegistry*.md`, `ExportIDAContext.md`, `ExportIDASubstitution.md` |
+| `docs/plain-english/Usul/Cat/` | `IDASubstitution.md` |
+| `.github/workflows/` | `ida-act-registry.yml`, `ida-substitution.yml`, `fiqh-act-reference.yml` |
 | `docs/research/` | `agency-source-profile.md`, `agency-pilot.md`, `ida-*.md`, `islamic-deontic-algebra-spec.md` |
 | `docs/architecture/` | `category-theory.md`, `judgement.md`, `mahall.md` |
 | `corpus/citations/` | `**` |
@@ -322,7 +323,7 @@ dependencies; implementation and proof completion retain their own status.
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 | M14 maqāṣid | **readings proved, two encoders, seven candidate cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 plus five source-located al-Mustaṣfā cases (31 conditional istiṣlāḥ completion checks); 0 reviewed new conclusions; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
 | M15 joint agency | **candidate implementation; interpretation review open** | `Usul.Agency`, `UsulTest.Agency`, and `formal/quint/`: two revocation profiles, joint/independent permission, arbitrary-history proofs, 13,312 finite transition inputs, source-byte and passage checks, and semantic negative controls. [Scope and reproduction](research/agency-pilot.md); [source profile](research/agency-source-profile.md). |
-| M16 act classification | **ACT-00 integrated; ACT-01 registry and ground context implemented** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01](research/ida-act-registry.md) adds versioned definitions, typed descriptions, exact envelope/source binding, and `make ida-registry`. The [ground context fragment](research/ida-context-foundation.md) adds typed predicates, canonical snapshots, temporal identity, and exact inquiry binding with `make ida-context`. The [roadmap](research/ida-act-classification-roadmap.md) and [context contracts](research/ida-context-theory.md) are accepted; later implementation remains planned or conditional. Historical Lean–Quint and candidate-source receipts retain their exact revision and scope; ACT-01 owns versioned registry authority. |
+| M16 act classification | **ACT-00 integrated; ACT-01 ground context and bounded ACT-02 implemented** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01](research/ida-act-registry.md) adds versioned definitions, typed descriptions, exact envelope/source binding, and `make ida-registry`. The [ground context fragment](research/ida-context-foundation.md) adds typed predicates, canonical snapshots, temporal identity, and exact inquiry binding with `make ida-context`. [ACT-02](research/ida-substitution.md) supplies typed grounding and conditional premise arrows with `make ida-substitution`. The [roadmap](research/ida-act-classification-roadmap.md) and [context contracts](research/ida-context-theory.md) are accepted; later implementation remains planned or conditional. Historical Lean–Quint and candidate-source receipts retain their exact revision and scope; ACT-01 owns versioned registry authority. |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -712,8 +713,11 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   publication have separate contracts.
 - **ACT-01 ground context:** [Canonical snapshots and inquiry binding](research/ida-context-foundation.md)
   check rigid participants, typed predicates, catalog consistency and time identity.
-  The gate is `make ida-context`. The next core work is ACT-02 substitution and
-  premise-context composition.
+  The gate is `make ida-context`.
+- **ACT-02 substitution:** [Typed reindexing and premise contexts](research/ida-substitution.md)
+  establish grounding, schema and role preservation, substitution and cut,
+  and the categorical action laws for the bounded calculus. The gate is
+  `make ida-substitution`. ACT-03 and ACT-04 have separate semantic contracts.
 - **State:** ACT-00 is on main through #144. Verification receipts remain bound
   to the heads and scopes they checked; later acceptance requires its own
   evidence. The context theory and roadmap are accepted; remaining implementation

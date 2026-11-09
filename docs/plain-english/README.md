@@ -16,6 +16,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Cat.Deduction` | [Usul/Cat/Deduction.md](Usul/Cat/Deduction.md) | pending |
 | `Usul.Cat.Factor` | [Usul/Cat/Factor.md](Usul/Cat/Factor.md) | [doc](https://claude.ai/code/artifact/0a0d9669-2526-4689-8268-957d58f6a0bc) |
 | `Usul.Cat.Institution` | [Usul/Cat/Institution.md](Usul/Cat/Institution.md) | [doc](https://claude.ai/code/artifact/da69b13c-c1fb-4603-8005-7419cbe340f5) |
+| `Usul.Cat.IDASubstitution` | [Usul/Cat/IDASubstitution.md](Usul/Cat/IDASubstitution.md) | pending |
 | `Usul.Cat.Interval` | [Usul/Cat/Interval.md](Usul/Cat/Interval.md) | [doc](https://claude.ai/code/artifact/e49760c6-3969-4ea4-b7e0-37bdf98f0ff1) |
 | `Usul.Cat.Scales` | [Usul/Cat/Scales.md](Usul/Cat/Scales.md) | [doc](https://claude.ai/code/artifact/febfa233-e3e7-4e62-b7dd-84b91d2fc7a9) |
 | `Usul.Cat.Sheaf` | [Usul/Cat/Sheaf.md](Usul/Cat/Sheaf.md) | [doc](https://claude.ai/artifact/Uqh9bDpmnxfZaEAXyVa8Ke) |
@@ -89,6 +90,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.Encoders` | [Usul/Typing/Encoders.md](Usul/Typing/Encoders.md) | [doc](https://claude.ai/code/artifact/0d241211-64c6-4884-ac77-c3fdfc0f3824) |
 | `Usul.Typing.IDAActRegistry` | [Usul/Typing/IDAActRegistry.md](Usul/Typing/IDAActRegistry.md) | pending |
 | `Usul.Typing.IDAContext` | [Usul/Typing/IDAContext.md](Usul/Typing/IDAContext.md) | pending |
+| `Usul.Typing.IDASubstitution` | [Usul/Typing/IDASubstitution.md](Usul/Typing/IDASubstitution.md) | pending |
 | `Usul.Typing.IDAJudgment` | [Usul/Typing/IDAJudgment.md](Usul/Typing/IDAJudgment.md) | pending |
 | `Usul.Typing.Qaida` | [Usul/Typing/Qaida.md](Usul/Typing/Qaida.md) | [doc](https://claude.ai/code/artifact/e77f2feb-7ac1-4d92-9751-c592d15bdcac) |
 | `Usul.Typing.Relations` | [Usul/Typing/Relations.md](Usul/Typing/Relations.md) | [doc](https://claude.ai/code/artifact/81064d2c-3565-4766-84b2-7c816bae389f) |
@@ -124,6 +126,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDAActRegistryContracts` | [UsulTest/IDAActRegistryContracts.md](UsulTest/IDAActRegistryContracts.md) | pending |
 | `UsulTest.IDAContext` | [UsulTest/IDAContext.md](UsulTest/IDAContext.md) | pending |
 | `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
+| `UsulTest.IDASubstitution` | [UsulTest/IDASubstitution.md](UsulTest/IDASubstitution.md) | pending |
+| `UsulTest.IDASubstitutionContracts` | [UsulTest/IDASubstitutionContracts.md](UsulTest/IDASubstitutionContracts.md) | pending |
 | `UsulTest.IDAContracts` | [UsulTest/IDAContracts.md](UsulTest/IDAContracts.md) | pending |
 | `UsulTest.IDAJudgment` | [UsulTest/IDAJudgment.md](UsulTest/IDAJudgment.md) | pending |
 | `UsulTest.IDAJudgmentContracts` | [UsulTest/IDAJudgmentContracts.md](UsulTest/IDAJudgmentContracts.md) | pending |
@@ -165,6 +169,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
 | `scripts.ExportIDAActRegistry` | [scripts/ExportIDAActRegistry.md](scripts/ExportIDAActRegistry.md) | pending |
 | `scripts.ExportIDAContext` | [scripts/ExportIDAContext.md](scripts/ExportIDAContext.md) | pending |
+| `scripts.ExportIDASubstitution` | [scripts/ExportIDASubstitution.md](scripts/ExportIDASubstitution.md) | pending |
 | `scripts.ExportIDAJudgment` | [scripts/ExportIDAJudgment.md](scripts/ExportIDAJudgment.md) | pending |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
 
