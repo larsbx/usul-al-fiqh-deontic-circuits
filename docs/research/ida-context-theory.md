@@ -159,6 +159,18 @@ validity, attribution and discharge retain distinct question families; introduce
 additional families only through explicit typed extensions and source-supported
 bridges.
 
+### Structural kind and contextual classification
+
+The registry kind selects a description's constructor and argument schema. A
+further classification can instead be an object-language conclusion
+\(\operatorname{Classifies}_{P,k}(a)\), whose derivation requires contextual
+premises under the selected interpretation. Keep construction, conditional
+classification, and admission of those premises for an occurrence distinct.
+The same occurrence can support several attributed descriptions or
+classifications; this interface does not require a unique total
+occurrence-to-kind function. A classification alone supplies no permission,
+validity, attribution or discharge answer without the corresponding rule.
+
 ## 4. Categorical integration and transport
 
 ### Formal contexts and descriptions
@@ -187,6 +199,31 @@ Formal instantiation can change a target while preserving its schema and
 substitution semantics. Replacing a resolved person, obligation or occurrence
 is not alpha-renaming. Same-sort role swaps may remain representable but must
 be distinguished when the schema gives those roles different meanings.
+
+### Descriptions over their contexts
+
+Write \(\mathcal C_R\) for the substitution category above. Once its laws and
+the description action are proved, the family is a presheaf
+\(\operatorname{Desc}_R:\mathcal C_R^{op}\to\mathbf{Set}\). Its category of
+elements makes the attachment of a description to its context explicit:
+
+- Objects are \((\Gamma,a)\) with \(a\in\operatorname{Desc}_R(\Gamma)\).
+- An arrow \((\Delta,b)\to(\Gamma,a)\) is a substitution
+  \(\sigma:\Delta\to\Gamma\) with \(b=a[\sigma]\).
+- The projection \(p(\Gamma,a)=\Gamma\) forgets the description and maps the
+  arrow to \(\sigma\).
+
+For each \(\sigma:\Delta\to\Gamma\) and \((\Gamma,a)\), the reindexed
+object \((\Delta,a[\sigma])\) gives the unique lift with that codomain over
+\(\sigma\). This is the discrete-fibration reading of the proved presheaf,
+with proof-irrelevant equality witnesses. It adds no interpretation, evidence
+admission, or identification of distinct grounded occurrences.
+
+ACT-02 may expose this small construction directly from its substitution laws.
+A generic fibration library is not a new core acceptance gate. ACT-09 retains
+its conditional trigger for richer dependent families, comprehension, semantic
+coherence and quotients. See the [type-theory notes][awodey] and
+[Jacobs's treatment of indexed categories and fibrations][jacobs].
 
 ### Premise-context arrows
 
@@ -238,15 +275,59 @@ compatible histories/valuations must be total on the supported domain. This
 supports preservation; reflection needs additional coverage, such as the
 appropriate surjectivity hypothesis, and does not follow from a one-way map.
 
+For an explicit first construction, fix \(P\) and a semantic history
+\(\omega\), and write \(\operatorname{Val}_{P,\omega}(\Gamma)\) for
+sort-correct assignments. Interpreting a substitution gives the covariant map
+
+\[
+ \operatorname{Val}_{P,\omega}(\sigma):
+ \operatorname{Val}_{P,\omega}(\Delta)\longrightarrow
+ \operatorname{Val}_{P,\omega}(\Gamma).
+\]
+
+It evaluates the terms supplied for \(\Gamma\)'s variables in a
+\(\Delta\)-assignment; it must satisfy the corresponding identity and
+composition laws. For a supported fragment with fixed denotation type
+\(B_{P,\omega}\), set
+\(S_{P,\omega}(\Gamma)=
+(\operatorname{Val}_{P,\omega}(\Gamma)\to B_{P,\omega})\).
+Precomposition with the assignment map makes \(S_{P,\omega}\) contravariant.
+The description interpretation is a natural transformation from the supported
+description presheaf to \(S_{P,\omega}\) exactly when
+
+\[
+ I_{P,\omega,\Delta}(a[\sigma])(\delta)
+ = I_{P,\omega,\Gamma}(a)
+   \bigl(\operatorname{Val}_{P,\omega}(\sigma)(\delta)\bigr).
+\]
+
+```mermaid
+flowchart TD
+  A["Descriptions in Gamma"] -->|"Substitute sigma"| B["Descriptions in Delta"]
+  A -->|"Interpret"| C["Meanings over Gamma assignments"]
+  B -->|"Interpret"| D["Meanings over Delta assignments"]
+  C -->|"Precompose with the assignment map"| D
+```
+
+Thus descriptions reindex from \(\Gamma\) to \(\Delta\), while valuations
+map from \(\Delta\) to \(\Gamma\). The history is fixed throughout this
+square: evidence arrival or a changed world is not a substitution law. Keep
+unsupported entries outside the declared fragment, or specify partial semantics
+and prove its laws explicitly. A denotation family genuinely dependent on the
+context needs the corresponding indexed interface rather than this fixed
+codomain construction. Apply grounding consistently to the full inquiry, not
+only its target, as specified in section 3.
+
 The existing `Factor`, `Typing` and `Institution` results supply useful
 interfaces with their own hypotheses. They do not already instantiate these
 maps for every candidate act kind or every Quint state space.
 
-### Three different preservation claims
+### Four different preservation claims
 
 | Claim | Required result | What remains separate |
 |---|---|---|
-| Conditional conclusion remains sound | A derivation or semantic preservation theorem under transported premises | Applicability to a concrete case |
+| A conditional derivation transports | Reconstruct the derivation using the permitted substitution and premise witnesses | Semantic soundness and concrete premise admission |
+| A conditional conclusion remains sound | Sound rule semantics and preservation under interpreted premises that hold | Exact evaluator output and applicability to a concrete case |
 | Computed answer remains exactly equal | A complete dependency/frame or factorization theorem for the stated evaluator and domain | Receipt identity and current admission |
 | A new concrete application is admitted | Current exact scope, evidence, version and authority checks plus the justified derivation | Truth of external assertions beyond the model's assumptions |
 
@@ -254,7 +335,26 @@ Strengthening a context can narrow an answer constraint from two possible
 rulings to one. The old constraint may remain sound as an upper bound without
 remaining the evaluator's exact answer. State whether a transport theorem
 preserves satisfaction, inclusion of possibilities, exact payload equality, or
-admission; never infer all four from one preservation result.
+admission; never infer the other guarantees from one preservation result.
+
+### Migration gates
+
+Vocabulary/schema translation changes the language, whereas substitution above
+works within a fixed vocabulary. A migration may pass one of these gates while
+another remains unproved or blocked:
+
+| Migrated object | Required preservation |
+|---|---|
+| Description | Meaning and compatibility with permitted substitutions on the supported fragment |
+| Conditional derivation | The translated premises and rules establish the translated full inquiry and typed answer |
+| Concrete application | Exact destination scope, current premise admission, retained provenance, and a newly bound receipt |
+
+The institution satisfaction condition supplies the semantics interface for
+sentence translation and model reducts ([Goguen and Burstall][institutions]). It
+does not supply a cross-profile rule or evidence policy. Use the actual
+`Usul.Cat.Institution` hypotheses when claiming consequence preservation or
+reflection; a finite check is not universal entailment in the target model
+class, and reflection additionally needs the stated model coverage.
 
 ### Operations with different contracts
 
@@ -429,6 +529,20 @@ on a declared supported domain. Prove constancy on the projection's fibers and
 the relevant existence/extension hypotheses before reusing `Usul.Cat.Factor`.
 An observed match on examples is insufficient.
 
+Two existing results make the boundary concrete. `Usul.Cat.Typing.Reads E F`
+specifies local information dependence and applicability; it does not establish
+equality of `E.judge` and `F.judge`. In particular, `Reads.mapRun` preserves the
+information requirements while relabeling the output, even when the output
+type changes. An output-relabeling countercontrol must therefore distinguish
+an information-preserving map from an answer-preserving map.
+
+`Usul.Cat.Factor.unattested_free` addresses a different gap: even if all supplied
+cases factor consistently, a feature value unattested by those cases can be
+assigned any answer in a compatible mathematical extension under the theorem's
+hypotheses. Finite consistency therefore supplies no classification of an
+unseen feature class. Such an application needs its independently justified
+rule and premises; existence of an extension is not source authority.
+
 The dependency set for a judgment must include positive premises, negative
 guards, completeness assumptions, potential defeaters, priorities, definition
 and interpretation pins, source admission, authority and temporal scope, and
@@ -479,6 +593,8 @@ cover. It does not supply missing coverage, choose a preferred source, or resolv
 juristic disagreement. The obstruction witness remains an attributed
 disagreement. A context adapter must identify the semantic situation space and
 fixed interpretations to which this existing construction is applied.
+The assignment-gluing theorem does not itself prove that a source-admitted
+evaluator or its evidence-bearing receipts form a sheaf.
 
 ## 8. Omission, capacity and resources
 
@@ -512,6 +628,14 @@ transition guards where the application needs consumption. Linear or other
 resource-sensitive composition belongs to ACT-07 only after a concrete use
 case requires it. Preserve the separation between the proposition that a
 resource exists and the operational right to consume it again.
+
+For the conditional ACT-06 extension, a constructor whose components share
+\(\Gamma\) should satisfy
+\(\operatorname{Compose}(a_1,\ldots,a_n)[\sigma]
+=\operatorname{Compose}(a_1[\sigma],\ldots,a_n[\sigma])\).
+This is a structural compatibility contract. Binding constructors, independent
+execution and shared-resource consumption require their additional specified
+interfaces; this equation supplies none of their operational guarantees.
 
 ## 9. Work packages and execution order
 
@@ -556,6 +680,50 @@ evidence-arrival, evaluation, time and opportunity scenarios. Record an explicit
 abstraction relation. A bounded pass is conformance evidence for that fragment;
 it is not a universal theorem about all histories, source fidelity or the tools.
 
+### Integration theorem sequence
+
+The first integration result combines the interfaces below; these are accepted
+implementation obligations, not additional claims of completed Lean proofs.
+Publish the actual declaration names and scopes as each fragment lands.
+
+| Stage | Required result | Owning package |
+|---|---|---|
+| Typed instantiation | The description and every reference-bearing inquiry field reindex coherently; rigid references retain identity | ACT-02 |
+| Interpretation | Description naturality and formula satisfaction/substitution hold on the same supported fragment | ACT-04 |
+| Conditional reconstruction | The substituted old premises follow from the new premises and the conditional derivation reconstructs using the supported rules | ACT-02, ACT-05 |
+| Conditional soundness | When the interpreted premises hold, the reconstructed conclusion holds for the grounded full inquiry | ACT-04, ACT-05 |
+| Concrete admission | Every emitted admitted application binds that derivation, exact grounding/inquiry, required premise certificates, and destination snapshot/policies | ACT-05 |
+| Integrated witness and controls | At least one nonidentity application is admitted, while missing or mismatched destination evidence blocks the application | ACT-08 |
+
+The positive witness prevents an always-rejecting adapter from satisfying the
+pilot through a vacuous safety claim. Derive the transport from independently
+defined semantics and rules; a certificate type containing the desired
+preservation proposition is an interface, not its substantive implementation.
+Record separately whether the theorem preserves a conditional conclusion, an
+exact computed answer, or admission of the new application.
+
+### Worked agency integration trace
+
+Use the selected candidate profile's premises and awareness conditions at every
+step. This trace specifies the pilot; it adds no new source interpretation.
+
+| Step or change | Required behavior |
+|---|---|
+| Instantiate a formal agent with agent A | Preserve types and named roles; ground the complete inquiry consistently |
+| Interpret the instance | Obtain the same denotation by either path in the naturality square |
+| Admit appointment and authority premises | Bind evidence to agent A, the principal, task, effective time, and selected evidence perspective |
+| Apply the conditional derivation | Emit the scoped answer and a receipt carrying the actual derivation and premise dependencies |
+| Revocation effective after historical execution | Reevaluate current eligibility under the selected profile; retain the historical execution witness and original issuance record |
+| Late evidence of revocation effective before execution | Reevaluate retrospective premise admission and what can be established about that event; retain the original receipt as a record of issuance |
+| Replace agent A by agent B | Reconstruct the conditional instance and require agent B's own admissible premise evidence |
+| Change information outside a proved complete dependency set | Preserve exactly the result stated by the frame theorem and issue an appropriately bound new receipt |
+
+The late-evidence case changes the evaluator's justified account of the event.
+It does not refute `run_execution_witness` for its fixed modeled input history;
+the adapter must recheck whether that history remains an adequate representation
+of the case. The ordinary later-revocation case must not demand that a previously
+authorized execution remain authorized in the current state.
+
 ## 10. Acceptance contracts and countermodels
 
 The following are required implementation and proof obligations. Implementation
@@ -583,6 +751,8 @@ projection, independent oracle/control, and receipt.
 | Similar assertions at different times/occurrences | Preserve scopes; do not report a false contradiction |
 | Same-sort role swap or wrong accountable subject | Distinguish target/binding where the rule distinguishes them |
 | Changed qualification with the same act kind | Reevaluate; kind identity does not transfer the judgment |
+| Relabel an encoder's outputs while preserving its projection | Information dependence may remain valid; exact answer preservation must fail where the relabeling changes the answer |
+| Query a feature class absent from all supplied consistent cases | Retain underdetermination unless an independently justified rule supplies the new result |
 | New matching row activates a latent exception | Invalidate any frame claim that omitted the relevant query/defeater dependency |
 | Stronger premises narrow an answer constraint | Preserve only the claimed soundness/inclusion; do not assert exact output equality |
 | Conflicting snapshot definition under one version | Reject ambiguity, never first-match selection |
@@ -616,6 +786,12 @@ proof obligation.
 - [Awodey and Bauer, *Introduction to Categorical Logic*, chapter 4][awodey]:
   contexts, substitutions and presheaf actions; sections 4.11-4.12 also explain
   the coherence distinction between strict syntax and pullback semantics.
+- [Jacobs, *Categorical Logic and Type Theory*][jacobs]: indexed categories and
+  fibrations; the category-of-elements reading above does not require a general
+  dependent-type implementation for the first pilot.
+- [Goguen and Burstall, *Institutions: Abstract Model Theory for Specification
+  and Programming*][institutions]: sentence/model translation and satisfaction
+  compatibility, subject to the concrete translation's hypotheses.
 - [McCarthy and Buvac, *Formalizing Context (Expanded Notes)*][contexts]:
   context-relative assertions and explicit lifting rules between contexts.
 - [Santos, *A Four-Valued Dynamic Epistemic Logic* (2020)][evidence]:
@@ -633,6 +809,8 @@ are all inspectable, with preservation claims matched to their exact proofs.
 [integrated-main]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e
 [pr144]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144
 [awodey]: https://awodey.github.io/catlog/notes/catlog4.pdf
+[jacobs]: https://www.cs.ru.nl/B.Jacobs/CLT/bookinfo.html
+[institutions]: https://courses.grainger.illinois.edu/cs522/sp2016/InstitutionsAbstractModelTheory.pdf
 [contexts]: https://www-formal.stanford.edu/jmc/mccarthy-buvac-98/context/context.html
 [evidence]: https://link.springer.com/article/10.1007/s10849-020-09313-8
 [temporal]: https://rts.cs.arizona.edu/pubs/SIGMODRecordMar94p27.pdf
