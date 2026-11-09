@@ -48,10 +48,18 @@ Result = Derived | Unresolved | Conflict | OutOfScope
 
 Each result carries its value or diagnostic witnesses. Targets distinguish behavioral acts from affective states. Context supplies objects, capacity, voluntary control, intention, history, agency, and exceptions required by the selected rule. Every derivation records source hashes and passage locators, interpretation and profile versions, rule applications, and implementation revision.
 
+The [context-theory proposal](ida-context-theory.md) makes those contextual
+obligations explicit. It separates typed schematic variables, factual situations,
+evidence, source profiles, time/history, and authority/resource state. Current
+IDA records bind context and time identifiers; their semantic interpretation,
+refinement, and transport interfaces remain proposed. A derivation under stated
+assumptions and admission of those assumptions are separate checks.
+
 ### 5. Inference and composition
 
 - **Application:** discharge the rule’s typed premises, conditions, capacity requirements, and absence of impediments.
-- **Restriction:** specialize context while retaining provenance; recheck applicability and exception guards before carrying the conclusion forward.
+- **Restriction:** reindex under a declared context map while retaining provenance and stating the required preservation law. Restriction of an implemented `Usul.Cat.Sheaf` section narrows its domain and preserves values at retained situations.
+- **Reevaluation:** changes in facts, evidence, time, or authority recheck applicability and exception guards before carrying a conclusion forward. More evidence does not by itself preserve a defeasible conclusion.
 - **Conjunction:** intersect constraints on the same question, subject, target, context, time, and profile/version. An empty intersection produces a conflict witness.
 - **Alternatives:** retain named positions separately. A profile may resolve them only through an explicit, source-linked precedence rule.
 - **Exceptions and defaults:** apply declared guards and defeat rules; insufficient evidence produces an unresolved result.
@@ -75,7 +83,10 @@ The [detailed M16 roadmap](ida-act-classification-roadmap.md) records the propos
 typed act registry, context/substitution laws, information-loss and scoped
 equivalence contracts, supported interpretations, and evidence-bearing judgment
 transport. The [ACT-00 integration](ida-target-integration.md) reconciles #140's
-structured targets with the mainline IDA judgment and derivation machinery. Source mentions, kinds, qualified
+structured targets with the mainline IDA judgment and derivation machinery and
+landed through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144)
+at `ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`. Historical receipts retain their
+recorded revisions and scopes. Source mentions, kinds, qualified
 descriptions, and occurrences remain distinct, as do classification relations
 and legal judgments.
 
@@ -84,6 +95,12 @@ institution interfaces. Category laws do not admit source interpretations,
 identify distinct occurrences, or preserve judgments across arbitrary changes
 of profile or context. Compound descriptions and process/resource composition
 are separate, conditional milestones. Those later contracts each have a separate acceptance gate.
+
+The [context theory](ida-context-theory.md) refines the planned ACT-02/ACT-03/ACT-05
+contracts and conditional process/indexing work within M16. Its premises,
+consistency conditions, evidence revisions, temporal histories, and forgetting
+witnesses are proposed obligations, with explicit countermodels and acceptance
+criteria; this specification does not claim their implementation.
 
 [1]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/formal/lean/Usul/Hukm.lean
 [2]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a52f1e492cd96cb82f08d190c19aad9ae6f2044c/docs/architecture/judgement.md

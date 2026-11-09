@@ -279,6 +279,17 @@ with 34 proposed act kinds and explicit unresolved roles. Its normalization
 cases preserve legal qualifications and distinguish act/state/event senses.
 A complete role mapping is still a candidate interpretation.
 
+ACT-00 integrated that candidate reference and the structured-target grammar on
+main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144).
+The pinned snapshot above remains a historical source for its reported inventory.
+Integration does not promote its proposed meanings to admitted interpretations.
+
+The [context-theory proposal](../research/ida-context-theory.md) treats these
+maḥall links as discovery relationships. Rule-specific contextual premises and
+their evidence require separate justification. A shared topic or broader label
+does not establish context entailment, make a qualification irrelevant, or
+authorize transport of a judgment to another situation.
+
 The roadmap adds Lean-first and independent Quint obligations for typed
 substitution, information loss, scoped equivalence, supported interpretations,
 and evidence-bearing transport. It changes no label, source pin, source

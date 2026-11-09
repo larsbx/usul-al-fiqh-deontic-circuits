@@ -2,8 +2,9 @@
 
 ## Proof-first roadmap
 
-**Status.** ACT-00 is implemented on the integration branch with scoped
-acceptance tracked at its exact head. The remaining packages retain their
+**Status.** ACT-00 is integrated on main through [PR #144][pr144] at
+[`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`][integrated-main]. Its acceptance
+evidence remains bound to the checked revisions. The remaining packages retain their
 prerequisites below. This is the uṣūl track's milestone
 [M16](../roadmap-hanbali-usul-formalization.md#m16--typed-act-classification-and-categorical-transformations--m2-m5).
 
@@ -13,11 +14,25 @@ categorical structures are conditional extensions with their own exit criteria.
 Formal development can proceed with explicitly candidate interpretations;
 interpretive admission remains a separately evidenced decision.
 
+The [context-theory proposal](ida-context-theory.md) refines the categorical
+integration: typed variables and conditional premises, grounded evidence and
+inquiry snapshots, semantic histories, and temporal/authority changes have
+distinct interfaces. Its proposed contracts belong to the ACT packages below;
+the note adds no implemented calculus or admitted interpretation.
+
 ## 1. Baseline and evidence boundaries
 
-### Inspected main and the separate structured-target branch
+### Current integrated baseline and historical prerequisites
 
-The documentary baseline is main commit
+Main at `ca38f35` contains structured targets, their complete scope binding in
+judgments and derivations, and the candidate reference from #140. See the
+[integration contract](ida-target-integration.md) and [merged #144][pr144].
+Context and time remain opaque numeric coordinates; the context proposal plans
+their interpretation and evidence bindings. The table and receipts below retain
+the earlier baseline that motivated ACT-00; they are not a claim that main still
+uses only numeric targets.
+
+The historical documentary baseline is main commit
 [`c9743cefe86b9b9c3032c6cc626a51fff1ab8136`][main-baseline].
 At that revision:
 
@@ -51,8 +66,8 @@ PR #140 links historical [candidate-reference][reference-run] and
 [IDA Lean–Quint][target-run] receipts for `a7cf271`. It reports 23 reference tests,
 the 84-contract IDA gate, 14 deterministic Quint tests, 13,499 differential
 evaluations, and the required adverse controls. Preserve those receipts as
-evidence of that revision. ACT-00 must obtain new evidence for the integrated
-head; this roadmap does not reclassify old results as current integration
+evidence of that revision. ACT-00's integration evidence belongs to its own
+checked head; this roadmap does not reclassify old #140 results as current integration
 acceptance. The startup failure discussed in [#136][pr136] is a baseline issue
 to re-inspect, not a permanent waiver of any required check.
 
@@ -169,15 +184,30 @@ Do not silently change what objects and arrows mean within an argument. A
 description constructor is not an occurrence or a state transition. The mere
 existence of one category does not supply a functor between these levels.
 
+### Context layers and separate preservation claims
+
+The [context proposal](ida-context-theory.md#2-context-layers-and-inquiry-binding)
+separates formal variables, conditional premises, grounding, report evidence,
+interpretation/admission policies, inquiry scope, and actual semantic histories.
+Conditional derivation and permission to use its premises in a concrete inquiry
+have different judgments. Reuse the existing exact-premise admission boundary.
+
+An admissible transformation may preserve a conclusion's soundness without
+preserving the evaluator's exact answer or the admission of an old receipt.
+Strengthening premises can narrow an answer constraint. Exact equality needs a
+complete-dependency/factorization theorem; new concrete admission needs current
+scope and evidence checks. More reports, revocation and profile revision are
+not automatically premise-context arrows.
+
 ## 3. Work packages, dependencies, and status
 
-ACT-00 integrates #140. **ACT-01 through ACT-09 remain planned or conditional.**
+ACT-00 integrated #140 through [merged #144][pr144]. **ACT-01 through ACT-09 remain planned or conditional.**
 ACT-06, ACT-07, and ACT-09 are
 conditional extensions and do not block the first core pilot.
 
-| Package | Deliverable | Entry prerequisites | Initial state |
+| Package | Deliverable | Entry prerequisites | State |
 |---|---|---|---|
-| ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on the review branch](ida-target-integration.md); exact-head acceptance is the exit gate |
+| ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
 | ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | Proposed |
 | ACT-02 | Context category and substitution laws | ACT-01 | Proposed; first categorical core |
 | ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Proposed |
@@ -243,7 +273,8 @@ retain scoped receipts. Report repository-wide failures separately. A successful
 historical #140 run or a successful documentation check is not this exit.
 
 **Implemented slice.** The [integration contract](ida-target-integration.md)
-records the legacy embedding, full target comparison, and retained admission
+landed through [#144][pr144] at [main `ca38f35`][integrated-main]. It records the
+legacy embedding, full target comparison, and retained admission
 boundary. Independently reconstructed synthetic repayment descriptions combine.
 Swapped roles, changed omission occurrences, and changed affect object sorts
 block conjunction. A changed passage, stale interpretation pin, or legacy
@@ -260,6 +291,11 @@ explicit before interpreting transformations categorically.
 
 - Define versioned kind references, canonical definition digests, ordered role
   schemas, and a deterministic registry resolver.
+- Define the context predicate and snapshot vocabulary needed by the first
+  supported fragment: qualified meanings, rigid references, explicit clocks,
+  version pins and inquiry binding. Reject conflicting definitions under one
+  identity/version; retain opaque legacy contexts until an evidenced mapping
+  supplies a structured replacement.
 - Define the relationship between the registry-checked family and the
   structurally well-formed `Target`. Preserve unresolved kinds as data without
   admitting them as supported interpretations.
@@ -312,6 +348,14 @@ variables of \(\Gamma\). A description reindexes as
 First prove the substitution category's identity, associativity, and typing
 laws; then prove the description action. The presheaf name is justified by
 these laws, not by a naming convention.
+
+The [context calculus](ida-context-theory.md#4-categorical-integration-and-transport)
+also specifies arrows between conditional-premise contexts. Their identity
+needs the assumption rule; composition needs substitution admissibility and
+simultaneous cut in the fixed rule fragment. Start with proof-irrelevant
+admissibility over substitutions and preserve proof-relevant transport/source
+certificates separately. Raw derivation trees require additional equality,
+normalization or coherence treatment before claiming strict category laws.
 
 **Proposed Lean obligations.** `subst_wellFormed`, `subst_id`, `subst_comp`,
 preservation of dependencies between arguments, role labels and rigid
@@ -393,6 +437,14 @@ ruling tags agree.
 Full target equality remains the admission guard unless a separately proved,
 versioned replacement is introduced.
 
+**Context relevance.** Extend projections only with a complete dependency
+contract covering negative/default premises, potential exceptions, priorities,
+queried sets/aggregates, source/definition/profile versions, authority and time,
+and transitive dependencies. Derive the frame theorem from an actual evaluator.
+Distinguish exact answer equality from sound approximation and from receipt
+admission. Add a hidden-defeater/new-matching-row control that preserves all
+previous positive reads while changing the answer.
+
 ### ACT-04 — Interpret supported fragments and migrate schemas
 
 **Purpose.** Give supported syntax a specified meaning and make changes of
@@ -443,6 +495,15 @@ source-witness links lost in a join; a translation chosen by shared spelling alo
 Entity resolution and source interpretation claims must be stated at their
 actual evidence level.
 
+**Context semantics.** Supply the supported fact language and satisfaction law
+for substitution, together with the explicit mapping from admitted evidence to
+existing typed situations. Keep reports as object-language data; a positive
+and negative report must not inject contradictory Lean hypotheses. Robust
+conclusions over compatible histories require nonemptiness. Preserve separate
+outcomes for unsupported language, missing evidence, contested reports and
+inconsistent selected premises. A finite consistency witness does not establish
+actual-world truth or reflection from a bounded model to all histories.
+
 ### ACT-05 — Transport judgments with explicit evidence
 
 **Purpose.** Connect the transformation calculus to the existing typed
@@ -490,6 +551,13 @@ into permissibility.
 source-bound mechanism, and unsupported transports fail with precise reasons.
 Structural classification alone cannot create an admitted conclusion.
 
+**Context application.** Implement the [separate derivation/admission judgments](ida-context-theory.md#3-conditional-derivation-and-premise-admission)
+through this existing environment. Bind event time, evidence revision and any
+actor-awareness premise separately. Reconstruct derived evidence after a
+context change; retain the historical receipt without treating it as current
+authorization. Conditional soundness, exact computed equality and new concrete
+admission are separate acceptance claims.
+
 ### ACT-06 — Assemble compound descriptions
 
 **Trigger.** A concrete ritual, declaration, or interaction requires typed
@@ -531,6 +599,12 @@ Cartesian records may duplicate a reference without creating another asset,
 right, or authorization. Shared assets, authority, obligations, and timing need
 explicit interference checks.
 
+If an application separates evaluation from execution, add commit-boundary
+authority revalidation or an equivalent atomic protocol. Reuse the existing
+Agency execution-pre-state and historical receipt theorems; its execution step
+is already atomic within its candidate model. This application extension does
+not become an additional gate for the core ACT-08 pilot.
+
 Structured/decorated cospans are an optional interface-composition technique.
 Specify the allowed gluing and verify its semantics before using it. A
 mathematical pushout alone establishes no legal compatibility.
@@ -569,6 +643,16 @@ source-bound positive judgment example must use the existing authenticated
 fixture/admission mechanism or an explicitly supported source profile. Keep
 fixture assertions separate from fiqh conclusions.
 
+**Bounded context adapter.** The [context pilot](ida-context-theory.md#9-work-packages-and-execution-order)
+connects explicit evidence snapshots to the existing one-task agency semantics,
+separating historical execution, current authority, actor knowledge and the
+evaluator's evidence perspective. It does not admit an unresolved mandate
+target kind. Add one clock, explicit omission boundaries and observation
+coverage, one nonidentity premise transport and one complete-dependency frame
+example. Required controls include absent evidence used as negation, opposing
+reports, an empty compatible-history set, a latent exception and an inadequately
+observed omission. The existing structural examples remain part of the exit.
+
 **Expansion queue.** Prayer, sale, testimony, agency revocation, fasting, an
 explicit state, and a nonhuman damage event follow only when their actual role
 domains and target sorts are defined. A state/event must not be forced through
@@ -592,10 +676,20 @@ objects, reindexing direction, coherence laws, and the exact theorem made easier
 or newly expressible. Preserve the kernel's dependency policy; use the existing
 separate Mathlib bridge for library-dependent experiments.
 
+Chosen semantic pullbacks generally compose up to coherent isomorphism. State
+the split choice/strictification or comparison laws before identifying them
+with the strict substitution equations. A proof-relevant arrow category must
+also justify equality/coherence of composed certificates while retaining ancestry.
+
 The same discipline applies to richer sheaf constructions: identify contexts,
 covers, matching conditions, and obstructions. Neither a colimit nor a glue
 construction supplies a source-authority choice or resolves incompatible
 positions. Do not make this research a prerequisite for the small core pilot.
+
+Existing sheaf restriction keeps the assigned verdict at each retained
+situation. Temporal/evidence reevaluation requires another specified map and
+law. Local nonemptiness or pairwise intersections do not guarantee a global
+model; supply a global witness or a matching family and applicable gluing theorem.
 
 **Exit.** A concrete verified benefit and a conservative relationship to accepted
 core cases. Otherwise retain the proposal as deferred.
@@ -766,6 +860,8 @@ role signatures, and source mappings above remain this project's proposals.
    ([Compositionality 4, 2022](https://compositionality.episciences.org/13517)):
    optional interface composition for ACT-07, subject to its stated hypotheses.
 
+[integrated-main]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e
+[pr144]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144
 [main-baseline]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/c9743cefe86b9b9c3032c6cc626a51fff1ab8136
 [pr140]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/140
 [target-head]: https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/a7cf2713c2dfc9cd41e9389bd5db721ef4280db5
