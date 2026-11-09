@@ -284,7 +284,7 @@ main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull
 The pinned snapshot above remains a historical source for its reported inventory.
 Integration does not promote its proposed meanings to admitted interpretations.
 
-The [context-theory proposal](../research/ida-context-theory.md) treats these
+The [accepted context theory](../research/ida-context-theory.md) treats these
 maḥall links as discovery relationships. Rule-specific contextual premises and
 their evidence require separate justification. A shared topic or broader label
 does not establish context entailment, make a qualification irrelevant, or

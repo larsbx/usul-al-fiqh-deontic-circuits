@@ -73,7 +73,7 @@ their own semantics and laws. In the implemented
 value to each situation and restriction only narrows its domain: the assigned
 value at every retained situation is unchanged. That theorem does not supply an
 evidence update, a temporal transition, or reevaluation of defeated premises.
-The [proposed IDA context theory](../research/ida-context-theory.md) separates
+The [accepted IDA context theory](../research/ida-context-theory.md) separates
 these operations and their admission/transport obligations. No silent LLM
 rewrite is allowed.
 
@@ -171,7 +171,7 @@ This preserves ADQ tier discipline:
 
 ## Path-indexed lift
 
-For the contextual deontic-circuit model, a proposed extension indexes evaluation
+For the contextual deontic-circuit model, a conditional extension indexes evaluation
 by action-prefix contexts:
 
 ```text
@@ -191,7 +191,7 @@ of those claims. A later evaluation may differ after revocation, a change in
 capacity, or newly admitted evidence; its justification belongs to a temporal or
 evidence-update contract with applicability and exception guards rechecked.
 Restriction of a fixed assignment still preserves its value at every retained
-situation. See the [context-theory proposal](../research/ida-context-theory.md)
+situation. See the [accepted context theory](../research/ida-context-theory.md)
 for the distinction between historical state, current authority, and the evidence
 available about either.
 

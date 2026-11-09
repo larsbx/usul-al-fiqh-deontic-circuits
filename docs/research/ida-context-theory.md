@@ -1,13 +1,19 @@
 # IDA context theory and categorical integration
 
-**Status: proposed specification and proof-first development plan.** This note
-refines [M16's act-classification roadmap](ida-act-classification-roadmap.md),
-especially ACT-02 through ACT-05 and the ACT-08 pilot. It introduces no Lean or
-Quint implementation, admitted source interpretation, or runtime guarantee.
-The implemented baseline inspected for this proposal is main
+**Status: accepted design and proof-first implementation plan.** The project
+owner accepted this context theory and its integration with
+[M16's act-classification roadmap](ida-act-classification-roadmap.md) on
+2026-11-09. This is the adopted development baseline, especially for ACT-02
+through ACT-05 and the ACT-08 pilot.
+
+Design acceptance, implementation progress, proof evidence and source admission
+are tracked separately. ACT-01 through ACT-05 and ACT-08 are planned
+implementation work; ACT-06, ACT-07 and ACT-09 retain their accepted conditional
+scope and triggers. The required Lean/Quint contracts still need implementation
+and verification. Source interpretations retain their recorded admission status.
+The implemented baseline inspected for this design is main
 [`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`][integrated-main], which landed
-structured-target integration through [PR #144][pr144]. ACT-01 through ACT-09
-retain their individual proposed or conditional status.
+structured-target integration through [PR #144][pr144].
 
 ## 1. Purpose and existing foundations
 
@@ -41,7 +47,7 @@ hypotheses. Finite executable agreement does not expand a theorem's model class.
 The word context covers several mathematically different objects. Keep them
 separate and bind them in an immutable evaluation snapshot.
 
-| Layer | Proposed object | Meaning |
+| Layer | Specified object | Meaning |
 |---|---|---|
 | Variables | `Gamma`, written \(\Gamma\) | A finite typed variable context over a fixed declaration registry \(R\) |
 | Conditional premises | `Phi`, written \(\Phi\) | Object-language formulas under which a conditional derivation holds |
@@ -60,7 +66,7 @@ data; accepting the data format does not inject that formula as a Lean theorem.
 ### Snapshot identity
 
 Define an explicit binding between the existing opaque context identifier and
-a versioned snapshot. Proposed records must pin the vocabulary, interpretation,
+a versioned snapshot. Snapshot records must pin the vocabulary, interpretation,
 admission policy, evidence revision, grounding and query coordinates needed for
 replay. The initial boundary should retain exact identity checks.
 
@@ -100,8 +106,8 @@ graph; recursive definitions need separately justified semantics.
 ## 3. Conditional derivation and premise admission
 
 Use separate relations for a conditional result and the right to apply its
-premises to a particular inquiry. The notation below is a proposed interface,
-not an already compiled Lean declaration.
+premises to a particular inquiry. The notation below specifies the accepted
+interface; its Lean declarations and proofs are implementation work.
 
 Let \(\Omega\) be a well-typed schematic inquiry containing description
 \(a\), question \(q\), accountable subject and all other relevant scope
@@ -183,7 +189,7 @@ be distinguished when the schema gives those roles different meanings.
 
 ### Premise-context arrows
 
-For a fixed interpretation, use objects \((\Gamma,\Phi)\). A proposed safe
+For a fixed interpretation, use objects \((\Gamma,\Phi)\). The premise-context
 arrow
 
 \[
@@ -233,7 +239,7 @@ appropriate surjectivity hypothesis, and does not follow from a one-way map.
 
 The existing `Factor`, `Typing` and `Institution` results supply useful
 interfaces with their own hypotheses. They do not already instantiate these
-maps for every proposed act kind or every Quint state space.
+maps for every candidate act kind or every Quint state space.
 
 ### Three different preservation claims
 
@@ -314,7 +320,7 @@ explicitly selected interpreted premises and scope of snapshot \(X\). Do not
 construct it by treating all raw reports as simultaneously true. Admission or
 scenario selection must retain the history of conflicting or rejected reports.
 
-For a supported question, a proposed robust conclusion is
+For a supported question, define a robust conclusion by
 
 \[
  \operatorname{Robust}_P(X,r)\iff
@@ -551,9 +557,9 @@ it is not a universal theorem about all histories, source fidelity or the tools.
 
 ## 10. Acceptance contracts and countermodels
 
-The following are proposed obligations, not names of existing compiled
-theorems. Implementation PRs must publish the final statements and connect each
-to an executable projection, independent oracle/control, and receipt.
+The following are required implementation and proof obligations. Implementation
+PRs must publish the final theorem statements and connect each to an executable
+projection, independent oracle/control, and receipt.
 
 | Contract | Required evidence |
 |---|---|
@@ -613,7 +619,7 @@ proof obligation.
   context-relative assertions and explicit lifting rules between contexts.
 - [Santos, *A Four-Valued Dynamic Epistemic Logic* (2020)][evidence]:
   evidence can be incomplete or conflicting while remaining distinct from the
-  facts it concerns. The proposed support-pair record does not adopt the entire
+  facts it concerns. The specified support-pair record does not adopt the entire
   logic or its modal operators.
 - [Snodgrass et al., *A TSQL2 Tutorial* (1994)][temporal]: effective/valid time
   and recording/transaction time as separate temporal coordinates. Actor
