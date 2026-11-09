@@ -1,6 +1,6 @@
-# Act-registry comparison exporter
+# scripts.ExportIDAActRegistry in Plain English
 
-Companion to [ExportIDAActRegistry](../../../formal/lean/scripts/ExportIDAActRegistry.lean).
+Source: [`formal/lean/scripts/ExportIDAActRegistry.lean`](../../../formal/lean/scripts/ExportIDAActRegistry.lean)
 
 The executable prints `family,x,y,z,code,baseIssue` followed by the actual
 resolver/admission outputs. Registry cases are ordered by registry variant then

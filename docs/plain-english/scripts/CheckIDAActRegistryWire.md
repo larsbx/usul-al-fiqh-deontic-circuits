@@ -1,6 +1,6 @@
-# Act-registry JSON comparison adapter
+# scripts.CheckIDAActRegistryWire in Plain English
 
-Companion to [CheckIDAActRegistryWire](../../../formal/lean/scripts/CheckIDAActRegistryWire.lean).
+Source: [`formal/lean/scripts/CheckIDAActRegistryWire.lean`](../../../formal/lean/scripts/CheckIDAActRegistryWire.lean)
 
 After the host verifies canonical bytes and definition digests, this executable
 parses every registry/envelope field into the actual Lean structures. It calls

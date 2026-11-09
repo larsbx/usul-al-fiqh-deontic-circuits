@@ -1,6 +1,6 @@
-# Fixed act-registry proof contracts
+# UsulTest.IDAActRegistryContracts in Plain English
 
-Companion to [UsulTest.IDAActRegistryContracts](../../../formal/lean/UsulTest/IDAActRegistryContracts.lean).
+Source: [`formal/lean/UsulTest/IDAActRegistryContracts.lean`](../../../formal/lean/UsulTest/IDAActRegistryContracts.lean)
 
 Each wrapper states a required proposition explicitly and assigns the
 corresponding core or fixture theorem to that type. Keeping a theorem name while

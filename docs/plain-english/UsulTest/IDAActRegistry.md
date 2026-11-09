@@ -1,6 +1,6 @@
-# Act-registry verification cases
+# UsulTest.IDAActRegistry in Plain English
 
-Companion to [UsulTest.IDAActRegistry](../../../formal/lean/UsulTest/IDAActRegistry.lean).
+Source: [`formal/lean/UsulTest/IDAActRegistry.lean`](../../../formal/lean/UsulTest/IDAActRegistry.lean)
 
 These synthetic fixtures exercise the actual registry resolver and bound source
 gate. They provide 14 registry variants, 36 description variants, 10 binding

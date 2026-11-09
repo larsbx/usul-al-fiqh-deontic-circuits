@@ -1,6 +1,6 @@
-# Checked act registry and source bindings
+# Usul.Typing.IDAActRegistry in Plain English
 
-Companion to [Usul.Typing.IDAActRegistry](../../../../formal/lean/Usul/Typing/IDAActRegistry.lean).
+Source: [`formal/lean/Usul/Typing/IDAActRegistry.lean`](../../../../formal/lean/Usul/Typing/IDAActRegistry.lean)
 
 A performed-action description declares a versioned kind and ordered named
 arguments. This module checks that declaration against a complete registry.
