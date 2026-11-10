@@ -102,3 +102,8 @@ ida-admission:
 # Signed observation batch replay with exact current omission scope.
 ida-omission-auth:
 	$(PY) formal/check-ida-omission-auth.py
+.PHONY: ida-pilot
+# Reproduce and index the bounded ACT-08 context, admission and signed omission checks.
+ida-pilot:
+	$(PY) formal/test-ida-pilot.py
+	$(PY) formal/check-ida-pilot.py

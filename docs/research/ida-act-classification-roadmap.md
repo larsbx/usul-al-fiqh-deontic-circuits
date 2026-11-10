@@ -755,6 +755,15 @@ explicit state, and a nonhuman damage event follow only when their actual role
 domains and target sorts are defined. A state/event must not be forced through
 `affect` or `perform` for convenience.
 
+**Bounded replay receipt.** Run `make ida-pilot` from a checkout of the
+revision under review, with the pinned Lean and Quint dependencies installed.
+The command reruns the context, admission and signed omission gates. It
+checks their source fingerprints against the checkout and Git revision and
+writes a single index with the SHA-256 of each component report. These
+component checks use distinct fixtures. Their shared revision records
+reproducibility of the bounded checks, while the integrated ACT-08 exit
+below still requires a shared application trace.
+
 **Exit.** All core obligations have exact-head Lean receipts, independent bounded
 Quint comparison, required negative controls, source/definition/profile binding,
 and reproduction instructions. Report declared bounds, unsupported cases,
