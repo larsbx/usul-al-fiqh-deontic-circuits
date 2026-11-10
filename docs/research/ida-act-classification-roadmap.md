@@ -230,7 +230,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review implemented; core completion gate remains open |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review and [signed omission observation replay](ida-omission-coverage.md) implemented. Core completion gate remains open. |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -704,6 +704,15 @@ fixture report data and makes no source-admission decision. Run
 `make ida-context` for the Lean audit, independent bounded Quint comparison,
 and mutation controls. The remaining integrated exit below is still open.
 
+The [omission observation slice](ida-omission-coverage.md) checks a half-open
+opportunity, exact observation scope and coverage of both modeled performance
+modes. It separates a covered view with no completion from incomplete
+coverage and an open effective window. The `make ida-context` gate compares
+these results independently. The `make ida-omission-auth` gate checks that a
+whole observation batch is signed under a separately configured catalog pin
+and matches the resolved omission scope. The fixture uses test keys. Concrete
+evidence admission and the integrated pilot exit remain separate.
+
 **Core structural examples.**
 
 1. The restricted `transfer.pay_zakat` candidate: payer, recipient, and transferred
@@ -745,6 +754,15 @@ an always-rejecting adapter does not meet this pilot's exit.
 explicit state, and a nonhuman damage event follow only when their actual role
 domains and target sorts are defined. A state/event must not be forced through
 `affect` or `perform` for convenience.
+
+**Bounded replay receipt.** Run `make ida-pilot` from a checkout of the
+revision under review, with the pinned Lean and Quint dependencies installed.
+The command reruns the context, admission and signed omission gates. It
+checks their source fingerprints against the checkout and Git revision and
+writes a single index with the SHA-256 of each component report. These
+component checks use distinct fixtures. Their shared revision records
+reproducibility of the bounded checks, while the integrated ACT-08 exit
+below still requires a shared application trace.
 
 **Exit.** All core obligations have exact-head Lean receipts, independent bounded
 Quint comparison, required negative controls, source/definition/profile binding,

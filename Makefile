@@ -6,7 +6,7 @@ TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools
 
 .PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
-all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation ida-registry ida-context ida-substitution ida-projection ida-semantics ida-admission
+all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation ida-registry ida-context ida-substitution ida-projection ida-semantics ida-admission ida-omission-auth
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
@@ -97,3 +97,13 @@ ida-semantics:
 # ACT-05 exact contextual premise admission and derived receipt replay.
 ida-admission:
 	$(PY) formal/check-ida-admission.py
+
+.PHONY: ida-omission-auth
+# Signed observation batch replay with exact current omission scope.
+ida-omission-auth:
+	$(PY) formal/check-ida-omission-auth.py
+.PHONY: ida-pilot
+# Reproduce and index the bounded ACT-08 context, admission and signed omission checks.
+ida-pilot:
+	$(PY) formal/test-ida-pilot.py
+	$(PY) formal/check-ida-pilot.py

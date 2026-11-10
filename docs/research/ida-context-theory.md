@@ -623,6 +623,11 @@ abstention needs an additional intentional relation. Include alternate modes
 of performance, duplicate observations and events exactly at interval boundaries
 in the pilot's declared observation semantics.
 
+The [bounded omission observation model](ida-omission-coverage.md) implements
+that distinction with a half-open interval and two explicit performance modes.
+The observation result depends on exact scoped coverage and a visible report
+set. The model consumes a supplied completeness claim.
+
 Capacity data must be bound to a subject, effective scope and evidence. Reuse
 existing typed gates while specifying how supplied facts are justified.
 Qualified predicates for intention, coercion, ownership, custom or negligence

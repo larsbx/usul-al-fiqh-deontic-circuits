@@ -52,4 +52,24 @@ example (s : Snapshot) : decode (encode s) = some s :=
 example {w : SnapshotWire} {s : Snapshot} (h : decode w = some s) : encode s = w :=
   encode_decode h
 
+example (s : Omission.Scope) (effective cutoff : Nat) (reports : List Omission.Completion)
+    (coverage : Option Omission.Coverage) :
+    Omission.evaluate s effective cutoff reports coverage = .coveredNoCompletion ↔
+      reports.any (·.malformed s cutoff) = false ∧
+      reports.any (·.matches s effective cutoff) = false ∧
+      s.opportunity.closesAt ≤ effective ∧ Omission.Coverage.Complete s cutoff coverage :=
+  Omission.covered_iff s effective cutoff reports coverage
+
+example (s : Omission.Scope) (effective cutoff : Nat) (reports : List Omission.Completion)
+    (coverage : Option Omission.Coverage) (r : Omission.Completion) (h : cutoff < r.recordedAt) :
+    Omission.evaluate s effective cutoff (reports ++ [r]) coverage =
+      Omission.evaluate s effective cutoff reports coverage :=
+  Omission.unseen_append s effective cutoff reports coverage r h
+
+example {r : ActRegistry.Registry} {catalog : Catalog} {expected : Snapshot}
+    {reports : List Omission.Completion} {coverage : Option Omission.Coverage}
+    {result : Option Omission.Outcome}
+    (h : Omission.review r catalog expected reports coverage = .ok result) :
+    resolve r catalog expected = .ok expected := Omission.review_current h
+
 end UsulTest.IDAContextContracts
