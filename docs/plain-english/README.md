@@ -93,6 +93,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.IDAActRegistry` | [Usul/Typing/IDAActRegistry.md](Usul/Typing/IDAActRegistry.md) | pending |
 | `Usul.Typing.IDAContext` | [Usul/Typing/IDAContext.md](Usul/Typing/IDAContext.md) | pending |
 | `Usul.Typing.IDAOmission` | [Usul/Typing/IDAOmission.md](Usul/Typing/IDAOmission.md) | pending |
+| `Usul.Typing.IDAOmissionWire` | [Usul/Typing/IDAOmissionWire.md](Usul/Typing/IDAOmissionWire.md) | pending |
 | `Usul.Typing.IDASubstitution` | [Usul/Typing/IDASubstitution.md](Usul/Typing/IDASubstitution.md) | pending |
 | `Usul.Typing.IDAAdmission` | [Usul/Typing/IDAAdmission.md](Usul/Typing/IDAAdmission.md) | pending |
 | `Usul.Typing.IDAJudgment` | [Usul/Typing/IDAJudgment.md](Usul/Typing/IDAJudgment.md) | pending |
@@ -174,6 +175,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | Module | Companion | Doc |
 | --- | --- | --- |
 | `scripts.CheckIDAActRegistryWire` | [scripts/CheckIDAActRegistryWire.md](scripts/CheckIDAActRegistryWire.md) | pending |
+| `scripts.CheckIDAOmissionWire` | [scripts/CheckIDAOmissionWire.md](scripts/CheckIDAOmissionWire.md) | pending |
 | `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |
 | `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
 | `scripts.ExportIDAActRegistry` | [scripts/ExportIDAActRegistry.md](scripts/ExportIDAActRegistry.md) | pending |
