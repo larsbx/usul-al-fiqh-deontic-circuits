@@ -15,7 +15,7 @@ spec.loader.exec_module(gate)
 
 ROOT = gate.ROOT
 WIRE = "Usul.Typing.IDAOmissionWire"
-FIXTURE = "UsulTest.IDAContext"
+FIXTURE = "UsulTest.IDAPilot"
 OUTPUT = ROOT / ".cache/ida-omission-auth"
 PROOFS = {"Usul.IDA.Omission.Wire." + name for name in (
     "scope_roundtrip", "scope_injective", "decodeView_exact", "review_exact",

@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-CHECKS = ("context", "admission", "omission-auth")
+CHECKS = ("context", "admission", "omission-auth", "pilot-trace")
 OUTPUT = ROOT / ".cache/ida-pilot/report.json"
 
 
@@ -73,7 +73,7 @@ def main():
 
     report = {"schema": "usul.ida.pilot.verification.v1", "status": "passed",
               "revision": revision, "source_sha256": inputs, "components": components,
-              "boundary": "Bounded component replay only. ACT-08 integrated exit remains open."}
+              "boundary": "Bounded shared application trace and component replay. ACT-08 full exit remains open."}
     temporary = OUTPUT.with_suffix(".tmp")
     temporary.write_text(json.dumps(report, indent=2) + "\n")
     temporary.replace(OUTPUT)

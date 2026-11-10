@@ -20,11 +20,12 @@ function lean(scenario, text) {
     'scripts/CheckIDAOmissionWire.lean', scenario], {
     cwd: new URL('./lean/', import.meta.url),
     input: text,
-    encoding: 'utf8', timeout: 30_000,
+    encoding: 'utf8', timeout: 60_000,
   }));
 }
 
 const template = lean('template');
+const pilotTemplate = lean('pilot-template');
 const direct = { mode: 'direct', occurredAt: 10, recordedAt: 10 };
 const recordedLate = { ...direct, occurredAt: 11, recordedAt: 14 };
 const coverage = template.coverage;
@@ -87,6 +88,8 @@ const withReports = (...reports) => ({ ...template, reports });
 
 try {
   await authenticated('closed_complete', template, 'closed', outcome('coveredNoCompletion'));
+  await authenticated('pilot_destination', pilotTemplate, 'pilot', outcome('coveredNoCompletion'));
+  await authenticated('pilot_unrelated_batch', template, 'pilot', failure('wrongScope'));
   await authenticated('open', template, 'open', outcome('pending'));
   await authenticated('direct_completion', withReports(direct), 'closed', outcome('completionObserved'));
   await authenticated('alternate_completion', withReports({ ...direct, mode: 'alternate' }),

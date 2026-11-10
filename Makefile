@@ -103,7 +103,12 @@ ida-admission:
 ida-omission-auth:
 	$(PY) formal/check-ida-omission-auth.py
 .PHONY: ida-pilot
-# Reproduce and index the bounded ACT-08 context, admission and signed omission checks.
+# Reproduce and index the bounded ACT-08 component and shared trace checks.
 ida-pilot:
 	$(PY) formal/test-ida-pilot.py
 	$(PY) formal/check-ida-pilot.py
+
+.PHONY: ida-pilot-trace
+# Shared synthetic repayment application and exact Lean–Quint comparison.
+ida-pilot-trace:
+	$(PY) formal/check-ida-pilot-trace.py
