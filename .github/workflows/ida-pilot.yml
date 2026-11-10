@@ -1,0 +1,56 @@
+name: IDA bounded ACT-08 pilot
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ida-*.yml'
+      - 'Makefile'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'formal/check-ida*'
+      - 'formal/test-ida-pilot.py'
+      - 'formal/ida-*.mjs'
+      - 'formal/ida-act-registry-wire.py'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/fixtures/ida-source-auth/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shared-pilot:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Verify the revision-bound pilot
+        run: make ida-pilot
+      - name: Retain pilot evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-pilot-verification
+          path: |
+            .cache/ida-pilot/
+            .cache/ida-pilot-trace/
+            .cache/ida-context/
+            .cache/ida-admission/
+            .cache/ida-omission-auth/
+          include-hidden-files: true
+          if-no-files-found: error
