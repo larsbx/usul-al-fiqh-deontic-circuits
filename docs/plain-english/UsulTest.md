@@ -26,3 +26,8 @@ root compiled audit, whose exact module-coverage requirement remains unchanged.
 One import that runs the whole test suite.
 
 The umbrella includes `UsulTest.IDADerivation` and `UsulTest.IDADerivationContracts` for synthetic derivation scenarios and fixed proposition witnesses.
+
+`UsulTest.IDACaseWorkbench` adds the source-bound review fixture and controls
+for missing/conflicting reports, empty/incompatible histories, changed
+destination authority, and reuse based only on act kind. Its proof inventory
+participates in the same whole-core audit.

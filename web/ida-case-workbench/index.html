@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>IDA · Case review</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to case review</a>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="brand" href="./" aria-label="IDA case review home"><span class="brand-mark" aria-hidden="true">I</span><span>IDA <span class="brand-divider">/</span> Case review</span></a>
+        <div class="perspective-control">
+          <label for="perspective">Review perspective</label>
+          <select id="perspective"><option value="adjudicator">Adjudicator</option><option value="mufti">Mufti</option></select>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <div id="loading" class="load-state" role="status"><span class="eyebrow">Preparing the dossier</span><h1>Reading the generated IDA replay.</h1><p>The source, context, and proof record travel together.</p></div>
+      <div id="load-error" class="load-state error-state" role="alert" hidden><span class="eyebrow">Dossier unavailable</span><h1>Generate and serve the workbench.</h1><p id="load-error-detail"></p><p>Run <code>make ida-case-workbench</code> from the repository, then <code>python3 -m http.server 8765 --bind 127.0.0.1 --directory .cache/ida-case-workbench</code>. This page loads <code>./dossier.json</code> and <code>./verification.json</code> from the same local server.</p><p>A missing, altered, or incompatible package is not treated as a successful replay.</p></div>
+
+      <div id="workbench" hidden>
+        <section class="case-heading" aria-labelledby="case-title">
+          <div><p class="eyebrow">Evidence before judgment</p><h1 id="case-title"></h1><p id="fixture-scope" class="lede"></p></div>
+          <div class="case-tag"><span class="status-dot" aria-hidden="true"></span>Synthetic scenario</div>
+        </section>
+
+        <div class="boundary-banner" role="note"><strong>Published test keys · synthetic evidence</strong><span>This fixture demonstrates the protocol. Its assertions are not evidence of a real event. The selected review perspective changes presentation only.</span></div>
+
+        <section class="replay-strip" aria-label="Dossier binding and verification">
+          <div><span class="field-label">Verification</span><strong id="verification-label"></strong><span class="subtle">Replayed at generation; no live trust check</span></div>
+          <div><span class="field-label">Implementation revision</span><code id="revision" class="truncate"></code></div>
+          <div><span class="field-label">Admission receipt SHA-256</span><code id="receipt-hash" class="truncate"></code></div>
+          <div><span class="field-label">Human decision</span><strong>Not issued</strong><span class="subtle">Review and draft notes only</span></div>
+        </section>
+
+        <nav class="view-nav" aria-label="Workbench views"><button id="dossier-view-button" class="view-button active" type="button" aria-pressed="true">Dossier <span id="claim-count" class="count"></span></button><button id="scenario-view-button" class="view-button" type="button" aria-pressed="false">Scenario explorer <span class="unsigned-pill">Hypothetical</span></button></nav>
+
+        <section id="dossier-view" aria-label="Baseline dossier">
+          <div class="work-grid">
+            <aside class="panel claims-panel" aria-labelledby="claims-title">
+              <div class="panel-heading"><div><p class="eyebrow">01 / Statements</p><h2 id="claims-title">The case record</h2></div></div>
+              <label for="claim-search" class="sr-only">Search statements</label><input id="claim-search" class="search-input" type="search" placeholder="Find a statement…" autocomplete="off">
+              <div class="filter-row" role="group" aria-label="Statement type"><button type="button" data-claim-filter="all" class="filter-button active" aria-pressed="true">All</button><button type="button" data-claim-filter="premise" class="filter-button" aria-pressed="false">Premises</button><button type="button" data-claim-filter="report" class="filter-button" aria-pressed="false">Reports</button></div>
+              <div id="claims-list" class="claims-list"></div>
+              <p class="panel-footnote">A source assertion, an admitted premise, and a conditional derivation carry different guarantees.</p>
+            </aside>
+
+            <div class="main-column">
+              <section class="panel conclusion-panel" aria-labelledby="conclusion-title"><p class="eyebrow">02 / What the replay establishes</p><div class="section-title-row"><h2 id="conclusion-title"></h2><span id="conclusion-status" class="status-badge"></span></div><p id="conclusion-statement" class="conclusion-statement"></p><h3>Conditions that remain attached</h3><ul id="conclusion-conditions" class="plain-list"></ul><div id="conclusion-limits" class="callout"></div></section>
+              <section class="panel claim-detail-panel" aria-labelledby="claim-detail-title"><div class="panel-heading"><div><p class="eyebrow">Selected statement</p><h2 id="claim-detail-title"></h2></div><span id="claim-detail-status" class="status-badge"></span></div><div id="claim-detail"></div></section>
+              <section class="panel context-panel" aria-labelledby="context-title"><p class="eyebrow">03 / Exact scope</p><h2 id="context-title">Inquiry & context</h2><div id="inquiry-summary"></div><details open><summary>Participants and named roles</summary><div id="party-list" class="party-list"></div></details><details><summary>Context, time, and evidence perspective</summary><dl id="context-list" class="key-value"></dl></details><details><summary>Definitions, interpretation, and policy pins</summary><dl id="pin-list" class="key-value"></dl></details></section>
+            </div>
+
+            <aside class="evidence-column">
+              <section class="panel evidence-panel" aria-labelledby="evidence-title"><p class="eyebrow">04 / Inspect the basis</p><h2 id="evidence-title">Source & proof</h2><div class="evidence-tabs" role="group" aria-label="Evidence type"><button type="button" id="sources-tab" class="filter-button active" aria-pressed="true">Sources</button><button type="button" id="proofs-tab" class="filter-button" aria-pressed="false">Proofs</button></div><label id="evidence-select-label" for="evidence-select" class="field-label">Source record</label><select id="evidence-select" class="full-select"></select><div id="evidence-detail"></div></section>
+              <section class="panel questions-panel" aria-labelledby="questions-title"><p class="eyebrow">05 / For human review</p><h2 id="questions-title">Open questions</h2><div id="questions-list"></div></section>
+            </aside>
+          </div>
+        </section>
+
+        <section id="scenario-view" class="scenario-view" aria-labelledby="scenario-title" hidden>
+          <div class="hypothesis-banner"><strong>Hypothetical exploration · unsigned</strong><span>Selections display precomputed Lean outcomes for this bounded fixture. They do not change the baseline dossier, reuse its admission signature, or establish facts about an actual case.</span></div>
+          <div class="scenario-grid">
+            <section class="panel scenario-controls"><p class="eyebrow">Explore one declared model</p><h2 id="scenario-title">What changes the result?</h2><p id="scenario-description" class="subtle"></p><div id="scenario-selects"></div><button id="reset-scenario" type="button" class="secondary-button">Restore baseline selection</button><p class="panel-footnote">All options come from the generated dossier. This interface neither constructs new premises nor runs a verifier.</p></section>
+            <section class="panel scenario-results" aria-labelledby="scenario-result-title"><p class="eyebrow">Bounded comparison</p><h2 id="scenario-result-title">Baseline and selected scenario</h2><div id="scenario-result" aria-live="polite"></div></section>
+          </div>
+        </section>
+
+        <section class="review-footer">
+          <div class="panel notes-panel"><p class="eyebrow">Human review workspace</p><h2 id="notes-title">Draft adjudication notes</h2><p class="subtle">Draft text only. Copying does not sign, submit, record, or issue a decision. Notes stay in this page until you copy or clear them.</p><label class="sr-only" for="review-notes">Draft review notes</label><textarea id="review-notes" rows="5" placeholder="Record questions, disputed premises, and your reasoning…"></textarea><div class="notes-actions"><button id="copy-notes" class="primary-button" type="button">Copy bound draft notes</button><button id="clear-notes" class="text-button" type="button">Clear</button><span id="copy-status" class="subtle" role="status" aria-live="polite"></span></div><div id="manual-copy" hidden><label for="draft-output" class="field-label">Complete bound draft for manual copy</label><textarea id="draft-output" rows="7" readonly></textarea></div><p class="panel-footnote">The copied draft includes the implementation revision, receipt digest, review perspective, and exact selected scenario coordinates.</p></div>
+          <div class="panel verification-panel"><p class="eyebrow">Generation evidence</p><h2>Replay checks & limits</h2><div id="verification-checks"></div><ul id="verification-limits" class="plain-list subtle"></ul><details id="protocol-details" hidden><summary>Agent protocol operations</summary><div id="protocol-commands"></div></details></div>
+        </section>
+        <footer class="page-footer"><span>IDA · Evidence, context, and conditional inference</span><span id="footer-fixture"></span></footer>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+name: IDA case workbench
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ida-case-workbench.yml'
+      - 'Makefile'
+      - 'formal/lean/**'
+      - 'formal/ida-*.mjs'
+      - 'formal/check-ida*'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/fixtures/ida-source-auth/**'
+      - 'formal/quint/**'
+      - 'web/ida-case-workbench/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Install pinned Lean toolchain manager
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Audit compiled core and verify the case workbench
+        run: make lean ida-case-workbench
+      - name: Retain proof, replay and local interface package
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-case-workbench-verification
+          path: |
+            .cache/lean-axioms/core.json
+            .cache/ida-case-workbench/
+            .cache/ida-case-workbench-formal/
+            .cache/ida-case-workbench-host/
+            .cache/ida-pilot-trace/
+          include-hidden-files: true
+          if-no-files-found: error
