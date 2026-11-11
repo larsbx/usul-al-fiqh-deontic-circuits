@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/agency.yml'
       - 'Makefile'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
       - 'formal/check-agency-sources.mjs'
       - 'formal/check-agency-axioms.mjs'
       - 'formal/lean/**'
@@ -19,6 +21,8 @@ on:
     paths:
       - '.github/workflows/agency.yml'
       - 'Makefile'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
       - 'formal/check-agency-sources.mjs'
       - 'formal/check-agency-axioms.mjs'
       - 'formal/lean/**'

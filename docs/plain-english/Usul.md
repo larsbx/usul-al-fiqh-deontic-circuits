@@ -18,9 +18,15 @@ The root of the uṣūl al-fiqh (legal theory) kernel. Importing `Usul` brings i
 - **The ḥadīth seam**: `Usul.Seam`, the only edge into the ḥadīth track.
 - **Types**: `Usul.Typing`, `Usul.Typing.Encoders`, `Usul.Typing.Relations`, `Usul.Typing.Answers`, `Usul.DerivedTypes`.
 - **Categories**: `Usul.Cat`, which gathers the category-theory submodules.
+- **Native fixtures**: `Usul.Fixtures.Runner`, `Sheaf`, `Fatwa`, and `Typing` keep the migrated regression expectations in the compiled audit. These downstream fixture models do not supply legal premises or alter the contextual admission rules.
 
 ## In one line
 
 One import gives the whole formal kernel of legal theory, from the five rulings to the category-theory specification layer.
 
 The umbrella includes `Usul.Typing.IDADerivation`, which evaluates source-bound required-premise trees under explicitly supplied trust inputs.
+
+It also includes `Usul.Typing.IDACaseWorkbench`, whose review view retains the
+checked contextual receipt, exact premises, and both report signs. Its
+conditional soundness theorem still requires the premises to hold in the
+history; it does not issue a human ruling.

@@ -34,4 +34,17 @@ import UsulTest.IDADerivation
 import UsulTest.IDADerivationContracts
 import UsulTest.IDAActRegistry
 import UsulTest.IDAActRegistryContracts
+import UsulTest.IDAContext
+import UsulTest.IDAContextContracts
+import UsulTest.IDASubstitution
+import UsulTest.IDASubstitutionContracts
+import UsulTest.IDAProjection
+import UsulTest.IDAProjectionContracts
+import UsulTest.IDASemantics
+import UsulTest.IDASemanticsContracts
+import UsulTest.IDAAdmission
+import UsulTest.IDAPilot
+import UsulTest.IDAPremiseIngestion
+import UsulTest.IDACaseWorkbench
+import UsulTest.IDAZakatStructure
 import UsulTest.Fixtures.Contracts

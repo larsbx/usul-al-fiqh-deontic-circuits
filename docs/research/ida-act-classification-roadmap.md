@@ -4,8 +4,9 @@
 
 **Design status: accepted.** The project owner accepted the context theory and
 this implementation roadmap on 2026-11-09. ACT-01 now has a minimal
-[registry and bound-source implementation](ida-act-registry.md); remaining core
-work is planned implementation, and conditional extensions retain their stated triggers. Design
+[registry and bound-source implementation](ida-act-registry.md) and a
+[ground context implementation](ida-context-foundation.md). Remaining core work
+is planned, and conditional extensions retain their stated triggers. Design
 acceptance is recorded separately from implementation and proof completion.
 
 **Implementation status.** ACT-00 is integrated on main through [PR #144][pr144] at
@@ -25,6 +26,12 @@ integration: typed variables and conditional premises, grounded evidence and
 inquiry snapshots, semantic histories, and temporal/authority changes have
 distinct interfaces. Its required contracts belong to the ACT packages below;
 the note adds no implemented calculus or admitted interpretation.
+Its [construction-level integration](ida-context-theory.md#4-categorical-integration-and-transport)
+now states the category of descriptions over contexts, explicit interpretation
+naturality, separate migration gates, and the
+[integration theorem sequence](ida-context-theory.md#integration-theorem-sequence).
+These refine accepted contracts while implementation and receipt status remain
+separately tracked.
 
 The [native Lean fixture migration](../architecture/lean-fixture-migration.md)
 moves the contextual/sheaf, fatwa, and typed-routing regression expectations
@@ -222,14 +229,14 @@ conditional extensions and do not block the first core pilot.
 | Package | Deliverable | Entry prerequisites | State |
 |---|---|---|---|
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
-| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Implemented perform-description fragment](ida-act-registry.md); exact-revision gate `make ida-registry` |
-| ACT-02 | Context category and substitution laws | ACT-01 | Planned implementation; first categorical core |
-| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Planned implementation |
-| ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | Planned implementation |
-| ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | Planned implementation |
+| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
+| ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
+| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [First exact frame proof and loss witnesses](ida-projection.md) with `make ida-projection` |
+| ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | [Fixed-history semantic fragment](ida-semantics.md) with `make ida-semantics`; sourced interpretation and migration pending |
+| ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Planned implementation; core completion gate |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review, [signed omission observation replay](ida-omission-coverage.md), authenticated synthetic premise ingestion, and the [case workbench](ida-case-workbench.md) implemented. General case intake and the core completion gate remain open. |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -361,6 +368,10 @@ requirements remain as specified above, with no new graph-based inference rule.
 
 ### ACT-02 — Prove the context and substitution calculus
 
+The [implemented fragment](ida-substitution.md) covers typed variables and
+rigid references, registered descriptions, inquiry grounding, and a
+conjunction calculus with checked premise arrows.
+
 **Purpose.** Make reusable schematic descriptions safe to instantiate.
 
 **Mathematical contract.** A context \(\Gamma\) declares typed formal variables.
@@ -377,6 +388,12 @@ variables of \(\Gamma\). A description reindexes as
 First prove the substitution category's identity, associativity, and typing
 laws; then prove the description action. The presheaf name is justified by
 these laws, not by a naming convention.
+
+The [category of elements](ida-context-theory.md#descriptions-over-their-contexts)
+has objects \((\Gamma,d)\) and arrows supplied by substitutions with
+\(e=d[\sigma]\). Its projection to contexts records the unique reindexing
+lift. This is a direct reading of the simple presheaf laws; a generic fibration
+library remains outside the core acceptance requirements.
 
 The [context calculus](ida-context-theory.md#4-categorical-integration-and-transport)
 also specifies arrows between conditional-premise contexts. Their identity
@@ -413,6 +430,11 @@ where appropriate but is distinguished from the original target.
 
 ### ACT-03 — Account for forgetting and scoped equivalence
 
+The [first implemented projection](ida-projection.md) proves an exact frame law
+for one synthetic evaluator. It checks an appended exception, loss of
+occurrence identity, equal answers with unequal dependencies, and stale
+bindings despite scoped equivalence.
+
 **Purpose.** Specify what each representation map preserves, forgets, or can
 reflect.
 
@@ -432,6 +454,14 @@ its inhabited-codomain requirement where used. Construct act-specific
 counterexamples in which forgetting a qualification identifies descriptions
 distinguished by a declared toy interpretation. The example proves a modeling
 failure mode; it must not invent a fiqh ruling about coercion or another case.
+
+Keep two reuse limits explicit: `Reads` compares information dependence and
+applicability, not equality of encoder answers, as `Reads.mapRun` illustrates.
+`Factor.unattested_free` shows that consistent supplied cases can leave an
+unseen feature class unconstrained. Add output-relabeling and unattested-class
+controls alongside the existing qualification-loss counterexample; their
+[context contracts](ida-context-theory.md#complete-dependencies) specify the
+separate obligations.
 
 **Deliverables.**
 
@@ -476,6 +506,10 @@ previous positive reads while changing the answer.
 
 ### ACT-04 — Interpret supported fragments and migrate schemas
 
+The [first semantic fragment](ida-semantics.md) proves fixed-history
+naturality, satisfaction under substitution, conditional soundness and
+finite nonvacuity for the synthetic inquiry.
+
 **Purpose.** Give supported syntax a specified meaning and make changes of
 representation checkable.
 
@@ -490,6 +524,15 @@ Require
 \Rightarrow\mathrm{Supported}_\Delta(d[\sigma])\),
 or restrict the substitution category/domain explicitly. Both sides of a
 semantic commutation equation must be defined.
+
+Use the explicit [description naturality construction](ida-context-theory.md#semantic-interpretation):
+substitution pulls descriptions from \(\Gamma\) to \(\Delta\), while its
+semantic assignment map goes from \(\operatorname{Val}(\Delta)\) to
+\(\operatorname{Val}(\Gamma)\). Fix the semantic history in this square.
+Track [description, derivation, and concrete-application migration](ida-context-theory.md#migration-gates)
+as separate gates; a meaning-preserving migration need not pass admission.
+Distinguish structural registry kinds from a
+[classification derived under contextual premises](ida-context-theory.md#structural-kind-and-contextual-classification).
 
 **Deliverables.**
 
@@ -534,6 +577,10 @@ inconsistent selected premises. A finite consistency witness does not establish
 actual-world truth or reflection from a bounded model to all histories.
 
 ### ACT-05 — Transport judgments with explicit evidence
+
+[Bounded implementation and verification](ida-admission.md). The current
+route produces checked contextual formula receipts within one fixed
+interpretation.
 
 **Purpose.** Connect the transformation calculus to the existing typed
 judgment/derivation boundary.
@@ -652,6 +699,26 @@ of appointment. Omission is not an identity transition.
 
 ### ACT-08 — Run the first complete pilot
 
+The bounded agency review now replays a fixed appointment and execution with
+one revocation report and optional explicit notice to agent A. It keeps the
+report cutoff separate from event time and agent awareness. A late report can
+block retrospective replay while the earlier as-known replay remains readable.
+Later effective revocation preserves execution in replay and changes current
+authority according to the selected candidate profile. Tied event times and
+inconsistent notice chronology return an invalid input. The review consumes
+fixture report data and makes no source-admission decision. Run
+`make ida-context` for the Lean audit, independent bounded Quint comparison,
+and mutation controls. The remaining integrated exit below is still open.
+
+The [omission observation slice](ida-omission-coverage.md) checks a half-open
+opportunity, exact observation scope and coverage of both modeled performance
+modes. It separates a covered view with no completion from incomplete
+coverage and an open effective window. The `make ida-context` gate compares
+these results independently. The `make ida-omission-auth` gate checks that a
+whole observation batch is signed under a separately configured catalog pin
+and matches the resolved omission scope. The fixture uses test keys. Concrete
+evidence admission and the integrated pilot exit remain separate.
+
 **Core structural examples.**
 
 1. The restricted `transfer.pay_zakat` candidate: payer, recipient, and transferred
@@ -682,10 +749,53 @@ example. Required controls include absent evidence used as negation, opposing
 reports, an empty compatible-history set, a latent exception and an inadequately
 observed omission. The existing structural examples remain part of the exit.
 
+Follow the [integration theorem sequence](ida-context-theory.md#integration-theorem-sequence)
+and [worked agency trace](ida-context-theory.md#worked-agency-integration-trace).
+Include both revocation effective after an execution and late evidence of
+revocation effective before it. Require a positive nonidentity admitted
+application as well as rejection of absent or mismatched destination evidence;
+an always-rejecting adapter does not meet this pilot's exit.
+
 **Expansion queue.** Prayer, sale, testimony, agency revocation, fasting, an
 explicit state, and a nonhuman damage event follow only when their actual role
 domains and target sorts are defined. A state/event must not be forced through
 `affect` or `perform` for convenience.
+
+**Shared application and replay receipt.** The [guarded repayment trace](ida-pilot-trace.md)
+uses the same exact destination for typed substitution, independent semantic
+assessment, ACT-05 admission, and signed omission review. Its bounded
+controls distinguish missing or mismatched certificates, conflicting guard
+reports, incompatible histories, and incomplete omission observations.
+Its frame example preserves the guard result across an irrelevant report
+append. A matching exception changes that result at the same target.
+`make ida-pilot` indexes the shared trace and component receipts at one
+revision. The full exit still requires the remaining structural examples
+and review.
+
+**Structural zakat receipt.** The restricted `transfer.pay_zakat` candidate
+is checked against the corpus proposal and a fixture-local registry. The
+pilot compares four pairs of identity and swap substitutions and five
+registry cases with Quint. The rigid asset stays fixed. The receipt covers
+role structure and leaves eligibility, amount, ownership, occurrence,
+subject binding, and discharge open.
+
+**Authenticated premise replay.** The [bounded source adapter](ida-premise-ingestion.md)
+authenticates the exact synthetic repayment certificates and preserves the
+independent application grants. It adds restart recovery and duplicate
+rejection in one SQLite database. Its receipts use test authority and bind to
+the exact implementation revision. The other structural examples and their
+integrated evidence remain open.
+
+**Human review interface.** The [case workbench](ida-case-workbench.md) consumes
+this exact synthetic fixture through source authentication and receipt replay.
+Its proof-backed view retains the full snapshot, source/destination premise
+occurrences, four report states, and the explicit hypotheses of conditional
+soundness. The local interface and five read-only agent operations expose
+384 hypothetical scenario cells and targeted questions without changing the
+admitted baseline. `make ida-case-workbench` audits the presentation laws,
+independent Quint parity and adversarial host controls. General narrative
+intake, evidence-policy selection and authenticated human decisions are
+separate CW-01–CW-05 obligations, not a claim that the full ACT-08 exit is closed.
 
 **Exit.** All core obligations have exact-head Lean receipts, independent bounded
 Quint comparison, required negative controls, source/definition/profile binding,
@@ -698,6 +808,10 @@ decision service.
 
 **Trigger.** ACT-02/ACT-04 reveals a concrete dependency or transport requirement
 that the simple context/presheaf interface cannot express satisfactorily.
+
+The elementary category-of-elements reading of ACT-02's description presheaf
+does not itself trigger this extension. Richer dependent semantics or a reusable
+fibration library need the concrete justification specified here.
 
 Possible work includes indexed categories, comprehension/fibration interfaces,
 dependent semantic families, or proven quotient interfaces. State base and fiber

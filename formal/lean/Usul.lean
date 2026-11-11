@@ -37,6 +37,12 @@ import Usul.Mahall
 import Usul.Agency
 import Usul.Typing.IDADerivation
 import Usul.Typing.IDAActRegistry
+import Usul.Typing.IDAContext
+import Usul.Typing.IDAOmission
+import Usul.Typing.IDASubstitution
+import Usul.Typing.IDAAdmission
+import Usul.Typing.IDAPremiseIngestion
+import Usul.Typing.IDACaseWorkbench
 import Usul.Fixtures.Runner
 import Usul.Fixtures.Sheaf
 import Usul.Fixtures.Fatwa
