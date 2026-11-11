@@ -118,3 +118,7 @@ ida-premise-ingestion:
 	rm -f .cache/ida-premise-ingestion/report.json
 	cd formal/lean && lake build UsulTest.IDAPremiseIngestion
 	node formal/check-ida-premise-ingestion.mjs
+
+.PHONY: ida-zakat-structure
+ida-zakat-structure:
+	$(PY) formal/check-ida-zakat-structure.py

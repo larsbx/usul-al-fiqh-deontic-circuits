@@ -766,6 +766,13 @@ append. A matching exception changes that result at the same target.
 revision. The full exit still requires the remaining structural examples
 and review.
 
+**Structural zakat receipt.** The restricted `transfer.pay_zakat` candidate
+is checked against the corpus proposal and a fixture-local registry. The
+pilot compares four pairs of identity and swap substitutions and five
+registry cases with Quint. The rigid asset stays fixed. The receipt covers
+role structure and leaves eligibility, amount, ownership, occurrence,
+subject binding, and discharge open.
+
 **Authenticated premise replay.** The [bounded source adapter](ida-premise-ingestion.md)
 authenticates the exact synthetic repayment certificates and preserves the
 independent application grants. It adds restart recovery and duplicate

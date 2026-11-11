@@ -756,6 +756,10 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   The trace compares conflicting and incomplete inputs with Quint. The
   `make ida-pilot` gate binds this trace and the component receipts to one
   revision. The full pilot exit remains open.
+- **ACT-08 structural zakat transfer:** The restricted candidate has a local
+  typed registry fixture and a Lean–Quint receipt in `make ida-pilot`. The
+  replay checks the candidate signature, role-preserving substitution, and
+  rejection of stale or ill-typed descriptions.
 - **ACT-08 premise ingestion:** [Source-bound repayment replay](research/ida-premise-ingestion.md)
   authenticates the four synthetic premise certificates against signed source
   passages and an independently pinned premise authority. It retains the
