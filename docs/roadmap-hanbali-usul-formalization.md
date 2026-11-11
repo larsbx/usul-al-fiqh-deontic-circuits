@@ -756,6 +756,12 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   The trace compares conflicting and incomplete inputs with Quint. The
   `make ida-pilot` gate binds this trace and the component receipts to one
   revision. The full pilot exit remains open.
+- **ACT-08 premise ingestion:** [Source-bound repayment replay](research/ida-premise-ingestion.md)
+  authenticates the four synthetic premise certificates against signed source
+  passages and an independently pinned premise authority. It retains the
+  interpretation, context, and application checks and persists a replayable
+  receipt in SQLite. Run `make ida-premise-ingestion` for the exact-revision
+  Lean and bounded Quint comparison and host recovery controls.
 - **Core integration:** this integration collects the bounded ACT-01 through
   ACT-05 stack and the shared ACT-08 trace above ACT-00. Pure projection and
   semantics live under `Usul.Typing`; admission and the pilot consume that layer.
@@ -769,8 +775,9 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 - **State:** the context theory and roadmap are accepted. Verification receipts
   remain bound to the heads and scopes they checked; each integration requires
   its own replay. The bounded core and shared trace do not complete the full
-  ACT-08 exit. Cross-profile migration, authenticated contextual premise
-  ingestion and persistent admission receipts retain their separate contracts.
+  ACT-08 exit. Cross-profile migration and general authenticated ingestion
+  remain separate work. The bounded SQLite receipt covers one synthetic
+  application per implementation revision and database.
 
 ---
 
