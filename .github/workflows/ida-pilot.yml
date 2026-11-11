@@ -42,12 +42,15 @@ jobs:
         run: npm ci
       - name: Verify the revision-bound pilot
         run: make ida-pilot
+      - name: Verify source-bound premise ingestion
+        run: make ida-premise-ingestion
       - name: Retain pilot evidence
         uses: actions/upload-artifact@v4
         with:
           name: ida-pilot-verification
           path: |
             .cache/ida-pilot/
+            .cache/ida-premise-ingestion/
             .cache/ida-pilot-trace/
             .cache/ida-context/
             .cache/ida-admission/

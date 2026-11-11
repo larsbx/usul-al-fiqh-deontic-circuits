@@ -766,6 +766,13 @@ append. A matching exception changes that result at the same target.
 revision. The full exit still requires the remaining structural examples
 and review.
 
+**Authenticated premise replay.** The [bounded source adapter](ida-premise-ingestion.md)
+authenticates the exact synthetic repayment certificates and preserves the
+independent application grants. It adds restart recovery and duplicate
+rejection in one SQLite database. Its receipts use test authority and bind to
+the exact implementation revision. The other structural examples and their
+integrated evidence remain open.
+
 **Exit.** All core obligations have exact-head Lean receipts, independent bounded
 Quint comparison, required negative controls, source/definition/profile binding,
 and reproduction instructions. Report declared bounds, unsupported cases,
