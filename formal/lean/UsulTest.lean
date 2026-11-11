@@ -44,3 +44,4 @@ import UsulTest.IDASemantics
 import UsulTest.IDASemanticsContracts
 import UsulTest.IDAAdmission
 import UsulTest.IDAPilot
+import UsulTest.IDAPremiseIngestion

@@ -112,3 +112,9 @@ ida-pilot:
 # Shared synthetic repayment application and exact Lean–Quint comparison.
 ida-pilot-trace:
 	$(PY) formal/check-ida-pilot-trace.py
+
+.PHONY: ida-premise-ingestion
+ida-premise-ingestion:
+	rm -f .cache/ida-premise-ingestion/report.json
+	cd formal/lean && lake build UsulTest.IDAPremiseIngestion
+	node formal/check-ida-premise-ingestion.mjs
