@@ -4,8 +4,9 @@
 
 **Design status: accepted.** The project owner accepted the context theory and
 this implementation roadmap on 2026-11-09. ACT-01 now has a minimal
-[registry and bound-source implementation](ida-act-registry.md); remaining core
-work is planned implementation, and conditional extensions retain their stated triggers. Design
+[registry and bound-source implementation](ida-act-registry.md) and a
+[ground context implementation](ida-context-foundation.md). Remaining core work
+is planned, and conditional extensions retain their stated triggers. Design
 acceptance is recorded separately from implementation and proof completion.
 
 **Implementation status.** ACT-00 is integrated on main through [PR #144][pr144] at
@@ -222,14 +223,14 @@ conditional extensions and do not block the first core pilot.
 | Package | Deliverable | Entry prerequisites | State |
 |---|---|---|---|
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
-| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Implemented perform-description fragment](ida-act-registry.md); exact-revision gate `make ida-registry` |
-| ACT-02 | Context category and substitution laws | ACT-01 | Planned implementation; first categorical core |
-| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | Planned implementation |
-| ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | Planned implementation |
-| ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | Planned implementation |
+| ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
+| ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
+| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [First exact frame proof and loss witnesses](ida-projection.md) with `make ida-projection` |
+| ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | [Fixed-history semantic fragment](ida-semantics.md) with `make ida-semantics`; sourced interpretation and migration pending |
+| ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Planned implementation; core completion gate |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review and [signed omission observation replay](ida-omission-coverage.md) implemented. Core completion gate remains open. |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -361,6 +362,10 @@ requirements remain as specified above, with no new graph-based inference rule.
 
 ### ACT-02 — Prove the context and substitution calculus
 
+The [implemented fragment](ida-substitution.md) covers typed variables and
+rigid references, registered descriptions, inquiry grounding, and a
+conjunction calculus with checked premise arrows.
+
 **Purpose.** Make reusable schematic descriptions safe to instantiate.
 
 **Mathematical contract.** A context \(\Gamma\) declares typed formal variables.
@@ -418,6 +423,11 @@ declared finite domain. A changed same-sort role assignment remains representabl
 where appropriate but is distinguished from the original target.
 
 ### ACT-03 — Account for forgetting and scoped equivalence
+
+The [first implemented projection](ida-projection.md) proves an exact frame law
+for one synthetic evaluator. It checks an appended exception, loss of
+occurrence identity, equal answers with unequal dependencies, and stale
+bindings despite scoped equivalence.
 
 **Purpose.** Specify what each representation map preserves, forgets, or can
 reflect.
@@ -490,6 +500,10 @@ previous positive reads while changing the answer.
 
 ### ACT-04 — Interpret supported fragments and migrate schemas
 
+The [first semantic fragment](ida-semantics.md) proves fixed-history
+naturality, satisfaction under substitution, conditional soundness and
+finite nonvacuity for the synthetic inquiry.
+
 **Purpose.** Give supported syntax a specified meaning and make changes of
 representation checkable.
 
@@ -557,6 +571,10 @@ inconsistent selected premises. A finite consistency witness does not establish
 actual-world truth or reflection from a bounded model to all histories.
 
 ### ACT-05 — Transport judgments with explicit evidence
+
+[Bounded implementation and verification](ida-admission.md). The current
+route produces checked contextual formula receipts within one fixed
+interpretation.
 
 **Purpose.** Connect the transformation calculus to the existing typed
 judgment/derivation boundary.
@@ -675,6 +693,26 @@ of appointment. Omission is not an identity transition.
 
 ### ACT-08 — Run the first complete pilot
 
+The bounded agency review now replays a fixed appointment and execution with
+one revocation report and optional explicit notice to agent A. It keeps the
+report cutoff separate from event time and agent awareness. A late report can
+block retrospective replay while the earlier as-known replay remains readable.
+Later effective revocation preserves execution in replay and changes current
+authority according to the selected candidate profile. Tied event times and
+inconsistent notice chronology return an invalid input. The review consumes
+fixture report data and makes no source-admission decision. Run
+`make ida-context` for the Lean audit, independent bounded Quint comparison,
+and mutation controls. The remaining integrated exit below is still open.
+
+The [omission observation slice](ida-omission-coverage.md) checks a half-open
+opportunity, exact observation scope and coverage of both modeled performance
+modes. It separates a covered view with no completion from incomplete
+coverage and an open effective window. The `make ida-context` gate compares
+these results independently. The `make ida-omission-auth` gate checks that a
+whole observation batch is signed under a separately configured catalog pin
+and matches the resolved omission scope. The fixture uses test keys. Concrete
+evidence admission and the integrated pilot exit remain separate.
+
 **Core structural examples.**
 
 1. The restricted `transfer.pay_zakat` candidate: payer, recipient, and transferred
@@ -716,6 +754,17 @@ an always-rejecting adapter does not meet this pilot's exit.
 explicit state, and a nonhuman damage event follow only when their actual role
 domains and target sorts are defined. A state/event must not be forced through
 `affect` or `perform` for convenience.
+
+**Shared application and replay receipt.** The [guarded repayment trace](ida-pilot-trace.md)
+uses the same exact destination for typed substitution, independent semantic
+assessment, ACT-05 admission, and signed omission review. Its bounded
+controls distinguish missing or mismatched certificates, conflicting guard
+reports, incompatible histories, and incomplete omission observations.
+Its frame example preserves the guard result across an irrelevant report
+append. A matching exception changes that result at the same target.
+`make ida-pilot` indexes the shared trace and component receipts at one
+revision. The full exit still requires the remaining structural examples
+and review.
 
 **Exit.** All core obligations have exact-head Lean receipts, independent bounded
 Quint comparison, required negative controls, source/definition/profile binding,

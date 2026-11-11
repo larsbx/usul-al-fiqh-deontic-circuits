@@ -7,3 +7,6 @@ import Usul.Cat.Deduction
 import Usul.Cat.Institution
 import Usul.Cat.Carriers
 import Usul.Cat.Typing
+import Usul.Cat.IDASubstitution
+import Usul.Cat.IDAProjection
+import Usul.Cat.IDASemantics

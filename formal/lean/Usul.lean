@@ -37,3 +37,7 @@ import Usul.Mahall
 import Usul.Agency
 import Usul.Typing.IDADerivation
 import Usul.Typing.IDAActRegistry
+import Usul.Typing.IDAContext
+import Usul.Typing.IDAOmission
+import Usul.Typing.IDASubstitution
+import Usul.Typing.IDAAdmission

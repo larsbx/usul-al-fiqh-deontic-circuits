@@ -1,0 +1,73 @@
+name: IDA fixed-history contextual semantics
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ida-semantics.yml'
+      - 'Makefile'
+      - 'formal/lean/**'
+      - 'formal/quint/ida-semantics*.qnt'
+      - 'formal/quint/package*.json'
+      - 'formal/check-ida*.py'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ida-semantics.yml'
+      - 'Makefile'
+      - 'formal/lean/**'
+      - 'formal/quint/ida-semantics*.qnt'
+      - 'formal/quint/package*.json'
+      - 'formal/check-ida*.py'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  substitution:
+    name: ACT-04 Lean proofs, Quint comparison, and negative controls
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Verify ACT-04
+        run: make ida-semantics
+      - name: Require exact-head receipt
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          head = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+          report = json.loads(Path(".cache/ida-semantics/report.json").read_text())
+          if (head != os.environ["EXPECTED_HEAD"] or report.get("revision") != head
+                  or report.get("status") != "passed" or report.get("inputs_match_head") is not True):
+              raise SystemExit("ACT-04 receipt does not verify the checked revision")
+          print(f"ACT-04 receipt verifies {head}")
+          PY
+      - name: Retain verification evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-semantics-verification
+          path: .cache/ida-semantics/
+          include-hidden-files: true
+          if-no-files-found: error

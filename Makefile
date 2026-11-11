@@ -6,7 +6,7 @@ TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools
 
 .PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
-all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation ida-registry
+all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation ida-registry ida-context ida-substitution ida-projection ida-semantics ida-admission ida-omission-auth
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
@@ -72,3 +72,43 @@ ida-derivation:
 # Versioned act definitions, exact envelope/source binding, canonical wire, Lean/Quint.
 ida-registry:
 	$(PY) formal/check-ida-act-registry.py
+
+.PHONY: ida-context
+# Ground context snapshots, exact inquiry binding, and Lean/Quint comparison.
+ida-context:
+	$(PY) formal/check-ida-context.py
+
+.PHONY: ida-substitution
+# Typed ACT-02 substitutions, conditional premise arrows, and bounded parity.
+ida-substitution:
+	$(PY) formal/check-ida-substitution.py
+
+.PHONY: ida-projection
+# ACT-03 exact observation projection, counterexamples, and bounded parity.
+ida-projection:
+	$(PY) formal/check-ida-projection.py
+
+.PHONY: ida-semantics
+# ACT-04 fixed-history interpretation, satisfaction, and bounded parity.
+ida-semantics:
+	$(PY) formal/check-ida-semantics.py
+
+.PHONY: ida-admission
+# ACT-05 exact contextual premise admission and derived receipt replay.
+ida-admission:
+	$(PY) formal/check-ida-admission.py
+
+.PHONY: ida-omission-auth
+# Signed observation batch replay with exact current omission scope.
+ida-omission-auth:
+	$(PY) formal/check-ida-omission-auth.py
+.PHONY: ida-pilot
+# Reproduce and index the bounded ACT-08 component and shared trace checks.
+ida-pilot:
+	$(PY) formal/test-ida-pilot.py
+	$(PY) formal/check-ida-pilot.py
+
+.PHONY: ida-pilot-trace
+# Shared synthetic repayment application and exact Lean–Quint comparison.
+ida-pilot-trace:
+	$(PY) formal/check-ida-pilot-trace.py

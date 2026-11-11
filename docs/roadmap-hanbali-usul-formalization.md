@@ -11,13 +11,14 @@
 | `formal/lean-mathlib/` | `**` |
 | `formal/tla/` | `**` |
 | `formal/quint/` | `**` |
-| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `ida-act-registry-wire.py`, `ida-act-registry-mutations.json` |
+| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `check-ida-context.py`, `check-ida-substitution.py`, `check-ida-projection.py`, `check-ida-semantics.py`, `check-ida-admission.py`, `ida-act-registry-wire.py`, `check-ida-pilot.py`, `check-ida-pilot-trace.py`, `test-ida-pilot.py`, `check-ida-omission-auth.py`, `check-ida-omission-auth.mjs`, `ida-omission-auth.mjs`, `ida-act-registry-mutations.json` |
+| `formal/lean/scripts/` | `CheckIDAOmissionWire.lean`, `*IDAActRegistry.lean`, `ExportIDAContext.lean`, `ExportIDASubstitution.lean`, `ExportIDAProjection.lean`, `ExportIDASemantics.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
+| `.github/workflows/` | `ida-omission-auth.yml`, `ida-pilot.yml`, `ida-act-registry.yml`, `ida-substitution.yml`, `ida-projection.yml`, `ida-semantics.yml`, `ida-admission.yml`, `fiqh-act-reference.yml` |
+| `docs/plain-english/Usul/Typing/` | `IDAOmissionWire.md`, `IDAPilot.md`, `IDAActRegistry.md`, `IDAAdmission.md`, `IDAContext.md`, `IDAOmission.md`, `IDASubstitution.md`, `IDAProjection.md`, `IDASemantics.md` |
+| `docs/plain-english/UsulTest/` | `IDAPilot.md`, `IDAActRegistry*.md`, `IDAAdmission.md`, `IDASemantics*.md`, `IDAProjection*.md`, `IDASubstitution*.md`, `IDAContext*.md` |
+| `docs/plain-english/scripts/` | `CheckIDAOmissionWire.md`, `*IDAActRegistry*.md`, `ExportIDAContext.md`, `ExportIDASemantics.md`, `ExportIDAProjection.md`, `ExportIDASubstitution.md` |
 | `formal/fixtures/ida-act-registry/` | `**` |
-| `formal/lean/scripts/` | `*IDAActRegistry.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
-| `docs/plain-english/Usul/Typing/` | `IDAActRegistry.md` |
-| `docs/plain-english/UsulTest/` | `IDAActRegistry*.md` |
-| `docs/plain-english/scripts/` | `*IDAActRegistry*.md` |
-| `.github/workflows/` | `ida-act-registry.yml`, `fiqh-act-reference.yml` |
+| `docs/plain-english/Usul/Cat/` | `IDASubstitution.md`, `IDAProjection.md`, `IDASemantics.md` |
 | `docs/research/` | `agency-source-profile.md`, `agency-pilot.md`, `ida-*.md`, `islamic-deontic-algebra-spec.md` |
 | `docs/architecture/` | `category-theory.md`, `judgement.md`, `mahall.md` |
 | `corpus/citations/` | `**` |
@@ -322,7 +323,7 @@ dependencies; implementation and proof completion retain their own status.
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 | M14 maqāṣid | **readings proved, two encoders, seven candidate cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 plus five source-located al-Mustaṣfā cases (31 conditional istiṣlāḥ completion checks); 0 reviewed new conclusions; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
 | M15 joint agency | **candidate implementation; interpretation review open** | `Usul.Agency`, `UsulTest.Agency`, and `formal/quint/`: two revocation profiles, joint/independent permission, arbitrary-history proofs, 13,312 finite transition inputs, source-byte and passage checks, and semantic negative controls. [Scope and reproduction](research/agency-pilot.md); [source profile](research/agency-source-profile.md). |
-| M16 act classification | **ACT-00 integrated; ACT-01 registry fragment implemented; context design accepted** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01](research/ida-act-registry.md) adds versioned definitions, typed descriptions, exact envelope/source binding, and `make ida-registry`. The [roadmap](research/ida-act-classification-roadmap.md) and [context contracts](research/ida-context-theory.md) are accepted, including explicit description indexing, interpretation naturality, and the [derivation/admission integration sequence](research/ida-context-theory.md#integration-theorem-sequence); later implementation remains planned or conditional. Historical Lean–Quint and candidate-source receipts retain their exact revision and scope; ACT-01 owns versioned registry authority. |
+| M16 act classification | **ACT-00 through ACT-05 bounded implementation integrated; ACT-08 shared bounded trace implemented, full exit open** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01 registry](research/ida-act-registry.md) and [ground context](research/ida-context-foundation.md) supply versioned definitions and exact inquiry binding. [ACT-02](research/ida-substitution.md) supplies typed substitution and conditional premise arrows. [ACT-03](research/ida-projection.md) proves an exact scoped projection, loss witnesses, and its categorical evaluator functor. [ACT-04](research/ida-semantics.md) proves fixed-history interpretation and conditional soundness for the synthetic fragment. Pure projection and semantics remain in the type layer; categorical adapters consume them downstream. [ACT-05](research/ida-admission.md) adds exact contextual premise admission and derived receipt replay. The accepted [context integration sequence](research/ida-context-theory.md#integration-theorem-sequence) separates these results from semantic migration and concrete admission. [ACT-08 omission observations](research/ida-omission-coverage.md) distinguish incomplete and covered views, with bounded authenticated replay of the exact observation batch. The [shared guarded repayment trace](research/ida-pilot-trace.md) binds the exact destination across admission, reports, finite histories, and signed omission replay; the whole-core audit includes all pilot modules. |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -721,10 +722,55 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   metadata through the actual source evaluator. The Lean–Quint and canonical-wire
   gate is `make ida-registry`; qualification truth and binding-authority
   publication have separate contracts.
-- **State:** ACT-00 is on main through #144. Verification receipts remain bound
-  to the heads and scopes they checked; later acceptance requires its own
-  evidence. The context theory and roadmap are accepted; remaining implementation
-  is planned or conditional, with its own contracts and dependencies.
+- **ACT-01 ground context:** [Canonical snapshots and inquiry binding](research/ida-context-foundation.md)
+  check rigid participants, typed predicates, catalog consistency and time identity.
+  The gate is `make ida-context`.
+- **ACT-02 substitution:** [Typed reindexing and premise contexts](research/ida-substitution.md)
+  establish grounding, schema and role preservation, substitution and cut,
+  and the categorical action laws for the bounded calculus. The gate is
+  `make ida-substitution`.
+- **ACT-03 scoped projection:** [Report dependency factorization](research/ida-projection.md)
+  proves an exact frame law for a synthetic evaluator and gives executable
+  counterexamples for the core and kind maps. A fixed compiled contract also
+  checks the evaluator functor from the projection's kernel category to discrete
+  outcomes. The gate is `make ida-projection`.
+- **ACT-04 fixed-history semantics:** [Typed valuations and interpretation](research/ida-semantics.md)
+  establish description naturality, formula satisfaction under substitution,
+  sound conditional reconstruction and a nonvacuous finite assessment.
+  The gate is `make ida-semantics`. Cross-profile translation and concrete
+  evidence admission have separate contracts.
+- **ACT-05 contextual admission:** [Bounded reconstruction](research/ida-admission.md)
+  rechecks exact grounded premises, source authority, and destination policy, then
+  issues a derived formula receipt. The gate is `make ida-admission`.
+- **ACT-08 agency review:** The bounded `make ida-context` gate compares as-known
+  and retrospective execution replay under both candidate revocation profiles.
+  The full pilot exit remains open.
+- **ACT-08 omission observation:** [Scoped coverage](research/ida-omission-coverage.md)
+  checks both performance modes, half-open opportunity bounds, effective time,
+  and report visibility. The signed batch replay checks a pinned source catalog
+  and exact omission scope using `make ida-omission-auth`. The bounded result
+  concerns the issuer's supplied observations.
+- **ACT-08 shared trace:** [Guarded repayment](research/ida-pilot-trace.md)
+  uses one nonidentity application, its exact destination certificates, a
+  nonempty compatible history and separate signed omission observations.
+  The trace compares conflicting and incomplete inputs with Quint. The
+  `make ida-pilot` gate binds this trace and the component receipts to one
+  revision. The full pilot exit remains open.
+- **Core integration:** this integration collects the bounded ACT-01 through
+  ACT-05 stack and the shared ACT-08 trace above ACT-00. Pure projection and
+  semantics live under `Usul.Typing`; admission and the pilot consume that layer.
+  Categorical functors and naturality remain downstream under `Usul.Cat`.
+  Dynamic module closures keep both layers in each affected proof inventory and
+  source fingerprint. The `UsulTest` root imports the shared pilot so the pilot
+  and its typed omission adapter also appear in the whole-core inventory.
+  The shared axiom auditor prepares a cold toolchain before
+  its strict captured version and declaration audits; regression controls retain
+  rejection of setup failures, unexpected audited diagnostics, and extra axioms.
+- **State:** the context theory and roadmap are accepted. Verification receipts
+  remain bound to the heads and scopes they checked; each integration requires
+  its own replay. The bounded core and shared trace do not complete the full
+  ACT-08 exit. Cross-profile migration, authenticated contextual premise
+  ingestion and persistent admission receipts retain their separate contracts.
 
 ---
 
