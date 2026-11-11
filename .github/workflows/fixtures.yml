@@ -66,7 +66,10 @@ jobs:
   independent-reference:
     name: Independent Prolog oracles and migration replay
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
 
     steps:
       - name: Check out source
@@ -75,14 +78,43 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0
 
-      - name: Install SWI-Prolog
+      - name: Record the exact checkout
+        env:
+          FIXTURE_EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
-          sudo apt-get update -q
-          sudo apt-get install -y -q swi-prolog-nox
-          swipl --version
+          mkdir -p "$RUNNER_TEMP/ida-prolog-evidence"
+          head=$(git rev-parse HEAD)
+          printf '%s\n' "$head" | tee "$RUNNER_TEMP/ida-prolog-evidence/revision.txt"
+          test "$head" = "$FIXTURE_EXPECTED_HEAD"
+          git diff --exit-code HEAD
+          cp tests/lean-fixture-reference.json "$RUNNER_TEMP/ida-prolog-evidence/"
+
+      - name: Test provisioning failure and version rejection
+        run: |
+          bash .github/scripts/test-fixture-swipl-provisioning.sh 2>&1 |
+            tee "$RUNNER_TEMP/ida-prolog-evidence/controls.log"
+
+      - name: Provision pinned SWI-Prolog
+        id: prolog
+        run: |
+          bash .github/scripts/provision-fixture-swipl.sh 2>&1 |
+            tee "$RUNNER_TEMP/ida-prolog-evidence/runtime.log"
 
       - name: Independently replay the legacy migration reference
-        run: make fixtures-legacy
+        run: |
+          make fixtures-legacy 2>&1 |
+            tee "$RUNNER_TEMP/ida-prolog-evidence/migration.log"
 
       - name: "Oracle: Prolog mirror of the Lean ḥadīth kernel over the corpus"
-        run: formal/oracle/run_all.sh
+        if: ${{ !cancelled() && steps.prolog.outcome == 'success' }}
+        run: |
+          formal/oracle/run_all.sh 2>&1 |
+            tee "$RUNNER_TEMP/ida-prolog-evidence/oracle.log"
+
+      - name: Retain independent Prolog evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: independent-prolog-verification
+          path: ${{ runner.temp }}/ida-prolog-evidence/
+          if-no-files-found: error
