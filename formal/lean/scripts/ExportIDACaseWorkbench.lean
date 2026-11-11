@@ -1,4 +1,4 @@
-import Lean
+import Lean.Data.Json
 import UsulTest.IDACaseWorkbench
 
 /-! Export computed synthetic fixture observations, not caller-authored verdicts.
