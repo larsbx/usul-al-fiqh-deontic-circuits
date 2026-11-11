@@ -29,7 +29,7 @@ PROOFS = {CORE + name for name in (
     "signs_positive", "signs_negative", "signs_append_irrelevant", "projection_exact",
     "equivalence", "frame", "irrelevant_append", "factors", "same_scope",
     "classify_fallback_iff", "fallback_requires_negative", "projection_preserves_target",
-)} | {FIXTURE + "." + name for name in (
+)} | {"Usul.Cat.IDAProjection.evaluation_functor"} | {FIXTURE + "." + name for name in (
     "hidden_exception", "core_loses_relevant_reports", "kind_loses_occurrence",
     "kind_does_not_factor", "equivalent_receipt_can_be_stale",
     "equal_answers_do_not_imply_equivalence", "explicit_negative_only",

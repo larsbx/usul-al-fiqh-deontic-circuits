@@ -39,6 +39,16 @@ direct search, then proves the factorization through
 The projected evaluator is defined explicitly on the whole codomain. It needs
 no arbitrary extension off the image.
 
+The pure evaluator, dependency projection, and ordinary factorization proofs
+live in [`Usul.Typing.IDAProjection`](../../formal/lean/Usul/Typing/IDAProjection.lean).
+The downstream [`Usul.Cat.IDAProjection`](../../formal/lean/Usul/Cat/IDAProjection.lean)
+applies the existing categorical factorization equivalence: `evaluation_functor`
+constructs a functor from the kernel category of `project rule` to the discrete
+category of outcomes, with object map exactly `evaluate rule`. The fixed gate
+contract checks this statement alongside the ordinary frame law. Admission
+and the shared pilot consume the pure module, preserving the repository's
+qawāʿid → types → categories dependency direction.
+
 Scoped equivalence is equality of these dependencies. The frame theorem
 preserves the exact observation outcome. An append theorem allows new rows
 that fail both exact queries. A new row that matches either query must be

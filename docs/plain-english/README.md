@@ -95,6 +95,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.IDAOmission` | [Usul/Typing/IDAOmission.md](Usul/Typing/IDAOmission.md) | pending |
 | `Usul.Typing.IDAOmissionWire` | [Usul/Typing/IDAOmissionWire.md](Usul/Typing/IDAOmissionWire.md) | pending |
 | `Usul.Typing.IDAPilot` | [Usul/Typing/IDAPilot.md](Usul/Typing/IDAPilot.md) | pending |
+| `Usul.Typing.IDAProjection` | [Usul/Typing/IDAProjection.md](Usul/Typing/IDAProjection.md) | pending |
+| `Usul.Typing.IDASemantics` | [Usul/Typing/IDASemantics.md](Usul/Typing/IDASemantics.md) | pending |
 | `Usul.Typing.IDASubstitution` | [Usul/Typing/IDASubstitution.md](Usul/Typing/IDASubstitution.md) | pending |
 | `Usul.Typing.IDAAdmission` | [Usul/Typing/IDAAdmission.md](Usul/Typing/IDAAdmission.md) | pending |
 | `Usul.Typing.IDAJudgment` | [Usul/Typing/IDAJudgment.md](Usul/Typing/IDAJudgment.md) | pending |

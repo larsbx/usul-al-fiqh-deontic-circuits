@@ -12,6 +12,11 @@ example (p : Rule) (x : Input r) :
 
 example (p : Rule) : Schema.Factors (evaluate (r := r) p) (project p) := factors p
 
+example (p : Rule) :
+    ∃ Φ : Cat.Functor (Cat.ker (project (r := r) p)) (Cat.Cat.disc Outcome),
+      Φ.obj = evaluate p :=
+  Cat.IDAProjection.evaluation_functor p
+
 example (p : Rule) {x y : Input r} (h : Equivalent p x y) :
     evaluate p x = evaluate p y := frame p h
 

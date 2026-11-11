@@ -3,7 +3,12 @@
 This is the first interpreted fragment of the [ACT-04 contract](ida-act-classification-roadmap.md#act-04--interpret-supported-fragments-and-migrate-schemas).
 It reuses the typed syntax and premise arrows from [ACT-02](ida-substitution.md)
 and the synthetic repayment inquiry from [ACT-03](ida-projection.md). The
-implementation is in [`Usul.Cat.IDASemantics`](../../formal/lean/Usul/Cat/IDASemantics.lean).
+pure interpretation and soundness implementation is in
+[`Usul.Typing.IDASemantics`](../../formal/lean/Usul/Typing/IDASemantics.lean).
+The downstream [`Usul.Cat.IDASemantics`](../../formal/lean/Usul/Cat/IDASemantics.lean)
+packages its valuation and meaning functors and naturality laws. Contextual
+admission imports the pure module, so it does not depend on the categorical
+layer. The split preserves the existing declaration names and proofs.
 
 ## Domain and interpretation
 

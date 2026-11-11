@@ -1,4 +1,4 @@
-import Usul.Cat.IDASemantics
+import Usul.Typing.IDASemantics
 
 /-! ACT-05 checks a finite contextual derivation against current source and
 application authority. An authenticated catalog is a trusted input. The receipt

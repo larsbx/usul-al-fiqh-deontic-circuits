@@ -7,6 +7,11 @@ reports on the admitted destination snapshot. The rule requires a positive
 support report and an explicit negative exception report. Opposing reports
 for either query block the guard.
 
+Both the semantic assessment and report projection come from the type layer:
+[`Usul.Typing.IDASemantics`](IDASemantics.md) and
+[`Usul.Typing.IDAProjection`](IDAProjection.md). The pilot does not import their
+downstream categorical adapters.
+
 The history check uses the plan's destination valuation and premises. An
 empty population or a population without a compatible history blocks the
 result. A successful receipt carries the admission proof, exact snapshot,

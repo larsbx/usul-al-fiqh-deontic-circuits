@@ -2,14 +2,23 @@
 
 Source: [`formal/lean/Usul/Cat/IDAProjection.lean`](../../../../formal/lean/Usul/Cat/IDAProjection.lean)
 
-This module proves that a synthetic report evaluator can factor through a
-scope key and four report existence observations. The input uses the existing
-ACT-01 well-formed snapshot type.
+This module gives the synthetic report evaluator a categorical factorization.
+The kernel groupoid relates well-formed inputs exactly when their complete
+projected dependencies agree. The evaluator maps those arrows to equality in
+the discrete category of observation outcomes.
+
+The evaluator, dependency projection, equivalence relation, and exact
+factorization proofs live in
+[`Usul.Typing.IDAProjection`](../Typing/IDAProjection.md). Their existing
+`Usul.IDA.Projection` declaration names remain unchanged. That module uses the
+foundation's ordinary `Schema.Factors` invariance predicate and imports no
+categorical module.
 
 | Theorem | What it establishes |
 |---|---|
-| `signs_positive`, `signs_negative` | Each projected sign agrees with the corresponding search over the full report list. |
-| `projection_exact`, `factors`, `frame` | The complete projection gives the same outcome as the direct evaluator. |
-| `equivalence`, `same_scope`, `projection_preserves_target` | Dependency equality is an equivalence and preserves the scoped inquiry, including its exact structured target. |
-| `signs_append_irrelevant`, `irrelevant_append` | Appending reports outside both queries preserves the observations when the scope is fixed. |
-| `classify_fallback_iff`, `fallback_requires_negative` | The fallback needs an explicit negative exception report along with the rule's other stated conditions. |
+| `evaluation_functor` | There is a functor from the complete dependency projection's kernel to discrete observation outcomes whose object map is exactly the concrete evaluator. |
+
+The proof applies the existing categorical factorization theorem to the
+independently proved `Projection.factors`. It preserves observation outcomes;
+it does not establish snapshot authentication, evidence truth, or ruling
+admission.

@@ -8,6 +8,10 @@ Each application is checked against the current context catalog, exact inquiry
 and frame, exact premise list, authenticated certificates, and an exact policy
 grant. The existing judgment environment decides source and evidence admission.
 
+The conditional semantics comes directly from
+[`Usul.Typing.IDASemantics`](IDASemantics.md). Admission requires its semantic
+laws without depending on the downstream functors or categorical adapters.
+
 | Theorem | What it establishes |
 |---|---|
 | `Plan.reconstructed` | Substitution and cut reconstruct the conditional derivation from the destination premises. |

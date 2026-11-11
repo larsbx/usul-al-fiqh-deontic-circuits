@@ -1,5 +1,5 @@
 import Usul.Typing.IDAAdmission
-import Usul.Cat.IDAProjection
+import Usul.Typing.IDAProjection
 
 /-! The bounded ACT-08 policy combines an exact destination admission, explicit
 guard reports, and a compatible-history assessment. Report lists, semantic

@@ -85,7 +85,7 @@ def snapshot (shape : Fin 15) (mask noise : Nat) : Context.Snapshot :=
       envelope := { s.envelope with context := { s.envelope.context with evidenceRevision := 2 } } }
   { updated with envelope := { updated.envelope with qualifications := rows mask noise } }
 
-/-- The exporter reports invalid shape explicitly. Named controls and the
+/-- The exporter reports malformed input shapes explicitly. Named controls and the
 independent table require the specified finite domain to be well formed. -/
 def input (shape : Fin 15) (mask noise : Nat) : Option (Input registry) :=
   let s := snapshot shape mask noise
