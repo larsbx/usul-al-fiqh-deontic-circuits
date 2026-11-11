@@ -262,3 +262,35 @@ All entries are `candidate`. The shards flagged these:
   - For the cases on what halves or forfeits the dower (q156), the cause of separation is the primary maḥall. The dower is `also`.
   - For planting on another's land (q077–q078), the usurpation label is primary, whatever the planter's contract.
   - For the unborn child (q084), the bāb label is primary and `amma.haml` is `also`.
+
+## Act kinds and transformations (M16)
+
+The [detailed act-classification roadmap](../research/ida-act-classification-roadmap.md)
+preserves this catalogue as a source-linked discovery graph while planning the
+typed act reference around it. Source mentions, versioned kinds, qualified
+descriptions, and conduct occurrences have separate identities. Topic
+membership, specialization, part membership, manifestation, interpretation, and
+equivalence need their own endpoint types and laws; a `broader` path does not
+establish semantic subtyping or judgment transport.
+
+The candidate reference in [draft #140 at its recorded head](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/a7cf2713c2dfc9cd41e9389bd5db721ef4280db5/docs/research/ida-act-reference.md)
+retains all 537 legacy concepts and the 293 act-labeled subset under 57 roots,
+with 34 proposed act kinds and explicit unresolved roles. Its normalization
+cases preserve legal qualifications and distinguish act/state/event senses.
+A complete role mapping is still a candidate interpretation.
+
+ACT-00 integrated that candidate reference and the structured-target grammar on
+main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144).
+The pinned snapshot above remains a historical source for its reported inventory.
+Integration does not promote its proposed meanings to admitted interpretations.
+
+The [accepted context theory](../research/ida-context-theory.md) treats these
+maḥall links as discovery relationships. Rule-specific contextual premises and
+their evidence require separate justification. A shared topic or broader label
+does not establish context entailment, make a qualification irrelevant, or
+authorize transport of a judgment to another situation.
+
+The roadmap adds Lean-first and independent Quint obligations for typed
+substitution, information loss, scoped equivalence, supported interpretations,
+and evidence-bearing transport. It changes no label, source pin, source
+interpretation, or corpus admission status.

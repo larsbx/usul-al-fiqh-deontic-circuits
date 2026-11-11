@@ -11,9 +11,17 @@
 | `formal/lean-mathlib/` | `**` |
 | `formal/tla/` | `**` |
 | `formal/quint/` | `**` |
-| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs` |
-| `formal/lean/scripts/` | `ExportAgency.lean` |
-| `docs/research/` | `agency-source-profile.md`, `agency-pilot.md` |
+| `formal/` | `check-agency-sources.mjs`, `check-agency-axioms.mjs`, `check-ida-act-registry.py`, `check-ida-context.py`, `check-ida-substitution.py`, `check-ida-projection.py`, `check-ida-semantics.py`, `check-ida-admission.py`, `ida-act-registry-wire.py`, `check-ida-case-workbench.py`, `check-ida-case-workbench.mjs`, `ida-case-workbench.mjs`, `check-ida-pilot.py`, `check-ida-pilot-trace.py`, `test-ida-pilot.py`, `check-ida-omission-auth.py`, `check-ida-omission-auth.mjs`, `ida-omission-auth.mjs`, `ida-act-registry-mutations.json` |
+| `formal/lean/scripts/` | `ExportIDACaseWorkbench.lean`, `CheckIDAOmissionWire.lean`, `*IDAActRegistry.lean`, `ExportIDAContext.lean`, `ExportIDASubstitution.lean`, `ExportIDAProjection.lean`, `ExportIDASemantics.lean`, `CheckIDAActRegistryWire.lean`, `ExportAgency.lean` |
+| `web/ida-case-workbench/` | `**` |
+| `.github/workflows/` | `ida-case-workbench.yml`, `ida-omission-auth.yml`, `ida-pilot.yml`, `ida-act-registry.yml`, `ida-substitution.yml`, `ida-projection.yml`, `ida-semantics.yml`, `ida-admission.yml`, `fiqh-act-reference.yml` |
+| `docs/plain-english/Usul/Typing/` | `IDACaseWorkbench.md`, `IDAPremiseIngestion.md`, `IDAOmissionWire.md`, `IDAPilot.md`, `IDAActRegistry.md`, `IDAAdmission.md`, `IDAContext.md`, `IDAOmission.md`, `IDASubstitution.md`, `IDAProjection.md`, `IDASemantics.md` |
+| `docs/plain-english/UsulTest/` | `IDACaseWorkbench.md`, `IDAPremiseIngestion.md`, `IDAPilot.md`, `IDAActRegistry*.md`, `IDAAdmission.md`, `IDASemantics*.md`, `IDAProjection*.md`, `IDASubstitution*.md`, `IDAContext*.md` |
+| `docs/plain-english/scripts/` | `ExportIDACaseWorkbench.md`, `CheckIDAPremiseIngestion.md`, `CheckIDAOmissionWire.md`, `*IDAActRegistry*.md`, `ExportIDAContext.md`, `ExportIDASemantics.md`, `ExportIDAProjection.md`, `ExportIDASubstitution.md` |
+| `formal/fixtures/ida-act-registry/` | `**` |
+| `docs/plain-english/Usul/Cat/` | `IDASubstitution.md`, `IDAProjection.md`, `IDASemantics.md` |
+| `docs/research/` | `agency-source-profile.md`, `agency-pilot.md`, `ida-*.md`, `islamic-deontic-algebra-spec.md` |
+| `docs/architecture/` | `category-theory.md`, `judgement.md`, `mahall.md` |
 | `corpus/citations/` | `**` |
 | `corpus/dossier/` | `**` |
 | `corpus/fatawa/` | `**` |
@@ -29,9 +37,9 @@
 | `corpus/tanaqud/` | `**` |
 | `corpus/types/` | `**` |
 | `corpus/typing/` | `**` |
-| `pipeline/usul_corpus/` | `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `istislah_cases.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `records.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
+| `pipeline/usul_corpus/` | `act_reference.py`, `abwab.py`, `deduction.py`, `dossier.py`, `fatawa*.py`, `furuq.py`, `hudud.py`, `judgement.py`, `istislah_cases.py`, `m5_commands.py`, `m8_worklist.py`, `mahall*.py`, `nusus.py`, `reconcil*.py`, `records.py`, `scope.py`, `sheaf.py`, `signature_routing.py`, `takhrij.py`, `tanaqud.py` |
 | `pipeline/usul_corpus/encoders/` | `**` |
-| `pipeline/tests/` | `test_abwab.py` |
+| `pipeline/tests/` | `test_abwab.py`, `test_act_reference.py` |
 <!-- END GENERATED TRACK PATHS -->
 
 ## 0. Scope and thesis
@@ -188,6 +196,114 @@ records. This annotation batch supplies no new retrieval score and does not
 overturn the signature proxy's zero-weight selection. The separate typed-situation
 routing experiments must not be attributed to this question-body annotation batch.
 
+### IDA foundation (2026-11-08; PR #137)
+
+The [Islamic Deontic Algebra foundation](research/ida-foundation.md) implements
+the first executable slice of the [specification](research/islamic-deontic-algebra-spec.md).
+`Usul.IDA` reuses the five-value `Usul.Hukm` carrier for meet, join, and omission
+duality. Its separate conjunction operation intersects two required nonempty
+partial answers only when question, subject, target, context, time, profile, and
+profile version all match. Missing, suspended, known, conflict, and out-of-scope
+outcomes remain distinct. An absent ruling, an explicit all-five constraint, and
+a specific mubāḥ answer are distinct inputs.
+
+The [dedicated IDA run](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/actions/runs/42478973501)
+passed for `bfdd5b8cdfb56eba32e12dbb973025f3da358801`: 59 fixed Lean theorem
+contracts, 10 Quint tests, 8,767 Lean–Quint output comparisons, 17 independent
+contract vectors, and compiled-axiom and negative-control checks. The finite
+comparison covers 25 meet pairs, 25 join pairs, 5 omission values, and
+8 key variants × 33 inputs × 33 inputs. The key variants check equality and
+each coordinate mismatch individually; the Lean scope theorems quantify over
+arbitrary keys. This is scoped foundation evidence. Repository-wide and
+whole-bank acceptance still require their separate integration gates.
+
+At this foundation boundary, source-bound question-indexed judgments, evidence
+admission, source and interpretation fidelity, contextual exceptions, and a
+verified application mapping remain open. Algebraic agreement does not select
+a juristic position, authenticate an input, or establish those obligations.
+
+### IDA typed judgment records (2026-11-08)
+
+The [typed record slice](research/ida-judgment-records.md) builds on the foundation
+with the existing question, subject, validity, and evidence types. Known taklifi
+answers use nonempty partial constraints; Boolean signs and validity retain
+their own answer types. Missing and suspended payloads stay explicit. Records
+bind all scope fields, source and passage digests, byte ranges, interpretation
+versions, evidence grade, and claimed derivation metadata.
+
+Acceptance checks a separately supplied registry snapshot, exactly one matching
+entry, its admitted status, and complete record equality. Receipts preserve the
+typed input and are checked again against the supplied current registry, including
+revocation, quarantine, replacement, removal, and duplicate-entry cases. General
+Lean theorems and 49 fixed proposition contracts cover this record boundary. The
+independent Quint model has deterministic assertions and a 1,028-result export:
+228 question/answer pairs, 760 admission variants, and 40 revalidation cases.
+All fixtures are synthetic; their status and digest fields admit no real source.
+
+`make ida ida-judgment` runs both scoped gates. The dedicated workflow requires
+both receipts to match the checked commit. At this record boundary, source-byte
+authentication, source interpretation, authority to approve registry entries,
+correctness of the named
+derivation, concurrent registry updates, and application refinement remain open.
+This advances the judgment-format obligation without declaring the full
+inference engine or a source profile accepted.
+
+### IDA source-bound derivations (2026-11-08)
+
+The [derivation extension](research/ida-source-derivations.md) adds source leaves
+and conjunction of two required premises over the typed records. Its Lean core
+has no Quint dependency. Complete inquiry identity, question family, and scope
+must agree. Source authorization checks exact registry admission, authenticated
+source-reference membership, current interpretation/profile pins, and a unique
+supported evidence decision bound to the complete premise. Missing, suspended,
+disputed, unauthenticated, and unadmitted required leaves block acceptance.
+
+Every source occurrence survives in ordered provenance, including blocked and
+repeated premises. Evidence grades are retained without automatic promotion;
+alternative interpretations remain separately evaluated alternatives. The
+[native Node adapter](research/ida-source-auth.md) checks an independently pinned,
+Ed25519-signed source catalog and complete file/passage bytes. Its fixtures are
+only `IDA\n` and `IDB\n`, with intentionally public test keys.
+
+The declared gate inventory is 44 fixed Lean contracts, 21 deterministic Quint
+tests, 301 independent contract cases, and 23 typechecked semantic mutants.
+Its 11,032 comparison cells comprise 1,360 evaluations at eight projections,
+16 receipt cases, and 136 source-reference cells linked to the byte adapter.
+Full-value pair scenarios cover all 1,089 taklifi and 64 sign/validity pairs.
+Source authentication has six positive and 38 negative controls. The remaining
+controls cover seven export corruptions, three compiled axiom/import probes,
+two Quint dependency probes, and one theorem-weakening probe.
+
+`make ida ida-judgment ida-derivation` produces revision-bound scoped receipts.
+The inventory states required checks; it does not claim a new revision has passed.
+Faithful source interpretation, production admission/key governance, general
+inference, application refinement, and agency integration remain separate.
+The cold-start audit repair in PR #136 and repository-wide CI keep their own
+acceptance obligations; this extension admits no real juristic position.
+
+### Act classification and categorical transformations
+
+**M16 implementation update (2026-11-08).** [ACT-00](research/ida-target-integration.md)
+integrated #140's checked target grammar and candidate reference with the
+source-bound judgment and derivation baseline through
+[#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144), merged at
+`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`. It retains opaque legacy IDs,
+compares full structured expressions, and checks exact target binding through
+admission, evidence, conjunction, and receipt replay. The
+[detailed roadmap](research/ida-act-classification-roadmap.md) records the
+remaining ACT-01–ACT-09 dependencies. Historical verification receipts remain
+evidence for their recorded revisions.
+
+**Context design accepted (2026-11-09).** The project owner accepted the
+[context theory](research/ida-context-theory.md) and its implementation roadmap. It
+refines the planned substitution, information-loss, and judgment-transport
+contracts. It separates typed schematic variables, factual situations, evidence,
+source profiles, time/history, and authority/resource state. It reuses existing
+typing, sheaf, and agency interfaces while keeping semantic preservation,
+premise admission, and temporal reevaluation as separate obligations. These
+contracts are the accepted development baseline within M16's existing
+dependencies; implementation and proof completion retain their own status.
+
 ### Status (2026-10-13)
 
 | Milestone | State | Evidence |
@@ -208,6 +324,7 @@ routing experiments must not be attributed to this question-body annotation batc
 | M11 institutions | **Lean and TLC linked; Haskell open** | `Usul.Cat.Institution`: institutions, comorphisms (composing), borrowing (consequence preserved, and reflected when model maps are onto); `Usul.Cat.Carriers`: `propI` / `traceI` / `execI` on Boolean-state signatures, comorphisms `compile` and `initial`, `□` statewise, `entailsB` complete; `Taklif.tla` invariants and satisfaction conditions checked on fixtures (`UsulTest/Institutions.lean`); the fixture behaviour is replayed by TLC through Taklif's actions (`TaklifTrace.tla`, generated with its Lean twin by `gen_taklif.py`). See [`category-theory.md`](architecture/category-theory.md) |
 | M14 maqāṣid | **readings proved, two encoders, seven candidate cases; policy points open** | `Usul.Readings.Maqasid` (PR #119, merged 2026-10-21): three ranks, the five kulliyyāt (four lists proved to agree), preservation from wujūd and ʿadam, the Rawḍa's deterrents, istiṣlāḥ with three stances pinned, al-Shāṭibī's complement condition, the dependence of the ranks, and al-Kawkab's order in tarjīḥ; encoders `istislah`, `maqasid_tarjih`; al-Lajna qa09648, qa06346 plus five source-located al-Mustaṣfā cases (31 conditional istiṣlāḥ completion checks); 0 reviewed new conclusions; 3 dossier entries (39 verbatim excerpts). See M14 in §3 |
 | M15 joint agency | **candidate implementation; interpretation review open** | `Usul.Agency`, `UsulTest.Agency`, and `formal/quint/`: two revocation profiles, joint/independent permission, arbitrary-history proofs, 13,312 finite transition inputs, source-byte and passage checks, and semantic negative controls. [Scope and reproduction](research/agency-pilot.md); [source profile](research/agency-source-profile.md). |
+| M16 act classification | **ACT-00 through ACT-05 bounded implementation integrated; ACT-08 shared bounded trace implemented, full exit open** | [Integrated targets](research/ida-target-integration.md) landed through #144 at `ca38f35`. [ACT-01 registry](research/ida-act-registry.md) and [ground context](research/ida-context-foundation.md) supply versioned definitions and exact inquiry binding. [ACT-02](research/ida-substitution.md) supplies typed substitution and conditional premise arrows. [ACT-03](research/ida-projection.md) proves an exact scoped projection, loss witnesses, and its categorical evaluator functor. [ACT-04](research/ida-semantics.md) proves fixed-history interpretation and conditional soundness for the synthetic fragment. Pure projection and semantics remain in the type layer; categorical adapters consume them downstream. [ACT-05](research/ida-admission.md) adds exact contextual premise admission and derived receipt replay. The accepted [context integration sequence](research/ida-context-theory.md#integration-theorem-sequence) separates these results from semantic migration and concrete admission. [ACT-08 omission observations](research/ida-omission-coverage.md) distinguish incomplete and covered views, with bounded authenticated replay of the exact observation batch. The [shared guarded repayment trace](research/ida-pilot-trace.md) binds the exact destination across admission, reports, finite histories, and signed omission replay; the whole-core audit includes all pilot modules. The [case workbench](research/ida-case-workbench.md) adds a checked presentation, local review UI and read-only agent operations for that synthetic fixture; general case admission and human decisions remain open. |
 
 <!-- BEGIN GENERATED M8 SCOPE -->
 **Current M8 inventory (generated).** 1,189 segmented Ibn Rajab furūʿ records = 1,189 annotated + **0 awaiting annotation**. Of 160 qawāʿid, 154 have segmented records: 154 are fully annotated and **0 await annotation**. The other **6 need source segmentation review**; zero emitted records does not establish zero examples in the text.
@@ -555,6 +672,124 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 
 ---
 
+#### M16 · Typed act classification and categorical transformations ⟵ M2, M5
+
+- **Scope:** the [detailed roadmap](research/ida-act-classification-roadmap.md)
+  turns the act-reference/category-theory discussion into ordered, independently
+  reviewable work packages. Existing M8 catalogue, M9 factorization, M10 scale/
+  context, and M11 institution interfaces are reuse points; their unrelated open
+  extensions are not additional prerequisites for the small core. The
+  [accepted context theory](research/ida-context-theory.md) refines ACT-02, ACT-03,
+  ACT-04, ACT-05, and the conditional ACT-07/ACT-09 work without adding core prerequisites.
+- **Implemented prerequisite (ACT-00):** the [integration contract](research/ida-target-integration.md)
+  records the structured targets merged with main's typed judgments and
+  source-bound derivations through #144 at `ca38f35`.
+  It retains existing authentication and checks the full tagged target through
+  required premises and replay.
+- **Core (ACT-01–ACT-05):** versioned kind-specific arguments and typed relations;
+  the category of schematic contexts and substitution; explicit information loss,
+  reflection/round-trip limits and scoped equivalence; supported interpretation
+  fragments and migrations; conditional transport through existing evidence.
+  Context contracts distinguish derivation under assumptions from admitted
+  premises, and schematic substitution from evidence or temporal reevaluation.
+- **Categorical integration:** the [construction contracts](research/ida-context-theory.md#4-categorical-integration-and-transport)
+  specify descriptions over their contexts, the variance of assignment maps,
+  interpretation naturality and separate migration gates. The
+  [integration theorem sequence](research/ida-context-theory.md#integration-theorem-sequence)
+  separates derivation reconstruction, conditional soundness, exact computed
+  answers and destination admission. The simple category-of-elements reading
+  adds no generic fibration-library prerequisite.
+- **Verification:** Lean laws and independently written bounded Quint models
+  first; same-sort role swaps, rigid-reference changes, lost qualifications,
+  occurrence collapse, changed omission opportunities, unsupported profile
+  bridges, and stale source/definition/profile receipts are named controls.
+  The context design also requires countermodels for contradictory assumptions,
+  unjustified forgetting, and conflation of revocation with an agent's knowledge.
+  Output relabeling must distinguish `Reads` from answer equality; unseen feature
+  classes must remain undetermined without a justified extrapolation rule. The
+  [worked agency trace](research/ida-context-theory.md#worked-agency-integration-trace)
+  distinguishes later revocation from late evidence about pre-execution authority.
+- **Conditional extensions:** typed composite descriptions (ACT-06), actual
+  process/interfaces and resource independence (ACT-07), and richer indexing or
+  quotient machinery (ACT-09) each require a concrete need and separate evidence.
+- **Exit (ACT-08):** an integrated structural payment/omission pilot, explicit
+  rejection of an unresolved mandate role, positive and negative factorization
+  examples, and source-bound transport with exact-head receipts. Preserve the
+  distinction between universal proofs, bounded comparisons, source
+  interpretations, and runtime claims. Candidate meanings remain candidate.
+- **ACT-01 implementation:** the [registry fragment](research/ida-act-registry.md)
+  checks versioned definitions and complete ordered roles, preserves 34 candidate
+  kinds and their explicit unresolveds, and binds omitted qualifications/context
+  metadata through the actual source evaluator. The Lean–Quint and canonical-wire
+  gate is `make ida-registry`; qualification truth and binding-authority
+  publication have separate contracts.
+- **ACT-01 ground context:** [Canonical snapshots and inquiry binding](research/ida-context-foundation.md)
+  check rigid participants, typed predicates, catalog consistency and time identity.
+  The gate is `make ida-context`.
+- **ACT-02 substitution:** [Typed reindexing and premise contexts](research/ida-substitution.md)
+  establish grounding, schema and role preservation, substitution and cut,
+  and the categorical action laws for the bounded calculus. The gate is
+  `make ida-substitution`.
+- **ACT-03 scoped projection:** [Report dependency factorization](research/ida-projection.md)
+  proves an exact frame law for a synthetic evaluator and gives executable
+  counterexamples for the core and kind maps. A fixed compiled contract also
+  checks the evaluator functor from the projection's kernel category to discrete
+  outcomes. The gate is `make ida-projection`.
+- **ACT-04 fixed-history semantics:** [Typed valuations and interpretation](research/ida-semantics.md)
+  establish description naturality, formula satisfaction under substitution,
+  sound conditional reconstruction and a nonvacuous finite assessment.
+  The gate is `make ida-semantics`. Cross-profile translation and concrete
+  evidence admission have separate contracts.
+- **ACT-05 contextual admission:** [Bounded reconstruction](research/ida-admission.md)
+  rechecks exact grounded premises, source authority, and destination policy, then
+  issues a derived formula receipt. The gate is `make ida-admission`.
+- **ACT-08 agency review:** The bounded `make ida-context` gate compares as-known
+  and retrospective execution replay under both candidate revocation profiles.
+  The full pilot exit remains open.
+- **ACT-08 omission observation:** [Scoped coverage](research/ida-omission-coverage.md)
+  checks both performance modes, half-open opportunity bounds, effective time,
+  and report visibility. The signed batch replay checks a pinned source catalog
+  and exact omission scope using `make ida-omission-auth`. The bounded result
+  concerns the issuer's supplied observations.
+- **ACT-08 shared trace:** [Guarded repayment](research/ida-pilot-trace.md)
+  uses one nonidentity application, its exact destination certificates, a
+  nonempty compatible history and separate signed omission observations.
+  The trace compares conflicting and incomplete inputs with Quint. The
+  `make ida-pilot` gate binds this trace and the component receipts to one
+  revision. The full pilot exit remains open.
+- **ACT-08 premise ingestion:** [Source-bound repayment replay](research/ida-premise-ingestion.md)
+  authenticates the four synthetic premise certificates against signed source
+  passages and an independently pinned premise authority. It retains the
+  interpretation, context, and application checks and persists a replayable
+  receipt in SQLite. Run `make ida-premise-ingestion` for the exact-revision
+  Lean and bounded Quint comparison and host recovery controls.
+- **Case workbench:** the [review protocol](research/ida-case-workbench.md) exposes
+  exact source/destination premise scopes, authenticated test bytes, four report
+  states, conditional soundness, and human review questions. `make ida-case-workbench`
+  checks 26 presentation/fixture theorems, 384 independently replayed hypothetical
+  cells, and the bounded read-only agent operations, then builds the local UI.
+  A scenario has no inherited baseline attestation. The implementation is a
+  synthetic review application; general intake, live authority, natural-language
+  orchestration, and authenticated adjudicator/mufti decisions remain separate.
+- **Core integration:** this integration collects the bounded ACT-01 through
+  ACT-05 stack and the shared ACT-08 trace above ACT-00. Pure projection and
+  semantics live under `Usul.Typing`; admission and the pilot consume that layer.
+  Categorical functors and naturality remain downstream under `Usul.Cat`.
+  Dynamic module closures keep both layers in each affected proof inventory and
+  source fingerprint. The `UsulTest` root imports the shared pilot so the pilot
+  and its typed omission adapter also appear in the whole-core inventory.
+  The shared axiom auditor prepares a cold toolchain before
+  its strict captured version and declaration audits; regression controls retain
+  rejection of setup failures, unexpected audited diagnostics, and extra axioms.
+- **State:** the context theory and roadmap are accepted. Verification receipts
+  remain bound to the heads and scopes they checked; each integration requires
+  its own replay. The bounded core and shared trace do not complete the full
+  ACT-08 exit. Cross-profile migration and general authenticated ingestion
+  remain separate work. The bounded SQLite receipt covers one synthetic
+  application per implementation revision and database.
+
+---
+
 ## 4. Dependency DAG
 
 ```mermaid
@@ -581,6 +816,8 @@ graph TD
   M5 --> M14
   M3 --> M15[M15 Joint agency Lean and Quint]
   M6 --> M15
+  M2 --> M16[M16 Typed act classification]
+  M5 --> M16
 ```
 
 **Critical path:** M0 → M1 → M2 → M3 → M5 → M7 → M9 → M11.

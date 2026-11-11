@@ -22,3 +22,10 @@ The root of the uṣūl al-fiqh (legal theory) kernel. Importing `Usul` brings i
 ## In one line
 
 One import gives the whole formal kernel of legal theory, from the five rulings to the category-theory specification layer.
+
+The umbrella includes `Usul.Typing.IDADerivation`, which evaluates source-bound required-premise trees under explicitly supplied trust inputs.
+
+It also includes `Usul.Typing.IDACaseWorkbench`, whose review view retains the
+checked contextual receipt, exact premises, and both report signs. Its
+conditional soundness theorem still requires the premises to hold in the
+history; it does not issue a human ruling.

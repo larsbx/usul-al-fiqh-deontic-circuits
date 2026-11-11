@@ -1,0 +1,2720 @@
+{
+  "schema_version": "fiqh-act-reference-1",
+  "prepared_on": "2026-11-08",
+  "repository_revision": "a52f1e492cd96cb82f08d190c19aad9ae6f2044c",
+  "purpose": "A source-linked candidate act reference and explicit typing worklist for structured IDA targets; no source-profile or ruling admission.",
+  "count": 34,
+  "evidence_boundary": "Primary source bytes match repository lock; each mapping and argument schema remains a proposed interpretation, not an admitted proposition or formally verified type. Some legacy act senses occur under item/issue labels.",
+  "omission_policy": "Scoped omission is a separate target description that refers to an act description and interval. Deliberate restraint, nonperformance, inability and missing observation remain distinct.",
+  "proposals": [
+    {
+      "proposed_kind_id": "intention.form",
+      "proposed_definition_version": 1,
+      "label_en": "Forming an intention",
+      "label_ar": "نية",
+      "family_tags": [
+        "inward_intending"
+      ],
+      "legacy_concept_ids": [
+        "amma.niyya"
+      ],
+      "legacy_kinds": {
+        "amma.niyya": "issue"
+      },
+      "parameter_roles_proposed": [
+        "intended_performance",
+        "agent"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00004",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p015#b00004",
+          "page_span": [
+            15,
+            16
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00045",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p046#b00045",
+          "page_span": [
+            46,
+            46
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "intention.form"
+        },
+        "parameters": [
+          {
+            "role": "intended_performance",
+            "ref_kind": null,
+            "unresolved_reason": "An act description is not a verified occurrence or an assertion about one."
+          },
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "purification.wudu",
+      "proposed_definition_version": 1,
+      "label_en": "Performing ablution",
+      "label_ar": "وضوء",
+      "family_tags": [
+        "purificatory_performance"
+      ],
+      "legacy_concept_ids": [
+        "tahara.wudu"
+      ],
+      "legacy_kinds": {
+        "tahara.wudu": "act"
+      },
+      "parameter_roles_proposed": [
+        "agent",
+        "water",
+        "performed_components"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00004",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p015#b00004",
+          "page_span": [
+            15,
+            16
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "purification.wudu"
+        },
+        "parameters": [
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "water",
+            "ref_kind": null,
+            "unresolved_reason": "Choose an explicit material-reference contract before classifying particular water as an asset."
+          },
+          {
+            "role": "performed_components",
+            "ref_kind": null,
+            "unresolved_reason": "Components require an explicit collection/sequence/description model."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "purification.ghusl",
+      "proposed_definition_version": 1,
+      "label_en": "Performing major ablution",
+      "label_ar": "غسل",
+      "family_tags": [
+        "purificatory_performance"
+      ],
+      "legacy_concept_ids": [
+        "tahara.ghusl_janaba"
+      ],
+      "legacy_kinds": {
+        "tahara.ghusl_janaba": "act"
+      },
+      "parameter_roles_proposed": [
+        "agent",
+        "water",
+        "performed_components"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00007",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p017#b00007",
+          "page_span": [
+            17,
+            17
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "purification.ghusl"
+        },
+        "parameters": [
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "water",
+            "ref_kind": null,
+            "unresolved_reason": "Choose an explicit material-reference contract before classifying particular water as an asset."
+          },
+          {
+            "role": "performed_components",
+            "ref_kind": null,
+            "unresolved_reason": "Components require an explicit collection/sequence/description model."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "purification.tayammum",
+      "proposed_definition_version": 1,
+      "label_en": "Performing tayammum",
+      "label_ar": "تيمم",
+      "family_tags": [
+        "purificatory_performance"
+      ],
+      "legacy_concept_ids": [
+        "tahara.tayammum"
+      ],
+      "legacy_kinds": {
+        "tahara.tayammum": "act"
+      },
+      "parameter_roles_proposed": [
+        "agent",
+        "material",
+        "performed_components"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00008",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p017#b00008",
+          "page_span": [
+            17,
+            18
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "purification.tayammum"
+        },
+        "parameters": [
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "material",
+            "ref_kind": null,
+            "unresolved_reason": "Choose an explicit material-reference contract; asset alone does not specify material eligibility."
+          },
+          {
+            "role": "performed_components",
+            "ref_kind": null,
+            "unresolved_reason": "Components require an explicit collection/sequence/description model."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "prayer.perform",
+      "proposed_definition_version": 1,
+      "label_en": "Performing a prayer",
+      "label_ar": "صلاة",
+      "family_tags": [
+        "composite_ritual"
+      ],
+      "legacy_concept_ids": [],
+      "legacy_kinds": {},
+      "parameter_roles_proposed": [
+        "agent",
+        "prayer_description",
+        "performed_components"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00015",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p024#b00015",
+          "page_span": [
+            24,
+            25
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00016",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p026#b00016",
+          "page_span": [
+            26,
+            26
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "legacy_topic_ids": [
+        "salat"
+      ],
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "prayer.perform"
+        },
+        "parameters": [
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "prayer_description",
+            "ref_kind": null,
+            "unresolved_reason": "A prayer description is not a particular occurrence or a proposition reference."
+          },
+          {
+            "role": "performed_components",
+            "ref_kind": null,
+            "unresolved_reason": "Components require an explicit collection/sequence/description model."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "prayer.adhan",
+      "proposed_definition_version": 1,
+      "label_en": "Giving the call to prayer",
+      "label_ar": "أذان",
+      "family_tags": [
+        "ritual_utterance"
+      ],
+      "legacy_concept_ids": [
+        "salat.adhan"
+      ],
+      "legacy_kinds": {
+        "salat.adhan": "act"
+      },
+      "parameter_roles_proposed": [
+        "performer",
+        "utterance_content"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00012",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p021#b00012",
+          "page_span": [
+            21,
+            22
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "prayer.adhan"
+        },
+        "parameters": [
+          {
+            "role": "performer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "utterance_content",
+            "ref_kind": null,
+            "unresolved_reason": "Words or text are not automatically a proposition."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "prayer.opening_takbir",
+      "proposed_definition_version": 1,
+      "label_en": "Uttering the opening takbir",
+      "label_ar": "تكبيرة الإحرام",
+      "family_tags": [
+        "ritual_utterance"
+      ],
+      "legacy_concept_ids": [
+        "salat.takbirat_ihram"
+      ],
+      "legacy_kinds": {
+        "salat.takbirat_ihram": "act"
+      },
+      "parameter_roles_proposed": [
+        "performer",
+        "utterance_content",
+        "prayer_description"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00015",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p024#b00015",
+          "page_span": [
+            24,
+            25
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00016",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p026#b00016",
+          "page_span": [
+            26,
+            26
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "prayer.opening_takbir"
+        },
+        "parameters": [
+          {
+            "role": "performer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "utterance_content",
+            "ref_kind": null,
+            "unresolved_reason": "Words or text are not automatically a proposition."
+          },
+          {
+            "role": "prayer_description",
+            "ref_kind": null,
+            "unresolved_reason": "A prayer description is not a particular occurrence or a proposition reference."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "prayer.recite_fatiha",
+      "proposed_definition_version": 1,
+      "label_en": "Reciting al-Fatiha",
+      "label_ar": "قراءة الفاتحة",
+      "family_tags": [
+        "recitation"
+      ],
+      "legacy_concept_ids": [
+        "salat.fatiha"
+      ],
+      "legacy_kinds": {
+        "salat.fatiha": "act"
+      },
+      "parameter_roles_proposed": [
+        "performer",
+        "recited_content",
+        "prayer_description"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00015",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p024#b00015",
+          "page_span": [
+            24,
+            25
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "prayer.recite_fatiha"
+        },
+        "parameters": [
+          {
+            "role": "performer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "recited_content",
+            "ref_kind": null,
+            "unresolved_reason": "Recited text needs a content-reference model, not a proposition placeholder."
+          },
+          {
+            "role": "prayer_description",
+            "ref_kind": null,
+            "unresolved_reason": "A prayer description is not a particular occurrence or a proposition reference."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "prayer.prostrate",
+      "proposed_definition_version": 1,
+      "label_en": "Prostrating within prayer",
+      "label_ar": "سجود",
+      "family_tags": [
+        "bodily_ritual_component"
+      ],
+      "legacy_concept_ids": [
+        "salat.sujud"
+      ],
+      "legacy_kinds": {
+        "salat.sujud": "act"
+      },
+      "parameter_roles_proposed": [
+        "performer",
+        "prayer_description",
+        "performed_posture"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00015",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p024#b00015",
+          "page_span": [
+            24,
+            25
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00016",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p026#b00016",
+          "page_span": [
+            26,
+            26
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "prayer.prostrate"
+        },
+        "parameters": [
+          {
+            "role": "performer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "prayer_description",
+            "ref_kind": null,
+            "unresolved_reason": "A prayer description is not a particular occurrence or a proposition reference."
+          },
+          {
+            "role": "performed_posture",
+            "ref_kind": null,
+            "unresolved_reason": "A posture description needs an explicit structural model."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "fasting.observe",
+      "proposed_definition_version": 1,
+      "label_en": "Observing a fast",
+      "label_ar": "صوم",
+      "family_tags": [
+        "sustained_restraint"
+      ],
+      "legacy_concept_ids": [
+        "siyam.sawm_ramadan"
+      ],
+      "legacy_kinds": {
+        "siyam.sawm_ramadan": "act"
+      },
+      "parameter_roles_proposed": [
+        "agent",
+        "interval",
+        "restraint_description"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00037",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p041#b00037",
+          "page_span": [
+            41,
+            41
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00039",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p042#b00039",
+          "page_span": [
+            42,
+            42
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "fasting.observe"
+        },
+        "parameters": [
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "interval",
+            "ref_kind": null,
+            "unresolved_reason": "A duration of performance is not the omission constructor's opportunity."
+          },
+          {
+            "role": "restraint_description",
+            "ref_kind": null,
+            "unresolved_reason": "Intentional restraint requires its own description and conditions; nonoccurrence is insufficient."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "pilgrimage.enter_ihram",
+      "proposed_definition_version": 1,
+      "label_en": "Entering ihram",
+      "label_ar": "إحرام",
+      "family_tags": [
+        "ritual_entry"
+      ],
+      "legacy_concept_ids": [
+        "hajj.ihram"
+      ],
+      "legacy_kinds": {
+        "hajj.ihram": "act"
+      },
+      "parameter_roles_proposed": [
+        "agent",
+        "rite_description",
+        "intention_assertion"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00045",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p046#b00045",
+          "page_span": [
+            46,
+            46
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "pilgrimage.enter_ihram"
+        },
+        "parameters": [
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "rite_description",
+            "ref_kind": null,
+            "unresolved_reason": "A rite description is not a particular occurrence."
+          },
+          {
+            "role": "intention_assertion",
+            "ref_kind": null,
+            "unresolved_reason": "Normalize a specific claim before assigning a proposition reference; this does not prove intention."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "pilgrimage.tawaf",
+      "proposed_definition_version": 1,
+      "label_en": "Performing circumambulation",
+      "label_ar": "طواف",
+      "family_tags": [
+        "composite_ritual"
+      ],
+      "legacy_concept_ids": [
+        "hajj.tawaf"
+      ],
+      "legacy_kinds": {
+        "hajj.tawaf": "act"
+      },
+      "parameter_roles_proposed": [
+        "performer",
+        "rite_description",
+        "performed_circuits"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00048",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p048#b00048",
+          "page_span": [
+            48,
+            48
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "pilgrimage.tawaf"
+        },
+        "parameters": [
+          {
+            "role": "performer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "rite_description",
+            "ref_kind": null,
+            "unresolved_reason": "A rite description is not a particular occurrence."
+          },
+          {
+            "role": "performed_circuits",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this is a count, sequence, description, or event collection."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "transfer.pay_zakat",
+      "proposed_definition_version": 1,
+      "label_en": "Paying zakat",
+      "label_ar": "إخراج الزكاة",
+      "family_tags": [
+        "transfer_discharge"
+      ],
+      "legacy_concept_ids": [
+        "zakat.zakat"
+      ],
+      "legacy_kinds": {
+        "zakat.zakat": "act"
+      },
+      "parameter_roles_proposed": [
+        "payer",
+        "recipient",
+        "transferred_property"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00034",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p039#b00034",
+          "page_span": [
+            39,
+            39
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "transfer.pay_zakat"
+        },
+        "parameters": [
+          {
+            "role": "payer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "recipient",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "transferred_property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          }
+        ],
+        "representable": true,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject",
+        "scope_note": "Restricted illustration with an identified individual recipient and specified transferred property. This signature does not cover a recipient category, prove eligibility, occurrence, discharge, or determine the judgment subject."
+      }
+    },
+    {
+      "proposed_kind_id": "transaction.sale",
+      "proposed_definition_version": 1,
+      "label_en": "Attempting or entering a sale",
+      "label_ar": "بيع",
+      "family_tags": [
+        "contract_forming"
+      ],
+      "legacy_concept_ids": [
+        "buyu.bay"
+      ],
+      "legacy_kinds": {
+        "buyu.bay": "act"
+      },
+      "parameter_roles_proposed": [
+        "seller",
+        "buyer",
+        "property",
+        "consideration",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00054",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p053#b00054",
+          "page_span": [
+            53,
+            53
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "transaction.sale"
+        },
+        "parameters": [
+          {
+            "role": "seller",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "buyer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "consideration",
+            "ref_kind": null,
+            "unresolved_reason": "Consideration may be property, service, benefit, or obligation; a narrower definition is required."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "transaction.ijara",
+      "proposed_definition_version": 1,
+      "label_en": "Attempting or entering a hire or lease",
+      "label_ar": "إجارة",
+      "family_tags": [
+        "contract_forming"
+      ],
+      "legacy_concept_ids": [
+        "ijara.ijara"
+      ],
+      "legacy_kinds": {
+        "ijara.ijara": "act"
+      },
+      "parameter_roles_proposed": [
+        "provider",
+        "recipient",
+        "benefit_or_service",
+        "consideration",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00075",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p065#b00075",
+          "page_span": [
+            65,
+            65
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "transaction.ijara"
+        },
+        "parameters": [
+          {
+            "role": "provider",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "recipient",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "benefit_or_service",
+            "ref_kind": null,
+            "unresolved_reason": "A benefit or service needs an explicit reference contract."
+          },
+          {
+            "role": "consideration",
+            "ref_kind": null,
+            "unresolved_reason": "Consideration may be property, service, benefit, or obligation; a narrower definition is required."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "transaction.qard",
+      "proposed_definition_version": 1,
+      "label_en": "Attempting or entering a loan",
+      "label_ar": "قرض",
+      "family_tags": [
+        "contract_forming"
+      ],
+      "legacy_concept_ids": [
+        "qard.qard"
+      ],
+      "legacy_kinds": {
+        "qard.qard": "act"
+      },
+      "parameter_roles_proposed": [
+        "lender",
+        "borrower",
+        "property",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00061",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p056#b00061",
+          "page_span": [
+            56,
+            57
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "transaction.qard"
+        },
+        "parameters": [
+          {
+            "role": "lender",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "borrower",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "transaction.rahn",
+      "proposed_definition_version": 1,
+      "label_en": "Creating a pledge arrangement",
+      "label_ar": "رهن",
+      "family_tags": [
+        "contract_forming"
+      ],
+      "legacy_concept_ids": [
+        "rahn.rahn"
+      ],
+      "legacy_kinds": {
+        "rahn.rahn": "item"
+      },
+      "parameter_roles_proposed": [
+        "pledgor",
+        "pledgee",
+        "secured_claim",
+        "pledged_property",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00064",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p058#b00064",
+          "page_span": [
+            58,
+            58
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "transaction.rahn"
+        },
+        "parameters": [
+          {
+            "role": "pledgor",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "pledgee",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "secured_claim",
+            "ref_kind": null,
+            "unresolved_reason": "Distinguish an obligation reference from a claim about an obligation."
+          },
+          {
+            "role": "pledged_property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "transaction.deposit",
+      "proposed_definition_version": 1,
+      "label_en": "Placing property in deposit",
+      "label_ar": "وديعة",
+      "family_tags": [
+        "entrustment"
+      ],
+      "legacy_concept_ids": [
+        "wadia.wadia"
+      ],
+      "legacy_kinds": {
+        "wadia.wadia": "item"
+      },
+      "parameter_roles_proposed": [
+        "depositor",
+        "custodian",
+        "property",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00074",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p063#b00074",
+          "page_span": [
+            63,
+            63
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "transaction.deposit"
+        },
+        "parameters": [
+          {
+            "role": "depositor",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "custodian",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "disposition.gift",
+      "proposed_definition_version": 1,
+      "label_en": "Making a gift",
+      "label_ar": "هبة",
+      "family_tags": [
+        "gratuitous_disposition"
+      ],
+      "legacy_concept_ids": [
+        "hiba.hiba"
+      ],
+      "legacy_kinds": {
+        "hiba.hiba": "act"
+      },
+      "parameter_roles_proposed": [
+        "donor",
+        "donee",
+        "property",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00079",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p070#b00079",
+          "page_span": [
+            70,
+            70
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "disposition.gift"
+        },
+        "parameters": [
+          {
+            "role": "donor",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "donee",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "disposition.waqf",
+      "proposed_definition_version": 1,
+      "label_en": "Establishing an endowment",
+      "label_ar": "وقف",
+      "family_tags": [
+        "gratuitous_disposition"
+      ],
+      "legacy_concept_ids": [
+        "waqf.waqf"
+      ],
+      "legacy_kinds": {
+        "waqf.waqf": "act"
+      },
+      "parameter_roles_proposed": [
+        "founder",
+        "asset",
+        "beneficiary_specification",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00078",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p069#b00078",
+          "page_span": [
+            69,
+            69
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "disposition.waqf"
+        },
+        "parameters": [
+          {
+            "role": "founder",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "asset",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "beneficiary_specification",
+            "ref_kind": null,
+            "unresolved_reason": "An individual, class, or specification cannot be collapsed into one person reference."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "disposition.bequest",
+      "proposed_definition_version": 1,
+      "label_en": "Making a bequest",
+      "label_ar": "وصية",
+      "family_tags": [
+        "testamentary_disposition"
+      ],
+      "legacy_concept_ids": [
+        "wasaya.wasiyya"
+      ],
+      "legacy_kinds": {
+        "wasaya.wasiyya": "act"
+      },
+      "parameter_roles_proposed": [
+        "testator",
+        "beneficiary_specification",
+        "bequest_content",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00081",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p073#b00081",
+          "page_span": [
+            73,
+            74
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "disposition.bequest"
+        },
+        "parameters": [
+          {
+            "role": "testator",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "beneficiary_specification",
+            "ref_kind": null,
+            "unresolved_reason": "An individual, class, or specification cannot be collapsed into one person reference."
+          },
+          {
+            "role": "bequest_content",
+            "ref_kind": null,
+            "unresolved_reason": "Separate declared content from the objects and any legal effect."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "property.take_possession",
+      "proposed_definition_version": 1,
+      "label_en": "Taking possession",
+      "label_ar": "قبض",
+      "family_tags": [
+        "material_performance"
+      ],
+      "legacy_concept_ids": [
+        "amma.qabd"
+      ],
+      "legacy_kinds": {
+        "amma.qabd": "act"
+      },
+      "parameter_roles_proposed": [
+        "possessor",
+        "property",
+        "mode"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00064",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p058#b00064",
+          "page_span": [
+            58,
+            58
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "property.take_possession"
+        },
+        "parameters": [
+          {
+            "role": "possessor",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "mode",
+            "ref_kind": null,
+            "unresolved_reason": "A mode of possession is descriptive information, not an occurrence identifier."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "agency.appoint",
+      "proposed_definition_version": 1,
+      "label_en": "Appointing an agent",
+      "label_ar": "توكيل",
+      "family_tags": [
+        "authority_operation"
+      ],
+      "legacy_concept_ids": [
+        "wakala.wakala"
+      ],
+      "legacy_kinds": {
+        "wakala.wakala": "act"
+      },
+      "parameter_roles_proposed": [
+        "principal",
+        "agent",
+        "mandate_scope",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00066",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p059#b00066",
+          "page_span": [
+            59,
+            59
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "agency.appoint"
+        },
+        "parameters": [
+          {
+            "role": "principal",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "agent",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "mandate_scope",
+            "ref_kind": null,
+            "unresolved_reason": "A scope of authority requires a typed description."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "agency.revoke",
+      "proposed_definition_version": 1,
+      "label_en": "Revoking a mandate",
+      "label_ar": "عزل الوكيل",
+      "family_tags": [
+        "authority_operation"
+      ],
+      "legacy_concept_ids": [
+        "wakala.wakala"
+      ],
+      "legacy_kinds": {
+        "wakala.wakala": "act"
+      },
+      "parameter_roles_proposed": [
+        "revoking_party",
+        "mandate_reference",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00066",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p059#b00066",
+          "page_span": [
+            59,
+            59
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "agency.revoke"
+        },
+        "parameters": [
+          {
+            "role": "revoking_party",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "mandate_reference",
+            "ref_kind": null,
+            "unresolved_reason": "A mandate relation is not automatically an obligation or proposition."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "family.marry",
+      "proposed_definition_version": 1,
+      "label_en": "Attempting or entering a marriage contract",
+      "label_ar": "عقد النكاح",
+      "family_tags": [
+        "contract_forming"
+      ],
+      "legacy_concept_ids": [
+        "nikah.nikah"
+      ],
+      "legacy_kinds": {
+        "nikah.nikah": "act"
+      },
+      "parameter_roles_proposed": [
+        "party_roles",
+        "guardianship_claims",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00111",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p089#b00111",
+          "page_span": [
+            89,
+            89
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00112",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p090#b00112",
+          "page_span": [
+            90,
+            90
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "family.marry"
+        },
+        "parameters": [
+          {
+            "role": "party_roles",
+            "ref_kind": null,
+            "unresolved_reason": "Expand the aggregate into source-justified named participant roles."
+          },
+          {
+            "role": "guardianship_claims",
+            "ref_kind": null,
+            "unresolved_reason": "Separate the claims and normalize proposition references without asserting their truth."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "family.divorce_declaration",
+      "proposed_definition_version": 1,
+      "label_en": "Making a divorce declaration",
+      "label_ar": "طلاق",
+      "family_tags": [
+        "legal_declaration"
+      ],
+      "legacy_concept_ids": [
+        "talaq.talaq",
+        "talaq.alfaz_talaq"
+      ],
+      "legacy_kinds": {
+        "talaq.talaq": "act",
+        "talaq.alfaz_talaq": "act"
+      },
+      "parameter_roles_proposed": [
+        "speaker",
+        "marital_relation_reference",
+        "utterance_content",
+        "asserted_intention"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00135",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p103#b00135",
+          "page_span": [
+            103,
+            103
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00136",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p103#b00136",
+          "page_span": [
+            103,
+            104
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "family.divorce_declaration"
+        },
+        "parameters": [
+          {
+            "role": "speaker",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "marital_relation_reference",
+            "ref_kind": null,
+            "unresolved_reason": "A legal relation is not a person, occurrence, or proposition."
+          },
+          {
+            "role": "utterance_content",
+            "ref_kind": null,
+            "unresolved_reason": "Words or text are not automatically a proposition."
+          },
+          {
+            "role": "asserted_intention",
+            "ref_kind": null,
+            "unresolved_reason": "Normalize a specific claim; a proposition reference does not establish intention."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "commitment.oath",
+      "proposed_definition_version": 1,
+      "label_en": "Taking an oath",
+      "label_ar": "يمين",
+      "family_tags": [
+        "legal_declaration"
+      ],
+      "legacy_concept_ids": [
+        "ayman.yamin"
+      ],
+      "legacy_kinds": {
+        "ayman.yamin": "act"
+      },
+      "parameter_roles_proposed": [
+        "speaker",
+        "oath_content",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00158",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p123#b00158",
+          "page_span": [
+            123,
+            123
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "commitment.oath"
+        },
+        "parameters": [
+          {
+            "role": "speaker",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "oath_content",
+            "ref_kind": null,
+            "unresolved_reason": "Separate utterance content and the proposition or act to which it refers."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "commitment.vow",
+      "proposed_definition_version": 1,
+      "label_en": "Making a vow",
+      "label_ar": "نذر",
+      "family_tags": [
+        "legal_declaration"
+      ],
+      "legacy_concept_ids": [
+        "nudhur.nadhr"
+      ],
+      "legacy_kinds": {
+        "nudhur.nadhr": "act"
+      },
+      "parameter_roles_proposed": [
+        "speaker",
+        "vowed_performance",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00157",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p120#b00157",
+          "page_span": [
+            120,
+            121
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "commitment.vow"
+        },
+        "parameters": [
+          {
+            "role": "speaker",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "vowed_performance",
+            "ref_kind": null,
+            "unresolved_reason": "A described performance is not a verified occurrence."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "evidence.testify",
+      "proposed_definition_version": 1,
+      "label_en": "Giving testimony",
+      "label_ar": "أداء الشهادة",
+      "family_tags": [
+        "evidentiary_act"
+      ],
+      "legacy_concept_ids": [
+        "shahadat.shahada"
+      ],
+      "legacy_kinds": {
+        "shahadat.shahada": "act"
+      },
+      "parameter_roles_proposed": [
+        "witness",
+        "proposition",
+        "forum",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00200",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p151#b00200",
+          "page_span": [
+            151,
+            151
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "evidence.testify"
+        },
+        "parameters": [
+          {
+            "role": "witness",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "proposition",
+            "ref_kind": "proposition",
+            "interpretive_scope": "A reference to a specified proposition; its truth and evidentiary admission are separate."
+          },
+          {
+            "role": "forum",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether the forum is an institution, place, or proceeding."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "evidence.admit",
+      "proposed_definition_version": 1,
+      "label_en": "Making an admission",
+      "label_ar": "إقرار",
+      "family_tags": [
+        "evidentiary_act"
+      ],
+      "legacy_concept_ids": [
+        "iqrar.iqrar"
+      ],
+      "legacy_kinds": {
+        "iqrar.iqrar": "act"
+      },
+      "parameter_roles_proposed": [
+        "declarant",
+        "admitted_content",
+        "manifestation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00205",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p153#b00205",
+          "page_span": [
+            153,
+            153
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "evidence.admit"
+        },
+        "parameters": [
+          {
+            "role": "declarant",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "admitted_content",
+            "ref_kind": null,
+            "unresolved_reason": "Normalize a specific claim without equating a declaration with its truth."
+          },
+          {
+            "role": "manifestation",
+            "ref_kind": null,
+            "unresolved_reason": "Specify whether this means wording, manner, condition, or a particular manifestation event."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "procedure.adjudicate",
+      "proposed_definition_version": 1,
+      "label_en": "Issuing a judicial decision",
+      "label_ar": "قضاء",
+      "family_tags": [
+        "judicial_act"
+      ],
+      "legacy_concept_ids": [
+        "qada.qada",
+        "qada.hukm"
+      ],
+      "legacy_kinds": {
+        "qada.qada": "act",
+        "qada.hukm": "act"
+      },
+      "parameter_roles_proposed": [
+        "adjudicator",
+        "dispute_reference",
+        "decision_content"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00195",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p147#b00195",
+          "page_span": [
+            147,
+            147
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00196",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p147#b00196",
+          "page_span": [
+            147,
+            148
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "procedure.adjudicate"
+        },
+        "parameters": [
+          {
+            "role": "adjudicator",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "dispute_reference",
+            "ref_kind": null,
+            "unresolved_reason": "A dispute or legal issue needs its own reference contract."
+          },
+          {
+            "role": "decision_content",
+            "ref_kind": null,
+            "unresolved_reason": "Decision content needs an explicit description or normalized claims."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "property.damage",
+      "proposed_definition_version": 1,
+      "label_en": "Damaging property",
+      "label_ar": "إتلاف",
+      "family_tags": [
+        "material_interference"
+      ],
+      "legacy_concept_ids": [
+        "ghasb.itlaf"
+      ],
+      "legacy_kinds": {
+        "ghasb.itlaf": "act"
+      },
+      "parameter_roles_proposed": [
+        "acting_person",
+        "property",
+        "damage_description",
+        "causal_description"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00076",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p065#b00076",
+          "page_span": [
+            65,
+            66
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00170",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p132#b00170",
+          "page_span": [
+            132,
+            132
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "This proposal describes human conduct, including conduct by a non-mukallaf. An animal-caused damage occurrence remains a separate event description; no culpability, liability, or occurrence is asserted by either classification.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "property.damage"
+        },
+        "parameters": [
+          {
+            "role": "acting_person",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "property",
+            "ref_kind": "asset",
+            "interpretive_scope": "A specified property reference; no ownership, eligibility, or valid transfer is asserted."
+          },
+          {
+            "role": "damage_description",
+            "ref_kind": null,
+            "unresolved_reason": "Specify the damage and its descriptive components."
+          },
+          {
+            "role": "causal_description",
+            "ref_kind": null,
+            "unresolved_reason": "A causal description is not evidence that the described causal relation holds."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "care.provide_maintenance",
+      "proposed_definition_version": 1,
+      "label_en": "Providing maintenance",
+      "label_ar": "إنفاق",
+      "family_tags": [
+        "care_discharge"
+      ],
+      "legacy_concept_ids": [
+        "nafaqat.nafaqa"
+      ],
+      "legacy_kinds": {
+        "nafaqat.nafaqa": "item"
+      },
+      "parameter_roles_proposed": [
+        "provider",
+        "recipient",
+        "provided_benefit",
+        "interval"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00149",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p112#b00149",
+          "page_span": [
+            112,
+            113
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "care.provide_maintenance"
+        },
+        "parameters": [
+          {
+            "role": "provider",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "recipient",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "provided_benefit",
+            "ref_kind": null,
+            "unresolved_reason": "The provided benefit may include property, services, or other care."
+          },
+          {
+            "role": "interval",
+            "ref_kind": null,
+            "unresolved_reason": "A duration of performance is not the omission constructor's opportunity."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    },
+    {
+      "proposed_kind_id": "food.slaughter",
+      "proposed_definition_version": 1,
+      "label_en": "Performing slaughter",
+      "label_ar": "ذكاة",
+      "family_tags": [
+        "material_transformation"
+      ],
+      "legacy_concept_ids": [
+        "atima.dhakat"
+      ],
+      "legacy_kinds": {
+        "atima.dhakat": "act"
+      },
+      "parameter_roles_proposed": [
+        "performer",
+        "animal",
+        "performed_operation"
+      ],
+      "source_loci": [
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00153",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p116#b00153",
+          "page_span": [
+            116,
+            116
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        },
+        {
+          "work": "ibn_qudama.umda",
+          "witness": "openiti-ibnqudama-umda-shamela11315",
+          "record_id": "ibn_qudama.umda.openiti_ibnqudama_umda_shamela11315.b00154",
+          "locator": "src:openiti-ibnqudama-umda-shamela11315/v01:p116#b00154",
+          "page_span": [
+            116,
+            117
+          ],
+          "basis": "chapter_or_passage_mapping",
+          "mapping_status": "candidate"
+        }
+      ],
+      "status": "candidate",
+      "admitted": false,
+      "note": "Names identify the operation described or attempted; no ruling, validity, legal effect, or occurrence is asserted by this mapping.",
+      "target_sort": "act_description",
+      "ida_bridge": {
+        "status": "candidate",
+        "operation_symbol": {
+          "space": "fiqh.act.candidate.v1",
+          "name": "food.slaughter"
+        },
+        "parameters": [
+          {
+            "role": "performer",
+            "ref_kind": "person",
+            "interpretive_scope": "An identified individual person; no subject binding or capacity claim."
+          },
+          {
+            "role": "animal",
+            "ref_kind": null,
+            "unresolved_reason": "Choose an animal-reference contract before treating an animal as an asset; no ownership or eligibility is implied."
+          },
+          {
+            "role": "performed_operation",
+            "ref_kind": null,
+            "unresolved_reason": "A performed-operation description needs its own structural model."
+          }
+        ],
+        "representable": false,
+        "profile_admitted": false,
+        "subject_binding": "unresolved: participant roles do not establish identity with Key.subject"
+      }
+    }
+  ],
+  "design_only": true,
+  "compiled": false,
+  "mappings_admitted": false,
+  "status": "candidate",
+  "admitted": false,
+  "repository_revision_role": "Research origin only; the validator reports current input hashes and checkout revision separately.",
+  "target_model_revision": "7d057b164be4932ce1d64ca95be3d10de8013336",
+  "identity_layers": [
+    {
+      "id": "source_mention",
+      "meaning": "A pinned passage that discusses a concept or case."
+    },
+    {
+      "id": "act_kind",
+      "meaning": "A proposed reusable operation definition, with a definition version."
+    },
+    {
+      "id": "act_description",
+      "meaning": "An operation, its role-bearing arguments, and any retained qualifications; not evidence of occurrence."
+    },
+    {
+      "id": "conduct_occurrence",
+      "meaning": "A particular event requiring separate identity and occurrence evidence."
+    }
+  ],
+  "facets": [
+    {
+      "id": "fiqh_topics",
+      "meaning": "All reachable topic roots through the legacy broader graph; possibly multiple."
+    },
+    {
+      "id": "operation_family",
+      "meaning": "Candidate discovery tags, not disjoint subtypes or rulings."
+    },
+    {
+      "id": "manifestation",
+      "meaning": "Bodily, spoken, written, gestural, or inward aspects; may overlap and remain unassigned."
+    },
+    {
+      "id": "composition",
+      "meaning": "Single, sequential, sustained, interactive, or composite descriptions; not an implemented action algebra."
+    },
+    {
+      "id": "participants_and_objects",
+      "meaning": "Named roles and typed references; binding to the judgment subject is separate."
+    },
+    {
+      "id": "qualifications",
+      "meaning": "Source-reported intention, capacity, coercion, authority, time, and other facts; unknown is retained."
+    },
+    {
+      "id": "judgment",
+      "meaning": "Ruling, validity, effect, and liability remain separate source/profile-bound claims."
+    }
+  ],
+  "source_pins": [
+    {
+      "work": "ibn_qudama.umda",
+      "witness": "openiti-ibnqudama-umda-shamela11315",
+      "url": "https://raw.githubusercontent.com/OpenITI/0625AH/f1e38210b32fd0d043949ff6471e869d658c3b16/data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.CumdatFiqh/0620IbnQudamaMaqdisi.CumdatFiqh.Shamela0011315-ara1",
+      "bytes": 277959,
+      "sha256": "46a47285cf2cf1796a675853df7c5d6d69de7084666064dba6b596cf4863cd84"
+    },
+    {
+      "work": "ibn_qudama.rawda",
+      "witness": "openiti-rawda-shamela12010",
+      "url": "https://raw.githubusercontent.com/OpenITI/0625AH/f1e38210b32fd0d043949ff6471e869d658c3b16/data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.Shamela0012010-ara1",
+      "bytes": 1000697,
+      "sha256": "f1bf639319698b931369a4530d23b0708541fa8fe2817e14e1684115c2dcd3ad"
+    },
+    {
+      "work": "ibn_taymiyya.qawaid_nuraniyya",
+      "witness": "openiti-nuraniyya-shamela21729",
+      "url": "https://raw.githubusercontent.com/OpenITI/0750AH/7c9c84d9f98581470aa2b7f8bee00ae285c5c707/data/0728IbnTaymiyya/0728IbnTaymiyya.QawacidNuraniyya/0728IbnTaymiyya.QawacidNuraniyya.Shamela0021729-ara1.completed",
+      "bytes": 734654,
+      "sha256": "5018f4e36ad0f8ed06ed52e71be7894cc0e290f5c9055c7d2288e9cdcdda247b"
+    }
+  ],
+  "methodological_loci": [
+    {
+      "work": "ibn_qudama.rawda",
+      "witness": "openiti-rawda-shamela12010",
+      "volume": 1,
+      "page_span": [
+        173,
+        174
+      ],
+      "status": "candidate",
+      "use": "Distinguish doing and intentional restraint; do not identify restraint with mere nonoccurrence."
+    },
+    {
+      "work": "ibn_qudama.rawda",
+      "witness": "openiti-rawda-shamela12010",
+      "volume": 1,
+      "page_span": [
+        139,
+        140
+      ],
+      "status": "candidate",
+      "use": "Distinguish sameness by kind from an individual act, and retain legally relevant relations and qualifications."
+    },
+    {
+      "work": "ibn_taymiyya.qawaid_nuraniyya",
+      "witness": "openiti-nuraniyya-shamela21729",
+      "volume": 1,
+      "page_span": [
+        163,
+        165
+      ],
+      "status": "candidate",
+      "use": "Words and deeds and worship and ordinary practices motivate independent facets, not a universal exhaustive taxonomy."
+    }
+  ],
+  "normalization_cases": [
+    {
+      "legacy_concept_id": "buyu.bay_fasid",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "transaction.sale"
+      ],
+      "required_qualifications": [
+        "reported_invalidity"
+      ],
+      "unresolved_target_sorts": [],
+      "note": "Preserve the invalidity qualifier as a separate source-attributed claim; do not silently normalize to an unqualified sale."
+    },
+    {
+      "legacy_concept_id": "ayman.yamin_mukrah",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "commitment.oath"
+      ],
+      "required_qualifications": [
+        "reported_coercion"
+      ],
+      "unresolved_target_sorts": [],
+      "note": "Preserve coercion and its evidentiary status; consequences depend on the source profile."
+    },
+    {
+      "legacy_concept_id": "salat.makan_maghsub",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "prayer.perform"
+      ],
+      "required_qualifications": [
+        "location_reference",
+        "reported_rights_status"
+      ],
+      "unresolved_target_sorts": [],
+      "note": "Preserve the place and asserted rights status; do not derive prayer validity from the label."
+    },
+    {
+      "legacy_concept_id": "hajj.ihram",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "pilgrimage.enter_ihram"
+      ],
+      "required_qualifications": [
+        "entry_vs_continuing_state"
+      ],
+      "unresolved_target_sorts": [
+        "state"
+      ],
+      "note": "Entering ihram and the continuing state are different senses; affect is not a generic state constructor."
+    },
+    {
+      "legacy_concept_id": "faraid.mirath",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [],
+      "required_qualifications": [
+        "succession_vs_entitlement_vs_distribution"
+      ],
+      "unresolved_target_sorts": [
+        "event",
+        "relation",
+        "act_description"
+      ],
+      "note": "The legacy act kind does not establish an intentional human act."
+    },
+    {
+      "legacy_concept_id": "ghasb.itlaf_bahaim",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [],
+      "required_qualifications": [
+        "animal_actor",
+        "separate_human_liability_question"
+      ],
+      "unresolved_target_sorts": [
+        "event"
+      ],
+      "note": "Do not map the animal-caused event to property.damage with a human acting_person."
+    },
+    {
+      "legacy_concept_id": "rahn.rahn",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "transaction.rahn"
+      ],
+      "required_qualifications": [
+        "creating_pledge_vs_relation_vs_pledged_object"
+      ],
+      "unresolved_target_sorts": [
+        "relation",
+        "object"
+      ],
+      "note": "The legacy item may have an operation sense; keep each sense and its evidence separate."
+    },
+    {
+      "legacy_concept_id": "wadia.wadia",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "transaction.deposit"
+      ],
+      "required_qualifications": [
+        "depositing_vs_custody_relation_vs_object"
+      ],
+      "unresolved_target_sorts": [
+        "relation",
+        "object"
+      ],
+      "note": "The legacy item does not by itself define the act of entrusting property."
+    },
+    {
+      "legacy_concept_id": "amma.niyya",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "intention.form"
+      ],
+      "required_qualifications": [
+        "forming_intention_vs_state_vs_condition"
+      ],
+      "unresolved_target_sorts": [
+        "state"
+      ],
+      "note": "An issue label can motivate an act proposal; responsibility and intention truth remain separate."
+    },
+    {
+      "legacy_concept_id": "tahara.nawm",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [],
+      "required_qualifications": [
+        "sleep_description",
+        "reported_nullification"
+      ],
+      "unresolved_target_sorts": [
+        "state",
+        "process"
+      ],
+      "note": "Preserve the nullification qualification. Neither voluntary control nor legal consequence follows from candidate kind=act."
+    },
+    {
+      "legacy_concept_id": "ghasb.ghasb",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [],
+      "required_qualifications": [
+        "without_right",
+        "rights_holder_and_object"
+      ],
+      "unresolved_target_sorts": [
+        "qualified_act_description"
+      ],
+      "note": "The technical concept includes a rights qualification; bare taking-possession is not an equivalent replacement."
+    },
+    {
+      "legacy_concept_id": "nafaqat.nafaqa",
+      "interpretation_status": "candidate",
+      "preserve_label": true,
+      "proposed_kind_ids": [
+        "care.provide_maintenance"
+      ],
+      "required_qualifications": [
+        "providing_vs_due_obligation_vs_provided_benefit"
+      ],
+      "unresolved_target_sorts": [
+        "obligation",
+        "object"
+      ],
+      "note": "The item label must be interpreted by sense; an operation proposal establishes no duty or discharge."
+    }
+  ]
+}

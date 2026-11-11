@@ -1,0 +1,94 @@
+name: IDA algebra, judgments, and derivations
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ida.yml'
+      - 'Makefile'
+      - 'formal/check-ida*.py'
+      - 'formal/ida-quint-source-inventory.py'
+      - 'formal/ida-derivation*.json'
+      - 'formal/ida-source-auth.mjs'
+      - 'formal/check-ida-source-auth.mjs'
+      - 'formal/fixtures/ida-source-auth/**'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'docs/research/ida-*.md'
+      - 'docs/research/islamic-deontic-algebra-spec.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ida.yml'
+      - 'Makefile'
+      - 'formal/check-ida*.py'
+      - 'formal/ida-quint-source-inventory.py'
+      - 'formal/ida-derivation*.json'
+      - 'formal/ida-source-auth.mjs'
+      - 'formal/check-ida-source-auth.mjs'
+      - 'formal/fixtures/ida-source-auth/**'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'docs/research/ida-*.md'
+      - 'docs/research/islamic-deontic-algebra-spec.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ida:
+    name: IDA Lean, Quint, parity, and axiom audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Install elan for the repository's pinned Lean version
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Verify the algebra, judgment, and derivation slices
+        run: make ida ida-judgment ida-derivation
+      - name: Require all three receipts to describe the checked head
+        env:
+          IDA_EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          head = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+          if head != os.environ["IDA_EXPECTED_HEAD"]:
+              raise SystemExit("Checkout differs from the requested head")
+          for directory in ("ida", "ida-judgment", "ida-derivation"):
+              report = json.loads((Path(".cache") / directory / "report.json").read_text())
+              if (report.get("status") != "passed" or report.get("inputs_match_head") is not True
+                      or report.get("revision") != head):
+                  raise SystemExit(f"{directory}: receipt does not verify the checked head")
+          print(f"All three IDA receipts verify {head}")
+          PY
+      - name: Retain revision-bound verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-verification
+          path: |
+            .cache/ida/
+            .cache/ida-judgment/
+            .cache/ida-derivation/
+          include-hidden-files: true
+          if-no-files-found: error

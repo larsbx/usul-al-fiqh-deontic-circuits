@@ -103,12 +103,13 @@ def audit(scope, receipt):
             raise ValueError("Lean emitted an admitted-proof diagnostic")
 
     pin = (package / "lean-toolchain").read_text().strip()
-    # The first Lake invocation can install Lean and fetch dependencies. Keep that
-    # setup output visible on stderr and capture only the version on stdout.
-    version = subprocess.check_output(
-        ["lake", "env", "lean", "--version"], cwd=package, text=True
-    ).strip()
-    if not pin.startswith("leanprover/lean4:v") or not version.startswith(
+    # A cold Lake invocation installs the pinned toolchain and resolves locked
+    # dependencies. Keep that preparation output visible and require success,
+    # then query the version again through the strict diagnostic boundary. This
+    # does not exempt later version or compiled-inventory output from auditing.
+    build("env", "lean", "--version")
+    version = lake("env", "lean", "--version", capture=True).strip()
+    if len(version.splitlines()) != 1 or not pin.startswith("leanprover/lean4:v") or not version.startswith(
         f"Lean (version {pin.removeprefix('leanprover/lean4:v')},"
     ):
         raise ValueError(f"Toolchain mismatch: {pin} vs {version}")

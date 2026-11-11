@@ -6,7 +6,7 @@ TLA_URL  = https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools
 
 .PHONY: lean-mathlib
 .PHONY: all test fetch fatawa labels bank-review oracle prolog-oracle fatawa-takhrij fatawa-prolog judgement ocr build validate generated lean tla reception mentions
-all: source-verify test validate generated lean tla agency
+all: source-verify test validate generated lean tla agency ida ida-judgment ida-derivation ida-registry ida-context ida-substitution ida-projection ida-semantics ida-admission ida-omission-auth
 
 test:      ; cd pipeline && $(PY) -m pytest -q
 # Both gates verify committed outputs by equality; neither updates artifacts.
@@ -41,6 +41,14 @@ agency:
 	$(NODE) formal/check-agency-sources.mjs
 	cd formal/quint && npm run check
 	$(NODE) formal/check-agency-axioms.mjs
+.PHONY: ida
+# Pinned Lean/Quint, full finite IDA table, compiled axioms, and semantic controls.
+ida:
+	$(PY) formal/check-ida.py
+.PHONY: ida-judgment
+# Typed records, registry binding, receipt revalidation, and independent checks.
+ida-judgment:
+	$(PY) formal/check-ida-judgment.py
 prolog-oracle: ; formal/oracle/run_all.sh   # needs swipl: independent Prolog mirror of the Lean kernels
 $(TLA_JAR):; mkdir -p $(@D) && curl -sSL -o $@ $(TLA_URL)
 tla: $(TLA_JAR) ; TLA2TOOLS=$(abspath $(TLA_JAR)) formal/tla/check.sh
@@ -54,3 +62,67 @@ source-verify-fetch: ; cd pipeline && $(PY) -m usul_corpus.source_verify --fetch
 .PHONY: texts-check texts-verify-bytes
 texts-check: ; cd pipeline && $(PY) -m usul_corpus.texts
 texts-verify-bytes: ; cd pipeline && $(PY) -m usul_corpus.texts --require-bytes
+
+.PHONY: ida-derivation
+# Source-bound required-premise derivations, provenance, and independent controls.
+ida-derivation:
+	$(PY) formal/check-ida-derivation.py
+
+.PHONY: ida-registry
+# Versioned act definitions, exact envelope/source binding, canonical wire, Lean/Quint.
+ida-registry:
+	$(PY) formal/check-ida-act-registry.py
+
+.PHONY: ida-context
+# Ground context snapshots, exact inquiry binding, and Lean/Quint comparison.
+ida-context:
+	$(PY) formal/check-ida-context.py
+
+.PHONY: ida-substitution
+# Typed ACT-02 substitutions, conditional premise arrows, and bounded parity.
+ida-substitution:
+	$(PY) formal/check-ida-substitution.py
+
+.PHONY: ida-projection
+# ACT-03 exact observation projection, counterexamples, and bounded parity.
+ida-projection:
+	$(PY) formal/check-ida-projection.py
+
+.PHONY: ida-semantics
+# ACT-04 fixed-history interpretation, satisfaction, and bounded parity.
+ida-semantics:
+	$(PY) formal/check-ida-semantics.py
+
+.PHONY: ida-admission
+# ACT-05 exact contextual premise admission and derived receipt replay.
+ida-admission:
+	$(PY) formal/check-ida-admission.py
+
+.PHONY: ida-omission-auth
+# Signed observation batch replay with exact current omission scope.
+ida-omission-auth:
+	$(PY) formal/check-ida-omission-auth.py
+.PHONY: ida-pilot
+# Reproduce and index the bounded ACT-08 component and shared trace checks.
+ida-pilot:
+	$(PY) formal/test-ida-pilot.py
+	$(PY) formal/check-ida-pilot.py
+
+.PHONY: ida-pilot-trace
+# Shared synthetic repayment application and exact Lean–Quint comparison.
+ida-pilot-trace:
+	$(PY) formal/check-ida-pilot-trace.py
+
+.PHONY: ida-premise-ingestion
+ida-premise-ingestion:
+	rm -f .cache/ida-premise-ingestion/report.json
+	cd formal/lean && lake build UsulTest.IDAPremiseIngestion
+	node formal/check-ida-premise-ingestion.mjs
+
+.PHONY: ida-case-workbench
+# Exact-revision synthetic case presentation, independent model replay, and agent controls.
+ida-case-workbench:
+	rm -f .cache/ida-case-workbench/verification.json
+	$(PY) formal/check-ida-case-workbench.py
+	$(NODE) formal/check-ida-case-workbench.mjs
+	$(NODE) formal/ida-case-workbench.mjs build

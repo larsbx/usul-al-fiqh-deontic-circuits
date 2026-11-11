@@ -76,3 +76,45 @@
 **What this does not settle**
 - Whether the classification is right. Every entry is a candidate: classified with LLM assistance, adjudicated on the hard cases, not reviewed by a person.
 - The non-judgement sorts have no answer type in Σ yet: an effect's codomain (who, how much) and a dalāla's (what is covered) are still each encoder's own enum.
+
+## IDA source-bound extension
+
+The [IDA typed records](../research/ida-judgment-records.md) reuse these answer
+families and bind the complete scope, source reference, interpretation version,
+and evidence metadata to a supplied registry. Their receipt is a record check;
+it may preserve a missing or suspended answer.
+
+The [source-bound derivation layer](../research/ida-source-derivations.md) checks
+source leaves and conjunction of two required premises separately. It retains
+inquiry identity in addition to answer family, checks the complete scope,
+preserves all source provenance, and blocks unresolved or unauthenticated
+premises from accepted conclusions. Alternative interpretations remain separate.
+Its structural proof validity, source-byte evidence, and the correctness of a
+juristic interpretation are separate claims.
+
+## Act descriptions and judgment transport (M16)
+
+The [act-classification roadmap](../research/ida-act-classification-roadmap.md)
+starts from [ACT-00's structured-target integration](../research/ida-target-integration.md),
+merged on main through [#144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144)
+at `ca38f35`. Main now carries full structured targets through judgment records,
+source-bound derivations, and receipt replay. The later transformation packages
+follow the accepted design; implementation remains planned or conditional.
+
+Act-kind arguments and classification facets describe what a question concerns.
+They do not supply its answer or prove that a performance occurred. A map that
+preserves operand sorts can still change named roles, qualifications, or
+occurrence identity. Transport of a judgment therefore requires the original
+derivation plus an explicit preservation witness for its question, assumptions,
+and complete scope. The plan reuses this judgment/admission layer, preserves
+missing/suspended/conflicting/out-of-scope outcomes, and binds derived evidence
+to the relevant source, definition, and profile versions.
+
+The [accepted context theory](../research/ida-context-theory.md) distinguishes
+a well-typed derivation under explicit assumptions from a judgment whose required
+premises are admitted at the complete scope. Context substitution, new factual
+evidence, changing circumstances, and cross-profile translation have separate
+contracts. Current context/time identifiers bind identity; semantic relationships
+between their referents require the specified interpretation and preservation
+witnesses. A semantic equivalence does not transfer an existing signature to
+changed bytes, and a classification alone cannot construct an admitted ruling.

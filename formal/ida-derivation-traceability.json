@@ -1,0 +1,310 @@
+{
+  "schema": "usul.ida.derivation.traceability.v1",
+  "synthetic_sources_only": true,
+  "links": [
+    {
+      "id": "source_binding",
+      "fields": [
+        "SourceRef.sourceId",
+        "SourceRef.sourceHash",
+        "SourceRef.sourceBytes",
+        "Premise.request"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "formal/lean/Usul/Typing/IDAJudgment.lean",
+        "formal/ida-source-auth.mjs",
+        "formal/fixtures/ida-source-auth/catalog.json",
+        "formal/fixtures/ida-source-auth/source-1.txt",
+        "formal/fixtures/ida-source-auth/source-2.txt"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.accepted_leaf_authority",
+        "Usul.IDA.Derivation.unauthenticated_source_blocks_tree",
+        "Usul.IDA.Derivation.substituted_record_blocks_tree"
+      ],
+      "quint_tests": [
+        "derivationSourceAuthenticationTest",
+        "derivationLeafCasesTest"
+      ],
+      "mutants": [
+        "remove_source_authentication"
+      ]
+    },
+    {
+      "id": "passage_binding",
+      "fields": [
+        "SourceRef.passageStart",
+        "SourceRef.passageEnd",
+        "SourceRef.passageHash"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "formal/lean/Usul/Typing/IDAJudgment.lean",
+        "formal/ida-source-auth.mjs",
+        "formal/fixtures/ida-source-auth/catalog.json",
+        "formal/fixtures/ida-source-auth/source-1.txt",
+        "formal/fixtures/ida-source-auth/source-2.txt"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.accepted_leaf_authority",
+        "Usul.IDA.Derivation.substituted_record_blocks_tree"
+      ],
+      "quint_tests": [
+        "derivationSourceAuthenticationTest",
+        "derivationLeafCasesTest"
+      ],
+      "mutants": [
+        "remove_source_authentication"
+      ]
+    },
+    {
+      "id": "current_interpretations",
+      "fields": [
+        "CurrentVersion.profile",
+        "CurrentVersion.profileVersion",
+        "CurrentVersion.interpretationId",
+        "CurrentVersion.interpretationVersion"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "docs/research/ida-derivation-wire.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.accepted_leaf_authority",
+        "Usul.IDA.Derivation.stale_interpretation_blocks_tree"
+      ],
+      "quint_tests": [
+        "derivationVersionTest"
+      ],
+      "mutants": [
+        "remove_current_version_guard",
+        "first_version_wins"
+      ]
+    },
+    {
+      "id": "evidence_classification",
+      "fields": [
+        "EvidenceDecision.premise",
+        "EvidenceDecision.classification",
+        "Provenance.grade"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "docs/research/ida-derivation-wire.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.accepted_leaf_authority",
+        "Usul.IDA.Derivation.unsupported_evidence_blocks_tree",
+        "Usul.IDA.Derivation.unauthorized_evidence_promotion"
+      ],
+      "quint_tests": [
+        "derivationEvidenceTest",
+        "derivationMetadataAndGradesTest"
+      ],
+      "mutants": [
+        "first_evidence_wins",
+        "remove_evidence_record_binding",
+        "promote_disputed_evidence",
+        "promote_unauthenticated_evidence",
+        "promote_missing_evidence"
+      ]
+    },
+    {
+      "id": "question_and_scope",
+      "fields": [
+        "Premise.questionId",
+        "Record.question",
+        "Scope.subjectId",
+        "Scope.subject",
+        "Scope.target",
+        "Scope.context",
+        "Scope.time",
+        "Scope.profile",
+        "Scope.profileVersion",
+        "Scope.domain"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "docs/research/ida-derivation-wire.md",
+        "formal/quint/ida-judgment.qnt",
+        "formal/lean/Usul/Typing/IDAJudgment.lean",
+        "docs/research/ida-target-integration.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.question_identity_guard",
+        "Usul.IDA.Derivation.incompatible_scopes_rejected",
+        "Usul.IDA.Derivation.context_guard",
+        "Usul.IDA.Derivation.accepted_conclusion_scope",
+        "Usul.IDA.Derivation.target_guard",
+        "Usul.IDA.Derivation.accepted_leaf_target",
+        "UsulTest.IDADerivation.structured_target_matrix"
+      ],
+      "quint_tests": [
+        "derivationScopeTest",
+        "derivationQuestionIdentityTest",
+        "derivationScopeBeforeTaintTest",
+        "derivationStructuredTargetTest"
+      ],
+      "mutants": [
+        "ignore_context_scope",
+        "overwrite_question_identity",
+        "overwrite_derived_context",
+        "ignore_structured_target_scope"
+      ]
+    },
+    {
+      "id": "complete_provenance",
+      "fields": [
+        "Evaluation.provenance",
+        "Tree.leaves",
+        "Provenance.grade",
+        "Provenance.rujhanKnown",
+        "Provenance.dalil"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "docs/research/ida-derivation-wire.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.provenance_exact",
+        "Usul.IDA.Derivation.provenance_grades_preserved"
+      ],
+      "quint_tests": [
+        "derivationSourcePreservationTest",
+        "derivationMetadataAndGradesTest",
+        "derivationDeepTaintTest"
+      ],
+      "mutants": [
+        "drop_right_provenance",
+        "discard_required_blocker"
+      ]
+    },
+    {
+      "id": "no_silent_promotion",
+      "fields": [
+        "Record.payload",
+        "Registry.status",
+        "EvidenceDecision.classification",
+        "Evaluation.classification"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "docs/research/ida-derivation-wire.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.rejected_leaf_blocks_tree",
+        "Usul.IDA.Derivation.missing_ruling_blocks_tree",
+        "Usul.IDA.Derivation.suspended_ruling_blocks_tree",
+        "Usul.IDA.Derivation.non_admitted_leaf_blocks_tree",
+        "Usul.IDA.Derivation.classification_admitted_iff"
+      ],
+      "quint_tests": [
+        "derivationNoPromotionTest",
+        "derivationDeepTaintTest",
+        "derivationSourceRuleTest"
+      ],
+      "mutants": [
+        "missing_as_permission",
+        "suspension_as_permission",
+        "promote_registry_candidate",
+        "force_admitted_classification",
+        "waive_source_rule",
+        "discard_required_blocker"
+      ]
+    },
+    {
+      "id": "alternative_interpretations",
+      "fields": [
+        "alternatives ordered outputs",
+        "Provenance.interpretationId",
+        "Provenance.interpretationVersion"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "docs/research/ida-derivation-wire.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.alternative_order",
+        "Usul.IDA.Derivation.alternatives_length",
+        "Usul.IDA.Derivation.alternatives_provenance"
+      ],
+      "quint_tests": [
+        "derivationAlternativesTest"
+      ],
+      "mutants": [
+        "choose_first_alternative"
+      ]
+    },
+    {
+      "id": "receipt_replay",
+      "fields": [
+        "Receipt.environment",
+        "Receipt.tree",
+        "Receipt.result",
+        "Environment.implementationRevision"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "docs/research/ida-derivation-wire.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.verifyReceipt_sound",
+        "Usul.IDA.Derivation.changed_revision_rejects_receipt",
+        "Usul.IDA.Derivation.changed_result_rejects_receipt",
+        "Usul.IDA.Derivation.accepted_receipt_sources",
+        "UsulTest.IDADerivation.structured_target_replay"
+      ],
+      "quint_tests": [
+        "derivationReceiptReplayTest",
+        "derivationGraphTest",
+        "derivationStructuredReplayTest"
+      ],
+      "mutants": [
+        "receipt_ignores_current_environment",
+        "receipt_trusts_stored_evaluation",
+        "malformed_graph_still_accepted"
+      ]
+    },
+    {
+      "id": "typed_conjunction",
+      "fields": [
+        "KnownConclusion.question",
+        "KnownConclusion.answer",
+        "Constraint.set"
+      ],
+      "sources": [
+        "formal/lean/Usul/Typing/IDADerivation.lean",
+        "formal/quint/ida-derivation.qnt",
+        "formal/lean/Usul/IDA.lean",
+        "formal/quint/ida.qnt",
+        "docs/research/ida-derivation-wire.md"
+      ],
+      "theorems": [
+        "Usul.IDA.Derivation.taklifi_intersection_exact",
+        "Usul.IDA.Derivation.taklifi_subset_both",
+        "Usul.IDA.Derivation.sign_agreement",
+        "Usul.IDA.Derivation.both_accepted_inputs"
+      ],
+      "quint_tests": [
+        "derivationConjunctionTest",
+        "derivationTypedConjunctionTest",
+        "derivationAlgebraTest",
+        "derivationQuestionFamilyTest"
+      ],
+      "mutants": [
+        "conflict_selects_left_interpretation",
+        "discard_required_blocker"
+      ]
+    }
+  ]
+}

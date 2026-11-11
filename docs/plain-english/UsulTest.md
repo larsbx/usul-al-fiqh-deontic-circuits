@@ -14,8 +14,20 @@ The following suites:
 - **Tables of conflicts, distinctions and texts**: `TanaqudTable`, `FuruqTable`, `NususTable`, `Reconcile`.
 - **Rulings and judgements**: `TypedRulings`, `KernelContracts`, `Judgement`, `EncoderTypes`, `TaklifBehaviour`.
 - **Agency pilot**: `Agency` (joint-action, scope, revocation, knowledge, and receipt regressions).
+- **Contextual IDA pilot**: `IDAPilot` (the shared guarded application trace, exact destination admission, relevant-report controls, and scoped omission observations).
 - **Category layer and institutions**: `Cat`, `Obstructions`, `Interval`, `Institutions`.
+
+Importing `IDAPilot` also reaches `Usul.Typing.IDAPilot` and
+`Usul.Typing.IDAOmissionWire`. All three modules therefore participate in the
+root compiled audit, whose exact module-coverage requirement remains unchanged.
 
 ## In one line
 
 One import that runs the whole test suite.
+
+The umbrella includes `UsulTest.IDADerivation` and `UsulTest.IDADerivationContracts` for synthetic derivation scenarios and fixed proposition witnesses.
+
+`UsulTest.IDACaseWorkbench` adds the source-bound review fixture and controls
+for missing/conflicting reports, empty/incompatible histories, changed
+destination authority, and reuse based only on act kind. Its proof inventory
+participates in the same whole-core audit.

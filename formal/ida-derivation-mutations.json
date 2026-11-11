@@ -1,0 +1,148 @@
+{
+  "mutations": [
+    {
+      "name": "remove_source_authentication",
+      "before": "else if (not(sourceAuthenticated(env, record.provenance.source)))",
+      "after": "else if (false)",
+      "test": "derivationSourceAuthenticationTest"
+    },
+    {
+      "name": "remove_current_version_guard",
+      "before": "else if (not(currentInterpretation(env, premise)))",
+      "after": "else if (false)",
+      "test": "derivationVersionTest"
+    },
+    {
+      "name": "first_version_wins",
+      "before": "  pure def matchingVersions(env: Environment, premise: Premise): List[VersionPin] =\n    env.currentVersions.select(pin => and {\n      pin.profile == premise.request.record.scope.profile,\n      pin.interpretationId == premise.request.record.provenance.interpretationId,\n    })\n",
+      "after": "  pure def matchingVersions(env: Environment, premise: Premise): List[VersionPin] = {\n    val pins = env.currentVersions.select(pin => and {\n      pin.profile == premise.request.record.scope.profile,\n      pin.interpretationId == premise.request.record.provenance.interpretationId,\n    })\n    if (pins.length() == 0) List() else List(pins.head())\n  }\n",
+      "test": "derivationVersionTest"
+    },
+    {
+      "name": "first_evidence_wins",
+      "before": "  pure def matchingEvidence(env: Environment, premise: Premise): List[EvidenceDecision] =\n    env.evidence.select(decision => decision.premise.request.entryId == premise.request.entryId)\n",
+      "after": "  pure def matchingEvidence(env: Environment, premise: Premise): List[EvidenceDecision] = {\n    val decisions = env.evidence.select(decision => decision.premise.request.entryId == premise.request.entryId)\n    if (decisions.length() == 0) List() else List(decisions.head())\n  }\n",
+      "test": "derivationEvidenceTest"
+    },
+    {
+      "name": "remove_evidence_record_binding",
+      "before": "else if (not(samePremise(decisions.head().premise, premise))) blocked(provenance, List(EvidenceMismatch))",
+      "after": "else if (false) blocked(provenance, List(EvidenceMismatch))",
+      "test": "derivationEvidenceTest"
+    },
+    {
+      "name": "promote_disputed_evidence",
+      "before": "| Disputed => blocked(provenance, List(DisputedEvidence))",
+      "after": "| Disputed => { conclusion: knownOf(premise.questionId, record), issues: List(), provenance: provenance }",
+      "test": "derivationEvidenceTest"
+    },
+    {
+      "name": "promote_unauthenticated_evidence",
+      "before": "| Unauthenticated => blocked(provenance, List(UnauthenticatedEvidence))",
+      "after": "| Unauthenticated => { conclusion: knownOf(premise.questionId, record), issues: List(), provenance: provenance }",
+      "test": "derivationEvidenceTest"
+    },
+    {
+      "name": "promote_missing_evidence",
+      "before": "| EvidenceMissing => blocked(provenance, List(MissingEvidence))",
+      "after": "| EvidenceMissing => { conclusion: knownOf(premise.questionId, record), issues: List(), provenance: provenance }",
+      "test": "derivationEvidenceTest"
+    },
+    {
+      "name": "missing_as_permission",
+      "before": "| NoRuling => blocked(provenance, List(MissingRuling))",
+      "after": "| NoRuling => { conclusion: KnownConclusionValue({ questionId: premise.questionId, question: record.question, answer: J::TaklifiAnswer(Set(J::Mubah)), scope: record.scope }), issues: List(), provenance: provenance }",
+      "test": "derivationNoPromotionTest"
+    },
+    {
+      "name": "suspension_as_permission",
+      "before": "| Suspended => blocked(provenance, List(SuspendedRuling))",
+      "after": "| Suspended => { conclusion: KnownConclusionValue({ questionId: premise.questionId, question: record.question, answer: J::TaklifiAnswer(Set(J::Mubah)), scope: record.scope }), issues: List(), provenance: provenance }",
+      "test": "derivationNoPromotionTest"
+    },
+    {
+      "name": "promote_registry_candidate",
+      "before": "| Rejected(reason) => blocked(provenance, List(RegistryRejected(reason)))",
+      "after": "| Rejected(reason) => match J::decodeRecord(premise.request.record) {\n        | BadRecord => blocked(provenance, List(RegistryRejected(reason)))\n        | RecordValue(record) => { conclusion: knownOf(premise.questionId, record), issues: List(), provenance: provenance }\n      }",
+      "test": "derivationNoPromotionTest"
+    },
+    {
+      "name": "discard_required_blocker",
+      "before": "else if (issues.length() > 0) blocked(provenance, issues)",
+      "after": "else if (issues.length() > 0) { conclusion: left.conclusion, issues: List(), provenance: provenance }",
+      "test": "derivationDeepTaintTest"
+    },
+    {
+      "name": "drop_right_provenance",
+      "before": "val provenance = left.provenance.concat(right.provenance)",
+      "after": "val provenance = left.provenance",
+      "test": "derivationConjunctionTest"
+    },
+    {
+      "name": "ignore_context_scope",
+      "before": "    J::sameScope(left, right)\n",
+      "after": "    J::sameScope(left.with(\"context\", right.context), right)\n",
+      "test": "derivationScopeTest"
+    },
+    {
+      "name": "overwrite_question_identity",
+      "before": "questionId: premise.questionId, question: record.question, answer: answer, scope: record.scope",
+      "after": "questionId: 1, question: record.question, answer: answer, scope: record.scope",
+      "test": "derivationSourcePreservationTest"
+    },
+    {
+      "name": "overwrite_derived_context",
+      "before": "conclusion: KnownConclusionValue(a.with(\"answer\", answer)),",
+      "after": "conclusion: KnownConclusionValue(a.with(\"answer\", answer).with(\"scope\", a.scope.with(\"context\", 1))),",
+      "test": "derivationMetadataAndGradesTest"
+    },
+    {
+      "name": "force_admitted_classification",
+      "before": "if (accepted(evaluation)) J::Admitted else J::Candidate",
+      "after": "if (true) J::Admitted else J::Candidate",
+      "test": "derivationNoPromotionTest"
+    },
+    {
+      "name": "choose_first_alternative",
+      "before": "programs.foldl(List(), (outputs, program) => outputs.append(evaluate(env, program)))",
+      "after": "if (programs.length() == 0) List() else List(evaluate(env, programs.head()))",
+      "test": "derivationAlternativesTest"
+    },
+    {
+      "name": "receipt_ignores_current_environment",
+      "before": "    current == receipt.environment,",
+      "after": "    true,",
+      "test": "derivationReceiptReplayTest"
+    },
+    {
+      "name": "receipt_trusts_stored_evaluation",
+      "before": "    receipt.evaluation == evaluate(current, receipt.program),",
+      "after": "    true,",
+      "test": "derivationReceiptReplayTest"
+    },
+    {
+      "name": "malformed_graph_still_accepted",
+      "before": "          machine.with(\"structurallyValid\", false)",
+      "after": "          machine",
+      "test": "derivationGraphTest"
+    },
+    {
+      "name": "waive_source_rule",
+      "before": "if (record.provenance.premises.length() != 0 or record.provenance.ruleId != 1)",
+      "after": "if (false)",
+      "test": "derivationSourceRuleTest"
+    },
+    {
+      "name": "conflict_selects_left_interpretation",
+      "before": "| AnswerConflict => blocked(provenance, List(ConflictingAnswers))",
+      "after": "| AnswerConflict => { conclusion: KnownConclusionValue(a), issues: List(), provenance: provenance }",
+      "test": "derivationConjunctionTest"
+    },
+    {
+      "name": "ignore_structured_target_scope",
+      "before": "    J::sameScope(left, right)\n",
+      "after": "    J::sameScope(left.with(\"target\", right.target), right)\n",
+      "test": "derivationStructuredTargetTest"
+    }
+  ]
+}

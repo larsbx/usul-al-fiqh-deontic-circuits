@@ -16,6 +16,9 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Cat.Deduction` | [Usul/Cat/Deduction.md](Usul/Cat/Deduction.md) | pending |
 | `Usul.Cat.Factor` | [Usul/Cat/Factor.md](Usul/Cat/Factor.md) | [doc](https://claude.ai/code/artifact/0a0d9669-2526-4689-8268-957d58f6a0bc) |
 | `Usul.Cat.Institution` | [Usul/Cat/Institution.md](Usul/Cat/Institution.md) | [doc](https://claude.ai/code/artifact/da69b13c-c1fb-4603-8005-7419cbe340f5) |
+| `Usul.Cat.IDASubstitution` | [Usul/Cat/IDASubstitution.md](Usul/Cat/IDASubstitution.md) | pending |
+| `Usul.Cat.IDAProjection` | [Usul/Cat/IDAProjection.md](Usul/Cat/IDAProjection.md) | pending |
+| `Usul.Cat.IDASemantics` | [Usul/Cat/IDASemantics.md](Usul/Cat/IDASemantics.md) | pending |
 | `Usul.Cat.Interval` | [Usul/Cat/Interval.md](Usul/Cat/Interval.md) | [doc](https://claude.ai/code/artifact/e49760c6-3969-4ea4-b7e0-37bdf98f0ff1) |
 | `Usul.Cat.Scales` | [Usul/Cat/Scales.md](Usul/Cat/Scales.md) | [doc](https://claude.ai/code/artifact/febfa233-e3e7-4e62-b7dd-84b91d2fc7a9) |
 | `Usul.Cat.Sheaf` | [Usul/Cat/Sheaf.md](Usul/Cat/Sheaf.md) | [doc](https://claude.ai/artifact/Uqh9bDpmnxfZaEAXyVa8Ke) |
@@ -29,6 +32,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Furuq` | [Usul/Furuq.md](Usul/Furuq.md) | [doc](https://claude.ai/code/artifact/1c4e465a-f7a0-436b-94c2-1305eb290dfa) |
 | `Usul.Grounded` | [Usul/Grounded.md](Usul/Grounded.md) | [doc](https://claude.ai/code/artifact/2c0d694f-8a43-4da1-aaa5-015038e0de3e) |
 | `Usul.Hukm` | [Usul/Hukm.md](Usul/Hukm.md) | [doc](https://claude.ai/code/artifact/3d26f8ed-dfa4-4051-8b72-8e2137ac4adf) |
+| `Usul.IDA` | [Usul/IDA.md](Usul/IDA.md) | pending |
 | `Usul.Jadal` | [Usul/Jadal.md](Usul/Jadal.md) | [doc](https://claude.ai/code/artifact/192bc1c9-55ca-472a-9ed1-04d9d7bef56d) |
 | `Usul.Judgement` | [Usul/Judgement.md](Usul/Judgement.md) | [doc](https://claude.ai/code/artifact/ec7004aa-fbdf-4fd6-af2c-da5156ef10c7) |
 | `Usul.Kulliyyat` | [Usul/Kulliyyat.md](Usul/Kulliyyat.md) | [doc](https://claude.ai/code/artifact/dbec9ed2-c7b5-4f16-b894-1fa9cfd5aac5) |
@@ -86,6 +90,18 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing` | [Usul/Typing.md](Usul/Typing.md) | [doc](https://claude.ai/code/artifact/08087293-8365-49d5-8f3f-1e69ffcf5a5b) |
 | `Usul.Typing.Answers` | [Usul/Typing/Answers.md](Usul/Typing/Answers.md) | [doc](https://claude.ai/code/artifact/41e4455f-351b-46d2-837d-20a5c5bcaf96) |
 | `Usul.Typing.Encoders` | [Usul/Typing/Encoders.md](Usul/Typing/Encoders.md) | [doc](https://claude.ai/code/artifact/0d241211-64c6-4884-ac77-c3fdfc0f3824) |
+| `Usul.Typing.IDAActRegistry` | [Usul/Typing/IDAActRegistry.md](Usul/Typing/IDAActRegistry.md) | pending |
+| `Usul.Typing.IDAContext` | [Usul/Typing/IDAContext.md](Usul/Typing/IDAContext.md) | pending |
+| `Usul.Typing.IDACaseWorkbench` | [Usul/Typing/IDACaseWorkbench.md](Usul/Typing/IDACaseWorkbench.md) | pending |
+| `Usul.Typing.IDAPremiseIngestion` | [Usul/Typing/IDAPremiseIngestion.md](Usul/Typing/IDAPremiseIngestion.md) | pending |
+| `Usul.Typing.IDAOmission` | [Usul/Typing/IDAOmission.md](Usul/Typing/IDAOmission.md) | pending |
+| `Usul.Typing.IDAOmissionWire` | [Usul/Typing/IDAOmissionWire.md](Usul/Typing/IDAOmissionWire.md) | pending |
+| `Usul.Typing.IDAPilot` | [Usul/Typing/IDAPilot.md](Usul/Typing/IDAPilot.md) | pending |
+| `Usul.Typing.IDAProjection` | [Usul/Typing/IDAProjection.md](Usul/Typing/IDAProjection.md) | pending |
+| `Usul.Typing.IDASemantics` | [Usul/Typing/IDASemantics.md](Usul/Typing/IDASemantics.md) | pending |
+| `Usul.Typing.IDASubstitution` | [Usul/Typing/IDASubstitution.md](Usul/Typing/IDASubstitution.md) | pending |
+| `Usul.Typing.IDAAdmission` | [Usul/Typing/IDAAdmission.md](Usul/Typing/IDAAdmission.md) | pending |
+| `Usul.Typing.IDAJudgment` | [Usul/Typing/IDAJudgment.md](Usul/Typing/IDAJudgment.md) | pending |
 | `Usul.Typing.Qaida` | [Usul/Typing/Qaida.md](Usul/Typing/Qaida.md) | [doc](https://claude.ai/code/artifact/e77f2feb-7ac1-4d92-9751-c592d15bdcac) |
 | `Usul.Typing.Relations` | [Usul/Typing/Relations.md](Usul/Typing/Relations.md) | [doc](https://claude.ai/code/artifact/81064d2c-3565-4766-84b2-7c816bae389f) |
 
@@ -115,6 +131,24 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.FuruqTable` | [UsulTest/FuruqTable.md](UsulTest/FuruqTable.md) | [doc](https://claude.ai/code/artifact/03f21114-712f-4d23-9c47-dee0c71a8f1b) |
 | `UsulTest.GroundedStress` | [UsulTest/GroundedStress.md](UsulTest/GroundedStress.md) | [doc](https://claude.ai/code/artifact/2db228a3-3d91-47b9-9055-c586d41cf61c) |
 | `UsulTest.GroundedVectors` | [UsulTest/GroundedVectors.md](UsulTest/GroundedVectors.md) | [doc](https://claude.ai/code/artifact/8ed4410c-e599-46fb-9489-d0a8c614e0ef) |
+| `UsulTest.IDA` | [UsulTest/IDA.md](UsulTest/IDA.md) | pending |
+| `UsulTest.IDAActRegistry` | [UsulTest/IDAActRegistry.md](UsulTest/IDAActRegistry.md) | pending |
+| `UsulTest.IDAActRegistryContracts` | [UsulTest/IDAActRegistryContracts.md](UsulTest/IDAActRegistryContracts.md) | pending |
+| `UsulTest.IDAContext` | [UsulTest/IDAContext.md](UsulTest/IDAContext.md) | pending |
+| `UsulTest.IDACaseWorkbench` | [UsulTest/IDACaseWorkbench.md](UsulTest/IDACaseWorkbench.md) | pending |
+| `UsulTest.IDAPremiseIngestion` | [UsulTest/IDAPremiseIngestion.md](UsulTest/IDAPremiseIngestion.md) | pending |
+| `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
+| `UsulTest.IDAPilot` | [UsulTest/IDAPilot.md](UsulTest/IDAPilot.md) | pending |
+| `UsulTest.IDASubstitution` | [UsulTest/IDASubstitution.md](UsulTest/IDASubstitution.md) | pending |
+| `UsulTest.IDASubstitutionContracts` | [UsulTest/IDASubstitutionContracts.md](UsulTest/IDASubstitutionContracts.md) | pending |
+| `UsulTest.IDAProjection` | [UsulTest/IDAProjection.md](UsulTest/IDAProjection.md) | pending |
+| `UsulTest.IDAProjectionContracts` | [UsulTest/IDAProjectionContracts.md](UsulTest/IDAProjectionContracts.md) | pending |
+| `UsulTest.IDASemantics` | [UsulTest/IDASemantics.md](UsulTest/IDASemantics.md) | pending |
+| `UsulTest.IDASemanticsContracts` | [UsulTest/IDASemanticsContracts.md](UsulTest/IDASemanticsContracts.md) | pending |
+| `UsulTest.IDAAdmission` | [UsulTest/IDAAdmission.md](UsulTest/IDAAdmission.md) | pending |
+| `UsulTest.IDAContracts` | [UsulTest/IDAContracts.md](UsulTest/IDAContracts.md) | pending |
+| `UsulTest.IDAJudgment` | [UsulTest/IDAJudgment.md](UsulTest/IDAJudgment.md) | pending |
+| `UsulTest.IDAJudgmentContracts` | [UsulTest/IDAJudgmentContracts.md](UsulTest/IDAJudgmentContracts.md) | pending |
 | `UsulTest.Institutions` | [UsulTest/Institutions.md](UsulTest/Institutions.md) | [doc](https://claude.ai/code/artifact/73cb2d47-cce9-44d7-ac5d-a79426e6a219) |
 | `UsulTest.Interval` | [UsulTest/Interval.md](UsulTest/Interval.md) | [doc](https://claude.ai/code/artifact/10d085fd-7e4a-4589-a057-d7d3f6335251) |
 | `UsulTest.Judgement` | [UsulTest/Judgement.md](UsulTest/Judgement.md) | [doc](https://claude.ai/code/artifact/26403a76-688f-4f69-8929-258fa5e33683) |
@@ -148,7 +182,18 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 
 | Module | Companion | Doc |
 | --- | --- | --- |
+| `scripts.CheckIDAActRegistryWire` | [scripts/CheckIDAActRegistryWire.md](scripts/CheckIDAActRegistryWire.md) | pending |
+| `scripts.CheckIDAOmissionWire` | [scripts/CheckIDAOmissionWire.md](scripts/CheckIDAOmissionWire.md) | pending |
 | `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |
+| `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
+| `scripts.ExportIDAActRegistry` | [scripts/ExportIDAActRegistry.md](scripts/ExportIDAActRegistry.md) | pending |
+| `scripts.ExportIDAContext` | [scripts/ExportIDAContext.md](scripts/ExportIDAContext.md) | pending |
+| `scripts.ExportIDACaseWorkbench` | [scripts/ExportIDACaseWorkbench.md](scripts/ExportIDACaseWorkbench.md) | pending |
+| `scripts.CheckIDAPremiseIngestion` | [scripts/CheckIDAPremiseIngestion.md](scripts/CheckIDAPremiseIngestion.md) | pending |
+| `scripts.ExportIDASubstitution` | [scripts/ExportIDASubstitution.md](scripts/ExportIDASubstitution.md) | pending |
+| `scripts.ExportIDAProjection` | [scripts/ExportIDAProjection.md](scripts/ExportIDAProjection.md) | pending |
+| `scripts.ExportIDASemantics` | [scripts/ExportIDASemantics.md](scripts/ExportIDASemantics.md) | pending |
+| `scripts.ExportIDAJudgment` | [scripts/ExportIDAJudgment.md](scripts/ExportIDAJudgment.md) | pending |
 | `scripts.ExportTypes` | [scripts/ExportTypes.md](scripts/ExportTypes.md) | [doc](https://claude.ai/code/artifact/f4d2dda9-792a-4bb1-8e15-8a236bb54a0e) |
 
 ## UsulMathlib
@@ -159,3 +204,7 @@ Pinned Mathlib bridge in `formal/lean-mathlib/`, outside the kernel build.
 | --- | --- | --- |
 | `UsulMathlib` | [UsulMathlib.md](UsulMathlib.md) | [doc](https://claude.ai/code/artifact/8606ce86-4078-4d8e-90a6-fb7ed9abaac0) |
 | `UsulMathlib.Hukm` | [UsulMathlib/Hukm.md](UsulMathlib/Hukm.md) | [doc](https://claude.ai/code/artifact/c527bab3-be81-48a8-8f55-cfeaa989ba30) |
+| `Usul.Typing.IDADerivation` | [Usul/Typing/IDADerivation.md](Usul/Typing/IDADerivation.md) | pending |
+| `UsulTest.IDADerivation` | [UsulTest/IDADerivation.md](UsulTest/IDADerivation.md) | pending |
+| `UsulTest.IDADerivationContracts` | [UsulTest/IDADerivationContracts.md](UsulTest/IDADerivationContracts.md) | pending |
+| `scripts.ExportIDADerivation` | [scripts/ExportIDADerivation.md](scripts/ExportIDADerivation.md) | pending |
