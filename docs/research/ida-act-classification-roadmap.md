@@ -33,6 +33,12 @@ naturality, separate migration gates, and the
 These refine accepted contracts while implementation and receipt status remain
 separately tracked.
 
+The [native Lean fixture migration](../architecture/lean-fixture-migration.md)
+moves the contextual/sheaf, fatwa, and typed-routing regression expectations
+into the Lean verification substrate. Its finite parity and mutation receipts
+support regression checking for this work. ACT completion and admission of
+classifications or categorical transformations require their own evidence.
+
 ## 1. Baseline and evidence boundaries
 
 ### Current integrated baseline and historical prerequisites

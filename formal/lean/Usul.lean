@@ -43,3 +43,7 @@ import Usul.Typing.IDASubstitution
 import Usul.Typing.IDAAdmission
 import Usul.Typing.IDAPremiseIngestion
 import Usul.Typing.IDACaseWorkbench
+import Usul.Fixtures.Runner
+import Usul.Fixtures.Sheaf
+import Usul.Fixtures.Fatwa
+import Usul.Fixtures.Typing

@@ -169,7 +169,7 @@ improvement is claimed by this batch.
 3. Add Ash resource skeleton.
 4. Add bundle validator and negative fixtures.
 5. Add LLM candidate extraction contract.
-6. ~~Convert `fixture_expectation/3` records from `examples/v39_sheaf_concern.pl` into executable tests.~~ Done: `tests/run_all.sh`.
+6. ~~Convert `fixture_expectation/3` records from `examples/v39_sheaf_concern.pl` into executable tests.~~ Done: `tests/run_all.sh`, now backed by [native Lean fixture suites](architecture/lean-fixture-migration.md) with exact migration coverage and semantic controls.
 7. Add canonical JSON import adapters for the v38/v39 bridge predicates.
 8. Mirror the affect, temporal/path, and sheaf concern split in the Ash resource design.
 9. Add the `F_7` Clifford-even research fixture and authority-firewall test.

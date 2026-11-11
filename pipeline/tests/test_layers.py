@@ -1,7 +1,8 @@
 """The stack: qawāʿid (the foundation) → types (defined by the qawāʿid) → categories (downstream).
 
 Read off the Lean import graph of `formal/lean/Usul`: nothing below the categories imports them,
-only the types layer and the categories import the types, and the categories do reach the types.
+only the types layer, categories, and downstream fixture consumers import the types,
+and the categories do reach the types. Fixture models never feed the production kernel.
 """
 
 from pathlib import Path
@@ -24,17 +25,26 @@ def is_categories(m: str) -> bool:
     return m == "Usul.Cat" or m.startswith("Usul.Cat.")
 
 
+def is_fixtures(m: str) -> bool:
+    return m.startswith("Usul.Fixtures.")
+
+
 IMPORTS = _imports()
 
 
 def test_nothing_below_imports_the_categories():
-    assert not [(m, i) for m, deps in IMPORTS.items() if m != "Usul" and not is_categories(m)
+    assert not [(m, i) for m, deps in IMPORTS.items() if m != "Usul" and not (is_categories(m) or is_fixtures(m))
                 for i in deps if is_categories(i)]
 
 
 def test_only_types_and_categories_import_the_types():
-    assert not [(m, i) for m, deps in IMPORTS.items() if m != "Usul" and not (is_types(m) or is_categories(m))
+    assert not [(m, i) for m, deps in IMPORTS.items() if m != "Usul" and not (is_types(m) or is_categories(m) or is_fixtures(m))
                 for i in deps if is_types(i)]
+
+
+def test_fixture_models_do_not_feed_the_production_kernel():
+    assert not [(m, i) for m, deps in IMPORTS.items() if m != "Usul" and not is_fixtures(m)
+                for i in deps if is_fixtures(i)]
 
 
 def test_the_categories_reach_the_types():

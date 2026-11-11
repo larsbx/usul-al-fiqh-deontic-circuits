@@ -1,0 +1,176 @@
+[
+  {
+    "name": "fatwa_no_legal_value",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"no_legal_value\" true",
+    "after": "applyRule \"no_legal_value\" false"
+  },
+  {
+    "name": "fatwa_lawful_authority",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"lawful_authority\" true",
+    "after": "applyRule \"lawful_authority\" false"
+  },
+  {
+    "name": "fatwa_sirayat_al_jinaya",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"sirayat_al_jinaya\" true",
+    "after": "applyRule \"sirayat_al_jinaya\" false"
+  },
+  {
+    "name": "fatwa_unattributed_death",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"unattributed_death\" true",
+    "after": "applyRule \"unattributed_death\" false"
+  },
+  {
+    "name": "fatwa_itlaf_bi_haqq",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"itlaf_bi_haqq\" true",
+    "after": "applyRule \"itlaf_bi_haqq\" false"
+  },
+  {
+    "name": "fatwa_physician",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"physician\" true",
+    "after": "applyRule \"physician\" false"
+  },
+  {
+    "name": "fatwa_guarantee_by_contract",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"guarantee_by_contract\" true",
+    "after": "applyRule \"guarantee_by_contract\" false"
+  },
+  {
+    "name": "fatwa_hand_of_trust",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"hand_of_trust\" true",
+    "after": "applyRule \"hand_of_trust\" false"
+  },
+  {
+    "name": "fatwa_quwwa_qahira",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"quwwa_qahira\" true",
+    "after": "applyRule \"quwwa_qahira\" false"
+  },
+  {
+    "name": "fatwa_victim_fault",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"victim_fault\" true",
+    "after": "applyRule \"victim_fault\" false"
+  },
+  {
+    "name": "fatwa_mubashir_liable",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"mubashir_liable\" true",
+    "after": "applyRule \"mubashir_liable\" false"
+  },
+  {
+    "name": "fatwa_mubashir_first",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"mubashir_first\" true",
+    "after": "applyRule \"mubashir_first\" false"
+  },
+  {
+    "name": "fatwa_mutasabbib_by_fault",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"mutasabbib_by_fault\" true",
+    "after": "applyRule \"mutasabbib_by_fault\" false"
+  },
+  {
+    "name": "fatwa_no_causation",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"no_causation\" true",
+    "after": "applyRule \"no_causation\" false"
+  },
+  {
+    "name": "fatwa_sufra_kudra_after_tuhr",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"sufra_kudra_after_tuhr\" true",
+    "after": "applyRule \"sufra_kudra_after_tuhr\" false"
+  },
+  {
+    "name": "fatwa_bayyina_in_qada",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"bayyina_in_qada\" true",
+    "after": "applyRule \"bayyina_in_qada\" false"
+  },
+  {
+    "name": "fatwa_rikaz",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"rikaz\" true",
+    "after": "applyRule \"rikaz\" false"
+  },
+  {
+    "name": "fatwa_trivial_find",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"trivial_find\" true",
+    "after": "applyRule \"trivial_find\" false"
+  },
+  {
+    "name": "fatwa_haram_makka",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"haram_makka\" true",
+    "after": "applyRule \"haram_makka\" false"
+  },
+  {
+    "name": "fatwa_dallat_al_ibil",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"dallat_al_ibil\" true",
+    "after": "applyRule \"dallat_al_ibil\" false"
+  },
+  {
+    "name": "fatwa_perishable_find",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"perishable_find\" true",
+    "after": "applyRule \"perishable_find\" false"
+  },
+  {
+    "name": "fatwa_dallat_al_ghanam",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"dallat_al_ghanam\" true",
+    "after": "applyRule \"dallat_al_ghanam\" false"
+  },
+  {
+    "name": "fatwa_announced_year",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"announced_year\" true",
+    "after": "applyRule \"announced_year\" false"
+  },
+  {
+    "name": "fatwa_illicit_exchange",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"illicit_exchange\" true",
+    "after": "applyRule \"illicit_exchange\" false"
+  },
+  {
+    "name": "fatwa_owner_appears_after_charity",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"owner_appears_after_charity\" true",
+    "after": "applyRule \"owner_appears_after_charity\" false"
+  },
+  {
+    "name": "fatwa_family_recipient",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"family_recipient\" true",
+    "after": "applyRule \"family_recipient\" false"
+  },
+  {
+    "name": "fatwa_recipient",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "applyRule \"recipient\" true",
+    "after": "applyRule \"recipient\" false"
+  },
+  {
+    "name": "fatwa_bank_amara_tie",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "Usul.Refinements.zahirPrevails a z (amara == \"true\")",
+    "after": "Usul.Refinements.zahirPrevails a z (amara == \"true\" && false)"
+  },
+  {
+    "name": "fatwa_same_ruling",
+    "path": "formal/lean/Usul/Fixtures/Fatwa.lean",
+    "before": "a == b || (a == \"hold\" && b == \"handToAuthority\") ||",
+    "after": "a == b || false ||"
+  }
+]

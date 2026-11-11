@@ -15,14 +15,65 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  swipl:
-    name: SWI-Prolog fixtures
-    runs-on: ubuntu-latest
+  lean:
+    name: Lean fixtures, migration coverage, mutants, and axiom audit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+
+    steps:
+      - name: Check out the exact source revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+
+      - name: Install and materialize the pinned Lean toolchain
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          cd formal/lean
+          "$HOME/.elan/bin/lake" env lean --version
+
+      - name: Run native Lean fixtures and all acceptance controls
+        run: make fixtures
+
+      - name: Require a receipt for this exact head
+        env:
+          FIXTURE_EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          head = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+          report = json.loads(Path(".cache/lean-fixtures/report.json").read_text())
+          if (head != os.environ["FIXTURE_EXPECTED_HEAD"] or report.get("revision") != head
+                  or report.get("status") != "passed" or report.get("inputs_match_head") is not True):
+              raise SystemExit("Fixture receipt does not verify the requested revision")
+          if any(report.get("runtime_overrides", {}).values()):
+              raise SystemExit("Hosted acceptance requires the unmodified toolchain environment")
+          print(f"Lean fixture receipt verifies {head}")
+          PY
+
+      - name: Retain the fixture table, mutation evidence, and compiled audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-fixture-verification
+          path: .cache/lean-fixtures/
+          include-hidden-files: true
+          if-no-files-found: error
+
+  independent-reference:
+    name: Independent Prolog oracles and migration replay
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
 
     steps:
       - name: Check out source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
 
       - name: Install SWI-Prolog
         run: |
@@ -30,8 +81,8 @@ jobs:
           sudo apt-get install -y -q swi-prolog-nox
           swipl --version
 
-      - name: Run runner self-tests, fixtures, and guard mutants
-        run: tests/run_all.sh
+      - name: Independently replay the legacy migration reference
+        run: make fixtures-legacy
 
       - name: "Oracle: Prolog mirror of the Lean ḥadīth kernel over the corpus"
         run: formal/oracle/run_all.sh
