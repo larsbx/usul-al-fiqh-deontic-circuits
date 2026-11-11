@@ -65,7 +65,11 @@ function selectClaim(id) {
   state.claim = claim;
   if (list(claim.sourceIds).length) state.source = claim.sourceIds[0];
   if (list(claim.proofIds).length) state.proof = claim.proofIds[0];
-  renderClaims();
+  for (const button of $('claims-list').querySelectorAll('.claim-card')) {
+    const selected = button.dataset.claimId === id;
+    button.classList.toggle('selected', selected);
+    button.setAttribute('aria-pressed', String(selected));
+  }
   renderClaimDetail();
   renderEvidence();
 }
@@ -78,6 +82,7 @@ function renderClaims() {
   for (const claim of items) {
     const button = element('button', undefined, `claim-card${state.claim?.id === claim.id ? ' selected' : ''}`);
     button.type = 'button';
+    button.dataset.claimId = claim.id;
     button.setAttribute('aria-pressed', String(state.claim?.id === claim.id));
     const heading = element('span', undefined, 'claim-card-heading');
     heading.append(element('span', claim.kind, 'claim-kind'), element('span', claim.id, 'claim-id'));

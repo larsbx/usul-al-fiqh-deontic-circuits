@@ -53,3 +53,19 @@ jobs:
             .cache/ida-pilot-trace/
           include-hidden-files: true
           if-no-files-found: error
+      - name: Install pinned Playwright and Chromium
+        run: |
+          npm install --prefix "$RUNNER_TEMP/ida-browser" --no-save --no-package-lock playwright@1.56.1
+          "$RUNNER_TEMP/ida-browser/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Exercise the exact generated workbench in Chromium
+        env:
+          EXPECTED_REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: NODE_PATH="$RUNNER_TEMP/ida-browser/node_modules" node formal/check-ida-case-workbench-browser.cjs
+      - name: Retain browser screenshots and execution evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-case-workbench-browser
+          path: .cache/ida-case-workbench-browser/
+          include-hidden-files: true
+          if-no-files-found: warn
