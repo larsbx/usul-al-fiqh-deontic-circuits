@@ -230,7 +230,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review and [signed omission observation replay](ida-omission-coverage.md) implemented. Core completion gate remains open. |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review, [signed omission observation replay](ida-omission-coverage.md), authenticated synthetic premise ingestion, and the [case workbench](ida-case-workbench.md) implemented. General case intake and the core completion gate remain open. |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -779,6 +779,17 @@ independent application grants. It adds restart recovery and duplicate
 rejection in one SQLite database. Its receipts use test authority and bind to
 the exact implementation revision. The other structural examples and their
 integrated evidence remain open.
+
+**Human review interface.** The [case workbench](ida-case-workbench.md) consumes
+this exact synthetic fixture through source authentication and receipt replay.
+Its proof-backed view retains the full snapshot, source/destination premise
+occurrences, four report states, and the explicit hypotheses of conditional
+soundness. The local interface and five read-only agent operations expose
+384 hypothetical scenario cells and targeted questions without changing the
+admitted baseline. `make ida-case-workbench` audits the presentation laws,
+independent Quint parity and adversarial host controls. General narrative
+intake, evidence-policy selection and authenticated human decisions are
+separate CW-01–CW-05 obligations, not a claim that the full ACT-08 exit is closed.
 
 **Exit.** All core obligations have exact-head Lean receipts, independent bounded
 Quint comparison, required negative controls, source/definition/profile binding,

@@ -119,6 +119,14 @@ ida-premise-ingestion:
 	cd formal/lean && lake build UsulTest.IDAPremiseIngestion
 	node formal/check-ida-premise-ingestion.mjs
 
+.PHONY: ida-case-workbench
+# Exact-revision synthetic case presentation, independent model replay, and agent controls.
+ida-case-workbench:
+	rm -f .cache/ida-case-workbench/verification.json
+	$(PY) formal/check-ida-case-workbench.py
+	$(NODE) formal/check-ida-case-workbench.mjs
+	$(NODE) formal/ida-case-workbench.mjs build
+
 .PHONY: ida-zakat-structure
 ida-zakat-structure:
 	$(PY) formal/check-ida-zakat-structure.py

@@ -1,4 +1,5 @@
-import Lean
+import Lean.Data.Json
+import Lean.Elab.Deriving.FromToJson
 import UsulTest.IDAPremiseIngestion
 
 open Lean Usul.IDA UsulTest.IDAPremiseIngestion

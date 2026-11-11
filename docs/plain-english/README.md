@@ -92,6 +92,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.Encoders` | [Usul/Typing/Encoders.md](Usul/Typing/Encoders.md) | [doc](https://claude.ai/code/artifact/0d241211-64c6-4884-ac77-c3fdfc0f3824) |
 | `Usul.Typing.IDAActRegistry` | [Usul/Typing/IDAActRegistry.md](Usul/Typing/IDAActRegistry.md) | pending |
 | `Usul.Typing.IDAContext` | [Usul/Typing/IDAContext.md](Usul/Typing/IDAContext.md) | pending |
+| `Usul.Typing.IDACaseWorkbench` | [Usul/Typing/IDACaseWorkbench.md](Usul/Typing/IDACaseWorkbench.md) | pending |
+| `Usul.Typing.IDAPremiseIngestion` | [Usul/Typing/IDAPremiseIngestion.md](Usul/Typing/IDAPremiseIngestion.md) | pending |
 | `Usul.Typing.IDAOmission` | [Usul/Typing/IDAOmission.md](Usul/Typing/IDAOmission.md) | pending |
 | `Usul.Typing.IDAOmissionWire` | [Usul/Typing/IDAOmissionWire.md](Usul/Typing/IDAOmissionWire.md) | pending |
 | `Usul.Typing.IDAPilot` | [Usul/Typing/IDAPilot.md](Usul/Typing/IDAPilot.md) | pending |
@@ -99,7 +101,6 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.IDASemantics` | [Usul/Typing/IDASemantics.md](Usul/Typing/IDASemantics.md) | pending |
 | `Usul.Typing.IDASubstitution` | [Usul/Typing/IDASubstitution.md](Usul/Typing/IDASubstitution.md) | pending |
 | `Usul.Typing.IDAAdmission` | [Usul/Typing/IDAAdmission.md](Usul/Typing/IDAAdmission.md) | pending |
-| `Usul.Typing.IDAPremiseIngestion` | [Usul/Typing/IDAPremiseIngestion.md](Usul/Typing/IDAPremiseIngestion.md) | pending |
 | `Usul.Typing.IDAJudgment` | [Usul/Typing/IDAJudgment.md](Usul/Typing/IDAJudgment.md) | pending |
 | `Usul.Typing.Qaida` | [Usul/Typing/Qaida.md](Usul/Typing/Qaida.md) | [doc](https://claude.ai/code/artifact/e77f2feb-7ac1-4d92-9751-c592d15bdcac) |
 | `Usul.Typing.Relations` | [Usul/Typing/Relations.md](Usul/Typing/Relations.md) | [doc](https://claude.ai/code/artifact/81064d2c-3565-4766-84b2-7c816bae389f) |
@@ -134,9 +135,10 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDAActRegistry` | [UsulTest/IDAActRegistry.md](UsulTest/IDAActRegistry.md) | pending |
 | `UsulTest.IDAActRegistryContracts` | [UsulTest/IDAActRegistryContracts.md](UsulTest/IDAActRegistryContracts.md) | pending |
 | `UsulTest.IDAContext` | [UsulTest/IDAContext.md](UsulTest/IDAContext.md) | pending |
+| `UsulTest.IDACaseWorkbench` | [UsulTest/IDACaseWorkbench.md](UsulTest/IDACaseWorkbench.md) | pending |
+| `UsulTest.IDAPremiseIngestion` | [UsulTest/IDAPremiseIngestion.md](UsulTest/IDAPremiseIngestion.md) | pending |
 | `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
 | `UsulTest.IDAPilot` | [UsulTest/IDAPilot.md](UsulTest/IDAPilot.md) | pending |
-| `UsulTest.IDAPremiseIngestion` | [UsulTest/IDAPremiseIngestion.md](UsulTest/IDAPremiseIngestion.md) | pending |
 | `UsulTest.IDAZakatStructure` | [UsulTest/IDAZakatStructure.md](UsulTest/IDAZakatStructure.md) | pending |
 | `UsulTest.IDASubstitution` | [UsulTest/IDASubstitution.md](UsulTest/IDASubstitution.md) | pending |
 | `UsulTest.IDASubstitutionContracts` | [UsulTest/IDASubstitutionContracts.md](UsulTest/IDASubstitutionContracts.md) | pending |
@@ -188,6 +190,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
 | `scripts.ExportIDAActRegistry` | [scripts/ExportIDAActRegistry.md](scripts/ExportIDAActRegistry.md) | pending |
 | `scripts.ExportIDAContext` | [scripts/ExportIDAContext.md](scripts/ExportIDAContext.md) | pending |
+| `scripts.ExportIDACaseWorkbench` | [scripts/ExportIDACaseWorkbench.md](scripts/ExportIDACaseWorkbench.md) | pending |
 | `scripts.ExportIDASubstitution` | [scripts/ExportIDASubstitution.md](scripts/ExportIDASubstitution.md) | pending |
 | `scripts.ExportIDAProjection` | [scripts/ExportIDAProjection.md](scripts/ExportIDAProjection.md) | pending |
 | `scripts.ExportIDASemantics` | [scripts/ExportIDASemantics.md](scripts/ExportIDASemantics.md) | pending |

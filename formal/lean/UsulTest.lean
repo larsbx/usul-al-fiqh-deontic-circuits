@@ -45,4 +45,5 @@ import UsulTest.IDASemanticsContracts
 import UsulTest.IDAAdmission
 import UsulTest.IDAPilot
 import UsulTest.IDAPremiseIngestion
+import UsulTest.IDACaseWorkbench
 import UsulTest.IDAZakatStructure
