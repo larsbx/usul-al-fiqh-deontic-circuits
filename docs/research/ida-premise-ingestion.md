@@ -51,10 +51,10 @@ archival, or cross-revision deduplication.
 
 ## ACT-08 exit
 
-The repayment trace now has a synthetic, source-bound path for premise
-authentication. The full core exit still requires integrated exact-revision
-receipts for the structural zakat transfer, the unresolved mandate-role
-rejection and the agency evidence chronology, two qualified descriptions
+The repayment trace has a synthetic, source-bound path for premise
+authentication. The structural zakat transfer has a separate receipt in
+the shared pilot index. The full core exit still requires integrated exact-revision
+receipts for the unresolved mandate-role rejection and the agency evidence chronology, two qualified descriptions
 sharing a core under a declared distinguishing interpretation, and two
 distinct occurrences preserved across indexing and migration views.
 The scoped omission remains a separate signed replay on the shared

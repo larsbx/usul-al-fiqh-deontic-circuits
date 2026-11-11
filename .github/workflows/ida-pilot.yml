@@ -51,6 +51,7 @@ jobs:
           path: |
             .cache/ida-pilot/
             .cache/ida-premise-ingestion/
+            .cache/ida-zakat-structure/
             .cache/ida-pilot-trace/
             .cache/ida-context/
             .cache/ida-admission/

@@ -139,6 +139,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDAPremiseIngestion` | [UsulTest/IDAPremiseIngestion.md](UsulTest/IDAPremiseIngestion.md) | pending |
 | `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
 | `UsulTest.IDAPilot` | [UsulTest/IDAPilot.md](UsulTest/IDAPilot.md) | pending |
+| `UsulTest.IDAZakatStructure` | [UsulTest/IDAZakatStructure.md](UsulTest/IDAZakatStructure.md) | pending |
 | `UsulTest.IDASubstitution` | [UsulTest/IDASubstitution.md](UsulTest/IDASubstitution.md) | pending |
 | `UsulTest.IDASubstitutionContracts` | [UsulTest/IDASubstitutionContracts.md](UsulTest/IDASubstitutionContracts.md) | pending |
 | `UsulTest.IDAProjection` | [UsulTest/IDAProjection.md](UsulTest/IDAProjection.md) | pending |
@@ -184,12 +185,12 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | --- | --- | --- |
 | `scripts.CheckIDAActRegistryWire` | [scripts/CheckIDAActRegistryWire.md](scripts/CheckIDAActRegistryWire.md) | pending |
 | `scripts.CheckIDAOmissionWire` | [scripts/CheckIDAOmissionWire.md](scripts/CheckIDAOmissionWire.md) | pending |
+| `scripts.CheckIDAPremiseIngestion` | [scripts/CheckIDAPremiseIngestion.md](scripts/CheckIDAPremiseIngestion.md) | pending |
 | `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |
 | `scripts.ExportIDA` | [scripts/ExportIDA.md](scripts/ExportIDA.md) | pending |
 | `scripts.ExportIDAActRegistry` | [scripts/ExportIDAActRegistry.md](scripts/ExportIDAActRegistry.md) | pending |
 | `scripts.ExportIDAContext` | [scripts/ExportIDAContext.md](scripts/ExportIDAContext.md) | pending |
 | `scripts.ExportIDACaseWorkbench` | [scripts/ExportIDACaseWorkbench.md](scripts/ExportIDACaseWorkbench.md) | pending |
-| `scripts.CheckIDAPremiseIngestion` | [scripts/CheckIDAPremiseIngestion.md](scripts/CheckIDAPremiseIngestion.md) | pending |
 | `scripts.ExportIDASubstitution` | [scripts/ExportIDASubstitution.md](scripts/ExportIDASubstitution.md) | pending |
 | `scripts.ExportIDAProjection` | [scripts/ExportIDAProjection.md](scripts/ExportIDAProjection.md) | pending |
 | `scripts.ExportIDASemantics` | [scripts/ExportIDASemantics.md](scripts/ExportIDASemantics.md) | pending |

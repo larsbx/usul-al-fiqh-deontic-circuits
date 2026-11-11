@@ -126,3 +126,7 @@ ida-case-workbench:
 	$(PY) formal/check-ida-case-workbench.py
 	$(NODE) formal/check-ida-case-workbench.mjs
 	$(NODE) formal/ida-case-workbench.mjs build
+
+.PHONY: ida-zakat-structure
+ida-zakat-structure:
+	$(PY) formal/check-ida-zakat-structure.py
