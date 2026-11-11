@@ -43,3 +43,4 @@ import UsulTest.IDAProjectionContracts
 import UsulTest.IDASemantics
 import UsulTest.IDASemanticsContracts
 import UsulTest.IDAAdmission
+import UsulTest.IDAPilot

@@ -14,7 +14,12 @@ The following suites:
 - **Tables of conflicts, distinctions and texts**: `TanaqudTable`, `FuruqTable`, `NususTable`, `Reconcile`.
 - **Rulings and judgements**: `TypedRulings`, `KernelContracts`, `Judgement`, `EncoderTypes`, `TaklifBehaviour`.
 - **Agency pilot**: `Agency` (joint-action, scope, revocation, knowledge, and receipt regressions).
+- **Contextual IDA pilot**: `IDAPilot` (the shared guarded application trace, exact destination admission, relevant-report controls, and scoped omission observations).
 - **Category layer and institutions**: `Cat`, `Obstructions`, `Interval`, `Institutions`.
+
+Importing `IDAPilot` also reaches `Usul.Typing.IDAPilot` and
+`Usul.Typing.IDAOmissionWire`. All three modules therefore participate in the
+root compiled audit, whose exact module-coverage requirement remains unchanged.
 
 ## In one line
 
