@@ -485,7 +485,18 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
 
 **M1 scope review (2026-10-13).** [ADR 0001](architecture/adr-0001-logic-core.md#independently-checked-semantic-boundary-2026-10-13) separates proved abstract AF properties from candidate jurisprudential interpretations. Preferred existence is finite and may yield only the empty set; stable extensions may not exist. Stable semantics is optional and requires an existence check or a separately proved sufficient assumption. Grounded is not a definition of ijmāʿ.
 
-**Remaining integration obligations:** source-linked structured derivation terms; typed attacks and preference-to-defeat compilation; subargument/provenance preservation; preferred-family encoding for M4 disagreements; a versioned selection policy with ties/abstention for muʿtamad if needed; final executable grounded stabilization/equality with endpoint bounds; and M7's dialogue correspondence. Existing graded ruling selection and extensional tamthīl/shumūl equivalence do not discharge these obligations. The 10⁴-case differential exit covers grounded fingerprints only. The ADR remains proposed; development can continue with accurate candidate labels.
+**Checked runner:** `Usul.FiniteGrounded` proves finite stabilization, agreement
+with the abstract operator and leastness for well-formed edges. Its checked
+entry point rejects invalid endpoints. The [compiled proof claim
+register](architecture/lean-semantic-contracts.md#compiled-proof-claims)
+records these obligations alongside finite preferred-extension existence.
+
+**Remaining integration obligations:** source-linked structured derivation
+terms, typed attacks and preference-to-defeat compilation, subargument and
+provenance preservation, preferred-family encoding for M4 disagreements, a
+versioned selection policy with ties or abstention for muʿtamad if needed,
+and M7's dialogue correspondence. The 10⁴-case differential exit covers
+grounded fingerprints. The ADR remains proposed.
 
 #### M2 · Signature kernel (Σ) ⟵ M0, M1
 - Base text: Ibn ʿUthaymīn's *al-Uṣūl*. Cross-check against the *Rawḍa* muqaddima and *al-Kawkab*.
@@ -792,6 +803,8 @@ Notation: **Exit** criteria are machine-checkable unless marked *(review)*. `⟵
   A scenario has no inherited baseline attestation. The implementation is a
   synthetic review application; general intake, live authority, natural-language
   orchestration, and authenticated adjudicator/mufti decisions remain separate.
+  The core audit also resolves the workbench's conditional soundness theorem
+  and the synthetic countermodel against the compiled claim register.
 - **Core integration:** this integration collects the bounded ACT-01 through
   ACT-05 stack and the shared ACT-08 trace above ACT-00. Pure projection and
   semantics live under `Usul.Typing`; admission and the pilot consume that layer.

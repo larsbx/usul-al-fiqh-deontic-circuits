@@ -1,0 +1,70 @@
+{
+  "schema": "usul.lean.proof-claims.v1",
+  "claims": [
+    {
+      "id": "finite-preferred-extension",
+      "claim": "Every admissible set on an exhaustively listed argument carrier extends to a preferred set.",
+      "theorems": ["Usul.Dung.exists_preferred_superset"],
+      "hypotheses": "The list contains every argument, and the starting set is admissible for the supplied attack relation.",
+      "finite_checks": "The grounded runner fixtures exercise a different semantics. Preferred-extension existence follows from this theorem.",
+      "source_review": "Abstract argumentation. Juristic interpretation of preferred extensions remains open.",
+      "refinement": "Existence in the Lean relation. An executable preferred-extension enumerator would require its own correctness theorem."
+    },
+    {
+      "id": "checked-grounded-runner",
+      "claim": "The checked runner rejects malformed edges. A successful run gives the least complete extension on Fin n.",
+      "theorems": [
+        "Usul.Grounded.checkedGrounded_rejects",
+        "Usul.Grounded.checkedGrounded_complete",
+        "Usul.Grounded.checkedGrounded_least"
+      ],
+      "hypotheses": "The input is a finite vertex count and list of attacks. The checked runner verifies both endpoints.",
+      "finite_checks": "UsulTest.KernelContracts exercises invalid endpoints, cycles, duplicate edges and a defense chain.",
+      "source_review": "Abstract argumentation. The attack list and its completeness come from the caller.",
+      "refinement": "The theorem refers to the Lean runner. External parsers and attack extraction require separate verification."
+    },
+    {
+      "id": "candidate-command-admission",
+      "claim": "A trace is admissible exactly when the supplied premises hold and the requested result equals the evaluator result.",
+      "theorems": ["Usul.CommandSchemata.admitted_iff", "Usul.CommandSchemata.no_admission_without_premises"],
+      "hypotheses": "The caller fixes the reading and supplies any command context, qarina admissibility and imitation evidence required for that request.",
+      "finite_checks": "UsulTest.KernelContracts exercises missing external premises and positive conditional admission.",
+      "source_review": "The M5 readings remain candidates and the source interpretation questions remain open.",
+      "refinement": "The proof links the Lean trace and evaluator. Live evidence authentication and authority require separate verification."
+    },
+    {
+      "id": "proof-tier-reconciliation",
+      "claim": "Jam takes priority. Suspension occurs exactly when jam, naskh and preference all yield no result. A preference winner is one of the supplied positions.",
+      "theorems": [
+        "Usul.Tarjih.reconcile_jam_first",
+        "Usul.Tarjih.reconcile_tawaqquf_iff",
+        "Usul.Tarjih.prevail_mem"
+      ],
+      "hypotheses": "The caller supplies the candidate positions, policy, proof tiers, comparative advantages and any jam or naskh outcomes.",
+      "finite_checks": "UsulTest.Reconcile checks generated ledger cases under the declared policies.",
+      "source_review": "Evidence admission, chronology and search completeness are separate source obligations.",
+      "refinement": "The theorem refers to the Lean resolver. Corpus adapters have differential evidence within their tested scope."
+    },
+    {
+      "id": "agency-execution-receipt",
+      "claim": "A successful modeled history admits at most one execution. Each accepted execution has authority at its pre-state and is identified by the final receipt.",
+      "theorems": ["Usul.Agency.run_at_most_once", "Usul.Agency.run_execution_witness"],
+      "hypotheses": "The run starts at initial. The execution witness theorem assumes the specified event has executionCount equal to one.",
+      "finite_checks": "The Agency gate compares all 13,312 finite transition inputs with Quint and runs scenarios and semantic controls.",
+      "source_review": "The two revocation profiles and mixed knowledge composition remain candidate readings in docs/research/agency-source-profile.md.",
+      "refinement": "The proof covers the modeled histories. Concurrent application authorization and durable execution require a separate refinement theorem."
+    },
+    {
+      "id": "ida-case-workbench-conditional-soundness",
+      "claim": "A presented conclusion holds in every history satisfying the destination premises. The synthetic baseline has a compatible candidate and its exact conclusion is false in history zero.",
+      "theorems": [
+        "Usul.IDA.CaseWorkbench.View.conditional_sound",
+        "UsulTest.IDACaseWorkbench.admission_and_robustness_do_not_imply_truth"
+      ],
+      "hypotheses": "The view contains a Pilot receipt. Conditional soundness requires satisfaction of the destination premises in the history. The countermodel fixes the synthetic baseline plan and histories.",
+      "finite_checks": "The case-workbench gate compares 384 hypothetical cells with Quint and checks a separate source-bound synthetic baseline.",
+      "source_review": "The fixture uses synthetic source passages and synthetic authorities. Live case interpretation and approval remain separate.",
+      "refinement": "The Lean view presents the admitted receipt. Host comparison and browser checks provide bounded implementation evidence."
+    }
+  ]
+}
