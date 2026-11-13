@@ -69,16 +69,16 @@ code { font-family:var(--mono); font-size:.84em; word-break:break-word; }
 .claim-card-status { font-size:10px; color:var(--muted); }
 .panel-footnote { font-size:11px; color:var(--muted); line-height:1.6; margin:17px 0 0; }
 .conclusion-panel { border-top:3px solid #668875; background:linear-gradient(135deg,#fffefb,#f5f8f1); }
-.conclusion-statement { font-size:16px; line-height:1.65; color:#2c4844; }
+.conclusion-statement { font-size:16px; line-height:1.65; color:#2c4844; overflow-wrap:anywhere; }
 .status-badge { display:inline-block; flex-shrink:0; max-width:58%; overflow-wrap:anywhere; font-size:10px; line-height:1.4; border-radius:3px; padding:4px 7px; color:#596760; background:#eef0ea; border:1px solid #dce1d7; }
 .tone-passed { color:var(--green); background:var(--pale-green); border-color:#cbded2; }
 .tone-warning { color:var(--amber); background:var(--pale-amber); border-color:#ebd7b3; }
 .tone-blocked { color:var(--red); background:var(--pale-red); border-color:#eccdca; }
-.plain-list { margin:0; padding-left:18px; font-size:12px; }
+.plain-list { margin:0; padding-left:18px; font-size:12px; overflow-wrap:anywhere; }
 .plain-list li { margin:6px 0; padding-left:2px; }
 .callout { background:#edf1e9; border-left:2px solid #a3b69d; color:#536353; font-size:12px; padding:11px 13px; margin-top:18px; }
 .callout p:last-child { margin-bottom:0; }
-.claim-statement { font-size:15px; line-height:1.65; margin-bottom:18px; }
+.claim-statement { font-size:15px; line-height:1.65; margin-bottom:18px; overflow-wrap:anywhere; }
 .binding-side { display:inline-block; margin:0 0 13px; padding:4px 8px; border:1px solid #d5ddd2; border-radius:3px; background:#eef3e9; font-size:10px; font-weight:650; color:var(--green); text-transform:uppercase; letter-spacing:.06em; }
 .typed-binding { max-height:360px; overflow:auto; white-space:pre-wrap; overflow-wrap:anywhere; font-family:var(--mono); font-size:10px; line-height:1.65; padding:12px; background:#f5f7f0; border:1px solid #e4e8dd; border-radius:3px; }
 .detail-scope { font-size:12px; color:var(--muted); border-top:1px solid var(--line); padding-top:13px; }
