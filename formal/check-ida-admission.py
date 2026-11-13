@@ -22,7 +22,7 @@ PROOFS = {"Usul.IDA.Admission." + name for name in (
     "Plan.reconstructed", "Plan.conditional_sound", "replay_changed",
     "reconstruct_preserves_provenance", "authorized_certificate_source", "no_token_reuse",
     "Receipt.destination_grounding", "Receipt.destination_certificates", "Receipt.destination_question",
-    "Receipt.conditional_sound",
+    "Receipt.conditional_sound", "Receipt.transport_contract",
 )} | {FIXTURE + "." + name for name in (
     "nonidentity_admission", "current_receipt_replays", "nonidentity_semantics", "adverse_controls",
 )}
