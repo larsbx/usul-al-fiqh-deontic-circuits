@@ -62,6 +62,9 @@ theorem admission_and_robustness_do_not_imply_truth :
     change ¬ Semantics.Satisfies (IDASemantics.history 0) (fun _ x => nomatch x)
       receipt.admission.destination.application.conclusion
     rw [receipt.admission.destinationValid.exactApplication]
+    change Semantics.evaluate (IDASemantics.history 0) (fun _ x => nomatch x)
+      ((plan.conclusion.subst plan.arrow.substitution).subst
+        plan.destinationValuation.grounding) ≠ true
     decide
 
 end UsulTest.IDACaseWorkbench
