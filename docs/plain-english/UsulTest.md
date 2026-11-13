@@ -16,6 +16,7 @@ The following suites:
 - **Agency pilot**: `Agency` (joint-action, scope, revocation, knowledge, and receipt regressions).
 - **Contextual IDA pilot**: `IDAPilot` (the shared guarded application trace, exact destination admission, relevant-report controls, and scoped omission observations).
 - **Structural zakat pilot**: `IDAZakatStructure` checks the restricted candidate's typed registry and role-preserving substitutions while leaving eligibility, amount, occurrence, and discharge unresolved.
+- **Candidate act intake**: `IDAActIntake` checks the 504-case preparation matrix and retained inputs; `IDAActIntakeContracts` independently states 20 fixed proof requirements. Registry definitions determine the operation, and unresolved signatures still reject every supplied operand list. These suites participate in the whole-core audit without issuing source authority or a ruling.
 - **Category layer and institutions**: `Cat`, `Obstructions`, `Interval`, `Institutions`.
 - **Native fixtures**: `Fixtures.Contracts` imports the migrated contextual, fatwa, and typing suites with fixed proposition witnesses and runner controls. The independent fixture gate also checks frozen legacy coverage and adversarial mutations.
 

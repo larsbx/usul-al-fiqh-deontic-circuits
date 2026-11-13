@@ -15,6 +15,13 @@ evidence remains bound to the checked revisions. The remaining packages retain t
 prerequisites below. This is the uṣūl track's milestone
 [M16](../roadmap-hanbali-usul-formalization.md#m16--typed-act-classification-and-categorical-transformations--m2-m5).
 
+The bounded [candidate act intake](ida-act-intake.md) now makes the reference
+usable for named operands through the Lean registry resolver. This implements
+part of CW-01 under the ACT-08 application work: all 34 kinds remain candidates,
+33 still have unresolved roles, and the general case intake and core completion
+gate remain open. Its metadata checks do not verify full witness bytes or admit
+an interpretation, premise, or ruling.
+
 The first deliverable is a small calculus of typed descriptions and substitutions,
 connected to the existing source-bound judgment machinery. More elaborate
 categorical structures are conditional extensions with their own exit criteria.
@@ -236,7 +243,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review, [signed omission observation replay](ida-omission-coverage.md), authenticated synthetic premise ingestion, and the [case workbench](ida-case-workbench.md) implemented. General case intake and the core completion gate remain open. |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review, [signed omission observation replay](ida-omission-coverage.md), authenticated synthetic premise ingestion, and the [case workbench](ida-case-workbench.md) implemented. [Candidate act intake](ida-act-intake.md) implements the named-input part of CW-01; general case intake and the core completion gate remain open. |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -796,6 +803,20 @@ admitted baseline. `make ida-case-workbench` audits the presentation laws,
 independent Quint parity and adversarial host controls. General narrative
 intake, evidence-policy selection and authenticated human decisions are
 separate CW-01–CW-05 obligations, not a claim that the full ACT-08 exit is closed.
+
+**Candidate description intake.** The [bounded CW-01 CLI](ida-act-intake.md)
+accepts a versioned candidate key, definition digest, named operands,
+qualifications, and context. Its operation and signature come from the validated
+repository catalogue, and the actual Lean resolver prepares the draft. All 34
+candidate definitions and their source metadata remain available; 33 definitions
+retain 64 unresolved role slots. The restricted zakat fixture prepares a
+structural description, while the unresolved agency fixture returns its
+recorded gaps without a target. `make ida-act-intake` writes the dedicated
+Lean–Quint and host-boundary report to `.cache/ida-act-intake/report.json`.
+This path checks source metadata and explicitly reports full witness bytes as
+unverified. It adds no narrative extraction, browser intake flow, premise
+admission, application grant, or ruling. General CW-01 intake and the integrated
+ACT-08 exit remain open.
 
 **Exit.** All core obligations have exact-head Lean receipts, independent bounded
 Quint comparison, required negative controls, source/definition/profile binding,

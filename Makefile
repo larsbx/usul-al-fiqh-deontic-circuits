@@ -78,6 +78,11 @@ ida-derivation:
 ida-registry:
 	$(PY) formal/check-ida-act-registry.py
 
+.PHONY: ida-act-intake
+# Candidate-only preparation from pinned registry signatures and named operands.
+ida-act-intake:
+	$(PY) formal/check-ida-act-intake.py
+
 .PHONY: ida-context
 # Ground context snapshots, exact inquiry binding, and Lean/Quint comparison.
 ida-context:

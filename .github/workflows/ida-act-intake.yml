@@ -1,0 +1,116 @@
+name: IDA candidate act intake
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ida-act-intake.yml'
+      - 'Makefile'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'formal/check-ida*.py'
+      - 'formal/ida-act-intake*'
+      - 'formal/ida-act-registry*'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/fixtures/ida-act-intake/**'
+      - 'formal/fixtures/ida-act-registry/**'
+      - 'pipeline/tests/test_act_intake.py'
+      - 'pipeline/usul_corpus/act_reference.py'
+      - 'pipeline/tests/test_act_reference.py'
+      - '.github/workflows/fiqh-act-reference.yml'
+      - 'corpus/proposals/fiqh-acts/reference.json'
+      - 'corpus/mahall/labels/all.json'
+      - 'corpus/mahall/abwab.json'
+      - 'corpus/registry.json'
+      - 'corpus/lock.json'
+      - 'corpus/records/**'
+      - 'docs/research/ida-*.md'
+      - 'docs/plain-english/**/IDAActIntake*.md'
+      - 'docs/plain-english/scripts/*IDAActIntake*.md'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ida-act-intake.yml'
+      - 'Makefile'
+      - 'formal/lean/**'
+      - 'formal/quint/ida*.qnt'
+      - 'formal/quint/package*.json'
+      - 'formal/check-ida*.py'
+      - 'formal/ida-act-intake*'
+      - 'formal/ida-act-registry*'
+      - 'formal/check-lean-axioms.py'
+      - 'formal/lean-axiom-audit.lean'
+      - 'formal/fixtures/ida-act-intake/**'
+      - 'formal/fixtures/ida-act-registry/**'
+      - 'pipeline/tests/test_act_intake.py'
+      - 'pipeline/usul_corpus/act_reference.py'
+      - 'pipeline/tests/test_act_reference.py'
+      - '.github/workflows/fiqh-act-reference.yml'
+      - 'corpus/proposals/fiqh-acts/reference.json'
+      - 'corpus/mahall/labels/all.json'
+      - 'corpus/mahall/abwab.json'
+      - 'corpus/registry.json'
+      - 'corpus/lock.json'
+      - 'corpus/records/**'
+      - 'docs/research/ida-*.md'
+      - 'docs/plain-english/**/IDAActIntake*.md'
+      - 'docs/plain-english/scripts/*IDAActIntake*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  intake:
+    name: Candidate preparation, Lean, Quint, and canonical host protocol
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install host test runner
+        run: python -m pip install pytest
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: formal/quint/package-lock.json
+      - name: Install elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Prepare the pinned Lean toolchain
+        working-directory: formal/lean
+        run: lake --version
+      - name: Install pinned Quint dependencies
+        working-directory: formal/quint
+        run: npm ci
+      - name: Verify bounded candidate intake
+        run: make ida-act-intake
+      - name: Require receipt for the checked revision
+        env:
+          EXPECTED_INTAKE_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          head = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
+          report = json.loads(Path(".cache/ida-act-intake/report.json").read_text())
+          if (head != os.environ["EXPECTED_INTAKE_HEAD"] or report.get("revision") != head
+                  or report.get("status") != "passed" or report.get("inputs_match_head") is not True):
+              raise SystemExit("candidate intake receipt does not verify the checked revision")
+          print(f"candidate intake receipt verifies {head}")
+          PY
+      - name: Retain reproducible verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ida-act-intake-verification
+          path: .cache/ida-act-intake/
+          include-hidden-files: true
+          if-no-files-found: error

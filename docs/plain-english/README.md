@@ -91,6 +91,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.Answers` | [Usul/Typing/Answers.md](Usul/Typing/Answers.md) | [doc](https://claude.ai/code/artifact/41e4455f-351b-46d2-837d-20a5c5bcaf96) |
 | `Usul.Typing.Encoders` | [Usul/Typing/Encoders.md](Usul/Typing/Encoders.md) | [doc](https://claude.ai/code/artifact/0d241211-64c6-4884-ac77-c3fdfc0f3824) |
 | `Usul.Typing.IDAActRegistry` | [Usul/Typing/IDAActRegistry.md](Usul/Typing/IDAActRegistry.md) | pending |
+| `Usul.Typing.IDAActIntake` | [Usul/Typing/IDAActIntake.md](Usul/Typing/IDAActIntake.md) | pending |
 | `Usul.Typing.IDAContext` | [Usul/Typing/IDAContext.md](Usul/Typing/IDAContext.md) | pending |
 | `Usul.Typing.IDACaseWorkbench` | [Usul/Typing/IDACaseWorkbench.md](Usul/Typing/IDACaseWorkbench.md) | pending |
 | `Usul.Typing.IDAPremiseIngestion` | [Usul/Typing/IDAPremiseIngestion.md](Usul/Typing/IDAPremiseIngestion.md) | pending |
@@ -134,6 +135,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDA` | [UsulTest/IDA.md](UsulTest/IDA.md) | pending |
 | `UsulTest.IDAActRegistry` | [UsulTest/IDAActRegistry.md](UsulTest/IDAActRegistry.md) | pending |
 | `UsulTest.IDAActRegistryContracts` | [UsulTest/IDAActRegistryContracts.md](UsulTest/IDAActRegistryContracts.md) | pending |
+| `UsulTest.IDAActIntake` | [UsulTest/IDAActIntake.md](UsulTest/IDAActIntake.md) | pending |
+| `UsulTest.IDAActIntakeContracts` | [UsulTest/IDAActIntakeContracts.md](UsulTest/IDAActIntakeContracts.md) | pending |
 | `UsulTest.IDAContext` | [UsulTest/IDAContext.md](UsulTest/IDAContext.md) | pending |
 | `UsulTest.IDACaseWorkbench` | [UsulTest/IDACaseWorkbench.md](UsulTest/IDACaseWorkbench.md) | pending |
 | `UsulTest.IDAPremiseIngestion` | [UsulTest/IDAPremiseIngestion.md](UsulTest/IDAPremiseIngestion.md) | pending |
@@ -184,6 +187,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | Module | Companion | Doc |
 | --- | --- | --- |
 | `scripts.CheckIDAActRegistryWire` | [scripts/CheckIDAActRegistryWire.md](scripts/CheckIDAActRegistryWire.md) | pending |
+| `scripts.CheckIDAActIntake` | [scripts/CheckIDAActIntake.md](scripts/CheckIDAActIntake.md) | pending |
 | `scripts.CheckIDAOmissionWire` | [scripts/CheckIDAOmissionWire.md](scripts/CheckIDAOmissionWire.md) | pending |
 | `scripts.CheckIDAPremiseIngestion` | [scripts/CheckIDAPremiseIngestion.md](scripts/CheckIDAPremiseIngestion.md) | pending |
 | `scripts.ExportAgency` | [scripts/ExportAgency.md](scripts/ExportAgency.md) | pending |

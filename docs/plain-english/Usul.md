@@ -17,6 +17,7 @@ The root of the uṣūl al-fiqh (legal theory) kernel. Importing `Usul` brings i
 - **Applications**: `Usul.Tahara` (bodily discharges and purity, by their Arabic names), `Usul.Readings` (the formal readings of each maxim, one module per shard).
 - **The ḥadīth seam**: `Usul.Seam`, the only edge into the ḥadīth track.
 - **Types**: `Usul.Typing`, `Usul.Typing.Encoders`, `Usul.Typing.Relations`, `Usul.Typing.Answers`, `Usul.DerivedTypes`.
+- **Candidate act intake**: `Usul.Typing.IDAActIntake` derives the operation from a pinned registry definition and preserves supplied named operands, qualifications, and context. Its proof-bearing draft has passed the existing structural resolver; it supplies no admitted premise or ruling.
 - **Categories**: `Usul.Cat`, which gathers the category-theory submodules.
 - **Native fixtures**: `Usul.Fixtures.Runner`, `Sheaf`, `Fatwa`, and `Typing` keep the migrated regression expectations in the compiled audit. These downstream fixture models do not supply legal premises or alter the contextual admission rules.
 

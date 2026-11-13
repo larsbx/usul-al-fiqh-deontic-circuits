@@ -1,0 +1,93 @@
+{
+  "format": "usul.ida.act-intake.request.v1",
+  "kind": {
+    "symbol": {
+      "space": "fiqh.act.candidate.v1",
+      "name": "transfer.pay_zakat"
+    },
+    "version": 1
+  },
+  "registrySnapshot": 1,
+  "definitionDigest": [
+    51,
+    17,
+    115,
+    89,
+    97,
+    239,
+    210,
+    119,
+    132,
+    146,
+    177,
+    113,
+    174,
+    119,
+    26,
+    46,
+    169,
+    167,
+    220,
+    23,
+    48,
+    201,
+    202,
+    70,
+    72,
+    5,
+    112,
+    10,
+    14,
+    249,
+    48,
+    48
+  ],
+  "operands": [
+    {
+      "role": "payer",
+      "referent": {
+        "kind": "person",
+        "symbol": {
+          "space": "example.intake",
+          "name": "payer"
+        }
+      }
+    },
+    {
+      "role": "recipient",
+      "referent": {
+        "kind": "person",
+        "symbol": {
+          "space": "example.intake",
+          "name": "recipient"
+        }
+      }
+    },
+    {
+      "role": "transferred_property",
+      "referent": {
+        "kind": "asset",
+        "symbol": {
+          "space": "example.intake",
+          "name": "transferred_property"
+        }
+      }
+    }
+  ],
+  "qualifications": [],
+  "context": {
+    "contextId": 1,
+    "timeId": 1,
+    "profile": 1,
+    "profileVersion": 1,
+    "interpretationId": 1,
+    "interpretationVersion": 1,
+    "evidenceRevision": 1,
+    "clock": {
+      "space": "example.intake.clock",
+      "name": "ticks"
+    },
+    "effectiveAt": 10,
+    "recordedAt": 20
+  }
+}

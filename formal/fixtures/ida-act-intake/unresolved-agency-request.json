@@ -1,0 +1,93 @@
+{
+  "format": "usul.ida.act-intake.request.v1",
+  "kind": {
+    "symbol": {
+      "space": "fiqh.act.candidate.v1",
+      "name": "agency.revoke"
+    },
+    "version": 1
+  },
+  "registrySnapshot": 1,
+  "definitionDigest": [
+    62,
+    25,
+    205,
+    186,
+    62,
+    67,
+    239,
+    178,
+    171,
+    19,
+    159,
+    247,
+    130,
+    229,
+    53,
+    11,
+    66,
+    136,
+    99,
+    204,
+    200,
+    234,
+    224,
+    53,
+    166,
+    150,
+    241,
+    182,
+    84,
+    34,
+    229,
+    111
+  ],
+  "operands": [
+    {
+      "role": "revoking_party",
+      "referent": {
+        "kind": "person",
+        "symbol": {
+          "space": "example.intake",
+          "name": "revoking_party"
+        }
+      }
+    },
+    {
+      "role": "mandate_reference",
+      "referent": {
+        "kind": "obligation",
+        "symbol": {
+          "space": "example.intake",
+          "name": "mandate_reference"
+        }
+      }
+    },
+    {
+      "role": "manifestation",
+      "referent": {
+        "kind": "occurrence",
+        "symbol": {
+          "space": "example.intake",
+          "name": "manifestation"
+        }
+      }
+    }
+  ],
+  "qualifications": [],
+  "context": {
+    "contextId": 1,
+    "timeId": 1,
+    "profile": 1,
+    "profileVersion": 1,
+    "interpretationId": 1,
+    "interpretationVersion": 1,
+    "evidenceRevision": 1,
+    "clock": {
+      "space": "example.intake.clock",
+      "name": "ticks"
+    },
+    "effectiveAt": 10,
+    "recordedAt": 20
+  }
+}
