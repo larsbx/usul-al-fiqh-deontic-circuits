@@ -43,4 +43,25 @@ theorem kind_does_not_transfer_guard :
       (IDAPilot.destinationSnapshot 13).envelope.key ∧
       IDAPilot.resultCode 9 2 0 = 0 ∧ IDAPilot.resultCode 13 2 0 = 5 := by decide
 
+
+/-- The source-bound baseline has a compatible candidate, while a history
+outside the candidate population falsifies its exact recorded conclusion. -/
+theorem admission_and_robustness_do_not_imply_truth :
+    ∃ receipt : Pilot.Receipt plan rule (histories 2),
+      sourceBoundTrial "synthetic-case-workbench" = .ok receipt ∧
+      Semantics.compatible (Pilot.destinationPoints plan (histories 2))
+        plan.destination.premises ≠ [] ∧
+      ¬ Semantics.Satisfies (IDASemantics.history 0) (fun _ x => nomatch x)
+        (present receipt).conclusion := by
+  cases h : sourceBoundTrial "synthetic-case-workbench" with
+  | error reason =>
+    have impossible := source_bound_baseline_checked
+    simp [sourceBoundCode, h] at impossible
+  | ok receipt =>
+    refine ⟨receipt, rfl, receipt.compatible_history, ?_⟩
+    change ¬ Semantics.Satisfies (IDASemantics.history 0) (fun _ x => nomatch x)
+      receipt.admission.destination.application.conclusion
+    rw [receipt.admission.destinationValid.exactApplication]
+    decide
+
 end UsulTest.IDACaseWorkbench
