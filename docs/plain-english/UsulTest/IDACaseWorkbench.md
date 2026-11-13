@@ -20,6 +20,12 @@ does not authenticate external bytes or confer juristic authority.
 | `kind_does_not_transfer_guard` | Equal act kind cannot preserve acceptance after an exception report changes. |
 | `admission_and_robustness_do_not_imply_truth` | The successful receipt has a compatible candidate and its recorded conclusion is false in history 0. The candidate population is held fixed. |
 
+The counterexample explicitly gives its empty valuation an empty variable
+context. This lets Lean check that there is no variable to assign before it
+reads the closed conclusion. The successful receipt, fixed candidate population,
+and falsifying history 0 stay the same in both the theorem and its independent
+compiled witness.
+
 The exporter also evaluates the existing 384 pilot scenarios: sixteen report
 masks, four supplied history populations, and six authority modes. This is a
 declared finite family, not exhaustive checking of arbitrary real cases.
