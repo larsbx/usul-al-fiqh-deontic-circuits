@@ -95,7 +95,8 @@ async function run() {
     assert.equal(await value(page, '#revision'), revision);
     assert.equal(await value(page, '#receipt-hash'), marker.receiptSha256);
     const authority = page.getByRole('region', { name: 'Dossier binding and verification' });
-    assert.match(await authority.innerText(), /Human decision\s+Not issued/);
+    const decision = authority.getByText('Human decision', { exact: true }).locator('..');
+    assert.equal(await decision.locator('strong').textContent(), 'Not issued');
     const initialAuthority = await authority.innerText();
     const skip = page.getByRole('link', { name: 'Skip to case review' });
     await page.keyboard.press('Tab');
