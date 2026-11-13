@@ -35,7 +35,7 @@ CORE_PROOFS = (
 FIXTURE_PROOFS = (
     "source_bound_baseline_checked", "source_bound_destination_unchanged", "four_report_states",
     "missing_and_conflicting_reports_block", "nonvacuity_controls", "current_authority_controls",
-    "kind_does_not_transfer_guard",
+    "kind_does_not_transfer_guard", "admission_and_robustness_do_not_imply_truth",
 )
 PROOFS = {"Usul.IDA.CaseWorkbench." + n for n in CORE_PROOFS} | {
     FIXTURE + "." + n for n in FIXTURE_PROOFS}
@@ -83,12 +83,20 @@ theorem require_nonvacuous (view : View p rule histories) :
 theorem require_conditional_sound (view : View p rule histories) (h : History v)
     (empty : Valuation []) (hp : ModelsPremises h p.destinationValuation p.destination.premises) :
     Satisfies h empty view.conclusion := view.conditional_sound h empty hp
+theorem require_admitted_countermodel :
+    ∃ receipt : Pilot.Receipt UsulTest.IDAPilot.plan UsulTest.IDAPilot.rule (UsulTest.IDAPilot.histories 2),
+      UsulTest.IDACaseWorkbench.sourceBoundTrial \"synthetic-case-workbench\" = .ok receipt ∧
+      Semantics.compatible (Pilot.destinationPoints UsulTest.IDAPilot.plan (UsulTest.IDAPilot.histories 2))
+        UsulTest.IDAPilot.plan.destination.premises ≠ [] ∧
+      ¬ Semantics.Satisfies (UsulTest.IDASemantics.history 0) (fun _ x => nomatch x)
+        (present receipt).conclusion :=
+  UsulTest.IDACaseWorkbench.admission_and_robustness_do_not_imply_truth
 end CaseWorkbenchContracts
 """
 CONTRACT_NAMES = {CONTRACT_MODULE + ".require_" + name for name in (
     "unknown", "supported", "refuted", "conflicted", "injective", "exact_snapshot",
     "current_snapshot", "exact_premises", "certificate_formulas", "report_states",
-    "nonvacuous", "conditional_sound",
+    "nonvacuous", "conditional_sound", "admitted_countermodel",
 )}
 
 
@@ -238,7 +246,7 @@ def audit(work, modules):
     require(not result.stderr.strip(), "Unexpected audit diagnostics: " + result.stderr)
     declarations = gate.AUDIT.parse_inventory(result.stdout, expected)
     names = {d["name"] for d in declarations if d["kind"] == "theorem"}
-    require(len(PROOFS) == 26 and PROOFS <= names, "Missing compiled workbench proof obligations")
+    require(len(PROOFS) == 27 and PROOFS <= names, "Missing compiled workbench proof obligations")
     require(CONTRACT_NAMES <= names, "Missing fixed proposition contracts")
     return declarations
 
@@ -309,7 +317,8 @@ def main():
         staged = work / "report.json"
         staged.write_text(json.dumps(report, indent=2) + "\n")
         staged.replace(receipt)
-    print(f"IDA case workbench: 26 proofs, 12 fixed contracts, 384 independent rows, "
+    print(f"IDA case workbench: {len(PROOFS)} proofs, {len(CONTRACT_NAMES)} fixed contracts, "
+          "384 independent rows, "
           f"5 rejected mutants and {len(parser_controls)} export controls at {revision}.")
 
 
