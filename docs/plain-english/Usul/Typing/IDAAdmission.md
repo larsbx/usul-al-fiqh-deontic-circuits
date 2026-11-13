@@ -21,3 +21,4 @@ laws without depending on the downstream functors or categorical adapters.
 | `authorized_certificate_source` | Every authorized certificate goes through the existing IDA source authorization and carries its exact authority witness. |
 | `no_token_reuse` | A token that authenticates two certificates in one authority identifies the very same complete certificate. |
 | `Receipt.destination_grounding`, `Receipt.destination_certificates`, `Receipt.destination_question` | The receipt binds the typed destination inquiry, ordered grounded premises, and original question family. |
+| `Receipt.transport_contract` | One contract binds destination scope and certificates, reconstructs the transported derivation, and relates its exact grounded conclusion to evaluation at the pulled valuation. Truth still requires destination premise satisfaction. |

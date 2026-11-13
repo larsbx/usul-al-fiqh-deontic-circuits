@@ -18,6 +18,7 @@ does not authenticate external bytes or confer juristic authority.
 | `nonvacuity_controls` | Empty and incompatible history populations are rejected; the two compatible populations pass. |
 | `current_authority_controls` | Missing/mismatched premise certificates, missing evidence, stale snapshots, and missing destination grants remain distinct rejection cases. |
 | `kind_does_not_transfer_guard` | Equal act kind cannot preserve acceptance after an exception report changes. |
+| `admission_and_robustness_do_not_imply_truth` | The successful receipt has a compatible candidate and its recorded conclusion is false in history 0. The candidate population is held fixed. |
 
 The exporter also evaluates the existing 384 pilot scenarios: sixteen report
 masks, four supplied history populations, and six authority modes. This is a

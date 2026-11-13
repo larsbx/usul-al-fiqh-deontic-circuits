@@ -273,4 +273,30 @@ theorem Receipt.conditional_sound {p : Plan r v} (receipt : Receipt p) (h : Hist
   apply (satisfaction_subst h _ p.destinationValuation.grounding empty).mpr
   exact p.conditional_sound h hp
 
+
+/-- An admitted application binds exact scope and evidence to a transported
+conditional proof. Evaluation compares the same history at the pulled valuation. -/
+theorem Receipt.transport_contract {p : Plan r v} (receipt : Receipt p) :
+    receipt.destination.application.snapshot.inquiry =
+        interpretInquiry p.destinationInquiry p.destinationValuation ∧
+    receipt.destination.certificates.map Certificate.formula =
+        p.destination.premises.map (·.subst p.destinationValuation.grounding) ∧
+    Derives p.destination.premises (p.conclusion.subst p.arrow.substitution) ∧
+    ∀ (h : History v) (empty : Valuation []),
+      evaluate h empty receipt.destination.application.conclusion =
+          evaluate h (Valuation.pull p.arrow.substitution p.destinationValuation) p.conclusion ∧
+      (ModelsPremises h p.destinationValuation p.destination.premises →
+        Satisfies h empty receipt.destination.application.conclusion) := by
+  refine ⟨receipt.destination_grounding, receipt.destination_certificates, p.reconstructed, ?_⟩
+  intro h empty
+  refine ⟨?_, receipt.conditional_sound h empty⟩
+  have hground : Valuation.pull p.destinationValuation.grounding empty =
+      p.destinationValuation := by
+    funext k x
+    rfl
+  rw [receipt.destinationValid.exactApplication]
+  change evaluate h empty
+    ((p.conclusion.subst p.arrow.substitution).subst p.destinationValuation.grounding) = _
+  rw [evaluate_subst, hground, evaluate_subst]
+
 end Usul.IDA.Admission
