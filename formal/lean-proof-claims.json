@@ -95,12 +95,13 @@
     },
     {
       "id": "ida-projection-inference-boundaries",
-      "claim": "Mutual Reads and identical applicability and projection can coexist with different answers. A nonempty consistent known list permits two globally factoring extensions that agree on every known case and disagree on an unattested feature class.",
+      "claim": "For the five-valued Hukm carrier, mutual Reads and identical applicability and projection can coexist with different answers under sigma, while mubah is fixed. A nonempty consistent known list admits a globally factoring extension for each of the five answers on an unattested feature class. The existing De Morgan lattice is not Boolean: mubah fails both Boolean complement laws, only the endpoints admit complements, and a Boolean binding predicate loses ruling distinctions.",
       "theorems": [
         "UsulTest.IDAProjection.relabel_same_reads",
         "UsulTest.IDAProjection.relabel_same_projection",
         "UsulTest.IDAProjection.relabel_same_applicability",
         "UsulTest.IDAProjection.relabel_changes_applicable_answer",
+        "UsulTest.IDAProjection.relabel_fixed_answer_iff",
         "UsulTest.IDAProjection.relabel_factorization",
         "UsulTest.IDAProjection.relabel_matrix",
         "UsulTest.IDAProjection.unattested_known_nonempty_consistent",
@@ -110,13 +111,18 @@
         "UsulTest.IDAProjection.unattested_two_extensions",
         "UsulTest.IDAProjection.unattested_free_answer",
         "UsulTest.IDAProjection.unattested_matrix",
+        "UsulTest.IDAProjection.fivefold_sigma_not_boolean_complement",
+        "UsulTest.IDAProjection.fivefold_boolean_complements_iff",
+        "UsulTest.IDAProjection.fivefold_binding_not_injective",
+        "UsulTest.IDAProjection.fivefold_matrix",
         "UsulTest.IDAProjection.relabeling_boundary",
-        "UsulTest.IDAProjection.unattested_boundary"
+        "UsulTest.IDAProjection.unattested_boundary",
+        "UsulTest.IDAProjection.fivefold_boundary"
       ],
-      "hypotheses": "The relabeling witness fixes a partial Boolean encoder on enabled, feature and noise coordinates and its Boolean-negated answer map. The extension witness fixes four feature/noise cases and two known cases with feature false and answer true. The generic unattested_free result is instantiated only under the stated consistency and absence hypotheses.",
-      "finite_checks": "The ACT-03 gate appends eight relabeling and sixteen extension rows to its existing table, adding 192 cells for 31,040 total. It pins fifteen new named typed contracts, rejects both boundary theorems weakened to True, and independently checks answer-relabeling and unseen-feature mutants in Quint.",
-      "source_review": "Both examples are synthetic mathematical controls. They make no assertion about a source passage, a real act, or the correct answer under a juristic interpretation.",
-      "refinement": "The new witnesses delimit information dependence and what finite supplied cases determine. They do not establish a unique interpretation, source authenticity, evidence admission, or full ACT-08 acceptance."
+      "hypotheses": "The relabeling witness fixes a partial encoder with a Hukm feature and Hukm answers, Boolean applicability and noise coordinates, and the actual IDA.sigma answer map. Applicable answers differ exactly away from mubah. The extension witness fixes four Boolean feature/noise cases and two known cases with feature false and answer wajib. The generic unattested_free result is instantiated for arbitrary answer : Hukm under explicit consistency and absence hypotheses. Algebra claims concern the existing ordered Hukm lattice and its operations.",
+      "finite_checks": "The ACT-03 gate appends 20 relabeling, 100 extension and 25 fivefold algebra rows to the original scope/report table: 3,537 rows and 32,008 cells total. It pins 21 named boundary contracts, rejects three terminal theorems weakened to True, runs five Quint tests, rejects twelve semantic mutants and nine malformed exports, and distinguishes all five ruling wire tags from optional-answer absence.",
+      "source_review": "The cases and their assigned Hukm values are synthetic mathematical controls using the actual deontic carrier. They make no assertion about a source passage, a real act, or the correct answer under a juristic interpretation. Applying sigma as an answer map does not itself establish a valid omitted-act inquiry or its evidence.",
+      "refinement": "The witnesses delimit information dependence, finite supplied-case determination and the boundary of Boolean projections. Mubah remains a definite ruling, distinct from unknown or inapplicable answers. The controls do not establish a unique interpretation, source authenticity, evidence admission, or full ACT-08 acceptance."
     }
   ]
 }

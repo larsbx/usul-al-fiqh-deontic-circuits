@@ -13,7 +13,8 @@ fragment](ida-context-foundation.md) adds typed predicates, canonical snapshots,
 clock identity, and exact inquiry binding. [ACT-02](ida-substitution.md)
 implements typed reindexing, grounding, and the conjunction premise calculus.
 [ACT-03](ida-projection.md) implements one exact scoped projection, synthetic
-loss witnesses, and output-relabeling and unattested-feature controls.
+loss witnesses, and inference controls on the fivefold `Hukm` carrier, including
+its non-Boolean algebra boundary.
 [ACT-04](ida-semantics.md) implements fixed-history
 description naturality, satisfaction under substitution and conditional
 soundness for a synthetic fragment. Source-backed interpretation and migration
@@ -555,11 +556,27 @@ rule and premises; existence of an extension is not source authority.
 
 The [ACT-03 executable controls](ida-projection.md) now instantiate both
 boundaries. The relabeling witness keeps the actual projection and applicability
-and proves `Reads` both ways, but changes each applicable Boolean answer. The
-unattested-feature witness uses a nonempty consistent known list and two
-explicit globally factoring extensions that agree on all supplied cases and
-disagree on the unseen feature class. Independent finite Lean–Quint comparisons
-check both witnesses; neither constructs an admitted judgment.
+and proves `Reads` both ways. Its answer carrier is `Hukm`, and the existing
+`sigma` map changes each applicable non-`mubah` value while fixing `mubah`.
+The unattested-feature witness uses a nonempty consistent known list labeled
+`wajib`, two explicit globally factoring extensions that agree on all supplied
+cases and disagree unseen, and a compatible mathematical extension for every
+`answer : Hukm`. Independent finite Lean–Quint comparisons check these witnesses;
+neither constructs an admitted judgment.
+
+The five ruling values must remain distinct from Boolean premise truth, evidence
+guards, membership tests, and test assertions. In the existing
+[`Hukm` carrier](../../formal/lean/Usul/Hukm.lean), `mubah` is a permitted ruling,
+not an unknown or inapplicable answer. The
+[`IDA` algebra](../../formal/lean/Usul/IDA.lean) on this repository's chain
+\(H<K<M<N<W\) is a bounded distributive De Morgan lattice with an
+order-reversing involution. It is not Boolean: `sigma mubah = mubah`, whose meet
+and join with itself equal neither of the corresponding lattice bounds; only
+the endpoints have lattice complements. The
+[`sigmaIso` construction](../../formal/lean/Usul/Cat/Scales.lean) uses the
+opposite ruling category and exchanges meet with join. Generic `mapRun`
+preservation of `Reads` alone supplies none of those additional algebra laws,
+question/scope compatibility, or evidence of an actual omission.
 
 The dependency set for a judgment must include positive premises, negative
 guards, completeness assumptions, potential defeaters, priorities, definition

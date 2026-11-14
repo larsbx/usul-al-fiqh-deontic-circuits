@@ -59,9 +59,13 @@ to exact application admission and the shared pilot receipt. The full ACT-08
 exit remains open; source interpretations retain their own admission status.
 The [ACT-03 inference controls](research/ida-projection.md) distinguish shared
 information dependence from equal answers and show that consistent supplied
-cases can leave an unseen feature class undecided. The next accepted core
-obligations remain ACT-04's named interpretation and migration contracts and
-exact-head evidence accounting for the ACT-08 completion claim.
+cases can leave an unseen feature class undecided. They use the existing five
+`Hukm` rulings throughout their answer types. The `sigma` duality fixes `mubah`
+and reverses the declared ruling order; it is not Boolean complement. Boolean
+guards and checks retain separate types, and `mubah` remains distinct from
+unknown or absent answers. The next accepted core obligations remain ACT-04's
+named interpretation and migration contracts and exact-head evidence accounting
+for the ACT-08 completion claim.
 
 ## Working principle
 
