@@ -47,4 +47,6 @@ import UsulTest.IDAPilot
 import UsulTest.IDAPremiseIngestion
 import UsulTest.IDACaseWorkbench
 import UsulTest.IDAZakatStructure
+import UsulTest.IDAStructuralCases
+import UsulTest.IDAStructuralCasesContracts
 import UsulTest.Fixtures.Contracts

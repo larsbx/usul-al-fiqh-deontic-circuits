@@ -65,6 +65,33 @@
       "finite_checks": "The case-workbench gate compares 384 hypothetical cells with Quint and checks a separate source-bound synthetic baseline.",
       "source_review": "The fixture uses synthetic source passages and synthetic authorities. Live case interpretation and approval remain separate.",
       "refinement": "The Lean view presents the admitted receipt. Host comparison and browser checks provide bounded implementation evidence."
+    },
+    {
+      "id": "ida-structural-cases-bounded-integration",
+      "claim": "Typed substitution retains occurrence identity and profile; scoped projection retains occurrence identity and evaluator agreement. The unresolved agency definition and mismatched occurrence certificates are refused. The finite native applications admit and have compatible histories.",
+      "theorems": [
+        "UsulTest.IDAStructuralCases.revoke_unresolved",
+        "UsulTest.IDAStructuralCases.registry_controls",
+        "UsulTest.IDAStructuralCases.substitution_retains_occurrence",
+        "UsulTest.IDAStructuralCases.substitution_retains_profile",
+        "UsulTest.IDAStructuralCases.two_stage_inquiry",
+        "UsulTest.IDAStructuralCases.projection_retains_occurrence",
+        "UsulTest.IDAStructuralCases.projection_view_contract",
+        "UsulTest.IDAStructuralCases.distinct_occurrences_remain_distinct",
+        "UsulTest.IDAStructuralCases.cross_occurrence_certificate_rejected",
+        "UsulTest.IDAStructuralCases.changed_context_receipt_rejected",
+        "UsulTest.IDAStructuralCases.occurrence_matrix",
+        "UsulTest.IDAStructuralCases.qualification_matrix",
+        "UsulTest.IDAStructuralCases.fresh_qualification_authority_admits",
+        "UsulTest.IDAStructuralCases.native_models",
+        "UsulTest.IDAStructuralCases.native_conditional_sound",
+        "UsulTest.IDAStructuralCases.hidden_exception_same_core",
+        "UsulTest.IDAStructuralCases.same_kind_distinct_occurrences"
+      ],
+      "hypotheses": "General laws use typed inquiries, substitutions and valuations, or well-formed scoped projection inputs. Certificate refusal assumes membership and an occurrence mismatch; changed-context replay assumes unequal catalogues. Native admissions fix the supplied synthetic authority and histories 1 or 2.",
+      "finite_checks": "The dedicated structural gate compares 81 rows and 585 cells with independent Quint, pins 17 explicit proposition contracts, and runs 12 tests, five semantic mutants, compiled axiom controls and a proposition-weakening control.",
+      "source_review": "The exact agency.revoke proposal remains candidate and unresolved. Repayment applications, authority and histories are synthetic; report-observation results do not establish report truth.",
+      "refinement": "The claims concern the stated Lean structures and bounded comparison. They do not establish real evidence authentication, general schema or profile migration, or full ACT-08 acceptance."
     }
   ]
 }
