@@ -95,8 +95,8 @@ async function run() {
     assert.equal(await value(page, '#revision'), revision);
     assert.equal(await value(page, '#receipt-hash'), marker.receiptSha256);
     const authority = page.getByRole('region', { name: 'Dossier binding and verification' });
-    // CSS uppercases rendered field labels; the Not issued status remains required.
-    assert.match(await authority.innerText(), /Human decision\s+Not issued/i);
+    const decision = authority.getByText('Human decision', { exact: true }).locator('..');
+    assert.equal(await decision.locator('strong').textContent(), 'Not issued');
     const initialAuthority = await authority.innerText();
     const skip = page.getByRole('link', { name: 'Skip to case review' });
     await page.keyboard.press('Tab');

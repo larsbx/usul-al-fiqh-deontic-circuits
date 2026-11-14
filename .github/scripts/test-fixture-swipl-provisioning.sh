@@ -25,7 +25,7 @@ reject() {
     return 1
   fi
   cat "$scratch/log"
-  grep -Fq -- "$diagnostic" "$scratch/log"
+  grep -Fq "$diagnostic" "$scratch/log"
   test ! -e "$path_file"
   test ! -e "$env_file"
   echo "Rejected $control without exporting a runtime"

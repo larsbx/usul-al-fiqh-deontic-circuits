@@ -88,7 +88,8 @@ theorem require_admitted_countermodel :
       UsulTest.IDACaseWorkbench.sourceBoundTrial \"synthetic-case-workbench\" = .ok receipt ∧
       Semantics.compatible (Pilot.destinationPoints UsulTest.IDAPilot.plan (UsulTest.IDAPilot.histories 2))
         UsulTest.IDAPilot.plan.destination.premises ≠ [] ∧
-      ¬ Semantics.Satisfies (Γ := []) (UsulTest.IDASemantics.history 0) (fun _ x => nomatch x)
+      ¬ Semantics.Satisfies (UsulTest.IDASemantics.history 0)
+        (show Semantics.Valuation [] from fun _ x => nomatch x)
         (present receipt).conclusion :=
   UsulTest.IDACaseWorkbench.admission_and_robustness_do_not_imply_truth
 end CaseWorkbenchContracts
