@@ -814,6 +814,9 @@ grounded fingerprints. The ADR remains proposed.
   orchestration, and authenticated adjudicator/mufti decisions remain separate.
   The core audit also resolves the workbench's conditional soundness theorem
   and the synthetic countermodel against the compiled claim register.
+- **Manuscript:** [Typed Context and Conditional Soundness in Islamic Deontic Algebra](research/ida-context-theory-manuscript.md)
+  states the receipt transport theorem and synthetic countermodel with references
+  to the compiled declarations and hosted replay from PR #169.
 - **Core integration:** this integration collects the bounded ACT-01 through
   ACT-05 stack and the shared ACT-08 trace above ACT-00. Pure projection and
   semantics live under `Usul.Typing`; admission and the pilot consume that layer.
