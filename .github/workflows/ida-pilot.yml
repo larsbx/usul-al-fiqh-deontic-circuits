@@ -14,6 +14,7 @@ on:
       - 'formal/ida-act-registry-wire.py'
       - 'formal/check-lean-axioms.py'
       - 'formal/lean-axiom-audit.lean'
+      - 'formal/lean-proof-claims.json'
       - 'formal/fixtures/ida-source-auth/**'
   workflow_dispatch:
 
@@ -52,6 +53,7 @@ jobs:
             .cache/ida-pilot/
             .cache/ida-premise-ingestion/
             .cache/ida-zakat-structure/
+            .cache/ida-structural-cases/
             .cache/ida-pilot-trace/
             .cache/ida-context/
             .cache/ida-admission/

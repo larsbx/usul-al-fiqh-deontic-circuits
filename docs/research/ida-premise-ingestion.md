@@ -53,14 +53,15 @@ archival, or cross-revision deduplication.
 
 The repayment trace has a synthetic, source-bound path for premise
 authentication. The structural zakat transfer has a separate receipt in
-the shared pilot index. The full core exit still requires integrated exact-revision
-receipts for the unresolved mandate-role rejection and the agency evidence chronology, two qualified descriptions
-sharing a core under a declared distinguishing interpretation, and two
-distinct occurrences preserved across indexing and migration views.
-The scoped omission remains a separate signed replay on the shared
-destination. Integrate those structural cases with registry resolution,
-substitution, interpretation agreement, information-loss rejection, and
-conditional transport as applicable. Record the supported bounds, missing
+the shared pilot index. The [structural-case component](ida-structural-cases.md) now integrates the
+unresolved mandate-role rejection, qualification-sensitive report observations,
+and two distinct occurrences through supported same-profile substitution,
+projection, and application admission. The context component retains the agency
+evidence chronology. Their receipts are indexed at the pilot's exact revision.
+The new structural certificates are supplied test authority; this signed adapter
+remains closed over its original four repayment certificates. The scoped omission
+remains a separate signed replay on the shared destination. General migration
+and full core acceptance require separate review of the integrated evidence. Record the supported bounds, missing
 interpretation decisions, adverse controls, and repository-wide acceptance
 results. Cross-profile reuse is rejected. Cross-profile migration and real
 juristic authorization require separate work.

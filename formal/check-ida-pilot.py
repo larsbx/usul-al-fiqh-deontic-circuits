@@ -8,7 +8,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-CHECKS = ("context", "admission", "omission-auth", "pilot-trace", "zakat-structure")
+CHECKS = ("context", "admission", "omission-auth", "pilot-trace", "zakat-structure", "structural-cases")
 OUTPUT = ROOT / ".cache/ida-pilot/report.json"
 
 

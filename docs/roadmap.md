@@ -52,9 +52,11 @@ versioned registries, exact envelope/source binding, and a canonical structural
 wire, with the dedicated `make ida-registry` gate. The
 [accepted context theory](research/ida-context-theory.md)
 specifies distinct contracts for schematic substitution, contextual facts and
-evidence, temporal changes, and judgment transport. Their implementation continues
-through the remaining ACT packages; source interpretations retain their own
-admission status.
+evidence, temporal changes, and judgment transport. ACT-01 through ACT-05 now have bounded implementations. The
+[ACT-08 structural examples](research/ida-structural-cases.md) connect unresolved
+roles, qualification-sensitive observations, and distinct occurrence identities
+to exact application admission and the shared pilot receipt. The full ACT-08
+exit remains open; source interpretations retain their own admission status.
 
 ## Working principle
 
