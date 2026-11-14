@@ -55,4 +55,86 @@ example :
       ¬ Equivalent (rule true) supportPlusException sameAnswerExtraRead :=
   equal_answers_do_not_imply_equivalence
 
+theorem require_relabel_same_reads :
+    Cat.Typing.Reads relabelEncoder relabeledEncoder ∧
+      Cat.Typing.Reads relabeledEncoder relabelEncoder := relabel_same_reads
+
+theorem require_relabel_same_projection :
+    relabeledEncoder.proj = relabelEncoder.proj := relabel_same_projection
+
+theorem require_relabel_same_applicability :
+    ∀ s : RelabelSituation, relabeledEncoder.applies s = relabelEncoder.applies s :=
+  relabel_same_applicability
+
+theorem require_relabel_changes_applicable_answer :
+    ∀ s : RelabelSituation, s.enabled = true → relabeledEncoder.judge s ≠ relabelEncoder.judge s :=
+  relabel_changes_applicable_answer
+
+theorem require_relabel_factorization :
+    Schema.Factors relabelEncoder.judge relabelEncoder.proj ∧
+      Schema.Factors relabeledEncoder.judge relabelEncoder.proj := relabel_factorization
+
+theorem require_relabel_matrix : ∀ enabled feature noise : Bool,
+    relabelCells enabled feature noise =
+      [if enabled then feature.toNat + 1 else 0,
+       if enabled then feature.toNat + 1 else 0,
+       enabled.toNat, enabled.toNat,
+       if enabled then feature.toNat + 1 else 0,
+       if enabled then (!feature).toNat + 1 else 0,
+       1, (!enabled).toNat] := relabel_matrix
+
+theorem require_unattested_known_nonempty_consistent :
+    unattestedKnown ≠ [] ∧ Cat.factorsOnB unattestedFeature unattestedKnown = true ∧
+      Cat.FactorsOn unattestedFeature unattestedKnown := unattested_known_nonempty_consistent
+
+theorem require_unattested_candidate_factorization : ∀ knownValue unseenValue : Bool,
+    Schema.Factors (unattestedExtension knownValue unseenValue) unattestedFeature :=
+  unattested_candidate_factorization
+
+theorem require_unattested_candidate_agreement : ∀ knownValue unseenValue : Bool,
+    Qiyas.Agrees (unattestedExtension knownValue unseenValue) unattestedKnown ↔ knownValue = true :=
+  unattested_candidate_agreement
+
+theorem require_unattested_feature_absent : ∀ noise : Bool,
+    ∀ p ∈ unattestedKnown, unattestedFeature p.1 ≠ unattestedFeature (true, noise) :=
+  unattested_feature_absent
+
+theorem require_unattested_two_extensions : ∀ noise : Bool,
+    Schema.Factors (unattestedExtension true false) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true false) unattestedKnown ∧
+    Schema.Factors (unattestedExtension true true) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true true) unattestedKnown ∧
+    unattestedExtension true false (true, noise) ≠ unattestedExtension true true (true, noise) :=
+  unattested_two_extensions
+
+theorem require_unattested_free_answer : ∀ noise answer : Bool,
+    ∃ H : UnattestedSituation → Bool,
+      Schema.Factors H unattestedFeature ∧ Qiyas.Agrees H unattestedKnown ∧ H (true, noise) = answer :=
+  unattested_free_answer
+
+theorem require_unattested_matrix : ∀ knownValue unseenValue feature noise : Bool,
+    unattestedCells knownValue unseenValue feature noise =
+      [(if feature then unseenValue else knownValue).toNat,
+       1, knownValue.toNat, 1, (!feature).toNat, (!feature).toNat, 1, (!feature).toNat] :=
+  unattested_matrix
+
+theorem require_relabeling_boundary :
+    Cat.Typing.Reads relabelEncoder relabeledEncoder ∧
+    Cat.Typing.Reads relabeledEncoder relabelEncoder ∧
+    relabeledEncoder.proj = relabelEncoder.proj ∧
+    (∀ s : RelabelSituation, relabeledEncoder.applies s = relabelEncoder.applies s) ∧
+    relabeledEncoder.judge ⟨true, false, false⟩ ≠ relabelEncoder.judge ⟨true, false, false⟩ ∧
+    Schema.Factors relabelEncoder.judge relabelEncoder.proj ∧
+    Schema.Factors relabeledEncoder.judge relabelEncoder.proj := relabeling_boundary
+
+theorem require_unattested_boundary :
+    unattestedKnown ≠ [] ∧ Cat.FactorsOn unattestedFeature unattestedKnown ∧
+    Schema.Factors (unattestedExtension true false) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true false) unattestedKnown ∧
+    Schema.Factors (unattestedExtension true true) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true true) unattestedKnown ∧
+    (∀ noise : Bool,
+      unattestedExtension true false (true, noise) ≠ unattestedExtension true true (true, noise)) :=
+  unattested_boundary
+
 end UsulTest.IDAProjectionContracts

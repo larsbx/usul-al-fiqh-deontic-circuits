@@ -92,6 +92,31 @@
       "finite_checks": "The dedicated structural gate compares 81 rows and 585 cells with independent Quint, pins 17 explicit proposition contracts, and runs 12 tests, five semantic mutants, compiled axiom controls and a proposition-weakening control.",
       "source_review": "The exact agency.revoke proposal remains candidate and unresolved. Repayment applications, authority and histories are synthetic; report-observation results do not establish report truth.",
       "refinement": "The claims concern the stated Lean structures and bounded comparison. They do not establish real evidence authentication, general schema or profile migration, or full ACT-08 acceptance."
+    },
+    {
+      "id": "ida-projection-inference-boundaries",
+      "claim": "Mutual Reads and identical applicability and projection can coexist with different answers. A nonempty consistent known list permits two globally factoring extensions that agree on every known case and disagree on an unattested feature class.",
+      "theorems": [
+        "UsulTest.IDAProjection.relabel_same_reads",
+        "UsulTest.IDAProjection.relabel_same_projection",
+        "UsulTest.IDAProjection.relabel_same_applicability",
+        "UsulTest.IDAProjection.relabel_changes_applicable_answer",
+        "UsulTest.IDAProjection.relabel_factorization",
+        "UsulTest.IDAProjection.relabel_matrix",
+        "UsulTest.IDAProjection.unattested_known_nonempty_consistent",
+        "UsulTest.IDAProjection.unattested_candidate_factorization",
+        "UsulTest.IDAProjection.unattested_candidate_agreement",
+        "UsulTest.IDAProjection.unattested_feature_absent",
+        "UsulTest.IDAProjection.unattested_two_extensions",
+        "UsulTest.IDAProjection.unattested_free_answer",
+        "UsulTest.IDAProjection.unattested_matrix",
+        "UsulTest.IDAProjection.relabeling_boundary",
+        "UsulTest.IDAProjection.unattested_boundary"
+      ],
+      "hypotheses": "The relabeling witness fixes a partial Boolean encoder on enabled, feature and noise coordinates and its Boolean-negated answer map. The extension witness fixes four feature/noise cases and two known cases with feature false and answer true. The generic unattested_free result is instantiated only under the stated consistency and absence hypotheses.",
+      "finite_checks": "The ACT-03 gate appends eight relabeling and sixteen extension rows to its existing table, adding 192 cells for 31,040 total. It pins fifteen new named typed contracts, rejects both boundary theorems weakened to True, and independently checks answer-relabeling and unseen-feature mutants in Quint.",
+      "source_review": "Both examples are synthetic mathematical controls. They make no assertion about a source passage, a real act, or the correct answer under a juristic interpretation.",
+      "refinement": "The new witnesses delimit information dependence and what finite supplied cases determine. They do not establish a unique interpretation, source authenticity, evidence admission, or full ACT-08 acceptance."
     }
   ]
 }

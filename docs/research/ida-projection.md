@@ -7,6 +7,12 @@ snapshot. The evaluator reads report rows and produces synthetic observation
 statuses. The witness checks structure. Authentication, admission, source
 fidelity, and juristic interpretation have separate contracts.
 
+Two further finite controls exercise the accepted context theory's inference
+boundaries: output relabeling preserves the information read by an encoder
+while changing its answer, and consistent supplied cases leave an unattested
+feature class free. These controls use synthetic Boolean answers, not source
+judgments or admission outcomes.
+
 ## What each projection carries
 
 | Projection | Retains | Can forget |
@@ -79,6 +85,63 @@ The coarse maps give no equality or approximation guarantee for the evaluator.
 No quotient or replacement for ACT-01 receipt identity follows from this
 relation.
 
+## Information dependence does not fix an encoder's answer
+
+The relabeling fixture has three Boolean coordinates: whether the encoder is
+enabled, its relevant feature, and irrelevant noise. Its local projection is
+`some feature` when enabled and `none` otherwise. The original encoder returns
+the projected Boolean. The second encoder is the actual `Typed.mapRun`
+construction with Boolean negation as its answer map.
+
+The fixture instantiates
+[`Usul.Cat.Typing.Reads.mapRun`](../../formal/lean/Usul/Cat/Typing.lean), proving
+`Reads` in both directions. It also proves equality of the projections and
+applicability, and factorization of both judgments through the same projection.
+Nevertheless, their answers differ at every enabled situation: `some false`
+becomes `some true`, and conversely. Both judgments remain `none` when disabled.
+Varying noise affects neither encoder.
+
+Thus `Reads` describes information dependence and applicability. Even an
+isomorphism in the category of encoders does not establish equality of their
+answers. An answer-preservation claim needs its own equation or an explicitly
+chosen answer map. The existing frame theorem supplies such an equality for
+the one fixed report evaluator; it does not identify two differently labeled
+evaluators.
+
+## Supplied cases do not determine an unseen feature class
+
+The second fixture has four situations `(feature, noise)`. Its known list is
+nonempty and contains both noise variants of `feature = false`, each with
+answer `true`. Lean checks consistency of that actual list, both as a Boolean
+test and as the `FactorsOn` proposition. Neither situation with
+`feature = true` appears in the known feature classes.
+
+For Boolean parameters `knownValue` and `unseenValue`, the candidate extension
+is defined on every situation:
+
+\[
+H_{k,u}(f,n)=
+\begin{cases}
+k & f=\mathrm{false},\\
+u & f=\mathrm{true}.
+\end{cases}
+\]
+
+Every candidate factors globally through the feature projection, independently
+of noise. It agrees with the supplied list exactly when `knownValue = true`.
+Consequently, both \(H_{\mathrm{true},\mathrm{false}}\) and
+\(H_{\mathrm{true},\mathrm{true}}\) factor and agree with every known case,
+while disagreeing on each situation in the unseen feature class. The fixture
+also directly instantiates `Usul.Cat.unattested_free` from
+[`Usul.Cat.Factor`](../../formal/lean/Usul/Cat/Factor.lean): either Boolean answer
+has a compatible factoring extension.
+
+This is an underdetermination result about the supplied cases. It does not
+prevent an independently justified rule from classifying a new case. The
+source, rule, and premises for that classification must be supplied separately;
+consistency and the existence of a mathematical extension provide no admission
+or source authority.
+
 ## Reproduce
 
 ```sh
@@ -87,15 +150,47 @@ make ida-projection
 ```
 
 The gate compiles fixed Lean statements, audits the compiled axiom dependencies,
-and compares an independent Quint truth table and report-query model. It checks
-2,880 scope and report cases and 512 pairs of snapshots, for 30,848 output
-cells. The finite cases vary both signs of each query, six report-list variants,
-two fallback settings, and fifteen scope shapes. The seven weakened models
-remove a hidden exception, ignore predicate version or participant identity,
-treat absence as a negative report, collapse an occurrence, skip scope, or
-equate equal answers. The replay records source hashes and both outputs in
-`.cache/ida-projection/`.
+and compares an independent Quint model. Its output contains four families:
+
+| Family | Finite inputs | Rows | Output cells |
+|---|---|---:|---:|
+| Report evaluation and scope | Two fallback settings, fifteen scope shapes, sixteen polarity masks, six report-list variants | 2,880 | 28,800 |
+| Snapshot pairs | Two fallback settings and two independent sixteen-mask snapshots | 512 | 2,048 |
+| Output relabeling | Enabled, feature, and noise Booleans | 8 | 64 |
+| Unattested feature | Known-value, unseen-value, feature, and noise Booleans | 16 | 128 |
+| **Total** | | **3,416** | **31,040** |
+
+The original scope and report families remain intact. The added relabeling
+family compares the actual projections, applicability, and optional answers.
+The extension family includes candidates that disagree with the known list as
+well as the two distinct globally factoring candidates that agree with it.
+
+The gate requires 35 named proof obligations and witnesses, including fifteen
+new inference-boundary theorems, and fifteen corresponding fixed boundary
+wrappers. Two controls replace the terminal boundary propositions with `True`
+and require the unchanged wrappers to reject them. Seven malformed-export
+controls check row identity, order, value encoding, completeness, and trace
+success.
+
+Four Quint tests cover the report dependencies, scope and fallback, output
+relabeling, and unattested feature. Nine weakened models must typecheck and
+then fail their intended assertion. The original seven remove a hidden
+exception, ignore predicate version or participant identity, treat absence as
+a negative report, collapse an occurrence, skip scope, or equate equal
+answers. The two added models reuse the old answer merely because projections
+are equal, or force the unseen feature's answer to the known-feature value.
+These changes affect the computed answers, not just an acceptance flag.
+
+The replay records source hashes, the checked revision, and both outputs in
+`.cache/ida-projection/`. Its acceptance evidence applies to that exact source
+revision and declared finite domain.
 
 [ACT-04](ida-semantics.md) establishes fixed-history interpretation and
-satisfaction under substitution for the synthetic fragment. ACT-05 must reconstruct, authenticate, and revalidate concrete evidence
-before issuing a new receipt.
+satisfaction under substitution for the synthetic fragment. Its named sourced
+interpretation and migration obligations remain open. [ACT-05](ida-admission.md)
+reconstructs and revalidates applications against supplied premise certificates,
+their exact bindings, and independent grants before issuing a new receipt.
+External source authentication retains its separate ingestion-adapter contract.
+These ACT-03 controls do not complete the full ACT-08 core exit; completion
+still requires the remaining accepted obligations and evidence at the actual
+integration head.

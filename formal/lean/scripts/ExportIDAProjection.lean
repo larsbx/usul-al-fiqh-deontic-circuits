@@ -17,3 +17,14 @@ def main : IO Unit := do
       for right in [:16] do
         let cells := pairCells (enabled == 1) left right
         IO.println s!"pair,{enabled},0,{left},{right},{String.intercalate "," (cells.map toString)}"
+  for enabled in [:2] do
+    for feature in [:2] do
+      for noise in [:2] do
+        let cells := relabelCells (enabled == 1) (feature == 1) (noise == 1)
+        IO.println s!"relabel,{enabled},0,{feature},{noise},{String.intercalate "," (cells.map toString)}"
+  for knownValue in [:2] do
+    for unseenValue in [:2] do
+      for feature in [:2] do
+        for noise in [:2] do
+          let cells := unattestedCells (knownValue == 1) (unseenValue == 1) (feature == 1) (noise == 1)
+          IO.println s!"unattested,{knownValue},{unseenValue},{feature},{noise},{String.intercalate "," (cells.map toString)}"

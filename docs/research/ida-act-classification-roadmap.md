@@ -234,7 +234,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
 | ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
 | ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
-| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [First exact frame proof and loss witnesses](ida-projection.md) with `make ida-projection` |
+| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [Exact frame proof, loss witnesses, output-relabeling and unattested-feature controls](ida-projection.md) with `make ida-projection` |
 | ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | [Fixed-history semantic fragment](ida-semantics.md) with `make ida-semantics`; sourced interpretation and migration pending |
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
@@ -433,10 +433,14 @@ where appropriate but is distinguished from the original target.
 
 ### ACT-03 — Account for forgetting and scoped equivalence
 
-The [first implemented projection](ida-projection.md) proves an exact frame law
+The [implemented projection](ida-projection.md) proves an exact frame law
 for one synthetic evaluator. It checks an appended exception, loss of
 occurrence identity, equal answers with unequal dependencies, and stale
-bindings despite scoped equivalence.
+bindings despite scoped equivalence. The same gate now exercises output
+relabeling through `Reads.mapRun` and two globally factoring extensions of a
+nonempty known-case list that disagree on an unattested feature class. These
+finite controls use synthetic Boolean answers and add no source judgment or
+admission claim.
 
 **Purpose.** Specify what each representation map preserves, forgets, or can
 reflect.
@@ -465,6 +469,17 @@ unseen feature class unconstrained. Add output-relabeling and unattested-class
 controls alongside the existing qualification-loss counterexample; their
 [context contracts](ida-context-theory.md#complete-dependencies) specify the
 separate obligations.
+
+**Implemented reuse controls.** The relabeled encoder has the same projection
+and applicability as the original and satisfies `Reads` in both directions,
+while changing every applicable answer. For the unattested-class control, the
+known list contains both noise variants of one feature value; the two explicit
+extensions agree with every supplied case and disagree on the other feature
+value. The gate compares all eight relabeling inputs and all sixteen
+extension inputs independently between Lean and Quint. These controls close
+the two named executable examples above. They do not discharge ACT-04's
+sourced interpretation or migration laws, or the exact-head evidence
+accounting required for the full ACT-08 core exit.
 
 **Deliverables.**
 

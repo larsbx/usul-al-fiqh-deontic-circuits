@@ -1,4 +1,5 @@
 import Usul.Cat.IDAProjection
+import Usul.Cat.Typing
 import UsulTest.IDASubstitution
 
 /-! Synthetic guard observations over the ACT-02 grounded repayment. Every
@@ -161,5 +162,193 @@ theorem explicit_negative_only :
     caseCells true 0 0 0 = [1,1,1,0,0,0,0,1,1,1] ∧
     caseCells true 0 8 0 = [1,2,2,0,0,0,1,1,1,1] ∧
     caseCells false 0 8 0 = [1,1,1,0,0,0,1,1,1,1] := by decide
+
+/-! ## Relabeling preserves reads, not the selected answer
+
+These are synthetic Boolean outputs. No label is identified with a source-backed
+juristic ruling. The encoder reads applicability and one feature, ignoring noise. -/
+
+structure RelabelSituation where
+  enabled : Bool
+  feature : Bool
+  noise : Bool
+  deriving DecidableEq, Repr
+
+def relabelEncoder : Usul.Typing.Typed RelabelSituation Bool where
+  Local := Bool
+  proj := fun s => if s.enabled then some s.feature else none
+  embed := fun feature => ⟨true, feature, false⟩
+  run := id
+  proj_embed := fun _ => rfl
+
+def relabeledEncoder : Usul.Typing.Typed RelabelSituation Bool :=
+  relabelEncoder.mapRun Bool.not
+
+def optionBoolCode : Option Bool → Nat
+  | none => 0
+  | some false => 1
+  | some true => 2
+
+def relabelCells (enabled feature noise : Bool) : List Nat :=
+  let s : RelabelSituation := ⟨enabled, feature, noise⟩
+  let originalProjection : Option Bool := relabelEncoder.proj s
+  let relabeledProjection : Option Bool := relabeledEncoder.proj s
+  [optionBoolCode originalProjection, optionBoolCode relabeledProjection,
+   (relabelEncoder.applies s).toNat, (relabeledEncoder.applies s).toNat,
+   optionBoolCode (relabelEncoder.judge s), optionBoolCode (relabeledEncoder.judge s),
+   (decide (originalProjection = relabeledProjection)).toNat,
+   (decide (relabelEncoder.judge s = relabeledEncoder.judge s)).toNat]
+
+theorem relabel_same_reads :
+    Cat.Typing.Reads relabelEncoder relabeledEncoder ∧
+      Cat.Typing.Reads relabeledEncoder relabelEncoder :=
+  Cat.Typing.Reads.mapRun Bool.not relabelEncoder
+
+theorem relabel_same_projection : relabeledEncoder.proj = relabelEncoder.proj := rfl
+
+theorem relabel_same_applicability (s : RelabelSituation) :
+    relabeledEncoder.applies s = relabelEncoder.applies s := rfl
+
+theorem relabel_changes_applicable_answer (s : RelabelSituation) (h : s.enabled = true) :
+    relabeledEncoder.judge s ≠ relabelEncoder.judge s := by
+  rcases s with ⟨enabled, feature, noise⟩
+  cases enabled <;> cases feature <;>
+    simp_all [relabelEncoder, relabeledEncoder, Usul.Typing.Typed.judge,
+      Usul.Typing.Typed.mapRun]
+
+theorem relabel_factorization :
+    Schema.Factors relabelEncoder.judge relabelEncoder.proj ∧
+      Schema.Factors relabeledEncoder.judge relabelEncoder.proj :=
+  ⟨Cat.Typing.judge_factors relabelEncoder,
+    Cat.Typing.judge_mapRun_factors Bool.not relabelEncoder⟩
+
+theorem relabel_matrix : ∀ enabled feature noise : Bool,
+    relabelCells enabled feature noise =
+      [if enabled then feature.toNat + 1 else 0,
+       if enabled then feature.toNat + 1 else 0,
+       enabled.toNat, enabled.toNat,
+       if enabled then feature.toNat + 1 else 0,
+       if enabled then (!feature).toNat + 1 else 0,
+       1, (!enabled).toNat] := by decide
+
+/-! ## Consistency on known cases leaves an unseen feature open
+
+The known data contain both noisy versions of feature `false`, with label `true`.
+Every candidate below factors globally through the feature. Only candidates that
+also agree with these nonempty data are admissible extensions of this fixture. -/
+
+abbrev UnattestedSituation := Bool × Bool
+
+def unattestedFeature (s : UnattestedSituation) : Bool := s.1
+
+def unattestedKnown : Qiyas.Known UnattestedSituation Bool :=
+  [((false, false), true), ((false, true), true)]
+
+def unattestedCases : List UnattestedSituation :=
+  [(false, false), (false, true), (true, false), (true, true)]
+
+def unattestedExtension (knownValue unseenValue : Bool) (s : UnattestedSituation) : Bool :=
+  if unattestedFeature s then unseenValue else knownValue
+
+def unattestedAgreementB (knownValue unseenValue : Bool) : Bool :=
+  unattestedKnown.all fun p => unattestedExtension knownValue unseenValue p.1 == p.2
+
+def unattestedFactorizationB (knownValue unseenValue : Bool) : Bool :=
+  unattestedCases.all fun left => unattestedCases.all fun right =>
+    !(unattestedFeature left == unattestedFeature right) ||
+      unattestedExtension knownValue unseenValue left == unattestedExtension knownValue unseenValue right
+
+def unattestedCells (knownValue unseenValue feature noise : Bool) : List Nat :=
+  let s : UnattestedSituation := (feature, noise)
+  let low := unattestedExtension true false s
+  let high := unattestedExtension true true s
+  [(unattestedExtension knownValue unseenValue s).toNat,
+   (Cat.factorsOnB unattestedFeature unattestedKnown).toNat,
+   (unattestedAgreementB knownValue unseenValue).toNat,
+   (unattestedFactorizationB knownValue unseenValue).toNat,
+   (unattestedKnown.any fun p => unattestedFeature p.1 == unattestedFeature s).toNat,
+   low.toNat, high.toNat, (decide (low = high)).toNat]
+
+theorem unattested_known_nonempty_consistent :
+    unattestedKnown ≠ [] ∧ Cat.factorsOnB unattestedFeature unattestedKnown = true ∧
+      Cat.FactorsOn unattestedFeature unattestedKnown :=
+  ⟨by decide, by decide, Cat.factorsOnB_iff.1 (by decide)⟩
+
+theorem unattested_candidate_factorization (knownValue unseenValue : Bool) :
+    Schema.Factors (unattestedExtension knownValue unseenValue) unattestedFeature :=
+  Schema.Factors.of_eq (fun f => if f then unseenValue else knownValue) (fun _ => rfl)
+
+theorem unattested_candidate_agreement (knownValue unseenValue : Bool) :
+    Qiyas.Agrees (unattestedExtension knownValue unseenValue) unattestedKnown ↔ knownValue = true := by
+  constructor
+  · intro h
+    exact h ((false, false), true) (by decide)
+  · intro h p hp
+    rcases List.mem_cons.mp hp with hp | hp
+    · subst p
+      exact h
+    · have he : p = ((false, true), true) := List.eq_of_mem_singleton hp
+      subst p
+      exact h
+
+theorem unattested_feature_absent (noise : Bool) :
+    ∀ p ∈ unattestedKnown, unattestedFeature p.1 ≠ unattestedFeature (true, noise) := by
+  intro p hp
+  rcases List.mem_cons.mp hp with hp | hp
+  · subst p
+    exact Bool.false_ne_true
+  · have he : p = ((false, true), true) := List.eq_of_mem_singleton hp
+    subst p
+    exact Bool.false_ne_true
+
+theorem unattested_two_extensions (noise : Bool) :
+    Schema.Factors (unattestedExtension true false) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true false) unattestedKnown ∧
+    Schema.Factors (unattestedExtension true true) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true true) unattestedKnown ∧
+    unattestedExtension true false (true, noise) ≠ unattestedExtension true true (true, noise) :=
+  ⟨unattested_candidate_factorization true false,
+    (unattested_candidate_agreement true false).2 rfl,
+    unattested_candidate_factorization true true,
+    (unattested_candidate_agreement true true).2 rfl, Bool.false_ne_true⟩
+
+theorem unattested_free_answer (noise answer : Bool) :
+    ∃ H : UnattestedSituation → Bool,
+      Schema.Factors H unattestedFeature ∧ Qiyas.Agrees H unattestedKnown ∧ H (true, noise) = answer :=
+  Cat.unattested_free unattested_known_nonempty_consistent.2.2 (unattested_feature_absent noise) answer
+
+theorem unattested_matrix : ∀ knownValue unseenValue feature noise : Bool,
+    unattestedCells knownValue unseenValue feature noise =
+      [(if feature then unseenValue else knownValue).toNat,
+       1, knownValue.toNat, 1, (!feature).toNat, (!feature).toNat, 1, (!feature).toNat] := by decide
+
+/-- Terminal contract bundle: mutual reads does not identify the output function. -/
+theorem relabeling_boundary :
+    Cat.Typing.Reads relabelEncoder relabeledEncoder ∧
+    Cat.Typing.Reads relabeledEncoder relabelEncoder ∧
+    relabeledEncoder.proj = relabelEncoder.proj ∧
+    (∀ s : RelabelSituation, relabeledEncoder.applies s = relabelEncoder.applies s) ∧
+    relabeledEncoder.judge ⟨true, false, false⟩ ≠ relabelEncoder.judge ⟨true, false, false⟩ ∧
+    Schema.Factors relabelEncoder.judge relabelEncoder.proj ∧
+    Schema.Factors relabeledEncoder.judge relabelEncoder.proj :=
+  ⟨relabel_same_reads.1, relabel_same_reads.2, relabel_same_projection,
+    relabel_same_applicability, relabel_changes_applicable_answer _ rfl,
+    relabel_factorization.1, relabel_factorization.2⟩
+
+/-- Terminal contract bundle: consistency on populated data does not select an unseen answer. -/
+theorem unattested_boundary :
+    unattestedKnown ≠ [] ∧ Cat.FactorsOn unattestedFeature unattestedKnown ∧
+    Schema.Factors (unattestedExtension true false) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true false) unattestedKnown ∧
+    Schema.Factors (unattestedExtension true true) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension true true) unattestedKnown ∧
+    (∀ noise : Bool,
+      unattestedExtension true false (true, noise) ≠ unattestedExtension true true (true, noise)) :=
+  ⟨unattested_known_nonempty_consistent.1, unattested_known_nonempty_consistent.2.2,
+    unattested_candidate_factorization true false,
+    (unattested_candidate_agreement true false).2 rfl,
+    unattested_candidate_factorization true true,
+    (unattested_candidate_agreement true true).2 rfl,
+    fun noise => (unattested_two_extensions noise).2.2.2.2⟩
 
 end UsulTest.IDAProjection
