@@ -2,8 +2,9 @@ import Usul.Cat.IDAProjection
 import Usul.Cat.Typing
 import UsulTest.IDASubstitution
 
-/-! Synthetic guard observations over the ACT-02 grounded repayment. Every
-input in the finite matrix satisfies ACT-01 snapshot shape. -/
+/-! Synthetic guard observations over the ACT-02 grounded repayment. The report
+and scope rows satisfy ACT-01 snapshot shape. Separate Boolean fixtures isolate
+answer relabeling and underdetermination on unseen feature classes. -/
 
 namespace UsulTest.IDAProjection
 

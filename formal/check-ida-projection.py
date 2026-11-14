@@ -251,10 +251,19 @@ def main():
             result, record = test(changed, work / "mutant.json", witness, fail=False)
             require(result.returncode != 0 and record.get("stage") == "testing"
                     and record.get("failed") == [witness], f"Mutation survived or failed out of scope: {name}")
-            diagnostic = result.stdout + result.stderr
-            require("QNT508" in diagnostic and "Assertion failed" in diagnostic
-                    and re.findall(r"Error \[(QNT\d+)\]", diagnostic) == ["QNT508"],
+            # Quint 0.33.1 suppresses diagnostics with --out and omits test
+            # failure reasons from that JSON. Replay the same named test with
+            # console diagnostics to distinguish assertion failure from a
+            # runtime error, while retaining the machine-readable inventory.
+            asserted = quint("test", changed, "--backend", "typescript", "--max-samples", "1",
+                             "--seed", gate.SEED, "--match", "^" + witness + "$",
+                             "--verbosity", "2", fail=False)
+            diagnostic = asserted.stdout + asserted.stderr
+            require(asserted.returncode != 0 and "Assertion failed" in diagnostic
+                    and re.findall(r"\[(QNT\d+)\]", diagnostic) == ["QNT508"],
                     "Mutation failed outside its intended assertion: " + name)
+            record["assertion_code"] = "QNT508"
+            record["assertion_diagnostic"] = diagnostic
             mutants[name] = record
         require(hashes == fingerprint(modules) and overrides == gate.COMMON.runtime_overrides()
                 and revision == gate.command(["git", "rev-parse", "HEAD"]).stdout.strip(),
