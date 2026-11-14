@@ -3,11 +3,14 @@
 ## Proof-first roadmap
 
 **Design status: accepted.** The project owner accepted the context theory and
-this implementation roadmap on 2026-11-09. ACT-01 now has a minimal
-[registry and bound-source implementation](ida-act-registry.md) and a
-[ground context implementation](ida-context-foundation.md). Remaining core work
-is planned, and conditional extensions retain their stated triggers. Design
-acceptance is recorded separately from implementation and proof completion.
+this implementation roadmap on 2026-11-09. ACT-01 through ACT-05 now have
+bounded implementations, including the [registry](ida-act-registry.md),
+[ground contexts](ida-context-foundation.md), [substitution](ida-substitution.md),
+[projection](ida-projection.md), [semantics](ida-semantics.md), and
+[contextual admission](ida-admission.md). ACT-08 integrates bounded application
+and [structural examples](ida-structural-cases.md); its full exit remains open.
+Conditional extensions retain their stated triggers. Design acceptance is
+recorded separately from implementation and proof completion.
 
 **Implementation status.** ACT-00 is integrated on main through [PR #144][pr144] at
 [`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`][integrated-main]. Its acceptance
@@ -776,8 +779,9 @@ reports, incompatible histories, and incomplete omission observations.
 Its frame example preserves the guard result across an irrelevant report
 append. A matching exception changes that result at the same target.
 `make ida-pilot` indexes the shared trace and component receipts at one
-revision. The full exit still requires the remaining structural examples
-and review.
+revision. The [structural-case component](ida-structural-cases.md) adds the unresolved
+mandate, qualification, and occurrence examples below. Full exit requires
+review of the integrated receipts and their declared scope.
 
 **Structural zakat receipt.** The restricted `transfer.pay_zakat` candidate
 is checked against the corpus proposal and a fixture-local registry. The
@@ -790,8 +794,20 @@ subject binding, and discharge open.
 authenticates the exact synthetic repayment certificates and preserves the
 independent application grants. It adds restart recovery and duplicate
 rejection in one SQLite database. Its receipts use test authority and bind to
-the exact implementation revision. The other structural examples and their
-integrated evidence remain open.
+the exact implementation revision. The additional structural examples use explicit
+supplied test authority; this adapter does not sign their new certificates.
+
+**Remaining structural examples integrated.** The [structural-case receipt](ida-structural-cases.md)
+checks the actual unresolved `agency.revoke` role signature against the source-linked
+catalogue, qualification-sensitive report interpretation over one fixed history,
+and two distinct omission occurrences through same-profile substitution, full
+inquiry interpretation, projection, and actual application admission. The finite
+matrix has 81 rows and 585 independently compared cells. Both occurrences have
+positive native applications and compatible-history witnesses; stale contexts,
+cross-occurrence certificates, duplicate tokens, and missing evidence or grants
+are rejected. `make ida-pilot` requires this component at the same revision.
+The new authorities are supplied synthetic fixtures. General schema/profile
+migration and new signed premise ingestion remain separate obligations.
 
 **Human review interface.** The [case workbench](ida-case-workbench.md) consumes
 this exact synthetic fixture through source authentication and receipt replay.

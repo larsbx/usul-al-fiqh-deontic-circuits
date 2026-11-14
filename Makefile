@@ -140,3 +140,8 @@ ida-case-workbench:
 .PHONY: ida-zakat-structure
 ida-zakat-structure:
 	$(PY) formal/check-ida-zakat-structure.py
+
+.PHONY: ida-structural-cases
+# ACT-08 unresolved roles, qualified descriptions, and exact occurrence bindings.
+ida-structural-cases:
+	$(PY) formal/check-ida-structural-cases.py

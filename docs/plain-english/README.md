@@ -143,6 +143,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
 | `UsulTest.IDAPilot` | [UsulTest/IDAPilot.md](UsulTest/IDAPilot.md) | pending |
 | `UsulTest.IDAZakatStructure` | [UsulTest/IDAZakatStructure.md](UsulTest/IDAZakatStructure.md) | pending |
+| `UsulTest.IDAStructuralCases` | [UsulTest/IDAStructuralCases.md](UsulTest/IDAStructuralCases.md) | pending |
+| `UsulTest.IDAStructuralCasesContracts` | [UsulTest/IDAStructuralCasesContracts.md](UsulTest/IDAStructuralCasesContracts.md) | pending |
 | `UsulTest.IDASubstitution` | [UsulTest/IDASubstitution.md](UsulTest/IDASubstitution.md) | pending |
 | `UsulTest.IDASubstitutionContracts` | [UsulTest/IDASubstitutionContracts.md](UsulTest/IDASubstitutionContracts.md) | pending |
 | `UsulTest.IDAProjection` | [UsulTest/IDAProjection.md](UsulTest/IDAProjection.md) | pending |
