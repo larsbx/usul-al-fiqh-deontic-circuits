@@ -234,7 +234,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-00 | Integrated structured-target and derivation baseline | Existing IDA foundation, judgments, derivations, and #140 | [Integrated on main via #144](ida-target-integration.md); verification claims remain revision-bound |
 | ACT-01 | Versioned kinds, typed descriptions, and relation vocabulary | ACT-00 | [Registry and source binding](ida-act-registry.md), [ground context and inquiry binding](ida-context-foundation.md), and exact-revision gates `make ida-registry` and `make ida-context` |
 | ACT-02 | Context category and substitution laws | ACT-01 | [Implemented typed substitution and premise-arrow fragment](ida-substitution.md) with `make ida-substitution` |
-| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [Exact frame proof, loss witnesses, output-relabeling and unattested-feature controls](ida-projection.md) with `make ida-projection` |
+| ACT-03 | Information-loss witnesses and scoped equivalence | ACT-01, ACT-02 | [Exact frame proof, loss witnesses, fivefold inference and non-Boolean algebra controls](ida-projection.md) with `make ida-projection` |
 | ACT-04 | Supported interpretations and schema migration | ACT-02, ACT-03 | [Fixed-history semantic fragment](ida-semantics.md) with `make ida-semantics`; sourced interpretation and migration pending |
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
@@ -436,11 +436,11 @@ where appropriate but is distinguished from the original target.
 The [implemented projection](ida-projection.md) proves an exact frame law
 for one synthetic evaluator. It checks an appended exception, loss of
 occurrence identity, equal answers with unequal dependencies, and stale
-bindings despite scoped equivalence. The same gate now exercises output
-relabeling through `Reads.mapRun` and two globally factoring extensions of a
-nonempty known-case list that disagree on an unattested feature class. These
-finite controls use synthetic Boolean answers and add no source judgment or
-admission claim.
+bindings despite scoped equivalence. The same gate exercises output relabeling
+through `Reads.mapRun` and globally factoring extensions of a nonempty known-case
+list. Both answer-bearing controls use the actual fivefold `Hukm` carrier. The
+additional algebra control distinguishes its De Morgan duality from Boolean
+complement. The synthetic assignments add no source judgment or admission claim.
 
 **Purpose.** Specify what each representation map preserves, forgets, or can
 reflect.
@@ -470,16 +470,33 @@ controls alongside the existing qualification-loss counterexample; their
 [context contracts](ida-context-theory.md#complete-dependencies) specify the
 separate obligations.
 
+**Fivefold carrier.** Retain the existing `Hukm` values H, K, M, N, and W in
+deontic answers. Boolean guards, membership tests, and premise-satisfaction
+checks have separate types. `mubah` is a permitted ruling, not missing evidence,
+unknown classification, or inapplicability. In the repository's declared chain
+\(H<K<M<N<W\), `sigma` exchanges H/W and K/N and fixes M. Meet and join form a
+bounded distributive De Morgan lattice, but only H and W have lattice
+complements. Applying a generic output map preserves `Reads`; treating that map
+as a translation of judgments additionally requires its answer, question,
+scope, and algebraic preservation laws. The existing `sigmaIso` has the opposite
+ruling category as its codomain. It supplies no omission occurrence or concrete
+case evidence. The [projection guide](ida-projection.md) links the exact carrier,
+algebra, and categorical declarations.
+
 **Implemented reuse controls.** The relabeled encoder has the same projection
-and applicability as the original and satisfies `Reads` in both directions,
-while changing every applicable answer. For the unattested-class control, the
-known list contains both noise variants of one feature value; the two explicit
-extensions agree with every supplied case and disagree on the other feature
-value. The gate compares all eight relabeling inputs and all sixteen
-extension inputs independently between Lean and Quint. These controls close
-the two named executable examples above. They do not discharge ACT-04's
-sourced interpretation or migration laws, or the exact-head evidence
-accounting required for the full ACT-08 core exit.
+and applicability as the original and satisfies `Reads` in both directions.
+Its `sigma`-mapped answer changes at each applicable non-`mubah` feature; the
+applicable answers agree exactly at `mubah`. For the unattested-class control,
+the nonempty known list contains both noise variants of one feature value with
+answer `wajib`. All 25 candidate functions factor globally; exactly five agree
+with the supplied cases. Two explicit agreeing extensions use `mubah` and
+`mandub` on the unseen class, and `unattested_free` is instantiated for every
+`answer : Hukm`. The gate compares twenty relabeling inputs, one hundred
+extension inputs, and twenty-five algebra pairs independently between Lean and
+Quint. These controls implement the two named executable examples above on the
+actual answer carrier and check the non-Boolean algebra boundary. They do not
+discharge ACT-04's sourced interpretation or migration laws, or the exact-head
+evidence accounting required for the full ACT-08 core exit.
 
 **Deliverables.**
 

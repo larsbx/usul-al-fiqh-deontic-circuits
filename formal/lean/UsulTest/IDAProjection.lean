@@ -3,8 +3,9 @@ import Usul.Cat.Typing
 import UsulTest.IDASubstitution
 
 /-! Synthetic guard observations over the ACT-02 grounded repayment. The report
-and scope rows satisfy ACT-01 snapshot shape. Separate Boolean fixtures isolate
-answer relabeling and underdetermination on unseen feature classes. -/
+and scope rows satisfy ACT-01 snapshot shape. Separate five-valued `Hukm` fixtures
+isolate answer relabeling and underdetermination on unseen feature classes,
+and distinguish omission duality from Boolean complementation. -/
 
 namespace UsulTest.IDAProjection
 
@@ -166,75 +167,83 @@ theorem explicit_negative_only :
 
 /-! ## Relabeling preserves reads, not the selected answer
 
-These are synthetic Boolean outputs. No label is identified with a source-backed
-juristic ruling. The encoder reads applicability and one feature, ignoring noise. -/
+These synthetic cases use the actual five-valued ruling carrier. No case supplies
+a new source-backed ruling. The encoder reads applicability and a ruling-valued
+feature, ignoring noise; relabeling uses the existing omission duality. -/
 
 structure RelabelSituation where
   enabled : Bool
-  feature : Bool
+  feature : Hukm
   noise : Bool
   deriving DecidableEq, Repr
 
-def relabelEncoder : Usul.Typing.Typed RelabelSituation Bool where
-  Local := Bool
+def relabelEncoder : Usul.Typing.Typed RelabelSituation Hukm where
+  Local := Hukm
   proj := fun s => if s.enabled then some s.feature else none
   embed := fun feature => ⟨true, feature, false⟩
   run := id
   proj_embed := fun _ => rfl
 
-def relabeledEncoder : Usul.Typing.Typed RelabelSituation Bool :=
-  relabelEncoder.mapRun Bool.not
+def relabeledEncoder : Usul.Typing.Typed RelabelSituation Hukm :=
+  relabelEncoder.mapRun sigma
 
-def optionBoolCode : Option Bool → Nat
+def optionHukmCode : Option Hukm → Nat
   | none => 0
-  | some false => 1
-  | some true => 2
+  | some h => encodeHukm h + 1
 
-def relabelCells (enabled feature noise : Bool) : List Nat :=
+def relabelCells (enabled : Bool) (feature : Hukm) (noise : Bool) : List Nat :=
   let s : RelabelSituation := ⟨enabled, feature, noise⟩
-  let originalProjection : Option Bool := relabelEncoder.proj s
-  let relabeledProjection : Option Bool := relabeledEncoder.proj s
-  [optionBoolCode originalProjection, optionBoolCode relabeledProjection,
+  let originalProjection : Option Hukm := relabelEncoder.proj s
+  let relabeledProjection : Option Hukm := relabeledEncoder.proj s
+  [optionHukmCode originalProjection, optionHukmCode relabeledProjection,
    (relabelEncoder.applies s).toNat, (relabeledEncoder.applies s).toNat,
-   optionBoolCode (relabelEncoder.judge s), optionBoolCode (relabeledEncoder.judge s),
+   optionHukmCode (relabelEncoder.judge s), optionHukmCode (relabeledEncoder.judge s),
    (decide (originalProjection = relabeledProjection)).toNat,
    (decide (relabelEncoder.judge s = relabeledEncoder.judge s)).toNat]
 
 theorem relabel_same_reads :
     Cat.Typing.Reads relabelEncoder relabeledEncoder ∧
       Cat.Typing.Reads relabeledEncoder relabelEncoder :=
-  Cat.Typing.Reads.mapRun Bool.not relabelEncoder
+  Cat.Typing.Reads.mapRun sigma relabelEncoder
 
 theorem relabel_same_projection : relabeledEncoder.proj = relabelEncoder.proj := rfl
 
 theorem relabel_same_applicability (s : RelabelSituation) :
     relabeledEncoder.applies s = relabelEncoder.applies s := rfl
 
-theorem relabel_changes_applicable_answer (s : RelabelSituation) (h : s.enabled = true) :
+theorem relabel_changes_applicable_answer (s : RelabelSituation) (h : s.enabled = true)
+    (hm : s.feature ≠ .mubah) :
     relabeledEncoder.judge s ≠ relabelEncoder.judge s := by
   rcases s with ⟨enabled, feature, noise⟩
   cases enabled <;> cases feature <;>
     simp_all [relabelEncoder, relabeledEncoder, Usul.Typing.Typed.judge,
-      Usul.Typing.Typed.mapRun]
+      Usul.Typing.Typed.mapRun, sigma, Hukm.σ]
+
+theorem relabel_fixed_answer_iff (s : RelabelSituation) (h : s.enabled = true) :
+    relabeledEncoder.judge s = relabelEncoder.judge s ↔ s.feature = .mubah := by
+  simpa [relabeledEncoder, relabelEncoder, Usul.Typing.Typed.judge,
+    Usul.Typing.Typed.mapRun, h] using sigma_fixed_iff s.feature
 
 theorem relabel_factorization :
     Schema.Factors relabelEncoder.judge relabelEncoder.proj ∧
       Schema.Factors relabeledEncoder.judge relabelEncoder.proj :=
   ⟨Cat.Typing.judge_factors relabelEncoder,
-    Cat.Typing.judge_mapRun_factors Bool.not relabelEncoder⟩
+    Cat.Typing.judge_mapRun_factors sigma relabelEncoder⟩
 
-theorem relabel_matrix : ∀ enabled feature noise : Bool,
+theorem relabel_matrix : ∀ (enabled : Bool) (feature : Hukm) (noise : Bool),
     relabelCells enabled feature noise =
-      [if enabled then feature.toNat + 1 else 0,
-       if enabled then feature.toNat + 1 else 0,
+      [if enabled then encodeHukm feature + 1 else 0,
+       if enabled then encodeHukm feature + 1 else 0,
        enabled.toNat, enabled.toNat,
-       if enabled then feature.toNat + 1 else 0,
-       if enabled then (!feature).toNat + 1 else 0,
-       1, (!enabled).toNat] := by decide
+       if enabled then encodeHukm feature + 1 else 0,
+       if enabled then (4 - encodeHukm feature) + 1 else 0,
+       1, (decide (enabled = false ∨ feature = .mubah)).toNat] := by
+  intro enabled feature noise
+  cases enabled <;> cases feature <;> cases noise <;> decide
 
 /-! ## Consistency on known cases leaves an unseen feature open
 
-The known data contain both noisy versions of feature `false`, with label `true`.
+The known data contain both noisy versions of feature `false`, labeled `wajib`.
 Every candidate below factors globally through the feature. Only candidates that
 also agree with these nonempty data are admissible extensions of this fixture. -/
 
@@ -242,53 +251,53 @@ abbrev UnattestedSituation := Bool × Bool
 
 def unattestedFeature (s : UnattestedSituation) : Bool := s.1
 
-def unattestedKnown : Qiyas.Known UnattestedSituation Bool :=
-  [((false, false), true), ((false, true), true)]
+def unattestedKnown : Qiyas.Known UnattestedSituation Hukm :=
+  [((false, false), .wajib), ((false, true), .wajib)]
 
 def unattestedCases : List UnattestedSituation :=
   [(false, false), (false, true), (true, false), (true, true)]
 
-def unattestedExtension (knownValue unseenValue : Bool) (s : UnattestedSituation) : Bool :=
+def unattestedExtension (knownValue unseenValue : Hukm) (s : UnattestedSituation) : Hukm :=
   if unattestedFeature s then unseenValue else knownValue
 
-def unattestedAgreementB (knownValue unseenValue : Bool) : Bool :=
+def unattestedAgreementB (knownValue unseenValue : Hukm) : Bool :=
   unattestedKnown.all fun p => unattestedExtension knownValue unseenValue p.1 == p.2
 
-def unattestedFactorizationB (knownValue unseenValue : Bool) : Bool :=
+def unattestedFactorizationB (knownValue unseenValue : Hukm) : Bool :=
   unattestedCases.all fun left => unattestedCases.all fun right =>
     !(unattestedFeature left == unattestedFeature right) ||
       unattestedExtension knownValue unseenValue left == unattestedExtension knownValue unseenValue right
 
-def unattestedCells (knownValue unseenValue feature noise : Bool) : List Nat :=
+def unattestedCells (knownValue unseenValue : Hukm) (feature noise : Bool) : List Nat :=
   let s : UnattestedSituation := (feature, noise)
-  let low := unattestedExtension true false s
-  let high := unattestedExtension true true s
-  [(unattestedExtension knownValue unseenValue s).toNat,
+  let first := unattestedExtension .wajib .mubah s
+  let second := unattestedExtension .wajib .mandub s
+  [encodeHukm (unattestedExtension knownValue unseenValue s),
    (Cat.factorsOnB unattestedFeature unattestedKnown).toNat,
    (unattestedAgreementB knownValue unseenValue).toNat,
    (unattestedFactorizationB knownValue unseenValue).toNat,
    (unattestedKnown.any fun p => unattestedFeature p.1 == unattestedFeature s).toNat,
-   low.toNat, high.toNat, (decide (low = high)).toNat]
+   encodeHukm first, encodeHukm second, (decide (first = second)).toNat]
 
 theorem unattested_known_nonempty_consistent :
     unattestedKnown ≠ [] ∧ Cat.factorsOnB unattestedFeature unattestedKnown = true ∧
       Cat.FactorsOn unattestedFeature unattestedKnown :=
   ⟨by decide, by decide, Cat.factorsOnB_iff.1 (by decide)⟩
 
-theorem unattested_candidate_factorization (knownValue unseenValue : Bool) :
+theorem unattested_candidate_factorization (knownValue unseenValue : Hukm) :
     Schema.Factors (unattestedExtension knownValue unseenValue) unattestedFeature :=
   Schema.Factors.of_eq (fun f => if f then unseenValue else knownValue) (fun _ => rfl)
 
-theorem unattested_candidate_agreement (knownValue unseenValue : Bool) :
-    Qiyas.Agrees (unattestedExtension knownValue unseenValue) unattestedKnown ↔ knownValue = true := by
+theorem unattested_candidate_agreement (knownValue unseenValue : Hukm) :
+    Qiyas.Agrees (unattestedExtension knownValue unseenValue) unattestedKnown ↔ knownValue = .wajib := by
   constructor
   · intro h
-    exact h ((false, false), true) (by decide)
+    exact h ((false, false), .wajib) (by decide)
   · intro h p hp
     rcases List.mem_cons.mp hp with hp | hp
     · subst p
       exact h
-    · have he : p = ((false, true), true) := List.eq_of_mem_singleton hp
+    · have he : p = ((false, true), .wajib) := List.eq_of_mem_singleton hp
       subst p
       exact h
 
@@ -298,30 +307,72 @@ theorem unattested_feature_absent (noise : Bool) :
   rcases List.mem_cons.mp hp with hp | hp
   · subst p
     exact Bool.false_ne_true
-  · have he : p = ((false, true), true) := List.eq_of_mem_singleton hp
+  · have he : p = ((false, true), .wajib) := List.eq_of_mem_singleton hp
     subst p
     exact Bool.false_ne_true
 
 theorem unattested_two_extensions (noise : Bool) :
-    Schema.Factors (unattestedExtension true false) unattestedFeature ∧
-    Qiyas.Agrees (unattestedExtension true false) unattestedKnown ∧
-    Schema.Factors (unattestedExtension true true) unattestedFeature ∧
-    Qiyas.Agrees (unattestedExtension true true) unattestedKnown ∧
-    unattestedExtension true false (true, noise) ≠ unattestedExtension true true (true, noise) :=
-  ⟨unattested_candidate_factorization true false,
-    (unattested_candidate_agreement true false).2 rfl,
-    unattested_candidate_factorization true true,
-    (unattested_candidate_agreement true true).2 rfl, Bool.false_ne_true⟩
+    Schema.Factors (unattestedExtension .wajib .mubah) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension .wajib .mubah) unattestedKnown ∧
+    Schema.Factors (unattestedExtension .wajib .mandub) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension .wajib .mandub) unattestedKnown ∧
+    unattestedExtension .wajib .mubah (true, noise) ≠
+      unattestedExtension .wajib .mandub (true, noise) :=
+  ⟨unattested_candidate_factorization .wajib .mubah,
+    (unattested_candidate_agreement .wajib .mubah).2 rfl,
+    unattested_candidate_factorization .wajib .mandub,
+    (unattested_candidate_agreement .wajib .mandub).2 rfl,
+    by change Hukm.mubah ≠ Hukm.mandub; decide⟩
 
-theorem unattested_free_answer (noise answer : Bool) :
-    ∃ H : UnattestedSituation → Bool,
+theorem unattested_free_answer (noise : Bool) (answer : Hukm) :
+    ∃ H : UnattestedSituation → Hukm,
       Schema.Factors H unattestedFeature ∧ Qiyas.Agrees H unattestedKnown ∧ H (true, noise) = answer :=
   Cat.unattested_free unattested_known_nonempty_consistent.2.2 (unattested_feature_absent noise) answer
 
-theorem unattested_matrix : ∀ knownValue unseenValue feature noise : Bool,
+theorem unattested_matrix : ∀ (knownValue unseenValue : Hukm) (feature noise : Bool),
     unattestedCells knownValue unseenValue feature noise =
-      [(if feature then unseenValue else knownValue).toNat,
-       1, knownValue.toNat, 1, (!feature).toNat, (!feature).toNat, 1, (!feature).toNat] := by decide
+      [encodeHukm (if feature then unseenValue else knownValue),
+       1, (decide (knownValue = .wajib)).toNat, 1, (!feature).toNat,
+       if feature then 2 else 4, if feature then 3 else 4, (!feature).toNat] := by
+  intro knownValue unseenValue feature noise
+  cases knownValue <;> cases unseenValue <;> cases feature <;> cases noise <;> decide
+
+/-! ## The actual fivefold lattice is not Boolean
+
+The existing wire order enumerates the carrier; it is not a numerical score.
+`sigma` is the omission duality. Only the endpoints have Boolean complements. -/
+
+def fivefoldValues : List Hukm := [.haram, .makruh, .mubah, .mandub, .wajib]
+
+def fivefoldCells (h k : Hukm) : List Nat :=
+  [encodeHukm h, encodeHukm k, encodeHukm (meet h k), encodeHukm (join h k),
+   encodeHukm (sigma h), encodeHukm (sigma k), (decide (sigma h = h)).toNat,
+   (decide (meet h k = .haram ∧ join h k = .wajib)).toNat]
+
+theorem fivefold_sigma_not_boolean_complement :
+    sigma .mubah = .mubah ∧ meet .mubah (sigma .mubah) ≠ .haram ∧
+      join .mubah (sigma .mubah) ≠ .wajib := by decide
+
+theorem fivefold_boolean_complements_iff (h : Hukm) :
+    (∃ k : Hukm, meet h k = .haram ∧ join h k = .wajib) ↔ h = .haram ∨ h = .wajib := by
+  constructor
+  · rintro ⟨k, hk⟩
+    cases h <;> cases k <;> revert hk <;> decide
+  · rintro (rfl | rfl)
+    · exact ⟨.wajib, by decide⟩
+    · exact ⟨.haram, by decide⟩
+
+theorem fivefold_binding_not_injective :
+    Hukm.mandub ≠ .mubah ∧ Hukm.binding .mandub = Hukm.binding .mubah := by decide
+
+theorem fivefold_matrix (h k : Hukm) :
+    fivefoldCells h k =
+      [encodeHukm h, encodeHukm k, min (encodeHukm h) (encodeHukm k),
+       max (encodeHukm h) (encodeHukm k), 4 - encodeHukm h, 4 - encodeHukm k,
+       (decide (encodeHukm h = 2)).toNat,
+       (decide ((encodeHukm h = 0 ∧ encodeHukm k = 4) ∨
+         (encodeHukm h = 4 ∧ encodeHukm k = 0))).toNat] := by
+  cases h <;> cases k <;> decide
 
 /-- Terminal contract bundle: mutual reads does not identify the output function. -/
 theorem relabeling_boundary :
@@ -329,27 +380,46 @@ theorem relabeling_boundary :
     Cat.Typing.Reads relabeledEncoder relabelEncoder ∧
     relabeledEncoder.proj = relabelEncoder.proj ∧
     (∀ s : RelabelSituation, relabeledEncoder.applies s = relabelEncoder.applies s) ∧
-    relabeledEncoder.judge ⟨true, false, false⟩ ≠ relabelEncoder.judge ⟨true, false, false⟩ ∧
+    relabeledEncoder.judge ⟨true, .mandub, false⟩ ≠ relabelEncoder.judge ⟨true, .mandub, false⟩ ∧
+    (∀ s : RelabelSituation, s.enabled = true →
+      (relabeledEncoder.judge s = relabelEncoder.judge s ↔ s.feature = .mubah)) ∧
     Schema.Factors relabelEncoder.judge relabelEncoder.proj ∧
     Schema.Factors relabeledEncoder.judge relabelEncoder.proj :=
   ⟨relabel_same_reads.1, relabel_same_reads.2, relabel_same_projection,
-    relabel_same_applicability, relabel_changes_applicable_answer _ rfl,
+    relabel_same_applicability, relabel_changes_applicable_answer _ rfl (by decide),
+    relabel_fixed_answer_iff,
     relabel_factorization.1, relabel_factorization.2⟩
 
 /-- Terminal contract bundle: consistency on populated data does not select an unseen answer. -/
 theorem unattested_boundary :
     unattestedKnown ≠ [] ∧ Cat.FactorsOn unattestedFeature unattestedKnown ∧
-    Schema.Factors (unattestedExtension true false) unattestedFeature ∧
-    Qiyas.Agrees (unattestedExtension true false) unattestedKnown ∧
-    Schema.Factors (unattestedExtension true true) unattestedFeature ∧
-    Qiyas.Agrees (unattestedExtension true true) unattestedKnown ∧
+    Schema.Factors (unattestedExtension .wajib .mubah) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension .wajib .mubah) unattestedKnown ∧
+    Schema.Factors (unattestedExtension .wajib .mandub) unattestedFeature ∧
+    Qiyas.Agrees (unattestedExtension .wajib .mandub) unattestedKnown ∧
     (∀ noise : Bool,
-      unattestedExtension true false (true, noise) ≠ unattestedExtension true true (true, noise)) :=
+      unattestedExtension .wajib .mubah (true, noise) ≠
+        unattestedExtension .wajib .mandub (true, noise)) ∧
+    (∀ (noise : Bool) (answer : Hukm), ∃ H : UnattestedSituation → Hukm,
+      Schema.Factors H unattestedFeature ∧ Qiyas.Agrees H unattestedKnown ∧ H (true, noise) = answer) :=
   ⟨unattested_known_nonempty_consistent.1, unattested_known_nonempty_consistent.2.2,
-    unattested_candidate_factorization true false,
-    (unattested_candidate_agreement true false).2 rfl,
-    unattested_candidate_factorization true true,
-    (unattested_candidate_agreement true true).2 rfl,
-    fun noise => (unattested_two_extensions noise).2.2.2.2⟩
+    unattested_candidate_factorization .wajib .mubah,
+    (unattested_candidate_agreement .wajib .mubah).2 rfl,
+    unattested_candidate_factorization .wajib .mandub,
+    (unattested_candidate_agreement .wajib .mandub).2 rfl,
+    fun noise => (unattested_two_extensions noise).2.2.2.2, unattested_free_answer⟩
+
+/-- Terminal contract bundle separating the fivefold carrier from Boolean collapse. -/
+theorem fivefold_boundary :
+    sigma .mubah = .mubah ∧ meet .mubah (sigma .mubah) ≠ .haram ∧
+    join .mubah (sigma .mubah) ≠ .wajib ∧
+    (∀ h : Hukm, (∃ k : Hukm, meet h k = .haram ∧ join h k = .wajib) ↔
+      h = .haram ∨ h = .wajib) ∧
+    Hukm.mandub ≠ .mubah ∧ Hukm.binding .mandub = Hukm.binding .mubah :=
+  ⟨fivefold_sigma_not_boolean_complement.1,
+    fivefold_sigma_not_boolean_complement.2.1,
+    fivefold_sigma_not_boolean_complement.2.2,
+    fivefold_boolean_complements_iff,
+    fivefold_binding_not_injective.1, fivefold_binding_not_injective.2⟩
 
 end UsulTest.IDAProjection

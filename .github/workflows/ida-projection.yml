@@ -37,7 +37,7 @@ permissions:
 
 jobs:
   substitution:
-    name: ACT-03 Lean proofs, Quint comparison, and negative controls
+    name: ACT-03 fivefold proofs, Quint comparison, and negative controls
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:

@@ -27,19 +27,22 @@ MODEL = "ida-projection.qnt"
 TABLE = "ida-projection-table.qnt"
 RECEIPT = ROOT / ".cache/ida-projection"
 TESTS = {"reportDependenciesTest", "scopeAndFallbackTest",
-         "outputRelabelingTest", "unattestedFeatureTest"}
+         "outputRelabelingTest", "unattestedFeatureTest", "fivefoldAlgebraTest"}
 BOUNDARY_PROOF_NAMES = (
     "relabel_same_reads", "relabel_same_projection", "relabel_same_applicability",
-    "relabel_changes_applicable_answer", "relabel_factorization", "relabel_matrix",
+    "relabel_changes_applicable_answer", "relabel_fixed_answer_iff",
+    "relabel_factorization", "relabel_matrix",
     "unattested_known_nonempty_consistent", "unattested_candidate_factorization",
     "unattested_candidate_agreement", "unattested_feature_absent",
     "unattested_two_extensions", "unattested_free_answer", "unattested_matrix",
-    "relabeling_boundary", "unattested_boundary",
+    "fivefold_sigma_not_boolean_complement", "fivefold_boolean_complements_iff",
+    "fivefold_binding_not_injective", "fivefold_matrix",
+    "relabeling_boundary", "unattested_boundary", "fivefold_boundary",
 )
 BOUNDARY_PROOFS = {FIXTURE + "." + name for name in BOUNDARY_PROOF_NAMES}
 BOUNDARY_CONTRACTS = {CONTRACTS + ".require_" + name for name in BOUNDARY_PROOF_NAMES}
-CELLS = 31040
-ROWS = 3416
+CELLS = 32008
+ROWS = 3537
 PROOFS = {CORE + name for name in (
     "signs_positive", "signs_negative", "signs_append_irrelevant", "projection_exact",
     "equivalence", "frame", "irrelevant_append", "factors", "same_scope",
@@ -62,11 +65,19 @@ MUTANTS = {
                                 "List(flag(outcome(fallbackEnabled, 0, a) == outcome(fallbackEnabled, 0, b)),",
                                 "reportDependenciesTest"),
     "same_information_same_answer": (
-        "val relabeledAnswer = negateAnswer(relabeledProjection)",
+        "val relabeledAnswer = sigmaAnswer(relabeledProjection)",
         "val relabeledAnswer = if (originalProjection == relabeledProjection) originalAnswer "
-        "else negateAnswer(relabeledProjection)", "outputRelabelingTest"),
+        "else sigmaAnswer(relabeledProjection)", "outputRelabelingTest"),
     "unseen_answer_from_known_labels": ("if (point.feature) unseenValue else knownValue",
                                         "knownValue", "unattestedFeatureTest"),
+    "collapse_fivefold_to_binary": ("    selectedRuling\n  }",
+                                    "    if (selectedRuling == Haram) Haram else Wajib\n  }",
+                                    "unattestedFeatureTest"),
+    "mubah_as_absence": ("if (situation.enabled) HukmValue(situation.feature) else NoValue",
+                          "if (situation.enabled and situation.feature != Mubah) "
+                          "HukmValue(situation.feature) else NoValue", "outputRelabelingTest"),
+    "sigma_is_boolean_complement": ("meet(left, right) == Haram and join(left, right) == Wajib",
+                                     "right == sigma(left)", "fivefoldAlgebraTest"),
 }
 
 
@@ -78,17 +89,21 @@ def observations(source):
     pairs = [("pair", enabled, 0, left, right)
              for enabled, left, right in product(range(2), range(16), range(16))]
     relabel = [("relabel", enabled, 0, feature, noise)
-               for enabled, feature, noise in product(range(2), repeat=3)]
-    unattested = [("unattested", *key) for key in product(range(2), repeat=4)]
-    keys = cases + pairs + relabel + unattested
+               for enabled, feature, noise in product(range(2), range(5), range(2))]
+    unattested = [("unattested", *key)
+                  for key in product(range(5), range(5), range(2), range(2))]
+    fivefold = [("fivefold", left, right, 0, 0)
+                for left, right in product(range(5), repeat=2)]
+    keys = cases + pairs + relabel + unattested + fivefold
     require(len(keys) == ROWS, "Declared Lean row domain changed")
     require(len(rows) == len(keys) + 1, "Incorrect Lean row count")
     cells = []
     bounds = {
         "case": [1, 7, 7, 1, 1, 1, 1, 1, 1, 1],
         "pair": [1] * 4,
-        "relabel": [2, 2, 1, 1, 2, 2, 1, 1],
-        "unattested": [1] * 8,
+        "relabel": [5, 5, 1, 1, 5, 5, 1, 1],
+        "unattested": [4, 1, 1, 1, 1, 4, 4, 1],
+        "fivefold": [4, 4, 4, 4, 4, 4, 1, 1],
     }
     for row, key in zip(rows[1:], keys):
         limits = bounds[key[0]]
@@ -140,7 +155,8 @@ def weakened_propositions(work):
     require(contracts.count(original_import) == 1, "Ambiguous boundary-contract import")
     controls = []
     for name, module in (("relabeling_boundary", "WeakProjectionRelabeling"),
-                         ("unattested_boundary", "WeakProjectionUnattested")):
+                         ("unattested_boundary", "WeakProjectionUnattested"),
+                         ("fivefold_boundary", "WeakProjectionFivefold")):
         pattern = re.compile(r"^theorem " + re.escape(name)
                              + r"\b.*?(?=^theorem |^end )", re.M | re.S)
         matches = list(pattern.finditer(source))
@@ -177,9 +193,16 @@ def export_controls(source, trace):
     invalid = lines.copy()
     row = 1 + 2880 + 512
     fields = invalid[row].split(",")
-    fields[5] = "3"  # Option Bool codes are exactly 0, 1, or 2.
+    fields[5] = "6"  # None is 0; the five Some Hukm values use 1 through 5.
     invalid[row] = ",".join(fields)
     reject(lambda: observations("\n".join(invalid)), "invalid_relabel_projection_code")
+    for family, row in (("unattested", 1 + 2880 + 512 + 20),
+                        ("fivefold", 1 + 2880 + 512 + 20 + 100)):
+        invalid = lines.copy()
+        fields = invalid[row].split(",")
+        fields[5] = "5"  # A total Hukm wire tag must be in 0 through 4.
+        invalid[row] = ",".join(fields)
+        reject(lambda: observations("\n".join(invalid)), "invalid_" + family + "_ruling_code")
     short = deepcopy(trace)
     short["states"][0]["results"].pop()
     reject(lambda: gate.parse_itf(short, CELLS), "truncated_quint_trace")
@@ -276,14 +299,18 @@ def main():
             "schema": "usul.ida.projection.verification.v1", "status": "passed",
             "revision": revision, "inputs_match_head": matches, "source_sha256": hashes,
             "runtime_overrides": overrides, "lean": lean_version, "quint": quint_version,
-            "scope_cases": 2880, "pair_cases": 512, "relabel_cases": 8,
-            "unattested_cases": 16, "rows": ROWS, "comparison_cells": len(values),
+            "scope_cases": 2880, "pair_cases": 512, "relabel_cases": 20,
+            "unattested_cases": 100, "fivefold_cases": 25,
+            "rows": ROWS, "comparison_cells": len(values),
+            "ruling_wire_tags": {"haram": 0, "makruh": 1, "mubah": 2, "mandub": 3, "wajib": 4},
             "proofs": sorted(PROOFS), "mutations": sorted(mutants),
             "boundary_proofs": sorted(BOUNDARY_PROOFS),
             "fixed_boundary_contracts": sorted(BOUNDARY_CONTRACTS),
             "weakened_propositions": weakened, "export_controls": exports,
-            "boundary": "Synthetic information-dependence and finite extension controls. "
-                        "They do not establish source interpretation or evidence admission.",
+            "boundary": "Synthetic information-dependence and extension controls use the five-valued "
+                        "Hukm carrier and its non-Boolean De Morgan lattice. Boolean guards and "
+                        "check results do not replace deontic answers. These controls do not "
+                        "establish source interpretation or evidence admission.",
         }
         (RECEIPT / "lean.csv").write_text(lean_csv)
         for name, data in (("quint.itf", trace), ("tests", tests), ("mutants", mutants),
