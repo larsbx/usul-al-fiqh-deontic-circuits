@@ -64,7 +64,7 @@ if args[:2] == ["env", "lean"] and Path(args[2]).name == "CheckLeanAxioms.lean":
         imports = imports[1:]
     rows = []
     for module in imports:
-        kind = "axiom" if mode == "named_axiom" else "theorem"
+        kind = {"named_axiom": "axiom", "definition": "other"}.get(mode, "theorem")
         axioms = "sorryAx" if mode == "sorry" else "Classical.choice,Quot.sound,propext"
         rows.extend(["module\t" + module,
                      "\t".join([kind, module, module + ".fixture", axioms])])
@@ -84,6 +84,16 @@ def run_audit(tmp_path):
     formal.mkdir(parents=True)
     for name in ("check-lean-axioms.py", "lean-axiom-audit.lean"):
         shutil.copyfile(ROOT / "formal" / name, formal / name)
+    claims = formal / "lean-proof-claims.json"
+    claims.write_text(json.dumps({
+        "schema": "usul.lean.proof-claims.v1",
+        "claims": [{
+            "id": "fixture-proof", "theorems": ["Usul.fixture"],
+            "claim": "Fixture theorem", "hypotheses": "Fixture assumptions",
+            "finite_checks": "Fixture checks", "source_review": "Fixture scope",
+            "refinement": "Fixture model",
+        }],
+    }))
     for package, modules in (
         ("lean", ("Usul", "UsulTest", "Hadith", "HadithTest",
                   "scripts/ExportTypes", "scripts/ExportAgency")),
@@ -118,7 +128,9 @@ def run_audit(tmp_path):
     env = {**os.environ, "PATH": str(binaries),
            "FAKE_LAKE_CONFIG": str(config_path), "FAKE_LAKE_LOG": str(log)}
 
-    def run(scope="core", *, missing_lake=False, **config):
+    def run(scope="core", *, missing_lake=False, missing_claim=False, **config):
+        if missing_claim:
+            claims.write_text(claims.read_text().replace("Usul.fixture", "Usul.absent"))
         config_path.write_text(json.dumps(config))
         if missing_lake:
             lake.unlink()
@@ -149,6 +161,11 @@ def test_cold_preparation_is_visible_and_followed_by_strict_audit(run_audit, sco
     assert payload["inputs_match_head"] is True
     assert payload["allowed_axioms"] == ["Classical.choice", "Quot.sound", "propext"]
     assert payload["declarations"]
+    if scope == "core":
+        assert payload["proof_claims"][0]["theorems"] == ["Usul.fixture"]
+        assert "formal/lean-proof-claims.json" in payload["source_sha256"]
+    else:
+        assert "proof_claims" not in payload
     script = receipt.parents[2] / "formal/check-lean-axioms.py"
     assert payload["source_sha256"]["formal/check-lean-axioms.py"] == hashlib.sha256(
         script.read_bytes()).hexdigest()
@@ -216,6 +233,14 @@ def test_admitted_anonymous_build_diagnostic_still_fails(run_audit):
     result, receipt, _ = run_audit(build_stdout="warning: example: declaration uses `sorry`\n")
     assert result.returncode != 0
     assert "admitted-proof diagnostic" in result.stderr
+    assert not receipt.exists()
+
+
+@pytest.mark.parametrize("config", [{"missing_claim": True}, {"inventory_mode": "definition"}])
+def test_registered_claim_requires_a_compiled_theorem(run_audit, config):
+    result, receipt, _ = run_audit(**config)
+    assert result.returncode != 0
+    assert "Missing compiled theorem for fixture-proof" in result.stderr
     assert not receipt.exists()
 
 

@@ -92,11 +92,28 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Install elan
         run: |
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - run: make lean
+      - name: Require a compiled proof receipt for the requested revision
+        env:
+          LEAN_EXPECTED_REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          receipt = json.loads(Path(".cache/lean-axioms/core.json").read_text())
+          if (receipt.get("revision") != os.environ["LEAN_EXPECTED_REVISION"]
+                  or receipt.get("inputs_match_head") is not True
+                  or not receipt.get("proof_claims")):
+              raise SystemExit("Compiled proof receipt does not verify the requested revision")
+          PY
       - name: Retain compiled axiom inventory
         uses: actions/upload-artifact@v4
         with:

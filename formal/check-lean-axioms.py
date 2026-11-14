@@ -12,6 +12,7 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 BODY = ROOT / "formal/lean-axiom-audit.lean"
+CLAIMS = ROOT / "formal/lean-proof-claims.json"
 ALLOWED = {"Classical.choice", "Quot.sound", "propext"}
 PACKAGES = {
     "core": ("lean", ("Usul", "UsulTest", "Hadith", "HadithTest"), ("ExportTypes", "ExportAgency")),
@@ -71,6 +72,37 @@ def parse_inventory(stdout, expected):
     return list(declarations.values())
 
 
+def checked_claims(declarations):
+    """Resolve every registered theorem against the audited compiled inventory."""
+    register = json.loads(CLAIMS.read_text())
+    if not isinstance(register, dict) or register.get("schema") != "usul.lean.proof-claims.v1":
+        raise ValueError("Invalid Lean proof claim register schema")
+    claims = register.get("claims")
+    if not isinstance(claims, list) or not claims:
+        raise ValueError("Lean proof claim register is empty")
+    required_text = ("id", "claim", "hypotheses", "finite_checks", "source_review", "refinement")
+    theorems = {row["name"] for row in declarations if row["kind"] == "theorem"}
+    seen = set()
+    for claim in claims:
+        if (not isinstance(claim, dict)
+                or set(claim) != {*required_text, "theorems"}
+                or any(not isinstance(claim[key], str) or not claim[key].strip()
+                       for key in required_text)):
+            raise ValueError("Malformed Lean proof claim")
+        claim_id = claim["id"]
+        if claim_id in seen:
+            raise ValueError(f"Duplicate Lean proof claim ID: {claim_id}")
+        seen.add(claim_id)
+        names = claim["theorems"]
+        if (not isinstance(names, list) or not names
+                or any(not isinstance(name, str) for name in names)
+                or len(set(names)) != len(names)):
+            raise ValueError(f"Invalid theorem references for {claim_id}")
+        if missing := set(names) - theorems:
+            raise ValueError(f"Missing compiled theorem for {claim_id}: {sorted(missing)}")
+    return claims
+
+
 def audit(scope, receipt):
     directory, roots, exporters = PACKAGES[scope]
     package = ROOT / "formal" / directory
@@ -78,6 +110,8 @@ def audit(scope, receipt):
     revision = git("rev-parse", "HEAD")
     def snapshot():
         modules, hashes = inputs(package, roots, exporters)
+        if scope == "core":
+            hashes[str(CLAIMS.relative_to(ROOT))] = hashlib.sha256(CLAIMS.read_bytes()).hexdigest()
         if scope == "mathlib":
             core, core_roots, core_exporters = PACKAGES["core"]
             _, core_hashes = inputs(ROOT / "formal" / core, core_roots, core_exporters)
@@ -139,6 +173,7 @@ def audit(scope, receipt):
             destination.parent.mkdir(parents=True, exist_ok=True)
             build("env", "lean", str(source), "-o", str(destination))
             declarations.extend(inspect([name], ["scripts"], {name}))
+        claims = checked_claims(declarations) if scope == "core" else None
         if snapshot()[1] != hashes or git("rev-parse", "HEAD") != revision:
             raise ValueError("Lean audit inputs changed during replay")
         tracked = set(git("ls-tree", "-r", "--name-only", "HEAD").splitlines())
@@ -149,6 +184,8 @@ def audit(scope, receipt):
             "toolchain": pin, "lean_version": version, "allowed_axioms": sorted(ALLOWED),
             "source_sha256": hashes, "modules": sorted(modules), "declarations": declarations,
         }
+        if claims is not None:
+            payload["proof_claims"] = claims
         staged = work / receipt.name
         staged.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
         staged.replace(receipt)

@@ -69,13 +69,29 @@ All readings and interpretation records remain candidates. These derivations are
 conditional facts about the supplied formal reading, not accepted fatwās. The four M5
 questions stay open, and the six original gaps retain their complete governed records.
 
+## Compiled proof claims
+
+`make lean` audits transitive axiom dependencies in the compiled core and
+validates the theorem references in the
+[proof claim register](../../formal/lean-proof-claims.json). The initial entries
+cover preferred extensions, the checked grounded runner, command admission,
+reconciliation, agency receipts, and conditional soundness in the IDA case
+workbench. Each records the theorem's hypotheses, executable checks, source
+review and application refinement separately. The receipt at
+`.cache/lean-axioms/core.json` includes the register, its source digest and the
+compiled declaration inventory for the checked revision. The gate checks the
+theorem references. Review the prose against the theorem statements when
+updating either.
+
 ## Remaining proof debt
 
 This contribution strengthens two bounded parts of the Lean implementation. It does
 not complete the roadmap. In particular:
 
-- The finite grounded theorem does not prove existence on arbitrary infinite frameworks
-  or that every admissible extension extends to a preferred extension.
+- Grounded completeness in the abstract result requires finitarity.
+  `Usul.Dung.exists_preferred_superset` covers admissible sets on exhaustively
+  listed finite carriers. Arbitrary infinite frameworks lie outside these
+  hypotheses.
 - The M5 trace calculus covers the four command capabilities, not the complete structured
   argumentation calculus over all adilla. General attacks on subderivations and propagation
   of defeat remain to be integrated.

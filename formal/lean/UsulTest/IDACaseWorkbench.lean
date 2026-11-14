@@ -51,7 +51,8 @@ theorem admission_and_robustness_do_not_imply_truth :
       sourceBoundTrial "synthetic-case-workbench" = .ok receipt ∧
       Semantics.compatible (Pilot.destinationPoints plan (histories 2))
         plan.destination.premises ≠ [] ∧
-      ¬ Semantics.Satisfies (IDASemantics.history 0) (fun _ x => nomatch x)
+      ¬ Semantics.Satisfies (IDASemantics.history 0)
+        (show Semantics.Valuation [] from fun _ x => nomatch x)
         (present receipt).conclusion := by
   cases h : sourceBoundTrial "synthetic-case-workbench" with
   | error reason =>
@@ -59,10 +60,12 @@ theorem admission_and_robustness_do_not_imply_truth :
     simp [sourceBoundCode, h] at impossible
   | ok receipt =>
     refine ⟨receipt, rfl, receipt.compatible_history, ?_⟩
-    change ¬ Semantics.Satisfies (IDASemantics.history 0) (fun _ x => nomatch x)
+    change ¬ Semantics.Satisfies (IDASemantics.history 0)
+      (show Semantics.Valuation [] from fun _ x => nomatch x)
       receipt.admission.destination.application.conclusion
     rw [receipt.admission.destinationValid.exactApplication]
-    change Semantics.evaluate (IDASemantics.history 0) (fun _ x => nomatch x)
+    change Semantics.evaluate (IDASemantics.history 0)
+      (show Semantics.Valuation [] from fun _ x => nomatch x)
       ((plan.conclusion.subst plan.arrow.substitution).subst
         plan.destinationValuation.grounding) ≠ true
     decide
