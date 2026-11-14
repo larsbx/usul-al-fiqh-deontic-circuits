@@ -12,14 +12,16 @@ structural descriptions and exact source bindings. The [ACT-01 ground context
 fragment](ida-context-foundation.md) adds typed predicates, canonical snapshots,
 clock identity, and exact inquiry binding. [ACT-02](ida-substitution.md)
 implements typed reindexing, grounding, and the conjunction premise calculus.
-[ACT-03](ida-projection.md) implements one exact scoped projection and
-synthetic loss witnesses. [ACT-04](ida-semantics.md) implements fixed-history
+[ACT-03](ida-projection.md) implements one exact scoped projection, synthetic
+loss witnesses, and output-relabeling and unattested-feature controls.
+[ACT-04](ida-semantics.md) implements fixed-history
 description naturality, satisfaction under substitution and conditional
 soundness for a synthetic fragment. Source-backed interpretation and migration
 retain separate obligations. [ACT-05](ida-admission.md) implements bounded
-contextual admission. ACT-08 has a bounded candidate agency review. ACT-06, ACT-07 and ACT-09 retain their
-accepted conditional scope and triggers. Source interpretations retain their
-recorded admission status.
+contextual admission. ACT-08 integrates bounded candidate agency, application,
+and [structural examples](ida-structural-cases.md); its full exit remains open.
+ACT-06, ACT-07 and ACT-09 retain their accepted conditional scope and triggers.
+Source interpretations retain their recorded admission status.
 The implemented baseline inspected for this design is main
 [`ca38f35e32e23169e852fe7d5f8f8b1f3734ed0e`][integrated-main], which landed
 structured-target integration through [PR #144][pr144].
@@ -544,12 +546,20 @@ information requirements while relabeling the output, even when the output
 type changes. An output-relabeling countercontrol must therefore distinguish
 an information-preserving map from an answer-preserving map.
 
-`Usul.Cat.Factor.unattested_free` addresses a different gap: even if all supplied
-cases factor consistently, a feature value unattested by those cases can be
-assigned any answer in a compatible mathematical extension under the theorem's
+`Usul.Cat.unattested_free` in `Usul.Cat.Factor` addresses a different gap: even
+if all supplied cases factor consistently, a feature value unattested by those
+cases can be assigned any answer in a compatible mathematical extension under the theorem's
 hypotheses. Finite consistency therefore supplies no classification of an
 unseen feature class. Such an application needs its independently justified
 rule and premises; existence of an extension is not source authority.
+
+The [ACT-03 executable controls](ida-projection.md) now instantiate both
+boundaries. The relabeling witness keeps the actual projection and applicability
+and proves `Reads` both ways, but changes each applicable Boolean answer. The
+unattested-feature witness uses a nonempty consistent known list and two
+explicit globally factoring extensions that agree on all supplied cases and
+disagree on the unseen feature class. Independent finite Lean–Quint comparisons
+check both witnesses; neither constructs an admitted judgment.
 
 The dependency set for a judgment must include positive premises, negative
 guards, completeness assumptions, potential defeaters, priorities, definition

@@ -57,6 +57,11 @@ evidence, temporal changes, and judgment transport. ACT-01 through ACT-05 now ha
 roles, qualification-sensitive observations, and distinct occurrence identities
 to exact application admission and the shared pilot receipt. The full ACT-08
 exit remains open; source interpretations retain their own admission status.
+The [ACT-03 inference controls](research/ida-projection.md) distinguish shared
+information dependence from equal answers and show that consistent supplied
+cases can leave an unseen feature class undecided. The next accepted core
+obligations remain ACT-04's named interpretation and migration contracts and
+exact-head evidence accounting for the ACT-08 completion claim.
 
 ## Working principle
 
