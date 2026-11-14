@@ -43,11 +43,15 @@ in fiqh. The other six scope coordinates, including `Key.subject`, remain
 numeric. An actor operand inside a target is independent of `Key.subject`; the
 current structure does not prove their consistency.
 
-This document adds a reference around that model. The exporter is not a runtime
-`Target` loader. Separate judgment and derivation work exists on `main`; this PR
-remains based on the merged foundation until that work is separately integrated.
-No claim of joint compilation or new admission machinery follows from this
-catalogue integration.
+The structured target and reference originating in PR #140 were reconciled
+with the judgment and derivation stack in [PR #144](https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/144).
+The [integration guide](ida-target-integration.md) records the explicit legacy
+and structured target alternatives and their scope-binding contracts. The
+exporter itself remains a reference exporter. The implemented
+[registry layer](ida-act-registry.md) checks versioned definitions, and the
+[candidate intake command](ida-act-intake.md) now prepares named descriptions
+against the validated catalogue through Lean. Neither exporting nor structural
+preparation admits a source interpretation, premise, or ruling.
 
 ## 2. Preserve the whole candidate graph
 
@@ -94,10 +98,13 @@ a citation need not change a meaning; changing the meaning must not silently
 reuse its version. The proposed naming convention uses
 `space = "fiqh.act.candidate.v1"` and `name = proposed_kind_id` for definition
 version 1. Thus the proposed payment kind has name `transfer.pay_zakat`.
-This convention is not a registry enforced by Lean: the core still permits
-different self-declared signatures under the same symbol and distinguishes them
-structurally. A future registry would have to enforce the intended unique
-signature for each versioned definition.
+The base target grammar permits different self-declared signatures under the
+same symbol and distinguishes them structurally. The implemented
+[ACT-01 registry](ida-act-registry.md) adds uniqueness of versioned keys and
+checks the exact registered signature. The [intake command](ida-act-intake.md)
+derives its operation from that validated candidate catalogue; callers cannot
+replace its signature. Registration preserves definition identity and does
+not convert a proposed meaning into an admitted interpretation.
 
 ## 4. Source passages and their limits
 
@@ -248,12 +255,26 @@ preserved legacy counts and identifiers, proposed versions, source loci, and
 unresolved role mappings together. It does not load runtime targets, modify
 source pins, or turn proposal status into admission.
 
-The next semantic step is to review a small definition and its full signature
+The [candidate intake guide](ida-act-intake.md) describes the separate runtime
+path and its strict request schema. From the repository root:
+
+```sh
+python3 formal/ida-act-intake.py catalogue
+python3 formal/ida-act-intake.py prepare formal/fixtures/ida-act-intake/zakat-request.json
+make ida-act-intake
+```
+
+Intake checks source metadata but reports `source_bytes_verified: false`; it
+does not replace full-witness verification above. It preserves all 34 candidate
+kinds, including the 33 with 64 unresolved role slots. Its successful result is
+a structurally checked candidate description with no admission or ruling.
+
+The remaining semantic work is to review each definition and full signature
 against its source passages, resolve its operands, and connect its qualifications
-to the appropriate context and profile. Any later Lean or Quint integration
-must state and verify those additional contracts explicitly. The current
-structural target proofs remain the foundation; the candidate reference supplies
-concrete material for that review rather than a new proof of fiqh correctness.
+to the appropriate context and profile. The implemented Lean and Quint
+contracts state structural and data-retention guarantees; they do not discharge
+those interpretive obligations. The candidate reference supplies concrete
+material for that review and retains its source mappings as candidates.
 
 [umda]: https://github.com/OpenITI/0625AH/blob/f1e38210b32fd0d043949ff6471e869d658c3b16/data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.CumdatFiqh/0620IbnQudamaMaqdisi.CumdatFiqh.Shamela0011315-ara1
 [rawda]: https://github.com/OpenITI/0625AH/blob/f1e38210b32fd0d043949ff6471e869d658c3b16/data/0620IbnQudamaMaqdisi/0620IbnQudamaMaqdisi.RawdatNazir/0620IbnQudamaMaqdisi.RawdatNazir.Shamela0012010-ara1

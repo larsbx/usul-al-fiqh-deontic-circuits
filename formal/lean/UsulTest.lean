@@ -34,6 +34,8 @@ import UsulTest.IDADerivation
 import UsulTest.IDADerivationContracts
 import UsulTest.IDAActRegistry
 import UsulTest.IDAActRegistryContracts
+import UsulTest.IDAActIntake
+import UsulTest.IDAActIntakeContracts
 import UsulTest.IDAContext
 import UsulTest.IDAContextContracts
 import UsulTest.IDASubstitution

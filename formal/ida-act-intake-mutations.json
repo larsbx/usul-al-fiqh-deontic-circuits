@@ -1,0 +1,51 @@
+{
+  "required_tests": [
+    "registeredDraftTest", "registeredOrderTest", "operandMismatchTest",
+    "participantIdentityTest", "wholeRegistryTest", "revisionPinsTest",
+    "unresolvedCannotBeCoercedTest", "retainedMetadataTest",
+    "malformedPayloadTest", "diagnosticPrecedenceTest"
+  ],
+  "mutations": [
+    {
+      "name": "discard_qualifications", "test": "retainedMetadataTest",
+      "replacements": [["qualifications: input.qualifications,", "qualifications: List(),"]]
+    },
+    {
+      "name": "replace_context", "test": "retainedMetadataTest",
+      "replacements": [["context: input.context,", "context: R::baseContext,"]]
+    },
+    {
+      "name": "skip_actual_resolver", "test": "operandMismatchTest",
+      "replacements": [["if (code == 0) PrepDraft(", "if (true) PrepDraft("]]
+    },
+    {
+      "name": "repair_stale_digest", "test": "revisionPinsTest",
+      "replacements": [
+        ["if (definition.digest != input.definitionDigest)", "if (false)"],
+        ["definitionDigest: input.definitionDigest,", "definitionDigest: definition.digest,"]
+      ]
+    },
+    {
+      "name": "repair_stale_snapshot", "test": "revisionPinsTest",
+      "replacements": [
+        ["else if (registry.snapshot != input.registrySnapshot)", "else if (false)"],
+        ["registrySnapshot: input.registrySnapshot,", "registrySnapshot: registry.snapshot,"]
+      ]
+    },
+    {
+      "name": "choose_conflicting_definition", "test": "wholeRegistryTest",
+      "replacements": [
+        ["if (not(R::uniqueDefinitionKeys(registry.definitions)))", "if (false)"],
+        ["else if (definitions.length() != 1)", "else if (false)"],
+        ["R::structuralCode(registry, envelope)", "R::structuralCode(registry.with(\"definitions\", List(definition)), envelope)"]
+      ]
+    },
+    {
+      "name": "coerce_unresolved_roles", "test": "unresolvedCannotBeCoercedTest",
+      "replacements": [
+        ["R::signatureOf(definition.roles)", "R::ResolvedSignature(A::operandParameters(input.operands))"],
+        ["val code = R::structuralCode(registry, envelope)", "val code = 0"]
+      ]
+    }
+  ]
+}

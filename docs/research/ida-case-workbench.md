@@ -25,6 +25,14 @@ a deployed language-model service, or publish a human ruling. General case
 intake, natural-language orchestration, institutional authority, and signed
 decisions remain explicit later stages.
 
+A separate [candidate act intake command](ida-act-intake.md) implements a
+bounded part of CW-01. It accepts a catalogue kind and named operands, preserves
+qualifications and context, and prepares a structural candidate through Lean.
+It exposes all 34 proposed kinds and their source metadata; 33 retain unresolved
+roles. This command is not yet a workbench browser intake flow or one of the
+five read-only dossier operations. Its results remain unadmitted, and general
+case intake and narrative handling remain open.
+
 ## 1. What “provable facts” means in this interface
 
 The interface must say exactly what has been established. The following
@@ -361,7 +369,7 @@ package can use its authority-bearing outputs.
 | Package | Deliverable | Exit condition |
 | --- | --- | --- |
 | CW-00: replayable review | This bounded fixture workbench and read-only protocol | Actual adapter replay, formal presentation, scenario controls, and inspectable output at one revision |
-| CW-01: typed case intake | Draft case schema, source occurrence tracking, proposed normalizations, and evidence upload boundary | Arbitrary input remains unadmitted until resolved; duplicate names, role swaps, unsupported language, and injection attempts cannot mint checked premises |
+| CW-01: typed case intake | **Partially implemented:** [candidate act CLI](ida-act-intake.md) for catalogue keys, named operands, qualifications, and context. General case schema, source occurrence tracking, normalization review, narrative handling, and evidence upload remain open | Candidate preparation retains its source metadata and cannot mint checked premises; complete case intake must also handle duplicate names, role swaps, unsupported language, and injection attempts without granting admission |
 | CW-02: authenticated admission | General canonical contextual certificate and application-grant adapters | Independent authorities bind the entire supported payload; substitution, staleness, revocation, and concurrent updates are rejected or explicitly resolved |
 | CW-03: human decision record | Authenticated review actions, reasons, dissent, and institution-specific advisory/adjudicative policies | Human authorship and scope are independently checked; agent proposals and copied notes cannot issue a decision |
 | CW-04: historical review | Versioned dossiers, retractions, changed evidence, and reopening/review links | Earlier as-known records remain reconstructible; later evidence triggers explicit reevaluation without retrospective rewriting |
