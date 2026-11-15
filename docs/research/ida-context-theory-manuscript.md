@@ -11,6 +11,8 @@ A rule can apply to a well-typed description under stated premises, an authority
 
 **Keywords** · contextual deontic reasoning, typed substitution, categorical semantics, premise admission, uṣūl al-fiqh, Lean
 
+**Companion paper.** [Context Abstraction and Exact Scope in Islamic Deontic Algebra](ida-guarded-context-preservation.md) develops the separate preservation conditions for exact scope and evaluator output, with a Lean-checked omission-opportunity counterexample.
+
 ## 1. Context and the object of judgment
 
 A deontic inquiry needs an identifiable act, omission, or affect, an accountable subject, a question, and a scope in which an answer is sought. For example, a repayment description can name a payer, recipient, and obligation. The accountable subject is a separate coordinate, and the identity of the obligation persists through substitutions that change the two person arguments. A change of recipient can change the qualified act or its application even when the operation and argument sorts are unchanged. The accepted IDA design treats act kind, qualified description, occurrence, and source mention as distinct identities [1].

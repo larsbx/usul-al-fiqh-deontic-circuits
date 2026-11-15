@@ -138,6 +138,8 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDACaseWorkbench` | [UsulTest/IDACaseWorkbench.md](UsulTest/IDACaseWorkbench.md) | pending |
 | `UsulTest.IDAPremiseIngestion` | [UsulTest/IDAPremiseIngestion.md](UsulTest/IDAPremiseIngestion.md) | pending |
 | `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
+| `UsulTest.IDAGuardedContext` | [UsulTest/IDAGuardedContext.md](UsulTest/IDAGuardedContext.md) | pending |
+| `UsulTest.IDAOmissionGuardWitness` | [UsulTest/IDAOmissionGuardWitness.md](UsulTest/IDAOmissionGuardWitness.md) | pending |
 | `UsulTest.IDAPilot` | [UsulTest/IDAPilot.md](UsulTest/IDAPilot.md) | pending |
 | `UsulTest.IDAZakatStructure` | [UsulTest/IDAZakatStructure.md](UsulTest/IDAZakatStructure.md) | pending |
 | `UsulTest.IDAStructuralCases` | [UsulTest/IDAStructuralCases.md](UsulTest/IDAStructuralCases.md) | pending |
