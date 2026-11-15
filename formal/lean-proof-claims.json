@@ -171,6 +171,25 @@
       "finite_checks": "UsulTest.IDAOmissionGuardWitness imports Usul.Typing.IDAOmission and contains 19 named kernel proofs, each with a printed axiom audit. The outcomes are computed by the repository evaluator; guard rejection holds for every pair of premise inputs.",
       "source_review": "These are synthetic observation controls, not rulings about an actual repayment. The competing interval descriptions are not asserted to be simultaneously correct descriptions of one real opportunity. A structurally matching coverage claim does not establish truthful or exhaustive observation.",
       "refinement": "The proof uses the native observation kernel and typed targets but does not construct two authenticated, admitted Context.Snapshot applications. It establishes neither actual nonperformance nor capacity, culpability, source authenticity, current evidence admission, or any Hukm. Semantic adequacy requires an independent history and a justified coverage relation."
+    },
+    {
+      "id": "ida-omission-conditional-semantic-adequacy",
+      "claim": "A coveredNoCompletion result excludes qualifying events in an independently supplied modeled history under exhaustive timely event-to-report correspondence. Conversely, absence of qualifying events yields that result under matching-report soundness and the native malformed-report, closure and structural-coverage gates. The combined hypotheses give an equivalence, and the review wrapper also proves resolution of the exact current snapshot.",
+      "theorems": [
+        "Usul.IDA.Omission.Semantics.represents_iff",
+        "Usul.IDA.Omission.Semantics.completion_matches_iff",
+        "Usul.IDA.Omission.Semantics.matches_of_qualifies",
+        "Usul.IDA.Omission.Semantics.qualifies_of_matching",
+        "Usul.IDA.Omission.Semantics.matching_report_of_qualifying",
+        "Usul.IDA.Omission.Semantics.covered_no_completion_sound",
+        "Usul.IDA.Omission.Semantics.covered_no_completion_complete",
+        "Usul.IDA.Omission.Semantics.covered_no_completion_iff",
+        "Usul.IDA.Omission.Semantics.review_covered_no_completion_sound"
+      ],
+      "hypotheses": "History is a supplied Event-to-Prop predicate, independent of the report list. Each event carries exact native scope, one of the two native modes and occurrence time. Exhaustive requires every history event qualifying over the whole half-open opportunity to have a report representing that same content, with occurrence no later than recording and recording no later than cutoff. SoundFor requires history membership only for reports selected by native matches. The reverse implication additionally requires no malformed visible report, closure at effective time and Coverage.Complete; the forward implication derives those native gates from covered_iff. The wrapper assumes the exact scope extracted from the expected snapshot and semantic exhaustiveness for its cutoff.",
+      "finite_checks": "Usul.Typing.IDAOmissionSemantics supplies quantified kernel proofs with an explicit axiom audit. UsulTest.IDAOmissionSemantics exercises positive native cases and omission, false-report, malformed-record, open-window, structural-coverage, late-recording and identical-payload history countermodels; these controls do not replace the quantified proof.",
+      "source_review": "The semantic premises concern a stipulated modeled history. Neither a structurally complete coverage record nor authentication establishes semantic exhaustiveness or report soundness. Event identity here is bounded content, not globally unique physical identity. The two-mode model does not classify every possible performance mechanism or establish capacity, culpability or any juristic ruling.",
+      "refinement": "These are conditional links to the existing omission evaluator, not a verified real observation mechanism. Omission.Semantics.History is distinct from ACT-04 fixed-predicate Semantics.History; relating the models remains separate. Instantiating the semantic assumptions from an authorized observation mechanism or expressly trusted premise, with complete event-class and clock coverage, remains an external adequacy obligation."
     }
   ]
 }
