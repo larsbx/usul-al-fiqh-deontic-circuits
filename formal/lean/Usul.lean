@@ -39,6 +39,7 @@ import Usul.Typing.IDADerivation
 import Usul.Typing.IDAActRegistry
 import Usul.Typing.IDAContext
 import Usul.Typing.IDAOmission
+import Usul.Typing.IDAOmissionSemantics
 import Usul.Typing.IDASubstitution
 import Usul.Typing.IDAAdmission
 import Usul.Typing.IDAPremiseIngestion

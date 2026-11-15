@@ -30,3 +30,11 @@ It also includes `Usul.Typing.IDACaseWorkbench`, whose review view retains the
 checked contextual receipt, exact premises, and both report signs. Its
 conditional soundness theorem still requires the premises to hold in the
 history; it does not issue a human ruling.
+
+`Usul.Typing.IDAOmissionSemantics` connects the omission observation evaluator
+to an independently supplied event history. Its absence theorem requires
+exhaustive reporting of qualifying completions. The reverse implication requires
+truthful matching reports, valid visible chronology, effective closure, and the
+evaluator's structural coverage condition. These are explicit
+assumptions about the observation mechanism, separate from signed batch
+authentication and case admission.

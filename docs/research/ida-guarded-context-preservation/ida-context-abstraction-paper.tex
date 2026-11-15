@@ -3,7 +3,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern,microtype,amsmath,amssymb,amsthm,booktabs,tabularx,array,fancyhdr}
 \usepackage[hidelinks,pdfencoding=auto]{hyperref}
-\hypersetup{pdftitle={Context Abstraction and Exact Scope in Islamic Deontic Algebra},pdfsubject={Typed targets, guarded descent, and a Lean checked omission counterexample}}
+\hypersetup{pdftitle={Context Abstraction and Exact Scope in Islamic Deontic Algebra},pdfsubject={Typed targets, guarded descent, and conditional omission semantics}}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small Islamic Deontic Algebra}
@@ -33,14 +33,14 @@
 {\LARGE\bfseries Context Abstraction and Exact Scope\\[4pt]
 in Islamic Deontic Algebra\par}
 \vspace{9pt}
-{\large Typed targets and an omission counterexample\par}
+{\large Typed targets and conditional omission semantics\par}
 \vspace{8pt}
 {\small A companion paper in the IDA context-theory research series\\
 15 November 2026}
 \end{center}
 
 \begin{abstract}
-An abstraction can retain an answer while discarding the scope required for its application. We make this distinction precise for the accepted context theory of Islamic Deontic Algebra (IDA). Typed targets distinguish performed acts, omissions of acts over named opportunities, and affective qualities directed toward typed referents. A foundational conjunction operation compares seven scope coordinates before combining required premises. We prove that a projection preserves every exact scope test if and only if its fibers preserve the scope key. Joint preservation of scope and a computed answer requires both components to be constant on those fibers. Injectivity is necessary only when the projection acts on complete keys themselves, not on entire snapshots. A counterexample using the existing Lean omission evaluator shows that erasing an opportunity bound identifies a closed window with an open one and changes the observation outcome. The categorical interpretation uses the accepted substitution presheaves and kernel-groupoid factorization interface. We separate these structural and computational results from evidence admission and juristic conclusions, and identify semantic completeness of omission observations as the next proof obligation.
+An abstraction can retain an answer while discarding the scope required for its application. We make this distinction precise for the accepted context theory of Islamic Deontic Algebra (IDA). Typed targets distinguish performed acts, omissions of acts over named opportunities, and affective qualities directed toward typed referents. A foundational conjunction operation compares seven scope coordinates before combining required premises. We prove that a projection preserves every exact scope test if and only if its fibers preserve the scope key. Joint preservation of scope and a computed answer requires both components to be constant on those fibers. Injectivity is necessary only when the projection acts on complete keys themselves, not on entire snapshots. A counterexample using the existing Lean omission evaluator shows that erasing an opportunity bound identifies a closed window with an open one and changes the observation outcome. The categorical interpretation uses the accepted substitution presheaves and kernel-groupoid factorization interface. We also prove conditional semantic adequacy: the covered negative outcome is equivalent to absence in an independently supplied event history under explicit exhaustiveness, report soundness, and observation guards. Countermodels distinguish these premises from structural coverage and payload authentication. The next proof step is to justify the premises from a separately specified event ledger and report adapter, while retaining the distinction between model-relative absence and a juristic conclusion.
 \end{abstract}
 
 \noindent\textbf{Keywords}\quad Islamic Deontic Algebra; context; typed acts; omission; categorical semantics; information loss; Lean
@@ -49,7 +49,7 @@ An abstraction can retain an answer while discarding the scope required for its 
 
 An answer can be reused after a representation change only under a preservation theorem appropriate to that change. We study this requirement as \emph{justified reuse}. Type correctness, semantic soundness, exact answer equality, and current admission concern different relations. The accepted IDA context specification already distinguishes these four claims and gives each its own interface \cite{design}. The result below makes their separation concrete at the boundary between information loss and the exact scope guard.
 
-The general mathematics of factorization through a projection is established background. IDA already contains \texttt{Usul.Cat.factors\_iff\_exists} and \texttt{factors\_iff\_functor}, as well as a concrete ACT-03 projection theorem \cite{factor,projection}. The contribution here is the scope criterion, its joint application to typed answers, and a checked counterexample for opportunity information in IDA's actual observation computation. We isolate the information needed for exact scope from the information needed for a selected evaluator.
+The general mathematics of factorization through a projection is established background. IDA already contains \texttt{Usul.\allowbreak{}Cat.\allowbreak{}factors\_\allowbreak{}iff\_\allowbreak{}exists} and \texttt{factors\_iff\_functor}, as well as a concrete ACT-03 projection theorem \cite{factor,projection}. The contributions here are the scope criterion, its joint application to typed answers, and a checked counterexample for opportunity information in IDA's actual observation computation. We then establish a conditional adequacy theorem for the native observation evaluator and isolate the assumptions connecting its reports to a separately supplied history. Information needed for exact scope, information needed for computation, and evidence of semantic truth remain distinct.
 
 The companion manuscript \emph{Typed Context and Conditional Soundness in Islamic Deontic Algebra} studies receipt-bound transport and a fixed-receipt, varying-history countermodel \cite{companion}. The present argument addresses a different boundary: whether a reduced representation retains enough information for the exact scope guard and the selected computation.
 
@@ -76,7 +76,7 @@ Well-formedness states that the description has the required shape. It does not 
 
 An affect \(z\) contains an affective quality and the typed referent that it concerns. Here \emph{affect} means an affective quality, not a causal effect produced by an act. Its representation does not itself assert voluntariness, observability, responsibility, or a ruling. The accountable subject belongs to the inquiry context; further relations among that subject, the performer, or the experiencer must be stated by the supported interpretation. The existing Lean target language proves constructor disjointness and equality criteria for all three forms \cite{core}.
 
-There is a material implementation boundary. The core supports all three target constructors, whereas the current \texttt{Substitution.Inquiry.toGround} constructs performance or omission according to its optional opportunity. It has no affect branch. Thus the accepted categorical architecture includes typed target integration, but the current ACT-02/04 inquiry pilot does not establish a general affect transport calculus \cite{substitution,semantics}.
+There is a material implementation boundary. The core supports all three target constructors, whereas the current \texttt{Substitution.\allowbreak{}Inquiry.\allowbreak{}toGround} constructs performance or omission according to its optional opportunity. It has no affect branch. Thus the accepted categorical architecture includes typed target integration, but the current ACT-02/04 inquiry pilot does not establish a general affect transport calculus \cite{substitution,semantics}.
 
 \subsection{The foundational scope key}
 
@@ -184,7 +184,7 @@ The result is relative to the supported domain. A field fixed throughout that do
 
 \section{A checked omission counterexample}
 
-We instantiate the obstruction using \texttt{Usul.IDA.Omission.evaluate}, rather than assigning a juristic meaning to a new Boolean model. Take two structurally well-formed omission descriptions with the same action, occurrence, clock, accountable person, performer, and other fixed coordinates. Their opportunities are
+We instantiate the obstruction using \texttt{Usul.\allowbreak{}IDA.\allowbreak{}Omission.\allowbreak{}evaluate}, rather than assigning a juristic meaning to a new Boolean model. Take two structurally well-formed omission descriptions with the same action, occurrence, clock, accountable person, performer, and other fixed coordinates. Their opportunities are
 \[
  o_{10}=[0,10),\qquad o_{20}=[0,20).
 \]
@@ -266,13 +266,20 @@ Successful hosted runs for that parent include
 These are source-tree evidence for the named gates, not a claim of a new run at the merge commit. Broader workflow failures and a cancellation remain in the same run inventory.
 
 Publication compatibility was checked against main revision
-\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/65062cec81255be893cba2fd722c99c904d8eec2}{\texttt{65062cec8125}} on 15 November 2026. All eleven source modules in the native omission witness's import closure, and the Lean toolchain pin, are byte-identical to the original baseline. The source citations in this edition use that publication baseline. The newer receipt transport and workbench results are documented in the companion manuscript \cite{companion}; the original hosted runs are not relabelled as evidence for this later revision.
+\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/65062cec81255be893cba2fd722c99c904d8eec2}{\texttt{65062cec8125}} on 15 November 2026. All eleven source modules in the native omission witness's import closure, and the Lean toolchain pin, are byte-identical to the original baseline. The original source citations retain that publication baseline; reference~\cite{omission-semantics} pins the semantic extension separately. The newer receipt transport and workbench results are documented in the companion manuscript \cite{companion}; the original hosted runs are not relabelled as evidence for this later revision.
 
-The generic appendix, integrated as \texttt{UsulTest.IDAGuardedContext}, formalizes the scope criterion, joint-output criterion, image factorization, the key-level injectivity specialization, typed target distinctions, and a harmless noninjective snapshot projection. Its additional finite-history illustration is explicitly a separate mathematical model. The file imports only Lean's \texttt{Init}; its original declaration namespace remains \texttt{IDAContextDescent}.
+The generic appendix, integrated as \texttt{UsulTest.\allowbreak{}IDAGuardedContext}, formalizes the scope criterion, joint-output criterion, image factorization, the key-level injectivity specialization, typed target distinctions, and a harmless noninjective snapshot projection. Its additional finite-history illustration is explicitly a separate mathematical model. The file imports only Lean's \texttt{Init}; its original declaration namespace remains \texttt{IDAContextDescent}.
 
-The native appendix, integrated as \texttt{UsulTest.IDAOmissionGuardWitness}, imports the repository definitions and proves the omission outcomes, erasure witnesses, and foundational guard rejection. The original fresh build compiled its eleven repository dependencies and all nineteen native witness theorems. The generic appendix compiled twenty-six named theorems. Every one of these forty-five declarations had an explicit compiled axiom audit. The recorded dependencies were limited to the standard \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}; the native witness used at most \texttt{propext}. No admitted proof holes or custom axioms occurred in those audited results.
+The native appendix, integrated as \texttt{UsulTest.\allowbreak{}IDAOmissionGuardWitness}, imports the repository definitions and proves the omission outcomes, erasure witnesses, and foundational guard rejection. The original fresh build compiled its eleven repository dependencies and all nineteen native witness theorems. The generic appendix compiled twenty-six named theorems. Every one of these forty-five declarations had an explicit compiled axiom audit. The recorded dependencies were limited to the standard \texttt{propext}, \texttt{Classical.choice}, and \texttt{Quot.sound}; the native witness used at most \texttt{propext}. No admitted proof holes or custom axioms occurred in those audited results.
 
-For this publication, both modules are imported by \texttt{UsulTest}. The repository's \texttt{make lean} gate rebuilds the pinned Lean 4.34.1 package, inventories compiled declarations and their transitive axiom dependencies, and checks the registered paper claims. Its revision-bound receipt is written to \texttt{.cache/lean-axioms/core.json}. Fresh PR checks and their retained receipts supply publication-run evidence separately from the original local audit. Reproduction commands and the declaration concordance accompany the online manuscript.
+The original publication, PR~\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/pull/174}{174}, passed all fifteen associated hosted workflows at head
+\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/0b205500b27ebc164b3050bb35d3d20b3893d45c}{\texttt{0b205500b27e}}, including the \run{43707539191}{formalization audit}. Its merge revision
+\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/6a112f29d52d08e3db9c3b8e92625603ee24682a}{\texttt{6a112f29d52d}} passed all thirteen associated workflows, including \run{43707899458}{formalization} and \run{43707899506}{omission authentication}. These results concern the original forty-five-declaration publication and are distinct from the earlier local audit.
+
+The semantic extension is pinned separately to
+\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/commit/784af396db0241c8c83da096d060740c93f4ff1d}{\texttt{784af396db02}}. It adds twelve production theorems in \texttt{Usul.\allowbreak{}IDA.\allowbreak{}Omission.\allowbreak{}Semantics} and seventeen test declarations in \texttt{UsulTest.\allowbreak{}IDAOmissionSemantics}, while retaining the original forty-five declarations. The new declarations were locally kernel-checked and explicitly audited. Their axiom dependencies are limited to \texttt{propext} and \texttt{Quot.sound}; some use neither. The three test contracts independently expand the forward, reverse, and equivalence statements, and the remaining controls exercise the hypotheses rather than identifying a supplied history with its reports \cite{omission-semantics}. Hosted evidence for the new extension must be tied to its own revision; the PR~174 runs do not verify it.
+
+The three paper test modules are imported by \texttt{UsulTest}. The repository's \texttt{make lean} gate rebuilds the pinned Lean 4.34.1 package, inventories compiled declarations and their transitive axiom dependencies, and checks the registered paper claims. Its revision-bound receipt is written to \texttt{.\allowbreak{}cache/\allowbreak{}lean-axioms/\allowbreak{}core.\allowbreak{}json}. Reproduction commands and the declaration concordance accompany the online manuscript.
 
 \begin{table}[htbp]
 \centering\small
@@ -285,7 +292,8 @@ Three target constructors and seven-field guard & Existing Lean definitions and 
 Substitution and fixed-history naturality & Existing supported ACT-02/04 fragment with dedicated successful hosted evidence; affect inquiry transport is incomplete. \\
 Exact guarded descent criterion & Compiled generic appendix, integrated into the repository audit; general factorization is credited to existing mathematics and project code. \\
 Opportunity and coverage counterexamples & Compiled proofs using the repository's omission evaluator; observation statuses only. \\
-Actual nonperformance from an observation result & Next semantic adequacy obligation, requiring truthful exhaustive coverage assumptions. \\
+Absence in the supplied event history & New conditional adequacy theorem and necessity controls; semantic exhaustiveness and matching-report soundness are explicit premises. \\
+Actual-history correspondence & Deriving the semantic premises from a specified ledger and adapter, and relating that ledger to actual circumstances, remain separate obligations. \\
 Juristic ruling and current admission & Separate interpretation, evidence, scope, authority, and provenance obligations. \\
 \bottomrule
 \end{tabularx}
@@ -293,65 +301,168 @@ Juristic ruling and current admission & Separate interpretation, evidence, scope
 
 Current main also contains bounded signed premise ingestion for four compiled synthetic certificates and persistent replay receipts. The limitation is therefore generalization beyond that closed adapter, rather than complete absence of authentication or persistence \cite{ingestion}. Authentication identifies an exact submitted statement. It does not by itself establish that a coverage assertion is true.
 
-\section{The next proof step}
+\section{Conditional semantic adequacy}
 
-The immediate semantic step is \emph{adequacy of covered omission observations}. Define a history independently of the report list, with a relation
-\(\op{Qualifies}(\omega,e,s)\)
-meaning that event \(e\) is an actual qualifying completion for exact scope \(s\), within its half-open opportunity and the supported performance modes. Define semantic coverage by
+\subsection{An event history independent of reports}
+
+The new semantic model uses the native omission scope and the two native completion modes. An event is the bounded content
+\[
+ e=(s_e,m_e,\tau_e),\qquad
+ h:\op{Event}\to\mathbf{Prop},
+\]
+where \(s_e\) is its exact \texttt{Omission.Scope}, \(m_e\) its mode, and \(\tau_e\) its occurrence time. The history \(h\) is supplied independently of the report list. Membership \(h(e)\) is a proposition in that supplied model; identifying the model with actual circumstances requires separate justification. Event identity here is equality of scope, mode, and occurrence time, not a globally unique physical-event identifier. Recording time belongs to reports, not to events \cite{omission-semantics}.
+
+For a native completion report \(r\), define
+\[
+\begin{aligned}
+ \op{eventOf}(r)&=(r.\mathrm{scope},r.\mathrm{mode},r.\mathrm{occurredAt}),\\
+ \op{Represents}(r,e)&\iff\op{eventOf}(r)=e.
+\end{aligned}
+\]
+This relation preserves the full native scope, including the action, named parties, occurrence, clock, opportunity bounds, definition pins, and clock version. It does not assert that the represented event occurred. Write \(\ell_s,u_s\) for the opening and closing bounds of scope \(s\). Qualification and absence concern the entire half-open opportunity:
+\[
+\begin{aligned}
+ \op{Qualifies}(h,s,e)&\iff
+ h(e)\land s_e=s\land\ell_s\le\tau_e\land\tau_e<u_s,\\
+ \op{NoQualifying}(h,s)&\iff
+ \neg\exists e,\ \op{Qualifies}(h,s,e).
+\end{aligned}
+\]
+The effective time does not occur in this definition. Closure will justify a conclusion about the full window.
+
+Let \(\mathcal R\) be the report list, \(t\) the effective time, and \(c\) the recording cutoff. Semantic exhaustiveness states that every qualifying event has a report for the same event content, recorded chronologically by that cutoff:
 \[
 \begin{split}
- \op{Covers}(\omega,s,t,c,R)\quad\Longleftrightarrow\quad
- \forall e,\ &\op{Qualifies}(\omega,e,s)\Rightarrow\\
- &\exists r\in R,\ \op{Represents}(\omega,r,e)\ \land\ \op{Matches}(r,s,t,c).
+ \op{Exhaustive}(h,s,c,\mathcal R)\iff
+ \forall e,\ &\op{Qualifies}(h,s,e)\Rightarrow\\
+ &\exists r\in\mathcal R,\ \op{Represents}(r,e)\ \land\\
+ &r.\mathrm{occurredAt}\le r.\mathrm{recordedAt}\le c.
 \end{split}
 \]
-Here \(t\) is effective time and \(c\) the recording cutoff. The independent relation \(\op{Represents}(\omega,r,e)\) must connect the report to that same event, including its scope, supported mode, occurrence, and effective time. Authentication of report bytes does not establish this semantic correspondence. The independently defined history prevents coverage from being reduced to the tautology that all recorded events were recorded.
-
-The desired first implication is
+This condition does not define the history from reports and does not use the evaluator's final outcome. Matching-report soundness is a different premise:
 \[
 \begin{split}
- &\op{evaluate}(s,t,c,R,C)=\mathrm{coveredNoCompletion}\\
- &\qquad\land\ \op{Covers}(\omega,s,t,c,R)\\
- &\hspace{20mm}\Longrightarrow
- \neg\exists e,\ \op{Qualifies}(\omega,e,s).
+ \op{SoundFor}(h,s,t,c,\mathcal R)\iff
+ \forall r\in\mathcal R,\ &\op{Matches}(r,s,t,c)\Rightarrow\\
+ &h(\op{eventOf}(r)),
 \end{split}
 \]
-The existing \texttt{covered\_iff} theorem supplies absence of matching reports and closure. Coverage turns any hypothetical qualifying completion into a matching report, yielding a contradiction. The converse needs additional report soundness, valid chronology, and the structural coverage conditions. The theorem must concern exactly the event class, clock, modes, opportunity, and cutoff declared by its assumptions.
+where \(\op{Matches}\) means that the existing native Boolean predicate \texttt{Completion.matches} is true. Soundness is required only for the reports used by that predicate; unrelated or nonmatching reports need not be made semantic premises.
 
-This obligation bridges the fixed-history interpretation and omission-observation layers. The implementation of \texttt{Coverage.Complete} checks a supplied scope, modeled modes, and recording bounds; it does not establish semantic exhaustiveness. The difficult application obligation is to justify \texttt{Covers} from a specified observation mechanism or an explicitly trusted premise. That obligation remains visible even after the conditional Lean implication is proved.
+Write \(\op{Clean}(s,c,\mathcal R)\) for the native condition that no visible in-scope report has malformed chronology, and \(\op{Complete}(s,c,C)\) for \texttt{Coverage.Complete} on the supplied coverage argument \(C\). The latter checks the exact scope, both modeled modes, and recording bounds. It does not establish semantic exhaustiveness. Finally, abbreviate the negative observation by
+\[
+ \op{Covered}(s,t,c,\mathcal R,C)\iff
+ \op{evaluate}(s,t,c,\mathcal R,C)=\mathrm{coveredNoCompletion}.
+\]
 
-Affect-aware inquiry substitution and interpretation is a separate, concrete implementation gap. It should preserve the affect quality and typed object under reindexing, prove identity and composition, and then establish a supported naturality theorem. No general theorem that every projection preserves admissibility is conjectured here: it is false without additional hypotheses. Broader semantic and admission claims should be formulated as conditional contracts, with their supported domain and external assumptions stated.
+\subsection{The adequacy theorem}
+
+\begin{theorem}[Conditional adequacy of covered omission observations]\label{thm:omission-adequacy}
+For any supplied event history and native observation inputs:
+\begin{enumerate}
+\item \(\op{Covered}(s,t,c,\mathcal R,C)\) and
+\(\op{Exhaustive}(h,s,c,\mathcal R)\) imply
+\(\op{NoQualifying}(h,s)\). Matching-report soundness is not required for this implication.
+\item \(\op{NoQualifying}(h,s)\),
+\(\op{SoundFor}(h,s,t,c,\mathcal R)\),\\
+\(\op{Clean}(s,c,\mathcal R)\), closure \(u_s\le t\), and
+\(\op{Complete}(s,c,C)\) imply
+\(\op{Covered}(s,t,c,\mathcal R,C)\). Semantic exhaustiveness is not required for this implication.
+\item Under exhaustiveness, matching-report soundness, clean chronology, closure, and the structural coverage condition,
+\[
+ \op{Covered}(s,t,c,\mathcal R,C)
+ \quad\Longleftrightarrow\quad
+ \op{NoQualifying}(h,s).
+\]
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+For item 1, the existing \texttt{covered\_iff} theorem supplies absence of matching reports and \(u_s\le t\). Suppose \(e\) qualifies. Exhaustiveness supplies a report \(r\) representing that same event, with \(r.\mathrm{occurredAt}\le r.\mathrm{recordedAt}\le c\). Qualification supplies the exact scope and the half-open bounds. Since \(\tau_e<u_s\le t\), the report also satisfies the effective-time guard. Thus the native matching predicate is true, contradicting the absence of matching reports. These steps are isolated in \texttt{matches\_of\_qualifies} and \texttt{matching\_\allowbreak{}report\_\allowbreak{}of\_\allowbreak{}qualifying}.
+
+For item 2, any matching report would, by \texttt{SoundFor}, denote an event present in \(h\). The native matching conditions supply its exact scope and half-open bounds, so \texttt{qualifies\_of\_matching} makes it a qualifying event, contradicting absence. No report therefore matches. Together with clean chronology, closure, and \texttt{Coverage.Complete}, this is exactly the antecedent of the existing \texttt{covered\_iff} characterization. Item 3 combines the two implications.
+\end{proof}
+
+The three statements are compiled as \texttt{covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}sound}, \texttt{covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}complete}, and \texttt{covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}iff}. They quantify over arbitrary supplied event predicates and report lists; the finite controls below do not delimit their quantifiers \cite{omission-semantics}. No additional assumption \(t\le c\) is needed: effective time and the recording perspective are distinct coordinates, and the stated guards supply the bounds used in the proof.
+
+The wrapper \texttt{review\_\allowbreak{}covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}sound} additionally starts with a successful native review, the exact equation \texttt{Scope.\allowbreak{}fromSnapshot expected = some s}, and exhaustiveness at the expected snapshot's cutoff. It concludes both current full-snapshot resolution and \(\op{NoQualifying}(h,s)\). This retains the existing snapshot check. The native omission scope is not the foundational seven-coordinate key or the complete admission record: its equality does not replace question, profile, context, evidence, or authority checks elsewhere. The wrapper yields an observation result and a conditional semantic conclusion, not a juristic ruling or a new admission grant.
+
+\subsection{Counterexamples identify the necessary assumptions}
+
+The compiled controls reuse the native scope with opportunity \([0,10)\). Unless a row states otherwise, effective time and cutoff are both 15, and the supplied coverage claim names both modeled modes and is recorded at tick 10. The positive controls give a covered result in an empty supplied history and an observed completion when an event in the supplied history at tick 5 has a truthful report recorded at tick 5. The following five controls retain the other hypotheses relevant to the failed implication \cite{omission-semantics}.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Necessity controls for the adequacy theorem}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.25\linewidth}Y>{\raggedright\arraybackslash}p{0.24\linewidth}@{}}
+\toprule
+Missing premise & Independently supplied history and reports & Native outcome \\
+\midrule
+Exhaustiveness & An event occurs at tick 5; the report list is empty. & \texttt{coveredNoCompletion}, despite that event. \\
+Matching-report soundness & The history is empty; a report claims a tick-5 completion, recorded at tick 5. & \texttt{completionObserved}, despite absence. \\
+Clean chronology & The history is empty; a visible report claims occurrence at 5 and recording at 4. & \texttt{invalidObservation}. \\
+Effective closure & The history and reports are empty; effective time is 9 and cutoff is 15. & \texttt{pending}. \\
+Structural coverage claim & The history and reports are empty; no coverage claim is supplied. & \texttt{coverageMissing}. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A further cutoff control places an event in the supplied history at tick 5 and its exact, chronological report at recording tick 20. At cutoff 15 that report is invisible. The evaluator returns \texttt{coveredNoCompletion} with the complete supplied claim, but semantic exhaustiveness fails. Existence of a correct report somewhere in the input list does not establish timely coverage. This control keeps the recording deadline in the semantic bridge.
+
+The fixed-payload control holds the scope, times, empty report list, and complete supplied coverage claim constant. One supplied history is empty; another contains the tick-5 event. The evaluator returns the same negative observation in both, while \texttt{NoQualifying} differs. The authentication corollary quantifies over a predicate of that fixed payload and assumes that it accepts the payload. There still exists a supplied history with a qualifying event, the same accepted payload, and the same negative observation. This is a conditional limit on payload-only authentication. It neither exhibits a forged signature nor claims that a newly constructed batch was accepted by a concrete host. Semantic exhaustiveness and the selection of an intended actual history require their own justification.
+
+\subsection{The next proof obligation}
+
+The conditional implication is now proved. The next implementation step is to derive \texttt{Exhaustive} and \texttt{SoundFor} from an independently specified event ledger and report adapter. Its contract must identify the ledger's qualifying events independently of the report list, preserve exact event content, establish the relevant recording deadline, and show that every matching report originates in that ledger. Coverage of the two modeled completion modes and the relation between the ledger and actual circumstances remain explicit assumptions unless separately justified. Defining the history to be exactly the reported events would make the intended coverage claim uninformative.
+
+A second correspondence remains open: this event predicate \texttt{Omission.\allowbreak{}Semantics.\allowbreak{}History} is not ACT-04's \texttt{Usul.\allowbreak{}IDA.\allowbreak{}Semantics.\allowbreak{}History}, which assigns truth values to typed ground predicates. An interpretation connecting those models and preserving the intended event, temporal, and grounding relations needs its own theorem. Theorem~\ref{thm:omission-adequacy} does not establish that bridge automatically.
+
+Affect-aware inquiry substitution and interpretation remains a separate, concrete implementation gap. It should preserve the affect quality and typed object under reindexing, prove identity and composition, and then establish a supported naturality theorem. No general theorem that every projection preserves admissibility is conjectured here: it is false without additional hypotheses. Broader semantic and admission claims remain conditional contracts with their supported domain and external assumptions stated.
 
 \section{Positioning and limits}
 
 The result supplies a precise thesis for the academic paper: \emph{context abstraction is valid relative to what must be preserved}. An abstraction may preserve a selected answer, exact scope, both, or neither. The omission example shows that loss can arise within the structured target itself, before disputes about sources or juristic interpretation enter the model. The theorem also permits useful abstraction when the relevant key and complete evaluator dependencies survive.
 
-The contribution is therefore a formal method for controlling reuse in an accepted IDA architecture, supported by inspectable counterexamples and explicit proof obligations. It does not establish completeness for Islamic jurisprudence, doctrinal correctness of an interpretation, observation of private affective states, or universal transport across profiles. The next semantic bridge should retain these limits in its theorem statement rather than bury them in implementation flags.
+The contribution is therefore a formal method for controlling reuse in an accepted IDA architecture, supported by inspectable counterexamples and explicit proof obligations. It does not establish completeness for Islamic jurisprudence, doctrinal correctness of an interpretation, observation of private affective states, or universal transport across profiles. The proved omission theorem retains explicit semantic premises. The next ledger, adapter, and interpretation bridges must retain their own scope and actual-history assumptions rather than hide them in implementation flags.
 
 \appendix
 \section{Lean declaration concordance and reproduction}
 
 The generic declarations live in namespace \texttt{IDAContextDescent}; native declarations live in \texttt{IDAPaper.NativeOmission}. The modules are available at
-\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/main/formal/lean/UsulTest/IDAGuardedContext.lean}{\texttt{UsulTest.IDAGuardedContext}}
+\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/main/formal/lean/UsulTest/IDAGuardedContext.lean}{\texttt{UsulTest.\allowbreak{}IDAGuardedContext}}
 and
-\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/main/formal/lean/UsulTest/IDAOmissionGuardWitness.lean}{\texttt{UsulTest.IDAOmissionGuardWitness}}.
-Their corresponding plain-English companions enumerate all 45 theorems. The principal obligations are:
+\href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/main/formal/lean/UsulTest/IDAOmissionGuardWitness.lean}{\texttt{UsulTest.\allowbreak{}IDAOmissionGuardWitness}}.
+Their corresponding plain-English companions enumerate the original 45 theorems. The principal obligations are:
 
 \begin{itemize}
-\item Every exact scope test: \texttt{all\_scope\_tests\_iff\_key\_fiberConstant}.
-\item Joint scope and evaluator preservation: \texttt{guarded\_output\_descent\_criterion}.
+\item Every exact scope test: \texttt{all\_\allowbreak{}scope\_\allowbreak{}tests\_\allowbreak{}iff\_\allowbreak{}key\_\allowbreak{}fiberConstant}.
+\item Joint scope and evaluator preservation: \texttt{guarded\_\allowbreak{}output\_\allowbreak{}descent\_\allowbreak{}criterion}.
 \item Uniqueness on the image: \texttt{descended\_map\_unique}.
-\item Key-only specialization: \texttt{identity\_key\_descent\_iff\_injective}.
-\item Native opportunity obstruction: \texttt{no\_evaluator\_after\_erasing\_bounds}.
-\item Native foundational guard: \texttt{guarded\_combination\_rejects}.
-\item Native coverage obstruction: \texttt{no\_evaluator\_after\_erasing\_coverage}.
+\item Key-only specialization: \texttt{identity\_\allowbreak{}key\_\allowbreak{}descent\_\allowbreak{}iff\_\allowbreak{}injective}.
+\item Native opportunity obstruction: \texttt{no\_\allowbreak{}evaluator\_\allowbreak{}after\_\allowbreak{}erasing\_\allowbreak{}bounds}.
+\item Native foundational guard: \texttt{guarded\_\allowbreak{}combination\_\allowbreak{}rejects}.
+\item Native coverage obstruction: \texttt{no\_\allowbreak{}evaluator\_\allowbreak{}after\_\allowbreak{}erasing\_\allowbreak{}coverage}.
 \end{itemize}
+
+The semantic extension adds \href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/784af396db0241c8c83da096d060740c93f4ff1d/formal/lean/Usul/Typing/IDAOmissionSemantics.lean}{\texttt{Usul.\allowbreak{}Typing.\allowbreak{}IDAOmissionSemantics}}\\
+and \href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/784af396db0241c8c83da096d060740c93f4ff1d/formal/lean/UsulTest/IDAOmissionSemantics.lean}{\texttt{UsulTest.\allowbreak{}IDAOmissionSemantics}}. Its companions enumerate twelve production theorems and seventeen test declarations. The production namespace is \texttt{Usul.\allowbreak{}IDA.\allowbreak{}Omission.\allowbreak{}Semantics}. Principal declarations are:
+\begin{itemize}
+\item Exact event correspondence: \texttt{represents\_iff}.
+\item Native matching from a timely same-event report: \texttt{matches\_of\_qualifies} and \texttt{matching\_\allowbreak{}report\_\allowbreak{}of\_\allowbreak{}qualifying}.
+\item Qualification from a sound matching report: \texttt{qualifies\_of\_matching}.
+\item Adequacy in the two directions: \texttt{covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}sound} and \texttt{covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}complete}.
+\item Conditional equivalence: \texttt{covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}iff}.
+\item Exact current-snapshot wrapper: \texttt{review\_\allowbreak{}covered\_\allowbreak{}no\_\allowbreak{}completion\_\allowbreak{}sound}.
+\end{itemize}
+The test namespace \texttt{UsulTest.\allowbreak{}IDAOmissionSemantics} contains the independently expanded \texttt{forward\_\allowbreak{}statement\_\allowbreak{}contract}, \texttt{reverse\_\allowbreak{}statement\_\allowbreak{}contract}, and \texttt{equivalence\_\allowbreak{}statement\_\allowbreak{}contract}; the five named necessity controls; the two positive controls; the fixed-payload history and authentication controls; and \texttt{late\_\allowbreak{}report\_\allowbreak{}not\_\allowbreak{}exhaustive}. Four helper theorems establish the test histories and their elementary properties \cite{omission-semantics}.
 
 From a checkout of the published revision with the pinned Lean toolchain available, the focused build is:
 \begin{verbatim}
 cd formal/lean
 lake build UsulTest.IDAGuardedContext \
-           UsulTest.IDAOmissionGuardWitness
+           UsulTest.IDAOmissionGuardWitness \
+           Usul.Typing.IDAOmissionSemantics \
+           UsulTest.IDAOmissionSemantics
 \end{verbatim}
 From the repository root, \texttt{make lean} performs the complete compiled axiom audit and resolves the registered paper claims. From \texttt{pipeline/}, the documentation and layer checks are:
 \begin{verbatim}
@@ -359,7 +470,7 @@ python -m pytest -q tests/test_plain_english.py \
                     tests/test_layers.py
 python -m usul_corpus roadmap --base origin/main
 \end{verbatim}
-The roadmap command compares a publication branch with its base; after merging, use the PR's base revision to reproduce that comparison. The conditional omission-adequacy implication in Section~7 remains an unproved integration obligation in this paper, not one of the registered declarations above.
+The roadmap command compares a publication branch with its base; after merging, use the PR's base revision to reproduce that comparison. Theorem~\ref{thm:omission-adequacy} is now covered by the registered semantic declarations and independent statement contracts. Deriving its assumptions from an event-ledger adapter and proving the separate ACT-04 interpretation correspondence remain open obligations.
 
 \begin{thebibliography}{99}
 \small\raggedright
@@ -375,5 +486,6 @@ The roadmap command compares a publication branch with its base; after merging, 
 \bibitem{awodey} S. Awodey and A. Bauer. \emph{Introduction to Categorical Logic}, chapter 4. Draft, 20 April 2024. \href{https://awodey.github.io/catlog/notes/catlog4.pdf}{Author-hosted notes}.
 \bibitem{jacobs} B. Jacobs. \emph{Categorical Logic and Type Theory}. Studies in Logic and the Foundations of Mathematics 141. North Holland, 1999. \href{https://www.cs.ru.nl/B.Jacobs/CLT/bookinfo.html}{Author's book page}.
 \bibitem{institutions} J. A. Goguen and R. M. Burstall. Institutions: Abstract model theory for specification and programming. \emph{Journal of the ACM}, 39(1), 95--146, 1992. \href{https://courses.grainger.illinois.edu/cs522/sp2016/InstitutionsAbstractModelTheory.pdf}{Article}.
+\bibitem{omission-semantics} IDA project. \emph{Conditional semantic adequacy of omission observations}. \href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/784af396db0241c8c83da096d060740c93f4ff1d/formal/lean/Usul/Typing/IDAOmissionSemantics.lean}{Pinned production proofs}; \href{https://github.com/larsbx/usul-al-fiqh-deontic-circuits/blob/784af396db0241c8c83da096d060740c93f4ff1d/formal/lean/UsulTest/IDAOmissionSemantics.lean}{independent contracts and counterexamples}, 15 November 2026.
 \end{thebibliography}
 \end{document}

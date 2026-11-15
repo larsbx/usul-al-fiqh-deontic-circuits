@@ -95,6 +95,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `Usul.Typing.IDACaseWorkbench` | [Usul/Typing/IDACaseWorkbench.md](Usul/Typing/IDACaseWorkbench.md) | pending |
 | `Usul.Typing.IDAPremiseIngestion` | [Usul/Typing/IDAPremiseIngestion.md](Usul/Typing/IDAPremiseIngestion.md) | pending |
 | `Usul.Typing.IDAOmission` | [Usul/Typing/IDAOmission.md](Usul/Typing/IDAOmission.md) | pending |
+| `Usul.Typing.IDAOmissionSemantics` | [Usul/Typing/IDAOmissionSemantics.md](Usul/Typing/IDAOmissionSemantics.md) | pending |
 | `Usul.Typing.IDAOmissionWire` | [Usul/Typing/IDAOmissionWire.md](Usul/Typing/IDAOmissionWire.md) | pending |
 | `Usul.Typing.IDAPilot` | [Usul/Typing/IDAPilot.md](Usul/Typing/IDAPilot.md) | pending |
 | `Usul.Typing.IDAProjection` | [Usul/Typing/IDAProjection.md](Usul/Typing/IDAProjection.md) | pending |
@@ -140,6 +141,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | `UsulTest.IDAContextContracts` | [UsulTest/IDAContextContracts.md](UsulTest/IDAContextContracts.md) | pending |
 | `UsulTest.IDAGuardedContext` | [UsulTest/IDAGuardedContext.md](UsulTest/IDAGuardedContext.md) | pending |
 | `UsulTest.IDAOmissionGuardWitness` | [UsulTest/IDAOmissionGuardWitness.md](UsulTest/IDAOmissionGuardWitness.md) | pending |
+| `UsulTest.IDAOmissionSemantics` | [UsulTest/IDAOmissionSemantics.md](UsulTest/IDAOmissionSemantics.md) | pending |
 | `UsulTest.IDAPilot` | [UsulTest/IDAPilot.md](UsulTest/IDAPilot.md) | pending |
 | `UsulTest.IDAZakatStructure` | [UsulTest/IDAZakatStructure.md](UsulTest/IDAZakatStructure.md) | pending |
 | `UsulTest.IDAStructuralCases` | [UsulTest/IDAStructuralCases.md](UsulTest/IDAStructuralCases.md) | pending |
