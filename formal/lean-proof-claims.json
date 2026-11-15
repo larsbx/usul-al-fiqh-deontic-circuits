@@ -123,6 +123,54 @@
       "finite_checks": "The ACT-03 gate appends 20 relabeling, 100 extension and 25 fivefold algebra rows to the original scope/report table: 3,537 rows and 32,008 cells total. It pins 21 named boundary contracts, rejects three terminal theorems weakened to True, runs five Quint tests, rejects twelve semantic mutants and nine malformed exports, and distinguishes all five ruling wire tags from optional-answer absence.",
       "source_review": "The cases and their assigned Hukm values are synthetic mathematical controls using the actual deontic carrier. They make no assertion about a source passage, a real act, or the correct answer under a juristic interpretation. Applying sigma as an answer map does not itself establish a valid omitted-act inquiry or its evidence.",
       "refinement": "The witnesses delimit information dependence, finite supplied-case determination and the boundary of Boolean projections. Mubah remains a definite ruling, distinct from unknown or inapplicable answers. The controls do not establish a unique interpretation, source authenticity, evidence admission, or full ACT-08 acceptance."
+    },
+    {
+      "id": "ida-guarded-context-descent",
+      "claim": "A projection preserves every exact scope-key test exactly when the key is constant on its fibers. The paired scope and fixed-type answer descends uniquely to the projection image exactly when each component is constant on those fibers. Injectivity is necessary only when the input itself is the complete key; dropping a scope-irrelevant annotation can be noninjective and safe.",
+      "theorems": [
+        "IDAContextDescent.descends_iff_fiberConstant",
+        "IDAContextDescent.descended_map_unique",
+        "IDAContextDescent.all_scope_tests_iff_key_fiberConstant",
+        "IDAContextDescent.scope_guard_descent_criterion",
+        "IDAContextDescent.paired_fiberConstant_iff",
+        "IDAContextDescent.guarded_output_descent_criterion",
+        "IDAContextDescent.descended_guard_exact",
+        "IDAContextDescent.identity_key_descent_iff_injective",
+        "IDAContextDescent.exact_guard_iff_seven_coordinates",
+        "IDAContextDescent.omission_erasure_breaks_exact_guard",
+        "IDAContextDescent.omission_truth_does_not_descend",
+        "IDAContextDescent.annotation_erasure_preserves_scope_tests",
+        "IDAContextDescent.annotation_erasure_not_injective"
+      ],
+      "hypotheses": "The general theorem fixes functions from a declared input domain to a view, complete scope-key type and one answer type. Factorization is defined only on the actual image; no surjectivity onto the entire view type is assumed. The omission illustration uses a separate typed model and stipulated complete history, with windows [0,5) and [0,10), one repayment at tick 7 and cutoff 10.",
+      "finite_checks": "UsulTest.IDAGuardedContext includes 26 named kernel proofs and prints every axiom dependency. Its concrete constructor, seven-coordinate, omission-window and annotation-erasure controls use kernel reduction, with no native_decide. The general descent and uniqueness claims are quantified proofs, not finite enumeration.",
+      "source_review": "General factorization is established mathematics and is also present in Usul.Cat.Factor. These results specialize the preservation criterion to guarded scope and typed answers. The synthetic action, omission and affect constructors are mathematical controls; they establish no juristic interpretation or live evidence claim.",
+      "refinement": "The generic theorem is not yet instantiated on the full subtype of authenticated and admitted Context.Snapshot applications. Scope preservation, selected answer equality, semantic truth and current admission remain distinct obligations. Affect constructor separation does not establish affect-aware inquiry substitution or semantics."
+    },
+    {
+      "id": "ida-native-omission-guard-erasure",
+      "claim": "The actual omission evaluator changes from coverageMissing to pending when a closing bound changes from 10 to 20 at time and cutoff 15. Erasing opportunity bounds identifies the two structurally well-formed inputs, so no evaluator on that erased representation reproduces all outcomes. Their full IDA keys fail the real scope guard. At a fixed closed scope, adding the declared complete coverage changes coverageMissing to coveredNoCompletion, so coverage cannot generally be discarded either.",
+      "theorems": [
+        "IDAPaper.NativeOmission.repayment_wellFormed",
+        "IDAPaper.NativeOmission.earlyOpportunity_wellFormed",
+        "IDAPaper.NativeOmission.lateOpportunity_wellFormed",
+        "IDAPaper.NativeOmission.erased_bounds_equal",
+        "IDAPaper.NativeOmission.early_observation",
+        "IDAPaper.NativeOmission.late_observation",
+        "IDAPaper.NativeOmission.observations_differ",
+        "IDAPaper.NativeOmission.no_evaluator_after_erasing_bounds",
+        "IDAPaper.NativeOmission.other_six_coordinates_equal",
+        "IDAPaper.NativeOmission.keys_differ",
+        "IDAPaper.NativeOmission.guarded_combination_rejects",
+        "IDAPaper.NativeOmission.complete_coverage_well_scoped",
+        "IDAPaper.NativeOmission.covered_observation",
+        "IDAPaper.NativeOmission.coverage_changes_observation",
+        "IDAPaper.NativeOmission.no_evaluator_after_erasing_coverage"
+      ],
+      "hypotheses": "The first witness fixes one named repayment operation with typed role operands, one occurrence and clock, windows [0,10) and [0,20), time and cutoff 15, no reports, and no coverage. The second fixes the first scope and compares no coverage with an exactly scoped claim for both modeled completion modes through tick 10. The bound-erasure impossibility ranges over scopes whose actions and opportunities are structurally well formed.",
+      "finite_checks": "UsulTest.IDAOmissionGuardWitness imports Usul.Typing.IDAOmission and contains 19 named kernel proofs, each with a printed axiom audit. The outcomes are computed by the repository evaluator; guard rejection holds for every pair of premise inputs.",
+      "source_review": "These are synthetic observation controls, not rulings about an actual repayment. The competing interval descriptions are not asserted to be simultaneously correct descriptions of one real opportunity. A structurally matching coverage claim does not establish truthful or exhaustive observation.",
+      "refinement": "The proof uses the native observation kernel and typed targets but does not construct two authenticated, admitted Context.Snapshot applications. It establishes neither actual nonperformance nor capacity, culpability, source authenticity, current evidence admission, or any Hukm. Semantic adequacy requires an independent history and a justified coverage relation."
     }
   ]
 }

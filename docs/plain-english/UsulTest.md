@@ -15,6 +15,7 @@ The following suites:
 - **Rulings and judgements**: `TypedRulings`, `KernelContracts`, `Judgement`, `EncoderTypes`, `TaklifBehaviour`.
 - **Agency pilot**: `Agency` (joint-action, scope, revocation, knowledge, and receipt regressions).
 - **Contextual IDA pilot**: `IDAPilot` (the shared guarded application trace, exact destination admission, relevant-report controls, and scoped omission observations).
+- **Guarded-context paper**: `IDAGuardedContext` proves the image factorization criterion for exact scope tests and separately retained outputs, with a typed toy omission counterexample and a safe annotation erasure. `IDAOmissionGuardWitness` checks window and coverage erasure against the actual IDA observation kernel and scope guard. Their 26 and 19 named theorems retain the distinction between mathematical or observation claims and concrete case admission.
 - **Structural zakat pilot**: `IDAZakatStructure` checks the restricted candidate's typed registry and role-preserving substitutions while leaving eligibility, amount, occurrence, and discharge unresolved.
 - **Category layer and institutions**: `Cat`, `Obstructions`, `Interval`, `Institutions`.
 - **Native fixtures**: `Fixtures.Contracts` imports the migrated contextual, fatwa, and typing suites with fixed proposition witnesses and runner controls. The independent fixture gate also checks frozen legacy coverage and adversarial mutations.
