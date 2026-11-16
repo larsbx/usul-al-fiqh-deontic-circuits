@@ -76,6 +76,16 @@ and actual opportunity and capacity require separate evidence. The replay
 returns an observation assessment. Ruling interpretation and judgment
 admission remain separate.
 
+## Independent event checkpoint
+
+The [synthetic checkpoint bridge](../plain-english/Usul/Typing/IDAOmissionEventBridge.md)
+compares the decoded reports to a separately pinned event source. It proves
+timely report coverage and matching-report truth relative to the checkpoint.
+A covered negative then excludes qualifying checkpoint events at the exact
+current scope. The signed observation adapter is a byte-authentication stage. The
+source comparison has a separate typed entry point and explicit assumptions
+for extending absence to another history.
+
 ## Replay
 
 Run `npm --prefix formal/quint ci` and `make ida-context`. The gate compares

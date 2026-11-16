@@ -190,6 +190,21 @@
       "finite_checks": "Usul.Typing.IDAOmissionSemantics supplies quantified kernel proofs with an explicit axiom audit. UsulTest.IDAOmissionSemantics exercises positive native cases and omission, false-report, malformed-record, open-window, structural-coverage, late-recording and identical-payload history countermodels; these controls do not replace the quantified proof.",
       "source_review": "The semantic premises concern a stipulated modeled history. Neither a structurally complete coverage record nor authentication establishes semantic exhaustiveness or report soundness. Event identity here is bounded content, not globally unique physical identity. The two-mode model does not classify every possible performance mechanism or establish capacity, culpability or any juristic ruling.",
       "refinement": "These are conditional links to the existing omission evaluator, not a verified real observation mechanism. Omission.Semantics.History is distinct from ACT-04 fixed-predicate Semantics.History; relating the models remains separate. Instantiating the semantic assumptions from an authorized observation mechanism or expressly trusted premise, with complete event-class and clock coverage, remains an external adequacy obligation."
+    },
+    {
+      "id": "ida-omission-independent-event-correspondence",
+      "claim": "A checked, independently pinned finite event checkpoint makes the decoded reports exhaustive and the matching reports sound relative to its rows. A covered wire review resolves the current snapshot and excludes qualifying events in that checkpoint. Separate source capture assumptions permit transfer to a supplied independent history.",
+      "theorems": [
+        "Usul.IDA.Omission.EventBridge.check_correspondence",
+        "Usul.IDA.Omission.EventBridge.exhaustive_of_capture",
+        "Usul.IDA.Omission.EventBridge.sound_of_capture",
+        "Usul.IDA.Omission.EventBridge.covered_no_completion_iff_of_capture",
+        "Usul.IDA.Omission.EventBridge.wire_covered_no_completion_sound"
+      ],
+      "hypotheses": "The check compares the entire checkpoint with the active pin at the exact scope and cutoff, tests the watermark, row identities and chronology, and verifies both directions of report correspondence. External absence requires every qualifying event to have been captured. The converse requires faithful capture, effective closure and native structural coverage.",
+      "finite_checks": "UsulTest.IDAOmissionEventBridge exercises positive empty and populated sources, missing or fabricated reports, wrong scopes and cutoffs, late and inverted timestamps, duplicates, source revocation and rotation, truncated and unsealed checkpoints, and exact wire review. Two countermodels separate a passing check from actual capture properties.",
+      "source_review": "The source is a synthetic pinned finite value. Its rows are fixed independently of the report list. Byte authentication and operational source authority, sealing, capture and time guarantees are separate.",
+      "refinement": "The bridge concerns event existence at the exact native scope. ACT-04 truth assignment correspondence, affect transport, real evidence admission and juristic conclusions require separate justification."
     }
   ]
 }
