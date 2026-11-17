@@ -239,7 +239,7 @@ conditional extensions and do not block the first core pilot.
 | ACT-05 | Explicit judgment transport and derived evidence | ACT-04 | [Bounded contextual formula admission implemented](ida-admission.md) |
 | ACT-06 | Typed composition of descriptions | ACT-02, ACT-03 | Conditional on a concrete composite use case |
 | ACT-07 | Process interfaces and resource-aware composition | ACT-04, ACT-06 | Conditional later work |
-| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review, [signed omission observation replay](ida-omission-coverage.md), authenticated synthetic premise ingestion, and the [case workbench](ida-case-workbench.md) implemented. General case intake and the core completion gate remain open. |
+| ACT-08 | End-to-end core pilot and reproducible acceptance | ACT-05 | Bounded agency review, [signed omission observation replay and synthetic event correspondence](ida-omission-coverage.md), authenticated synthetic premise ingestion, and the [case workbench](ida-case-workbench.md) implemented. General case intake and the core completion gate remain open. |
 | ACT-09 | Richer indexing, fibrations, or quotient interfaces | ACT-02, ACT-04 | Conditional on a demonstrated need |
 
 `ACT-08` inherits ACT-00 through ACT-05 transitively. A later claim covering
@@ -751,8 +751,11 @@ modes. It separates a covered view with no completion from incomplete
 coverage and an open effective window. The `make ida-context` gate compares
 these results independently. The `make ida-omission-auth` gate checks that a
 whole observation batch is signed under a separately configured catalog pin
-and matches the resolved omission scope. The fixture uses test keys. Concrete
-evidence admission and the integrated pilot exit remain separate.
+and matches the resolved omission scope. The fixture uses test keys. An
+[independently pinned synthetic event checkpoint](../plain-english/Usul/Typing/IDAOmissionEventBridge.md)
+checks both reporting premises relative to the checkpoint and connects that
+check to current native wire review. Real capture, predicate interpretation,
+and evidence admission remain obligations for the integrated pilot.
 
 **Core structural examples.**
 

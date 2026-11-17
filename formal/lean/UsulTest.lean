@@ -31,6 +31,7 @@ import UsulTest.IDAContracts
 import UsulTest.IDAGuardedContext
 import UsulTest.IDAOmissionGuardWitness
 import UsulTest.IDAOmissionSemantics
+import UsulTest.IDAOmissionEventBridge
 import UsulTest.IDAJudgment
 import UsulTest.IDAJudgmentContracts
 import UsulTest.IDADerivation

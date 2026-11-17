@@ -31,6 +31,7 @@
                 "docs/plain-english/Usul/Typing/IDAAdmission.md", "docs/plain-english/UsulTest/IDAAdmission.md",
                 "docs/plain-english/Usul/Typing/IDAContext.md", "docs/plain-english/Usul/Typing/IDAOmission.md", "docs/plain-english/Usul/Typing/IDASubstitution.md",
                 "docs/plain-english/Usul/Typing/IDAOmissionSemantics.md", "docs/plain-english/UsulTest/IDAOmissionSemantics.md",
+                "docs/plain-english/Usul/Typing/IDAOmissionEventBridge.md", "docs/plain-english/UsulTest/IDAOmissionEventBridge.md",
                 "docs/plain-english/Usul/Typing/IDAProjection.md", "docs/plain-english/Usul/Typing/IDASemantics.md",
                 "docs/plain-english/Usul/Cat/IDASubstitution.md", "docs/plain-english/Usul/Cat/IDAProjection.md", "docs/plain-english/Usul/Cat/IDASemantics.md",
                 "docs/plain-english/UsulTest/IDASemantics*.md", "docs/plain-english/scripts/ExportIDASemantics.md",
