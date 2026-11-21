@@ -6,7 +6,7 @@ Ibn al-Ṣalāḥ’s conditions for ṣaḥīḥ require a continuous isnād, u
 transmitters with precision throughout the chain, and freedom from shudhūdh
 and a disqualifying ʿilla. Ibn Ḥajar uses these criteria for ṣaḥīḥ li-dhātihi
 among āḥād reports. Lighter precision, with the other conditions met,
-characterizes ḥasan li-dhātihi. [Ibn al-Ṣalāḥ, type 1, pp. 12–14](https://islamweb.net/ar/library/content/90/3/) · [Ibn Ḥajar, *Nukhbat al-Fikar*, v04:p722](https://github.com/OpenITI/0875AH/blob/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukhbatFikar/0852IbnHajarCasqalani.NukhbatFikar.Shamela0005940-ara1#L89-L101)
+characterizes ḥasan li-dhātihi. [Ibn al-Ṣalāḥ, type 1](https://ar.wikisource.org/wiki/%D8%AD%D8%AF%D9%8A%D8%AB_%D8%B5%D8%AD%D9%8A%D8%AD) · [Ibn Ḥajar, *Nukhbat al-Fikar*, v04:p722](https://github.com/OpenITI/0875AH/blob/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NukhbatFikar/0852IbnHajarCasqalani.NukhbatFikar.Shamela0005940-ara1#L89-L101)
 
 | Input or theorem | Meaning |
 | --- | --- |
