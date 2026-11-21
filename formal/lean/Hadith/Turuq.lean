@@ -5,11 +5,12 @@ import Usul.Qawaid
 /-!
 # Ṭuruq: aggregation as defeasible evidence (al-Albānī track §2.3, H5)
 
-al-Albānī's central rule: ḍaʿīf + ḍaʿīf (independent, not shadīd) → ḥasan li-ghayrihi, and
-ḥasan + support → ṣaḥīḥ li-ghayrihi. This is the contested axiom: the *manhaj al-mutaqaddimīn*
-reading (Ibn Rajab, *Sharḥ ʿIlal al-Tirmidhī*) is that early critics judged by qarāʾin, so a
-bare count of ṭuruq does not compose. The rule is therefore **not** a sound inference rule here.
-It is an *argument* (index 0 of a finite AF) that objections attack:
+The project's al-Albānī profile proposes a one-rung bump with suitable support.
+In *Tamām al-Minna*, Q10, al-Albānī restricts strengthening to weakness of the
+sort that can be repaired, such as poor memory, and excludes suspicion about
+honesty or religion. Ibn Rajab's *Sharḥ ʿIlal al-Tirmidhī* illustrates how early
+critics weigh case-specific qarāʾin. The executable bump here is a supplied
+argument (index 0 of a finite AF) that objections attack:
 
 * ʿilla khafiyya, shudhūdh against an awthaq, a hidden common madār, the qarīna of a critic's
   explicit iʿlāl: each is an attacker of the lift;
@@ -22,8 +23,8 @@ part: shadīd ṭuruq are inert, one madār never lifts, and a lift moves exactl
 
 namespace Hadith
 
-/-- One ṭarīq after chain evaluation: its verdict and the *madār* (the link where its weakness
-or its common narrator sits). Distinct madār is the independence condition. -/
+/-- One evaluated route with a supplied *madār* identifying its point of weakness
+or common narrator. Distinct labels satisfy the profile's independence guard. -/
 structure Tariq where
   verdict : Verdict
   madar   : Nat
@@ -224,11 +225,15 @@ example : basis twoWeak true = .ghayri := by decide
 
 /-! ## The muʿtabar follower: «فوقه أو مثله لا دونه» (decision D3)
 
-The *Nuzha* requires the follower to be at least as good as the narrator it follows. Two readings:
+The *Nuzha* requires the follower to be at least as good as the narrator it
+follows, as determined by comparing the transmissions (v01:p104–p105).
+The project compares two policies on the abstract route records:
 * `lax`: any independent supporting route qualifies (the rule as first encoded);
 * `strict`: the strongest route (best verdict, then the best weakest-narrator rank) must have an
   independent supporter whose weakest narrator is no worse than its own.
-Routes carry their `Isnad.floor` beside them. `strict` never lifts where `lax` does not
+Routes carry their `Isnad.floor` beside them. The floor is the weakest rank
+of the whole route, a proxy for comparing the followed narrator and his
+follower. `strict` never lifts where `lax` does not
 (`strict_le_lax`), and `lax` is exactly `judge` (`judgeI_lax`). -/
 
 inductive Itibar where
@@ -276,7 +281,7 @@ example : judgeI .strict [(⟨.daif, 1⟩, 5), (⟨.daif, 2⟩, 9)] 1 [] = .daif
 example : judgeI .strict [(⟨.daif, 1⟩, 9), (⟨.daif, 2⟩, 9)] 1 [] = .hasan := by decide
 
 
-/-! ### D3 decided: strict, checked against the dogfooded bank
+/-! ### D3: why the project chose its strict profile
 
 The uṣūl track's bank decides displacement with `Usul.Qawaid.update` (al-Saʿdī Q11/Q52): a
 challenger displaces the incumbent only at equal or greater strength, and a weaker one never does

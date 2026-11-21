@@ -2,11 +2,15 @@
 
 Source: [`formal/lean/Hadith/Turuq.lean`](../../../formal/lean/Hadith/Turuq.lean)
 
-al-Albānī's rule that several weak routes (ṭuruq) strengthen each other is treated as a defeasible argument, not a sound inference. The lift stands only if it survives its objections in a formal argumentation framework. Its own guards are proven conservative: hopeless routes never help, one shared source never lifts, and a lift moves exactly one rung.
+The project represents a proposed strengthening in the al-Albānī profile as
+a defeasible argument. The profile can raise the score by a rung when the
+argument survives and the route guards pass. The *Nuzha*’s source criterion
+for a qualified follower has separate inputs. [Jabr criterion](Nukhba.md#4-repair-jabr-by-a-corroborating-route)
 
 ## 1. Routes and the lift rule
 
-- **`Tariq`**: one route after its chain is graded: its verdict and its madār (the point where its weakness or common narrator sits). Different madār means independent routes.
+- **`Tariq`** records an evaluated route and a supplied madār for the point of
+  weakness or common narrator. The profile counts different madār labels.
 - **`best`**: the strongest single route. With no routes, mawḍūʿ.
 - **`supports`**: the distinct madārs among routes that are at least ḍaʿīf.
 - **`Liftable`**: the best route is ḍaʿīf or ḥasan, and there are at least two independent supports.
@@ -66,9 +70,12 @@ Worked: a forgery ruling caps two weak routes at mawḍūʿ. A jawāb that defea
 
 ## 6. The qualified follower (decision D3)
 
-The *Nuzha* requires the corroborating route to be "above it or like it, not below".
+The *Nuzha* compares the follower with the narrator being followed. The
+strict project profile compares whole-route floors as an approximation.
 
-- **`Itibar`**: two readings. `lax`: any independent supporting route qualifies. `strict`: the base route must have an independent supporter whose worst narrator is no worse than its own.
+- **`Itibar`** selects a project policy. `lax` permits any eligible supporter
+  with a distinct madār label. `strict` also requires the supporter’s weakest
+  narrator rank to be at least as good as the base route’s.
 - **`baseRoute`**: the route a lift builds on: best verdict, then best floor.
 - **`mutabar`**: whether the file meets the follower condition under a reading.
 - **`judgeI`**: `judge` with the follower condition added.

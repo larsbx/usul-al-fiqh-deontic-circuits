@@ -57,7 +57,7 @@ is the contested axiom. This fixes three decisions before any axiom is written:
 |---|---|---|
 | H0 registry | **done for the kernel** | 22 works added to `corpus/registry.json` (`track: albani_hadith`), pinned to OpenITI commits or Shamela ids; 14 witnesses fetched and locked (`corpus/lock.json`). The three recalled counts are **confirmed** against the text: 12 marātib (*Taqrīb*, v01:p074–075), 5 tadlīs tiers (*Taʿrīf*, v01:p013–014), 15 qawāʿid (*Tamām al-Minna*, v01:p015–041). Every rung is quoted verbatim in `corpus/hadith/kernel_scales.json` and checked by `test_hadith.py` (see §1.1) |
 | H1 logic record | **decided in §0.1**, ADR prose open | reuses `Usul.Dung` / `Usul.Grounded`; no new semantics |
-| H2 signature | **Nukhba tree in; marātib verified** | `Hadith.Grade`: the 12 marātib match the *Taqrīb* rung for rung; bands proved; bridge `grade` never `qat`. `Hadith.Nukhba` (§2.5): number of ṭuruq (only tawātur yields qaṭʿ: `knowledge_qat_iff`), saqṭ (muʿallaq / mursal / muʿḍal / munqaṭiʿ; tadlīs vs irsāl khafī), the ten ṭaʿn causes in the text's severity order (5 ʿadāla + 5 ḍabṭ), the *Nuzha*'s jabr list; muʿāraḍa reuses `Usul.resolve`. All 20 classes quoted and linked |
+| H2 signature | **Source criteria checked** | `Hadith.ClassicalCriteria` checks the intrinsic ṣaḥīḥ and ḥasan conditions and Ibn Ḥajar’s qualifying-follower condition for the sixth rank. `Hadith.Nukhba` (§2.5) requires four findings for tawātur and checks the cited jabr criterion. `Hadith.Grade` retains the twelve narrator ranks and supplies the profile’s prima facie valuation. |
 | H3 axioms | **15 + 9 qawāʿid; jarḥ/taʿdīl resolution built** | *Tamām al-Minna*: 15 qawāʿid classified, 7 linked (Q1–Q5, Q10, Q12). *al-Tankīl*: 9 qawāʿid quoted, 4 linked (Q4, Q5, Q7, Q8). `Hadith.JarhTadil` (§2.4): what counts, strength as remoteness of error, the resolution, bias as a qarīna only, narrator ≠ witness. `Hadith.Isnad`: tadlīs `Policy`, weakest link |
 | H5 aggregation | **seeded** | `Hadith.Turuq`: the lift as a defeasible argument; Q10's criterion (sūʾ al-ḥifẓ repairs, tuhma does not) is the shadīd band, proved inert (`liftable_cons_shadid`, `aggregate_of_shadid`); one madār never lifts; at most one rung; worked defeat / reinstatement; non-monotonicity witness |
 | H4 tests | **tranches 1–4 in (al-Ḍaʿīfa 1–45)** | `corpus/hadith/daifa_tranche{1,2,3,4}.json`, contiguous from entry 1; generated Lean guards (`HadithTest/Daifa.lean`). Coverage by rules 33/45 = 0.733; with an isnād 19/31 = 0.613; qarīna share 11/45 = 0.244; 0 encoding errors. Reported apart (D2): with the cited rulings 44/45 = 0.978. All quotes and rulings verified against the downloaded pages |
@@ -123,9 +123,13 @@ link v = verdict rāwī,           if muttaṣil ∧ accept
 chain  = ⨅ links                                                     -- weakest link
 ```
 
-Proved: chain ≤ every link and equals one of them; monotone in each link and in the policy (more tolerant ⇒ never weaker); a kadhdhāb anywhere ⇒ mawḍūʿ; a gap anywhere ⇒ not ḥujja.
+The profile’s chain score is bounded by each link and monotone in link scores
+and the tadlīs policy. A kadhdhāb forces the profile’s mawḍūʿ value, and a
+marked break precludes the profile’s ḥujja score for that chain.
 
-**Planned (H3):** the isnād *graph*. A ḥadīth is a DAG of ṭuruq meeting at common links (*madār*). Chain evaluation stays a path functional; the graph supplies the independence relation that §2.3 currently takes as a `madar : Nat` label.
+**Planned (H3):** source-backed comparison of actual routes. Graph paths and
+shared points help identify candidate parallels. The relationship between a
+follower and the narrator followed needs review of the underlying transmissions.
 
 ### 2.3 Ṭuruq — `Hadith.Turuq` (built)
 
@@ -141,9 +145,20 @@ Guards, proved: aggregation never lowers `best` and never climbs more than one r
 
 Defeasibility, shown on worked AFs: no objection ⇒ ḥasan li-ghayrihi; an ʿilla ⇒ ḍaʿīf; a jawāb ⇒ ḥasan again; a second unanswered ʿilla ⇒ ḍaʿīf. `judge_not_monotone` states the existence of a file where adding an objection lowers the verdict.
 
-**Checked against the text** (`Hadith.Nukhba`, §2.5). The *Nuzha* names what a muʿtabar follower repairs: sūʾ al-ḥifẓ (and the unsorted mukhtaliṭ), the mastūr, the mursal, and the mudallas whose omitted narrator is unknown. Every martaba whose cause is on that list sits in the kernel's iʿtibār band (`liftable_in_itibar`), and kadhib/tuhma are shadīd (`kadhib_tuhma_shadid`). The kernel is **wider** in one place: majhūl al-ʿayn (martaba 9) is liftable in the kernel but not named in the text (`majhul_gap`). **Decided: kept repairable** (decision D1 below); the theorem stays as the record of the divergence. Two refinements for H5:
-- **the follower must be «فوقه أو مثله لا دونه»** (decision D3: **strict**). `Isnad.floor` gives each route's weakest narrator as a *Taqrīb* rank; a gap or unaccepted tadlīs counts as an unknown narrator (rank 9). `judgeI` reads the condition two ways: `lax` (any independent supporter; equal to `judge`, `judgeI_lax`) and `strict` (the strongest route needs a supporter no weaker than itself), the project default (`Itibar.default`). Proved: `strict_le_lax`. Checked against the dogfooded bank: its displacement rule `Usul.Qawaid.update` (a challenger displaces only at equal or greater strength) is strict in form (`bank_weaker_never_displaces` beside `strict_weaker_follower_never_lifts`, while `lax_weaker_follower_lifts`). On the bank's own four-grade scale all iʿtibār marātib are shakk (`bank_scale_blind_in_itibar`), so the bank is neutral there and gives no support to lax. All recorded kernel values hold under strict; the only change is #2's undefeated value (ḥasan under lax, ḍaʿīf under strict: the mursal follower at 9 is weaker than Layth at 8). Strict does not derive #24's second objection, because ʿAṭiyya's rejected ʿanʿana puts his own route at 9 too;
-- ~~the *Nuzha* says the lifted ḥadīth is «منحط عن رتبة الحسن لذاته»~~ **done:** `Basis` (dhātī / ghayrī) with `ghayri_iff` (li-ghayrihi exactly when aggregation moved the verdict off the best route) and `refinedRank`, which places the lifted grade strictly below the same grade li-dhātihi without reordering different verdicts.
+The *Nuzha* passage names poor memory including unseparated ikhtilāṭ, the
+mastūr, the mursal and tadlīs with an unidentified omitted narrator.
+`Hadith.Nukhba.jabr_iff` requires a listed cause and a reviewed matching
+follower at least as reliable as the transmitter followed. `majhul_gap`
+records that the project’s D1 band also includes majhūl al-ʿayn. [*Nuzha*, v01:p104–p105](https://github.com/OpenITI/0875AH/blob/5835c183b8bbf4ea454d5c1be2b168b669403771/data/0852IbnHajarCasqalani/0852IbnHajarCasqalani.NuzhatNazar/0852IbnHajarCasqalani.NuzhatNazar.Shamela0001565-ara1#L1104-L1118)
+
+The D3 profile compares the weakest narrator ranks of whole routes as a
+proxy. `strict_le_lax` proves an ordering of the two profile policies.
+In the recorded examples, strict lowers #2’s undefeated profile score
+compared with lax. Al-Albānī’s objection in #24 requires separate
+route evidence.
+
+`ghayri_iff` records when the uncapped profile changes the best route score,
+and `refinedRank` places a lifted score below the same score li-dhātihi.
 
 The *Nuzha*'s justification of the lift is itself evidential: each weak route is equally likely right or wrong, and an agreeing route «رجح أحد الجانبين … فارتقى من درجة التوقف إلى درجة القبول». That supports the design choice of an argument, not an axiom.
 
@@ -171,7 +186,17 @@ Proved: `qati_jarh_wins` and `qati_tadil_wins` hold for every qarīna, so bias (
 
 ### 2.5 The *Nukhba* tree — `Hadith.Nukhba` (built)
 
-Each taqsīm is a total function into an inductive type, so exhaustive ∧ disjoint hold by construction; the `_iff` lemmas fix each class to the text's definition. See the H2 row and §2.3 for what it checks.
+The intrinsic criteria take independent reviewed findings for ittiṣāl,
+ʿadāla, ḍabṭ, freedom from shudhūdh and freedom from a disqualifying ʿilla.
+`intrinsic_sahih_iff` and `intrinsic_hasan_iff` check Ibn Ḥajar’s āḥād
+classification. The sixth narrator rank takes a qualifying-follower finding.
+These checks keep an unresolved finding distinct from an established
+refutation. [Classical criteria and loci](plain-english/Hadith/ClassicalCriteria.md)
+
+`Turuq.tawatur` requires Ibn Ḥajar’s four tawātur findings. The āḥād branch
+uses the minimum multiplicity at the relevant levels of the isnād. The
+project’s certainty projection has that reviewed tawātur branch and its
+existing verdict-grade branch. [*Nuzha* classifications and loci](plain-english/Hadith/Nukhba.md)
 
 ---
 
@@ -275,9 +300,9 @@ graph TD
 
 | # | Date | Question | Decision | Basis | Record |
 |---|---|---|---|---|---|
-| D1 | 2026-10-09 | Should another route repair a majhūl al-ʿayn (martaba 9)? The *Nuzha*'s jabr list names only the mastūr (majhūl al-ḥāl), sūʾ al-ḥifẓ, the mursal and the mudallas. | **Yes, kept repairable**, as the kernel already had it (iʿtibār band = marātib 5–9). | *Tamām al-Minna* Q10 withholds repair only where the weakness is «تهمة في صدقهم أو دينهم»; jahāla is unknown status, not tuhma. The kernel follows al-Albānī's own criterion here, not the narrower *Nuzha* list. | `Hadith.Nukhba.majhul_gap` states the divergence from the *Nuzha*; `Hadith.Grade.Martaba.shadid_iff` fixes the band. Revisit if H4 tranches show al-Albānī refusing a majhūl al-ʿayn as a shāhid. **Triggered once:** al-Ḍaʿīfa #24 rejects a follower «لجهالة الراوي عنه» (Ibn Dhakwān, unknown to Ibn Maʿīn; ʿayn or ḥāl not stated). Encoded as an objection, so the verdict matches either way; the decision stands until the project owner reopens it |
+| D1 | 2026-10-09 | Should the al-Albānī replay profile allow rank 9 as candidate support? | **Yes.** Rank 9 remains in the project’s iʿtibār band. | *Tamām al-Minna* Q10 gives poor memory as a repairable weakness and excludes suspicion of dishonesty or a flaw in religion. The project’s treatment of rank 9 is an interpretation for replay. | `majhul_gap` records the distinction from the *Nuzha* passage. Al-Ḍaʿīfa #24 rejects a follower due to a narrator’s unknown status without specifying ʿayn or ḥāl. The profile records the rejection as an objection. |
 | D2 | 2026-10-09 | How should a critic's ruling (ḥukm bi'l-waḍʿ, buṭlān) or a matn criterion enter the kernel? | **As a capping argument, counted apart.** Cases it decides keep `class: qarina`; the kernel's result with the rulings is recorded as `kernel_with_rulings` and reported as `coverage_with_rulings`, never folded into rule coverage. | Folding the rulings into the rules would make the qarīna share (the measure of the mutaqaddimūn critique, §0.1) vanish by construction. | `Hadith.judgeR`, `judgeR_le`, `capWith_le_ceiling`; `test_rulings_only_on_qarina_cases` |
-| D3 | 2026-10-09 | How strictly to read the *Nuzha*'s «فوقه أو مثله لا دونه»? | **Strict** (project owner: strict unless the dogfooded bank shows lax is aligned). `Itibar.default = .strict`; the H4 kernel is `judgeI .strict` / `judgeRI .strict`, with the lax value recorded beside it as `kernel_lax_undefeated`. | The bank's displacement rule (`Usul.Qawaid.update`; Ibn Rajab's `zahirPrevails`: a weaker ẓāhir never prevails) is strict in form. Lax lets a weaker follower displace the base's tawaqquf. The bank's own scale cannot separate marātib 5–9, so it is neutral there, not evidence for lax. | `strict_weaker_follower_never_lifts`, `bank_weaker_never_displaces`, `lax_weaker_follower_lifts`, `bank_scale_blind_in_itibar`; no final verdict in entries 1–35 changes |
+| D3 | 2026-10-09 | How should the replay profile approximate the *Nuzha*’s follower comparison? | **Strict.** `Itibar.default = .strict`. The H4 profile records the lax alternative as `kernel_lax_undefeated`. | The project uses whole-route floors by analogy with the bank’s displacement rule. The *Nuzha* compares the followed transmitter with the matching follower. | `strict_weaker_follower_never_lifts`, `bank_weaker_never_displaces` and `strict_le_lax` characterize the project rules. `jabr_iff` uses a qualifying-follower finding from route review. |
 | D4 | 2026-10-10 | Does the ḥadīth gate apply to the ḥadīth dalīls of the uṣūl track (IQ-22)? | **Yes.** A ḥadīth dalīl counts in an uṣūl derivation only if `Verdict.Hujja`; Q24's ḥadīth (ḍaʿīf, *al-Irwāʾ* 1553/1555) is not a dalīl. | One gate, not one per domain (*al-Ḥadīth Ḥujja bi-Nafsihi*, H7). Aḥmad's fourth aṣl is read per Ibn al-Qayyim («قسم من أقسام الحسن»), so it is a difference of terms, not an exception. Failing dalīls are surfaced, never dropped. | `Usul.Seam.admitted`, `admitted_iff_yaqin`, `daif_not_admitted`, `mursalDaif_admits_only_hasan_up`, `q24_dalil_not_admitted`; IQ-22 `adopted` |
 | D5 | 2026-10-10 | Does «لا يصح … إسناد ساقط» with a lone kadhdhāb route (#41) contradict the kernel's kadhdhāb ⇒ mawḍūʿ? | **No; settled by the bank.** The kernel keeps al-Albānī's scale and his kadhdhāb ⇒ mawḍūʿ (#5, #10, #16, #40). A term that only bounds the verdict is recorded as a bound (`albani_bound: upper`), and agreement means the kernel is within it (`hadith.agrees`). A two-branch encoding (mawḍūʿ outside the scale, reached only by a finding) was built and **revoked by the project owner**: it contradicts al-Albānī, who files mawḍūʿ as a kind of ḍaʿīf («الموضوع من أنواع الحديث الضعيف», #16) and applies the kadhdhāb step himself. | Al-Saʿdī Q57 (read a speaker by his intent, so by al-Albānī's own usage), Q29 (read the word with what is attached to it: «عمرو هذا كذاب»), Q11 (only the bound is certain; a rung is not). | `test_class_matches_kernel`, `test_coverage_report` |
 

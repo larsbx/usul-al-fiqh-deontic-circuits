@@ -5,8 +5,12 @@ import Usul.Signature
 
 Ibn Ḥajar, *Taqrīb al-Tahdhīb*, muqaddima: twelve *marātib* for narrators, best first
 (`src:openiti-taqrib-jk121/v01:p074`–`p075`; each rung is quoted and linked to its constructor
-in `corpus/hadith/kernel_scales.json`). The *Taqrīb* is al-Albānī's default valuation;
-individual verdicts may override it, and those overrides are data (H4), not changes to this scale.
+in `corpus/hadith/kernel_scales.json`). The mapping to verdicts below is the
+project's prima-facie valuation for the al-Albānī fixtures. Ibn Ḥajar
+describes several different cases under rank 5 and makes rank 6 conditional
+on a qualifying mutābaʿa (`Hadith.ClassicalCriteria.sixthRankStatus`,
+*Taqrīb*, v01:p074). Individual critic assessments and the intrinsic
+criteria have separate inputs.
 
 The verdict scale is the *Nuzha*'s partition of the *maqbūl* / *mardūd*, coarsened to the
 five values al-Albānī's *Silsilatān* actually emit. `grade` bridges into the uṣūl kernel's
@@ -108,7 +112,7 @@ theorem grade_ne_qat (v : Verdict) : v.grade ≠ .qat := by cases v <;> decide
 
 end Verdict
 
-/-- Prima-facie verdict carried by a narrator of a given martaba. -/
+/-- Prima-facie verdict assigned to a martaba by the project profile. -/
 def Martaba.verdict : Martaba → Verdict
   | .sahabi | .awthaq | .thiqa => .sahih
   | .saduq => .hasan

@@ -112,6 +112,7 @@ All the Docs are listed in one place in the [Plain-English Companions](https://c
 | Module | Companion | Doc |
 | --- | --- | --- |
 | `Hadith` | [Hadith.md](Hadith.md) | [doc](https://claude.ai/code/artifact/09630387-d425-4321-b8af-58528754b493) |
+| `Hadith.ClassicalCriteria` | [Hadith/ClassicalCriteria.md](Hadith/ClassicalCriteria.md) | pending |
 | `Hadith.Grade` | [Hadith/Grade.md](Hadith/Grade.md) | [doc](https://claude.ai/code/artifact/224f35f7-3060-490e-a455-654642eddf97) |
 | `Hadith.Isnad` | [Hadith/Isnad.md](Hadith/Isnad.md) | [doc](https://claude.ai/code/artifact/e48f2d2a-3efe-45e2-8350-2ed1082c5ce3) |
 | `Hadith.JarhTadil` | [Hadith/JarhTadil.md](Hadith/JarhTadil.md) | [doc](https://claude.ai/code/artifact/1ba488b5-cbe1-460b-8840-d0600d00b8bb) |

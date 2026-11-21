@@ -15,9 +15,12 @@ martaba, so taṣrīḥ cures the tadlīs but not that weakness. Which tiers are
 qiyās modules treat disputes. al-Albānī, *Tamām al-Minna* qāʿida 3, states the general rule
 (only what is explicitly heard is accepted) and defers to Ibn Ḥajar's *tafṣīl* for the tiers.
 
-**Verdict.** *Nuzha*: ṣaḥīḥ li-dhātihi needs ʿadāla, tamām al-ḍabṭ and ittiṣāl at every link.
-So the prima-facie chain verdict is the meet over link verdicts. Absence of ʿilla and
-shudhūdh is *not* decided here: those are qarāʾin-based and enter as defeaters (`Hadith.Turuq`).
+**Verdict.** The project profile computes a prima-facie chain score by taking
+the meet of its link scores. Ibn Ḥajar's intrinsic classification calls
+for report-specific findings about continuity, integrity, precision, shudhūdh
+and ʿilla (`Hadith.ClassicalCriteria`, *Nukhba*, v04:p722). The chain score
+supplies none of those findings by itself. Explicit objections and rulings are
+inputs to the project's route profile (`Hadith.Turuq`).
 -/
 
 namespace Hadith
