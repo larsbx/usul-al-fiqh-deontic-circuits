@@ -397,6 +397,46 @@ def _open_research_questions() -> set[str]:
     return {q["id"] for q in json.loads(p.read_text(encoding="utf-8"))["questions"] if q["status"] in OPEN} if p.exists() else set()
 
 
+def search_obligations(cases: list[dict], ledger: dict) -> dict:
+    """Expose unsupported ruling sides without treating an entry note as side coverage.
+
+    This is a derived review queue, not an evidence-admission or resolution rule.
+    Include wholly unproven weighed entries too; ``unproven`` intentionally omits
+    them when checking wins against an unsupported opponent.
+    """
+    by = {c["far"]: c for c in cases}
+    obligations = []
+    for entry in sorted(ledger["entries"], key=lambda e: e["far"]):
+        if not weighed(entry):
+            continue  # Already exposed by weighing_worklist; no search is inferred.
+        case = by[entry["far"]]
+        _require_positions(case, entry)
+        proofs = proved(case, entry)
+        sides = [{"ruling": ruling, "ruling_code": takhrij.code(ruling),
+                  "positions": [{"index": i, "who": position["who"]}
+                                for i, position in enumerate(case["positions"])
+                                if _same(position["ruling"], ruling)]}
+                 for ruling in rulings(case) if top(proofs, ruling) is None]
+        if not sides:
+            continue
+        note = entry.get("searched")
+        recorded = isinstance(note, str) and bool(note.strip())
+        stage, ruling = resolve(case, entry)
+        obligations.append({"far": case["far"],
+                            position_receipts.FIELD: entry[position_receipts.FIELD],
+                            "resolution": {"stage": stage, "ruling": ruling},
+                            "search_record_status": "entry_note_only" if recorded else "unrecorded",
+                            "entry_search_note": note if recorded else None,
+                            "unproven_rulings": sides})
+    return {"note": "Review obligations for weighed cases with ruling sides citing no proof. "
+                    "An entry-level search note does not establish per-side coverage or scholarly acceptance. "
+                    "Existing conditional resolutions are unchanged; wholly unproven cases are included.",
+            "cases": len(obligations),
+            "rulings": sum(len(e["unproven_rulings"]) for e in obligations),
+            "unrecorded_cases": sum(e["search_record_status"] == "unrecorded" for e in obligations),
+            "entries": obligations}
+
+
 def report(cases: list[dict], ledger: dict) -> dict:
     """The procedure by proof, and the attribution record beside it (never a resolution)."""
     by = {c["far"]: c for c in cases}
@@ -419,6 +459,7 @@ def report(cases: list[dict], ledger: dict) -> dict:
                 "count": sum(1 for e, c in rows if won_against_unproven(c, e)),
                 "against_reading": sum(1 for e, c in rows if won_against_unproven(c, e) and standing(c, e) == "against_reading"),
                 "unsearched": sum(1 for e, c in rows if won_against_unproven(c, e) and not str(e.get("searched", "")).strip())},
+            "search_obligations": search_obligations(cases, ledger),
             "advantages_outside_domain": [x for e, c in rows for x in outside_domain(c, e)],
             "jam_pending": jam_pending(cases, ledger),
             "policies": {pol: {"counts": sorted(POLICIES[pol][0]), "applied": POLICIES[pol][1],
