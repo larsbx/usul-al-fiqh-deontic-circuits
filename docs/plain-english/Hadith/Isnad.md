@@ -2,7 +2,10 @@
 
 Source: [`formal/lean/Hadith/Isnad.lean`](../../../formal/lean/Hadith/Isnad.lean)
 
-A chain of narrators (isnād) is only as strong as its weakest link. A gap or an unaccepted concealment caps a link at weak, and a single liar anywhere makes the whole chain forged.
+The project’s prima facie isnād score is the meet of its link scores. A gap
+or a formula rejected by the selected tadlīs policy caps that link’s score at
+weak. The [intrinsic grading criteria](ClassicalCriteria.md) use reviewed
+findings about the particular report and isnād.
 
 ## 1. Tadlīs and policy
 
@@ -19,8 +22,10 @@ A chain of narrators (isnād) is only as strong as its weakest link. A gap or an
 - **`Link`**: one narrator's rank, whether the link is connected (muttaṣil), his tadlīs tier if any, and the wording used.
 - **`Link.verdict`**: the narrator's verdict if the link is connected and accepted; otherwise capped at ḍaʿīf.
 - **`Isnad`**: a list of links.
-- **`Isnad.verdict`**: the meet (weakest) of all link verdicts. The empty chain counts as ṣaḥīḥ.
-- Hidden defects (ʿilla, shudhūdh) are not decided here. They enter as objections in `Hadith.Turuq`.
+- **`Isnad.verdict`** takes the weakest link score. The empty fold uses ṣaḥīḥ
+  as its identity.
+- The route profile can incorporate specific objections about shudhūdh and
+  ʿilla through `Hadith.Turuq`.
 
 ## 3. The theorems
 
@@ -35,13 +40,9 @@ A chain of narrators (isnād) is only as strong as its weakest link. A gap or an
 | `Isnad.verdict_attained` | The chain's verdict equals one of its links (or ṣaḥīḥ if empty). It is the weakest link. |
 | `Isnad.verdict_mono_policy` | A more tolerant policy never weakens a chain. |
 | `Isnad.verdict_mono_links` | Improving any link, position by position, never weakens the chain. |
-| `Isnad.mawdu_of_kadhdhab` | One kadhdhāb (liar) anywhere makes the chain mawḍūʿ. |
+| `Isnad.mawdu_of_kadhdhab` | A link ranked kadhdhāb forces the profile’s mawḍūʿ score. |
 | `Isnad.not_hujja_of_gap` | A break (inqiṭāʿ) anywhere keeps the chain below ḥujja. |
 
 ## 4. The chain's floor
 
 - **`Isnad.floor`**: the worst narrator rank in the chain, on the 1–12 scale. A gap or unaccepted tadlīs hides an unknown narrator, counted as majhūl (rank 9). `Hadith.Turuq` uses it to test whether a follower is good enough.
-
-## In one line
-
-Chain verdict = weakest link, where gaps and unaccepted tadlīs cap a link at ḍaʿīf, one liar makes it forged, and a laxer tadlīs policy can only help.

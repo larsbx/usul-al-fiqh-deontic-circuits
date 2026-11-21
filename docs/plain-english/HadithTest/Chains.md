@@ -2,7 +2,8 @@
 
 Source: [`formal/lean/HadithTest/Chains.lean`](../../../formal/lean/HadithTest/Chains.lean)
 
-Fifteen hand-built test vectors pin the chain (isnād) and route (ṭuruq) rules to their textual sources. Each names the rule it guards. None is a transcribed al-Albānī entry; real entries live as data elsewhere.
+The first fixtures replay the project’s chain and route profiles. Further
+checks exercise the criteria in Ibn Ḥajar’s *Nukhba*, *Nuzha* and *Taqrīb*.
 
 ## 1. Setup
 
@@ -13,15 +14,15 @@ Fifteen hand-built test vectors pin the chain (isnād) and route (ṭuruq) rules
 
 | Check | Plain English |
 | --- | --- |
-| thiqa, thiqa, ṣaḥābī ⇒ ṣaḥīḥ | Upright, accurate and connected at every link gives sound (the *Nuzha*'s definition). |
-| one ṣadūq link ⇒ ḥasan | A single merely truthful narrator gives ḥasan li-dhātihi. |
+| thiqa, thiqa, ṣaḥābī ⇒ ṣaḥīḥ | The connected chain gets the profile’s strongest score. |
+| one ṣadūq link ⇒ ḥasan | The weakest narrator determines the profile score in this fixture. |
 | tier-2 "from" ⇒ ṣaḥīḥ | Ibn Ḥajar tolerates tier-2 concealment (tadlīs). |
 | tier-3 "from" ⇒ ḍaʿīf | Tier 3 needs explicit hearing. |
 | tier-3 explicit hearing ⇒ ṣaḥīḥ | Explicit hearing cures it. |
 | tier-5 ḍaʿīf, explicit hearing ⇒ ḍaʿīf | Explicit hearing cures the tadlīs, not the narrator's own weakness. |
 | broken link ⇒ ḍaʿīf | A gap caps the chain at weak. |
 | matrūk link ⇒ ḍaʿīf jiddan | An abandoned narrator makes the chain severely weak. |
-| kadhdhāb link ⇒ mawḍūʿ | A liar makes it forged. |
+| kadhdhāb link ⇒ mawḍūʿ | The narrator rank forces that score under the profile. |
 
 ## 3. Route vectors (6 checks)
 
@@ -34,10 +35,12 @@ Fifteen hand-built test vectors pin the chain (isnād) and route (ṭuruq) rules
 | jawāb attacks the ʿilla ⇒ ḥasan | An answer (jawāb) reinstates it. |
 | second unanswered ʿilla ⇒ ḍaʿīf | A fresh objection defeats it again. |
 
-## Why it matters
+## 4. Source criteria
 
-These vectors fix the kernel's behaviour on textbook cases. Any change to the chain or route rules that alters a textbook outcome breaks the build.
-
-## In one line
-
-Fifteen small cases check that chains grade as the weakest link and that weak routes lift one rung only while their objections stay answered.
+The same structural input can accompany different intrinsic grading
+findings. The checks exercise full and lighter precision, unresolved
+continuity, integrity, precision and hidden defects, and established
+shudhūdh. They also check the sixth rank with and without qualifying
+corroboration, the rank-9 distinction in jabr, and the evidence required
+for tawātur. The intentions example replays the singular early route
+reported by Ibn Ḥajar. [Classical criteria](../Hadith/ClassicalCriteria.md) · [Route multiplicity and jabr](../Hadith/Nukhba.md)

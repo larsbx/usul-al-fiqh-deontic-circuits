@@ -1,3 +1,4 @@
+import Hadith.ClassicalCriteria
 import Hadith.Turuq
 import Usul.Taarud
 
@@ -10,9 +11,12 @@ construction; what has to be proved is that each class is characterised exactly 
 defines it (the `_iff` lemmas). Every class is quoted and linked in
 `corpus/hadith/kernel_scales.json`.
 
-* **Number of ṭuruq**: mutawātir / mashhūr / ʿazīz / gharīb; all but the first are āḥād.
-  Only tawātur yields qaṭʿ (ʿilm yaqīnī); āḥād reach ẓann. The *Nukhba* also allows ʿilm
-  naẓarī from āḥād with qarāʾin «على المختار»: a disputed upgrade, not encoded.
+* **Number of ṭuruq**: reviewed tawātur, or āḥād classified by the minimum
+  count through the route levels. The four tawātur conditions are explicit
+  findings from the *Nuzha* (`src:openiti-nuzha-shamela1565/v01:p041–p043`).
+  The certainty projection here uses the project's `Usul.Grade` scale.
+  Ibn Ḥajar also allows ʿilm naẓarī from āḥād with qarāʾin under his preferred
+  view. That assessment lies outside this projection.
 * **Saqṭ**: position and count of the dropped narrators name the gap (muʿallaq, mursal,
   muʿḍal, munqaṭiʿ); a hidden gap is tadlīs (from one he met) or irsāl khafī (from a
   contemporary he did not meet).
@@ -25,12 +29,33 @@ defines it (the `_iff` lemmas). Every class is quoted and linked in
 -/
 
 namespace Hadith.Nukhba
+open Hadith.ClassicalCriteria (Finding)
 
 /-! ## 1. Number of ṭuruq -/
 
-/-- Routes «بلا عدد معين», or `routes k` = exactly `k + 1` counted routes. -/
+/-- Critical findings for Ibn Ḥajar's four tawātur conditions (*Nuzha*, v01:p041–p043).
+`numerousEnough` concerns ordinary impossibility of agreement on falsehood.
+`throughout` records that the required multiplicity persists throughout.
+`impartsKnowledge` is a premise about the hearer in the source's definition. -/
+structure TawaturFindings where
+  numerousEnough : Finding
+  throughout : Finding
+  sensoryBasis : Finding
+  impartsKnowledge : Finding
+  deriving DecidableEq, Repr
+
+def TawaturFindings.Established (e : TawaturFindings) : Prop :=
+  e.numerousEnough = .established ∧ e.throughout = .established ∧
+    e.sensoryBasis = .established ∧ e.impartsKnowledge = .established
+
+instance (e : TawaturFindings) : Decidable e.Established := by
+  unfold TawaturFindings.Established
+  infer_instance
+
+/-- A reviewed tawātur case, or an āḥād case with minimum multiplicity `k + 1`
+through the levels of its isnāds. There is no prescribed numeric tawātur threshold. -/
 inductive Turuq where
-  | unbounded
+  | tawatur (findings : TawaturFindings) (review : findings.Established)
   | routes (k : Nat)
   deriving DecidableEq, Repr
 
@@ -39,7 +64,7 @@ inductive Kathra where
   deriving DecidableEq, Repr
 
 def kathra : Turuq → Kathra
-  | .unbounded => .mutawatir
+  | .tawatur _ _ => .mutawatir
   | .routes 0 => .gharib
   | .routes 1 => .aziz
   | .routes (_ + 2) => .mashhur
@@ -51,21 +76,30 @@ theorem aziz_iff (t : Turuq) : kathra t = .aziz ↔ t = .routes 1 := by
 /-- «مع حصر بما فوق الاثنتين». -/
 theorem mashhur_iff (t : Turuq) : kathra t = .mashhur ↔ ∃ k, t = .routes (k + 2) := by
   rcases t with _ | _ | _ | k <;> simp [kathra]
-theorem mutawatir_iff (t : Turuq) : kathra t = .mutawatir ↔ t = .unbounded := by
-  rcases t with _ | _ | _ | _ <;> simp [kathra]
+theorem mutawatir_iff (t : Turuq) :
+    kathra t = .mutawatir ↔ ∃ e : TawaturFindings, ∃ h : e.Established, t = .tawatur e h := by
+  cases t with
+  | tawatur e h => exact ⟨fun _ => ⟨e, h, rfl⟩, fun _ => rfl⟩
+  | routes k =>
+    constructor
+    · rcases k with _ | _ | _ <;> simp [kathra]
+    · rintro ⟨_, _, h⟩
+      cases h
 
 /-- «وكلها سوى الأول آحاد». -/
 def Ahad (t : Turuq) : Prop := kathra t ≠ .mutawatir
 
 theorem ahad_iff (t : Turuq) : Ahad t ↔ ∃ k, t = .routes k := by
-  rcases t with _ | k <;> simp [Ahad, mutawatir_iff]
+  rcases t with _ | _ | _ | _ <;> simp [Ahad, kathra]
 
-/-- What a khabar yields: tawātur gives qaṭʿ; āḥād give the grade of their verdict. -/
+/-- The project's certainty projection gives qaṭʿ to certified tawātur.
+Its āḥād branch reuses the grade of the supplied verdict. -/
 def knowledge (t : Turuq) (v : Verdict) : Usul.Grade :=
   if kathra t = .mutawatir then .qat else v.grade
 
-theorem knowledge_qat_iff (t : Turuq) (v : Verdict) : knowledge t v = .qat ↔ t = .unbounded := by
-  unfold knowledge; rw [← mutawatir_iff]; split
+theorem knowledge_qat_iff (t : Turuq) (v : Verdict) :
+    knowledge t v = .qat ↔ kathra t = .mutawatir := by
+  unfold knowledge; split
   · simp_all
   · simp_all [Verdict.grade_ne_qat]
 
@@ -157,7 +191,17 @@ def liftable : Cause → Bool
   | .taan .suHifz | .mastur | .saqt .mursal | .tadlis => true
   | _ => false
 
-/-- No ʿadāla-ṭaʿn is ever repaired: the text lifts only failures of ḍabṭ, status or continuity. -/
+/-- The jabr criterion in this passage of the *Nuzha*, v01:p104–p105.
+The second input is a finding of a matching muʿtabar follower, whose standing
+is at least that of the transmitter followed. It comes from route comparison. -/
+def jabr (c : Cause) (qualifiedFollower : Finding) : Bool :=
+  liftable c && decide (qualifiedFollower = .established)
+
+theorem jabr_iff (c : Cause) (f : Finding) :
+    jabr c f = true ↔ liftable c = true ∧ f = .established := by
+  simp [jabr]
+
+/-- The listed classes in this passage exclude ʿadāla-ṭaʿn. -/
 theorem not_liftable_of_adala {t : Taan} (h : t.adala = true) : liftable (.taan t) = false := by
   cases t <;> simp_all [Taan.adala, liftable]
 

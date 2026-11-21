@@ -58,4 +58,5 @@ This lane is explicitly downstream of canonical/test data. Its invariants are no
 ## al-Albānī ḥadīth-methodology track
 
 - Roadmap: [`docs/roadmap-albani-hadith-methodology.md`](docs/roadmap-albani-hadith-methodology.md)
+- [Classical criteria and source loci](docs/plain-english/Hadith/ClassicalCriteria.md) for intrinsic grades and Ibn Ḥajar’s sixth narrator rank, with [the tawātur and jabr criteria](docs/plain-english/Hadith/Nukhba.md).
 - Lean: `formal/lean/Hadith/` (narrator grades, isnād and tadlīs, ṭuruq aggregation as a defeasible argument), vectors in `formal/lean/HadithTest/`. The only edge into the uṣūl kernel is `Hadith.Verdict.grade : Verdict → Usul.Grade`.
